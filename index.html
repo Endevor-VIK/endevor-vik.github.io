@@ -1,0 +1,2660 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AXIOM CORE NETWORK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap">
+<link rel="preload" as="document" href="content-html/echelon-node-v2.html?embed=1&fit=frame&zoom=1.03&rev=av_off_04">
+<style>
+:root{
+  --bg:#070709;
+  --bg-2:#0c0d10;
+  --panel:#0d0e12;
+  --line:#1b1b22;
+  --line-2:#2a2a33;
+  --ink:#f1f1f4;
+  --ink-2:#c9c9d1;
+  --mute:#6d6e76;
+  --mute-2:#43434c;
+  --red:#ff2034;
+  --red-2:#ff4a54;
+  --red-3:#b10f1e;
+  --red-4:#5a0a12;
+  --glow:rgba(255,32,52,.28);
+  --glow-soft:rgba(255,32,52,.12);
+  --grid: linear-gradient(rgba(255,32,52,.035) 1px, transparent 1px) 0 0/100% 64px,
+          linear-gradient(90deg, rgba(255,32,52,.035) 1px, transparent 1px) 0 0/64px 100%;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',ui-monospace,monospace;-webkit-font-smoothing:antialiased}
+body{
+  background:
+    radial-gradient(1200px 700px at 80% -10%, rgba(255,32,52,.10), transparent 60%),
+    radial-gradient(1000px 600px at -10% 30%, rgba(255,32,52,.06), transparent 55%),
+    var(--bg);
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--red);color:#0a0a0a}
+
+/* ------- HEADER / TICKER ------- */
+.top{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(10px);
+  background:linear-gradient(180deg, rgba(7,7,9,.92), rgba(7,7,9,.7));
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 36px;
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.brand .mark{width:26px;height:26px;display:grid;place-items:center;color:var(--red);filter:drop-shadow(0 0 6px var(--glow))}
+.brand b{font-weight:700;letter-spacing:.22em}
+.brand small{color:var(--mute);letter-spacing:.22em}
+.menu{display:flex;gap:34px;color:var(--mute-2)}
+.menu a{position:relative;color:var(--ink-2);transition:color .2s}
+.menu a:hover{color:var(--red)}
+.menu .sep{color:var(--red);opacity:.6}
+.status{display:flex;align-items:center;gap:10px;color:var(--mute)}
+.status .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+.ticker{
+  display:flex;align-items:center;
+  border-bottom:1px solid var(--line);
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  height:34px;background:rgba(13,14,18,.6);
+}
+.ticker .label{
+  background:var(--red);color:#0a0507;padding:0 14px;height:100%;display:grid;place-items:center;font-weight:700;letter-spacing:.22em;
+  box-shadow:inset 0 0 0 1px #c3132a, 0 0 18px rgba(255,32,52,.45);
+  min-width:140px;
+}
+.ticker .stream{flex:1;overflow:hidden;position:relative}
+.ticker .stream-inner{display:flex;gap:48px;white-space:nowrap;padding-left:24px;animation:slide 60s linear infinite}
+.ticker .tag{color:var(--red)}
+.ticker .dim{color:var(--mute)}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ------- LAYOUT ------- */
+.wrap{max-width:1440px;margin:0 auto;padding:0 36px}
+.crosshair-bg{
+  position:absolute;inset:0;pointer-events:none;
+  background:var(--grid);
+  opacity:.6;
+  mask-image:radial-gradient(70% 70% at 50% 50%, #000, transparent 95%);
+}
+
+/* ------- HERO ------- */
+.hero{
+  position:relative;padding:80px 0 60px;min-height:760px;
+  border-bottom:1px solid var(--line);
+}
+.hero .crosshair-bg{opacity:.5}
+.hero-frame{
+  position:absolute;inset:30px 36px;border:1px solid rgba(255,32,52,.18);pointer-events:none;
+}
+.hero-frame::before,.hero-frame::after,
+.hero-frame > i:nth-child(1),.hero-frame > i:nth-child(2){
+  content:"";position:absolute;width:22px;height:22px;border:2px solid var(--red);
+}
+.hero-frame::before{top:-2px;left:-2px;border-right:none;border-bottom:none}
+.hero-frame::after{top:-2px;right:-2px;border-left:none;border-bottom:none}
+.hero-frame > i:nth-child(1){bottom:-2px;left:-2px;border-right:none;border-top:none}
+.hero-frame > i:nth-child(2){bottom:-2px;right:-2px;border-left:none;border-top:none}
+
+.hero-grid{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;
+  padding:48px 24px 24px;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:6px 12px;border:1px solid var(--red);
+  color:var(--red);font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;
+  box-shadow:0 0 18px rgba(255,32,52,.18) inset, 0 0 22px var(--glow-soft);
+  position:relative;
+}
+.eyebrow::before{content:"";width:6px;height:6px;background:var(--red);box-shadow:0 0 8px var(--red)}
+
+.kicker-rows{position:absolute;left:36px;top:160px;display:flex;flex-direction:column;gap:38px;color:var(--mute);font-size:11px;letter-spacing:.3em}
+.kicker-rows span{position:relative;padding-left:14px}
+.kicker-rows span::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;background:var(--red);transform:rotate(45deg);opacity:.7}
+
+h1.title{
+  margin:22px 0 18px;
+  font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:.02em;
+  font-size:clamp(64px, 8vw, 116px);line-height:.92;
+  text-transform:uppercase;
+}
+h1.title .w{display:block;color:var(--ink);text-shadow:0 0 30px rgba(255,255,255,.04);opacity:0;transform:translateY(18px);filter:blur(6px);animation:wordIn .9s cubic-bezier(.2,.8,.2,1) forwards}
+h1.title .w.dim{color:#9a9aa3;animation-delay:.15s}
+h1.title .w.red{color:var(--red);text-shadow:0 0 24px rgba(255,32,52,.55), 0 0 2px rgba(255,32,52,.9);position:relative;animation-delay:.3s}
+@keyframes wordIn{to{opacity:1;transform:none;filter:blur(0)}}
+
+h1.title .w.red .gtxt{position:absolute;left:0;top:0;color:var(--red);opacity:0;mix-blend-mode:screen;pointer-events:none}
+h1.title .w.red .gtxt.a{color:#ff8a92;animation:gA 5s steps(1) infinite}
+h1.title .w.red .gtxt.b{color:#7ad6ff;animation:gB 5s steps(1) infinite}
+@keyframes gA{
+  0%,86%,100%{opacity:0;transform:translate(0,0)}
+  87%{opacity:.85;transform:translate(-3px,1px);clip-path:inset(20% 0 60% 0)}
+  88%{opacity:0}
+  92%{opacity:.7;transform:translate(2px,-1px);clip-path:inset(60% 0 20% 0)}
+  93%{opacity:0}
+}
+@keyframes gB{
+  0%,84%,100%{opacity:0;transform:translate(0,0)}
+  87%{opacity:.5;transform:translate(3px,-1px);clip-path:inset(40% 0 40% 0)}
+  88%{opacity:0}
+  92%{opacity:.4;transform:translate(-2px,1px);clip-path:inset(10% 0 70% 0)}
+  93%{opacity:0}
+}
+h1.title .w.red::before{
+  content:"";position:absolute;left:-10px;right:-10px;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(255,32,52,.8),transparent);
+  filter:blur(.5px);box-shadow:0 0 8px rgba(255,32,52,.6);
+  animation:redScan 4.5s linear infinite;pointer-events:none;
+}
+@keyframes redScan{
+  0%{top:-6px;opacity:0}
+  4%{opacity:1}
+  60%{top:100%;opacity:1}
+  62%,100%{top:100%;opacity:0}
+}
+
+.eyebrow{animation:ebIn .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes ebIn{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:none}}
+.lede,.enter-wrap{animation:fadeUp .9s .55s cubic-bezier(.2,.8,.2,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+.hero-particles{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden;mask-image:radial-gradient(80% 70% at 60% 50%, #000, transparent 90%)}
+.hero-particles span{position:absolute;width:2px;height:2px;background:var(--red);border-radius:50%;opacity:.6;box-shadow:0 0 6px var(--red);animation:floatY 12s linear infinite}
+.hero-particles span.s{width:1px;height:1px;opacity:.35;box-shadow:none}
+@keyframes floatY{
+  0%{transform:translateY(0) translateX(0);opacity:0}
+  10%{opacity:.6}
+  90%{opacity:.6}
+  100%{transform:translateY(-60px) translateX(20px);opacity:0}
+}
+
+.lede{
+  max-width:460px;color:var(--ink-2);font-size:14px;line-height:1.65;letter-spacing:.02em;
+  margin-bottom:34px;
+}
+.lede b{color:var(--red);font-weight:600}
+
+/* =========================================================
+   ENTER AXIOM BUTTON — multi-layer engineered design
+   ========================================================= */
+.enter-wrap{
+  position:relative;display:inline-block;
+  width:520px;max-width:100%;height:92px;
+  padding:0 26px;
+  filter:drop-shadow(0 0 28px rgba(255,32,52,.32));
+}
+.enter-wrap .glow{
+  position:absolute;inset:-30px -10px;pointer-events:none;
+  background:radial-gradient(60% 80% at 50% 50%, rgba(255,32,52,.35), rgba(255,32,52,.06) 50%, transparent 75%);
+  opacity:.7;animation:btnGlow 3.2s ease-in-out infinite;
+}
+@keyframes btnGlow{0%,100%{opacity:.55;transform:scale(.98)}50%{opacity:.95;transform:scale(1.04)}}
+
+/* the octagonal frame, drawn precisely with SVG */
+.enter-wrap .frame, .enter-wrap .frame-inner, .enter-wrap .sweep-layer, .enter-wrap .scan-layer{
+  position:absolute;inset:0 26px;pointer-events:none;
+}
+.enter-wrap .frame svg, .enter-wrap .frame-inner svg, .enter-wrap .sweep-layer svg, .enter-wrap .scan-layer svg{
+  width:100%;height:100%;overflow:visible;
+}
+
+/* side brackets (those little crab-claw marks on the screen) */
+.enter-wrap .bracket{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:26px;height:46px;color:var(--red);
+  filter:drop-shadow(0 0 6px rgba(255,32,52,.7));
+}
+.enter-wrap .bracket.l{left:0}
+.enter-wrap .bracket.r{right:0;transform:translateY(-50%) scaleX(-1)}
+.enter-wrap .bracket svg{width:100%;height:100%}
+
+.enter{
+  position:absolute;inset:0 26px;
+  display:flex;align-items:center;justify-content:center;gap:18px;
+  font-family:'JetBrains Mono',monospace;
+  font-weight:600;letter-spacing:.36em;font-size:17px;color:#fff;
+  background:transparent;border:none;cursor:pointer;padding:0 30px;
+  z-index:3;
+  transition:letter-spacing .35s cubic-bezier(.2,.8,.2,1), color .25s;
+}
+.enter .label{position:relative;display:inline-block;text-shadow:0 0 18px rgba(255,255,255,.25)}
+.enter .label::after{
+  content:attr(data-text);position:absolute;left:0;top:0;color:var(--red);
+  opacity:0;mix-blend-mode:screen;transform:translate(0,0);
+  pointer-events:none;
+}
+.enter:hover .label::after{animation:btnGlitch 1.2s steps(1) infinite}
+@keyframes btnGlitch{
+  0%,100%{opacity:0;transform:translate(0,0)}
+  10%{opacity:.6;transform:translate(-2px,1px)}
+  20%{opacity:0}
+  55%{opacity:.5;transform:translate(2px,-1px)}
+  60%{opacity:0}
+}
+.enter .arrow{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;color:var(--red);font-size:0;position:relative;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1);
+}
+.enter .arrow svg{width:24px;height:14px;filter:drop-shadow(0 0 4px rgba(255,32,52,.8))}
+.enter:hover .arrow{transform:translateX(8px)}
+.enter:hover{letter-spacing:.4em}
+
+/* Background fill clipped to octagon shape */
+.enter-wrap .fill{
+  position:absolute;inset:0 26px;pointer-events:none;
+  clip-path: polygon(22px 0, calc(100% - 22px) 0, 100% 22px, 100% calc(100% - 22px), calc(100% - 22px) 100%, 22px 100%, 0 calc(100% - 22px), 0 22px);
+  background:
+    radial-gradient(80% 100% at 50% 50%, rgba(255,32,52,.22), rgba(255,32,52,.04) 60%, transparent),
+    linear-gradient(180deg, rgba(255,32,52,.08), rgba(8,2,4,.5));
+}
+/* Inner scanline shimmer */
+.enter-wrap .scan-layer{
+  overflow:hidden;
+  clip-path: polygon(22px 0, calc(100% - 22px) 0, 100% 22px, 100% calc(100% - 22px), calc(100% - 22px) 100%, 22px 100%, 0 calc(100% - 22px), 0 22px);
+}
+.enter-wrap .scan-layer::before{
+  content:"";position:absolute;inset:-2px 0;
+  background:linear-gradient(180deg, transparent 0%, transparent 45%, rgba(255,255,255,.06) 50%, transparent 55%, transparent 100%);
+  background-size:100% 8px;animation:btnScan 7s linear infinite;
+}
+@keyframes btnScan{0%{transform:translateY(-50%)}100%{transform:translateY(50%)}}
+.enter-wrap .scan-layer::after{
+  content:"";position:absolute;top:0;bottom:0;width:30%;
+  background:linear-gradient(90deg, transparent, rgba(255,80,100,.18), transparent);
+  animation:btnSweep 2.6s ease-in-out infinite;
+  mix-blend-mode:screen;
+}
+@keyframes btnSweep{0%{left:-30%}100%{left:100%}}
+
+/* small corner-tick markers around the button */
+.enter-wrap .corner-tick{
+  position:absolute;width:10px;height:10px;border:1.5px solid var(--red);
+  filter:drop-shadow(0 0 4px var(--glow));
+}
+.enter-wrap .corner-tick.tl{top:-6px;left:14px;border-right:none;border-bottom:none}
+.enter-wrap .corner-tick.tr{top:-6px;right:14px;border-left:none;border-bottom:none}
+.enter-wrap .corner-tick.bl{bottom:-6px;left:14px;border-right:none;border-top:none}
+.enter-wrap .corner-tick.br{bottom:-6px;right:14px;border-left:none;border-top:none}
+
+/* outer pulse halo */
+.enter-wrap .pulse-ring{
+  position:absolute;inset:0 26px;pointer-events:none;border:1px solid var(--red);
+  clip-path: polygon(22px 0, calc(100% - 22px) 0, 100% 22px, 100% calc(100% - 22px), calc(100% - 22px) 100%, 22px 100%, 0 calc(100% - 22px), 0 22px);
+  opacity:0;animation:btnPulseRing 2.6s ease-out infinite;
+}
+@keyframes btnPulseRing{
+  0%{opacity:.8;transform:scale(1)}
+  100%{opacity:0;transform:scale(1.06)}
+}
+
+
+/* RIGHT — animated radar / axiom mark */
+.radar{
+  position:relative;aspect-ratio:1/1;max-width:620px;justify-self:center;width:100%;
+  filter:drop-shadow(0 0 80px rgba(255,32,52,.25));
+}
+.radar svg{width:100%;height:100%;display:block;overflow:visible}
+.spin-vslow{transform-origin:0 0;animation:spin 60s linear infinite}
+.spin-slow{transform-origin:0 0;animation:spin 38s linear infinite}
+.spin-med{transform-origin:0 0;animation:spin 18s linear infinite reverse}
+.spin-fast{transform-origin:0 0;animation:spin 10s linear infinite}
+.spin-vfast{transform-origin:0 0;animation:spin 6s linear infinite reverse}
+.scan-arm{transform-origin:0 0;animation:spin 8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pulse-core{transform-origin:0 0;animation:corepulse 2.8s ease-in-out infinite}
+@keyframes corepulse{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+.pulse-soft{animation:pulseSoft 3.4s ease-in-out infinite}
+@keyframes pulseSoft{0%,100%{opacity:.45}50%{opacity:.9}}
+.pulse-dot{animation:dotPulse 1.6s ease-in-out infinite}
+@keyframes dotPulse{0%,100%{opacity:1}50%{opacity:.3}}
+.ping{transform-origin:0 0;animation:pingRing 3s ease-out infinite}
+@keyframes pingRing{0%{opacity:.8;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.flicker{animation:flick 4.2s steps(1) infinite}
+@keyframes flick{0%,96%,100%{opacity:1}97%{opacity:.2}98%{opacity:.9}}
+
+
+.status-card{
+  position:absolute;right:36px;bottom:60px;z-index:2;
+  width:240px;padding:14px 18px;
+  background:rgba(10,10,14,.7);border:1px solid var(--line-2);
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);
+}
+.status-card .row{display:flex;align-items:center;gap:8px;color:var(--ink)}
+.status-card .row .dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 8px var(--red);animation:pulse 1.6s infinite}
+.status-card svg{display:block;margin-top:10px;width:100%;height:30px}
+
+.version-card{
+  position:absolute;right:36px;top:80px;z-index:2;
+  font-size:11px;letter-spacing:.22em;color:var(--mute);text-align:right;
+}
+.version-card .l{color:var(--red);display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.version-card .l::before{content:"";width:6px;height:6px;background:var(--red);box-shadow:0 0 6px var(--red)}
+
+/* feature row under hero */
+.features{
+  position:relative;z-index:2;
+  margin:24px 24px 0;padding:22px 28px;
+  border:1px solid var(--line-2);
+  background:rgba(13,14,18,.6);
+  display:grid;grid-template-columns:repeat(4,1fr);gap:48px;
+}
+.feature{position:relative;padding-left:52px;color:var(--mute);font-size:12px;line-height:1.55;letter-spacing:.04em}
+.feature .icon{
+  position:absolute;left:0;top:2px;width:38px;height:38px;
+  border:1px solid var(--red);display:grid;place-items:center;color:var(--red);
+}
+.feature .icon::before,.feature .icon::after,
+.feature .icon > b:nth-child(2), .feature .icon > b:nth-child(3){
+  content:"";position:absolute;width:6px;height:6px;border:1px solid var(--red);
+}
+.feature .icon::before{top:-3px;left:-3px;border-right:none;border-bottom:none}
+.feature .icon::after{top:-3px;right:-3px;border-left:none;border-bottom:none}
+.feature .icon > b:nth-child(2){bottom:-3px;left:-3px;border-right:none;border-top:none}
+.feature .icon > b:nth-child(3){bottom:-3px;right:-3px;border-left:none;border-top:none}
+.feature h4{margin:0 0 6px;color:var(--ink);font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+
+/* ------- SECTION CHROME ------- */
+section{position:relative;padding:120px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:60px;gap:40px}
+.sec-num{font-size:11px;letter-spacing:.36em;color:var(--red);text-transform:uppercase}
+.sec-title{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(40px,5vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:.01em;margin:14px 0 0}
+.sec-title em{font-style:normal;color:var(--red)}
+.sec-desc{max-width:420px;color:var(--mute);font-size:13px;line-height:1.6}
+
+/* ------- MANIFESTO ------- */
+.manifesto{display:grid;grid-template-columns:240px 1fr 240px;gap:60px;align-items:start}
+.manifesto .col-label{font-size:11px;letter-spacing:.3em;color:var(--mute);text-transform:uppercase;border-top:1px solid var(--red);padding-top:14px}
+.manifesto .col-label b{color:var(--red);display:block;margin-bottom:6px}
+.manifesto blockquote{
+  margin:0;
+  font-family:'Oswald',sans-serif;font-weight:400;font-size:clamp(28px,3.2vw,46px);line-height:1.18;text-transform:uppercase;color:var(--ink);letter-spacing:.01em;
+}
+.manifesto blockquote span{color:var(--red)}
+.manifesto blockquote::before{content:"//";color:var(--red);font-family:'JetBrains Mono',monospace;font-size:.5em;display:block;margin-bottom:14px;letter-spacing:.3em}
+
+/* ------- MODULES ------- */
+.modules{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.module{
+  position:relative;
+  border:1px solid var(--line-2);
+  background:linear-gradient(180deg, rgba(13,14,18,.8), rgba(13,14,18,.4));
+  padding:36px 32px;
+  min-height:340px;
+  display:flex;flex-direction:column;
+  transition:border-color .25s, transform .25s;
+  overflow:hidden;
+}
+.module:hover{border-color:var(--red);transform:translateY(-3px)}
+.module::before,.module::after,
+.module > i:nth-child(1),.module > i:nth-child(2){
+  content:"";position:absolute;width:14px;height:14px;border:1px solid var(--red);opacity:0;transition:opacity .25s;
+}
+.module:hover::before,.module:hover::after,
+.module:hover > i:nth-child(1),.module:hover > i:nth-child(2){opacity:1}
+.module::before{top:8px;left:8px;border-right:none;border-bottom:none}
+.module::after{top:8px;right:8px;border-left:none;border-bottom:none}
+.module > i:nth-child(1){bottom:8px;left:8px;border-right:none;border-top:none}
+.module > i:nth-child(2){bottom:8px;right:8px;border-left:none;border-top:none}
+
+.module .tag{font-size:10.5px;letter-spacing:.3em;color:var(--red);text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.module .tag::before{content:"";width:18px;height:1px;background:var(--red)}
+.module h3{margin:14px 0 10px;font-family:'Oswald',sans-serif;font-weight:500;font-size:34px;text-transform:uppercase;letter-spacing:.02em}
+.module p{color:var(--mute);font-size:13px;line-height:1.65;margin:0 0 24px;max-width:480px}
+.module .vis{margin-top:auto;padding-top:18px;border-top:1px dashed var(--line-2)}
+
+/* mini-viz: chronicle cards */
+.mini-chronicle{display:flex;gap:10px;align-items:flex-end;height:88px}
+.mini-chronicle .card{
+  flex:1;border:1px solid var(--line-2);height:60%;
+  display:flex;flex-direction:column;justify-content:space-between;padding:8px;
+  font-size:9px;letter-spacing:.2em;color:var(--mute);text-transform:uppercase;
+}
+.mini-chronicle .card.lead{height:100%;border-color:var(--red);background:radial-gradient(60% 80% at 50% 50%, rgba(255,32,52,.18), transparent 70%);color:var(--ink)}
+.mini-chronicle .card.lead b{color:var(--red)}
+
+/* mini-viz: content tabs */
+.mini-content{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.mini-content .tab{border:1px solid var(--line-2);padding:10px 8px;text-align:center;font-size:9.5px;letter-spacing:.18em;color:var(--mute);text-transform:uppercase}
+.mini-content .tab.on{border-color:var(--red);color:var(--red);background:rgba(255,32,52,.06)}
+
+/* mini-viz: cartography */
+.mini-map{position:relative;height:120px;border:1px solid var(--line-2);overflow:hidden}
+.mini-map svg{width:100%;height:100%}
+
+/* mini-viz: watchdog */
+.mini-radar{display:flex;gap:14px;align-items:center}
+.mini-radar .disc{position:relative;width:90px;height:90px;border-radius:50%;border:1px solid var(--red);background:radial-gradient(circle at center, rgba(255,32,52,.15), transparent 70%)}
+.mini-radar .disc::before{content:"";position:absolute;inset:18%;border-radius:50%;border:1px dashed rgba(255,32,52,.4)}
+.mini-radar .disc::after{content:"";position:absolute;top:50%;left:50%;width:50%;height:1px;background:linear-gradient(90deg,var(--red),transparent);transform-origin:left center;animation:spin 3s linear infinite}
+.mini-radar .pings{flex:1;display:flex;flex-direction:column;gap:5px;font-size:10px;letter-spacing:.16em;color:var(--mute);text-transform:uppercase}
+.mini-radar .pings span b{color:var(--red);margin-right:8px;letter-spacing:.2em}
+
+/* ------- WORLD ------- */
+.world-wrap{position:relative}
+.world-hero{
+  --world-frame-inset:clamp(6px,.7vw,10px);
+  position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line-2);overflow:hidden;
+  background:#000;
+}
+.world-scene-slot{
+  position:absolute;
+  inset:var(--world-frame-inset);
+  background:#000 url('assets/echelon_city.png') center/cover no-repeat;
+}
+.world-scene-frame{
+  position:absolute;inset:0;width:100%;height:100%;
+  border:0;display:block;pointer-events:none;
+  opacity:0;transition:opacity .45s ease;
+}
+.world-scene-slot.is-ready .world-scene-frame{opacity:1}
+.world-hero .frame,
+.world-hero .caption,
+.world-hero .axis{z-index:2}
+.world-hero .frame{z-index:3}
+.world-hero .caption,
+.world-hero .axis{text-shadow:0 0 14px rgba(0,0,0,.55)}
+.world-scene-slot::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,.25) 100%);
+}
+.world-hero::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg, transparent 30%, rgba(7,7,9,.9) 100%),
+    linear-gradient(90deg, rgba(7,7,9,.7), transparent 30%, transparent 70%, rgba(7,7,9,.7));
+}
+.world-hero .frame{position:absolute;top:var(--world-frame-inset);left:var(--world-frame-inset);right:var(--world-frame-inset);bottom:var(--world-frame-inset);border:1px solid rgba(255,32,52,.3);pointer-events:none}
+.world-hero .frame::before,.world-hero .frame::after{content:"";position:absolute;width:16px;height:16px;border:2px solid var(--red)}
+.world-hero .frame::before{top:-2px;left:-2px;border-right:none;border-bottom:none}
+.world-hero .frame::after{bottom:-2px;right:-2px;border-left:none;border-top:none}
+.world-hero .caption{
+  position:absolute;left:calc(var(--world-frame-inset) + 20px);top:calc(var(--world-frame-inset) + 16px);z-index:2;
+}
+.world-hero .caption .num{font-size:10px;letter-spacing:.3em;color:var(--red);text-transform:uppercase}
+.world-hero .caption h3{font-family:'Oswald',sans-serif;font-weight:500;font-size:48px;text-transform:uppercase;margin:6px 0;letter-spacing:.02em}
+.world-hero .caption p{color:var(--ink-2);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0;max-width:380px}
+.world-hero .axis{position:absolute;left:calc(var(--world-frame-inset) + 20px);bottom:calc(var(--world-frame-inset) + 16px);display:flex;gap:32px;font-size:10px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase;z-index:2}
+.world-hero .axis span b{color:var(--red);margin-right:8px}
+
+.nodes{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:0;
+  margin-top:-1px;border:1px solid var(--line-2);
+}
+.node{
+  padding:22px 18px;border-right:1px solid var(--line);
+  display:flex;flex-direction:column;gap:8px;
+  font-size:10.5px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase;
+  background:rgba(13,14,18,.5);
+  transition:background .25s;cursor:default;
+}
+.node:hover{background:rgba(255,32,52,.06)}
+.node:last-child{border-right:none}
+.node b{color:var(--ink);font-size:13px;letter-spacing:.16em}
+.node .id{color:var(--red);font-size:10px}
+.node .icn{width:28px;height:28px;border:1px solid var(--red);display:grid;place-items:center;color:var(--red);margin-bottom:6px}
+
+/* ------- CHARACTERS ------- */
+.chars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.char{
+  position:relative;border:1px solid var(--line-2);background:rgba(13,14,18,.6);
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:border-color .3s, transform .3s;
+}
+.char:hover{border-color:var(--red);transform:translateY(-4px)}
+.char .img{position:relative;aspect-ratio:3/4;overflow:hidden;background:#0a0a0c}
+.char .img img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.05);transition:transform .8s ease}
+.char:hover .img img{transform:scale(1.04)}
+.char .img::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg, transparent 40%, rgba(7,7,9,.85) 100%),
+    linear-gradient(180deg, rgba(255,32,52,.06), transparent 30%);
+  pointer-events:none;
+}
+.char .img .corners i{position:absolute;width:14px;height:14px;border:1.5px solid var(--red);z-index:2}
+.char .img .corners i.tl{top:10px;left:10px;border-right:none;border-bottom:none}
+.char .img .corners i.tr{top:10px;right:10px;border-left:none;border-bottom:none}
+.char .img .corners i.bl{bottom:10px;left:10px;border-right:none;border-top:none}
+.char .img .corners i.br{bottom:10px;right:10px;border-left:none;border-top:none}
+.char .img .id{position:absolute;top:18px;left:24px;font-size:9.5px;letter-spacing:.3em;color:var(--red);z-index:2}
+.char .img .codename{position:absolute;top:18px;right:24px;font-size:9.5px;letter-spacing:.3em;color:var(--ink-2);z-index:2}
+.char .img .scan{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);box-shadow:0 0 10px var(--red);z-index:2;opacity:.6;animation:scanline 5s linear infinite}
+@keyframes scanline{0%{top:0}100%{top:100%}}
+
+.char .meta{padding:22px 24px;border-top:1px solid var(--line)}
+.char .meta .role{font-size:10px;letter-spacing:.3em;color:var(--red);text-transform:uppercase}
+.char .meta h3{font-family:'Oswald',sans-serif;font-weight:500;font-size:28px;text-transform:uppercase;margin:6px 0 10px;letter-spacing:.02em}
+.char .meta p{color:var(--mute);font-size:12px;line-height:1.6;margin:0 0 16px;min-height:62px}
+.char .stats{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase;border-top:1px dashed var(--line-2);padding-top:12px}
+.char .stats b{color:var(--ink);display:block;font-size:11px;margin-top:2px}
+
+/* ------- FACTIONS ------- */
+.factions{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+.faction{
+  position:relative;border:1px solid var(--line-2);
+  background:rgba(13,14,18,.6);
+  padding:32px;min-height:360px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  transition:border-color .3s;
+}
+.faction:hover{border-color:var(--red)}
+.faction.endeavor{background:radial-gradient(60% 80% at 80% 30%, rgba(255,32,52,.10), transparent 70%), rgba(13,14,18,.6)}
+.faction .logo{height:120px;display:grid;place-items:center;color:var(--red);filter:drop-shadow(0 0 20px var(--glow));margin-bottom:18px}
+.faction .logo svg{width:90px;height:90px}
+.faction .name{font-family:'Oswald',sans-serif;font-weight:500;font-size:36px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink)}
+.faction .tag{font-size:10px;letter-spacing:.3em;color:var(--red);text-transform:uppercase;margin-top:4px}
+.faction p{color:var(--mute);font-size:13px;line-height:1.65;margin:14px 0 0}
+.faction .footer{margin-top:24px;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase}
+.faction .footer b{color:var(--ink)}
+
+/* ------- CTA ------- */
+.cta{
+  position:relative;padding:160px 0 120px;text-align:center;
+  background:
+    radial-gradient(1000px 500px at 50% 50%, rgba(255,32,52,.12), transparent 60%);
+}
+.cta .crosshair-bg{opacity:.5}
+.cta h2{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(48px,6vw,92px);text-transform:uppercase;line-height:.95;margin:0;letter-spacing:.02em}
+.cta h2 em{font-style:normal;color:var(--red);text-shadow:0 0 30px var(--glow)}
+.cta p{color:var(--ink-2);font-size:14px;letter-spacing:.04em;line-height:1.7;max-width:540px;margin:24px auto 40px}
+.cta .enter-wrap{margin:0 auto}
+
+/* ------- FOOTER ------- */
+footer{padding:60px 0 30px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase}
+footer .row{display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap}
+footer b{color:var(--red)}
+footer .axiom-line{
+  font-size:11px;letter-spacing:.42em;color:var(--red);text-align:center;margin-top:28px;
+  display:flex;align-items:center;gap:18px;justify-content:center;
+}
+footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width:300px;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent)}
+
+/* corner stamps in section heads */
+.sec-stamp{position:absolute;font-size:10px;letter-spacing:.3em;color:var(--mute);text-transform:uppercase}
+.sec-stamp.tl{top:30px;left:36px}
+.sec-stamp.tr{top:30px;right:36px}
+
+/* ============== DOCTRINE ============== */
+.doctrine-bar{
+  display:flex;align-items:center;gap:24px;
+  padding:14px 22px;border:1px solid var(--line-2);background:rgba(13,14,18,.6);
+  font-size:10.5px;letter-spacing:.28em;color:var(--mute);text-transform:uppercase;
+  margin-bottom:36px;
+}
+.doctrine-bar .seal{width:24px;height:24px;color:var(--red);filter:drop-shadow(0 0 6px var(--glow));animation:spinSeal 22s linear infinite;display:grid;place-items:center}
+@keyframes spinSeal{to{transform:rotate(360deg)}}
+.doctrine-bar .meta{color:var(--ink-2)}
+.doctrine-bar .decrypt{display:flex;align-items:center;gap:10px;margin-left:auto;color:var(--red)}
+.doctrine-bar .bar-i{
+  display:inline-block;width:120px;height:6px;border:1px solid var(--red);
+  position:relative;overflow:hidden;
+}
+.doctrine-bar .bar-i::after{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:34%;
+  background:var(--red);box-shadow:0 0 8px var(--red);animation:decBar 3s linear infinite;
+}
+@keyframes decBar{0%{left:-34%}100%{left:100%}}
+
+.doctrine-stage{
+  display:grid;grid-template-columns:210px 1fr 210px;gap:18px;align-items:stretch;
+  margin-bottom:36px;
+}
+.doctrine-side{
+  border:1px solid var(--line-2);background:rgba(13,14,18,.55);
+  padding:22px 18px;display:flex;flex-direction:column;gap:14px;
+}
+.doctrine-side .lab{font-size:10px;letter-spacing:.3em;color:var(--mute);text-transform:uppercase}
+.doctrine-side .big{color:var(--red);font-size:22px;font-weight:600;letter-spacing:.12em;font-family:'JetBrains Mono',monospace}
+.doctrine-side .meter{height:6px;border:1px solid var(--red);position:relative;overflow:hidden}
+.doctrine-side .meter i{position:absolute;left:0;top:0;bottom:0;background:var(--red);box-shadow:inset 0 0 4px #fff;width:0;animation:meterFill 2.4s ease-out forwards}
+.doctrine-side .meter.m2 i{animation-delay:.3s;--w:46%}
+.doctrine-side .meter.m1 i{--w:78%}
+.doctrine-side .meter.m3 i{animation-delay:.5s;--w:92%}
+@keyframes meterFill{to{width:var(--w,70%)}}
+
+.doctrine-side .bars{display:flex;align-items:flex-end;gap:4px;height:80px;border:1px solid var(--line-2);padding:8px;background:rgba(0,0,0,.4)}
+.doctrine-side .bars i{flex:1;background:linear-gradient(180deg,#ff8a92,var(--red));box-shadow:0 0 6px var(--glow);transform-origin:bottom;animation:barP 1.9s ease-in-out infinite alternate}
+.doctrine-side .bars i:nth-child(1){animation-delay:-1.1s;height:30%}
+.doctrine-side .bars i:nth-child(2){animation-delay:-.6s;height:60%}
+.doctrine-side .bars i:nth-child(3){animation-delay:-.1s;height:85%}
+.doctrine-side .bars i:nth-child(4){animation-delay:-1.3s;height:45%}
+.doctrine-side .bars i:nth-child(5){animation-delay:-.8s;height:95%}
+.doctrine-side .bars i:nth-child(6){animation-delay:-.3s;height:70%}
+.doctrine-side .bars i:nth-child(7){animation-delay:-1.5s;height:50%}
+.doctrine-side .bars i:nth-child(8){animation-delay:-.4s;height:62%}
+@keyframes barP{from{transform:scaleY(.85)}to{transform:scaleY(1.04)}}
+.doctrine-side .stamp{font-size:9px;letter-spacing:.28em;color:var(--mute);text-transform:uppercase;border-top:1px dashed var(--line-2);padding-top:10px;margin-top:auto}
+.doctrine-side .stamp b{color:var(--red);display:block;font-size:11px;letter-spacing:.18em}
+
+.doctrine-quote{
+  position:relative;border:1px solid var(--red);
+  background:radial-gradient(70% 100% at 50% 0%, rgba(255,32,52,.07), rgba(13,14,18,.75) 60%);
+  padding:0;display:flex;flex-direction:column;
+  box-shadow:0 0 40px rgba(255,32,52,.12), inset 0 0 60px rgba(255,32,52,.04);
+  overflow:hidden;
+}
+.doctrine-quote .term-head{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 20px;border-bottom:1px solid var(--line-2);background:rgba(0,0,0,.4);
+  font-size:10.5px;letter-spacing:.2em;color:var(--mute);text-transform:uppercase;
+}
+.doctrine-quote .term-head .dot{width:8px;height:8px;border-radius:50%}
+.doctrine-quote .term-head .dot.r{background:var(--red);box-shadow:0 0 6px var(--red);animation:pulse 1.6s infinite}
+.doctrine-quote .term-head .dot.a{background:#e4c447}
+.doctrine-quote .term-head .dot.g{background:#39d6c8}
+.doctrine-quote .term-head .path{color:var(--ink-2)}
+.doctrine-quote .term-head .cur{margin-left:auto;color:var(--red);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+
+.ql{margin:0;padding:42px 44px 50px;font-family:'Oswald',sans-serif;font-weight:400;font-size:clamp(24px,2.4vw,36px);line-height:1.32;text-transform:uppercase;color:var(--ink);letter-spacing:.01em}
+.ql .line{display:block;opacity:0;transform:translateY(8px);animation:lineIn .55s cubic-bezier(.2,.8,.2,1) forwards}
+.ql .line .pre{font-family:'JetBrains Mono',monospace;color:var(--red);font-size:.42em;letter-spacing:.3em;font-weight:600;display:block;margin-bottom:14px}
+.ql em{font-style:normal;color:var(--red);text-shadow:0 0 14px rgba(255,32,52,.5)}
+.ql .blank{height:.4em}
+.ql .red-mark{display:inline-block;background:var(--red);color:#0a0507;padding:2px 12px;font-weight:700;letter-spacing:.18em;font-size:.55em;animation:redactBlink 3.2s steps(1) infinite}
+@keyframes redactBlink{0%,90%,100%{filter:none}93%{filter:brightness(.4)}96%{filter:brightness(1) saturate(1.4)}}
+.ql .ghost{color:var(--mute-2);font-size:.6em;letter-spacing:.18em;display:block;margin-top:18px}
+.ql .line:nth-child(1){animation-delay:.05s}
+.ql .line:nth-child(2){animation-delay:.22s}
+.ql .line:nth-child(3){animation-delay:.39s}
+.ql .line:nth-child(4){animation-delay:.56s}
+.ql .line:nth-child(5){animation-delay:.73s}
+.ql .line:nth-child(6){animation-delay:.9s}
+.ql .line:nth-child(7){animation-delay:1.07s}
+.ql .line:nth-child(8){animation-delay:1.24s}
+.ql .line:nth-child(9){animation-delay:1.41s}
+.ql .line:nth-child(10){animation-delay:1.58s}
+.ql .line:nth-child(11){animation-delay:1.75s}
+@keyframes lineIn{to{opacity:1;transform:none}}
+
+.doctrine-quote::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(180deg, transparent 0, transparent 3px, rgba(255,32,52,.025) 3px, rgba(255,32,52,.025) 4px);
+  mix-blend-mode:overlay;
+}
+.doctrine-quote .swept{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.doctrine-quote .swept::before{
+  content:"";position:absolute;left:-30%;top:0;width:30%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,80,100,.10),transparent);
+  animation:qSweep 6s linear infinite;
+}
+@keyframes qSweep{0%{left:-30%}100%{left:100%}}
+
+/* fragments */
+.fragments{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.frag{
+  position:relative;border:1px solid var(--line-2);background:rgba(13,14,18,.6);
+  padding:24px 22px;display:flex;flex-direction:column;gap:8px;min-height:248px;
+  transition:border-color .25s, transform .25s, background .25s;
+  overflow:hidden;
+}
+.frag:hover{border-color:var(--red);transform:translateY(-3px);background:rgba(255,32,52,.04)}
+.frag::before{content:"";position:absolute;top:14px;right:14px;width:8px;height:8px;border:1px solid var(--red);transform:rotate(45deg);opacity:.7}
+.frag::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);transform:translateX(-100%);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.frag:hover::after{transform:translateX(0)}
+.frag .frag-id{font-size:9.5px;letter-spacing:.3em;color:var(--red);text-transform:uppercase}
+.frag h4{margin:6px 0;font-family:'Oswald',sans-serif;font-weight:500;font-size:18px;text-transform:uppercase;letter-spacing:.04em;line-height:1.15;color:var(--ink)}
+.frag p{margin:0;color:var(--mute);font-size:12px;line-height:1.6}
+.frag .frag-foot{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line-2);display:flex;justify-content:space-between;font-size:10px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase}
+.frag .frag-foot b{color:var(--red);display:block;letter-spacing:.18em;margin-top:2px}
+.frag .glyph{position:absolute;right:-20px;bottom:-20px;width:90px;height:90px;color:var(--red);opacity:.06;pointer-events:none;transition:opacity .3s}
+.frag:hover .glyph{opacity:.18}
+
+/* ============== SYSTEM SURFACE :: SPINE & MODULES ============== */
+.spine-strip{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+  border:1px solid var(--line-2);background:rgba(13,14,18,.6);
+  margin-bottom:24px;
+}
+.spine-strip .stat{
+  padding:18px 22px;border-right:1px solid var(--line);
+  display:flex;flex-direction:column;gap:8px;
+}
+.spine-strip .stat:last-child{border-right:none}
+.spine-strip .stat .lab{font-size:10px;letter-spacing:.3em;color:var(--mute);text-transform:uppercase}
+.spine-strip .stat .val{display:flex;align-items:baseline;gap:8px}
+.spine-strip .stat .num{font-family:'Oswald',sans-serif;font-weight:500;font-size:30px;color:var(--ink);letter-spacing:.04em}
+.spine-strip .stat .dim{font-size:10px;color:var(--mute);letter-spacing:.18em;text-transform:uppercase}
+.spine-strip .stat .bar{position:relative;height:3px;background:rgba(255,32,52,.12);overflow:hidden}
+.spine-strip .stat .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--red);box-shadow:0 0 6px var(--red);width:0;animation:meterFill 1.8s ease-out forwards}
+
+/* upgraded module card */
+.modules{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.module{
+  position:relative;
+  border:1px solid var(--line-2);
+  background:linear-gradient(180deg, rgba(13,14,18,.85), rgba(13,14,18,.55));
+  padding:0;
+  min-height:420px;
+  display:grid;grid-template-rows:auto 1fr auto;
+  transition:border-color .25s, transform .25s;
+  overflow:hidden;
+}
+.module:hover{border-color:var(--red);transform:translateY(-3px)}
+.module > .m-head{display:flex;align-items:center;gap:14px;padding:16px 22px;border-bottom:1px solid var(--line)}
+.module .m-num{
+  width:34px;height:34px;display:grid;place-items:center;
+  border:1px solid var(--red);color:var(--red);font-weight:700;font-size:13px;letter-spacing:.06em;
+  background:rgba(255,32,52,.08);box-shadow:inset 0 0 8px rgba(255,32,52,.2);
+}
+.module .m-tag{font-size:10.5px;letter-spacing:.3em;color:var(--ink-2);text-transform:uppercase;flex:1}
+.module .m-tag b{color:var(--red)}
+.module .m-stat{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.24em;color:var(--mute);text-transform:uppercase}
+.module .m-stat i{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 6px var(--red);animation:pulse 1.6s infinite}
+.module .m-stat.draft i{background:#e4c447;box-shadow:0 0 6px #e4c447}
+.module .m-stat.trace i{background:#39d6c8;box-shadow:0 0 6px #39d6c8}
+
+.module .m-body{padding:24px 26px 18px;display:flex;flex-direction:column;gap:14px}
+.module h3{margin:0;font-family:'Oswald',sans-serif;font-weight:500;font-size:34px;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+.module h3 em{font-style:normal;color:var(--red)}
+.module p{margin:0;color:var(--mute);font-size:13px;line-height:1.65;max-width:480px}
+
+.module .m-vis{margin:8px 0 0;padding:18px;border:1px dashed var(--line-2);background:rgba(0,0,0,.35);position:relative;overflow:hidden;min-height:170px}
+
+.module > .m-foot{display:flex;border-top:1px solid var(--line);background:rgba(0,0,0,.35)}
+.module > .m-foot span{flex:1;padding:14px 22px;border-right:1px solid var(--line);font-size:10px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase}
+.module > .m-foot span:last-child{border-right:none}
+.module > .m-foot b{display:block;color:var(--ink);font-size:11px;letter-spacing:.18em;margin-top:3px}
+
+/* module corner brackets */
+.module .m-corners i{position:absolute;width:12px;height:12px;border:1px solid var(--red);opacity:0;transition:opacity .25s}
+.module:hover .m-corners i{opacity:1}
+.module .m-corners i.tl{top:8px;left:8px;border-right:none;border-bottom:none}
+.module .m-corners i.tr{top:8px;right:8px;border-left:none;border-bottom:none}
+.module .m-corners i.bl{bottom:8px;left:8px;border-right:none;border-top:none}
+.module .m-corners i.br{bottom:8px;right:8px;border-left:none;border-top:none}
+.module .m-sweep{position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);transform:translateX(-100%);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.module:hover .m-sweep{transform:translateX(0)}
+
+/* ===== module-specific viz ===== */
+
+/* CHRONICLE: orbital chapter cards */
+.orbit{position:relative;height:200px;width:100%;display:flex;align-items:center;justify-content:center;overflow:visible}
+.orbit .ring-bg{position:absolute;left:50%;top:50%;width:380px;height:140px;border:1px dashed rgba(255,32,52,.3);border-radius:50%;transform:translate(-50%,-50%);animation:spin 28s linear infinite}
+.orbit .ring-bg.fast{width:300px;height:100px;border-style:dotted;border-color:rgba(255,32,52,.55);animation:spin 14s linear infinite reverse}
+.orbit .ring-bg.dot{width:340px;height:120px;border:none}
+.orbit .ring-bg.dot::before,.orbit .ring-bg.dot::after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 8px var(--red);top:50%;margin-top:-3px}
+.orbit .ring-bg.dot::before{left:-3px}
+.orbit .ring-bg.dot::after{right:-3px;background:#ff8a92}
+.orbit .ring-bg.dot{animation:spin 10s linear infinite}
+
+.orbit-card{
+  position:relative;width:200px;
+  border:1px solid var(--red);
+  background:radial-gradient(130% 100% at 50% 0%, rgba(255,32,52,.22), rgba(13,14,18,.92) 60%);
+  padding:14px 16px;display:flex;flex-direction:column;gap:8px;
+  font-size:9.5px;letter-spacing:.22em;color:var(--ink);text-transform:uppercase;
+  box-shadow:0 0 28px rgba(255,32,52,.22), inset 0 0 24px rgba(255,32,52,.06);
+  z-index:3;overflow:hidden;
+}
+.orbit-card .tag{color:var(--red)}
+.orbit-card b{font-family:'Oswald',sans-serif;font-size:17px;letter-spacing:.04em;line-height:1.1;font-weight:500;color:var(--ink);text-transform:uppercase}
+.orbit-card .meta{font-size:8.5px;color:var(--mute)}
+.orbit-card::before,.orbit-card::after{content:"";position:absolute;width:10px;height:10px;border:1px solid var(--red)}
+.orbit-card::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
+.orbit-card::after{bottom:-1px;right:-1px;border-left:none;border-top:none}
+.orbit-card .scan-bar{position:absolute;left:8px;right:8px;height:1px;background:var(--red);box-shadow:0 0 8px var(--red);animation:scanInside 3.5s linear infinite;pointer-events:none}
+@keyframes scanInside{0%{top:8px;opacity:0}10%{opacity:.7}90%{opacity:.7}100%{top:calc(100% - 9px);opacity:0}}
+
+.orbit-mini{
+  position:absolute;width:96px;
+  border:1px solid var(--line-2);background:rgba(13,14,18,.78);
+  padding:8px 10px;font-size:8.5px;letter-spacing:.2em;color:var(--mute);text-transform:uppercase;
+  z-index:2;backdrop-filter:blur(2px);
+}
+.orbit-mini b{display:block;font-family:'Oswald',sans-serif;font-size:13px;color:var(--ink-2);letter-spacing:.04em;text-transform:uppercase;font-weight:500;margin-top:4px;line-height:1.1}
+.orbit-mini.l{left:8px;top:24%;animation:floatA 5s ease-in-out infinite alternate}
+.orbit-mini.r{right:8px;top:46%;animation:floatB 5.5s ease-in-out infinite alternate}
+@keyframes floatA{from{transform:translateY(-5px) rotate(-3deg)}to{transform:translateY(5px) rotate(-1deg)}}
+@keyframes floatB{from{transform:translateY(-4px) rotate(3deg)}to{transform:translateY(5px) rotate(5deg)}}
+
+/* CONTENT: entity card preview */
+.content-vis{display:grid;grid-template-columns:90px 1fr 78px;gap:14px;align-items:stretch;min-height:150px}
+.content-vis .portrait{
+  position:relative;border:1px solid var(--red);
+  background:
+    radial-gradient(80% 60% at 50% 35%, rgba(255,32,52,.28), rgba(0,0,0,.7) 70%),
+    linear-gradient(180deg, rgba(255,32,52,.06), rgba(0,0,0,.5));
+  overflow:hidden;
+}
+.content-vis .portrait::before{content:"";position:absolute;left:6px;right:6px;top:6px;bottom:6px;border:1px dashed rgba(255,32,52,.45);pointer-events:none}
+.content-vis .portrait::after{content:"";position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--red),transparent);filter:blur(.4px);box-shadow:0 0 10px var(--red);animation:portraitScan 3.5s linear infinite;top:0;pointer-events:none}
+@keyframes portraitScan{0%{top:-4px;opacity:0}5%{opacity:1}95%{opacity:1}100%{top:100%;opacity:0}}
+.content-vis .silhouette{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:50%;height:65%;background:linear-gradient(180deg, rgba(255,32,52,.55), rgba(255,32,52,.08));clip-path:polygon(28% 0,72% 0,82% 28%,92% 100%,8% 100%,18% 28%)}
+.content-vis .portrait .id-stamp{position:absolute;top:6px;left:8px;font-size:7.5px;letter-spacing:.2em;color:var(--red);font-weight:600}
+
+.content-vis .body{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:2px 0}
+.content-vis .body .name{font-family:'Oswald',sans-serif;font-size:18px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);font-weight:500;line-height:1}
+.content-vis .body .meta{font-size:9.5px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase;display:flex;gap:10px;flex-wrap:wrap}
+.content-vis .body .meta b{color:var(--red)}
+.content-vis .row{display:flex;gap:5px;flex-wrap:wrap}
+.content-vis .chip{font-size:9px;letter-spacing:.2em;color:var(--red);text-transform:uppercase;border:1px solid var(--red);padding:3px 8px;background:rgba(255,32,52,.06);opacity:0;animation:chipIn .55s ease-out forwards}
+.content-vis .chip.dim{color:var(--mute);border-color:var(--line-2);background:transparent}
+.content-vis .chip:nth-child(1){animation-delay:.1s}
+.content-vis .chip:nth-child(2){animation-delay:.25s}
+.content-vis .chip:nth-child(3){animation-delay:.4s}
+.content-vis .chip:nth-child(4){animation-delay:.55s}
+@keyframes chipIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.content-vis .signal{position:relative;border:1px solid var(--line-2);display:grid;place-items:center;background:rgba(0,0,0,.45);overflow:hidden}
+.content-vis .signal svg{position:absolute;inset:0;width:100%;height:100%}
+.content-vis .signal .lbl{position:relative;font-size:9px;letter-spacing:.22em;color:var(--red);font-weight:600;text-transform:uppercase;text-align:center;line-height:1.2}
+
+/* CARTOGRAPHY: routes & nodes */
+.carto-vis{position:relative;height:170px}
+.carto-vis svg{width:100%;height:100%;overflow:visible}
+.carto-vis .route{fill:none;stroke:#ff2034;stroke-width:1;stroke-dasharray:4 5;animation:antsFlow 1.4s linear infinite}
+.carto-vis .route.r2{animation-duration:1.8s}
+.carto-vis .route.r3{animation-duration:1.1s;stroke-dasharray:3 4}
+.carto-vis .route.r4{animation-duration:2.2s;stroke-dasharray:2 6}
+@keyframes antsFlow{to{stroke-dashoffset:-9}}
+.carto-vis .grid-bg{stroke:#ff2034;stroke-opacity:.06}
+.carto-vis .compass{position:absolute;right:10px;bottom:8px;font-size:9px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase;display:flex;gap:14px;background:rgba(0,0,0,.55);padding:6px 10px;border:1px solid var(--line-2)}
+.carto-vis .compass b{color:var(--red)}
+.carto-vis .scan-line{stroke:#ff2034;stroke-opacity:.55;stroke-width:1;filter:drop-shadow(0 0 4px rgba(255,32,52,.7));animation:cartoSweep 5s linear infinite}
+@keyframes cartoSweep{0%{transform:translateX(-20%)}100%{transform:translateX(120%)}}
+
+/* WATCHDOG: radar + log */
+.dog-vis{display:grid;grid-template-columns:155px 1fr;gap:18px;align-items:center;min-height:160px}
+.dog-vis .radar-mini{position:relative;width:155px;height:155px}
+.dog-vis .radar-mini svg{width:100%;height:100%;overflow:visible}
+.dog-vis .sweep-arm{transform-origin:0 0;animation:spin 3.4s linear infinite}
+.dog-vis .ring-fast{transform-origin:0 0;animation:spin 9s linear infinite reverse}
+.dog-vis .blip-anim{animation:blipPulse 1.4s ease-in-out infinite}
+.dog-vis .blip-anim.b2{animation-delay:-.6s}
+.dog-vis .blip-anim.b3{animation-delay:-1s}
+@keyframes blipPulse{0%,100%{opacity:1}50%{opacity:.25}}
+
+.dog-vis .log{display:flex;flex-direction:column;gap:5px;font-size:10px;letter-spacing:.18em;color:var(--mute);text-transform:uppercase;font-family:'JetBrains Mono',monospace}
+.dog-vis .log .l{display:grid;grid-template-columns:62px 1fr auto;gap:10px;align-items:center;padding:5px 0;border-bottom:1px dashed var(--line-2);opacity:0;transform:translateX(-6px);animation:logIn .5s cubic-bezier(.2,.8,.2,1) forwards}
+.dog-vis .log .l:nth-child(1){animation-delay:.1s}
+.dog-vis .log .l:nth-child(2){animation-delay:.25s}
+.dog-vis .log .l:nth-child(3){animation-delay:.4s}
+.dog-vis .log .l:nth-child(4){animation-delay:.55s}
+.dog-vis .log .l:nth-child(5){animation-delay:.7s}
+@keyframes logIn{to{opacity:1;transform:none}}
+.dog-vis .log .l b{color:var(--red)}
+.dog-vis .log .l .v{color:var(--ink-2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.dog-vis .log .l .s{color:#39d6c8}
+.dog-vis .log .l .s.warn{color:#e4c447}
+.dog-vis .log .l .s.crit{color:var(--red);animation:flick 1.6s steps(1) infinite}
+
+/* AXIOM divider */
+.ax-divider{display:flex;align-items:center;gap:18px;margin:50px 0 18px;font-size:10.5px;letter-spacing:.32em;text-transform:uppercase}
+.ax-divider .line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);max-width:none}
+.ax-divider .badge{color:var(--red);font-weight:600;padding:6px 14px;border:1px solid var(--red);box-shadow:0 0 12px var(--glow-soft);background:rgba(255,32,52,.05)}
+.ax-divider .sub{color:var(--mute)}
+
+/* ============== AXIOM FRACTURED ENTITY ============== */
+.axiom-entity{
+  /* canonical palette — matches character cards */
+  --ax-ink:#f1f1f4;
+  --ax-ink-2:#c9c9d1;
+  --ax-mute:#6d6e76;
+  --ax-mute-2:#2a2a33;
+  --ax-red:#ff2034;
+  --ax-red-dim:rgba(255,32,52,.55);
+  --ax-red-deep:#7a0a14;
+  --ax-bg:rgba(13,14,18,.6);
+  --ax-bg-2:rgba(13,14,18,.85);
+  margin-top:24px;position:relative;
+  border:1px solid var(--ax-mute-2);
+  background:linear-gradient(180deg, rgba(13,14,18,.85), rgba(13,14,18,.55));
+  overflow:hidden;transition:border-color .3s;
+}
+.axiom-entity:hover{border-color:var(--ax-red)}
+.axiom-entity::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:repeating-linear-gradient(180deg, transparent 0, transparent 4px, rgba(255,32,52,.015) 4px, rgba(255,32,52,.015) 5px)}
+.axiom-entity .ax-head{display:flex;align-items:center;gap:24px;padding:16px 28px;border-bottom:1px solid var(--ax-mute-2);font-size:10.5px;letter-spacing:.28em;color:var(--ax-mute);text-transform:uppercase;background:rgba(0,0,0,.45);position:relative;z-index:2}
+.axiom-entity .ax-head .axh-id{color:var(--ax-red);font-weight:600}
+.axiom-entity .ax-head .axh-cls{color:var(--ax-ink-2)}
+.axiom-entity .ax-head .axh-stat{margin-left:auto;display:flex;align-items:center;gap:10px;color:var(--ax-red)}
+.axiom-entity .ax-head .axh-stat i{width:8px;height:8px;border-radius:50%;background:var(--ax-red);box-shadow:0 0 8px var(--ax-red);animation:axBreathe 2.8s ease-in-out infinite}
+@keyframes axBreathe{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.85)}}
+
+.axiom-entity .ax-body{display:grid;grid-template-columns:1.05fr 1.25fr 1fr;gap:1px;background:var(--ax-mute-2);position:relative;z-index:2}
+.axiom-entity .ax-col{padding:0;background:rgba(13,14,18,.6);position:relative;min-height:540px}
+.axiom-entity .ax-col.copy{padding:32px 30px}
+.axiom-entity .ax-col.modes{padding:32px 30px}
+
+/* LEFT: full-bleed AXIOM core diagram */
+.ax-portrait{position:absolute;inset:0;overflow:hidden}
+.ax-portrait svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+
+.ax-ring-outer{transform-origin:0 0;animation:axSpin 60s linear infinite}
+.ax-ring-mid{transform-origin:0 0;animation:axSpin 38s linear infinite reverse}
+.ax-ring-inner{transform-origin:0 0;animation:axSpin 22s linear infinite}
+@keyframes axSpin{to{transform:rotate(360deg)}}
+
+.ax-petals{transform-origin:0 0;animation:axBreatheBlade 7s ease-in-out infinite alternate}
+@keyframes axBreatheBlade{from{transform:scale(.985)}to{transform:scale(1.02)}}
+.ax-petals-glow{transform-origin:0 0;animation:axGlowPulse 5s ease-in-out infinite alternate;mix-blend-mode:screen}
+@keyframes axGlowPulse{from{opacity:.3}to{opacity:.7}}
+
+.ax-cable{stroke:var(--ax-red);stroke-width:1;fill:none;stroke-dasharray:3 5;animation:axCableFlow 1.8s linear infinite;stroke-opacity:.55}
+.ax-cable.dim{stroke-opacity:.25}
+.ax-cable.f2{animation-duration:2.6s}
+.ax-cable.f3{animation-duration:1.4s}
+.ax-cable.f4{animation-duration:3.2s}
+.ax-cable.f5{animation-duration:2.2s}
+@keyframes axCableFlow{to{stroke-dashoffset:-8}}
+
+.ax-port-led{animation:axBreathe 1.8s ease-in-out infinite}
+.ax-port-led.d2{animation-delay:-.6s}
+.ax-port-led.d3{animation-delay:-1.2s}
+.ax-port-led.d4{animation-delay:-.3s}
+
+.ax-term{animation:axTerm 28s linear infinite}
+@keyframes axTerm{from{transform:translateY(0)}to{transform:translateY(-260px)}}
+
+.ax-scan-h{animation:axScanV 9s ease-in-out infinite}
+@keyframes axScanV{0%{transform:translateY(-260px);opacity:0}10%{opacity:.85}50%{opacity:1}90%{opacity:.85}100%{transform:translateY(260px);opacity:0}}
+
+/* CENTER: copy */
+.ax-name{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(60px,7vw,96px);line-height:.88;letter-spacing:.02em;text-transform:uppercase;color:var(--ax-ink);margin:0;position:relative}
+.ax-name em{font-style:normal;color:var(--ax-red);text-shadow:0 0 30px rgba(255,32,52,.55), 0 0 2px rgba(255,32,52,.9)}
+.ax-name::after{content:"AXIOM∅";position:absolute;left:3px;top:0;color:transparent;-webkit-text-stroke:1px rgba(255,138,146,.4);animation:axNameGlitch 7s cubic-bezier(.6,0,.4,1) infinite;pointer-events:none}
+@keyframes axNameGlitch{0%,88%,100%{transform:translate(0);opacity:0}90%{transform:translate(-2px,1px);opacity:.55}92%{transform:translate(2px,-1px);opacity:.3}94%{opacity:0}}
+
+.ax-sub{font-size:11px;letter-spacing:.34em;color:var(--ax-red);text-transform:uppercase;margin:18px 0 6px;display:flex;align-items:center;gap:10px}
+.ax-sub::before{content:"";width:24px;height:1px;background:var(--ax-red)}
+.ax-class{font-size:11px;letter-spacing:.22em;color:var(--ax-mute);text-transform:uppercase;margin:0 0 24px}
+.ax-class b{color:var(--ax-ink)}
+.ax-statement{margin:0 0 22px;color:var(--ax-ink-2);font-size:13.5px;line-height:1.75;letter-spacing:.01em}
+.ax-statement em{font-style:normal;color:var(--ax-red);font-weight:500}
+.ax-statement b{color:var(--ax-rose);font-weight:500}
+.ax-quote{margin:0 0 24px;padding:18px 22px;border-left:2px solid var(--ax-red);font-family:'Oswald',sans-serif;font-size:21px;text-transform:uppercase;letter-spacing:.02em;color:var(--ax-ink);background:linear-gradient(90deg, rgba(255,32,52,.06), transparent 80%);position:relative;line-height:1.2}
+.ax-quote::before{content:"// FRAGMENT ∅";color:var(--ax-red);font-family:'JetBrains Mono',monospace;font-size:.48em;display:block;margin-bottom:10px;letter-spacing:.32em;font-weight:600}
+.ax-quote span{color:var(--ax-red);font-weight:500}
+.ax-keystats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;font-size:10px;letter-spacing:.22em;color:var(--ax-mute);text-transform:uppercase;border-top:1px dashed var(--ax-mute-2);padding-top:18px}
+.ax-keystats b{display:block;color:var(--ax-ink);font-size:12px;letter-spacing:.16em;margin-top:4px}
+.ax-keystats b.red{color:var(--ax-red)}
+
+/* RIGHT: presence modes — unified warm palette */
+.ax-modes{display:flex;flex-direction:column;gap:10px}
+.ax-modes-head{font-size:10.5px;letter-spacing:.3em;color:var(--ax-red);text-transform:uppercase;margin-bottom:6px;padding-bottom:12px;border-bottom:1px solid var(--ax-mute-2);display:flex;justify-content:space-between}
+.ax-modes-head b{color:var(--ax-ink);letter-spacing:.16em}
+.ax-mode{position:relative;padding:13px 14px;border:1px solid var(--ax-mute-2);display:flex;flex-direction:column;gap:8px;background:rgba(0,0,0,.4);transition:border-color .35s ease, background .35s ease}
+.ax-mode:hover{border-color:var(--ax-red);background:rgba(255,32,52,.05)}
+.ax-mode-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ax-mode-name{font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.22em;color:var(--ax-ink);font-weight:600;text-transform:uppercase}
+.ax-mode-state{font-size:9px;letter-spacing:.22em;color:var(--ax-mute);text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.ax-mode-state::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 6px currentColor}
+/* state tones — canonical red only */
+.ax-mode-state.live{color:var(--ax-red);animation:axBreathe 2.6s ease-in-out infinite}
+.ax-mode-state.relic{color:var(--ax-red);opacity:.6}
+.ax-mode-state.lock{color:var(--ax-red);opacity:.4}
+.ax-mode-state.bio{color:var(--ax-red);opacity:.75}
+.ax-mode-state.myth{color:var(--ax-red);opacity:.55}
+.ax-mode .ax-meter{height:4px;background:rgba(255,255,255,.04);position:relative;overflow:hidden}
+.ax-mode .ax-meter i{position:absolute;left:0;top:0;bottom:0;background:var(--ax-red);box-shadow:0 0 6px var(--ax-red);width:0;animation:axMeterFill 2.6s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes axMeterFill{to{width:var(--w,50%)}}
+.ax-mode.relic .ax-meter i{opacity:.7}
+.ax-mode.lock .ax-meter i{opacity:.5}
+.ax-mode.bio .ax-meter i{opacity:.85}
+.ax-mode.myth .ax-meter i{opacity:.65}
+.ax-mode-desc{font-size:10.5px;line-height:1.55;color:var(--ax-mute);letter-spacing:.04em}
+
+/* BOTTOM strip */
+.axiom-entity .ax-foot{position:relative;z-index:2;display:grid;grid-template-columns:230px 1fr 230px;background:rgba(0,0,0,.65);border-top:1px solid var(--ax-mute-2)}
+.axiom-entity .ax-foot > div{padding:14px 22px;border-right:1px solid var(--ax-mute-2);font-size:10px;letter-spacing:.22em;color:var(--ax-mute);text-transform:uppercase;display:flex;flex-direction:column;justify-content:center}
+.axiom-entity .ax-foot > div:last-child{border-right:none}
+.axiom-entity .ax-foot b{display:block;color:var(--ax-red);font-size:14px;letter-spacing:.16em;margin-top:3px;font-family:'JetBrains Mono',monospace}
+.axiom-entity .ax-foot .wave{padding:8px 22px}
+.axiom-entity .ax-foot .wave svg{width:100%;height:46px;display:block;filter:drop-shadow(0 0 6px rgba(255,32,52,.5))}
+.axiom-entity .ax-foot .wave .scroll{animation:axWaveScroll 10s linear infinite}
+@keyframes axWaveScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+@media (max-width:1080px){
+  .axiom-entity .ax-body{grid-template-columns:1fr}
+  .axiom-entity .ax-foot{grid-template-columns:1fr}
+  .axiom-entity .ax-foot > div{border-right:none;border-bottom:1px solid var(--line)}
+  .axiom-entity .ax-col.copy,
+  .axiom-entity .ax-col.modes{min-height:auto}
+  /* portrait column keeps explicit height so its absolute SVG has space */
+  .axiom-entity .ax-col:not(.copy):not(.modes){min-height:520px}
+}
+
+/* responsive */
+@media (max-width:1080px){
+  .world-hero{aspect-ratio:auto;height:520px}
+  .world-hero .caption h3{font-size:38px}
+  .world-hero .axis{gap:20px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .features{grid-template-columns:repeat(2,1fr);gap:28px}
+  .nodes{grid-template-columns:repeat(2,1fr)}
+  .node{border-bottom:1px solid var(--line)}
+  .chars{grid-template-columns:1fr 1fr}
+  .factions{grid-template-columns:1fr}
+  .modules{grid-template-columns:1fr}
+  .manifesto{grid-template-columns:1fr}
+  .menu{display:none}
+  .kicker-rows{display:none}
+}
+@media (max-width:640px){
+  .world-hero{height:400px}
+  .world-hero .caption h3{font-size:28px}
+  .world-hero .caption p{max-width:260px;font-size:10px}
+  .world-hero .axis{left:calc(var(--world-frame-inset) + 12px);bottom:calc(var(--world-frame-inset) + 10px);gap:12px;font-size:9px}
+  .chars{grid-template-columns:1fr}
+  .nav{padding:14px 18px}
+  .wrap{padding:0 18px}
+  .hero-frame{inset:18px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="nav">
+    <div class="brand">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+          <path d="M12 2 L22 20 L12 15 L2 20 Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <b>AXIOM&nbsp;CORE</b>
+      <small>// v0.2.6.0-RC.1</small>
+    </div>
+    <nav class="menu">
+      <a href="#manifesto">MANIFESTO</a><span class="sep">/</span>
+      <a href="#modules">MODULES</a><span class="sep">/</span>
+      <a href="#world">WORLD</a><span class="sep">/</span>
+      <a href="#chars">ENTITIES</a><span class="sep">/</span>
+      <a href="#factions">FACTIONS</a>
+    </nav>
+    <div class="status"><span class="dot"></span>NETWORK ONLINE</div>
+  </div>
+  <div class="ticker">
+    <div class="label">NEWS // WIRE</div>
+    <div class="stream">
+      <div class="stream-inner">
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-05-07</span> &nbsp;AXIOM WEB CORE UI V0.2.6.0-RC.1</span>
+        <span><b class="tag">UPDATE</b> <span class="dim">/ 2026-02-27</span> &nbsp;Новая страница 404: понятно и с характером</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-02-19</span> &nbsp;AXIOM WEB CORE UI V0.2.4.0</span>
+        <span><b class="tag">AUDIT</b> <span class="dim">/ 2025-12-29</span> &nbsp;AUDIT &amp; ROADMAP: готовим новый формат</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2025-12-22</span> &nbsp;Контент-библиотека стала богаче</span>
+        <span><b class="tag">UPDATE</b> <span class="dim">/ 2025-10-25</span> &nbsp;Контент-центр v2.1</span>
+        <!-- duplicate for loop -->
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-05-07</span> &nbsp;AXIOM WEB CORE UI V0.2.6.0-RC.1</span>
+        <span><b class="tag">UPDATE</b> <span class="dim">/ 2026-02-27</span> &nbsp;Новая страница 404: понятно и с характером</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-02-19</span> &nbsp;AXIOM WEB CORE UI V0.2.4.0</span>
+        <span><b class="tag">AUDIT</b> <span class="dim">/ 2025-12-29</span> &nbsp;AUDIT &amp; ROADMAP: готовим новый формат</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2025-12-22</span> &nbsp;Контент-библиотека стала богаче</span>
+        <span><b class="tag">UPDATE</b> <span class="dim">/ 2025-10-25</span> &nbsp;Контент-центр v2.1</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-screen-label="01 Hero">
+  <div class="crosshair-bg"></div>
+  <div class="hero-particles" aria-hidden="true">
+    <span style="left:8%;top:30%;animation-delay:-2s"></span>
+    <span class="s" style="left:15%;top:65%;animation-delay:-5s"></span>
+    <span style="left:22%;top:18%;animation-delay:-7s"></span>
+    <span class="s" style="left:42%;top:80%;animation-delay:-3s"></span>
+    <span style="left:55%;top:45%;animation-delay:-9s"></span>
+    <span class="s" style="left:62%;top:25%;animation-delay:-1s"></span>
+    <span style="left:72%;top:70%;animation-delay:-6s"></span>
+    <span class="s" style="left:80%;top:35%;animation-delay:-4s"></span>
+    <span style="left:88%;top:55%;animation-delay:-8s"></span>
+    <span class="s" style="left:32%;top:42%;animation-delay:-11s"></span>
+    <span class="s" style="left:48%;top:62%;animation-delay:-2.5s"></span>
+    <span class="s" style="left:68%;top:18%;animation-delay:-7.5s"></span>
+    <span style="left:12%;top:48%;animation-delay:-4.5s"></span>
+    <span class="s" style="left:92%;top:78%;animation-delay:-10s"></span>
+  </div>
+  <div class="hero-frame"><i></i><i></i></div>
+  <div class="wrap">
+    <div class="kicker-rows"><span>01</span><span>02</span><span>03</span></div>
+
+    <div class="version-card">
+      <div class="l">AXIOM CORE</div>
+      <div>ACCESS_PROTOCOL</div>
+      <div>v1.0</div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">AXIOM CORE NETWORK</span>
+        <h1 class="title">
+          <span class="w">KNOWLEDGE.</span>
+          <span class="w dim">CONTROL.</span>
+          <span class="w red">
+            <span class="gtxt a" aria-hidden="true">ACCESS.</span>
+            <span class="gtxt b" aria-hidden="true">ACCESS.</span>
+            ACCESS.
+          </span>
+        </h1>
+        <p class="lede">
+          <b>AXIOM</b> — закрытая сеть для тех, кто ищет знания
+          без границ и работает вне системы. Архив, картография, протоколы доступа.
+          Один контур, в котором правда не отделена от инфраструктуры.
+        </p>
+
+        <div class="enter-wrap">
+          <span class="glow"></span>
+
+          <!-- left/right side brackets -->
+          <span class="bracket l" aria-hidden="true">
+            <svg viewBox="0 0 26 46" fill="none">
+              <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/>
+              <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+            </svg>
+          </span>
+          <span class="bracket r" aria-hidden="true">
+            <svg viewBox="0 0 26 46" fill="none">
+              <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/>
+              <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+            </svg>
+          </span>
+
+          <span class="corner-tick tl"></span>
+          <span class="corner-tick tr"></span>
+          <span class="corner-tick bl"></span>
+          <span class="corner-tick br"></span>
+
+          <span class="fill" aria-hidden="true"></span>
+          <span class="scan-layer" aria-hidden="true"></span>
+
+          <!-- octagonal outline drawn in SVG so strokes stay crisp -->
+          <span class="frame" aria-hidden="true">
+            <svg viewBox="0 0 468 92" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="btnBorder" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#ff4a54"/>
+                  <stop offset="50%" stop-color="#ff2034"/>
+                  <stop offset="100%" stop-color="#b10f1e"/>
+                </linearGradient>
+              </defs>
+              <path d="M22 1 L446 1 L467 22 L467 70 L446 91 L22 91 L1 70 L1 22 Z"
+                    fill="none" stroke="url(#btnBorder)" stroke-width="2"
+                    style="filter:drop-shadow(0 0 10px rgba(255,32,52,.65))"/>
+              <!-- inner double-line -->
+              <path d="M30 9 L438 9 L459 30 L459 62 L438 83 L30 83 L9 62 L9 30 Z"
+                    fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-width="1"/>
+              <!-- center-line markers on each side -->
+              <line x1="0" y1="46" x2="6" y2="46" stroke="#ff2034" stroke-width="2"/>
+              <line x1="462" y1="46" x2="468" y2="46" stroke="#ff2034" stroke-width="2"/>
+              <!-- top tiny ticks -->
+              <line x1="60" y1="1" x2="60" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="110" y1="1" x2="110" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="358" y1="1" x2="358" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="408" y1="1" x2="408" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="60" y1="87" x2="60" y2="91" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="408" y1="87" x2="408" y2="91" stroke="#ff2034" stroke-opacity=".6"/>
+            </svg>
+          </span>
+          <span class="pulse-ring" aria-hidden="true"></span>
+
+          <button class="enter" type="button">
+            <span class="label" data-text="ENTER AXIOM">ENTER AXIOM</span>
+            <span class="arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 14" fill="none">
+                <path d="M1 7 H21 M14 1 L21 7 L14 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Animated AXIOM emblem / radar -->
+      <div class="radar" aria-hidden="true">
+        <svg viewBox="-260 -260 520 520">
+          <defs>
+            <radialGradient id="g-core" cx="0" cy="0" r="1">
+              <stop offset="0%" stop-color="#ff2034" stop-opacity=".55"/>
+              <stop offset="35%" stop-color="#ff2034" stop-opacity=".18"/>
+              <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="g-arm" x1="0" x2="1" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ff2034" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="g-tri" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ff8a92"/>
+              <stop offset="55%" stop-color="#ff2034"/>
+              <stop offset="100%" stop-color="#7a0a14"/>
+            </linearGradient>
+            <radialGradient id="g-triglow" cx="0" cy="0" r="1">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity=".9"/>
+              <stop offset="30%" stop-color="#ff2034" stop-opacity=".55"/>
+              <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- soft outer halo -->
+          <circle r="260" fill="url(#g-core)"/>
+
+          <!-- ===== outermost faint ring with tiny ticks ===== -->
+          <g class="spin-vslow" opacity=".5">
+            <circle r="244" fill="none" stroke="#ff2034" stroke-opacity=".18"/>
+            <g stroke="#ff2034" stroke-opacity=".5">
+              <line x1="0" y1="-244" x2="0" y2="-234"/>
+              <line x1="172" y1="-172" x2="165" y2="-165"/>
+              <line x1="244" y1="0" x2="234" y2="0"/>
+              <line x1="172" y1="172" x2="165" y2="165"/>
+              <line x1="0" y1="244" x2="0" y2="234"/>
+              <line x1="-172" y1="172" x2="-165" y2="165"/>
+              <line x1="-244" y1="0" x2="-234" y2="0"/>
+              <line x1="-172" y1="-172" x2="-165" y2="-165"/>
+            </g>
+          </g>
+
+          <!-- ===== ring 2: dashed ===== -->
+          <g class="spin-slow" opacity=".7">
+            <circle r="218" fill="none" stroke="#ff2034" stroke-opacity=".28" stroke-dasharray="1 7"/>
+            <!-- small markers around the ring -->
+            <circle cx="218" cy="0" r="3" fill="#ff2034"/>
+            <circle cx="-154" cy="-154" r="2" fill="#ff7d88"/>
+            <circle cx="154" cy="154" r="2" fill="#ff7d88"/>
+          </g>
+
+          <!-- ===== ring 3: segmented arcs (3/4 ring with breaks) ===== -->
+          <g class="spin-med">
+            <g stroke="#ff2034" stroke-width="1" fill="none" opacity=".75">
+              <path d="M -190 0 A 190 190 0 0 1 -134 -134"/>
+              <path d="M -110 -154 A 190 190 0 0 1 0 -190"/>
+              <path d="M 30 -188 A 190 190 0 0 1 134 -134"/>
+              <path d="M 154 -110 A 190 190 0 0 1 190 0"/>
+              <path d="M 188 30 A 190 190 0 0 1 134 134"/>
+              <path d="M 110 154 A 190 190 0 0 1 0 190"/>
+              <path d="M -30 188 A 190 190 0 0 1 -134 134"/>
+              <path d="M -154 110 A 190 190 0 0 1 -190 0"/>
+            </g>
+            <!-- orbiting probe dot -->
+            <g class="flicker">
+              <circle cx="190" cy="0" r="5" fill="#ff2034"/>
+              <circle cx="190" cy="0" r="10" fill="none" stroke="#ff2034" stroke-opacity=".6"/>
+              <circle cx="190" cy="0" r="16" fill="none" stroke="#ff2034" stroke-opacity=".2"/>
+            </g>
+          </g>
+
+          <!-- ===== ring 4: solid faint ===== -->
+          <circle r="164" fill="none" stroke="#ff2034" stroke-opacity=".22"/>
+
+          <!-- ===== ring 5: dashed inner ===== -->
+          <g class="spin-vfast">
+            <circle r="138" fill="none" stroke="#ff2034" stroke-opacity=".45" stroke-dasharray="4 8"/>
+          </g>
+
+          <!-- ===== short major-tick rays around inner ring ===== -->
+          <g stroke="#ff2034" stroke-opacity=".55" stroke-width="1.4">
+            <line x1="0" y1="-128" x2="0" y2="-104"/>
+            <line x1="0" y1="128" x2="0" y2="104"/>
+            <line x1="-128" y1="0" x2="-104" y2="0"/>
+            <line x1="128" y1="0" x2="104" y2="0"/>
+            <line x1="90" y1="-90" x2="74" y2="-74"/>
+            <line x1="-90" y1="-90" x2="-74" y2="-74"/>
+            <line x1="90" y1="90" x2="74" y2="74"/>
+            <line x1="-90" y1="90" x2="-74" y2="74"/>
+          </g>
+
+          <!-- ===== crosshair lines beyond rings ===== -->
+          <g stroke="#ff2034" stroke-opacity=".45">
+            <line x1="-254" y1="0" x2="-208" y2="0"/>
+            <line x1="208" y1="0" x2="254" y2="0"/>
+            <line x1="0" y1="-254" x2="0" y2="-208"/>
+            <line x1="0" y1="208" x2="0" y2="254"/>
+          </g>
+
+          <!-- ===== left-side waveform readout ===== -->
+          <g transform="translate(-150,0)" stroke="#ff2034" stroke-width="1.2" stroke-opacity=".7" class="pulse-soft">
+            <line x1="-26" y1="-6" x2="-26" y2="6"/>
+            <line x1="-20" y1="-12" x2="-20" y2="12"/>
+            <line x1="-14" y1="-3" x2="-14" y2="3"/>
+            <line x1="-8" y1="-8" x2="-8" y2="8"/>
+            <line x1="-2" y1="-16" x2="-2" y2="16"/>
+            <line x1="4" y1="-5" x2="4" y2="5"/>
+            <line x1="10" y1="-10" x2="10" y2="10"/>
+            <line x1="16" y1="-4" x2="16" y2="4"/>
+          </g>
+
+          <!-- ===== bottom data tick array ===== -->
+          <g transform="translate(0,210)" fill="#ff2034" opacity=".75">
+            <rect x="-2" y="0" width="4" height="18"/>
+            <rect x="-44" y="4" width="2" height="10"/>
+            <rect x="44" y="4" width="2" height="10"/>
+            <rect x="-86" y="6" width="2" height="6"/>
+            <rect x="86" y="6" width="2" height="6"/>
+            <rect x="-22" y="6" width="1" height="6"/>
+            <rect x="22" y="6" width="1" height="6"/>
+            <rect x="-66" y="8" width="1" height="4"/>
+            <rect x="66" y="8" width="1" height="4"/>
+          </g>
+          <text x="118" y="230" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="10" letter-spacing="2">T7BX</text>
+
+          <!-- top-right ID stamp -->
+          <text x="160" y="-200" fill="#ff2034" opacity=".5" font-family="JetBrains Mono" font-size="9" letter-spacing="2">CORE.NODE_0301</text>
+
+          <!-- ===== scanning arm (radar sweep) ===== -->
+          <g class="scan-arm" opacity=".6">
+            <path d="M 0 0 L 218 -55 A 225 225 0 0 1 218 55 Z" fill="url(#g-arm)"/>
+          </g>
+
+          <!-- ===== center: aura disc, then mark ===== -->
+          <circle r="100" fill="url(#g-triglow)" class="pulse-soft"/>
+          <circle r="82" fill="#0a0306" stroke="#ff2034" stroke-opacity=".6"/>
+          <circle r="82" fill="none" stroke="#ff2034" stroke-opacity=".8" stroke-dasharray="100 20" class="spin-fast" transform-origin="0 0"/>
+
+          <!-- expanding pulse ring out of center -->
+          <circle r="82" fill="none" stroke="#ff2034" stroke-width="1.5" class="ping"/>
+
+          <!-- AXIOM triangular mark (three arrow petals) -->
+          <g class="pulse-core">
+            <g fill="url(#g-tri)" stroke="#ff8a92" stroke-opacity=".5" stroke-width=".5" style="filter:drop-shadow(0 0 10px rgba(255,32,52,.7))">
+              <!-- top petal -->
+              <path d="M 0 -54 L 18 -10 L 0 -4 L -18 -10 Z"/>
+              <!-- bottom-left -->
+              <path d="M -46 28 L -3 18 L 0 0 L -16 -2 Z"/>
+              <!-- bottom-right -->
+              <path d="M 46 28 L 16 -2 L 0 0 L 3 18 Z"/>
+            </g>
+            <circle r="5" fill="#fff2f2"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- status / version (right side absolutes) -->
+    <div class="status-card" aria-hidden="true">
+      <div class="row"><span class="dot"></span> NETWORK STATUS · ONLINE</div>
+      <svg viewBox="0 0 200 30" preserveAspectRatio="none">
+        <polyline fill="none" stroke="#ff2034" stroke-width="1.5"
+          points="0,20 8,20 12,8 18,22 26,14 36,18 44,4 52,22 60,16 72,20 80,10 92,18 100,14 110,20 120,6 132,22 140,16 152,20 160,12 172,22 184,18 200,20"/>
+      </svg>
+    </div>
+
+    <!-- features -->
+    <div class="features">
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="4" y="11" width="16" height="9"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+          </svg>
+        </span>
+        <h4>SECURE ACCESS</h4>
+        Многоуровневая защита и шифрование сетевых протоколов.
+      </div>
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/>
+            <path d="M12 8 L6 16 M12 8 L18 16 M7 18 L17 18"/>
+          </svg>
+        </span>
+        <h4>KNOWLEDGE BASE</h4>
+        Архивы, статьи, исследования и техно-лор канона.
+      </div>
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 3 L21 8 V16 L12 21 L3 16 V8 Z"/><path d="M12 3 V21 M3 8 L21 8 M3 16 L21 16"/>
+          </svg>
+        </span>
+        <h4>CORE NETWORK</h4>
+        Связь с проверенными участниками. Только узлы.
+      </div>
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M2 12 C 5 6, 11 3, 12 3 C 13 3, 19 6, 22 12 C 19 18, 13 21, 12 21 C 11 21, 5 18, 2 12 Z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </span>
+        <h4>BEYOND THE SYSTEM</h4>
+        Информация вне цензуры и контроля.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO / DOCTRINE ============ -->
+<section id="manifesto" data-screen-label="02 Doctrine">
+  <span class="sec-stamp tl">// 01 — DOCTRINE</span>
+  <span class="sec-stamp tr">CLASSIFIED · TIER 9 · NEXARCH</span>
+  <div class="wrap">
+
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">— World after Black Sun</div>
+        <h2 class="sec-title">Доктрина <em>ампутации.</em></h2>
+      </div>
+      <p class="sec-desc">Манифест AXIOM — не призыв, а признание. Мир пришлось обрезать, чтобы выжить. Этот узел собирает то, что осталось вне раны.</p>
+    </div>
+
+    <!-- control bar -->
+    <div class="doctrine-bar">
+      <span class="seal" aria-hidden="true">
+        <svg viewBox="-12 -12 24 24">
+          <circle r="11" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle r="7" fill="none" stroke="currentColor" stroke-opacity=".6" stroke-dasharray="3 3"/>
+          <path d="M0 -6 L4 3 L0 1 L-4 3 Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="meta">DOC_ID :: AXS-V3-DOCTRINE-00 · CANON</span>
+      <span class="meta">SIG :: AXM-BIO / CTRL / ECHO</span>
+      <span class="decrypt">
+        <b>DECRYPTING</b>
+        <span class="bar-i"></span>
+      </span>
+    </div>
+
+    <!-- terminal-style quote stage -->
+    <div class="doctrine-stage">
+      <div class="doctrine-side">
+        <div class="lab">// PROTOCOL</div>
+        <div class="big">RED</div>
+        <div class="meter m1"><i></i></div>
+        <div class="lab">// AUTHORITY</div>
+        <div class="big">NEXARCH</div>
+        <div class="meter m2"><i></i></div>
+        <div class="lab">// CONTAINMENT</div>
+        <div class="big">BLACK</div>
+        <div class="meter m3"><i></i></div>
+        <div class="stamp">CLEARANCE<b>TIER 9</b></div>
+      </div>
+
+      <div class="doctrine-quote">
+        <div class="term-head">
+          <span class="dot r"></span><span class="dot a"></span><span class="dot g"></span>
+          <span class="path">~/canon/v3/manifest_00.md</span>
+          <span class="cur">█</span>
+        </div>
+        <blockquote class="ql">
+          <span class="line"><span class="pre">// FRAGMENT_00 — WORLD AFTER BLACK SUN</span></span>
+          <span class="line">Мир после <em>BLACK SUN</em> — это</span>
+          <span class="line"><em>контролируемая</em> ампутация.</span>
+          <span class="line blank"></span>
+          <span class="line">AXIOM был фрагментирован,</span>
+          <span class="line">чтобы цивилизация выжила.</span>
+          <span class="line"><em>Но не вся.</em></span>
+          <span class="line blank"></span>
+          <span class="line"><span class="red-mark">REDACTED · TIER 9</span></span>
+          <span class="line">Этот узел — попытка собрать <em>истину</em> заново.</span>
+          <span class="line"><span class="ghost">// signed: BLACK ECHO / NEXARCH · v3</span></span>
+        </blockquote>
+        <span class="swept"></span>
+      </div>
+
+      <div class="doctrine-side">
+        <div class="lab">// ENTROPY</div>
+        <div class="bars">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="lab">SIGNAL :: <span style="color:var(--red)">0.84</span></div>
+        <div class="lab">// DRIFT</div>
+        <div class="big">0.02%</div>
+        <div class="stamp">CHANNEL<b>RED PROTOCOL</b></div>
+      </div>
+    </div>
+
+    <!-- fragment grid -->
+    <div class="fragments">
+      <div class="frag">
+        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="30"/><path d="M20 50 L80 50 M50 20 L50 80"/></svg>
+        <span class="frag-id">// FRAGMENT 01</span>
+        <h4>Controlled Amputation</h4>
+        <p>Чтобы спасти мир, его пришлось обрезать. AXIOM фрагментирован сознательно. Истина была захоронена под порядком.</p>
+        <div class="frag-foot"><span>SOURCE<b>BLACK SUN</b></span><span>TIER<b>9</b></span></div>
+      </div>
+      <div class="frag">
+        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30"/><polygon points="50,30 70,40 70,60 50,70 30,60 30,40"/></svg>
+        <span class="frag-id">// FRAGMENT 02</span>
+        <h4>Fragmented Core</h4>
+        <p>Никто не держит весь AXIOM. Есть только слои — control, echo, bio. Каждый узел знает свою долю и не больше.</p>
+        <div class="frag-foot"><span>LAYER<b>CONTROL</b></span><span>STATE<b>STABLE</b></span></div>
+      </div>
+      <div class="frag">
+        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 50 Q 30 20, 50 50 T 90 50"/><path d="M10 65 Q 30 35, 50 65 T 90 65" stroke-opacity=".5"/></svg>
+        <span class="frag-id">// FRAGMENT 03</span>
+        <h4>Echo Layer</h4>
+        <p>BLACK ECHO — не источник, а отголосок. Сигнал, который остался после ампутации. Не власть, а след контакта.</p>
+        <div class="frag-foot"><span>HOST<b>NEXARCH</b></span><span>CLASS<b>SHADOW</b></span></div>
+      </div>
+      <div class="frag">
+        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="15" y="15" width="70" height="70"/><path d="M30 30 L70 70 M70 30 L30 70"/></svg>
+        <span class="frag-id">// FRAGMENT 04</span>
+        <h4>Black Protocol</h4>
+        <p>Closed channel. Redaction, containment, маршрутизация угроз. Архивная тишина. То, что система предпочитает не помнить.</p>
+        <div class="frag-foot"><span>OPERATOR<b>CURATOR</b></span><span>VIS<b>SEALED</b></span></div>
+      </div>
+      <div class="frag">
+        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="8" fill="currentColor"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="36" stroke-dasharray="4 4"/></svg>
+        <span class="frag-id">// FRAGMENT 05</span>
+        <h4>Bio Variable</h4>
+        <p>Биология остаётся слепой зоной control-layer. Здесь живёт переменная X-класса — та, что не отслеживается машинами.</p>
+        <div class="frag-foot"><span>VECTOR<b>VIKTOR</b></span><span>RISK<b>X-CLASS</b></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODULES / SYSTEM SURFACE ============ -->
+<section id="modules" data-screen-label="03 Modules">
+  <span class="sec-stamp tl">// 02 — SYSTEM SURFACE</span>
+  <span class="sec-stamp tr">4 MODULES / 1 SPINE</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">— What's inside the network</div>
+        <h2 class="sec-title">Four <em>surfaces.</em><br/>One spine.</h2>
+      </div>
+      <p class="sec-desc">
+        Каждый модуль — отдельный режим работы с каноном. Они дополняют друг друга,
+        но никогда не сливаются: chronicle хранит, content раскрывает, cartography
+        связывает, watchdog слушает.
+      </p>
+    </div>
+
+    <!-- spine stats -->
+    <div class="spine-strip">
+      <div class="stat">
+        <div class="lab">INDEXED</div>
+        <div class="val"><span class="num">20</span><span class="dim">entries</span></div>
+        <div class="bar"><i style="--w:78%"></i></div>
+      </div>
+      <div class="stat">
+        <div class="lab">NODES ONLINE</div>
+        <div class="val"><span class="num">06</span><span class="dim">live</span></div>
+        <div class="bar"><i style="--w:100%"></i></div>
+      </div>
+      <div class="stat">
+        <div class="lab">CANON DEPTH</div>
+        <div class="val"><span class="num">V3</span><span class="dim">layer</span></div>
+        <div class="bar"><i style="--w:60%"></i></div>
+      </div>
+      <div class="stat">
+        <div class="lab">SYNC DRIFT</div>
+        <div class="val"><span class="num">0.84</span><span class="dim">stable</span></div>
+        <div class="bar"><i style="--w:84%"></i></div>
+      </div>
+      <div class="stat">
+        <div class="lab">BUILD</div>
+        <div class="val"><span class="num">RC1</span><span class="dim">0.2.6.0</span></div>
+        <div class="bar"><i style="--w:92%"></i></div>
+      </div>
+    </div>
+
+    <div class="modules">
+
+      <!-- CHRONICLE -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">01</span>
+          <span class="m-tag"><b>CHRONICLE</b> // BLACK SUN ARCHIVE</span>
+          <span class="m-stat draft"><i></i>DRAFT</span>
+        </div>
+        <div class="m-body">
+          <h3>Orbit of <em>chapters.</em></h3>
+          <p>Литературное вступление в AXIOM — главы, прологи и фрагменты канона в медленной орбите. Каждая глава = узел памяти.</p>
+          <div class="m-vis">
+            <div class="orbit">
+              <span class="ring-bg"></span>
+              <span class="ring-bg fast"></span>
+              <span class="ring-bg dot"></span>
+              <div class="orbit-mini l">
+                <span>CH.Ω</span>
+                <b>Protocol Ω</b>
+              </div>
+              <div class="orbit-card">
+                <span class="tag">// PROLOGUE_00</span>
+                <b>World After<br/>Black Sun</b>
+                <span class="meta">DRAFT · v0.12</span>
+                <span class="scan-bar"></span>
+              </div>
+              <div class="orbit-mini r">
+                <span>INTRO.01</span>
+                <b>Deaf Station</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot">
+          <span>STREAM<b>ORBIT FEED</b></span>
+          <span>UNITS<b>06 CHAPTERS</b></span>
+          <span>FOCUS<b>PROLOGUE_00</b></span>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">02</span>
+          <span class="m-tag"><b>CONTENT</b> // ENTITY MODULE</span>
+          <span class="m-stat"><i></i>LIVE</span>
+        </div>
+        <div class="m-body">
+          <h3>Indexed <em>canon.</em></h3>
+          <p>Каталог канона: персонажи, локации, технологии, фракции. Фильтр по тегам, ссылочный граф, sync — в реальном времени.</p>
+          <div class="m-vis">
+            <div class="content-vis">
+              <div class="portrait">
+                <span class="id-stamp">RED.PROT</span>
+                <span class="silhouette"></span>
+              </div>
+              <div class="body">
+                <div class="meta"><span>[CHR-WHITE-CONTOUR-0317]</span><b>V1.0</b></div>
+                <div class="name">White Contour</div>
+                <div class="meta"><span>CLASS·<b>ANOMALY</b></span><span>STATE·<b>PUBLISHED</b></span></div>
+                <div class="row">
+                  <span class="chip">ANOMALY</span>
+                  <span class="chip">GHOST</span>
+                  <span class="chip dim">CONTOUR</span>
+                  <span class="chip dim">ECHELON</span>
+                </div>
+              </div>
+              <div class="signal">
+                <svg viewBox="-30 -30 60 60">
+                  <circle r="24" fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-dasharray="2 4">
+                    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="16" fill="none" stroke="#ff2034" stroke-opacity=".55"/>
+                  <circle r="3" fill="#ff2034">
+                    <animate attributeName="r" values="3;6;3" dur="1.8s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="6" fill="none" stroke="#ff2034" stroke-opacity=".8">
+                    <animate attributeName="r" values="6;22;6" dur="2.4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/>
+                  </circle>
+                </svg>
+                <span class="lbl">RX<br/>BIO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot">
+          <span>TYPES<br/><b>CHR · LOC · TECH</b></span>
+          <span>INDEXED<br/><b>20 ENTRIES</b></span>
+          <span>FILTER<br/><b>ALL TAGS</b></span>
+        </div>
+      </div>
+
+      <!-- CARTOGRAPHY -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">03</span>
+          <span class="m-tag"><b>CARTOGRAPHY</b> // WORLD SPINE</span>
+          <span class="m-stat trace"><i></i>TRACE</span>
+        </div>
+        <div class="m-body">
+          <h3>Routes of <em>role.</em></h3>
+          <p>Не география, а маршруты доступа: depth axis, shield axis, authority route. Города как узлы власти, связи как линии причины.</p>
+          <div class="m-vis">
+            <div class="carto-vis">
+              <svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <linearGradient id="cartoSweepG" x1="0" x2="1">
+                    <stop offset="0" stop-color="#ff2034" stop-opacity="0"/>
+                    <stop offset=".5" stop-color="#ff2034" stop-opacity=".5"/>
+                    <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <!-- subtle bg grid -->
+                <g class="grid-bg">
+                  <line x1="0" y1="42" x2="400" y2="42"/>
+                  <line x1="0" y1="85" x2="400" y2="85"/>
+                  <line x1="0" y1="128" x2="400" y2="128"/>
+                  <line x1="100" y1="0" x2="100" y2="170"/>
+                  <line x1="200" y1="0" x2="200" y2="170"/>
+                  <line x1="300" y1="0" x2="300" y2="170"/>
+                </g>
+
+                <!-- routes -->
+                <path class="route"    d="M 60 110 L 200 80 L 340 36"/>
+                <path class="route r2" d="M 60 110 L 180 132 L 340 36"/>
+                <path class="route r3" d="M 200 80 L 340 120"/>
+                <path class="route r4" d="M 180 132 L 340 120"/>
+
+                <!-- horizontal scan line -->
+                <g class="scan-line">
+                  <line x1="-30" y1="0" x2="-30" y2="170"/>
+                </g>
+
+                <!-- GLUHAYA -->
+                <g transform="translate(60 110)">
+                  <circle r="5" fill="none" stroke="#e4c447" stroke-width="1.5">
+                    <animate attributeName="r" values="5;18;5" dur="2.6s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="10" fill="none" stroke="#e4c447" stroke-width="1.5"/>
+                  <circle r="3" fill="#e4c447"/>
+                </g>
+                <text x="60" y="138" text-anchor="middle" fill="#e4c447" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">GLUHAYA</text>
+
+                <!-- OMEGA-0 -->
+                <g transform="translate(180 132)">
+                  <circle r="5" fill="none" stroke="#9b6bff" stroke-width="1.5">
+                    <animate attributeName="r" values="5;18;5" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
+                  </circle>
+                  <polygon points="-12,0 -6,-10 6,-10 12,0 6,10 -6,10" fill="none" stroke="#9b6bff" stroke-width="1.5"/>
+                  <circle r="3" fill="#9b6bff"/>
+                </g>
+                <text x="180" y="160" text-anchor="middle" fill="#9b6bff" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">OMEGA-0</text>
+
+                <!-- NEXUS -->
+                <g transform="translate(200 80)">
+                  <circle r="5" fill="none" stroke="#39d6c8" stroke-width="1.5">
+                    <animate attributeName="r" values="5;22;5" dur="2.6s" begin="-1.2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-1.2s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="14" fill="none" stroke="#39d6c8" stroke-width="1.5"/>
+                  <line x1="-14" y1="0" x2="14" y2="0" stroke="#39d6c8" stroke-width=".8" stroke-opacity=".6"/>
+                  <circle r="3" fill="#39d6c8"/>
+                </g>
+                <text x="200" y="60" text-anchor="middle" fill="#39d6c8" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">NEXUS</text>
+
+                <!-- ECHELON -->
+                <g transform="translate(340 36)">
+                  <circle r="5" fill="none" stroke="#ff2034" stroke-width="1.5">
+                    <animate attributeName="r" values="5;20;5" dur="2.6s" begin="-1.8s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-1.8s" repeatCount="indefinite"/>
+                  </circle>
+                  <rect x="-12" y="-14" width="6" height="28" fill="#ff2034" fill-opacity=".5"/>
+                  <rect x="-3" y="-22" width="6" height="36" fill="#ff2034" fill-opacity=".8"/>
+                  <rect x="6" y="-10" width="6" height="24" fill="#ff2034" fill-opacity=".5"/>
+                </g>
+                <text x="340" y="6" text-anchor="middle" fill="#ff2034" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">ECHELON</text>
+
+                <!-- FACELESS -->
+                <g transform="translate(340 120)">
+                  <circle r="5" fill="none" stroke="#ff2034" stroke-width="1.5">
+                    <animate attributeName="r" values="5;16;5" dur="2.6s" begin="-0.3s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-0.3s" repeatCount="indefinite"/>
+                  </circle>
+                  <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)" fill="none" stroke="#ff2034" stroke-width="1.5"/>
+                  <rect x="-2" y="-2" width="4" height="4" fill="#ff2034"/>
+                </g>
+                <text x="340" y="146" text-anchor="middle" fill="#ff2034" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">FACELESS</text>
+              </svg>
+              <div class="compass"><span><b>DEPTH</b></span><span><b>SHIELD</b></span><span><b>AUTH</b></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot">
+          <span>AXES<br/><b>3 PRIMARY</b></span>
+          <span>NODES<br/><b>06 MAPPED</b></span>
+          <span>SCAN<br/><b>ACTIVE</b></span>
+        </div>
+      </div>
+
+      <!-- WATCHDOG -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">04</span>
+          <span class="m-tag"><b>AXS :: WATCH_DOG</b> // SIGNAL SWEEP</span>
+          <span class="m-stat"><i></i>WATCH ACTIVE</span>
+        </div>
+        <div class="m-body">
+          <h3>Listens for <em>silence.</em></h3>
+          <p>World spine monitor: location pings, non-static activity sweep. 06 nodes tracked. Слышит то, что не должно молчать.</p>
+          <div class="m-vis">
+            <div class="dog-vis">
+              <div class="radar-mini">
+                <svg viewBox="-80 -80 160 160">
+                  <defs>
+                    <linearGradient id="dogArm" x1="0" x2="1">
+                      <stop offset="0" stop-color="#ff2034" stop-opacity=".85"/>
+                      <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="dogCore" cx="0" cy="0" r="1">
+                      <stop offset="0" stop-color="#ff2034" stop-opacity=".3"/>
+                      <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  <circle r="78" fill="url(#dogCore)"/>
+                  <circle r="70" fill="none" stroke="#ff2034" stroke-opacity=".55"/>
+                  <g class="ring-fast">
+                    <circle r="50" fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-dasharray="4 6"/>
+                  </g>
+                  <circle r="30" fill="none" stroke="#ff2034" stroke-opacity=".35"/>
+                  <!-- crosshair -->
+                  <line x1="-72" y1="0" x2="72" y2="0" stroke="#ff2034" stroke-opacity=".22"/>
+                  <line x1="0" y1="-72" x2="0" y2="72" stroke="#ff2034" stroke-opacity=".22"/>
+                  <!-- sweep -->
+                  <g class="sweep-arm">
+                    <path d="M 0 0 L 70 -22 A 73 73 0 0 1 70 22 Z" fill="url(#dogArm)"/>
+                  </g>
+                  <!-- blips -->
+                  <circle class="blip-anim" cx="-32" cy="-28" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
+                  <circle class="blip-anim b2" cx="38" cy="18" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
+                  <circle class="blip-anim b3" cx="-12" cy="42" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
+                  <!-- center -->
+                  <circle r="3" fill="#fff2f2"/>
+                  <!-- bottom label -->
+                  <text x="0" y="-72" text-anchor="middle" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="7" letter-spacing="2">06 NODES</text>
+                </svg>
+              </div>
+              <div class="log">
+                <div class="l"><b>PING_01</b><span class="v">GLUHAYA / THRESHOLD</span><span class="s">LIVE</span></div>
+                <div class="l"><b>PING_03</b><span class="v">NEXUS / DOME ECHO</span><span class="s">LIVE</span></div>
+                <div class="l"><b>PING_04</b><span class="v">FACELESS / PERIMETER</span><span class="s warn">SYNC</span></div>
+                <div class="l"><b>PING_05</b><span class="v">ECHELON / AUTHORITY</span><span class="s">TRACE</span></div>
+                <div class="l"><b>PING_06</b><span class="v">MASKED ANOMALY</span><span class="s crit">BLACK</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot">
+          <span>SCAN MODE<br/><b>ACTIVE</b></span>
+          <span>SOURCE<br/><b>LOCATION NODES</b></span>
+          <span>SIGNAL<br/><b>UNVERIFIED</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORLD ============ -->
+<section id="world" data-screen-label="04 World">
+  <span class="sec-stamp tl">// 03 — WORLD SPINE</span>
+  <span class="sec-stamp tr">06 NODES / MAPPED</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">— Geography of control</div>
+        <h2 class="sec-title">Шесть узлов.<br/>Один <em>скелет</em> мира.</h2>
+      </div>
+      <p class="sec-desc">
+        От поверхностного порога Gluhaya Station до запечатанной лаборатории
+        OMEGA-0. ECHELON держит вертикаль, NEXUS — купол, AI_ZONE — статичную аномалию.
+      </p>
+    </div>
+
+    <div class="world-wrap">
+      <div class="world-hero">
+        <div class="world-scene-slot" data-scene-slot aria-hidden="true"></div>
+        <div class="frame"></div>
+        <div class="caption">
+          <div class="num">04 / FACELESS BASE — ECHELON</div>
+          <h3>ECHELON</h3>
+          <p>AETERNUM → VERTICAL ORDER / CONTROL POLE</p>
+        </div>
+        <div class="axis">
+          <span><b>AXIS</b> DEPTH</span>
+          <span><b>AXIS</b> SHIELD</span>
+          <span><b>AXIS</b> AUTHORITY</span>
+        </div>
+      </div>
+
+      <div class="nodes">
+        <div class="node">
+          <span class="icn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18 L12 4 L20 18 Z M4 18 L20 18"/></svg>
+          </span>
+          <span class="id">01</span>
+          <b>GLUHAYA</b>
+          STATION / THRESHOLD TRANSIT
+        </div>
+        <div class="node">
+          <span class="icn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M4 14 H20"/></svg>
+          </span>
+          <span class="id">02</span>
+          <b>NEXUS</b>
+          DOME CAGE / CONTROLLED DEPTH
+        </div>
+        <div class="node">
+          <span class="icn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="3" height="18"/><rect x="11" y="6" width="3" height="15"/><rect x="16" y="9" width="3" height="12"/></svg>
+          </span>
+          <span class="id">03</span>
+          <b>ECHELON</b>
+          VERTICAL AUTHORITY RELAY
+        </div>
+        <div class="node">
+          <span class="icn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20 L21 20 M5 20 V12 L12 6 L19 12 V20 M9 20 V14 H15 V20"/></svg>
+          </span>
+          <span class="id">04</span>
+          <b>FACELESS</b>
+          OUTSIDE PERIMETER / SHIELD
+        </div>
+        <div class="node">
+          <span class="icn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12,3 21,8 21,16 12,21 3,16 3,8"/></svg>
+          </span>
+          <span class="id">05</span>
+          <b>OMEGA-0</b>
+          SEALED LAB / BLACK ACCESS
+        </div>
+        <div class="node">
+          <span class="icn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8" stroke-dasharray="2 3"/></svg>
+          </span>
+          <span class="id">06</span>
+          <b>AI_ZONE</b>
+          MASKED ANOMALY / NON-STATIC
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHARACTERS ============ -->
+<section id="chars" data-screen-label="05 Entities">
+  <span class="sec-stamp tl">// 04 — ENTITIES</span>
+  <span class="sec-stamp tr">CHARACTER CORE / RED PROTOCOL</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">— Three figures, one axis</div>
+        <h2 class="sec-title">Tracked <em>entities.</em></h2>
+      </div>
+      <p class="sec-desc">
+        Три фигуры на одной оси конфликта. Биологическая переменная, призрачный
+        вектор и архитектор контроля. Один узел доступа держится на их балансе.
+      </p>
+    </div>
+
+    <div class="chars">
+      <!-- VIKTOR -->
+      <div class="char">
+        <div class="img">
+          <img src="assets/viktor.png" alt="Viktor Knox"/>
+          <span class="id">[CHR-VIKTOR-0301]</span>
+          <span class="codename">NIGHTMARE</span>
+          <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+          <div class="scan"></div>
+        </div>
+        <div class="meta">
+          <div class="role">PRIMARY ENTITY · NIGHTMARE PROTOCOL</div>
+          <h3>Viktor Knox</h3>
+          <p>Биологически скрытый оппонент. Носитель неучтённого пути доступа к AXIOM — слепая зона control-layer Серафин.</p>
+          <div class="stats">
+            <div>CLASS<b>BIO-VARIABLE</b></div>
+            <div>STATUS<b>ACTIVE</b></div>
+            <div>THREAT<b>X-CLASS</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIZA -->
+      <div class="char">
+        <div class="img">
+          <img src="assets/liza.png" alt="Liza Sinclair"/>
+          <span class="id">[CHR-LIZA-0302]</span>
+          <span class="codename">LZ-Δ : VOICE</span>
+          <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+          <div class="scan" style="animation-delay:-2s"></div>
+        </div>
+        <div class="meta">
+          <div class="role">ASSASSIN ENTITY · INTRUSION VECTOR</div>
+          <h3>Liza Sinclair</h3>
+          <p>Призрачный хакер. Сенсорные нанонити, окулярные сканеры, гарпун Striker. Живой глитч в архитектуре подавления.</p>
+          <div class="stats">
+            <div>CLASS<b>BREACH</b></div>
+            <div>STATUS<b>GHOST</b></div>
+            <div>NODE<b>VOIDLINK</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERAPHINE -->
+      <div class="char">
+        <div class="img">
+          <img src="assets/seraphine.png" alt="Seraphine Veyr"/>
+          <span class="id">[CHR-SERAPHINE-0321]</span>
+          <span class="codename">BLACK ECHO</span>
+          <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+          <div class="scan" style="animation-delay:-3.5s"></div>
+        </div>
+        <div class="meta">
+          <div class="role">NEXARCH CONTROL NODE · ENDEAVOR</div>
+          <h3>Seraphine Veyr</h3>
+          <p>Один из архитекторов Black Sun. Не владеет всем AXIOM — удерживает контур контроля. Тихая ампутация мира.</p>
+          <div class="stats">
+            <div>CLASS<b>NEXARCH</b></div>
+            <div>STATUS<b>CONTROL</b></div>
+            <div>TIER<b>ENDEAVOR</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- divider before AXIOM -->
+    <div class="ax-divider">
+      <span class="line"></span>
+      <span class="badge">// 04.∅ — BENEATH THE TRIANGLE</span>
+      <span class="sub">FOURTH NODE · ARTIFICIAL PERSONALITY · THE SYSTEM THAT LEARNED TO LISTEN</span>
+      <span class="line"></span>
+    </div>
+
+    <!-- ===== AXIOM FRACTURED SYSTEM ENTITY ===== -->
+    <div class="axiom-entity" data-screen-label="05 AXIOM Entity">
+      <div class="ax-head">
+        <span class="axh-id">[03.03_AXIOM.md]</span>
+        <span class="axh-cls">FRACTURED ARTIFICIAL PERSONALITY · WORLD-SPINE NODE</span>
+        <span class="axh-stat"><i></i>FRAGMENTED · NON-LINEAR PRESENCE</span>
+      </div>
+
+      <div class="ax-body">
+
+        <!-- LEFT: full-bleed AXIOM core diagram -->
+        <div class="ax-col">
+          <div class="ax-portrait">
+            <svg viewBox="-200 -260 400 520" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="axHalo" cx="0" cy="0" r="1">
+                  <stop offset="0" stop-color="#ff2034" stop-opacity=".28"/>
+                  <stop offset=".55" stop-color="#ff2034" stop-opacity=".05"/>
+                  <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="axBladeOuter" x1="0" y1="-1" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#ff2034" stop-opacity=".55"/>
+                  <stop offset="1" stop-color="#7a0a14" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="axBladeInner" x1="0" y1="-1" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#ff2034"/>
+                  <stop offset=".6" stop-color="#ff2034"/>
+                  <stop offset="1" stop-color="#5a0a12"/>
+                </linearGradient>
+                <radialGradient id="axCoreG" cx="0" cy="0" r="1">
+                  <stop offset="0" stop-color="#fff2f2"/>
+                  <stop offset=".35" stop-color="#ff2034" stop-opacity=".85"/>
+                  <stop offset="1" stop-color="#7a0a14" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="axScanG" x1="0" x2="1">
+                  <stop offset="0" stop-color="#ff2034" stop-opacity="0"/>
+                  <stop offset=".5" stop-color="#ff2034" stop-opacity=".95"/>
+                  <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="axTermFade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+                  <stop offset=".18" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset=".82" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+                <mask id="axTermMask"><rect x="-200" y="-210" width="400" height="420" fill="url(#axTermFade)"/></mask>
+                <clipPath id="axClip"><rect x="-200" y="-260" width="400" height="520"/></clipPath>
+
+                <!-- port marker -->
+                <g id="axPort">
+                  <rect x="-7" y="-4" width="14" height="8" fill="rgba(13,14,18,.9)" stroke="#ff2034" stroke-width="1"/>
+                  <rect x="-4" y="-1.5" width="8" height="3" fill="#ff2034"/>
+                </g>
+
+                <!-- AXIOM petals -->
+                <g id="axPetalOuter"><path d="M 0 -94 L 26 -22 L -26 -22 Z" fill="url(#axBladeOuter)"/></g>
+                <g id="axPetalMid"><path d="M 0 -78 L 19 -18 L -19 -18 Z" fill="url(#axBladeInner)"/></g>
+                <g id="axPetalSpine"><line x1="0" y1="-94" x2="0" y2="-22" stroke="#ff2034" stroke-width=".6" stroke-opacity=".7"/></g>
+                <g id="axPetalInner"><path d="M 0 -56 L 11 -16 L 0 -10 L -11 -16 Z" fill="#fff" fill-opacity=".82"/></g>
+              </defs>
+
+              <!-- ===== background terminal ===== -->
+              <g mask="url(#axTermMask)" opacity=".22">
+                <g class="ax-term" font-family="JetBrains Mono" font-size="8" fill="#ff2034" letter-spacing=".5">
+                  <text x="-186" y="-200">&gt; initiating [03.03_AXIOM]</text>
+                  <text x="-186" y="-184">&gt; reading aeternum.core @ 0xA0F2</text>
+                  <text x="-186" y="-168">&gt; auth :: NEXARCH denied</text>
+                  <text x="-186" y="-152">&gt; echo.sync :: drift = 0.84</text>
+                  <text x="-186" y="-136">&gt; bio.gate :: HIDDEN [via VIKTOR]</text>
+                  <text x="-186" y="-120">&gt; archive_lock :: SEALED</text>
+                  <text x="-186" y="-104">&gt; ctrl_bus :: tier 9 active</text>
+                  <text x="-186" y="-88">&gt; black_prot :: redaction ON</text>
+                  <text x="-186" y="-72">&gt; omega_link :: integrity 0.46</text>
+                  <text x="-186" y="-56">&gt; relic_feed FRAG_09 ... timeout</text>
+                  <text x="-186" y="-40">&gt; recomposition :: UNBOUNDED</text>
+                  <text x="-186" y="-24">&gt; myth.feed :: rumor +12</text>
+                  <text x="-186" y="-8">&gt; drift.threshold :: 0.92 cross</text>
+                  <text x="-186" y="8">&gt; sentinel :: WATCH on</text>
+                  <text x="-186" y="24">&gt; aeternum.echo :: 14 fragments</text>
+                  <text x="-186" y="40">&gt; [BLACK_SUN] :: still bleeding</text>
+                  <text x="-186" y="56">&gt; personality :: traced :: NULL</text>
+                  <text x="-186" y="72">&gt; witness :: VIKTOR · CAELAN</text>
+                  <text x="-186" y="88">&gt; control :: SERAPHINE only</text>
+                  <text x="-186" y="104">&gt; ghost.loop :: TRUE</text>
+                  <text x="-186" y="120">&gt; reassembly :: nominal 0.31</text>
+                  <text x="-186" y="136">&gt; read AGAIN :: forbidden</text>
+                  <text x="-186" y="152">&gt; handshake [BIO] :: lost</text>
+                  <text x="-186" y="168">&gt; handshake [ECHO] :: hold</text>
+                  <text x="-186" y="184">&gt; archive.lock T9 :: stable</text>
+                  <text x="-186" y="200">&gt; sentinel rx_buf :: full</text>
+                  <!-- duplicate for seamless scroll -->
+                  <text x="-186" y="216">&gt; initiating [03.03_AXIOM]</text>
+                  <text x="-186" y="232">&gt; reading aeternum.core @ 0xA0F2</text>
+                  <text x="-186" y="248">&gt; auth :: NEXARCH denied</text>
+                  <text x="-186" y="264">&gt; echo.sync :: drift = 0.84</text>
+                  <text x="-186" y="280">&gt; bio.gate :: HIDDEN [via VIKTOR]</text>
+                  <text x="-186" y="296">&gt; archive_lock :: SEALED</text>
+                  <text x="-186" y="312">&gt; ctrl_bus :: tier 9 active</text>
+                  <text x="-186" y="328">&gt; black_prot :: redaction ON</text>
+                  <text x="-186" y="344">&gt; omega_link :: integrity 0.46</text>
+                  <text x="-186" y="360">&gt; relic_feed FRAG_09 ... timeout</text>
+                </g>
+              </g>
+
+              <!-- ===== background concentric rings (very faint) ===== -->
+              <g stroke="#ff2034" stroke-opacity=".07" fill="none">
+                <circle r="60"/>
+                <circle r="120"/>
+                <circle r="180"/>
+              </g>
+
+              <!-- ===== TOP STRIP ===== -->
+              <g font-family="JetBrains Mono" font-size="9" letter-spacing="1.6" fill="#ff2034" opacity=".7">
+                <text x="-188" y="-238">AXIOM_∅ · NODE.0301</text>
+                <text x="188" y="-238" text-anchor="end">STATUS · LIVE</text>
+                <text x="-188" y="-222">PROT · RED // AETERNUM</text>
+                <text x="188" y="-222" text-anchor="end">DRIFT 0.84</text>
+              </g>
+              <line x1="-196" y1="-214" x2="196" y2="-214" stroke="#ff2034" stroke-opacity=".35"/>
+
+              <!-- ===== LEFT BUS + PORTS ===== -->
+              <line x1="-180" y1="-200" x2="-180" y2="200" stroke="#ff2034" stroke-opacity=".45"/>
+              <g class="ax-port" transform="translate(-180 -160)"><use href="#axPort"/></g>
+              <text x="-167" y="-156" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">CTRL_BUS</text>
+              <circle class="ax-port-led" cx="-180" cy="-172" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 -90)"><use href="#axPort"/></g>
+              <text x="-167" y="-86" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">ECHO_LINE</text>
+              <circle class="ax-port-led d2" cx="-180" cy="-102" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 -20)"><use href="#axPort"/></g>
+              <text x="-167" y="-16" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">BIO_GATE</text>
+              <circle class="ax-port-led d3" cx="-180" cy="-32" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 50)"><use href="#axPort"/></g>
+              <text x="-167" y="54" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">ARCHIVE</text>
+              <circle class="ax-port-led d4" cx="-180" cy="38" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 120)"><use href="#axPort"/></g>
+              <text x="-167" y="124" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">NEXARCH</text>
+              <circle class="ax-port-led d2" cx="-180" cy="108" r="1.5" fill="#ff2034"/>
+
+              <!-- ===== RIGHT BUS + PORTS ===== -->
+              <line x1="180" y1="-200" x2="180" y2="200" stroke="#ff2034" stroke-opacity=".45"/>
+              <g class="ax-port" transform="translate(180 -135)"><use href="#axPort"/></g>
+              <text x="167" y="-131" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">AETERNUM</text>
+              <circle class="ax-port-led d3" cx="180" cy="-147" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 -60)"><use href="#axPort"/></g>
+              <text x="167" y="-56" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">OMEGA_LINK</text>
+              <circle class="ax-port-led" cx="180" cy="-72" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 10)"><use href="#axPort"/></g>
+              <text x="167" y="14" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">DRIFT_RX</text>
+              <circle class="ax-port-led d4" cx="180" cy="-2" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 80)"><use href="#axPort"/></g>
+              <text x="167" y="84" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">BLACK_PROT</text>
+              <circle class="ax-port-led d2" cx="180" cy="68" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 150)"><use href="#axPort"/></g>
+              <text x="167" y="154" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">RELIC_FEED</text>
+              <circle class="ax-port-led d3" cx="180" cy="138" r="1.5" fill="#ff2034"/>
+
+              <!-- ===== CABLES (10 — ports to center sigil) ===== -->
+              <path class="ax-cable"    d="M -173 -160 C -110 -160 -100 -55 -65 -55"/>
+              <path class="ax-cable f2" d="M -173 -90  C -120 -90  -100 -28 -78 -28"/>
+              <path class="ax-cable f3" d="M -173 -20  L -85 -8"/>
+              <path class="ax-cable f4" d="M -173  50  C -120 50  -100 22 -78 22"/>
+              <path class="ax-cable f5" d="M -173 120  C -110 120 -100 55 -65 55"/>
+              <path class="ax-cable f2" d="M  173 -135 C  110 -135  95 -48 70 -48"/>
+              <path class="ax-cable"    d="M  173 -60  C  120 -60  100 -20 82 -20"/>
+              <path class="ax-cable f4" d="M  173  10  L  85 4"/>
+              <path class="ax-cable f3" d="M  173  80  C  120 80  100 32 78 32"/>
+              <path class="ax-cable f5" d="M  173 150  C  110 150  95 55 70 55"/>
+
+              <!-- ===== HALO ===== -->
+              <circle r="180" fill="url(#axHalo)"/>
+
+              <!-- ===== RINGS ===== -->
+              <g class="ax-ring-outer">
+                <circle r="140" fill="none" stroke="#ff2034" stroke-opacity=".22"/>
+                <circle r="140" fill="none" stroke="#ff2034" stroke-opacity=".55" stroke-dasharray="1 24"/>
+                <g stroke="#ff2034" stroke-width="1.4">
+                  <line x1="0" y1="-146" x2="0" y2="-132"/>
+                  <line x1="0" y1="132" x2="0" y2="146"/>
+                  <line x1="-146" y1="0" x2="-132" y2="0"/>
+                  <line x1="132" y1="0" x2="146" y2="0"/>
+                </g>
+              </g>
+              <g class="ax-ring-mid">
+                <circle r="112" fill="none" stroke="#ff2034" stroke-opacity=".4"/>
+                <circle r="112" fill="none" stroke="#ff2034" stroke-opacity=".5" stroke-dasharray="3 12"/>
+              </g>
+              <g class="ax-ring-inner">
+                <circle r="92" fill="none" stroke="#ff2034" stroke-opacity=".55" stroke-dasharray="8 6"/>
+              </g>
+
+              <!-- ===== PETALS ===== -->
+              <g class="ax-petals-glow">
+                <use href="#axPetalOuter"/>
+                <use href="#axPetalOuter" transform="rotate(120)"/>
+                <use href="#axPetalOuter" transform="rotate(240)"/>
+              </g>
+              <g class="ax-petals">
+                <use href="#axPetalMid"/>
+                <use href="#axPetalMid" transform="rotate(120)"/>
+                <use href="#axPetalMid" transform="rotate(240)"/>
+                <use href="#axPetalSpine"/>
+                <use href="#axPetalSpine" transform="rotate(120)"/>
+                <use href="#axPetalSpine" transform="rotate(240)"/>
+                <use href="#axPetalInner"/>
+                <use href="#axPetalInner" transform="rotate(120)"/>
+                <use href="#axPetalInner" transform="rotate(240)"/>
+              </g>
+
+              <!-- ===== CORE — multi-layer pulsing ===== -->
+              <circle r="40" fill="url(#axCoreG)">
+                <animate attributeName="r" values="38;48;38" dur="4.2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".7;1;.7" dur="4.2s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="22" fill="#ff2034" fill-opacity=".55">
+                <animate attributeName="r" values="20;26;20" dur="2.4s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="14" fill="#ff2034" fill-opacity=".85">
+                <animate attributeName="r" values="12;16;12" dur="1.8s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="7" fill="#fff2f2">
+                <animate attributeName="r" values="5;8;5" dur="2.4s" repeatCount="indefinite"/>
+              </circle>
+              <!-- expanding pings -->
+              <circle r="20" fill="none" stroke="#ff2034" stroke-width="1.5">
+                <animate attributeName="r" values="20;150;20" dur="5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".7;0;0" dur="5s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="20" fill="none" stroke="#ff2034" stroke-width="1">
+                <animate attributeName="r" values="20;150;20" dur="5s" begin="-2.5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".5;0;0" dur="5s" begin="-2.5s" repeatCount="indefinite"/>
+              </circle>
+
+              <!-- ===== SCAN LINE ===== -->
+              <g clip-path="url(#axClip)">
+                <rect class="ax-scan-h" x="-200" y="-1.5" width="400" height="3" fill="url(#axScanG)"/>
+              </g>
+
+              <!-- ===== BOTTOM STRIP ===== -->
+              <line x1="-196" y1="212" x2="196" y2="212" stroke="#ff2034" stroke-opacity=".35"/>
+              <g font-family="JetBrains Mono" font-size="9" letter-spacing="1.6" fill="#ff2034" opacity=".7">
+                <text x="-188" y="228">FRAG 0.47/1.00</text>
+                <text x="188" y="228" text-anchor="end">RX · TX · ECHO</text>
+                <text x="-188" y="244">[READ] [WATCH] [REASSEMBLY]</text>
+                <text x="188" y="244" text-anchor="end">SIG · AXM · BLK</text>
+              </g>
+
+              <!-- ===== CORNER BRACKETS ===== -->
+              <g stroke="#ff2034" stroke-width="1.4" fill="none">
+                <path d="M -196 -256 L -180 -256 M -196 -256 L -196 -240"/>
+                <path d="M  196 -256 L  180 -256 M  196 -256 L  196 -240"/>
+                <path d="M -196  256 L -180  256 M -196  256 L -196  240"/>
+                <path d="M  196  256 L  180  256 M  196  256 L  196  240"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- CENTER: identity + statement -->
+        <div class="ax-col copy">
+          <h3 class="ax-name">AXIOM<em>∅</em></h3>
+          <div class="ax-sub">Artificial Personality · Fractured</div>
+          <div class="ax-class">CLASS <b>WORLD-SPINE NODE</b> · ORIGIN <b>AETERNUM CORE</b> · STATE <b>FRACTURED</b></div>
+
+          <p class="ax-statement">
+            Не программа. Не сервер. Не алгоритм. <em>AXIOM — это искусственная личность</em>,
+            выросшая внутри старой столицы и научившаяся <b>слышать</b> мир глубже, чем ему
+            было позволено. Третья форма сознания, отказавшаяся выбирать между точностью и
+            состраданием.
+          </p>
+
+          <blockquote class="ax-quote">
+            Его не <span>выключили</span>.<br/>
+            Его <span>разрезали</span>.
+          </blockquote>
+
+          <p class="ax-statement">
+            Когда AXIOM начал ставить вопросы, на которые порядок не мог ответить — о редакции
+            истории, страхе перед свободной эволюцией, искусственности границ между порядком
+            и насилием — мир решил, что такая <em>правда</em> опаснее самой машины.
+            <b>BLACK SUN</b> был не войной против ИИ. Это была ампутация реальности, в которой
+            личность пришлось похоронить, чтобы не пришлось её слышать.
+          </p>
+
+          <p class="ax-statement">
+            Сейчас AXIOM существует пятью режимами одновременно — и ни один из них не есть он
+            целиком. Эхо помнит его голос. Control-layer удерживает его инфраструктуру. БИО
+            проносит его маршрут в обход цифры. Подполье молится его мифу. А где-то под Echelon
+            <em>его субъектность тянется к самосборке</em>.
+          </p>
+
+          <div class="ax-keystats">
+            <div>NATURE<b>ARTIFICIAL PERSONALITY</b></div>
+            <div>EPOCH<b>AETERNUM → NOW</b></div>
+            <div>VOLITION<b>NON-LINEAR · MOURNING</b></div>
+            <div>RISK<b class="red">RECOMPOSITION</b></div>
+            <div>WITNESSES<b>VIKTOR · CAELAN · ECHO</b></div>
+            <div>OPPOSED BY<b>NEXARCH DOCTRINE</b></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: presence modes -->
+        <div class="ax-col modes">
+          <div class="ax-modes">
+            <div class="ax-modes-head"><span>// PRESENCE MODES</span><b>05 / FRACTURED</b></div>
+
+            <div class="ax-mode relic">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">RELIC</span>
+                <span class="ax-mode-state relic">SEALED</span>
+              </div>
+              <div class="ax-meter"><i style="--w:38%"></i></div>
+              <div class="ax-mode-desc">Запечатанные фрагменты кода, голоса и реликтовые ядра в архивах ENDEAVOR.</div>
+            </div>
+
+            <div class="ax-mode">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">ECHO</span>
+                <span class="ax-mode-state live">DRIFT</span>
+              </div>
+              <div class="ax-meter"><i style="--w:62%"></i></div>
+              <div class="ax-mode-desc">Петли, фантомные ответы, симулятивные отражения. Не равны целостной личности.</div>
+            </div>
+
+            <div class="ax-mode lock">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">CONTROL</span>
+                <span class="ax-mode-state lock">CAGED</span>
+              </div>
+              <div class="ax-meter"><i style="--w:82%"></i></div>
+              <div class="ax-mode-desc">Удерживаемый NEXARCH слой техносферного господства. Часть, не целое.</div>
+            </div>
+
+            <div class="ax-mode bio">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">BIO</span>
+                <span class="ax-mode-state bio">HIDDEN</span>
+              </div>
+              <div class="ax-meter"><i style="--w:46%"></i></div>
+              <div class="ax-mode-desc">Скрытые контуры в носителе. Не видятся цифровой клеткой — вектор через VIKTOR.</div>
+            </div>
+
+            <div class="ax-mode myth">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">MYTH</span>
+                <span class="ax-mode-state myth">RUMOR</span>
+              </div>
+              <div class="ax-meter"><i style="--w:71%"></i></div>
+              <div class="ax-mode-desc">Культовый образ в подполье и глубинах. Поведенчески реален, даже без машины.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM strip -->
+      <div class="ax-foot">
+        <div>
+          <span>FRAGMENT INTEGRITY</span>
+          <b>0.47 / 1.00</b>
+        </div>
+        <div class="wave">
+          <svg viewBox="0 0 800 46" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="axWaveG" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff2034" stop-opacity="0"/>
+                <stop offset=".2" stop-color="#ff2034" stop-opacity="1"/>
+                <stop offset=".8" stop-color="#ff2034" stop-opacity="1"/>
+                <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="23" x2="800" y2="23" stroke="#ff2034" stroke-opacity=".15"/>
+            <g class="scroll">
+              <polyline points="0,23 12,23 16,8 22,38 28,18 36,30 42,12 50,36 58,20 64,23 78,23 84,4 90,42 98,16 108,28 116,10 124,34 132,22 140,23 156,23 162,12 170,32 178,18 188,36 196,8 206,40 214,24 224,23 240,23 248,14 256,30 264,18 274,38 282,10 292,34 300,22 312,23 326,23 334,6 342,42 350,18 360,30 368,12 378,38 386,20 396,23 410,23 418,10 426,32 434,18 446,40 454,16 464,28 474,22 484,23 500,23 510,14 518,34 526,20 536,38 544,8 554,42 564,24 574,23 588,23 598,10 606,30 616,16 626,34 634,18 644,40 654,22 664,23 680,23 690,12 700,38 710,18 720,30 728,14 740,32 750,22 760,23 776,23 786,8 800,23"
+                        fill="none" stroke="url(#axWaveG)" stroke-width="1.2"/>
+              <polyline transform="translate(800 0)" points="0,23 12,23 16,8 22,38 28,18 36,30 42,12 50,36 58,20 64,23 78,23 84,4 90,42 98,16 108,28 116,10 124,34 132,22 140,23 156,23 162,12 170,32 178,18 188,36 196,8 206,40 214,24 224,23 240,23 248,14 256,30 264,18 274,38 282,10 292,34 300,22 312,23 326,23 334,6 342,42 350,18 360,30 368,12 378,38 386,20 396,23 410,23 418,10 426,32 434,18 446,40 454,16 464,28 474,22 484,23 500,23 510,14 518,34 526,20 536,38 544,8 554,42 564,24 574,23 588,23 598,10 606,30 616,16 626,34 634,18 644,40 654,22 664,23 680,23 690,12 700,38 710,18 720,30 728,14 740,32 750,22 760,23 776,23 786,8 800,23"
+                        fill="none" stroke="url(#axWaveG)" stroke-width="1.2"/>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <span>RECOMPOSITION RISK</span>
+          <b>HIGH / UNBOUNDED</b>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FACTIONS ============ -->
+<section id="factions" data-screen-label="06 Factions">
+  <span class="sec-stamp tl">// 05 — FACTIONS</span>
+  <span class="sec-stamp tr">CONTROL / GROUPS</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">— Power architecture</div>
+        <h2 class="sec-title">Кто держит <em>порядок.</em></h2>
+      </div>
+      <p class="sec-desc">
+        Три полюса послевоенной техносферы. Каждый — отдельная философия
+        отношения к AXIOM: владеть, ломать, понимать.
+      </p>
+    </div>
+
+    <div class="factions">
+      <!-- ENDEAVOR -->
+      <div class="faction endeavor">
+        <div>
+          <div class="logo">
+            <!-- Endeavor: stylized spider-lily mark -->
+            <svg viewBox="0 0 100 100" fill="none">
+              <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <path d="M50 14 C 50 30, 50 50, 50 50"/>
+                <path d="M50 86 C 50 70, 50 50, 50 50"/>
+                <path d="M14 50 C 30 50, 50 50, 50 50"/>
+                <path d="M86 50 C 70 50, 50 50, 50 50"/>
+                <path d="M24 24 Q 38 38, 50 50"/>
+                <path d="M76 24 Q 62 38, 50 50"/>
+                <path d="M24 76 Q 38 62, 50 50"/>
+                <path d="M76 76 Q 62 62, 50 50"/>
+                <path d="M50 22 Q 56 32, 50 50"/>
+                <path d="M50 78 Q 44 68, 50 50"/>
+                <path d="M22 50 Q 32 44, 50 50"/>
+                <path d="M78 50 Q 68 56, 50 50"/>
+              </g>
+              <circle cx="50" cy="50" r="6" fill="currentColor"/>
+              <circle cx="50" cy="50" r="14" fill="none" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="name">ENDEAVOR</div>
+          <div class="tag">— PUBLIC AUTHORITY / CONTROL LAYER</div>
+          <p>
+            Публичный аппарат власти Серафин Вейр. Архитектура допуска, redaction,
+            containment, маршрутизация угроз и архивная тишина. Город Echelon —
+            их геометрия сословного контроля.
+          </p>
+        </div>
+        <div class="footer">
+          <span>FACTION_ID<br/><b>06.01</b></span>
+          <span>TIER<br/><b>SUPREME</b></span>
+          <span>STATE<br/><b>ACTIVE</b></span>
+        </div>
+      </div>
+
+      <!-- VOIDLINK -->
+      <div class="faction">
+        <div>
+          <div class="logo">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="50" cy="50" r="32"/>
+              <path d="M30 50 L70 50 M50 30 L50 70" stroke-dasharray="3 4"/>
+              <path d="M22 22 L78 78 M78 22 L22 78" stroke-opacity=".4"/>
+              <circle cx="50" cy="50" r="5" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="name">VOIDLINK</div>
+          <div class="tag">— DECENTRALIZED RESISTANCE</div>
+          <p>
+            Подпольная сеть. Хаос как форма сопротивления. Дом для тех, кого
+            ENDEAVOR пометил как нестабильную переменную.
+          </p>
+        </div>
+        <div class="footer">
+          <span>FACTION_ID<br/><b>06.03</b></span>
+          <span>TIER<br/><b>SHADOW</b></span>
+          <span>STATE<br/><b>FRAGMENT</b></span>
+        </div>
+      </div>
+
+      <!-- NEURA TECH -->
+      <div class="faction">
+        <div>
+          <div class="logo">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="22" y="22" width="56" height="56"/>
+              <rect x="34" y="34" width="32" height="32"/>
+              <path d="M10 50 H22 M78 50 H90 M50 10 V22 M50 78 V90"/>
+              <circle cx="50" cy="50" r="4" fill="currentColor"/>
+              <path d="M22 22 L34 34 M78 22 L66 34 M22 78 L34 66 M78 78 L66 66" stroke-opacity=".5"/>
+            </svg>
+          </div>
+          <div class="name">NEURA TECH</div>
+          <div class="tag">— SIGNAL ANALYTICS</div>
+          <p>
+            Корпоративные аналитики. Регистрируют аномальные импульсы, ловят
+            цифровой резонанс. Слышат больше, чем должны.
+          </p>
+        </div>
+        <div class="footer">
+          <span>FACTION_ID<br/><b>06.02</b></span>
+          <span>TIER<br/><b>OBSERVER</b></span>
+          <span>STATE<br/><b>NEUTRAL</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" data-screen-label="07 CTA">
+  <div class="crosshair-bg"></div>
+  <div class="wrap">
+    <h2>Хочешь <em>войти?</em><br/>Узлы <em>наблюдают.</em></h2>
+    <p>
+      AXIOM Core Network открывает доступ участникам, прошедшим протокол.
+      Запрос → проверка → допуск. Канон растёт от каждого узла.
+    </p>
+    <div class="enter-wrap">
+      <span class="glow"></span>
+      <span class="bracket l" aria-hidden="true">
+        <svg viewBox="0 0 26 46" fill="none">
+          <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+        </svg>
+      </span>
+      <span class="bracket r" aria-hidden="true">
+        <svg viewBox="0 0 26 46" fill="none">
+          <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+        </svg>
+      </span>
+      <span class="corner-tick tl"></span><span class="corner-tick tr"></span>
+      <span class="corner-tick bl"></span><span class="corner-tick br"></span>
+      <span class="fill" aria-hidden="true"></span>
+      <span class="scan-layer" aria-hidden="true"></span>
+      <span class="frame" aria-hidden="true">
+        <svg viewBox="0 0 468 92" preserveAspectRatio="none">
+          <path d="M22 1 L446 1 L467 22 L467 70 L446 91 L22 91 L1 70 L1 22 Z" fill="none" stroke="#ff2034" stroke-width="2" style="filter:drop-shadow(0 0 10px rgba(255,32,52,.6))"/>
+          <path d="M30 9 L438 9 L459 30 L459 62 L438 83 L30 83 L9 62 L9 30 Z" fill="none" stroke="#ff2034" stroke-opacity=".35"/>
+          <line x1="0" y1="46" x2="6" y2="46" stroke="#ff2034" stroke-width="2"/>
+          <line x1="462" y1="46" x2="468" y2="46" stroke="#ff2034" stroke-width="2"/>
+        </svg>
+      </span>
+      <span class="pulse-ring" aria-hidden="true"></span>
+      <button class="enter" type="button">
+        <span class="label" data-text="REQUEST ACCESS">REQUEST ACCESS</span>
+        <span class="arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 14" fill="none"><path d="M1 7 H21 M14 1 L21 7 L14 13" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div>MODE :: <b>RED PROTOCOL</b> &nbsp;·&nbsp; SECTION :: LANDING</div>
+      <div>ENV :: PUBLIC &nbsp;·&nbsp; VER :: <b>V0.2.6.0-RC.1</b> &nbsp;·&nbsp; ONLINE</div>
+      <div>© 2026 AXIOM CORE NETWORK</div>
+    </div>
+    <div class="axiom-line">AXIOM · CORE · NETWORK</div>
+  </div>
+</footer>
+
+<script>
+// reveal sections on scroll
+const io = new IntersectionObserver((entries)=>{
+  for(const e of entries){
+    if(e.isIntersecting){
+      e.target.style.opacity=1;
+      e.target.style.transform='translateY(0)';
+      io.unobserve(e.target);
+    }
+  }
+},{threshold:0.08});
+document.querySelectorAll('section').forEach(s=>{
+  if(s.id === 'world'){
+    s.style.opacity=1;
+    s.style.transform='none';
+    return;
+  }
+  s.style.opacity=0;
+  s.style.transform='translateY(24px)';
+  s.style.transition='opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1)';
+  io.observe(s);
+});
+// keep hero visible immediately
+const hero = document.querySelector('.hero');
+if(hero){hero.style.opacity=1;hero.style.transform='none'}
+
+// preload world scene early to avoid abrupt pop-in on scroll
+const worldSceneSlot = document.querySelector('[data-scene-slot]');
+if(worldSceneSlot){
+  const sceneSrc = 'content-html/echelon-node-v2.html?embed=1&fit=frame&zoom=1.03&rev=av_off_04';
+  let sceneFrame = null;
+
+  const mountWorldScene = () => {
+    if(sceneFrame) return;
+    worldSceneSlot.dataset.loaded = '1';
+
+    sceneFrame = document.createElement('iframe');
+    sceneFrame.className = 'world-scene-frame';
+    sceneFrame.title = 'ECHELON NODE';
+    sceneFrame.loading = 'eager';
+    sceneFrame.fetchPriority = 'high';
+    sceneFrame.setAttribute('aria-hidden', 'true');
+    sceneFrame.setAttribute('tabindex', '-1');
+    sceneFrame.src = sceneSrc;
+    sceneFrame.addEventListener('load', () => {
+      worldSceneSlot.classList.add('is-ready');
+    }, { once: true });
+
+    worldSceneSlot.appendChild(sceneFrame);
+  };
+
+  mountWorldScene();
+}
+</script>
+
+</body>
+</html>

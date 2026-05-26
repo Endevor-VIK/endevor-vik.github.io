@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AXIOM / 404 :: Node Unresolved</title>
+  <meta name="description" content="Путь не найден. Вернитесь на публичный лендинг ENDEVOR/AXIOM.">
+  <link rel="icon" type="image/svg+xml" href="./assets/axiom-seal.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #06070a;
+      --bg2: #101420;
+      --text: #ecf1ff;
+      --muted: #9aa4ba;
+      --red: #ff3454;
+      --border: rgba(255,255,255,.16);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(700px 500px at 20% 10%, rgba(255, 52, 84, .22), transparent 64%),
+        radial-gradient(800px 640px at 96% 98%, rgba(93, 150, 255, .15), transparent 66%),
+        linear-gradient(165deg, var(--bg), var(--bg2));
+      color: var(--text);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      border: 1px solid var(--border);
+      border-bottom: 2px solid var(--red);
+      border-radius: 18px;
+      background: rgba(8, 11, 18, .82);
+      padding: clamp(20px, 4vw, 34px);
+      box-shadow: 0 16px 52px rgba(0,0,0,.4), 0 0 22px rgba(255,52,84,.18);
+    }
+
+    .tag {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .tag::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 99px;
+      background: var(--red);
+      box-shadow: 0 0 12px var(--red);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Orbitron", sans-serif;
+      font-size: clamp(30px, 6vw, 56px);
+      line-height: 1.04;
+      letter-spacing: .02em;
+    }
+
+    h1 span { color: var(--red); }
+
+    p {
+      margin: 16px 0 22px;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    pre {
+      margin: 0;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px dashed rgba(255,255,255,.22);
+      background: rgba(255,255,255,.02);
+      font-size: 12px;
+      line-height: 1.6;
+      color: #deebff;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .actions {
+      margin-top: 18px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 14px;
+      background: rgba(255,255,255,.03);
+      transition: 160ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.35);
+      background: rgba(255,255,255,.07);
+    }
+
+    .btn.primary {
+      border-color: rgba(255,52,84,.75);
+      background: linear-gradient(180deg, rgba(255,52,84,.30), rgba(255,52,84,.12));
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="tag">AXIOM route control</div>
+    <h1><span>404</span> Node Unresolved</h1>
+    <p>Запрошенный маршрут не найден в текущем публичном контуре. Вернитесь на основной лендинг или откройте UI-поверхность проекта.</p>
+    <pre id="trace"></pre>
+    <div class="actions">
+      <a class="btn primary" href="/">На главную</a>
+      <a class="btn" href="https://endevor-vik.github.io/AXIOM_DEMO_UI/" target="_blank" rel="noopener noreferrer">Открыть AXIOM UI</a>
+      <a class="btn" href="https://github.com/Endevor-VIK" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+    </div>
+  </main>
+
+  <script>
+    const text = [
+      "> error: ROUTE_NOT_FOUND",
+      "> path: " + location.pathname + location.search + location.hash,
+      "> host: " + location.host,
+      "> action: return_to_root(/)"
+    ].join("\n");
+    document.getElementById("trace").textContent = text;
+  </script>
+</body>
+</html>
