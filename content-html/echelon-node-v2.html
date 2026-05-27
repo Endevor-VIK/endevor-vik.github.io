@@ -1114,6 +1114,21 @@
       transform: translateX(8px);
     }
 
+    .railway-train-layer.is-static .railway-train-float,
+    .railway-train-layer.is-static .enx-sheen-shift,
+    .railway-train-layer.is-static .enx-headlight-pulse,
+    .railway-train-layer.is-static .enx-window-shimmer {
+      animation: none;
+    }
+
+    .railway-train-layer.is-static .enx-door-corridor,
+    .railway-train-layer.is-static .enx-door-corridor-core,
+    .railway-train-layer.is-static .enx-door-corridor-floor,
+    .railway-train-layer.is-static .enx-door-corridor-edge,
+    .railway-train-layer.is-static .enx-door-leaf {
+      transition: none;
+    }
+
     @keyframes railwayTrainFloat {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-1.25px); }
@@ -4711,6 +4726,11 @@
     .transport-layer-high { z-index: 33; }
     .transport-layer-mid { z-index: 39; }
     .transport-layer-low { z-index: 43; }
+
+    .transport-layer-mid .transport-craft:nth-of-type(n + 5),
+    .transport-layer-low .transport-craft:nth-of-type(n + 5) {
+      display: none;
+    }
 
     .transport-craft {
       position: absolute;
@@ -11152,9 +11172,19 @@
         window.requestAnimationFrame(tick);
       };
 
+      const setStaticStopUnderCentralTower = () => {
+        runtime.direction = -1;
+        runtime.mode = "doors-hold";
+        runtime.modeUntil = Number.POSITIVE_INFINITY;
+        runtime.stoppedOnThisPass = true;
+        runtime.currentSpeed = 0;
+        runtime.left = getStopLeft();
+        layerEl.classList.add("is-static", "is-door-open");
+        applyMotionTransform();
+      };
+
       buildTrain();
-      resetPass(-1);
-      window.requestAnimationFrame(tick);
+      setStaticStopUnderCentralTower();
     })();
   </script>
 </body>
