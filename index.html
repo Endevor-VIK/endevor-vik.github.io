@@ -1061,6 +1061,53 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 </style>
 </head>
 <body>
+<div id="axiom-boot" style="position:fixed;inset:0;z-index:9999;background:#000">
+  <iframe
+    src="loader.html?target=about:blank&duration=4400&auto=true"
+    style="border:0;width:100%;height:100%;display:block"
+    title="AXIOM boot"
+  ></iframe>
+</div>
+<script>
+  (function () {
+    var boot = document.getElementById('axiom-boot');
+    if (!boot) return;
+
+    if (sessionStorage.getItem('axiom_loader_seen') === '1') {
+      boot.remove();
+      return;
+    }
+
+    var frame = boot.querySelector('iframe');
+    var hidden = false;
+    var firstLoadDone = false;
+
+    function hide() {
+      if (hidden || !boot) return;
+      hidden = true;
+      boot.style.transition = 'opacity .35s ease';
+      boot.style.opacity = '0';
+      setTimeout(function () {
+        if (boot.parentNode) boot.remove();
+      }, 400);
+      sessionStorage.setItem('axiom_loader_seen', '1');
+    }
+
+    setTimeout(hide, 5600);
+
+    frame.addEventListener('load', function () {
+      if (!firstLoadDone) {
+        firstLoadDone = true;
+        return;
+      }
+      try {
+        if (frame.contentWindow.location.href === 'about:blank') hide();
+      } catch (_) {
+        hide();
+      }
+    });
+  })();
+</script>
 
 <header class="top">
   <div class="nav">

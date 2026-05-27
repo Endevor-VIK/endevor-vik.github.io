@@ -14,8 +14,10 @@ AXS_HEADER_META:
   change_policy: "Обновлять при изменении структуры/контента лендинга"
   links:
     index: ./index.html
+    loader: ./loader.html
     not_found: ./404.html
     assets: ./assets/
+    loader_integration: ./docs/LOADER_INTEGRATION.md
 -->
 
 # endevor-vik.github.io
@@ -24,8 +26,10 @@ AXS_HEADER_META:
 
 ## Структура
 - `index.html` — основная публичная страница.
+- `loader.html` — boot-loader (CRT/terminal/progress/glitch), подключён как overlay-первый кадр.
 - `404.html` — брендированная fallback-страница.
 - `assets/` — графика, переиспользованная из `apps/axiom-web-core-ui`.
+- `docs/LOADER_INTEGRATION.md` — протокол и варианты подключения loader.
 
 ## Контент
 - Обзор AXS-экосистемы (`apps/runtime/canon/ops`).
