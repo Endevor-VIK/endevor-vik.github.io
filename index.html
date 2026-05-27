@@ -43,6 +43,30 @@ body{
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--red);color:#0a0a0a}
 
+/* ------- CUSTOM CURSOR (INDEX) ------- */
+.index-cursor{
+  position:fixed;width:26px;height:26px;pointer-events:none;z-index:120;
+  transform:translate(-50%,-50%);mix-blend-mode:screen;opacity:0;
+  transition:opacity .18s ease, transform .12s ease;
+}
+.index-cursor::before,.index-cursor::after{
+  content:"";position:absolute;background:var(--red);box-shadow:0 0 6px var(--red);
+}
+.index-cursor::before{left:50%;top:0;bottom:0;width:1px;transform:translateX(-50%)}
+.index-cursor::after{top:50%;left:0;right:0;height:1px;transform:translateY(-50%)}
+.index-cursor i{
+  position:absolute;left:50%;top:50%;width:8px;height:8px;border:1px solid var(--red);
+  transform:translate(-50%,-50%);box-shadow:0 0 6px rgba(255,32,52,.35);
+}
+.index-cursor.active{transform:translate(-50%,-50%) scale(1.16)}
+@media (hover: hover) and (pointer: fine){
+  html,body{cursor:none}
+  a,button,[role="button"],input,textarea,select,label{cursor:none}
+}
+@media (hover: none), (pointer: coarse){
+  .index-cursor{display:none}
+}
+
 /* ------- HEADER / TICKER ------- */
 .top{
   position:sticky;top:0;z-index:50;
@@ -1108,6 +1132,8 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
     });
   })();
 </script>
+
+<div class="index-cursor" id="indexCursor" aria-hidden="true"><i></i></div>
 
 <header class="top">
   <div class="nav">
@@ -2652,6 +2678,32 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 </footer>
 
 <script>
+const indexCursor = document.getElementById('indexCursor');
+if(indexCursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches){
+  let cx = window.innerWidth / 2;
+  let cy = window.innerHeight / 2;
+
+  const drawCursor = () => {
+    indexCursor.style.left = cx + 'px';
+    indexCursor.style.top = cy + 'px';
+    requestAnimationFrame(drawCursor);
+  };
+  requestAnimationFrame(drawCursor);
+
+  window.addEventListener('mousemove', (e) => {
+    cx = e.clientX;
+    cy = e.clientY;
+    indexCursor.style.opacity = '1';
+  });
+  window.addEventListener('mouseleave', () => { indexCursor.style.opacity = '0'; });
+  window.addEventListener('mouseenter', () => { indexCursor.style.opacity = '1'; });
+
+  document.addEventListener('mouseover', (e) => {
+    const interactive = e.target.closest('a, button, [role="button"], input, textarea, select, label');
+    indexCursor.classList.toggle('active', Boolean(interactive));
+  });
+}
+
 // reveal sections on scroll
 const io = new IntersectionObserver((entries)=>{
   for(const e of entries){
