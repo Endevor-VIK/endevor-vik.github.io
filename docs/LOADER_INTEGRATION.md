@@ -24,7 +24,7 @@ AXS_HEADER_META:
 (`index.html`). Поведение: CRT-power-on → терминал с потоком handshake-логов → проявление
 wordmark **AXIOM** → прогресс-бар 0→100% → глитч-переход на целевую страницу.
 
-Длительность по умолчанию **~4.8 c**. Skip — `ESC` / `Enter` / `Space` / клик по prompt.
+Длительность по умолчанию **~4.8 c**. Skip — `ESC` / `Enter` / `Space` / клик по prompt / клик по кнопке `ESC`.
 
 ---
 
@@ -150,6 +150,7 @@ loader.html?target=index.html&auto=false
 
 - `ESC`, `Enter`, `Space` — мгновенно завершить.
 - Клик по prompt `> ENTER AXIOM CORE NETWORK` (появляется на 100%) — то же самое.
+- Кнопка `ESC` (правый нижний угол) — то же самое.
 - Skip всегда проходит через тот же glitch-transition — выглядит цельно с авто-завершением.
 
 ---
