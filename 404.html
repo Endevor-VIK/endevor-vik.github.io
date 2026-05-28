@@ -1,151 +1,423 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AXIOM / 404 :: Node Unresolved</title>
-  <meta name="description" content="Путь не найден. Вернитесь на публичный лендинг ENDEVOR/AXIOM.">
-  <link rel="icon" type="image/svg+xml" href="./assets/axiom-seal.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #06070a;
-      --bg2: #101420;
-      --text: #ecf1ff;
-      --muted: #9aa4ba;
-      --red: #ff3454;
-      --border: rgba(255,255,255,.16);
-    }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>AXIOM // 404 ROUTE NOT DEPLOYED</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#070709;
+  --bg-2:#0c0d10;
+  --panel:#0d0e12;
+  --panel-2:rgba(13,14,18,.78);
+  --line:#1b1b22;
+  --line-2:#2a2a33;
+  --ink:#f1f1f4;
+  --ink-2:#c9c9d1;
+  --mute:#6d6e76;
+  --red:#ff2034;
+  --red-2:#ff4a54;
+  --glow:rgba(255,32,52,.28);
+  --glow-soft:rgba(255,32,52,.12);
+  --ok:#7be08a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',ui-monospace,monospace;-webkit-font-smoothing:antialiased}
+body{
+  min-height:100svh;
+  overflow:hidden;
+  background:
+    radial-gradient(1100px 620px at 82% -8%, rgba(255,32,52,.10), transparent 60%),
+    radial-gradient(900px 520px at -10% 35%, rgba(255,32,52,.06), transparent 56%),
+    linear-gradient(180deg, rgba(255,32,52,.03), transparent 28%),
+    var(--bg);
+}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--red);color:#0a0a0a}
 
-    * { box-sizing: border-box; }
+/* custom cursor */
+.index-cursor{position:fixed;width:24px;height:24px;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);opacity:0;transition:opacity .18s ease, transform .12s ease}
+.index-cursor::before,.index-cursor::after{content:"";position:absolute;box-shadow:0 0 8px rgba(255,32,52,.5)}
+.index-cursor::before{left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);background:linear-gradient(90deg,#000 0 1px,var(--red) 1px 2px)}
+.index-cursor::after{top:50%;left:0;right:0;height:2px;transform:translateY(-50%);background:linear-gradient(180deg,#000 0 1px,var(--red) 1px 2px)}
+.index-cursor i{position:absolute;left:50%;top:50%;width:8px;height:8px;background:rgba(0,0,0,.6);border:1px solid #000;transform:translate(-50%,-50%);box-shadow:0 0 0 1px var(--red), 0 0 10px rgba(255,32,52,.45)}
+.index-cursor.active{transform:translate(-50%,-50%) scale(1.12)}
+@media (hover:hover) and (pointer:fine){html,body{cursor:none}a,button{cursor:none}}
+@media (hover:none),(pointer:coarse){.index-cursor{display:none}}
 
-    html, body {
-      margin: 0;
-      min-height: 100%;
-      background:
-        radial-gradient(700px 500px at 20% 10%, rgba(255, 52, 84, .22), transparent 64%),
-        radial-gradient(800px 640px at 96% 98%, rgba(93, 150, 255, .15), transparent 66%),
-        linear-gradient(165deg, var(--bg), var(--bg2));
-      color: var(--text);
-      font-family: "Manrope", "Segoe UI", sans-serif;
-      display: grid;
-      place-items: center;
-      padding: 20px;
-    }
+.power{position:fixed;inset:0;z-index:50;background:#fff;pointer-events:none;animation:power .3s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes power{0%{opacity:0;transform:scaleY(.002)}20%{opacity:1;transform:scaleY(.01)}58%{opacity:.88;transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
 
-    .card {
-      width: min(760px, 100%);
-      border: 1px solid var(--border);
-      border-bottom: 2px solid var(--red);
-      border-radius: 18px;
-      background: rgba(8, 11, 18, .82);
-      padding: clamp(20px, 4vw, 34px);
-      box-shadow: 0 16px 52px rgba(0,0,0,.4), 0 0 22px rgba(255,52,84,.18);
-    }
+.bg-grid{position:fixed;inset:0;pointer-events:none;z-index:0;background:
+ linear-gradient(rgba(255,32,52,.035) 1px, transparent 1px) 0 0/100% 58px,
+ linear-gradient(90deg, rgba(255,32,52,.035) 1px, transparent 1px) 0 0/58px 100%;
+ opacity:.42;mask-image:radial-gradient(76% 76% at 50% 50%, #000, transparent 96%)}
+.scan{position:fixed;inset:0;pointer-events:none;z-index:1;background:repeating-linear-gradient(180deg, rgba(255,255,255,.022) 0 1px, transparent 1px 3px);mix-blend-mode:overlay;opacity:.42}
+.scan::after{content:"";position:absolute;left:0;right:0;height:140px;background:linear-gradient(180deg, transparent 0, rgba(255,32,52,.08) 50%, transparent 100%);animation:scanRoll 7s linear infinite}
+@keyframes scanRoll{from{transform:translateY(-180px)}to{transform:translateY(100svh)}}
+.noise{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.6' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .8 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 
-    .tag {
-      font-size: 12px;
-      color: var(--muted);
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 14px;
-    }
+.frame{position:fixed;inset:20px;z-index:3;pointer-events:none;border:1px solid rgba(255,32,52,.22)}
+.frame::before,.frame::after,.frame i:nth-child(1),.frame i:nth-child(2){content:"";position:absolute;width:22px;height:22px;border:2px solid var(--red)}
+.frame::before{top:-2px;left:-2px;border-right:none;border-bottom:none}.frame::after{top:-2px;right:-2px;border-left:none;border-bottom:none}
+.frame i:nth-child(1){bottom:-2px;left:-2px;border-right:none;border-top:none}.frame i:nth-child(2){bottom:-2px;right:-2px;border-left:none;border-top:none}
+.corner-info{position:fixed;left:42px;top:34px;z-index:4;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);opacity:.86}
+.corner-info b{display:block;color:var(--ink);font-size:14px;letter-spacing:.24em;margin-bottom:2px}
+.status-chip{position:fixed;right:42px;top:36px;z-index:4;display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-2);padding:10px 14px;border:1px solid var(--line-2);background:rgba(13,14,18,.6)}
+.status-chip .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 
-    .tag::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 99px;
-      background: var(--red);
-      box-shadow: 0 0 12px var(--red);
-    }
+.stage{position:relative;z-index:5;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:84px 32px 42px}
+.shell{width:min(1220px,100%);max-height:calc(100svh - 126px);display:grid;grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);gap:24px;align-items:stretch}
+.card{position:relative;border:1px solid var(--line-2);background:var(--panel-2);overflow:hidden;backdrop-filter:blur(10px)}
+.card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(255,32,52,.02), transparent 25%, transparent 70%, rgba(255,32,52,.03));pointer-events:none}
+.left{padding:28px 30px 26px;display:flex;flex-direction:column;justify-content:space-between;min-height:0}
+.right{padding:24px;display:flex;flex-direction:column;justify-content:space-between;min-height:0}
 
-    h1 {
-      margin: 0;
-      font-family: "Orbitron", sans-serif;
-      font-size: clamp(30px, 6vw, 56px);
-      line-height: 1.04;
-      letter-spacing: .02em;
-    }
+.kicker{display:inline-flex;align-items:center;gap:10px;padding:7px 12px;border:1px solid var(--red);color:var(--red);font-size:10px;letter-spacing:.30em;text-transform:uppercase;box-shadow:0 0 16px rgba(255,32,52,.16) inset,0 0 20px rgba(255,32,52,.08);width:max-content}
+.kicker::before{content:"";width:6px;height:6px;background:var(--red);box-shadow:0 0 8px var(--red)}
 
-    h1 span { color: var(--red); }
+.title{margin:18px 0 10px;font-family:'Oswald',sans-serif;font-weight:500;line-height:.92;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(56px,7vw,100px)}
+.title .line{display:block;opacity:0;transform:translateY(18px);filter:blur(6px);animation:wordIn .8s cubic-bezier(.2,.8,.2,1) forwards}
+.title .line:nth-child(2){animation-delay:.14s;color:var(--red);text-shadow:0 0 24px rgba(255,32,52,.45)}
+@keyframes wordIn{to{opacity:1;transform:none;filter:blur(0)}}
+.subtitle{max-width:620px;color:var(--ink-2);font-size:14px;line-height:1.7;margin:0 0 18px}
+.subtitle b{color:var(--red);font-weight:600}
 
-    p {
-      margin: 16px 0 22px;
-      color: var(--muted);
-      line-height: 1.75;
-    }
+.copy-box{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:4px 0 18px}
+.info{border:1px solid var(--line);padding:14px 14px 12px;background:rgba(0,0,0,.18);min-height:84px}
+.info .cap{font-size:10px;letter-spacing:.26em;color:var(--red);text-transform:uppercase;margin-bottom:8px}
+.info p{margin:0;color:var(--mute);font-size:12px;line-height:1.55}
+.info p strong{color:var(--ink-2)}
 
-    pre {
-      margin: 0;
-      padding: 12px;
-      border-radius: 12px;
-      border: 1px dashed rgba(255,255,255,.22);
-      background: rgba(255,255,255,.02);
-      font-size: 12px;
-      line-height: 1.6;
-      color: #deebff;
-      white-space: pre-wrap;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    }
+.term{border:1px solid var(--line);background:rgba(0,0,0,.24);margin-bottom:18px;overflow:hidden}
+.term-head{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute)}
+.term-head .l{display:flex;align-items:center;gap:8px;color:var(--red)}
+.term-head .l::before{content:"";width:8px;height:8px;background:var(--red);box-shadow:0 0 8px var(--red);animation:pulse 1.4s infinite}
+.term-body{padding:12px 14px 14px;display:grid;gap:7px;font-size:12px;line-height:1.45;min-height:136px}
+.term-line{display:flex;gap:10px;white-space:nowrap;overflow:hidden}
+.term-line .p{color:var(--red);flex:none}
+.term-line .b{color:var(--ink-2);min-width:0;overflow:hidden;text-overflow:ellipsis}
+.term-line .ok{color:var(--ok);margin-left:8px}
+.term-line .warn{color:#ffd166;margin-left:8px}
+.term-line .dim{color:var(--mute)}
+.cursor{display:inline-block;width:8px;height:13px;background:var(--red);box-shadow:0 0 8px var(--red);vertical-align:-2px;margin-left:4px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
 
-    .actions {
-      margin-top: 18px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 20px;border:1px solid var(--red);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);background:linear-gradient(180deg, rgba(255,32,52,.10), rgba(255,32,52,.04));box-shadow:0 0 16px rgba(255,32,52,.08) inset, 0 0 18px rgba(255,32,52,.08);transition:transform .2s ease, background .2s ease, box-shadow .2s ease, border-color .2s ease}
+.btn::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg, transparent, rgba(255,120,130,.16), transparent);transform:translateX(-120%);transition:transform .55s ease}
+.btn:hover{transform:translateY(-2px);background:linear-gradient(180deg, rgba(255,32,52,.16), rgba(255,32,52,.06));box-shadow:0 0 20px rgba(255,32,52,.16), inset 0 0 18px rgba(255,32,52,.12)}
+.btn:hover::before{transform:translateX(120%)}
+.btn.secondary{border-color:var(--line-2);background:rgba(255,255,255,.02);color:var(--ink-2)}
+.btn.secondary:hover{border-color:var(--red);color:var(--ink)}
+.btn .arr{color:var(--red);font-weight:700}
 
-    .btn {
-      text-decoration: none;
-      color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 11px;
-      padding: 10px 14px;
-      font-weight: 700;
-      font-size: 14px;
-      background: rgba(255,255,255,.03);
-      transition: 160ms ease;
-    }
+.right-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.right-top .label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute)}
+.right-top .label b{color:var(--red);display:block;font-size:12px;letter-spacing:.18em;margin-top:4px}
+.signal-badge{padding:8px 10px;border:1px solid var(--red);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
 
-    .btn:hover {
-      transform: translateY(-1px);
-      border-color: rgba(255,255,255,.35);
-      background: rgba(255,255,255,.07);
-    }
+.radar{position:relative;aspect-ratio:1/1;max-width:360px;width:min(100%,360px);margin:16px auto 8px;filter:drop-shadow(0 0 40px rgba(255,32,52,.22))}
+.radar svg{width:100%;height:100%;display:block;overflow:visible}
+.spin-slow{transform-origin:0 0;animation:spin 28s linear infinite}
+.spin-med{transform-origin:0 0;animation:spin 12s linear infinite reverse}
+.scan-arm{transform-origin:0 0;animation:spin 6s linear infinite}
+.ping{transform-origin:0 0;animation:ping 2.8s ease-out infinite}
+.pulse-soft{animation:pulseSoft 3.2s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ping{0%{opacity:.82;transform:scale(.55)}100%{opacity:0;transform:scale(1.45)}}
+@keyframes pulseSoft{0%,100%{opacity:.45}50%{opacity:.95}}
 
-    .btn.primary {
-      border-color: rgba(255,52,84,.75);
-      background: linear-gradient(180deg, rgba(255,52,84,.30), rgba(255,52,84,.12));
-    }
-  </style>
+.channels{display:grid;gap:12px}
+.ch{border:1px solid var(--line);background:rgba(0,0,0,.18);padding:12px 14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px}
+.ch .icon{width:36px;height:36px;border:1px solid var(--red);display:grid;place-items:center;color:var(--red);font-size:12px;letter-spacing:.1em}
+.ch .text .cap{font-size:10px;letter-spacing:.24em;color:var(--red);text-transform:uppercase;margin-bottom:5px}
+.ch .text .desc{font-size:12px;line-height:1.45;color:var(--mute)}
+.ch .state{font-size:10px;letter-spacing:.22em;color:var(--ink-2);text-transform:uppercase;white-space:nowrap}
+.ch .state b{display:block;color:var(--ok);margin-top:4px}
+
+.foot-note{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:10px;letter-spacing:.20em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.foot-note b{color:var(--red)}
+
+/* Simplify for laptop / small desktop */
+@media (max-width: 1260px){
+  .stage{padding:76px 24px 32px}
+  .shell{max-height:calc(100svh - 108px);grid-template-columns:minmax(0,1fr) 340px;gap:18px}
+  .left{padding:24px}.right{padding:20px}
+  .title{font-size:clamp(48px,6vw,82px)}
+  .term-body{min-height:124px}
+  .radar{max-width:300px}
+}
+@media (max-height: 820px){
+  .corner-info,.status-chip{top:24px}
+  .frame{inset:16px}
+  .stage{padding-top:68px;padding-bottom:24px}
+  .shell{max-height:calc(100svh - 92px)}
+  .title{font-size:clamp(44px,5.5vw,76px);margin:14px 0 8px}
+  .subtitle{font-size:13px;line-height:1.55;margin-bottom:12px}
+  .copy-box{gap:10px;margin-bottom:12px}
+  .info{padding:11px 12px;min-height:72px}
+  .info p{font-size:11px;line-height:1.42}
+  .term-head{padding:8px 12px}
+  .term-body{padding:10px 12px 12px;gap:6px;min-height:112px;font-size:11.5px}
+  .btn{min-height:48px;padding:0 18px}
+  .radar{max-width:240px;margin:12px auto 6px}
+  .channels{gap:10px}
+  .ch{padding:10px 12px}
+}
+
+/* Tablet */
+@media (max-width: 980px){
+  body{overflow:auto}
+  .stage{display:block;min-height:auto;padding:88px 18px 18px}
+  .shell{max-height:none;grid-template-columns:1fr;gap:16px}
+  .right{order:2}
+  .copy-box{grid-template-columns:1fr}
+  .radar{max-width:280px}
+}
+
+/* Mobile simplified version */
+@media (max-width: 640px){
+  body{overflow:auto}
+  .power,.scan,.noise,.bg-grid{opacity:.75}
+  .frame{inset:10px}
+  .frame::before,.frame::after,.frame i{width:14px;height:14px;border-width:1.5px}
+  .corner-info{left:22px;top:18px;font-size:8px;letter-spacing:.22em}
+  .corner-info b{font-size:11px;letter-spacing:.18em}
+  .status-chip{right:18px;top:18px;padding:6px 8px;font-size:8px;letter-spacing:.16em}
+  .status-chip span:last-child{display:none}
+  .stage{padding:68px 12px 12px}
+  .shell{display:block;width:100%}
+  .right{display:none}
+  .left{padding:18px 16px 16px;min-height:auto}
+  .kicker{font-size:8.5px;letter-spacing:.22em;padding:6px 9px}
+  .title{font-size:40px;line-height:.95;margin:14px 0 10px}
+  .subtitle{font-size:13px;line-height:1.58;margin-bottom:12px}
+  .copy-box{display:none}
+  .term{margin-bottom:14px}
+  .term-head{padding:8px 10px;font-size:8px;letter-spacing:.18em}
+  .term-head > :last-child{display:none}
+  .term-body{padding:10px;min-height:auto;gap:6px;font-size:11px}
+  .term-line:nth-child(n+5){display:none}
+  .actions{display:grid;grid-template-columns:1fr;gap:10px}
+  .btn{width:100%;min-height:48px;padding:0 14px;font-size:10px;letter-spacing:.18em}
+  .foot-note{font-size:8px;letter-spacing:.14em;display:grid;gap:4px}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+</style>
 </head>
 <body>
-  <main class="card" role="main">
-    <div class="tag">AXIOM route control</div>
-    <h1><span>404</span> Node Unresolved</h1>
-    <p>Запрошенный маршрут не найден в текущем публичном контуре. Вернитесь на основной лендинг или откройте UI-поверхность проекта.</p>
-    <pre id="trace"></pre>
-    <div class="actions">
-      <a class="btn primary" href="/">На главную</a>
-      <a class="btn" href="https://endevor-vik.github.io/AXIOM_DEMO_UI/" target="_blank" rel="noopener noreferrer">Открыть AXIOM UI</a>
-      <a class="btn" href="https://github.com/Endevor-VIK" target="_blank" rel="noopener noreferrer">GitHub profile</a>
-    </div>
+  <div class="power" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="frame" aria-hidden="true"><i></i><i></i></div>
+
+  <div class="corner-info" aria-hidden="true">
+    <b>AXIOM CORE</b>
+    PUBLIC HOLDING NODE
+  </div>
+
+  <div class="status-chip" aria-hidden="true">
+    <span class="dot"></span>
+    <span>MAIN SITE :: IN DEVELOPMENT</span>
+  </div>
+
+  <main class="stage">
+    <section class="shell" aria-label="AXIOM 404 Page">
+      <article class="card left">
+        <div>
+          <div class="kicker">404 // ROUTE NOT DEPLOYED</div>
+
+          <h1 class="title">
+            <span class="line">O-OPS</span>
+            <span class="line">ROUTE LOST</span>
+          </h1>
+
+          <p class="subtitle">
+            Если вы хотели попасть на основной сайт <b>AXIOM</b> — всё в порядке. 
+            Платформа ещё находится в стадии <b>development / deployment prep</b>. 
+            Скоро здесь можно будет изучить контент, познакомиться с продуктом и войти в систему.
+          </p>
+
+          <div class="copy-box">
+            <div class="info">
+              <div class="cap">Status</div>
+              <p><strong>Core platform:</strong> building.<br><strong>Public access:</strong> soon.</p>
+            </div>
+            <div class="info">
+              <div class="cap">External Signal</div>
+              <p>Пока основной node готовится, доступны <strong>GitHub</strong> и <strong>Telegram</strong> каналы проекта.</p>
+            </div>
+          </div>
+
+          <div class="term" aria-label="Diagnostic terminal">
+            <div class="term-head">
+              <div class="l">Diagnostic Terminal</div>
+              <div>PUBLIC ACCESS TRACE</div>
+            </div>
+            <div class="term-body" id="terminal">
+              <div class="term-line"><span class="p">&gt;</span><span class="b">route.scan("/requested/path")</span></div>
+              <div class="term-line"><span class="p">&gt;</span><span class="b">status: 404 / route not found</span><span class="warn">WARN</span></div>
+              <div class="term-line"><span class="p">&gt;</span><span class="b">main.platform: under development</span><span class="ok">ONLINE</span></div>
+              <div class="term-line"><span class="p">&gt;</span><span class="b">signal.redirect: github + telegram</span><span class="ok">READY</span></div>
+              <div class="term-line"><span class="p">&gt;</span><span class="b">recommendation: follow external channel<span class="cursor" aria-hidden="true"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Endevor-VIK" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub repository">
+              <span>Open Git // Source Trace</span>
+              <span class="arr">→</span>
+            </a>
+            <a class="btn" href="https://t.me/Project_AXIOM" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram channel">
+              <span>Open Telegram // Project Signal</span>
+              <span class="arr">→</span>
+            </a>
+            <a class="btn secondary" href="./index.html" aria-label="Return to landing page">
+              <span>Return // Landing Node</span>
+              <span class="arr">↺</span>
+            </a>
+          </div>
+
+          <div class="foot-note">
+            <span><b>RU:</b> новости проекта, часть контента и процесс разработки доступны во внешних каналах</span>
+            <span><b>ENG:</b> public preview channels active while core site is not deployed</span>
+          </div>
+        </div>
+      </article>
+
+      <aside class="card right" aria-label="Signal channels">
+        <div class="right-top">
+          <div class="label">
+            Signal Relay
+            <b>PUBLIC OUTBOUND CHANNELS</b>
+          </div>
+          <div class="signal-badge">EXTERNAL FEED</div>
+        </div>
+
+        <div class="radar" aria-hidden="true">
+          <svg viewBox="-180 -180 360 360" role="img" aria-label="Signal radar">
+            <defs>
+              <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ff4a54" stop-opacity="0.65"/>
+                <stop offset="60%" stop-color="#ff2034" stop-opacity="0.16"/>
+                <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="arm" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#ff2034" stop-opacity="0.88"/>
+                <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <circle r="152" fill="none" stroke="rgba(255,32,52,.16)" stroke-width="1"/>
+            <circle r="118" fill="none" stroke="rgba(255,32,52,.18)" stroke-width="1"/>
+            <circle r="84" fill="none" stroke="rgba(255,32,52,.22)" stroke-width="1"/>
+            <circle r="52" fill="none" stroke="rgba(255,32,52,.24)" stroke-width="1"/>
+            <g class="spin-slow">
+              <path d="M0 -154 L0 154 M-154 0 L154 0" stroke="rgba(255,32,52,.18)" stroke-width="1"/>
+              <path d="M-108 -108 L108 108 M108 -108 L-108 108" stroke="rgba(255,32,52,.10)" stroke-width="1"/>
+            </g>
+            <g class="spin-med pulse-soft">
+              <path d="M0 0 L126 -58" stroke="rgba(255,32,52,.65)" stroke-width="2"/>
+              <circle cx="126" cy="-58" r="5" fill="#ff2034"/>
+              <circle cx="126" cy="-58" r="16" fill="none" stroke="rgba(255,32,52,.65)" stroke-width="1" class="ping"/>
+            </g>
+            <g class="scan-arm">
+              <path d="M0 0 L150 0" stroke="url(#arm)" stroke-width="3" stroke-linecap="round"/>
+            </g>
+            <circle r="32" fill="url(#coreGlow)"/>
+            <circle r="12" fill="#ff2034"/>
+            <circle r="4" fill="#fff"/>
+            <text x="0" y="-18" text-anchor="middle" font-size="10" fill="#f1f1f4" letter-spacing="3">AXIOM</text>
+          </svg>
+        </div>
+
+        <div class="channels">
+          <div class="ch">
+            <div class="icon">GH</div>
+            <div class="text">
+              <div class="cap">Git // Source Trace</div>
+              <div class="desc">Исходники, рабочие репозитории, проектные артефакты и dev-history.</div>
+            </div>
+            <div class="state">Channel<b>AVAILABLE</b></div>
+          </div>
+          <div class="ch">
+            <div class="icon">TG</div>
+            <div class="text">
+              <div class="cap">Telegram // Project Signal</div>
+              <div class="desc">Новости проекта, часть контента и обновления по разработке AXIOM.</div>
+            </div>
+            <div class="state">Feed<b>ONLINE</b></div>
+          </div>
+        </div>
+
+        <div class="foot-note">
+          <span><b>Route:</b> 404 lost / public reroute</span>
+          <span><b>Mode:</b> holding node</span>
+        </div>
+      </aside>
+    </section>
   </main>
 
-  <script>
-    const text = [
-      "> error: ROUTE_NOT_FOUND",
-      "> path: " + location.pathname + location.search + location.hash,
-      "> host: " + location.host,
-      "> action: return_to_root(/)"
-    ].join("\n");
-    document.getElementById("trace").textContent = text;
-  </script>
+  <div class="index-cursor" aria-hidden="true"><i></i></div>
+
+<script>
+(() => {
+  const cursor = document.querySelector('.index-cursor');
+  if (cursor && window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    window.addEventListener('mousemove', (e) => {
+      cursor.style.opacity = '1';
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    }, {passive:true});
+    document.querySelectorAll('a,button').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+    });
+  }
+
+  const term = document.getElementById('terminal');
+  if (!term || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const lines = [...term.querySelectorAll('.term-line')];
+  const originals = lines.map(line => line.innerHTML);
+  lines.forEach(line => line.innerHTML = '');
+
+  const typeHTML = (node, html, speed = 12) => {
+    return new Promise(resolve => {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      const text = tmp.textContent || '';
+      let i = 0;
+      const timer = setInterval(() => {
+        i++;
+        node.textContent = text.slice(0, i);
+        if (i >= text.length) {
+          clearInterval(timer);
+          node.innerHTML = html;
+          resolve();
+        }
+      }, speed);
+    });
+  };
+
+  (async () => {
+    for (let i = 0; i < lines.length; i++) {
+      await typeHTML(lines[i], originals[i], 10);
+      await new Promise(r => setTimeout(r, 100));
+    }
+  })();
+})();
+</script>
 </body>
 </html>
