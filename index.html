@@ -1082,14 +1082,127 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .kicker-rows{display:none}
 }
 @media (max-width:640px){
-  .world-hero{height:400px}
-  .world-hero .caption h3{font-size:28px}
-  .world-hero .caption p{max-width:260px;font-size:10px}
-  .world-hero .axis{left:calc(var(--world-frame-inset) + 12px);bottom:calc(var(--world-frame-inset) + 10px);gap:12px;font-size:9px}
-  .chars{grid-template-columns:1fr}
-  .nav{padding:14px 18px}
-  .wrap{padding:0 18px}
-  .hero-frame{inset:18px}
+  .top{position:static}
+  .ticker{display:none}
+  .nav{padding:12px 14px}
+  .brand b{font-size:11px;letter-spacing:.12em}
+  .brand small,.status{display:none}
+  .wrap{padding:0 14px}
+
+  section{padding:56px 0}
+  .sec-stamp{display:none}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:24px}
+  .sec-num{font-size:9px;letter-spacing:.2em}
+  .sec-title{font-size:34px;line-height:1}
+  .sec-desc{max-width:none;font-size:14px;line-height:1.55;color:var(--ink-2)}
+
+  .hero{padding:32px 0 28px;min-height:auto}
+  .hero-frame,.hero-particles,.kicker-rows,.status-card,.version-card,.radar,.crosshair-bg{display:none}
+  .hero-grid{padding:0;gap:18px}
+  h1.title{font-size:clamp(44px,16vw,68px);margin:14px 0}
+  .lede{max-width:none;font-size:15px;line-height:1.55;margin-bottom:20px}
+  .features{margin:16px 0 0;padding:14px 12px;grid-template-columns:1fr;gap:12px}
+  .feature{padding:0;font-size:13px;line-height:1.45}
+  .feature .icon{display:none}
+  .feature h4{margin:0 0 4px;font-size:11px;letter-spacing:.14em}
+  .feature:nth-child(n+3){display:none}
+
+  .enter-wrap{width:100%;height:70px;padding:0 12px;filter:none}
+  .enter-wrap .glow,.enter-wrap .bracket,.enter-wrap .corner-tick,.enter-wrap .pulse-ring{display:none}
+  .enter{inset:0 12px;font-size:13px;letter-spacing:.22em;padding:0 14px;gap:10px}
+  .enter:hover{letter-spacing:.22em}
+  .enter:hover .arrow{transform:none}
+  .enter .arrow{width:24px;height:24px}
+
+  .doctrine-bar{padding:10px 12px;gap:10px;font-size:9px;letter-spacing:.14em;margin-bottom:16px}
+  .doctrine-bar .meta:nth-of-type(2),
+  .doctrine-bar .decrypt{display:none}
+  .doctrine-stage{grid-template-columns:1fr;gap:12px;margin-bottom:16px}
+  .doctrine-side{display:none}
+  .ql{padding:18px 16px 20px;font-size:22px;line-height:1.24}
+  .ql .line .pre{margin-bottom:8px}
+  .ql .ghost{display:none}
+
+  .fragments{grid-template-columns:1fr;gap:10px}
+  .frag{min-height:auto;padding:16px 14px;gap:6px}
+  .frag h4{font-size:16px}
+  .frag p{font-size:13px;line-height:1.45}
+  .frag .glyph{display:none}
+  .frag:nth-child(n+4){display:none}
+
+  .spine-strip{display:none}
+  .modules{grid-template-columns:1fr;gap:12px}
+  .module{min-height:auto}
+  .module .m-head{padding:12px 14px;gap:10px}
+  .module .m-num{width:28px;height:28px;font-size:11px}
+  .module .m-tag{font-size:9px;letter-spacing:.18em}
+  .module .m-body{padding:14px}
+  .module h3{font-size:26px}
+  .module p{font-size:13px;line-height:1.5;max-width:none}
+  .module .m-vis,.module > .m-foot,.module .m-stat,.module .m-corners,.module .m-sweep{display:none}
+
+  .world-hero{height:auto;min-height:300px}
+  .world-scene-slot{
+    background-image:url('assets/echelon_city.png');
+    background-image:-webkit-image-set(url('assets/echelon_city_mobile.webp') type('image/webp'), url('assets/echelon_city.png') type('image/png'));
+    background-image:image-set(url('assets/echelon_city_mobile.webp') type('image/webp'), url('assets/echelon_city.png') type('image/png'));
+    background-size:cover;
+    background-position:center;
+  }
+  .world-scene-frame{display:none !important}
+  .world-hero .frame{display:none}
+  .world-hero .caption{left:14px;top:14px}
+  .world-hero .caption h3{font-size:30px;margin:4px 0}
+  .world-hero .caption p{max-width:220px;font-size:10px;letter-spacing:.1em}
+  .world-hero .axis{left:14px;bottom:12px;gap:10px;font-size:8px;letter-spacing:.15em}
+  .nodes{grid-template-columns:1fr;border:none;margin-top:10px;gap:8px}
+  .node{border:1px solid var(--line-2);padding:12px;font-size:10px;letter-spacing:.14em}
+  .node .icn{display:none}
+  .node b{font-size:12px}
+  .node:nth-child(n+4){display:none}
+
+  .chars{grid-template-columns:1fr;gap:12px}
+  .char .img{aspect-ratio:3/4}
+  .char .img img{object-position:center top}
+  .char .img .corners,.char .img .scan,.char .img .id,.char .img .codename{display:block}
+  .char .img .id,.char .img .codename{top:10px;font-size:8.5px;letter-spacing:.22em}
+  .char .meta{padding:14px}
+  .char .meta h3{font-size:24px;margin:4px 0 8px}
+  .char .meta p{font-size:13px;line-height:1.5;min-height:0}
+  .char .stats{display:none}
+
+  .ax-divider{margin:28px 0 12px;gap:8px;font-size:9px;letter-spacing:.16em}
+  .ax-divider .line,.ax-divider .sub{display:none}
+  .axiom-entity .ax-head{padding:10px 12px;gap:10px;font-size:9px;letter-spacing:.12em}
+  .axiom-entity .ax-head .axh-cls,.axiom-entity .ax-head .axh-stat{display:none}
+  .axiom-entity .ax-col:first-child,
+  .axiom-entity .ax-col.modes,
+  .axiom-entity .ax-foot{display:none}
+  .axiom-entity .ax-col.copy{padding:16px 14px}
+  .ax-name{font-size:48px}
+  .ax-name::after,.ax-sub,.ax-class,.ax-quote{display:none}
+  .ax-col.copy .ax-statement:nth-of-type(n+2){display:none}
+  .ax-keystats{grid-template-columns:1fr;gap:10px;padding-top:12px}
+  .ax-keystats div:nth-child(n+4){display:none}
+
+  .factions{grid-template-columns:1fr;gap:12px}
+  .faction{padding:16px;min-height:auto}
+  .faction .logo{height:72px;margin-bottom:10px}
+  .faction .logo svg{width:60px;height:60px}
+  .faction .name{font-size:28px}
+  .faction .tag{font-size:9px;letter-spacing:.2em}
+  .faction p{font-size:13px;line-height:1.5}
+  .faction .footer{margin-top:14px;font-size:9px;letter-spacing:.16em}
+
+  .cta{padding:72px 0 64px;background:none}
+  .cta h2{font-size:42px}
+  .cta p{font-size:14px;line-height:1.55;max-width:none;margin:14px auto 20px}
+
+  footer{padding:24px 0 20px;font-size:10px;letter-spacing:.12em}
+  footer .row{gap:10px}
+  footer .row > div{width:100%}
+  footer .axiom-line{margin-top:14px;font-size:9px;letter-spacing:.24em}
+  footer .axiom-line::before,footer .axiom-line::after{display:none}
 }
 </style>
 </head>
@@ -1156,11 +1269,11 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
       <small>// v0.2.6.0-RC.1</small>
     </div>
     <nav class="menu">
-      <a href="#manifesto">MANIFESTO</a><span class="sep">/</span>
-      <a href="#modules">MODULES</a><span class="sep">/</span>
-      <a href="#world">WORLD</a><span class="sep">/</span>
-      <a href="#chars">ENTITIES</a><span class="sep">/</span>
-      <a href="#factions">FACTIONS</a>
+      <a href="404.html">MANIFESTO</a><span class="sep">/</span>
+      <a href="404.html">MODULES</a><span class="sep">/</span>
+      <a href="404.html">WORLD</a><span class="sep">/</span>
+      <a href="404.html">ENTITIES</a><span class="sep">/</span>
+      <a href="404.html">FACTIONS</a>
     </nav>
     <div class="status"><span class="dot"></span>NETWORK ONLINE</div>
   </div>
@@ -2688,6 +2801,14 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 
 <script>
 const indexCursor = document.getElementById('indexCursor');
+const isMobileViewport = window.matchMedia('(max-width: 640px)').matches;
+
+document.querySelectorAll('.enter').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    window.location.href = '404.html';
+  });
+});
+
 if(indexCursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches){
   let cx = window.innerWidth / 2;
   let cy = window.innerHeight / 2;
@@ -2713,27 +2834,34 @@ if(indexCursor && window.matchMedia('(hover: hover) and (pointer: fine)').matche
   });
 }
 
-// reveal sections on scroll
-const io = new IntersectionObserver((entries)=>{
-  for(const e of entries){
-    if(e.isIntersecting){
-      e.target.style.opacity=1;
-      e.target.style.transform='translateY(0)';
-      io.unobserve(e.target);
-    }
-  }
-},{threshold:0.08});
-document.querySelectorAll('section').forEach(s=>{
-  if(s.id === 'world'){
+// reveal sections on scroll (disabled on mobile for simpler/readable flow)
+if(isMobileViewport){
+  document.querySelectorAll('section').forEach((s)=>{
     s.style.opacity=1;
     s.style.transform='none';
-    return;
-  }
-  s.style.opacity=0;
-  s.style.transform='translateY(24px)';
-  s.style.transition='opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1)';
-  io.observe(s);
-});
+  });
+} else {
+  const io = new IntersectionObserver((entries)=>{
+    for(const e of entries){
+      if(e.isIntersecting){
+        e.target.style.opacity=1;
+        e.target.style.transform='translateY(0)';
+        io.unobserve(e.target);
+      }
+    }
+  },{threshold:0.08});
+  document.querySelectorAll('section').forEach(s=>{
+    if(s.id === 'world'){
+      s.style.opacity=1;
+      s.style.transform='none';
+      return;
+    }
+    s.style.opacity=0;
+    s.style.transform='translateY(24px)';
+    s.style.transition='opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1)';
+    io.observe(s);
+  });
+}
 // keep hero visible immediately
 const hero = document.querySelector('.hero');
 if(hero){hero.style.opacity=1;hero.style.transform='none'}
@@ -2763,7 +2891,9 @@ if(worldSceneSlot){
     worldSceneSlot.appendChild(sceneFrame);
   };
 
-  mountWorldScene();
+  if(!isMobileViewport){
+    mountWorldScene();
+  }
 }
 </script>
 
