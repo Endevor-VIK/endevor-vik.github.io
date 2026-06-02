@@ -1065,10 +1065,8 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .axiom-entity .ax-col.modes{min-height:auto}
   /* portrait column keeps explicit height so its absolute SVG has space */
   .axiom-entity .ax-col:not(.copy):not(.modes){min-height:520px}
-}
 
-/* responsive */
-@media (max-width:1080px){
+  /* ---- responsive (tablet ≤1080) ---- */
   .world-hero{aspect-ratio:auto;height:520px}
   .world-hero .caption h3{font-size:38px}
   .world-hero .axis{gap:20px}
@@ -1085,7 +1083,8 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 }
 @media (max-width:640px){
   .top{position:static}
-  .ticker{display:none}
+  .ticker{height:30px;font-size:9px}
+  .ticker .label{min-width:0;padding:0 10px;letter-spacing:.14em}
   .nav{padding:12px 14px}
   .brand b{font-size:11px;letter-spacing:.12em}
   .brand small,.status{display:none}
@@ -1099,15 +1098,15 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .sec-desc{max-width:none;font-size:14px;line-height:1.55;color:var(--ink-2)}
 
   .hero{padding:32px 0 28px;min-height:auto}
-  .hero-frame,.hero-particles,.kicker-rows,.status-card,.version-card,.radar,.crosshair-bg{display:none}
-  .hero-grid{padding:0;gap:18px}
+  .hero-frame,.hero-particles,.kicker-rows,.status-card,.version-card,.crosshair-bg{display:none}
+  .hero-grid{grid-template-columns:1fr;padding:0;gap:20px}
+  .radar{max-width:min(74vw,330px);margin:2px auto 0;filter:drop-shadow(0 0 38px rgba(255,32,52,.22))}
   h1.title{font-size:clamp(44px,16vw,68px);margin:14px 0}
   .lede{max-width:none;font-size:15px;line-height:1.55;margin-bottom:20px}
   .features{margin:16px 0 0;padding:14px 12px;grid-template-columns:1fr;gap:12px}
   .feature{padding:0;font-size:13px;line-height:1.45}
   .feature .icon{display:none}
   .feature h4{margin:0 0 4px;font-size:11px;letter-spacing:.14em}
-  .feature:nth-child(n+3){display:none}
 
   .enter-wrap{width:100%;height:70px;padding:0 12px;filter:none}
   .enter-wrap .glow,.enter-wrap .bracket,.enter-wrap .corner-tick,.enter-wrap .pulse-ring{display:none}
@@ -1119,8 +1118,9 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .doctrine-bar{padding:10px 12px;gap:10px;font-size:9px;letter-spacing:.14em;margin-bottom:16px}
   .doctrine-bar .meta:nth-of-type(2),
   .doctrine-bar .decrypt{display:none}
-  .doctrine-stage{grid-template-columns:1fr;gap:12px;margin-bottom:16px}
-  .doctrine-side{display:none}
+  .doctrine-stage{display:flex;flex-direction:column;gap:14px;margin-bottom:16px}
+  .doctrine-quote{order:-1}
+  .doctrine-side{padding:16px 14px}
   .ql{padding:18px 16px 20px;font-size:22px;line-height:1.24}
   .ql .line .pre{margin-bottom:8px}
   .ql .ghost{display:none}
@@ -1130,9 +1130,11 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .frag h4{font-size:16px}
   .frag p{font-size:13px;line-height:1.45}
   .frag .glyph{display:none}
-  .frag:nth-child(n+4){display:none}
 
-  .spine-strip{display:none}
+  .spine-strip{grid-template-columns:1fr 1fr;gap:0}
+  .spine-strip .stat{padding:12px 14px;border-bottom:1px solid var(--line)}
+  .spine-strip .stat:nth-child(2n){border-right:none}
+  .spine-strip .stat .num{font-size:24px}
   .modules{grid-template-columns:1fr;gap:12px}
   .module{min-height:auto}
   .module .m-head{padding:12px 14px;gap:10px}
@@ -1141,7 +1143,10 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .module .m-body{padding:14px}
   .module h3{font-size:26px}
   .module p{font-size:13px;line-height:1.5;max-width:none}
-  .module .m-vis,.module > .m-foot,.module .m-stat,.module .m-corners,.module .m-sweep{display:none}
+  .module .m-sweep{display:none}
+  .m-vis{min-height:150px;padding:14px}
+  .content-vis{grid-template-columns:64px 1fr 56px;gap:10px;min-height:130px}
+  .dog-vis{grid-template-columns:120px 1fr;gap:12px;min-height:140px}
 
   .world-hero{height:auto;min-height:300px}
   .world-scene-slot{
@@ -1157,11 +1162,10 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .world-hero .caption h3{font-size:30px;margin:4px 0}
   .world-hero .caption p{max-width:220px;font-size:10px;letter-spacing:.1em}
   .world-hero .axis{left:14px;bottom:12px;gap:10px;font-size:8px;letter-spacing:.15em}
-  .nodes{grid-template-columns:1fr;border:none;margin-top:10px;gap:8px}
-  .node{border:1px solid var(--line-2);padding:12px;font-size:10px;letter-spacing:.14em}
+  .nodes{grid-template-columns:1fr 1fr;border:none;margin-top:10px;gap:8px}
+  .node{border:1px solid var(--line-2);padding:10px;font-size:9.5px;letter-spacing:.1em}
   .node .icn{display:none}
   .node b{font-size:12px}
-  .node:nth-child(n+4){display:none}
 
   .chars{grid-template-columns:1fr;gap:12px}
   .char .img{aspect-ratio:3/4}
@@ -1171,21 +1175,18 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .char .meta{padding:14px}
   .char .meta h3{font-size:24px;margin:4px 0 8px}
   .char .meta p{font-size:13px;line-height:1.5;min-height:0}
-  .char .stats{display:none}
 
   .ax-divider{margin:28px 0 12px;gap:8px;font-size:9px;letter-spacing:.16em}
   .ax-divider .line,.ax-divider .sub{display:none}
   .axiom-entity .ax-head{padding:10px 12px;gap:10px;font-size:9px;letter-spacing:.12em}
   .axiom-entity .ax-head .axh-cls,.axiom-entity .ax-head .axh-stat{display:none}
-  .axiom-entity .ax-col:first-child,
-  .axiom-entity .ax-col.modes,
-  .axiom-entity .ax-foot{display:none}
-  .axiom-entity .ax-col.copy{padding:16px 14px}
-  .ax-name{font-size:48px}
-  .ax-name::after,.ax-sub,.ax-class,.ax-quote{display:none}
-  .ax-col.copy .ax-statement:nth-of-type(n+2){display:none}
-  .ax-keystats{grid-template-columns:1fr;gap:10px;padding-top:12px}
-  .ax-keystats div:nth-child(n+4){display:none}
+  .axiom-entity .ax-col{min-height:auto}
+  .axiom-entity .ax-col:first-child{min-height:360px}
+  .axiom-entity .ax-col.copy{padding:18px 14px}
+  .axiom-entity .ax-col.modes{padding:18px 14px}
+  .ax-name{font-size:46px}
+  .ax-name::after{display:none}
+  .ax-keystats{grid-template-columns:1fr 1fr;gap:10px;padding-top:12px}
 
   .factions{grid-template-columns:1fr;gap:12px}
   .faction{padding:16px;min-height:auto}
