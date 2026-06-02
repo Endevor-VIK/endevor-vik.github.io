@@ -109,12 +109,14 @@ a{color:inherit;text-decoration:none}
 
 .actions{display:flex;gap:12px;flex-wrap:wrap}
 .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 20px;border:1px solid var(--red);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);background:linear-gradient(180deg, rgba(255,32,52,.10), rgba(255,32,52,.04));box-shadow:0 0 16px rgba(255,32,52,.08) inset, 0 0 18px rgba(255,32,52,.08);transition:transform .2s ease, background .2s ease, box-shadow .2s ease, border-color .2s ease}
-.btn::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg, transparent, rgba(255,120,130,.16), transparent);transform:translateX(-120%);transition:transform .55s ease}
+.btn::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg, transparent, rgba(255,120,130,.16), transparent);transform:translateX(-120%)}
 .btn:hover{transform:translateY(-2px);background:linear-gradient(180deg, rgba(255,32,52,.16), rgba(255,32,52,.06));box-shadow:0 0 20px rgba(255,32,52,.16), inset 0 0 18px rgba(255,32,52,.12)}
-.btn:hover::before{transform:translateX(120%)}
+.btn:hover::before{transform:translateX(120%);transition:transform .6s ease}
 .btn.secondary{border-color:var(--line-2);background:rgba(255,255,255,.02);color:var(--ink-2)}
 .btn.secondary:hover{border-color:var(--red);color:var(--ink)}
-.btn .arr{color:var(--red);font-weight:700}
+.btn .arr{color:var(--red);font-weight:700;transition:transform .2s ease}
+.btn:hover .arr{transform:translateX(3px)}
+.btn.secondary:hover .arr{transform:rotate(-90deg)}
 
 .right-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .right-top .label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute)}
@@ -209,7 +211,7 @@ a{color:inherit;text-decoration:none}
 }
 
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;animation-delay:0s !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
 }
 </style>
 </head>

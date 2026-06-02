@@ -41,24 +41,44 @@
   (function () {
     var boot = document.getElementById('axiom-boot');
     if (!boot) return;
+    var root = document.documentElement;
 
     if (sessionStorage.getItem('axiom_loader_seen') === '1') {
       boot.remove();
       return;
     }
 
+    // lock scroll while the boot overlay is shown — the page must not scroll behind it
+    var prevHtmlOverflow = root.style.overflow;
+    var prevBodyOverflow = document.body ? document.body.style.overflow : '';
+    root.style.overflow = 'hidden';
+    if (document.body) document.body.style.overflow = 'hidden';
+    window.scrollTo(0, 0);
+
     var frame = boot.querySelector('iframe');
     var hidden = false;
     var firstLoadDone = false;
 
+    function unlockScroll() {
+      root.style.overflow = prevHtmlOverflow;
+      if (document.body) document.body.style.overflow = prevBodyOverflow;
+    }
+
     function hide() {
       if (hidden || !boot) return;
       hidden = true;
-      boot.style.transition = 'opacity .35s ease';
+      window.scrollTo(0, 0);
+      // mask the about:blank frame instantly, then dissolve the dark overlay into the landing
+      if (frame) { frame.style.transition = 'opacity .2s ease'; frame.style.opacity = '0'; }
+      boot.style.transition = 'opacity .6s ease, filter .6s ease, transform .6s ease';
+      boot.style.pointerEvents = 'none';
       boot.style.opacity = '0';
+      boot.style.filter = 'blur(8px)';
+      boot.style.transform = 'scale(1.05)';
+      unlockScroll();
       setTimeout(function () {
         if (boot.parentNode) boot.remove();
-      }, 400);
+      }, 650);
       sessionStorage.setItem('axiom_loader_seen', '1');
     }
 
@@ -89,7 +109,7 @@
         </svg>
       </span>
       <b>AXIOM&nbsp;CORE</b>
-      <small>// v0.2.6.0-RC.1</small>
+      <small>// v0.2.7.0</small>
     </div>
     <nav class="menu">
       <a href="#manifesto">MANIFESTO</a><span class="sep">/</span>
@@ -104,14 +124,14 @@
     <div class="label">NEWS // WIRE</div>
     <div class="stream">
       <div class="stream-inner">
-        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-05-07</span> &nbsp;AXIOM WEB CORE UI V0.2.6.0-RC.1</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-06-02</span> &nbsp;AXIOM WEB CORE UI V0.2.7.0 — STABLE</span>
         <span><b class="tag">UPDATE</b> <span class="dim">/ 2026-02-27</span> &nbsp;Новая страница 404: понятно и с характером</span>
         <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-02-19</span> &nbsp;AXIOM WEB CORE UI V0.2.4.0</span>
         <span><b class="tag">AUDIT</b> <span class="dim">/ 2025-12-29</span> &nbsp;AUDIT &amp; ROADMAP: готовим новый формат</span>
         <span><b class="tag">RELEASE</b> <span class="dim">/ 2025-12-22</span> &nbsp;Контент-библиотека стала богаче</span>
         <span><b class="tag">UPDATE</b> <span class="dim">/ 2025-10-25</span> &nbsp;Контент-центр v2.1</span>
         <!-- duplicate for loop -->
-        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-05-07</span> &nbsp;AXIOM WEB CORE UI V0.2.6.0-RC.1</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-06-02</span> &nbsp;AXIOM WEB CORE UI V0.2.7.0 — STABLE</span>
         <span><b class="tag">UPDATE</b> <span class="dim">/ 2026-02-27</span> &nbsp;Новая страница 404: понятно и с характером</span>
         <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-02-19</span> &nbsp;AXIOM WEB CORE UI V0.2.4.0</span>
         <span><b class="tag">AUDIT</b> <span class="dim">/ 2025-12-29</span> &nbsp;AUDIT &amp; ROADMAP: готовим новый формат</span>
@@ -608,7 +628,7 @@
       </div>
       <div class="stat">
         <div class="lab">BUILD</div>
-        <div class="val"><span class="num">RC1</span><span class="dim">0.2.6.0</span></div>
+        <div class="val"><span class="num">REL</span><span class="dim">0.2.7.0</span></div>
         <div class="bar"><i style="--w:92%"></i></div>
       </div>
     </div>
@@ -1615,7 +1635,7 @@
   <div class="wrap">
     <div class="row">
       <div>MODE :: <b>RED PROTOCOL</b> &nbsp;·&nbsp; SECTION :: LANDING</div>
-      <div>ENV :: PUBLIC &nbsp;·&nbsp; VER :: <b>V0.2.6.0-RC.1</b> &nbsp;·&nbsp; ONLINE</div>
+      <div>ENV :: PUBLIC &nbsp;·&nbsp; VER :: <b>V0.2.7.0</b> &nbsp;·&nbsp; ONLINE</div>
       <div>© 2026 AXIOM CORE NETWORK</div>
     </div>
     <div class="axiom-line">AXIOM · CORE · NETWORK</div>
