@@ -9,8 +9,7 @@
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap">
-<link rel="preload" as="document" href="content-html/echelon-node-v2.html?embed=1&fit=frame&zoom=1.03&rev=av_off_10">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap">
 <style>
 :root{
   --bg:#070709;
@@ -2189,7 +2188,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
       <!-- VIKTOR -->
       <div class="char">
         <div class="img">
-          <img src="assets/viktor.png" alt="Viktor Knox"/>
+          <img src="assets/viktor.webp" alt="Viktor Knox" width="1024" height="1536" loading="lazy" decoding="async"/>
           <span class="id">[CHR-VIKTOR-0301]</span>
           <span class="codename">NIGHTMARE</span>
           <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
@@ -2210,7 +2209,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
       <!-- LIZA -->
       <div class="char">
         <div class="img">
-          <img src="assets/liza.png" alt="Liza Sinclair"/>
+          <img src="assets/liza.webp" alt="Liza Sinclair" width="941" height="1672" loading="lazy" decoding="async"/>
           <span class="id">[CHR-LIZA-0302]</span>
           <span class="codename">LZ-Δ : VOICE</span>
           <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
@@ -2231,7 +2230,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
       <!-- SERAPHINE -->
       <div class="char">
         <div class="img">
-          <img src="assets/seraphine.png" alt="Seraphine Veyr"/>
+          <img src="assets/seraphine.webp" alt="Seraphine Veyr" width="1024" height="1536" loading="lazy" decoding="async"/>
           <span class="id">[CHR-SERAPHINE-0321]</span>
           <span class="codename">BLACK ECHO</span>
           <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
@@ -2882,7 +2881,7 @@ if(isMobileViewport){
 const hero = document.querySelector('.hero');
 if(hero){hero.style.opacity=1;hero.style.transform='none'}
 
-// preload world scene early to avoid abrupt pop-in on scroll
+// lazily mount the heavy world scene only when it nears the viewport (desktop)
 const worldSceneSlot = document.querySelector('[data-scene-slot]');
 if(worldSceneSlot){
   const sceneSrc = 'content-html/echelon-node-v2.html?embed=1&fit=frame&zoom=1.03&rev=av_off_10';
@@ -2896,7 +2895,7 @@ if(worldSceneSlot){
     sceneFrame.className = 'world-scene-frame';
     sceneFrame.title = 'ECHELON NODE';
     sceneFrame.loading = 'eager';
-    sceneFrame.fetchPriority = 'high';
+    sceneFrame.fetchPriority = 'low';
     sceneFrame.setAttribute('aria-hidden', 'true');
     sceneFrame.setAttribute('tabindex', '-1');
     sceneFrame.src = sceneSrc;
@@ -2908,11 +2907,25 @@ if(worldSceneSlot){
   };
 
   const desktopMql = window.matchMedia('(min-width: 641px)');
-  if(desktopMql.matches){
-    mountWorldScene();
+  const mountIfDesktop = () => { if(desktopMql.matches) mountWorldScene(); };
+
+  // defer the heavy 11k-line scene until the World section approaches the viewport
+  if('IntersectionObserver' in window){
+    const sceneIO = new IntersectionObserver((entries, obs) => {
+      if(entries.some((e) => e.isIntersecting)){ obs.disconnect(); mountIfDesktop(); }
+    }, { rootMargin: '600px 0px' });
+    sceneIO.observe(worldSceneSlot);
+  } else {
+    mountIfDesktop();
   }
-  // if the viewport later grows to desktop, mount the scene so the World hero isn't left empty
-  const onDesktopChange = (e) => { if(e.matches) mountWorldScene(); };
+
+  // if the viewport grows to desktop while the slot is already near view, mount it
+  const onDesktopChange = (e) => {
+    if(e.matches){
+      const r = worldSceneSlot.getBoundingClientRect();
+      if(r.top < window.innerHeight + 600) mountWorldScene();
+    }
+  };
   if(desktopMql.addEventListener){ desktopMql.addEventListener('change', onDesktopChange); }
   else if(desktopMql.addListener){ desktopMql.addListener(onDesktopChange); }
 }
