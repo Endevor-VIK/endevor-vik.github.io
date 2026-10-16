@@ -123,3 +123,22 @@ body{background:var(--ax23-void);color:var(--ax23-ink)}
 .v23-map-node{scroll-margin-top:95px}
 .v23-map-dialog-content img{max-width:none}
 @media(max-width:720px){.v23-stage-foot{display:grid;grid-template-columns:1fr}.v23-stage-open{justify-self:stretch;min-height:44px}.v23-stage-subtitle{font-size:12px}}
+
+/* V2.3 visual dramaturgy — staggered vision timeline, focusable information path */
+.show-vision .show-phases{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:15px}
+.show-vision .show-phases>article{min-height:315px;position:relative}
+.show-vision .show-phases>article:nth-child(1){grid-column:span 7;background:linear-gradient(115deg,#241013,#101218 70%);min-height:330px}
+.show-vision .show-phases>article:nth-child(2){grid-column:span 5}
+.show-vision .show-phases>article:nth-child(3){grid-column:span 5}
+.show-vision .show-phases>article:nth-child(4){grid-column:span 7}
+.show-vision .show-phases>article::before{content:"";position:absolute;left:0;top:0;width:64px;height:2px;background:var(--ax23-crimson)}
+.show-vision .show-phases>article:nth-child(1)::before{background:var(--ax23-red);width:38%}
+.v23-flow-step{appearance:none;text-align:left;cursor:pointer;font:inherit;color:inherit;transition:border-color .2s,background .2s,transform .2s}
+.v23-flow-step:hover{border-color:var(--ax23-crimson);transform:translateY(-2px)}
+.v23-flow-step.is-active{border-color:var(--ax23-red);background:linear-gradient(150deg,#1c1318,#101218)}
+.v23-flow-step:focus-visible{outline:2px solid var(--ax23-cyan);outline-offset:3px}
+.v23-map-composition{--v23-node-progress:16.666%;position:relative}
+.v23-map-composition::before{content:"";position:absolute;left:0;top:0;z-index:3;width:var(--v23-node-progress);height:2px;background:var(--ax23-red);transition:width .25s;pointer-events:none}
+@media(max-width:900px){.show-vision .show-phases{grid-template-columns:1fr 1fr}.show-vision .show-phases>article:nth-child(n){grid-column:span 1;min-height:300px}}
+@media(max-width:540px){.show-vision .show-phases{grid-template-columns:1fr}.show-vision .show-phases>article:nth-child(n){grid-column:span 1;min-height:auto}.v23-flow-step:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.v23-map-composition::before,.v23-flow-step{transition:none}.v23-flow-step:hover{transform:none}}
