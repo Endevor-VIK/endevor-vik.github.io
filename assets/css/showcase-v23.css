@@ -113,3 +113,13 @@ body{background:var(--ax23-void);color:var(--ax23-ink)}
 @media(max-width:760px){.show-title{font-size:clamp(30px,7vw,54px);letter-spacing:-.045em}.v23-world .sec-title{font-size:clamp(30px,7vw,50px)}.v23-map-overhead{font-size:8px;padding:10px}.v23-map-caption{padding:10px;flex-wrap:wrap}.v23-open-map{padding:11px;font-size:9px}.v23-stage-visual{min-height:220px;padding:10px}.v23-stage-foot{flex-wrap:wrap}.v23-map-ledger{padding:15px}}
 @media(max-width:540px){.v23-map-node-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.v23-map-node{min-height:115px;padding:13px 11px}.v23-map-type{font-size:8px}.v23-stage-rail{grid-template-columns:repeat(2,1fr)}.v23-stage-select{font-size:10px}.v23-map-overhead span:last-child{display:none}.v23-map-caption>span{display:none}.v23-map-caption{justify-content:flex-end}.v23-map-detail-id>span{font-size:19px}.v23-map-axes{gap:8px;font-size:8px}.v23-map-axes span:last-child{margin-left:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.show-shot,.v23-map-node{transition:none}.show-shot:hover,.v23-map-node:hover{transform:none}}
+
+/* V2.3 recheck: legibility and density without replacing original RED PROTOCOL */
+.v23-stage-copy{display:flex;flex-direction:column;gap:8px;min-width:0}
+.v23-stage-subtitle{display:block;font:400 13px/1.65 var(--ax23-body);color:var(--ax23-muted);max-width:60ch}
+.v23-stage-foot{align-items:center}
+.v23-stage-visual img{width:100%;max-height:min(61vh,650px)}
+.v22-public-evidence{font-family:var(--ax23-tech)}
+.v23-map-node{scroll-margin-top:95px}
+.v23-map-dialog-content img{max-width:none}
+@media(max-width:720px){.v23-stage-foot{display:grid;grid-template-columns:1fr}.v23-stage-open{justify-self:stretch;min-height:44px}.v23-stage-subtitle{font-size:12px}}
