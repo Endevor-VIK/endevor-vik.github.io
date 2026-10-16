@@ -30,7 +30,7 @@ AXS_HEADER_META:
 - `assets/js/index.js` — поведение лендинга (курсор, reveal, ленивый монтаж сцены).
 - `loader.html` — boot-loader (CRT/terminal/progress/glitch), подключён как overlay-первый кадр.
 - `404.html` — брендированная fallback-страница / holding-хаб (GitHub/Telegram).
-- `content-html/echelon-node-v2.html` — анимированная SVG-сцена ECHELON (ленивый iframe в секции World).
+- `content-html/echelon-node-v2.html` — архивная HTML/SVG-сцена ECHELON; не монтируется на страницу. Публичный World использует статичный PNG / mobile WebP.
 - `assets/` — графика; портреты в WebP. `assets/_unused/` — архив неиспользуемых ассетов (не удалять без запроса CREATOR).
 - `docs/LOADER_INTEGRATION.md` — протокол и варианты подключения loader.
 
@@ -57,3 +57,12 @@ AXS_HEADER_META:
 - World ECHELON uses existing static `assets/echelon_city.png` and mobile WebP; heavyweight scene iframe no longer mounts.
 - Both native `ENTER AXIOM` links lead to `https://axiomgates.com`.
 - DO NOT merge without CREATOR approval and visual QA.
+
+
+## V2.2 preservation & UX reconstruction (feature branch only)
+- Entry narrative: HERO → WHAT IS AXIOM → CREATOR → WORK → SYSTEM → WORLD intro + original lore → VISION → COLLABORATION.
+- Detail-rich proof cards reveal claims and limits. Screenshots are VISUAL ONLY unless externally verified.
+- `assets/showcase/visual-library/` holds all 17 recompressed decorative WebP candidates. Full-resolution source PNGs are retained in the creator-supplied archive, not deployed as unneeded page payload.
+- `assets/css/showcase-v22.css`, `assets/js/showcase-v22.js` are additive implementation layers.
+- Original loader has safe skip/time cap/storage exception handling. The 4 principles retain their visual structure but avoid unverified operational promises.
+- Production and main merge remain prohibited until CREATOR review and reproducible browser QA.

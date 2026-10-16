@@ -1,5 +1,5 @@
 const indexCursor = document.getElementById('indexCursor');
-const isMobileViewport = window.matchMedia('(max-width: 640px)').matches;
+const isMobileViewport = window.matchMedia('(max-width: 640px), (prefers-reduced-motion: reduce)').matches;
 
 if(indexCursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches){
   let cx = window.innerWidth / 2;
