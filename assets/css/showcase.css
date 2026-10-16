@@ -1,6 +1,6 @@
 
 /* SHOWCASE V2.1 — additions only, original architecture stays intact */
-html{scroll-padding-top:90px}
+html{scroll-padding-top:97px}
 .show-section{position:relative;isolation:isolate;background:#0a0b0f;padding:100px 0;border-bottom:1px solid rgba(255,32,52,.25);overflow:hidden}
 .show-section:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.2;background-image:linear-gradient(to right,#72202c25 1px,transparent 1px),linear-gradient(to bottom,#72202c25 1px,transparent 1px);background-size:78px 78px}
 .show-creator{background:radial-gradient(ellipse at 83% 30%,#390e1938,transparent 60%),#090a0e}

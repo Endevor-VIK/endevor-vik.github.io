@@ -59,4 +59,29 @@ if(isMobileViewport){
 const hero = document.querySelector('.hero');
 if(hero){hero.style.opacity=1;hero.style.transform='none'}
 
+// reveal an in-page anchor target before the browser scrolls to it, so the pending
+// translateY(24px) of an unrevealed section does not shift the landing position
+const revealTarget = (id) => {
+  const target = id && document.getElementById(id);
+  const section = target && (target.closest('section') || target);
+  if(section){section.style.transition='none';section.style.opacity=1;section.style.transform='none'}
+};
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a[href^="#"]');
+  if(link) revealTarget(decodeURIComponent(link.getAttribute('href').slice(1)));
+}, true);
+if(location.hash) revealTarget(decodeURIComponent(location.hash.slice(1)));
+
+// prefers-reduced-motion must also stop SVG SMIL loops (<animate>), which the CSS media query cannot reach
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const syncSmil = () => {
+  document.querySelectorAll('svg').forEach((svg) => {
+    if(svg.ownerSVGElement || !svg.querySelector('animate, animateTransform, animateMotion')) return;
+    if(reducedMotion.matches){svg.pauseAnimations();svg.setCurrentTime(0)}
+    else svg.unpauseAnimations();
+  });
+};
+syncSmil();
+if(reducedMotion.addEventListener) reducedMotion.addEventListener('change', syncSmil);
+
 // ECHELON scene frozen to existing PNG. The original scene HTML remains archived.
