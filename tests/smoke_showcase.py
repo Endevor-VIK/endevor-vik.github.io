@@ -27,7 +27,7 @@ class Scan(HTMLParser):
 scan = Scan();scan.feed(index)
 for css in (BASE/'assets/css').glob('*.css'):
     text=css.read_text('utf-8')
-    for raw in re.findall(r'url\\(\\s*["\\\']?([^)"\\\']+)["\\\']?\\s*\\)', text):
+    for raw in re.findall(r"url\(\s*['\"]?([^)\'\"\s]+)['\"]?\s*\)", text):
         if not raw.startswith(('data:','#','http:','https:','//')):
             path=(css.parent/raw.split('?')[0]).resolve()
             if not path.is_file(): missing.append(str(path))
