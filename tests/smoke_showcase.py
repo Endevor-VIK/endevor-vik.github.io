@@ -1,50 +1,49 @@
 #!/usr/bin/env python3
-"""Minimal stdlib-only AXIOM showcase structural smoke test. Run from repo root."""
+"""Expanded structure-only AXIOM Showcase smoke: no browser/performance claims."""
+import re
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, unquote
 
-root = Path(__file__).resolve().parents[1]
-markup = (root / "index.html").read_text(encoding="utf-8")
-
-class Links(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.ids = set()
-        self.anchors = []
-        self.files = []
-        self.entries = []
-        self.shots = 0
-    def handle_starttag(self, tag, attributes):
-        attrs = dict(attributes)
-        if attrs.get("id"): self.ids.add(attrs["id"])
-        for field in ("src", "href"):
-            val = attrs.get(field)
-            if not val: continue
-            if field == "href" and val.startswith("#"):
-                self.anchors.append(val[1:])
-            elif not urlsplit(val).scheme and not val.startswith(("#", "data:", "//")):
-                self.files.append(val.split("?")[0])
-        if tag == "a" and "enter" in attrs.get("class", "").split():
-            self.entries.append(attrs.get("href"))
-        if tag == "button" and "show-shot-trigger" in attrs.get("class", "").split():
-            self.shots += 1
-
-p = Links()
-p.feed(markup)
-missing = sorted(set(f for f in p.files if not (root / f).is_file()))
-unresolved = sorted(set(a for a in p.anchors if a not in p.ids))
-required = ("creator","work","system","manifesto","modules","world","chars","factions","vision","collaboration")
-errors = []
-if missing: errors.append("Missing assets: " + ", ".join(missing))
-if unresolved: errors.append("Missing anchors: " + ", ".join(unresolved))
-if any(s not in p.ids for s in required): errors.append("Missing core sections")
-if p.entries != ["https://axiomgates.com"] * 2: errors.append("Incorrect ENTER AXIOM destinations")
-if p.shots != 8: errors.append("Expected 8 screenshot triggers")
-if "content-html/echelon-node-v2.html" in (root/"assets/js/index.js").read_text(encoding="utf-8"):
-    errors.append("Heavy ECHELON iframe mount restored")
-for asset in ["assets/echelon_city.png", "assets/endeavor_logo_no_text_no_frame.svg", "docs/AXIOM_SYSTEM_VISION_2026.html"]:
-    if not (root/asset).is_file(): errors.append("Missing preserved asset: "+asset)
-if errors:
-    raise SystemExit("\n".join(errors))
-print("PASS: original sections, screenshot gallery, static ECHELON, files, anchors and CTAs")
+BASE = Path(__file__).resolve().parent.parent
+index = (BASE/"index.html").read_text("utf-8")
+missing = []
+ids, anchor_targets, assets, ctas = set(), [], set(), []
+screenshot_buttons = 0
+class Scan(HTMLParser):
+    def handle_starttag(self, tag, pairs):
+        global screenshot_buttons
+        a = dict(pairs)
+        if a.get('id'): ids.add(a['id'])
+        if tag == 'a' and 'enter' in a.get('class','').split(): ctas.append(a.get('href'))
+        if tag == 'button' and 'show-shot-trigger' in a.get('class','').split(): screenshot_buttons += 1
+        for field in ('href', 'src', 'poster', 'data-showcase-src'):
+            v = a.get(field, '')
+            if v.startswith('#'): anchor_targets.append(v[1:])
+            elif v and not urlsplit(v).scheme and not v.startswith(('//','data:')): assets.add(v.split('?')[0])
+        for fragment in a.get('srcset', '').split(','):
+            p = fragment.strip().split()
+            if p and not urlsplit(p[0]).scheme: assets.add(p[0].split('?')[0])
+scan = Scan();scan.feed(index)
+for css in (BASE/'assets/css').glob('*.css'):
+    text=css.read_text('utf-8')
+    for raw in re.findall(r'url\\(\\s*["\\\']?([^)"\\\']+)["\\\']?\\s*\\)', text):
+        if not raw.startswith(('data:','#','http:','https:','//')):
+            path=(css.parent/raw.split('?')[0]).resolve()
+            if not path.is_file(): missing.append(str(path))
+for path in assets:
+    if not (BASE/unquote(path)).is_file(): missing.append(path)
+anchors_missing = sorted(set(anchor_targets)-ids)
+sections = ('top','about','creator','work','system','world-guide','manifesto','modules','world','chars','factions','vision','collaboration')
+errors=[]
+if missing: errors.append(f'Missing assets: {missing}')
+if anchors_missing: errors.append(f'Missing anchors: {anchors_missing}')
+if set(sections)-ids: errors.append(f'Missing sections: {set(sections)-ids}')
+if ctas != ['https://axiomgates.com']*2: errors.append(f'Unexpected CTA: {ctas}')
+if screenshot_buttons!=8: errors.append(f'Screenshot triggers: {screenshot_buttons} != 8')
+if 'echelon-node-v2.html' in (BASE/'assets/js/index.js').read_text('utf-8'): errors.append('Heavy iframe mount restored')
+if len(list((BASE/'assets/showcase/visual-library').glob('*.webp')))!=17: errors.append('Expected 17 concept webps')
+if 'axiom-boot-skip' not in index: errors.append('Loader skip missing')
+if 'CONCEPT ART' not in index: errors.append('Art/evidence disclaimer missing')
+if errors: raise SystemExit('\n'.join(errors))
+print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), gallery, anchors, CTA, image library, safe loader')
