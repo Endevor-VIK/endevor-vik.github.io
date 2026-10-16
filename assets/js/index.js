@@ -1,12 +1,6 @@
 const indexCursor = document.getElementById('indexCursor');
 const isMobileViewport = window.matchMedia('(max-width: 640px)').matches;
 
-document.querySelectorAll('.enter').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    window.location.href = '404.html';
-  });
-});
-
 if(indexCursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches){
   let cx = window.innerWidth / 2;
   let cy = window.innerHeight / 2;
@@ -65,51 +59,4 @@ if(isMobileViewport){
 const hero = document.querySelector('.hero');
 if(hero){hero.style.opacity=1;hero.style.transform='none'}
 
-// lazily mount the heavy world scene only when it nears the viewport (desktop)
-const worldSceneSlot = document.querySelector('[data-scene-slot]');
-if(worldSceneSlot){
-  const sceneSrc = 'content-html/echelon-node-v2.html?embed=1&fit=frame&zoom=1.03&rev=av_off_10';
-  let sceneFrame = null;
-
-  const mountWorldScene = () => {
-    if(sceneFrame) return;
-    worldSceneSlot.dataset.loaded = '1';
-
-    sceneFrame = document.createElement('iframe');
-    sceneFrame.className = 'world-scene-frame';
-    sceneFrame.title = 'ECHELON NODE';
-    sceneFrame.loading = 'eager';
-    sceneFrame.fetchPriority = 'low';
-    sceneFrame.setAttribute('aria-hidden', 'true');
-    sceneFrame.setAttribute('tabindex', '-1');
-    sceneFrame.src = sceneSrc;
-    sceneFrame.addEventListener('load', () => {
-      worldSceneSlot.classList.add('is-ready');
-    }, { once: true });
-
-    worldSceneSlot.appendChild(sceneFrame);
-  };
-
-  const desktopMql = window.matchMedia('(min-width: 641px)');
-  const mountIfDesktop = () => { if(desktopMql.matches) mountWorldScene(); };
-
-  // defer the heavy 11k-line scene until the World section approaches the viewport
-  if('IntersectionObserver' in window){
-    const sceneIO = new IntersectionObserver((entries, obs) => {
-      if(entries.some((e) => e.isIntersecting)){ obs.disconnect(); mountIfDesktop(); }
-    }, { rootMargin: '600px 0px' });
-    sceneIO.observe(worldSceneSlot);
-  } else {
-    mountIfDesktop();
-  }
-
-  // if the viewport grows to desktop while the slot is already near view, mount it
-  const onDesktopChange = (e) => {
-    if(e.matches){
-      const r = worldSceneSlot.getBoundingClientRect();
-      if(r.top < window.innerHeight + 600) mountWorldScene();
-    }
-  };
-  if(desktopMql.addEventListener){ desktopMql.addEventListener('change', onDesktopChange); }
-  else if(desktopMql.addListener){ desktopMql.addListener(onDesktopChange); }
-}
+// ECHELON scene frozen to existing PNG. The original scene HTML remains archived.
