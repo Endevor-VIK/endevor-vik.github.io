@@ -6,7 +6,7 @@
   --line-2:#2a2a33;
   --ink:#f1f1f4;
   --ink-2:#c9c9d1;
-  --mute:#6d6e76;
+  --mute:#80818a;
   --mute-2:#43434c;
   --red:#ff2034;
   --red-2:#ff4a54;
@@ -16,7 +16,34 @@
   --glow-soft:rgba(255,32,52,.12);
   --grid: linear-gradient(rgba(255,32,52,.035) 1px, transparent 1px) 0 0/100% 64px,
           linear-gradient(90deg, rgba(255,32,52,.035) 1px, transparent 1px) 0 0/64px 100%;
+  /* 0524 W1 canonical tokens — black · cold graphite · crimson · neutral white; no pink / magenta / plum.
+     Older sets (--ax23-*, local --ax-* of the AXIOM entity) alias to these. See docs/showcase-v031/VISUAL_SYSTEM.md */
+  --ax-void:#070709;
+  --ax-graphite-1:#0b0c0f;
+  --ax-surface:#101218;
+  --ax-raised:#181b22;
+  --ax-hairline:#262830;
+  --ax-crimson:#ff2034;
+  --ax-crimson-hi:#ff4a54;
+  --ax-crimson-deep:#94121e;
+  --ax-crimson-line:#7a2830;
+  --ax-crimson-ink:#24100f;
+  --ax-on-crimson:#0a0507;
+  --ax-ink:#f1f1f4;
+  --ax-ink-2:#c9c9d1;
+  --ax-text:#b4b8c3;
+  --ax-text-dim:#8b919d;
+  --ax-text-min:#80818a;
+  --ax-focus:#ff4a54;
+  --ax-cyan:#39d6c8;
+  --ax-gold:#e4c447;
+  --ax-font-display:'Oswald',Impact,'Arial Narrow',sans-serif;
+  --ax-font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --ax-font-body:'Golos Text',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --ax-font-accent:var(--ax-font-display);
 }
+/* TYPE B review variant (Q-03 — CREATOR decision pending): Unbounded only for large section headings */
+html[data-type="b"]{--ax-font-accent:'Unbounded',var(--ax-font-display)}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',ui-monospace,monospace;-webkit-font-smoothing:antialiased}
 body{
@@ -61,11 +88,18 @@ html{scroll-behavior:smooth;scrollbar-gutter:stable}
   /* modal dialogs render in the top layer above the custom cursor: give them the system pointer */
   dialog[open],dialog[open] *{cursor:auto}
   dialog[open] :is(a,button,[role="button"],summary,label){cursor:pointer}
+  #axiom-boot{cursor:auto}
+  #axiom-boot button{cursor:pointer}
 }
-html:has(dialog[open]) .index-cursor{display:none}
+html:has(dialog[open]) .index-cursor,html:has(#axiom-boot) .index-cursor{display:none}
 @media (hover: none), (pointer: coarse){
   .index-cursor{display:none}
 }
+
+/* 0524 W1: intro loader skip control (overlay is created by the inline boot script) */
+#axiom-boot-skip{position:absolute;right:24px;bottom:22px;z-index:10;min-height:44px;padding:12px 18px;border:1px solid var(--ax-crimson);background:#0d0708;color:#fff;font:700 12px var(--ax-font-mono);letter-spacing:.08em;cursor:pointer}
+#axiom-boot-skip:hover{background:var(--ax-crimson-ink)}
+#axiom-boot-skip:focus-visible{outline:2px solid var(--ax-focus);outline-offset:3px}
 
 /* ------- HEADER / TICKER ------- */
 .top{
@@ -137,7 +171,7 @@ html:has(dialog[open]) .index-cursor{display:none}
 
 .hero-grid{
   position:relative;z-index:2;
-  display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:60px;align-items:center;
   padding:48px 24px 24px;
 }
 .eyebrow{
@@ -150,6 +184,8 @@ html:has(dialog[open]) .index-cursor{display:none}
 .eyebrow::before{content:"";width:6px;height:6px;background:var(--red);box-shadow:0 0 8px var(--red)}
 
 .kicker-rows{position:absolute;left:36px;top:160px;display:flex;flex-direction:column;gap:38px;color:var(--mute);font-size:11px;letter-spacing:.3em}
+/* 0524 W1: the 01/02/03 markers overlap the H1 below 1536px (measured −11px) — decorative, shown only where they clear it */
+@media (max-width:1535px){.kicker-rows{display:none}}
 .kicker-rows span{position:relative;padding-left:14px}
 .kicker-rows span::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;background:var(--red);transform:rotate(45deg);opacity:.7}
 
@@ -166,7 +202,7 @@ h1.title .w.red{color:var(--red);text-shadow:0 0 24px rgba(255,32,52,.55), 0 0 2
 
 h1.title .w.red .gtxt{position:absolute;left:0;top:0;color:var(--red);opacity:0;mix-blend-mode:screen;pointer-events:none}
 h1.title .w.red .gtxt.a{color:#ff2034;animation:gA 5s steps(1) infinite}
-h1.title .w.red .gtxt.b{color:#7ad6ff;animation:gB 5s steps(1) infinite}
+h1.title .w.red .gtxt.b{color:#00f0ff;animation:gB 5s steps(1) infinite} /* 0524 W1: opaque pure cyan screens to white over red, never pink */
 @keyframes gA{
   0%,86%,100%{opacity:0;transform:translate(0,0)}
   87%{opacity:.85;transform:translate(-3px,1px);clip-path:inset(20% 0 60% 0)}
@@ -176,22 +212,23 @@ h1.title .w.red .gtxt.b{color:#7ad6ff;animation:gB 5s steps(1) infinite}
 }
 @keyframes gB{
   0%,84%,100%{opacity:0;transform:translate(0,0)}
-  87%{opacity:.5;transform:translate(3px,-1px);clip-path:inset(40% 0 40% 0)}
+  87%{opacity:1;transform:translate(3px,-1px);clip-path:inset(40% 0 40% 0)}
   88%{opacity:0}
-  92%{opacity:.4;transform:translate(-2px,1px);clip-path:inset(10% 0 70% 0)}
+  92%{opacity:1;transform:translate(-2px,1px);clip-path:inset(10% 0 70% 0)}
   93%{opacity:0}
 }
+/* 0524 W1: scan lines move by transform, not top/left — the old infinite top/left animations produced a stream of layout shifts (CLS) */
 h1.title .w.red::before{
-  content:"";position:absolute;left:-10px;right:-10px;height:2px;
-  background:linear-gradient(90deg,transparent,rgba(255,32,52,.8),transparent);
-  filter:blur(.5px);box-shadow:0 0 8px rgba(255,32,52,.6);
+  content:"";position:absolute;left:-10px;right:-10px;top:0;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,32,52,.8),transparent) top/100% 2px no-repeat;
+  filter:blur(.5px) drop-shadow(0 0 4px rgba(255,32,52,.6));
   animation:redScan 4.5s linear infinite;pointer-events:none;
 }
 @keyframes redScan{
-  0%{top:-6px;opacity:0}
+  0%{transform:translateY(-6px);opacity:0}
   4%{opacity:1}
-  60%{top:100%;opacity:1}
-  62%,100%{top:100%;opacity:0}
+  60%{transform:translateY(100%);opacity:1}
+  62%,100%{transform:translateY(100%);opacity:0}
 }
 
 .eyebrow{animation:ebIn .9s cubic-bezier(.2,.8,.2,1) both}
@@ -210,7 +247,7 @@ h1.title .w.red::before{
 }
 
 .lede{
-  max-width:460px;color:var(--ink-2);font-size:14px;line-height:1.65;letter-spacing:.02em;
+  max-width:500px;color:var(--ink-2);font-size:15px;line-height:1.7;letter-spacing:.01em;
   margin-bottom:34px;
 }
 .lede b{color:var(--red);font-weight:600}
@@ -258,7 +295,7 @@ h1.title .w.red::before{
   z-index:3;
   transition:letter-spacing .35s cubic-bezier(.2,.8,.2,1), color .25s;
 }
-.enter .label{position:relative;display:inline-block;text-shadow:0 0 18px rgba(255,255,255,.25)}
+.enter .label{position:relative;display:inline-block;white-space:nowrap;text-shadow:0 0 18px rgba(255,255,255,.25)}
 .enter .label::after{
   content:attr(data-text);position:absolute;left:0;top:0;color:var(--red);
   opacity:0;mix-blend-mode:screen;transform:translate(0,0);
@@ -301,12 +338,12 @@ h1.title .w.red::before{
 }
 @keyframes btnScan{0%{transform:translateY(-50%)}100%{transform:translateY(50%)}}
 .enter-wrap .scan-layer::after{
-  content:"";position:absolute;top:0;bottom:0;width:30%;
-  background:linear-gradient(90deg, transparent, rgba(255,80,100,.18), transparent);
+  content:"";position:absolute;top:0;bottom:0;left:0;width:30%;
+  background:linear-gradient(90deg, transparent, rgba(255,32,52,.18), transparent);
   animation:btnSweep 2.6s ease-in-out infinite;
   mix-blend-mode:screen;
 }
-@keyframes btnSweep{0%{left:-30%}100%{left:100%}}
+@keyframes btnSweep{0%{transform:translateX(-100%)}100%{transform:translateX(333.333%)}} /* = left −30% → 100% of the 30%-wide band */
 
 /* small corner-tick markers around the button */
 .enter-wrap .corner-tick{
@@ -356,11 +393,13 @@ h1.title .w.red::before{
 
 
 .status-card{
-  position:absolute;right:36px;bottom:60px;z-index:2;
+  /* 0524 W1: was position:absolute (right:36px;bottom:60px) and covered the fourth feature's text; now in flow, right-aligned above the feature row */
+  position:relative;z-index:2;margin:6px 24px 0 auto;
   width:240px;padding:14px 18px;
   background:rgba(10,10,14,.7);border:1px solid var(--line-2);
   font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);
 }
+@media (min-width:901px){.status-card{margin-top:-60px}}
 .status-card .row{display:flex;align-items:center;gap:8px;color:var(--ink)}
 .status-card .row .dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 8px var(--red);animation:pulse 1.6s infinite}
 .status-card svg{display:block;margin-top:10px;width:100%;height:30px}
@@ -380,7 +419,7 @@ h1.title .w.red::before{
   background:rgba(13,14,18,.6);
   display:grid;grid-template-columns:repeat(4,1fr);gap:48px;
 }
-.feature{position:relative;padding-left:52px;color:var(--mute);font-size:12px;line-height:1.55;letter-spacing:.04em}
+.feature{position:relative;padding-left:52px;color:var(--mute);font-size:13px;line-height:1.6;letter-spacing:.02em}
 .feature .icon{
   position:absolute;left:0;top:2px;width:38px;height:38px;
   border:1px solid var(--red);display:grid;place-items:center;color:var(--red);
@@ -393,7 +432,7 @@ h1.title .w.red::before{
 .feature .icon::after{top:-3px;right:-3px;border-left:none;border-bottom:none}
 .feature .icon > b:nth-child(2){bottom:-3px;left:-3px;border-right:none;border-top:none}
 .feature .icon > b:nth-child(3){bottom:-3px;right:-3px;border-left:none;border-top:none}
-.feature h4{margin:0 0 6px;color:var(--ink);font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+.feature h2{margin:0 0 6px;color:var(--ink);font-size:12px;letter-spacing:.24em;text-transform:uppercase}
 
 /* ------- SECTION CHROME ------- */
 section{position:relative;padding:120px 0;border-bottom:1px solid var(--line)}
@@ -561,8 +600,8 @@ section{position:relative;padding:120px 0;border-bottom:1px solid var(--line)}
 .char .img .corners i.br{bottom:10px;right:10px;border-left:none;border-top:none}
 .char .img .id{position:absolute;top:18px;left:24px;font-size:9.5px;letter-spacing:.3em;color:var(--red);z-index:2}
 .char .img .codename{position:absolute;top:18px;right:24px;font-size:9.5px;letter-spacing:.3em;color:var(--ink-2);z-index:2}
-.char .img .scan{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);box-shadow:0 0 10px var(--red);z-index:2;opacity:.6;animation:scanline 5s linear infinite}
-@keyframes scanline{0%{top:0}100%{top:100%}}
+.char .img .scan{position:absolute;left:0;right:0;top:0;height:100%;background:linear-gradient(90deg,transparent,var(--red),transparent) top/100% 1px no-repeat;filter:drop-shadow(0 0 5px var(--red));z-index:2;opacity:.6;pointer-events:none;animation:scanline 5s linear infinite}
+@keyframes scanline{0%{transform:translateY(0)}100%{transform:translateY(100%)}}
 
 .char .meta{padding:22px 24px;border-top:1px solid var(--line)}
 .char .meta .role{font-size:10px;letter-spacing:.3em;color:var(--red);text-transform:uppercase}
@@ -636,7 +675,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   content:"";position:absolute;left:0;top:0;bottom:0;width:34%;
   background:var(--red);box-shadow:0 0 8px var(--red);animation:decBar 3s linear infinite;
 }
-@keyframes decBar{0%{left:-34%}100%{left:100%}}
+@keyframes decBar{0%{transform:translateX(-100%)}100%{transform:translateX(294.118%)}} /* = left −34% → 100% */
 
 .doctrine-stage{
   display:grid;grid-template-columns:210px 1fr 210px;gap:18px;align-items:stretch;
@@ -649,7 +688,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 .doctrine-side .lab{font-size:10px;letter-spacing:.3em;color:var(--mute);text-transform:uppercase}
 .doctrine-side .big{color:var(--red);font-size:22px;font-weight:600;letter-spacing:.12em;font-family:'JetBrains Mono',monospace}
 .doctrine-side .meter{height:6px;border:1px solid var(--red);position:relative;overflow:hidden}
-.doctrine-side .meter i{position:absolute;left:0;top:0;bottom:0;background:var(--red);box-shadow:inset 0 0 4px #fff;width:0;animation:meterFill 2.4s ease-out forwards}
+.doctrine-side .meter i{position:absolute;left:0;top:0;bottom:0;background:var(--red);box-shadow:0 0 6px rgba(255,32,52,.55);width:0;animation:meterFill 2.4s ease-out forwards}
 .doctrine-side .meter.m2 i{animation-delay:.3s;--w:46%}
 .doctrine-side .meter.m1 i{--w:78%}
 .doctrine-side .meter.m3 i{animation-delay:.5s;--w:92%}
@@ -717,11 +756,11 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 }
 .doctrine-quote .swept{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .doctrine-quote .swept::before{
-  content:"";position:absolute;left:-30%;top:0;width:30%;height:100%;
-  background:linear-gradient(90deg,transparent,rgba(255,80,100,.10),transparent);
+  content:"";position:absolute;left:0;top:0;width:30%;height:100%;transform:translateX(-100%);
+  background:linear-gradient(90deg,transparent,rgba(255,32,52,.10),transparent);
   animation:qSweep 6s linear infinite;
 }
-@keyframes qSweep{0%{left:-30%}100%{left:100%}}
+@keyframes qSweep{0%{transform:translateX(-100%)}100%{transform:translateX(333.333%)}}
 
 /* fragments */
 .fragments{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
@@ -736,7 +775,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 .frag::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);transform:translateX(-100%);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
 .frag:hover::after{transform:translateX(0)}
 .frag .frag-id{font-size:9.5px;letter-spacing:.3em;color:var(--red);text-transform:uppercase}
-.frag h4{margin:6px 0;font-family:'Oswald',sans-serif;font-weight:500;font-size:18px;text-transform:uppercase;letter-spacing:.04em;line-height:1.15;color:var(--ink)}
+.frag h3{margin:6px 0;font-family:'Oswald',sans-serif;font-weight:500;font-size:18px;text-transform:uppercase;letter-spacing:.04em;line-height:1.15;color:var(--ink)}
 .frag p{margin:0;color:var(--mute);font-size:12px;line-height:1.6}
 .frag .frag-foot{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line-2);display:flex;justify-content:space-between;font-size:10px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase}
 .frag .frag-foot b{color:var(--red);display:block;letter-spacing:.18em;margin-top:2px}
@@ -745,7 +784,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 
 /* ============== SYSTEM SURFACE :: SPINE & MODULES ============== */
 .spine-strip{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;
   border:1px solid var(--line-2);background:rgba(13,14,18,.6);
   margin-bottom:24px;
 }
@@ -755,7 +794,9 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 }
 .spine-strip .stat:last-child{border-right:none}
 .spine-strip .stat .lab{font-size:10px;letter-spacing:.3em;color:var(--mute);text-transform:uppercase}
-.spine-strip .stat .val{display:flex;align-items:baseline;gap:8px}
+.spine-strip .stat .val{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+/* 0524 W1: five columns do not fit below 900 px (at 200 % zoom the strip widened the page by 12 px) */
+@media (max-width:900px){.spine-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.spine-strip .stat{border-bottom:1px solid var(--line)}.spine-strip .stat:nth-child(2n){border-right:none}}
 .spine-strip .stat .num{font-family:'Oswald',sans-serif;font-weight:500;font-size:30px;color:var(--ink);letter-spacing:.04em}
 .spine-strip .stat .dim{font-size:10px;color:var(--mute);letter-spacing:.18em;text-transform:uppercase}
 .spine-strip .stat .bar{position:relative;height:3px;background:rgba(255,32,52,.12);overflow:hidden}
@@ -836,8 +877,8 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 .orbit-card::before,.orbit-card::after{content:"";position:absolute;width:10px;height:10px;border:1px solid var(--red)}
 .orbit-card::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
 .orbit-card::after{bottom:-1px;right:-1px;border-left:none;border-top:none}
-.orbit-card .scan-bar{position:absolute;left:8px;right:8px;height:1px;background:var(--red);box-shadow:0 0 8px var(--red);animation:scanInside 3.5s linear infinite;pointer-events:none}
-@keyframes scanInside{0%{top:8px;opacity:0}10%{opacity:.7}90%{opacity:.7}100%{top:calc(100% - 9px);opacity:0}}
+.orbit-card .scan-bar{position:absolute;left:8px;right:8px;top:8px;bottom:9px;background:linear-gradient(var(--red),var(--red)) top/100% 1px no-repeat;filter:drop-shadow(0 0 4px var(--red));animation:scanInside 3.5s linear infinite;pointer-events:none}
+@keyframes scanInside{0%{transform:translateY(0);opacity:0}10%{opacity:.7}90%{opacity:.7}100%{transform:translateY(100%);opacity:0}}
 
 .orbit-mini{
   position:absolute;width:96px;
@@ -861,8 +902,8 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   overflow:hidden;
 }
 .content-vis .portrait::before{content:"";position:absolute;left:6px;right:6px;top:6px;bottom:6px;border:1px dashed rgba(255,32,52,.45);pointer-events:none}
-.content-vis .portrait::after{content:"";position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--red),transparent);filter:blur(.4px);box-shadow:0 0 10px var(--red);animation:portraitScan 3.5s linear infinite;top:0;pointer-events:none}
-@keyframes portraitScan{0%{top:-4px;opacity:0}5%{opacity:1}95%{opacity:1}100%{top:100%;opacity:0}}
+.content-vis .portrait::after{content:"";position:absolute;left:0;right:0;top:0;height:100%;background:linear-gradient(90deg,transparent,var(--red),transparent) top/100% 2px no-repeat;filter:blur(.4px) drop-shadow(0 0 5px var(--red));animation:portraitScan 3.5s linear infinite;pointer-events:none}
+@keyframes portraitScan{0%{transform:translateY(-4px);opacity:0}5%{opacity:1}95%{opacity:1}100%{transform:translateY(100%);opacity:0}}
 .content-vis .silhouette{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:50%;height:65%;background:linear-gradient(180deg, rgba(255,32,52,.55), rgba(255,32,52,.08));clip-path:polygon(28% 0,72% 0,82% 28%,92% 100%,8% 100%,18% 28%)}
 .content-vis .portrait .id-stamp{position:absolute;top:6px;left:8px;font-size:7.5px;letter-spacing:.2em;color:var(--red);font-weight:600}
 
@@ -932,7 +973,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   /* canonical palette — matches character cards */
   --ax-ink:#f1f1f4;
   --ax-ink-2:#c9c9d1;
-  --ax-mute:#6d6e76;
+  --ax-mute:#80818a;
   --ax-mute-2:#2a2a33;
   --ax-red:#ff2034;
   --ax-red-dim:rgba(255,32,52,.55);
@@ -994,7 +1035,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 /* CENTER: copy */
 .ax-name{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(60px,7vw,96px);line-height:.88;letter-spacing:.02em;text-transform:uppercase;color:var(--ax-ink);margin:0;position:relative}
 .ax-name em{font-style:normal;color:var(--ax-red);text-shadow:0 0 30px rgba(255,32,52,.55), 0 0 2px rgba(255,32,52,.9)}
-.ax-name::after{content:"AXIOM∅";position:absolute;left:3px;top:0;color:transparent;-webkit-text-stroke:1px rgba(255,138,146,.4);animation:axNameGlitch 7s cubic-bezier(.6,0,.4,1) infinite;pointer-events:none}
+.ax-name::after{content:"AXIOM∅";position:absolute;left:3px;top:0;color:transparent;-webkit-text-stroke:1px rgba(255,32,52,.5);animation:axNameGlitch 7s cubic-bezier(.6,0,.4,1) infinite;pointer-events:none}
 @keyframes axNameGlitch{0%,88%,100%{transform:translate(0);opacity:0}90%{transform:translate(-2px,1px);opacity:.55}92%{transform:translate(2px,-1px);opacity:.3}94%{opacity:0}}
 
 .ax-sub{font-size:11px;letter-spacing:.34em;color:var(--ax-red);text-transform:uppercase;margin:18px 0 6px;display:flex;align-items:center;gap:10px}
@@ -1003,7 +1044,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 .ax-class b{color:var(--ax-ink)}
 .ax-statement{margin:0 0 22px;color:var(--ax-ink-2);font-size:13.5px;line-height:1.75;letter-spacing:.01em}
 .ax-statement em{font-style:normal;color:var(--ax-red);font-weight:500}
-.ax-statement b{color:var(--ax-rose);font-weight:500}
+.ax-statement b{color:var(--ax-ink-2);font-weight:500}
 .ax-quote{margin:0 0 24px;padding:18px 22px;border-left:2px solid var(--ax-red);font-family:'Oswald',sans-serif;font-size:21px;text-transform:uppercase;letter-spacing:.02em;color:var(--ax-ink);background:linear-gradient(90deg, rgba(255,32,52,.06), transparent 80%);position:relative;line-height:1.2}
 .ax-quote::before{content:"// FRAGMENT ∅";color:var(--ax-red);font-family:'JetBrains Mono',monospace;font-size:.48em;display:block;margin-bottom:10px;letter-spacing:.32em;font-weight:600}
 .ax-quote span{color:var(--ax-red);font-weight:500}
@@ -1059,7 +1100,8 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   .world-hero{aspect-ratio:auto;height:520px}
   .world-hero .caption h3{font-size:38px}
   .world-hero .axis{gap:20px}
-  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:28px}
+  .radar{max-width:420px}
   .features{grid-template-columns:repeat(2,1fr);gap:28px}
   .nodes{grid-template-columns:repeat(2,1fr)}
   .node{border-bottom:1px solid var(--line)}
@@ -1088,14 +1130,14 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 
   .hero{padding:32px 0 28px;min-height:auto}
   .hero-frame,.hero-particles,.kicker-rows,.status-card,.version-card,.crosshair-bg{display:none}
-  .hero-grid{grid-template-columns:1fr;padding:0;gap:20px}
+  .hero-grid{grid-template-columns:minmax(0,1fr);padding:0;gap:20px}
   .radar{max-width:min(74vw,330px);margin:2px auto 0;filter:drop-shadow(0 0 38px rgba(255,32,52,.22))}
   h1.title{font-size:clamp(44px,16vw,68px);margin:14px 0}
   .lede{max-width:none;font-size:15px;line-height:1.55;margin-bottom:20px}
   .features{margin:16px 0 0;padding:14px 12px;grid-template-columns:1fr;gap:12px}
   .feature{padding:0;font-size:13px;line-height:1.45}
   .feature .icon{display:none}
-  .feature h4{margin:0 0 4px;font-size:11px;letter-spacing:.14em}
+  .feature h2{margin:0 0 4px;font-size:11px;letter-spacing:.14em}
 
   .enter-wrap{width:100%;height:70px;padding:0 12px;filter:none}
   .enter-wrap .glow,.enter-wrap .bracket,.enter-wrap .corner-tick,.enter-wrap .pulse-ring{display:none}
@@ -1116,7 +1158,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 
   .fragments{grid-template-columns:1fr;gap:10px}
   .frag{min-height:auto;padding:16px 14px;gap:6px}
-  .frag h4{font-size:16px}
+  .frag h3{font-size:16px}
   .frag p{font-size:13px;line-height:1.45}
   .frag .glyph{display:none}
 
@@ -1195,6 +1237,38 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
   footer .row > div{width:100%}
   footer .axiom-line{margin-top:14px;font-size:9px;letter-spacing:.24em}
   footer .axiom-line::before,footer .axiom-line::after{display:none}
+}
+
+/* 0524 W1: tablets keep the single-column hero; 901–1080 px keeps title and radar side by side */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:30px} /* minmax: the fallback font's wide title must not widen the column (font-swap layout shift) */
+  .radar{max-width:min(74vw,520px)}
+}
+/* 0524 W1: landscape phones — title left, lede and ENTER AXIOM right, so the CTA is on the first screen */
+@media (max-height:520px) and (min-width:600px) and (orientation:landscape){
+  .hero-grid>div:first-child{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);column-gap:28px;align-items:start;
+    grid-template-areas:"eyebrow eyebrow" "title lede" "title cta" "extra extra" "byline byline"}
+  .hero-grid>div:first-child>.eyebrow{grid-area:eyebrow;justify-self:start}
+  .hero-grid>div:first-child>.title{grid-area:title;margin:8px 0 0}
+  .hero-grid>div:first-child>.lede{grid-area:lede;margin:10px 0 10px;font-size:13px;line-height:1.55}
+  .hero-grid>div:first-child>.enter-wrap{grid-area:cta;margin:0}
+  .hero-grid>div:first-child>.enter-wrap .enter{font-size:13px;letter-spacing:.22em;padding:0 16px;gap:10px}
+  .hero-grid>div:first-child>.show-hero-extra{grid-area:extra}
+  .hero-grid>div:first-child>.show-hero-byline{grid-area:byline}
+}
+/* 0524 W1: low windows (landscape phones, 200% zoom) — compact chrome and hero so the CTA reaches the first screen */
+@media (max-height:620px){
+  .nav{padding:10px 20px}
+  .ticker{height:28px}
+  .hero{padding:10px 0 20px;min-height:auto}
+  .hero-frame{inset:6px 16px}
+  .hero-grid{padding:8px 12px 8px}
+  .version-card,.status-card{display:none}
+  .eyebrow{padding:4px 10px}
+  h1.title{font-size:clamp(38px,11vh,88px);margin:10px 0 8px}
+  .lede{margin-bottom:14px;line-height:1.55}
+  .enter-wrap{height:66px}
+  .radar{max-width:min(380px,62vh)}
 }
 
 /* ------- ACCESSIBILITY: reduced motion (keep final/visible states, stop looping) ------- */

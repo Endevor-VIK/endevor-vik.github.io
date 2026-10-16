@@ -26,52 +26,65 @@
 <link rel="icon" type="image/svg+xml" href="assets/endeavor-mark.svg" />
 <link rel="shortcut icon" href="assets/endeavor-mark.svg" />
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Tektur:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap">
+<script>
+/* 0524 W1 review variants — CREATOR decision pending (Q-02 WORK A/B, Q-03 TYPE A/B). ?type=a|b · ?work=a|b.
+   Defaults: TYPE A (three core families), WORK B (Principal preference). Remove this switch after the decision. */
+(function(){try{var q=new URLSearchParams(location.search),d=document.documentElement;
+d.setAttribute('data-type',(q.get('type')||'').toLowerCase()==='b'?'b':'a');
+d.setAttribute('data-work',(q.get('work')||'').toLowerCase()==='a'?'a':'b');}catch(_){}})();
+</script>
+<!-- 0524 W1: no font preloads — on a slow link they delayed the first paint (FCP ~1.3 s vs ~0.6 s, lab); fonts.css uses font-display:swap -->
+<link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/showcase.css">
 <link rel="stylesheet" href="assets/css/showcase-v22.css">
 <link rel="stylesheet" href="assets/css/showcase-v23.css">
+<noscript><style>/* without JS the WORK archive is a plain list: every screen visible, tab/prev-next controls (script-only) hidden */.ax-panel[hidden]{display:grid!important}.ax-panel+.ax-panel{border-top:1px solid var(--ax-crimson-line)}.ax-archive-rail,.ax-archive-nav,.ax-archive-count{display:none!important}</style></noscript>
 </head>
 <body>
-<div id="axiom-boot" style="position:fixed;inset:0;z-index:9999;background:#000" role="region" aria-label="Заставка AXIOM">
-  <iframe src="loader.html?target=about:blank&duration=2400&auto=true" loading="eager"
-    style="border:0;width:100%;height:100%;display:block" title="Заставка AXIOM"></iframe>
-  <button type="button" id="axiom-boot-skip" style="position:absolute;right:24px;bottom:22px;z-index:10;padding:13px 18px;border:1px solid #fd304b;background:#140c15;color:#fff;font:700 12px monospace;cursor:pointer">SKIP INTRO / ПРОПУСТИТЬ →</button>
-</div>
 <script>
+/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).
+   The overlay exists only when this script decides to show it, so a failure never leaves the page covered:
+   storage unavailable, already seen (session or last 24 h), reduced motion, Save-Data / 2G, a weak device or any error → no loader. */
 (function(){
-  var boot=document.getElementById('axiom-boot');
-  if(!boot)return;
-  var root=document.documentElement,frame=boot.querySelector('iframe');
-  var previousHtml=root.style.overflow,previousBody=document.body?document.body.style.overflow:'';
-  var finished=false,locked=false,timer=null;
-  function isSeen(){try{return sessionStorage.getItem('axiom_loader_seen')==='1'}catch(_){return false}}
-  function markSeen(){try{sessionStorage.setItem('axiom_loader_seen','1')}catch(_){}}
-  function release(){if(locked){root.style.overflow=previousHtml;if(document.body)document.body.style.overflow=previousBody;locked=false}}
+  var DAY=864e5,SHOW_MS=1300,FADE_MS=250,now=Date.now();
+  function store(name){try{var s=window[name],k='__axiom_probe';s.setItem(k,'1');s.removeItem(k);return s}catch(_){return null}}
+  try{
+    var ls=store('localStorage'),ss=store('sessionStorage');
+    if(!ls||!ss||ss.getItem('axiom_loader_seen')==='1')return;
+    var last=parseInt(ls.getItem('axiom_loader_last')||'0',10);
+    if(last>0&&now>=last&&now-last<DAY)return;
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var c=navigator.connection;
+    if(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||'')))return;
+    if((navigator.deviceMemory&&navigator.deviceMemory<=2)||(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<=2))return;
+    ls.setItem('axiom_loader_last',String(now));ss.setItem('axiom_loader_seen','1');
+  }catch(_){return}
+  var root=document.documentElement,body=document.body,finished=false,timer=null;
+  var boot=document.createElement('div');
+  boot.id='axiom-boot';boot.setAttribute('role','region');boot.setAttribute('aria-label','Заставка AXIOM');
+  boot.style.cssText='position:fixed;inset:0;z-index:9999;background:#000;transition:opacity '+FADE_MS+'ms ease';
+  boot.innerHTML='<button type="button" id="axiom-boot-skip">SKIP INTRO / ПРОПУСТИТЬ →</button>'+
+    '<iframe src="loader.html?target=about:blank&amp;duration=900&amp;auto=false&amp;embedded=1" title="Заставка AXIOM" tabindex="-1" aria-hidden="true" '+
+    'style="border:0;width:100%;height:100%;display:block;pointer-events:none"></iframe>';
+  var prevHtml=root.style.overflow,prevBody=body.style.overflow;
+  function release(){root.style.overflow=prevHtml;body.style.overflow=prevBody}
   function close(){
-    if(finished)return;finished=true;
-    if(timer)clearTimeout(timer);
-    release();markSeen();
-    if(frame){try{frame.src='about:blank'}catch(_){}}
-    boot.style.pointerEvents='none';boot.style.opacity='0';boot.style.transition='opacity .25s ease';
-    setTimeout(function(){if(boot.parentNode)boot.remove()},300);
+    if(finished)return;finished=true;clearTimeout(timer);release();
+    document.removeEventListener('keydown',onKey,true);
+    var frame=boot.querySelector('iframe');if(frame){try{frame.src='about:blank'}catch(_){}}
+    boot.style.pointerEvents='none';boot.style.opacity='0';
+    setTimeout(function(){if(boot.parentNode)boot.parentNode.removeChild(boot)},FADE_MS+20);
   }
-  var skip=boot.querySelector('#axiom-boot-skip');
-  if(skip)skip.addEventListener('click',close);
-  document.addEventListener('keydown',function onKey(e){
-    if(finished){document.removeEventListener('keydown',onKey);return}
-    if(e.key==='Escape'){e.preventDefault();close();document.removeEventListener('keydown',onKey)}
-  });
-  try {
-    if(isSeen()||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){close();return}
-    root.style.overflow='hidden';if(document.body)document.body.style.overflow='hidden';locked=true;
-    timer=setTimeout(close,2800);
-    if(frame)frame.addEventListener('error',close,{once:true});
-    window.addEventListener('pagehide',release,{once:true});
-  }catch(_){close()}finally{if(finished)release()}
+  function onKey(e){if(e.key==='Escape'){e.preventDefault();close()}}
+  try{
+    body.insertBefore(boot,body.firstChild);
+    root.style.overflow='hidden';body.style.overflow='hidden';
+    boot.querySelector('#axiom-boot-skip').addEventListener('click',close);
+    document.addEventListener('keydown',onKey,true);
+    window.addEventListener('pagehide',close,{once:true});
+    timer=setTimeout(close,SHOW_MS);
+  }catch(_){close()}
 })();
 </script>
 
@@ -89,7 +102,7 @@
       <b>AXIOM&nbsp;CORE</b>
       <small>// v0.3.0.0</small>
     </div>
-    <nav class="menu" aria-label="Главная навигация"><a href="#about">AXIOM</a><span class="sep">/</span><a href="#creator">CREATOR</a><span class="sep">/</span><a href="#work">WORK</a><span class="sep">/</span><a href="#system">SYSTEM</a><span class="sep">/</span><a href="#world-guide">WORLD</a><span class="sep">/</span><a href="#vision">VISION</a></nav>
+    <nav class="menu" aria-label="Главная навигация"><a href="#about">AXIOM</a><span class="sep">/</span><a href="#creator">CREATOR</a><span class="sep">/</span><a href="#work">WORK</a><span class="sep">/</span><a href="#system">SYSTEM</a><span class="sep">/</span><a href="#world-guide">WORLD</a><span class="sep">/</span><a href="#vision">VISION</a><span class="sep">/</span><a href="#collaboration">CONTACT</a></nav>
     <div class="status"><span class="dot"></span>PROJECT PROFILE</div>
   </div>
   <div class="ticker">
@@ -118,6 +131,7 @@
 <nav class="show-mobile-nav" aria-label="Навигация по витрине"><a href="#about">AXIOM</a><a href="#creator">CREATOR</a><a href="#work">WORK</a><a href="#system">SYSTEM</a><a href="#world-guide">WORLD</a><a href="#vision">VISION</a><a href="#collaboration">CONTACT</a>
 </nav>
 
+<main id="main">
 <!-- ============ HERO ============ -->
 <section class="hero" id="top" data-screen-label="01 Hero">
   <div class="crosshair-bg"></div>
@@ -228,8 +242,9 @@
               </svg>
             </span>
           </a>
-        </div><p class="v22-hero-context">ПРОФИЛЬ НЕЗАВИСИМОГО АВТОРА · ДЕЙСТВУЮЩИЕ ИНТЕРФЕЙСЫ · ВНУТРЕННЯЯ ИНЖЕНЕРИЯ · АВТОРСКИЙ CANON</p>
-        <div class="show-hero-byline">CREATOR / ENDEAVOR · DESIGN / CODE / CANON</div><div class="show-hero-extra"><a href="#about">ЧТО ТАКОЕ AXIOM ↘</a><a href="#work">РАБОТЫ ↘</a><a href="#vision">БУДУЩЕЕ ↘</a></div>
+        </div>
+        <nav class="show-hero-extra" aria-label="Быстрый переход"><a href="#about">ЧТО ТАКОЕ AXIOM ↘</a><a href="#work">РАБОТЫ ↘</a><a href="#vision">БУДУЩЕЕ ↘</a></nav>
+        <div class="show-hero-byline">CREATOR / ENDEAVOR · DESIGN / CODE / CANON</div>
       </div>
       <!-- Animated AXIOM emblem / radar -->
       <div class="radar" aria-hidden="true">
@@ -245,7 +260,7 @@
               <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
             </linearGradient>
             <linearGradient id="g-tri" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#ff8a92"/>
+              <stop offset="0%" stop-color="#ff4a54"/>
               <stop offset="55%" stop-color="#ff2034"/>
               <stop offset="100%" stop-color="#7a0a14"/>
             </linearGradient>
@@ -279,8 +294,8 @@
             <circle r="218" fill="none" stroke="#ff2034" stroke-opacity=".28" stroke-dasharray="1 7"/>
             <!-- small markers around the ring -->
             <circle cx="218" cy="0" r="3" fill="#ff2034"/>
-            <circle cx="-154" cy="-154" r="2" fill="#ff7d88"/>
-            <circle cx="154" cy="154" r="2" fill="#ff7d88"/>
+            <circle cx="-154" cy="-154" r="2" fill="#ff4a54"/>
+            <circle cx="154" cy="154" r="2" fill="#ff4a54"/>
           </g>
 
           <!-- ===== ring 3: segmented arcs (3/4 ring with breaks) ===== -->
@@ -367,7 +382,7 @@
 
           <!-- ===== center: aura disc, then mark ===== -->
           <circle r="100" fill="url(#g-triglow)" class="pulse-soft"/>
-          <circle r="82" fill="#0a0306" stroke="#ff2034" stroke-opacity=".6"/>
+          <circle r="82" fill="#0a0405" stroke="#ff2034" stroke-opacity=".6"/>
           <circle r="82" fill="none" stroke="#ff2034" stroke-opacity=".8" stroke-dasharray="100 20" class="spin-fast" transform-origin="0 0"/>
 
           <!-- expanding pulse ring out of center -->
@@ -375,7 +390,7 @@
 
           <!-- AXIOM triangular mark (three arrow petals) -->
           <g class="pulse-core">
-            <g fill="url(#g-tri)" stroke="#ff8a92" stroke-opacity=".5" stroke-width=".5" style="filter:drop-shadow(0 0 10px rgba(255,32,52,.7))">
+            <g fill="url(#g-tri)" stroke="#ff4a54" stroke-opacity=".5" stroke-width=".5" style="filter:drop-shadow(0 0 10px rgba(255,32,52,.7))">
               <!-- top petal -->
               <path d="M 0 -54 L 18 -10 L 0 -4 L -18 -10 Z"/>
               <!-- bottom-left -->
@@ -383,7 +398,7 @@
               <!-- bottom-right -->
               <path d="M 46 28 L 16 -2 L 0 0 L 3 18 Z"/>
             </g>
-            <circle r="5" fill="#fff2f2"/>
+            <circle r="5" fill="#ffffff"/>
           </g>
         </svg>
       </div>
@@ -406,8 +421,8 @@
             <rect x="4" y="11" width="16" height="9"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>
           </svg>
         </span>
-        <h4>SECURE ACCESS</h4>
-        Роли и уровни доступа помогают разделять публичные материалы и инструменты CREATOR. Конкретные гарантии безопасности не заявляются.
+        <h2>SECURE ACCESS</h2>
+        Роли и уровни доступа разделяют публичные материалы и рабочие инструменты CREATOR.
       </div>
       <div class="feature">
         <span class="icon"><b></b><b></b>
@@ -416,7 +431,7 @@
             <path d="M12 8 L6 16 M12 8 L18 16 M7 18 L17 18"/>
           </svg>
         </span>
-        <h4>KNOWLEDGE BASE</h4>
+        <h2>KNOWLEDGE BASE</h2>
         Связанные досье, сюжетные материалы и технологии: записи организованы по сущностям и общим правилам Canon.
       </div>
       <div class="feature">
@@ -425,7 +440,7 @@
             <path d="M12 3 L21 8 V16 L12 21 L3 16 V8 Z"/><path d="M12 3 V21 M3 8 L21 8 M3 16 L21 16"/>
           </svg>
         </span>
-        <h4>CORE NETWORK</h4>
+        <h2>CORE NETWORK</h2>
         Архитектурный принцип взаимосвязанных компонентов: публичный сайт, данные, AI и внутренняя панель автора.
       </div>
       <div class="feature">
@@ -435,8 +450,8 @@
             <circle cx="12" cy="12" r="3"/>
           </svg>
         </span>
-        <h4>BEYOND THE SYSTEM</h4>
-        Художественное исследование памяти, свободы, автономии и контроля — темы вселенной, не продуктовая гарантия.
+        <h2>BEYOND THE SYSTEM</h2>
+        Художественное исследование памяти, свободы, автономии и контроля — сквозные темы вселенной AXIOM.
       </div>
     </div>
   </div>
@@ -447,14 +462,14 @@
 <!-- SHOWCASE V2.1 · ADDITIVE CREATOR AND PRODUCT STORY -->
 <!-- SHOWCASE V2.2 / WHAT IS AXIOM -->
 <section class="show-section v22-about" id="about" aria-labelledby="v22-about-title"><div class="wrap">
-<div class="show-index"><span>01 / START HERE</span><span>EXPLAIN BEFORE EXPLORE</span></div>
+<div class="show-index"><span>01 / AXIOM SYSTEM</span><span>OVERVIEW</span></div>
 <div class="v22-about-head"><div><div class="show-kicker">WHAT IS AXIOM? / SHORT ANSWER</div><h2 class="show-title" id="v22-about-title">НЕ ОДИН ПРОДУКТ.<br><em>СВЯЗАННАЯ ЭКОСИСТЕМА.</em></h2><p class="show-lead">AXIOM SYSTEM — независимый авторский проект ENDEAVOR, в котором <strong>цифровая вселенная, публичный сайт, AI-инструменты, граф знаний и инженерная среда</strong> создаются как части общей архитектуры.</p><p class="show-muted">Для посетителя AXIOM начинается с историй и контента. Для автора за ними работают инструменты, поддерживающие согласованность мира и развитие интерфейсов. Будущие продукты — отдельная дорожная карта, а не уже доступные сервисы.</p></div>
-<figure class="v22-about-art"><img src="assets/showcase/visual-library/hq/A02_network_city_panorama-hq.webp" width="1600" height="686" loading="lazy" decoding="async" alt="Концептуальная архитектурная иллюстрация связанной цифровой экосистемы"><figcaption>AXIOM / CONNECTED ARCHITECTURE</figcaption></figure></div>
+<figure class="v22-about-art"><img src="assets/showcase/visual-library/hq/A02_network_city_panorama-1440w.webp" srcset="assets/showcase/visual-library/hq/A02_network_city_panorama-960w.webp 960w, assets/showcase/visual-library/hq/A02_network_city_panorama-1440w.webp 1440w, assets/showcase/visual-library/hq/A02_network_city_panorama-1916w.webp 1916w" sizes="(max-width: 760px) calc((100vw - 28px) * 1.32), 70vw" width="1916" height="821" loading="lazy" decoding="async" alt="Концептуальная архитектурная иллюстрация связанной цифровой экосистемы"><figcaption>AXIOM / CONNECTED ARCHITECTURE</figcaption></figure></div>
 <div class="v22-pillars"><article><span>01 / UNIVERSE</span><h3>МИР И КОНТЕНТ</h3><p>Сюжет, герои, технологии и локации соединены авторским Canon: история развивается согласованно, а не набором случайных публикаций.</p><a href="#world-guide">ПОНЯТЬ МИР ↘</a></article><article><span>02 / EXPERIENCE</span><h3>ПУБЛИЧНЫЙ ИНТЕРФЕЙС</h3><p>Через AXIOM WEB CORE читатель знакомится с миром, досье, Chronicle и новостями. Часть возможностей зависит от режима доступа.</p><a href="#work">ПОСМОТРЕТЬ РАБОТЫ ↘</a></article><article><span>03 / KNOWLEDGE + AI</span><h3>ИНТЕЛЛЕКТ И СВЯЗИ</h3><p>AXCHAT работает с контекстом материалов; Master Graph позволяет автору анализировать связи сущностей и выявлять разрывы в данных.</p><a href="#system">УЗНАТЬ ОБ УСТРОЙСТВЕ ↘</a></article><article><span>04 / ENGINEERING</span><h3>СОБСТВЕННАЯ РАЗРАБОТКА</h3><p>AXS объединяет процессы разработки, изменения, ревью, технические проверки и работу с Canon. Инструменты CREATOR не равны общедоступному продукту.</p><a href="#creator">ОБ АВТОРЕ ↘</a></article></div>
 </div></section>
 <div class="v22-bridge" aria-hidden="true"><span>01 — SYSTEM EXPLAINED</span><b>КТО СОЗДАЁТ ЭТУ АРХИТЕКТУРУ?</b><span>02 — CREATOR ↓</span></div>
 <section class="show-section show-creator" id="creator" aria-labelledby="creator-title"><div class="wrap">
- <div class="show-index"><span>01 / AUTHOR PROFILE</span><span>ENDEAVOR · AXIOM SYSTEM</span></div>
+ <div class="show-index"><span>02 / AUTHOR PROFILE</span><span>ENDEAVOR · AXIOM SYSTEM</span></div>
  <div class="show-split">
   <div><div class="show-kicker">ORIGIN / INDEPENDENT CREATOR</div><h2 class="show-title" id="creator-title">ЗА МИРОМ<br>СТОИТ <em>АВТОР.</em></h2>
   <p class="show-lead">Я создаю <strong>AXIOM SYSTEM</strong> — авторскую вселенную и развивающуюся технологическую экосистему. Интерфейсы, инженерные инструменты, AI, история и контент здесь строятся как части одного целого.</p>
@@ -469,94 +484,98 @@
  <div class="v22-discipline"><span>WHAT I ACTUALLY DO</span><div><p><strong>01 / Архитектура</strong> — проектирование границ WEB CORE, AXCHAT, Graph и управляющего контура.</p><p><strong>02 / Продуктовый UI</strong> — сложные панели, читательские страницы, работа с маршрутом пользователя.</p><p><strong>03 / AI и знания</strong> — контекстные интерфейсы, структура Canon, связи данных.</p><p><strong>04 / Инженерное качество</strong> — проверка изменений, ревью и контролируемые публикации.</p></div><p class="v22-creator-result">Реальные интерфейсы, разработанные решения и связь компонентов представлены ниже в разделе WORK.</p></div>
  <div class="show-motto"><div><span>01</span><strong>DESIGN IS SYSTEM</strong><p>Интерфейс — архитектурное решение, а не декоративная оболочка.</p></div><div><span>02</span><strong>EVIDENCE OVER CLAIMS</strong><p>Реализованное отделяем от будущих планов.</p></div><div><span>03</span><strong>ONE CONNECTED WORLD</strong><p>Код, Canon, персонажи и инструменты развиваются вместе.</p></div></div>
 </div></section>
-<div class="v22-bridge" aria-hidden="true"><span>02 — AUTHOR & METHODS</span><b>ОТ ПРИНЦИПОВ К РЕАЛИЗОВАННЫМ ЭКРАНАМ</b><span>03 — WORK ↓</span></div>
+<div class="ax-art-band" id="work-art-band"><div class="wrap ax-art-band-grid"><div class="v22-bridge ax-art-band-copy" aria-hidden="true"><span>02 — AUTHOR & METHODS</span><b>ОТ ПРИНЦИПОВ К РЕАЛИЗОВАННЫМ ЭКРАНАМ</b><span>03 — WORK ↓</span></div><figure class="show-feature-art v22-feature-art" id="work-art"><img src="assets/showcase/visual-library/hq/A01_public_system_gateway-960w.webp" srcset="assets/showcase/visual-library/hq/A01_public_system_gateway-960w.webp 960w, assets/showcase/visual-library/hq/A01_public_system_gateway-hq.webp 1672w" sizes="(max-width: 900px) calc(100vw - 28px), min(880px, 62vw)" width="1672" height="941" loading="lazy" decoding="async" alt="Художественная визуализация цифровой архитектуры AXIOM; не скриншот интерфейса"><figcaption class="v22-art-label">AXIOM WEB CORE / DIGITAL GATEWAY</figcaption></figure></div></div>
 <section class="show-section show-work" id="work" aria-labelledby="work-title"><div class="wrap">
-<div class="show-index"><span>02 / SELECTED WORK</span><span>ENGINEERING + STORYTELLING</span></div>
+<div class="show-index"><span>03 / SELECTED WORK</span><span>ENGINEERING + STORYTELLING</span></div>
 <div class="show-section-head"><div><div class="show-kicker">ACTUAL INTERFACES / SYSTEM SURFACES</div><h2 id="work-title" class="show-title">РАБОТА,<br><em>КОТОРУЮ ВИДНО.</em></h2></div><p>Внутри AXIOM уже существует не только история, но и инструментальная база. Часть интерфейсов предназначена для читателей, другие — исключительно для CREATOR и администрирования.</p></div>
+<div class="ax-archive" id="showcase-gallery" aria-labelledby="ax-archive-title">
+<div class="ax-archive-hud"><span id="ax-archive-title">INTERFACE ARCHIVE / REAL PRODUCT SCREENS</span><span class="ax-archive-count" aria-hidden="true">01 / 08</span></div>
+<p class="ax-archive-intro">Восемь изображений реальных интерфейсов. Нажми на любой экран, чтобы рассмотреть детали. Часть экранов доступна посетителям, другие показывают закрытые инструменты автора.</p>
+<div class="ax-archive-rail" role="tablist" aria-label="Экраны AXIOM"><button class="ax-tab" type="button" role="tab" id="ax-tab-01" aria-controls="ax-panel-01" aria-selected="true" tabindex="0"><span class="ax-tab-num">01</span><span class="ax-tab-name">PANEL GATE</span><span class="ax-tab-kind">CREATOR</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-02" aria-controls="ax-panel-02" aria-selected="false" tabindex="-1"><span class="ax-tab-num">02</span><span class="ax-tab-name">WATCH_DOG</span><span class="ax-tab-kind">CREATOR</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-03" aria-controls="ax-panel-03" aria-selected="false" tabindex="-1"><span class="ax-tab-num">03</span><span class="ax-tab-name">CHRONICLE</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-04" aria-controls="ax-panel-04" aria-selected="false" tabindex="-1"><span class="ax-tab-num">04</span><span class="ax-tab-name">AXCHAT</span><span class="ax-tab-kind">ACCESS</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-05" aria-controls="ax-panel-05" aria-selected="false" tabindex="-1"><span class="ax-tab-num">05</span><span class="ax-tab-name">CONTENT</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-06" aria-controls="ax-panel-06" aria-selected="false" tabindex="-1"><span class="ax-tab-num">06</span><span class="ax-tab-name">VIKTOR</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-07" aria-controls="ax-panel-07" aria-selected="false" tabindex="-1"><span class="ax-tab-num">07</span><span class="ax-tab-name">SIGNAL</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-08" aria-controls="ax-panel-08" aria-selected="false" tabindex="-1"><span class="ax-tab-num">08</span><span class="ax-tab-name">MASTER GRAPH</span><span class="ax-tab-kind">CREATOR</span></button></div>
+<div class="ax-archive-panels">
+<div class="ax-panel" role="tabpanel" id="ax-panel-01" aria-labelledby="ax-tab-01" tabindex="0">
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/02-panel-login-full.webp" data-showcase-srcset="assets/showcase/hq/02-panel-login-1440w.webp 1440w, assets/showcase/hq/02-panel-login-1919w.webp 1919w" data-showcase-title="AXIOM PANEL — ACCESS GATE" aria-label="Открыть экран: AXIOM PANEL — ACCESS GATE"><img src="assets/showcase/hq/02-panel-login-960w.webp" srcset="assets/showcase/hq/02-panel-login-960w.webp 960w, assets/showcase/hq/02-panel-login-1440w.webp 1440w, assets/showcase/hq/02-panel-login-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: AXIOM PANEL — ACCESS GATE"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">01 / CREATOR INTERFACE</div><h3>AXIOM PANEL — ACCESS GATE</h3><p class="ax-case-lead">Первый контакт с RED PROTOCOL: многоуровневый вход, идентификация сеанса и визуальный язык панели.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Вход в AXIOM PANEL и выбор режима: продолжить сеанс, войти под закреплённым пользователем или сменить его.</dd></div><div><dt>На экране</dt><dd>Три маршрута входа, строка состояния сеанса (уровень доступа, сохранение) и терминал наблюдения NETSEC://WATCHDOG поверх городского фона.</dd></div><div><dt>Решение</dt><dd>Права после входа определяет роль пользователя: от неё зависят уровень доступа и набор открытых разделов.</dd></div><div><dt>Связь с AXIOM</dt><dd>Единая точка входа в панель: дальше открываются CHRONICLE, AXCHAT, CONTENT и NEWS.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-02" aria-labelledby="ax-tab-02" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/03-panel-dashboard-full.webp" data-showcase-srcset="assets/showcase/hq/03-panel-dashboard-1440w.webp 1440w, assets/showcase/hq/03-panel-dashboard-1919w.webp 1919w" data-showcase-title="CONTROL STATUS / WATCH_DOG" aria-label="Открыть экран: CONTROL STATUS / WATCH_DOG"><img src="assets/showcase/hq/03-panel-dashboard-960w.webp" srcset="assets/showcase/hq/03-panel-dashboard-960w.webp 960w, assets/showcase/hq/03-panel-dashboard-1440w.webp 1440w, assets/showcase/hq/03-panel-dashboard-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CONTROL STATUS / WATCH_DOG"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">02 / ADMIN / INTERNAL</div><h3>CONTROL STATUS / WATCH_DOG</h3><p class="ax-case-lead">Рабочая панель с системными статусами, картой локаций и информационным контуром.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Главный экран панели: сводка по контенту и новостям, последние релизы и карта локаций мира.</dd></div><div><dt>На экране</dt><dd>CONTROL STATUS со счётчиками разделов, LATEST BRIEFINGS, индекс из шести локаций AXS :: WATCH_DOG и ACTIVITY RADAR.</dd></div><div><dt>Решение</dt><dd>Счётчики читаются из манифестов контента и новостей; выбор локации в индексе открывает её зону на подробной карте локаций.</dd></div><div><dt>Связь с AXIOM</dt><dd>Шесть локаций индекса — те же узлы мира, что и в разделе WORLD на этой странице.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-03" aria-labelledby="ax-tab-03" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/04-chronicle-full.webp" data-showcase-srcset="assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" data-showcase-title="CHRONICLE — MEMORY ORBIT" aria-label="Открыть экран: CHRONICLE — MEMORY ORBIT"><img src="assets/showcase/hq/04-chronicle-960w.webp" srcset="assets/showcase/hq/04-chronicle-960w.webp 960w, assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CHRONICLE — MEMORY ORBIT"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">03 / NARRATIVE UX</div><h3>CHRONICLE — MEMORY ORBIT</h3><p class="ax-case-lead">Повествование, главы и навигация по памяти мира в формате интерактивной орбиты.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Последовательное чтение художественной хроники мира по главам.</dd></div><div><dt>На экране</dt><dd>Орбита глав, досье активной главы (персонажи, локации, тон) и указатель глав внизу экрана.</dd></div><div><dt>Решение</dt><dd>Орбиту вращают перетаскиванием и свайпом, колесом и стрелками; авто-вращение замирает при наведении, при reduced motion включается щадящий режим, а выбранная глава отражается в адресе страницы.</dd></div><div><dt>Связь с AXIOM</dt><dd>Карточка главы открывает саму главу и связанный с ней контекст мира.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING INTERFACE</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-04" aria-labelledby="ax-tab-04" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/05-axchat-full.webp" data-showcase-srcset="assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" data-showcase-title="AXCHAT — ECHO AXIOM" aria-label="Открыть экран: AXCHAT — ECHO AXIOM"><img src="assets/showcase/hq/05-axchat-960w.webp" srcset="assets/showcase/hq/05-axchat-960w.webp 960w, assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: AXCHAT — ECHO AXIOM"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">04 / AI / CONTROLLED ACCESS</div><h3>AXCHAT — ECHO AXIOM</h3><p class="ax-case-lead">Контекстный диалог с источниками и материалами вселенной. Это вид одного из рабочих режимов.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Вопросы о мире AXIOM и ответы с опорой на опубликованные материалы сайта.</dd></div><div><dt>На экране</dt><dd>Структурированный ответ ECHO AXIOM и панель Sources с карточкой досье, на которое опирается ответ.</dd></div><div><dt>Решение</dt><dd>Источниками служат только опубликованные страницы: черновики и служебные файлы в выдачу не попадают, а карточка источника ведёт на страницу досье.</dd></div><div><dt>Связь с AXIOM</dt><dd>AXCHAT опирается на те же досье, что читатель видит в CONTENT LIBRARY и READER.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CONTROLLED ACCESS / AI</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-05" aria-labelledby="ax-tab-05" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/06-content-library-full.webp" data-showcase-srcset="assets/showcase/hq/06-content-library-1440w.webp 1440w, assets/showcase/hq/06-content-library-1919w.webp 1919w" data-showcase-title="CONTENT LIBRARY" aria-label="Открыть экран: CONTENT LIBRARY"><img src="assets/showcase/hq/06-content-library-960w.webp" srcset="assets/showcase/hq/06-content-library-960w.webp 960w, assets/showcase/hq/06-content-library-1440w.webp 1440w, assets/showcase/hq/06-content-library-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CONTENT LIBRARY"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">05 / WORLD / CONTENT</div><h3>CONTENT LIBRARY</h3><p class="ax-case-lead">Индексированные досье и карточки сущностей: персонажи, технологии, локации и связанные записи.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Каталог досье вселенной с поиском и разделами по типам записей.</dd></div><div><dt>На экране</dt><dd>Разделы LOCATIONS, CHARACTERS, TECHNOLOGIES, FACTIONS, EVENTS и LORE, список досье с уровнями доступа и превью записи «AXIOM — центральная ИИ-сущность».</dd></div><div><dt>Решение</dt><dd>Единый контент-движок: запись Canon становится курируемой моделью, из которой строятся превью, ридер, AI и редактор; публично выдаются только опубликованные записи.</dd></div><div><dt>Связь с AXIOM</dt><dd>Те же записи открываются в READER и служат источниками AXCHAT.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING CATALOG</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-06" aria-labelledby="ax-tab-06" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/07-viktor-dossier-full.webp" data-showcase-srcset="assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" data-showcase-title="VIKTOR — CHARACTER DOSSIER" aria-label="Открыть экран: VIKTOR — CHARACTER DOSSIER"><img src="assets/showcase/hq/07-viktor-dossier-960w.webp" srcset="assets/showcase/hq/07-viktor-dossier-960w.webp 960w, assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: VIKTOR — CHARACTER DOSSIER"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">06 / LONGFORM / CANON</div><h3>VIKTOR — CHARACTER DOSSIER</h3><p class="ax-case-lead">Длинный формат авторского досье со своей типографикой, визуальным ритмом и атмосферой.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Подробное досье персонажа в системном ридере READER.</dd></div><div><dt>На экране</dt><dd>Полноширинная шапка с HUD-рамкой, статус публикации, ключевые признаки персонажа и строка с данными файла.</dd></div><div><dt>Решение</dt><dd>Автономный модуль READER встроен в систему: резолвер файлов, прямые ссылки на досье и сборка без внешних CDN.</dd></div><div><dt>Связь с AXIOM</dt><dd>Досье — опубликованная запись CONTENT LIBRARY; на неё же ссылается AXCHAT.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING LORE</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-07" aria-labelledby="ax-tab-07" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/08-news-signal-full.webp" data-showcase-srcset="assets/showcase/hq/08-news-signal-1440w.webp 1440w, assets/showcase/hq/08-news-signal-1919w.webp 1919w" data-showcase-title="SIGNAL CENTER" aria-label="Открыть экран: SIGNAL CENTER"><img src="assets/showcase/hq/08-news-signal-960w.webp" srcset="assets/showcase/hq/08-news-signal-960w.webp 960w, assets/showcase/hq/08-news-signal-1440w.webp 1440w, assets/showcase/hq/08-news-signal-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: SIGNAL CENTER"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">07 / PUBLIC NEWS</div><h3>SIGNAL CENTER</h3><p class="ax-case-lead">Центр новостей и релизов: пакеты обновлений, архив событий и динамика развития проекта.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>История проекта: релизы интерфейса, обновления и новости мира в одной ленте.</dd></div><div><dt>На экране</dt><dd>Пакет релиза AXIOM WEB CORE UI v0.9.0, переключатель RU / EN, навигация PREV / NEXT и лента архива пакетов.</dd></div><div><dt>Решение</dt><dd>Новости собираются не из Markdown, а из структурного документа: блоки с акцентной типографикой, русская и английская версии одного материала.</dd></div><div><dt>Связь с AXIOM</dt><dd>Лента показывает, как вместе развиваются интерфейсы и мир проекта.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING NEWS</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-08" aria-labelledby="ax-tab-08" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/09-master-graph-full.webp" data-showcase-srcset="assets/showcase/hq/09-master-graph-1440w.webp 1440w, assets/showcase/hq/09-master-graph-1919w.webp 1919w" data-showcase-title="MASTER GRAPH" aria-label="Открыть экран: MASTER GRAPH"><img src="assets/showcase/hq/09-master-graph-960w.webp" srcset="assets/showcase/hq/09-master-graph-960w.webp 960w, assets/showcase/hq/09-master-graph-1440w.webp 1440w, assets/showcase/hq/09-master-graph-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: MASTER GRAPH"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">08 / ADMIN / ENGINEERING</div><h3>MASTER GRAPH</h3><p class="ax-case-lead">Рабочий граф связей технологий, персонажей и сущностей. Внутренний инструмент автора.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Инструмент CREATOR для работы со связями мира: кто с кем связан, что кому принадлежит, что из чего произошло.</dd></div><div><dt>На экране</dt><dd>Карта графа в разделе «Исследовать»: персонажи, технологии, фракции и связи между ними, фильтры, масштаб и рабочая очередь внизу.</dd></div><div><dt>Решение</dt><dd>Связи типизированы — USES, OWNS, CREATED, KNOWS, OPPOSES и другие, — поэтому граф показывает не только соседство записей, но и характер связи.</dd></div><div><dt>Связь с AXIOM</dt><dd>Помогает автору находить разрывы и противоречия в данных мира.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+</div>
+<div class="ax-archive-nav"><button type="button" class="ax-archive-prev" aria-label="Предыдущий экран">← PREV</button><span class="ax-archive-hint" aria-hidden="true">← → · SWIPE · CLICK = FULL SIZE</span><button type="button" class="ax-archive-next" aria-label="Следующий экран">NEXT →</button></div>
+<p class="ax-sr-only" aria-live="polite" id="ax-archive-live"></p>
+</div>
+<dialog class="show-lightbox ax-viewer" id="showcase-lightbox" aria-labelledby="showcase-full-caption">
+ <div class="show-lightbox-head"><span class="ax-viewer-count" id="ax-viewer-count">01 / 08</span><strong class="show-lightbox-label" id="showcase-full-caption"></strong><div class="ax-viewer-tools"><button type="button" class="ax-viewer-prev" aria-label="Предыдущий экран">←</button><button type="button" class="ax-viewer-next" aria-label="Следующий экран">→</button><button type="button" class="ax-viewer-zoom" aria-pressed="false">1:1 ZOOM</button><button class="show-lightbox-close" type="button" aria-label="Закрыть просмотр">CLOSE ✕</button></div></div>
+ <div class="show-lightbox-image"><img id="showcase-full-image" alt="" width="1919" height="1079" decoding="async"></div>
+ <div class="ax-viewer-hint" aria-hidden="true">← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — ЗАКРЫТЬ</div>
+</dialog>
+<div class="ax-work-intro" id="work-intro">
 <div class="show-feature v22-public-feature">
- <figure class="show-feature-art v22-feature-art"><img src="assets/showcase/visual-library/hq/A01_public_system_gateway-hq.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Художественная визуализация цифровой архитектуры AXIOM; не скриншот интерфейса"><figcaption class="v22-art-label">AXIOM WEB CORE / DIGITAL GATEWAY</figcaption></figure>
  <div class="show-feature-body"><span class="show-kicker">01 / PUBLIC WEB · ROUTE PROVIDED</span><h3>AXIOM WEB CORE</h3>
  <p>Публичная точка входа в AXIOM: посетитель может познакомиться с историей, персонажами, материалами Canon, интерфейсами Chronicle и Content Library. Продукт развивается вместе с редакционной и инженерной частью системы.</p>
  <div class="v22-proof-pair"><div><span>WHAT IT SOLVES</span><p>Связать историю, досье, публикации и интерфейсы в цельную цифровую платформу.</p></div><div><span>USER VALUE</span><p>Понятный путь от знакомства с миром к изучению досье, истории и новостей.</p></div></div>
  <div class="show-tags"><span>PUBLIC ROUTE</span><span>IN DEVELOPMENT</span><span>WEB EXPERIENCE</span></div>
- <a href="https://axiomgates.com" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ AXIOM WEB CORE ↗</a></div></div>
+ <a href="https://axiomgates.com" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ AXIOM WEB CORE ↗</a></div>
+</div>
 <div class="v22-public-evidence"><span>REAL INTERFACE EVIDENCE ↓</span><a href="#showcase-gallery">CHRONICLE · CONTENT · AXCHAT ↘</a></div>
-<div class="v23-work-stage" aria-label="Навигация по интерфейсам AXIOM"><div class="v23-stage-left"><div class="v23-stage-hud"><span>INTERFACE ARCHIVE / AXIOM</span><span class="v23-stage-count">01 / 08</span></div><div class="v23-stage-visual"><img src="assets/showcase/hq/02-panel-login-960w.webp" srcset="assets/showcase/hq/02-panel-login-960w.webp 960w, assets/showcase/hq/02-panel-login-full.webp 1919w" sizes="(max-width: 900px) 94vw, 70vw" alt="AXIOM PANEL — ACCESS GATE" width="960" height="540" loading="lazy"></div><div class="v23-stage-foot"><div class="v23-stage-copy"><strong class="v23-stage-title">AXIOM PANEL — ACCESS GATE</strong><span class="v23-stage-subtitle">Вход в систему и выбор режима. Управление пользовательским сеансом и визуальная идентичность RED PROTOCOL.</span></div><button class="v23-stage-open" type="button" data-index="0">ОТКРЫТЬ В ПОЛНОМ РАЗМЕРЕ ↗</button></div></div><div class="v23-stage-rail"><span>SELECT / SCREEN</span><button class="v23-stage-select" type="button" aria-pressed="true"><span>01</span>PANEL GATE <span aria-hidden="true">↗</span></button><button class="v23-stage-select" type="button" aria-pressed="false"><span>02</span>WATCH_DOG <span aria-hidden="true">↗</span></button><button class="v23-stage-select" type="button" aria-pressed="false"><span>03</span>CHRONICLE <span aria-hidden="true">↗</span></button><button class="v23-stage-select" type="button" aria-pressed="false"><span>04</span>AXCHAT <span aria-hidden="true">↗</span></button><button class="v23-stage-select" type="button" aria-pressed="false"><span>05</span>CONTENT <span aria-hidden="true">↗</span></button><button class="v23-stage-select" type="button" aria-pressed="false"><span>06</span>VIKTOR <span aria-hidden="true">↗</span></button><button class="v23-stage-select" type="button" aria-pressed="false"><span>07</span>SIGNAL <span aria-hidden="true">↗</span></button><button class="v23-stage-select" type="button" aria-pressed="false"><span>08</span>MASTER GRAPH <span aria-hidden="true">↗</span></button></div></div>
-<div class="show-gallery-intro"><span class="show-kicker">REAL PRODUCT SCREENS / CURATED BY CREATOR</span><p>Восемь изображений реальных интерфейсов. Нажми на любой экран, чтобы рассмотреть детали. Часть экранов доступна посетителям, другие показывают закрытые инструменты автора.</p></div>
-<div class="show-screen-grid" id="showcase-gallery">
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/02-panel-login-full.webp" data-showcase-title="AXIOM PANEL — ACCESS GATE" aria-label="Открыть экран: AXIOM PANEL — ACCESS GATE">
-  <img src="assets/showcase/hq/02-panel-login-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: AXIOM PANEL — ACCESS GATE">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">02 / CREATOR INTERFACE</div><h3>AXIOM PANEL — ACCESS GATE</h3><p>Первый контакт с RED PROTOCOL: многоуровневый вход, идентификация сеанса и визуальный язык панели.</p><div class="v22-case-status"><span>CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Вход и выбор пользовательского режима. Визуально подтверждено: экран входа, маршруты продолжения/смены пользователя и состояние сеанса. Интерфейс предназначен для контролируемого доступа.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article>
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/03-panel-dashboard-full.webp" data-showcase-title="CONTROL STATUS / WATCH_DOG" aria-label="Открыть экран: CONTROL STATUS / WATCH_DOG">
-  <img src="assets/showcase/hq/03-panel-dashboard-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: CONTROL STATUS / WATCH_DOG">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">03 / ADMIN / INTERNAL</div><h3>CONTROL STATUS / WATCH_DOG</h3><p>Рабочая панель с системными статусами, картой локаций и информационным контуром.</p><div class="v22-case-status"><span>CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Обзор рабочих поверхностей и сигналов. В кадре показаны статусы, карта локаций и лента публикаций. Эти элементы входят во внутренний рабочий контур.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article>
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/04-chronicle-full.webp" data-showcase-title="CHRONICLE — MEMORY ORBIT" aria-label="Открыть экран: CHRONICLE — MEMORY ORBIT">
-  <img src="assets/showcase/hq/04-chronicle-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: CHRONICLE — MEMORY ORBIT">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">04 / NARRATIVE UX</div><h3>CHRONICLE — MEMORY ORBIT</h3><p>Повествование, главы и навигация по памяти мира в формате интерактивной орбиты.</p><div class="v22-case-status"><span>PUBLIC-FACING INTERFACE</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Подача последовательности художественных событий. Показана орбита глав с карточками историй и навигацией. Сценарий построен вокруг последовательной навигации по главам.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article>
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/05-axchat-full.webp" data-showcase-title="AXCHAT — ECHO AXIOM" aria-label="Открыть экран: AXCHAT — ECHO AXIOM">
-  <img src="assets/showcase/hq/05-axchat-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: AXCHAT — ECHO AXIOM">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">05 / AI / CONTROLLED ACCESS</div><h3>AXCHAT — ECHO AXIOM</h3><p>Контекстный диалог с источниками и материалами вселенной. Это вид одного из рабочих режимов.</p><div class="v22-case-status"><span>CONTROLLED ACCESS / AI</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Контекстное взаимодействие с индексом. Скриншот фиксирует диалоговую поверхность и контекстные источники. Набор возможностей зависит от доступного режима и источников.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article>
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/06-content-library-full.webp" data-showcase-title="CONTENT LIBRARY" aria-label="Открыть экран: CONTENT LIBRARY">
-  <img src="assets/showcase/hq/06-content-library-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: CONTENT LIBRARY">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">06 / WORLD / CONTENT</div><h3>CONTENT LIBRARY</h3><p>Индексированные досье и карточки сущностей: персонажи, технологии, локации и связанные записи.</p><div class="v22-case-status"><span>PUBLIC-FACING CATALOG</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Каталог связанного контента. Карточки досье, поиск и категории на одном экране. Публикация и состав материалов зависят от текущих разрешений.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article>
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/07-viktor-dossier-full.webp" data-showcase-title="VIKTOR — CHARACTER DOSSIER" aria-label="Открыть экран: VIKTOR — CHARACTER DOSSIER">
-  <img src="assets/showcase/hq/07-viktor-dossier-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: VIKTOR — CHARACTER DOSSIER">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">07 / LONGFORM / CANON</div><h3>VIKTOR — CHARACTER DOSSIER</h3><p>Длинный формат авторского досье со своей типографикой, визуальным ритмом и атмосферой.</p><div class="v22-case-status"><span>PUBLIC-FACING LORE</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Авторский longform-дизайн персонажа. Видна оформленная страница героя, информационная иерархия и художественная графика. Карточка объединяет сведения о персонаже с авторской визуальной подачей.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article>
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/08-news-signal-full.webp" data-showcase-title="SIGNAL CENTER" aria-label="Открыть экран: SIGNAL CENTER">
-  <img src="assets/showcase/hq/08-news-signal-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: SIGNAL CENTER">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">08 / PUBLIC NEWS</div><h3>SIGNAL CENTER</h3><p>Центр новостей и релизов: пакеты обновлений, архив событий и динамика развития проекта.</p><div class="v22-case-status"><span>PUBLIC-FACING NEWS</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Публичная история проекта. Экран ленты и чтения релизных пакетов. Лента помогает отслеживать историю публикаций и релизов.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article>
-<article class="show-shot">
- <button type="button" class="show-shot-trigger" data-showcase-src="assets/showcase/hq/09-master-graph-full.webp" data-showcase-title="MASTER GRAPH" aria-label="Открыть экран: MASTER GRAPH">
-  <img src="assets/showcase/hq/09-master-graph-960w.webp" width="1440" height="810" loading="lazy" decoding="async" alt="Скриншот: MASTER GRAPH">
-  <span class="show-shot-zoom" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span>
- </button>
- <div class="show-shot-info"><div class="show-shot-overline">09 / ADMIN / ENGINEERING</div><h3>MASTER GRAPH</h3><p>Рабочий граф связей технологий, персонажей и сущностей. Внутренний инструмент автора.</p><div class="v22-case-status"><span>CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div><details class="v22-case-detail"><summary>О ПРОЕКТЕ И ЕГО УСТРОЙСТВЕ <span aria-hidden="true">＋</span></summary><div class="v22-case-detail-body"><p><b>Задача и реализация:</b> Контроль и редактирование связей Canon. Снимок показывает рабочий граф и отношения сущностей. Доступен в инженерном контуре CREATOR.</p><p><b>Связь с AXIOM:</b> часть архитектуры AXIOM. <b>Материал:</b> изображение реальной интерфейсной версии из архива разработчика.</p></div></details></div>
-</article></div>
-<dialog class="show-lightbox" id="showcase-lightbox" aria-label="Просмотр скриншота AXIOM">
- <div class="show-lightbox-head"><span>AXIOM / SCREEN ARCHIVE</span><button class="show-lightbox-close" type="button" aria-label="Закрыть просмотр">CLOSE ✕</button></div>
- <div class="show-lightbox-image"><img id="showcase-full-image" alt="" width="1440" height="810"></div><div class="show-lightbox-label" id="showcase-full-caption"></div>
-</dialog>
+</div>
 </div></section>
+<script>/* 0524 W1 review switch (Q-02, CREATOR decision pending): ?work=a puts the concept art back into WORK as its intro, before the archive; default B keeps it in the band above. Remove with the switch. */
+(function(){if(document.documentElement.getAttribute("data-work")!=="a")return;var art=document.getElementById("work-art"),feature=document.querySelector("#work-intro .v22-public-feature"),intro=document.getElementById("work-intro"),archive=document.getElementById("showcase-gallery");if(!art||!feature||!intro||!archive)return;feature.insertBefore(art,feature.firstChild);archive.parentNode.insertBefore(intro,archive);})();
+</script>
 <div class="v22-bridge" aria-hidden="true"><span>03 — VISIBLE WORK</span><b>ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?</b><span>04 — SYSTEM ↓</span></div>
 <section class="show-section show-system" id="system" aria-labelledby="system-title"><div class="wrap">
-<div class="show-index"><span>03 / SYSTEM ARCHITECTURE</span><span>CONNECTED BY DESIGN</span></div>
+<div class="show-index"><span>04 / SYSTEM ARCHITECTURE</span><span>CONNECTED BY DESIGN</span></div>
 <div class="show-section-head"><div><div class="show-kicker">UNDER THE SURFACE</div><h2 class="show-title" id="system-title">ЧЕТЫРЕ ОПОРЫ.<br><em>ОДНА СИСТЕМА.</em></h2></div><p>AXIOM SYSTEM объединяет публичный опыт, инструменты автора, интеллект и архитектуру знаний. Это направления существующей разработки, а не перечень уже выпущенных платных продуктов.</p></div>
 <div class="show-spine-head"><img src="assets/endeavor_logo_no_text_no_frame.svg" width="72" height="54" loading="lazy" alt=""><div><span>ROOT / SINGLE ORIGIN</span><b>AXIOM SYSTEM</b></div></div>
 <div class="show-spine-grid"><div><span>01 / EXPERIENCE</span><h3>WEB CORE</h3><p>Контент, публикации, сюжет и публичный интерфейс.</p></div><div><span>02 / INTELLIGENCE</span><h3>AXCHAT</h3><p>Диалог с индексированными материалами мира.</p></div><div><span>03 / CANON</span><h3>MASTER GRAPH</h3><p>Связанные сущности, отношения и контроль целостности.</p></div><div><span>04 / ENGINEERING</span><h3>AXS / AGENTOPS</h3><p>Интеграция, ревью и инженерные проверки.</p></div></div>
-<div class="v22-system-explain"><div class="show-kicker">ONE INFORMATION PATH / EDITORIAL MODEL</div><h3>КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ</h3><div class="v22-flow"><button class="v23-flow-step is-active" type="button" data-flow-step="0" aria-pressed="true" aria-controls="v23-flow-message"><span>01 / SOURCE</span><b>CANON</b><small>Исходные факты об истории, сущностях и правилах мира</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="1" aria-pressed="false" aria-controls="v23-flow-message"><span>02 / RELATION</span><b>MASTER GRAPH</b><small>Связи и проверка логической согласованности данных</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="2" aria-pressed="false" aria-controls="v23-flow-message"><span>03 / PRESENT</span><b>WEB CORE</b><small>Публикация и читательские интерфейсы по режиму доступа</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="3" aria-pressed="false" aria-controls="v23-flow-message"><span>04 / INTERACT</span><b>AXCHAT</b><small>Работа с доступным индексированным контекстом</small></button></div><p class="v22-flow-note" id="v23-flow-message" aria-live="polite">Схема показывает смысловую архитектуру, а не заявляет автоматическую синхронизацию каждого шага. AXS / AgentOps поддерживает изменения, проверки и ревью вокруг этого процесса.</p><figure class="v22-engineering-art"><img src="assets/showcase/visual-library/hq/A07_engineering_console-hq.webp" width="1448" height="1086" loading="lazy" alt="Концептуальная иллюстрация инженерной среды и контроля качества"><figcaption>AXIOM / ENGINEERING</figcaption></figure></div>
+<div class="v22-system-explain"><div class="show-kicker">ONE INFORMATION PATH / EDITORIAL MODEL</div><h3>КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ</h3><div class="v22-flow"><button class="v23-flow-step is-active" type="button" data-flow-step="0" aria-pressed="true" aria-controls="v23-flow-message"><span>01 / SOURCE</span><b>CANON</b><small>Исходные факты об истории, сущностях и правилах мира</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="1" aria-pressed="false" aria-controls="v23-flow-message"><span>02 / RELATION</span><b>MASTER GRAPH</b><small>Связи и проверка логической согласованности данных</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="2" aria-pressed="false" aria-controls="v23-flow-message"><span>03 / PRESENT</span><b>WEB CORE</b><small>Публикация и читательские интерфейсы по режиму доступа</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="3" aria-pressed="false" aria-controls="v23-flow-message"><span>04 / INTERACT</span><b>AXCHAT</b><small>Работа с доступным индексированным контекстом</small></button></div><p class="v22-flow-note" id="v23-flow-message" aria-live="polite">Схема показывает смысловую архитектуру, а не заявляет автоматическую синхронизацию каждого шага. AXS / AgentOps поддерживает изменения, проверки и ревью вокруг этого процесса.</p><figure class="v22-engineering-art"><img src="assets/showcase/visual-library/hq/A07_engineering_console-hq.webp" srcset="assets/showcase/visual-library/hq/A07_engineering_console-960w.webp 960w, assets/showcase/visual-library/hq/A07_engineering_console-hq.webp 1448w" sizes="(max-width: 760px) calc(100vw - 28px), 92vw" width="1448" height="1086" loading="lazy" decoding="async" alt="Концептуальная иллюстрация инженерной среды и контроля качества"><figcaption>AXIOM / ENGINEERING</figcaption></figure></div>
 <div class="show-lore-link"><span>ENTER THE WORLD / ORIGINAL ARCHIVE</span><p>Сохраняем первоначальную художественную часть сайта: манифест, модули, ECHELON, персонажей, сущность AXIOM и фракции.</p><nav aria-label="Архив исходных разделов"><a href="#manifesto">MANIFESTO ↘</a><a href="#modules">MODULES ↘</a><a href="#world">WORLD ↘</a><a href="#chars">ENTITIES ↘</a><a href="#factions">FACTIONS ↘</a></nav></div>
 </div></section>
 <div class="v22-bridge" aria-hidden="true"><span>04 — ENGINEERING</span><b>ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР</b><span>05 — WORLD ↓</span></div>
-<section class="show-section v22-world-guide" id="world-guide" aria-labelledby="v22-world-title"><div class="wrap"><div class="show-index"><span>05 / WORLD ENTRY</span><span>EXPLAIN → EXPLORE</span></div>
-<div class="v22-world-hero"><div><div class="show-kicker">WORLD OF AXIOM / A SHORT INTRODUCTION</div><h2 class="show-title" id="v22-world-title">МИР ПОСЛЕ<br><em>ЧЁРНОГО СОЛНЦА.</em></h2><p class="show-lead">AXIOM — мрачная научно-фантастическая вселенная о памяти, технологическом контроле, свободе выбора и цене порядка. Катастрофа BLACK SUN стала переломным событием; то, что осталось, подчинено сложным системам власти и выживания.</p><p class="show-muted">Персонажи действуют внутри организаций и конфликтов; технологии имеют историю и последствия, а локации связаны общими правилами мира. CANON фиксирует эти правила, а Master Graph помогает автору отслеживать связи.</p><p class="v22-warning">В следующем блоке начинается оригинальное художественное повествование — его терминология намеренно отличается от обычного продуктового описания.</p></div><figure><img src="assets/showcase/visual-library/hq/B02_dark_planet_cloudscape-hq.webp" width="1600" height="640" loading="lazy" alt="Художественный орбитальный ландшафт для атмосферы мира AXIOM"><figcaption>AXIOM / WORLD ATMOSPHERE</figcaption></figure></div>
+<section class="show-section v22-world-guide" id="world-guide" aria-labelledby="v22-world-title"><div class="wrap"><div class="show-index"><span>05 / WORLD ENTRY</span><span>INTRODUCTION → ORIGINAL ARCHIVE</span></div>
+<div class="v22-world-hero"><div><div class="show-kicker">WORLD OF AXIOM / A SHORT INTRODUCTION</div><h2 class="show-title" id="v22-world-title">МИР ПОСЛЕ<br><em>ЧЁРНОГО СОЛНЦА.</em></h2><p class="show-lead">AXIOM — мрачная научно-фантастическая вселенная о памяти, технологическом контроле, свободе выбора и цене порядка. Катастрофа BLACK SUN стала переломным событием; то, что осталось, подчинено сложным системам власти и выживания.</p><p class="show-muted">Персонажи действуют внутри организаций и конфликтов; технологии имеют историю и последствия, а локации связаны общими правилами мира. CANON фиксирует эти правила, а Master Graph помогает автору отслеживать связи.</p><p class="v22-warning">В следующем блоке начинается оригинальное художественное повествование — его терминология намеренно отличается от обычного продуктового описания.</p></div><figure><img src="assets/showcase/visual-library/hq/B02_dark_planet_cloudscape-hq.webp" srcset="assets/showcase/visual-library/hq/B02_dark_planet_cloudscape-960w.webp 960w, assets/showcase/visual-library/hq/B02_dark_planet_cloudscape-hq.webp 1983w" sizes="(max-width: 760px) 680px, 1080px" width="1983" height="793" loading="lazy" decoding="async" alt="Художественный орбитальный ландшафт для атмосферы мира AXIOM"><figcaption>AXIOM / WORLD ATMOSPHERE</figcaption></figure></div>
 <div class="v22-lore-glossary"><div><span>BLACK SUN</span><p>Катастрофа, после которой изменился порядок мира.</p></div><div><span>ECHELON</span><p>Важный узел вертикальной структуры контроля, связанный с темами иерархии.</p></div><div><span>CANON</span><p>Согласованный набор правил и фактов об истории мира.</p></div><div><span>MASTER GRAPH</span><p>Внутренний инструмент, отображающий отношения между элементами Canon.</p></div></div>
 <nav class="v22-world-path" aria-label="Путь изучения вселенной"><a href="#manifesto">01 МАНИФЕСТ ↘</a><a href="#modules">02 МОДУЛИ ↘</a><a href="#world">03 ЛОКАЦИИ ↘</a><a href="#chars">04 ПЕРСОНАЖИ ↘</a><a href="#factions">05 ФРАКЦИИ ↘</a></nav>
 </div></section>
@@ -644,35 +663,35 @@
       <div class="frag">
         <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="30"/><path d="M20 50 L80 50 M50 20 L50 80"/></svg>
         <span class="frag-id">// FRAGMENT 01</span>
-        <h4>Controlled Amputation</h4>
+        <h3>Controlled Amputation</h3>
         <p>Чтобы спасти мир, его пришлось обрезать. AXIOM фрагментирован сознательно. Истина была захоронена под порядком.</p>
         <div class="frag-foot"><span>SOURCE<b>BLACK SUN</b></span><span>TIER<b>9</b></span></div>
       </div>
       <div class="frag">
         <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30"/><polygon points="50,30 70,40 70,60 50,70 30,60 30,40"/></svg>
         <span class="frag-id">// FRAGMENT 02</span>
-        <h4>Fragmented Core</h4>
+        <h3>Fragmented Core</h3>
         <p>Никто не держит весь AXIOM. Есть только слои — control, echo, bio. Каждый узел знает свою долю и не больше.</p>
         <div class="frag-foot"><span>LAYER<b>CONTROL</b></span><span>STATE<b>STABLE</b></span></div>
       </div>
       <div class="frag">
         <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 50 Q 30 20, 50 50 T 90 50"/><path d="M10 65 Q 30 35, 50 65 T 90 65" stroke-opacity=".5"/></svg>
         <span class="frag-id">// FRAGMENT 03</span>
-        <h4>Echo Layer</h4>
+        <h3>Echo Layer</h3>
         <p>BLACK ECHO — не источник, а отголосок. Сигнал, который остался после ампутации. Не власть, а след контакта.</p>
         <div class="frag-foot"><span>HOST<b>NEXARCH</b></span><span>CLASS<b>SHADOW</b></span></div>
       </div>
       <div class="frag">
         <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="15" y="15" width="70" height="70"/><path d="M30 30 L70 70 M70 30 L30 70"/></svg>
         <span class="frag-id">// FRAGMENT 04</span>
-        <h4>Black Protocol</h4>
+        <h3>Black Protocol</h3>
         <p>Closed channel. Redaction, containment, маршрутизация угроз. Архивная тишина. То, что система предпочитает не помнить.</p>
         <div class="frag-foot"><span>OPERATOR<b>CURATOR</b></span><span>VIS<b>SEALED</b></span></div>
       </div>
       <div class="frag">
         <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="8" fill="currentColor"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="36" stroke-dasharray="4 4"/></svg>
         <span class="frag-id">// FRAGMENT 05</span>
-        <h4>Bio Variable</h4>
+        <h3>Bio Variable</h3>
         <p>Биология остаётся слепой зоной control-layer. Здесь живёт переменная X-класса — та, что не отслеживается машинами.</p>
         <div class="frag-foot"><span>VECTOR<b>VIKTOR</b></span><span>RISK<b>X-CLASS</b></span></div>
       </div>
@@ -880,14 +899,14 @@
 
                 <!-- OMEGA-0 -->
                 <g transform="translate(180 132)">
-                  <circle r="5" fill="none" stroke="#9b6bff" stroke-width="1.5">
+                  <circle r="5" fill="none" stroke="#cfd4dc" stroke-width="1.5">
                     <animate attributeName="r" values="5;18;5" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
                     <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
                   </circle>
-                  <polygon points="-12,0 -6,-10 6,-10 12,0 6,10 -6,10" fill="none" stroke="#9b6bff" stroke-width="1.5"/>
-                  <circle r="3" fill="#9b6bff"/>
+                  <polygon points="-12,0 -6,-10 6,-10 12,0 6,10 -6,10" fill="none" stroke="#cfd4dc" stroke-width="1.5"/>
+                  <circle r="3" fill="#cfd4dc"/>
                 </g>
-                <text x="180" y="160" text-anchor="middle" fill="#9b6bff" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">OMEGA-0</text>
+                <text x="180" y="160" text-anchor="middle" fill="#cfd4dc" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">OMEGA-0</text>
 
                 <!-- NEXUS -->
                 <g transform="translate(200 80)">
@@ -979,7 +998,7 @@
                   <circle class="blip-anim b2" cx="38" cy="18" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
                   <circle class="blip-anim b3" cx="-12" cy="42" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
                   <!-- center -->
-                  <circle r="3" fill="#fff2f2"/>
+                  <circle r="3" fill="#ffffff"/>
                   <!-- bottom label -->
                   <text x="0" y="-72" text-anchor="middle" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="7" letter-spacing="2">06 NODES</text>
                 </svg>
@@ -1144,7 +1163,7 @@
                   <stop offset="1" stop-color="#5a0a12"/>
                 </linearGradient>
                 <radialGradient id="axCoreG" cx="0" cy="0" r="1">
-                  <stop offset="0" stop-color="#fff2f2"/>
+                  <stop offset="0" stop-color="#ffffff"/>
                   <stop offset=".35" stop-color="#ff2034" stop-opacity=".85"/>
                   <stop offset="1" stop-color="#7a0a14" stop-opacity="0"/>
                 </radialGradient>
@@ -1333,7 +1352,7 @@
               <circle r="14" fill="#ff2034" fill-opacity=".85">
                 <animate attributeName="r" values="12;16;12" dur="1.8s" repeatCount="indefinite"/>
               </circle>
-              <circle r="7" fill="#fff2f2">
+              <circle r="7" fill="#ffffff">
                 <animate attributeName="r" values="5;8;5" dur="2.4s" repeatCount="indefinite"/>
               </circle>
               <!-- expanding pings -->
@@ -1617,7 +1636,7 @@
 <!-- SHOWCASE V2.1 · ROADMAP + COLLABORATION -->
 <div class="v22-bridge" aria-hidden="true"><span>05 — ORIGINAL WORLD</span><b>ЧТО ПОЛУЧИТ ПОСЕТИТЕЛЬ В БУДУЩЕМ?</b><span>06 — VISION ↓</span></div>
 <section class="show-section show-vision" id="vision" aria-labelledby="vision-title"><div class="wrap">
-<div class="show-index"><span>04 / PUBLIC ROADMAP</span><span>AXIOM SYSTEM · VISION 2026</span></div>
+<div class="show-index"><span>06 / PUBLIC ROADMAP</span><span>AXIOM SYSTEM · VISION 2026</span></div>
 <div class="show-section-head"><div><div class="show-kicker">FOUR PHASES / ONE TRAJECTORY</div><h2 class="show-title" id="vision-title">БУДУЩЕЕ<br><em>СТРОИТСЯ ПОЭТАПНО.</em></h2></div><p>От знакомства с вселенной — к инструментам для создателей, профессиональной среде разработки и игровому воплощению мира. Каждая фаза требует проверки своей ценности.</p></div>
 <div class="show-phases">
  <article class="first"><div class="show-phase-head">PHASE 01 <span>PREPARING / BETA</span></div><div class="show-phase-number">I</div><h3>PUBLIC WEB</h3><p>Открытая часть контента, история, персонажи, новости, знакомство с AXIOM. В перспективе — дополнительные подписные материалы.</p><dl class="v22-phase-meta"><div><dt>Кому</dt><dd>Читателям и первым участникам</dd></div><div><dt>Ценность</dt><dd>Знакомство с миром и доступный контент</dd></div><div><dt>Зависимость</dt><dd>Стабильная публикация WEB CORE, контент, доступ</dd></div></dl><small>FIRST PUBLIC VALUE</small></article>
@@ -1625,13 +1644,13 @@
  <article><div class="show-phase-head">PHASE 03 <span>LONG-TERM VISION</span></div><div class="show-phase-number">III</div><h3>DEVELOPMENT OS</h3><p>Развитие AXS в профессиональную платформу: процессы, контроль качества, интеграции и AI.</p><dl class="v22-phase-meta"><div><dt>Кому</dt><dd>Разработчикам и техническим командам</dd></div><div><dt>Ценность</dt><dd>Единая среда инженерных процессов</dd></div><div><dt>Зависимость</dt><dd>Созревание инструментов Builder и AXS</dd></div></dl><small>ENGINEERING PLATFORM</small></article>
  <article><div class="show-phase-head">PHASE 04 <span>LONG-TERM VISION</span></div><div class="show-phase-number">IV</div><h3>AXIOM GAME</h3><p>Перенести авторскую вселенную в игровой опыт, опирающийся на Canon, персонажей и собственную эстетику.</p><dl class="v22-phase-meta"><div><dt>Кому</dt><dd>Игрокам и аудитории авторского мира</dd></div><div><dt>Ценность</dt><dd>Интерактивное развитие вселенной</dd></div><div><dt>Зависимость</dt><dd>Canon, команда, производственные ресурсы, игровой прототип</dd></div></dl><small>UNIVERSE EXPANSION</small></article>
 </div><div class="v22-phase-note"><strong>READINESS RULE</strong><span>Каждый этап сначала подтверждает собственную ценность, границы доступа и инженерную готовность. Даты и гарантии будущих выпусков не объявляются.</span></div>
-<figure class="v22-vision-art"><img src="assets/showcase/visual-library/B04_distant_orbit.webp" loading="lazy" decoding="async" width="1600" height="640" alt="Космический дальний горизонт как художественный образ будущих этапов AXIOM"><figcaption>AXIOM / FUTURE HORIZON</figcaption></figure>
+<figure class="v22-vision-art"><img src="assets/showcase/visual-library/hq/B04_distant_orbit-1440w.webp" srcset="assets/showcase/visual-library/hq/B04_distant_orbit-960w.webp 960w, assets/showcase/visual-library/hq/B04_distant_orbit-1440w.webp 1440w, assets/showcase/visual-library/hq/B04_distant_orbit-1983w.webp 1983w" sizes="(max-width: 760px) 825px, min(1368px, 94vw)" loading="lazy" decoding="async" width="1983" height="793" alt="Космический дальний горизонт как художественный образ будущих этапов AXIOM"><figcaption>AXIOM / FUTURE HORIZON</figcaption></figure>
 <p class="show-caveat">II–IV — стратегические направления, а не обещание доступности, сроков релиза или будущей доходности. Публичный вход в действующий проект: axiomgates.com.</p>
 </div></section>
 <div class="v22-bridge" aria-hidden="true"><span>06 — LONG-TERM VISION</span><b>КУДА ИДТИ ПОСЛЕ ЗНАКОМСТВА С ПРОЕКТОМ?</b><span>07 — NEXT STEP ↓</span></div>
 <section class="show-section show-contact" id="collaboration" aria-labelledby="collab-title"><div class="wrap">
-<div class="show-index"><span>05 / THE HUMAN CONNECTION</span><span>PARTNERS · CLIENTS · DEVELOPERS</span></div>
-<div class="show-split"><div><div class="show-kicker">COLLABORATION / CONTACT</div><h2 class="show-title" id="collab-title">ДАВАЙТЕ<br><em>СОЗДАВАТЬ.</em></h2><p class="show-lead">AXIOM — демонстрация моего подхода к сложным цифровым продуктам. Мне интересны разговоры об интерфейсах, архитектуре, AI-инструментах и авторских системах.</p><div class="show-actions"><a class="show-button" href="https://github.com/Endevor-VIK" target="_blank" rel="noopener noreferrer">GITHUB / ПРОФИЛЬ ↗</a></div><p class="show-muted">GitHub — публичный профиль CREATOR. Деловые контакты будут добавлены отдельно.</p></div>
+<div class="show-index"><span>07 / THE HUMAN CONNECTION</span><span>PARTNERS · CLIENTS · DEVELOPERS</span></div>
+<div class="show-split"><div><div class="show-kicker">COLLABORATION / CONTACT</div><h2 class="show-title" id="collab-title">ДАВАЙТЕ<br><em>СОЗДАВАТЬ.</em></h2><p class="show-lead">AXIOM — демонстрация моего подхода к сложным цифровым продуктам. Мне интересны разговоры об интерфейсах, архитектуре, AI-инструментах и авторских системах.</p><ul class="ax-channels" aria-label="Связь и ссылки"><li><a class="ax-channel is-primary" href="https://t.me/Project_AXIOM" target="_blank" rel="noopener noreferrer"><span class="ax-channel-k">TELEGRAM</span><strong>Связь с проектом</strong><small>t.me/Project_AXIOM ↗</small></a></li><li><a class="ax-channel" href="https://github.com/Endevor-VIK" target="_blank" rel="noopener noreferrer"><span class="ax-channel-k">GITHUB</span><strong>Исходники и профиль</strong><small>github.com/Endevor-VIK ↗</small></a></li><li><a class="ax-channel" href="https://axiomgates.com" target="_blank" rel="noopener noreferrer"><span class="ax-channel-k">AXIOM SYSTEM</span><strong>axiomgates.com</strong><small>Публичный вход в проект ↗</small></a></li></ul></div>
 <div class="show-contact-list"><div><span>01</span><strong>PRODUCT & INTERFACE DESIGN</strong><small>Продуманные, многослойные пользовательские интерфейсы.</small></div><div><span>02</span><strong>ENGINEERING & QUALITY</strong><small>Разработка, review gates и управляемые изменения.</small></div><div><span>03</span><strong>AI & KNOWLEDGE SYSTEMS</strong><small>Контекстные интерфейсы, графы и инструменты.</small></div><div><span>04</span><strong>WORLDBUILDING & CANON</strong><small>Структурное развитие авторской вселенной.</small></div></div>
 </div></div></section>
 <section class="cta" data-screen-label="07 CTA">
@@ -1678,6 +1697,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- ============ FOOTER ============ -->
 <footer>
