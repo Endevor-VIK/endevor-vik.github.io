@@ -16,7 +16,8 @@ class Scan(HTMLParser):
         a = dict(pairs)
         if a.get('id'): ids.add(a['id'])
         if tag == 'a' and 'enter' in a.get('class','').split(): ctas.append(a.get('href'))
-        if tag == 'button' and 'show-shot-trigger' in a.get('class','').split(): screenshot_buttons += 1
+        # V0.3.1 W1 (Q-01): the eight screens live in the WORK archive (one trigger per tab panel)
+        if tag == 'button' and 'ax-shot-trigger' in a.get('class','').split(): screenshot_buttons += 1
         for field in ('href', 'src', 'poster', 'data-showcase-src'):
             v = a.get(field, '')
             if v.startswith('#'): anchor_targets.append(v[1:])
@@ -47,4 +48,4 @@ if 'axiom-boot-skip' not in index: errors.append('Loader skip missing')
 # V2.3 + V0.3.1 contract: internal QA banners must not reach the public page (the V2.2 rule required them; it contradicted smoke_showcase_v23.py)
 if 'CONCEPT ART' in index or 'НЕ ДОКАЗАТЕЛЬСТВО РАБОТЫ' in index: errors.append('Internal QA banner leaked to public UI')
 if errors: raise SystemExit('\n'.join(errors))
-print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), gallery, anchors, CTA, image library, safe loader')
+print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader')
