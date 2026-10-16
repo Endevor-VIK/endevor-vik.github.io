@@ -725,10 +725,12 @@ body{
   document.getElementById('enterPrompt').addEventListener('click', skip);
 
   /* ---------- Prefetch target so the jump is instant ---------- */
-  const pre = document.createElement('link');
-  pre.rel = 'prefetch';
-  pre.href = TARGET;
-  document.head.appendChild(pre);
+  if (!/^(about|javascript|data):/i.test(TARGET)) {
+    const pre = document.createElement('link');
+    pre.rel = 'prefetch';
+    pre.href = TARGET;
+    document.head.appendChild(pre);
+  }
 })();
 </script>
 </body>
