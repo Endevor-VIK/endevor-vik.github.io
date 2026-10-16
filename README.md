@@ -9,7 +9,7 @@ AXS_HEADER_META:
   goal: "Публичный GitHub Pages лендинг профиля ENDEVOR / AXIOM"
   scope: apps/endevor-vik.github.io
   lang: ru
-  last_updated: 2026-06-02
+  last_updated: 2026-10-16
   editable_by_agents: true
   change_policy: "Обновлять при изменении структуры/контента лендинга"
   links:
@@ -76,3 +76,10 @@ AXS_HEADER_META:
 - Historical release notices for AXIOM WEB CORE UI v0.2.7.0 are preserved as historical records and do **not** represent the landing's current version.
 - CREATOR explicitly authorized version bump and main integration on 2026-10-16; original V2.1–V2.3 HOLD instructions are superseded for **this integration only**. Post-merge improvements require their own review.
 - Unresolved: real browser viewport QA, image/privacy approval, keyboard and reduced-motion interactions, Lighthouse/INP/LCP/CLS, font loading and accessibility audit.
+
+
+## V0.3.1 polish (feature branch `feature/showcase-v0-3-1-polish`, AgentOps 0524)
+- W0 audit in real browsers (Chromium 149 + Firefox 151), Canon V3 cross-check, image audit, draft visual system: `docs/showcase-v031/`.
+- W0.1 fixes of confirmed technical defects only (no redesign): phone/tablet WORK layout (P0), gallery columns, sharp WORK stage after selection, viewer focus return, on-demand map dialog image, visible pointer in dialogs, reduced-motion SVG SMIL, anchor offset, label-in-name, 404 nested-path return, loader console error.
+- Browser regression suite: `NODE_PATH=<playwright node_modules> node tests/browser/showcase_regression.cjs --firefox` (52 checks).
+- MAIN MERGE and PRODUCTION DEPLOY remain on HOLD until AXIOM Principal Review and CREATOR visual approval.
