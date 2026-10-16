@@ -142,3 +142,11 @@ body{background:var(--ax23-void);color:var(--ax23-ink)}
 @media(max-width:900px){.show-vision .show-phases{grid-template-columns:1fr 1fr}.show-vision .show-phases>article:nth-child(n){grid-column:span 1;min-height:300px}}
 @media(max-width:540px){.show-vision .show-phases{grid-template-columns:1fr}.show-vision .show-phases>article:nth-child(n){grid-column:span 1;min-height:auto}.v23-flow-step:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){.v23-map-composition::before,.v23-flow-step{transition:none}.v23-flow-step:hover{transform:none}}
+
+/* Preserve the original SYSTEM flow panels after converting them into controls. */
+.v22-flow>.v23-flow-step{flex:1;min-width:0;display:flex;flex-direction:column;gap:13px;border:1px solid #343641;background:#14161c;padding:19px}
+.v23-flow-step>span{color:var(--ax23-red);font:700 9px var(--ax23-mono)}
+.v23-flow-step>b{color:var(--ax23-ink);font:600 23px var(--ax23-tech)}
+.v23-flow-step>small{font:400 12px/1.7 var(--ax23-body);color:var(--ax23-muted)}
+.v22-flow>.v23-flow-step.is-active{border-color:var(--ax23-red);background:linear-gradient(135deg,#271015,#12141a)}
+@media(max-width:540px){.v22-flow>.v23-flow-step{min-height:100px}}
