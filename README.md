@@ -66,3 +66,13 @@ AXS_HEADER_META:
 - `assets/css/showcase-v22.css`, `assets/js/showcase-v22.js` are additive implementation layers.
 - Original loader has safe skip/time cap/storage exception handling. The 4 principles retain their visual structure but avoid unverified operational promises.
 - Production and main merge remain prohibited until CREATOR review and reproducible browser QA.
+
+
+## Current published-branch milestone — AXIOM SHOWCASE v0.3.0.0 (2026-10-16)
+- Incremental release of the personal CREATOR / ENDEAVOR / AXIOM SYSTEM showcase, integrating V2.1 → V2.2 → V2.3.
+- **Still in development**: this is not a final release or confirmation of full responsive/accessibility/performance QA.
+- The original artwork, lore sections, and archived ECHELON HTML remain; main WORLD now uses the CREATOR-supplied six-node image.
+- 8 real interface screenshots, high-quality/full-size versions, 17-image Visual Library, revised colors and typography, new UX controls.
+- Historical release notices for AXIOM WEB CORE UI v0.2.7.0 are preserved as historical records and do **not** represent the landing's current version.
+- CREATOR explicitly authorized version bump and main integration on 2026-10-16; original V2.1–V2.3 HOLD instructions are superseded for **this integration only**. Post-merge improvements require their own review.
+- Unresolved: real browser viewport QA, image/privacy approval, keyboard and reduced-motion interactions, Lighthouse/INP/LCP/CLS, font loading and accessibility audit.
