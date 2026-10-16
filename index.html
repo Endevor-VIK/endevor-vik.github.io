@@ -6,6 +6,8 @@
 <title>ENDEAVOR / CREATOR — AXIOM SYSTEM · Portfolio &amp; Vision</title>
 <meta name="description" content="ENDEAVOR / CREATOR — создатель AXIOM SYSTEM. Интерфейсы, Master Graph, AXCHAT, вселенная, инженерная работа и планы развития.">
 <meta name="theme-color" content="#070709" />
+<meta name="robots" content="index,follow" />
+<meta name="color-scheme" content="dark" />
 <link rel="canonical" href="https://endevor-vik.github.io/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="ENDEAVOR / AXIOM SYSTEM" />
@@ -32,72 +34,43 @@
 <link rel="stylesheet" href="assets/css/showcase-v22.css">
 </head>
 <body>
-<div id="axiom-boot" style="position:fixed;inset:0;z-index:9999;background:#000">
-  <iframe
-    src="loader.html?target=about:blank&duration=4400&auto=true"
-    style="border:0;width:100%;height:100%;display:block"
-    title="AXIOM boot"
-  ></iframe>
+<div id="axiom-boot" style="position:fixed;inset:0;z-index:9999;background:#000" role="region" aria-label="Заставка AXIOM">
+  <iframe src="loader.html?target=about:blank&duration=2400&auto=true" loading="eager"
+    style="border:0;width:100%;height:100%;display:block" title="Заставка AXIOM"></iframe>
+  <button type="button" id="axiom-boot-skip" style="position:absolute;right:24px;bottom:22px;z-index:10;padding:13px 18px;border:1px solid #fd304b;background:#140c15;color:#fff;font:700 12px monospace;cursor:pointer">SKIP INTRO / ПРОПУСТИТЬ →</button>
 </div>
 <script>
-  (function () {
-    var boot = document.getElementById('axiom-boot');
-    if (!boot) return;
-    var root = document.documentElement;
-
-    if (sessionStorage.getItem('axiom_loader_seen') === '1') {
-      boot.remove();
-      return;
-    }
-
-    // lock scroll while the boot overlay is shown — the page must not scroll behind it
-    var prevHtmlOverflow = root.style.overflow;
-    var prevBodyOverflow = document.body ? document.body.style.overflow : '';
-    root.style.overflow = 'hidden';
-    if (document.body) document.body.style.overflow = 'hidden';
-    window.scrollTo(0, 0);
-
-    var frame = boot.querySelector('iframe');
-    var hidden = false;
-    var firstLoadDone = false;
-
-    function unlockScroll() {
-      root.style.overflow = prevHtmlOverflow;
-      if (document.body) document.body.style.overflow = prevBodyOverflow;
-    }
-
-    function hide() {
-      if (hidden || !boot) return;
-      hidden = true;
-      window.scrollTo(0, 0);
-      // mask the about:blank frame instantly, then dissolve the dark overlay into the landing
-      if (frame) { frame.style.transition = 'opacity .2s ease'; frame.style.opacity = '0'; }
-      boot.style.transition = 'opacity .6s ease, filter .6s ease, transform .6s ease';
-      boot.style.pointerEvents = 'none';
-      boot.style.opacity = '0';
-      boot.style.filter = 'blur(8px)';
-      boot.style.transform = 'scale(1.05)';
-      unlockScroll();
-      setTimeout(function () {
-        if (boot.parentNode) boot.remove();
-      }, 650);
-      sessionStorage.setItem('axiom_loader_seen', '1');
-    }
-
-    setTimeout(hide, 5600);
-
-    frame.addEventListener('load', function () {
-      if (!firstLoadDone) {
-        firstLoadDone = true;
-        return;
-      }
-      try {
-        if (frame.contentWindow.location.href === 'about:blank') hide();
-      } catch (_) {
-        hide();
-      }
-    });
-  })();
+(function(){
+  var boot=document.getElementById('axiom-boot');
+  if(!boot)return;
+  var root=document.documentElement,frame=boot.querySelector('iframe');
+  var previousHtml=root.style.overflow,previousBody=document.body?document.body.style.overflow:'';
+  var finished=false,locked=false,timer=null;
+  function isSeen(){try{return sessionStorage.getItem('axiom_loader_seen')==='1'}catch(_){return false}}
+  function markSeen(){try{sessionStorage.setItem('axiom_loader_seen','1')}catch(_){}}
+  function release(){if(locked){root.style.overflow=previousHtml;if(document.body)document.body.style.overflow=previousBody;locked=false}}
+  function close(){
+    if(finished)return;finished=true;
+    if(timer)clearTimeout(timer);
+    release();markSeen();
+    if(frame){try{frame.src='about:blank'}catch(_){}}
+    boot.style.pointerEvents='none';boot.style.opacity='0';boot.style.transition='opacity .25s ease';
+    setTimeout(function(){if(boot.parentNode)boot.remove()},300);
+  }
+  var skip=boot.querySelector('#axiom-boot-skip');
+  if(skip)skip.addEventListener('click',close);
+  document.addEventListener('keydown',function onKey(e){
+    if(finished){document.removeEventListener('keydown',onKey);return}
+    if(e.key==='Escape'){e.preventDefault();close();document.removeEventListener('keydown',onKey)}
+  });
+  try {
+    if(isSeen()||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){close();return}
+    root.style.overflow='hidden';if(document.body)document.body.style.overflow='hidden';locked=true;
+    timer=setTimeout(close,2800);
+    if(frame)frame.addEventListener('error',close,{once:true});
+    window.addEventListener('pagehide',release,{once:true});
+  }catch(_){close()}finally{if(finished)release()}
+})();
 </script>
 
 <div class="v22-scroll-progress" aria-hidden="true"><span id="v22-scroll-fill"></span></div><div class="v22-current-label" aria-hidden="true" id="v22-current-section">00 / ENTRY</div>
