@@ -45,3 +45,15 @@ AXS_HEADER_META:
 
 ## Публикация
 Для публикации на GitHub Pages обновляйте файлы в этом репозитории и пушьте в `main` ветку `Endevor-VIK/endevor-vik.github.io`.
+
+
+## SHOWCASE V2.1 (draft feature branch)
+- Preserves the original RED PROTOCOL hero and all lore sections. Original scene HTML remains archived.
+- Adds CREATOR / WORK / SYSTEM / VISION / COLLABORATION sections in `index.html`.
+- Supplemental styling: `assets/css/showcase.css`.
+- Screenshot viewer: `assets/js/showcase-gallery.js`.
+- Eight two-size image previews: `assets/showcase/*-800w.webp` and `*-1440w.webp`.
+- Vision source: `docs/AXIOM_SYSTEM_VISION_2026.html`; QA plan: `docs/SHOWCASE_V2_1_WORKLOG.md`.
+- World ECHELON uses existing static `assets/echelon_city.png` and mobile WebP; heavyweight scene iframe no longer mounts.
+- Both native `ENTER AXIOM` links lead to `https://axiomgates.com`.
+- DO NOT merge without CREATOR approval and visual QA.
