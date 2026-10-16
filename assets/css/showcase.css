@@ -43,7 +43,7 @@ html{scroll-padding-top:90px}
 .show-feature-body p,.show-casegrid p,.show-phases p{color:#b4b8c3;font-size:13px;line-height:1.76}
 .show-feature-body>a{color:#ff2034;font:700 11px 'JetBrains Mono',monospace;margin-top:20px;text-decoration:none}
 .show-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:19px}
-.show-tags span{border:1px solid #762b3c;color:#ff8895;padding:8px;font:700 9px 'JetBrains Mono',monospace}
+.show-tags span{border:1px solid #762b3c;color:#ff2034;padding:8px;font:700 9px 'JetBrains Mono',monospace}
 .show-casegrid,.show-phases,.show-spine-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:13px}
 .show-casegrid article,.show-phases article,.show-spine-grid>div{display:flex;flex-direction:column;min-width:0;padding:23px;background:#111116;border:1px solid #b4b8c324}
 .show-casegrid h3{font-size:27px;margin:10px 0}
