@@ -44,6 +44,7 @@ if screenshot_buttons!=8: errors.append(f'Screenshot triggers: {screenshot_butto
 if 'echelon-node-v2.html' in (BASE/'assets/js/index.js').read_text('utf-8'): errors.append('Heavy iframe mount restored')
 if len(list((BASE/'assets/showcase/visual-library').glob('*.webp')))!=17: errors.append('Expected 17 concept webps')
 if 'axiom-boot-skip' not in index: errors.append('Loader skip missing')
-if 'CONCEPT ART' not in index: errors.append('Art/evidence disclaimer missing')
+# V2.3 + V0.3.1 contract: internal QA banners must not reach the public page (the V2.2 rule required them; it contradicted smoke_showcase_v23.py)
+if 'CONCEPT ART' in index or 'НЕ ДОКАЗАТЕЛЬСТВО РАБОТЫ' in index: errors.append('Internal QA banner leaked to public UI')
 if errors: raise SystemExit('\n'.join(errors))
 print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), gallery, anchors, CTA, image library, safe loader')
