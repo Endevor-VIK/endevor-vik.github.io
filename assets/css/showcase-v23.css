@@ -37,13 +37,14 @@ body{background:var(--ax23-void);color:var(--ax23-ink)}
 .v22-bridge b{font-family:var(--ax23-tech);color:#ebebed;font-weight:600}
 .show-feature-body p,.show-shot-info p,.v22-case-detail-body p,.v22-proof-pair p,.show-phases p{font-size:clamp(13px,1vw,15px);line-height:1.7}
 .v22-art-label,.v22-about-art figcaption,.v22-engineering-art figcaption,.v22-world-hero figcaption,.v22-vision-art figcaption{background:#0a0b0eea;color:var(--ax23-ink);font-family:var(--ax23-tech);font-size:10px}
-.v22-feature-art{min-height:520px}
+@media(min-width:901px){.v22-feature-art{min-height:520px}}
 .v22-feature-art img{object-fit:cover;object-position:center}
 .v22-proof-pair div,.v22-case-status,.v22-phase-note{background:#12151a;border-color:var(--ax23-crimson)}
 .v22-case-status span:last-child{color:var(--ax23-dim)}
 .v22-case-detail summary{color:var(--ax23-red);font-size:11px;line-height:1.6}
 .v22-case-detail summary:hover{color:#f1f1f4}
-.show-screen-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.show-screen-grid{gap:18px}
+@media(min-width:761px){.show-screen-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .show-shot{transition:border-color .18s,transform .22s}
 .show-shot:hover{border-color:var(--ax23-red);transform:translateY(-3px)}
 .show-shot-trigger img{object-fit:contain;object-position:center}
