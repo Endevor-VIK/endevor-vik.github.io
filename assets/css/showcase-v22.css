@@ -33,7 +33,6 @@
 .v22-proof-pair span{font:700 11px 'JetBrains Mono',monospace;color:#ff2034}
 .v22-proof-pair p{color:#b4b8c3;font-size:12px!important;line-height:1.6!important;margin:10px 0 0!important}
 .v22-public-caveat{color:#9398a7!important;font-size:11px!important;line-height:1.6!important;margin-top:12px!important}
-.v22-public-evidence{display:flex;justify-content:space-between;gap:15px;padding:16px 20px;border:1px solid var(--ax-crimson-line);border-top:0;font:700 11px 'JetBrains Mono',monospace;color:#b4b8c3}.v22-public-evidence a{color:#ff2034}
 .v22-system-explain{margin-top:44px;border-top:1px solid #c0213d;padding-top:25px}.v22-system-explain h3{font:500 34px 'Oswald',sans-serif;color:white;margin:15px 0 23px}
 .v22-flow{display:flex;align-items:stretch;gap:9px}.v22-flow>div{flex:1;min-width:0;border:1px solid var(--ax-crimson-line);background:#14161c;padding:19px;display:flex;flex-direction:column;gap:13px}
 .v22-flow>div span{color:#ff2034;font:700 11px 'JetBrains Mono',monospace}.v22-flow>div b{color:#b4b8c3;font:500 23px 'Oswald',sans-serif}.v22-flow>div small{font-size:12px;line-height:1.7;color:#b4b8c3}
@@ -52,7 +51,7 @@
 .v22-phase-note strong{color:#ff2034;white-space:nowrap}.v22-vision-art img{display:block;width:100%;max-height:330px;object-fit:cover;aspect-ratio:16/5}
 @media(max-width:1100px){.v22-pillars,.v22-lore-glossary{grid-template-columns:repeat(2,1fr)}.v22-flow{display:grid;grid-template-columns:1fr 1fr}.v22-flow>i{display:none}.v22-feature-art{min-height:360px}.v22-bridge{padding:18px 20px}}
 @media(max-width:760px){.v22-about-head,.v22-world-hero{grid-template-columns:1fr;gap:22px}.v22-world-hero figure img{height:270px}.v22-proof-pair{grid-template-columns:1fr}.v22-feature-art{min-height:0;aspect-ratio:16/9}.v22-about-art img{aspect-ratio:16/9}.v22-discipline>div{grid-template-columns:1fr}.v22-bridge{display:block;text-align:center}.v22-bridge span{display:none}.v22-bridge b{font-size:14px}.v22-phases{grid-template-columns:1fr}}
-@media(max-width:540px){.v22-pillars,.v22-lore-glossary,.v22-flow{grid-template-columns:1fr}.v22-public-evidence{display:block;font-size:11px}.v22-public-evidence a{display:block;margin-top:10px}.v22-phase-note{display:block}.v22-phase-note span{display:block;margin-top:9px}}
+@media(max-width:540px){.v22-pillars,.v22-lore-glossary,.v22-flow{grid-template-columns:1fr}.v22-phase-note{display:block}.v22-phase-note span{display:block;margin-top:9px}}
 @media(prefers-reduced-motion:reduce){.v22-current-label{display:none}}
 /* 0524: WORK feature stacks on tablets/phones (desktop two-column rule must not leak below 900px) */
 @media(max-width:900px){.v22-public-feature{grid-template-columns:1fr}.v22-feature-art{min-height:0;aspect-ratio:16/9;margin:0}}

@@ -40,10 +40,7 @@
   --ax-font-display:'Oswald',Impact,'Arial Narrow',sans-serif;
   --ax-font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   --ax-font-body:'Golos Text',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
-  --ax-font-accent:var(--ax-font-display);
 }
-/* TYPE B review variant (Q-03 — CREATOR decision pending): Unbounded only for large section headings */
-html[data-type="b"]{--ax-font-accent:'Unbounded',var(--ax-font-display)}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',ui-monospace,monospace;-webkit-font-smoothing:antialiased}
 body{

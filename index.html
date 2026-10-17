@@ -26,13 +26,6 @@
 <link rel="icon" type="image/svg+xml" href="assets/endeavor-mark.svg" />
 <link rel="shortcut icon" href="assets/endeavor-mark.svg" />
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-<script>
-/* 0524 W1 review variants — CREATOR decision pending (Q-02 WORK A/B, Q-03 TYPE A/B). ?type=a|b · ?work=a|b.
-   Defaults: TYPE A (three core families), WORK B (Principal preference). Remove this switch after the decision. */
-(function(){try{var q=new URLSearchParams(location.search),d=document.documentElement;
-d.setAttribute('data-type',(q.get('type')||'').toLowerCase()==='b'?'b':'a');
-d.setAttribute('data-work',(q.get('work')||'').toLowerCase()==='a'?'a':'b');}catch(_){}})();
-</script>
 <!-- 0524 W1: no font preloads — on a slow link they delayed the first paint (FCP ~1.3 s vs ~0.6 s, lab); fonts.css uses font-display:swap -->
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/index.css">
@@ -558,12 +551,8 @@ d.setAttribute('data-work',(q.get('work')||'').toLowerCase()==='a'?'a':'b');}cat
  <div class="show-tags"><span>PUBLIC ROUTE</span><span>IN DEVELOPMENT</span><span>WEB EXPERIENCE</span></div>
  <a href="https://axiomgates.com" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ AXIOM WEB CORE ↗</a></div>
 </div>
-<div class="v22-public-evidence"><span>REAL INTERFACE EVIDENCE ↓</span><a href="#showcase-gallery">CHRONICLE · CONTENT · AXCHAT ↘</a></div>
 </div>
 </div></section>
-<script>/* 0524 W1 review switch (Q-02, CREATOR decision pending): ?work=a puts the concept art back into WORK as its intro, before the archive; default B keeps it in the band above. Remove with the switch. */
-(function(){if(document.documentElement.getAttribute("data-work")!=="a")return;var art=document.getElementById("work-art"),feature=document.querySelector("#work-intro .v22-public-feature"),intro=document.getElementById("work-intro"),archive=document.getElementById("showcase-gallery");if(!art||!feature||!intro||!archive)return;feature.insertBefore(art,feature.firstChild);archive.parentNode.insertBefore(intro,archive);})();
-</script>
 <div class="v22-bridge" aria-hidden="true"><span>03 — VISIBLE WORK</span><b>ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?</b><span>04 — SYSTEM ↓</span></div>
 <section class="show-section show-system" id="system" aria-labelledby="system-title"><div class="wrap">
 <div class="show-index"><span>04 / SYSTEM ARCHITECTURE</span><span>CONNECTED BY DESIGN</span></div>
