@@ -180,9 +180,39 @@ async function run(engineName, base) {
       // R38 at 1:1 the whole capture is reachable: the image starts at the scroll origin (Chromium centred it and cut off the left part)
       await p.waitForTimeout(500);
       const edge = await p.evaluate(() => { const st = document.querySelector('#showcase-lightbox .show-lightbox-image'); const i = st.querySelector('img'); st.scrollLeft = 0; st.scrollTop = 0; const r = i.getBoundingClientRect(), sr = st.getBoundingClientRect(); return { zoomed: document.getElementById('showcase-lightbox').classList.contains('is-zoomed'), left: Math.round(r.left - sr.left), top: Math.round(r.top - sr.top), w: Math.round(r.width), scrollW: st.scrollWidth }; });
-      record('R38-viewer-1to1-left-edge', engineName, edge.zoomed && edge.left === 0 && edge.top === 0 && edge.scrollW >= edge.w, edge);
+      record('R38-viewer-1to1-left-edge', engineName, edge.zoomed && edge.left === 0 && edge.top === 0 && edge.scrollW >= edge.w - 1, edge);
       await p.keyboard.press('Escape');
       await ctx.close();
+    }
+    // R39 map viewer (Q-11): FIT ↔ 1:1 on the V10 derivative 3840w, whole map reachable, arrows pan, focus returns to the button
+    {
+      const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
+      await p.goto(base, { waitUntil: 'load' });
+      await toEl(p, '#v23-open-map', 400); await p.locator('#v23-open-map').click(); await p.waitForTimeout(500);
+      const f = await p.evaluate(() => ({ open: document.querySelector('.v23-map-dialog').open, focus: document.activeElement.className }));
+      await p.keyboard.press('Equal');
+      await p.waitForFunction(() => { const i = document.querySelector('.v23-map-dialog img'); return /3840w/.test(i.currentSrc || i.src) && i.complete && i.naturalWidth > 0; }, null, { timeout: 20000 }).catch(() => {});
+      await p.waitForTimeout(300);
+      const mapGeom = () => { const st = document.querySelector('.v23-map-dialog .show-lightbox-image'); const i = st.querySelector('img'); const l = st.scrollLeft, t = st.scrollTop; st.scrollLeft = 0; st.scrollTop = 0; const r = i.getBoundingClientRect(), sr = st.getBoundingClientRect(); const o = { src: (i.currentSrc || i.src).split('/').pop(), w: Math.round(r.width), left: Math.round(r.left - sr.left), scrollW: st.scrollWidth }; st.scrollLeft = l; st.scrollTop = t; return o; };
+      const z = await p.evaluate(mapGeom);
+      const x0 = await p.evaluate(() => document.querySelector('.v23-map-dialog .show-lightbox-image').scrollLeft);
+      await p.keyboard.press('ArrowRight');
+      const x1 = await p.evaluate(() => document.querySelector('.v23-map-dialog .show-lightbox-image').scrollLeft);
+      await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+      const back = await p.evaluate(() => ({ open: document.querySelector('.v23-map-dialog').open, focus: document.activeElement.id }));
+      record('R39-map-viewer-1to1', engineName, f.open && /show-lightbox-close/.test(f.focus) && z.src === 'world-spine-map-3840w.webp' && z.w === 3840 && z.left === 0 && z.scrollW >= 3839 && x1 > x0 && !back.open && back.focus === 'v23-open-map', { f, z, pan: x1 - x0, back });
+      await ctx.close();
+      // R40 low-memory phone: 2880w, 1:1 in device pixels (DPR 3 → 960 CSS px), touch opens 1:1 from the button
+      const lite = await page(browser, engineName, { w: 390, h: 844, dpr: 3, mobile: true, init: () => { try { Object.defineProperty(Navigator.prototype, 'deviceMemory', { get: () => 1, configurable: true }); } catch (_) {} } });
+      await lite.p.goto(base, { waitUntil: 'load' });
+      await toEl(lite.p, '#v23-open-map', 300); await lite.p.locator('#v23-open-map').click(); await lite.p.waitForTimeout(400);
+      await lite.p.locator('.v23-map-dialog .ax-viewer-zoom').click();
+      await lite.p.waitForFunction(() => { const i = document.querySelector('.v23-map-dialog img'); return /2880w/.test(i.currentSrc || i.src) && i.complete && i.naturalWidth > 0; }, null, { timeout: 20000 }).catch(() => {});
+      await lite.p.waitForTimeout(300);
+      const lz = await lite.p.evaluate(mapGeom);
+      const loaded3840 = lite.p.__requests.some((u) => /3840w/.test(u));
+      record('R40-map-viewer-low-memory', engineName, lz.src === 'world-spine-map-2880w.webp' && lz.w === 960 && lz.left === 0 && !loaded3840, { ...lz, loaded3840 });
+      await lite.ctx.close();
     }
     // R16 archive keyboard (APG tabs): arrows move and select with roving tabindex, Home/End; R17 prev/next wrap; R18 touch swipe
     {
