@@ -204,7 +204,7 @@ Smoke: `tests/smoke_showcase.py`, `tests/smoke_showcase_v23.py` — PASS.
 | axe desktop / mobile | 4 / 4 правила (контраст 67 / 56 узлов) | 0 / 0 | `a11y/axe-*.json` |
 | Контраст текста на красных заливках | 3,81:1 | 5,31:1 | `a11y/red-fills-*.txt` |
 | ENTER AXIOM (пиксели, худшие 5 %) | ≥ 9,75:1 | ≥ 9,75:1 | `a11y/enter-contrast-*.json` |
-| Розовый по отрисовке (страница 1440, UI) | 3,13 % | 0,72 % | `palette/` |
+| Розовый по отрисовке (страница 1440, UI) | 3,13 % | 0,70 % | `palette/` |
 | Резкость < 0,95 (9 конфигураций) | 36 | 13 (все — предел оригинала) | `images/sharpness-*.json` |
 | Lighthouse mobile Perf / LCP / CLS | 77 / 4,77 с / 0,127 | 97 / 2,41 с / 0,020 | `lighthouse-summary.json` |
 | Lighthouse desktop Perf / LCP / CLS | 98 / 0,93 с / 0,062 | 100 / 0,53 с / 0,005 | там же |
