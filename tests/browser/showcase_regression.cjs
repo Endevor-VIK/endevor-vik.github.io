@@ -177,6 +177,10 @@ async function run(engineName, base) {
       await p.waitForTimeout(300);
       const cyr = await p.evaluate(() => document.getElementById('showcase-lightbox').classList.contains('is-zoomed'));
       record('R19-viewer-zoom-paging-keys', engineName, z.zoomed && /-full\.webp$/.test(z.src) && z.pans && z.pressed === 'true' && fit && last === '08 / 08' && wrapped === '01 / 08' && cyr, { ...z, fit, last, wrapped, cyrillicZ: cyr });
+      // R38 at 1:1 the whole capture is reachable: the image starts at the scroll origin (Chromium centred it and cut off the left part)
+      await p.waitForTimeout(500);
+      const edge = await p.evaluate(() => { const st = document.querySelector('#showcase-lightbox .show-lightbox-image'); const i = st.querySelector('img'); st.scrollLeft = 0; st.scrollTop = 0; const r = i.getBoundingClientRect(), sr = st.getBoundingClientRect(); return { zoomed: document.getElementById('showcase-lightbox').classList.contains('is-zoomed'), left: Math.round(r.left - sr.left), top: Math.round(r.top - sr.top), w: Math.round(r.width), scrollW: st.scrollWidth }; });
+      record('R38-viewer-1to1-left-edge', engineName, edge.zoomed && edge.left === 0 && edge.top === 0 && edge.scrollW >= edge.w, edge);
       await p.keyboard.press('Escape');
       await ctx.close();
     }

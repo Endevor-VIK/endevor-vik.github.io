@@ -99,7 +99,8 @@ body{background:var(--ax23-void);color:var(--ax23-ink)}
 .ax-viewer-tools button:hover,.ax-viewer-zoom[aria-pressed="true"]{border-color:var(--ax-crimson);background:var(--ax-crimson-ink)}
 .ax-viewer .show-lightbox-image{position:relative;display:grid;place-items:center;height:calc(96vh - 112px);max-height:none;overflow:hidden;background:#050609;touch-action:pan-y pinch-zoom}
 .ax-viewer .show-lightbox-image img{width:100%;height:100%;max-width:100%;object-fit:contain;cursor:zoom-in}
-.ax-viewer.is-zoomed .show-lightbox-image{display:block;overflow:auto;overscroll-behavior:contain;touch-action:auto;cursor:grab}
+/* place-items:start — Chromium aligns block children by justify-items too: a centred 1:1 image left its left part out of scroll reach */
+.ax-viewer.is-zoomed .show-lightbox-image{display:block;place-items:start;overflow:auto;overscroll-behavior:contain;touch-action:auto;cursor:grab}
 .ax-viewer.is-zoomed .show-lightbox-image:active{cursor:grabbing}
 .ax-viewer.is-zoomed .show-lightbox-image img{max-width:none;max-height:none;object-fit:fill;cursor:inherit;user-select:none;-webkit-user-drag:none}
 .ax-viewer .show-lightbox-image.is-loading::after{content:"LOADING…";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:var(--ax-text-dim);font:700 11px var(--ax-font-mono);letter-spacing:.14em}
