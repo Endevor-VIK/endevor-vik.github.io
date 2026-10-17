@@ -1151,8 +1151,14 @@
                   <stop offset=".6" stop-color="#ff2034"/>
                   <stop offset="1" stop-color="#5a0a12"/>
                 </linearGradient>
-                <radialGradient id="axCoreG" cx="0" cy="0" r="1">
+                <!-- 0524 W1.R (Q-04): opaque light face; the old 82 % white over the red petal rendered pink -->
+                <linearGradient id="axPetalLight" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0" stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#c3c7cf"/>
+                </linearGradient>
+                <!-- 0524 W1.R (Q-04): red-hot centre — the translucent red core layers over a white centre rendered pink; the white heart stays as its own layer -->
+                <radialGradient id="axCoreG" cx="0" cy="0" r="1">
+                  <stop offset="0" stop-color="#ff4a54"/>
                   <stop offset=".35" stop-color="#ff2034" stop-opacity=".85"/>
                   <stop offset="1" stop-color="#7a0a14" stop-opacity="0"/>
                 </radialGradient>
@@ -1180,7 +1186,7 @@
                 <g id="axPetalOuter"><path d="M 0 -94 L 26 -22 L -26 -22 Z" fill="url(#axBladeOuter)"/></g>
                 <g id="axPetalMid"><path d="M 0 -78 L 19 -18 L -19 -18 Z" fill="url(#axBladeInner)"/></g>
                 <g id="axPetalSpine"><line x1="0" y1="-94" x2="0" y2="-22" stroke="#ff2034" stroke-width=".6" stroke-opacity=".7"/></g>
-                <g id="axPetalInner"><path d="M 0 -56 L 11 -16 L 0 -10 L -11 -16 Z" fill="#fff" fill-opacity=".82"/></g>
+                <g id="axPetalInner"><path d="M 0 -56 L 11 -16 L 0 -10 L -11 -16 Z" fill="url(#axPetalLight)"/></g>
               </defs>
 
               <!-- ===== background terminal ===== -->

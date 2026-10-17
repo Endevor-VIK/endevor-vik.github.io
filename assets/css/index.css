@@ -992,7 +992,8 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 @keyframes axBreathe{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.85)}}
 
 .axiom-entity .ax-body{display:grid;grid-template-columns:1.05fr 1.25fr 1fr;gap:1px;background:var(--ax-mute-2);position:relative;z-index:2}
-.axiom-entity .ax-col{padding:0;background:rgba(13,14,18,.6);position:relative;min-height:540px}
+/* 0524 W1.R (Q-04): neutral, opaque column tone (was 60 % #0d0e12 over the bluish divider colour = #19191f) — red glows over a blue-tinted base rendered dark plum */
+.axiom-entity .ax-col{padding:0;background:#19191b;position:relative;min-height:540px}
 .axiom-entity .ax-col.copy{padding:32px 30px}
 .axiom-entity .ax-col.modes{padding:32px 30px}
 
