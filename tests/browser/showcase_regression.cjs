@@ -214,6 +214,30 @@ async function run(engineName, base) {
       record('R40-map-viewer-low-memory', engineName, lz.src === 'world-spine-map-2880w.webp' && lz.w === 960 && lz.left === 0 && !loaded3840, { ...lz, loaded3840 });
       await lite.ctx.close();
     }
+    // R41 AXIOM GATE note (Q-16): shown only for a live manual flag; expired flag, missing file, network error or timeout → hidden; the page never probes axiomgates.com and the note does not move the layout
+    {
+      const future = new Date(Date.now() + 864e5).toISOString(), past = new Date(Date.now() - 864e5).toISOString();
+      const cases = [
+        ['live', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify({ schema: 1, state: 'unavailable', checkedAt: '2026-10-17', expires: future }) }), true],
+        ['expired', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify({ schema: 1, state: 'unavailable', checkedAt: '2026-10-17', expires: past }) }), false],
+        ['available', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify({ schema: 1, state: 'available', checkedAt: '2026-10-17', expires: future }) }), false],
+        ['404', (r) => r.fulfill({ status: 404, body: 'nope' }), false],
+        ['network-error', (r) => r.abort('failed'), false],
+        ['timeout', (r) => new Promise((res) => setTimeout(res, 4000)).then(() => r.fulfill({ contentType: 'application/json', body: JSON.stringify({ state: 'unavailable', expires: future }) })).catch(() => {}), false],
+      ];
+      const results = {};
+      for (const [name, handler, expectShown] of cases) {
+        const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
+        await p.route('**/assets/status/gate.json', handler);
+        await p.goto(base, { waitUntil: 'load' }); await p.waitForTimeout(name === 'timeout' ? 4800 : 900);
+        const st = await p.evaluate(() => ({ shown: [...document.querySelectorAll('.ax-gate-note')].map((n) => !n.hidden && n.getBoundingClientRect().height === 0 && getComputedStyle(n).display !== 'none'), text: (document.querySelector('.ax-gate-note') || {}).textContent || '', hrefs: [...document.querySelectorAll('a.enter')].map((a) => a.getAttribute('href')), docH: document.documentElement.scrollHeight, enterBottoms: [...document.querySelectorAll('.enter-wrap')].map((e) => Math.round(e.getBoundingClientRect().bottom + scrollY)), nextTop: Math.round(document.querySelector('.show-hero-extra').getBoundingClientRect().top + scrollY) }));
+        const probed = p.__requests.some((u) => /axiomgates\.com/.test(u));
+        results[name] = { ...st, probed, ok: st.shown.length === 2 && st.shown.every((v) => v === expectShown) && st.hrefs.every((h) => h === 'https://axiomgates.com') && !probed && (!expectShown || /статус на 17\.10/.test(st.text)) };
+        await ctx.close();
+      }
+      const same = results.live.docH === results.available.docH && results.live.nextTop === results.available.nextTop;
+      record('R41-gate-note-manual-flag', engineName, Object.values(results).every((r) => r.ok) && same, { layoutUnchanged: same, ...results });
+    }
     // R16 archive keyboard (APG tabs): arrows move and select with roving tabindex, Home/End; R17 prev/next wrap; R18 touch swipe
     {
       const { ctx, p } = await page(browser, engineName, { w: 1280, h: 800 });

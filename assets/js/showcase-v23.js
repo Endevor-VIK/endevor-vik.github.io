@@ -69,3 +69,14 @@ if(trigger){
 }
 /* 0524 W1: the WORK stage was merged into the archive (assets/js/showcase-gallery.js) */
 })();
+/* 0524 W2 (Q-16): manual AXIOM GATE notice under ENTER AXIOM. CREATOR sets assets/status/gate.json (same origin, one request, 2.5 s timeout);
+   the note shows only while state is "unavailable" and the flag has not expired. axiomgates.com is never probed: a CORS or network error says nothing
+   about the gate. The buttons themselves do not change */
+(()=>{const notes=document.querySelectorAll('.ax-gate-note');if(!notes.length||!window.fetch)return;
+ const ctl=window.AbortController?new AbortController():null,timer=setTimeout(()=>{if(ctl)ctl.abort()},2500);
+ fetch('assets/status/gate.json',{cache:'no-cache',signal:ctl?ctl.signal:undefined}).then(r=>r.ok?r.json():null).then(s=>{
+  if(!s||s.state!=='unavailable'||!(Date.parse(s.expires)>Date.now()))return;
+  const day=/^(\d{4})-(\d{2})-(\d{2})/.exec(s.checkedAt||''),date=day?' · статус на '+day[3]+'.'+day[2]:'';
+  notes.forEach(n=>{const d=n.querySelector('.ax-gate-date');if(d)d.textContent=date;n.hidden=false});
+ }).catch(()=>{}).finally(()=>clearTimeout(timer));
+})();

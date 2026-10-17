@@ -188,3 +188,12 @@ body{background:var(--ax23-void);color:var(--ax23-ink)}
 .v23-flow-step>small{font:400 12px/1.7 var(--ax23-body);color:var(--ax23-muted)}
 .v22-flow>.v23-flow-step.is-active{border-color:var(--ax23-red);background:linear-gradient(135deg,#271213,#12141a)}
 @media(max-width:540px){.v22-flow>.v23-flow-step{min-height:100px}}
+
+/* 0524 W2 (Q-16): AXIOM GATE notice — zero-height line in the gap under ENTER AXIOM, so showing it never moves the page */
+/* p.ax-gate-note — outranks .cta p (font, tracking and margins that would shift the page) */
+p.ax-gate-note{height:0;margin:0;max-width:none;position:relative;top:3px;overflow:visible;white-space:nowrap;font:500 11px/16px var(--ax-font-mono);letter-spacing:.06em;color:var(--ax-text-dim);pointer-events:none}
+p.ax-gate-note[hidden]{display:none}
+.ax-gate-dot{display:inline-block;width:6px;height:6px;margin:0 8px 1px 0;background:var(--ax-crimson);vertical-align:middle}
+.hero p.ax-gate-note{padding-left:26px}
+@media(max-width:400px){p.ax-gate-note{letter-spacing:0}}
+@media (max-height:520px) and (min-width:600px) and (orientation:landscape){.hero-grid>div:first-child>.ax-gate-note{grid-area:cta;align-self:end}}

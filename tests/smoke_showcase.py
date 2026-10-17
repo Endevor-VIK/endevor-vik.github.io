@@ -50,5 +50,14 @@ if 'CONCEPT ART' in index or 'НЕ ДОКАЗАТЕЛЬСТВО РАБОТЫ' in
 # W1.R: WORK B + TYPE A are final (Q-02/Q-03) — no review switch, no Unbounded in the public UI
 if 'data-work' in index or 'data-type' in index: errors.append('Review A/B switch still present')
 if 'Unbounded' in (BASE/'assets/css/fonts.css').read_text('utf-8'): errors.append('Unbounded still declared')
+# W2 (Q-16): the manual AXIOM GATE flag is valid JSON with a known state and a parseable expiry; the CTA keeps its address
+import json, datetime
+try:
+    gate = json.loads((BASE/'assets/status/gate.json').read_text('utf-8'))
+    if gate.get('state') not in ('unavailable', 'available'): errors.append('gate.json: state must be "unavailable" or "available"')
+    datetime.datetime.fromisoformat(str(gate.get('expires', '')).replace('Z', '+00:00'))
+    datetime.date.fromisoformat(str(gate.get('checkedAt', '')))
+except (OSError, ValueError) as e: errors.append(f'gate.json invalid: {e}')
+if index.count('href="https://axiomgates.com" aria-label="ENTER AXIOM') != 2: errors.append('ENTER AXIOM CTA address changed')
 if errors: raise SystemExit('\n'.join(errors))
 print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader')
