@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.QA_MATRIX
   title: "AXIOM SHOWCASE V0.3.1 — QA Matrix"
-  status: READY_FOR_PRINCIPAL_REVIEW
+  status: READY_FOR_PRINCIPAL_RECHECK
   deployment: NOT_DEPLOYED
   mode: QA / Evidence Index
   goal: "Фактические среды, матрица снимков, интерактив, доступность и производительность с честными статусами PASS/FAIL/NOT RUN"
@@ -218,3 +218,27 @@ Smoke: `tests/smoke_showcase.py`, `tests/smoke_showcase_v23.py` — PASS.
 | Ручной проход скринридером | NOT RUN | W3 |
 | Полевые CWV, живой GitHub Pages | NOT RUN | Деплой HOLD |
 | Браузерный зум «как у пользователя» | INCOMPLETE | Эмулирован как 720×450@2 (CSS-вьюпорт 200 %) |
+
+## 11. W1.R (2026-10-17)
+
+Код `0bfc05fa`; «до» — W1 `b5ae1f3f` (отдельный worktree и сервер). Полностью — `W1R_REPORT.md` §4.
+
+| Проверка | Chromium 149 | Firefox 151 |
+| --- | --- | --- |
+| Регрессия, 57 проверок | 57 PASS | 57 PASS |
+| R30 старые адреса `?work=a&type=b`, `?work=b&type=a`, `?type=b` → финальная страница, 0 запросов Unbounded | PASS ×3 | PASS ×3 |
+| R37 эмблема AXIOM по отрисовке (1440@1, 390@2, reduced motion): заметный розовый < 0,5 % | PASS ×2 | PASS ×2 |
+| Удалено: R30 (варианты A/B) в старом виде, проверки вариантного DOM | — | — |
+
+| Проверка | W1 | W1.R |
+| --- | --- | --- |
+| axe desktop / mobile | 0 / 0 | 0 / 0 |
+| Блок AXIOM ∅, заметный розовый 1440 / 390 | 3,42 % / 2,10 % | 0,086 % / 0,015 % |
+| Вся страница сегментами, UI, заметный 1440 / 390 | 0,247 % / 0,243 % | 0,048 % / 0,030 % |
+| Lighthouse mobile Perf (3 прогона) / LCP / CLS | 97 (98/97/97) / 2,41 с / 0,013 | 95 (97/95/94) / 2,41 с / 0,013 |
+| Lighthouse desktop Perf / LCP / CLS | 100 / 0,53 с / 0,003 | 100 / 0,53 с / 0,004 |
+| Резкость < 0,95 | 13 | 13 |
+| Smoke | PASS | PASS |
+
+NOT RUN: WebKit/Safari, реальные устройства, скринридер, полевые CWV, живой Pages. INCOMPLETE: зум браузера (эмулирован вьюпортом).
+

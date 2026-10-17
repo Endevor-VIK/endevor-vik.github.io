@@ -19,6 +19,8 @@ AXS_HEADER_META:
 
 | Документ | Что внутри |
 | --- | --- |
+| [W1R_REPORT.md](./W1R_REPORT.md) | **W1.R (Principal Recheck):** финальные WORK B / TYPE A, остаток розового по отрисовке, регрессии, Lighthouse, NOT RUN |
+| [PRIVACY_CHECK_W1R.md](./PRIVACY_CHECK_W1R.md) | Privacy gate Q-15: все варианты 8 скриншотов, реестр значений и рисков |
 | [W1_REPORT.md](./W1_REPORT.md) | **W1 (пакет на Principal Review):** решения Q-01…Q-09 и что сделано, реестр изменений с SHA, варианты A/B на решение CREATOR, измерения (регрессия, axe, контраст, палитра, резкость, Lighthouse), что не проверено, вопросы |
 | [W2_CANON_EDITORIAL_PROPOSALS.md](./W2_CANON_EDITORIAL_PROPOSALS.md) | Вход в W2: расхождения с Canon V3 (OMEGA-0, FACELESS BASE, AI ZONE, NIGHTMARE, X-CLASS, имитация файлов канона) и редакционные предложения — на решение CREATOR |
 | [AUDIT_REPORT.md](./AUDIT_REPORT.md) | Посекционный аудит W0: находки P0–P3, доказательства, причины, предложения, опровергнутые гипотезы, что исправлено в W0.1, план W1 |
@@ -32,4 +34,4 @@ AXS_HEADER_META:
 | [captures/w1/](./captures/w1/) | Отобранные сравнения W1 (WebP): первый экран до/после, WORK «до» / B / A, шрифты A/B; полный набор — в `sandbox/evidence/2026-10-16_0524_showcase-v031-w1/` |
 | [captures/w0/](./captures/w0/) | 13 отобранных снимков-доказательств (JPEG, ≈ 0,9 МБ); полный набор — в `sandbox/evidence/2026-10-16_0524_showcase-v031-w0-audit/` рабочего пространства AXS |
 
-Браузерная регрессия: [`tests/browser/showcase_regression.cjs`](../../tests/browser/showcase_regression.cjs) — 58 проверок × Chromium + Firefox.
+Браузерная регрессия: [`tests/browser/showcase_regression.cjs`](../../tests/browser/showcase_regression.cjs) — 57 проверок × Chromium + Firefox (W1.R).

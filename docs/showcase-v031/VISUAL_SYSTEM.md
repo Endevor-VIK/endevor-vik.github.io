@@ -147,7 +147,7 @@ AXS_HEADER_META:
 ## 8. Применено в W1 (решения 0524.W1)
 
 - **Токены — единый источник** `:root` в `assets/css/index.css`: `--ax-void #070709`, `--ax-graphite-1 #0b0c0f`, `--ax-surface #101218`, `--ax-raised #181b22`, `--ax-hairline #262830`, `--ax-crimson #ff2034`, `--ax-crimson-hi #ff4a54`, `--ax-crimson-deep #94121e`, `--ax-crimson-line #7a2830`, `--ax-crimson-ink #24100f`, `--ax-on-crimson #0a0507`, `--ax-text #b4b8c3`, `--ax-text-dim #8b919d`, `--ax-text-min #80818a`, `--ax-focus #ff4a54`. Слои V2.2/V2.3 ссылаются на них (`--ax23-*` — псевдонимы).
-- **Шрифты:** свои файлы (`assets/css/fonts.css`, OFL). TYPE A (по умолчанию): Oswald — заголовки и h3, JetBrains Mono — метки/HUD/кнопки, Golos Text — текст. TYPE B (`?type=b`): + Unbounded только в заголовках разделов. Подписи ≥ 11 px.
+- **Шрифты:** свои файлы (`assets/css/fonts.css`, OFL). TYPE A (решение CREATOR, Q-03): Oswald — заголовки и h3, JetBrains Mono — метки/HUD/кнопки, Golos Text — текст. Unbounded удалён в W1.R. Подписи ≥ 11 px.
 - **Красные заливки:** текст `--ax-on-crimson` (5,31:1). ENTER AXIOM — белый на тёмно-красной заливке (≥ 9,75:1).
 - **Фокус:** кольцо RED PROTOCOL `--ax-focus`, 2 px, отступ 3 px (6,09:1 на фоне); Q-06 (светлое кольцо) отклонён.
 - **Палитра:** без розового/пурпурного/сливового; световая динамика радара, эмблемы и лоадера сохранена; RGB-глитч — красный + чистый циан, непрозрачные, ядро белое.

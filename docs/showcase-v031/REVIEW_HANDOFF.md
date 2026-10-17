@@ -17,7 +17,14 @@ AXS_HEADER_META:
     open_issues: ./OPEN_ISSUES.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W1; ниже — W0 + W0.1 для истории)
+# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W1.R; ниже — W1, W0 + W0.1 для истории)
+
+## W1R. Статус и проверка
+
+**0524.W1.R READY FOR PRINCIPAL RECHECK.** Коммиты `63d0f276`, `3b1d2d7e`, `c4692404`, `0bfc05fa` и документы (SHA — в журнале AgentOps 0524). Отчёт — `W1R_REPORT.md`, privacy — `PRIVACY_CHECK_W1R.md`. Переключатель вариантов удалён: пункты W1-3 и W1-4 про `?work` / `?type` больше не действуют, старые адреса открывают финальную страницу. Ожидание регрессии: `114 passed, 0 failed, 0 skipped`.
+
+Что посмотреть вручную: блок AXIOM ∅ (эмблема и заголовок — без розового, пульс и глитч на месте); то же с «Уменьшить движение» (обводка заголовка больше не висит); WORK на телефоне.
+
 
 ## W1-1. Статус
 

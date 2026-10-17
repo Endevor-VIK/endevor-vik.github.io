@@ -16,7 +16,7 @@ AXS_HEADER_META:
     open_issues: ./OPEN_ISSUES.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — PRESERVATION REPORT (W0 + W0.1 + W1)
+# AXIOM SHOWCASE V0.3.1 — PRESERVATION REPORT (W0 + W0.1 + W1 + W1.R)
 
 **Итог W0/W0.1: ничего из оригинального контента, декора, арта и исходников не удалено, не перемещено и не упрощено.** Изменения W0.1 — исправления раскладки на телефонах/планшетах, поведения просмотрщика, доступных имён и служебных ссылок (см. `AUDIT_REPORT.md` §15).
 
@@ -109,3 +109,30 @@ AXS_HEADER_META:
 - Новые: шрифты (`assets/fonts/`, OFL), производные изображений (`IMAGE_AUDIT.md` §8).
 - Больше не используются страницей, **сохранены**: `visual-library/hq/A02_network_city_panorama-hq.webp`, `visual-library/B04_distant_orbit.webp` (заменены производными из PNG). Удаление — только по решению CREATOR (W4).
 - Lossless `hq/*-full.webp` — используются в режиме 1:1 просмотрщика. Архивы и `assets/_unused/` не тронуты.
+
+## 7. W1.R (директива 0524.W1R/W2, 2026-10-17)
+
+### 7.1 Структура и файлы
+
+| Было (W1) | Стало (W1.R) | Основание |
+| --- | --- | --- |
+| Переключатель `?work=a|b` / `?type=a|b`: inline-скрипт в `<head>` и скрипт после WORK | Удалён; старые адреса открывают финальную страницу | Q-02 = B, Q-03 = A, Q-19 |
+| Ссылка «REAL INTERFACE EVIDENCE ↓» (`.v22-public-evidence`), видимая только в варианте A | Удалена вместе со стилями | Скрытый DOM альтернативы (R1) |
+| Шрифт Unbounded: `@font-face`, `unbounded-{cyrillic,latin}-var.woff2`, `OFL-unbounded.txt` | Удалены; `fonts-manifest.json` 9 → 7 записей | Q-03 = A |
+| Правила варианта B под `html:not([data-work="a"])` | Те же правила без условия | R1 |
+
+Полоса A01, архив, карточка WEB CORE, тексты — без изменений.
+
+### 7.2 Цвета (оригинальные значения — для возврата)
+
+| Элемент | Было | Стало |
+| --- | --- | --- |
+| `.axiom-entity .ax-col` фон | `rgba(13,14,18,.6)` | `#19191b` |
+| `#axPetalInner` | `fill="#fff" fill-opacity=".82"` | `fill="url(#axPetalLight)"`, градиент `#ffffff → #c3c7cf` |
+| `#axCoreG`, первая точка | `#ffffff` | `#ff4a54` |
+| `.ax-name::after` (глитч-обводка) | видима в покое, над текстом | `opacity:0` в покое, `z-index:-1`; ключевые кадры те же |
+| `.ax-name em` (свечение ∅) | над соседней буквой | `position:relative; z-index:-1`; тень та же |
+| `.show-phase-number` | `#a81a2223` | `#281215` |
+
+Формы, размеры, анимации и их тайминги не менялись.
+

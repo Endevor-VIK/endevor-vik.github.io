@@ -82,6 +82,6 @@ AXS_HEADER_META:
 - W0 audit in real browsers (Chromium 149 + Firefox 151), Canon V3 cross-check, image audit, draft visual system: `docs/showcase-v031/`.
 - W0.1 fixes of confirmed technical defects only (no redesign): phone/tablet WORK layout (P0), gallery columns, sharp WORK stage after selection, viewer focus return, on-demand map dialog image, visible pointer in dialogs, reduced-motion SVG SMIL, anchor offset, label-in-name, 404 nested-path return, loader console error.
 - W1 (CREATOR decisions Q-01…Q-09): one interactive WORK archive with a viewer (fit ↔ 1:1, paging, swipe), self-hosted Oswald / JetBrains Mono / Golos Text (OFL), RED PROTOCOL palette without pink/plum, dark text on bright red fills, CONTACT with Telegram / GitHub / axiomgates.com, a 24 h intro loader, `<main>` landmark, transform-only scan animations, responsive images from the originals. Report: `docs/showcase-v031/W1_REPORT.md`.
-- Review variants until CREATOR decides Q-02 / Q-03 (temporary switch): `?work=a|b` (default B), `?type=a|b` (default A).
+- Final design decisions: WORK B (archive first, concept art A01 in its own band), TYPE A (Oswald + JetBrains Mono + Golos Text). Old `?work=` / `?type=` links open the same page.
 - Browser regression suite: `NODE_PATH=<playwright node_modules> node tests/browser/showcase_regression.cjs --firefox` (58 checks × Chromium + Firefox = 116).
 - MAIN MERGE and PRODUCTION DEPLOY remain on HOLD until AXIOM Principal Review and CREATOR visual approval.

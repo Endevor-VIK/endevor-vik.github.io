@@ -17,15 +17,32 @@ AXS_HEADER_META:
     visual_system: ./VISUAL_SYSTEM.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — OPEN ISSUES (после W1)
+# AXIOM SHOWCASE V0.3.1 — OPEN ISSUES (после W1.R)
+
+## 00. Финальные решения CREATOR (Principal Review W1, 2026-10-17)
+
+| ID | Решение | Статус после W1.R |
+| --- | --- | --- |
+| Q-02 | **WORK B**: архив — лицо WORK, A01 — отдельная полоса перед WORK | **DONE** (W1.R R1): переключатель удалён |
+| Q-03 | **TYPE A**: Oswald + JetBrains Mono + Golos Text; Unbounded не используется | **DONE** (W1.R R1): Unbounded удалён из UI и файлов |
+| Q-04 | Закрыть остаток розового в эмблеме по отрисовке | **DONE** (W1.R R2): блок AXIOM 3,42 % → 0,086 % |
+| Q-11 | V10 3840×2160 — APPROVED SCOPED: только 1:1 карты, география и мастер не меняются | → W2 |
+| Q-14 | Числовая телеметрия — только как художественный HUD | → W2 (C3) |
+| Q-15 | 8 скриншотов — после privacy-check | Проверка агента выполнена, секретов нет (`PRIVACY_CHECK_W1R.md`); **ждёт privacy PASS Principal** |
+| Q-16 | Подсказка у ENTER AXIOM без ложных данных о доступности | → W2 |
+| Q-17 | Курсор — без изменений (фиксы диалогов W0.1 сохранены) | Закрыт |
+| Q-18 | Реальные и художественные версии развести | → W2 (C4) |
+| Q-19 | Удалить переключатель вариантов | **DONE** (W1.R R1) |
+| Q-20 | Правки канона — подготовить: подтверждённые источником — отдельными коммитами, спорные — CREATOR HOLD | → W2 (C5) |
+| Q-10, Q-12 | Отложены | — |
 
 ## 0. Решения директивы 0524.W1 (CREATOR / Principal, 2026-10-16)
 
 | ID | Решение | Статус после W1 |
 | --- | --- | --- |
 | Q-01 | APPROVED: единый интерактивный архив WORK | **DONE** — `W1_REPORT.md` §1 |
-| Q-02 | COMPARE / HOLD (Principal склоняется к B) | **ОТКРЫТ — решение CREATOR.** Варианты A/B собраны, `?work=a|b`, по умолчанию B |
-| Q-03 | COMPARE / HOLD | **ОТКРЫТ — решение CREATOR.** TYPE A/B собраны, `?type=a|b`, по умолчанию A; Tektur не используется |
+| Q-02 | COMPARE / HOLD (Principal склоняется к B) | Решено после W1: **B** (см. §00) |
+| Q-03 | COMPARE / HOLD | Решено после W1: **A** (см. §00) |
 | Q-04 | APPROVED: убрать розовый/лососевый/сливовый, вкл. акценты оригинала; световую динамику сохранить | **DONE** |
 | Q-05 | APPROVED: тёмный текст на ярко-красных кнопках; ENTER AXIOM — белый на тёмном красном | **DONE** |
 | Q-06 | REJECTED: единое светлое кольцо | Закрыт решением: кольцо RED PROTOCOL `#ff4a54` сохранено и унифицировано |
@@ -76,8 +93,8 @@ AXS_HEADER_META:
 | --- | --- |
 | Доступ к Canon V3 | **Нет блокера** — `canon/v3` @ `0b1c4bab` доступен, сверка выполнена |
 | Оригиналы изображений | **Нет блокера** для скриншотов (lossless в репозитории) и Visual Library (PNG в архиве CREATOR); **условный** для карты (V10 есть, нужен Q-11) |
-| Решения CREATOR для дизайна W1 | Получены 2026-10-16; открыты только Q-02 и Q-03 (сравнение A/B) |
-| AXIOM Principal Review W1 | Требуется: W1 READY FOR PRINCIPAL REVIEW |
+| Решения CREATOR для дизайна W1 | Получены 2026-10-16 и 2026-10-17 (Q-02 = B, Q-03 = A) |
+| AXIOM Principal Review W1 | W1 CONDITIONAL PASS → W1.R READY FOR PRINCIPAL RECHECK |
 
 ## 4. Отложено (с причиной)
 
@@ -95,9 +112,9 @@ AXS_HEADER_META:
 | --- | --- |
 | O1 Preview | Частично: локальный стенд и регрессионный набор воспроизводимы; размещённого preview нет (Pages публикует только `main`) |
 | O2 Real browser QA | В работе: Chromium + Firefox выполнены (W0); WebKit/устройства — W3 |
-| O3 Privacy | Открыт → Q-15 |
+| O3 Privacy | Проверка агента выполнена (W1.R) → ждёт privacy PASS Principal |
 | O4 Public route | OBSERVED: `axiomgates.com` 503 «AXIOM GATE UNAVAILABLE» (контур выключен) → Q-16 |
-| O5 Final visual pick | Q-01 выполнен; открыт → Q-02/Q-03 (варианты A/B) |
+| O5 Final visual pick | **Закрыт**: Q-01, Q-02 = B, Q-03 = A |
 | O6 Contact | **Закрыт** в W1 (Q-07) |
 | O7 Status telemetry | Открыт → Q-14 |
 | O8 Original PNG policy | Оригиналы найдены в архиве CREATOR; в репозиторий не добавляются (вес Pages) |
