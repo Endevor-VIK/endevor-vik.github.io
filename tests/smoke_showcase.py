@@ -47,5 +47,8 @@ if len(list((BASE/'assets/showcase/visual-library').glob('*.webp')))!=17: errors
 if 'axiom-boot-skip' not in index: errors.append('Loader skip missing')
 # V2.3 + V0.3.1 contract: internal QA banners must not reach the public page (the V2.2 rule required them; it contradicted smoke_showcase_v23.py)
 if 'CONCEPT ART' in index or 'НЕ ДОКАЗАТЕЛЬСТВО РАБОТЫ' in index: errors.append('Internal QA banner leaked to public UI')
+# W1.R: WORK B + TYPE A are final (Q-02/Q-03) — no review switch, no Unbounded in the public UI
+if 'data-work' in index or 'data-type' in index: errors.append('Review A/B switch still present')
+if 'Unbounded' in (BASE/'assets/css/fonts.css').read_text('utf-8'): errors.append('Unbounded still declared')
 if errors: raise SystemExit('\n'.join(errors))
 print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader')

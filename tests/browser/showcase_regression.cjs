@@ -5,6 +5,8 @@
  * Real-browser assertions for defects found in the W0 audit (docs/showcase-v031/AUDIT_REPORT.md) and for the
  * W1 decisions (docs/showcase-v031/OPEN_ISSUES.md, Q-01…Q-09). Every check is tied to a finding or decision ID.
  * W1 adapted R02/R03/R04/R05/R07/R15 to the WORK archive (Q-01 intentionally removed the stage + duplicate grid).
+ * W1.R: WORK B and TYPE A are final (Q-02/Q-03) — the A/B switch and its checks are gone; R30 now checks that old
+ * variant URLs open the final design, R37 measures pink/plum in the rendered AXIOM emblem (Q-04).
  * Exit code = number of failed checks.
  *
  * Usage (Playwright is not a dependency of this static repo; point NODE_PATH at any install):
@@ -97,18 +99,18 @@ async function run(engineName, base) {
   const engine = engineName === 'firefox' ? firefox : chromium;
   const browser = await engine.launch();
   try {
-    // R01 horizontal overflow — W1 matrix: phones, tablet, 1100, desktop, landscape phone, 200 % zoom (CSS viewport halved at DPR 2)
+    // R01 horizontal overflow — phones, tablet, 1100, desktop, landscape phone, 200 % zoom (CSS viewport halved at DPR 2)
     for (const [w, h, dpr, q] of [[360, 800, 1, ''], [390, 844, 1, ''], [430, 932, 1, ''], [768, 1024, 1, ''], [1024, 768, 1, ''], [1100, 800, 1, ''], [1280, 800, 1, ''], [1440, 900, 1, ''], [1920, 1080, 1, ''],
-      [844, 390, 1, ''], [720, 450, 2, ''], [390, 844, 1, '?work=a&type=b'], [1440, 900, 1, '?work=a&type=b']]) {
+      [844, 390, 1, ''], [720, 450, 2, '']]) {
       const { ctx, p } = await page(browser, engineName, { w, h, dpr, mobile: w < 800 && h > w });
       await p.goto(base + q, { waitUntil: 'load' });
       const m = await p.evaluate(() => ({ sw: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth }));
-      record(`R01-no-h-overflow-${w}x${h}${dpr > 1 ? '@' + dpr : ''}${q ? '-variants' : ''}`, engineName, m.sw <= m.cw + 1, m);
+      record(`R01-no-h-overflow-${w}x${h}${dpr > 1 ? '@' + dpr : ''}`, engineName, m.sw <= m.cw + 1, m);
       await ctx.close();
     }
-    // R02 WORK intro on phones (A-WORK-01): single column, heading readable; variant A also keeps the concept art inside the card
+    // R02 WORK intro (WEB CORE card after the archive) on phones (A-WORK-01): single column, heading readable, no concept art inside (it lives in the band)
     for (const [w, h] of [[360, 800], [390, 844], [430, 932]]) {
-      for (const q of ['', '?work=a']) {
+      for (const q of ['']) {
         const { ctx, p } = await page(browser, engineName, { w, h, mobile: true });
         await p.goto(base + q, { waitUntil: 'load' });
         await p.evaluate(() => document.fonts.ready);
@@ -123,7 +125,7 @@ async function run(engineName, base) {
           const fb = feat.getBoundingClientRect(); const ab = art ? art.getBoundingClientRect() : null;
           return { cols: getComputedStyle(feat).gridTemplateColumns.split(' ').length, headingVisible: !!hit && h3.contains(hit), art: !!art, artInside: !ab || (ab.left >= fb.left - 1 && ab.right <= fb.right + 1) };
         });
-        record(`R02-work-intro-${w}${q ? '-A' : '-B'}`, engineName, f.cols === 1 && f.headingVisible && f.artInside && f.art === (q === '?work=a'), f);
+        record(`R02-work-intro-${w}`, engineName, f.cols === 1 && f.headingVisible && f.artInside && !f.art, f);
         await ctx.close();
       }
     }
@@ -321,7 +323,7 @@ async function run(engineName, base) {
       record('R26-no-js-fallback', engineName, !s.overlay && s.panelsShown === 8 && s.rail === 'none' && s.h1, s);
       await ctx.close();
     }
-    // R27 CONTACT (Q-07) · R28 navigation reaches CONTACT (Q-09) · R30 review variants (Q-02/Q-03) · R33 self-hosted fonts
+    // R27 CONTACT (Q-07) · R28 navigation reaches CONTACT (Q-09) · R30 old variant URLs open the final design · R33 self-hosted fonts
     {
       const { ctx, p } = await page(browser, engineName, { w: 1280, h: 800 });
       await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready);
@@ -329,15 +331,20 @@ async function run(engineName, base) {
       record('R27-contact-channels', engineName, links.length === 3 && links[0].href === 'https://t.me/Project_AXIOM' && /github\.com\/Endevor-VIK/.test(links[1].href) && /axiomgates\.com/.test(links[2].href) && links.every((l) => l.blank && /noopener/.test(l.rel)), links);
       const menu = await p.evaluate(() => { const m = document.querySelector('.menu'); const a = m.querySelector('a[href="#collaboration"]'); const st = document.querySelector('.top .status'); const ab = a ? a.getBoundingClientRect() : null; return { contact: !!a, visible: !!ab && ab.width > 0 && ab.right <= innerWidth, clearOfStatus: !!ab && (!st || ab.right <= st.getBoundingClientRect().left) }; });
       record('R28-desktop-menu-contact', engineName, menu.contact && menu.visible && menu.clearOfStatus, menu);
-      const fonts = await p.evaluate(() => ({ oswald: document.fonts.check('500 40px Oswald'), mono: document.fonts.check('700 12px "JetBrains Mono"'), golos: document.fonts.check('400 16px "Golos Text"'), title: getComputedStyle(document.querySelector('.show-title')).fontFamily.split(',')[0].replace(/"/g, ''), type: document.documentElement.dataset.type, work: document.documentElement.dataset.work, artInBand: !!document.querySelector('#work-art-band #work-art') }));
+      const fonts = await p.evaluate(() => ({ oswald: document.fonts.check('500 40px Oswald'), mono: document.fonts.check('700 12px "JetBrains Mono"'), golos: document.fonts.check('400 16px "Golos Text"'), title: getComputedStyle(document.querySelector('.show-title')).fontFamily.split(',')[0].replace(/"/g, ''), unboundedFace: [...document.fonts].some((f) => /Unbounded/.test(f.family)) }));
       const google = p.__requests.filter((u) => /fonts\.(googleapis|gstatic)\.com/.test(u)).length;
-      record('R33-fonts-self-hosted', engineName, google === 0 && fonts.oswald && fonts.mono && fonts.golos, { google, ...fonts });
+      record('R33-fonts-self-hosted', engineName, google === 0 && fonts.oswald && fonts.mono && fonts.golos && fonts.title === 'Oswald' && !fonts.unboundedFace, { google, ...fonts });
       await ctx.close();
-      const { ctx: c2, p: p2 } = await page(browser, engineName, { w: 1280, h: 800 });
-      await p2.goto(base + '?work=a&type=b', { waitUntil: 'load' }); await p2.evaluate(() => document.fonts.ready);
-      const v = await p2.evaluate(() => { const art = document.getElementById('work-art'); const arch = document.getElementById('showcase-gallery'); return { type: document.documentElement.dataset.type, work: document.documentElement.dataset.work, artInWork: !!art.closest('#work'), artBeforeArchive: !!(art.compareDocumentPosition(arch) & Node.DOCUMENT_POSITION_FOLLOWING), title: getComputedStyle(document.querySelector('.show-title')).fontFamily.split(',')[0].replace(/"/g, ''), unbounded: document.fonts.check('600 40px Unbounded') }; });
-      record('R30-review-variants', engineName, fonts.type === 'a' && fonts.work === 'b' && fonts.artInBand && fonts.title === 'Oswald' && v.type === 'b' && v.work === 'a' && v.artInWork && v.artBeforeArchive && v.title === 'Unbounded' && v.unbounded, { defaults: { type: fonts.type, work: fonts.work, artInBand: fonts.artInBand, title: fonts.title }, variants: v });
-      await c2.close();
+      // R30 — WORK B + TYPE A are final (Q-02/Q-03): old review URLs must open the same final page, without the switch or errors
+      for (const q of ['?work=a&type=b', '?work=b&type=a', '?type=b']) {
+        const { ctx: c2, p: p2 } = await page(browser, engineName, { w: 1280, h: 800 });
+        const errs = []; p2.on('pageerror', (e) => errs.push(e.message));
+        await p2.goto(base + q, { waitUntil: 'load' }); await p2.evaluate(() => document.fonts.ready);
+        const v = await p2.evaluate(() => { const art = document.getElementById('work-art'); const arch = document.getElementById('showcase-gallery'); const intro = document.getElementById('work-intro'); return { dataWork: document.documentElement.getAttribute('data-work'), dataType: document.documentElement.getAttribute('data-type'), artInBand: !!art && !!art.closest('#work-art-band'), archiveBeforeIntro: !!(arch.compareDocumentPosition(intro) & Node.DOCUMENT_POSITION_FOLLOWING), title: getComputedStyle(document.querySelector('.show-title')).fontFamily.split(',')[0].replace(/"/g, '') }; });
+        const unb = p2.__requests.filter((u) => /unbounded/i.test(u)).length;
+        record(`R30-old-variant-url-${q.slice(1).replace(/[^a-z=]+/g, '_')}`, engineName, v.dataWork === null && v.dataType === null && v.artInBand && v.archiveBeforeIntro && v.title === 'Oswald' && unb === 0 && errs.length === 0, { ...v, unboundedRequests: unb, errors: errs.slice(0, 2) });
+        await c2.close();
+      }
     }
     {
       const { ctx, p } = await page(browser, engineName, { w: 390, h: 844, mobile: true });
@@ -406,6 +413,28 @@ async function run(engineName, base) {
       }
       // B04 is source-limited on 1440@2 (1983 px original) — the check requires the largest candidate, the ratio is reported
       record('R34-art-sharp-1440@2', engineName, out.A02.ratio >= 0.95 && /1983w/.test(out.B04.file), out);
+      await ctx.close();
+    }
+    // R37 — Q-04 by the rendered image: the AXIOM entity emblem (legacy light dynamics) keeps < 0.5 % pink/plum pixels
+    for (const [w, h, dpr] of [[1440, 900, 1], [390, 844, 2]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, dpr, mobile: w < 800, reduced: true });
+      await p.goto(base, { waitUntil: 'load' });
+      await toEl(p, '.axiom-entity .ax-body svg', 120); await p.waitForTimeout(500);
+      const png = await p.locator('.axiom-entity .ax-body svg').first().screenshot();
+      const share = await p.evaluate(async (b64) => {
+        const img = new Image(); img.src = 'data:image/png;base64,' + b64; await img.decode();
+        const c = document.createElement('canvas'); c.width = img.width; c.height = img.height; const g = c.getContext('2d'); g.drawImage(img, 0, 0);
+        const d = g.getImageData(0, 0, c.width, c.height).data; let n = 0;
+        for (let i = 0; i < d.length; i += 4) {
+          const r = d[i] / 255, gg = d[i + 1] / 255, bb = d[i + 2] / 255; const mx = Math.max(r, gg, bb), mn = Math.min(r, gg, bb); const l = (mx + mn) / 2;
+          if (l < 0.10 || l > 0.95 || mx === mn) continue;
+          const dd = mx - mn; const sat = l > 0.5 ? dd / (2 - mx - mn) : dd / (mx + mn);
+          let hue = mx === r ? (gg - bb) / dd + (gg < bb ? 6 : 0) : mx === gg ? (bb - r) / dd + 2 : (r - gg) / dd + 4; hue *= 60;
+          if ((hue >= 270 && hue < 340 && sat >= 0.2) || ((hue >= 340 || hue < 10) && l >= 0.7 && sat >= 0.5)) n++;
+        }
+        return +(100 * n / (d.length / 4)).toFixed(3);
+      }, png.toString('base64'));
+      record(`R37-emblem-no-pink-${w}`, engineName, share < 0.5, { perceptiblePinkPct: share });
       await ctx.close();
     }
     // R35 low window (landscape phone): ENTER AXIOM reachable on the first screen
