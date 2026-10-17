@@ -66,5 +66,15 @@ for needle in ('FACELESS BASE', 'AI ZONE', 'LAB / UNDER GLUHAYA', 'EXCLUSION / L
 for needle in ('~/canon/v3/', 'DOC_ID ::', 'X-CLASS', 'NIGHTMARE PROTOCOL', 'NETWORK STATUS · ONLINE', 'NODES ONLINE', 'в реальном времени', 'MASKED ANOMALY', 'AI_ZONE', 'REL</span><span class="dim">0.3.0.0'):
     if needle in index or needle in v23js: errors.append(f'W2 content regressed: {needle}')
 if re.search(r'alt="[^"]*(остров|мост)', index): errors.append('Map alt asserts islands/bridges')
+# W2.R: CREATOR decisions D-01…D-17 and the gate flag TTL (D-15: at most 14 days from the observation)
+ids = re.findall(r'data-canon-id="([0-9.]+)"', index)
+if ids != ['02.01', '02.02', '02.03', '02.04', '02.05', '02.06']: errors.append(f'WORLD canon IDs/order wrong: {ids}')
+for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', '// signed: NEXARCH<', 'AXIS / AETERNUM', 'STORY ARCHIVE', 'PUBLISHED</span>'):
+    if needle not in index: errors.append(f'W2.R content missing: {needle}')
+for needle in ('TIER 9', 'tier 9', 'T9 ::', 'TIER<b>9', 'WITNESSES', 'NODE<b>VOIDLINK', 'ARTIFICIAL PERSONALITY', '06 CHAPTERS', 'AXIS / DEPTH', 'depth axis', 'BLACK ECHO — не источник'):
+    if needle in index: errors.append(f'W2.R content regressed: {needle}')
+try:
+    if (datetime.datetime.fromisoformat(gate['expires'].replace('Z', '+00:00')).date() - datetime.date.fromisoformat(gate['checkedAt'])).days > 14: errors.append('gate.json TTL > 14 days')
+except (NameError, KeyError, ValueError) as e: errors.append(f'gate.json TTL check: {e}')
 if errors: raise SystemExit('\n'.join(errors))
 print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader')
