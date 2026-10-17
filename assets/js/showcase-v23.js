@@ -5,7 +5,7 @@ const nodes=[...document.querySelectorAll('.v23-map-node')],id=document.getEleme
 nodes.forEach((n,i)=>n.addEventListener('click',()=>{const node=data[n.dataset.canonId];if(!node)return;nodes.forEach((b,j)=>{b.classList.toggle('is-active',i===j);b.setAttribute('aria-pressed',String(i===j))});if(id)id.textContent=n.dataset.canonId+' / '+node.name;if(sig)sig.textContent=node.signal;if(detail)detail.textContent=node.description;if(mapCount)mapCount.textContent=String(i+1).padStart(2,'0')+' / '+String(nodes.length).padStart(2,'0')+' SELECTED';if(mapShell)mapShell.style.setProperty('--v23-node-progress',String((i+1)/nodes.length*100)+'%')}));
 const flowMessages=[
   'CANON фиксирует мир и его внутреннюю логику: события, определения, связи и редакционные решения.',
-  'MASTER GRAPH показывает отношения сущностей и помогает CREATOR искать противоречия между ними.',
+  'MASTER GRAPH — граф записей мира с привязкой к Canon: показывает связи между сущностями, помогает изучать структуру мира и находить несогласованности.',
   'WEB CORE представляет утверждённые материалы в читательском интерфейсе, с учётом состояния публикации и доступа.',
   'AXCHAT даёт диалоговый интерфейс к доступному контексту. Инженерный контур проверяет изменения вокруг всей этой цепочки.'
 ];
