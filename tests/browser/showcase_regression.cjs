@@ -238,6 +238,24 @@ async function run(engineName, base) {
       const same = results.live.docH === results.available.docH && results.live.nextTop === results.available.nextTop;
       record('R41-gate-note-manual-flag', engineName, Object.values(results).every((r) => r.ok) && same, { layoutUnchanged: same, ...results });
     }
+    // R42 WORLD (D-01): cards carry Canon V3 IDs 02.01…02.06 in canon order; every selection (mouse and keyboard) keeps ID, name, description and the selected card in sync
+    {
+      const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
+      await p.goto(base, { waitUntil: 'load' });
+      await toEl(p, '.v23-map-node-grid', 300);
+      const expect = [['02.01', 'GLUHAYA', 'GLUHAYA STATION', 'Глухая станция'], ['02.02', 'NEXUS', 'NEXUS', 'NEXUS'], ['02.03', 'FACELESS BASE', 'FACELESS BASE', 'FACELESS BASE'], ['02.04', 'ECHELON', 'ECHELON', 'ECHELON'], ['02.05', 'OMEGA-0', 'LABORATORY OMEGA-0', 'OMEGA-0'], ['02.06', 'AI ZONE', 'AI ZONE', 'AI ZONE']];
+      const cards = await p.evaluate(() => [...document.querySelectorAll('.v23-map-node')].map((b) => [b.dataset.canonId, b.querySelector('.v23-map-num').textContent, b.querySelector('.v23-map-name').textContent]));
+      const orderOk = cards.length === 6 && cards.every((c, i) => c[0] === expect[i][0] && c[1] === expect[i][0] && c[2] === expect[i][1]);
+      const state = () => p.evaluate(() => ({ id: document.getElementById('v23-map-id').textContent, desc: document.getElementById('v23-map-description').textContent, active: [...document.querySelectorAll('.v23-map-node')].findIndex((b) => b.getAttribute('aria-pressed') === 'true'), count: document.getElementById('v23-map-active-count').textContent }));
+      const sel = [];
+      for (const i of [3, 2, 5, 0, 4, 1]) {
+        if (i % 2) await p.locator('.v23-map-node').nth(i).click(); else { await p.locator('.v23-map-node').nth(i).focus(); await p.keyboard.press('Enter'); }
+        const st = await state();
+        sel.push({ i, ...st, ok: st.id === `${expect[i][0]} / ${expect[i][2]}` && st.desc.startsWith(expect[i][3]) && st.active === i && st.count === `${String(i + 1).padStart(2, '0')} / 06 SELECTED` });
+      }
+      record('R42-world-canon-ids-sync', engineName, orderOk && sel.every((x) => x.ok), { cards, bad: sel.filter((x) => !x.ok) });
+      await ctx.close();
+    }
     // R16 archive keyboard (APG tabs): arrows move and select with roving tabindex, Home/End; R17 prev/next wrap; R18 touch swipe
     {
       const { ctx, p } = await page(browser, engineName, { w: 1280, h: 800 });
