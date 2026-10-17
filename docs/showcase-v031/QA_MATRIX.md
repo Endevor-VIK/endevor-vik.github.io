@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.QA_MATRIX
   title: "AXIOM SHOWCASE V0.3.1 — QA Matrix"
-  status: READY_FOR_PRINCIPAL_RECHECK
+  status: READY_FOR_PRINCIPAL_REVIEW
   deployment: NOT_DEPLOYED
   mode: QA / Evidence Index
   goal: "Фактические среды, матрица снимков, интерактив, доступность и производительность с честными статусами PASS/FAIL/NOT RUN"
@@ -241,4 +241,29 @@ Smoke: `tests/smoke_showcase.py`, `tests/smoke_showcase_v23.py` — PASS.
 | Smoke | PASS | PASS |
 
 NOT RUN: WebKit/Safari, реальные устройства, скринридер, полевые CWV, живой Pages. INCOMPLETE: зум браузера (эмулирован вьюпортом).
+
+## 12. W2 (2026-10-18)
+
+Код `dad8972d`; «до» — W1.R `8b9ec6c3` (отдельный worktree, :8554). Полностью — `W2_REPORT.md` §5.
+
+| Проверка | Chromium 149 | Firefox 151 |
+| --- | --- | --- |
+| Регрессия, 61 проверка | 61 PASS | 61 PASS |
+| R38 просмотрщик архива 1:1: снимок от края прокрутки (дефект W1 в Chromium) | PASS | PASS |
+| R39 карта: FIT ↔ 1:1 на 3840w, вся карта достижима, стрелки, Esc → фокус на кнопке | PASS | PASS |
+| R40 карта на слабом телефоне (deviceMemory 1, 390@3): 2880w, 1:1 = 960 CSS px, 3840w не грузится | PASS | PASS |
+| R41 подсказка AXIOM GATE: флаг жив / истёк / available / 404 / ошибка сети / таймаут 2,5 с; нет запросов к axiomgates.com; макет не сдвигается | PASS | PASS |
+| R01 без горизонтальной прокрутки 360…1920, ландшафт, 200 % | PASS | PASS |
+
+| Проверка | W1.R | W2 |
+| --- | --- | --- |
+| axe desktop / mobile | 0 / 0 | 0 / 0 |
+| Текст на красных заливках | 5,31:1 | 5,31:1 |
+| Розовый по отрисовке, страница UI 1440 / 390 (заметный) | 0,048 % / 0,030 % | 0,048 % / 0,030 % |
+| Lighthouse mobile Perf (3 прогона) / LCP / CLS | 97 (93/97/98) / 2,41 с / 0,020 | 97 (97/97/91) / 2,40 с / 0,020 |
+| Lighthouse desktop Perf / LCP / CLS | 100 / 0,53 с / 0,005 | 100 / 0,52 с / 0,005 |
+| Первый визит: запросы / байты (perf, desktop) | 20 / 484 КБ | 21 / 487 КБ (+ `gate.json` 0,6 КБ, + JS 2,4 КБ) |
+| Smoke | PASS | PASS (+ контракт C1–C4 и флага) |
+
+NOT RUN: WebKit/Safari, реальные устройства (касание и pinch на карте), скринридер, полевые CWV, живой Pages. Резкость архива не перемерялась (изображения архива не менялись).
 

@@ -17,7 +17,19 @@ AXS_HEADER_META:
     open_issues: ./OPEN_ISSUES.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W1.R; ниже — W1, W0 + W0.1 для истории)
+# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W2; ниже — W1.R, W1, W0 + W0.1 для истории)
+
+## W2. Статус и проверка
+
+**0524.W2 READY FOR PRINCIPAL REVIEW.** Коммиты — `W2_REPORT.md` §0. Источники Canon — `W2_CANON_SOURCE_MATRIX.md`, решения CREATOR — `CREATOR_DECISION_REGISTER.md`. Регрессия: `NODE_PATH=…/node_modules node tests/browser/showcase_regression.cjs --firefox`, ожидание `122 passed, 0 failed, 0 skipped`.
+
+Что посмотреть вручную (5 минут):
+1. WORLD → «РАССМОТРЕТЬ КАРТУ ↗»: FIT; клик по месту на карте → 1:1 в этой точке; перетаскивание мышью, стрелки (Shift — шаг крупнее), `+` / `−` / `0` / `Z`; Esc → фокус на кнопке. На телефоне — кнопка 1:1 ZOOM и прокрутка пальцем.
+2. WORLD, узлы 04–06: FACELESS BASE, OMEGA-0, AI ZONE — тексты по канону; вводный текст с тремя осями.
+3. Под ENTER AXIOM (HERO и внизу) — «Вход временно закрыт · статус на 17.10». Флаг: `assets/status/gate.json` (`state`, `checkedAt`, `expires`). Поставить `"state": "available"` или истёкший `expires` — строка исчезнет.
+4. Архив WORK, «1:1 ZOOM»: левый край скриншота теперь доступен (исправлен дефект W1 в Chromium).
+5. ENTITIES (Виктор), MANIFESTO (терминал и фрагмент 05), шапка `// SHOWCASE v0.3.0.0`.
+
 
 ## W1R. Статус и проверка
 
