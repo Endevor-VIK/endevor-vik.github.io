@@ -18,7 +18,7 @@ class Page(HTMLParser):
         if a.get('id'): self.ids.add(a['id'])
         if tag=='a' and 'enter' in a.get('class','').split(): self.entries.append(a.get('href'))
         if 'v23-map-node' in a.get('class','').split(): self.map_nodes+=1
-        if 'show-shot-trigger' in a.get('class','').split(): self.shots+=1
+        if 'ax-shot-trigger' in a.get('class','').split(): self.shots+=1  # V0.3.1 W1 (Q-01): WORK archive triggers
         if 'v23-flow-step' in a.get('class','').split(): self.flows+=1
         for name in ('src','href','poster','data-showcase-src'):
             value=a.get(name,'')
