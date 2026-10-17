@@ -8,7 +8,7 @@ AXS_HEADER_META:
   goal: "Git-состояние, изменения, команды воспроизведения, что проверить вручную, риски и статус для AXIOM Principal Review и CREATOR"
   scope: apps/endevor-vik.github.io — task 0524, waves W0 + W0.1
   lang: ru
-  last_updated: 2026-10-16
+  last_updated: 2026-10-17
   editable_by_agents: true
   change_policy: "Обновлять на каждой волне; SHA — только фактические"
   links:
@@ -17,7 +17,60 @@ AXS_HEADER_META:
     open_issues: ./OPEN_ISSUES.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W0 + W0.1)
+# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W1; ниже — W0 + W0.1 для истории)
+
+## W1-1. Статус
+
+**W1 READY FOR PRINCIPAL REVIEW.** Решения Q-01, Q-04, Q-05, Q-07, Q-08 выполнены; Q-06 и Q-09 закрыты отклонением (сохранены RED PROTOCOL-фокус и порядок страницы); **Q-02 и Q-03 — на решение CREATOR** (варианты A/B собраны). MAIN MERGE — FORBIDDEN · PRODUCTION DEPLOY — HOLD · CANON — без изменений · самоприёмка не заявляется. Подробно — `W1_REPORT.md`.
+
+## W1-2. Git
+
+| Поле | Значение |
+| --- | --- |
+| Ветка | `feature/showcase-v0-3-1-polish` (запушена), от W0.1 `c79c3d76` |
+| Коммиты W1 | `9706ed4b` шрифты (OFL) · `4084478e` производные изображений · `0f0bd2b5` лоадер/404 · `0c6020a7` реализация W1 · `742d2aa0` регрессия и smoke · затем коммит документов W1 (SHA — в журнале AgentOps 0524) |
+| PR | Draft PR в `main` — только для ревью; слияние запрещено директивой |
+| `main` / gitlink AXS | не тронуты |
+
+## W1-3. Как смотреть
+
+```bash
+cd /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-showcase-v031-polish
+python3 -m http.server 8080        # или любой статический сервер; 404 требует сервера с 404.html
+# варианты (временный переключатель до решения CREATOR):
+#   http://127.0.0.1:8080/             WORK B + TYPE A (по умолчанию)
+#   http://127.0.0.1:8080/?work=a      WORK A (A01 — вступление внутри WORK)
+#   http://127.0.0.1:8080/?type=b      TYPE B (Unbounded в заголовках разделов)
+python3 tests/smoke_showcase.py && python3 tests/smoke_showcase_v23.py
+NODE_PATH=/home/axiom/ENDEAVOR/AXS/apps/axiom-web-core-ui/node_modules node tests/browser/showcase_regression.cjs --firefox
+# ожидание: 116 passed, 0 failed, 0 skipped
+```
+
+Заставка показывается не чаще раза в 24 ч: чтобы увидеть её снова — очистить `localStorage`/`sessionStorage` сайта (или приватное окно).
+
+## W1-4. Что попробовать вручную (5–7 минут)
+
+1. WORK: вкладки 01–08 мышью и стрелками; PREV/NEXT; на телефоне — свайп по скриншоту.
+2. «ОТКРЫТЬ ЭКРАН» → в просмотрщике ←/→, клик по изображению (1:1 в точке клика), перетаскивание, Esc → архив на том же экране, фокус на нём.
+3. `/?work=a` против `/` и `/?type=b` против `/` — для решений Q-02 и Q-03.
+4. CONTACT: Telegram, GitHub, axiomgates.com (сейчас 503 — контур выключен).
+5. Первый визит в приватном окне: заставка ≈ 1,5 с, SKIP — первая клавиша Tab, Esc пропускает; повторный визит в течение суток — без заставки.
+6. Телефон в ландшафте: ENTER AXIOM виден без прокрутки.
+7. ОС «Уменьшить движение»: заставки нет, анимации остановлены.
+
+## W1-5. Риски
+
+| Риск | Оценка |
+| --- | --- |
+| Переключатель вариантов в `<head>` (inline) и синхронный скрипт после WORK | Временный; удаляется после Q-02/Q-03 (Q-19) |
+| Лоадер не показывается на устройствах с ≤ 2 ГБ памяти / ≤ 2 ядрами и при Save-Data | По Q-08 («слабые устройства»); это эвристика, а не измерение |
+| `:has()` в правилах курсора | Как в W0.1; браузеры без `:has` — поведение базы |
+| Без preload шрифтов возможна короткая подмена шрифта (`swap`) | Колонки героя не зависят от шрифта — сдвиг макета 0 (Lighthouse CLS 0,020 / 0,005) |
+| WebKit не проверен | NOT RUN, см. `W1_REPORT.md` §6 |
+
+---
+
+# W0 + W0.1 (история)
 
 ## 1. Статус
 
