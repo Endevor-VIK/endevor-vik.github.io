@@ -16,7 +16,7 @@ AXS_HEADER_META:
     open_issues: ./OPEN_ISSUES.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — PRESERVATION REPORT (W0 + W0.1 + W1 + W1.R + W2)
+# AXIOM SHOWCASE V0.3.1 — PRESERVATION REPORT (W0 + W0.1 + W1 + W1.R + W2 + W2.R)
 
 **Итог W0/W0.1: ничего из оригинального контента, декора, арта и исходников не удалено, не перемещено и не упрощено.** Изменения W0.1 — исправления раскладки на телефонах/планшетах, поведения просмотрщика, доступных имён и служебных ссылок (см. `AUDIT_REPORT.md` §15).
 
@@ -170,4 +170,39 @@ AXS_HEADER_META:
 | Просмотрщик архива 1:1 в Chromium: левые ≈ 276 px снимка недостижимы прокруткой (дефект W1) | Снимок начинается от края прокрутки | `19d9994c` |
 
 Удалений файлов нет. Производные `world-spine-map-{960,1440,2048}w.webp` не менялись.
+
+## 9. W2.R (директива 0524.W2.R, 2026-10-18)
+
+### 9.1 Тексты и метки (было → стало, дословно)
+
+| Где | Было | Стало | Решение |
+| --- | --- | --- | --- |
+| WORLD, номера карточек и порядок | 01 GLUHAYA · 02 NEXUS · 03 ECHELON · 04 FACELESS BASE · 05 OMEGA-0 · 06 AI ZONE | 02.01 GLUHAYA · 02.02 NEXUS · 02.03 FACELESS BASE · 02.04 ECHELON · 02.05 OMEGA-0 · 02.06 AI ZONE | D-01 |
+| WORLD, заголовок описания | `01 / GLUHAYA` … `06 / AI ZONE` | `02.01 / GLUHAYA STATION` … `02.05 / LABORATORY OMEGA-0` … `02.06 / AI ZONE` | D-01 |
+| Виктор, STATUS | ACTIVE | OFFICIALLY DEAD + подпись OPERATIONALLY ACTIVE | D-02 |
+| Виктор, текст | «Биологически скрытый оппонент. Носитель неучтённого пути доступа к AXIOM — слепая зона control-layer Серафин.» | тот же текст + «По документам мёртв, но продолжает действовать.» | D-02 |
+| Фрагмент 03 | «BLACK ECHO — не источник, а отголосок. Сигнал, который остался после ампутации. Не власть, а след контакта.»; HOST NEXARCH · CLASS SHADOW | «ECHO LAYER — петли, фантомные ответы и отголоски AXIOM. Не источник, а сигнал, который остался после ампутации. Не власть, а след контакта.»; SOURCE AXIOM · MODE ECHO | D-03 |
+| Манифест, подпись | `// signed: BLACK ECHO / NEXARCH` | `// signed: NEXARCH` | D-03 |
+| Лиза | NODE · VOIDLINK | LINK · VOIDLINK | D-04 |
+| AXIOM ∅ | FOURTH NODE · ARTIFICIAL PERSONALITY · …; FRACTURED ARTIFICIAL PERSONALITY · WORLD-SPINE NODE; Artificial Personality · Fractured; NATURE ARTIFICIAL PERSONALITY | FOURTH NODE · SYSTEM INTELLIGENCE · …; FRACTURED SYSTEM INTELLIGENCE · WORLD-SPINE NODE; System Intelligence · Fractured; NATURE SYSTEM INTELLIGENCE | D-05 |
+| AXIOM ∅ | WITNESSES; `> witness :: VIKTOR · CAELAN` | CONTACTS; `> contact :: VIKTOR · CAELAN` | D-07 |
+| NEURA TECH | — SIGNAL ANALYTICS; «Корпоративные аналитики. Регистрируют аномальные импульсы, ловят цифровой резонанс. Слышат больше, чем должны.»; TIER OBSERVER · STATE NEUTRAL | — NEURO-CONTROL CONGLOMERATE; «Когда-то вёл совместные разработки с ENDEAVOR — теперь её конкурент. Общее технологическое прошлое не отменило борьбы за контроль.»; TIER CORPORATE · STATE RIVAL | D-08 |
+| CARTOGRAPHY | «Не география, а маршруты доступа: depth axis, shield axis, authority route. Города как узлы власти, связи как линии причины.»; схема DEPTH · SHIELD · AUTH | «Не просто география, а маршруты власти и доступа по трём осям мира: Aeternum → ECHELON, Terra Nova → NEXUS, Gluhaya → OMEGA-0 → NEXUS. Города как узлы власти, связи как линии причины.»; схема AETERNUM · TERRA NOVA · GLUHAYA | D-10 |
+| WORLD, нижняя строка | AXIS / DEPTH · AXIS / SHIELD · AXIS / AUTHORITY | AXIS / AETERNUM → ECHELON · AXIS / TERRA NOVA → NEXUS · AXIS / GLUHAYA → OMEGA-0 → NEXUS | D-10 |
+| CHRONICLE | UNITS · 06 CHAPTERS | CHRONICLE · STORY ARCHIVE | D-12 |
+| Master Graph (глоссарий, SYSTEM, архив, схема) | «Внутренний инструмент, отображающий отношения между элементами Canon.»; «Связанные сущности, отношения и контроль целостности.»; «Рабочий граф связей технологий, персонажей и сущностей. Внутренний инструмент автора.»; «MASTER GRAPH показывает отношения сущностей и помогает CREATOR искать противоречия между ними.» | «Граф записей мира с привязкой к Canon: показывает связи между сущностями и помогает находить несогласованности.»; «Граф записей мира с привязкой к Canon: связи и поиск несогласованностей.»; «Граф записей мира с привязкой к Canon: технологии, персонажи, сущности и связи между ними. Внутренний инструмент автора.»; «MASTER GRAPH — граф записей мира с привязкой к Canon: показывает связи между сущностями, помогает изучать структуру мира и находить несогласованности.» | D-13 |
+| Манифест | CLASSIFIED · TIER 9 · NEXARCH; CLEARANCE TIER 9; REDACTED · TIER 9; фрагмент 01 TIER 9; `ctrl_bus :: tier 9 active`; `archive.lock T9 :: stable` | CLASSIFIED · SEALED · NEXARCH; CLEARANCE SEALED; REDACTED · SEALED; ARCHIVE SEALED; `ctrl_bus :: SEALED active`; `archive.lock Ω :: stable` | D-14 |
+| CONTENT | LIVE | PUBLISHED | D-17 |
+| WORK, шапка | «…Часть интерфейсов предназначена для читателей, другие — исключительно для CREATOR и администрирования.» | «…: часть интерфейсов открыта читателям, другие — закрытые инструменты CREATOR и администрирования.» | E-02 |
+| Архив | «…Нажми на любой экран, чтобы рассмотреть детали. Часть экранов доступна посетителям, другие показывают закрытые инструменты автора.» | «…Нажми на любой экран, чтобы рассмотреть детали; уровень доступа указан у каждого экрана.» | E-02 |
+| WEB CORE | «Публичная точка входа в AXIOM: посетитель может познакомиться с историей, персонажами, материалами Canon, интерфейсами Chronicle и Content Library. Продукт развивается вместе с редакционной и инженерной частью системы.» | «Публичная точка входа в AXIOM: история, персонажи, материалы Canon, Chronicle и Content Library — в одном читательском интерфейсе.» | E-01 |
+
+### 9.2 Композиция
+
+| Блок | Было | Стало | Решение |
+| --- | --- | --- | --- |
+| VISION, B04 | Полоса до 330 px высотой (`aspect-ratio 16/5`, на телефоне 330 px — планета обрезана) | Desktop — вся панорама 2,5:1; планшет — 2:1; телефон — 5:4 вокруг планеты; файлы те же | E-03 |
+| SYSTEM, A07 | Полоса 320 px на всю ширину (`object-fit: cover`) | ≥ 981 px — рядом с пояснением схемы, 16:10, до 560 px; ниже — на всю колонку 16:10; файлы те же | E-04 |
+
+Удалений файлов нет; изображения не перегенерировались.
 

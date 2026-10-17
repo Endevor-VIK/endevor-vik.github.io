@@ -17,7 +17,20 @@ AXS_HEADER_META:
     visual_system: ./VISUAL_SYSTEM.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — OPEN ISSUES (после W2)
+# AXIOM SHOWCASE V0.3.1 — OPEN ISSUES (после W2.R)
+
+## 000. W2.R (2026-10-18)
+
+Решения CREATOR по D-01…D-20 и E-01…E-04 выполнены (`W2R_REPORT.md` §1). Открыто:
+
+| Вопрос | Владелец |
+| --- | --- |
+| Приёмка Canon Draft PR #2 (`AXS_CANON_V3`, ветка `agent/0110-black-protocol-neuratech-alignment`); до неё «ключевой антагонист» и сводное чтение BLACK PROTOCOL на лендинге не используются | Principal / CREATOR |
+| BLACK PROTOCOL: кто санкционирует эскалацию; одна процедура или семейство; связь с Протоколом Стирания | CREATOR |
+| Исполнитель Протокола Стирания: формулировки 03.01/03.20 и 06.02/18.06 расходятся | CREATOR |
+| Квалификация Canon: `axiomctl canon v3 index/export` падают уже на базе `0b1c4bab` | владелец Canon |
+| Флаг `gate.json` истекает 31.10 — проверить перед любым релизом | CREATOR |
+| Q-10, Q-12, D-18 (выпуск версии) — отложены | CREATOR |
 
 ## 00. Финальные решения CREATOR (Principal Review W1, 2026-10-17)
 

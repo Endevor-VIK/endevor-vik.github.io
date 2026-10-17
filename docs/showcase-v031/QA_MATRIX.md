@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.QA_MATRIX
   title: "AXIOM SHOWCASE V0.3.1 — QA Matrix"
-  status: READY_FOR_PRINCIPAL_REVIEW
+  status: READY_FOR_PRINCIPAL_RECHECK
   deployment: NOT_DEPLOYED
   mode: QA / Evidence Index
   goal: "Фактические среды, матрица снимков, интерактив, доступность и производительность с честными статусами PASS/FAIL/NOT RUN"
@@ -266,4 +266,27 @@ NOT RUN: WebKit/Safari, реальные устройства, скринрид�
 | Smoke | PASS | PASS (+ контракт C1–C4 и флага) |
 
 NOT RUN: WebKit/Safari, реальные устройства (касание и pinch на карте), скринридер, полевые CWV, живой Pages. Резкость архива не перемерялась (изображения архива не менялись).
+
+## 13. W2.R (2026-10-18)
+
+Код `42238e83`; «до» — W2 `0f2e7174` (отдельный worktree, :8554). Полностью — `W2R_REPORT.md` §6.
+
+| Проверка | Chromium 149 | Firefox 151 |
+| --- | --- | --- |
+| Регрессия, 65 проверок | 65 PASS | 65 PASS |
+| R42 WORLD: ID 02.01…02.06 в порядке канона; выбор мышью и Enter — ID, имя, описание, выделение, счётчик совпадают | PASS | PASS |
+| R43 B04 на 390@3 — кадр 5:4, резкость ≥ 0,9; A07 на 1440@2 — ≥ 0,95 | PASS ×2 | PASS ×2 |
+| R44 статы персонажей не обрезаются на 360/430/768/1024/1100/1280/1920 | PASS | PASS |
+| R38–R41 (архив 1:1, карта FIT/1:1, слабое устройство, gate.json) | PASS | PASS |
+
+| Проверка | W2 | W2.R |
+| --- | --- | --- |
+| axe desktop / mobile | 0 / 0 | 0 / 0 |
+| Текст на красных заливках | 5,31:1 | 5,31:1 |
+| Lighthouse mobile / desktop Perf | 97 / 100 | 97 / 100 |
+| CLS mobile / desktop (LH) | 0,019 / 0,005 | 0,020 / 0,005 |
+| Розовый по отрисовке, UI 1440 / 390 (заметный) | 0,048 % / 0,030 % | 0,048 % / 0,030 % |
+| Smoke | PASS | PASS (+ D-01…D-17, TTL ≤ 14 суток) |
+
+Переносы текста изменённых блоков (WORLD, ENTITIES, AXIOM ∅, FACTIONS, CARTOGRAPHY) просмотрены на 360/390/430/768/1440/1920. Найден и исправлен дефект статов на 768/1100. NOT RUN: WebKit/Safari, реальные устройства, скринридер, полевые CWV, живой Pages.
 

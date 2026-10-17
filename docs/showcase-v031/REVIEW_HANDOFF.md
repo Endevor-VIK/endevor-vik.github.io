@@ -17,7 +17,14 @@ AXS_HEADER_META:
     open_issues: ./OPEN_ISSUES.md
 -->
 
-# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W2; ниже — W1.R, W1, W0 + W0.1 для истории)
+# AXIOM SHOWCASE V0.3.1 — REVIEW HANDOFF (W2.R; ниже — W2, W1.R, W1, W0 + W0.1 для истории)
+
+## W2.R. Статус и проверка
+
+**0524.W2.R READY FOR PRINCIPAL RECHECK.** Отчёт — `W2R_REPORT.md`; Canon — Draft PR https://github.com/Endevor-VIK/AXS_CANON_V3/pull/2 (не сливать). Ожидание регрессии: `128 passed, 0 failed, 0 skipped`.
+
+Что посмотреть вручную: WORLD — карточки 02.01…02.06 и описание при выборе (мышью и Tab + Enter); ENTITIES — Виктор (OFFICIALLY DEAD / OPERATIONALLY ACTIVE), Лиза; MANIFESTO — фрагмент 03, подпись, штампы SEALED; AXIOM ∅ — SYSTEM INTELLIGENCE, CONTACTS; FACTIONS — NEURA TECH; SYSTEM — A07 рядом с пояснением; VISION — B04 на телефоне (планета целиком).
+
 
 ## W2. Статус и проверка
 

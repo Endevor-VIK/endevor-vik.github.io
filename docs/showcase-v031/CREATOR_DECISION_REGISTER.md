@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.CREATOR_DECISION_REGISTER
   title: "AXIOM SHOWCASE V0.3.1 — CREATOR decision register (W2, level b)"
-  status: AWAITING_CREATOR
+  status: DECIDED_BY_CREATOR
   deployment: NOT_DEPLOYED
   mode: Decision Register
   goal: "Спорные и художественные формулировки и открытые продуктовые решения — с вариантами; в UI по умолчанию не внедрены"
@@ -17,6 +17,10 @@ AXS_HEADER_META:
 -->
 
 # CREATOR DECISION REGISTER — W2
+
+> **Решения CREATOR получены (директива Principal 0524.W2.R, 2026-10-18).** D-01 — канонические ID обязательны; D-02 A; D-03 A; D-04 A; D-05 A; D-06 — развивать существующий Canon; D-07 B; D-08 — «конкуренты, ранее участвовавшие в совместных разработках»; D-10 B; D-12 B; D-13 A; D-14 B; D-15/D-16 A/A; D-17 B; D-19 A; E-01…E-04 — выполнить. Не пересматриваются: D-09 (Q-10), D-11, D-18, Q-12, Q-17. Исполнение и коммиты — `W2R_REPORT.md` §1. Таблица ниже — исходный реестр W2 (для истории).
+
+> **Поправка к D-06 (W2.R).** Вывод «Black Protocol в каноне не найден» был неполным: термин употребляется в 12 Markdown-файлах Canon V3 и в реестре типизированных связей (`W2R_REPORT.md` §3). Вариант B (`Containment Protocol`) снят: такого термина в каноне нет.
 
 **Ничего из этого реестра в UI не внедрено.** Страница показывает текущий текст («Сейчас»). Вариант **A** — рекомендация агента, если она есть. Canon V3 не меняется ни при каком варианте: если CREATOR хочет закрепить формулировку в каноне, это отдельная задача владельца канона. Номера P-xx — из [`W2_CANON_EDITORIAL_PROPOSALS.md`](./W2_CANON_EDITORIAL_PROPOSALS.md).
 
