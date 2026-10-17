@@ -469,6 +469,17 @@ async function run(engineName, base) {
       await ctx.close();
     }
     // R34 sharp images where the source allows it (IMAGE_AUDIT): archive on 390@3, A02 and B04 on 1440@2
+    // R43 (E-03): on a phone B04 is a 5:4 crop around the planet and stays sharp (source 1983 px)
+    {
+      const { ctx, p } = await page(browser, engineName, { w: 390, h: 844, dpr: 3, mobile: true });
+      await p.goto(base, { waitUntil: 'load' });
+      await toEl(p, '.v22-vision-art img', 120);
+      await p.waitForFunction(() => { const i = document.querySelector('.v22-vision-art img'); return i.complete && i.naturalWidth > 0; }, null, { timeout: 15000 }).catch(() => {});
+      const b04 = await p.evaluate((sel) => { const i = document.querySelector(sel); const r = i.getBoundingClientRect(); return { ratio: Math.round(r.width / r.height * 100) / 100, pos: getComputedStyle(i).objectPosition }; }, '.v22-vision-art img');
+      const sh = await p.evaluate(SHARPNESS, '.v22-vision-art img');
+      record('R43-vision-b04-phone-crop', engineName, Math.abs(b04.ratio - 1.25) < 0.02 && sh.ratio >= 0.9, { ...b04, ...sh });
+      await ctx.close();
+    }
     {
       const { ctx, p } = await page(browser, engineName, { w: 390, h: 844, dpr: 3, mobile: true });
       await p.goto(base, { waitUntil: 'load' });
@@ -489,6 +500,11 @@ async function run(engineName, base) {
       }
       // B04 is source-limited on 1440@2 (1983 px original) — the check requires the largest candidate, the ratio is reported
       record('R34-art-sharp-1440@2', engineName, out.A02.ratio >= 0.95 && /1983w/.test(out.B04.file), out);
+      // R43 (E-04): A07 beside the flow note is not upscaled on HiDPI desktop
+      await toEl(p, '.v22-engineering-art img', 120);
+      await p.waitForFunction(() => { const i = document.querySelector('.v22-engineering-art img'); return i.complete && i.naturalWidth > 0; }, null, { timeout: 15000 }).catch(() => {});
+      const a07 = await p.evaluate(SHARPNESS, '.v22-engineering-art img');
+      record('R43-system-a07-sharp-1440@2', engineName, a07.ratio >= 0.95, a07);
       await ctx.close();
     }
     // R37 — Q-04 by the rendered image: the AXIOM entity emblem (legacy light dynamics) keeps < 0.5 % pink/plum pixels

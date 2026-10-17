@@ -202,3 +202,21 @@ p.ax-gate-note[hidden]{display:none}
 .char .stats .stat-note{display:block;margin-top:3px;font-size:9.5px;letter-spacing:.16em;color:var(--ax23-red)}
 .char .stats{gap:14px}
 @media(max-width:430px){.char .stats{letter-spacing:.12em}.char .stats b{letter-spacing:.08em}}
+
+/* 0524 W2.R (E-03): B04 keeps its main object — the planet with the red rim. Desktop shows the whole 2.5:1 panorama (no upscaled crop),
+   tablet a 2:1 crop, phone a 5:4 crop around the planet. Source is 1983 px: on desktop HiDPI it is shown as is, never upscaled to "HQ" */
+.v22-vision-art img{max-height:none;height:auto;aspect-ratio:1983/793;object-fit:cover;object-position:56% 40%}
+@media(max-width:1080px){.v22-vision-art img{aspect-ratio:2/1}}
+@media(max-width:760px){.v22-vision-art img{aspect-ratio:5/4;object-position:57% 30%}}
+
+/* 0524 W2.R (E-04): A07 is 1448×1086 — instead of a 1351×320 strip (×0.54 on HiDPI) it sits beside the flow note at 16:10, max 560 px wide
+   (×1.29 at DPR 2); below 980 px it spans the column at 16:10 */
+@media(min-width:981px){
+ .v22-system-explain{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);column-gap:clamp(28px,4vw,56px);align-items:center}
+ .v22-system-explain>.show-kicker,.v22-system-explain>h3,.v22-system-explain>.v22-flow{grid-column:1/-1}
+ .v22-system-explain>.v22-flow-note{grid-column:1;align-self:center;margin:22px 0 0;padding-left:20px;border-left:2px solid var(--ax23-red);font-size:17px;line-height:1.75;max-width:52ch}
+ .v22-system-explain>.v22-engineering-art{grid-column:2;margin-top:22px}
+}
+.v22-engineering-art{max-height:none}
+.v22-engineering-art img{height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 45%}
+
