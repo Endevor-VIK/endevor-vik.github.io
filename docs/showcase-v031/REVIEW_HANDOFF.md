@@ -21,7 +21,7 @@ AXS_HEADER_META:
 
 ## W2.R. Статус и проверка
 
-**0524.W2.R READY FOR PRINCIPAL RECHECK.** Отчёт — `W2R_REPORT.md`; Canon — Draft PR https://github.com/Endevor-VIK/AXS_CANON_V3/pull/2 (не сливать). Ожидание регрессии: `128 passed, 0 failed, 0 skipped`.
+**0524.W2.R READY FOR PRINCIPAL RECHECK.** Отчёт — `W2R_REPORT.md`; Canon — Draft PR https://github.com/Endevor-VIK/AXS_CANON_V3/pull/2 (не сливать). Ожидание регрессии: `130 passed, 0 failed, 0 skipped`.
 
 Что посмотреть вручную: WORLD — карточки 02.01…02.06 и описание при выборе (мышью и Tab + Enter); ENTITIES — Виктор (OFFICIALLY DEAD / OPERATIONALLY ACTIVE), Лиза; MANIFESTO — фрагмент 03, подпись, штампы SEALED; AXIOM ∅ — SYSTEM INTELLIGENCE, CONTACTS; FACTIONS — NEURA TECH; SYSTEM — A07 рядом с пояснением; VISION — B04 на телефоне (планета целиком).
 
