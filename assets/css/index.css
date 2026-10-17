@@ -1031,9 +1031,10 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 @keyframes axScanV{0%{transform:translateY(-260px);opacity:0}10%{opacity:.85}50%{opacity:1}90%{opacity:.85}100%{transform:translateY(260px);opacity:0}}
 
 /* CENTER: copy */
-.ax-name{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(60px,7vw,96px);line-height:.88;letter-spacing:.02em;text-transform:uppercase;color:var(--ax-ink);margin:0;position:relative}
-.ax-name em{font-style:normal;color:var(--ax-red);text-shadow:0 0 30px rgba(255,32,52,.55), 0 0 2px rgba(255,32,52,.9)}
-.ax-name::after{content:"AXIOM∅";position:absolute;left:3px;top:0;color:transparent;-webkit-text-stroke:1px rgba(255,32,52,.5);animation:axNameGlitch 7s cubic-bezier(.6,0,.4,1) infinite;pointer-events:none}
+.ax-name{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(60px,7vw,96px);line-height:.88;letter-spacing:.02em;text-transform:uppercase;color:var(--ax-ink);margin:0;position:relative;z-index:0}
+.ax-name em{font-style:normal;color:var(--ax-red);text-shadow:0 0 30px rgba(255,32,52,.55), 0 0 2px rgba(255,32,52,.9);position:relative;z-index:-1} /* 0524 W1.R: the ∅ glow is painted under the white letters (it tinted the M pink) */
+/* 0524 W1.R (Q-04): the glitch outline sits behind the letters (red over white rendered pink) and is hidden outside the animation — with reduced motion it used to stay on permanently */
+.ax-name::after{content:"AXIOM∅";position:absolute;left:3px;top:0;z-index:-1;opacity:0;color:transparent;-webkit-text-stroke:1px rgba(255,32,52,.5);animation:axNameGlitch 7s cubic-bezier(.6,0,.4,1) infinite;pointer-events:none}
 @keyframes axNameGlitch{0%,88%,100%{transform:translate(0);opacity:0}90%{transform:translate(-2px,1px);opacity:.55}92%{transform:translate(2px,-1px);opacity:.3}94%{opacity:0}}
 
 .ax-sub{font-size:11px;letter-spacing:.34em;color:var(--ax-red);text-transform:uppercase;margin:18px 0 6px;display:flex;align-items:center;gap:10px}
