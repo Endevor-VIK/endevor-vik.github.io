@@ -197,3 +197,8 @@ p.ax-gate-note[hidden]{display:none}
 .hero p.ax-gate-note{padding-left:26px}
 @media(max-width:400px){p.ax-gate-note{letter-spacing:0}}
 @media (max-height:520px) and (min-width:600px) and (orientation:landscape){.hero-grid>div:first-child>.ax-gate-note{grid-area:cta;align-self:end}}
+
+/* 0524 W2.R (D-02): second line of a character stat — the contrast between the official record and what the character does */
+.char .stats .stat-note{display:block;margin-top:3px;font-size:9.5px;letter-spacing:.16em;color:var(--ax23-red)}
+.char .stats{gap:14px}
+@media(max-width:430px){.char .stats{letter-spacing:.12em}.char .stats b{letter-spacing:.08em}}
