@@ -256,6 +256,19 @@ async function run(engineName, base) {
       record('R42-world-canon-ids-sync', engineName, orderOk && sel.every((x) => x.ok), { cards, bad: sel.filter((x) => !x.ok) });
       await ctx.close();
     }
+    // R44 (D-02): character stats never clip — OFFICIALLY DEAD / OPERATIONALLY ACTIVE / UNCLASSIFIED fit narrow three-column cards too
+    {
+      const { ctx, p } = await page(browser, engineName, { w: 360, h: 800 });
+      await p.goto(base, { waitUntil: 'load' });
+      const out = [];
+      for (const w of [360, 430, 768, 1024, 1100, 1280, 1920]) {
+        await p.setViewportSize({ width: w, height: 900 }); await p.waitForTimeout(150);
+        const over = await p.evaluate(() => Math.max(...[...document.querySelectorAll('.char .stats')].map((s) => { const sr = s.getBoundingClientRect(); return Math.max(s.scrollWidth - s.clientWidth, ...[...s.querySelectorAll('div, b, small')].map((el) => Math.round(el.getBoundingClientRect().right - sr.right))); })));
+        out.push({ w, over });
+      }
+      record('R44-char-stats-no-clip', engineName, out.every((o) => o.over <= 1), out);
+      await ctx.close();
+    }
     // R16 archive keyboard (APG tabs): arrows move and select with roving tabindex, Home/End; R17 prev/next wrap; R18 touch swipe
     {
       const { ctx, p } = await page(browser, engineName, { w: 1280, h: 800 });
