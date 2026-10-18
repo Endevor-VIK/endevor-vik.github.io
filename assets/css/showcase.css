@@ -84,10 +84,14 @@ html{scroll-padding-top:97px}
 .show-hero-extra a{display:inline-flex;align-items:center;min-height:44px;color:white;border:1px solid var(--ax-crimson-line);background:#14161c;padding:0 16px;font:700 12px 'JetBrains Mono',monospace;letter-spacing:.08em;text-decoration:none;transition:border-color .2s,background .2s}
 .show-hero-extra a:hover{border-color:var(--ax-crimson);background:var(--ax-crimson-ink)}
 .show-hero-byline{color:var(--ax-text-dim);font:600 12px/1.6 'JetBrains Mono',monospace;letter-spacing:.14em;margin-top:14px}
+/* 0524 W3.A (F-03): the byline always reads as two lines — CREATOR / ENDEAVOR · | DESIGN / CODE / CANON (21 mono cells wide) */
+.show-hero-byline{--ls:.14em;letter-spacing:var(--ls);max-width:calc(21 * (.6em + var(--ls)) + .2em)}
+/* 0524 W3.A: phones — the three quick links share one row (no orphan card), same 12 px type */
+@media(max-width:640px){.show-hero-extra{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.show-hero-extra a{justify-content:center;text-align:center;padding:6px 8px;min-height:48px;line-height:1.35}}
 :focus-visible{outline:2px solid var(--ax-focus);outline-offset:3px}
 @media(max-width:1100px){.show-casegrid,.show-phases,.show-spine-grid{grid-template-columns:repeat(2,1fr)}.show-split{gap:35px}}
 @media(max-width:760px){.show-section{padding:64px 0}.show-index{margin-bottom:29px}.show-section-head,.show-split,.show-feature{grid-template-columns:1fr;gap:24px}.show-title{font-size:clamp(44px,9vw,65px)}.show-feature-art{min-height:0;aspect-ratio:16/9}.show-motto{grid-template-columns:1fr;margin-top:35px}.show-motto>div{border-right:0;border-bottom:1px solid #b4b8c324;padding:17px}.show-motto>div:last-child{border:0}.show-identity>img{width:min(52%,200px)}}
-@media(max-width:550px){.show-section{padding:50px 0}.show-index span:last-child{display:none}.show-casegrid,.show-phases,.show-spine-grid{grid-template-columns:1fr}.show-title{font-size:clamp(41px,11vw,59px)}.show-button{width:100%}.show-casegrid article{padding:19px}.show-feature-body{padding:23px}.show-ident-rows>div{font-size:9px}.show-identity{padding:16px}.show-phases article{min-height:320px}.show-phase-number{font-size:85px}.show-hero-byline{font-size:11px;letter-spacing:.08em}}
+@media(max-width:550px){.show-section{padding:50px 0}.show-index span:last-child{display:none}.show-casegrid,.show-phases,.show-spine-grid{grid-template-columns:1fr}.show-title{font-size:clamp(41px,11vw,59px)}.show-button{width:100%}.show-casegrid article{padding:19px}.show-feature-body{padding:23px}.show-ident-rows>div{font-size:9px}.show-identity{padding:16px}.show-phases article{min-height:320px}.show-phase-number{font-size:85px}.show-hero-byline{--ls:.1em}}
 @media(prefers-reduced-motion:reduce){.show-button:hover{transform:none}}
 
 /* Compact swipeable navigation when legacy wide menu is intentionally hidden. */
