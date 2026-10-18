@@ -560,6 +560,108 @@ async function run(engineName, base) {
       record(`R36-kicker-no-overlap-${w}`, engineName, !k.overlap && (w < 1536 ? !k.shown : true), k);
       await ctx.close();
     }
+    // ===== 0524 W3.A — CREATOR-approved poster frame B (docs/showcase-v031/waves/W3A_CREATOR_APPROVED_SPEC.md) =====
+    const settle = (p) => p.evaluate(() => new Promise((res) => { let last = scrollY, same = 0, n = 0, moved = false; const tick = () => { n++; if (Math.abs(scrollY - last) > 0.5) { moved = true; same = 0; } else same++; last = scrollY; if ((moved && same >= 8) || n > 400) res(); else requestAnimationFrame(tick); }; requestAnimationFrame(tick); }));
+    const heroGeom = () => {
+      const r = (s) => { const e = document.querySelector(s); if (!e) return null; const b = e.getBoundingClientRect(); return { t: Math.round(b.top), b: Math.round(b.bottom), l: Math.round(b.left), r: Math.round(b.right) }; };
+      const gate = document.querySelector('.hero .ax-gate-note'); let g = null;
+      if (gate && !gate.hidden) { const rg = document.createRange(); rg.selectNodeContents(gate); const rs = [...rg.getClientRects()].filter((x) => x.width > 1); if (rs.length) g = Math.round(Math.max(...rs.map((x) => x.bottom))); }
+      const lines = (s) => { const e = document.querySelector(s); const rg = document.createRange(); rg.selectNodeContents(e); return new Set([...rg.getClientRects()].filter((x) => x.width > 1).map((x) => Math.round(x.top))).size; };
+      return { vh: innerHeight, overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth, enter: r('.hero .enter-wrap'), gateBottom: g, gateShown: !!g,
+        frame: r('.hero-poster > .hero-frame'), quick: r('.show-hero-extra'), byline: r('.show-hero-byline'), bylineLines: lines('.show-hero-byline'), bylineText: document.querySelector('.show-hero-byline').textContent.trim(),
+        status: r('.hero .status-card'), radar: r('.hero .radar'), title: r('.hero h1.title'), titleFont: parseFloat(getComputedStyle(document.querySelector('.hero h1.title')).fontSize),
+        eyebrowLines: lines('.hero .eyebrow'), quickRows: new Set([...document.querySelectorAll('.show-hero-extra a')].map((a) => Math.round(a.getBoundingClientRect().top))).size };
+    };
+    // R-W3A-01 ENTER AXIOM and the gate note are whole in the opening scene, no horizontal overflow (F-01D, B-GLB-02)
+    for (const [w, h, dpr] of [[960, 540, 2], [1024, 768, 1], [1100, 800, 1], [1280, 800, 1], [1440, 900, 1], [1920, 1080, 1]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, dpr });
+      await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(400);
+      const g = await p.evaluate(heroGeom);
+      record(`R-W3A-01-cta-gate-first-screen-${w}x${h}`, engineName, g.enter.b <= g.vh && (!g.gateShown || g.gateBottom <= g.vh) && !g.overflow, { enter: g.enter, gateBottom: g.gateBottom, vh: g.vh, overflow: g.overflow });
+      // R-W3A-02 desktop poster: the frame closes inside the first screen, the rail and SIGNAL TRACE sit inside it, the headline keeps its scale
+      if (w >= 1024) {
+        const inFrame = (x) => x && x.t >= g.frame.t && x.b <= g.frame.b && x.l >= g.frame.l && x.r <= g.frame.r;
+        const scaleOk = h > 820 ? g.titleFont >= Math.min(0.08 * w, 116) - 1 : g.titleFont >= 76;
+        record(`R-W3A-02-poster-frame-${w}x${h}`, engineName, !!g.frame && g.frame.b <= g.vh && inFrame(g.quick) && inFrame(g.status) && inFrame(g.byline) && inFrame(g.radar) && g.frame.l === 36 && scaleOk, { frame: g.frame, vh: g.vh, quick: g.quick, status: g.status, titleFont: g.titleFont });
+      }
+      if (w === 1440) {
+        // R-W3A-03 (F-03) two-line CREATOR byline beside the quick links on large screens, wording unchanged
+        record('R-W3A-03-byline-beside-quick-1440', engineName, g.bylineLines === 2 && g.byline.l > g.quick.r && Math.abs(g.byline.b - g.quick.b) <= 6 && g.bylineText === 'CREATOR / ENDEAVOR · DESIGN / CODE / CANON', { byline: g.byline, quick: g.quick, lines: g.bylineLines });
+      }
+      await ctx.close();
+    }
+    // R-W3A-04 (F-01M) phones: the existing radar SVG is the stage behind the headline — one SVG, no overflow, no blocked targets,
+    // eyebrow on one line, quick links in one row, byline in two lines
+    for (const [w, h] of [[360, 800], [390, 844], [430, 932]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, dpr: 2, mobile: true });
+      await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(400);
+      const g = await p.evaluate(heroGeom);
+      const s = await p.evaluate(() => {
+        const radar = document.querySelector('.hero .radar'); const cs = getComputedStyle(radar); const t = document.querySelector('.hero h1.title').getBoundingClientRect();
+        const hit = (x, y) => document.elementFromPoint(x, y);
+        const e = document.querySelector('.hero a.enter').getBoundingClientRect(); const eh = hit(e.left + e.width / 2, e.top + e.height / 2);
+        const th = hit(t.right - 40, t.top + 30);
+        return { svgs: document.querySelectorAll('.hero .radar svg').length, position: cs.position, pe: cs.pointerEvents, enterHit: !!(eh && eh.closest('a.enter')), titleOnTop: !!(th && th.closest('h1.title')) };
+      });
+      const behind = g.radar.t < g.title.b && g.radar.b > g.title.t && g.radar.r > g.title.l;
+      record(`R-W3A-04-mobile-radar-scene-${w}`, engineName, s.svgs === 1 && s.position === 'absolute' && s.pe === 'none' && behind && s.enterHit && s.titleOnTop && !g.overflow && g.eyebrowLines === 1 && g.quickRows === 1 && g.bylineLines === 2 && g.enter.b <= g.vh,
+        { ...s, behind, overflow: g.overflow, eyebrowLines: g.eyebrowLines, quickRows: g.quickRows, bylineLines: g.bylineLines, enter: g.enter });
+      await ctx.close();
+    }
+    // R-W3A-05 (F-06) the bridge question above a section is fully visible after menu click, swipe-nav tap, keyboard and direct hash
+    for (const [w, h, mobile] of [[1440, 900, false], [390, 844, true]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, mobile });
+      await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready);
+      const out = [];
+      for (const [id, how] of [['#system', 'click'], ['#vision', 'keyboard'], ['#collaboration', 'click']]) {
+        await p.evaluate(() => { document.activeElement && document.activeElement.blur && document.activeElement.blur(); window.scrollTo({ top: 0, behavior: 'instant' }); }); await p.waitForTimeout(200);
+        const link = p.locator(w > 1080 ? `.menu a[href="${id}"]` : `.show-mobile-nav a[href="${id}"]`);
+        if (how === 'keyboard') { await link.focus(); await p.keyboard.press('Enter'); } else await link.click();
+        await settle(p); await p.waitForTimeout(150);
+        out.push(await p.evaluate((i) => { const s = document.querySelector(i); const b = s.previousElementSibling.getBoundingClientRect(); const chrome = [...document.querySelectorAll('header.top,.show-mobile-nav')].filter((e) => getComputedStyle(e).position === 'sticky' && e.getBoundingClientRect().top <= 1).reduce((m, e) => Math.max(m, e.getBoundingClientRect().bottom), 0);
+          return { id: i, chrome: Math.round(chrome), bridgeTop: Math.round(b.top), bridgeBottom: Math.round(b.bottom), sectionTop: Math.round(s.getBoundingClientRect().top), current: [...document.querySelectorAll('[aria-current="location"]')].map((a) => a.getAttribute('href')) }; }, id));
+      }
+      await ctx.close();
+      const { ctx: c2, p: p2 } = await page(browser, engineName, { w, h, mobile });
+      await p2.goto(base + '#creator', { waitUntil: 'load' }); await p2.evaluate(() => document.fonts.ready); await settle(p2).catch(() => {}); await p2.waitForTimeout(600);
+      out.push(await p2.evaluate(() => { const s = document.getElementById('creator'); const b = s.previousElementSibling.getBoundingClientRect(); const chrome = [...document.querySelectorAll('header.top,.show-mobile-nav')].filter((e) => getComputedStyle(e).position === 'sticky' && e.getBoundingClientRect().top <= 1).reduce((m, e) => Math.max(m, e.getBoundingClientRect().bottom), 0);
+        return { id: '#creator(direct)', chrome: Math.round(chrome), bridgeTop: Math.round(b.top), bridgeBottom: Math.round(b.bottom), sectionTop: Math.round(s.getBoundingClientRect().top), current: [...document.querySelectorAll('[aria-current="location"]')].map((a) => a.getAttribute('href')) }; }));
+      await c2.close();
+      const ok = out.every((o) => o.bridgeTop >= o.chrome - 1 && o.bridgeBottom <= o.sectionTop + 1 && o.bridgeTop - o.chrome <= 16 && o.current.length > 0 && o.current.every((c) => c === o.id.replace('(direct)', '')));
+      record(`R-W3A-05-bridge-visible-${w}`, engineName, ok, out);
+    }
+    // R-W3A-06 (F-05) meaningful text in the W3.A zone is >= 12 px (exceptions: the decorative header version string, art captions)
+    for (const [w, h, mobile] of [[390, 844, true], [1024, 768, false], [1440, 900, false]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, mobile });
+      await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready);
+      const small = await p.evaluate(() => { const out = [];
+        for (const z of document.querySelectorAll('header.top,.show-mobile-nav,#top,#about,#creator')) { const wk = document.createTreeWalker(z, NodeFilter.SHOW_TEXT);
+          for (let n; (n = wk.nextNode());) { if (!n.data.trim()) continue; const el = n.parentElement; const cs = getComputedStyle(el);
+            if (cs.display === 'none' || cs.visibility === 'hidden' || !el.getClientRects().length || el.closest('[aria-hidden="true"],svg,.brand small,figcaption')) continue;
+            if (parseFloat(cs.fontSize) < 12) out.push(`${cs.fontSize} ${n.data.trim().slice(0, 24)}`); } }
+        return out; });
+      record(`R-W3A-06-type-floor-${w}`, engineName, small.length === 0, small.slice(0, 6));
+      await ctx.close();
+    }
+    // R-W3A-07 (N-2) the ticker's loop clone is hidden from assistive tech; the original seven items are not
+    {
+      const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
+      await p.goto(base, { waitUntil: 'load' });
+      const tk = await p.evaluate(() => { const items = [...document.querySelectorAll('.ticker .stream-inner > span')]; return { total: items.length, hidden: items.filter((s) => s.getAttribute('aria-hidden') === 'true').length, firstHalfHidden: items.slice(0, items.length / 2).some((s) => s.getAttribute('aria-hidden') === 'true') }; });
+      record('R-W3A-07-ticker-clone-hidden', engineName, tk.total === 14 && tk.hidden === 7 && !tk.firstHalfHidden, tk);
+      await ctx.close();
+    }
+    // R-W3A-08 (F-01M) weak device / Save-Data and reduced motion: the radar stage runs no infinite loop (it is CSS-animated, no SMIL)
+    for (const [name, opts] of [['default', {}], ['lite', { init: () => { Object.defineProperty(navigator, 'deviceMemory', { get: () => 2 }); } }], ['reduced', { reduced: true }]]) {
+      const { ctx, p } = await page(browser, engineName, { w: 390, h: 844, mobile: true, ...opts });
+      await p.goto(base, { waitUntil: 'load' }); await p.waitForTimeout(600);
+      const st = await p.evaluate(() => { const svg = document.querySelector('.hero .radar svg'); const running = [...document.querySelectorAll('.hero .radar, .hero .radar *')].flatMap((e) => e.getAnimations()).filter((a) => a.playState === 'running' && a.effect && a.effect.getComputedTiming().iterations === Infinity).length;
+        return { lite: document.documentElement.classList.contains('ax-lite'), smil: svg.querySelectorAll('animate,animateTransform,animateMotion').length, runningInfiniteCss: running }; });
+      // control: by default the radar does loop (so the two still cases are not vacuous)
+      const ok = name === 'default' ? st.runningInfiniteCss > 0 && !st.lite : st.smil === 0 && st.runningInfiniteCss === 0 && (name !== 'lite' || st.lite);
+      record(`R-W3A-08-radar-${name === 'default' ? 'loops-default' : 'still-' + name}`, engineName, ok, st);
+      await ctx.close();
+    }
   } finally {
     await browser.close();
   }
