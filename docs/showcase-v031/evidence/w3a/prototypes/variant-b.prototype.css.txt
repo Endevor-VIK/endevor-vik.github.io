@@ -1,0 +1,81 @@
+/* ===== W3.A PROTOTYPE · VARIANT B — POSTER FRAME =====
+   The first screen becomes one framed composition: the red-corner frame wraps exactly the first viewport,
+   content sits optically centred, quick links + byline + SIGNAL TRACE form a command rail on the frame's lower edge,
+   the feature row follows below the frame. On phones the radar becomes the stage behind the headline
+   (the same SVG, moved — not duplicated). The section label becomes a vertical chapter rail in the desktop gutter. */
+
+:root{--w3-chrome:97px}
+@media (max-width:1080px){:root{--w3-chrome:141px}}
+@media (max-width:1080px) and (min-height:621px) and (max-height:820px){:root{--w3-chrome:129px}.nav{padding-top:12px;padding-bottom:12px}}
+
+@media (min-width:901px) and (min-height:621px){
+  .hero{padding:30px 0 60px;min-height:0}
+  .hero>.hero-frame{display:none}
+  /* the frame is drawn by the poster box itself, so it always closes around the first screen */
+  .hero-grid{
+    --w3-bleed:max(0px,(100vw - 1455px)/2);
+    box-sizing:border-box;min-height:calc(100svh - var(--w3-chrome) - 48px);align-items:center;
+    margin-inline:calc(-1 * var(--w3-bleed));
+    padding:clamp(30px,5.5vh,60px) calc(var(--w3-bleed) + clamp(24px,2.6vw,44px)) clamp(22px,3.4vh,36px);
+    border:1px solid rgba(255,32,52,.18);
+    background:
+      linear-gradient(var(--red),var(--red)) left -1px top -1px/22px 2px no-repeat,
+      linear-gradient(var(--red),var(--red)) left -1px top -1px/2px 22px no-repeat,
+      linear-gradient(var(--red),var(--red)) right -1px top -1px/22px 2px no-repeat,
+      linear-gradient(var(--red),var(--red)) right -1px top -1px/2px 22px no-repeat,
+      linear-gradient(var(--red),var(--red)) left -1px bottom -1px/22px 2px no-repeat,
+      linear-gradient(var(--red),var(--red)) left -1px bottom -1px/2px 22px no-repeat,
+      linear-gradient(var(--red),var(--red)) right -1px bottom -1px/22px 2px no-repeat,
+      linear-gradient(var(--red),var(--red)) right -1px bottom -1px/2px 22px no-repeat;
+  }
+  .version-card{top:58px;right:60px}
+  /* left column: main block optically centred, command rail pinned to the frame's lower edge */
+  .hero-grid>div:first-child{align-self:stretch;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:22px;
+    grid-template-rows:1fr auto auto auto auto auto minmax(0,.55fr) auto auto}
+  .hero-grid>div:first-child>*{grid-column:1/-1}
+  .hero-grid>div:first-child>.eyebrow{grid-row:2;justify-self:start}
+  .hero-grid>div:first-child>.title{grid-row:3}
+  .hero-grid>div:first-child>.lede{grid-row:4}
+  .hero-grid>div:first-child>.enter-wrap{grid-row:5}
+  .hero-grid>div:first-child>.ax-gate-note{grid-row:6}
+  .hero-grid>div:first-child>.show-hero-extra{grid-row:8;margin-top:20px}
+  .hero-grid>div:first-child>.show-hero-byline{grid-row:9;margin-top:12px}
+  h1.title{font-size:clamp(56px,min(8vw,12.2vh),116px)}
+  .radar{max-width:min(620px,62vh)}
+  .status-card{margin:calc(-1 * (36px + 66px)) 44px 0 auto;position:relative}
+  .features{margin-top:30px}
+}
+@media (min-width:1200px) and (min-height:621px){
+  .hero-grid>div:first-child>.show-hero-extra{grid-column:1}
+  .hero-grid>div:first-child>.show-hero-byline{grid-row:8;grid-column:2;align-self:end;margin:0 0 2px;max-width:calc(21 * .74em);line-height:1.5}
+}
+@media (min-width:901px) and (max-height:820px) and (min-height:621px){
+  h1.title{margin:14px 0 12px;font-size:clamp(56px,min(8vw,10vh),116px)}
+  .lede{margin-bottom:22px}
+  .hero-grid{padding-top:26px}
+}
+
+/* phones: radar is the stage behind the headline (no extra height); one-line eyebrow; 3-cell quick links */
+@media (max-width:640px){
+  .hero{overflow-x:clip}
+  .hero-grid{position:relative}
+  .hero-grid>div:first-child{position:relative;z-index:1}
+  .hero .radar{position:absolute;z-index:0;top:-22px;right:-96px;width:300px;max-width:none;margin:0;opacity:.5;pointer-events:none;
+    filter:none;-webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent);mask-image:radial-gradient(closest-side,#000 62%,transparent)}
+  .hero .eyebrow{letter-spacing:.16em;background:rgba(7,7,9,.72)}
+  .show-hero-extra{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .show-hero-extra a{justify-content:center;text-align:center;padding:6px 8px;min-height:48px;line-height:1.35}
+}
+
+/* section label: hidden where the swipe nav is sticky; a vertical chapter rail in the desktop gutter */
+@media (max-width:1399px){.v22-current-label{display:none!important}}
+@media (min-width:1400px){
+  .v22-current-label{top:50%;bottom:auto;right:auto;left:9px;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;
+    background:none;border:0;border-right:1px solid var(--ax-crimson-line);padding:14px 5px 14px 0;font-size:11px;letter-spacing:.24em;color:#ff2034}
+}
+
+/* 200 % zoom / 960×540: same as A (the poster frame needs >= 621 px of height) */
+@media (min-width:901px) and (max-height:620px){
+  .hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr)}
+  h1.title{font-size:clamp(38px,9.6vh,88px)}
+}

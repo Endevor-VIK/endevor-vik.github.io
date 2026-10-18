@@ -1,0 +1,478 @@
+{
+ "360": {
+  "meaningfulSmall": 92,
+  "decorSmall": 2,
+  "proseSmall": 22,
+  "wideTracking": 1,
+  "rows": {
+   "LABEL<12 11px ls0.12 b.<brand": {
+    "n": 1,
+    "ex": "AXIOM CORE"
+   },
+   "LABEL<12 9px ls0.14 div.label<ticker": {
+    "n": 1,
+    "ex": "ARCHIVE // WIRE"
+   },
+   "LABEL<12 9px ls0.16 b.tag<SPAN": {
+    "n": 14,
+    "ex": "UPDATE"
+   },
+   "LABEL<12 9px ls0.16 span.dim<SPAN": {
+    "n": 14,
+    "ex": "/ 2026-10-16"
+   },
+   "LABEL<12 9px ls0.16 span.<stream-inner": {
+    "n": 14,
+    "ex": "AXIOM SHOWCASE V0.3.0.0 — PUBL"
+   },
+   "LABEL<12 11px ls0.12 a.<show-mobile-nav": {
+    "n": 7,
+    "ex": "AXIOM"
+   },
+   "LABEL<12 10.5px ls0.32 span.eyebrow<DIV": {
+    "n": 1,
+    "ex": "ENDEAVOR // CREATOR OF AXIOM S"
+   },
+   "TRACK>.2em 13px ls0.22 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "LABEL<12 11px ls0.00 p.ax-gate-note<DIV": {
+    "n": 1,
+    "ex": "Вход временно закрыт"
+   },
+   "LABEL<12 11px ls0.00 span.ax-gate-date<ax-gate-note": {
+    "n": 1,
+    "ex": "· статус на 17.10"
+   },
+   "LABEL<12 11px ls0.08 div.show-hero-byline<DIV": {
+    "n": 1,
+    "ex": "CREATOR / ENDEAVOR · DESIGN / "
+   },
+   "PROSE<14 11px ls0.14 h2.<feature": {
+    "n": 4,
+    "ex": "SECURE ACCESS"
+   },
+   "PROSE<14 13px ls0.02 div.feature<features": {
+    "n": 4,
+    "ex": "Роли и уровни доступа разделяю"
+   },
+   "LABEL<12 11px ls0.16 span.<show-index": {
+    "n": 2,
+    "ex": "01 / AXIOM SYSTEM"
+   },
+   "LABEL<12 11px ls0.20 div.show-kicker<DIV": {
+    "n": 2,
+    "ex": "WHAT IS AXIOM? / SHORT ANSWER"
+   },
+   "PROSE<14 13px ls0.00 p.show-muted<DIV": {
+    "n": 2,
+    "ex": "Для посетителя AXIOM начинаетс"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   },
+   "LABEL<12 11px ls0.00 span.<ARTICLE": {
+    "n": 4,
+    "ex": "01 / UNIVERSE"
+   },
+   "LABEL<12 11px ls0.00 a.<ARTICLE": {
+    "n": 4,
+    "ex": "ПОНЯТЬ МИР ↘"
+   },
+   "LABEL<12 11px ls0.12 a.show-button<show-actions": {
+    "n": 2,
+    "ex": "СМОТРЕТЬ РАБОТЫ ↘"
+   },
+   "LABEL<12 11px ls0.00 div.show-identity-top<show-identity": {
+    "n": 1,
+    "ex": "AUTHORIZED ORIGIN"
+   },
+   "LABEL<12 11px ls0.00 span.<show-identity-top": {
+    "n": 1,
+    "ex": "● DEVELOPMENT"
+   },
+   "LABEL<12 9px ls0.00 div.<show-ident-rows": {
+    "n": 4,
+    "ex": "ROLE"
+   },
+   "LABEL<12 9px ls0.00 b.<DIV": {
+    "n": 4,
+    "ex": "AUTHOR / DEVELOPER"
+   },
+   "LABEL<12 11px ls0.00 span.<v22-discipline": {
+    "n": 1,
+    "ex": "WHAT I ACTUALLY DO"
+   },
+   "PROSE<14 11px ls0.00 strong.<P": {
+    "n": 4,
+    "ex": "01 / Архитектура"
+   },
+   "PROSE<14 12px ls0.00 p.<DIV": {
+    "n": 7,
+    "ex": "— проектирование границ WEB CO"
+   },
+   "PROSE<14 12px ls0.00 p.v22-creator-result<v22-discipline": {
+    "n": 1,
+    "ex": "Реальные интерфейсы, разработа"
+   },
+   "LABEL<12 11px ls0.00 span.<DIV": {
+    "n": 3,
+    "ex": "01"
+   }
+  }
+ },
+ "390": {
+  "meaningfulSmall": 92,
+  "decorSmall": 2,
+  "proseSmall": 22,
+  "wideTracking": 1,
+  "rows": {
+   "LABEL<12 11px ls0.12 b.<brand": {
+    "n": 1,
+    "ex": "AXIOM CORE"
+   },
+   "LABEL<12 9px ls0.14 div.label<ticker": {
+    "n": 1,
+    "ex": "ARCHIVE // WIRE"
+   },
+   "LABEL<12 9px ls0.16 b.tag<SPAN": {
+    "n": 14,
+    "ex": "UPDATE"
+   },
+   "LABEL<12 9px ls0.16 span.dim<SPAN": {
+    "n": 14,
+    "ex": "/ 2026-10-16"
+   },
+   "LABEL<12 9px ls0.16 span.<stream-inner": {
+    "n": 14,
+    "ex": "AXIOM SHOWCASE V0.3.0.0 — PUBL"
+   },
+   "LABEL<12 11px ls0.12 a.<show-mobile-nav": {
+    "n": 7,
+    "ex": "AXIOM"
+   },
+   "LABEL<12 10.5px ls0.32 span.eyebrow<DIV": {
+    "n": 1,
+    "ex": "ENDEAVOR // CREATOR OF AXIOM S"
+   },
+   "TRACK>.2em 13px ls0.22 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "LABEL<12 11px ls0.00 p.ax-gate-note<DIV": {
+    "n": 1,
+    "ex": "Вход временно закрыт"
+   },
+   "LABEL<12 11px ls0.00 span.ax-gate-date<ax-gate-note": {
+    "n": 1,
+    "ex": "· статус на 17.10"
+   },
+   "LABEL<12 11px ls0.08 div.show-hero-byline<DIV": {
+    "n": 1,
+    "ex": "CREATOR / ENDEAVOR · DESIGN / "
+   },
+   "PROSE<14 11px ls0.14 h2.<feature": {
+    "n": 4,
+    "ex": "SECURE ACCESS"
+   },
+   "PROSE<14 13px ls0.02 div.feature<features": {
+    "n": 4,
+    "ex": "Роли и уровни доступа разделяю"
+   },
+   "LABEL<12 11px ls0.16 span.<show-index": {
+    "n": 2,
+    "ex": "01 / AXIOM SYSTEM"
+   },
+   "LABEL<12 11px ls0.20 div.show-kicker<DIV": {
+    "n": 2,
+    "ex": "WHAT IS AXIOM? / SHORT ANSWER"
+   },
+   "PROSE<14 13px ls0.00 p.show-muted<DIV": {
+    "n": 2,
+    "ex": "Для посетителя AXIOM начинаетс"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   },
+   "LABEL<12 11px ls0.00 span.<ARTICLE": {
+    "n": 4,
+    "ex": "01 / UNIVERSE"
+   },
+   "LABEL<12 11px ls0.00 a.<ARTICLE": {
+    "n": 4,
+    "ex": "ПОНЯТЬ МИР ↘"
+   },
+   "LABEL<12 11px ls0.12 a.show-button<show-actions": {
+    "n": 2,
+    "ex": "СМОТРЕТЬ РАБОТЫ ↘"
+   },
+   "LABEL<12 11px ls0.00 div.show-identity-top<show-identity": {
+    "n": 1,
+    "ex": "AUTHORIZED ORIGIN"
+   },
+   "LABEL<12 11px ls0.00 span.<show-identity-top": {
+    "n": 1,
+    "ex": "● DEVELOPMENT"
+   },
+   "LABEL<12 9px ls0.00 div.<show-ident-rows": {
+    "n": 4,
+    "ex": "ROLE"
+   },
+   "LABEL<12 9px ls0.00 b.<DIV": {
+    "n": 4,
+    "ex": "AUTHOR / DEVELOPER"
+   },
+   "LABEL<12 11px ls0.00 span.<v22-discipline": {
+    "n": 1,
+    "ex": "WHAT I ACTUALLY DO"
+   },
+   "PROSE<14 11px ls0.00 strong.<P": {
+    "n": 4,
+    "ex": "01 / Архитектура"
+   },
+   "PROSE<14 12px ls0.00 p.<DIV": {
+    "n": 7,
+    "ex": "— проектирование границ WEB CO"
+   },
+   "PROSE<14 12px ls0.00 p.v22-creator-result<v22-discipline": {
+    "n": 1,
+    "ex": "Реальные интерфейсы, разработа"
+   },
+   "LABEL<12 11px ls0.00 span.<DIV": {
+    "n": 3,
+    "ex": "01"
+   }
+  }
+ },
+ "1024": {
+  "meaningfulSmall": 92,
+  "decorSmall": 3,
+  "proseSmall": 0,
+  "wideTracking": 10,
+  "rows": {
+   "TRACK>.2em 12px ls0.22 b.<brand": {
+    "n": 1,
+    "ex": "AXIOM CORE"
+   },
+   "LABEL<12 10px ls0.22 small.<brand": {
+    "n": 1,
+    "ex": "// SHOWCASE v0.3.0.0"
+   },
+   "LABEL<12 11px ls0.22 div.label<ticker": {
+    "n": 1,
+    "ex": "ARCHIVE // WIRE"
+   },
+   "LABEL<12 11px ls0.16 b.tag<SPAN": {
+    "n": 14,
+    "ex": "UPDATE"
+   },
+   "LABEL<12 11px ls0.16 span.dim<SPAN": {
+    "n": 14,
+    "ex": "/ 2026-10-16"
+   },
+   "LABEL<12 11px ls0.16 span.<stream-inner": {
+    "n": 14,
+    "ex": "AXIOM SHOWCASE V0.3.0.0 — PUBL"
+   },
+   "LABEL<12 11px ls0.12 a.<show-mobile-nav": {
+    "n": 7,
+    "ex": "AXIOM"
+   },
+   "LABEL<12 11px ls0.22 div.l<version-card": {
+    "n": 1,
+    "ex": "AXIOM CORE"
+   },
+   "LABEL<12 11px ls0.22 div.<version-card": {
+    "n": 2,
+    "ex": "ACCESS_PROTOCOL"
+   },
+   "LABEL<12 10.5px ls0.32 span.eyebrow<DIV": {
+    "n": 1,
+    "ex": "ENDEAVOR // CREATOR OF AXIOM S"
+   },
+   "TRACK>.2em 17px ls0.36 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "LABEL<12 11px ls0.06 p.ax-gate-note<DIV": {
+    "n": 1,
+    "ex": "Вход временно закрыт"
+   },
+   "LABEL<12 11px ls0.06 span.ax-gate-date<ax-gate-note": {
+    "n": 1,
+    "ex": "· статус на 17.10"
+   },
+   "TRACK>.2em 12px ls0.24 h2.<feature": {
+    "n": 4,
+    "ex": "SECURE ACCESS"
+   },
+   "LABEL<12 11px ls0.16 span.<show-index": {
+    "n": 4,
+    "ex": "01 / AXIOM SYSTEM"
+   },
+   "LABEL<12 11px ls0.20 div.show-kicker<DIV": {
+    "n": 2,
+    "ex": "WHAT IS AXIOM? / SHORT ANSWER"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   },
+   "LABEL<12 11px ls0.00 span.<ARTICLE": {
+    "n": 4,
+    "ex": "01 / UNIVERSE"
+   },
+   "LABEL<12 11px ls0.00 a.<ARTICLE": {
+    "n": 4,
+    "ex": "ПОНЯТЬ МИР ↘"
+   },
+   "LABEL<12 11px ls0.12 a.show-button<show-actions": {
+    "n": 2,
+    "ex": "СМОТРЕТЬ РАБОТЫ ↘"
+   },
+   "LABEL<12 11px ls0.00 div.show-identity-top<show-identity": {
+    "n": 1,
+    "ex": "AUTHORIZED ORIGIN"
+   },
+   "LABEL<12 11px ls0.00 span.<show-identity-top": {
+    "n": 1,
+    "ex": "● DEVELOPMENT"
+   },
+   "LABEL<12 11px ls0.00 div.<show-ident-rows": {
+    "n": 4,
+    "ex": "ROLE"
+   },
+   "LABEL<12 11px ls0.00 b.<DIV": {
+    "n": 4,
+    "ex": "AUTHOR / DEVELOPER"
+   },
+   "LABEL<12 11px ls0.00 span.<v22-discipline": {
+    "n": 1,
+    "ex": "WHAT I ACTUALLY DO"
+   },
+   "LABEL<12 11px ls0.00 strong.<P": {
+    "n": 4,
+    "ex": "01 / Архитектура"
+   },
+   "LABEL<12 11px ls0.00 span.<DIV": {
+    "n": 3,
+    "ex": "01"
+   }
+  }
+ },
+ "1440": {
+  "meaningfulSmall": 85,
+  "decorSmall": 3,
+  "proseSmall": 0,
+  "wideTracking": 10,
+  "rows": {
+   "TRACK>.2em 12px ls0.22 b.<brand": {
+    "n": 1,
+    "ex": "AXIOM CORE"
+   },
+   "LABEL<12 10px ls0.22 small.<brand": {
+    "n": 1,
+    "ex": "// SHOWCASE v0.3.0.0"
+   },
+   "LABEL<12 11px ls0.22 div.label<ticker": {
+    "n": 1,
+    "ex": "ARCHIVE // WIRE"
+   },
+   "LABEL<12 11px ls0.16 b.tag<SPAN": {
+    "n": 14,
+    "ex": "UPDATE"
+   },
+   "LABEL<12 11px ls0.16 span.dim<SPAN": {
+    "n": 14,
+    "ex": "/ 2026-10-16"
+   },
+   "LABEL<12 11px ls0.16 span.<stream-inner": {
+    "n": 14,
+    "ex": "AXIOM SHOWCASE V0.3.0.0 — PUBL"
+   },
+   "LABEL<12 11px ls0.22 div.l<version-card": {
+    "n": 1,
+    "ex": "AXIOM CORE"
+   },
+   "LABEL<12 11px ls0.22 div.<version-card": {
+    "n": 2,
+    "ex": "ACCESS_PROTOCOL"
+   },
+   "LABEL<12 10.5px ls0.32 span.eyebrow<DIV": {
+    "n": 1,
+    "ex": "ENDEAVOR // CREATOR OF AXIOM S"
+   },
+   "TRACK>.2em 17px ls0.36 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "LABEL<12 11px ls0.06 p.ax-gate-note<DIV": {
+    "n": 1,
+    "ex": "Вход временно закрыт"
+   },
+   "LABEL<12 11px ls0.06 span.ax-gate-date<ax-gate-note": {
+    "n": 1,
+    "ex": "· статус на 17.10"
+   },
+   "TRACK>.2em 12px ls0.24 h2.<feature": {
+    "n": 4,
+    "ex": "SECURE ACCESS"
+   },
+   "LABEL<12 11px ls0.16 span.<show-index": {
+    "n": 4,
+    "ex": "01 / AXIOM SYSTEM"
+   },
+   "LABEL<12 11px ls0.20 div.show-kicker<DIV": {
+    "n": 2,
+    "ex": "WHAT IS AXIOM? / SHORT ANSWER"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   },
+   "LABEL<12 11px ls0.00 span.<ARTICLE": {
+    "n": 4,
+    "ex": "01 / UNIVERSE"
+   },
+   "LABEL<12 11px ls0.00 a.<ARTICLE": {
+    "n": 4,
+    "ex": "ПОНЯТЬ МИР ↘"
+   },
+   "LABEL<12 11px ls0.12 a.show-button<show-actions": {
+    "n": 2,
+    "ex": "СМОТРЕТЬ РАБОТЫ ↘"
+   },
+   "LABEL<12 11px ls0.00 div.show-identity-top<show-identity": {
+    "n": 1,
+    "ex": "AUTHORIZED ORIGIN"
+   },
+   "LABEL<12 11px ls0.00 span.<show-identity-top": {
+    "n": 1,
+    "ex": "● DEVELOPMENT"
+   },
+   "LABEL<12 11px ls0.00 div.<show-ident-rows": {
+    "n": 4,
+    "ex": "ROLE"
+   },
+   "LABEL<12 11px ls0.00 b.<DIV": {
+    "n": 4,
+    "ex": "AUTHOR / DEVELOPER"
+   },
+   "LABEL<12 11px ls0.00 span.<v22-discipline": {
+    "n": 1,
+    "ex": "WHAT I ACTUALLY DO"
+   },
+   "LABEL<12 11px ls0.00 strong.<P": {
+    "n": 4,
+    "ex": "01 / Архитектура"
+   },
+   "LABEL<12 11px ls0.00 span.<DIV": {
+    "n": 3,
+    "ex": "01"
+   }
+  }
+ }
+}

@@ -72,6 +72,18 @@ document.addEventListener('click', (e) => {
 }, true);
 if(location.hash) revealTarget(decodeURIComponent(location.hash.slice(1)));
 
+// 0524 W3.A (F-01M): on phones the HERO radar is part of the first screen; Save-Data, low-memory and two-core
+// devices get it still — .ax-lite switches its CSS loops off (showcase-v23.css; the radar has no SMIL). Content is unchanged.
+const conn = navigator.connection;
+const lite = !!(conn && conn.saveData) || (navigator.deviceMemory && navigator.deviceMemory <= 2) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2);
+if(lite) document.documentElement.classList.add('ax-lite');
+// phones: the radar's loops start once the page has loaded and settled, so the first-screen scene does not repaint
+// every frame while the page is still loading (measured: Lighthouse mobile TBT); until then it is a still emblem
+if(!lite && window.matchMedia('(max-width: 640px)').matches){
+  const radarLive = () => setTimeout(() => document.documentElement.classList.add('ax-radar-live'), 2500);
+  if(document.readyState === 'complete') radarLive(); else window.addEventListener('load', radarLive, { once: true });
+}
+
 // prefers-reduced-motion must also stop SVG SMIL loops (<animate>), which the CSS media query cannot reach
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const syncSmil = () => {

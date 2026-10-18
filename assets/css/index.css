@@ -1246,14 +1246,13 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 /* 0524 W1: landscape phones — title left, lede and ENTER AXIOM right, so the CTA is on the first screen */
 @media (max-height:520px) and (min-width:600px) and (orientation:landscape){
   .hero-grid>div:first-child{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);column-gap:28px;align-items:start;
-    grid-template-areas:"eyebrow eyebrow" "title lede" "title cta" "extra extra" "byline byline"}
+    grid-template-areas:"eyebrow eyebrow" "title lede" "title cta" "extra extra"}
   .hero-grid>div:first-child>.eyebrow{grid-area:eyebrow;justify-self:start}
   .hero-grid>div:first-child>.title{grid-area:title;margin:8px 0 0}
   .hero-grid>div:first-child>.lede{grid-area:lede;margin:10px 0 10px;font-size:13px;line-height:1.55}
   .hero-grid>div:first-child>.enter-wrap{grid-area:cta;margin:0}
   .hero-grid>div:first-child>.enter-wrap .enter{font-size:13px;letter-spacing:.22em;padding:0 16px;gap:10px}
-  .hero-grid>div:first-child>.show-hero-extra{grid-area:extra}
-  .hero-grid>div:first-child>.show-hero-byline{grid-area:byline}
+  .hero-grid>div:first-child>.hero-rail{grid-area:extra}
 }
 /* 0524 W1: low windows (landscape phones, 200% zoom) — compact chrome and hero so the CTA reaches the first screen */
 @media (max-height:620px){

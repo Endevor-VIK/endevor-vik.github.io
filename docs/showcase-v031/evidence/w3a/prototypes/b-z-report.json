@@ -1,0 +1,186 @@
+{
+ "variant": "b-z",
+ "base": "http://127.0.0.1:8571/",
+ "results": [
+  {
+   "vp": "960x540@2",
+   "geom": {
+    "vh": 540,
+    "vw": 960,
+    "docScreens": 46.4,
+    "header": {
+     "t": 0,
+     "b": 75,
+     "l": 0,
+     "r": 945,
+     "h": 75,
+     "w": 945
+    },
+    "mnav": {
+     "t": 75,
+     "b": 119,
+     "l": 0,
+     "r": 945,
+     "h": 44,
+     "w": 945
+    },
+    "eyebrow": {
+     "t": 138,
+     "b": 162,
+     "l": 48,
+     "r": 424,
+     "h": 24,
+     "w": 376
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 172,
+     "b": 315,
+     "l": 48,
+     "r": 602,
+     "h": 143,
+     "w": 554
+    },
+    "titleFont": "51.84px",
+    "lede": {
+     "t": 330,
+     "b": 423,
+     "l": 48,
+     "r": 548,
+     "h": 93,
+     "w": 500
+    },
+    "enter": {
+     "t": 437,
+     "b": 503,
+     "l": 48,
+     "r": 568,
+     "h": 66,
+     "w": 520
+    },
+    "gate": {
+     "t": 512,
+     "b": 526
+    },
+    "quick": {
+     "t": 532,
+     "b": 576,
+     "l": 48,
+     "r": 602,
+     "h": 44,
+     "w": 554
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 590,
+     "b": 609,
+     "l": 48,
+     "r": 602,
+     "h": 19,
+     "w": 554
+    },
+    "radar": {
+     "t": 240,
+     "b": 507,
+     "l": 630,
+     "r": 897,
+     "h": 267,
+     "w": 267
+    },
+    "features": {
+     "t": 641,
+     "b": 890,
+     "l": 60,
+     "r": 885,
+     "h": 249,
+     "w": 825
+    },
+    "hero": {
+     "t": 119,
+     "b": 911,
+     "l": 0,
+     "r": 945,
+     "h": 792,
+     "w": 945
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  }
+ ]
+}

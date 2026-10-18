@@ -1,0 +1,2080 @@
+{
+ "tag": "after",
+ "base": "http://127.0.0.1:8603/",
+ "at": "2026-10-18T22:46:05.621Z",
+ "engine": "chromium 141.0.7390.37",
+ "results": [
+  {
+   "vp": "360x800@2",
+   "geom": {
+    "vw": 360,
+    "vh": 800,
+    "docScreens": 39.47,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 81,
+     "l": 0,
+     "r": 360,
+     "h": 81,
+     "w": 360
+    },
+    "mnav": {
+     "t": 81,
+     "b": 126,
+     "l": 0,
+     "r": 360,
+     "h": 45,
+     "w": 360
+    },
+    "eyebrow": {
+     "t": 158,
+     "b": 188,
+     "l": 14,
+     "r": 342,
+     "h": 30,
+     "w": 328
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 202,
+     "b": 361,
+     "l": 14,
+     "r": 346,
+     "h": 159,
+     "w": 332
+    },
+    "titleFont": "57.6px",
+    "lede": {
+     "t": 376,
+     "b": 515,
+     "l": 14,
+     "r": 346,
+     "h": 140,
+     "w": 332
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 535,
+     "b": 605,
+     "l": 14,
+     "r": 346,
+     "h": 70,
+     "w": 332
+    },
+    "gate": {
+     "t": 613,
+     "b": 629
+    },
+    "quick": {
+     "t": 634,
+     "b": 682,
+     "l": 14,
+     "r": 346,
+     "h": 48,
+     "w": 332
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 696,
+     "b": 735,
+     "l": 14,
+     "r": 193,
+     "h": 38,
+     "w": 179
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 134,
+     "b": 415,
+     "l": 149,
+     "r": 430,
+     "h": 281,
+     "w": 281
+    },
+    "radarOverTitlePx": 31244,
+    "radarOpacity": "0.46",
+    "frame": null,
+    "status": null,
+    "features": {
+     "t": 765,
+     "b": 1201,
+     "l": 14,
+     "r": 346,
+     "h": 436,
+     "w": 332
+    },
+    "hero": {
+     "t": 126,
+     "b": 1230,
+     "l": 0,
+     "r": 360,
+     "h": 1104,
+     "w": 360
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 45,
+     "bridgeTop": 50,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 45,
+     "bridgeTop": 48,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 136,
+     "sectionTop": 136,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "390x844@3",
+   "geom": {
+    "vw": 390,
+    "vh": 844,
+    "docScreens": 36.4,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 81,
+     "l": 0,
+     "r": 390,
+     "h": 81,
+     "w": 390
+    },
+    "mnav": {
+     "t": 81,
+     "b": 126,
+     "l": 0,
+     "r": 390,
+     "h": 45,
+     "w": 390
+    },
+    "eyebrow": {
+     "t": 158,
+     "b": 188,
+     "l": 14,
+     "r": 342,
+     "h": 30,
+     "w": 328
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 202,
+     "b": 374,
+     "l": 14,
+     "r": 376,
+     "h": 172,
+     "w": 362
+    },
+    "titleFont": "62.4px",
+    "lede": {
+     "t": 389,
+     "b": 529,
+     "l": 14,
+     "r": 376,
+     "h": 140,
+     "w": 362
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 549,
+     "b": 619,
+     "l": 14,
+     "r": 376,
+     "h": 70,
+     "w": 362
+    },
+    "gate": {
+     "t": 627,
+     "b": 643
+    },
+    "quick": {
+     "t": 648,
+     "b": 696,
+     "l": 14,
+     "r": 376,
+     "h": 48,
+     "w": 362
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 710,
+     "b": 748,
+     "l": 14,
+     "r": 193,
+     "h": 38,
+     "w": 179
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 134,
+     "b": 438,
+     "l": 163,
+     "r": 467,
+     "h": 304,
+     "w": 304
+    },
+    "radarOverTitlePx": 36672,
+    "radarOpacity": "0.46",
+    "frame": null,
+    "status": null,
+    "features": {
+     "t": 778,
+     "b": 1173,
+     "l": 14,
+     "r": 376,
+     "h": 395,
+     "w": 362
+    },
+    "hero": {
+     "t": 126,
+     "b": 1202,
+     "l": 0,
+     "r": 390,
+     "h": 1076,
+     "w": 390
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 45,
+     "bridgeTop": 50,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "430x932@3",
+   "geom": {
+    "vw": 430,
+    "vh": 932,
+    "docScreens": 32.33,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 81,
+     "l": 0,
+     "r": 430,
+     "h": 81,
+     "w": 430
+    },
+    "mnav": {
+     "t": 81,
+     "b": 126,
+     "l": 0,
+     "r": 430,
+     "h": 45,
+     "w": 430
+    },
+    "eyebrow": {
+     "t": 158,
+     "b": 188,
+     "l": 14,
+     "r": 358,
+     "h": 30,
+     "w": 344
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 202,
+     "b": 390,
+     "l": 14,
+     "r": 416,
+     "h": 188,
+     "w": 402
+    },
+    "titleFont": "68px",
+    "lede": {
+     "t": 405,
+     "b": 521,
+     "l": 14,
+     "r": 416,
+     "h": 116,
+     "w": 402
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 541,
+     "b": 611,
+     "l": 14,
+     "r": 416,
+     "h": 70,
+     "w": 402
+    },
+    "gate": {
+     "t": 619,
+     "b": 635
+    },
+    "quick": {
+     "t": 640,
+     "b": 688,
+     "l": 14,
+     "r": 416,
+     "h": 48,
+     "w": 402
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 702,
+     "b": 740,
+     "l": 14,
+     "r": 193,
+     "h": 38,
+     "w": 179
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 134,
+     "b": 469,
+     "l": 181,
+     "r": 517,
+     "h": 335,
+     "w": 335
+    },
+    "radarOverTitlePx": 44055,
+    "radarOpacity": "0.46",
+    "frame": null,
+    "status": null,
+    "features": {
+     "t": 770,
+     "b": 1145,
+     "l": 14,
+     "r": 416,
+     "h": 375,
+     "w": 402
+    },
+    "hero": {
+     "t": 126,
+     "b": 1174,
+     "l": 0,
+     "r": 430,
+     "h": 1048,
+     "w": 430
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "768x1024@2",
+   "geom": {
+    "vw": 768,
+    "vh": 1024,
+    "docScreens": 26.87,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 753,
+     "h": 97,
+     "w": 753
+    },
+    "mnav": {
+     "t": 97,
+     "b": 141,
+     "l": 0,
+     "r": 753,
+     "h": 44,
+     "w": 753
+    },
+    "eyebrow": {
+     "t": 219,
+     "b": 249,
+     "l": 60,
+     "r": 438,
+     "h": 30,
+     "w": 378
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 271,
+     "b": 448,
+     "l": 60,
+     "r": 693,
+     "h": 177,
+     "w": 633
+    },
+    "titleFont": "64px",
+    "lede": {
+     "t": 466,
+     "b": 568,
+     "l": 60,
+     "r": 560,
+     "h": 102,
+     "w": 500
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 602,
+     "b": 694,
+     "l": 60,
+     "r": 580,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 702,
+     "b": 718
+    },
+    "quick": {
+     "t": 723,
+     "b": 767,
+     "l": 60,
+     "r": 693,
+     "h": 44,
+     "w": 633
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 781,
+     "b": 819,
+     "l": 60,
+     "r": 249,
+     "h": 38,
+     "w": 189
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 849,
+     "b": 1369,
+     "l": 117,
+     "r": 637,
+     "h": 520,
+     "w": 520
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 171,
+     "b": 1527,
+     "l": 36,
+     "r": 717,
+     "h": 1356,
+     "w": 681
+    },
+    "status": {
+     "t": 1405,
+     "b": 1503,
+     "l": 429,
+     "r": 669,
+     "h": 98,
+     "w": 240
+    },
+    "features": {
+     "t": 1557,
+     "b": 1905,
+     "l": 60,
+     "r": 693,
+     "h": 348,
+     "w": 633
+    },
+    "hero": {
+     "t": 141,
+     "b": 1966,
+     "l": 0,
+     "r": 753,
+     "h": 1825,
+     "w": 753
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "844x390@3",
+   "geom": {
+    "vw": 844,
+    "vh": 390,
+    "docScreens": 66.24,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 75,
+     "l": 0,
+     "r": 844,
+     "h": 75,
+     "w": 844
+    },
+    "mnav": {
+     "t": 75,
+     "b": 119,
+     "l": 0,
+     "r": 844,
+     "h": 44,
+     "w": 844
+    },
+    "eyebrow": {
+     "t": 137,
+     "b": 163,
+     "l": 48,
+     "r": 422,
+     "h": 26,
+     "w": 374
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 171,
+     "b": 289,
+     "l": 48,
+     "r": 417,
+     "h": 118,
+     "w": 369
+    },
+    "titleFont": "42.9px",
+    "lede": {
+     "t": 173,
+     "b": 274,
+     "l": 445,
+     "r": 796,
+     "h": 101,
+     "w": 351
+    },
+    "ledeFont": "13px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 284,
+     "b": 350,
+     "l": 445,
+     "r": 796,
+     "h": 66,
+     "w": 351
+    },
+    "gate": {
+     "t": 353,
+     "b": 369
+    },
+    "quick": {
+     "t": 374,
+     "b": 418,
+     "l": 48,
+     "r": 796,
+     "h": 44,
+     "w": 748
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 432,
+     "b": 470,
+     "l": 48,
+     "r": 237,
+     "h": 38,
+     "w": 189
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 500,
+     "b": 742,
+     "l": 301,
+     "r": 543,
+     "h": 242,
+     "w": 242
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 125,
+     "b": 750,
+     "l": 16,
+     "r": 828,
+     "h": 625,
+     "w": 812
+    },
+    "status": null,
+    "features": {
+     "t": 780,
+     "b": 1083,
+     "l": 60,
+     "r": 784,
+     "h": 304,
+     "w": 724
+    },
+    "hero": {
+     "t": 119,
+     "b": 1104,
+     "l": 0,
+     "r": 844,
+     "h": 985,
+     "w": 844
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "960x540@2",
+   "geom": {
+    "vw": 960,
+    "vh": 540,
+    "docScreens": 46.69,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 75,
+     "l": 0,
+     "r": 945,
+     "h": 75,
+     "w": 945
+    },
+    "mnav": {
+     "t": 75,
+     "b": 119,
+     "l": 0,
+     "r": 945,
+     "h": 44,
+     "w": 945
+    },
+    "eyebrow": {
+     "t": 137,
+     "b": 163,
+     "l": 48,
+     "r": 422,
+     "h": 26,
+     "w": 374
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 173,
+     "b": 316,
+     "l": 48,
+     "r": 602,
+     "h": 143,
+     "w": 554
+    },
+    "titleFont": "51.84px",
+    "lede": {
+     "t": 331,
+     "b": 424,
+     "l": 48,
+     "r": 548,
+     "h": 93,
+     "w": 500
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 438,
+     "b": 504,
+     "l": 48,
+     "r": 568,
+     "h": 66,
+     "w": 520
+    },
+    "gate": {
+     "t": 512,
+     "b": 528
+    },
+    "quick": {
+     "t": 533,
+     "b": 577,
+     "l": 48,
+     "r": 602,
+     "h": 44,
+     "w": 554
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 591,
+     "b": 629,
+     "l": 48,
+     "r": 237,
+     "h": 38,
+     "w": 189
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 250,
+     "b": 517,
+     "l": 630,
+     "r": 897,
+     "h": 267,
+     "w": 267
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 125,
+     "b": 637,
+     "l": 16,
+     "r": 929,
+     "h": 512,
+     "w": 913
+    },
+    "status": null,
+    "features": {
+     "t": 667,
+     "b": 949,
+     "l": 60,
+     "r": 885,
+     "h": 281,
+     "w": 825
+    },
+    "hero": {
+     "t": 119,
+     "b": 970,
+     "l": 0,
+     "r": 945,
+     "h": 851,
+     "w": 945
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "1024x768@1",
+   "geom": {
+    "vw": 1024,
+    "vh": 768,
+    "docScreens": 32.67,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 85,
+     "l": 0,
+     "r": 1009,
+     "h": 85,
+     "w": 1009
+    },
+    "mnav": {
+     "t": 85,
+     "b": 129,
+     "l": 0,
+     "r": 1009,
+     "h": 44,
+     "w": 1009
+    },
+    "eyebrow": {
+     "t": 169,
+     "b": 199,
+     "l": 60,
+     "r": 438,
+     "h": 30,
+     "w": 378
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 211,
+     "b": 437,
+     "l": 60,
+     "r": 548,
+     "h": 226,
+     "w": 488
+    },
+    "titleFont": "81.92px",
+    "lede": {
+     "t": 447,
+     "b": 549,
+     "l": 60,
+     "r": 548,
+     "h": 102,
+     "w": 488
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 571,
+     "b": 663,
+     "l": 60,
+     "r": 548,
+     "h": 92,
+     "w": 488
+    },
+    "gate": {
+     "t": 666,
+     "b": 682
+    },
+    "quick": {
+     "t": 697,
+     "b": 741,
+     "l": 60,
+     "r": 460,
+     "h": 44,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 701,
+     "b": 739,
+     "l": 588,
+     "r": 767,
+     "h": 38,
+     "w": 179
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 236,
+     "b": 596,
+     "l": 588,
+     "r": 949,
+     "h": 361,
+     "w": 361
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 151,
+     "b": 757,
+     "l": 36,
+     "r": 973,
+     "h": 606,
+     "w": 937
+    },
+    "status": {
+     "t": 663,
+     "b": 741,
+     "l": 784,
+     "r": 949,
+     "h": 78,
+     "w": 165
+    },
+    "features": {
+     "t": 787,
+     "b": 1046,
+     "l": 60,
+     "r": 949,
+     "h": 259,
+     "w": 889
+    },
+    "hero": {
+     "t": 129,
+     "b": 1107,
+     "l": 0,
+     "r": 1009,
+     "h": 978,
+     "w": 1009
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 44,
+     "bridgeTop": 54,
+     "bridgeBottom": 116,
+     "sectionTop": 116,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "1100x800@1",
+   "geom": {
+    "vw": 1100,
+    "vh": 800,
+    "docScreens": 26.85,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1085,
+     "h": 97,
+     "w": 1085
+    },
+    "mnav": null,
+    "eyebrow": {
+     "t": 166,
+     "b": 196,
+     "l": 60,
+     "r": 438,
+     "h": 30,
+     "w": 378
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 208,
+     "b": 451,
+     "l": 60,
+     "r": 592,
+     "h": 243,
+     "w": 532
+    },
+    "titleFont": "88px",
+    "lede": {
+     "t": 461,
+     "b": 563,
+     "l": 60,
+     "r": 560,
+     "h": 102,
+     "w": 500
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 585,
+     "b": 677,
+     "l": 60,
+     "r": 580,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 680,
+     "b": 696
+    },
+    "quick": {
+     "t": 722,
+     "b": 766,
+     "l": 60,
+     "r": 460,
+     "h": 44,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 726,
+     "b": 764,
+     "l": 632,
+     "r": 811,
+     "h": 38,
+     "w": 179
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 220,
+     "b": 613,
+     "l": 632,
+     "r": 1025,
+     "h": 393,
+     "w": 393
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 127,
+     "b": 782,
+     "l": 36,
+     "r": 1049,
+     "h": 655,
+     "w": 1013
+    },
+    "status": {
+     "t": 688,
+     "b": 766,
+     "l": 828,
+     "r": 1025,
+     "h": 78,
+     "w": 197
+    },
+    "features": {
+     "t": 812,
+     "b": 1104,
+     "l": 60,
+     "r": 1025,
+     "h": 292,
+     "w": 965
+    },
+    "hero": {
+     "t": 97,
+     "b": 1165,
+     "l": 0,
+     "r": 1085,
+     "h": 1068,
+     "w": 1085
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 159,
+     "sectionTop": 159,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 159,
+     "sectionTop": 159,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 159,
+     "sectionTop": 159,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 159,
+     "sectionTop": 159,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 159,
+     "sectionTop": 159,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "1280x800@1",
+   "geom": {
+    "vw": 1280,
+    "vh": 800,
+    "docScreens": 25.8,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1265,
+     "h": 97,
+     "w": 1265
+    },
+    "mnav": null,
+    "eyebrow": {
+     "t": 165,
+     "b": 195,
+     "l": 60,
+     "r": 438,
+     "h": 30,
+     "w": 378
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 207,
+     "b": 461,
+     "l": 60,
+     "r": 695,
+     "h": 254,
+     "w": 635
+    },
+    "titleFont": "92px",
+    "lede": {
+     "t": 471,
+     "b": 573,
+     "l": 60,
+     "r": 560,
+     "h": 102,
+     "w": 500
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 595,
+     "b": 687,
+     "l": 60,
+     "r": 580,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 690,
+     "b": 706
+    },
+    "quick": {
+     "t": 722,
+     "b": 766,
+     "l": 60,
+     "r": 460,
+     "h": 44,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 728,
+     "b": 766,
+     "l": 482,
+     "r": 670,
+     "h": 38,
+     "w": 189
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 187,
+     "b": 656,
+     "l": 735,
+     "r": 1205,
+     "h": 470,
+     "w": 470
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 127,
+     "b": 782,
+     "l": 36,
+     "r": 1229,
+     "h": 655,
+     "w": 1193
+    },
+    "status": {
+     "t": 702,
+     "b": 766,
+     "l": 928,
+     "r": 1205,
+     "h": 64,
+     "w": 277
+    },
+    "features": {
+     "t": 812,
+     "b": 1040,
+     "l": 60,
+     "r": 1205,
+     "h": 228,
+     "w": 1145
+    },
+    "hero": {
+     "t": 97,
+     "b": 1101,
+     "l": 0,
+     "r": 1265,
+     "h": 1004,
+     "w": 1265
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "1440x900@1",
+   "geom": {
+    "vw": 1440,
+    "vh": 900,
+    "docScreens": 23.2,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1425,
+     "h": 97,
+     "w": 1425
+    },
+    "mnav": null,
+    "eyebrow": {
+     "t": 177,
+     "b": 207,
+     "l": 60,
+     "r": 438,
+     "h": 30,
+     "w": 378
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 225,
+     "b": 543,
+     "l": 60,
+     "r": 698,
+     "h": 318,
+     "w": 638
+    },
+    "titleFont": "115.2px",
+    "lede": {
+     "t": 557,
+     "b": 659,
+     "l": 60,
+     "r": 560,
+     "h": 102,
+     "w": 500
+    },
+    "ledeFont": "15px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 689,
+     "b": 781,
+     "l": 60,
+     "r": 580,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 784,
+     "b": 800
+    },
+    "quick": {
+     "t": 807,
+     "b": 851,
+     "l": 60,
+     "r": 460,
+     "h": 44,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 813,
+     "b": 851,
+     "l": 482,
+     "r": 670,
+     "h": 38,
+     "w": 189
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 198,
+     "b": 756,
+     "l": 782,
+     "r": 1340,
+     "h": 558,
+     "w": 558
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 127,
+     "b": 882,
+     "l": 36,
+     "r": 1389,
+     "h": 755,
+     "w": 1353
+    },
+    "status": {
+     "t": 787,
+     "b": 851,
+     "l": 1088,
+     "r": 1365,
+     "h": 64,
+     "w": 277
+    },
+    "features": {
+     "t": 912,
+     "b": 1095,
+     "l": 60,
+     "r": 1365,
+     "h": 183,
+     "w": 1305
+    },
+    "hero": {
+     "t": 97,
+     "b": 1156,
+     "l": 0,
+     "r": 1425,
+     "h": 1059,
+     "w": 1425
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "vp": "1920x1080@1",
+   "geom": {
+    "vw": 1920,
+    "vh": 1080,
+    "docScreens": 19.58,
+    "hOverflow": false,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1905,
+     "h": 97,
+     "w": 1905
+    },
+    "mnav": null,
+    "eyebrow": {
+     "t": 259,
+     "b": 289,
+     "l": 173,
+     "r": 551,
+     "h": 30,
+     "w": 378
+    },
+    "eyebrowLines": 1,
+    "eyebrowFont": "12px",
+    "title": {
+     "t": 307,
+     "b": 671,
+     "l": 173,
+     "r": 941,
+     "h": 364,
+     "w": 768
+    },
+    "titleFont": "132px",
+    "lede": {
+     "t": 685,
+     "b": 794,
+     "l": 173,
+     "r": 713,
+     "h": 109,
+     "w": 540
+    },
+    "ledeFont": "16px",
+    "ledeFamily": "\"JetBrains Mono\"",
+    "enter": {
+     "t": 824,
+     "b": 916,
+     "l": 173,
+     "r": 693,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 919,
+     "b": 935
+    },
+    "quick": {
+     "t": 982,
+     "b": 1026,
+     "l": 173,
+     "r": 572,
+     "h": 44,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 988,
+     "b": 1026,
+     "l": 594,
+     "r": 783,
+     "h": 38,
+     "w": 189
+    },
+    "bylineLines": 2,
+    "radar": {
+     "t": 218,
+     "b": 918,
+     "l": 1017,
+     "r": 1717,
+     "h": 700,
+     "w": 700
+    },
+    "radarOverTitlePx": 0,
+    "radarOpacity": "1",
+    "frame": {
+     "t": 127,
+     "b": 1062,
+     "l": 36,
+     "r": 1869,
+     "h": 935,
+     "w": 1833
+    },
+    "status": {
+     "t": 962,
+     "b": 1026,
+     "l": 1456,
+     "r": 1733,
+     "h": 64,
+     "w": 277
+    },
+    "features": {
+     "t": 1092,
+     "b": 1253,
+     "l": 173,
+     "r": 1733,
+     "h": 161,
+     "w": 1560
+    },
+    "hero": {
+     "t": 97,
+     "b": 1314,
+     "l": 0,
+     "r": 1905,
+     "h": 1217,
+     "w": 1905
+    },
+    "labelInDom": false,
+    "labelVisible": false
+   },
+   "errors": [],
+   "label": {
+    "inDom": false,
+    "visibleIn": 0,
+    "overTextOrCtrl": 0
+   },
+   "bridges": [
+    {
+     "id": "#creator",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#creator",
+      "#creator"
+     ]
+    },
+    {
+     "id": "#system",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#world-guide",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#world-guide",
+      "#world-guide"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chromeBottom": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "fullyVisible": true,
+     "ariaCurrent": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -8,7 +8,7 @@ AXS_HEADER_META:
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
   scope: endeavor-vik.github.io / current 0524 and future AAA waves
   lang: ru
-  last_updated: 2026-10-18
+  last_updated: 2026-10-19
   editable_by_agents: true
   change_policy: "Snapshot fields are never asserted current without Git recheck; update only in authorized task branch after every review"
   links:
@@ -18,6 +18,48 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
+
+## CURRENT STATE — 2026-10-19 / W3.A IMPLEMENTED, READY FOR PRINCIPAL REVIEW
+
+**Supersedes the "Next 3 safe actions" of the override below.** Refresh every SHA at takeover.
+
+- **Branch:** `w3/a-poster-frame` from `main` @ `c430017b` (isolated worktree). Old `claude/wizardly-goldberg-h6xqon` (pre-W2 main) untouched, not reset.
+- **QA SHA (site code):** `e9ac3eba56037b19f4db8dba468059a435843bb2`. Later branch commits are docs-only. PR into `main`: [#7](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/7) (Draft). **Not merged, not deployed.**
+- **Implemented (CREATOR 2026-10-19):** F-01D poster frame B (desktop), F-01M radar stage (phones), F-02 floating label removed everywhere, F-03 two-line byline, F-04 lede stays JetBrains Mono, F-05 type floor (W3.A zone + shared label components), F-06 bridge questions fully visible after anchor jumps, N-2 ticker clone `aria-hidden`. Report: `waves/W3A_REPORT.md`; evidence: `evidence/w3a/`; captures: `captures/w3a/`; ledger: `PRESERVATION_REPORT.md` §10.
+- **QA (agent-run, Chromium 141, same Pages-like server for BEFORE/AFTER):**
+  - CTA + gate note in the first screen on 11/11 viewports (was 7/11); poster frame closes inside the first screen at 1024/1100/1280/1440/1920.
+  - Bridges 55/55 visible (was 0/55).
+  - Regression 89/89 (BEFORE 65/65); smoke ×2 PASS; axe 0 violations.
+  - Preservation identical: 17 text hashes, 6 Canon IDs, fonts, tokens, images.
+  - Lighthouse: see report §3.6.
+- **NOT RUN:** Firefox, WebKit/Safari, real devices/GPU, screen reader, field CWV, live-site check (no merge).
+- **Open / next:**
+  1. Principal independent code review + visual review on the exact PR HEAD.
+  2. CREATOR visual acceptance.
+  3. Gate-record (report §8) then merge into `main`.
+  4. Verify the Pages build and the live site.
+  - Separately: loader 390 collisions (N-1) → W3.D; section spacing (N-3) and mobile page length → W3.B–D; motion budget → W4; `gate.json` expires 2026-10-31.
+
+### RESUME PACKET — 2026-10-19 W3.A
+
+```text
+AXIOM SHOWCASE / RESUME PACKET
+AUTHORITY: Principal directive 0524.W3.A (CREATOR 2026-10-19), waves/W3A_CREATOR_APPROVED_SPEC.md
+PHASE / TASK: W3.A implemented on w3/a-poster-frame; READY FOR PRINCIPAL REVIEW
+REPOS + BRANCHES + LAST VERIFIED HEADS: landing main c430017b | w3/a-poster-frame QA SHA e9ac3eb (+ docs-only commits) | PR #7 (Draft)
+CLEAN/DIRTY: worktree clean after push; no foreign changes
+LAST ACCEPTED BASELINE: main c430017b (W0–W2.R + W3.0 docs, Pages SUCCESS per Principal)
+DONE: F-01D, F-01M, F-02, F-03, F-04, F-05, F-06, N-2; R29 rewritten; R-W3A-01..08
+PENDING: Principal code + visual review, CREATOR acceptance, gate-record, merge, Pages/live check
+NOT RUN: Firefox, WebKit/Safari, real devices/GPU, screen reader, field CWV
+CREATOR FROZEN CHOICES: RED PROTOCOL; TYPE A; WORK B; six Canon IDs; V10; poster frame B; label removed; Mono lede
+CURRENT EVIDENCE + COMMANDS: docs/showcase-v031/evidence/w3a/ (tools + qa JSON); python3 tests/smoke_showcase.py;
+  python3 tests/smoke_showcase_v23.py; NODE_PATH=<playwright> node tests/browser/showcase_regression.cjs [--url ...]
+EXPLICIT FORBIDDENS: no merge without gate-record for the exact HEAD, no self-approval, no Canon/root gitlink, no version bump
+NEXT 1-3 SAFE ACTIONS: (1) Principal review of PR HEAD; (2) fix review findings on the branch; (3) merge only after gate-record
+STOP CONDITIONS: PR HEAD changed unexpectedly; regression red; LH mobile < 90 or CLS > 0.02 unexplained
+FIRST ACTION: reread AGENTS.md + this handoff + W3A_REPORT.md; verify git/PR/CI before editing
+```
 
 ## CURRENT OVERRIDE — 2026-10-19 / MAIN IS CANONICAL LANDING BASE
 

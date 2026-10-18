@@ -1,0 +1,50 @@
+/* ===== W3.A PROTOTYPE · VARIANT A — FIT IN PLACE =====
+   Same composition, same order, same elements. Only the vertical rhythm follows the window height,
+   the byline joins the quick-nav row where the column has room, phone details are tidied,
+   the floating section label is retired (the sticky nav already marks the active chapter). */
+
+/* A1 · height-aware rhythm (desktop/tablet). Eyebrow keeps >= 30 px clearance under the frame line */
+@media (min-width:641px) and (min-height:621px) and (max-height:960px){
+  .hero{padding-top:46px}
+  .hero-grid{padding-top:30px}
+}
+@media (min-width:641px) and (min-height:621px) and (max-height:820px){
+  .hero{padding-top:30px}
+  .hero-grid{padding-top:26px}
+  h1.title{margin:16px 0 14px;font-size:clamp(56px,min(8vw,10.5vh),116px)}
+  .lede{margin-bottom:24px}
+  .show-hero-extra{margin-top:20px}
+}
+/* swipe-nav widths: the brand row is a little lower on short windows */
+@media (min-width:641px) and (max-width:1080px) and (min-height:621px) and (max-height:820px){
+  .nav{padding-top:12px;padding-bottom:12px}
+}
+
+/* A2 · two tiers under the CTA instead of three: byline sits beside the quick links (>= 1200 px column room) */
+@media (min-width:1200px){
+  .hero-grid>div:first-child{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:22px;align-items:center}
+  .hero-grid>div:first-child>*{grid-column:1/-1}
+  .hero-grid>div:first-child>.eyebrow{justify-self:start}
+  .hero-grid>div:first-child>.show-hero-extra{grid-column:1}
+  .hero-grid>div:first-child>.show-hero-byline{grid-column:2;align-self:end;margin:0 0 2px;max-width:calc(21 * .74em);line-height:1.5}
+}
+
+/* A3 · phones: eyebrow on one line, quick links as one 3-cell row (no orphan), same 12 px type */
+@media (max-width:640px){
+  .hero .eyebrow{letter-spacing:.16em}
+  .show-hero-extra{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .show-hero-extra a{justify-content:center;text-align:center;padding:6px 8px;min-height:48px;line-height:1.35}
+}
+
+/* A4 · floating section label retired at every width (the sticky menu / swipe nav carries aria-current) */
+.v22-current-label{display:none!important}
+
+/* A5 · 200 % zoom / 960×540: the text column takes more width so the lede is one line shorter and the gate note reaches the fold */
+@media (min-width:901px) and (max-height:620px){
+  .hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr)}
+  h1.title{font-size:clamp(38px,9.6vh,88px)}
+}
+
+/* TYPE-ROLE SAMPLE (B-HERO-04, CREATOR decision): HERO lede in Golos Text, as prose in ABOUT */
+.hero .lede{font-family:'Golos Text',system-ui,sans-serif;font-size:17px;line-height:1.62;letter-spacing:0}
+@media (max-width:640px){.hero .lede{font-size:16px;line-height:1.55}}
