@@ -24,7 +24,7 @@ AXS_HEADER_META:
 **Supersedes the "Next 3 safe actions" of the override below.** Refresh every SHA at takeover.
 
 - **Branch:** `w3/a-poster-frame` from `main` @ `c430017b` (isolated worktree). Old `claude/wizardly-goldberg-h6xqon` (pre-W2 main) untouched, not reset.
-- **QA SHA (site code):** `e9ac3eba56037b19f4db8dba468059a435843bb2`. Later branch commits are docs-only. PR into `main`: W3A_PR_PENDING. **Not merged, not deployed.**
+- **QA SHA (site code):** `e9ac3eba56037b19f4db8dba468059a435843bb2`. Later branch commits are docs-only. PR into `main`: [#7](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/7) (Draft). **Not merged, not deployed.**
 - **Implemented (CREATOR 2026-10-19):** F-01D poster frame B (desktop), F-01M radar stage (phones), F-02 floating label removed everywhere, F-03 two-line byline, F-04 lede stays JetBrains Mono, F-05 type floor (W3.A zone + shared label components), F-06 bridge questions fully visible after anchor jumps, N-2 ticker clone `aria-hidden`. Report: `waves/W3A_REPORT.md`; evidence: `evidence/w3a/`; captures: `captures/w3a/`; ledger: `PRESERVATION_REPORT.md` §10.
 - **QA (agent-run, Chromium 141, same Pages-like server for BEFORE/AFTER):**
   - CTA + gate note in the first screen on 11/11 viewports (was 7/11); poster frame closes inside the first screen at 1024/1100/1280/1440/1920.
@@ -46,7 +46,7 @@ AXS_HEADER_META:
 AXIOM SHOWCASE / RESUME PACKET
 AUTHORITY: Principal directive 0524.W3.A (CREATOR 2026-10-19), waves/W3A_CREATOR_APPROVED_SPEC.md
 PHASE / TASK: W3.A implemented on w3/a-poster-frame; READY FOR PRINCIPAL REVIEW
-REPOS + BRANCHES + LAST VERIFIED HEADS: landing main c430017b | w3/a-poster-frame QA SHA e9ac3eb (+ docs-only commits) | PR W3A_PR_PENDING
+REPOS + BRANCHES + LAST VERIFIED HEADS: landing main c430017b | w3/a-poster-frame QA SHA e9ac3eb (+ docs-only commits) | PR #7 (Draft)
 CLEAN/DIRTY: worktree clean after push; no foreign changes
 LAST ACCEPTED BASELINE: main c430017b (W0–W2.R + W3.0 docs, Pages SUCCESS per Principal)
 DONE: F-01D, F-01M, F-02, F-03, F-04, F-05, F-06, N-2; R29 rewritten; R-W3A-01..08

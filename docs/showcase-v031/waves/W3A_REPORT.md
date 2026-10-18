@@ -33,7 +33,7 @@ AXS_HEADER_META:
 | --- | --- |
 | Полномочия | Директива Principal 0524.W3.A (CREATOR, 2026-10-19), `W3A_CREATOR_APPROVED_SPEC.md` (F-01D B, F-01M B, F-02 A, F-03 A, F-04 A, F-05 B, F-06 A, F-07 = новая ветка от main) |
 | База | `main` @ `c430017b3e4e3469b8d456ddf7a47e9a90acd049`. Код сайта побайтно равен `7b25ded0` (W2.R): вне `docs/` различий нет |
-| Ветка | `w3/a-poster-frame`, изолированный worktree. Старая `claude/wizardly-goldberg-h6xqon` не трогалась |
+| Ветка / PR | `w3/a-poster-frame`, изолированный worktree; [PR #7](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/7) в `main` (Draft). Старая `claude/wizardly-goldberg-h6xqon` не трогалась |
 | QA SHA (код сайта) | `e9ac3eba56037b19f4db8dba468059a435843bb2` — все замеры §3 сделаны на неизменяемом снимке `git archive` этого коммита. Последующие коммиты меняют только `docs/` (проверка в §7). Первый раунд QA шёл на `5452b03`; по его результатам LH добавлен `e9ac3eb` (§3.6) |
 | Сервер | Как GitHub Pages: gzip текстовых типов, `max-age=600`, 404-фолбэк (`evidence/w3a/tools/serve-pages.cjs`); BEFORE = снимок `c430017b`, AFTER = снимок `e9ac3eb` (первый раунд — `5452b03`) |
 | Среда | Chromium 141.0.7390.37 (Playwright 1.56.1), Lighthouse 12.8.2, axe-core 4.12.1 (те же версии LH/axe, что в W3.0), 4 vCPU без GPU |
