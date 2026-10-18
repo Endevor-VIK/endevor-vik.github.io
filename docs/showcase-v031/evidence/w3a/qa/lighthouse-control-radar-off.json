@@ -1,0 +1,50 @@
+[
+ {
+  "build": "after-5452b03",
+  "run": 1,
+  "perf": 95,
+  "tbt_ms": 226,
+  "lcp_s": 1.66,
+  "mainthread_ms": 5515
+ },
+ {
+  "build": "after-5452b03",
+  "run": 2,
+  "perf": 94,
+  "tbt_ms": 92,
+  "lcp_s": 2.57,
+  "mainthread_ms": 4481
+ },
+ {
+  "build": "after-5452b03",
+  "run": 3,
+  "perf": 96,
+  "tbt_ms": 48,
+  "lcp_s": 2.26,
+  "mainthread_ms": 4980
+ },
+ {
+  "build": "control: 5452b03 + phone radar animations off",
+  "run": 1,
+  "perf": 99,
+  "tbt_ms": 56,
+  "lcp_s": 1.66,
+  "mainthread_ms": 3562
+ },
+ {
+  "build": "control: 5452b03 + phone radar animations off",
+  "run": 2,
+  "perf": 100,
+  "tbt_ms": 47,
+  "lcp_s": 1.51,
+  "mainthread_ms": 3730
+ },
+ {
+  "build": "control: 5452b03 + phone radar animations off",
+  "run": 3,
+  "perf": 95,
+  "tbt_ms": 114,
+  "lcp_s": 2.26,
+  "mainthread_ms": 5511
+ }
+]

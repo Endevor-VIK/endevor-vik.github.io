@@ -1,0 +1,90 @@
+{
+ "360": {
+  "meaningfulSmall": 1,
+  "decorSmall": 2,
+  "proseSmall": 8,
+  "wideTracking": 1,
+  "rows": {
+   "TRACK>.2em 13px ls0.22 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "PROSE<14 12px ls0.12 h2.<feature": {
+    "n": 4,
+    "ex": "SECURE ACCESS"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   },
+   "PROSE<14 12px ls0.00 strong.<P": {
+    "n": 4,
+    "ex": "01 / Архитектура"
+   }
+  }
+ },
+ "390": {
+  "meaningfulSmall": 1,
+  "decorSmall": 2,
+  "proseSmall": 8,
+  "wideTracking": 1,
+  "rows": {
+   "TRACK>.2em 13px ls0.22 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "PROSE<14 12px ls0.12 h2.<feature": {
+    "n": 4,
+    "ex": "SECURE ACCESS"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   },
+   "PROSE<14 12px ls0.00 strong.<P": {
+    "n": 4,
+    "ex": "01 / Архитектура"
+   }
+  }
+ },
+ "1024": {
+  "meaningfulSmall": 2,
+  "decorSmall": 6,
+  "proseSmall": 0,
+  "wideTracking": 1,
+  "rows": {
+   "LABEL<12 10px ls0.22 small.<brand": {
+    "n": 1,
+    "ex": "// SHOWCASE v0.3.0.0"
+   },
+   "TRACK>.2em 17px ls0.36 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   }
+  }
+ },
+ "1440": {
+  "meaningfulSmall": 2,
+  "decorSmall": 6,
+  "proseSmall": 0,
+  "wideTracking": 1,
+  "rows": {
+   "LABEL<12 10px ls0.22 small.<brand": {
+    "n": 1,
+    "ex": "// SHOWCASE v0.3.0.0"
+   },
+   "TRACK>.2em 17px ls0.36 span.label<enter": {
+    "n": 1,
+    "ex": "ENTER AXIOM"
+   },
+   "LABEL<12 11px ls0.08 figcaption.<v22-about-art": {
+    "n": 1,
+    "ex": "AXIOM / CONNECTED ARCHITECTURE"
+   }
+  }
+ }
+}

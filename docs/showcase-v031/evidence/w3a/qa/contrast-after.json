@@ -1,0 +1,98 @@
+{
+ "360": {
+  ".hero .eyebrow": {
+   "textLum": 0.225,
+   "worstContrastP95": 5.23,
+   "bgP95Lum": 0.0027,
+   "bgMeanLum": 0.0022
+  },
+  ".hero h1.title .w:not(.dim):not(.red)": {
+   "textLum": 0.881,
+   "worstContrastP95": 14.99,
+   "bgP95Lum": 0.0121,
+   "bgMeanLum": 0.0061
+  },
+  ".hero h1.title .w.dim": {
+   "textLum": 0.326,
+   "worstContrastP95": 7.01,
+   "bgP95Lum": 0.0037,
+   "bgMeanLum": 0.0026
+  },
+  ".hero h1.title .w.red": {
+   "textLum": 0.225,
+   "worstContrastP95": 5.27,
+   "bgP95Lum": 0.0022,
+   "bgMeanLum": 0.0022
+  },
+  ".hero .lede": {
+   "textLum": 0.588,
+   "worstContrastP95": 12.23,
+   "bgP95Lum": 0.0022,
+   "bgMeanLum": 0.0022
+  }
+ },
+ "390": {
+  ".hero .eyebrow": {
+   "textLum": 0.225,
+   "worstContrastP95": 5.23,
+   "bgP95Lum": 0.0027,
+   "bgMeanLum": 0.0022
+  },
+  ".hero h1.title .w:not(.dim):not(.red)": {
+   "textLum": 0.881,
+   "worstContrastP95": 15.84,
+   "bgP95Lum": 0.0088,
+   "bgMeanLum": 0.0058
+  },
+  ".hero h1.title .w.dim": {
+   "textLum": 0.326,
+   "worstContrastP95": 7.01,
+   "bgP95Lum": 0.0037,
+   "bgMeanLum": 0.0025
+  },
+  ".hero h1.title .w.red": {
+   "textLum": 0.225,
+   "worstContrastP95": 5.27,
+   "bgP95Lum": 0.0023,
+   "bgMeanLum": 0.0022
+  },
+  ".hero .lede": {
+   "textLum": 0.588,
+   "worstContrastP95": 12.23,
+   "bgP95Lum": 0.0022,
+   "bgMeanLum": 0.0022
+  }
+ },
+ "430": {
+  ".hero .eyebrow": {
+   "textLum": 0.225,
+   "worstContrastP95": 5.24,
+   "bgP95Lum": 0.0026,
+   "bgMeanLum": 0.0022
+  },
+  ".hero h1.title .w:not(.dim):not(.red)": {
+   "textLum": 0.881,
+   "worstContrastP95": 16.58,
+   "bgP95Lum": 0.0062,
+   "bgMeanLum": 0.0054
+  },
+  ".hero h1.title .w.dim": {
+   "textLum": 0.326,
+   "worstContrastP95": 7.01,
+   "bgP95Lum": 0.0037,
+   "bgMeanLum": 0.0025
+  },
+  ".hero h1.title .w.red": {
+   "textLum": 0.225,
+   "worstContrastP95": 5.27,
+   "bgP95Lum": 0.0023,
+   "bgMeanLum": 0.0022
+  },
+  ".hero .lede": {
+   "textLum": 0.588,
+   "worstContrastP95": 12.23,
+   "bgP95Lum": 0.0022,
+   "bgMeanLum": 0.0022
+  }
+ }
+}

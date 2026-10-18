@@ -1,0 +1,893 @@
+{
+ "base": "http://127.0.0.1:8601/",
+ "generatedAt": "2026-10-18T21:43:13.740Z",
+ "passed": 65,
+ "failed": 0,
+ "skipped": 0,
+ "results": [
+  {
+   "id": "R01-no-h-overflow-360x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 360,
+    "cw": 360
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-390x844",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 390,
+    "cw": 390
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-430x932",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 430,
+    "cw": 430
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-768x1024",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 768,
+    "cw": 768
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1024x768",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1009,
+    "cw": 1024
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1100x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1085,
+    "cw": 1100
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1280x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1265,
+    "cw": 1280
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1440x900",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1425,
+    "cw": 1440
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1920x1080",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1905,
+    "cw": 1920
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-844x390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 829,
+    "cw": 844
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-720x450@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 705,
+    "cw": 720
+   }
+  },
+  {
+   "id": "R02-work-intro-360",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R02-work-intro-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R02-work-intro-430",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R03-one-archive-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "tabs": 8,
+    "panels": 8,
+    "shown": 1,
+    "linked": true,
+    "legacyGrid": 0,
+    "facts": [
+     "Назначение",
+     "На экране",
+     "Решение",
+     "Связь с AXIOM"
+    ],
+    "panelCols": 1
+   }
+  },
+  {
+   "id": "R03-one-archive-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "tabs": 8,
+    "panels": 8,
+    "shown": 1,
+    "linked": true,
+    "legacyGrid": 0,
+    "facts": [
+     "Назначение",
+     "На экране",
+     "Решение",
+     "Связь с AXIOM"
+    ],
+    "panelCols": 2
+   }
+  },
+  {
+   "id": "R04-archive-sharp-after-select",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "04-chronicle-1919w.webp",
+    "filePx": 1919,
+    "needPx": 1582,
+    "ratio": 1.21,
+    "srcset": [
+     960,
+     1440,
+     1919
+    ]
+   }
+  },
+  {
+   "id": "R05-viewer-focus-return",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "active": "ax-panel-04",
+    "y": 4709,
+    "shown": 3,
+    "y0": 4709
+   }
+  },
+  {
+   "id": "R07-pointer-visible-in-modal",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cssCursor": "zoom-in",
+    "customCursorShown": false
+   }
+  },
+  {
+   "id": "R19-viewer-zoom-paging-keys",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "zoomed": true,
+    "src": "05-axchat-full.webp",
+    "pans": true,
+    "pressed": "true",
+    "fit": true,
+    "last": "08 / 08",
+    "wrapped": "01 / 08",
+    "cyrillicZ": true
+   }
+  },
+  {
+   "id": "R38-viewer-1to1-left-edge",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "zoomed": true,
+    "left": 0,
+    "top": 0,
+    "w": 1919,
+    "scrollW": 1919
+   }
+  },
+  {
+   "id": "R39-map-viewer-1to1",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "f": {
+     "open": true,
+     "focus": "show-lightbox-close"
+    },
+    "z": {
+     "src": "world-spine-map-3840w.webp",
+     "w": 3840,
+     "left": 0,
+     "scrollW": 3840
+    },
+    "pan": 80,
+    "back": {
+     "open": false,
+     "focus": "v23-open-map"
+    }
+   }
+  },
+  {
+   "id": "R40-map-viewer-low-memory",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "src": "world-spine-map-2880w.webp",
+    "w": 960,
+    "left": 0,
+    "scrollW": 960,
+    "loaded3840": false
+   }
+  },
+  {
+   "id": "R41-gate-note-manual-flag",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "404": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 20936,
+     "enterBottoms": [
+      840,
+      20689
+     ],
+     "nextTop": 868,
+     "probed": false,
+     "ok": true
+    },
+    "layoutUnchanged": true,
+    "live": {
+     "shown": [
+      true,
+      true
+     ],
+     "text": "Вход временно закрыт · статус на 17.10",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 20936,
+     "enterBottoms": [
+      840,
+      20688
+     ],
+     "nextTop": 868,
+     "probed": false,
+     "ok": true
+    },
+    "expired": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 20936,
+     "enterBottoms": [
+      841,
+      20689
+     ],
+     "nextTop": 868,
+     "probed": false,
+     "ok": true
+    },
+    "available": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 20936,
+     "enterBottoms": [
+      839,
+      20690
+     ],
+     "nextTop": 868,
+     "probed": false,
+     "ok": true
+    },
+    "network-error": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 20936,
+     "enterBottoms": [
+      840,
+      20688
+     ],
+     "nextTop": 868,
+     "probed": false,
+     "ok": true
+    },
+    "timeout": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 20936,
+     "enterBottoms": [
+      839,
+      20687
+     ],
+     "nextTop": 868,
+     "probed": false,
+     "ok": true
+    }
+   }
+  },
+  {
+   "id": "R42-world-canon-ids-sync",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cards": [
+     [
+      "02.01",
+      "02.01",
+      "GLUHAYA"
+     ],
+     [
+      "02.02",
+      "02.02",
+      "NEXUS"
+     ],
+     [
+      "02.03",
+      "02.03",
+      "FACELESS BASE"
+     ],
+     [
+      "02.04",
+      "02.04",
+      "ECHELON"
+     ],
+     [
+      "02.05",
+      "02.05",
+      "OMEGA-0"
+     ],
+     [
+      "02.06",
+      "02.06",
+      "AI ZONE"
+     ]
+    ],
+    "bad": []
+   }
+  },
+  {
+   "id": "R44-char-stats-no-clip",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    {
+     "w": 360,
+     "over": 0
+    },
+    {
+     "w": 430,
+     "over": 0
+    },
+    {
+     "w": 768,
+     "over": 0
+    },
+    {
+     "w": 1024,
+     "over": 0
+    },
+    {
+     "w": 1100,
+     "over": 0
+    },
+    {
+     "w": 1280,
+     "over": 0
+    },
+    {
+     "w": 1920,
+     "over": 0
+    }
+   ]
+  },
+  {
+   "id": "R16-archive-keyboard",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "s1": {
+     "selected": 1,
+     "visible": [
+      1
+     ],
+     "tabStops": 1,
+     "focused": 1,
+     "count": "02 / 08"
+    },
+    "s2": 7,
+    "s3": 0,
+    "s4": 0
+   }
+  },
+  {
+   "id": "R17-archive-prev-next",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "afterPrev": 7,
+    "afterNext2": 1,
+    "liveText": "02 / 08 — CONTROL STATUS / WATCH_DOG"
+   }
+  },
+  {
+   "id": "R18-archive-swipe",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "afterSwipeLeft": 2,
+    "clickAfterSwipeOpenedViewer": false
+   }
+  },
+  {
+   "id": "R06-map-dialog-lazy",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "requestedBeforeOpen": 0,
+    "naturalAfterOpen": 1411
+   }
+  },
+  {
+   "id": "R09-open-map-styled",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cls": "v23-open-map",
+    "bg": "rgb(255, 32, 52)",
+    "font": "\"JetBrains Mono\""
+   }
+  },
+  {
+   "id": "R10-vision-meta-no-collision",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R11-enter-axiom-label-in-name",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    "ENTER AXIOM — перейти на axiomgates.com",
+    "ENTER AXIOM — перейти на axiomgates.com"
+   ]
+  },
+  {
+   "id": "R15-shot-label-in-name",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    "Открыть экран: AXIOM PANEL — ACCESS GATE",
+    "Открыть экран: CONTROL STATUS / WATCH_DOG"
+   ]
+  },
+  {
+   "id": "R14-anchor-offset",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sectionTop": 97,
+    "headerBottom": 97
+   }
+  },
+  {
+   "id": "R29-numbering-and-label",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "nums": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "hiddenOnHero": true,
+    "belowHero": {
+     "hidden": false,
+     "text": "01 / AXIOM"
+    }
+   }
+  },
+  {
+   "id": "R08-reduced-motion-smil-paused",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "svgsWithSmil": 3,
+    "paused": 3
+   }
+  },
+  {
+   "id": "R12-404-return-link",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "href": "http://127.0.0.1:8601/",
+    "expected": "http://127.0.0.1:8601/"
+   }
+  },
+  {
+   "id": "R13-no-console-errors",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R21-loader-first-visit",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shownMs": 1573,
+    "firstStop": "axiom-boot-skip",
+    "stored": true,
+    "inlineLock": "/"
+   }
+  },
+  {
+   "id": "R22-loader-24h-1h",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "lastShownHoursAgo": 1,
+    "shown": false
+   }
+  },
+  {
+   "id": "R22-loader-24h-25h",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "lastShownHoursAgo": 25,
+    "shown": true
+   }
+  },
+  {
+   "id": "R23-loader-storage-setItem-throws",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "lock": "/",
+    "errors": []
+   }
+  },
+  {
+   "id": "R23-loader-storage-getter-throws",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "lock": "/",
+    "errors": []
+   }
+  },
+  {
+   "id": "R24-loader-escape",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "skipToGoneMs": 288,
+    "inlineLock": "/"
+   }
+  },
+  {
+   "id": "R25-loader-reduced-motion",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false
+   }
+  },
+  {
+   "id": "R26-no-js-fallback",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "overlay": false,
+    "panelsShown": 8,
+    "rail": "none",
+    "h1": true
+   }
+  },
+  {
+   "id": "R27-contact-channels",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    {
+     "href": "https://t.me/Project_AXIOM",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    },
+    {
+     "href": "https://github.com/Endevor-VIK",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    },
+    {
+     "href": "https://axiomgates.com/",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    }
+   ]
+  },
+  {
+   "id": "R28-desktop-menu-contact",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "contact": true,
+    "visible": true,
+    "clearOfStatus": true
+   }
+  },
+  {
+   "id": "R33-fonts-self-hosted",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "google": 0,
+    "oswald": true,
+    "mono": true,
+    "golos": true,
+    "title": "Oswald",
+    "unboundedFace": false
+   }
+  },
+  {
+   "id": "R30-old-variant-url-work=a_type=b",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R30-old-variant-url-work=b_type=a",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R30-old-variant-url-type=b",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R28-mobile-strip-follows",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "current": "location",
+    "inView": true,
+    "contact": true
+   }
+  },
+  {
+   "id": "R31-red-fill-text-contrast",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "checked": 12,
+    "bad": []
+   }
+  },
+  {
+   "id": "R32-no-pink-computed",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R43-vision-b04-phone-crop",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "ratio": 0.92,
+    "pos": "57% 30%",
+    "file": "B04_distant_orbit-1983w.webp",
+    "filePx": 1983,
+    "needPx": 2161
+   }
+  },
+  {
+   "id": "R34-archive-sharp-390@3",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "02-panel-login-1440w.webp",
+    "filePx": 1440,
+    "needPx": 1009,
+    "ratio": 1.43
+   }
+  },
+  {
+   "id": "R34-art-sharp-1440@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "A02": {
+     "file": "A02_network_city_panorama-1916w.webp",
+     "filePx": 1916,
+     "needPx": 1902,
+     "ratio": 1.01
+    },
+    "B04": {
+     "file": "B04_distant_orbit-1983w.webp",
+     "filePx": 1983,
+     "needPx": 2702,
+     "ratio": 0.73
+    }
+   }
+  },
+  {
+   "id": "R43-system-a07-sharp-1440@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "A07_engineering_console-hq.webp",
+    "filePx": 1448,
+    "needPx": 1116,
+    "ratio": 1.3
+   }
+  },
+  {
+   "id": "R37-emblem-no-pink-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "perceptiblePinkPct": 0.107
+   }
+  },
+  {
+   "id": "R37-emblem-no-pink-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "perceptiblePinkPct": 0.067
+   }
+  },
+  {
+   "id": "R35-landscape-cta-first-screen",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "bottom": 362,
+    "vh": 390
+   }
+  },
+  {
+   "id": "R36-kicker-no-overlap-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "overlap": false
+   }
+  },
+  {
+   "id": "R36-kicker-no-overlap-1600",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": true,
+    "overlap": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "mobile": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "aria-prohibited-attr",
+    "nodes": 1
+   },
+   {
+    "id": "color-contrast",
+    "nodes": 550
+   }
+  ],
+  "passes": 47
+ },
+ "desktop": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "aria-prohibited-attr",
+    "nodes": 1
+   },
+   {
+    "id": "color-contrast",
+    "nodes": 71
+   }
+  ],
+  "passes": 46
+ }
+}

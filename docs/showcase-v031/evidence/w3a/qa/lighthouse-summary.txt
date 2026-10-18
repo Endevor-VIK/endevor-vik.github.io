@@ -1,0 +1,21 @@
+Lighthouse 12.8.2 · Chromium 141 · interleaved BEFORE/AFTER on one Pages-like server · medians (min–max)
+
+ROUND 1 — AFTER = 5452b03
+before  mobile  n=5 perf 95 (94–96) a11y 100 bp 100 seo 100 | FCP 2.26s LCP 2.28s (1.66–2.53) TBT 0ms CLS 0.008 KB 227
+        LCP element: <span class="w">
+before  desktop n=5 perf 99 (99–100) a11y 100 bp 100 seo 100 | FCP 0.54s LCP 0.64s (0.32–0.75) TBT 0ms CLS 0.005 KB 323
+        LCP element: <text x="160" y="-200" fill="#ff2034" opacity=".5" font-family="JetBra
+after   mobile  n=5 perf 92 (82–93) a11y 100 bp 100 seo 100 | FCP 1.68s LCP 1.68s (1.36–2.85) TBT 265ms CLS 0.016 KB 326
+        LCP element: <div class="show-hero-byline">
+after   desktop n=5 perf 99 (97–99) a11y 100 bp 100 seo 100 | FCP 0.50s LCP 0.63s (0.39–0.72) TBT 10ms CLS 0.003 KB 326
+        LCP element: <text x="118" y="230" fill="#ff2034" opacity=".55" font-family="JetBra
+
+ROUND 2 — AFTER = e9ac3eb (QA SHA)
+before  mobile  n=5 perf 98 (91–99) a11y 100 bp 100 seo 100 | FCP 1.59s LCP 1.66s (1.36–2.26) TBT 41ms CLS 0.015 KB 227
+        LCP element: <text x="160" y="-200" fill="#ff2034" opacity=".5" font-family="JetBra
+before  desktop n=5 perf 100 (99–100) a11y 100 bp 100 seo 100 | FCP 0.49s LCP 0.55s (0.33–0.58) TBT 0ms CLS 0.004 KB 323
+        LCP element: <text x="160" y="-200" fill="#ff2034" opacity=".5" font-family="JetBra
+after   mobile  n=5 perf 98 (96–99) a11y 100 bp 100 seo 100 | FCP 1.66s LCP 1.66s (1.36–1.97) TBT 87ms CLS 0.016 KB 326
+        LCP element: <div class="show-hero-byline">
+after   desktop n=5 perf 99 (99–100) a11y 100 bp 100 seo 100 | FCP 0.39s LCP 0.39s (0.32–0.68) TBT 14ms CLS 0.002 KB 326
+        LCP element: <text x="118" y="230" fill="#ff2034" opacity=".55" font-family="JetBra

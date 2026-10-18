@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# usage: lh-run.sh <url> <tag> <outDir> <runs>   — Lighthouse 12.8.2, Chromium 141 (Playwright build), mobile default + desktop preset
+set -u
+URL=$1; TAG=$2; OUT=$3; N=${4:-3}
+Q=${LH_TOOLS:?set LH_TOOLS to a folder with node_modules/lighthouse (12.8.2)}
+export CHROME_PATH=${CHROME_PATH:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}
+mkdir -p "$OUT"
+for i in $(seq 1 "$N"); do
+  for ff in mobile desktop; do
+    extra=""; [ "$ff" = desktop ] && extra="--preset=desktop"
+    "$Q/node_modules/.bin/lighthouse" "$URL" $extra --quiet --output=json --output-path="$OUT/lh-$TAG-$ff-$i.json" \
+      --chrome-flags="--headless=new --no-sandbox --disable-gpu" --only-categories=performance,accessibility,best-practices,seo >/dev/null 2>&1 || echo "LH FAIL $ff $i"
+  done
+done
