@@ -655,11 +655,15 @@ async function run(engineName, base) {
     for (const [name, opts] of [['default', {}], ['lite', { init: () => { Object.defineProperty(navigator, 'deviceMemory', { get: () => 2 }); } }], ['reduced', { reduced: true }]]) {
       const { ctx, p } = await page(browser, engineName, { w: 390, h: 844, mobile: true, ...opts });
       await p.goto(base, { waitUntil: 'load' }); await p.waitForTimeout(600);
+      // phones hold the loops while the page loads; by default they start after load + 2.5 s (.ax-radar-live)
+      const heldAtLoad = await p.evaluate(() => [...document.querySelectorAll('.hero .radar *')].flatMap((e) => e.getAnimations()).filter((a) => a.playState === 'running').length);
+      if (name === 'default') await p.waitForFunction(() => document.documentElement.classList.contains('ax-radar-live'), null, { timeout: 8000 }).catch(() => {});
+      await p.waitForTimeout(300);
       const st = await p.evaluate(() => { const svg = document.querySelector('.hero .radar svg'); const running = [...document.querySelectorAll('.hero .radar, .hero .radar *')].flatMap((e) => e.getAnimations()).filter((a) => a.playState === 'running' && a.effect && a.effect.getComputedTiming().iterations === Infinity).length;
         return { lite: document.documentElement.classList.contains('ax-lite'), smil: svg.querySelectorAll('animate,animateTransform,animateMotion').length, runningInfiniteCss: running }; });
       // control: by default the radar does loop (so the two still cases are not vacuous)
-      const ok = name === 'default' ? st.runningInfiniteCss > 0 && !st.lite : st.smil === 0 && st.runningInfiniteCss === 0 && (name !== 'lite' || st.lite);
-      record(`R-W3A-08-radar-${name === 'default' ? 'loops-default' : 'still-' + name}`, engineName, ok, st);
+      const ok = name === 'default' ? heldAtLoad === 0 && st.runningInfiniteCss > 0 && !st.lite : st.smil === 0 && st.runningInfiniteCss === 0 && (name !== 'lite' || st.lite);
+      record(`R-W3A-08-radar-${name === 'default' ? 'held-then-loops' : 'still-' + name}`, engineName, ok, { heldAtLoad, ...st });
       await ctx.close();
     }
   } finally {

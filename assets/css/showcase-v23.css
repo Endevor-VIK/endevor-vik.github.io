@@ -309,6 +309,9 @@ p.ax-gate-note[hidden]{display:none}
     opacity:.46;pointer-events:none;filter:none;
     -webkit-mask-image:radial-gradient(closest-side,#000 60%,transparent);mask-image:radial-gradient(closest-side,#000 60%,transparent)}
   .hero .eyebrow{background:rgba(7,7,9,.78)}
+  /* the radar's loops wait for .ax-radar-live (index.js: page loaded + 2.5 s); without JS the emblem stays still */
+  .hero .radar *{animation-play-state:paused}
+  .ax-radar-live .hero .radar *{animation-play-state:running}
 }
 /* Save-Data / low-memory / two-core devices (.ax-lite from index.js): the radar stage is shown still */
 .ax-lite .hero .radar,.ax-lite .hero .radar *{animation:none!important}
