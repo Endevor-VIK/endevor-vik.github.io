@@ -19,6 +19,23 @@ AXS_HEADER_META:
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
 
+## CURRENT OVERRIDE — 2026-10-19 / MAIN IS CANONICAL LANDING BASE
+
+This is the newest explicit CREATOR decision, superseding earlier `main HOLD` for **already approved** W0–W2.R. **Confirm actual GitHub HEAD at session start.**
+
+- On 2026-10-19, CREATOR requested consolidation of the latest completed Landing build into `main` and establishing `main` as common baseline. Landing PR #4 `feature/showcase-v0-3-1-polish` @ `7b25ded0` was merged by Principal as `c6dfe2fcfd837ea9cabdfe0c7054414ba202008c`.
+- GitHub Pages `pages build and deployment` automatically starts on main changes; at the time of first review it was **in progress**. A merged Git SHA is not proof the live site has deployed; check its final result and verify URL.
+- W3.0 audit branch `docs/0524-w3-0-visual-baseline-audit` @ `30b5be78` contains only two MD and 17 WEBP files on top of feature; historic agent audit base was the same site code. This document is added as reviewed CREATOR decisions to be integrated separately into main.
+- **CREATOR W3.A approved choices:** desktop B POSTER FRAME; mobile B with existing SVG radar integrated behind headline; remove floating label on every viewport; 2-line CREATOR byline; HERO lede JetBrains Mono; meaningful labels>=12px, main prose mostly>=14px; bridge questions fully visible. See `waves/W3A_CREATOR_APPROVED_SPEC.md`.
+- F-07 was unanswered by CREATOR; Principal resolves engineering topology by **new `w3/a-poster-frame` branch from fresh `main`**, rather than resetting an old Claude branch rooted in pre-W2 main. This does not waive technical QA or code review.
+- **W3.A not yet implemented**: shown BASE/A/B images are agent CSS-override prototypes, not product code. Agents must implement approved B, verify same before/after environments, and submit reviewable PR to main. Do not claim preview B is already on live site.
+- Remaining unrelated blockers: gate.json manual status should be revalidated before any public release; loader 390 overlay, duplicate ticker screen-reader content, long offscreen animations W4; Firefox/WebKit/real GPU/field CWV not automatically certified by a historical report.
+- Page/Canon/root scopes remain distinct. No Canon storyline expansion, root gitlink, unrelated service changes or automatic branch merges; future main integration requires exact SHA/QA review and appropriate CREATOR authority.
+
+**Next 3 safe actions:** (1) verify Pages deployment after `c6dfe2fc` and any audit docs merge; (2) preserve W3.A B override and screenshots to durable branch/repo with provenance; (3) start isolated `w3/a-poster-frame` implementation from refreshed main, not old `claude/wizardly-goldberg-h6xqon`; return for Principal visual + engineering review.
+
+
+
 > **Snapshot date:** 2026-10-18 ≈22:00 +03:00, after 0524.CLOSURE-R1 §I–§III (CODEX). This is **not live Git or CI state**. A new agent/reviewer must refresh refs and check current repo status before doing any work.
 
 ## CURRENT STATE — 2026-10-18 / AFTER 0524.CLOSURE-R1 §I–§III (CODEX, implementation lead)
