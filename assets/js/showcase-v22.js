@@ -25,6 +25,15 @@
   for(const a of navLinks){if(a.getAttribute('href')==='#'+current.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');}
   if(current.id!==lastId){lastId=current.id;if(current.id==='top'&&strip)strip.scrollLeft=0;else reveal(strip&&strip.querySelector('a[href="#'+current.id+'"]'));}
  }
+ /* 0524 W3.A (F-06): an anchor jump lands on the bridge question above a section, not under the sticky chrome —
+    each bridged section's scroll-margin spans from the bridge's top edge to the section (html scroll-padding-top
+    already covers the chrome); the CSS fallback in showcase-v22.css approximates it without JS */
+ const bridged=[...document.querySelectorAll('.v22-bridge')].map(b=>({b,s:b.nextElementSibling})).filter(x=>x.s&&x.s.tagName==='SECTION'&&x.s.id);
+ /* offsetTop, not the bounding box: unrevealed sections still carry the scroll-reveal translateY */
+ function fitBridges(){for(const x of bridged)x.s.style.scrollMarginTop=(x.s.offsetTop-x.b.offsetTop)+'px';}
+ fitBridges();
+ if('ResizeObserver' in window){const ro=new ResizeObserver(fitBridges);for(const x of bridged)ro.observe(x.b);}
+ addEventListener('resize',fitBridges,{passive:true});
  function request(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
  addEventListener('scroll',request,{passive:true});
  addEventListener('resize',request,{passive:true});

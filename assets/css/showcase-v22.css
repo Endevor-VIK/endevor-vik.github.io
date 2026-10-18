@@ -4,6 +4,9 @@
 .menu a[aria-current="location"],.show-mobile-nav a[aria-current="location"]{color:#ff2034;border-bottom:2px solid #ff2034}
 @media(max-width:1080px){.top{position:relative!important;top:auto!important}.show-mobile-nav{position:sticky;top:0;z-index:60}html{scroll-padding-top:54px}}
 @media(max-width:640px){.show-mobile-nav{top:0}html{scroll-padding-top:49px}}
+/* 0524 W3.A (F-06): anchor jumps show the whole bridge question above a section (JS sets the exact height; this is the no-JS approximation) */
+.v22-bridge+section{scroll-margin-top:64px}
+@media(max-width:760px){.v22-bridge+section{scroll-margin-top:84px}}
 .v22-hero-context{color:#b4b8c3!important;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:.1em;max-width:570px;margin:0 0 6px}
 .v22-bridge{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:22px max(24px,calc((100vw - 1370px)/2));background:linear-gradient(90deg,#170c0d,#09090b 40%,#170c0d);border-top:1px solid var(--ax-crimson-line);border-bottom:1px solid var(--ax-crimson-line);color:#b4b8c3;font:700 11px/1.6 'JetBrains Mono',monospace;letter-spacing:.13em}
 .v22-bridge b{color:#b4b8c3;font-size:11px;letter-spacing:.1em;text-align:center}
