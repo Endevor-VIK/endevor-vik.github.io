@@ -18,6 +18,16 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
+## LATEST PRINCIPAL NOTE — W3.A ACCEPTED / WORLD IMMERSION PRIORITY (2026-10-19)
+
+- CREATOR reviewed W3.A poster-frame build at `e147f040` and **accepted visual design**. Principal performed risk-based Git patch review: no blocking issue found, later commits after QA SHA `e9ac3eb` were docs only; browser/axe/Lighthouse values are **agent-reported** and Firefox/WebKit/real-device testing remains NOT RUN. Landing PR #7 merged into main at **`9dda09557e6fdbbd8665413b909b68d1d3c429d9`**. GitHub Pages build initially in progress; verify current publish result separately.
+- CREATOR identified a major next-stage design issue: `WORLD` has strong dossier/HUD visuals but **fails as an emotional entrance into the fictional universe for first-time readers**. SYSTEM→WORLD and factions→VISION bridges feel abrupt. The site must distinguish true engineering proof from fictional world immersion, not just display records and terminal cards.
+- **W3.C research brief** is `docs/showcase-v031/waves/W3C_WORLD_IMMERSION_DESIGN_BRIEF.md`. New project goal: cinematic threshold, establishing context/stakes, human lens, preserve technical dossiers as secondary layer, satisfying return to real VISION. No new lore facts or spoilers. Two options A/B require CREATOR visual choice before implementation.
+- `#world-guide` is the navigation/entry anchor; `#world` is the existing six-node map, and `#manifesto/#modules/#chars/#factions/#vision` must remain reachable. Keep original order and IDs.
+- Existing W3.B WORK/SYSTEM roadmap remains, but WORLD immersion discovery is now a high-priority creative track. Avoid assigning parallel agents overlapping `index.html` / bridge CSS.
+- This note resides in a **docs-only Draft PR** separate from main. A future agent on main must explicitly consult it until reviewed and integrated; do not imply its presence in main before merge.
+
+
 
 ## CURRENT STATE — 2026-10-19 / W3.A IMPLEMENTED, READY FOR PRINCIPAL REVIEW
 
