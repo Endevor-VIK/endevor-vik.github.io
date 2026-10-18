@@ -316,13 +316,15 @@ async function run(engineName, base) {
       await p.locator('.menu a[href="#work"]').click(); await p.waitForTimeout(1500);
       const a = await p.evaluate(() => { const hdr = document.querySelector('header.top').getBoundingClientRect().bottom; const t = document.getElementById('work').getBoundingClientRect().top; return { sectionTop: Math.round(t), headerBottom: Math.round(hdr) }; });
       record('R14-anchor-offset', engineName, a.sectionTop >= a.headerBottom - 2 && a.sectionTop - a.headerBottom <= 40, a);
-      // R29 one numbering 01–07 (A-GLB-07); floating label hidden over the hero, shown with the section name below it
+      // R29 one numbering 01–07 (A-GLB-07). W3.A F-02: the floating section label is removed (not merely hidden) at every
+      // width; the sticky menu marks the section in view with aria-current — the old class/text check would pass on a hidden node
       await p.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' })); await p.waitForTimeout(300);
-      const top = await p.evaluate(() => document.getElementById('v22-current-section').classList.contains('is-hidden'));
       await toEl(p, '#about', 0); await p.waitForTimeout(400);
-      const lab = await p.evaluate(() => { const el = document.getElementById('v22-current-section'); return { hidden: el.classList.contains('is-hidden'), text: el.textContent }; });
+      const lab = await p.evaluate(() => ({ labelNodes: document.querySelectorAll('#v22-current-section,.v22-current-label').length, current: [...document.querySelectorAll('.menu [aria-current="location"]')].map((a) => a.getAttribute('href')) }));
+      await toEl(p, '#vision', 0); await p.waitForTimeout(400);
+      const lab2 = await p.evaluate(() => [...document.querySelectorAll('.menu [aria-current="location"]')].map((a) => a.getAttribute('href')));
       const nums = await p.evaluate(() => [...document.querySelectorAll('.show-index > span:first-child')].map((s) => parseInt(s.textContent, 10)));
-      record('R29-numbering-and-label', engineName, nums.join() === '1,2,3,4,5,6,7' && top && !lab.hidden && lab.text === '01 / AXIOM', { nums, hiddenOnHero: top, belowHero: lab });
+      record('R29-numbering-and-label', engineName, nums.join() === '1,2,3,4,5,6,7' && lab.labelNodes === 0 && lab.current.join() === '#about' && lab2.join() === '#vision', { nums, labelNodes: lab.labelNodes, ariaCurrentAbout: lab.current, ariaCurrentVision: lab2 });
       await ctx.close();
     }
     // R08 reduced motion stops SVG SMIL animations (A-A11Y-01)

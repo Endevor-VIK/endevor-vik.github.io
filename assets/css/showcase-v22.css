@@ -1,10 +1,9 @@
 
 /* V2.2 — evidence + narrative reconstruction. Original decoration and sections are untouched. */
 .v22-scroll-progress{position:fixed;inset:0 0 auto;z-index:98;height:2px;pointer-events:none;background:transparent}.v22-scroll-progress span{display:block;height:100%;width:0;background:#ff283f}
-.v22-current-label{transition:opacity .2s;position:fixed;bottom:15px;right:15px;background:#0b0b11e6;border:1px solid var(--ax-crimson-line);color:#ff2034;font:700 11px 'JetBrains Mono',monospace;letter-spacing:.12em;z-index:48;padding:8px 12px;pointer-events:none}
 .menu a[aria-current="location"],.show-mobile-nav a[aria-current="location"]{color:#ff2034;border-bottom:2px solid #ff2034}
 @media(max-width:1080px){.top{position:relative!important;top:auto!important}.show-mobile-nav{position:sticky;top:0;z-index:60}html{scroll-padding-top:54px}}
-@media(max-width:640px){.v22-current-label{right:8px;bottom:8px;padding:7px 8px;font-size:11px}.show-mobile-nav{top:0}html{scroll-padding-top:49px}}
+@media(max-width:640px){.show-mobile-nav{top:0}html{scroll-padding-top:49px}}
 .v22-hero-context{color:#b4b8c3!important;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:.1em;max-width:570px;margin:0 0 6px}
 .v22-bridge{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:22px max(24px,calc((100vw - 1370px)/2));background:linear-gradient(90deg,#170c0d,#09090b 40%,#170c0d);border-top:1px solid var(--ax-crimson-line);border-bottom:1px solid var(--ax-crimson-line);color:#b4b8c3;font:700 11px/1.6 'JetBrains Mono',monospace;letter-spacing:.13em}
 .v22-bridge b{color:#b4b8c3;font-size:11px;letter-spacing:.1em;text-align:center}
@@ -52,9 +51,6 @@
 @media(max-width:1100px){.v22-pillars,.v22-lore-glossary{grid-template-columns:repeat(2,1fr)}.v22-flow{display:grid;grid-template-columns:1fr 1fr}.v22-flow>i{display:none}.v22-feature-art{min-height:360px}.v22-bridge{padding:18px 20px}}
 @media(max-width:760px){.v22-about-head,.v22-world-hero{grid-template-columns:1fr;gap:22px}.v22-world-hero figure img{height:270px}.v22-proof-pair{grid-template-columns:1fr}.v22-feature-art{min-height:0;aspect-ratio:16/9}.v22-about-art img{aspect-ratio:16/9}.v22-discipline>div{grid-template-columns:1fr}.v22-bridge{display:block;text-align:center}.v22-bridge span{display:none}.v22-bridge b{font-size:14px}.v22-phases{grid-template-columns:1fr}}
 @media(max-width:540px){.v22-pillars,.v22-lore-glossary,.v22-flow{grid-template-columns:1fr}.v22-phase-note{display:block}.v22-phase-note span{display:block;margin-top:9px}}
-@media(prefers-reduced-motion:reduce){.v22-current-label{display:none}}
 /* 0524: WORK feature stacks on tablets/phones (desktop two-column rule must not leak below 900px) */
 @media(max-width:900px){.v22-public-feature{grid-template-columns:1fr}.v22-feature-art{min-height:0;aspect-ratio:16/9;margin:0}}
 
-/* 0524 W1: no floating section label over the hero */
-.v22-current-label.is-hidden{opacity:0;visibility:hidden}

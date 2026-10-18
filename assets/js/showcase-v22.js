@@ -1,12 +1,9 @@
 /* V2.2: inexpensive, accessible section progress and navigation state */
 (()=> {
- const items=[
-  ['top','00 / ENTRY'],['about','01 / AXIOM'],['creator','02 / CREATOR'],
-  ['work','03 / WORK'],['system','04 / SYSTEM'],['world-guide','05 / WORLD'],
-  ['vision','06 / VISION'],['collaboration','07 / CONTACT']
- ];
- const nodes=items.map(([id,name])=>({id,name,el:document.getElementById(id)})).filter(x=>x.el);
- const indicator=document.getElementById('v22-current-section');
+ /* 0524 W3.A (F-02): the floating section label is retired at every width — the sticky menu and the swipe nav
+    mark the current section (aria-current) and every section kicker carries its number */
+ const ids=['top','about','creator','work','system','world-guide','vision','collaboration'];
+ const nodes=ids.map(id=>({id,el:document.getElementById(id)})).filter(x=>x.el);
  const line=document.getElementById('v22-scroll-fill');
  const navLinks=[...document.querySelectorAll('.menu a[href^="#"],.show-mobile-nav a[href^="#"]')];
  const strip=document.querySelector('.show-mobile-nav');
@@ -25,8 +22,6 @@
   if(line) line.style.width=(Math.min(100,Math.max(0,scrollY/max*100))).toFixed(1)+'%';
   let current=nodes[0];
   for(const n of nodes){if(n.el.getBoundingClientRect().top<=innerHeight*.35)current=n;}
-  /* 0524 W1: no floating section label over the hero, where it only repeated the page title */
-  if(indicator){indicator.textContent=current.name;indicator.classList.toggle('is-hidden',current.id==='top');}
   for(const a of navLinks){if(a.getAttribute('href')==='#'+current.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');}
   if(current.id!==lastId){lastId=current.id;if(current.id==='top'&&strip)strip.scrollLeft=0;else reveal(strip&&strip.querySelector('a[href="#'+current.id+'"]'));}
  }
