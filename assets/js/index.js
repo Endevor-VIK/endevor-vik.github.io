@@ -72,12 +72,19 @@ document.addEventListener('click', (e) => {
 }, true);
 if(location.hash) revealTarget(decodeURIComponent(location.hash.slice(1)));
 
+// 0524 W3.A (F-01M): on phones the HERO radar is part of the first screen; Save-Data, low-memory and two-core
+// devices get it still (CSS loops off in showcase-v23.css via .ax-lite, SMIL paused below). Content is unchanged.
+const conn = navigator.connection;
+const lite = !!(conn && conn.saveData) || (navigator.deviceMemory && navigator.deviceMemory <= 2) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2);
+if(lite) document.documentElement.classList.add('ax-lite');
+const heroRadar = document.querySelector('.hero .radar svg');
+
 // prefers-reduced-motion must also stop SVG SMIL loops (<animate>), which the CSS media query cannot reach
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const syncSmil = () => {
   document.querySelectorAll('svg').forEach((svg) => {
     if(svg.ownerSVGElement || !svg.querySelector('animate, animateTransform, animateMotion')) return;
-    if(reducedMotion.matches){svg.pauseAnimations();svg.setCurrentTime(0)}
+    if(reducedMotion.matches || (lite && svg === heroRadar)){svg.pauseAnimations();svg.setCurrentTime(0)}
     else svg.unpauseAnimations();
   });
 };

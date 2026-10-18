@@ -310,6 +310,8 @@ p.ax-gate-note[hidden]{display:none}
     -webkit-mask-image:radial-gradient(closest-side,#000 60%,transparent);mask-image:radial-gradient(closest-side,#000 60%,transparent)}
   .hero .eyebrow{background:rgba(7,7,9,.78)}
 }
+/* Save-Data / low-memory / two-core devices (.ax-lite from index.js): the radar stage is shown still */
+.ax-lite .hero .radar,.ax-lite .hero .radar *{animation:none!important}
 
 /* =====================================================================================================
    0524 W3.A — TYPE FLOOR (CREATOR F-05): meaningful labels >= 12 px, phone prose >= 14 px, tracking <= .2em where
