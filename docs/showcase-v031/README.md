@@ -19,6 +19,10 @@ AXS_HEADER_META:
 
 | Документ | Что внутри |
 | --- | --- |
+| [AAA_MASTER_ROADMAP.md](./AAA_MASTER_ROADMAP.md) | **AAA Master Roadmap W3–W7:** цели для клиентов/читателей/инженеров, визуальные волны, зависимости, preservation, performance и критерии завершения |
+| [AAA_AGENT_PROTOCOL.md](./AAA_AGENT_PROTOCOL.md) | **AgentOps:** роли и владельцы путей, параллельная работа, спецификации волн, /compact, rehydration, передача ревьюеру, stop conditions |
+| [AAA_REVIEW_SCORECARD.md](./AAA_REVIEW_SCORECARD.md) | **Principal AAA scorecard:** визуальные критерии V1–V10, техгейты T01–T10, аудит трёх аудиторий, технический/художественный вердикты |
+| [AAA_CURRENT_HANDOFF.md](./AAA_CURRENT_HANDOFF.md) | **Living handoff:** наблюдавшиеся SHA/PR и HOLD, правила фиксации состояния, текст восстановления контекста, следующий безопасный шаг |
 | [W2R_REPORT.md](./W2R_REPORT.md) | **W2.R (Principal Recheck):** решения CREATOR D-01…D-19, E-01…E-04; ID Canon в WORLD; BLACK PROTOCOL и NEURA TECH × ENDEAVOR с источниками; Canon Draft PR #2; QA |
 | [W2_REPORT.md](./W2_REPORT.md) | **W2 (пакет на Principal Review):** карта V10 1:1, правки текста по Canon V3, подсказка у ENTER AXIOM, версии, измерения, NOT RUN |
 | [W2_CANON_SOURCE_MATRIX.md](./W2_CANON_SOURCE_MATRIX.md) | Каждая правка W2 — файл Canon V3, версия, статус, уровень истины, коммит |
@@ -39,3 +43,7 @@ AXS_HEADER_META:
 | [captures/w0/](./captures/w0/) | 13 отобранных снимков-доказательств (JPEG, ≈ 0,9 МБ); полный набор — в `sandbox/evidence/2026-10-16_0524_showcase-v031-w0-audit/` рабочего пространства AXS |
 
 Браузерная регрессия: [`tests/browser/showcase_regression.cjs`](../../tests/browser/showcase_regression.cjs) — 65 проверок × Chromium + Firefox (W2.R).
+
+## AAA continuity / будущие волны (документы в отдельном Draft PR)
+
+Корневой [AGENTS.md](../../AGENTS.md) служит входом для нового агента и ревьюера. При `/compact` сначала восстанавливайте контекст из `AAA_CURRENT_HANDOFF.md`, затем **обязательно** проверяйте актуальный Git SHA и рабочее дерево. Стратегия W3–W7 — план качества и протокол приёмки, но **не** разрешение автоматически менять код, сливать ветки или деплоить. Пока документация остаётся в отдельной branch-only PR, агенты должны открыть её явно: сама по себе она ещё не присутствует в исходной рабочей ветке.
