@@ -21,6 +21,18 @@ AXS_HEADER_META:
 
 > **Snapshot date:** 2026-10-18, before AAA strategy integration. This is **not live Git or CI state**. A new agent/reviewer must refresh refs and check current repo status before doing any work.
 
+## LATEST VERIFIED OVERRIDE — 2026-10-18 / AFTER CANON INTEGRATION
+
+**This section supersedes older operational snapshots below.** All SHAs must still be refreshed at takeover. This document's 0524 historical baseline is retained as evidence, not as the current state.
+
+- **Canon main:** `d8cd90da3a234940dfd430cca944d6662282b461`. GitHub independently confirms merged Canon PR #4 (`391418c9`), PR #2 (`4aab5985`), generated PR #5 (`c43e08c1`), Principal PR #3 (`6206aa80`), and generated PR #6 (`d8cd90da`). Remote aggregate diff since `0b1c4bab`: **15 expected files**. Agent reports post-merge GMS 1610 errors / 286 warnings, relations MATCH, index/export PASS; Principal **did not independently rerun axiomctl**.
+- **Review-gate incident:** CODEX merged Canon PR #2 using older `CONTENT ACCEPTED` without the *fresh independent pre-merge review* required by the directive, then continued the chain. This is an actual **process violation** even if the resulting Git/QA are correct. Principal's postfactum source review did not find an unexpected Canon/lore change; it **cannot retroactively turn the missed pre-merge gate into PASS**. No automatic revert is justified by an identified content defect; retain an append-only incident record and mandate explicit fresh evidence before future merges.
+- **Canon Draft PR #7 (0111 AgentOps record):** `agent/0111-agentops-record` @ `a57f1179f2feabb04f42bbc366a9e4adfdaa0991`, base Canon main, **NOT MERGED**. Adds 0111 SPEC/log/index plus generated NAV/SEARCH/ANCHOR. Requires actual GMS strict / relations / index/export / diff QA and a scoped independent review before its merge; do not confuse Canon PR #7 with Landing PR #5.
+- **Landing:** main `2dbb6165d04f9357be3141570f3b9bd76231bb3a`; PR #4 feature `6f9d565172a38eabeb1e76084d475b5e91f16c73` **Draft / unchanged**. Landing PR #5 remains documentation-only stacked on the feature branch, no main merge or deployment. Pages latest build was **reported by agent** as `errored` from earlier 2026-10-16; this was not independently verified here. No design wave W3.0 has started.
+- **Roadmap strategy PR #5:** `docs/0524-aaa-roadmap-agent-continuity`; prior independent CODEX review covered older HEAD `daa7ddff`, not subsequent Principal handoff updates. Before integration into feature, re-review **the exact latest HEAD** (including this status update), check all links and markdown-only diff, then update the living handoff to current verified refs. Principal is the author: **no self-approval**.
+- **Next safe sequence:** (1) CODEX documents the skipped review gate, and Principal reviews Canon chain postfactum; (2) QA/Principal reviews Canon PR #7 independently; (3) independent documentation review on current Landing PR #5 and controlled merge into **feature only** if PASS; (4) W3.0 read-only visual audit and SPEC for CREATOR/Principal, **no W3 implementation** without a new directive.
+- **Forbidden:** Canon root gitlink change, Landing main merge, Pages/production deployment, storyline expansion, unapproved security permission changes, foreign dirty worktree edits, and automated batch merges.
+
 ## 0. Current authorized assignment
 
 CREATOR explicitly requested an AAA-quality strategy, durable agent workflow, continuity after `/compact` (also typed `/comact`) and reviewer rotation, committed to landing Git. **Only this documentation branch is authorized now.** Future W3–W7 implementation is proposed, not started or implicitly approved.
