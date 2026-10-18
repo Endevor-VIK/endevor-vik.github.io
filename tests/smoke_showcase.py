@@ -16,7 +16,8 @@ class Scan(HTMLParser):
         a = dict(pairs)
         if a.get('id'): ids.add(a['id'])
         if tag == 'a' and 'enter' in a.get('class','').split(): ctas.append(a.get('href'))
-        if tag == 'button' and 'show-shot-trigger' in a.get('class','').split(): screenshot_buttons += 1
+        # V0.3.1 W1 (Q-01): the eight screens live in the WORK archive (one trigger per tab panel)
+        if tag == 'button' and 'ax-shot-trigger' in a.get('class','').split(): screenshot_buttons += 1
         for field in ('href', 'src', 'poster', 'data-showcase-src'):
             v = a.get(field, '')
             if v.startswith('#'): anchor_targets.append(v[1:])
@@ -44,6 +45,36 @@ if screenshot_buttons!=8: errors.append(f'Screenshot triggers: {screenshot_butto
 if 'echelon-node-v2.html' in (BASE/'assets/js/index.js').read_text('utf-8'): errors.append('Heavy iframe mount restored')
 if len(list((BASE/'assets/showcase/visual-library').glob('*.webp')))!=17: errors.append('Expected 17 concept webps')
 if 'axiom-boot-skip' not in index: errors.append('Loader skip missing')
-if 'CONCEPT ART' not in index: errors.append('Art/evidence disclaimer missing')
+# V2.3 + V0.3.1 contract: internal QA banners must not reach the public page (the V2.2 rule required them; it contradicted smoke_showcase_v23.py)
+if 'CONCEPT ART' in index or 'НЕ ДОКАЗАТЕЛЬСТВО РАБОТЫ' in index: errors.append('Internal QA banner leaked to public UI')
+# W1.R: WORK B + TYPE A are final (Q-02/Q-03) — no review switch, no Unbounded in the public UI
+if 'data-work' in index or 'data-type' in index: errors.append('Review A/B switch still present')
+if 'Unbounded' in (BASE/'assets/css/fonts.css').read_text('utf-8'): errors.append('Unbounded still declared')
+# W2 (Q-16): the manual AXIOM GATE flag is valid JSON with a known state and a parseable expiry; the CTA keeps its address
+import json, datetime
+try:
+    gate = json.loads((BASE/'assets/status/gate.json').read_text('utf-8'))
+    if gate.get('state') not in ('unavailable', 'available'): errors.append('gate.json: state must be "unavailable" or "available"')
+    datetime.datetime.fromisoformat(str(gate.get('expires', '')).replace('Z', '+00:00'))
+    datetime.date.fromisoformat(str(gate.get('checkedAt', '')))
+except (OSError, ValueError) as e: errors.append(f'gate.json invalid: {e}')
+if index.count('href="https://axiomgates.com" aria-label="ENTER AXIOM') != 2: errors.append('ENTER AXIOM CTA address changed')
+# W2 (C1–C4): Canon-confirmed names, no fictitious canon provenance, no simulated service status, real version labelled as SHOWCASE
+v23js = (BASE/'assets/js/showcase-v23.js').read_text('utf-8')
+for needle in ('FACELESS BASE', 'AI ZONE', 'LAB / UNDER GLUHAYA', 'EXCLUSION / LIMBO', '// SHOWCASE v0.3.0.0'):
+    if needle not in index: errors.append(f'W2 content missing: {needle}')
+for needle in ('~/canon/v3/', 'DOC_ID ::', 'X-CLASS', 'NIGHTMARE PROTOCOL', 'NETWORK STATUS · ONLINE', 'NODES ONLINE', 'в реальном времени', 'MASKED ANOMALY', 'AI_ZONE', 'REL</span><span class="dim">0.3.0.0'):
+    if needle in index or needle in v23js: errors.append(f'W2 content regressed: {needle}')
+if re.search(r'alt="[^"]*(остров|мост)', index): errors.append('Map alt asserts islands/bridges')
+# W2.R: CREATOR decisions D-01…D-17 and the gate flag TTL (D-15: at most 14 days from the observation)
+ids = re.findall(r'data-canon-id="([0-9.]+)"', index)
+if ids != ['02.01', '02.02', '02.03', '02.04', '02.05', '02.06']: errors.append(f'WORLD canon IDs/order wrong: {ids}')
+for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', '// signed: NEXARCH<', 'AXIS / AETERNUM', 'STORY ARCHIVE', 'PUBLISHED</span>', 'NEURO-CONTROL CONGLOMERATE', 'совместные разработки с ENDEAVOR'):
+    if needle not in index: errors.append(f'W2.R content missing: {needle}')
+for needle in ('TIER 9', 'tier 9', 'T9 ::', 'TIER<b>9', 'WITNESSES', 'NODE<b>VOIDLINK', 'ARTIFICIAL PERSONALITY', '06 CHAPTERS', 'AXIS / DEPTH', 'depth axis', 'BLACK ECHO — не источник', 'STATE<br/><b>NEUTRAL'):
+    if needle in index: errors.append(f'W2.R content regressed: {needle}')
+try:
+    if (datetime.datetime.fromisoformat(gate['expires'].replace('Z', '+00:00')).date() - datetime.date.fromisoformat(gate['checkedAt'])).days > 14: errors.append('gate.json TTL > 14 days')
+except (NameError, KeyError, ValueError) as e: errors.append(f'gate.json TTL check: {e}')
 if errors: raise SystemExit('\n'.join(errors))
-print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), gallery, anchors, CTA, image library, safe loader')
+print('PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader')

@@ -1,0 +1,65 @@
+[
+ {
+  "family": "Oswald",
+  "subset": "cyrillic",
+  "file": "oswald-cyrillic-var.woff2",
+  "bytes": 11748,
+  "sha256": "95c3d8d1db01b5ecd85b0d90aa81d39d24231f74de28c7418cfd8c08261fe929",
+  "source_url": "https://fonts.gstatic.com/s/oswald/v57/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2",
+  "unicode_range": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+ },
+ {
+  "family": "Oswald",
+  "subset": "latin",
+  "file": "oswald-latin-var.woff2",
+  "bytes": 21472,
+  "sha256": "571f3457dab507b6f2ce5394d593ca015251b69fea81ab7a546bd2368e9fc3ed",
+  "source_url": "https://fonts.gstatic.com/s/oswald/v57/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2",
+  "unicode_range": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+ },
+ {
+  "family": "JetBrains Mono",
+  "subset": "cyrillic",
+  "file": "jetbrains-mono-cyrillic-var.woff2",
+  "bytes": 8872,
+  "sha256": "e17cfd15fb96909d64095015f958207063a0c07191da3512df7d560a781aebdf",
+  "source_url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+  "unicode_range": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+ },
+ {
+  "family": "JetBrains Mono",
+  "subset": "greek",
+  "file": "jetbrains-mono-greek-var.woff2",
+  "bytes": 6836,
+  "sha256": "0a557721b1f8b36d3f3f84442689a71ca4a744300abcb46a1953f51bfc663b66",
+  "source_url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2",
+  "unicode_range": "U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF"
+ },
+ {
+  "family": "JetBrains Mono",
+  "subset": "latin",
+  "file": "jetbrains-mono-latin-var.woff2",
+  "bytes": 31432,
+  "sha256": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+  "source_url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+  "unicode_range": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+ },
+ {
+  "family": "Golos Text",
+  "subset": "cyrillic",
+  "file": "golos-text-cyrillic-var.woff2",
+  "bytes": 22032,
+  "sha256": "17d048ca05cb1218af3c0d6dcdf882989e6d1cc5dcb598ea50eaf54850ff7229",
+  "source_url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+  "unicode_range": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+ },
+ {
+  "family": "Golos Text",
+  "subset": "latin",
+  "file": "golos-text-latin-var.woff2",
+  "bytes": 37916,
+  "sha256": "9a69d0aa4734c4022224c002a3d944a702e0204972a49d892789f5668b922c2a",
+  "source_url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+  "unicode_range": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+ }
+]
