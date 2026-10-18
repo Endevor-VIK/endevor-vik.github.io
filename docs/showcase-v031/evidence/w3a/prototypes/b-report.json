@@ -1,0 +1,2298 @@
+{
+ "variant": "b",
+ "base": "http://127.0.0.1:8571/",
+ "results": [
+  {
+   "vp": "360x800@2",
+   "geom": {
+    "vh": 800,
+    "vw": 360,
+    "docScreens": 39,
+    "header": {
+     "t": 0,
+     "b": 81,
+     "l": 0,
+     "r": 360,
+     "h": 81,
+     "w": 360
+    },
+    "mnav": {
+     "t": 81,
+     "b": 126,
+     "l": 0,
+     "r": 360,
+     "h": 45,
+     "w": 360
+    },
+    "eyebrow": {
+     "t": 158,
+     "b": 186,
+     "l": 14,
+     "r": 335,
+     "h": 28,
+     "w": 321
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 200,
+     "b": 359,
+     "l": 14,
+     "r": 346,
+     "h": 159,
+     "w": 332
+    },
+    "titleFont": "57.6px",
+    "lede": {
+     "t": 374,
+     "b": 513,
+     "l": 14,
+     "r": 346,
+     "h": 140,
+     "w": 332
+    },
+    "enter": {
+     "t": 533,
+     "b": 603,
+     "l": 14,
+     "r": 346,
+     "h": 70,
+     "w": 332
+    },
+    "gate": {
+     "t": 612,
+     "b": 626
+    },
+    "quick": {
+     "t": 632,
+     "b": 680,
+     "l": 14,
+     "r": 346,
+     "h": 48,
+     "w": 332
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 694,
+     "b": 712,
+     "l": 14,
+     "r": 346,
+     "h": 18,
+     "w": 332
+    },
+    "radar": {
+     "t": 136,
+     "b": 436,
+     "l": 142,
+     "r": 442,
+     "h": 300,
+     "w": 300
+    },
+    "features": {
+     "t": 728,
+     "b": 1100,
+     "l": 14,
+     "r": 346,
+     "h": 372,
+     "w": 332
+    },
+    "hero": {
+     "t": 126,
+     "b": 1129,
+     "l": 0,
+     "r": 360,
+     "h": 1003,
+     "w": 360
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "390x844@3",
+   "geom": {
+    "vh": 844,
+    "vw": 390,
+    "docScreens": 36,
+    "header": {
+     "t": 0,
+     "b": 81,
+     "l": 0,
+     "r": 390,
+     "h": 81,
+     "w": 390
+    },
+    "mnav": {
+     "t": 81,
+     "b": 126,
+     "l": 0,
+     "r": 390,
+     "h": 45,
+     "w": 390
+    },
+    "eyebrow": {
+     "t": 158,
+     "b": 186,
+     "l": 14,
+     "r": 335,
+     "h": 28,
+     "w": 321
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 200,
+     "b": 372,
+     "l": 14,
+     "r": 376,
+     "h": 172,
+     "w": 362
+    },
+    "titleFont": "62.4px",
+    "lede": {
+     "t": 387,
+     "b": 527,
+     "l": 14,
+     "r": 376,
+     "h": 140,
+     "w": 362
+    },
+    "enter": {
+     "t": 547,
+     "b": 617,
+     "l": 14,
+     "r": 376,
+     "h": 70,
+     "w": 362
+    },
+    "gate": {
+     "t": 626,
+     "b": 640
+    },
+    "quick": {
+     "t": 646,
+     "b": 694,
+     "l": 14,
+     "r": 376,
+     "h": 48,
+     "w": 362
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 708,
+     "b": 725,
+     "l": 14,
+     "r": 376,
+     "h": 18,
+     "w": 362
+    },
+    "radar": {
+     "t": 136,
+     "b": 436,
+     "l": 172,
+     "r": 472,
+     "h": 300,
+     "w": 300
+    },
+    "features": {
+     "t": 741,
+     "b": 1094,
+     "l": 14,
+     "r": 376,
+     "h": 353,
+     "w": 362
+    },
+    "hero": {
+     "t": 126,
+     "b": 1123,
+     "l": 0,
+     "r": 390,
+     "h": 997,
+     "w": 390
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "430x932@3",
+   "geom": {
+    "vh": 932,
+    "vw": 430,
+    "docScreens": 32,
+    "header": {
+     "t": 0,
+     "b": 81,
+     "l": 0,
+     "r": 430,
+     "h": 81,
+     "w": 430
+    },
+    "mnav": {
+     "t": 81,
+     "b": 126,
+     "l": 0,
+     "r": 430,
+     "h": 45,
+     "w": 430
+    },
+    "eyebrow": {
+     "t": 158,
+     "b": 186,
+     "l": 14,
+     "r": 335,
+     "h": 28,
+     "w": 321
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 200,
+     "b": 388,
+     "l": 14,
+     "r": 416,
+     "h": 188,
+     "w": 402
+    },
+    "titleFont": "68px",
+    "lede": {
+     "t": 403,
+     "b": 519,
+     "l": 14,
+     "r": 416,
+     "h": 116,
+     "w": 402
+    },
+    "enter": {
+     "t": 539,
+     "b": 609,
+     "l": 14,
+     "r": 416,
+     "h": 70,
+     "w": 402
+    },
+    "gate": {
+     "t": 618,
+     "b": 632
+    },
+    "quick": {
+     "t": 638,
+     "b": 686,
+     "l": 14,
+     "r": 416,
+     "h": 48,
+     "w": 402
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 700,
+     "b": 717,
+     "l": 14,
+     "r": 416,
+     "h": 18,
+     "w": 402
+    },
+    "radar": {
+     "t": 136,
+     "b": 436,
+     "l": 212,
+     "r": 512,
+     "h": 300,
+     "w": 300
+    },
+    "features": {
+     "t": 733,
+     "b": 1087,
+     "l": 14,
+     "r": 416,
+     "h": 353,
+     "w": 402
+    },
+    "hero": {
+     "t": 126,
+     "b": 1116,
+     "l": 0,
+     "r": 430,
+     "h": 990,
+     "w": 430
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "768x1024@2",
+   "geom": {
+    "vh": 1024,
+    "vw": 768,
+    "docScreens": 26.7,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 753,
+     "h": 97,
+     "w": 753
+    },
+    "mnav": {
+     "t": 97,
+     "b": 141,
+     "l": 0,
+     "r": 753,
+     "h": 44,
+     "w": 753
+    },
+    "eyebrow": {
+     "t": 269,
+     "b": 297,
+     "l": 60,
+     "r": 440,
+     "h": 28,
+     "w": 380
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 319,
+     "b": 496,
+     "l": 60,
+     "r": 693,
+     "h": 177,
+     "w": 633
+    },
+    "titleFont": "64px",
+    "lede": {
+     "t": 514,
+     "b": 616,
+     "l": 60,
+     "r": 560,
+     "h": 102,
+     "w": 500
+    },
+    "enter": {
+     "t": 650,
+     "b": 742,
+     "l": 60,
+     "r": 580,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 751,
+     "b": 765
+    },
+    "quick": {
+     "t": 771,
+     "b": 815,
+     "l": 60,
+     "r": 693,
+     "h": 44,
+     "w": 633
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 829,
+     "b": 848,
+     "l": 60,
+     "r": 693,
+     "h": 19,
+     "w": 633
+    },
+    "radar": {
+     "t": 878,
+     "b": 1398,
+     "l": 117,
+     "r": 637,
+     "h": 520,
+     "w": 520
+    },
+    "features": {
+     "t": 1550,
+     "b": 1882,
+     "l": 60,
+     "r": 693,
+     "h": 332,
+     "w": 633
+    },
+    "hero": {
+     "t": 141,
+     "b": 1943,
+     "l": 0,
+     "r": 753,
+     "h": 1802,
+     "w": 753
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "844x390@3",
+   "geom": {
+    "vh": 390,
+    "vw": 844,
+    "docScreens": 65.8,
+    "header": {
+     "t": 0,
+     "b": 75,
+     "l": 0,
+     "r": 844,
+     "h": 75,
+     "w": 844
+    },
+    "mnav": {
+     "t": 75,
+     "b": 119,
+     "l": 0,
+     "r": 844,
+     "h": 44,
+     "w": 844
+    },
+    "eyebrow": {
+     "t": 137,
+     "b": 161,
+     "l": 48,
+     "r": 424,
+     "h": 24,
+     "w": 376
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 169,
+     "b": 287,
+     "l": 48,
+     "r": 417,
+     "h": 118,
+     "w": 369
+    },
+    "titleFont": "42.9px",
+    "lede": {
+     "t": 171,
+     "b": 272,
+     "l": 445,
+     "r": 796,
+     "h": 101,
+     "w": 351
+    },
+    "enter": {
+     "t": 282,
+     "b": 348,
+     "l": 445,
+     "r": 796,
+     "h": 66,
+     "w": 351
+    },
+    "gate": {
+     "t": 352,
+     "b": 366
+    },
+    "quick": {
+     "t": 372,
+     "b": 416,
+     "l": 48,
+     "r": 796,
+     "h": 44,
+     "w": 748
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 430,
+     "b": 449,
+     "l": 48,
+     "r": 796,
+     "h": 19,
+     "w": 748
+    },
+    "radar": {
+     "t": 479,
+     "b": 721,
+     "l": 301,
+     "r": 543,
+     "h": 242,
+     "w": 242
+    },
+    "features": {
+     "t": 753,
+     "b": 1043,
+     "l": 60,
+     "r": 784,
+     "h": 291,
+     "w": 724
+    },
+    "hero": {
+     "t": 119,
+     "b": 1064,
+     "l": 0,
+     "r": 844,
+     "h": 945,
+     "w": 844
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "960x540@2",
+   "geom": {
+    "vh": 540,
+    "vw": 960,
+    "docScreens": 46.4,
+    "header": {
+     "t": 0,
+     "b": 75,
+     "l": 0,
+     "r": 945,
+     "h": 75,
+     "w": 945
+    },
+    "mnav": {
+     "t": 75,
+     "b": 119,
+     "l": 0,
+     "r": 945,
+     "h": 44,
+     "w": 945
+    },
+    "eyebrow": {
+     "t": 138,
+     "b": 162,
+     "l": 48,
+     "r": 424,
+     "h": 24,
+     "w": 376
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 172,
+     "b": 315,
+     "l": 48,
+     "r": 602,
+     "h": 143,
+     "w": 554
+    },
+    "titleFont": "51.84px",
+    "lede": {
+     "t": 330,
+     "b": 423,
+     "l": 48,
+     "r": 548,
+     "h": 93,
+     "w": 500
+    },
+    "enter": {
+     "t": 437,
+     "b": 503,
+     "l": 48,
+     "r": 568,
+     "h": 66,
+     "w": 520
+    },
+    "gate": {
+     "t": 512,
+     "b": 526
+    },
+    "quick": {
+     "t": 532,
+     "b": 576,
+     "l": 48,
+     "r": 602,
+     "h": 44,
+     "w": 554
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 590,
+     "b": 609,
+     "l": 48,
+     "r": 602,
+     "h": 19,
+     "w": 554
+    },
+    "radar": {
+     "t": 240,
+     "b": 507,
+     "l": 630,
+     "r": 897,
+     "h": 267,
+     "w": 267
+    },
+    "features": {
+     "t": 641,
+     "b": 890,
+     "l": 60,
+     "r": 885,
+     "h": 249,
+     "w": 825
+    },
+    "hero": {
+     "t": 119,
+     "b": 911,
+     "l": 0,
+     "r": 945,
+     "h": 792,
+     "w": 945
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "1024x768@1",
+   "geom": {
+    "vh": 768,
+    "vw": 1024,
+    "docScreens": 32.6,
+    "header": {
+     "t": 0,
+     "b": 85,
+     "l": 0,
+     "r": 1009,
+     "h": 85,
+     "w": 1009
+    },
+    "mnav": {
+     "t": 85,
+     "b": 129,
+     "l": 0,
+     "r": 1009,
+     "h": 44,
+     "w": 1009
+    },
+    "eyebrow": {
+     "t": 186,
+     "b": 214,
+     "l": 64,
+     "r": 444,
+     "h": 28,
+     "w": 380
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 228,
+     "b": 440,
+     "l": 64,
+     "r": 512,
+     "h": 212,
+     "w": 448
+    },
+    "titleFont": "76.8px",
+    "lede": {
+     "t": 467,
+     "b": 594,
+     "l": 64,
+     "r": 512,
+     "h": 128,
+     "w": 448
+    },
+    "enter": {
+     "t": 616,
+     "b": 708,
+     "l": 64,
+     "r": 512,
+     "h": 92,
+     "w": 448
+    },
+    "gate": {
+     "t": 712,
+     "b": 726
+    },
+    "quick": {
+     "t": 728,
+     "b": 772,
+     "l": 64,
+     "r": 512,
+     "h": 44,
+     "w": 448
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 784,
+     "b": 804,
+     "l": 64,
+     "r": 512,
+     "h": 19,
+     "w": 448
+    },
+    "radar": {
+     "t": 292,
+     "b": 698,
+     "l": 540,
+     "r": 945,
+     "h": 406,
+     "w": 406
+    },
+    "features": {
+     "t": 857,
+     "b": 1106,
+     "l": 60,
+     "r": 949,
+     "h": 249,
+     "w": 889
+    },
+    "hero": {
+     "t": 129,
+     "b": 1167,
+     "l": 0,
+     "r": 1009,
+     "h": 1038,
+     "w": 1009
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "1100x800@1",
+   "geom": {
+    "vh": 800,
+    "vw": 1100,
+    "docScreens": 26.7,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1085,
+     "h": 97,
+     "w": 1085
+    },
+    "mnav": {
+     "t": 0,
+     "b": 0,
+     "l": 0,
+     "r": 0,
+     "h": 0,
+     "w": 0
+    },
+    "eyebrow": {
+     "t": 154,
+     "b": 182,
+     "l": 66,
+     "r": 446,
+     "h": 28,
+     "w": 380
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 196,
+     "b": 417,
+     "l": 66,
+     "r": 523,
+     "h": 221,
+     "w": 458
+    },
+    "titleFont": "80px",
+    "lede": {
+     "t": 444,
+     "b": 571,
+     "l": 66,
+     "r": 523,
+     "h": 128,
+     "w": 458
+    },
+    "enter": {
+     "t": 593,
+     "b": 685,
+     "l": 66,
+     "r": 523,
+     "h": 92,
+     "w": 458
+    },
+    "gate": {
+     "t": 689,
+     "b": 703
+    },
+    "quick": {
+     "t": 705,
+     "b": 749,
+     "l": 66,
+     "r": 523,
+     "h": 44,
+     "w": 458
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 761,
+     "b": 780,
+     "l": 66,
+     "r": 523,
+     "h": 19,
+     "w": 458
+    },
+    "radar": {
+     "t": 249,
+     "b": 685,
+     "l": 583,
+     "r": 1019,
+     "h": 436,
+     "w": 436
+    },
+    "features": {
+     "t": 835,
+     "b": 1091,
+     "l": 60,
+     "r": 1025,
+     "h": 257,
+     "w": 965
+    },
+    "hero": {
+     "t": 97,
+     "b": 1152,
+     "l": 0,
+     "r": 1085,
+     "h": 1055,
+     "w": 1085
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "1280x800@1",
+   "geom": {
+    "vh": 800,
+    "vw": 1280,
+    "docScreens": 25.7,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1265,
+     "h": 97,
+     "w": 1265
+    },
+    "mnav": {
+     "t": 0,
+     "b": 0,
+     "l": 0,
+     "r": 0,
+     "h": 0,
+     "w": 0
+    },
+    "eyebrow": {
+     "t": 167,
+     "b": 195,
+     "l": 70,
+     "r": 450,
+     "h": 28,
+     "w": 380
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 209,
+     "b": 430,
+     "l": 70,
+     "r": 615,
+     "h": 221,
+     "w": 545
+    },
+    "titleFont": "80px",
+    "lede": {
+     "t": 457,
+     "b": 559,
+     "l": 70,
+     "r": 570,
+     "h": 102,
+     "w": 500
+    },
+    "enter": {
+     "t": 581,
+     "b": 673,
+     "l": 70,
+     "r": 590,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 677,
+     "b": 691
+    },
+    "quick": {
+     "t": 700,
+     "b": 754,
+     "l": 70,
+     "r": 470,
+     "h": 54,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 680,
+     "b": 752,
+     "l": 492,
+     "r": 615,
+     "h": 72,
+     "w": 124
+    },
+    "radar": {
+     "t": 206,
+     "b": 702,
+     "l": 687,
+     "r": 1183,
+     "h": 496,
+     "w": 496
+    },
+    "features": {
+     "t": 808,
+     "b": 1004,
+     "l": 60,
+     "r": 1205,
+     "h": 196,
+     "w": 1145
+    },
+    "hero": {
+     "t": 97,
+     "b": 1065,
+     "l": 0,
+     "r": 1265,
+     "h": 968,
+     "w": 1265
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 0,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": false
+    },
+    {
+     "sel": "#work",
+     "visible": false
+    },
+    {
+     "sel": "#system",
+     "visible": false
+    },
+    {
+     "sel": "#world-guide",
+     "visible": false
+    },
+    {
+     "sel": "#manifesto",
+     "visible": false
+    },
+    {
+     "sel": "#modules",
+     "visible": false
+    },
+    {
+     "sel": "#world",
+     "visible": false
+    },
+    {
+     "sel": "#chars",
+     "visible": false
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": false
+    },
+    {
+     "sel": "#factions",
+     "visible": false
+    },
+    {
+     "sel": "#vision",
+     "visible": false
+    },
+    {
+     "sel": "#collaboration",
+     "visible": false
+    },
+    {
+     "sel": "section.cta",
+     "visible": false
+    },
+    {
+     "sel": "body > footer",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "vp": "1440x900@1",
+   "geom": {
+    "vh": 900,
+    "vw": 1440,
+    "docScreens": 23.1,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1425,
+     "h": 97,
+     "w": 1425
+    },
+    "mnav": {
+     "t": 0,
+     "b": 0,
+     "l": 0,
+     "r": 0,
+     "h": 0,
+     "w": 0
+    },
+    "eyebrow": {
+     "t": 178,
+     "b": 206,
+     "l": 74,
+     "r": 455,
+     "h": 28,
+     "w": 380
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 228,
+     "b": 531,
+     "l": 74,
+     "r": 697,
+     "h": 303,
+     "w": 623
+    },
+    "titleFont": "109.8px",
+    "lede": {
+     "t": 564,
+     "b": 666,
+     "l": 74,
+     "r": 574,
+     "h": 102,
+     "w": 500
+    },
+    "enter": {
+     "t": 700,
+     "b": 792,
+     "l": 74,
+     "r": 594,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 796,
+     "b": 810
+    },
+    "quick": {
+     "t": 812,
+     "b": 856,
+     "l": 74,
+     "r": 474,
+     "h": 44,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 818,
+     "b": 854,
+     "l": 496,
+     "r": 682,
+     "h": 36,
+     "w": 186
+    },
+    "radar": {
+     "t": 238,
+     "b": 796,
+     "l": 775,
+     "r": 1333,
+     "h": 558,
+     "w": 558
+    },
+    "features": {
+     "t": 913,
+     "b": 1088,
+     "l": 60,
+     "r": 1365,
+     "h": 175,
+     "w": 1305
+    },
+    "hero": {
+     "t": 97,
+     "b": 1149,
+     "l": 0,
+     "r": 1425,
+     "h": 1052,
+     "w": 1425
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 14,
+    "overContent": 1,
+    "overTextOrCtrl": 1
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": true,
+     "text": "01 / AXIOM",
+     "rect": [
+      9,
+      390,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#work",
+     "visible": true,
+     "text": "02 / CREATOR",
+     "rect": [
+      9,
+      381,
+      20,
+      139
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#system",
+     "visible": true,
+     "text": "02 / CREATOR",
+     "rect": [
+      9,
+      381,
+      20,
+      139
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#world-guide",
+     "visible": true,
+     "text": "03 / WORK",
+     "rect": [
+      9,
+      394,
+      20,
+      111
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#manifesto",
+     "visible": true,
+     "text": "04 / SYSTEM",
+     "rect": [
+      9,
+      385,
+      20,
+      130
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#modules",
+     "visible": true,
+     "text": "04 / SYSTEM",
+     "rect": [
+      9,
+      385,
+      20,
+      130
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#world",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      390,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#chars",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      390,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      390,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#factions",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      390,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#vision",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      390,
+      20,
+      120
+     ],
+     "textHits": 3,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": [
+      "chars:> initiating [03.03_AXIO",
+      "chars:> reading aeternum.core ",
+      "chars:AXIOM_∅ · NODE.0301"
+     ]
+    },
+    {
+     "sel": "#collaboration",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      390,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "section.cta",
+     "visible": true,
+     "text": "06 / VISION",
+     "rect": [
+      9,
+      385,
+      20,
+      130
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "body > footer",
+     "visible": true,
+     "text": "07 / CONTACT",
+     "rect": [
+      9,
+      381,
+      20,
+      139
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    }
+   ]
+  },
+  {
+   "vp": "1920x1080@1",
+   "geom": {
+    "vh": 1080,
+    "vw": 1920,
+    "docScreens": 19.5,
+    "header": {
+     "t": 0,
+     "b": 97,
+     "l": 0,
+     "r": 1905,
+     "h": 97,
+     "w": 1905
+    },
+    "mnav": {
+     "t": 0,
+     "b": 0,
+     "l": 0,
+     "r": 0,
+     "h": 0,
+     "w": 0
+    },
+    "eyebrow": {
+     "t": 279,
+     "b": 307,
+     "l": 314,
+     "r": 694,
+     "h": 28,
+     "w": 380
+    },
+    "eyebrowLines": null,
+    "title": {
+     "t": 329,
+     "b": 649,
+     "l": 314,
+     "r": 937,
+     "h": 320,
+     "w": 624
+    },
+    "titleFont": "116px",
+    "lede": {
+     "t": 682,
+     "b": 784,
+     "l": 314,
+     "r": 814,
+     "h": 102,
+     "w": 500
+    },
+    "enter": {
+     "t": 818,
+     "b": 910,
+     "l": 314,
+     "r": 834,
+     "h": 92,
+     "w": 520
+    },
+    "gate": {
+     "t": 914,
+     "b": 928
+    },
+    "quick": {
+     "t": 981,
+     "b": 1025,
+     "l": 314,
+     "r": 713,
+     "h": 44,
+     "w": 400
+    },
+    "quickRows": 1,
+    "byline": {
+     "t": 987,
+     "b": 1023,
+     "l": 735,
+     "r": 922,
+     "h": 36,
+     "w": 186
+    },
+    "radar": {
+     "t": 309,
+     "b": 903,
+     "l": 997,
+     "r": 1592,
+     "h": 594,
+     "w": 594
+    },
+    "features": {
+     "t": 1088,
+     "b": 1263,
+     "l": 293,
+     "r": 1613,
+     "h": 175,
+     "w": 1320
+    },
+    "hero": {
+     "t": 97,
+     "b": 1324,
+     "l": 0,
+     "r": 1905,
+     "h": 1227,
+     "w": 1905
+    },
+    "hOverflow": false
+   },
+   "errors": [],
+   "labelSummary": {
+    "visibleIn": 14,
+    "overContent": 0,
+    "overTextOrCtrl": 0
+   },
+   "folds": [
+    {
+     "sel": "#top",
+     "visible": false
+    },
+    {
+     "sel": "#about",
+     "visible": false
+    },
+    {
+     "sel": "#creator",
+     "visible": false
+    },
+    {
+     "sel": "#work-art-band",
+     "visible": true,
+     "text": "01 / AXIOM",
+     "rect": [
+      9,
+      480,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#work",
+     "visible": true,
+     "text": "02 / CREATOR",
+     "rect": [
+      9,
+      471,
+      20,
+      139
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#system",
+     "visible": true,
+     "text": "02 / CREATOR",
+     "rect": [
+      9,
+      471,
+      20,
+      139
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#world-guide",
+     "visible": true,
+     "text": "03 / WORK",
+     "rect": [
+      9,
+      484,
+      20,
+      111
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#manifesto",
+     "visible": true,
+     "text": "04 / SYSTEM",
+     "rect": [
+      9,
+      475,
+      20,
+      130
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#modules",
+     "visible": true,
+     "text": "04 / SYSTEM",
+     "rect": [
+      9,
+      475,
+      20,
+      130
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#world",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      480,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#chars",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      480,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": ".axiom-entity",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      480,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#factions",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      480,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#vision",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      480,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "#collaboration",
+     "visible": true,
+     "text": "05 / WORLD",
+     "rect": [
+      9,
+      480,
+      20,
+      120
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "section.cta",
+     "visible": true,
+     "text": "06 / VISION",
+     "rect": [
+      9,
+      475,
+      20,
+      130
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    },
+    {
+     "sel": "body > footer",
+     "visible": true,
+     "text": "07 / CONTACT",
+     "rect": [
+      9,
+      471,
+      20,
+      139
+     ],
+     "textHits": 0,
+     "ctrlHits": 0,
+     "mediaHits": 0,
+     "sample": []
+    }
+   ]
+  }
+ ]
+}
