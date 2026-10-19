@@ -33,6 +33,7 @@ AXS_HEADER_META:
 | `measure-{before,after}.json`, `measure.log` | Длина входа WORLD, видимость после перехода, резкость каждого изображения, байты, запросы при открытии | `tools/w3c_measure.cjs.txt`, `tools/summarize2.py.txt` |
 | `capture-{before,after}.json` | Отчёт кадров: 5 ширин × 7 кадров | `tools/w3c_capture.cjs.txt`, `tools/compare.py.txt` |
 | `contrast-after.json`, `contrast-summary.{json,txt}` | Контраст текста над артом (WCAG по худшей строке блока): 28 / 28 | `tools/w3c_contrast.cjs.txt`, `tools/contrast.py.txt` |
+| `widths-360-1024.txt` | Порог после перехода на 960–1920 (включая 1024, 1100, 1280, 1600) и возврат к 02.05 на 360×780@3 и 1024×768@2 | `tools/jumpcheck.cjs.txt`, `tools/look.cjs.txt` |
 | `run-log.txt` | Консоль конвейера, включая проверку возврата к 02.05 на 1440 / 1920 / 390 | `tools/look.cjs.txt` |
 | `round1-bdba5fa/` | Раунд 1 на `bdba5fa`: регрессия 115 / 116 (R-W3C-03 на 960×540@2) и контраст 4,29 на 1920. Обе находки закрыты до QA SHA (отчёт §3.7). Второй прогон регрессии раунда 1 остановлен после находок. | `tools/run-after.sh.txt` |
 
