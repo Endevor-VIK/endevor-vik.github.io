@@ -1,0 +1,9 @@
+// Every word of BEFORE's WORLD entry (+ the SYSTEM-side archive note) must still be in the AFTER document (textContent, case-insensitive)
+const { chromium } = require('playwright');
+const [before, after] = process.argv.slice(2);
+(async () => { const b = await chromium.launch(); const words = s => new Set((s.toLowerCase().match(/[\p{L}\p{N}]+/gu) || []));
+  const p0 = await b.newPage(); await p0.goto(before, { waitUntil: 'load' });
+  const W = words(await p0.evaluate(() => document.querySelector('#world-guide').textContent + ' ' + document.querySelector('.show-lore-link').textContent));
+  const p1 = await b.newPage(); await p1.goto(after, { waitUntil: 'load' });
+  const all = words(await p1.evaluate(() => document.body.textContent));
+  console.log(JSON.stringify({ baseWords: W.size, missing: [...W].filter(w => !all.has(w)) })); await b.close(); })();

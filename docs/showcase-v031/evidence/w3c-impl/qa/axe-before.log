@@ -1,0 +1,2 @@
+mobile violations 0 [] incomplete [{"id":"aria-prohibited-attr","nodes":1},{"id":"color-contrast","nodes":549}] passes 47
+desktop violations 0 [] incomplete [{"id":"aria-prohibited-attr","nodes":1},{"id":"color-contrast","nodes":71}] passes 46

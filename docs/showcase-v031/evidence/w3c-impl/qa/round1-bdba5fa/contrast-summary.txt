@@ -1,0 +1,28 @@
+after 1440x900_1   .ax-world-copy[0]      worst  5.05 / need 4.5  PASS  «05 / WORLD ENTRY» 12px
+after 1440x900_1   .ax-chapter-copy[0]    worst  5.37 / need 4.5  PASS  «ГЛАВА I» 12px
+after 1440x900_1   .ax-chapter-copy[1]    worst  5.36 / need 4.5  PASS  «ГЛАВА II» 12px
+after 1440x900_1   .ax-chapter-copy[2]    worst  5.28 / need 4.5  PASS  «ГЛАВА III» 12px
+after 1440x900_1   .ax-chapter-copy[3]    worst  5.28 / need 4.5  PASS  «ГЛАВА V» 12px
+after 1440x900_1   .ax-omega-copy[0]      worst  5.23 / need 4.5  PASS  «02.05 / LABORATORY OMEGA-0» 12px
+after 1440x900_1   .ax-epilogue-copy[0]   worst   5.3 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 12px
+after 1920x1080_1  .ax-world-copy[0]      worst  4.29 / need 4.5  FAIL  «05 / WORLD ENTRY» 12px
+after 1920x1080_1  .ax-chapter-copy[0]    worst  5.41 / need 4.5  PASS  «ГЛАВА I» 12px
+after 1920x1080_1  .ax-chapter-copy[1]    worst  4.86 / need 4.5  PASS  «ГЛАВА II» 12px
+after 1920x1080_1  .ax-chapter-copy[2]    worst  5.29 / need 4.5  PASS  «ГЛАВА III» 12px
+after 1920x1080_1  .ax-chapter-copy[3]    worst  5.42 / need 4.5  PASS  «ГЛАВА V» 12px
+after 1920x1080_1  .ax-omega-copy[0]      worst  5.23 / need 4.5  PASS  «02.05 / LABORATORY OMEGA-0» 12px
+after 1920x1080_1  .ax-epilogue-copy[0]   worst   5.3 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 12px
+after 768x1024_2   .ax-world-copy[0]      worst  5.51 / need 4.5  PASS  «AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ» 12px
+after 768x1024_2   .ax-chapter-copy[0]    worst  5.41 / need 4.5  PASS  «ГЛАВА I» 12px
+after 768x1024_2   .ax-chapter-copy[1]    worst  5.22 / need 4.5  PASS  «ГЛАВА II» 12px
+after 768x1024_2   .ax-chapter-copy[2]    worst  5.23 / need 4.5  PASS  «ГЛАВА III» 12px
+after 768x1024_2   .ax-chapter-copy[3]    worst  5.23 / need 4.5  PASS  «ГЛАВА V» 12px
+after 768x1024_2   .ax-omega-copy[0]      worst  5.02 / need 4.5  PASS  «02.05 / LABORATORY OMEGA-0» 12px
+after 768x1024_2   .ax-epilogue-copy[0]   worst  5.28 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 12px
+after 390x844_2    .ax-world-copy[0]      worst  5.51 / need 4.5  PASS  «AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ» 12px
+after 390x844_2    .ax-chapter-copy[0]    worst  5.44 / need 4.5  PASS  «ГЛАВА I» 12px
+after 390x844_2    .ax-chapter-copy[1]    worst  5.38 / need 4.5  PASS  «ГЛАВА II» 12px
+after 390x844_2    .ax-chapter-copy[2]    worst  5.13 / need 4.5  PASS  «ГЛАВА III» 12px
+after 390x844_2    .ax-chapter-copy[3]    worst  4.88 / need 4.5  PASS  «ГЛАВА V» 12px
+after 390x844_2    .ax-omega-copy[0]      worst  4.94 / need 4.5  PASS  «02.05 / LABORATORY OMEGA-0» 12px
+after 390x844_2    .ax-epilogue-copy[0]   worst  5.41 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 12px

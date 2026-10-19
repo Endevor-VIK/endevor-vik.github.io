@@ -1,0 +1,8 @@
+before-i* mobile  n=5 perf 97 (88–99) a11y 100 bp 100 seo 100 | FCP 1.66s LCP 2.10s (1.81–2.82) TBT 54ms CLS 0.017 KB 326
+        LCP element: <div class="show-hero-byline">
+before-i* desktop n=5 perf 100 (100–100) a11y 100 bp 100 seo 100 | FCP 0.38s LCP 0.38s (0.36–0.52) TBT 0ms CLS 0.007 KB 326
+        LCP element: <text x="118" y="230" fill="#ff2034" opacity=".55" font-family="JetBra
+after-i* mobile  n=5 perf 96 (88–99) a11y 100 bp 100 seo 100 | FCP 1.65s LCP 2.56s (1.66–2.85) TBT 50ms CLS 0.020 KB 332
+        LCP element: <div class="show-hero-byline">
+after-i* desktop n=5 perf 100 (99–100) a11y 100 bp 100 seo 100 | FCP 0.52s LCP 0.61s (0.32–0.62) TBT 0ms CLS 0.006 KB 332
+        LCP element: <text x="118" y="230" fill="#ff2034" opacity=".55" font-family="JetBra

@@ -1,0 +1,52 @@
+// W3.C text-over-image contrast: for every text block that sits on artwork, hide the glyphs, screenshot what is
+// behind them and record each text line's box and colour; contrast.py turns that into WCAG ratios
+// (90th-percentile background luminance under light text = the brightest typical spot, not the average).
+// usage: NODE_PATH=<playwright> node w3c_contrast.cjs <url> <tag> <outDir> <variant.js> [viewports]
+const { chromium } = require('playwright');
+const fs = require('fs'), path = require('path');
+const [base, tag, outDir, variantFile, vpArg] = process.argv.slice(2);
+const variant = variantFile && variantFile !== '-' ? fs.readFileSync(variantFile, 'utf8') : null;
+const vps = (vpArg || '1440x900@1,1920x1080@1,768x1024@2,390x844@2').split(',').map(s => { const [wh, d] = s.split('@'); const [w, h] = wh.split('x').map(Number); return { w, h, dpr: +d, name: s.replace('@', '_') }; });
+const BLOCKS = ['.ax-world-copy', '.ax-chapter-copy', '.ax-omega-copy', '.ax-epilogue-copy'];
+fs.mkdirSync(outDir, { recursive: true });
+(async () => {
+  const browser = await chromium.launch();
+  const report = { tag, base, at: new Date().toISOString(), shots: [] };
+  for (const vp of vps) {
+    const phone = vp.w < 700;
+    const ctx = await browser.newContext({ viewport: { width: vp.w, height: vp.h }, deviceScaleFactor: vp.dpr, isMobile: phone, hasTouch: phone });
+    await ctx.addInitScript(() => { try { sessionStorage.setItem('axiom_loader_seen', '1'); } catch (_) {} });
+    const page = await ctx.newPage();
+    await page.goto(base, { waitUntil: 'load' });
+    if (variant) await page.evaluate(variant);
+    await page.evaluate(() => { for (const s of document.querySelectorAll('section')) { s.style.transition = 'none'; s.style.opacity = 1; s.style.transform = 'none'; } for (const o of document.querySelectorAll('.ax-omega')) o.classList.add('is-open'); const st = document.createElement('style'); st.textContent = '.w3c-hide-text,.w3c-hide-text *{color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important}'; document.head.appendChild(st); });
+    await page.evaluate(() => document.fonts.ready);
+    const count = await page.evaluate(B => B.map(s => document.querySelectorAll(s).length), BLOCKS);
+    let k = 0;
+    for (let bi = 0; bi < BLOCKS.length; bi++) for (let i = 0; i < count[bi]; i++) {
+      await page.evaluate(([s, i]) => { document.documentElement.style.scrollBehavior = 'auto'; document.querySelectorAll(s)[i].scrollIntoView({ block: 'center' }); }, [BLOCKS[bi], i]);
+      await page.evaluate(() => new Promise(res => { const t0 = performance.now(); const tick = () => { const pend = [...document.images].filter(im => { const b = im.getBoundingClientRect(); return b.bottom > 0 && b.top < innerHeight && b.width > 0 && !im.complete; }); if (!pend.length || performance.now() - t0 > 6000) Promise.all([...document.images].filter(im => { const b = im.getBoundingClientRect(); return b.bottom > 0 && b.top < innerHeight; }).map(im => im.decode().catch(() => {}))).then(() => requestAnimationFrame(() => requestAnimationFrame(res))); else setTimeout(tick, 100); }; tick(); }));
+      await page.waitForTimeout(250);
+      const texts = await page.evaluate(([s, i]) => {
+        const el = document.querySelectorAll(s)[i], out = [];
+        const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+        for (let n; (n = w.nextNode());) {
+          if (!n.data.trim()) continue; const p = n.parentElement; const cs = getComputedStyle(p);
+          if (cs.visibility === 'hidden' || cs.display === 'none' || p.closest('[aria-hidden="true"]')) continue;
+          const rg = document.createRange(); rg.selectNodeContents(n);
+          for (const r of rg.getClientRects()) if (r.width > 2 && r.bottom > 0 && r.top < innerHeight) out.push({ text: n.data.trim().slice(0, 40), x: r.left, y: r.top, w: r.width, h: r.height, color: cs.color, size: parseFloat(cs.fontSize), weight: +cs.fontWeight });
+        }
+        el.classList.add('w3c-hide-text'); return out;
+      }, [BLOCKS[bi], i]);
+      await page.waitForTimeout(60);
+      const file = `${tag}-${vp.name}-c${String(k).padStart(2, '0')}.png`;
+      await page.screenshot({ path: path.join(outDir, file) });
+      await page.evaluate(([s, i]) => document.querySelectorAll(s)[i].classList.remove('w3c-hide-text'), [BLOCKS[bi], i]);
+      report.shots.push({ vp: vp.name, dpr: vp.dpr, block: `${BLOCKS[bi]}[${i}]`, file, texts }); k++;
+    }
+    process.stdout.write(`${tag} ${vp.name}: ${k} blocks\n`);
+    await ctx.close();
+  }
+  await browser.close();
+  fs.writeFileSync(path.join(outDir, `${tag}-contrast.json`), JSON.stringify(report, null, 1));
+})();

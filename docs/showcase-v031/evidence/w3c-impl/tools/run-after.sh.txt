@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# W3.C QA on the exact SHA bdba5fa (snapshot), sequential so timing-sensitive checks run alone
+set -u
+N=/tmp/claude-0/-home-user/f9f5b144-35b7-57ab-9b38-ad4a6341a687/scratchpad
+export NODE_PATH=/opt/node22/lib/node_modules
+B=http://127.0.0.1:8621/ ; A=http://127.0.0.1:8623/
+Q=$N/qa/after; mkdir -p $Q
+AXE=/tmp/claude-0/-home-user-endevor-vik-github-io/f9f5b144-35b7-57ab-9b38-ad4a6341a687/scratchpad/qa-tools/node_modules/axe-core/axe.min.js
+cd $N/qa
+node $N/snap-after/tests/browser/showcase_regression.cjs --url $A --json $Q/regression-after-1.json > $Q/regression-after-1.log 2>&1; echo "regression-1: $(tail -1 $Q/regression-after-1.log)"
+(cd $N/snap-after && python3 -I tests/smoke_showcase.py && python3 -I tests/smoke_showcase_v23.py && python3 -I tests/smoke_showcase.py && python3 -I tests/smoke_showcase_v23.py) > $Q/smoke-after.log 2>&1; echo "smoke: $?"
+bash lh-run.sh $A after $Q/lh 3; echo lh-done
+AXE_PATH=$AXE node axe-run.cjs $A $Q/axe-after.json > $Q/axe-after.log 2>&1; echo axe-done
+node w3a_preserve.cjs $B $Q/preserve-before.json > $Q/preserve-before.log 2>&1; node w3a_preserve.cjs $A $Q/preserve-after.json > $Q/preserve-after.log 2>&1; echo preserve-done
+cd $N/w3c
+node textkeep2.cjs $B $A > $Q/textkeep.json 2>&1
+node bridges.cjs $B before - > $Q/bridges.txt 2>&1; node bridges.cjs $A after - >> $Q/bridges.txt 2>&1
+node w3c_measure.cjs $B before $Q/measure-before.json - > $Q/measure.log 2>&1; node w3c_measure.cjs $A after $Q/measure-after.json - >> $Q/measure.log 2>&1; echo measure-done
+rm -rf out; node w3c_capture.cjs $B before out - > $Q/capture.log 2>&1; node w3c_capture.cjs $A after out - >> $Q/capture.log 2>&1; echo capture-done
+rm -rf contrast; node w3c_contrast.cjs $A after contrast - > $Q/contrast-run.log 2>&1; python3 -I contrast.py contrast after > $Q/contrast-summary.txt 2>&1; echo contrast-done
+for v in 1440x900_1:300 1920x1080_1:300 768x1024_2:480 390x844_2:560 430x932_2:560; do python3 compare.py ${v%:*} ${v#*:} cmp-${v%%x*}.jpg; done >> $Q/capture.log 2>&1
+node $N/snap-after/tests/browser/showcase_regression.cjs --url $A --json $Q/regression-after-2.json > $Q/regression-after-2.log 2>&1; echo "regression-2: $(tail -1 $Q/regression-after-2.log)"
+echo ALL-DONE

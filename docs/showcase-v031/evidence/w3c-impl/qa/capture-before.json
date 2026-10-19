@@ -1,0 +1,72 @@
+{
+ "tag": "before",
+ "base": "http://127.0.0.1:8621/",
+ "at": "2026-10-19T01:37:35.494Z",
+ "results": [
+  {
+   "vp": "1440x900_1",
+   "screens": 23.2,
+   "overflow": false,
+   "worldGuide": 7833,
+   "manifesto": 8895,
+   "map": 11914,
+   "chars": 13563,
+   "factions": 16028,
+   "vision": 16919,
+   "vh": 900,
+   "errors": []
+  },
+  {
+   "vp": "1920x1080_1",
+   "screens": 19.58,
+   "overflow": false,
+   "worldGuide": 8034,
+   "manifesto": 9105,
+   "map": 12141,
+   "chars": 13798,
+   "factions": 16270,
+   "vision": 17161,
+   "vh": 1080,
+   "errors": []
+  },
+  {
+   "vp": "768x1024_2",
+   "screens": 26.87,
+   "overflow": false,
+   "worldGuide": 10142,
+   "manifesto": 11448,
+   "map": 16217,
+   "chars": 17691,
+   "factions": 21896,
+   "vision": 23576,
+   "vh": 1024,
+   "errors": []
+  },
+  {
+   "vp": "390x844_2",
+   "screens": 36.4,
+   "overflow": false,
+   "worldGuide": 11175,
+   "manifesto": 12845,
+   "map": 18016,
+   "chars": 19368,
+   "factions": 24451,
+   "vision": 25759,
+   "vh": 844,
+   "errors": []
+  },
+  {
+   "vp": "430x932_2",
+   "screens": 32.33,
+   "overflow": false,
+   "worldGuide": 10855,
+   "manifesto": 12467,
+   "map": 17559,
+   "chars": 18914,
+   "factions": 24031,
+   "vision": 25300,
+   "vh": 932,
+   "errors": []
+  }
+ ]
+}

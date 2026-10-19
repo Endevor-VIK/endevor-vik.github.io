@@ -18,7 +18,57 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-19 / W3.C CONCEPTS + WORLD LIBRARY 0524, READY FOR CREATOR ART REVIEW
+## CURRENT STATE — 2026-10-19 / W3.C A «ПОРОГ» + OMEGA-0 IMPLEMENTED, READY FOR PRINCIPAL & CREATOR VISUAL RECHECK
+
+**Supersedes the concepts block below.** Refresh every SHA at takeover.
+
+- **Authority:** CREATOR chose Variant A «ПОРОГ» and approved OMEGA-0 via W03 (PR #9: `waves/W3C_CREATOR_A_OMEGA0_IMPLEMENTATION_DIRECTIVE.md`, `waves/W3C_OMEGA0_CANON_CONTEXT_PACK.md`). PR #9 docs fast-forwarded into the branch (`15c3d51`) after an independent check (spec §5).
+- **Branch:** `w3/c-world-immersion`. **QA SHA (site code): `b53350e`**. Later commits are docs only. Draft PR into `main` (see report header). **Not merged, not deployed, no version bump, no Canon write.**
+- **Implemented:**
+  - S1 threshold W01 in `#world-guide`;
+  - S2 statement and «Пять глав», chapter plates W06/W02/W04/W08, the chapter IV line, the «Как читать этот мир» key (`<details>`);
+  - S3 OMEGA-0 descent (W03 inset, return to the 02.05 card, one-time reveal);
+  - S4 W07 epilogue before VISION;
+  - S5 tests R-W3C-01…08;
+  - fixes `b603461` (threshold fits after a menu jump) and `b53350e` (label contrast at 1920).
+  - Spec: `waves/W3C_IMPLEMENTATION_SPEC.md`. Report: `waves/W3C_IMPLEMENTATION_REPORT.md`. Evidence: `evidence/w3c-impl/`. Captures: `captures/w3c-impl/`.
+- **QA (agent-run, Chromium 141, same Pages-like server for BEFORE/AFTER):**
+  - regression 116 / 116 ×2 (BEFORE 89 / 89); smoke ×2 PASS; axe 0 violations;
+  - contrast over art 28 / 28 (worst 4.86); after a menu jump the threshold title, line and CTA are in view on 960×540 … 1920×1080 and phones;
+  - preservation: 17 sections, Canon IDs, fonts and tokens identical; bridges 10 / 10;
+  - 0 library requests at open;
+  - Lighthouse 5 interleaved pairs: mobile perf median 97 → 96, desktop 100 → 100; desktop FCP/LCP +0.15–0.2 s simulated from +3.7 KB render-blocking CSS (report §3.4).
+- **Exception (directive §5):** the 1672 px sources are below 0.95 sharpness for full-width scenes (W01, plates, W07) on DPR ≥ 2 screens wider than ~836 css px. W03 is sharp everywhere. A ≥ 3344 px master from CREATOR fixes it (ticket T-1).
+- **NOT RUN:** Firefox, WebKit/Safari, real devices/GPU, screen reader, human keyboard walkthrough, live site / Pages, field CWV.
+- **Next:**
+  1. Principal independent code review and visual review on the exact PR HEAD.
+  2. CREATOR visual recheck (PC/mobile sheets in `captures/w3c-impl/`).
+  3. Gate record (report §7), then merge into `main`.
+  4. Verify Pages and the live site.
+
+### RESUME PACKET — 2026-10-19 W3.C IMPLEMENTATION
+
+```text
+AXIOM SHOWCASE / RESUME PACKET
+AUTHORITY: CREATOR 2026-10-19 (A «ПОРОГ» + OMEGA-0 via W03), PR #9 directive + Canon context pack (Canon 3884ea43)
+PHASE / TASK: 0524.W3.C.A+OMEGA0 — READY FOR PRINCIPAL & CREATOR VISUAL RECHECK
+REPOS + BRANCHES + LAST VERIFIED HEADS: landing main 9dda095 | w3/c-world-immersion QA SHA b53350e (+ docs-only commits) | Draft PR into main
+CLEAN/DIRTY: worktree clean after push; claude/wizardly-goldberg-h6xqon untouched
+LAST ACCEPTED BASELINE: main 9dda095 (W3.A merged, PR #7)
+DONE: S0 spec, S1 threshold, S2 chapters, S3 OMEGA-0, S4 epilogue, S5 R-W3C-01..08, S6 report/evidence/captures
+PENDING: Principal code + visual review, CREATOR visual recheck, gate-record, merge, Pages/live check; W01 master ≥ 3344 px (T-1)
+NOT RUN: Firefox, WebKit/Safari, real devices/GPU, screen reader, human keyboard walkthrough, live site, field CWV
+CREATOR FROZEN CHOICES: RED PROTOCOL; TYPE A; WORK B; six Canon IDs; V10; 17-section order; variant A; W03 = artistic association only
+CURRENT EVIDENCE + COMMANDS: docs/showcase-v031/evidence/w3c-impl/ (tools + qa JSON); python3 tests/smoke_showcase.py;
+  python3 tests/smoke_showcase_v23.py; NODE_PATH=<playwright> node tests/browser/showcase_regression.cjs [--url ...]
+EXPLICIT FORBIDDENS: no merge without gate-record for the exact HEAD, no self-approval, no Canon/root gitlink, no version bump,
+  no new OMEGA-0 facts (builder, dates, incidents, BLACK SUN link), W03 is not a station plan
+NEXT 1-3 SAFE ACTIONS: (1) Principal review of PR HEAD; (2) fix review findings on the branch; (3) merge only after gate-record
+STOP CONDITIONS: PR HEAD changed unexpectedly; regression red; contrast < 4.5 over art; new plot question → ask CREATOR
+FIRST ACTION: reread AGENTS.md + this handoff + W3C_IMPLEMENTATION_REPORT.md; verify git/PR/CI before editing
+```
+
+## PREVIOUS STATE — 2026-10-19 / W3.C CONCEPTS + WORLD LIBRARY 0524, READY FOR CREATOR ART REVIEW
 
 Refresh every SHA at takeover.
 
