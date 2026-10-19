@@ -1,0 +1,15 @@
+regression-qa-1: 116 passed, 0 failed, 0 skipped
+regression-qa-2: 116 passed, 0 failed, 0 skipped
+lh-done
+axe-done
+contrast-done
+capture-done
+ALL-DONE
+smoke: 0
+preserve-done
+measure-done
+ALL-DONE-2B
+1440x900@1 {"id":"02.05 / LABORATORY OMEGA-0","focus":"02.05","pressed":"true"} overflow false errors 0 []
+1920x1080@1 {"id":"02.05 / LABORATORY OMEGA-0","focus":"02.05","pressed":"true"} overflow false errors 0 []
+390x844@2 {"id":"02.05 / LABORATORY OMEGA-0","focus":"02.05","pressed":"true"} overflow false errors 0 []
+LOOK-DONE

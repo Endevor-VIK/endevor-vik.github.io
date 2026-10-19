@@ -1,0 +1,402 @@
+{
+ "a": [
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-a-copy[0]",
+   "text": "AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ",
+   "size": 12,
+   "ratio": 5.22,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-a-plate-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 11,
+   "ratio": 5.35,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-a-plate-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 11,
+   "ratio": 5.36,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-a-plate-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 11,
+   "ratio": 5.28,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-a-plate-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 11,
+   "ratio": 5.28,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-a-epi-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 11,
+   "ratio": 5.3,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-a-copy[0]",
+   "text": "05 / WORLD ENTRY",
+   "size": 12,
+   "ratio": 4.69,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-a-plate-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 11,
+   "ratio": 5.44,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-a-plate-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 11,
+   "ratio": 5.08,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-a-plate-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 11,
+   "ratio": 5.27,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-a-plate-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 11,
+   "ratio": 5.42,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-a-epi-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 11,
+   "ratio": 5.31,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-a-copy[0]",
+   "text": "AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ",
+   "size": 12,
+   "ratio": 5.51,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-a-plate-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 11,
+   "ratio": 5.41,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-a-plate-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 11,
+   "ratio": 5.23,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-a-plate-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 11,
+   "ratio": 5.28,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-a-plate-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 11,
+   "ratio": 5.23,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-a-epi-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 11,
+   "ratio": 5.31,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-a-copy[0]",
+   "text": "AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ",
+   "size": 12,
+   "ratio": 5.51,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-a-plate-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 11,
+   "ratio": 5.44,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-a-plate-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 11,
+   "ratio": 5.35,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-a-plate-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 11,
+   "ratio": 5.15,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-a-plate-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 11,
+   "ratio": 4.87,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-a-epi-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 11,
+   "ratio": 5.41,
+   "need": 4.5,
+   "pass": true
+  }
+ ],
+ "b": [
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-b-card[0]",
+   "text": "05 / WORLD ENTRY",
+   "size": 12,
+   "ratio": 5.66,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-b-frag-copy[0]",
+   "text": "I / МЕСТО",
+   "size": 11,
+   "ratio": 4.83,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-b-frag-copy[1]",
+   "text": "II / ЧЕЛОВЕК",
+   "size": 11,
+   "ratio": 5.29,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-b-frag-copy[2]",
+   "text": "III / ЦЕНА ВЫБОРА",
+   "size": 11,
+   "ratio": 5.22,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".w3c-b-door-copy[0]",
+   "text": "05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН",
+   "size": 11,
+   "ratio": 5.44,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-b-card[0]",
+   "text": "05 / WORLD ENTRY",
+   "size": 12,
+   "ratio": 5.66,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-b-frag-copy[0]",
+   "text": "I / МЕСТО",
+   "size": 11,
+   "ratio": 4.91,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-b-frag-copy[1]",
+   "text": "II / ЧЕЛОВЕК",
+   "size": 11,
+   "ratio": 5.29,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-b-frag-copy[2]",
+   "text": "III / ЦЕНА ВЫБОРА",
+   "size": 11,
+   "ratio": 5.23,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".w3c-b-door-copy[0]",
+   "text": "05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН",
+   "size": 11,
+   "ratio": 5.22,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-b-card[0]",
+   "text": "AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ",
+   "size": 12,
+   "ratio": 5.34,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-b-frag-copy[0]",
+   "text": "I / МЕСТО",
+   "size": 11,
+   "ratio": 4.83,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-b-frag-copy[1]",
+   "text": "II / ЧЕЛОВЕК",
+   "size": 11,
+   "ratio": 5.38,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-b-frag-copy[2]",
+   "text": "III / ЦЕНА ВЫБОРА",
+   "size": 11,
+   "ratio": 5.38,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".w3c-b-door-copy[0]",
+   "text": "05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН",
+   "size": 11,
+   "ratio": 5.47,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-b-card[0]",
+   "text": "05 / WORLD ENTRY",
+   "size": 12,
+   "ratio": 4.94,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-b-frag-copy[0]",
+   "text": "I / МЕСТО",
+   "size": 11,
+   "ratio": 5.35,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-b-frag-copy[1]",
+   "text": "II / ЧЕЛОВЕК",
+   "size": 11,
+   "ratio": 5.35,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-b-frag-copy[2]",
+   "text": "III / ЦЕНА ВЫБОРА",
+   "size": 11,
+   "ratio": 5.35,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".w3c-b-door-copy[0]",
+   "text": "05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН",
+   "size": 11,
+   "ratio": 5.41,
+   "need": 4.5,
+   "pass": true
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader
+SOURCE PASS: 13 sections, 8 screens, 6 map nodes, 4 flow controls, local files, srcset, CSS urls, original lore, CTAs.
+NOT TESTED: actual browser layout, runtime keyboard/touch, Web Vitals, CDN/font requests or preview availability.
+PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader
+SOURCE PASS: 13 sections, 8 screens, 6 map nodes, 4 flow controls, local files, srcset, CSS urls, original lore, CTAs.
+NOT TESTED: actual browser layout, runtime keyboard/touch, Web Vitals, CDN/font requests or preview availability.

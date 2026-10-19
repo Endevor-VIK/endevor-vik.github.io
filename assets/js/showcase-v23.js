@@ -81,3 +81,20 @@ if(trigger){
   notes.forEach(n=>{const d=n.querySelector('.ax-gate-date');if(d)d.textContent=date;n.hidden=false});
  }).catch(()=>{}).finally(()=>clearTimeout(timer));
 })();
+/* 0524 W3.C (S3) OMEGA-0 / THE DESCENT. «Узнать о месте» returns the reader to the real 02.05 node: it selects the card through
+   its own handler and moves focus there (without JS the link still lands on the map panel). The scene opens once from the surface
+   down as it comes into view — only with JS, motion allowed and not on a weak device (.ax-lite); otherwise it is simply visible */
+(()=>{const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ document.querySelectorAll('a[data-map-node]').forEach(a=>a.addEventListener('click',e=>{
+  const node=document.querySelector('.v23-map-node[data-canon-id="'+a.dataset.mapNode+'"]');if(!node)return;
+  e.preventDefault();node.click();
+  (document.querySelector('.v23-map-ledger')||node).scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+  node.focus({preventScroll:true});
+ }));
+ const scene=document.querySelector('.ax-omega');
+ if(!scene||reduce||!('IntersectionObserver' in window)||document.documentElement.classList.contains('ax-lite'))return;
+ if(scene.getBoundingClientRect().top<innerHeight)return;
+ scene.classList.add('ax-omega--armed');
+ const io=new IntersectionObserver(es=>{if(es.some(x=>x.isIntersecting)){scene.classList.add('is-open');io.disconnect()}},{threshold:.3});
+ io.observe(scene);
+})();

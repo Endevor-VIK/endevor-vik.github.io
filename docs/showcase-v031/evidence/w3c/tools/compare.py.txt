@@ -1,0 +1,24 @@
+# BASE / A / B comparison sheet for one viewport: rows = tags, columns = frames f1..f6 (scaled to row height H)
+import sys
+from PIL import Image, ImageDraw, ImageFont
+F=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',20)
+f=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',16)
+FR=['f1-threshold','f2-enter','f3-scroll1','f4-scroll2','f5-exit','f6-vision']
+NAMES={'base':'BASE (= main 9dda095)','a':'A · ПОРОГ (W01 вход · плашки глав · эпилог W07)','b':'B · ОКНА / ДВЕРЬ (затмение · W04 · Виктор · W06 · дверь W01)'}
+vp,H,out=sys.argv[1],int(sys.argv[2]),sys.argv[3]
+tags=['base','a','b']
+rows=[]
+for t in tags:
+    ims=[Image.open(f'out/{t}-{vp}-{x}.png').convert('RGB') for x in FR]
+    rows.append([i.resize((round(i.width*H/i.height),H),Image.LANCZOS) for i in ims])
+G=10; L=34
+W=G+sum(i.width+G for i in rows[0]); Hh=50+len(rows)*(H+L+G)
+s=Image.new('RGB',(W,Hh),(28,29,34)); d=ImageDraw.Draw(s)
+d.text((G,12),f'W3.C WORLD IMMERSION · {vp.replace("_","@")} · frames: '+'  '.join(FR),fill=(235,235,240),font=F)
+y=50
+for t,r in zip(tags,rows):
+    d.text((G,y+6),NAMES[t],fill=(255,80,95) if t!='base' else (190,190,200),font=F); y+=L; x=G
+    for i in r: s.paste(i,(x,y)); x+=i.width+G
+    y+=H+G
+s.save(out,quality=84,optimize=True)
+print(out,s.size)

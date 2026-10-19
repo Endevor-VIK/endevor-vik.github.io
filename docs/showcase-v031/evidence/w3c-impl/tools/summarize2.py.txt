@@ -1,0 +1,34 @@
+# W3.C implementation tables (BEFORE / AFTER) from the capture and measure JSON of one QA run.
+# usage: python3 summarize2.py <qa/after dir> <after snapshot root>
+import json, os, re, sys
+Q, root = sys.argv[1], sys.argv[2]
+T = ['before', 'after']
+cap = {t: {r['vp']: r for r in json.load(open(f'out/{t}-report.json'))['results']} for t in T}
+mea = {t: {r['vp']: r for r in json.load(open(f'{Q}/measure-{t}.json'))['results']} for t in T}
+sizes = {}
+for d, _, fs in os.walk(root + '/assets'):
+    for f in fs: sizes[f] = os.path.getsize(os.path.join(d, f))
+WORLD = re.compile(r'^(W0\d_|B02_)')
+print('| Ширина | Вход WORLD: BEFORE | AFTER | Страница, экранов: BEFORE | AFTER | После перехода в WORLD (AFTER): заголовок · строка · CTA |')
+print('| --- | --- | --- | --- | --- | --- |')
+for vp in ['1440x900@1', '1920x1080@1', '768x1024@2', '390x844@2', '430x932@2']:
+    cv = vp.replace('@', '_'); b, a = mea['before'][vp], mea['after'][vp]
+    j = ' · '.join('✓' if x else ('—' if x is None else '✗') for x in (a['onJump']['h2InView'], a['onJump']['promiseInView'], a['onJump']['ctaInView']))
+    print(f"| {vp} | {b['worldEntryPx']} px ({b['worldEntryScreens']}) | {a['worldEntryPx']} px ({a['worldEntryScreens']}) | {cap['before'][cv]['screens']} | {cap['after'][cv]['screens']} | {j} |")
+print('\noverflow', {t: any(r['hOverflow'] for r in mea[t].values()) for t in T}, 'errors', {t: sum(len(r['errors']) for r in mea[t].values()) + sum(len(r['errors']) for r in cap[t].values()) for t in T})
+vps = list(mea['after'].keys())
+print('\n| Изображение | ' + ' | '.join(vps) + ' |'); print('| --- |' + ' --- |' * len(vps))
+keys = []
+for vp in vps:
+    for f in mea['after'][vp]['fidelity']:
+        k = re.sub(r'-(\d+w|hq)\.(avif|webp)$', '', f['file'])
+        if k not in keys: keys.append(k)
+for k in keys:
+    print(f'| {k} | ' + ' | '.join(next((str(f['ratio']) for f in mea['after'][vp]['fidelity'] if f['file'].startswith(k)), '—') for vp in vps) + ' |')
+print('\n| Ширина | Атмосферные изображения WORLD, лениво: BEFORE (B02) | AFTER (библиотека 0524) | Запросов библиотеки при открытии (AFTER) |')
+print('| --- | --- | --- | --- |')
+for vp in vps:
+    def kb(t):
+        fs = [f for f in mea[t][vp]['imageFilesWorld'] if WORLD.match(f)]
+        return f"{round(sum(sizes.get(f, 0) for f in fs) / 1024)} КБ ({len(fs)})"
+    print(f"| {vp} | {kb('before')} | {kb('after')} | {len([f for f in mea['after'][vp]['libraryRequestsAtOpen'] if f.startswith('W0')])} |")

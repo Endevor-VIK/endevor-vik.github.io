@@ -1,0 +1,256 @@
+{
+ "after": [
+  {
+   "vp": "1440x900_1",
+   "block": ".ax-world-copy[0]",
+   "text": "AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ",
+   "size": 12,
+   "ratio": 5.31,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".ax-chapter-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 12,
+   "ratio": 5.37,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".ax-chapter-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 12,
+   "ratio": 5.36,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".ax-chapter-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 12,
+   "ratio": 5.28,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".ax-chapter-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 12,
+   "ratio": 5.28,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".ax-omega-copy[0]",
+   "text": "02.05 / LABORATORY OMEGA-0",
+   "size": 12,
+   "ratio": 5.23,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1440x900_1",
+   "block": ".ax-epilogue-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 12,
+   "ratio": 5.3,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".ax-world-copy[0]",
+   "text": "05 / WORLD ENTRY",
+   "size": 12,
+   "ratio": 5.01,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".ax-chapter-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 12,
+   "ratio": 5.41,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".ax-chapter-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 12,
+   "ratio": 4.86,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".ax-chapter-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 12,
+   "ratio": 5.29,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".ax-chapter-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 12,
+   "ratio": 5.42,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".ax-omega-copy[0]",
+   "text": "02.05 / LABORATORY OMEGA-0",
+   "size": 12,
+   "ratio": 5.23,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "1920x1080_1",
+   "block": ".ax-epilogue-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 12,
+   "ratio": 5.3,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".ax-world-copy[0]",
+   "text": "AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ",
+   "size": 12,
+   "ratio": 5.51,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".ax-chapter-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 12,
+   "ratio": 5.41,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".ax-chapter-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 12,
+   "ratio": 5.22,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".ax-chapter-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 12,
+   "ratio": 5.23,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".ax-chapter-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 12,
+   "ratio": 5.23,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".ax-omega-copy[0]",
+   "text": "02.05 / LABORATORY OMEGA-0",
+   "size": 12,
+   "ratio": 5.02,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "768x1024_2",
+   "block": ".ax-epilogue-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 12,
+   "ratio": 5.28,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".ax-world-copy[0]",
+   "text": "AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ",
+   "size": 12,
+   "ratio": 5.51,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".ax-chapter-copy[0]",
+   "text": "ГЛАВА I",
+   "size": 12,
+   "ratio": 5.44,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".ax-chapter-copy[1]",
+   "text": "ГЛАВА II",
+   "size": 12,
+   "ratio": 5.38,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".ax-chapter-copy[2]",
+   "text": "ГЛАВА III",
+   "size": 12,
+   "ratio": 5.13,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".ax-chapter-copy[3]",
+   "text": "ГЛАВА V",
+   "size": 12,
+   "ratio": 4.88,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".ax-omega-copy[0]",
+   "text": "02.05 / LABORATORY OMEGA-0",
+   "size": 12,
+   "ratio": 4.94,
+   "need": 4.5,
+   "pass": true
+  },
+  {
+   "vp": "390x844_2",
+   "block": ".ax-epilogue-copy[0]",
+   "text": "05 / WORLD · ЭПИЛОГ",
+   "size": 12,
+   "ratio": 5.41,
+   "need": 4.5,
+   "pass": true
+  }
+ ]
+}

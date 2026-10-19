@@ -1,0 +1,935 @@
+{
+ "note": "Lighthouse 12.8.2, Chromium 141, simulated throttling; BEFORE http://127.0.0.1:8621/ (snapshot 15c3d51, site code = main 9dda095), AFTER http://127.0.0.1:8624/ (snapshot b53350e); pairs run interleaved BEFORE then AFTER",
+ "runs": [
+  {
+   "side": "after",
+   "pair": 1,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:47:38.530Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.324,
+   "lcp_s": 0.324,
+   "si_s": 0.963,
+   "tbt_ms": 0,
+   "cls": 0.006,
+   "totalKB": 332.3,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 122,
+     "KB": 12.5
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 82,
+     "KB": 4.2
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 122,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 82,
+     "KB": 2.4
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 1,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:47:25.878Z",
+   "scores": {
+    "performance": 88,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 2.254,
+   "lcp_s": 2.851,
+   "si_s": 2.465,
+   "tbt_ms": 272,
+   "cls": 0.0164,
+   "totalKB": 332.3,
+   "requests": 25,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 601,
+     "KB": 12.5
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 751,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 301,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 301,
+     "KB": 2.4
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 151,
+     "KB": 1.0
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 2,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:48:29.732Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.53,
+   "lcp_s": 0.61,
+   "si_s": 0.941,
+   "tbt_ms": 0,
+   "cls": 0.0091,
+   "totalKB": 332.3,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase.css",
+     "wastedMs": 82,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 122,
+     "KB": 12.5
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 82,
+     "KB": 2.4
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 162,
+     "KB": 15.9
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 2,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:48:16.575Z",
+   "scores": {
+    "performance": 89,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 2.253,
+   "lcp_s": 2.801,
+   "si_s": 2.436,
+   "tbt_ms": 224,
+   "cls": 0.0197,
+   "totalKB": 332.3,
+   "requests": 25,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase.css",
+     "wastedMs": 301,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 601,
+     "KB": 12.5
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 301,
+     "KB": 2.4
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 751,
+     "KB": 15.9
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 151,
+     "KB": 1.0
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 3,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:49:20.303Z",
+   "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.525,
+   "lcp_s": 0.617,
+   "si_s": 0.969,
+   "tbt_ms": 0,
+   "cls": 0.005,
+   "totalKB": 332.3,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 121,
+     "KB": 12.5
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 161,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 81,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 81,
+     "KB": 2.4
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 3,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:49:07.440Z",
+   "scores": {
+    "performance": 96,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 1.655,
+   "lcp_s": 2.559,
+   "si_s": 2.268,
+   "tbt_ms": 50,
+   "cls": 0.0204,
+   "totalKB": 332.3,
+   "requests": 27,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 302,
+     "KB": 2.4
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 602,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 602,
+     "KB": 12.5
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 302,
+     "KB": 4.2
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 152,
+     "KB": 1.0
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 4,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:50:10.955Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.534,
+   "lcp_s": 0.614,
+   "si_s": 0.927,
+   "tbt_ms": 0,
+   "cls": 0.0084,
+   "totalKB": 332.3,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase.css",
+     "wastedMs": 82,
+     "KB": 4.2
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 162,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 122,
+     "KB": 12.5
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 82,
+     "KB": 2.4
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 4,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:49:58.145Z",
+   "scores": {
+    "performance": 96,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 1.653,
+   "lcp_s": 2.555,
+   "si_s": 2.242,
+   "tbt_ms": 0,
+   "cls": 0.0208,
+   "totalKB": 332.3,
+   "requests": 27,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 601,
+     "KB": 12.5
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 301,
+     "KB": 2.4
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 301,
+     "KB": 4.2
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 601,
+     "KB": 15.9
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 151,
+     "KB": 1.0
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 5,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:51:01.997Z",
+   "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.485,
+   "lcp_s": 0.602,
+   "si_s": 0.993,
+   "tbt_ms": 23,
+   "cls": 0.006,
+   "totalKB": 332.3,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 122,
+     "KB": 12.5
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 162,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 82,
+     "KB": 2.4
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 82,
+     "KB": 4.2
+    }
+   ]
+  },
+  {
+   "side": "after",
+   "pair": 5,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:50:48.979Z",
+   "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 1.506,
+   "lcp_s": 1.656,
+   "si_s": 2.171,
+   "tbt_ms": 35,
+   "cls": 0.0195,
+   "totalKB": 332.3,
+   "requests": 27,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase.css",
+     "wastedMs": 302,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 602,
+     "KB": 12.5
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 602,
+     "KB": 15.9
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 152,
+     "KB": 1.0
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 302,
+     "KB": 2.4
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 1,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:47:13.306Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.483,
+   "lcp_s": 0.524,
+   "si_s": 1.02,
+   "tbt_ms": 0,
+   "cls": 0.0087,
+   "totalKB": 326.1,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "index.css",
+     "wastedMs": 161,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 81,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 81,
+     "KB": 2.4
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 121,
+     "KB": 8.8
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 1,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:47:00.441Z",
+   "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 1.659,
+   "lcp_s": 1.809,
+   "si_s": 2.225,
+   "tbt_ms": 28,
+   "cls": 0.0191,
+   "totalKB": 326.1,
+   "requests": 27,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "index.css",
+     "wastedMs": 603,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 303,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 453,
+     "KB": 8.8
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 303,
+     "KB": 2.4
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 153,
+     "KB": 1.0
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 2,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:48:04.027Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.383,
+   "lcp_s": 0.383,
+   "si_s": 1.003,
+   "tbt_ms": 0,
+   "cls": 0.0091,
+   "totalKB": 326.1,
+   "requests": 27,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "index.css",
+     "wastedMs": 121,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 81,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 81,
+     "KB": 2.4
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 81,
+     "KB": 8.8
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 2,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:47:50.994Z",
+   "scores": {
+    "performance": 88,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 2.256,
+   "lcp_s": 2.822,
+   "si_s": 2.506,
+   "tbt_ms": 271,
+   "cls": 0.0168,
+   "totalKB": 326.1,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 602,
+     "KB": 8.8
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 752,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 302,
+     "KB": 2.4
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 152,
+     "KB": 1.0
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 302,
+     "KB": 4.2
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 3,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:48:54.979Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.389,
+   "lcp_s": 0.409,
+   "si_s": 0.923,
+   "tbt_ms": 0,
+   "cls": 0.0068,
+   "totalKB": 326.1,
+   "requests": 27,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 83,
+     "KB": 8.8
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 83,
+     "KB": 4.2
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 123,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 83,
+     "KB": 2.4
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 3,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:48:42.250Z",
+   "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 1.354,
+   "lcp_s": 2.562,
+   "si_s": 2.162,
+   "tbt_ms": 54,
+   "cls": 0.0195,
+   "totalKB": 326.1,
+   "requests": 27,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "index.css",
+     "wastedMs": 602,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 452,
+     "KB": 8.8
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 302,
+     "KB": 4.2
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 152,
+     "KB": 1.0
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 302,
+     "KB": 2.4
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 4,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:49:45.688Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.363,
+   "lcp_s": 0.363,
+   "si_s": 0.965,
+   "tbt_ms": 0,
+   "cls": 0.0074,
+   "totalKB": 326.1,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 121,
+     "KB": 8.8
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 81,
+     "KB": 2.4
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 81,
+     "KB": 4.2
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 161,
+     "KB": 15.9
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 4,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:49:32.898Z",
+   "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 1.952,
+   "lcp_s": 2.102,
+   "si_s": 2.264,
+   "tbt_ms": 28,
+   "cls": 0.0168,
+   "totalKB": 326.1,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase.css",
+     "wastedMs": 301,
+     "KB": 4.2
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 601,
+     "KB": 8.8
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 301,
+     "KB": 2.4
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 751,
+     "KB": 15.9
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 151,
+     "KB": 1.0
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 5,
+   "formFactor": "desktop",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:50:36.594Z",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 0.384,
+   "lcp_s": 0.384,
+   "si_s": 0.94,
+   "tbt_ms": 3,
+   "cls": 0.0071,
+   "totalKB": 326.1,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase.css",
+     "wastedMs": 81,
+     "KB": 4.2
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 121,
+     "KB": 15.9
+    },
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 81,
+     "KB": 8.8
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 81,
+     "KB": 2.4
+    }
+   ]
+  },
+  {
+   "side": "before",
+   "pair": 5,
+   "formFactor": "mobile",
+   "lighthouse": "12.8.2",
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+   "fetchTime": "2026-10-19T01:50:23.568Z",
+   "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "fcp_s": 1.581,
+   "lcp_s": 1.806,
+   "si_s": 2.369,
+   "tbt_ms": 126,
+   "cls": 0.0135,
+   "totalKB": 326.1,
+   "requests": 32,
+   "libraryRequests": [],
+   "renderBlocking": [
+    {
+     "file": "showcase-v23.css",
+     "wastedMs": 452,
+     "KB": 8.8
+    },
+    {
+     "file": "showcase-v22.css",
+     "wastedMs": 302,
+     "KB": 2.4
+    },
+    {
+     "file": "showcase.css",
+     "wastedMs": 302,
+     "KB": 4.2
+    },
+    {
+     "file": "index.css",
+     "wastedMs": 602,
+     "KB": 15.9
+    },
+    {
+     "file": "fonts.css",
+     "wastedMs": 152,
+     "KB": 1.0
+    }
+   ]
+  }
+ ]
+}

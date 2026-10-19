@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# W3.C QA round 2 on the final QA SHA b53350e (differs from bdba5fa by one CSS alpha and the R-W3C-03 test)
+set -u
+N=/tmp/claude-0/-home-user/f9f5b144-35b7-57ab-9b38-ad4a6341a687/scratchpad
+export NODE_PATH=/opt/node22/lib/node_modules
+B=http://127.0.0.1:8621/ ; A=http://127.0.0.1:8624/
+Q=$N/qa/qa2; mkdir -p $Q/lh
+AXE=/tmp/claude-0/-home-user-endevor-vik-github-io/f9f5b144-35b7-57ab-9b38-ad4a6341a687/scratchpad/qa-tools/node_modules/axe-core/axe.min.js
+cd $N/qa
+for i in 1 2; do node $N/snap-qa/tests/browser/showcase_regression.cjs --url $A --json $Q/regression-qa-$i.json > $Q/regression-qa-$i.log 2>&1; echo "regression-qa-$i: $(tail -1 $Q/regression-qa-$i.log)"; done
+# Lighthouse, interleaved BEFORE/AFTER so both sides see the same machine state
+for i in 1 2 3 4 5; do bash lh-run.sh $B before-i$i $Q/lh 1; bash lh-run.sh $A after-i$i $Q/lh 1; done; echo lh-done
+AXE_PATH=$AXE node axe-run.cjs $A $Q/axe-after.json > $Q/axe-after.log 2>&1; echo axe-done
+cd $N/w3c
+rm -rf contrast2; node w3c_contrast.cjs $A after contrast2 - > $Q/contrast-run.log 2>&1; python3 -I contrast.py contrast2 after > $Q/contrast-summary.txt 2>&1; cp contrast2/contrast-summary.json $Q/; cp contrast2/after-contrast.json $Q/contrast-after.json; echo contrast-done
+rm -f out/after-*; node w3c_capture.cjs $A after out - > $Q/capture.log 2>&1; echo capture-done
+for v in 1440x900_1:300 1920x1080_1:300 768x1024_2:480 390x844_2:560 430x932_2:560; do python3 compare.py ${v%:*} ${v#*:} cmp-${v%%x*}.jpg; done >> $Q/capture.log 2>&1
+echo ALL-DONE

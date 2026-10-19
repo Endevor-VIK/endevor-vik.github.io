@@ -1,0 +1,11 @@
+# jumpcheck.cjs on b53350e (threshold after a menu jump; scene, title top, CTA bottom, viewport height)
+1024x768 {"scene":576,"titleTop":429,"ctaBottom":666,"vh":768} OK
+1100x800 {"scene":619,"titleTop":507,"ctaBottom":748,"vh":800} OK
+1280x800 {"scene":630,"titleTop":503,"ctaBottom":760,"vh":800} OK
+1440x900 {"scene":730,"titleTop":580,"ctaBottom":853,"vh":900} OK
+1600x900 {"scene":730,"titleTop":561,"ctaBottom":854,"vh":900} OK
+1920x1080 {"scene":910,"titleTop":615,"ctaBottom":1022,"vh":1080} OK
+960x540 {"scene":420,"titleTop":288,"ctaBottom":524,"vh":540} OK
+# look.cjs on b53350e at 360x780@3 and 1024x768@2 (OMEGA-0 return to 02.05)
+360x780@3 {"id":"02.05 / LABORATORY OMEGA-0","focus":"02.05","pressed":"true"} overflow false errors 0 []
+1024x768@2 {"id":"02.05 / LABORATORY OMEGA-0","focus":"02.05","pressed":"true"} overflow false errors 0 []

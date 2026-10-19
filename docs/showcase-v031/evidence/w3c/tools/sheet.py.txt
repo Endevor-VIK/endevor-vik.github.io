@@ -1,0 +1,14 @@
+# build a strip of frames for one tag+viewport: f1..f6 side by side (scaled to height H)
+import sys
+from PIL import Image, ImageDraw, ImageFont
+F=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',18)
+def strip(prefix, frames, H, out, title):
+    ims=[Image.open(f'{prefix}-{f}.png').convert('RGB') for f in frames]
+    ims=[i.resize((round(i.width*H/i.height),H), Image.LANCZOS) for i in ims]
+    W=sum(i.width for i in ims)+12*(len(ims)+1); s=Image.new('RGB',(W,H+70),(32,33,38)); d=ImageDraw.Draw(s); x=12
+    d.text((12,8),title,fill=(235,235,240),font=F)
+    for i,f in zip(ims,frames): s.paste(i,(x,58)); d.text((x,34),f,fill=(170,170,180),font=F); x+=i.width+12
+    s.save(out,quality=86)
+if __name__=='__main__':
+    tag,vp,H=sys.argv[1],sys.argv[2],int(sys.argv[3])
+    strip(f'out/{tag}-{vp}',sys.argv[4].split(','),H,f'strip-{tag}-{vp}.jpg',f'{tag.upper()} · {vp}')

@@ -1,0 +1,53 @@
+// W3.C concept capture: BASE / A / B on an immutable main snapshot. Variants are injected (DOM + CSS) in the
+// browser only — nothing is written to the repository. usage:
+//   NODE_PATH=<playwright> node w3c_capture.cjs <url> <tag> <outDir> [variant.js|-] [viewports]
+// Frames: f1-threshold (end of SYSTEM above, start of WORLD below), f2-enter (menu jump to WORLD),
+// f3/f4 (one and two screens further), f5-exit (end of FACTIONS → VISION), f6-vision (menu jump to VISION).
+const { chromium } = require('playwright');
+const fs = require('fs'), path = require('path');
+const [base, tag, outDir, variantFile, vpArg] = process.argv.slice(2);
+const variant = variantFile && variantFile !== '-' ? fs.readFileSync(variantFile, 'utf8') : null;
+const vps = (vpArg || '1440x900@1,1920x1080@1,768x1024@2,390x844@2,430x932@2').split(',').map(s => { const [wh, d] = s.split('@'); const [w, h] = wh.split('x').map(Number); return { w, h, dpr: +d, name: s.replace('@', '_') }; });
+fs.mkdirSync(outDir, { recursive: true });
+const settle = (p) => p.evaluate(() => new Promise(res => { let last = scrollY, same = 0, n = 0; const t = () => { n++; if (Math.abs(scrollY - last) < 0.5) same++; else same = 0; last = scrollY; if (same >= 8 || n > 400) res(); else requestAnimationFrame(t); }; requestAnimationFrame(t); }));
+const chrome = () => [...document.querySelectorAll('header.top,.show-mobile-nav')].filter(e => { const c = getComputedStyle(e); return c.position === 'sticky' && c.display !== 'none'; }).reduce((m, e) => Math.max(m, e.getBoundingClientRect().height), 0);
+
+(async () => {
+  const browser = await chromium.launch();
+  const report = { tag, base, at: new Date().toISOString(), results: [] };
+  for (const vp of vps) {
+    const phone = vp.w < 700;
+    const ctx = await browser.newContext({ viewport: { width: vp.w, height: vp.h }, deviceScaleFactor: vp.dpr, isMobile: phone, hasTouch: phone, reducedMotion: 'no-preference' });
+    await ctx.addInitScript(() => { try { sessionStorage.setItem('axiom_loader_seen', '1'); } catch (_) {} });
+    const page = await ctx.newPage();
+    const errors = []; page.on('pageerror', e => errors.push(String(e))); page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+    await page.goto(base, { waitUntil: 'load' });
+    if (variant) await page.evaluate(variant);
+    // desktop scroll-reveal keeps unreached sections at opacity 0 — reveal everything so frames show content, not the
+    // reveal state (same for BASE and variants)
+    await page.evaluate(() => { for (const s of document.querySelectorAll('section')) { s.style.transition = 'none'; s.style.opacity = 1; s.style.transform = 'none'; } });
+    await page.evaluate(() => document.fonts.ready); await page.waitForTimeout(900);
+    // lazy images in view must have arrived before a frame is taken (same rule for every tag)
+    const imgsReady = () => page.evaluate(() => new Promise(res => { const t0 = performance.now(); const tick = () => { const pend = [...document.images].filter(i => { const b = i.getBoundingClientRect(); return b.bottom > 0 && b.top < innerHeight && b.width > 0 && !i.complete; }); if (!pend.length || performance.now() - t0 > 6000) { const vis = [...document.images].filter(i => { const b = i.getBoundingClientRect(); return b.bottom > 0 && b.top < innerHeight && b.width > 0; }); Promise.all(vis.map(i => i.decode().catch(() => {}))).then(() => requestAnimationFrame(() => requestAnimationFrame(() => res(pend.length)))); } else setTimeout(tick, 100); }; tick(); }));
+    const shot = async (name) => { await page.waitForTimeout(300); await imgsReady(); await page.waitForTimeout(700); await page.screenshot({ path: path.join(outDir, `${tag}-${vp.name}-${name}.png`) }); };
+    const scrollToRatio = async (sel, ratio) => { await page.evaluate(([s, r]) => { const el = document.querySelector(s); const html = document.documentElement; html.style.scrollBehavior = 'auto'; window.scrollTo(0, el.getBoundingClientRect().top + scrollY - innerHeight * r); }, [sel, ratio]); await page.waitForTimeout(80); };
+    const navTo = async (hash) => { await page.evaluate(() => { document.documentElement.style.scrollBehavior = ''; window.scrollTo(0, 0); }); await page.waitForTimeout(200);
+      const sel = vp.w > 1080 ? `.menu a[href="${hash}"]` : `.show-mobile-nav a[href="${hash}"]`; await page.locator(sel).click(); await settle(page); await page.mouse.move(1, Math.round(vp.h / 2)); };
+    await scrollToRatio('#world-guide', 0.45); await shot('f1-threshold');
+    await navTo('#world-guide'); await shot('f2-enter');
+    const step = await page.evaluate(chrome);
+    await page.evaluate((c) => { document.documentElement.style.scrollBehavior = 'auto'; window.scrollBy(0, innerHeight - c); }, step); await shot('f3-scroll1');
+    await page.evaluate((c) => { window.scrollBy(0, innerHeight - c); }, step); await shot('f4-scroll2');
+    // exit: the bridge above VISION at 85% of the screen, so whatever closes WORLD (BASE: the factions' end) is in view
+    await page.evaluate(() => { const br = document.querySelector('#vision').previousElementSibling; document.documentElement.style.scrollBehavior = 'auto'; window.scrollTo(0, br.getBoundingClientRect().top + scrollY - innerHeight * 0.85); }); await page.waitForTimeout(80); await shot('f5-exit');
+    await navTo('#vision'); await shot('f6-vision');
+    const m = await page.evaluate(() => { const top = s => { const e = document.querySelector(s); return e ? Math.round(e.getBoundingClientRect().top + scrollY) : null; };
+      return { screens: +(document.documentElement.scrollHeight / innerHeight).toFixed(2), overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        worldGuide: top('#world-guide'), manifesto: top('#manifesto'), map: top('#world'), chars: top('#chars'), factions: top('#factions'), vision: top('#vision'), vh: innerHeight }; });
+    report.results.push({ vp: vp.name, ...m, errors });
+    process.stdout.write(`${tag} ${vp.name}: screens ${m.screens} overflow ${m.overflow} world-guide→map ${((m.map - m.worldGuide) / m.vh).toFixed(1)} vh, world-guide→vision ${((m.vision - m.worldGuide) / m.vh).toFixed(1)} vh, err ${errors.length}\n`);
+    await ctx.close();
+  }
+  await browser.close();
+  fs.writeFileSync(path.join(outDir, `${tag}-report.json`), JSON.stringify(report, null, 1));
+})();

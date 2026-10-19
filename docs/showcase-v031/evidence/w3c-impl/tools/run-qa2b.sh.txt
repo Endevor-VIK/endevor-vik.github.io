@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# W3.C QA round 2b on b53350e: smoke, preservation, text keep, bridges, measurements (BEFORE reruns for the same machine state)
+set -u
+N=/tmp/claude-0/-home-user/f9f5b144-35b7-57ab-9b38-ad4a6341a687/scratchpad
+export NODE_PATH=/opt/node22/lib/node_modules
+B=http://127.0.0.1:8621/ ; A=http://127.0.0.1:8624/
+Q=$N/qa/qa2
+cd $N/qa
+(cd $N/snap-qa && python3 -I tests/smoke_showcase.py && python3 -I tests/smoke_showcase_v23.py && python3 -I tests/smoke_showcase.py && python3 -I tests/smoke_showcase_v23.py) > $Q/smoke-qa.log 2>&1; echo "smoke: $?"
+node w3a_preserve.cjs $B $Q/preserve-before.json > $Q/preserve-before.log 2>&1; node w3a_preserve.cjs $A $Q/preserve-after.json > $Q/preserve-after.log 2>&1; echo preserve-done
+cd $N/w3c
+node textkeep2.cjs $B $A > $Q/textkeep.json 2>&1
+node bridges.cjs $B before - > $Q/bridges.txt 2>&1; node bridges.cjs $A after - >> $Q/bridges.txt 2>&1
+node w3c_measure.cjs $B before $Q/measure-before.json - > $Q/measure.log 2>&1; node w3c_measure.cjs $A after $Q/measure-after.json - >> $Q/measure.log 2>&1; echo measure-done
+echo ALL-DONE-2B

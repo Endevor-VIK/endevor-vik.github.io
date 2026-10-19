@@ -1,0 +1,35 @@
+# W3.C world library: lossless originals stay byte-identical; web derivatives at 960/1280/1672 (native, never
+# upscaled): AVIF 4:4:4 q80 (primary) and WebP q92 (fallback), each checked against a LANCZOS reference of the original by
+# PSNR and by edge retention (Laplacian variance of the encode ÷ reference; 1.00 = no softening).
+import sys, io, json, math, hashlib, os
+from PIL import Image
+import numpy as np
+L = sys.argv[1]
+IDS = [('W01', '682462bb-2c81-49d2-b873-f88cfe6e4ef9', 'threshold_bridge'), ('W02', '77886809-2dca-4da7-9dfb-5b58ae325303', 'memory_spheres'),
+       ('W03', '83f77450-c0f6-4cde-8bb7-17176f268981', 'subterranean_facility'), ('W04', '8d008d9d-ede8-4add-9e92-3de355f911cd', 'vertical_city'),
+       ('W05', '9a3f3d08-c152-4e54-8984-03129f62582f', 'red_sun_overlook'), ('W06', 'acadd804-bc4b-42a7-af7a-c756594e22d1', 'eclipse_ruins'),
+       ('W07', 'c85e6d00-5bd2-451a-ac5b-8c2b6691ce16', 'red_rim_orbit'), ('W08', 'ca6fd69d-3dc0-4e88-9331-4eb77910c0f4', 'axial_capital'),
+       ('W09', 'e032670c-4f79-4ce6-bf77-9ba0bb529443', 'emblem_gate')]
+WIDTHS = (960, 1280, 1672)
+def lap(im):
+    g = np.asarray(im.convert('L'), dtype=np.float64); l = g[1:-1, 1:-1] * -4 + g[:-2, 1:-1] + g[2:, 1:-1] + g[1:-1, :-2] + g[1:-1, 2:]; return l.var()
+def psnr(a, b):
+    a = np.asarray(a, dtype=np.float64); b = np.asarray(b, dtype=np.float64); m = ((a - b) ** 2).mean()
+    return 99.0 if m == 0 else round(10 * math.log10(255 ** 2 / m), 1)
+out = []
+for wid, uuid, slug in IDS:
+    op = f'{L}/originals/{uuid}.png'; raw = open(op, 'rb').read()
+    src = Image.open(op).convert('RGB')
+    entry = {'id': wid, 'uuid': uuid, 'slug': slug, 'original': {'path': f'originals/{uuid}.png', 'archive_name': f'0524/{uuid}.png',
+             'sha256': hashlib.sha256(raw).hexdigest(), 'bytes': len(raw), 'width': src.width, 'height': src.height, 'format': 'PNG', 'mode': 'RGB', 'icc': False}, 'web': []}
+    for w in WIDTHS:
+        if w > src.width: continue
+        ref = src if w == src.width else src.resize((w, round(src.height * w / src.width)), Image.LANCZOS)
+        for fmt, ext, kw in (('AVIF', 'avif', dict(quality=80, speed=4, subsampling='4:4:4')), ('WEBP', 'webp', dict(quality=92, method=6))):
+            p = f'web/{wid}_{slug}-{w}w.{ext}'
+            ref.save(f'{L}/{p}', fmt, **kw)
+            dec = Image.open(f'{L}/{p}').convert('RGB')
+            entry['web'].append({'path': p, 'format': ext, 'width': ref.width, 'height': ref.height, 'bytes': os.path.getsize(f'{L}/{p}'), 'psnr_db': psnr(ref, dec), 'edge_retention': round(lap(dec) / lap(ref), 2)})
+    out.append(entry)
+    print(wid, uuid[:8], ' '.join(f"{x['width']}{x['format'][0]}:{x['bytes']//1024}K/{x['psnr_db']}/{x['edge_retention']}" for x in entry['web']))
+json.dump(out, open(sys.argv[2], 'w'), ensure_ascii=False, indent=1)

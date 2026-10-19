@@ -1,0 +1,3 @@
+base: bridges fully visible 10/10 []
+a: bridges fully visible 10/10 []
+b: bridges fully visible 10/10 []

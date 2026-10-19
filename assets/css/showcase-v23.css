@@ -348,3 +348,169 @@ p.ax-gate-note{font-size:12px}
 }
 @media (max-width:1080px){.show-mobile-nav a{font-size:12px;letter-spacing:.1em}}
 @media (max-width:400px){.hero .eyebrow{letter-spacing:.08em}}
+
+/* =====================================================================================================
+   0524 W3.C — WORLD IMMERSION, Variant A «ПОРОГ» (CREATOR 2026-10-19; docs/showcase-v031/waves/W3C_IMPLEMENTATION_SPEC.md).
+   Art from assets/showcase/world-library (W01…W08, 1672 px sources). Text over art sits on dark masks; every image is lazy.
+   ===================================================================================================== */
+/* S1 · Act I THRESHOLD — the engineering band fades to black, W01 opens the world; the copy stands under the doorway */
+.v22-bridge.ax-world-fade{background:linear-gradient(180deg,#0d0e12 0%,#000 100%);border-bottom:0;padding-top:30px;padding-bottom:30px}
+.v22-bridge.ax-world-fade b{color:#9a9ea9}
+.v22-world-guide.ax-world{padding-top:0;background:#000}
+/* after a menu jump the bridge (≈ 70 px) sits under the sticky chrome (≈ 97 px): the scene fits the rest of the screen, CTA included */
+.ax-world-scene{position:relative;height:min(calc(100vh - 170px),56.25vw,941px);min-height:420px;background:#000;overflow:hidden}
+.ax-world-art{position:absolute;inset:0;max-width:1672px;margin:0 auto}
+.ax-world-art picture,.ax-world-art img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.ax-world-art img{object-fit:cover;object-position:50% 40%}
+.ax-world-art:after{content:"";position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(0deg,#000 0%,rgba(0,0,0,.88) 22%,rgba(0,0,0,0) 58%),
+  radial-gradient(ellipse 60% 74% at 80% 92%,rgba(0,0,0,.88),rgba(0,0,0,0) 76%),
+  linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 13%),
+  linear-gradient(90deg,#000 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#000 100%)}
+.ax-world-copy{position:absolute;z-index:1;right:max(36px,calc((100vw - 1368px) / 2));bottom:clamp(34px,6.5vh,72px);width:min(47%,660px)}
+/* the doorway fog is light: the small red labels need near-black behind them (masked so the edge never shows) */
+.ax-world-copy:before{content:"";position:absolute;z-index:-1;inset:-96px -60px -60px -96px;background:rgba(0,0,0,.92);pointer-events:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);mask-composite:intersect}
+.ax-world-copy .show-index{border-top:0;padding-top:0;margin:0 0 14px;justify-content:flex-start}
+.ax-world-copy .show-index span:last-child{display:none}
+.ax-world-copy .show-kicker{color:var(--ax23-red);letter-spacing:.2em}
+.ax-world-copy .show-title{font-size:clamp(48px,4.6vw,92px);line-height:.95;margin:10px 0 20px;color:#ebebed;max-width:none}
+.show-section p.ax-world-promise{font:400 clamp(16px,1.15vw,19px)/1.6 var(--ax23-body);color:#d3d5db;max-width:44ch;margin:0 0 26px}
+.ax-world-cta{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:0 22px;border:1px solid var(--ax23-red);background:rgba(10,0,2,.55);color:#fff;font:700 12px var(--ax23-tech);letter-spacing:.16em;text-decoration:none}
+.show-section a.ax-world-cta:hover{background:var(--ax23-red);color:#fff}
+.ax-world-establish{padding:clamp(48px,8vh,96px) 0 32px}
+.ax-world-establish .show-lead{margin:0}
+/* reading key: product vocabulary stays on the page, folded (works without JS) */
+.ax-world-key{margin:28px 0 0;border:1px solid #241a1c;background:#08090c}
+.ax-world-key>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:52px;padding:0 18px;font:700 12px var(--ax23-tech);letter-spacing:.14em;color:#b4b8c3}
+.ax-world-key>summary::-webkit-details-marker{display:none}
+.ax-world-key>summary:after{content:"+";color:var(--ax23-red);font-size:18px}
+.ax-world-key[open]>summary:after{content:"−"}
+.ax-world-key>summary:focus-visible{outline:2px solid var(--ax23-red);outline-offset:2px}
+.ax-world-key-body{padding:4px 18px 22px}
+.ax-world-key-body .show-lore-link{margin-top:26px}
+/* tablets: W01 keeps its own 16:9 (a 768@2 screen never draws it wider than the source); phones: a separate composition */
+@media(max-width:900px){
+  .ax-world-scene{height:auto;min-height:0}
+  .ax-world-art{position:relative;height:min(72vw,62vh)}
+  .ax-world-art:after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 16%,rgba(0,0,0,0) 46%),linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 20%)}
+  .ax-world-art img{object-position:53% 35%}
+  .ax-world-copy{position:relative;right:auto;bottom:auto;width:auto;margin-top:-24px;padding:0 max(14px,calc((100vw - 760px) / 2)) 6px}
+  .ax-world-copy:before{display:none}
+}
+@media(min-width:600px) and (max-width:900px){.ax-world-art{height:56.25vw}}
+@media(max-width:760px){
+  .v22-bridge.ax-world-fade{padding-top:20px;padding-bottom:20px}
+  .ax-world-copy .show-index{margin-bottom:10px}
+  .ax-world-copy .show-title{font-size:clamp(42px,11.6vw,58px);margin:8px 0 16px}
+  .show-section p.ax-world-promise{font-size:16px;margin-bottom:22px}
+  .ax-world-cta{width:100%;justify-content:center;box-sizing:border-box}
+  .ax-world-establish{padding:44px 0 26px}
+}
+/* S2 · Act II WORLD FEELING — the existing lead split into a line to feel and a line to read; five chapters instead of a second link row */
+.show-section p.ax-world-statement{font:500 clamp(28px,2.7vw,46px)/1.1 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:0 0 20px;letter-spacing:.005em;max-width:30ch}
+.ax-world-statement em{font-style:normal;color:var(--ax23-red)}
+@media(min-width:761px){.ax-world-establish{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(28px,5vw,96px);align-items:end}.show-section p.ax-world-statement{margin:0}.ax-world-establish .show-lead{font-size:16px;line-height:1.75}}
+.ax-world-trail-head{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--ax23-crimson);padding-top:11px;font:700 12px var(--ax23-tech);letter-spacing:.16em;color:#8f94a0}
+.ax-world-trail-head span:first-child{color:var(--ax23-red)}
+.ax-world-trail{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr)}
+.ax-world-trail li+li{border-left:1px solid #241a1c}
+.ax-world-trail a{display:block;height:100%;padding:22px 18px 24px;color:#ebebed;text-decoration:none;box-sizing:border-box}
+.ax-world-trail a:hover b,.ax-world-trail a:focus-visible b{color:var(--ax23-red)}
+.ax-world-trail span{display:block;font:700 12px var(--ax23-tech);color:var(--ax23-red);letter-spacing:.16em}
+.ax-world-trail b{display:block;font:500 clamp(18px,1.45vw,25px)/1.12 var(--ax-font-display);margin:10px 0;text-transform:uppercase;letter-spacing:.02em}
+.ax-world-trail small{font:700 12px var(--ax23-tech);color:#9a9ea9;letter-spacing:.1em}
+/* chapter plates: one establishing shot per chapter (W06 cropped below its eclipse, W02, W04, W08); chapter IV is a line — the portraits are the scene */
+.ax-chapter-plate{position:relative;height:clamp(210px,28vh,310px);margin:0 0 34px;overflow:hidden;border:1px solid #241a1c;background:#000}
+.ax-chapter-plate picture,.ax-chapter-plate img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.ax-chapter-plate img{object-fit:cover}
+.ax-chapter-plate--w06 img{object-position:50% 60%}
+.ax-chapter-plate--w02 img{object-position:50% 15%}
+.ax-chapter-plate--w04 img{object-position:50% 35%}
+.ax-chapter-plate--w08 img{object-position:50% 25%}
+.ax-chapter-plate:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.55) 34%,rgba(0,0,0,0) 62%),linear-gradient(0deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 45%)}
+.ax-chapter-copy{position:absolute;z-index:1;left:clamp(18px,2.4vw,36px);bottom:clamp(18px,3vh,30px)}
+.ax-chapter-n{display:block;font:700 12px var(--ax23-tech);letter-spacing:.2em;color:var(--ax23-red)}
+.ax-chapter-q{display:block;font:500 clamp(26px,2.6vw,44px)/1.04 var(--ax-font-display);color:#ebebed;text-transform:uppercase;letter-spacing:.02em;margin-top:8px}
+.ax-chapter-line{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 18px;margin:0 0 30px;padding-top:14px;border-top:1px solid var(--ax23-red)}
+.ax-chapter-line .ax-chapter-q{font-size:clamp(20px,1.7vw,28px);margin:0}
+@media(max-width:1100px){.ax-world-trail{grid-template-columns:repeat(3,1fr)}.ax-world-trail li:nth-child(4){border-left:0}.ax-world-trail li:nth-child(n+4){border-top:1px solid #241a1c}}
+@media(max-width:760px){
+  .show-section p.ax-world-statement{font-size:clamp(25px,7vw,32px)}
+  .ax-world-trail-head span:last-child{display:none}
+  .ax-world-trail{grid-template-columns:1fr}
+  .ax-world-trail li+li,.ax-world-trail li:nth-child(n+4){border-left:0;border-top:1px solid #241a1c}
+  .ax-world-trail a{display:grid;grid-template-columns:34px 1fr auto;align-items:baseline;gap:10px;padding:14px 2px;min-height:52px}
+  .ax-world-trail b{margin:0;font-size:20px}
+  .ax-chapter-plate{height:42vw;min-height:150px;margin-bottom:24px}
+  .ax-chapter-plate:after{background:linear-gradient(0deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.78) 48%,rgba(0,0,0,0) 86%)}
+  .ax-chapter-plate--w06 img{object-position:50% 100%}
+  .ax-chapter-plate--w02 img{object-position:50% 10%}
+  .ax-chapter-plate--w04 img{object-position:50% 30%}
+  .ax-chapter-plate--w08 img{object-position:50% 20%}
+  .ax-chapter-q{font-size:clamp(22px,6.4vw,28px)}
+}
+/* S3 · Act III OMEGA-0 / THE DESCENT — approach (rail), descent (W03 inset, surface dimmed), silence (copy), return (to 02.05 on the map).
+   The inset stays ≤ 820 css px so a DPR 2 screen draws W03 at ≥ 1:1 (1672 px source); no full-bleed, no upscale. */
+.ax-omega{position:relative;display:grid;grid-template-columns:64px minmax(320px,1fr) minmax(0,820px);grid-template-areas:"rail copy stage";gap:0 clamp(24px,3.4vw,56px);align-items:center;margin-top:clamp(56px,9vh,104px);padding:clamp(44px,7vh,80px) 0;border-top:1px solid #241a1c;background:radial-gradient(ellipse 46% 70% at 74% 56%,rgba(255,32,52,.07),rgba(0,0,0,0) 70%)}
+.ax-omega-approach{grid-area:rail;align-self:stretch;display:flex;flex-direction:column;align-items:center;gap:14px;font:700 11px var(--ax23-tech);letter-spacing:.18em;color:#8f94a0}
+.ax-omega-approach span{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
+.ax-omega-approach span:last-child{color:var(--ax23-red)}
+.ax-omega-approach i{flex:1;width:1px;min-height:120px;background:linear-gradient(180deg,rgba(143,148,160,.5),var(--ax23-red));transform-origin:top}
+.ax-omega-stage{grid-area:stage;position:relative;margin:0;aspect-ratio:1672/941;max-width:820px;width:100%;justify-self:end;overflow:hidden;border:1px solid #241a1c;background:#000;box-shadow:0 0 0 1px rgba(255,32,52,.06),0 40px 120px -40px rgba(255,32,52,.25)}
+.ax-omega-stage picture,.ax-omega-stage img{position:absolute;inset:0;display:block;width:100%;height:100%}
+/* the station recedes: the surface band of the painting is dimmed, the shaft and its red core stay */
+.ax-omega-stage img{object-fit:cover;object-position:50% 50%;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.32) 0%,rgba(0,0,0,.32) 12%,#000 40%);mask-image:linear-gradient(180deg,rgba(0,0,0,.32) 0%,rgba(0,0,0,.32) 12%,#000 40%)}
+.ax-omega-copy{grid-area:copy;align-self:end;padding-bottom:6px}
+.ax-omega-eyebrow{display:block;font:700 12px var(--ax23-tech);letter-spacing:.2em;color:var(--ax23-red)}
+.ax-omega-title{font:500 clamp(36px,3.6vw,62px)/1 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:14px 0 22px;letter-spacing:.005em}
+.ax-omega-title em{font-style:normal;color:var(--ax23-red)}
+.v23-world p.ax-omega-line{font:400 16px/1.75 var(--ax23-body);color:#c9ccd4;margin:0 0 14px;max-width:44ch}
+.v23-world p.ax-omega-tone{font:400 15px/1.7 var(--ax23-body);color:#9a9ea9;margin:0 0 26px;max-width:44ch}
+.ax-omega-cta{display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:0 18px;border:1px solid var(--ax23-red);color:#fff;font:700 12px var(--ax23-tech);letter-spacing:.14em;text-decoration:none;background:rgba(10,0,2,.55)}
+a.ax-omega-cta:hover,a.ax-omega-cta:focus-visible{background:var(--ax23-red);color:#fff}
+/* progressive enhancement (JS, motion allowed, not a weak device): the descent opens once from the surface down */
+.ax-omega--armed .ax-omega-stage img{clip-path:inset(0 0 74% 0);transition:clip-path 1.6s cubic-bezier(.2,.8,.2,1)}
+.ax-omega--armed .ax-omega-approach i{transform:scaleY(.2);transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.ax-omega--armed.is-open .ax-omega-stage img{clip-path:inset(0 0 0 0)}
+.ax-omega--armed.is-open .ax-omega-approach i{transform:none}
+@media(prefers-reduced-motion:reduce){.ax-omega-stage img,.ax-omega-approach i{clip-path:none!important;transform:none!important;transition:none!important}}
+@media(max-width:1023px){
+  .ax-omega{grid-template-columns:minmax(0,1fr);grid-template-areas:"rail" "stage" "copy";gap:18px;background:radial-gradient(ellipse 80% 40% at 50% 38%,rgba(255,32,52,.07),rgba(0,0,0,0) 70%)}
+  .ax-omega-approach{flex-direction:row;align-self:auto;gap:12px}
+  .ax-omega-approach span{writing-mode:horizontal-tb;transform:none}
+  .ax-omega-approach i{flex:1;height:1px;width:auto;min-height:0;background:linear-gradient(90deg,rgba(143,148,160,.5),var(--ax23-red));transform-origin:left}
+  .ax-omega--armed .ax-omega-approach i{transform:scaleX(.2)}
+  .ax-omega-stage{justify-self:center}
+  .ax-omega-copy{padding-bottom:0}
+}
+/* phones: a near-portrait 5:4 stage around the central shaft — the full height of the painting (the lower shaft included) stays in frame */
+@media(max-width:760px){
+  .ax-omega{margin-top:56px;padding:40px 0 8px}
+  .ax-omega-stage{aspect-ratio:5/4}
+  .ax-omega-title{font-size:clamp(32px,9vw,44px);margin:10px 0 16px}
+  .ax-omega-cta{width:100%;justify-content:center;box-sizing:border-box}
+}
+/* S4 · Act V EPILOGUE — W07, the orbit: the world chapter closes, then the bridge and VISION (the real roadmap) */
+.ax-epilogue{position:relative;height:min(64vh,36vw);min-height:340px;display:flex;align-items:center;justify-content:center;text-align:center;background:#000;overflow:hidden;border-top:1px solid #1a1214}
+.ax-epilogue-art{position:absolute;inset:0;max-width:1672px;margin:0 auto}
+.ax-epilogue-art picture,.ax-epilogue-art img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.ax-epilogue-art img{object-fit:cover;object-position:50% 30%}
+.ax-epilogue-art:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 44% 58% at 50% 52%,rgba(0,0,0,.72),rgba(0,0,0,0) 100%),linear-gradient(180deg,#0a0b0f 0%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 74%,#000 100%),linear-gradient(90deg,#000 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#000 100%)}
+.ax-epilogue-copy{position:relative;z-index:1;isolation:isolate;padding:0 24px;max-width:860px}
+.ax-epilogue-copy:before{content:"";position:absolute;z-index:-1;inset:-16% -12% -20% -18%;background:radial-gradient(closest-side,rgba(0,0,0,.92),rgba(0,0,0,.8) 58%,rgba(0,0,0,0));pointer-events:none}
+.ax-epilogue-label{font:700 12px var(--ax23-tech);letter-spacing:.2em;color:var(--ax23-red)}
+.ax-epilogue-line{font:500 clamp(34px,3.8vw,64px)/1.02 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:14px 0}
+.ax-epilogue-sub{font:400 16px/1.6 var(--ax23-body);color:#c9ccd4;margin:0 auto 24px;max-width:40ch}
+.ax-epilogue-cta{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:0 22px;border:1px solid var(--ax23-red);background:rgba(10,0,2,.55);color:#fff;font:700 12px var(--ax23-tech);letter-spacing:.16em;text-decoration:none}
+a.ax-epilogue-cta:hover,a.ax-epilogue-cta:focus-visible{background:var(--ax23-red);color:#fff}
+/* phones: the orbit as a band at its own scale (a tall cover block would draw W07 wider than 1672 px), words below */
+@media(max-width:760px){
+  .ax-epilogue{display:block;height:auto;min-height:0;padding:0 0 44px}
+  .ax-epilogue-art{position:relative;height:62vw}
+  .ax-epilogue-art img{object-position:60% 38%}
+  .ax-epilogue-art:after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 16%,rgba(0,0,0,0) 50%),linear-gradient(180deg,#0a0b0f 0%,rgba(0,0,0,0) 24%)}
+  .ax-epilogue-copy{margin:-26px auto 0;padding:0 14px}
+  .ax-epilogue-copy:before{display:none}
+}

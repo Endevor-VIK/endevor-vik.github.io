@@ -1,0 +1,49 @@
+# Markdown tables for W3C_WORLD_CONCEPTS §11–§12 from the capture / measure / contrast JSON (same run).
+# usage: python3 summarize.py <snapshot-root>
+import json, os, sys, re
+root = sys.argv[1]
+T = ['base', 'a', 'b']; N = {'base': 'BASE', 'a': 'A', 'b': 'B'}
+cap = {t: {r['vp']: r for r in json.load(open(f'out/{t}-report.json'))['results']} for t in T}
+mea = {t: {r['vp']: r for r in json.load(open(f'measure-{t}.json'))['results']} for t in T}
+sizes = {}
+for d, _, fs in os.walk(root + '/assets'):
+    for f in fs: sizes[f] = os.path.getsize(os.path.join(d, f))
+WORLD = re.compile(r'^(W0\d_|B02_)')  # imagery of the WORLD entry / plates / exit; portraits load with #chars anyway
+
+print('### entry length / page length / jump\n')
+print('| Ширина | Вход WORLD: BASE | A | B | Вся страница, экранов: BASE | A | B | После прыжка в WORLD (A / B): заголовок · строка · CTA |')
+print('| --- | --- | --- | --- | --- | --- | --- | --- |')
+for vp in ['1440x900@1', '1920x1080@1', '768x1024@2', '390x844@2', '430x932@2']:
+    cv = vp.replace('@', '_')
+    e = {t: mea[t][vp] for t in T}
+    j = lambda r: ' · '.join('✓' if x else ('—' if x is None else '✗') for x in (r['onJump']['h2InView'], r['onJump']['promiseInView'], r['onJump']['ctaInView']))
+    print(f"| {vp} | {e['base']['worldEntryPx']} px ({e['base']['worldEntryScreens']}) | {e['a']['worldEntryPx']} px ({e['a']['worldEntryScreens']}) | {e['b']['worldEntryPx']} px ({e['b']['worldEntryScreens']}) | {cap['base'][cv]['screens']} | {cap['a'][cv]['screens']} | {cap['b'][cv]['screens']} | {j(e['a'])} / {j(e['b'])} |")
+print('\noverflow:', {t: [r['hOverflow'] for r in mea[t].values()] for t in T}, 'errors:', {t: sum(len(r['errors']) for r in mea[t].values()) + sum(len(r['errors']) for r in cap[t].values()) for t in T})
+
+print('\n### fidelity (source px ÷ device px drawn)\n')
+for t in ['base', 'a', 'b']:
+    vps = list(mea[t].keys())
+    files = []
+    for vp in vps:
+        for f in mea[t][vp]['fidelity']:
+            k = re.sub(r'-(\d+w|hq)\.(avif|webp)$', '', f['file'])
+            if k not in files: files.append(k)
+    print(f'**{N[t]}**\n')
+    print('| Изображение | ' + ' | '.join(vps) + ' |'); print('| --- |' + ' --- |' * len(vps))
+    for k in files:
+        row = []
+        for vp in vps:
+            v = [f for f in mea[t][vp]['fidelity'] if re.sub(r'-(\d+w|hq)\.(avif|webp)$', '', f['file']) == k]
+            row.append(' / '.join(f"{x['ratio']}" for x in v) or '—')
+        print(f'| {k} | ' + ' | '.join(row) + ' |')
+    print()
+
+print('### bytes\n')
+print('| Ширина | Атмосфера WORLD (B02 / библиотека 0524, лениво): BASE | A | B | Запросов библиотеки 0524 при открытии (A / B) |')
+print('| --- | --- | --- | --- | --- |')
+for vp in mea['a']:
+    def b(t):
+        fs = [f for f in mea[t][vp]['imageFilesWorld'] if WORLD.match(f)]
+        return f"{round(sum(sizes.get(f, 0) for f in fs) / 1024)} КБ ({len(fs)})"
+    at = lambda t: len([f for f in mea[t][vp]['libraryRequestsAtOpen'] if f.startswith('W0')])
+    print(f"| {vp} | {b('base')} | {b('a')} | {b('b')} | {at('a')} / {at('b')} |")

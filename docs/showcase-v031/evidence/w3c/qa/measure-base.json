@@ -1,0 +1,371 @@
+{
+ "tag": "base",
+ "base": "http://127.0.0.1:8612/",
+ "at": "2026-10-19T00:46:47.807Z",
+ "engine": "chromium 141.0.7390.37",
+ "results": [
+  {
+   "vp": "1440x900@1",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-1440w.webp",
+    "A01_public_system_gateway-960w.webp"
+   ],
+   "vh": 900,
+   "chromeBottom": 97,
+   "worldEntryPx": 1062,
+   "worldEntryScreens": 1.18,
+   "onJump": {
+    "h2": {
+     "t": 385,
+     "b": 532,
+     "h": 147
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 556
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "622x430",
+     "ratio": 1.84
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 672478,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-1440w.webp",
+    "A01_public_system_gateway-960w.webp",
+    "A07_engineering_console-960w.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  },
+  {
+   "vp": "1920x1080@1",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-1440w.webp",
+    "A01_public_system_gateway-960w.webp"
+   ],
+   "vh": 1080,
+   "chromeBottom": 97,
+   "worldEntryPx": 1071,
+   "worldEntryScreens": 0.99,
+   "onJump": {
+    "h2": {
+     "t": 385,
+     "b": 536,
+     "h": 151
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 560
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "629x430",
+     "ratio": 1.84
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 672478,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-1440w.webp",
+    "A01_public_system_gateway-960w.webp",
+    "A07_engineering_console-960w.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  },
+  {
+   "vp": "1440x900@2",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-1916w.webp",
+    "A01_public_system_gateway-hq.webp"
+   ],
+   "vh": 900,
+   "chromeBottom": 97,
+   "worldEntryPx": 1062,
+   "worldEntryScreens": 1.18,
+   "onJump": {
+    "h2": {
+     "t": 385,
+     "b": 532,
+     "h": 147
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 556
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "622x430",
+     "ratio": 0.92
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 1227818,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-1916w.webp",
+    "A01_public_system_gateway-hq.webp",
+    "A07_engineering_console-hq.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  },
+  {
+   "vp": "768x1024@2",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-1440w.webp"
+   ],
+   "vh": 1024,
+   "chromeBottom": 44,
+   "worldEntryPx": 1307,
+   "worldEntryScreens": 1.28,
+   "onJump": {
+    "h2": {
+     "t": 350,
+     "b": 431,
+     "h": 82
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 455
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "302x430",
+     "ratio": 0.92
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 1123560,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-1440w.webp",
+    "A01_public_system_gateway-hq.webp",
+    "A07_engineering_console-hq.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  },
+  {
+   "vp": "390x844@2",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-960w.webp"
+   ],
+   "vh": 844,
+   "chromeBottom": 45,
+   "worldEntryPx": 1669,
+   "worldEntryScreens": 1.98,
+   "onJump": {
+    "h2": {
+     "t": 254,
+     "b": 326,
+     "h": 72
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 350
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "360x270",
+     "ratio": 1.47
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 579086,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-960w.webp",
+    "A01_public_system_gateway-960w.webp",
+    "A07_engineering_console-960w.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  },
+  {
+   "vp": "390x844@3",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-1440w.webp"
+   ],
+   "vh": 844,
+   "chromeBottom": 45,
+   "worldEntryPx": 1669,
+   "worldEntryScreens": 1.98,
+   "onJump": {
+    "h2": {
+     "t": 254,
+     "b": 326,
+     "h": 72
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 350
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "360x270",
+     "ratio": 0.98
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 1123560,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-1440w.webp",
+    "A01_public_system_gateway-hq.webp",
+    "A07_engineering_console-hq.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  },
+  {
+   "vp": "430x932@2",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-1440w.webp"
+   ],
+   "vh": 932,
+   "chromeBottom": 45,
+   "worldEntryPx": 1612,
+   "worldEntryScreens": 1.73,
+   "onJump": {
+    "h2": {
+     "t": 253,
+     "b": 332,
+     "h": 79
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 356
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "400x270",
+     "ratio": 1.47
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 672478,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-1440w.webp",
+    "A01_public_system_gateway-960w.webp",
+    "A07_engineering_console-960w.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  },
+  {
+   "vp": "430x932@3",
+   "libraryRequestsAtOpen": [
+    "A02_network_city_panorama-1916w.webp"
+   ],
+   "vh": 932,
+   "chromeBottom": 45,
+   "worldEntryPx": 1612,
+   "worldEntryScreens": 1.73,
+   "onJump": {
+    "h2": {
+     "t": 253,
+     "b": 332,
+     "h": 79
+    },
+    "h2InView": true,
+    "promiseInView": null,
+    "ctaInView": null,
+    "leadTop": 356
+   },
+   "hOverflow": false,
+   "fidelity": [
+    {
+     "file": "B02_dark_planet_cloudscape-hq.webp",
+     "src": "1983x793",
+     "box": "400x270",
+     "ratio": 0.98
+    }
+   ],
+   "entryLinks": [
+    "#manifesto",
+    "#modules",
+    "#world",
+    "#chars",
+    "#factions"
+   ],
+   "imageBytesWorld": 1227818,
+   "imageFilesWorld": [
+    "A02_network_city_panorama-1916w.webp",
+    "A01_public_system_gateway-hq.webp",
+    "A07_engineering_console-hq.webp",
+    "B02_dark_planet_cloudscape-hq.webp"
+   ],
+   "errors": []
+  }
+ ]
+}

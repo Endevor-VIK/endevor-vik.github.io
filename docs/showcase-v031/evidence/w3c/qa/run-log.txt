@@ -1,0 +1,125 @@
+base 1440x900_1: screens 23.2 overflow false world-guide→map 4.5 vh, world-guide→vision 10.1 vh, err 0
+base 1920x1080_1: screens 19.58 overflow false world-guide→map 3.8 vh, world-guide→vision 8.5 vh, err 0
+base 768x1024_2: screens 26.87 overflow false world-guide→map 5.9 vh, world-guide→vision 13.1 vh, err 0
+base 390x844_2: screens 36.4 overflow false world-guide→map 8.1 vh, world-guide→vision 17.3 vh, err 0
+base 430x932_2: screens 32.33 overflow false world-guide→map 7.2 vh, world-guide→vision 15.5 vh, err 0
+a 1440x900_1: screens 25.3 overflow false world-guide→map 5.6 vh, world-guide→vision 12.4 vh, err 0
+a 1920x1080_1: screens 21.87 overflow false world-guide→map 4.9 vh, world-guide→vision 10.9 vh, err 0
+a 768x1024_2: screens 28.58 overflow false world-guide→map 6.8 vh, world-guide→vision 15.0 vh, err 0
+a 390x844_2: screens 37.05 overflow false world-guide→map 8.1 vh, world-guide→vision 18.3 vh, err 0
+a 430x932_2: screens 33.09 overflow false world-guide→map 7.3 vh, world-guide→vision 16.6 vh, err 0
+b 1440x900_1: screens 24.41 overflow false world-guide→map 5.1 vh, world-guide→vision 11.6 vh, err 0
+b 1920x1080_1: screens 20.86 overflow false world-guide→map 4.4 vh, world-guide→vision 9.9 vh, err 0
+b 768x1024_2: screens 27.84 overflow false world-guide→map 6.3 vh, world-guide→vision 14.3 vh, err 0
+b 390x844_2: screens 36.41 overflow false world-guide→map 7.8 vh, world-guide→vision 17.6 vh, err 0
+b 430x932_2: screens 32.48 overflow false world-guide→map 7.0 vh, world-guide→vision 16.0 vh, err 0
+base 1440x900@1: entry 1062px (1.18 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:1.84 | links 5 | world img 657KB/4 | at open 2 | err 0
+base 1920x1080@1: entry 1071px (0.99 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:1.84 | links 5 | world img 657KB/4 | at open 2 | err 0
+base 1440x900@2: entry 1062px (1.18 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:0.92 | links 5 | world img 1199KB/4 | at open 2 | err 0
+base 768x1024@2: entry 1307px (1.28 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:0.92 | links 5 | world img 1097KB/4 | at open 1 | err 0
+base 390x844@2: entry 1669px (1.98 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:1.47 | links 5 | world img 566KB/4 | at open 1 | err 0
+base 390x844@3: entry 1669px (1.98 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:0.98 | links 5 | world img 1097KB/4 | at open 1 | err 0
+base 430x932@2: entry 1612px (1.73 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:1.47 | links 5 | world img 657KB/4 | at open 1 | err 0
+base 430x932@3: entry 1612px (1.73 scr) | jump h2 IN promise null cta null | ovf false | B02_dark_planet_cloudscape-hq:0.98 | links 5 | world img 1199KB/4 | at open 1 | err 0
+a 1440x900@1: entry 1432px (1.59 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.17 W06_eclipse_ruins-1672w.avif:1.24 W02_memory_spheres-1672w.avif:1.24 W04_vertical_city-1672w.avif:1.24 W08_axial_capital-1672w.avif:1.24 W07_red_rim_orbit-1672w.avif:1.17 | links 12 | world img 2547KB/12 | at open 2 | err 0
+a 1920x1080@1: entry 1636px (1.51 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1 W06_eclipse_ruins-1672w.avif:1.22 W02_memory_spheres-1672w.avif:1.22 W04_vertical_city-1672w.avif:1.22 W08_axial_capital-1672w.avif:1.22 W07_red_rim_orbit-1672w.avif:1 | links 12 | world img 2547KB/12 | at open 2 | err 0
+a 1440x900@2: entry 1432px (1.59 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:0.59 W06_eclipse_ruins-1672w.avif:0.62 W02_memory_spheres-1672w.avif:0.62 W04_vertical_city-1672w.avif:0.62 W08_axial_capital-1672w.avif:0.62 W07_red_rim_orbit-1672w.avif:0.59 | links 12 | world img 4062KB/12 | at open 2 | err 0
+a 768x1024@2: entry 1562px (1.53 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:0.85 W06_eclipse_ruins-1672w.avif:1.23 W02_memory_spheres-1672w.avif:1.23 W04_vertical_city-1672w.avif:1.23 W08_axial_capital-1672w.avif:1.23 W07_red_rim_orbit-1672w.avif:1.11 | links 12 | world img 3960KB/12 | at open 1 | err 0
+a 390x844@2: entry 1308px (1.55 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1280w.avif:1.28 W06_eclipse_ruins-960w.avif:1.33 W02_memory_spheres-960w.avif:1.33 W04_vertical_city-960w.avif:1.33 W08_axial_capital-960w.avif:1.33 W07_red_rim_orbit-1280w.avif:0.94 | links 12 | world img 1297KB/11 | at open 1 | err 0
+a 390x844@3: entry 1308px (1.55 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.12 W06_eclipse_ruins-1280w.avif:1.19 W02_memory_spheres-1280w.avif:1.19 W04_vertical_city-1280w.avif:1.19 W08_axial_capital-1280w.avif:1.19 W07_red_rim_orbit-1672w.avif:0.82 | links 12 | world img 2774KB/12 | at open 1 | err 0
+a 430x932@2: entry 1340px (1.44 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1280w.avif:1.16 W06_eclipse_ruins-960w.avif:1.2 W02_memory_spheres-960w.avif:1.2 W04_vertical_city-960w.avif:1.2 W08_axial_capital-960w.avif:1.2 W07_red_rim_orbit-1672w.avif:1.19 | links 12 | world img 1458KB/11 | at open 1 | err 0
+a 430x932@3: entry 1340px (1.44 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.01 W06_eclipse_ruins-1280w.avif:1.07 W02_memory_spheres-1280w.avif:1.07 W04_vertical_city-1280w.avif:1.07 W08_axial_capital-1280w.avif:1.07 W07_red_rim_orbit-1672w.avif:0.79 | links 12 | world img 2876KB/12 | at open 1 | err 0
+b 1440x900@1: entry 1585px (1.76 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1280w.avif:1.34 viktor:2.34 W06_eclipse_ruins-1280w.avif:1.34 W01_threshold_bridge-1672w.avif:1.17 | links 14 | world img 977KB/8 | at open 2 | err 0
+b 1920x1080@1: entry 1735px (1.61 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1280w.avif:1.29 viktor:2.31 W06_eclipse_ruins-1280w.avif:1.29 W01_threshold_bridge-1672w.avif:1 | links 14 | world img 977KB/8 | at open 2 | err 0
+b 1440x900@2: entry 1585px (1.76 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1672w.avif:0.87 viktor:1.17 W06_eclipse_ruins-1672w.avif:0.87 W01_threshold_bridge-1672w.avif:0.59 | links 14 | world img 1708KB/8 | at open 2 | err 0
+b 768x1024@2: entry 1706px (1.67 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1672w.avif:0.98 viktor:1.61 W06_eclipse_ruins-1672w.avif:0.98 W01_threshold_bridge-1672w.avif:0.85 | links 14 | world img 1606KB/8 | at open 1 | err 0
+b 390x844@2: entry 1399px (1.66 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.8 viktor:3.74 W06_eclipse_ruins-960w.avif:1.8 W01_threshold_bridge-1280w.avif:1.28 | links 14 | world img 796KB/8 | at open 1 | err 0
+b 390x844@3: entry 1399px (1.66 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.2 viktor:2.5 W06_eclipse_ruins-960w.avif:1.2 W01_threshold_bridge-1672w.avif:1.12 | links 14 | world img 1380KB/8 | at open 1 | err 0
+b 430x932@2: entry 1435px (1.54 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.8 viktor:3.37 W06_eclipse_ruins-960w.avif:1.8 W01_threshold_bridge-1280w.avif:1.16 | links 14 | world img 887KB/8 | at open 1 | err 0
+b 430x932@3: entry 1435px (1.54 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.2 viktor:2.25 W06_eclipse_ruins-960w.avif:1.2 W01_threshold_bridge-1672w.avif:1.01 | links 14 | world img 1481KB/8 | at open 1 | err 0
+cmp-1440.jpg (2950, 1082)
+cmp-1920.jpg (3268, 1082)
+cmp-768.jpg (2230, 1622)
+cmp-390.jpg (1624, 1862)
+cmp-430.jpg (1618, 1862)
+a 1440x900_1: screens 25.3 overflow false world-guide→map 5.6 vh, world-guide→vision 12.4 vh, err 0
+a 1920x1080_1: screens 21.87 overflow false world-guide→map 4.9 vh, world-guide→vision 10.9 vh, err 0
+a 768x1024_2: screens 28.46 overflow false world-guide→map 6.7 vh, world-guide→vision 14.9 vh, err 0
+a 390x844_2: screens 37.05 overflow false world-guide→map 8.1 vh, world-guide→vision 18.3 vh, err 0
+a 430x932_2: screens 33.09 overflow false world-guide→map 7.3 vh, world-guide→vision 16.6 vh, err 0
+b 1440x900_1: screens 24.41 overflow false world-guide→map 5.1 vh, world-guide→vision 11.6 vh, err 0
+b 1920x1080_1: screens 20.86 overflow false world-guide→map 4.4 vh, world-guide→vision 9.9 vh, err 0
+b 768x1024_2: screens 27.72 overflow false world-guide→map 6.3 vh, world-guide→vision 14.2 vh, err 0
+b 390x844_2: screens 36.41 overflow false world-guide→map 7.8 vh, world-guide→vision 17.6 vh, err 0
+b 430x932_2: screens 32.48 overflow false world-guide→map 7.0 vh, world-guide→vision 16.0 vh, err 0
+a 1440x900@1: entry 1432px (1.59 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.17 W06_eclipse_ruins-1672w.avif:1.24 W02_memory_spheres-1672w.avif:1.24 W04_vertical_city-1672w.avif:1.24 W08_axial_capital-1672w.avif:1.24 W07_red_rim_orbit-1672w.avif:1.17 | links 12 | world img 2547KB/12 | at open 2 | err 0
+a 1920x1080@1: entry 1636px (1.51 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1 W06_eclipse_ruins-1672w.avif:1.22 W02_memory_spheres-1672w.avif:1.22 W04_vertical_city-1672w.avif:1.22 W08_axial_capital-1672w.avif:1.22 W07_red_rim_orbit-1672w.avif:1 | links 12 | world img 2547KB/12 | at open 2 | err 0
+a 1440x900@2: entry 1432px (1.59 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:0.59 W06_eclipse_ruins-1672w.avif:0.62 W02_memory_spheres-1672w.avif:0.62 W04_vertical_city-1672w.avif:0.62 W08_axial_capital-1672w.avif:0.62 W07_red_rim_orbit-1672w.avif:0.59 | links 12 | world img 4062KB/12 | at open 2 | err 0
+a 768x1024@2: entry 1441px (1.41 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.09 W06_eclipse_ruins-1672w.avif:1.23 W02_memory_spheres-1672w.avif:1.23 W04_vertical_city-1672w.avif:1.23 W08_axial_capital-1672w.avif:1.23 W07_red_rim_orbit-1672w.avif:1.11 | links 12 | world img 3960KB/12 | at open 1 | err 0
+a 390x844@2: entry 1308px (1.55 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1280w.avif:1.28 W06_eclipse_ruins-960w.avif:1.33 W02_memory_spheres-960w.avif:1.33 W04_vertical_city-960w.avif:1.33 W08_axial_capital-960w.avif:1.33 W07_red_rim_orbit-1280w.avif:0.94 | links 12 | world img 1251KB/10 | at open 1 | err 0
+a 390x844@3: entry 1308px (1.55 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.12 W06_eclipse_ruins-1280w.avif:1.19 W02_memory_spheres-1280w.avif:1.19 W04_vertical_city-1280w.avif:1.19 W08_axial_capital-1280w.avif:1.19 W07_red_rim_orbit-1672w.avif:0.82 | links 12 | world img 2774KB/12 | at open 1 | err 0
+a 430x932@2: entry 1340px (1.44 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1280w.avif:1.16 W06_eclipse_ruins-960w.avif:1.2 W02_memory_spheres-960w.avif:1.2 W04_vertical_city-960w.avif:1.2 W08_axial_capital-960w.avif:1.2 W07_red_rim_orbit-1672w.avif:1.19 | links 12 | world img 1412KB/10 | at open 1 | err 0
+a 430x932@3: entry 1340px (1.44 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.01 W06_eclipse_ruins-1280w.avif:1.07 W02_memory_spheres-1280w.avif:1.07 W04_vertical_city-1280w.avif:1.07 W08_axial_capital-1280w.avif:1.07 W07_red_rim_orbit-1672w.avif:0.79 | links 12 | world img 2876KB/12 | at open 1 | err 0
+b 1440x900@1: entry 1585px (1.76 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1280w.avif:1.34 viktor:2.34 W06_eclipse_ruins-1280w.avif:1.34 W01_threshold_bridge-1672w.avif:1.17 | links 14 | world img 977KB/8 | at open 2 | err 0
+b 1920x1080@1: entry 1735px (1.61 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1280w.avif:1.29 viktor:2.31 W06_eclipse_ruins-1280w.avif:1.29 W01_threshold_bridge-1672w.avif:1 | links 14 | world img 977KB/8 | at open 2 | err 0
+b 1440x900@2: entry 1585px (1.76 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1672w.avif:0.87 viktor:1.17 W06_eclipse_ruins-1672w.avif:0.87 W01_threshold_bridge-1672w.avif:0.59 | links 14 | world img 1708KB/8 | at open 2 | err 0
+b 768x1024@2: entry 1706px (1.67 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-1672w.avif:0.98 viktor:1.61 W06_eclipse_ruins-1672w.avif:0.98 W01_threshold_bridge-1672w.avif:1.09 | links 14 | world img 1606KB/8 | at open 1 | err 0
+b 390x844@2: entry 1399px (1.66 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.8 viktor:3.74 W06_eclipse_ruins-960w.avif:1.8 W01_threshold_bridge-1280w.avif:1.28 | links 14 | world img 796KB/8 | at open 1 | err 0
+b 390x844@3: entry 1399px (1.66 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.2 viktor:2.5 W06_eclipse_ruins-960w.avif:1.2 W01_threshold_bridge-1672w.avif:1.12 | links 14 | world img 1380KB/8 | at open 1 | err 0
+b 430x932@2: entry 1435px (1.54 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.8 viktor:3.37 W06_eclipse_ruins-960w.avif:1.8 W01_threshold_bridge-1280w.avif:1.16 | links 14 | world img 887KB/8 | at open 1 | err 0
+b 430x932@3: entry 1435px (1.54 scr) | jump h2 IN promise true cta null | ovf false | W04_vertical_city-960w.avif:1.2 viktor:2.25 W06_eclipse_ruins-960w.avif:1.2 W01_threshold_bridge-1672w.avif:1.01 | links 14 | world img 1481KB/8 | at open 1 | err 0
+a 1440x900_1: 6 blocks
+a 1920x1080_1: 6 blocks
+a 768x1024_2: 6 blocks
+a 390x844_2: 6 blocks
+b 1440x900_1: 5 blocks
+b 1920x1080_1: 5 blocks
+b 768x1024_2: 5 blocks
+b 390x844_2: 5 blocks
+base: bridges fully visible 10/10 []
+a: bridges fully visible 10/10 []
+b: bridges fully visible 10/10 []
+cmp-1440.jpg (2950, 1082)
+cmp-1920.jpg (3268, 1082)
+cmp-768.jpg (2230, 1622)
+cmp-390.jpg (1624, 1862)
+cmp-430.jpg (1618, 1862)
+a 1440x900_1: screens 25.3 overflow false world-guide→map 5.6 vh, world-guide→vision 12.4 vh, err 0
+a 1920x1080_1: screens 21.87 overflow false world-guide→map 4.9 vh, world-guide→vision 10.9 vh, err 0
+a 768x1024_2: screens 28.46 overflow false world-guide→map 6.7 vh, world-guide→vision 14.9 vh, err 0
+a 390x844_2: screens 37.19 overflow false world-guide→map 8.1 vh, world-guide→vision 18.4 vh, err 0
+a 430x932_2: screens 33.23 overflow false world-guide→map 7.3 vh, world-guide→vision 16.7 vh, err 0
+a 1440x900@1: entry 1432px (1.59 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.17 W06_eclipse_ruins-1672w.avif:1.24 W02_memory_spheres-1672w.avif:1.24 W04_vertical_city-1672w.avif:1.24 W08_axial_capital-1672w.avif:1.24 W07_red_rim_orbit-1672w.avif:1.17 | links 12 | world img 2547KB/12 | at open 2 | err 0
+a 1920x1080@1: entry 1636px (1.51 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1 W06_eclipse_ruins-1672w.avif:1.22 W02_memory_spheres-1672w.avif:1.22 W04_vertical_city-1672w.avif:1.22 W08_axial_capital-1672w.avif:1.22 W07_red_rim_orbit-1672w.avif:1 | links 12 | world img 2547KB/12 | at open 2 | err 0
+a 1440x900@2: entry 1432px (1.59 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:0.59 W06_eclipse_ruins-1672w.avif:0.62 W02_memory_spheres-1672w.avif:0.62 W04_vertical_city-1672w.avif:0.62 W08_axial_capital-1672w.avif:0.62 W07_red_rim_orbit-1672w.avif:0.59 | links 12 | world img 4062KB/12 | at open 2 | err 0
+a 768x1024@2: entry 1441px (1.41 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.09 W06_eclipse_ruins-1672w.avif:1.23 W02_memory_spheres-1672w.avif:1.23 W04_vertical_city-1672w.avif:1.23 W08_axial_capital-1672w.avif:1.23 W07_red_rim_orbit-1672w.avif:1.11 | links 12 | world img 3960KB/12 | at open 1 | err 0
+a 390x844@2: entry 1308px (1.55 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1280w.avif:1.28 W06_eclipse_ruins-960w.avif:1.33 W02_memory_spheres-960w.avif:1.33 W04_vertical_city-960w.avif:1.33 W08_axial_capital-960w.avif:1.33 W07_red_rim_orbit-960w.avif:1.12 | links 12 | world img 1198KB/10 | at open 1 | err 0
+a 390x844@3: entry 1308px (1.55 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.12 W06_eclipse_ruins-1280w.avif:1.19 W02_memory_spheres-1280w.avif:1.19 W04_vertical_city-1280w.avif:1.19 W08_axial_capital-1280w.avif:1.19 W07_red_rim_orbit-1672w.avif:1.3 | links 12 | world img 2774KB/12 | at open 1 | err 0
+a 430x932@2: entry 1340px (1.44 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1280w.avif:1.16 W06_eclipse_ruins-960w.avif:1.2 W02_memory_spheres-960w.avif:1.2 W04_vertical_city-960w.avif:1.2 W08_axial_capital-960w.avif:1.2 W07_red_rim_orbit-960w.avif:1.01 | links 12 | world img 1289KB/10 | at open 1 | err 0
+a 430x932@3: entry 1340px (1.44 scr) | jump h2 IN promise true cta true | ovf false | W01_threshold_bridge-1672w.avif:1.01 W06_eclipse_ruins-1280w.avif:1.07 W02_memory_spheres-1280w.avif:1.07 W04_vertical_city-1280w.avif:1.07 W08_axial_capital-1280w.avif:1.07 W07_red_rim_orbit-1672w.avif:1.18 | links 12 | world img 2876KB/12 | at open 1 | err 0
+a 1440x900_1: 6 blocks
+a 1920x1080_1: 6 blocks
+a 768x1024_2: 6 blocks
+a 390x844_2: 6 blocks
+cmp-1440.jpg (2950, 1082)
+cmp-1920.jpg (3268, 1082)
+cmp-768.jpg (2230, 1622)
+cmp-390.jpg (1624, 1862)
+cmp-430.jpg (1618, 1862)
+a 1440x900_1: screens 25.3 overflow false world-guide→map 5.6 vh, world-guide→vision 12.4 vh, err 0
+a 1920x1080_1: screens 21.87 overflow false world-guide→map 4.9 vh, world-guide→vision 10.9 vh, err 0
+b 1440x900_1: screens 24.41 overflow false world-guide→map 5.1 vh, world-guide→vision 11.6 vh, err 0
+b 1920x1080_1: screens 20.86 overflow false world-guide→map 4.4 vh, world-guide→vision 9.9 vh, err 0
+a 1440x900_1: 6 blocks
+a 1920x1080_1: 6 blocks
+a 768x1024_2: 6 blocks
+a 390x844_2: 6 blocks
+b 1440x900_1: 5 blocks
+b 1920x1080_1: 5 blocks
+b 768x1024_2: 5 blocks
+b 390x844_2: 5 blocks
+cmp-1440.jpg (2950, 1082)
+cmp-1920.jpg (3268, 1082)
+cmp-768.jpg (2230, 1622)
+cmp-390.jpg (1624, 1862)
+cmp-430.jpg (1618, 1862)
