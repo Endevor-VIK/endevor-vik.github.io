@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: G0_G1_READY_FOR_GATE_A / SNAPSHOT
+  status: W4_G2_IMPLEMENTING / GATE_A_APPROVED / GATE_B_PENDING
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,7 +18,30 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-19 / 0524.W4 G0/G1 — READY FOR GATE A
+## CURRENT STATE — 2026-10-19 / 0524.W4 G2 — GATE A APPROVED
+
+Authority: [Principal Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), reviewed PR #11 HEAD `af20ff6`; conditions R1–R6 mandatory. [G2 SPEC/ownership](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
+
+- Branch `w4/world-narrative`, worktree `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`, starts from accepted `af20ff6`. PR #11 remains the docs-only proposal, unchanged and unmerged.
+- Runtime baseline frozen `6b082e5f262c09a123748273da42277d3a29a6c2` in separate `/tmp/axs-0524-w4-before-6b082e5`. Runtime edits wait for reproducible BEFORE captures.
+- Lead owns HTML/scoped CSS. QA agent owns W4 test/capture tooling; editorial/WORK agents read-only. Browser engines execute sequentially. WebKit installation needed; other existing tools available.
+- Protected `#world`, `#chars`, AXIOM ∅, map/OMEGA data/handlers/assets and **III/IV labels remain HOLD**. W01 composition/art, faction structure/art and all eight real captures/viewer preserved.
+- Planned: four BLACK SUN beats with visibly attributed author reconstruction; WHAT REMAINS focuses human consequences, no fragmentation recap; WORK collapsed static conceptual details secondary to screenshots; factions copy preserves NEURA uncertainty.
+- Next: complete BEFORE matrix → bounded implementation slices → frozen SHA / G3 → independent G4. G3/G4 not yet executed at this snapshot; inspect current Git/evidence rather than infer from this historical moment.
+
+```text
+AXIOM SHOWCASE / RESUME PACKET
+AUTHORITY: W4_GATE_A_ACCEPTANCE.md (Principal; PR11 af20ff6), R1–R6; GateB PENDING
+TASK: 0524.W4 G2–G4 controlled implementation; SPEC waves/w4/W4_G2_SPEC.md
+BRANCH: w4/world-narrative from af20ff6; runtime baseline 6b082e5; Canon3884ea43 read-only
+WORKTREE: /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation
+BEFORE: /tmp/axs-0524-w4-before-6b082e5; capture before runtime edits
+PRESERVE: full world/chars/AXIOM∅/III-IV labels; map/OMEGA; eight capture assets/viewer; art/fonts/palette
+FORBIDDEN: merge PR11/main, deploy, Canon/rootgitlink/version edits, protected changes
+NEXT: inspect status/HEAD, SPEC and evidence; finish baseline→G2→G3→independentG4; don't restart completed slices
+```
+
+## HISTORICAL SNAPSHOT — 2026-10-19 / 0524.W4 G0/G1 — READY FOR GATE A
 
 **Supersedes all historical current-state blocks below.** This W4 branch contains a documentation proposal only. No WORLD implementation, main merge, production deploy, Canon mutation, root/gitlink update or version bump is authorized by this handoff.
 
