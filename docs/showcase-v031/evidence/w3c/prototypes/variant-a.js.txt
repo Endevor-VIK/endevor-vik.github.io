@@ -1,0 +1,172 @@
+// W3.C concept A — «ПОРОГ» (cinematic threshold + chapter plates + orbit epilogue), world library 0524.
+// Browser-only injection on a snapshot of w3/c-world-immersion (index.html identical to main) for previews:
+// nothing here is a site module. Every visible line is existing page copy (moved, not rewritten) or a line listed in
+// the W3.C Canon matrix. Images: W01 (mandatory) threshold, W06/W02/W04/W08 chapter plates, W07 epilogue.
+(() => {
+  const LIB = 'assets/showcase/world-library/web/';
+  const pic = (id, slug, sizes, alt, posD, posM) => {
+    const set = ext => [960, 1280, 1672].map(w => `${LIB}${id}_${slug}-${w}w.${ext} ${w}w`).join(', ');
+    return `<picture><source type="image/avif" srcset="${set('avif')}" sizes="${sizes}"><img src="${LIB}${id}_${slug}-1280w.webp" srcset="${set('webp')}" sizes="${sizes}" width="1672" height="941" alt="${alt}" loading="lazy" decoding="async" style="--pos-d:${posD};--pos-m:${posM || posD}"></picture>`;
+  };
+  const css = `
+  .w3c-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--pos-d)}
+  @media(max-width:900px){.w3c-img img{object-position:var(--pos-m)}}
+  /* SYSTEM → WORLD: the engineering band fades to black */
+  .v22-bridge.w3c-a-fade{background:linear-gradient(180deg,#0d0e12 0%,#000 100%);border-bottom:0;padding-top:30px;padding-bottom:30px}
+  .v22-bridge.w3c-a-fade b{color:#9a9ea9}
+  #world-guide.w3c-a{padding-top:0;background:#000}
+  /* threshold scene: W01 at native width at most, feathered into black on wider screens; copy beside the doorway */
+  .w3c-a-scene{position:relative;height:min(88vh,56.25vw,941px);min-height:520px;background:#000;overflow:hidden}
+  .w3c-a-art{position:absolute;top:0;bottom:0;left:0;right:0;max-width:1672px;margin:0 auto}
+  .w3c-a-art picture{position:absolute;inset:0}
+  .w3c-a-art:after{content:"";position:absolute;inset:0;pointer-events:none;background:
+    linear-gradient(0deg,#000 0%,rgba(0,0,0,.88) 22%,rgba(0,0,0,0) 58%),
+    radial-gradient(ellipse 60% 74% at 80% 92%,rgba(0,0,0,.88),rgba(0,0,0,0) 76%),
+    linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 13%),
+    linear-gradient(90deg,#000 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#000 100%)}
+  .w3c-a-copy{position:absolute;z-index:1;right:max(36px,calc((100vw - 1368px) / 2));bottom:clamp(34px,6.5vh,72px);width:min(47%,660px)}
+  /* a local vignette under the words: the fog of W01 is light, the red labels need near-black behind them */
+  .w3c-a-copy:before{content:"";position:absolute;z-index:-1;inset:-96px -60px -60px -96px;background:rgba(0,0,0,.86);-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);mask-composite:intersect;pointer-events:none}
+  .w3c-a-epi-copy:before{content:"";position:absolute;z-index:-1;inset:-16% -12% -20% -18%;background:radial-gradient(closest-side,rgba(0,0,0,.92),rgba(0,0,0,.8) 58%,rgba(0,0,0,0));pointer-events:none}
+  .w3c-a-copy .show-index{border-top:0;padding-top:0;margin:0 0 14px;justify-content:flex-start}
+  .w3c-a-copy .show-index span:last-child{display:none}
+  .w3c-a-copy .show-kicker{color:#ff2034;letter-spacing:.2em}
+  .w3c-a-copy .show-title{font-size:clamp(48px,4.6vw,92px);line-height:.95;margin:10px 0 20px;color:#ebebed;max-width:none}
+  #world-guide .w3c-a-promise{font:400 clamp(16px,1.15vw,19px)/1.6 var(--ax-font-body);color:#d3d5db;max-width:44ch;margin:0 0 26px}
+  .w3c-a-cta{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:0 22px;border:1px solid #ff2034;background:rgba(10,0,2,.55);color:#fff;font:700 12px var(--ax-font-mono);letter-spacing:.16em;text-decoration:none}
+  .w3c-a-cta:hover{background:#ff2034}
+  /* establishing statement: the existing lead, split into a line to feel and a line to read */
+  .w3c-a-establish{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(28px,5vw,96px);align-items:end;padding:clamp(48px,8vh,96px) 0 40px}
+  #world-guide .w3c-a-statement{font:500 clamp(28px,2.7vw,46px)/1.1 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:0;letter-spacing:.005em;max-width:30ch}
+  .w3c-a-statement em{font-style:normal;color:#ff2034}
+  #world-guide .w3c-a-establish .show-lead{margin:0;font-size:16px;line-height:1.75;color:#b4b8c3}
+  /* five chapters instead of a second link row */
+  .w3c-a-trail-head{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #9d2135;padding-top:11px;font:700 11px var(--ax-font-mono);letter-spacing:.16em;color:#8f94a0}
+  .w3c-a-trail-head span:first-child{color:#ff2034}
+  .w3c-a-trail{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr)}
+  .w3c-a-trail li+li{border-left:1px solid #241a1c}
+  .w3c-a-trail a{display:block;height:100%;padding:22px 18px 24px;color:#ebebed;text-decoration:none;box-sizing:border-box}
+  .w3c-a-trail a:hover b{color:#ff2034}
+  .w3c-a-trail span{display:block;font:700 11px var(--ax-font-mono);color:#ff2034;letter-spacing:.16em}
+  .w3c-a-trail b{display:block;font:500 clamp(18px,1.45vw,25px)/1.12 var(--ax-font-display);margin:10px 0;text-transform:uppercase;letter-spacing:.02em}
+  .w3c-a-trail small{font:700 11px var(--ax-font-mono);color:#8f94a0;letter-spacing:.1em}
+  /* reading key: product vocabulary stays on the page, folded */
+  .w3c-a-key{margin:28px 0 0;border:1px solid #241a1c;background:#08090c}
+  .w3c-a-key>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:52px;padding:0 18px;font:700 11px var(--ax-font-mono);letter-spacing:.14em;color:#b4b8c3}
+  .w3c-a-key>summary::-webkit-details-marker{display:none}
+  .w3c-a-key>summary:after{content:"+";color:#ff2034;font-size:18px}
+  .w3c-a-key[open]>summary:after{content:"−"}
+  .w3c-a-key-body{padding:4px 18px 22px}
+  .w3c-a-key-body .show-lore-link{margin-top:26px}
+  /* chapter plates: one establishing shot per chapter, inside the section's own width */
+  .w3c-a-plate{position:relative;height:clamp(210px,28vh,310px);margin:0 0 34px;overflow:hidden;border:1px solid #241a1c;background:#000}
+  .w3c-a-plate picture{position:absolute;inset:0}
+  .w3c-a-plate:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.55) 34%,rgba(0,0,0,0) 62%),linear-gradient(0deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 45%)}
+  .w3c-a-plate-copy{position:absolute;z-index:1;left:clamp(18px,2.4vw,36px);bottom:clamp(18px,3vh,30px)}
+  .w3c-a-chapter-n{display:block;font:700 11px var(--ax-font-mono);letter-spacing:.2em;color:#ff2034}
+  .w3c-a-chapter-q{display:block;font:500 clamp(26px,2.6vw,44px)/1.04 var(--ax-font-display);color:#ebebed;text-transform:uppercase;letter-spacing:.02em;margin-top:8px}
+  .w3c-a-chapter{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 18px;margin:0 0 30px;padding-top:14px;border-top:1px solid #ff2034}
+  .w3c-a-chapter .w3c-a-chapter-q{font-size:clamp(20px,1.7vw,28px);margin:0}
+  /* WORLD → VISION: orbit epilogue, the story closes before the plan opens */
+  .w3c-a-epilogue{position:relative;height:min(64vh,36vw);min-height:340px;display:flex;align-items:center;justify-content:center;text-align:center;background:#000;overflow:hidden}
+  .w3c-a-epilogue .w3c-a-art:after{background:radial-gradient(ellipse 44% 58% at 50% 52%,rgba(0,0,0,.72),rgba(0,0,0,0) 100%),linear-gradient(180deg,#0a0b0f 0%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 74%,#000 100%),linear-gradient(90deg,#000 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#000 100%)}
+  .w3c-a-epi-copy{position:relative;z-index:1;isolation:isolate;padding:0 24px;max-width:860px}
+  .w3c-a-epi-copy>span{font:700 11px var(--ax-font-mono);letter-spacing:.2em;color:#ff2034}
+  .w3c-a-epi-line{font:500 clamp(34px,3.8vw,64px)/1.02 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:14px 0}
+  .w3c-a-epi-sub{font:400 16px/1.6 var(--ax-font-body);color:#c9ccd4;margin:0 auto 24px;max-width:40ch}
+  @media(max-width:1100px){.w3c-a-trail{grid-template-columns:repeat(3,1fr)}.w3c-a-trail li:nth-child(4){border-left:0}.w3c-a-trail li:nth-child(n+4){border-top:1px solid #241a1c}}
+  /* tablets and phones: a separate composition, image band first, words below */
+  @media(max-width:900px){
+    .w3c-a-scene{height:auto;min-height:0}
+    .w3c-a-scene>.w3c-a-art{position:relative;height:min(72vw,62vh)}
+    .w3c-a-copy{position:relative;right:auto;bottom:auto;width:auto;margin-top:-24px;padding:0 max(14px,calc((100vw - 760px) / 2)) 6px}
+    .w3c-a-copy:before{display:none}
+    .w3c-a-scene>.w3c-a-art:after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 16%,rgba(0,0,0,0) 46%),linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 20%)}
+  }
+  /* tablets: keep W01 at its own 16:9 so a 768@2 screen never draws it wider than the 1672 px source */
+  @media(min-width:600px) and (max-width:900px){.w3c-a-scene>.w3c-a-art{height:56.25vw}}
+  @media(max-width:760px){
+    .v22-bridge.w3c-a-fade{padding-top:20px;padding-bottom:20px}
+    .w3c-a-copy .show-index{margin-bottom:10px}
+    .w3c-a-copy .show-title{font-size:clamp(42px,11.6vw,58px);margin:8px 0 16px}
+    #world-guide .w3c-a-promise{font-size:16px;margin-bottom:22px}
+    .w3c-a-cta{width:100%;justify-content:center;box-sizing:border-box}
+    .w3c-a-establish{grid-template-columns:1fr;gap:18px;padding:44px 0 32px}
+    #world-guide .w3c-a-statement{font-size:clamp(25px,7vw,32px)}
+    .w3c-a-trail-head span:last-child{display:none}
+    .w3c-a-trail{grid-template-columns:1fr}
+    .w3c-a-trail li+li,.w3c-a-trail li:nth-child(n+4){border-left:0;border-top:1px solid #241a1c}
+    .w3c-a-trail a{display:grid;grid-template-columns:34px 1fr auto;align-items:baseline;gap:10px;padding:14px 2px;min-height:52px}
+    .w3c-a-trail b{margin:0;font-size:20px}
+    .w3c-a-plate{height:42vw;min-height:150px;margin-bottom:24px}
+    .w3c-a-plate:after{background:linear-gradient(0deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.78) 48%,rgba(0,0,0,0) 86%)}
+    .w3c-a-chapter-q{font-size:clamp(22px,6.4vw,28px)}
+    /* phones: the orbit as a band at its own scale (a cover-filled tall block would draw W07 wider than 1672 px), words below */
+    .w3c-a-epilogue{display:block;height:auto;min-height:0;padding:0 0 44px}
+    .w3c-a-epilogue .w3c-a-art{position:relative;height:62vw}
+    .w3c-a-epilogue .w3c-a-art:after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 16%,rgba(0,0,0,0) 50%),linear-gradient(180deg,#0a0b0f 0%,rgba(0,0,0,0) 24%)}
+    .w3c-a-epi-copy{margin:-26px auto 0;padding:0 14px}
+    .w3c-a-epi-copy:before{display:none}
+    .w3c-a-epi-copy .w3c-a-cta{width:auto}
+  }`;
+  const st = document.createElement('style'); st.id = 'w3c-variant-a'; st.textContent = css; document.head.appendChild(st);
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const wg = $('#world-guide'), wrap = $('.wrap', wg), hero = $('.v22-world-hero', wg);
+  const idx = $('.show-index', wg), kicker = $('.show-kicker', hero), h2 = $('#v22-world-title');
+  const lead = $('.show-lead', hero), muted = $('.show-muted', hero), warn = $('.v22-warning', hero);
+  const gloss = $('.v22-lore-glossary', wg), path = $('.v22-world-path', wg), lore = $('.show-lore-link');
+  wg.classList.add('w3c-a');
+  wg.previousElementSibling.classList.add('w3c-a-fade');
+
+  // threshold scene: W01, the visitor at the edge of the bridge, the doorway ahead; title beside the doorway
+  const scene = document.createElement('div'); scene.className = 'w3c-a-scene';
+  scene.innerHTML = `<div class="w3c-a-art w3c-img">${pic('W01', 'threshold_bridge', '(max-width: 599px) 128vw, min(100vw, 1672px)', 'Художественная сцена: фигура на краю моста смотрит на светлый проём в мегаструктуре над облаками', '50% 40%', '53% 35%')}</div><div class="w3c-a-copy"></div>`;
+  const copy = $('.w3c-a-copy', scene);
+  kicker.textContent = 'AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ';
+  copy.append(idx, kicker, h2);
+  copy.insertAdjacentHTML('beforeend', '<p class="w3c-a-promise">Теперь — не о том, как устроен проект. О мире, ради которого он создаётся.</p><a class="w3c-a-cta" href="#world-entry">ВОЙТИ В МИР <span aria-hidden="true">↓</span></a>');
+  wg.insertBefore(scene, wrap);
+
+  // establishing statement: the existing lead split in two, word for word
+  const est = document.createElement('div'); est.className = 'w3c-a-establish'; est.id = 'world-entry';
+  est.innerHTML = '<p class="w3c-a-statement">Катастрофа <em>BLACK SUN</em> стала переломным событием; то, что осталось, подчинено сложным системам власти и выживания.</p>';
+  lead.textContent = 'AXIOM — мрачная научно-фантастическая вселенная о памяти, технологическом контроле, свободе выбора и цене порядка.';
+  est.appendChild(lead);
+
+  // five chapters: the same five anchors as the old link row, each opened by a question
+  const CH = [
+    ['I', 'ЧТО ПРОИЗОШЛО?', 'МАНИФЕСТ', '#manifesto', ['W06', 'eclipse_ruins', '50% 60%', '50% 100%']],
+    ['II', 'КАК МИР ПОМНИТ?', 'МОДУЛИ', '#modules', ['W02', 'memory_spheres', '50% 15%', '50% 10%']],
+    ['III', 'ГДЕ ЭТО СЛУЧИЛОСЬ?', 'ЛОКАЦИИ', '#world', ['W04', 'vertical_city', '50% 35%', '50% 30%']],
+    ['IV', 'КОМУ ЭТО ВАЖНО?', 'ПЕРСОНАЖИ', '#chars', null],
+    ['V', 'КТО ОПРЕДЕЛЯЕТ ПОРЯДОК?', 'ФРАКЦИИ', '#factions', ['W08', 'axial_capital', '50% 25%', '50% 20%']],
+  ];
+  const trailHead = document.createElement('div'); trailHead.className = 'w3c-a-trail-head';
+  trailHead.innerHTML = '<span>ПЯТЬ ГЛАВ</span><span>ОРИГИНАЛЬНЫЙ АРХИВ МИРА</span>';
+  const trail = document.createElement('ol'); trail.className = 'w3c-a-trail'; trail.setAttribute('aria-label', 'Путь изучения вселенной');
+  trail.innerHTML = CH.map(([n, q, l, h]) => `<li><a href="${h}"><span>${n}</span><b>${q}</b><small>${l} ↘</small></a></li>`).join('');
+
+  // reading key: muted note, warning, glossary and the SYSTEM-side archive note — kept, folded
+  const key = document.createElement('details'); key.className = 'w3c-a-key';
+  key.innerHTML = '<summary>КАК ЧИТАТЬ ЭТОТ МИР · BLACK SUN · ECHELON · CANON</summary><div class="w3c-a-key-body"></div>';
+  $('.w3c-a-key-body', key).append(muted, warn, gloss, lore);
+
+  wrap.replaceChildren(est, trailHead, trail, key);
+  path.remove(); hero.remove();
+
+  // chapter plates (or a plain chapter line where portraits follow) inside the original sections; heads untouched
+  for (const [n, q, , h, img] of CH) {
+    const w = $(h + ' > .wrap'); if (!w) continue;
+    const label = `<span class="w3c-a-chapter-n">ГЛАВА ${n}</span><span class="w3c-a-chapter-q">${q}</span>`;
+    w.insertAdjacentHTML('afterbegin', img
+      ? `<div class="w3c-a-plate w3c-img">${pic(img[0], img[1], '(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)', '', img[2], img[3])}<div class="w3c-a-plate-copy">${label}</div></div>`
+      : `<div class="w3c-a-chapter">${label}</div>`);
+  }
+
+  // epilogue before the VISION bridge: W07, the orbit — the story closes, the plan opens
+  const out = $('#vision').previousElementSibling;
+  const epi = document.createElement('div'); epi.className = 'w3c-a-epilogue';
+  epi.innerHTML = `<div class="w3c-a-art w3c-img">${pic('W07', 'red_rim_orbit', '(max-width: 760px) 110vw, min(100vw, 1672px)', '', '50% 30%', '60% 38%')}</div><div class="w3c-a-epi-copy"><span>05 / WORLD · ЭПИЛОГ</span><p class="w3c-a-epi-line">Это только поверхность мира.</p><p class="w3c-a-epi-sub">Дальше — не история, а план проекта, который строится вокруг этого мира.</p><a class="w3c-a-cta" href="#vision">КАК МИР БУДЕТ РАЗВИВАТЬСЯ <span aria-hidden="true">↓</span></a></div>`;
+  out.parentNode.insertBefore(epi, out);
+})();

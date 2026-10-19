@@ -1,0 +1,21 @@
+// F-06 under the concepts: after a real menu / swipe-nav jump to WORLD and to VISION, is the bridge question above the
+// section fully visible below the sticky chrome? usage: node bridges.cjs <url> <tag> [variant.js|-] [viewports]
+const { chromium } = require('playwright'); const fs = require('fs');
+const [url, tag, vf, vpArg] = process.argv.slice(2); const variant = vf && vf !== '-' ? fs.readFileSync(vf, 'utf8') : null;
+const vps = (vpArg || '1440x900@1,1920x1080@1,768x1024@2,390x844@2,430x932@2').split(',').map(s => { const [wh, d] = s.split('@'); const [w, h] = wh.split('x').map(Number); return { w, h, dpr: +d, name: s }; });
+(async () => { const b = await chromium.launch(); const rows = [];
+  for (const vp of vps) { const phone = vp.w < 700;
+    const ctx = await b.newContext({ viewport: { width: vp.w, height: vp.h }, deviceScaleFactor: vp.dpr, isMobile: phone, hasTouch: phone });
+    await ctx.addInitScript(() => { try { sessionStorage.setItem('axiom_loader_seen', '1'); } catch (_) {} });
+    const p = await ctx.newPage(); await p.goto(url, { waitUntil: 'load' }); if (variant) await p.evaluate(variant);
+    await p.evaluate(() => window.dispatchEvent(new Event('resize'))); await p.waitForTimeout(300);
+    for (const h of ['#world-guide', '#vision']) {
+      await p.evaluate(() => { history.replaceState(null, '', location.pathname); document.documentElement.style.scrollBehavior = ''; window.scrollTo(0, 0); }); await p.waitForTimeout(150);
+      await p.locator(vp.w > 1080 ? `.menu a[href="${h}"]` : `.show-mobile-nav a[href="${h}"]`).click();
+      await p.evaluate(() => new Promise(res => { let l = scrollY, s = 0, n = 0, m = false; const t = () => { n++; if (Math.abs(scrollY - l) > .5) { m = true; s = 0; } else s++; l = scrollY; if ((m && s >= 8) || n > 400) res(); else requestAnimationFrame(t); }; requestAnimationFrame(t); }));
+      await p.waitForTimeout(150);
+      rows.push({ vp: vp.name, h, ...(await p.evaluate(h => { const sec = document.querySelector(h), br = sec.previousElementSibling; const sb = [...document.querySelectorAll('header.top,.show-mobile-nav')].filter(e => { const c = getComputedStyle(e); return c.position === 'sticky' && c.display !== 'none' && e.getBoundingClientRect().top <= 1; }).reduce((m, e) => Math.max(m, e.getBoundingClientRect().bottom), 0); const r = br.getBoundingClientRect(); return { isBridge: br.matches('.v22-bridge'), fullyVisible: r.top >= sb - 1 && r.bottom <= innerHeight }; }, h)) });
+    }
+    await ctx.close(); }
+  await b.close(); const ok = rows.filter(r => r.isBridge && r.fullyVisible).length;
+  console.log(`${tag}: bridges fully visible ${ok}/${rows.length}`, JSON.stringify(rows.filter(r => !(r.isBridge && r.fullyVisible)))); })();

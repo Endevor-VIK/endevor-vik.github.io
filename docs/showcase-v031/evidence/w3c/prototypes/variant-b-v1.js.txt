@@ -1,0 +1,119 @@
+// W3.C concept B — «ЗАТМЕНИЕ / ТРИ ФРАГМЕНТА» (typographic title card + three windows into the original archive).
+// Browser-only injection on the main snapshot for previews: nothing here is a site module. Fragment lines are quotes
+// of copy already on the page; tone-only lines are listed in the W3.C Canon matrix.
+(() => {
+  const css = `
+  .v22-bridge.w3c-b-into{background:linear-gradient(180deg,#0d0e12 0%,#000 100%);border-bottom:0}
+  #world-guide.w3c-b{padding-top:0;background:#000}
+  /* title card: black disc with a red corona — a sign for the event's name, not a picture of it; CSS only, no bytes */
+  .w3c-b-card{position:relative;isolation:isolate;min-height:min(72vh,780px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:84px 24px 76px;overflow:hidden;box-sizing:border-box}
+  .w3c-b-card:before{content:"";position:absolute;left:0;right:0;top:61%;height:1px;z-index:-2;background:linear-gradient(90deg,rgba(255,32,52,0),rgba(255,32,52,.55) 50%,rgba(255,32,52,0))}
+  .w3c-b-sun{position:absolute;left:50%;top:50%;z-index:-1;width:min(56vh,40vw);aspect-ratio:1;transform:translate(-50%,-56%);border-radius:50%;background:#000;box-shadow:0 0 0 1px rgba(255,32,52,.85),0 0 18px 2px rgba(255,32,52,.45),0 0 90px 18px rgba(255,32,52,.16),inset 0 0 40px rgba(255,32,52,.10)}
+  .w3c-b-card .show-index{position:absolute;top:26px;left:0;right:0;max-width:1368px;margin:0 auto;padding:0 36px;border-top:0}
+  .w3c-b-card .show-kicker{letter-spacing:.22em}
+  .w3c-b-card .show-title{font-size:clamp(58px,7vw,132px);line-height:.94;margin:16px 0 26px;color:#ebebed;max-width:none}
+  #world-guide .w3c-b-promise{font:400 clamp(16px,1.2vw,20px)/1.6 var(--ax-font-body);color:#c9ccd4;max-width:44ch;margin:0 auto}
+  /* three fragments: what remained, where, who — each a window into a section further down */
+  .w3c-b-frags-head{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #9d2135;padding-top:11px;margin:0 0 20px;font:700 11px var(--ax-font-mono);letter-spacing:.16em;color:#8f94a0}
+  .w3c-b-frags-head span:first-child{color:#ff2034}
+  .w3c-b-frags{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 64px}
+  .w3c-b-frag{position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:min(60vh,560px);min-height:400px;overflow:hidden;border:1px solid #241a1c;background:#050505;color:#ebebed;text-decoration:none}
+  .w3c-b-frag img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.86;transition:opacity .4s,transform .9s cubic-bezier(.2,.8,.2,1)}
+  .w3c-b-frag:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.55) 38%,rgba(0,0,0,0) 64%)}
+  .w3c-b-frag:hover img,.w3c-b-frag:focus-visible img{opacity:1;transform:scale(1.03)}
+  #world-guide .w3c-b-frag:hover{border-color:#ff2034;color:#ebebed}
+  .w3c-b-frag-copy{position:relative;z-index:1;padding:22px 22px 24px}
+  .w3c-b-frag .n{display:block;font:700 11px var(--ax-font-mono);letter-spacing:.18em;color:#ff2034}
+  .w3c-b-frag q{display:block;quotes:none;font:500 clamp(22px,1.9vw,32px)/1.1 var(--ax-font-display);text-transform:uppercase;margin:12px 0 16px;letter-spacing:.01em}
+  .w3c-b-frag small{font:700 11px var(--ax-font-mono);letter-spacing:.12em;color:#b4b8c3}
+  /* the existing introduction, after the fragments */
+  .w3c-b-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,90px);align-items:start;margin:0 0 8px}
+  #world-guide .w3c-b-intro .show-lead{margin:0;font-size:17px;line-height:1.8;color:#c9ccd4}
+  .w3c-b-key{border:1px solid #241a1c;background:#08090c}
+  .w3c-b-key>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:52px;padding:0 18px;font:700 11px var(--ax-font-mono);letter-spacing:.14em;color:#b4b8c3}
+  .w3c-b-key>summary::-webkit-details-marker{display:none}
+  .w3c-b-key>summary:after{content:"+";color:#ff2034;font-size:18px}
+  .w3c-b-key[open]>summary:after{content:"−"}
+  .w3c-b-key-body{padding:4px 18px 22px}
+  .w3c-b-key-body .v22-lore-glossary{grid-template-columns:1fr 1fr}
+  .w3c-b-key-body .show-lore-link{margin-top:26px}
+  /* WORLD → VISION: the windows close, the disc returns small, then the plan */
+  .w3c-b-close{position:relative;background:#000;border-top:1px solid #1a1214;padding:clamp(56px,9vh,96px) 0}
+  .w3c-b-close .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(24px,4vw,64px);align-items:center}
+  .w3c-b-close-sun{width:112px;aspect-ratio:1;border-radius:50%;background:#000;box-shadow:0 0 0 1px rgba(255,32,52,.5),0 0 14px 1px rgba(255,32,52,.25)}
+  .w3c-b-close-copy>span{font:700 11px var(--ax-font-mono);letter-spacing:.2em;color:#ff2034}
+  .w3c-b-close-line{font:500 clamp(30px,3vw,52px)/1.04 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:12px 0 12px}
+  .w3c-b-close-sub{font:400 16px/1.6 var(--ax-font-body);color:#b4b8c3;margin:0 0 22px;max-width:50ch}
+  .w3c-b-cta{display:inline-flex;align-items:center;gap:14px;min-height:44px;padding:0 20px;border:1px solid #ff2034;color:#fff;font:700 12px var(--ax-font-mono);letter-spacing:.16em;text-decoration:none}
+  .w3c-b-cta:hover{background:#ff2034}
+  .w3c-b-close-strip{display:flex;gap:8px}
+  .w3c-b-close-strip i{display:block;width:92px;height:118px;border:1px solid #241a1c;background-size:cover;filter:grayscale(1) brightness(.42)}
+  @media(prefers-reduced-motion:reduce){.w3c-b-frag img{transition:none}.w3c-b-frag:hover img{transform:none}}
+  @media(max-width:1100px){.w3c-b-frag{height:min(52vh,480px)}.w3c-b-close .wrap{grid-template-columns:auto 1fr}.w3c-b-close-strip{display:none}}
+  @media(max-width:760px){
+    .w3c-b-card{min-height:0;padding:76px 14px 54px}
+    .w3c-b-card .show-index{top:18px;padding:0 14px}
+    .w3c-b-sun{width:84vw;transform:translate(-50%,-54%)}
+    .w3c-b-card:before{top:60%}
+    .w3c-b-card .show-title{font-size:clamp(44px,12.4vw,62px);margin:12px 0 18px}
+    #world-guide .w3c-b-promise{font-size:16px}
+    .w3c-b-frags-head span:last-child{display:none}
+    .w3c-b-frags{grid-template-columns:1fr;gap:10px;margin-bottom:44px}
+    .w3c-b-frag{height:auto;min-height:0;display:grid;grid-template-columns:38% 1fr;align-items:stretch}
+    .w3c-b-frag img{position:relative;inset:auto;height:100%;min-height:150px;opacity:1}
+    .w3c-b-frag:after{display:none}
+    .w3c-b-frag-copy{padding:14px 14px 14px;display:flex;flex-direction:column;justify-content:center}
+    .w3c-b-frag q{font-size:clamp(18px,5.2vw,22px);margin:8px 0 10px}
+    .w3c-b-intro{grid-template-columns:1fr;gap:20px}
+    #world-guide .w3c-b-intro .show-lead{font-size:16px}
+    .w3c-b-key-body .v22-lore-glossary{grid-template-columns:1fr}
+    .w3c-b-close{padding:48px 0}
+    .w3c-b-close .wrap{grid-template-columns:1fr;gap:18px}
+    .w3c-b-close-sun{width:72px}
+  }`;
+  const st = document.createElement('style'); st.id = 'w3c-variant-b'; st.textContent = css; document.head.appendChild(st);
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const wg = $('#world-guide'), wrap = $('.wrap', wg), hero = $('.v22-world-hero', wg);
+  const idx = $('.show-index', wg), kicker = $('.show-kicker', hero), h2 = $('#v22-world-title');
+  const lead = $('.show-lead', hero), muted = $('.show-muted', hero), warn = $('.v22-warning', hero);
+  const gloss = $('.v22-lore-glossary', wg), path = $('.v22-world-path', wg), lore = $('.show-lore-link');
+  wg.classList.add('w3c-b');
+  wg.previousElementSibling.classList.add('w3c-b-into');
+
+  // title card
+  const card = document.createElement('div'); card.className = 'w3c-b-card';
+  card.innerHTML = '<div class="w3c-b-sun" aria-hidden="true"></div>';
+  kicker.textContent = 'AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ';
+  card.append(idx, kicker, h2);
+  card.insertAdjacentHTML('beforeend', '<p class="w3c-b-promise">Теперь — не о том, как устроен проект. О мире, ради которого он создаётся.</p>');
+  wg.insertBefore(card, wrap);
+
+  // three fragments — images already on the page, lines quoted from the sections they open
+  const B02 = 'assets/showcase/visual-library/hq/B02_dark_planet_cloudscape-hq.webp', MAP = 'assets/world/world-spine-map-1440w.webp', VIK = 'assets/viktor.webp';
+  const F = [
+    { n: 'I / МЕСТО', q: 'Не одна локация, а взаимосвязанная архитектура мира.', l: 'КАРТА МИРА ↘', h: '#world', src: MAP, srcset: 'assets/world/world-spine-map-960w.webp 960w, ' + MAP + ' 1440w, assets/world/world-spine-map-2048w.webp 2048w', w: 2048, ht: 1152, pos: '52% 48%' },
+    { n: 'II / ЧЕЛОВЕК', q: 'По документам мёртв, но продолжает действовать.', l: 'ПЕРСОНАЖИ ↘', h: '#chars', src: VIK, srcset: '', w: 1024, ht: 1536, pos: '50% 28%' },
+    { n: 'III / ЦЕНА ВЫБОРА', q: 'Мир пришлось обрезать, чтобы выжить.', l: 'ДОКТРИНА ↘', h: '#manifesto', src: B02, srcset: 'assets/showcase/visual-library/hq/B02_dark_planet_cloudscape-960w.webp 960w, ' + B02 + ' 1983w', w: 1983, ht: 793, pos: '56% 58%' },
+  ];
+  const head = document.createElement('div'); head.className = 'w3c-b-frags-head';
+  head.innerHTML = '<span>МЕСТО → ЧЕЛОВЕК → ЦЕНА ВЫБОРА</span><span>ТРИ ОКНА В ОРИГИНАЛЬНЫЙ АРХИВ МИРА</span>';
+  const frags = document.createElement('div'); frags.className = 'w3c-b-frags';
+  frags.innerHTML = F.map(f => `<a class="w3c-b-frag" href="${f.h}"><img src="${f.src}"${f.srcset ? ` srcset="${f.srcset}" sizes="(max-width: 760px) 38vw, 33vw"` : ''} width="${f.w}" height="${f.ht}" alt="" loading="lazy" decoding="async" style="object-position:${f.pos}"><span class="w3c-b-frag-copy"><span class="n">${f.n}</span><q>${f.q}</q><small>${f.l}</small></span></a>`).join('');
+
+  // existing introduction + the folded reading key, then the full five-step path (unchanged)
+  const intro = document.createElement('div'); intro.className = 'w3c-b-intro';
+  const key = document.createElement('details'); key.className = 'w3c-b-key';
+  key.innerHTML = '<summary>КАК ЧИТАТЬ ЭТОТ МИР · BLACK SUN · ECHELON · CANON</summary><div class="w3c-b-key-body"></div>';
+  $('.w3c-b-key-body', key).append(muted, warn, gloss, lore);
+  intro.append(lead, key);
+  wrap.replaceChildren(head, frags, intro, path);
+  hero.remove();
+
+  // exit: the windows close (same three images, dimmed), then the VISION bridge as before
+  const out = $('#vision').previousElementSibling;
+  const close = document.createElement('div'); close.className = 'w3c-b-close';
+  close.innerHTML = '<div class="wrap"><div class="w3c-b-close-sun" aria-hidden="true"></div><div class="w3c-b-close-copy"><span>05 / WORLD · ФРАГМЕНТЫ ЗАКРЫТЫ</span><p class="w3c-b-close-line">Это лишь фрагменты.</p><p class="w3c-b-close-sub">Остальное — за пределами этих окон. Дальше — не история, а план проекта, который строится вокруг этого мира.</p><a class="w3c-b-cta" href="#vision">КАК МИР БУДЕТ РАЗВИВАТЬСЯ <span aria-hidden="true">↓</span></a></div><div class="w3c-b-close-strip" aria-hidden="true">' +
+    F.map(f => `<i style="background-image:url('${f.src}');background-position:${f.pos}"></i>`).join('') + '</div></div>';
+  out.parentNode.insertBefore(close, out);
+})();

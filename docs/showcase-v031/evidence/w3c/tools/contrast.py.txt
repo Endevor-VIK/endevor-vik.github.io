@@ -1,0 +1,36 @@
+# WCAG contrast of text over artwork from w3c_contrast.cjs output: background = 90th-percentile relative luminance of
+# the pixels under each text line (glyphs hidden); large text (>=24px, or >=18.66px bold) needs 3.0, other text 4.5.
+# usage: python3 contrast.py <dir> <tag> [<tag> ...]
+import json, sys, re
+import numpy as np
+from PIL import Image
+def lin(c):
+    c = c / 255.0
+    return np.where(c <= 0.04045, c / 12.92, ((c + 0.055) / 1.055) ** 2.4)
+def rel(rgb):
+    r, g, b = (lin(np.asarray(v, dtype=np.float64)) for v in rgb)
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+d = sys.argv[1]
+summary = {}
+for tag in sys.argv[2:]:
+    rep = json.load(open(f'{d}/{tag}-contrast.json'))
+    rows = []
+    for sh in rep['shots']:
+        im = np.asarray(Image.open(f"{d}/{sh['file']}").convert('RGB')).astype(np.float64)
+        L = rel((im[..., 0], im[..., 1], im[..., 2])); s = sh['dpr']
+        worst = None
+        for t in sh['texts']:
+            x0, y0 = max(0, int(t['x'] * s)), max(0, int(t['y'] * s)); x1, y1 = min(L.shape[1], int((t['x'] + t['w']) * s)), min(L.shape[0], int((t['y'] + t['h']) * s))
+            if x1 - x0 < 2 or y1 - y0 < 2: continue
+            m = re.findall(r'[\d.]+', t['color']); tc = rel([float(m[0]), float(m[1]), float(m[2])])
+            bg = L[y0:y1, x0:x1].ravel()
+            b = np.percentile(bg, 90) if tc > np.median(bg) else np.percentile(bg, 10)
+            ratio = (max(tc, b) + 0.05) / (min(tc, b) + 0.05)
+            large = t['size'] >= 24 or (t['size'] >= 18.66 and t['weight'] >= 700)
+            need = 3.0 if large else 4.5
+            r = {'text': t['text'], 'size': t['size'], 'ratio': round(float(ratio), 2), 'need': need}
+            if worst is None or ratio / need < worst['ratio'] / worst['need']: worst = r
+        if worst: rows.append({'vp': sh['vp'], 'block': sh['block'], **worst, 'pass': worst['ratio'] >= worst['need']})
+    summary[tag] = rows
+    for r in rows: print(f"{tag} {r['vp']:<12} {r['block']:<22} worst {r['ratio']:>5} / need {r['need']}  {'PASS' if r['pass'] else 'FAIL'}  «{r['text']}» {r['size']}px")
+json.dump(summary, open(f'{d}/contrast-summary.json', 'w'), ensure_ascii=False, indent=1)

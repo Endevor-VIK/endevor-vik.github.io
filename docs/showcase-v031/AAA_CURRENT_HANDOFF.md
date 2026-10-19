@@ -18,6 +18,29 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
+## CURRENT STATE — 2026-10-19 / W3.C CONCEPTS + WORLD LIBRARY 0524, READY FOR CREATOR ART REVIEW
+
+Refresh every SHA at takeover.
+
+- **Branch:** `w3/c-world-immersion` from PR #8 head `71061e7` (= `main` `9dda095` + brief). Library commit `1482c47`, then docs.
+  - No page code changed: `index.html`, CSS and JS are identical to `main`.
+  - **Not merged, not deployed, no PR** unless Principal/CREATOR asks.
+- **Library:** `assets/showcase/world-library/` holds CREATOR archive `0524.zip`.
+  - Nine 1672×941 PNG originals, byte-identical under their UUID names. The directive mentions ten; this discrepancy is reported.
+  - AVIF 4:4:4 q80 + WebP q92 at 960/1280/1672, plus `README.md` and `manifest.json`.
+  - Mandatory image `682462bb-…` = **W01**.
+- **Concepts:** `waves/W3C_WORLD_CONCEPTS.md`.
+  - **A · ПОРОГ:** W01 threshold, chapter plates W06/W02/W04/W08, W07 epilogue.
+  - **B · ОКНА / ДВЕРЬ:** CSS eclipse title card, windows W04/Viktor/W06, W01 as the exit door.
+  - Recommendation: A, with B's windows as a labelled option.
+  - Reserve: W03 (baked «OMEGA-0»), W05, W09; the full W06 frame with the eclipse.
+- **Evidence:** `evidence/w3c/` (prototype scripts as `.txt`, tools, QA JSON) and `captures/w3c/` (BASE/A/B at 1440/1920/768/390/430).
+- **NOT RUN:** Lighthouse/axe/no-JS for the injected concepts, Firefox/WebKit, real devices, screen reader, live site.
+- **Next:**
+  1. CREATOR picks A / B / hybrid and the role of W01.
+  2. CREATOR approves the TONE/NAV lines and reserve decisions (concepts §18).
+  3. Principal sets implementation slices (§15) against current `main`, coordinating with W3.B on shared bridge CSS.
+
 ## LATEST PRINCIPAL NOTE — W3.A ACCEPTED / WORLD IMMERSION PRIORITY (2026-10-19)
 
 - CREATOR reviewed W3.A poster-frame build at `e147f040` and **accepted visual design**. Principal performed risk-based Git patch review: no blocking issue found, later commits after QA SHA `e9ac3eb` were docs only; browser/axe/Lighthouse values are **agent-reported** and Firefox/WebKit/real-device testing remains NOT RUN. Landing PR #7 merged into main at **`9dda09557e6fdbbd8665413b909b68d1d3c429d9`**. GitHub Pages build initially in progress; verify current publish result separately.

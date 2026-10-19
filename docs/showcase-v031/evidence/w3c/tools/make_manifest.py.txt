@@ -1,0 +1,63 @@
+# Build manifest.json for the W3.C world library from the encoder report + curated roles (atmosphere only, no Canon binding).
+import json, sys, colorsys
+from PIL import Image
+build = json.load(open(sys.argv[1])); L = sys.argv[2]
+META = {
+ 'W01': dict(title='ПОРОГ / мост к светлому проёму', status='MANDATORY · PROPOSED (A: SYSTEM→WORLD threshold; B: WORLD→VISION exit)',
+   visible='Монохромная мегаструктура: парящие монолиты в тумане, кольцевая конструкция, мост к светлому проёму с силуэтом в капюшоне; на переднем плане слева — фигура в шлеме и плаще; красный круг-«глаз» с лучом, красный треугольный знак на колонне.',
+   focal='Фигура x≈22–30% y≈40–82%; проём x≈77–85% y≈15–45%; красный круг x≈45% y≈15–25%.',
+   canon='ATMOSPHERE_ONLY. Фигуры анонимны: не подписывать как персонажей Canon. Треугольный знак совпадает с маркой AXIOM CORE на сайте — фирменный, не сюжетный.',
+   use=['A · сцена порога SYSTEM→WORLD: на всю ширину (до 1672 css px), текст справа снизу у проёма; телефон — полоса 72vw, кадр x 14–92%, текст ниже.',
+        'B · сцена выхода WORLD→VISION («дверь»): та же композиция, текст выхода у проёма.']),
+ 'W02': dict(title='ПАМЯТЬ / сферы над городом', status='PROPOSED (A: глава II «КАК МИР ПОМНИТ?»)',
+   visible='Красно-чёрные сферы с фрагментами изображений на орбитах над тёмным готическим городом, вертикальный красный луч, отражение в воде.',
+   focal='Центральная сфера x≈50% y≈20%; луч x≈50%.', canon='ATMOSPHERE_ONLY. Не утверждает устройство памяти мира; мотив сочетается с темой «памяти» во вводном тексте.',
+   use=['A · плашка главы II над #modules: полоса, кадр по сферам (y≈25–45%).']),
+ 'W03': dict(title='ПОДЗЕМНЫЙ КОМПЛЕКС / шахта с красным ядром', status='RESERVE — требует решения CREATOR о привязке',
+   visible='Разрез: заснеженные горы и постройки на поверхности, ниже — многоуровневая шахта с красным ядром; на стенах впечатаны надписи «OMEGA-0 · SUBTERRANEAN RESEARCH FACILITY … RESTRICTED» и знак AXIOM.',
+   focal='Ядро x≈50% y≈35–100%.', canon='NEEDS_CREATOR_BINDING. Надпись OMEGA-0 — прямая привязка к узлу 02.05. Canon 02.05 описывает подземный комплекс (совпадает в общем), но поверхность (снег, горы) и устройство шахты в Canon не подтверждены. Не использовать как атмосферу из-за впечатанного названия.',
+   use=['Резерв. Возможное будущее: иллюстрация к узлу 02.05 в панели карты V10 (не вместо карты) после решения CREATOR.']),
+ 'W04': dict(title='ВЕРТИКАЛЬ / плотный город', status='PROPOSED (A: глава III; B: окно I «МЕСТО»)',
+   visible='Плотный вертикальный город ночью, красные знамёна с кольцевым знаком, центральная башня с лучом, монорельсовый поезд, огромный портрет на фасаде.',
+   focal='Башня x≈55% y≈5–70%; поезд справа снизу.', canon='ATMOSPHERE_ONLY. Похож на «вертикальный порядок», но не подписывать как ECHELON (правило «без канонической привязки по сходству»). Портрет на фасаде — не персонаж Canon. Знак на знамёнах неканонический — держать мелко.',
+   use=['A · плашка главы III над #world (карта V10 остаётся главной).', 'B · окно «МЕСТО»: вертикальный кадр по башне.']),
+ 'W05': dict(title='НАБЛЮДАТЕЛЬ / красное солнце', status='RESERVE',
+   visible='Фигура в броне и плаще на скале над городом шпилей, красное солнце у горизонта, планета в небе, мост-магистраль.',
+   focal='Фигура x≈20–28% y≈45–95%; солнце x≈78% y≈35%.', canon='ATMOSPHERE_ONLY, но героическая фигура может читаться как конкретный персонаж; красное солнце рядом с BLACK SUN — смысловой конфликт. Резерв.',
+   use=['Резерв. Альтернатива для главы IV, если CREATOR решит.']),
+ 'W06': dict(title='ПОСЛЕ / руины под затмением', status='PROPOSED в кадрах без солнца (A: глава I; B: окно III); полный кадр — на решение CREATOR',
+   visible='Выжженный ландшафт, дым, руины, разомкнутая кольцевая конструкция, фигура в плаще на гребне; справа вверху — чёрный диск с красной короной (затмение) и город шпилей.',
+   focal='Фигура x≈26–30% y≈28–40%; затмение x≈80% y≈15–22%.', canon='Полный кадр рискован: затмение рядом с текстом о BLACK SUN визуально определяет природу события, а она в Canon открыта (18.02 DRAFT — операция; 03.01 — «взрыв»). Кадры без диска — ATMOSPHERE_ONLY.',
+   use=['A · плашка главы I над #manifesto: кадр ниже солнца (руины, дым).', 'B · окно «ЦЕНА ВЫБОРА»: вертикальный кадр по фигуре и руинам.']),
+ 'W07': dict(title='ОРБИТА / планета с красным краем', status='PROPOSED (A: эпилог WORLD→VISION)',
+   visible='Тёмная планета с красными разломами и светящимся краем, обломки, разрушенные кольцевые конструкции на переднем плане, вторая луна.',
+   focal='Дуга края x≈20–95% y≈20–60%.', canon='ATMOSPHERE_ONLY. Рифмуется с B02 и B04 (VISION).', use=['A · эпилог: широкая полоса по дуге края планеты, текст по центру.']),
+ 'W08': dict(title='ОСЬ / симметричная столица', status='PROPOSED (A: глава V «КТО ОПРЕДЕЛЯЕТ ПОРЯДОК?»)',
+   visible='Симметричный город с центральным шпилем и лучом, проспект-ось, башни со знамёнами (знак — трезубец в круге), летательные аппараты.',
+   focal='Шпиль x≈50% y≈0–55%.', canon='ATMOSPHERE_ONLY. Знак на знамёнах не совпадает ни с лилией ENDEAVOR (assets/endeavor_logo_no_text_no_frame.svg), ни с маркой AXIOM — не подписывать как фракцию.',
+   use=['A · плашка главы V над #factions: полоса по шпилю и проспекту.']),
+ 'W09': dict(title='ВРАТА / знак в красном круге', status='RESERVE',
+   visible='Тёмный зал, огромные красные врата со знаком (трезубец в круге), одинокая фигура в плаще спиной к зрителю, отражения на полу.',
+   focal='Знак x≈50% y≈20–45%; фигура x≈50% y≈60–95%.', canon='Неканонический знак в центре кадра может читаться как новая власть или фракция — резерв до решения CREATOR о привязке.',
+   use=['Резерв. Альтернативный порог; возможна будущая сцена фракции после привязки.']),
+}
+def palette(p):
+    im = Image.open(p).convert('RGB').resize((418, 235)); n = mag = red = 0; lum = 0.0
+    for r, g, b in im.getdata():
+        n += 1; h, s, v = colorsys.rgb_to_hsv(r/255, g/255, b/255); hd = h * 360
+        if s > .25 and v > .2:
+            mag += 260 <= hd <= 340; red += hd >= 345 or hd <= 15
+        lum += .2126*r + .7152*g + .0722*b
+    return {'magenta_purple_pct': round(100*mag/n, 2), 'red_pct': round(100*red/n, 1), 'mean_luminance_0_255': round(lum/n)}
+out = {'library': 'AXIOM SHOWCASE · W3.C world library', 'source': {'archive': '0524.zip (CREATOR, 2026-10-19)', 'archive_sha256': '5276d24006eaa5268cf5067086cdadd152f19ac86e00d11a2c5e0cd2b50a3454', 'files_in_archive': 9},
+       'encoding': {'avif': 'AVIF 4:4:4, quality 80, speed 4 (primary)', 'webp': 'WebP quality 92, method 6 (fallback)', 'widths': [960, 1280, 1672], 'upscaling': 'none — 1672 px is the native width',
+                    'checks': 'PSNR vs LANCZOS reference; edge_retention = Laplacian variance encode ÷ reference (1.00 = no softening)'},
+       'images': []}
+for e in build:
+    m = META[e['id']]
+    e2 = {'id': e['id'], 'uuid': e['uuid'], 'slug': e['slug'], 'title': m['title'], 'status': m['status'], 'visible_content': m['visible'], 'focal_points': m['focal'],
+          'canon': m['canon'], 'proposed_use': m['use'], 'palette': palette(f"{L}/{e['original']['path']}"), 'original': e['original'], 'web': e['web']}
+    out['images'].append(e2)
+json.dump(out, open(f'{L}/manifest.json', 'w'), ensure_ascii=False, indent=1)
+tot = sum(x['bytes'] for e in build for x in e['web']); org = sum(e['original']['bytes'] for e in build)
+print('web total', tot, 'originals', org)

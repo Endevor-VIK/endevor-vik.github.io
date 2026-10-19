@@ -1,0 +1,141 @@
+// W3.C concept B — «ОКНА / ДВЕРЬ» (typographic eclipse card + three windows + the doorway as the exit), library 0524.
+// Browser-only injection on a snapshot of w3/c-world-immersion (index.html identical to main) for previews:
+// nothing here is a site module. Window lines quote copy already on the page; other lines are in the W3.C Canon matrix.
+// Images: W04 (place), Viktor (person, existing), W06 crop without the eclipse (price of choice), W01 (mandatory) exit.
+(() => {
+  const LIB = 'assets/showcase/world-library/web/';
+  const pic = (id, slug, sizes, alt, posD, posM) => {
+    const set = ext => [960, 1280, 1672].map(w => `${LIB}${id}_${slug}-${w}w.${ext} ${w}w`).join(', ');
+    return `<picture><source type="image/avif" srcset="${set('avif')}" sizes="${sizes}"><img src="${LIB}${id}_${slug}-1280w.webp" srcset="${set('webp')}" sizes="${sizes}" width="1672" height="941" alt="${alt}" loading="lazy" decoding="async" style="--pos-d:${posD};--pos-m:${posM || posD}"></picture>`;
+  };
+  const css = `
+  .w3c-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--pos-d)}
+  @media(max-width:900px){.w3c-img img{object-position:var(--pos-m)}}
+  .v22-bridge.w3c-b-into{background:linear-gradient(180deg,#0d0e12 0%,#000 100%);border-bottom:0}
+  #world-guide.w3c-b{padding-top:0;background:#000}
+  /* title card: black disc with a red corona — a sign for the event's name, not a picture of it; CSS only */
+  .w3c-b-card{position:relative;isolation:isolate;min-height:min(72vh,780px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:84px 24px 76px;overflow:hidden;box-sizing:border-box}
+  .w3c-b-card:before{content:"";position:absolute;left:0;right:0;top:61%;height:1px;z-index:-2;background:linear-gradient(90deg,rgba(255,32,52,0),rgba(255,32,52,.55) 50%,rgba(255,32,52,0))}
+  .w3c-b-sun{position:absolute;left:50%;top:50%;z-index:-1;width:min(56vh,40vw);aspect-ratio:1;transform:translate(-50%,-56%);border-radius:50%;background:#000;box-shadow:0 0 0 1px rgba(255,32,52,.85),0 0 18px 2px rgba(255,32,52,.45),0 0 90px 18px rgba(255,32,52,.16),inset 0 0 40px rgba(255,32,52,.10)}
+  .w3c-b-card .show-index{position:absolute;top:26px;left:0;right:0;max-width:1368px;margin:0 auto;padding:0 36px;border-top:0}
+  .w3c-b-card .show-kicker{letter-spacing:.22em}
+  .w3c-b-card .show-title{font-size:clamp(58px,7vw,132px);line-height:.94;margin:16px 0 26px;color:#ebebed;max-width:none}
+  #world-guide .w3c-b-promise{font:400 clamp(16px,1.2vw,20px)/1.6 var(--ax-font-body);color:#c9ccd4;max-width:44ch;margin:0 auto}
+  /* three windows: place, person, price of choice — each opens a section further down */
+  .w3c-b-frags-head{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #9d2135;padding-top:11px;margin:0 0 20px;font:700 11px var(--ax-font-mono);letter-spacing:.16em;color:#8f94a0}
+  .w3c-b-frags-head span:first-child{color:#ff2034}
+  .w3c-b-frags{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 64px}
+  .w3c-b-frag{position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:min(60vh,560px);min-height:400px;overflow:hidden;border:1px solid #241a1c;background:#050505;color:#ebebed;text-decoration:none}
+  .w3c-b-frag picture,.w3c-b-frag>img{position:absolute;inset:0;width:100%;height:100%}
+  .w3c-b-frag img{width:100%;height:100%;object-fit:cover;opacity:.9;transition:opacity .4s,transform .9s cubic-bezier(.2,.8,.2,1)}
+  .w3c-b-frag:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.55) 38%,rgba(0,0,0,0) 64%)}
+  .w3c-b-frag:hover img,.w3c-b-frag:focus-visible img{opacity:1;transform:scale(1.03)}
+  #world-guide .w3c-b-frag:hover{border-color:#ff2034;color:#ebebed}
+  .w3c-b-frag-copy{position:relative;z-index:1;padding:22px 22px 24px}
+  .w3c-b-frag .n{display:block;font:700 11px var(--ax-font-mono);letter-spacing:.18em;color:#ff2034}
+  .w3c-b-frag q{display:block;quotes:none;font:500 clamp(22px,1.9vw,32px)/1.1 var(--ax-font-display);text-transform:uppercase;margin:12px 0 16px;letter-spacing:.01em}
+  .w3c-b-frag small{font:700 11px var(--ax-font-mono);letter-spacing:.12em;color:#b4b8c3}
+  /* the existing introduction, after the windows */
+  .w3c-b-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,90px);align-items:start;margin:0 0 8px}
+  #world-guide .w3c-b-intro .show-lead{margin:0;font-size:17px;line-height:1.8;color:#c9ccd4}
+  .w3c-b-key{border:1px solid #241a1c;background:#08090c}
+  .w3c-b-key>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:52px;padding:0 18px;font:700 11px var(--ax-font-mono);letter-spacing:.14em;color:#b4b8c3}
+  .w3c-b-key>summary::-webkit-details-marker{display:none}
+  .w3c-b-key>summary:after{content:"+";color:#ff2034;font-size:18px}
+  .w3c-b-key[open]>summary:after{content:"−"}
+  .w3c-b-key-body{padding:4px 18px 22px}
+  .w3c-b-key-body .v22-lore-glossary{grid-template-columns:1fr 1fr}
+  .w3c-b-key-body .show-lore-link{margin-top:26px}
+  /* WORLD → VISION: the doorway (W01) — the figure at the edge, the light ahead; the plan begins past it */
+  .w3c-b-door{position:relative;height:min(88vh,56.25vw,941px);min-height:520px;background:#000;overflow:hidden;border-top:1px solid #1a1214}
+  .w3c-b-door-art{position:absolute;top:0;bottom:0;left:0;right:0;max-width:1672px;margin:0 auto}
+  .w3c-b-door-art picture{position:absolute;inset:0}
+  .w3c-b-door-art:after{content:"";position:absolute;inset:0;pointer-events:none;background:
+    linear-gradient(0deg,#000 0%,rgba(0,0,0,.88) 22%,rgba(0,0,0,0) 58%),
+    radial-gradient(ellipse 60% 74% at 80% 92%,rgba(0,0,0,.88),rgba(0,0,0,0) 76%),
+    linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 13%),
+    linear-gradient(90deg,#000 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#000 100%)}
+  .w3c-b-door-copy{position:absolute;z-index:1;right:max(36px,calc((100vw - 1368px) / 2));bottom:clamp(34px,6.5vh,72px);width:min(47%,640px)}
+  .w3c-b-door-copy:before{content:"";position:absolute;z-index:-1;inset:-96px -60px -60px -96px;background:rgba(0,0,0,.86);-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);mask-composite:intersect;pointer-events:none}
+  .w3c-b-door-copy>span{font:700 11px var(--ax-font-mono);letter-spacing:.2em;color:#ff2034}
+  .w3c-b-door-line{font:500 clamp(40px,4.4vw,80px)/.98 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:12px 0 16px}
+  .w3c-b-door-sub{font:400 clamp(16px,1.15vw,19px)/1.6 var(--ax-font-body);color:#d3d5db;margin:0 0 24px;max-width:46ch}
+  .w3c-b-cta{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:0 22px;border:1px solid #ff2034;background:rgba(10,0,2,.55);color:#fff;font:700 12px var(--ax-font-mono);letter-spacing:.16em;text-decoration:none}
+  .w3c-b-cta:hover{background:#ff2034}
+  @media(prefers-reduced-motion:reduce){.w3c-b-frag img{transition:none}.w3c-b-frag:hover img{transform:none}}
+  @media(max-width:1100px){.w3c-b-frag{height:min(52vh,480px)}}
+  @media(max-width:900px){
+    .w3c-b-door{height:auto;min-height:0}
+    .w3c-b-door-art{position:relative;height:min(72vw,62vh)}
+    .w3c-b-door-art:after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 16%,rgba(0,0,0,0) 46%),linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 20%)}
+    .w3c-b-door-copy{position:relative;right:auto;bottom:auto;width:auto;margin-top:-24px;padding:0 max(14px,calc((100vw - 760px) / 2)) 48px}
+    .w3c-b-door-copy:before{display:none}
+  }
+  /* tablets: keep W01 at its own 16:9 so a 768@2 screen never draws it wider than the 1672 px source */
+  @media(min-width:600px) and (max-width:900px){.w3c-b-door-art{height:56.25vw}}
+  @media(max-width:760px){
+    .w3c-b-card{min-height:0;padding:76px 14px 54px}
+    .w3c-b-card .show-index{top:18px;padding:0 14px}
+    .w3c-b-sun{width:84vw;transform:translate(-50%,-54%)}
+    .w3c-b-card:before{top:60%}
+    .w3c-b-card .show-title{font-size:clamp(44px,12.4vw,62px);margin:12px 0 18px}
+    #world-guide .w3c-b-promise{font-size:16px}
+    .w3c-b-frags-head span:last-child{display:none}
+    .w3c-b-frags{grid-template-columns:1fr;gap:10px;margin-bottom:44px}
+    .w3c-b-frag{height:auto;min-height:0;display:grid;grid-template-columns:38% 1fr;align-items:stretch}
+    .w3c-b-frag picture,.w3c-b-frag>img{position:relative;inset:auto;height:100%;min-height:150px}
+    .w3c-b-frag img{opacity:1}
+    .w3c-b-frag:after{display:none}
+    .w3c-b-frag-copy{padding:14px;display:flex;flex-direction:column;justify-content:center}
+    .w3c-b-frag q{font-size:clamp(18px,5.2vw,22px);margin:8px 0 10px}
+    .w3c-b-intro{grid-template-columns:1fr;gap:20px}
+    #world-guide .w3c-b-intro .show-lead{font-size:16px}
+    .w3c-b-key-body .v22-lore-glossary{grid-template-columns:1fr}
+    .w3c-b-door-line{font-size:clamp(36px,10vw,48px)}
+    .w3c-b-cta{width:100%;justify-content:center;box-sizing:border-box}
+  }`;
+  const st = document.createElement('style'); st.id = 'w3c-variant-b'; st.textContent = css; document.head.appendChild(st);
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const wg = $('#world-guide'), wrap = $('.wrap', wg), hero = $('.v22-world-hero', wg);
+  const idx = $('.show-index', wg), kicker = $('.show-kicker', hero), h2 = $('#v22-world-title');
+  const lead = $('.show-lead', hero), muted = $('.show-muted', hero), warn = $('.v22-warning', hero);
+  const gloss = $('.v22-lore-glossary', wg), path = $('.v22-world-path', wg), lore = $('.show-lore-link');
+  wg.classList.add('w3c-b');
+  wg.previousElementSibling.classList.add('w3c-b-into');
+
+  // title card
+  const card = document.createElement('div'); card.className = 'w3c-b-card';
+  card.innerHTML = '<div class="w3c-b-sun" aria-hidden="true"></div>';
+  kicker.textContent = 'AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ';
+  card.append(idx, kicker, h2);
+  card.insertAdjacentHTML('beforeend', '<p class="w3c-b-promise">Теперь — не о том, как устроен проект. О мире, ради которого он создаётся.</p>');
+  wg.insertBefore(card, wrap);
+
+  // three windows — lines quoted from the sections they open
+  const SZ = '(max-width: 760px) 70vw, 1000px';
+  const F = [
+    { n: 'I / МЕСТО', q: 'Не одна локация, а взаимосвязанная архитектура мира.', l: 'КАРТА МИРА ↘', h: '#world', img: pic('W04', 'vertical_city', SZ, '', '60% 50%', '58% 50%') },
+    { n: 'II / ЧЕЛОВЕК', q: 'По документам мёртв, но продолжает действовать.', l: 'ПЕРСОНАЖИ ↘', h: '#chars', img: '<img src="assets/viktor.webp" width="1024" height="1536" alt="" loading="lazy" decoding="async" style="--pos-d:50% 28%;--pos-m:50% 28%">' },
+    { n: 'III / ЦЕНА ВЫБОРА', q: 'Мир пришлось обрезать, чтобы выжить.', l: 'ДОКТРИНА ↘', h: '#manifesto', img: pic('W06', 'eclipse_ruins', SZ, '', '10% 50%', '8% 50%') },
+  ];
+  const head = document.createElement('div'); head.className = 'w3c-b-frags-head';
+  head.innerHTML = '<span>МЕСТО → ЧЕЛОВЕК → ЦЕНА ВЫБОРА</span><span>ТРИ ОКНА В ОРИГИНАЛЬНЫЙ АРХИВ МИРА</span>';
+  const frags = document.createElement('div'); frags.className = 'w3c-b-frags';
+  frags.innerHTML = F.map(f => `<a class="w3c-b-frag w3c-img" href="${f.h}">${f.img}<span class="w3c-b-frag-copy"><span class="n">${f.n}</span><q>${f.q}</q><small>${f.l}</small></span></a>`).join('');
+
+  // existing introduction + the folded reading key, then the full five-step path (unchanged)
+  const intro = document.createElement('div'); intro.className = 'w3c-b-intro';
+  const key = document.createElement('details'); key.className = 'w3c-b-key';
+  key.innerHTML = '<summary>КАК ЧИТАТЬ ЭТОТ МИР · BLACK SUN · ECHELON · CANON</summary><div class="w3c-b-key-body"></div>';
+  $('.w3c-b-key-body', key).append(muted, warn, gloss, lore);
+  intro.append(lead, key);
+  wrap.replaceChildren(head, frags, intro, path);
+  hero.remove();
+
+  // exit: the doorway scene, then the VISION bridge as before
+  const out = $('#vision').previousElementSibling;
+  const door = document.createElement('div'); door.className = 'w3c-b-door';
+  door.innerHTML = `<div class="w3c-b-door-art w3c-img">${pic('W01', 'threshold_bridge', '(max-width: 599px) 128vw, min(100vw, 1672px)', 'Художественная сцена: фигура на краю моста смотрит на светлый проём в мегаструктуре над облаками', '50% 40%', '53% 35%')}</div><div class="w3c-b-door-copy"><span>05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН</span><p class="w3c-b-door-line">Это лишь фрагменты.</p><p class="w3c-b-door-sub">Остальное — за пределами этих окон. Дальше — не история, а план проекта, который строится вокруг этого мира.</p><a class="w3c-b-cta" href="#vision">КАК МИР БУДЕТ РАЗВИВАТЬСЯ <span aria-hidden="true">↓</span></a></div>`;
+  out.parentNode.insertBefore(door, out);
+})();

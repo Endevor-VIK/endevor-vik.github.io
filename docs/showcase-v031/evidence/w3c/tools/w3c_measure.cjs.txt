@@ -1,0 +1,73 @@
+// W3.C concept measurements (same tool for BASE / A / B): WORLD entry length, what a menu jump to WORLD shows,
+// image fidelity (source px ÷ rendered device px under object-fit:cover) for every image in the WORLD entry and the
+// exit band, keyboard-reachable links in the entry. usage:
+//   NODE_PATH=<playwright> node w3c_measure.cjs <url> <tag> <out.json> [variant.js|-] [viewports]
+const { chromium } = require('playwright');
+const fs = require('fs');
+const [base, tag, out, variantFile, vpArg] = process.argv.slice(2);
+const variant = variantFile && variantFile !== '-' ? fs.readFileSync(variantFile, 'utf8') : null;
+const vps = (vpArg || '1440x900@1,1920x1080@1,1440x900@2,768x1024@2,390x844@2,390x844@3,430x932@2,430x932@3').split(',').map(s => { const [wh, d] = s.split('@'); const [w, h] = wh.split('x').map(Number); return { w, h, dpr: +d, name: s }; });
+(async () => {
+  const browser = await chromium.launch();
+  const res = { tag, base, at: new Date().toISOString(), engine: 'chromium ' + browser.version(), results: [] };
+  for (const vp of vps) {
+    const phone = vp.w < 700;
+    const ctx = await browser.newContext({ viewport: { width: vp.w, height: vp.h }, deviceScaleFactor: vp.dpr, isMobile: phone, hasTouch: phone });
+    await ctx.addInitScript(() => { try { sessionStorage.setItem('axiom_loader_seen', '1'); } catch (_) {} });
+    const page = await ctx.newPage();
+    const errors = []; page.on('pageerror', e => errors.push(String(e)));
+    await page.goto(base, { waitUntil: 'load' });
+    if (variant) await page.evaluate(variant);
+    await page.evaluate(() => { for (const s of document.querySelectorAll('section')) { s.style.transition = 'none'; s.style.opacity = 1; s.style.transform = 'none'; } });
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(2000);
+    const atOpen = await page.evaluate(() => performance.getEntriesByType('resource').filter(r => /world-library|visual-library|viktor|world-spine/.test(r.name)).map(r => r.name.split('/').pop()));
+    // menu / swipe-nav jump to WORLD, wait for smooth scroll to end
+    const sel = vp.w > 1080 ? '.menu a[href="#world-guide"]' : '.show-mobile-nav a[href="#world-guide"]';
+    await page.locator(sel).click();
+    await page.evaluate(() => new Promise(r => { let l = scrollY, s = 0, n = 0; const t = () => { n++; if (Math.abs(scrollY - l) < 0.5) s++; else s = 0; l = scrollY; if (s >= 8 || n > 400) r(); else requestAnimationFrame(t); }; requestAnimationFrame(t); }));
+    await page.waitForTimeout(400);
+    const m = await page.evaluate(async () => {
+      const q = s => document.querySelector(s);
+      const box = el => { if (!el) return null; const b = el.getBoundingClientRect(); return { t: Math.round(b.top), b: Math.round(b.bottom), h: Math.round(b.height) }; };
+      const chromeB = [...document.querySelectorAll('header.top,.show-mobile-nav')].filter(e => { const c = getComputedStyle(e); return c.position === 'sticky' && c.display !== 'none' && e.getBoundingClientRect().top <= 1; }).reduce((a, e) => Math.max(a, e.getBoundingClientRect().bottom), 0);
+      const inView = el => { const b = el && el.getBoundingClientRect(); return !!b && b.height > 0 && b.top >= chromeB - 1 && b.bottom <= innerHeight + 1; };
+      const wg = q('#world-guide'), man = q('#manifesto');
+      const h2 = q('#v22-world-title'), cta = q('.w3c-a-cta'), promise = q('.w3c-a-promise,.w3c-b-promise'), lead = q('#world-guide .show-lead');
+      // fidelity: real file pixels vs device pixels actually drawn
+      const fid = async (img) => {
+        const b = img.getBoundingClientRect(); if (!b.width) return null;
+        const src = img.currentSrc || img.src; const probe = new Image(); probe.src = src; try { await probe.decode(); } catch (_) { return null; }
+        const sw = probe.naturalWidth, sh = probe.naturalHeight; const fit = getComputedStyle(img).objectFit;
+        const scale = fit === 'cover' ? Math.max(b.width / sw, b.height / sh) : fit === 'contain' ? Math.min(b.width / sw, b.height / sh) : b.width / sw;
+        return { file: src.split('/').pop(), src: sw + 'x' + sh, box: Math.round(b.width) + 'x' + Math.round(b.height), ratio: +(1 / (scale * devicePixelRatio)).toFixed(2) };
+      };
+      const imgs = [...document.querySelectorAll('#world-guide img, .w3c-a-epilogue img, .w3c-a-plate img, .w3c-b-door img')];
+      const y0 = scrollY; document.documentElement.style.scrollBehavior = 'auto';
+      const fidelity = [];
+      for (const i of imgs) {
+        i.scrollIntoView({ block: 'center' });
+        await new Promise(r => { const t0 = performance.now(); const t = () => (i.complete && i.currentSrc) || performance.now() - t0 > 6000 ? r() : setTimeout(t, 50); t(); });
+        const f = await fid(i); if (f) fidelity.push(f);
+      }
+      window.scrollTo(0, y0);
+      const lib = performance.getEntriesByType('resource').filter(r => /world-library|visual-library|viktor|world-spine/.test(r.name));
+      const imageBytes = lib.reduce((a, r) => a + (r.encodedBodySize || 0), 0);
+      const links = [...wg.querySelectorAll('a[href^="#"], summary')].filter(a => a.getClientRects().length && getComputedStyle(a).visibility !== 'hidden').map(a => a.getAttribute('href') || 'summary');
+      return {
+        vh: innerHeight, chromeBottom: Math.round(chromeB),
+        worldEntryPx: Math.round(man.getBoundingClientRect().top - wg.getBoundingClientRect().top),
+        worldEntryScreens: +((man.getBoundingClientRect().top - wg.getBoundingClientRect().top) / innerHeight).toFixed(2),
+        onJump: { h2: box(h2), h2InView: inView(h2), promiseInView: promise ? inView(promise) : null, ctaInView: cta ? inView(cta) : null, leadTop: lead ? Math.round(lead.getBoundingClientRect().top) : null },
+        hOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        fidelity, entryLinks: links, imageBytesWorld: imageBytes, imageFilesWorld: lib.map(r => r.name.split('/').pop()),
+      };
+    });
+    res.results.push({ vp: vp.name, libraryRequestsAtOpen: atOpen, ...m, errors });
+    const f = m.fidelity.map(x => `${x.file.replace(/\.webp$/, '')}:${x.ratio}`).join(' ');
+    process.stdout.write(`${tag} ${vp.name}: entry ${m.worldEntryPx}px (${m.worldEntryScreens} scr) | jump h2 ${m.onJump.h2InView ? 'IN' : 'OUT'} promise ${m.onJump.promiseInView} cta ${m.onJump.ctaInView} | ovf ${m.hOverflow} | ${f} | links ${m.entryLinks.length} | world img ${Math.round(m.imageBytesWorld / 1024)}KB/${m.imageFilesWorld.length} | at open ${atOpen.length} | err ${errors.length}\n`);
+    await ctx.close();
+  }
+  await browser.close();
+  fs.writeFileSync(out, JSON.stringify(res, null, 1));
+})();

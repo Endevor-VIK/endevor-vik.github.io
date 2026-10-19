@@ -1,0 +1,35 @@
+// W3.C preservation trace for injected concepts (W3.A tool + optional variant injection, no-JS check dropped:
+// the concepts are injected by JS). Same tool for BASE / A / B.
+// W3.A preservation manifest (same tool BEFORE/AFTER). Not the W3.0 w3-preserve.cjs (unavailable here);
+// re-implemented from its documented checks: section order, sha256 of visible text per section, Canon IDs,
+// loaded font faces, root colour tokens, image sources, no-JS visibility.
+// usage: NODE_PATH=<playwright> node w3c_preserve.cjs <url> <out.json> [variant.js]
+const { chromium } = require('playwright');
+const crypto = require('crypto'), fs = require('fs');
+const [base, out, vf] = process.argv.slice(2);
+const variant = vf ? fs.readFileSync(vf, 'utf8') : null;
+const SECTIONS = { hero: '#top', about: '#about', creator: '#creator', 'a01-band': '#work-art-band', work: '#work', system: '#system', 'world-guide': '#world-guide', manifesto: '#manifesto', modules: '#modules', 'world-map': '#world', entities: '#chars', 'axiom-entity': '.axiom-entity', factions: '#factions', vision: '#vision', contact: '#collaboration', cta: 'section.cta', footer: 'body > footer' };
+const sha = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16);
+(async () => {
+  const b = await chromium.launch();
+  const ctx = await b.newContext({ viewport: { width: 1440, height: 900 } });
+  await ctx.addInitScript(() => sessionStorage.setItem('axiom_loader_seen', '1'));
+  const p = await ctx.newPage(); await p.goto(base, { waitUntil: 'load' }); if (variant) await p.evaluate(variant); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(1200);
+  const data = await p.evaluate((S) => {
+    const all = [...document.querySelectorAll(Object.values(S).join(','))];
+    const order = all.map(el => Object.keys(S).find(k => el.matches(S[k])));
+    const text = {}; for (const [k, s] of Object.entries(S)) { const el = document.querySelector(s); text[k] = el ? el.innerText.replace(/\s+/g, ' ').trim() : null; }
+    const canonIds = [...document.querySelectorAll('[data-canon-id],[data-node]')].map(e => e.getAttribute('data-canon-id') || e.getAttribute('data-node')).filter(Boolean);
+    const fonts = [...document.fonts].filter(f => f.status === 'loaded').map(f => `${f.family.replace(/"/g, '')} ${f.weight}`).sort();
+    const cs = getComputedStyle(document.documentElement);
+    const tokens = Object.fromEntries(['--red', '--ax23-red', '--ax-crimson', '--ax-crimson-line'].map(t => [t, cs.getPropertyValue(t).trim()]));
+    const images = [...document.images].map(i => i.getAttribute('src')).sort();
+    return { order, text, canonIds, fonts, tokens, images };
+  }, SECTIONS);
+  const hashes = Object.fromEntries(Object.entries(data.text).map(([k, v]) => [k, v == null ? null : sha(v)]));
+  const noJsHidden = 'NOT_RUN (concepts are injected by JS)';
+  await b.close();
+  const res = { base, at: new Date().toISOString(), order: data.order, sectionCount: data.order.length, textSha256_16: hashes, canonIds: data.canonIds, fonts: [...new Set(data.fonts)], tokens: data.tokens, images: data.images, noJsHiddenSections: noJsHidden, text: data.text };
+  fs.writeFileSync(out, JSON.stringify(res, null, 1));
+  console.log(JSON.stringify({ sections: res.sectionCount, order: res.order.join('>'), canonIds: res.canonIds, fonts: res.fonts, tokens: res.tokens, images: res.images.length, noJsHidden }, null, 0));
+})();

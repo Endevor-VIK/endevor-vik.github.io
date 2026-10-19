@@ -57,4 +57,4 @@ world-library/
 | W08 | 108 · 167 · 242 | 132 · 210 · 309 | 2 273 |
 | W09 | 91 · 142 · 210 | 113 · 172 · 261 | 2 073 |
 
-Пересборка производных — скрипт `docs/showcase-v031/evidence/w3c/build_library.py.txt` (Pillow 12.3, AVIF через libavif).
+Пересборка производных — скрипт `docs/showcase-v031/evidence/w3c/tools/build_library.py.txt` (манифест — `make_manifest.py.txt` рядом) (Pillow 12.3, AVIF через libavif).

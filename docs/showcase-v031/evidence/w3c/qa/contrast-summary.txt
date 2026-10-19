@@ -1,0 +1,44 @@
+a 1440x900_1   .w3c-a-copy[0]         worst  5.22 / need 4.5  PASS  «AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ» 12px
+a 1440x900_1   .w3c-a-plate-copy[0]   worst  5.35 / need 4.5  PASS  «ГЛАВА I» 11px
+a 1440x900_1   .w3c-a-plate-copy[1]   worst  5.36 / need 4.5  PASS  «ГЛАВА II» 11px
+a 1440x900_1   .w3c-a-plate-copy[2]   worst  5.28 / need 4.5  PASS  «ГЛАВА III» 11px
+a 1440x900_1   .w3c-a-plate-copy[3]   worst  5.28 / need 4.5  PASS  «ГЛАВА V» 11px
+a 1440x900_1   .w3c-a-epi-copy[0]     worst   5.3 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 11px
+a 1920x1080_1  .w3c-a-copy[0]         worst  4.69 / need 4.5  PASS  «05 / WORLD ENTRY» 12px
+a 1920x1080_1  .w3c-a-plate-copy[0]   worst  5.44 / need 4.5  PASS  «ГЛАВА I» 11px
+a 1920x1080_1  .w3c-a-plate-copy[1]   worst  5.08 / need 4.5  PASS  «ГЛАВА II» 11px
+a 1920x1080_1  .w3c-a-plate-copy[2]   worst  5.27 / need 4.5  PASS  «ГЛАВА III» 11px
+a 1920x1080_1  .w3c-a-plate-copy[3]   worst  5.42 / need 4.5  PASS  «ГЛАВА V» 11px
+a 1920x1080_1  .w3c-a-epi-copy[0]     worst  5.31 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 11px
+a 768x1024_2   .w3c-a-copy[0]         worst  5.51 / need 4.5  PASS  «AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ» 12px
+a 768x1024_2   .w3c-a-plate-copy[0]   worst  5.41 / need 4.5  PASS  «ГЛАВА I» 11px
+a 768x1024_2   .w3c-a-plate-copy[1]   worst  5.23 / need 4.5  PASS  «ГЛАВА II» 11px
+a 768x1024_2   .w3c-a-plate-copy[2]   worst  5.28 / need 4.5  PASS  «ГЛАВА III» 11px
+a 768x1024_2   .w3c-a-plate-copy[3]   worst  5.23 / need 4.5  PASS  «ГЛАВА V» 11px
+a 768x1024_2   .w3c-a-epi-copy[0]     worst  5.31 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 11px
+a 390x844_2    .w3c-a-copy[0]         worst  5.51 / need 4.5  PASS  «AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ» 12px
+a 390x844_2    .w3c-a-plate-copy[0]   worst  5.44 / need 4.5  PASS  «ГЛАВА I» 11px
+a 390x844_2    .w3c-a-plate-copy[1]   worst  5.35 / need 4.5  PASS  «ГЛАВА II» 11px
+a 390x844_2    .w3c-a-plate-copy[2]   worst  5.15 / need 4.5  PASS  «ГЛАВА III» 11px
+a 390x844_2    .w3c-a-plate-copy[3]   worst  4.87 / need 4.5  PASS  «ГЛАВА V» 11px
+a 390x844_2    .w3c-a-epi-copy[0]     worst  5.41 / need 4.5  PASS  «05 / WORLD · ЭПИЛОГ» 11px
+b 1440x900_1   .w3c-b-card[0]         worst  5.66 / need 4.5  PASS  «05 / WORLD ENTRY» 12px
+b 1440x900_1   .w3c-b-frag-copy[0]    worst  4.83 / need 4.5  PASS  «I / МЕСТО» 11px
+b 1440x900_1   .w3c-b-frag-copy[1]    worst  5.29 / need 4.5  PASS  «II / ЧЕЛОВЕК» 11px
+b 1440x900_1   .w3c-b-frag-copy[2]    worst  5.22 / need 4.5  PASS  «III / ЦЕНА ВЫБОРА» 11px
+b 1440x900_1   .w3c-b-door-copy[0]    worst  5.44 / need 4.5  PASS  «05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН» 11px
+b 1920x1080_1  .w3c-b-card[0]         worst  5.66 / need 4.5  PASS  «05 / WORLD ENTRY» 12px
+b 1920x1080_1  .w3c-b-frag-copy[0]    worst  4.91 / need 4.5  PASS  «I / МЕСТО» 11px
+b 1920x1080_1  .w3c-b-frag-copy[1]    worst  5.29 / need 4.5  PASS  «II / ЧЕЛОВЕК» 11px
+b 1920x1080_1  .w3c-b-frag-copy[2]    worst  5.23 / need 4.5  PASS  «III / ЦЕНА ВЫБОРА» 11px
+b 1920x1080_1  .w3c-b-door-copy[0]    worst  5.22 / need 4.5  PASS  «05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН» 11px
+b 768x1024_2   .w3c-b-card[0]         worst  5.34 / need 4.5  PASS  «AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ» 12px
+b 768x1024_2   .w3c-b-frag-copy[0]    worst  4.83 / need 4.5  PASS  «I / МЕСТО» 11px
+b 768x1024_2   .w3c-b-frag-copy[1]    worst  5.38 / need 4.5  PASS  «II / ЧЕЛОВЕК» 11px
+b 768x1024_2   .w3c-b-frag-copy[2]    worst  5.38 / need 4.5  PASS  «III / ЦЕНА ВЫБОРА» 11px
+b 768x1024_2   .w3c-b-door-copy[0]    worst  5.47 / need 4.5  PASS  «05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН» 11px
+b 390x844_2    .w3c-b-card[0]         worst  4.94 / need 4.5  PASS  «05 / WORLD ENTRY» 12px
+b 390x844_2    .w3c-b-frag-copy[0]    worst  5.35 / need 4.5  PASS  «I / МЕСТО» 11px
+b 390x844_2    .w3c-b-frag-copy[1]    worst  5.35 / need 4.5  PASS  «II / ЧЕЛОВЕК» 11px
+b 390x844_2    .w3c-b-frag-copy[2]    worst  5.35 / need 4.5  PASS  «III / ЦЕНА ВЫБОРА» 11px
+b 390x844_2    .w3c-b-door-copy[0]    worst  5.41 / need 4.5  PASS  «05 / WORLD · ЗА ПРЕДЕЛАМИ ОКОН» 11px
