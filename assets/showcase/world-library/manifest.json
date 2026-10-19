@@ -1,0 +1,789 @@
+{
+ "library": "AXIOM SHOWCASE · W3.C world library",
+ "source": {
+  "archive": "0524.zip (CREATOR, 2026-10-19)",
+  "archive_sha256": "5276d24006eaa5268cf5067086cdadd152f19ac86e00d11a2c5e0cd2b50a3454",
+  "files_in_archive": 9
+ },
+ "encoding": {
+  "avif": "AVIF 4:4:4, quality 80, speed 4 (primary)",
+  "webp": "WebP quality 92, method 6 (fallback)",
+  "widths": [
+   960,
+   1280,
+   1672
+  ],
+  "upscaling": "none — 1672 px is the native width",
+  "checks": "PSNR vs LANCZOS reference; edge_retention = Laplacian variance encode ÷ reference (1.00 = no softening)"
+ },
+ "images": [
+  {
+   "id": "W01",
+   "uuid": "682462bb-2c81-49d2-b873-f88cfe6e4ef9",
+   "slug": "threshold_bridge",
+   "title": "ПОРОГ / мост к светлому проёму",
+   "status": "MANDATORY · PROPOSED (A: SYSTEM→WORLD threshold; B: WORLD→VISION exit)",
+   "visible_content": "Монохромная мегаструктура: парящие монолиты в тумане, кольцевая конструкция, мост к светлому проёму с силуэтом в капюшоне; на переднем плане слева — фигура в шлеме и плаще; красный круг-«глаз» с лучом, красный треугольный знак на колонне.",
+   "focal_points": "Фигура x≈22–30% y≈40–82%; проём x≈77–85% y≈15–45%; красный круг x≈45% y≈15–25%.",
+   "canon": "ATMOSPHERE_ONLY. Фигуры анонимны: не подписывать как персонажей Canon. Треугольный знак совпадает с маркой AXIOM CORE на сайте — фирменный, не сюжетный.",
+   "proposed_use": [
+    "A · сцена порога SYSTEM→WORLD: на всю ширину (до 1672 css px), текст справа снизу у проёма; телефон — полоса 72vw, кадр x 14–92%, текст ниже.",
+    "B · сцена выхода WORLD→VISION («дверь»): та же композиция, текст выхода у проёма."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.0,
+    "red_pct": 1.6,
+    "mean_luminance_0_255": 49
+   },
+   "original": {
+    "path": "originals/682462bb-2c81-49d2-b873-f88cfe6e4ef9.png",
+    "archive_name": "0524/682462bb-2c81-49d2-b873-f88cfe6e4ef9.png",
+    "sha256": "be025dc90c73d30c15508c19149568e80c03527ce145776ab03cf44ea4bae169",
+    "bytes": 2100599,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W01_threshold_bridge-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 70867,
+     "psnr_db": 42.9,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W01_threshold_bridge-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 81692,
+     "psnr_db": 41.2,
+     "edge_retention": 0.97
+    },
+    {
+     "path": "web/W01_threshold_bridge-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 111414,
+     "psnr_db": 43.2,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W01_threshold_bridge-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 126634,
+     "psnr_db": 41.7,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W01_threshold_bridge-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 164653,
+     "psnr_db": 43.7,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W01_threshold_bridge-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 189156,
+     "psnr_db": 42.6,
+     "edge_retention": 0.96
+    }
+   ]
+  },
+  {
+   "id": "W02",
+   "uuid": "77886809-2dca-4da7-9dfb-5b58ae325303",
+   "slug": "memory_spheres",
+   "title": "ПАМЯТЬ / сферы над городом",
+   "status": "PROPOSED (A: глава II «КАК МИР ПОМНИТ?»)",
+   "visible_content": "Красно-чёрные сферы с фрагментами изображений на орбитах над тёмным готическим городом, вертикальный красный луч, отражение в воде.",
+   "focal_points": "Центральная сфера x≈50% y≈20%; луч x≈50%.",
+   "canon": "ATMOSPHERE_ONLY. Не утверждает устройство памяти мира; мотив сочетается с темой «памяти» во вводном тексте.",
+   "proposed_use": [
+    "A · плашка главы II над #modules: полоса, кадр по сферам (y≈25–45%)."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.0,
+    "red_pct": 6.8,
+    "mean_luminance_0_255": 29
+   },
+   "original": {
+    "path": "originals/77886809-2dca-4da7-9dfb-5b58ae325303.png",
+    "archive_name": "0524/77886809-2dca-4da7-9dfb-5b58ae325303.png",
+    "sha256": "99fefb0ea1b89a0b2c7c90b523cda0fa650c74b25414af9261273d9c905bc011",
+    "bytes": 2175377,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W02_memory_spheres-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 92705,
+     "psnr_db": 41.1,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W02_memory_spheres-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 112808,
+     "psnr_db": 38.1,
+     "edge_retention": 0.98
+    },
+    {
+     "path": "web/W02_memory_spheres-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 147652,
+     "psnr_db": 41.8,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W02_memory_spheres-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 181170,
+     "psnr_db": 38.8,
+     "edge_retention": 0.98
+    },
+    {
+     "path": "web/W02_memory_spheres-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 218563,
+     "psnr_db": 42.3,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W02_memory_spheres-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 265356,
+     "psnr_db": 39.9,
+     "edge_retention": 0.98
+    }
+   ]
+  },
+  {
+   "id": "W03",
+   "uuid": "83f77450-c0f6-4cde-8bb7-17176f268981",
+   "slug": "subterranean_facility",
+   "title": "ПОДЗЕМНЫЙ КОМПЛЕКС / шахта с красным ядром",
+   "status": "RESERVE — требует решения CREATOR о привязке",
+   "visible_content": "Разрез: заснеженные горы и постройки на поверхности, ниже — многоуровневая шахта с красным ядром; на стенах впечатаны надписи «OMEGA-0 · SUBTERRANEAN RESEARCH FACILITY … RESTRICTED» и знак AXIOM.",
+   "focal_points": "Ядро x≈50% y≈35–100%.",
+   "canon": "NEEDS_CREATOR_BINDING. Надпись OMEGA-0 — прямая привязка к узлу 02.05. Canon 02.05 описывает подземный комплекс (совпадает в общем), но поверхность (снег, горы) и устройство шахты в Canon не подтверждены. Не использовать как атмосферу из-за впечатанного названия.",
+   "proposed_use": [
+    "Резерв. Возможное будущее: иллюстрация к узлу 02.05 в панели карты V10 (не вместо карты) после решения CREATOR."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.01,
+    "red_pct": 4.9,
+    "mean_luminance_0_255": 34
+   },
+   "original": {
+    "path": "originals/83f77450-c0f6-4cde-8bb7-17176f268981.png",
+    "archive_name": "0524/83f77450-c0f6-4cde-8bb7-17176f268981.png",
+    "sha256": "e9cca12866895eb0acb116078ba53e0215801b502fd014e6fa98110a39a2a051",
+    "bytes": 2482577,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W03_subterranean_facility-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 118172,
+     "psnr_db": 40.6,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W03_subterranean_facility-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 143196,
+     "psnr_db": 38.8,
+     "edge_retention": 0.99
+    },
+    {
+     "path": "web/W03_subterranean_facility-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 185643,
+     "psnr_db": 41.2,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W03_subterranean_facility-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 230426,
+     "psnr_db": 39.6,
+     "edge_retention": 0.99
+    },
+    {
+     "path": "web/W03_subterranean_facility-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 272674,
+     "psnr_db": 41.7,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W03_subterranean_facility-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 348156,
+     "psnr_db": 40.7,
+     "edge_retention": 0.99
+    }
+   ]
+  },
+  {
+   "id": "W04",
+   "uuid": "8d008d9d-ede8-4add-9e92-3de355f911cd",
+   "slug": "vertical_city",
+   "title": "ВЕРТИКАЛЬ / плотный город",
+   "status": "PROPOSED (A: глава III; B: окно I «МЕСТО»)",
+   "visible_content": "Плотный вертикальный город ночью, красные знамёна с кольцевым знаком, центральная башня с лучом, монорельсовый поезд, огромный портрет на фасаде.",
+   "focal_points": "Башня x≈55% y≈5–70%; поезд справа снизу.",
+   "canon": "ATMOSPHERE_ONLY. Похож на «вертикальный порядок», но не подписывать как ECHELON (правило «без канонической привязки по сходству»). Портрет на фасаде — не персонаж Canon. Знак на знамёнах неканонический — держать мелко.",
+   "proposed_use": [
+    "A · плашка главы III над #world (карта V10 остаётся главной).",
+    "B · окно «МЕСТО»: вертикальный кадр по башне."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.0,
+    "red_pct": 6.5,
+    "mean_luminance_0_255": 34
+   },
+   "original": {
+    "path": "originals/8d008d9d-ede8-4add-9e92-3de355f911cd.png",
+    "archive_name": "0524/8d008d9d-ede8-4add-9e92-3de355f911cd.png",
+    "sha256": "e92b30bc2290eb9a641bdd73bc0f4a2798e0343fafacae161112dd8dd18ccd3f",
+    "bytes": 2134656,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W04_vertical_city-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 88261,
+     "psnr_db": 41.5,
+     "edge_retention": 0.97
+    },
+    {
+     "path": "web/W04_vertical_city-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 109626,
+     "psnr_db": 39.3,
+     "edge_retention": 0.98
+    },
+    {
+     "path": "web/W04_vertical_city-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 137989,
+     "psnr_db": 42.1,
+     "edge_retention": 0.97
+    },
+    {
+     "path": "web/W04_vertical_city-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 175986,
+     "psnr_db": 40.0,
+     "edge_retention": 0.98
+    },
+    {
+     "path": "web/W04_vertical_city-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 203326,
+     "psnr_db": 42.6,
+     "edge_retention": 0.97
+    },
+    {
+     "path": "web/W04_vertical_city-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 254392,
+     "psnr_db": 40.9,
+     "edge_retention": 0.98
+    }
+   ]
+  },
+  {
+   "id": "W05",
+   "uuid": "9a3f3d08-c152-4e54-8984-03129f62582f",
+   "slug": "red_sun_overlook",
+   "title": "НАБЛЮДАТЕЛЬ / красное солнце",
+   "status": "RESERVE",
+   "visible_content": "Фигура в броне и плаще на скале над городом шпилей, красное солнце у горизонта, планета в небе, мост-магистраль.",
+   "focal_points": "Фигура x≈20–28% y≈45–95%; солнце x≈78% y≈35%.",
+   "canon": "ATMOSPHERE_ONLY, но героическая фигура может читаться как конкретный персонаж; красное солнце рядом с BLACK SUN — смысловой конфликт. Резерв.",
+   "proposed_use": [
+    "Резерв. Альтернатива для главы IV, если CREATOR решит."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.0,
+    "red_pct": 35.8,
+    "mean_luminance_0_255": 47
+   },
+   "original": {
+    "path": "originals/9a3f3d08-c152-4e54-8984-03129f62582f.png",
+    "archive_name": "0524/9a3f3d08-c152-4e54-8984-03129f62582f.png",
+    "sha256": "00b98e2cf81a9793b7abcc9ff46a0f5b142376d46f6dc8c1de07b41a8bcd9cb7",
+    "bytes": 2358888,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W05_red_sun_overlook-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 108629,
+     "psnr_db": 40.2,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W05_red_sun_overlook-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 135430,
+     "psnr_db": 35.8,
+     "edge_retention": 0.97
+    },
+    {
+     "path": "web/W05_red_sun_overlook-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 170059,
+     "psnr_db": 40.7,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W05_red_sun_overlook-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 216964,
+     "psnr_db": 36.7,
+     "edge_retention": 0.98
+    },
+    {
+     "path": "web/W05_red_sun_overlook-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 253071,
+     "psnr_db": 41.3,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W05_red_sun_overlook-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 337662,
+     "psnr_db": 38.1,
+     "edge_retention": 0.98
+    }
+   ]
+  },
+  {
+   "id": "W06",
+   "uuid": "acadd804-bc4b-42a7-af7a-c756594e22d1",
+   "slug": "eclipse_ruins",
+   "title": "ПОСЛЕ / руины под затмением",
+   "status": "PROPOSED в кадрах без солнца (A: глава I; B: окно III); полный кадр — на решение CREATOR",
+   "visible_content": "Выжженный ландшафт, дым, руины, разомкнутая кольцевая конструкция, фигура в плаще на гребне; справа вверху — чёрный диск с красной короной (затмение) и город шпилей.",
+   "focal_points": "Фигура x≈26–30% y≈28–40%; затмение x≈80% y≈15–22%.",
+   "canon": "Полный кадр рискован: затмение рядом с текстом о BLACK SUN визуально определяет природу события, а она в Canon открыта (18.02 DRAFT — операция; 03.01 — «взрыв»). Кадры без диска — ATMOSPHERE_ONLY.",
+   "proposed_use": [
+    "A · плашка главы I над #manifesto: кадр ниже солнца (руины, дым).",
+    "B · окно «ЦЕНА ВЫБОРА»: вертикальный кадр по фигуре и руинам."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.0,
+    "red_pct": 24.3,
+    "mean_luminance_0_255": 38
+   },
+   "original": {
+    "path": "originals/acadd804-bc4b-42a7-af7a-c756594e22d1.png",
+    "archive_name": "0524/acadd804-bc4b-42a7-af7a-c756594e22d1.png",
+    "sha256": "ffe591f2cd38eb95da98e397e7525f6cc313f4353990d8150e3d48241b9551bc",
+    "bytes": 2106189,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W06_eclipse_ruins-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 95804,
+     "psnr_db": 41.4,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W06_eclipse_ruins-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 118224,
+     "psnr_db": 37.8,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W06_eclipse_ruins-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 146208,
+     "psnr_db": 42.0,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W06_eclipse_ruins-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 175326,
+     "psnr_db": 38.7,
+     "edge_retention": 0.97
+    },
+    {
+     "path": "web/W06_eclipse_ruins-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 212783,
+     "psnr_db": 42.7,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W06_eclipse_ruins-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 256506,
+     "psnr_db": 39.8,
+     "edge_retention": 0.97
+    }
+   ]
+  },
+  {
+   "id": "W07",
+   "uuid": "c85e6d00-5bd2-451a-ac5b-8c2b6691ce16",
+   "slug": "red_rim_orbit",
+   "title": "ОРБИТА / планета с красным краем",
+   "status": "PROPOSED (A: эпилог WORLD→VISION)",
+   "visible_content": "Тёмная планета с красными разломами и светящимся краем, обломки, разрушенные кольцевые конструкции на переднем плане, вторая луна.",
+   "focal_points": "Дуга края x≈20–95% y≈20–60%.",
+   "canon": "ATMOSPHERE_ONLY. Рифмуется с B02 и B04 (VISION).",
+   "proposed_use": [
+    "A · эпилог: широкая полоса по дуге края планеты, текст по центру."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.0,
+    "red_pct": 11.3,
+    "mean_luminance_0_255": 33
+   },
+   "original": {
+    "path": "originals/c85e6d00-5bd2-451a-ac5b-8c2b6691ce16.png",
+    "archive_name": "0524/c85e6d00-5bd2-451a-ac5b-8c2b6691ce16.png",
+    "sha256": "1f5c6747381684825b129c4ebc9ceafdbf7d412054eabc994ca173d50cbe1a96",
+    "bytes": 2217805,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W07_red_rim_orbit-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 92960,
+     "psnr_db": 41.6,
+     "edge_retention": 0.94
+    },
+    {
+     "path": "web/W07_red_rim_orbit-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 114160,
+     "psnr_db": 39.6,
+     "edge_retention": 0.98
+    },
+    {
+     "path": "web/W07_red_rim_orbit-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 146866,
+     "psnr_db": 42.1,
+     "edge_retention": 0.94
+    },
+    {
+     "path": "web/W07_red_rim_orbit-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 174208,
+     "psnr_db": 40.2,
+     "edge_retention": 0.97
+    },
+    {
+     "path": "web/W07_red_rim_orbit-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 218311,
+     "psnr_db": 42.6,
+     "edge_retention": 0.94
+    },
+    {
+     "path": "web/W07_red_rim_orbit-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 262418,
+     "psnr_db": 40.9,
+     "edge_retention": 0.97
+    }
+   ]
+  },
+  {
+   "id": "W08",
+   "uuid": "ca6fd69d-3dc0-4e88-9331-4eb77910c0f4",
+   "slug": "axial_capital",
+   "title": "ОСЬ / симметричная столица",
+   "status": "PROPOSED (A: глава V «КТО ОПРЕДЕЛЯЕТ ПОРЯДОК?»)",
+   "visible_content": "Симметричный город с центральным шпилем и лучом, проспект-ось, башни со знамёнами (знак — трезубец в круге), летательные аппараты.",
+   "focal_points": "Шпиль x≈50% y≈0–55%.",
+   "canon": "ATMOSPHERE_ONLY. Знак на знамёнах не совпадает ни с лилией ENDEAVOR (assets/endeavor_logo_no_text_no_frame.svg), ни с маркой AXIOM — не подписывать как фракцию.",
+   "proposed_use": [
+    "A · плашка главы V над #factions: полоса по шпилю и проспекту."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.04,
+    "red_pct": 5.3,
+    "mean_luminance_0_255": 60
+   },
+   "original": {
+    "path": "originals/ca6fd69d-3dc0-4e88-9331-4eb77910c0f4.png",
+    "archive_name": "0524/ca6fd69d-3dc0-4e88-9331-4eb77910c0f4.png",
+    "sha256": "71a889cfb084c5e01dee4d23ff7498bcd4e17fff5771ce2cc2a0bd0d056740e7",
+    "bytes": 2328115,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W08_axial_capital-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 111022,
+     "psnr_db": 40.5,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W08_axial_capital-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 135252,
+     "psnr_db": 37.2,
+     "edge_retention": 0.98
+    },
+    {
+     "path": "web/W08_axial_capital-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 171553,
+     "psnr_db": 41.3,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W08_axial_capital-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 215334,
+     "psnr_db": 38.4,
+     "edge_retention": 0.99
+    },
+    {
+     "path": "web/W08_axial_capital-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 248323,
+     "psnr_db": 42.0,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W08_axial_capital-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 317292,
+     "psnr_db": 39.7,
+     "edge_retention": 0.98
+    }
+   ]
+  },
+  {
+   "id": "W09",
+   "uuid": "e032670c-4f79-4ce6-bf77-9ba0bb529443",
+   "slug": "emblem_gate",
+   "title": "ВРАТА / знак в красном круге",
+   "status": "RESERVE",
+   "visible_content": "Тёмный зал, огромные красные врата со знаком (трезубец в круге), одинокая фигура в плаще спиной к зрителю, отражения на полу.",
+   "focal_points": "Знак x≈50% y≈20–45%; фигура x≈50% y≈60–95%.",
+   "canon": "Неканонический знак в центре кадра может читаться как новая власть или фракция — резерв до решения CREATOR о привязке.",
+   "proposed_use": [
+    "Резерв. Альтернативный порог; возможна будущая сцена фракции после привязки."
+   ],
+   "palette": {
+    "magenta_purple_pct": 0.0,
+    "red_pct": 19.6,
+    "mean_luminance_0_255": 28
+   },
+   "original": {
+    "path": "originals/e032670c-4f79-4ce6-bf77-9ba0bb529443.png",
+    "archive_name": "0524/e032670c-4f79-4ce6-bf77-9ba0bb529443.png",
+    "sha256": "3493b38407fc434b06085c818365128ba8f898f8b4bd4eb5879b842dd6af7ccc",
+    "bytes": 2123507,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGB",
+    "icc": false
+   },
+   "web": [
+    {
+     "path": "web/W09_emblem_gate-960w.avif",
+     "format": "avif",
+     "width": 960,
+     "height": 540,
+     "bytes": 93641,
+     "psnr_db": 40.7,
+     "edge_retention": 0.96
+    },
+    {
+     "path": "web/W09_emblem_gate-960w.webp",
+     "format": "webp",
+     "width": 960,
+     "height": 540,
+     "bytes": 116582,
+     "psnr_db": 35.0,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W09_emblem_gate-1280w.avif",
+     "format": "avif",
+     "width": 1280,
+     "height": 720,
+     "bytes": 146167,
+     "psnr_db": 41.4,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W09_emblem_gate-1280w.webp",
+     "format": "webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 176618,
+     "psnr_db": 36.1,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W09_emblem_gate-1672w.avif",
+     "format": "avif",
+     "width": 1672,
+     "height": 941,
+     "bytes": 215621,
+     "psnr_db": 42.1,
+     "edge_retention": 0.95
+    },
+    {
+     "path": "web/W09_emblem_gate-1672w.webp",
+     "format": "webp",
+     "width": 1672,
+     "height": 941,
+     "bytes": 268030,
+     "psnr_db": 37.6,
+     "edge_retention": 0.96
+    }
+   ]
+  }
+ ]
+}
