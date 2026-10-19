@@ -238,16 +238,31 @@ Accessibility, Best Practices и SEO — 100 / 100 / 100 во всех 20 про
 
 Замечание для CREATOR: на W03 нарисованы надписи «OMEGA-0 / SUBTERRANEAN RESEARCH FACILITY / RESTRICTED», знак AXIOM и «OMEGA CONTAINMENT». Изображение утверждено CREATOR как художественная ассоциация. Текст сцены не делает их фактами Canon: не говорит об уровнях, сдерживании и доступе.
 
-## 7. Gate record (заполняют ревьюеры)
+## 7. Gate record — PRINCIPAL / CREATOR 2026-10-19
 
 | Поле | Значение |
 | --- | --- |
-| AUTHOR | Claude (агент реализации), сессия этой ветки |
-| REVIEWER | — (Principal, не автор) |
-| REVIEWED SHA | — |
-| QA SHA | `b53350e` |
-| VERDICT | — |
-| ALLOWED TARGET | — (`main` только после приёмки CREATOR) |
-| AUTHORITY | — |
+| AUTHOR | Claude / исполнитель W3.C (separate agent) |
+| REVIEWER | AXIOM Principal / independent source and visual-evidence inspection (GitHub PR #10; no independent local browser execution) |
+| REVIEWED SHA | `c03798ee192afd052ecabe7d2863bff5b3a3ecee` (PR head at Principal review) |
+| QA SHA | `b53350e` (agent's frozen runtime + browser tests; compare `b53350e…c03798ee` confirms later changes restricted to `docs/`) |
+| VERDICT | **CONDITIONAL ACCEPT FOR RELEASE** — CREATOR explicitly authorized merge of the complete current W3.C implementation into `main` after review. Product source inspection and selected 1440/390 evidence show no blocking regression; reported test outcomes are from the implementation agent, not independently re-run. |
+| ALLOWED TARGET | `main` of `Endevor-VIK/endevor-vik.github.io`, via PR #10, expected exact HEAD after this gate-record-only docs commit |
+| AUTHORITY | Explicit CREATOR message 2026-10-19: «все вливаем в main делаем pr merge»; earlier CREATOR approval of Variant A and artistic OMEGA-0 W03 association |
+| IMPLEMENTATION SCOPE | HTML, CSS, JS and regression tests, nine-image library (originals + optimized), selected screenshots and docs. No Canon, AXS root, page version or `gate.json` alteration |
+| CI/QA | Agent-reported Chromium regression 116/116 twice, smoke, axe 0, preservation 17 sections/six IDs and V10, 28/28 contrast, 5× Lighthouse paired. GitHub did not provide independent Chromium/Firefox test check-runs. |
+| QA LIMITATIONS | Firefox, WebKit/Safari, real phones/GPU, actual screen-reader/manual keyboard test, field CWV **NOT RUN**. Check follow-up separately; do not misrepresent as PASS. |
+| Pages | Automatic GitHub Pages deploy **may follow** main merge. Confirm actual merged SHA + completed Pages SUCCESS separately, not simply a successful merge response. |
 
-**Откат:** `git revert` коммитов S4 → S1 в обратном порядке. Библиотека и документы от кода не зависят.
+### CREATOR-authorized release exceptions — do not erase debt
+
+1. **W01 / chapter plates / W07 Retina softness**: native 1672-wide originals, reported sharpness 0.59–0.62 vs 0.95 target on high-DPR desktop; W03 within its 820px inset stays sharp. Publish current art quality with explicit exception; request authentic master W01 >=3344×1882 and corresponding source-res plate/orbit assets when available. No synthetic upscale passed off as real original.
+2. **W03 built-in signage / painted architecture**: CREATOR approved linking illustration W03 to OMEGA-0. The built-in `OMEGA-0 / SUBTERRANEAN RESEARCH FACILITY / RESTRICTED` text and AXIOM emblem remain **artistic**, not a canonical engineering blueprint for Gluhaya's surface, the laboratory layout or live access state.
+3. **AI provenance:** originals have C2PA generation signatures reported by agent; manifest preserves source attribution. No new user-facing generic `AI ART` disclaimer is required by this acceptance; still maintain accurate provenance, do not falsely claim photographs or independently verified actual Canon scenes. Future policy/claim changes require separate decision.
+4. **Length and speed:** accepted for this revision with known median mobile LH 97→96, desktop 100→100 and lab desktop FCP/LCP roughly +0.15–0.2s (per agent), plus +1.8–2.9 viewport-height pages. Track as W3.D/AAA perf and editorial pacing debt; do not inflate results or claim no slowdown.
+
+**Principal review scope:** reviewed PR metadata/scope, code diff for `index.html`, `assets/css/showcase-v23.css`, `assets/js/showcase-v23.js` and test changes, selected visual capture atlas at 1440/390 and OMEGA scene, Canon Context Pack, regression report, QA-to-docs-only ancestry, and no active unresolved review threads. Not an independent execution or real-browser visual acceptance by CREATOR.
+
+**Rollback:** safe git revert of merged W3.C runtime changes through a reviewed PR if a verified production incident occurs; do not force-reset `main`.
+
+**Release gate status:** accepted for this explicit merge and this reviewed implementation only. A future W3.D release requires its own independent review; this record is not blanket pre-approval.
