@@ -596,3 +596,7 @@ a.ax-epilogue-cta:hover,a.ax-epilogue-cta:focus-visible{background:var(--ax23-re
  #showcase-gallery .ax-context-art.content-vis{grid-template-columns:58px minmax(0,1fr) 30px;gap:10px}
  #showcase-gallery .ax-context-art .body .name{font-size:19px}
 }
+
+/* 0524.W4 S3: readable faction prose; original art, emblems, columns and status fields retained. */
+#factions .sec-desc{font-size:16px;color:var(--ax-text)}
+#factions .faction p{font:400 15px/1.75 var(--ax-font-body);color:var(--ax-text)}

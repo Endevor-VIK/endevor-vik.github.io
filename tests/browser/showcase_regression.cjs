@@ -682,7 +682,8 @@ async function run(engineName, base) {
           order: order.join(' '),
           threshold: !!wg.querySelector('.ax-world-scene img[src*="W01_threshold_bridge"]') && wg.querySelector('h2#v22-world-title') !== null && !!document.getElementById('world-entry'),
           trail: [...wg.querySelectorAll('.ax-world-trail a')].map((a) => a.getAttribute('href')).join(' '),
-          key: !!wg.querySelector('details.ax-world-key .v22-lore-glossary') && !!wg.querySelector('details.ax-world-key .show-lore-link') && !document.querySelector('#system .show-lore-link'),
+          // W4 Gate A: the reading key explains world terms; engineering prose remains in SYSTEM.
+          key: !!wg.querySelector('details.ax-world-key .v22-lore-glossary') && !/MASTER GRAPH/.test(wg.querySelector('.ax-world-key-body').textContent) && !document.querySelector('#system .show-lore-link'),
           plates: ['manifesto', 'modules', 'world', 'factions'].map((id) => !!document.querySelector(`#${id} > .wrap > .ax-chapter-plate:first-child`)).every(Boolean) && !!document.querySelector('#chars > .wrap > .ax-chapter-line:first-child'),
           omegaInWorld: !!omega && world.contains(omega) && after(document.querySelector('.v23-map-axes'), omega) && after(omega, document.getElementById('chars')),
           epilogue: !!epi && epi.nextElementSibling && epi.nextElementSibling.matches('.v22-bridge') && epi.nextElementSibling.nextElementSibling === vision,
