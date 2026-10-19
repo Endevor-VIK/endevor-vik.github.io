@@ -505,12 +505,14 @@
  <div class="ax-case"><div class="ax-case-overline">02 / ADMIN / INTERNAL</div><h3>CONTROL STATUS / WATCH_DOG</h3><p class="ax-case-lead">Рабочая панель с системными статусами, картой локаций и информационным контуром.</p>
  <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Главный экран панели: сводка по контенту и новостям, последние релизы и карта локаций мира.</dd></div><div><dt>На экране</dt><dd>CONTROL STATUS со счётчиками разделов, LATEST BRIEFINGS, индекс из шести локаций AXS :: WATCH_DOG и ACTIVITY RADAR.</dd></div><div><dt>Решение</dt><dd>Счётчики читаются из манифестов контента и новостей; выбор локации в индексе открывает её зону на подробной карте локаций.</dd></div><div><dt>Связь с AXIOM</dt><dd>Шесть локаций индекса — те же узлы мира, что и в разделе WORLD на этой странице.</dd></div></dl>
  <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+<details class="ax-case-context"><summary>КАК ПАНЕЛЬ ПОКАЗЫВАЕТ ЛОКАЦИИ</summary><div class="ax-context-grid"><figure data-world-concept="cartography"><div class="ax-context-art carto-vis" aria-hidden="true"><svg viewBox="0 0 400 170" focusable="false"><path d="M0 42H400M0 85H400M0 128H400M100 0V170M200 0V170M300 0V170" fill="none" stroke="currentColor" opacity=".12"/><path d="M60 110L200 80L340 36M60 110L180 132L340 36M200 80L340 120M180 132L340 120" fill="none" stroke="currentColor" stroke-dasharray="5 5"/><g fill="#08090c" stroke="currentColor" stroke-width="1.5"><circle cx="60" cy="110" r="10"/><circle cx="60" cy="110" r="5"/><circle cx="200" cy="80" r="14"/><path d="M180 121L190 126V137L180 143L170 137V126Z"/><path d="M340 109L351 120L340 131L329 120Z"/><path d="M330 51V25H337V15H343V25H350V51Z"/></g></svg></div><figcaption><b>КОНЦЕПТУАЛЬНАЯ СХЕМА · CARTOGRAPHY</b><span>Связи локаций в визуальном языке панели.</span></figcaption></figure><figure data-world-concept="watch-dog"><div class="ax-context-art ax-context-radar" aria-hidden="true"><svg viewBox="-80 -80 160 160" focusable="false"><circle r="78" fill="currentColor" opacity=".04"/><g fill="none" stroke="currentColor"><circle r="70" opacity=".55"/><circle r="50" opacity=".35" stroke-dasharray="4 6"/><circle r="30" opacity=".35"/><path d="M-72 0H72M0-72V72" opacity=".22"/></g><path d="M0 0L70-22A73 73 0 0 1 70 22Z" fill="currentColor" opacity=".18"/><g fill="currentColor"><circle cx="-32" cy="-28" r="3.5"/><circle cx="38" cy="18" r="3.5"/><circle cx="-12" cy="42" r="3.5"/></g><circle r="3" fill="#f1f1f4"/></svg></div><figcaption><b>КОНЦЕПТУАЛЬНАЯ СХЕМА · WATCH_DOG</b><span>Условная схема выделения локации в панели.</span></figcaption></figure></div></details>
 </div>
 <div class="ax-panel" role="tabpanel" id="ax-panel-03" aria-labelledby="ax-tab-03" tabindex="0" hidden>
  <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/04-chronicle-full.webp" data-showcase-srcset="assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" data-showcase-title="CHRONICLE — MEMORY ORBIT" aria-label="Открыть экран: CHRONICLE — MEMORY ORBIT"><img src="assets/showcase/hq/04-chronicle-960w.webp" srcset="assets/showcase/hq/04-chronicle-960w.webp 960w, assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CHRONICLE — MEMORY ORBIT"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
  <div class="ax-case"><div class="ax-case-overline">03 / NARRATIVE UX</div><h3>CHRONICLE — MEMORY ORBIT</h3><p class="ax-case-lead">Повествование, главы и навигация по памяти мира в формате интерактивной орбиты.</p>
  <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Последовательное чтение художественной хроники мира по главам.</dd></div><div><dt>На экране</dt><dd>Орбита глав, досье активной главы (персонажи, локации, тон) и указатель глав внизу экрана.</dd></div><div><dt>Решение</dt><dd>Орбиту вращают перетаскиванием и свайпом, колесом и стрелками; авто-вращение замирает при наведении, при reduced motion включается щадящий режим, а выбранная глава отражается в адресе страницы.</dd></div><div><dt>Связь с AXIOM</dt><dd>Карточка главы открывает саму главу и связанный с ней контекст мира.</dd></div></dl>
  <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING INTERFACE</span><span>SCREEN CAPTURE</span></div></div>
+<details class="ax-case-context"><summary>КАК УСТРОЕНА ОРБИТА ГЛАВ</summary><div class="ax-context-grid ax-context-grid--single"><figure data-world-concept="chronicle"><div class="ax-context-art orbit" aria-hidden="true"><span class="ring-bg"></span><span class="ring-bg fast"></span><span class="ring-bg dot"></span><div class="orbit-mini l"><b>Глава</b></div><div class="orbit-card"><span class="tag">CHRONICLE</span><b>Выбранная глава</b><span class="meta">Текст и контекст</span></div><div class="orbit-mini r"><b>Глава</b></div></div><figcaption><b>КОНЦЕПТУАЛЬНАЯ СХЕМА · CHRONICLE</b><span>Выбранная глава и соседние тексты на общей орбите.</span></figcaption></figure></div></details>
 </div>
 <div class="ax-panel" role="tabpanel" id="ax-panel-04" aria-labelledby="ax-tab-04" tabindex="0" hidden>
  <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/05-axchat-full.webp" data-showcase-srcset="assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" data-showcase-title="AXCHAT — ECHO AXIOM" aria-label="Открыть экран: AXCHAT — ECHO AXIOM"><img src="assets/showcase/hq/05-axchat-960w.webp" srcset="assets/showcase/hq/05-axchat-960w.webp 960w, assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: AXCHAT — ECHO AXIOM"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
@@ -523,6 +525,7 @@
  <div class="ax-case"><div class="ax-case-overline">05 / WORLD / CONTENT</div><h3>CONTENT LIBRARY</h3><p class="ax-case-lead">Индексированные досье и карточки сущностей: персонажи, технологии, локации и связанные записи.</p>
  <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Каталог досье вселенной с поиском и разделами по типам записей.</dd></div><div><dt>На экране</dt><dd>Разделы LOCATIONS, CHARACTERS, TECHNOLOGIES, FACTIONS, EVENTS и LORE, список досье с уровнями доступа и превью записи «AXIOM — центральная ИИ-сущность».</dd></div><div><dt>Решение</dt><dd>Единый контент-движок: запись Canon становится курируемой моделью, из которой строятся превью, ридер, AI и редактор; публично выдаются только опубликованные записи.</dd></div><div><dt>Связь с AXIOM</dt><dd>Те же записи открываются в READER и служат источниками AXCHAT.</dd></div></dl>
  <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING CATALOG</span><span>SCREEN CAPTURE</span></div></div>
+<details class="ax-case-context"><summary>КАК УСТРОЕНА КАРТОЧКА ЗАПИСИ</summary><div class="ax-context-grid ax-context-grid--single"><figure data-world-concept="content"><div class="ax-context-art content-vis" aria-hidden="true"><div class="portrait"><span class="silhouette"></span></div><div class="body"><span class="meta">ПРИМЕР ЗАПИСИ</span><span class="name">Сущность мира</span><div class="row"><span class="chip">ТИП</span><span class="chip dim">ТЕГИ</span><span class="chip dim">СВЯЗИ</span></div></div><div class="signal"><svg viewBox="-40 -80 80 160" focusable="false"><g fill="none" stroke="currentColor"><circle r="28" stroke-dasharray="4 4"/><circle r="20"/><circle r="12"/></g><circle r="3" fill="currentColor"/></svg></div></div><figcaption><b>КОНЦЕПТУАЛЬНАЯ СХЕМА · CONTENT</b><span>Запись объединяет описание сущности, тип, теги и связи.</span></figcaption></figure></div></details>
 </div>
 <div class="ax-panel" role="tabpanel" id="ax-panel-06" aria-labelledby="ax-tab-06" tabindex="0" hidden>
  <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/07-viktor-dossier-full.webp" data-showcase-srcset="assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" data-showcase-title="VIKTOR — CHARACTER DOSSIER" aria-label="Открыть экран: VIKTOR — CHARACTER DOSSIER"><img src="assets/showcase/hq/07-viktor-dossier-960w.webp" srcset="assets/showcase/hq/07-viktor-dossier-960w.webp 960w, assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: VIKTOR — CHARACTER DOSSIER"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
@@ -615,328 +618,17 @@
 </section>
 
 <!-- ============ MODULES / SYSTEM SURFACE ============ -->
-<section id="modules" data-screen-label="03 Modules">
-  <span class="sec-stamp tl">// 02 — SYSTEM SURFACE</span>
-  <span class="sec-stamp tr">4 MODULES / 1 SPINE</span>
+<section id="modules" class="ax-remains" data-screen-label="03 Aftermath" aria-labelledby="ax-remains-title">
+  <span class="sec-stamp tl">// 02 — AFTERMATH</span><span class="sec-stamp tr">LIFE / MEMORY / DEPENDENCE</span>
   <div class="wrap">
-    <!-- 0524 W3.C · chapter II — one establishing shot, inside the section width -->
-    <div class="ax-chapter-plate ax-chapter-plate--w02"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.avif 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.avif 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W02_memory_spheres-1280w.webp" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.webp 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.webp 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">ГЛАВА II</span><span class="ax-chapter-q">КАК МИР ПОМНИТ?</span></div></div>
-    <div class="sec-head">
-      <div>
-        <div class="sec-num">— What's inside the network</div>
-        <h2 class="sec-title">Four <em>surfaces.</em><br/>One spine.</h2>
-      </div>
-      <p class="sec-desc">
-        Каждый модуль — отдельный режим работы с каноном. Они дополняют друг друга,
-        но никогда не сливаются: chronicle хранит, content раскрывает, cartography
-        связывает, watchdog слушает.
-      </p>
+    <div class="ax-chapter-plate ax-chapter-plate--w02"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.avif 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.avif 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W02_memory_spheres-1280w.webp" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.webp 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.webp 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">02 / WHAT REMAINS</span></div></div>
+    <div class="sec-head"><h2 class="sec-title" id="ax-remains-title">Жизнь среди<br><em>осколков.</em></h2></div>
+    <div class="ax-remains-topics">
+      <article><h3>Жизнь по допуску</h3><p>Власть ENDEAVOR ощущается в повседневном: в пропуске, лифте, шлюзе, разрешённом маршруте. Город становится системой допуска. Человеку важно не только, куда он хочет попасть, но и какие двери перед ним откроются.</p></article>
+      <article><h3>Память под контролем</h3><p>Прошлое тоже зависит от доступа. ENDEAVOR обращается с памятью как с инструментом стабильности. Для одних AXIOM — виновник катастрофы, для других — тень утраченного порядка. Архивы, слухи и запретное знание сохраняют разные версии одного прошлого.</p></article>
+      <article><h3>Зависимость от технологий</h3><p>Медицинские системы и импланты делают технологическую зависимость личной. ENDEAVOR связывает их с управлением инфраструктурой и доступом. Обещание помощи оказывается рядом с возможностью контроля — и вопрос о том, кто распоряжается системой, становится вопросом о самостоятельности человека.</p></article>
     </div>
-
-    <!-- spine stats -->
-    <div class="spine-strip">
-      <div class="stat">
-        <div class="lab">INDEXED</div>
-        <div class="val"><span class="num">20</span><span class="dim">entries</span></div>
-        <div class="bar"><i style="--w:78%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">WORLD NODES</div>
-        <div class="val"><span class="num">06</span><span class="dim">mapped</span></div>
-        <div class="bar"><i style="--w:100%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">CANON DEPTH</div>
-        <div class="val"><span class="num">V3</span><span class="dim">layer</span></div>
-        <div class="bar"><i style="--w:60%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">SYNC DRIFT</div>
-        <div class="val"><span class="num">0.84</span><span class="dim">stable</span></div>
-        <div class="bar"><i style="--w:84%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">PROTOCOL</div>
-        <div class="val"><span class="num">RED</span><span class="dim">v1.0</span></div>
-        <div class="bar"><i style="--w:92%"></i></div>
-      </div>
-    </div>
-
-    <div class="modules">
-
-      <!-- CHRONICLE -->
-      <div class="module">
-        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
-        <div class="m-sweep"></div>
-        <div class="m-head">
-          <span class="m-num">01</span>
-          <span class="m-tag"><b>CHRONICLE</b> // BLACK SUN ARCHIVE</span>
-          <span class="m-stat draft"><i></i>DRAFT</span>
-        </div>
-        <div class="m-body">
-          <h3>Orbit of <em>chapters.</em></h3>
-          <p>Литературное вступление в AXIOM — главы, прологи и фрагменты канона в медленной орбите. Каждая глава = узел памяти.</p>
-          <div class="m-vis">
-            <div class="orbit">
-              <span class="ring-bg"></span>
-              <span class="ring-bg fast"></span>
-              <span class="ring-bg dot"></span>
-              <div class="orbit-mini l">
-                <span>CH.Ω</span>
-                <b>Protocol Ω</b>
-              </div>
-              <div class="orbit-card">
-                <span class="tag">// PROLOGUE_00</span>
-                <b>World After<br/>Black Sun</b>
-                <span class="meta">DRAFT · v0.12</span>
-                <span class="scan-bar"></span>
-              </div>
-              <div class="orbit-mini r">
-                <span>INTRO.01</span>
-                <b>Deaf Station</b>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="m-foot">
-          <span>STREAM<b>ORBIT FEED</b></span>
-          <span>CHRONICLE<b>STORY ARCHIVE</b></span>
-          <span>FOCUS<b>PROLOGUE_00</b></span>
-        </div>
-      </div>
-
-      <!-- CONTENT -->
-      <div class="module">
-        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
-        <div class="m-sweep"></div>
-        <div class="m-head">
-          <span class="m-num">02</span>
-          <span class="m-tag"><b>CONTENT</b> // ENTITY MODULE</span>
-          <span class="m-stat"><i></i>PUBLISHED</span>
-        </div>
-        <div class="m-body">
-          <h3>Indexed <em>canon.</em></h3>
-          <p>Каталог канона: персонажи, локации, технологии, фракции. Фильтр по тегам и ссылочный граф.</p>
-          <div class="m-vis">
-            <div class="content-vis">
-              <div class="portrait">
-                <span class="id-stamp">RED.PROT</span>
-                <span class="silhouette"></span>
-              </div>
-              <div class="body">
-                <div class="meta"><span>[CHR-WHITE-CONTOUR-0317]</span><b>V1.0</b></div>
-                <div class="name">White Contour</div>
-                <div class="meta"><span>CLASS·<b>ANOMALY</b></span><span>STATE·<b>PUBLISHED</b></span></div>
-                <div class="row">
-                  <span class="chip">ANOMALY</span>
-                  <span class="chip">GHOST</span>
-                  <span class="chip dim">CONTOUR</span>
-                  <span class="chip dim">ECHELON</span>
-                </div>
-              </div>
-              <div class="signal">
-                <svg viewBox="-30 -30 60 60">
-                  <circle r="24" fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-dasharray="2 4">
-                    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="16" fill="none" stroke="#ff2034" stroke-opacity=".55"/>
-                  <circle r="3" fill="#ff2034">
-                    <animate attributeName="r" values="3;6;3" dur="1.8s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="6" fill="none" stroke="#ff2034" stroke-opacity=".8">
-                    <animate attributeName="r" values="6;22;6" dur="2.4s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/>
-                  </circle>
-                </svg>
-                <span class="lbl">RX<br/>BIO</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="m-foot">
-          <span>TYPES<br/><b>CHR · LOC · TECH</b></span>
-          <span>INDEXED<br/><b>20 ENTRIES</b></span>
-          <span>FILTER<br/><b>ALL TAGS</b></span>
-        </div>
-      </div>
-
-      <!-- CARTOGRAPHY -->
-      <div class="module">
-        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
-        <div class="m-sweep"></div>
-        <div class="m-head">
-          <span class="m-num">03</span>
-          <span class="m-tag"><b>CARTOGRAPHY</b> // WORLD SPINE</span>
-          <span class="m-stat trace"><i></i>TRACE</span>
-        </div>
-        <div class="m-body">
-          <h3>Routes of <em>role.</em></h3>
-          <p>Не просто география, а маршруты власти и доступа по трём осям мира: Aeternum&nbsp;→&nbsp;ECHELON, Terra&nbsp;Nova&nbsp;→&nbsp;NEXUS, Gluhaya&nbsp;→ OMEGA-0&nbsp;→&nbsp;NEXUS. Города как узлы власти, связи как линии причины.</p>
-          <div class="m-vis">
-            <div class="carto-vis">
-              <svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid meet">
-                <defs>
-                  <linearGradient id="cartoSweepG" x1="0" x2="1">
-                    <stop offset="0" stop-color="#ff2034" stop-opacity="0"/>
-                    <stop offset=".5" stop-color="#ff2034" stop-opacity=".5"/>
-                    <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <!-- subtle bg grid -->
-                <g class="grid-bg">
-                  <line x1="0" y1="42" x2="400" y2="42"/>
-                  <line x1="0" y1="85" x2="400" y2="85"/>
-                  <line x1="0" y1="128" x2="400" y2="128"/>
-                  <line x1="100" y1="0" x2="100" y2="170"/>
-                  <line x1="200" y1="0" x2="200" y2="170"/>
-                  <line x1="300" y1="0" x2="300" y2="170"/>
-                </g>
-
-                <!-- routes -->
-                <path class="route"    d="M 60 110 L 200 80 L 340 36"/>
-                <path class="route r2" d="M 60 110 L 180 132 L 340 36"/>
-                <path class="route r3" d="M 200 80 L 340 120"/>
-                <path class="route r4" d="M 180 132 L 340 120"/>
-
-                <!-- horizontal scan line -->
-                <g class="scan-line">
-                  <line x1="-30" y1="0" x2="-30" y2="170"/>
-                </g>
-
-                <!-- GLUHAYA -->
-                <g transform="translate(60 110)">
-                  <circle r="5" fill="none" stroke="#e4c447" stroke-width="1.5">
-                    <animate attributeName="r" values="5;18;5" dur="2.6s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="10" fill="none" stroke="#e4c447" stroke-width="1.5"/>
-                  <circle r="3" fill="#e4c447"/>
-                </g>
-                <text x="60" y="138" text-anchor="middle" fill="#e4c447" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">GLUHAYA</text>
-
-                <!-- OMEGA-0 -->
-                <g transform="translate(180 132)">
-                  <circle r="5" fill="none" stroke="#cfd4dc" stroke-width="1.5">
-                    <animate attributeName="r" values="5;18;5" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
-                  </circle>
-                  <polygon points="-12,0 -6,-10 6,-10 12,0 6,10 -6,10" fill="none" stroke="#cfd4dc" stroke-width="1.5"/>
-                  <circle r="3" fill="#cfd4dc"/>
-                </g>
-                <text x="180" y="160" text-anchor="middle" fill="#cfd4dc" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">OMEGA-0</text>
-
-                <!-- NEXUS -->
-                <g transform="translate(200 80)">
-                  <circle r="5" fill="none" stroke="#39d6c8" stroke-width="1.5">
-                    <animate attributeName="r" values="5;22;5" dur="2.6s" begin="-1.2s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-1.2s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle r="14" fill="none" stroke="#39d6c8" stroke-width="1.5"/>
-                  <line x1="-14" y1="0" x2="14" y2="0" stroke="#39d6c8" stroke-width=".8" stroke-opacity=".6"/>
-                  <circle r="3" fill="#39d6c8"/>
-                </g>
-                <text x="200" y="60" text-anchor="middle" fill="#39d6c8" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">NEXUS</text>
-
-                <!-- ECHELON -->
-                <g transform="translate(340 36)">
-                  <circle r="5" fill="none" stroke="#ff2034" stroke-width="1.5">
-                    <animate attributeName="r" values="5;20;5" dur="2.6s" begin="-1.8s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-1.8s" repeatCount="indefinite"/>
-                  </circle>
-                  <rect x="-12" y="-14" width="6" height="28" fill="#ff2034" fill-opacity=".5"/>
-                  <rect x="-3" y="-22" width="6" height="36" fill="#ff2034" fill-opacity=".8"/>
-                  <rect x="6" y="-10" width="6" height="24" fill="#ff2034" fill-opacity=".5"/>
-                </g>
-                <text x="340" y="6" text-anchor="middle" fill="#ff2034" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">ECHELON</text>
-
-                <!-- FACELESS -->
-                <g transform="translate(340 120)">
-                  <circle r="5" fill="none" stroke="#ff2034" stroke-width="1.5">
-                    <animate attributeName="r" values="5;16;5" dur="2.6s" begin="-0.3s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-0.3s" repeatCount="indefinite"/>
-                  </circle>
-                  <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)" fill="none" stroke="#ff2034" stroke-width="1.5"/>
-                  <rect x="-2" y="-2" width="4" height="4" fill="#ff2034"/>
-                </g>
-                <text x="340" y="146" text-anchor="middle" fill="#ff2034" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">FACELESS BASE</text>
-              </svg>
-              <div class="compass"><span><b>AETERNUM</b></span><span><b>TERRA NOVA</b></span><span><b>GLUHAYA</b></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="m-foot">
-          <span>AXES<br/><b>3 PRIMARY</b></span>
-          <span>NODES<br/><b>06 MAPPED</b></span>
-          <span>SCAN<br/><b>ACTIVE</b></span>
-        </div>
-      </div>
-
-      <!-- WATCHDOG -->
-      <div class="module">
-        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
-        <div class="m-sweep"></div>
-        <div class="m-head">
-          <span class="m-num">04</span>
-          <span class="m-tag"><b>AXS :: WATCH_DOG</b> // SIGNAL SWEEP</span>
-          <span class="m-stat"><i></i>WATCH ACTIVE</span>
-        </div>
-        <div class="m-body">
-          <h3>Listens for <em>silence.</em></h3>
-          <p>World spine monitor: location pings, non-static activity sweep. 06 nodes tracked. Слышит то, что не должно молчать.</p>
-          <div class="m-vis">
-            <div class="dog-vis">
-              <div class="radar-mini">
-                <svg viewBox="-80 -80 160 160">
-                  <defs>
-                    <linearGradient id="dogArm" x1="0" x2="1">
-                      <stop offset="0" stop-color="#ff2034" stop-opacity=".85"/>
-                      <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
-                    </linearGradient>
-                    <radialGradient id="dogCore" cx="0" cy="0" r="1">
-                      <stop offset="0" stop-color="#ff2034" stop-opacity=".3"/>
-                      <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
-                    </radialGradient>
-                  </defs>
-                  <circle r="78" fill="url(#dogCore)"/>
-                  <circle r="70" fill="none" stroke="#ff2034" stroke-opacity=".55"/>
-                  <g class="ring-fast">
-                    <circle r="50" fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-dasharray="4 6"/>
-                  </g>
-                  <circle r="30" fill="none" stroke="#ff2034" stroke-opacity=".35"/>
-                  <!-- crosshair -->
-                  <line x1="-72" y1="0" x2="72" y2="0" stroke="#ff2034" stroke-opacity=".22"/>
-                  <line x1="0" y1="-72" x2="0" y2="72" stroke="#ff2034" stroke-opacity=".22"/>
-                  <!-- sweep -->
-                  <g class="sweep-arm">
-                    <path d="M 0 0 L 70 -22 A 73 73 0 0 1 70 22 Z" fill="url(#dogArm)"/>
-                  </g>
-                  <!-- blips -->
-                  <circle class="blip-anim" cx="-32" cy="-28" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
-                  <circle class="blip-anim b2" cx="38" cy="18" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
-                  <circle class="blip-anim b3" cx="-12" cy="42" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
-                  <!-- center -->
-                  <circle r="3" fill="#ffffff"/>
-                  <!-- bottom label -->
-                  <text x="0" y="-72" text-anchor="middle" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="7" letter-spacing="2">06 NODES</text>
-                </svg>
-              </div>
-              <div class="log">
-                <div class="l"><b>PING_01</b><span class="v">GLUHAYA / THRESHOLD</span><span class="s">LIVE</span></div>
-                <div class="l"><b>PING_03</b><span class="v">NEXUS / DOME ECHO</span><span class="s">LIVE</span></div>
-                <div class="l"><b>PING_04</b><span class="v">FACELESS BASE / PERIMETER</span><span class="s warn">SYNC</span></div>
-                <div class="l"><b>PING_05</b><span class="v">ECHELON / AUTHORITY</span><span class="s">TRACE</span></div>
-                <div class="l"><b>PING_06</b><span class="v">AI ZONE / LIMBO</span><span class="s crit">BLACK</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="m-foot">
-          <span>SCAN MODE<br/><b>ACTIVE</b></span>
-          <span>SOURCE<br/><b>LOCATION NODES</b></span>
-          <span>SIGNAL<br/><b>UNVERIFIED</b></span>
-        </div>
-      </div>
-    </div>
+    <p class="ax-remains-transition">У этого порядка есть места — города, пороги и закрытые контуры. Дальше мир можно рассмотреть вблизи.</p>
   </div>
 </section>
 
