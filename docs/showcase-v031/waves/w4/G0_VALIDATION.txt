@@ -1,0 +1,62 @@
+0524.W4 G0/G1 validation — 2026-10-19 Europe/Moscow
+Baseline: 6b082e5f262c09a123748273da42277d3a29a6c2
+Worktree: /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-narrative-g0-g1
+Runtime implementation: NOT STARTED
+
+$ git rev-parse HEAD
+6b082e5f262c09a123748273da42277d3a29a6c2
+(no stderr)
+exit=0
+
+$ git rev-parse 6b082e5f262c09a123748273da42277d3a29a6c2:index.html 6b082e5f262c09a123748273da42277d3a29a6c2:assets 6b082e5f262c09a123748273da42277d3a29a6c2:tests
+199d4fdcbbbae005128821a8a4d0c7d165e3054f
+e744206a0845af42022a661033dea804bde3da29
+58640477973f9e44aa84e54e176775509d133c13
+(no stderr)
+exit=0
+
+$ git diff --exit-code 6b082e5f262c09a123748273da42277d3a29a6c2 -- index.html assets tests
+(no stdout)
+(no stderr)
+exit=0
+
+$ git diff --exit-code b53350e 6b082e5f262c09a123748273da42277d3a29a6c2 -- index.html assets tests
+(no stdout)
+(no stderr)
+exit=0
+
+Executed earlier in this session against this same unchanged baseline:
+$ python3 tests/smoke_showcase.py
+PASS / SOURCE STRUCTURE: files, srcset, CSS url(), WORK archive, anchors, CTA, image library, safe loader
+$ python3 tests/smoke_showcase_v23.py
+SOURCE PASS: 13 sections, 8 screens, 6 map nodes, 4 flow controls, local files, srcset, CSS urls, original lore, CTAs.
+NOT TESTED: actual browser layout, runtime keyboard/touch, Web Vitals, CDN/font requests or preview availability.
+
+Relative documentation file links: 27 checked, 0 missing (8 Markdown files including handoff).
+Directive normalized-content integrity: PASS; only LF/trailing whitespace normalized.
+Original directive attachment SHA256: f50b87ed875a19ef27c42501da2a33e0e8d0079c04bdad2799dec1c751735e80
+
+Local full screenshot SHA256 (all 8 retained; no asset changes):
+fb2b345e49735fab998bcb4036a54bd561c98cc7cce8f4e5fe262902dd9440f5  assets/showcase/hq/02-panel-login-full.webp
+d4961b3342fc6b73c5af7b0936f790c0cdb89d95cccdca9aedab84760e51b32e  assets/showcase/hq/03-panel-dashboard-full.webp
+cbeb2f48db6703832b7c49ca052b11e02e8d9e40bffc1362949e35e4297fbe01  assets/showcase/hq/04-chronicle-full.webp
+73a9fff9970a436638fbd52d702ee6b272a5c7de1962163b849eb2e2bf183dab  assets/showcase/hq/05-axchat-full.webp
+331e9a7de251bf5bcc842f0790363f47c30ff535be50780ae2e09c7a21bde53d  assets/showcase/hq/06-content-library-full.webp
+7abcf463e668b1526c0dfde882fe59bbb8a7fffe4370b6ac47b80cad76bd58fc  assets/showcase/hq/07-viktor-dossier-full.webp
+940313acf58feac4ae092c9a737c9de67e3755c2f48d759b942beb81509b95a7  assets/showcase/hq/08-news-signal-full.webp
+01a8be0e741633dfa4b435598b5a9f523002e99fabb14040b24e5affdbb0266b  assets/showcase/hq/09-master-graph-full.webp
+
+Library manifest:
+W01 1672x941 be025dc90c73d30c15508c19149568e80c03527ce145776ab03cf44ea4bae169 originals/682462bb-2c81-49d2-b873-f88cfe6e4ef9.png
+W02 1672x941 99fefb0ea1b89a0b2c7c90b523cda0fa650c74b25414af9261273d9c905bc011 originals/77886809-2dca-4da7-9dfb-5b58ae325303.png
+W03 1672x941 e9cca12866895eb0acb116078ba53e0215801b502fd014e6fa98110a39a2a051 originals/83f77450-c0f6-4cde-8bb7-17176f268981.png
+W04 1672x941 e92b30bc2290eb9a641bdd73bc0f4a2798e0343fafacae161112dd8dd18ccd3f originals/8d008d9d-ede8-4add-9e92-3de355f911cd.png
+W05 1672x941 00b98e2cf81a9793b7abcc9ff46a0f5b142376d46f6dc8c1de07b41a8bcd9cb7 originals/9a3f3d08-c152-4e54-8984-03129f62582f.png
+W06 1672x941 ffe591f2cd38eb95da98e397e7525f6cc313f4353990d8150e3d48241b9551bc originals/acadd804-bc4b-42a7-af7a-c756594e22d1.png
+W07 1672x941 1f5c6747381684825b129c4ebc9ceafdbf7d412054eabc994ca173d50cbe1a96 originals/c85e6d00-5bd2-451a-ac5b-8c2b6691ce16.png
+W08 1672x941 71a889cfb084c5e01dee4d23ff7498bcd4e17fff5771ce2cc2a0bd0d056740e7 originals/ca6fd69d-3dc0-4e88-9331-4eb77910c0f4.png
+W09 1672x941 3493b38407fc434b06085c818365128ba8f898f8b4bd4eb5879b842dd6af7ccc originals/e032670c-4f79-4ce6-bf77-9ba0bb529443.png
+
+All 9 world originals match tracked manifest SHA256.
+Protected sections are included in byte-identical index.html; assets/tests runtime diff is empty.
+W4 Chromium/Firefox/WebKit, keyboard/SR, reduced-motion, performance and AFTER captures: NOT RUN/NOT CREATED.
