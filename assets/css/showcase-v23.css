@@ -348,3 +348,62 @@ p.ax-gate-note{font-size:12px}
 }
 @media (max-width:1080px){.show-mobile-nav a{font-size:12px;letter-spacing:.1em}}
 @media (max-width:400px){.hero .eyebrow{letter-spacing:.08em}}
+
+/* =====================================================================================================
+   0524 W3.C — WORLD IMMERSION, Variant A «ПОРОГ» (CREATOR 2026-10-19; docs/showcase-v031/waves/W3C_IMPLEMENTATION_SPEC.md).
+   Art from assets/showcase/world-library (W01…W08, 1672 px sources). Text over art sits on dark masks; every image is lazy.
+   ===================================================================================================== */
+/* S1 · Act I THRESHOLD — the engineering band fades to black, W01 opens the world; the copy stands under the doorway */
+.v22-bridge.ax-world-fade{background:linear-gradient(180deg,#0d0e12 0%,#000 100%);border-bottom:0;padding-top:30px;padding-bottom:30px}
+.v22-bridge.ax-world-fade b{color:#9a9ea9}
+.v22-world-guide.ax-world{padding-top:0;background:#000}
+.ax-world-scene{position:relative;height:min(88vh,56.25vw,941px);min-height:520px;background:#000;overflow:hidden}
+.ax-world-art{position:absolute;inset:0;max-width:1672px;margin:0 auto}
+.ax-world-art picture,.ax-world-art img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.ax-world-art img{object-fit:cover;object-position:50% 40%}
+.ax-world-art:after{content:"";position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(0deg,#000 0%,rgba(0,0,0,.88) 22%,rgba(0,0,0,0) 58%),
+  radial-gradient(ellipse 60% 74% at 80% 92%,rgba(0,0,0,.88),rgba(0,0,0,0) 76%),
+  linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 13%),
+  linear-gradient(90deg,#000 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#000 100%)}
+.ax-world-copy{position:absolute;z-index:1;right:max(36px,calc((100vw - 1368px) / 2));bottom:clamp(34px,6.5vh,72px);width:min(47%,660px)}
+/* the doorway fog is light: the small red labels need near-black behind them (masked so the edge never shows) */
+.ax-world-copy:before{content:"";position:absolute;z-index:-1;inset:-96px -60px -60px -96px;background:rgba(0,0,0,.86);pointer-events:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent 0,#000 90px),linear-gradient(to right,transparent 0,#000 90px);mask-composite:intersect}
+.ax-world-copy .show-index{border-top:0;padding-top:0;margin:0 0 14px;justify-content:flex-start}
+.ax-world-copy .show-index span:last-child{display:none}
+.ax-world-copy .show-kicker{color:var(--ax23-red);letter-spacing:.2em}
+.ax-world-copy .show-title{font-size:clamp(48px,4.6vw,92px);line-height:.95;margin:10px 0 20px;color:#ebebed;max-width:none}
+.show-section p.ax-world-promise{font:400 clamp(16px,1.15vw,19px)/1.6 var(--ax23-body);color:#d3d5db;max-width:44ch;margin:0 0 26px}
+.ax-world-cta{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:0 22px;border:1px solid var(--ax23-red);background:rgba(10,0,2,.55);color:#fff;font:700 12px var(--ax23-tech);letter-spacing:.16em;text-decoration:none}
+.show-section a.ax-world-cta:hover{background:var(--ax23-red);color:#fff}
+.ax-world-establish{padding:clamp(48px,8vh,96px) 0 32px}
+.ax-world-establish .show-lead{margin:0}
+/* reading key: product vocabulary stays on the page, folded (works without JS) */
+.ax-world-key{margin:28px 0 0;border:1px solid #241a1c;background:#08090c}
+.ax-world-key>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:52px;padding:0 18px;font:700 12px var(--ax23-tech);letter-spacing:.14em;color:#b4b8c3}
+.ax-world-key>summary::-webkit-details-marker{display:none}
+.ax-world-key>summary:after{content:"+";color:var(--ax23-red);font-size:18px}
+.ax-world-key[open]>summary:after{content:"−"}
+.ax-world-key>summary:focus-visible{outline:2px solid var(--ax23-red);outline-offset:2px}
+.ax-world-key-body{padding:4px 18px 22px}
+.ax-world-key-body .show-lore-link{margin-top:26px}
+/* tablets: W01 keeps its own 16:9 (a 768@2 screen never draws it wider than the source); phones: a separate composition */
+@media(max-width:900px){
+  .ax-world-scene{height:auto;min-height:0}
+  .ax-world-art{position:relative;height:min(72vw,62vh)}
+  .ax-world-art:after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 16%,rgba(0,0,0,0) 46%),linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 20%)}
+  .ax-world-art img{object-position:53% 35%}
+  .ax-world-copy{position:relative;right:auto;bottom:auto;width:auto;margin-top:-24px;padding:0 max(14px,calc((100vw - 760px) / 2)) 6px}
+  .ax-world-copy:before{display:none}
+}
+@media(min-width:600px) and (max-width:900px){.ax-world-art{height:56.25vw}}
+@media(max-width:760px){
+  .v22-bridge.ax-world-fade{padding-top:20px;padding-bottom:20px}
+  .ax-world-copy .show-index{margin-bottom:10px}
+  .ax-world-copy .show-title{font-size:clamp(42px,11.6vw,58px);margin:8px 0 16px}
+  .show-section p.ax-world-promise{font-size:16px;margin-bottom:22px}
+  .ax-world-cta{width:100%;justify-content:center;box-sizing:border-box}
+  .ax-world-establish{padding:44px 0 26px}
+}
