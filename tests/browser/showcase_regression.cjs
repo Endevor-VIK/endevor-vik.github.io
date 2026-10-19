@@ -711,7 +711,10 @@ async function run(engineName, base) {
         const r = { chrome: Math.round(top), vh: innerHeight, title: box('#v22-world-title'), promise: box('.ax-world-promise'), cta: box('.ax-world-cta'), overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth };
         r.whole = ['title', 'promise', 'cta'].every((k) => r[k].t >= r.chrome - 1 && r[k].b <= r.vh + 1); return r; }, chromeBottom.toString());
       const sh = await p.evaluate(SHARPNESS, '.ax-world-art img');
-      record(`R-W3C-03-threshold-after-jump-${w}@${dpr}`, engineName, g.whole && !g.overflow && sh.ratio >= 0.95, { ...g, sharp: sh });
+      // W01 is 1672 px: a scene wider than 836 css px on a DPR ≥ 2 screen is source-limited (asset-quality exception in the W3.C report) —
+      // there the largest candidate must be served, as R34 does for B04; everywhere else the image must be ≥ 1:1
+      const sourceLimited = dpr >= 2 && w > 900 && sh.needPx > 1672;
+      record(`R-W3C-03-threshold-after-jump-${w}@${dpr}`, engineName, g.whole && !g.overflow && (sh.ratio >= 0.95 || (sourceLimited && sh.filePx === 1672)), { ...g, sharp: sh, sourceLimited });
       await ctx.close();
     }
     // R-W3C-04 «УЗНАТЬ О МЕСТЕ НА КАРТЕ» returns to the real 02.05 card (pointer and keyboard): selected, described, focused; no JS → the map panel
