@@ -25,7 +25,7 @@ AXS_HEADER_META:
 
 **0524.W3.C.A+OMEGA0 — READY FOR PRINCIPAL & CREATOR VISUAL RECHECK.**
 
-Вариант A, выбранный CREATOR, и сцена спуска OMEGA-0 реализованы в разметке, CSS и JS сайта в ветке `w3/c-world-immersion`.
+Вариант A, выбранный CREATOR, и сцена спуска OMEGA-0 реализованы в разметке, CSS и JS сайта в ветке `w3/c-world-immersion`. Draft PR в `main`: [#10](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/10).
 - Merge в `main`, deploy на Pages, version bump и записи в Canon не делались.
 - Самоприёмки нет: нужны независимое ревью Principal и визуальная приёмка CREATOR.
 
@@ -48,7 +48,7 @@ AXS_HEADER_META:
 | `bdba5fa` | S5 | Тесты R-W3C-01…08, MIME `.avif` во встроенном сервере тестов |
 | `f1cf538` | S5 | R-W3C-03: экраны DPR ≥ 2 шире 900 css px — исключение по исходнику (§4) |
 | `b53350e` | fix | Контраст подписи порога на 1920×1080: маска под словами .86 → .92 (нашёл замер контраста) |
-| _см. PR_ | S6 | Отчёт, evidence, кадры, handoff — только документы, после QA SHA |
+| `0962f61`, `2531e1f`, этот | S6 | Отчёт, evidence, кадры, handoff — только документы, после QA SHA |
 
 ## 1. Что получил посетитель
 

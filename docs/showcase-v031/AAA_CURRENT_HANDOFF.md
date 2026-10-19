@@ -23,7 +23,7 @@ AXS_HEADER_META:
 **Supersedes the concepts block below.** Refresh every SHA at takeover.
 
 - **Authority:** CREATOR chose Variant A «ПОРОГ» and approved OMEGA-0 via W03 (PR #9: `waves/W3C_CREATOR_A_OMEGA0_IMPLEMENTATION_DIRECTIVE.md`, `waves/W3C_OMEGA0_CANON_CONTEXT_PACK.md`). PR #9 docs fast-forwarded into the branch (`15c3d51`) after an independent check (spec §5).
-- **Branch:** `w3/c-world-immersion`. **QA SHA (site code): `b53350e`**. Later commits are docs only. Draft PR into `main` (see report header). **Not merged, not deployed, no version bump, no Canon write.**
+- **Branch:** `w3/c-world-immersion`. **QA SHA (site code): `b53350e`**. Later commits are docs only. Draft PR into `main`: [#10](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/10). **Not merged, not deployed, no version bump, no Canon write.**
 - **Implemented:**
   - S1 threshold W01 in `#world-guide`;
   - S2 statement and «Пять глав», chapter plates W06/W02/W04/W08, the chapter IV line, the «Как читать этот мир» key (`<details>`);
@@ -52,7 +52,7 @@ AXS_HEADER_META:
 AXIOM SHOWCASE / RESUME PACKET
 AUTHORITY: CREATOR 2026-10-19 (A «ПОРОГ» + OMEGA-0 via W03), PR #9 directive + Canon context pack (Canon 3884ea43)
 PHASE / TASK: 0524.W3.C.A+OMEGA0 — READY FOR PRINCIPAL & CREATOR VISUAL RECHECK
-REPOS + BRANCHES + LAST VERIFIED HEADS: landing main 9dda095 | w3/c-world-immersion QA SHA b53350e (+ docs-only commits) | Draft PR into main
+REPOS + BRANCHES + LAST VERIFIED HEADS: landing main 9dda095 | w3/c-world-immersion QA SHA b53350e (+ docs-only commits) | Draft PR #10 into main
 CLEAN/DIRTY: worktree clean after push; claude/wizardly-goldberg-h6xqon untouched
 LAST ACCEPTED BASELINE: main 9dda095 (W3.A merged, PR #7)
 DONE: S0 spec, S1 threshold, S2 chapters, S3 OMEGA-0, S4 epilogue, S5 R-W3C-01..08, S6 report/evidence/captures
