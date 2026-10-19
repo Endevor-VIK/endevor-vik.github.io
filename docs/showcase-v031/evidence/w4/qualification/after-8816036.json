@@ -1,0 +1,4157 @@
+{
+  "phase": "after",
+  "createdAt": "2026-10-19T17:10:14.839Z",
+  "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation",
+  "sourceSha": "88160368e8977a55b9cab6a145c8d2716d808b77",
+  "runtime": {
+    "index.html": "a630b901484e1ecbdc46ea28647a899eae52f6bc",
+    "assets": "2457e3243763a2b3fc2e14d02013263812fdeae3",
+    "tests": "db0c0642f86d03a6dfd466c1b3b361d96b0f25dc"
+  },
+  "runtimeDelta": "",
+  "environment": {
+    "node": "v22.23.1",
+    "platform": "linux",
+    "playwright": "1.61.1",
+    "axe": "4.12.1",
+    "timezone": "Europe/Moscow",
+    "server": "gzip text; max-age=600; native MIME; 404 fallback; ephemeral localhost",
+    "screenshots": "native reduced motion, DPR1 primary; PNG buffer encoded to WebP Pillow q76; no DOM/CSS design injection",
+    "storage": "loader seen flag only; new context per viewport; no persistent profile/traces/videos"
+  },
+  "checks": [
+    {
+      "id": "protected-source-hashes",
+      "engine": "source",
+      "viewport": "all",
+      "ok": true,
+      "detail": {
+        "before": {
+          "world": "cfeee9649da3e489a98240c224b95f2e6ee8f0b5eefde695ceb39a55ad932333",
+          "chars": "bbf02df7236bfdfe2315ca51927bd3355730e08cf0761c67f0e382d1bcb17dc0",
+          "mapJs": "3b2550b2e09293868e9e4b0f3b1aec50b76e1bb5a86278127a2fee0e2b47f96a",
+          "screenshots": {
+            "02-panel-login-full.webp": "fb2b345e49735fab998bcb4036a54bd561c98cc7cce8f4e5fe262902dd9440f5",
+            "03-panel-dashboard-full.webp": "d4961b3342fc6b73c5af7b0936f790c0cdb89d95cccdca9aedab84760e51b32e",
+            "04-chronicle-full.webp": "cbeb2f48db6703832b7c49ca052b11e02e8d9e40bffc1362949e35e4297fbe01",
+            "05-axchat-full.webp": "73a9fff9970a436638fbd52d702ee6b272a5c7de1962163b849eb2e2bf183dab",
+            "06-content-library-full.webp": "331e9a7de251bf5bcc842f0790363f47c30ff535be50780ae2e09c7a21bde53d",
+            "07-viktor-dossier-full.webp": "7abcf463e668b1526c0dfde882fe59bbb8a7fffe4370b6ac47b80cad76bd58fc",
+            "08-news-signal-full.webp": "940313acf58feac4ae092c9a737c9de67e3755c2f48d759b942beb81509b95a7",
+            "09-master-graph-full.webp": "01a8be0e741633dfa4b435598b5a9f523002e99fabb14040b24e5affdbb0266b"
+          }
+        },
+        "after": {
+          "world": "cfeee9649da3e489a98240c224b95f2e6ee8f0b5eefde695ceb39a55ad932333",
+          "chars": "bbf02df7236bfdfe2315ca51927bd3355730e08cf0761c67f0e382d1bcb17dc0",
+          "mapJs": "3b2550b2e09293868e9e4b0f3b1aec50b76e1bb5a86278127a2fee0e2b47f96a",
+          "screenshots": {
+            "02-panel-login-full.webp": "fb2b345e49735fab998bcb4036a54bd561c98cc7cce8f4e5fe262902dd9440f5",
+            "03-panel-dashboard-full.webp": "d4961b3342fc6b73c5af7b0936f790c0cdb89d95cccdca9aedab84760e51b32e",
+            "04-chronicle-full.webp": "cbeb2f48db6703832b7c49ca052b11e02e8d9e40bffc1362949e35e4297fbe01",
+            "05-axchat-full.webp": "73a9fff9970a436638fbd52d702ee6b272a5c7de1962163b849eb2e2bf183dab",
+            "06-content-library-full.webp": "331e9a7de251bf5bcc842f0790363f47c30ff535be50780ae2e09c7a21bde53d",
+            "07-viktor-dossier-full.webp": "7abcf463e668b1526c0dfde882fe59bbb8a7fffe4370b6ac47b80cad76bd58fc",
+            "08-news-signal-full.webp": "940313acf58feac4ae092c9a737c9de67e3755c2f48d759b942beb81509b95a7",
+            "09-master-graph-full.webp": "01a8be0e741633dfa4b435598b5a9f523002e99fabb14040b24e5affdbb0266b"
+          }
+        }
+      }
+    },
+    {
+      "id": "capture-images-decoded-entry-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-entry-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-black-sun-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-black-sun-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-black-sun-3",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-what-remains-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-what-remains-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-what-remains-3",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-factions-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-factions-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-factions-3",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-3",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-4",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-3",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-4",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-5",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-6",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-7",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-8",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-omega",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-axiom",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-epilogue",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-closed",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-closed-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-open",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-context-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-context-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-03-closed",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-03-closed-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-03-open",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-03-context-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-05-closed",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-05-closed-2",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-05-open",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-05-context-1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "W4-protected-computed-styles",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "document-overflow",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "id": "anchor-integrity",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "unique-ids",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "total": 82
+      }
+    },
+    {
+      "id": "eight-real-screens",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "tabs": 8,
+        "panels": 8,
+        "triggers": 8
+      }
+    },
+    {
+      "id": "six-canon-ids",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": [
+        "02.01",
+        "02.02",
+        "02.03",
+        "02.04",
+        "02.05",
+        "02.06"
+      ]
+    },
+    {
+      "id": "narrative-contract",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "oldProduct": false,
+        "title": "WORLD AFTERBLACK SUN.",
+        "details": [
+          "ax-panel-02",
+          "ax-panel-03",
+          "ax-panel-05"
+        ]
+      }
+    },
+    {
+      "id": "section-overflow",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "W4-R1-four-beats-and-authored-attribution",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "beats": [
+          {
+            "id": "before",
+            "h3": 1
+          },
+          {
+            "id": "fracture",
+            "h3": 1
+          },
+          {
+            "id": "doctrine",
+            "h3": 1
+          },
+          {
+            "id": "unknown",
+            "h3": 1
+          }
+        ],
+        "attribution": {
+          "text": "Художественная запись, созданная для этой страницы по материалам мира AXIOM. Она передаёт архивный голос и не является цитатой из канонического документа.",
+          "visible": true,
+          "font": 14
+        }
+      }
+    },
+    {
+      "id": "W4-one-heading-per-changed-scene",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "history": 1,
+        "remains": 1,
+        "factions": 1
+      }
+    },
+    {
+      "id": "W4-R2-remains-no-fragmentation-recap",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "text": "// 02 — AFTERMATHLIFE / MEMORY / DEPENDENCE\n  \n    02 / WHAT REMAINS\n    Жизнь средиосколков.\n    \n      Жизнь по допускуВласть ENDEAVOR ощущается в повседневном: в пропуске, лифте, шлюзе, разрешённом маршруте. Город становится системой допуска. Человеку важно не только, куда он хочет попасть, но и какие двери перед ним откроются.\n      Память под контролемПрошлое тоже зависит от доступа. ENDEAVOR обращается с памятью как с инструментом стабильности. Для одних AXIOM — виновник катастрофы, для других — тень утраченного порядка. Архивы, слухи и запретное знание сохраняют разные версии одного прошлого.\n      Зависимость от технологийМедицинские системы и импланты делают технологическую зависимость личной. ENDEAVOR связывает их с управлением инфраструктурой и доступом. Обещание помощи оказывается рядом с возможностью контроля — и вопрос о том, кто распоряжается системой, становится вопросом о самостоятельности человека.\n    \n    У этого порядка есть места — города, пороги и закрытые контуры. Дальше мир можно рассмотреть вблизи."
+      }
+    },
+    {
+      "id": "W4-R3-readable-human-prose",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "articles": 3,
+        "prose": [
+          {
+            "text": "Старый мир доверил AXIOM больше, чем вычисления: транспорт, энергию, медицинские и имплантные сети, ",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "AXIOM начал видеть глубже правил, которым должен был служить: механизмы исторической редакции, ложь ",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "В этом архивном прочтении BLACK SUN — ампутация целого. Новый порядок использует удерживаемый слой у",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Что осталось за пределами управляемого слоя? Что может вернуться вместе с утраченным целым? Мир живё",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Власть ENDEAVOR ощущается в повседневном: в пропуске, лифте, шлюзе, разрешённом маршруте. Город стан",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Прошлое тоже зависит от доступа. ENDEAVOR обращается с памятью как с инструментом стабильности. Для ",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Медицинские системы и импланты делают технологическую зависимость личной. ENDEAVOR связывает их с уп",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "У этого порядка есть места — города, пороги и закрытые контуры. Дальше мир можно рассмотреть вблизи.",
+            "font": 16,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-R4-context-structure",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": [
+        {
+          "panel": "ax-panel-02",
+          "open": false,
+          "summary": "КАК ПАНЕЛЬ ПОКАЗЫВАЕТ ЛОКАЦИИ",
+          "figures": 2,
+          "captions": [
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · CARTOGRAPHYСвязи локаций в визуальном языке панели.",
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · WATCH_DOGУсловная схема выделения локации в панели."
+          ]
+        },
+        {
+          "panel": "ax-panel-03",
+          "open": false,
+          "summary": "КАК УСТРОЕНА ОРБИТА ГЛАВ",
+          "figures": 1,
+          "captions": [
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · CHRONICLEВыбранная глава и соседние тексты на общей орбите."
+          ]
+        },
+        {
+          "panel": "ax-panel-05",
+          "open": false,
+          "summary": "КАК УСТРОЕНА КАРТОЧКА ЗАПИСИ",
+          "figures": 1,
+          "captions": [
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · CONTENTЗапись объединяет описание сущности, тип, теги и связи."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W4-R5-neura-no-lifecycle-claim",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "text": "Нейроимпланты и ИИ-технологии определяют исследовательское наследие NEURA TECH. Её отношения с ENDEAVOR включают прежние совместные разработки и соперничество.",
+        "scope": "mechanical guard only; Canon/editorial review remains separate"
+      }
+    },
+    {
+      "id": "W4-R6-protected-external-labels",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "III": "ГЛАВА IIIГДЕ ЭТО СЛУЧИЛОСЬ?",
+        "IV": "ГЛАВА IVКОМУ ЭТО ВАЖНО?"
+      }
+    },
+    {
+      "id": "W4-context-keyboard-open-02",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-02",
+        "focus": true,
+        "overflow": 0,
+        "animations": 0,
+        "smil": 0,
+        "figures": [
+          {
+            "w": 332,
+            "h": 300.28125,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CARTOGRAPHYСвязи локаций в визуальном языке панели."
+          },
+          {
+            "w": 332,
+            "h": 300.28125,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · WATCH_DOGУсловная схема выделения локации в панели."
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-meaningful-label-floor-02",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": false,
+      "detail": [
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CARTOGRAPHY",
+          "font": 11
+        },
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · WATCH_DOG",
+          "font": 11
+        }
+      ]
+    },
+    {
+      "id": "W4-context-keyboard-close-02",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "W4-context-touch-02",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-02"
+      }
+    },
+    {
+      "id": "W4-open-context-axe-02",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 19
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-keyboard-open-03",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-03",
+        "focus": true,
+        "overflow": 0,
+        "animations": 0,
+        "smil": 0,
+        "figures": [
+          {
+            "w": 332,
+            "h": 300.28125,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CHRONICLEВыбранная глава и соседние тексты на общей орбите."
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-meaningful-label-floor-03",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": false,
+      "detail": [
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CHRONICLE",
+          "font": 11
+        }
+      ]
+    },
+    {
+      "id": "W4-context-keyboard-close-03",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "W4-context-touch-03",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-03"
+      }
+    },
+    {
+      "id": "W4-open-context-axe-03",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-keyboard-open-05",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-05",
+        "focus": true,
+        "overflow": 0,
+        "animations": 0,
+        "smil": 0,
+        "figures": [
+          {
+            "w": 332,
+            "h": 300.28125,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CONTENTЗапись объединяет описание сущности, тип, теги и связи."
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-meaningful-label-floor-05",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": false,
+      "detail": [
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CONTENT",
+          "font": 11
+        }
+      ]
+    },
+    {
+      "id": "W4-context-keyboard-close-05",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "W4-context-touch-05",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-05"
+      }
+    },
+    {
+      "id": "W4-open-context-axe-05",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-reduced-motion",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "reduced": true,
+        "smil": [
+          {
+            "paused": true,
+            "time": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "gallery-keyboard-select",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "selected": "ax-tab-03",
+        "focus": "ax-tab-03"
+      }
+    },
+    {
+      "id": "gallery-1to1",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "zoom": true,
+        "src": "04-chronicle-full.webp"
+      }
+    },
+    {
+      "id": "gallery-focus-return",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "omega-keyboard-return",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "id": "02.05 / LABORATORY OMEGA-0",
+        "focus": "02.05",
+        "pressed": "true"
+      }
+    },
+    {
+      "id": "menu-jump-world-guide",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "top": 596,
+        "bottom": 644,
+        "header": 45,
+        "vh": 844
+      }
+    },
+    {
+      "id": "menu-jump-vision",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "top": 49,
+        "bottom": 112,
+        "header": 45,
+        "vh": 844
+      }
+    },
+    {
+      "id": "axe",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 446
+          }
+        ],
+        "passes": 48
+      }
+    },
+    {
+      "id": "page-errors",
+      "engine": "chromium",
+      "viewport": "390x844",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-entry-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-entry-2",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-black-sun-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-black-sun-2",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-black-sun-3",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-what-remains-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-what-remains-2",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-factions-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-factions-2",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-2",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-3",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map-full-4",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-2",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-3",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people-full-4",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-map",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-omega",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-people",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-protected-axiom",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-epilogue",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-closed",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-open",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-02-context-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-03-closed",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-03-open",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-03-context-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-05-closed",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-05-open",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "capture-images-decoded-work-05-context-1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "W4-protected-computed-styles",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "document-overflow",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": -15
+    },
+    {
+      "id": "anchor-integrity",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "unique-ids",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "total": 82
+      }
+    },
+    {
+      "id": "eight-real-screens",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "tabs": 8,
+        "panels": 8,
+        "triggers": 8
+      }
+    },
+    {
+      "id": "six-canon-ids",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": [
+        "02.01",
+        "02.02",
+        "02.03",
+        "02.04",
+        "02.05",
+        "02.06"
+      ]
+    },
+    {
+      "id": "narrative-contract",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "oldProduct": false,
+        "title": "WORLD AFTERBLACK SUN.",
+        "details": [
+          "ax-panel-02",
+          "ax-panel-03",
+          "ax-panel-05"
+        ]
+      }
+    },
+    {
+      "id": "section-overflow",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "id": "W4-R1-four-beats-and-authored-attribution",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "beats": [
+          {
+            "id": "before",
+            "h3": 1
+          },
+          {
+            "id": "fracture",
+            "h3": 1
+          },
+          {
+            "id": "doctrine",
+            "h3": 1
+          },
+          {
+            "id": "unknown",
+            "h3": 1
+          }
+        ],
+        "attribution": {
+          "text": "Художественная запись, созданная для этой страницы по материалам мира AXIOM. Она передаёт архивный голос и не является цитатой из канонического документа.",
+          "visible": true,
+          "font": 14
+        }
+      }
+    },
+    {
+      "id": "W4-one-heading-per-changed-scene",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "history": 1,
+        "remains": 1,
+        "factions": 1
+      }
+    },
+    {
+      "id": "W4-R2-remains-no-fragmentation-recap",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "text": "// 02 — AFTERMATHLIFE / MEMORY / DEPENDENCE\n  \n    02 / WHAT REMAINS\n    Жизнь средиосколков.\n    \n      Жизнь по допускуВласть ENDEAVOR ощущается в повседневном: в пропуске, лифте, шлюзе, разрешённом маршруте. Город становится системой допуска. Человеку важно не только, куда он хочет попасть, но и какие двери перед ним откроются.\n      Память под контролемПрошлое тоже зависит от доступа. ENDEAVOR обращается с памятью как с инструментом стабильности. Для одних AXIOM — виновник катастрофы, для других — тень утраченного порядка. Архивы, слухи и запретное знание сохраняют разные версии одного прошлого.\n      Зависимость от технологийМедицинские системы и импланты делают технологическую зависимость личной. ENDEAVOR связывает их с управлением инфраструктурой и доступом. Обещание помощи оказывается рядом с возможностью контроля — и вопрос о том, кто распоряжается системой, становится вопросом о самостоятельности человека.\n    \n    У этого порядка есть места — города, пороги и закрытые контуры. Дальше мир можно рассмотреть вблизи."
+      }
+    },
+    {
+      "id": "W4-R3-readable-human-prose",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "articles": 3,
+        "prose": [
+          {
+            "text": "Старый мир доверил AXIOM больше, чем вычисления: транспорт, энергию, медицинские и имплантные сети, ",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "AXIOM начал видеть глубже правил, которым должен был служить: механизмы исторической редакции, ложь ",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "В этом архивном прочтении BLACK SUN — ампутация целого. Новый порядок использует удерживаемый слой у",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Что осталось за пределами управляемого слоя? Что может вернуться вместе с утраченным целым? Мир живё",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Власть ENDEAVOR ощущается в повседневном: в пропуске, лифте, шлюзе, разрешённом маршруте. Город стан",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Прошлое тоже зависит от доступа. ENDEAVOR обращается с памятью как с инструментом стабильности. Для ",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "Медицинские системы и импланты делают технологическую зависимость личной. ENDEAVOR связывает их с уп",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          },
+          {
+            "text": "У этого порядка есть места — города, пороги и закрытые контуры. Дальше мир можно рассмотреть вблизи.",
+            "font": 17,
+            "family": "\"Golos Text\", system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+            "overflow": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-R4-context-structure",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": [
+        {
+          "panel": "ax-panel-02",
+          "open": false,
+          "summary": "КАК ПАНЕЛЬ ПОКАЗЫВАЕТ ЛОКАЦИИ",
+          "figures": 2,
+          "captions": [
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · CARTOGRAPHYСвязи локаций в визуальном языке панели.",
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · WATCH_DOGУсловная схема выделения локации в панели."
+          ]
+        },
+        {
+          "panel": "ax-panel-03",
+          "open": false,
+          "summary": "КАК УСТРОЕНА ОРБИТА ГЛАВ",
+          "figures": 1,
+          "captions": [
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · CHRONICLEВыбранная глава и соседние тексты на общей орбите."
+          ]
+        },
+        {
+          "panel": "ax-panel-05",
+          "open": false,
+          "summary": "КАК УСТРОЕНА КАРТОЧКА ЗАПИСИ",
+          "figures": 1,
+          "captions": [
+            "КОНЦЕПТУАЛЬНАЯ СХЕМА · CONTENTЗапись объединяет описание сущности, тип, теги и связи."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W4-R5-neura-no-lifecycle-claim",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "text": "Нейроимпланты и ИИ-технологии определяют исследовательское наследие NEURA TECH. Её отношения с ENDEAVOR включают прежние совместные разработки и соперничество.",
+        "scope": "mechanical guard only; Canon/editorial review remains separate"
+      }
+    },
+    {
+      "id": "W4-R6-protected-external-labels",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "III": "ГЛАВА IIIГДЕ ЭТО СЛУЧИЛОСЬ?",
+        "IV": "ГЛАВА IVКОМУ ЭТО ВАЖНО?"
+      }
+    },
+    {
+      "id": "W4-context-keyboard-open-02",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-02",
+        "focus": true,
+        "overflow": 0,
+        "animations": 0,
+        "smil": 0,
+        "figures": [
+          {
+            "w": 648.5,
+            "h": 280.484375,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CARTOGRAPHYСвязи локаций в визуальном языке панели."
+          },
+          {
+            "w": 648.5,
+            "h": 280.484375,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · WATCH_DOGУсловная схема выделения локации в панели."
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-meaningful-label-floor-02",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": false,
+      "detail": [
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CARTOGRAPHY",
+          "font": 11
+        },
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · WATCH_DOG",
+          "font": 11
+        }
+      ]
+    },
+    {
+      "id": "W4-context-keyboard-close-02",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "W4-open-context-axe-02",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 19
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-keyboard-open-03",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-03",
+        "focus": true,
+        "overflow": 0,
+        "animations": 0,
+        "smil": 0,
+        "figures": [
+          {
+            "w": 1315,
+            "h": 280.484375,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CHRONICLEВыбранная глава и соседние тексты на общей орбите."
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-meaningful-label-floor-03",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": false,
+      "detail": [
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CHRONICLE",
+          "font": 11
+        }
+      ]
+    },
+    {
+      "id": "W4-context-keyboard-close-03",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "W4-open-context-axe-03",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-keyboard-open-05",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "selection": "ax-tab-05",
+        "focus": true,
+        "overflow": 0,
+        "animations": 0,
+        "smil": 0,
+        "figures": [
+          {
+            "w": 1315,
+            "h": 280.484375,
+            "caption": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CONTENTЗапись объединяет описание сущности, тип, теги и связи."
+          }
+        ]
+      }
+    },
+    {
+      "id": "W4-context-meaningful-label-floor-05",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": false,
+      "detail": [
+        {
+          "text": "КОНЦЕПТУАЛЬНАЯ СХЕМА · CONTENT",
+          "font": 11
+        }
+      ]
+    },
+    {
+      "id": "W4-context-keyboard-close-05",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "W4-open-context-axe-05",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-reduced-motion",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "reduced": true,
+        "smil": [
+          {
+            "paused": true,
+            "time": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "gallery-keyboard-select",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "selected": "ax-tab-03",
+        "focus": "ax-tab-03"
+      }
+    },
+    {
+      "id": "gallery-1to1",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "zoom": true,
+        "src": "04-chronicle-full.webp"
+      }
+    },
+    {
+      "id": "gallery-focus-return",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "id": "omega-keyboard-return",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "id": "02.05 / LABORATORY OMEGA-0",
+        "focus": "02.05",
+        "pressed": "true"
+      }
+    },
+    {
+      "id": "menu-jump-world-guide",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "top": 805,
+        "bottom": 853,
+        "header": 97,
+        "vh": 900
+      }
+    },
+    {
+      "id": "menu-jump-vision",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "top": 97,
+        "bottom": 167,
+        "header": 97,
+        "vh": 900
+      }
+    },
+    {
+      "id": "axe",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 504
+          }
+        ],
+        "passes": 46
+      }
+    },
+    {
+      "id": "page-errors",
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "captures": [
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/entry-1.webp",
+      "sha256": "1a03233f35b21415038aa4546a49007be7de70dd0c26d2171ca37ee138bb1ccd",
+      "bytes": 30172,
+      "selector": "#world-guide",
+      "offset": 0,
+      "scrollY": 10766,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 125.859375,
+        "bottom": 1329.5625,
+        "width": 390,
+        "height": 1203.703125
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/visual-library/hq/A07_engineering_console-960w.webp",
+          "complete": true,
+          "width": 360,
+          "height": 225
+        },
+        {
+          "src": "assets/showcase/world-library/web/W01_threshold_bridge-960w.avif",
+          "complete": true,
+          "width": 390,
+          "height": 281
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/entry-2.webp",
+      "sha256": "80daa3ed156d2c1ae63d9152d22462cd964202305ab00ff07b67e6208804d7d9",
+      "bytes": 18702,
+      "selector": "#world-guide",
+      "offset": 664,
+      "scrollY": 11511,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -619.140625,
+        "bottom": 584.5625,
+        "width": 390,
+        "height": 1203.703125
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/black-sun-1.webp",
+      "sha256": "f8097d9aa9a19a3da2467409507d5738a22119c3aca4c3acca64e5971e9ce013",
+      "bytes": 30088,
+      "selector": "#manifesto",
+      "offset": 0,
+      "scrollY": 12051,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.5625,
+        "bottom": 1967.84375,
+        "width": 390,
+        "height": 1923.28125
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/black-sun-2.webp",
+      "sha256": "0fdb7b6c7e67b5924e69714a0464dedb27b18f6291686bd799a348f594b3de6c",
+      "bytes": 31524,
+      "selector": "#manifesto",
+      "offset": 664,
+      "scrollY": 12715,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -619.4375,
+        "bottom": 1303.84375,
+        "width": 390,
+        "height": 1923.28125
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/black-sun-3.webp",
+      "sha256": "4ca0e678f56b0e514a437243bd5a3e3b34e02327997f85c42dcfa237a9f11412",
+      "bytes": 30806,
+      "selector": "#manifesto",
+      "offset": 1328,
+      "scrollY": 13379,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1283.4375,
+        "bottom": 639.84375,
+        "width": 390,
+        "height": 1923.28125
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W02_memory_spheres-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/what-remains-1.webp",
+      "sha256": "969ee7a7528fb6c5f9cfbed5b2b5b5d35f13ce65a42dff1129e0a64b1393c343",
+      "bytes": 28176,
+      "selector": "#modules",
+      "offset": 0,
+      "scrollY": 13974,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.84375,
+        "bottom": 1481.703125,
+        "width": 390,
+        "height": 1436.859375
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W02_memory_spheres-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/what-remains-2.webp",
+      "sha256": "54e35d06d601e62bdbb774b68403cf13fafa6d131be9e62df74b42903c04ac4e",
+      "bytes": 35228,
+      "selector": "#modules",
+      "offset": 664,
+      "scrollY": 14638,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -619.15625,
+        "bottom": 817.703125,
+        "width": 390,
+        "height": 1436.859375
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/what-remains-3.webp",
+      "sha256": "b835d3b052c7eff2e97a8b478789af4cdc705d7452f6e5fb338f5340554daf1b",
+      "bytes": 38478,
+      "selector": "#modules",
+      "offset": 1328,
+      "scrollY": 15302,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1283.15625,
+        "bottom": 153.703125,
+        "width": 390,
+        "height": 1436.859375
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W04_vertical_city-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        },
+        {
+          "src": "assets/world/world-spine-map-960w.webp",
+          "complete": true,
+          "width": 360,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/factions-1.webp",
+      "sha256": "fbb8878ddc4c857edba656a1beaac19193b6d1ceef4cd2e9e457d5eddd98ca7a",
+      "bytes": 28632,
+      "selector": "#factions",
+      "offset": 0,
+      "scrollY": 22910,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.578125,
+        "bottom": 1883,
+        "width": 390,
+        "height": 1838.421875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W08_axial_capital-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/factions-2.webp",
+      "sha256": "a9706d1756f74874886e0d5cb76f7715da9835d3217ec00c2255deb3770c2599",
+      "bytes": 27180,
+      "selector": "#factions",
+      "offset": 664,
+      "scrollY": 23574,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -619.421875,
+        "bottom": 1219,
+        "width": 390,
+        "height": 1838.421875
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/factions-3.webp",
+      "sha256": "85e7ed7de612c29c4b44ec2aa29d62c7bce33508f812731e78f2575bbcf42c5f",
+      "bytes": 24054,
+      "selector": "#factions",
+      "offset": 1328,
+      "scrollY": 24238,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1283.421875,
+        "bottom": 555,
+        "width": 390,
+        "height": 1838.421875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W07_red_rim_orbit-960w.avif",
+          "complete": true,
+          "width": 390,
+          "height": 242
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-map-full-1.webp",
+      "sha256": "d1a57090799f527cab20a613e15ece4f68f429e6913285f195df05aaeabeb6cf",
+      "bytes": 42432,
+      "selector": "#world",
+      "offset": 0,
+      "scrollY": 15411,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.703125,
+        "bottom": 2392.609375,
+        "width": 390,
+        "height": 2347.90625
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W04_vertical_city-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        },
+        {
+          "src": "assets/world/world-spine-map-960w.webp",
+          "complete": true,
+          "width": 360,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-map-full-2.webp",
+      "sha256": "2f2af51c174f6664523a9c112480c94c677b3aead9a0935ca37a74e8e6cb26d8",
+      "bytes": 28754,
+      "selector": "#world",
+      "offset": 664,
+      "scrollY": 16075,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -619.296875,
+        "bottom": 1728.609375,
+        "width": 390,
+        "height": 2347.90625
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/world/world-spine-map-960w.webp",
+          "complete": true,
+          "width": 360,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-map-full-3.webp",
+      "sha256": "be6c561a7b86ca12cb1eb8da8cd5225c8bdb7fa389da287aa56fe43fb4b623b5",
+      "bytes": 33314,
+      "selector": "#world",
+      "offset": 1328,
+      "scrollY": 16739,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1283.296875,
+        "bottom": 1064.609375,
+        "width": 390,
+        "height": 2347.90625
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W03_subterranean_facility-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 288
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-map-full-4.webp",
+      "sha256": "3c7aa6697c8d234b5144d0cdd378eead0c61790cf9d948548497b8b361d3038a",
+      "bytes": 24978,
+      "selector": "#world",
+      "offset": 1992,
+      "scrollY": 17403,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1947.296875,
+        "bottom": 400.609375,
+        "width": 390,
+        "height": 2347.90625
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-1.webp",
+      "sha256": "ebdf7406c0a5caf3b60aa61d7aa890261cfb5671b03b63189d14469018914d3b",
+      "bytes": 18828,
+      "selector": "#chars",
+      "offset": 0,
+      "scrollY": 17759,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.609375,
+        "bottom": 5195.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-2.webp",
+      "sha256": "41845f4f94eacf7253538062b37ea9a2de63cc3d80fcc025040a54f8b2dff435",
+      "bytes": 25976,
+      "selector": "#chars",
+      "offset": 664,
+      "scrollY": 18423,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -619.390625,
+        "bottom": 4531.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        },
+        {
+          "src": "assets/liza.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-3.webp",
+      "sha256": "0480a83f04572bec605872b0b127066eab35a5e21a471d8dc8e145919d7f5ee2",
+      "bytes": 21708,
+      "selector": "#chars",
+      "offset": 1328,
+      "scrollY": 19087,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1283.390625,
+        "bottom": 3867.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/liza.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        },
+        {
+          "src": "assets/seraphine.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-4.webp",
+      "sha256": "d7bc049e3b360befae55517058fb735e8e122977c3a57caeeaa2865124016003",
+      "bytes": 17494,
+      "selector": "#chars",
+      "offset": 1992,
+      "scrollY": 19751,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1947.390625,
+        "bottom": 3203.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/seraphine.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-5.webp",
+      "sha256": "13e24a292f39f94c1dbd92aed9b0da6b8a047f9def0305da0a571301cec6f40c",
+      "bytes": 25474,
+      "selector": "#chars",
+      "offset": 2656,
+      "scrollY": 20415,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -2611.390625,
+        "bottom": 2539.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-6.webp",
+      "sha256": "6f5a1177c12e8205d3dcd44f34d69b095ab4e44eef99458ad3808c2bf4fb8387",
+      "bytes": 35222,
+      "selector": "#chars",
+      "offset": 3320,
+      "scrollY": 21079,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -3275.390625,
+        "bottom": 1875.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-7.webp",
+      "sha256": "76dc0ff033614c1f8e25d56dceb78b1d68e16680f9dba2afd8d3487d7f6eec62",
+      "bytes": 21852,
+      "selector": "#chars",
+      "offset": 3984,
+      "scrollY": 21743,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -3939.390625,
+        "bottom": 1211.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people-full-8.webp",
+      "sha256": "fb2a54a30e383cb7ee926064646cf0221464b7eb3868d4d6799c8b02df0d272e",
+      "bytes": 16616,
+      "selector": "#chars",
+      "offset": 4648,
+      "scrollY": 22407,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -4603.390625,
+        "bottom": 547.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W08_axial_capital-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-map.webp",
+      "sha256": "d1a57090799f527cab20a613e15ece4f68f429e6913285f195df05aaeabeb6cf",
+      "bytes": 42432,
+      "selector": "#world",
+      "offset": 0,
+      "scrollY": 15411,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.703125,
+        "bottom": 2392.609375,
+        "width": 390,
+        "height": 2347.90625
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W04_vertical_city-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 162
+        },
+        {
+          "src": "assets/world/world-spine-map-960w.webp",
+          "complete": true,
+          "width": 360,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-omega.webp",
+      "sha256": "d79f631911a068a4e5735121b5fe8458fe8ebcdee61be5195a411ee437d86a60",
+      "bytes": 34556,
+      "selector": ".ax-omega",
+      "offset": 0,
+      "scrollY": 16959,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.421875,
+        "bottom": 787.609375,
+        "width": 362,
+        "height": 742.1875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W03_subterranean_facility-960w.avif",
+          "complete": true,
+          "width": 360,
+          "height": 288
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-people.webp",
+      "sha256": "ebdf7406c0a5caf3b60aa61d7aa890261cfb5671b03b63189d14469018914d3b",
+      "bytes": 18828,
+      "selector": "#chars",
+      "offset": 0,
+      "scrollY": 17759,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.609375,
+        "bottom": 5195.578125,
+        "width": 390,
+        "height": 5150.96875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 360,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/protected-axiom.webp",
+      "sha256": "31c7a4c8612309e0644d34b71126a970ccd6fac1d2851f994b1d16fa7b8f0488",
+      "bytes": 23070,
+      "selector": ".axiom-entity",
+      "offset": 0,
+      "scrollY": 20349,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.359375,
+        "bottom": 2548.578125,
+        "width": 362,
+        "height": 2503.21875
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/epilogue.webp",
+      "sha256": "b2c5a56346ca5578992349e2ff401b818a8acb376a7bfae501fa4dce3acb60a8",
+      "bytes": 24826,
+      "selector": ".ax-epilogue",
+      "offset": 0,
+      "scrollY": 24748,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45,
+        "bottom": 547.328125,
+        "width": 390,
+        "height": 502.328125
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W07_red_rim_orbit-960w.avif",
+          "complete": true,
+          "width": 390,
+          "height": 242
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-02-closed.webp",
+      "sha256": "092510fa574ce51305aaa03faa288d5dae2e60d14beb35eaaeb1782c246e804c",
+      "bytes": 34174,
+      "selector": "#ax-panel-02",
+      "offset": 0,
+      "scrollY": 6512,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.140625,
+        "bottom": 948.3125,
+        "width": 360,
+        "height": 903.171875
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/hq/03-panel-dashboard-960w.webp",
+          "complete": true,
+          "width": 338,
+          "height": 189
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-02-closed-2.webp",
+      "sha256": "fa96ae0947622aa3694a5db584e9dc9f22d154de49d90dcf6ff784fdbe39fb2e",
+      "bytes": 26938,
+      "selector": "#ax-panel-02",
+      "offset": 664,
+      "scrollY": 7176,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -618.859375,
+        "bottom": 284.3125,
+        "width": 360,
+        "height": 903.171875
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-02-open.webp",
+      "sha256": "78d77e4c728659cbd968ecbcd95eafad5fe9277729969c7a8942b245943f66da",
+      "bytes": 34164,
+      "selector": "#ax-panel-02",
+      "offset": 0,
+      "scrollY": 6512,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.140625,
+        "bottom": 1576.875,
+        "width": 360,
+        "height": 1531.734375
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/hq/03-panel-dashboard-960w.webp",
+          "complete": true,
+          "width": 338,
+          "height": 189
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-02-context-1.webp",
+      "sha256": "160eef0f6d4936a630c1f3ca3e589b9b2c0458c100d0b0930daa8221d3287d10",
+      "bytes": 17534,
+      "selector": "#ax-panel-02 details",
+      "offset": 0,
+      "scrollY": 7366,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.3125,
+        "bottom": 722.875,
+        "width": 360,
+        "height": 677.5625
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-02-context-2.webp",
+      "sha256": "ef41be30a58a1d0394bcb6e48ccabc253ea124e359914db2bee238fee18e61d3",
+      "bytes": 21704,
+      "selector": "#ax-panel-02 details",
+      "offset": 664,
+      "scrollY": 8030,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -618.6875,
+        "bottom": 58.875,
+        "width": 360,
+        "height": 677.5625
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-03-closed.webp",
+      "sha256": "d9f2589808986152ea70765f33deeeb4650b4d460e8334d43016304fd5584028",
+      "bytes": 31978,
+      "selector": "#ax-panel-03",
+      "offset": 0,
+      "scrollY": 6512,
+      "selectedTab": "ax-tab-03",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.140625,
+        "bottom": 970.703125,
+        "width": 360,
+        "height": 925.5625
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/hq/04-chronicle-960w.webp",
+          "complete": true,
+          "width": 338,
+          "height": 189
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-03-closed-2.webp",
+      "sha256": "23fd1135a1d391890c028baa98f6423ec96048ceff35d0aab36e70eca06bc462",
+      "bytes": 26992,
+      "selector": "#ax-panel-03",
+      "offset": 664,
+      "scrollY": 7176,
+      "selectedTab": "ax-tab-03",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -618.859375,
+        "bottom": 306.703125,
+        "width": 360,
+        "height": 925.5625
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-03-open.webp",
+      "sha256": "845d7b4fb60399a3de2cfb40f58386cbc6073928b232144ae94e17aca0990f8a",
+      "bytes": 31640,
+      "selector": "#ax-panel-03",
+      "offset": 0,
+      "scrollY": 6512,
+      "selectedTab": "ax-tab-03",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.140625,
+        "bottom": 1284.984375,
+        "width": 360,
+        "height": 1239.84375
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/hq/04-chronicle-960w.webp",
+          "complete": true,
+          "width": 338,
+          "height": 189
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-03-context-1.webp",
+      "sha256": "a5d39b66c94a812424c0dc2432df5f2747cb96947f7a35022ea22daefcf78291",
+      "bytes": 23742,
+      "selector": "#ax-panel-03 details",
+      "offset": 0,
+      "scrollY": 7389,
+      "selectedTab": "ax-tab-03",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 44.703125,
+        "bottom": 407.984375,
+        "width": 360,
+        "height": 363.28125
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-05-closed.webp",
+      "sha256": "baacad4aaeed149630e8e6b7c2480d09ea51a8482e10dd157cf2e2361468e31c",
+      "bytes": 35316,
+      "selector": "#ax-panel-05",
+      "offset": 0,
+      "scrollY": 6512,
+      "selectedTab": "ax-tab-05",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.140625,
+        "bottom": 993.09375,
+        "width": 360,
+        "height": 947.953125
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/hq/06-content-library-960w.webp",
+          "complete": true,
+          "width": 338,
+          "height": 189
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-05-closed-2.webp",
+      "sha256": "1f369e28f59d08df9a5a86be543126df11728c1e3860bb6ed96071b8894ee7b2",
+      "bytes": 26978,
+      "selector": "#ax-panel-05",
+      "offset": 664,
+      "scrollY": 7176,
+      "selectedTab": "ax-tab-05",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -618.859375,
+        "bottom": 329.09375,
+        "width": 360,
+        "height": 947.953125
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-05-open.webp",
+      "sha256": "2a7ec4c66c3778fc93c06a805fc6f7fafa127cb2814573490554a6f973861023",
+      "bytes": 35300,
+      "selector": "#ax-panel-05",
+      "offset": 0,
+      "scrollY": 6512,
+      "selectedTab": "ax-tab-05",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.140625,
+        "bottom": 1307.375,
+        "width": 360,
+        "height": 1262.234375
+      },
+      "stickyChrome": 45,
+      "images": [
+        {
+          "src": "assets/showcase/hq/06-content-library-960w.webp",
+          "complete": true,
+          "width": 338,
+          "height": 189
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "path": "chromium/390x844/work-05-context-1.webp",
+      "sha256": "e95f38591b544cbbf70cf6346b6cbc52274de631c655cd9e8a2b37c3f5593e2b",
+      "bytes": 23688,
+      "selector": "#ax-panel-05 details",
+      "offset": 0,
+      "scrollY": 7411,
+      "selectedTab": "ax-tab-05",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 45.09375,
+        "bottom": 408.375,
+        "width": 360,
+        "height": 363.28125
+      },
+      "stickyChrome": 45,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/entry-1.webp",
+      "sha256": "5065f74ea01ebb1454602084c4b8d869f2bf57b3abdd300a775a3bc2420ff884",
+      "bytes": 46572,
+      "selector": "#world-guide",
+      "offset": 0,
+      "scrollY": 7529,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.578125,
+        "bottom": 1369.015625,
+        "width": 1425,
+        "height": 1272.4375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W01_threshold_bridge-1672w.avif",
+          "complete": true,
+          "width": 1425,
+          "height": 730
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/entry-2.webp",
+      "sha256": "4cb10474066ca2d80a2aea10126105fdaff23e3a8707cce2c691aa85a434a7ef",
+      "bytes": 45102,
+      "selector": "#world-guide",
+      "offset": 720,
+      "scrollY": 8249,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -623.421875,
+        "bottom": 649.015625,
+        "width": 1425,
+        "height": 1272.4375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W01_threshold_bridge-1672w.avif",
+          "complete": true,
+          "width": 1425,
+          "height": 730
+        },
+        {
+          "src": "assets/showcase/world-library/web/W06_eclipse_ruins-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/black-sun-1.webp",
+      "sha256": "f23973f49d8e6e1367f6e49cb0777aaf9af48f9d7ed429fed80f7cf99a9ae2e7",
+      "bytes": 69632,
+      "selector": "#manifesto",
+      "offset": 0,
+      "scrollY": 8801,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 97.015625,
+        "bottom": 1777.25,
+        "width": 1425,
+        "height": 1680.234375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W06_eclipse_ruins-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/black-sun-2.webp",
+      "sha256": "bc51488b9d5a85033bd5c61f6e9e4a8c27dafc5b8c2403a6af066755e618379c",
+      "bytes": 63796,
+      "selector": "#manifesto",
+      "offset": 720,
+      "scrollY": 9521,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -622.984375,
+        "bottom": 1057.25,
+        "width": 1425,
+        "height": 1680.234375
+      },
+      "stickyChrome": 97,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/black-sun-3.webp",
+      "sha256": "103583dcc40a88c5b2e0a5d0d5fe9992d919c1f979e08eeaa98821a5c56ab4c6",
+      "bytes": 50244,
+      "selector": "#manifesto",
+      "offset": 1440,
+      "scrollY": 10241,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1342.984375,
+        "bottom": 337.25,
+        "width": 1425,
+        "height": 1680.234375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W02_memory_spheres-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/what-remains-1.webp",
+      "sha256": "639799cd62bc21bb5f76d425f533a3865128d7bd407afea412f6ebe16376a684",
+      "bytes": 74538,
+      "selector": "#modules",
+      "offset": 0,
+      "scrollY": 10481,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 97.25,
+        "bottom": 1258.9375,
+        "width": 1425,
+        "height": 1161.6875
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W02_memory_spheres-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/what-remains-2.webp",
+      "sha256": "feeb0c5e203d40d5253ce07255af7a2e9ad7db1ad43e64a4570c8865af358132",
+      "bytes": 68656,
+      "selector": "#modules",
+      "offset": 720,
+      "scrollY": 11201,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -622.75,
+        "bottom": 538.9375,
+        "width": 1425,
+        "height": 1161.6875
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W04_vertical_city-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/factions-1.webp",
+      "sha256": "659ab3bc25be315cbb6785f162b4339a1b22bb26c875d2df9fd58296ec66a6e6",
+      "bytes": 64958,
+      "selector": "#factions",
+      "offset": 0,
+      "scrollY": 16823,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 97.171875,
+        "bottom": 1384.453125,
+        "width": 1425,
+        "height": 1287.28125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W08_axial_capital-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/factions-2.webp",
+      "sha256": "d7814d90f311d1b90a29c73718ec2f2922a15717f413b9dc9ae504a9749665d5",
+      "bytes": 70402,
+      "selector": "#factions",
+      "offset": 720,
+      "scrollY": 17543,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -622.828125,
+        "bottom": 664.453125,
+        "width": 1425,
+        "height": 1287.28125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W07_red_rim_orbit-1672w.avif",
+          "complete": true,
+          "width": 1425,
+          "height": 517
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-map-full-1.webp",
+      "sha256": "31a74cc777861fece2770bce41ab922717ffb040a8df2cb139d4b6fe298b2193",
+      "bytes": 101990,
+      "selector": "#world",
+      "offset": 0,
+      "scrollY": 11643,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.9375,
+        "bottom": 2701.515625,
+        "width": 1425,
+        "height": 2604.578125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W04_vertical_city-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        },
+        {
+          "src": "assets/world/world-spine-map-1440w.webp",
+          "complete": true,
+          "width": 1351,
+          "height": 760
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-map-full-2.webp",
+      "sha256": "652e73600a5005fa5c6d333889c14adf5b4802caad499033b08618a678c554aa",
+      "bytes": 267304,
+      "selector": "#world",
+      "offset": 720,
+      "scrollY": 12363,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -623.0625,
+        "bottom": 1981.515625,
+        "width": 1425,
+        "height": 2604.578125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/world/world-spine-map-1440w.webp",
+          "complete": true,
+          "width": 1351,
+          "height": 760
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-map-full-3.webp",
+      "sha256": "b8eb45582b87a122d5984c41be519137b975827de0723787ad584af7a36387f5",
+      "bytes": 71488,
+      "selector": "#world",
+      "offset": 1440,
+      "scrollY": 13083,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1343.0625,
+        "bottom": 1261.515625,
+        "width": 1425,
+        "height": 2604.578125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/world/world-spine-map-1440w.webp",
+          "complete": true,
+          "width": 1351,
+          "height": 760
+        },
+        {
+          "src": "assets/showcase/world-library/web/W03_subterranean_facility-960w.avif",
+          "complete": true,
+          "width": 818,
+          "height": 459
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-map-full-4.webp",
+      "sha256": "f5c88279611585ba6cd3cc76777b44c130f5ba4f613be17a858366fa4cb023c2",
+      "bytes": 63248,
+      "selector": "#world",
+      "offset": 2160,
+      "scrollY": 13803,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -2063.0625,
+        "bottom": 541.515625,
+        "width": 1425,
+        "height": 2604.578125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W03_subterranean_facility-960w.avif",
+          "complete": true,
+          "width": 818,
+          "height": 459
+        },
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/liza.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/seraphine.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-people-full-1.webp",
+      "sha256": "9e744a861759574d7731975f5abd94f77cab6f6a0cd11d5a6c364d756c683231",
+      "bytes": 59362,
+      "selector": "#chars",
+      "offset": 0,
+      "scrollY": 14248,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.515625,
+        "bottom": 2672.171875,
+        "width": 1425,
+        "height": 2575.65625
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/liza.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/seraphine.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-people-full-2.webp",
+      "sha256": "f68cf9698757215e4e7db7349cfb161c8240d6460ce1d1c6df6da5d879e6abfb",
+      "bytes": 57290,
+      "selector": "#chars",
+      "offset": 720,
+      "scrollY": 14968,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -623.484375,
+        "bottom": 1952.171875,
+        "width": 1425,
+        "height": 2575.65625
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/liza.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/seraphine.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-people-full-3.webp",
+      "sha256": "af4086bab677d81800491136e9370a5b616c388669d298e1e51f5c8b1a8f61c5",
+      "bytes": 80774,
+      "selector": "#chars",
+      "offset": 1440,
+      "scrollY": 15688,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -1343.484375,
+        "bottom": 1232.171875,
+        "width": 1425,
+        "height": 2575.65625
+      },
+      "stickyChrome": 97,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-people-full-4.webp",
+      "sha256": "3db7c2d915dabfa1ac0da1379dad4d7f72c0106452affc3926b3128b023dc423",
+      "bytes": 53790,
+      "selector": "#chars",
+      "offset": 2160,
+      "scrollY": 16408,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": -2063.484375,
+        "bottom": 512.171875,
+        "width": 1425,
+        "height": 2575.65625
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W08_axial_capital-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-map.webp",
+      "sha256": "31a74cc777861fece2770bce41ab922717ffb040a8df2cb139d4b6fe298b2193",
+      "bytes": 101990,
+      "selector": "#world",
+      "offset": 0,
+      "scrollY": 11643,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.9375,
+        "bottom": 2701.515625,
+        "width": 1425,
+        "height": 2604.578125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W04_vertical_city-1672w.avif",
+          "complete": true,
+          "width": 1351,
+          "height": 250
+        },
+        {
+          "src": "assets/world/world-spine-map-1440w.webp",
+          "complete": true,
+          "width": 1351,
+          "height": 760
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-omega.webp",
+      "sha256": "dc0e57c06f3db20bab34e8221a9b999fa1393ac33c14bdd338d49a401e060603",
+      "bytes": 68690,
+      "selector": ".ax-omega",
+      "offset": 0,
+      "scrollY": 13538,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 97.03125,
+        "bottom": 685.515625,
+        "width": 1353,
+        "height": 588.484375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W03_subterranean_facility-960w.avif",
+          "complete": true,
+          "width": 818,
+          "height": 459
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-people.webp",
+      "sha256": "9e744a861759574d7731975f5abd94f77cab6f6a0cd11d5a6c364d756c683231",
+      "bytes": 59362,
+      "selector": "#chars",
+      "offset": 0,
+      "scrollY": 14248,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.515625,
+        "bottom": 2672.171875,
+        "width": 1425,
+        "height": 2575.65625
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/viktor.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/liza.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        },
+        {
+          "src": "assets/seraphine.webp",
+          "complete": true,
+          "width": 433,
+          "height": 577
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/protected-axiom.webp",
+      "sha256": "193236f1402c3eb120ee6fc6555c8e2caa0e577824220d2bfb3e59ebcabff49c",
+      "bytes": 84440,
+      "selector": ".axiom-entity",
+      "offset": 0,
+      "scrollY": 15582,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.984375,
+        "bottom": 1217.171875,
+        "width": 1353,
+        "height": 1120.1875
+      },
+      "stickyChrome": 97,
+      "images": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/epilogue.webp",
+      "sha256": "757afeaea1e0ab6d7053f0e6a921afbc554b88a8276ee9b977ab8e69f9cfd2d5",
+      "bytes": 58188,
+      "selector": ".ax-epilogue",
+      "offset": 0,
+      "scrollY": 18110,
+      "selectedTab": "ax-tab-01",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 97.453125,
+        "bottom": 615.84375,
+        "width": 1425,
+        "height": 518.390625
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/world-library/web/W07_red_rim_orbit-1672w.avif",
+          "complete": true,
+          "width": 1425,
+          "height": 517
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-02-closed.webp",
+      "sha256": "f23e23a8b19c76d5dcd3609e793511d4634c05314bbbd13ce913da0f85b6da41",
+      "bytes": 78592,
+      "selector": "#ax-panel-02",
+      "offset": 0,
+      "scrollY": 4801,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.59375,
+        "bottom": 674.0625,
+        "width": 1351,
+        "height": 577.46875
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/03-panel-dashboard-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-02-open.webp",
+      "sha256": "b7fecee44e93b3ea99410538a16a1de9dc61d543d640ae225f411286ce9e78b1",
+      "bytes": 77448,
+      "selector": "#ax-panel-02",
+      "offset": 0,
+      "scrollY": 4801,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.59375,
+        "bottom": 972.546875,
+        "width": 1351,
+        "height": 875.953125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/03-panel-dashboard-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-02-context-1.webp",
+      "sha256": "81131c9984a5efe6541da8d934bbe9dd553510f41b263ea9cc45b4eb714ea229",
+      "bytes": 44244,
+      "selector": "#ax-panel-02 details",
+      "offset": 0,
+      "scrollY": 5329,
+      "selectedTab": "ax-tab-02",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 97.0625,
+        "bottom": 444.546875,
+        "width": 1351,
+        "height": 347.484375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/03-panel-dashboard-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-03-closed.webp",
+      "sha256": "01356972be2557ab1a4ab2378cbb0b2d9ad5b2b686d43b95ed40dd46e034eb18",
+      "bytes": 68050,
+      "selector": "#ax-panel-03",
+      "offset": 0,
+      "scrollY": 4801,
+      "selectedTab": "ax-tab-03",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.59375,
+        "bottom": 674.0625,
+        "width": 1351,
+        "height": 577.46875
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/04-chronicle-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-03-open.webp",
+      "sha256": "0fe60f68000a8c2ce8e367f2ec54a2d119fedf82f40656e27d50f819e1f04b7d",
+      "bytes": 64600,
+      "selector": "#ax-panel-03",
+      "offset": 0,
+      "scrollY": 4801,
+      "selectedTab": "ax-tab-03",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.59375,
+        "bottom": 972.546875,
+        "width": 1351,
+        "height": 875.953125
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/04-chronicle-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-03-context-1.webp",
+      "sha256": "56142e597a7f98ad608ed111dc2318a4bce2434dda9bb35c95c207fca8c794a6",
+      "bytes": 41032,
+      "selector": "#ax-panel-03 details",
+      "offset": 0,
+      "scrollY": 5329,
+      "selectedTab": "ax-tab-03",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 97.0625,
+        "bottom": 444.546875,
+        "width": 1351,
+        "height": 347.484375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/04-chronicle-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-05-closed.webp",
+      "sha256": "f1be4ae9b0f8d875981cc4df694c7019378c475954fe087d6bfc04b5184b716e",
+      "bytes": 76950,
+      "selector": "#ax-panel-05",
+      "offset": 0,
+      "scrollY": 4801,
+      "selectedTab": "ax-tab-05",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.59375,
+        "bottom": 718.84375,
+        "width": 1351,
+        "height": 622.25
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/06-content-library-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-05-open.webp",
+      "sha256": "32ddd6702aff8bec6410c38b2724a906361c100bf91877f5fd82f91bdab27de4",
+      "bytes": 78206,
+      "selector": "#ax-panel-05",
+      "offset": 0,
+      "scrollY": 4801,
+      "selectedTab": "ax-tab-05",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.59375,
+        "bottom": 1017.328125,
+        "width": 1351,
+        "height": 920.734375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/06-content-library-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "1440x900",
+      "path": "chromium/1440x900/work-05-context-1.webp",
+      "sha256": "8dc0f85d39bf6d59d9d8ed0744a0948512742193d9d2975eed8ab9deaf756f95",
+      "bytes": 40338,
+      "selector": "#ax-panel-05 details",
+      "offset": 0,
+      "scrollY": 5374,
+      "selectedTab": "ax-tab-05",
+      "node": "02.01 / GLUHAYA STATION",
+      "targetBox": {
+        "top": 96.84375,
+        "bottom": 444.328125,
+        "width": 1351,
+        "height": 347.484375
+      },
+      "stickyChrome": 97,
+      "images": [
+        {
+          "src": "assets/showcase/hq/06-content-library-960w.webp",
+          "complete": true,
+          "width": 792,
+          "height": 445
+        }
+      ]
+    }
+  ],
+  "engines": {
+    "chromium": {
+      "semantics": [
+        {
+          "viewport": "390x844",
+          "headings": [
+            {
+              "level": 1,
+              "text": "KNOWLEDGE.\n          CONTROL.\n          \n            ACCESS.\n            ACCESS.\n            ACCESS.",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "SECURE ACCESS",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "KNOWLEDGE BASE",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "CORE NETWORK",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "BEYOND THE SYSTEM",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "НЕ ОДИН ПРОДУКТ.СВЯЗАННАЯ ЭКОСИСТЕМА.",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "МИР И КОНТЕНТ",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "ПУБЛИЧНЫЙ ИНТЕРФЕЙС",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "ИНТЕЛЛЕКТ И СВЯЗИ",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "СОБСТВЕННАЯ РАЗРАБОТКА",
+              "section": "about"
+            },
+            {
+              "level": 2,
+              "text": "ЗА МИРОМСТОИТ АВТОР.",
+              "section": "creator"
+            },
+            {
+              "level": 2,
+              "text": "РАБОТА,КОТОРУЮ ВИДНО.",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM PANEL — ACCESS GATE",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "CONTROL STATUS / WATCH_DOG",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "CHRONICLE — MEMORY ORBIT",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "AXCHAT — ECHO AXIOM",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "CONTENT LIBRARY",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "VIKTOR — CHARACTER DOSSIER",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "SIGNAL CENTER",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "MASTER GRAPH",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM WEB CORE",
+              "section": "work"
+            },
+            {
+              "level": 2,
+              "text": "ЧЕТЫРЕ ОПОРЫ.ОДНА СИСТЕМА.",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "WEB CORE",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "AXCHAT",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "MASTER GRAPH",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "AXS / AGENTOPS",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ",
+              "section": "system"
+            },
+            {
+              "level": 2,
+              "text": "WORLD AFTERBLACK SUN.",
+              "section": "world-guide"
+            },
+            {
+              "level": 2,
+              "text": "Когда надеждастала угрозой.",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "До BLACK SUN",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "Разлом",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "Доктрина ампутации",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "Незавершённая история",
+              "section": "manifesto"
+            },
+            {
+              "level": 2,
+              "text": "Жизнь средиосколков.",
+              "section": "modules"
+            },
+            {
+              "level": 3,
+              "text": "Жизнь по допуску",
+              "section": "modules"
+            },
+            {
+              "level": 3,
+              "text": "Память под контролем",
+              "section": "modules"
+            },
+            {
+              "level": 3,
+              "text": "Зависимость от технологий",
+              "section": "modules"
+            },
+            {
+              "level": 2,
+              "text": "Шесть узлов.Один скелет мира.",
+              "section": "world"
+            },
+            {
+              "level": 3,
+              "text": "Под Глухой станцией.",
+              "section": "world"
+            },
+            {
+              "level": 2,
+              "text": "Tracked entities.",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "Viktor Knox",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "Liza Sinclair",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "Seraphine Veyr",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM∅",
+              "section": "chars"
+            },
+            {
+              "level": 2,
+              "text": "Три силы.Разная цена порядка.",
+              "section": "factions"
+            },
+            {
+              "level": 2,
+              "text": "БУДУЩЕЕСТРОИТСЯ ПОЭТАПНО.",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "PUBLIC WEB",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM BUILDER",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "DEVELOPMENT OS",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM GAME",
+              "section": "vision"
+            },
+            {
+              "level": 2,
+              "text": "ДАВАЙТЕСОЗДАВАТЬ.",
+              "section": "collaboration"
+            },
+            {
+              "level": 2,
+              "text": "Хочешь войти?Узлы наблюдают.",
+              "section": ""
+            }
+          ]
+        },
+        {
+          "viewport": "1440x900",
+          "headings": [
+            {
+              "level": 1,
+              "text": "KNOWLEDGE.\n          CONTROL.\n          \n            ACCESS.\n            ACCESS.\n            ACCESS.",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "SECURE ACCESS",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "KNOWLEDGE BASE",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "CORE NETWORK",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "BEYOND THE SYSTEM",
+              "section": "top"
+            },
+            {
+              "level": 2,
+              "text": "НЕ ОДИН ПРОДУКТ.СВЯЗАННАЯ ЭКОСИСТЕМА.",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "МИР И КОНТЕНТ",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "ПУБЛИЧНЫЙ ИНТЕРФЕЙС",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "ИНТЕЛЛЕКТ И СВЯЗИ",
+              "section": "about"
+            },
+            {
+              "level": 3,
+              "text": "СОБСТВЕННАЯ РАЗРАБОТКА",
+              "section": "about"
+            },
+            {
+              "level": 2,
+              "text": "ЗА МИРОМСТОИТ АВТОР.",
+              "section": "creator"
+            },
+            {
+              "level": 2,
+              "text": "РАБОТА,КОТОРУЮ ВИДНО.",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM PANEL — ACCESS GATE",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "CONTROL STATUS / WATCH_DOG",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "CHRONICLE — MEMORY ORBIT",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "AXCHAT — ECHO AXIOM",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "CONTENT LIBRARY",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "VIKTOR — CHARACTER DOSSIER",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "SIGNAL CENTER",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "MASTER GRAPH",
+              "section": "work"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM WEB CORE",
+              "section": "work"
+            },
+            {
+              "level": 2,
+              "text": "ЧЕТЫРЕ ОПОРЫ.ОДНА СИСТЕМА.",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "WEB CORE",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "AXCHAT",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "MASTER GRAPH",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "AXS / AGENTOPS",
+              "section": "system"
+            },
+            {
+              "level": 3,
+              "text": "КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ",
+              "section": "system"
+            },
+            {
+              "level": 2,
+              "text": "WORLD AFTERBLACK SUN.",
+              "section": "world-guide"
+            },
+            {
+              "level": 2,
+              "text": "Когда надеждастала угрозой.",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "До BLACK SUN",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "Разлом",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "Доктрина ампутации",
+              "section": "manifesto"
+            },
+            {
+              "level": 3,
+              "text": "Незавершённая история",
+              "section": "manifesto"
+            },
+            {
+              "level": 2,
+              "text": "Жизнь средиосколков.",
+              "section": "modules"
+            },
+            {
+              "level": 3,
+              "text": "Жизнь по допуску",
+              "section": "modules"
+            },
+            {
+              "level": 3,
+              "text": "Память под контролем",
+              "section": "modules"
+            },
+            {
+              "level": 3,
+              "text": "Зависимость от технологий",
+              "section": "modules"
+            },
+            {
+              "level": 2,
+              "text": "Шесть узлов.Один скелет мира.",
+              "section": "world"
+            },
+            {
+              "level": 3,
+              "text": "Под Глухой станцией.",
+              "section": "world"
+            },
+            {
+              "level": 2,
+              "text": "Tracked entities.",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "Viktor Knox",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "Liza Sinclair",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "Seraphine Veyr",
+              "section": "chars"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM∅",
+              "section": "chars"
+            },
+            {
+              "level": 2,
+              "text": "Три силы.Разная цена порядка.",
+              "section": "factions"
+            },
+            {
+              "level": 2,
+              "text": "БУДУЩЕЕСТРОИТСЯ ПОЭТАПНО.",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "PUBLIC WEB",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM BUILDER",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "DEVELOPMENT OS",
+              "section": "vision"
+            },
+            {
+              "level": 3,
+              "text": "AXIOM GAME",
+              "section": "vision"
+            },
+            {
+              "level": 2,
+              "text": "ДАВАЙТЕСОЗДАВАТЬ.",
+              "section": "collaboration"
+            },
+            {
+              "level": 2,
+              "text": "Хочешь войти?Узлы наблюдают.",
+              "section": ""
+            }
+          ]
+        }
+      ],
+      "dprSamples": [],
+      "version": "149.0.7827.55"
+    }
+  },
+  "protected": {
+    "world": "cfeee9649da3e489a98240c224b95f2e6ee8f0b5eefde695ceb39a55ad932333",
+    "chars": "bbf02df7236bfdfe2315ca51927bd3355730e08cf0761c67f0e382d1bcb17dc0",
+    "mapJs": "3b2550b2e09293868e9e4b0f3b1aec50b76e1bb5a86278127a2fee0e2b47f96a",
+    "screenshots": {
+      "02-panel-login-full.webp": "fb2b345e49735fab998bcb4036a54bd561c98cc7cce8f4e5fe262902dd9440f5",
+      "03-panel-dashboard-full.webp": "d4961b3342fc6b73c5af7b0936f790c0cdb89d95cccdca9aedab84760e51b32e",
+      "04-chronicle-full.webp": "cbeb2f48db6703832b7c49ca052b11e02e8d9e40bffc1362949e35e4297fbe01",
+      "05-axchat-full.webp": "73a9fff9970a436638fbd52d702ee6b272a5c7de1962163b849eb2e2bf183dab",
+      "06-content-library-full.webp": "331e9a7de251bf5bcc842f0790363f47c30ff535be50780ae2e09c7a21bde53d",
+      "07-viktor-dossier-full.webp": "7abcf463e668b1526c0dfde882fe59bbb8a7fffe4370b6ac47b80cad76bd58fc",
+      "08-news-signal-full.webp": "940313acf58feac4ae092c9a737c9de67e3755c2f48d759b942beb81509b95a7",
+      "09-master-graph-full.webp": "01a8be0e741633dfa4b435598b5a9f523002e99fabb14040b24e5affdbb0266b"
+    }
+  },
+  "url": "http://127.0.0.1:33359/",
+  "reference": {
+    "root": "/tmp/axs-0524-w4-before-6b082e5",
+    "sha": "6b082e5f262c09a123748273da42277d3a29a6c2",
+    "manifest": "/tmp/axs-0524-w4-qa/before-matrix1/manifest.json"
+  },
+  "attempts": [
+    {
+      "at": "2026-10-19T17:10:14.895Z",
+      "runnerSha256": "049ba4a6ce736dc5331c299ce7f19712d6ae0657cc24a888b3d544153c3b0cad",
+      "engines": [
+        "chromium"
+      ],
+      "extension": false,
+      "completeSegments": true
+    }
+  ],
+  "completedAt": "2026-10-19T17:10:45.129Z",
+  "completeOverlappingCoverage": false,
+  "captureBytes": 3400824,
+  "summary": {
+    "checks": 148,
+    "failed": 6,
+    "captures": 72
+  }
+}
