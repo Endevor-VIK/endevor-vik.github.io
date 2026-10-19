@@ -1,0 +1,1138 @@
+{
+  "mode": "baseline-only",
+  "pairs": 1,
+  "sources": {
+    "before": {
+      "root": "/tmp/axs-0524-w4-before-6b082e5",
+      "commit": "6b082e5f262c09a123748273da42277d3a29a6c2",
+      "productManifestSha256": "101c240eacd69c193473f40ec4367440eaa096e2ef3b92dad200f99378b39ee0",
+      "files": 190,
+      "sourceBytes": 67900004
+    }
+  },
+  "environment": {
+    "node": "v22.23.1",
+    "lighthouse": "12.8.2",
+    "playwright": "1.61.1",
+    "chromePath": "/home/axiom/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome"
+  },
+  "protocol": {
+    "server": "One ephemeral localhost server; identical URL and gzip text/max-age=600/MIME/404 rules for both arms",
+    "order": "For each pair: mobile BEFORE → AFTER, desktop BEFORE → AFTER; no concurrent browser",
+    "profiles": "Fresh Chrome per observation; Lighthouse default mobile / official desktop config; simulated throttling; default storage reset; first visit/loader enabled",
+    "retention": "At most 3 owned runs / 14 days; 128 MiB per run; 64 KiB per worker log; profiles removed",
+    "claim": "Lab measurements; no field INP/CWV or automatic visual/release acceptance"
+  },
+  "host": {
+    "checkedAt": "2026-10-19T12:35:41.091Z",
+    "freeGiB": 50.52808380126953,
+    "freePercent": 10.612959664783379,
+    "warning": false,
+    "expectedMaximumRunMiB": 128,
+    "source": "Windows Get-Volume C"
+  },
+  "startedAt": "2026-10-19T12:35:41.091Z",
+  "status": "OBSERVED",
+  "runs": [
+    {
+      "pair": 1,
+      "formFactor": "mobile",
+      "arm": "before",
+      "startedAt": "2026-10-19T12:35:41.097Z",
+      "finishedAt": "2026-10-19T12:35:53.442Z",
+      "fullReport": "reports/01-mobile-before.json",
+      "lighthouseVersion": "12.8.2",
+      "chromeUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36",
+      "settings": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "metrics": {
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100,
+        "fcpMs": 1658.8704,
+        "lcpMs": 2564.784,
+        "tbtMs": 0,
+        "cls": 0.016225231433400013,
+        "transferBytes": 340264,
+        "speedIndexMs": 1658.8704
+      },
+      "diagnostics": {
+        "networkRequests": 32,
+        "worldLibraryRequests": 0,
+        "longTasks": {
+          "count": 2,
+          "totalMs": 308.0000000000001,
+          "maxMs": 243.0000000000001,
+          "longest": [
+            {
+              "url": "/",
+              "startTime": 770.9568,
+              "duration": 243.0000000000001
+            },
+            {
+              "url": "/loader.html?target=about:blank&duration=900&auto=false&embedded=1",
+              "startTime": 1355.9136,
+              "duration": 65
+            }
+          ]
+        },
+        "largestTransfers": [
+          {
+            "url": "/assets/showcase/visual-library/hq/A02_network_city_panorama-960w.webp",
+            "transferSize": 97599,
+            "resourceSize": 97392,
+            "statusCode": 200,
+            "resourceType": "Image"
+          },
+          {
+            "url": "/assets/fonts/golos-text-latin-var.woff2",
+            "transferSize": 38114,
+            "resourceSize": 37916,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/",
+            "transferSize": 36806,
+            "resourceSize": 152052,
+            "statusCode": 200,
+            "resourceType": "Document"
+          },
+          {
+            "url": "/assets/fonts/jetbrains-mono-latin-var.woff2",
+            "transferSize": 31630,
+            "resourceSize": 31432,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/assets/fonts/golos-text-cyrillic-var.woff2",
+            "transferSize": 22230,
+            "resourceSize": 22032,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/assets/fonts/oswald-latin-var.woff2",
+            "transferSize": 21670,
+            "resourceSize": 21472,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/assets/css/index.css",
+            "transferSize": 16276,
+            "resourceSize": 73792,
+            "statusCode": 200,
+            "resourceType": "Stylesheet"
+          },
+          {
+            "url": "/assets/css/showcase-v23.css",
+            "transferSize": 12768,
+            "resourceSize": 48409,
+            "statusCode": 200,
+            "resourceType": "Stylesheet"
+          },
+          {
+            "url": "/assets/fonts/oswald-cyrillic-var.woff2",
+            "transferSize": 11946,
+            "resourceSize": 11748,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/loader.html?target=about:blank&duration=900&auto=false&embedded=1",
+            "transferSize": 9513,
+            "resourceSize": 29794,
+            "statusCode": 200,
+            "resourceType": "Document"
+          },
+          {
+            "url": "/assets/fonts/jetbrains-mono-cyrillic-var.woff2",
+            "transferSize": 9070,
+            "resourceSize": 8872,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/assets/fonts/jetbrains-mono-greek-var.woff2",
+            "transferSize": 7034,
+            "resourceSize": 6836,
+            "statusCode": 200,
+            "resourceType": "Font"
+          }
+        ],
+        "mainThread": [
+          {
+            "group": "styleLayout",
+            "duration": 1886.0559999999814
+          },
+          {
+            "group": "other",
+            "duration": 1167.803999999959
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 442.2360000000212
+          },
+          {
+            "group": "scriptEvaluation",
+            "duration": 132.10799999999998
+          },
+          {
+            "group": "parseHTML",
+            "duration": 38.575999999999986
+          },
+          {
+            "group": "garbageCollection",
+            "duration": 18.54799999999995
+          },
+          {
+            "group": "scriptParseCompile",
+            "duration": 8.167999999999997
+          }
+        ],
+        "renderBlocking": [
+          {
+            "url": "/assets/css/fonts.css",
+            "totalBytes": 997,
+            "wastedMs": 153
+          },
+          {
+            "url": "/assets/css/showcase-v22.css",
+            "totalBytes": 2499,
+            "wastedMs": 303
+          },
+          {
+            "url": "/assets/css/showcase.css",
+            "totalBytes": 4262,
+            "wastedMs": 303
+          },
+          {
+            "url": "/assets/css/index.css",
+            "totalBytes": 16276,
+            "wastedMs": 603
+          },
+          {
+            "url": "/assets/css/showcase-v23.css",
+            "totalBytes": 12768,
+            "wastedMs": 603
+          }
+        ],
+        "lcpElement": "<div class=\"show-hero-byline\">"
+      },
+      "serverRequests": {
+        "index.html": {
+          "requests": 1,
+          "bodyBytes": 36519,
+          "gzip": true
+        },
+        "assets/css/fonts.css": {
+          "requests": 1,
+          "bodyBytes": 735,
+          "gzip": true
+        },
+        "assets/css/index.css": {
+          "requests": 1,
+          "bodyBytes": 16013,
+          "gzip": true
+        },
+        "assets/css/showcase.css": {
+          "requests": 1,
+          "bodyBytes": 4000,
+          "gzip": true
+        },
+        "assets/css/showcase-v22.css": {
+          "requests": 1,
+          "bodyBytes": 2237,
+          "gzip": true
+        },
+        "assets/css/showcase-v23.css": {
+          "requests": 1,
+          "bodyBytes": 12505,
+          "gzip": true
+        },
+        "assets/js/index.js": {
+          "requests": 1,
+          "bodyBytes": 1791,
+          "gzip": true
+        },
+        "assets/js/showcase-gallery.js": {
+          "requests": 1,
+          "bodyBytes": 2710,
+          "gzip": true
+        },
+        "assets/js/showcase-v22.js": {
+          "requests": 1,
+          "bodyBytes": 1368,
+          "gzip": true
+        },
+        "assets/js/showcase-v23.js": {
+          "requests": 1,
+          "bodyBytes": 5283,
+          "gzip": true
+        },
+        "loader.html": {
+          "requests": 1,
+          "bodyBytes": 9249,
+          "gzip": true
+        },
+        "assets/fonts/jetbrains-mono-latin-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 31432,
+          "gzip": false
+        },
+        "assets/fonts/jetbrains-mono-cyrillic-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 8872,
+          "gzip": false
+        },
+        "assets/fonts/golos-text-latin-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 37916,
+          "gzip": false
+        },
+        "assets/fonts/oswald-latin-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 21472,
+          "gzip": false
+        },
+        "assets/fonts/oswald-cyrillic-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 11748,
+          "gzip": false
+        },
+        "assets/fonts/golos-text-cyrillic-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 22032,
+          "gzip": false
+        },
+        "assets/fonts/jetbrains-mono-greek-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 6836,
+          "gzip": false
+        },
+        "assets/showcase/visual-library/hq/A02_network_city_panorama-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 97392,
+          "gzip": false
+        },
+        "assets/status/gate.json": {
+          "requests": 1,
+          "bodyBytes": 256,
+          "gzip": true
+        },
+        "assets/favicon.ico": {
+          "requests": 1,
+          "bodyBytes": 4286,
+          "gzip": false
+        },
+        "assets/endeavor-mark.svg": {
+          "requests": 1,
+          "bodyBytes": 330,
+          "gzip": true
+        },
+        "assets/endeavor_logo_no_text_no_frame.svg": {
+          "requests": 1,
+          "bodyBytes": 12009,
+          "gzip": true
+        },
+        "assets/showcase/visual-library/hq/A01_public_system_gateway-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 77258,
+          "gzip": false
+        },
+        "assets/showcase/hq/02-panel-login-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 70634,
+          "gzip": false
+        },
+        "assets/showcase/hq/03-panel-dashboard-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 70826,
+          "gzip": false
+        },
+        "assets/showcase/hq/04-chronicle-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 40724,
+          "gzip": false
+        },
+        "assets/showcase/hq/05-axchat-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 62982,
+          "gzip": false
+        },
+        "assets/showcase/hq/06-content-library-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 83248,
+          "gzip": false
+        },
+        "assets/showcase/hq/07-viktor-dossier-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 39814,
+          "gzip": false
+        },
+        "assets/showcase/hq/08-news-signal-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 62666,
+          "gzip": false
+        },
+        "assets/showcase/hq/09-master-graph-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 52780,
+          "gzip": false
+        },
+        "assets/showcase/visual-library/hq/A07_engineering_console-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 135050,
+          "gzip": false
+        },
+        "assets/viktor.webp": {
+          "requests": 1,
+          "bodyBytes": 47722,
+          "gzip": false
+        },
+        "assets/liza.webp": {
+          "requests": 1,
+          "bodyBytes": 114890,
+          "gzip": false
+        },
+        "assets/seraphine.webp": {
+          "requests": 1,
+          "bodyBytes": 62084,
+          "gzip": false
+        },
+        "assets/showcase/visual-library/hq/B04_distant_orbit-1440w.webp": {
+          "requests": 1,
+          "bodyBytes": 100804,
+          "gzip": false
+        },
+        "404.html": {
+          "requests": 1,
+          "bodyBytes": 7005,
+          "gzip": true
+        },
+        "assets/showcase/world-library/web/W01_threshold_bridge-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 70867,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 95804,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W02_memory_spheres-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 92705,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W04_vertical_city-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 88261,
+          "gzip": false
+        },
+        "assets/world/world-spine-map-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 325100,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W03_subterranean_facility-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 118172,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W03_subterranean_facility-1280w.avif": {
+          "requests": 1,
+          "bodyBytes": 185643,
+          "gzip": false
+        }
+      }
+    },
+    {
+      "pair": 1,
+      "formFactor": "desktop",
+      "arm": "before",
+      "startedAt": "2026-10-19T12:35:53.443Z",
+      "finishedAt": "2026-10-19T12:36:16.847Z",
+      "fullReport": "reports/01-desktop-before.json",
+      "lighthouseVersion": "12.8.2",
+      "chromeUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36",
+      "settings": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "metrics": {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100,
+        "fcpMs": 386.71175,
+        "lcpMs": 568.949,
+        "tbtMs": 0,
+        "cls": 0.004504468040835481,
+        "transferBytes": 429991,
+        "speedIndexMs": 1293.8049403477664
+      },
+      "diagnostics": {
+        "networkRequests": 34,
+        "worldLibraryRequests": 0,
+        "longTasks": {
+          "count": 1,
+          "totalMs": 66.99999999999997,
+          "maxMs": 66.99999999999997,
+          "longest": [
+            {
+              "url": "/",
+              "startTime": 207.23725,
+              "duration": 66.99999999999997
+            }
+          ]
+        },
+        "largestTransfers": [
+          {
+            "url": "/assets/showcase/visual-library/hq/A02_network_city_panorama-960w.webp",
+            "transferSize": 97599,
+            "resourceSize": 97392,
+            "statusCode": 200,
+            "resourceType": "Image"
+          },
+          {
+            "url": "/assets/showcase/visual-library/hq/A01_public_system_gateway-960w.webp",
+            "transferSize": 77465,
+            "resourceSize": 77258,
+            "statusCode": 200,
+            "resourceType": "Image"
+          },
+          {
+            "url": "/assets/fonts/golos-text-latin-var.woff2",
+            "transferSize": 38114,
+            "resourceSize": 37916,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/",
+            "transferSize": 36806,
+            "resourceSize": 152052,
+            "statusCode": 200,
+            "resourceType": "Document"
+          },
+          {
+            "url": "/assets/fonts/jetbrains-mono-latin-var.woff2",
+            "transferSize": 31630,
+            "resourceSize": 31432,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/assets/fonts/golos-text-cyrillic-var.woff2",
+            "transferSize": 22230,
+            "resourceSize": 22032,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/assets/fonts/oswald-latin-var.woff2",
+            "transferSize": 21670,
+            "resourceSize": 21472,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/assets/css/index.css",
+            "transferSize": 16276,
+            "resourceSize": 73792,
+            "statusCode": 200,
+            "resourceType": "Stylesheet"
+          },
+          {
+            "url": "/assets/css/showcase-v23.css",
+            "transferSize": 12768,
+            "resourceSize": 48409,
+            "statusCode": 200,
+            "resourceType": "Stylesheet"
+          },
+          {
+            "url": "/assets/endeavor_logo_no_text_no_frame.svg",
+            "transferSize": 12262,
+            "resourceSize": 46898,
+            "statusCode": 200,
+            "resourceType": "Image"
+          },
+          {
+            "url": "/assets/fonts/oswald-cyrillic-var.woff2",
+            "transferSize": 11946,
+            "resourceSize": 11748,
+            "statusCode": 200,
+            "resourceType": "Font"
+          },
+          {
+            "url": "/loader.html?target=about:blank&duration=900&auto=false&embedded=1",
+            "transferSize": 9513,
+            "resourceSize": 29794,
+            "statusCode": 200,
+            "resourceType": "Document"
+          }
+        ],
+        "mainThread": [
+          {
+            "group": "styleLayout",
+            "duration": 294.61599999999834
+          },
+          {
+            "group": "other",
+            "duration": 208.0700000000049
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 84.27400000000031
+          },
+          {
+            "group": "scriptEvaluation",
+            "duration": 28.471000000000043
+          },
+          {
+            "group": "parseHTML",
+            "duration": 9.857999999999997
+          },
+          {
+            "group": "garbageCollection",
+            "duration": 4.498999999999991
+          },
+          {
+            "group": "scriptParseCompile",
+            "duration": 2.2299999999999995
+          }
+        ],
+        "renderBlocking": [
+          {
+            "url": "/assets/css/showcase.css",
+            "totalBytes": 4262,
+            "wastedMs": 82
+          },
+          {
+            "url": "/assets/css/showcase-v23.css",
+            "totalBytes": 12768,
+            "wastedMs": 122
+          },
+          {
+            "url": "/assets/css/showcase-v22.css",
+            "totalBytes": 2499,
+            "wastedMs": 82
+          },
+          {
+            "url": "/assets/css/index.css",
+            "totalBytes": 16276,
+            "wastedMs": 122
+          }
+        ],
+        "lcpElement": "<text x=\"118\" y=\"230\" fill=\"#ff2034\" opacity=\".55\" font-family=\"JetBrains Mono\" font-size=\"10\" letter-spacing=\"2\">"
+      },
+      "serverRequests": {
+        "index.html": {
+          "requests": 1,
+          "bodyBytes": 36519,
+          "gzip": true
+        },
+        "assets/css/fonts.css": {
+          "requests": 1,
+          "bodyBytes": 735,
+          "gzip": true
+        },
+        "assets/css/index.css": {
+          "requests": 1,
+          "bodyBytes": 16013,
+          "gzip": true
+        },
+        "assets/css/showcase.css": {
+          "requests": 1,
+          "bodyBytes": 4000,
+          "gzip": true
+        },
+        "assets/css/showcase-v22.css": {
+          "requests": 1,
+          "bodyBytes": 2237,
+          "gzip": true
+        },
+        "assets/css/showcase-v23.css": {
+          "requests": 1,
+          "bodyBytes": 12505,
+          "gzip": true
+        },
+        "assets/js/index.js": {
+          "requests": 1,
+          "bodyBytes": 1791,
+          "gzip": true
+        },
+        "assets/js/showcase-gallery.js": {
+          "requests": 1,
+          "bodyBytes": 2710,
+          "gzip": true
+        },
+        "assets/js/showcase-v22.js": {
+          "requests": 1,
+          "bodyBytes": 1368,
+          "gzip": true
+        },
+        "assets/js/showcase-v23.js": {
+          "requests": 1,
+          "bodyBytes": 5283,
+          "gzip": true
+        },
+        "loader.html": {
+          "requests": 1,
+          "bodyBytes": 9249,
+          "gzip": true
+        },
+        "assets/fonts/jetbrains-mono-latin-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 31432,
+          "gzip": false
+        },
+        "assets/fonts/jetbrains-mono-cyrillic-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 8872,
+          "gzip": false
+        },
+        "assets/fonts/golos-text-latin-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 37916,
+          "gzip": false
+        },
+        "assets/fonts/oswald-latin-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 21472,
+          "gzip": false
+        },
+        "assets/fonts/oswald-cyrillic-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 11748,
+          "gzip": false
+        },
+        "assets/fonts/golos-text-cyrillic-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 22032,
+          "gzip": false
+        },
+        "assets/fonts/jetbrains-mono-greek-var.woff2": {
+          "requests": 1,
+          "bodyBytes": 6836,
+          "gzip": false
+        },
+        "assets/showcase/visual-library/hq/A02_network_city_panorama-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 97392,
+          "gzip": false
+        },
+        "assets/endeavor_logo_no_text_no_frame.svg": {
+          "requests": 1,
+          "bodyBytes": 12009,
+          "gzip": true
+        },
+        "assets/showcase/visual-library/hq/A01_public_system_gateway-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 77258,
+          "gzip": false
+        },
+        "assets/status/gate.json": {
+          "requests": 1,
+          "bodyBytes": 256,
+          "gzip": true
+        },
+        "assets/favicon.ico": {
+          "requests": 1,
+          "bodyBytes": 4286,
+          "gzip": false
+        },
+        "assets/endeavor-mark.svg": {
+          "requests": 1,
+          "bodyBytes": 330,
+          "gzip": true
+        },
+        "assets/showcase/hq/02-panel-login-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 70634,
+          "gzip": false
+        },
+        "assets/showcase/hq/03-panel-dashboard-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 70826,
+          "gzip": false
+        },
+        "assets/showcase/hq/04-chronicle-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 40724,
+          "gzip": false
+        },
+        "assets/showcase/hq/05-axchat-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 62982,
+          "gzip": false
+        },
+        "assets/showcase/hq/06-content-library-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 83248,
+          "gzip": false
+        },
+        "assets/showcase/hq/07-viktor-dossier-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 39814,
+          "gzip": false
+        },
+        "assets/showcase/hq/08-news-signal-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 62666,
+          "gzip": false
+        },
+        "assets/showcase/hq/09-master-graph-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 52780,
+          "gzip": false
+        },
+        "assets/showcase/visual-library/hq/A07_engineering_console-960w.webp": {
+          "requests": 1,
+          "bodyBytes": 135050,
+          "gzip": false
+        },
+        "assets/world/world-spine-map-1440w.webp": {
+          "requests": 1,
+          "bodyBytes": 790310,
+          "gzip": false
+        },
+        "assets/viktor.webp": {
+          "requests": 1,
+          "bodyBytes": 47722,
+          "gzip": false
+        },
+        "assets/liza.webp": {
+          "requests": 1,
+          "bodyBytes": 114890,
+          "gzip": false
+        },
+        "assets/seraphine.webp": {
+          "requests": 1,
+          "bodyBytes": 62084,
+          "gzip": false
+        },
+        "assets/showcase/visual-library/hq/B04_distant_orbit-1440w.webp": {
+          "requests": 1,
+          "bodyBytes": 100804,
+          "gzip": false
+        },
+        "404.html": {
+          "requests": 1,
+          "bodyBytes": 7005,
+          "gzip": true
+        },
+        "assets/showcase/world-library/web/W01_threshold_bridge-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 70867,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 95804,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W02_memory_spheres-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 92705,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W04_vertical_city-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 88261,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W03_subterranean_facility-960w.avif": {
+          "requests": 1,
+          "bodyBytes": 118172,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W01_threshold_bridge-1672w.avif": {
+          "requests": 1,
+          "bodyBytes": 164653,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W06_eclipse_ruins-1280w.avif": {
+          "requests": 1,
+          "bodyBytes": 146208,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W02_memory_spheres-1280w.avif": {
+          "requests": 1,
+          "bodyBytes": 147652,
+          "gzip": false
+        },
+        "assets/showcase/world-library/web/W04_vertical_city-1280w.avif": {
+          "requests": 1,
+          "bodyBytes": 137989,
+          "gzip": false
+        }
+      }
+    }
+  ],
+  "output": "/tmp/axs-0524-w4-perf/run-baseline-initial-r2",
+  "url": "http://127.0.0.1:45531/",
+  "finishedAt": "2026-10-19T12:36:16.917Z",
+  "summary": {
+    "mobile": {
+      "before": {
+        "performance": {
+          "n": 1,
+          "median": 96,
+          "min": 96,
+          "max": 96,
+          "standardDeviation": 0
+        },
+        "accessibility": {
+          "n": 1,
+          "median": 100,
+          "min": 100,
+          "max": 100,
+          "standardDeviation": 0
+        },
+        "bestPractices": {
+          "n": 1,
+          "median": 100,
+          "min": 100,
+          "max": 100,
+          "standardDeviation": 0
+        },
+        "seo": {
+          "n": 1,
+          "median": 100,
+          "min": 100,
+          "max": 100,
+          "standardDeviation": 0
+        },
+        "fcpMs": {
+          "n": 1,
+          "median": 1658.8704,
+          "min": 1658.8704,
+          "max": 1658.8704,
+          "standardDeviation": 0
+        },
+        "lcpMs": {
+          "n": 1,
+          "median": 2564.784,
+          "min": 2564.784,
+          "max": 2564.784,
+          "standardDeviation": 0
+        },
+        "tbtMs": {
+          "n": 1,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "standardDeviation": 0
+        },
+        "cls": {
+          "n": 1,
+          "median": 0.016225231433400013,
+          "min": 0.016225231433400013,
+          "max": 0.016225231433400013,
+          "standardDeviation": 0
+        },
+        "transferBytes": {
+          "n": 1,
+          "median": 340264,
+          "min": 340264,
+          "max": 340264,
+          "standardDeviation": 0
+        },
+        "speedIndexMs": {
+          "n": 1,
+          "median": 1658.8704,
+          "min": 1658.8704,
+          "max": 1658.8704,
+          "standardDeviation": 0
+        }
+      }
+    },
+    "desktop": {
+      "before": {
+        "performance": {
+          "n": 1,
+          "median": 99,
+          "min": 99,
+          "max": 99,
+          "standardDeviation": 0
+        },
+        "accessibility": {
+          "n": 1,
+          "median": 100,
+          "min": 100,
+          "max": 100,
+          "standardDeviation": 0
+        },
+        "bestPractices": {
+          "n": 1,
+          "median": 100,
+          "min": 100,
+          "max": 100,
+          "standardDeviation": 0
+        },
+        "seo": {
+          "n": 1,
+          "median": 100,
+          "min": 100,
+          "max": 100,
+          "standardDeviation": 0
+        },
+        "fcpMs": {
+          "n": 1,
+          "median": 386.71175,
+          "min": 386.71175,
+          "max": 386.71175,
+          "standardDeviation": 0
+        },
+        "lcpMs": {
+          "n": 1,
+          "median": 568.949,
+          "min": 568.949,
+          "max": 568.949,
+          "standardDeviation": 0
+        },
+        "tbtMs": {
+          "n": 1,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "standardDeviation": 0
+        },
+        "cls": {
+          "n": 1,
+          "median": 0.004504468040835481,
+          "min": 0.004504468040835481,
+          "max": 0.004504468040835481,
+          "standardDeviation": 0
+        },
+        "transferBytes": {
+          "n": 1,
+          "median": 429991,
+          "min": 429991,
+          "max": 429991,
+          "standardDeviation": 0
+        },
+        "speedIndexMs": {
+          "n": 1,
+          "median": 1293.8049403477664,
+          "min": 1293.8049403477664,
+          "max": 1293.8049403477664,
+          "standardDeviation": 0
+        }
+      }
+    }
+  }
+}

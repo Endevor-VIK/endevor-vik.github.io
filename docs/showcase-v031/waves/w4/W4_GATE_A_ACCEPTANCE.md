@@ -15,10 +15,10 @@ AXS_HEADER_META:
 
 # 0524.W4 — GATE A ACCEPTANCE
 
-**Authority:** PRINCIPAL REVIEWER  
-**Reviewed PR:** #11  
-**Reviewed HEAD:** `af20ff6` (`af20ff6be8909b641070003795ff13ffadc334fd`)  
-**Decision:** APPROVED WITH EDITORIAL CONDITIONS  
+**Authority:** PRINCIPAL REVIEWER
+**Reviewed PR:** #11
+**Reviewed HEAD:** `af20ff6` (`af20ff6be8909b641070003795ff13ffadc334fd`)
+**Decision:** APPROVED WITH EDITORIAL CONDITIONS
 **Next stage:** G2 — Controlled Implementation
 
 G0/G1 принят. Основной сценарий WORLD и модель переноса системных концепций в WORK 02/03/05 утверждены.
