@@ -491,3 +491,25 @@ a.ax-omega-cta:hover,a.ax-omega-cta:focus-visible{background:var(--ax23-red);col
   .ax-omega-title{font-size:clamp(32px,9vw,44px);margin:10px 0 16px}
   .ax-omega-cta{width:100%;justify-content:center;box-sizing:border-box}
 }
+/* S4 · Act V EPILOGUE — W07, the orbit: the world chapter closes, then the bridge and VISION (the real roadmap) */
+.ax-epilogue{position:relative;height:min(64vh,36vw);min-height:340px;display:flex;align-items:center;justify-content:center;text-align:center;background:#000;overflow:hidden;border-top:1px solid #1a1214}
+.ax-epilogue-art{position:absolute;inset:0;max-width:1672px;margin:0 auto}
+.ax-epilogue-art picture,.ax-epilogue-art img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.ax-epilogue-art img{object-fit:cover;object-position:50% 30%}
+.ax-epilogue-art:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 44% 58% at 50% 52%,rgba(0,0,0,.72),rgba(0,0,0,0) 100%),linear-gradient(180deg,#0a0b0f 0%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 74%,#000 100%),linear-gradient(90deg,#000 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#000 100%)}
+.ax-epilogue-copy{position:relative;z-index:1;isolation:isolate;padding:0 24px;max-width:860px}
+.ax-epilogue-copy:before{content:"";position:absolute;z-index:-1;inset:-16% -12% -20% -18%;background:radial-gradient(closest-side,rgba(0,0,0,.92),rgba(0,0,0,.8) 58%,rgba(0,0,0,0));pointer-events:none}
+.ax-epilogue-label{font:700 12px var(--ax23-tech);letter-spacing:.2em;color:var(--ax23-red)}
+.ax-epilogue-line{font:500 clamp(34px,3.8vw,64px)/1.02 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:14px 0}
+.ax-epilogue-sub{font:400 16px/1.6 var(--ax23-body);color:#c9ccd4;margin:0 auto 24px;max-width:40ch}
+.ax-epilogue-cta{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:0 22px;border:1px solid var(--ax23-red);background:rgba(10,0,2,.55);color:#fff;font:700 12px var(--ax23-tech);letter-spacing:.16em;text-decoration:none}
+a.ax-epilogue-cta:hover,a.ax-epilogue-cta:focus-visible{background:var(--ax23-red);color:#fff}
+/* phones: the orbit as a band at its own scale (a tall cover block would draw W07 wider than 1672 px), words below */
+@media(max-width:760px){
+  .ax-epilogue{display:block;height:auto;min-height:0;padding:0 0 44px}
+  .ax-epilogue-art{position:relative;height:62vw}
+  .ax-epilogue-art img{object-position:60% 38%}
+  .ax-epilogue-art:after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.85) 16%,rgba(0,0,0,0) 50%),linear-gradient(180deg,#0a0b0f 0%,rgba(0,0,0,0) 24%)}
+  .ax-epilogue-copy{margin:-26px auto 0;padding:0 14px}
+  .ax-epilogue-copy:before{display:none}
+}
