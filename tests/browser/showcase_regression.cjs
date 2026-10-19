@@ -21,7 +21,7 @@ const { chromium, firefox } = require('playwright');
 const args = process.argv.slice(2);
 const argVal = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const ROOT = path.resolve(__dirname, '..', '..');
-const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'application/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.ico': 'image/x-icon', '.json': 'application/json', '.woff2': 'font/woff2', '.txt': 'text/plain' };
+const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'application/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.avif': 'image/avif', '.png': 'image/png', '.ico': 'image/x-icon', '.json': 'application/json', '.woff2': 'font/woff2', '.txt': 'text/plain' };
 
 function serveRepo() {
   return new Promise((resolve) => {
@@ -664,6 +664,119 @@ async function run(engineName, base) {
       // control: by default the radar does loop (so the two still cases are not vacuous)
       const ok = name === 'default' ? heldAtLoad === 0 && st.runningInfiniteCss > 0 && !st.lite : st.smil === 0 && st.runningInfiniteCss === 0 && (name !== 'lite' || st.lite);
       record(`R-W3A-08-radar-${name === 'default' ? 'held-then-loops' : 'still-' + name}`, engineName, ok, { heldAtLoad, ...st });
+      await ctx.close();
+    }
+    // ===== 0524 W3.C — CREATOR-approved Variant A + OMEGA-0 (docs/showcase-v031/waves/W3C_IMPLEMENTATION_SPEC.md) =====
+    const chromeBottom = () => [...document.querySelectorAll('header.top,.show-mobile-nav')].filter((e) => getComputedStyle(e).position === 'sticky' && getComputedStyle(e).display !== 'none' && e.getBoundingClientRect().top <= 1).reduce((m, e) => Math.max(m, e.getBoundingClientRect().bottom), 0);
+    const imgReady = (p, sel) => p.waitForFunction((s) => { const i = document.querySelector(s); return i && i.complete && i.naturalWidth > 0 && !!i.currentSrc; }, sel, { timeout: 15000 }).catch(() => {});
+    // R-W3C-01 structure: section order and anchors kept; the five acts are where the spec puts them
+    {
+      const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
+      await p.goto(base, { waitUntil: 'load' });
+      const st = await p.evaluate(() => {
+        const order = [...document.querySelectorAll('section[id], .axiom-entity')].map((e) => e.id || 'axiom-entity');
+        const wg = document.getElementById('world-guide'); const world = document.getElementById('world'); const omega = document.querySelector('.ax-omega');
+        const epi = document.querySelector('.ax-epilogue'); const vision = document.getElementById('vision');
+        const after = (a, b) => !!(a && b && (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING));
+        return {
+          order: order.join(' '),
+          threshold: !!wg.querySelector('.ax-world-scene img[src*="W01_threshold_bridge"]') && wg.querySelector('h2#v22-world-title') !== null && !!document.getElementById('world-entry'),
+          trail: [...wg.querySelectorAll('.ax-world-trail a')].map((a) => a.getAttribute('href')).join(' '),
+          key: !!wg.querySelector('details.ax-world-key .v22-lore-glossary') && !!wg.querySelector('details.ax-world-key .show-lore-link') && !document.querySelector('#system .show-lore-link'),
+          plates: ['manifesto', 'modules', 'world', 'factions'].map((id) => !!document.querySelector(`#${id} > .wrap > .ax-chapter-plate:first-child`)).every(Boolean) && !!document.querySelector('#chars > .wrap > .ax-chapter-line:first-child'),
+          omegaInWorld: !!omega && world.contains(omega) && after(document.querySelector('.v23-map-axes'), omega) && after(omega, document.getElementById('chars')),
+          epilogue: !!epi && epi.nextElementSibling && epi.nextElementSibling.matches('.v22-bridge') && epi.nextElementSibling.nextElementSibling === vision,
+          canonIds: [...document.querySelectorAll('.v23-map-node')].map((b) => b.dataset.canonId).join(),
+        };
+      });
+      const ok = st.order === 'top about creator work system world-guide manifesto modules world chars axiom-entity factions vision collaboration' && st.threshold && st.trail === '#manifesto #modules #world #chars #factions' && st.key && st.plates && st.omegaInWorld && st.epilogue && st.canonIds === '02.01,02.02,02.03,02.04,02.05,02.06';
+      record('R-W3C-01-structure-and-anchors', engineName, ok, st);
+      await ctx.close();
+    }
+    // R-W3C-02 no world-library image is requested while the page opens (everything below the first screen is lazy)
+    for (const [w, h, dpr, mobile] of [[1440, 900, 1, false], [390, 844, 2, true]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, dpr, mobile });
+      await p.goto(base, { waitUntil: 'load' }); await p.waitForTimeout(2500);
+      const lib = p.__requests.filter((u) => /world-library/.test(u)).map((u) => u.split('/').pop());
+      record(`R-W3C-02-library-lazy-at-open-${w}`, engineName, lib.length === 0, { requested: lib });
+      await ctx.close();
+    }
+    // R-W3C-03 menu / swipe-nav jump to WORLD: the title, the mode-change line and «ВОЙТИ В МИР» are whole on screen; W01 is sharp where the source allows
+    for (const [w, h, dpr, mobile] of [[960, 540, 2, false], [1280, 800, 1, false], [1440, 900, 1, false], [1920, 1080, 1, false], [768, 1024, 2, true], [390, 844, 2, true], [390, 844, 3, true], [430, 932, 2, true]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, dpr, mobile });
+      await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready);
+      await p.locator(w > 1080 ? '.menu a[href="#world-guide"]' : '.show-mobile-nav a[href="#world-guide"]').click(); await settle(p); await p.waitForTimeout(200);
+      await imgReady(p, '.ax-world-art img');
+      const g = await p.evaluate((cb) => { const top = eval(cb)(); const box = (s) => { const b = document.querySelector(s).getBoundingClientRect(); return { t: Math.round(b.top), b: Math.round(b.bottom) }; };
+        const r = { chrome: Math.round(top), vh: innerHeight, title: box('#v22-world-title'), promise: box('.ax-world-promise'), cta: box('.ax-world-cta'), overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth };
+        r.whole = ['title', 'promise', 'cta'].every((k) => r[k].t >= r.chrome - 1 && r[k].b <= r.vh + 1); return r; }, chromeBottom.toString());
+      const sh = await p.evaluate(SHARPNESS, '.ax-world-art img');
+      record(`R-W3C-03-threshold-after-jump-${w}@${dpr}`, engineName, g.whole && !g.overflow && sh.ratio >= 0.95, { ...g, sharp: sh });
+      await ctx.close();
+    }
+    // R-W3C-04 «УЗНАТЬ О МЕСТЕ НА КАРТЕ» returns to the real 02.05 card (pointer and keyboard): selected, described, focused; no JS → the map panel
+    for (const how of ['click', 'keyboard']) {
+      const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
+      await p.goto(base, { waitUntil: 'load' });
+      await toEl(p, '.ax-omega', 200); await p.waitForTimeout(300);
+      if (how === 'keyboard') { await p.locator('.ax-omega-cta').focus(); await p.keyboard.press('Enter'); } else await p.locator('.ax-omega-cta').click();
+      await settle(p); await p.waitForTimeout(200);
+      const st = await p.evaluate((cb) => { const n = document.querySelector('.v23-map-node[data-canon-id="02.05"]'); const b = n.getBoundingClientRect(); return { id: document.getElementById('v23-map-id').textContent, pressed: n.getAttribute('aria-pressed'), focused: document.activeElement === n, inView: b.top >= eval(cb)() - 1 && b.bottom <= innerHeight, hash: location.hash }; }, chromeBottom.toString());
+      record(`R-W3C-04-omega-return-to-02.05-${how}`, engineName, st.id === '02.05 / LABORATORY OMEGA-0' && st.pressed === 'true' && st.focused && st.inView, st);
+      await ctx.close();
+    }
+    {
+      const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900, js: false });
+      await p.goto(base, { waitUntil: 'load' });
+      const href = await p.evaluate(() => { const a = document.querySelector('.ax-omega-cta'); return { href: a.getAttribute('href'), target: !!document.getElementById(a.getAttribute('href').slice(1)) }; });
+      record('R-W3C-04-omega-return-no-js', engineName, href.href === '#v23-map-detail' && href.target, href);
+      await ctx.close();
+    }
+    // R-W3C-05 the descent is an enhancement: with motion it opens once in view; with reduced motion, on a weak device and without JS the scene is simply visible
+    for (const [name, opts] of [['motion', {}], ['reduced', { reduced: true }], ['lite', { init: () => { Object.defineProperty(navigator, 'deviceMemory', { get: () => 2 }); } }], ['no-js', { js: false }]]) {
+      const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900, ...opts });
+      await p.goto(base, { waitUntil: 'load' }); await p.waitForTimeout(300);
+      const armedAtLoad = await p.evaluate(() => document.querySelector('.ax-omega').classList.contains('ax-omega--armed'));
+      await toEl(p, '.ax-omega', 120); await p.waitForTimeout(2400);
+      const st = await p.evaluate(() => { const sc = document.querySelector('.ax-omega'); const img = sc.querySelector('.ax-omega-stage img'); const cs = getComputedStyle(img); return { armed: sc.classList.contains('ax-omega--armed'), open: sc.classList.contains('is-open'), clip: cs.clipPath, visible: img.getBoundingClientRect().height > 100 && cs.visibility !== 'hidden' && +cs.opacity > 0.9 }; });
+      const ok = name === 'motion' ? armedAtLoad && st.open && /inset\(0(px)?( 0(px)?){0,3}\)|none/.test(st.clip) && st.visible : !st.armed && (st.clip === 'none' || st.clip === '') && st.visible;
+      record(`R-W3C-05-omega-descent-${name}`, engineName, ok, { armedAtLoad, ...st });
+      await ctx.close();
+    }
+    // R-W3C-06 W03 is never upscaled: ≥ 1:1 on DPR 2 desktops and on phones (inset ≤ 820 css px; 5:4 on phones)
+    for (const [w, h, dpr, mobile] of [[1440, 900, 2, false], [1920, 1080, 2, false], [1024, 768, 2, false], [390, 844, 3, true], [430, 932, 3, true]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, dpr, mobile });
+      await p.goto(base, { waitUntil: 'load' });
+      await toEl(p, '.ax-omega-stage', 120); await imgReady(p, '.ax-omega-stage img'); await p.waitForTimeout(300);
+      const sh = await p.evaluate(SHARPNESS, '.ax-omega-stage img');
+      const box = await p.evaluate(() => { const b = document.querySelector('.ax-omega-stage').getBoundingClientRect(); return { w: Math.round(b.width), ratio: +(b.width / b.height).toFixed(2) }; });
+      record(`R-W3C-06-w03-sharp-${w}@${dpr}`, engineName, sh.ratio >= 0.95 && box.w <= 821 && (!mobile || Math.abs(box.ratio - 1.25) < 0.02), { ...sh, box });
+      await ctx.close();
+    }
+    // R-W3C-07 «ВОЙТИ В МИР» lands on the statement under the sticky chrome; «КАК МИР БУДЕТ РАЗВИВАТЬСЯ» lands on the VISION bridge (F-06)
+    for (const [w, h, mobile] of [[1440, 900, false], [390, 844, true]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, mobile });
+      await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready);
+      await toEl(p, '.ax-world-cta', 300); await p.waitForTimeout(300);
+      await p.locator('.ax-world-cta').click(); await settle(p); await p.waitForTimeout(150);
+      const a = await p.evaluate((cb) => { const t = document.getElementById('world-entry').getBoundingClientRect(); return { top: Math.round(t.top), chrome: Math.round(eval(cb)()) }; }, chromeBottom.toString());
+      await toEl(p, '.ax-epilogue-cta', 400); await p.waitForTimeout(300);
+      await p.locator('.ax-epilogue-cta').click(); await settle(p); await p.waitForTimeout(150);
+      const v = await p.evaluate((cb) => { const b = document.getElementById('vision').previousElementSibling.getBoundingClientRect(); return { bridgeTop: Math.round(b.top), bridgeBottom: Math.round(b.bottom), chrome: Math.round(eval(cb)()), current: [...document.querySelectorAll('[aria-current="location"]')].map((x) => x.getAttribute('href')) }; }, chromeBottom.toString());
+      record(`R-W3C-07-world-ctas-land-${w}`, engineName, a.top >= a.chrome - 2 && a.top - a.chrome <= 40 && v.bridgeTop >= v.chrome - 1 && v.bridgeTop - v.chrome <= 16 && v.current.every((c) => c === '#vision') && v.current.length > 0, { entry: a, vision: v });
+      await ctx.close();
+    }
+    // R-W3C-08 words in the new WORLD scenes are ≥ 12 px (decor: aria-hidden approach rail and bridge)
+    for (const [w, h, mobile] of [[390, 844, true], [1440, 900, false]]) {
+      const { ctx, p } = await page(browser, engineName, { w, h, mobile });
+      await p.goto(base, { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready);
+      const small = await p.evaluate(() => { const out = [];
+        for (const z of document.querySelectorAll('.ax-world-scene,.ax-world-establish,.ax-world-trail-head,.ax-world-trail,.ax-world-key>summary,.ax-chapter-plate,.ax-chapter-line,.ax-omega,.ax-epilogue')) { const wk = document.createTreeWalker(z, NodeFilter.SHOW_TEXT);
+          for (let n; (n = wk.nextNode());) { if (!n.data.trim()) continue; const el = n.parentElement; const cs = getComputedStyle(el);
+            if (cs.display === 'none' || !el.getClientRects().length || el.closest('[aria-hidden="true"]')) continue;
+            if (parseFloat(cs.fontSize) < 12) out.push(`${cs.fontSize} ${n.data.trim().slice(0, 24)}`); } }
+        return out; });
+      record(`R-W3C-08-type-floor-${w}`, engineName, small.length === 0, small.slice(0, 6));
       await ctx.close();
     }
   } finally {
