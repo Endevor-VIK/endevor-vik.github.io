@@ -407,3 +407,46 @@ p.ax-gate-note{font-size:12px}
   .ax-world-cta{width:100%;justify-content:center;box-sizing:border-box}
   .ax-world-establish{padding:44px 0 26px}
 }
+/* S2 · Act II WORLD FEELING — the existing lead split into a line to feel and a line to read; five chapters instead of a second link row */
+.show-section p.ax-world-statement{font:500 clamp(28px,2.7vw,46px)/1.1 var(--ax-font-display);text-transform:uppercase;color:#ebebed;margin:0 0 20px;letter-spacing:.005em;max-width:30ch}
+.ax-world-statement em{font-style:normal;color:var(--ax23-red)}
+@media(min-width:761px){.ax-world-establish{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(28px,5vw,96px);align-items:end}.show-section p.ax-world-statement{margin:0}.ax-world-establish .show-lead{font-size:16px;line-height:1.75}}
+.ax-world-trail-head{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--ax23-crimson);padding-top:11px;font:700 12px var(--ax23-tech);letter-spacing:.16em;color:#8f94a0}
+.ax-world-trail-head span:first-child{color:var(--ax23-red)}
+.ax-world-trail{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr)}
+.ax-world-trail li+li{border-left:1px solid #241a1c}
+.ax-world-trail a{display:block;height:100%;padding:22px 18px 24px;color:#ebebed;text-decoration:none;box-sizing:border-box}
+.ax-world-trail a:hover b,.ax-world-trail a:focus-visible b{color:var(--ax23-red)}
+.ax-world-trail span{display:block;font:700 12px var(--ax23-tech);color:var(--ax23-red);letter-spacing:.16em}
+.ax-world-trail b{display:block;font:500 clamp(18px,1.45vw,25px)/1.12 var(--ax-font-display);margin:10px 0;text-transform:uppercase;letter-spacing:.02em}
+.ax-world-trail small{font:700 12px var(--ax23-tech);color:#9a9ea9;letter-spacing:.1em}
+/* chapter plates: one establishing shot per chapter (W06 cropped below its eclipse, W02, W04, W08); chapter IV is a line — the portraits are the scene */
+.ax-chapter-plate{position:relative;height:clamp(210px,28vh,310px);margin:0 0 34px;overflow:hidden;border:1px solid #241a1c;background:#000}
+.ax-chapter-plate picture,.ax-chapter-plate img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.ax-chapter-plate img{object-fit:cover}
+.ax-chapter-plate--w06 img{object-position:50% 60%}
+.ax-chapter-plate--w02 img{object-position:50% 15%}
+.ax-chapter-plate--w04 img{object-position:50% 35%}
+.ax-chapter-plate--w08 img{object-position:50% 25%}
+.ax-chapter-plate:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.55) 34%,rgba(0,0,0,0) 62%),linear-gradient(0deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 45%)}
+.ax-chapter-copy{position:absolute;z-index:1;left:clamp(18px,2.4vw,36px);bottom:clamp(18px,3vh,30px)}
+.ax-chapter-n{display:block;font:700 12px var(--ax23-tech);letter-spacing:.2em;color:var(--ax23-red)}
+.ax-chapter-q{display:block;font:500 clamp(26px,2.6vw,44px)/1.04 var(--ax-font-display);color:#ebebed;text-transform:uppercase;letter-spacing:.02em;margin-top:8px}
+.ax-chapter-line{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 18px;margin:0 0 30px;padding-top:14px;border-top:1px solid var(--ax23-red)}
+.ax-chapter-line .ax-chapter-q{font-size:clamp(20px,1.7vw,28px);margin:0}
+@media(max-width:1100px){.ax-world-trail{grid-template-columns:repeat(3,1fr)}.ax-world-trail li:nth-child(4){border-left:0}.ax-world-trail li:nth-child(n+4){border-top:1px solid #241a1c}}
+@media(max-width:760px){
+  .show-section p.ax-world-statement{font-size:clamp(25px,7vw,32px)}
+  .ax-world-trail-head span:last-child{display:none}
+  .ax-world-trail{grid-template-columns:1fr}
+  .ax-world-trail li+li,.ax-world-trail li:nth-child(n+4){border-left:0;border-top:1px solid #241a1c}
+  .ax-world-trail a{display:grid;grid-template-columns:34px 1fr auto;align-items:baseline;gap:10px;padding:14px 2px;min-height:52px}
+  .ax-world-trail b{margin:0;font-size:20px}
+  .ax-chapter-plate{height:42vw;min-height:150px;margin-bottom:24px}
+  .ax-chapter-plate:after{background:linear-gradient(0deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.78) 48%,rgba(0,0,0,0) 86%)}
+  .ax-chapter-plate--w06 img{object-position:50% 100%}
+  .ax-chapter-plate--w02 img{object-position:50% 10%}
+  .ax-chapter-plate--w04 img{object-position:50% 30%}
+  .ax-chapter-plate--w08 img{object-position:50% 20%}
+  .ax-chapter-q{font-size:clamp(22px,6.4vw,28px)}
+}
