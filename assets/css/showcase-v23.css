@@ -514,3 +514,40 @@ a.ax-epilogue-cta:hover,a.ax-epilogue-cta:focus-visible{background:var(--ax23-re
   .ax-epilogue-copy{margin:-26px auto 0;padding:0 14px}
   .ax-epilogue-copy:before{display:none}
 }
+
+/* 0524.W4 S1: Gate A four-beat narrative; the W01 scene/art and all protected styles stay intact. */
+.ax-world-establish.ax-world-establish--narrative{display:block}
+.ax-world-establish--narrative .show-lead{max-width:72ch;font:400 clamp(16px,1.3vw,19px)/1.8 var(--ax-font-body);color:var(--ax-text)}
+#manifesto.ax-history .sec-head{margin-bottom:40px}
+.ax-history-preamble{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,88px);margin-bottom:44px}
+#manifesto .ax-history-beat h3{margin:0 0 16px;font:500 clamp(23px,2vw,30px)/1.18 var(--ax-font-display);text-transform:uppercase;letter-spacing:.025em;color:var(--ax-ink)}
+#manifesto .ax-history-beat>p{margin:0;max-width:66ch;font:400 17px/1.8 var(--ax-font-body);color:var(--ax-text)}
+#manifesto .ax-history-archive{margin:0 0 22px}
+#manifesto .doctrine-bar{margin:0 0 16px;flex-wrap:wrap;gap:12px;font-size:11px;line-height:1.6;letter-spacing:.1em;color:var(--ax-text)}
+#manifesto .ax-archive-channel{margin-left:auto;color:var(--ax-crimson)}
+#manifesto .doctrine-stage{grid-template-columns:160px minmax(0,1fr);margin:0 0 16px}
+#manifesto .doctrine-side{background:#0c0c0e;justify-content:center}
+#manifesto .doctrine-side .lab{color:var(--ax-text-dim)}
+#manifesto .doctrine-quote{background:radial-gradient(ellipse at 40% 0,rgba(255,32,52,.08),transparent 70%),#0c0c0e}
+#manifesto .term-head{padding:13px 20px;flex-wrap:wrap;gap:10px;font-size:11px;letter-spacing:.1em}
+#manifesto .ql{padding:28px 32px 32px;font-size:clamp(26px,2.6vw,42px);line-height:1.22}
+#manifesto .ql .line{opacity:1;transform:none;animation:none}
+#manifesto .seal,#manifesto .term-head .dot{animation:none}
+#manifesto .ax-archive-attribution{max-width:85ch;font:400 14px/1.7 var(--ax-font-body);color:var(--ax-text-dim)}
+#manifesto .ax-history-context{max-width:80ch}
+#manifesto .ax-history-question{margin-top:40px;padding:26px 0 0 26px;border-top:1px solid var(--ax-hairline);border-left:2px solid var(--ax-crimson)}
+#manifesto .ax-history-question>p{max-width:66ch;color:var(--ax-ink-2)}
+@media(max-width:760px){
+ .ax-history-preamble{grid-template-columns:1fr;gap:28px;margin-bottom:32px}
+ #manifesto.ax-history .sec-head{margin-bottom:30px}
+ #manifesto .ax-history-beat>p{font-size:16px;line-height:1.8}
+ #manifesto .doctrine-stage{display:grid;grid-template-columns:1fr;gap:12px}
+ #manifesto .doctrine-quote{order:0}
+ #manifesto .doctrine-side{display:flex;flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:8px 16px;padding:12px 16px}
+ #manifesto .doctrine-side .big{font-size:16px}
+ #manifesto .doctrine-side .stamp{margin:0;padding:0;border:0}
+ #manifesto .doctrine-side .stamp b{display:inline;margin-left:8px}
+ #manifesto .ql{padding:22px 18px 26px}
+ #manifesto .ax-archive-channel{display:none}
+ #manifesto .ax-history-question{margin-top:30px;padding-left:18px}
+}

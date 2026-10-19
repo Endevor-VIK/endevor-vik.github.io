@@ -69,7 +69,8 @@ if re.search(r'alt="[^"]*(остров|мост)', index): errors.append('Map al
 # W2.R: CREATOR decisions D-01…D-17 and the gate flag TTL (D-15: at most 14 days from the observation)
 ids = re.findall(r'data-canon-id="([0-9.]+)"', index)
 if ids != ['02.01', '02.02', '02.03', '02.04', '02.05', '02.06']: errors.append(f'WORLD canon IDs/order wrong: {ids}')
-for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', '// signed: NEXARCH<', 'AXIS / AETERNUM', 'STORY ARCHIVE', 'PUBLISHED</span>', 'NEURO-CONTROL CONGLOMERATE', 'совместные разработки с ENDEAVOR'):
+# W4 Gate A R1 supersedes the simulated NEXARCH signature: the archive is visibly authored reconstruction.
+for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', 'NEXARCH · АВТОРСКАЯ РЕКОНСТРУКЦИЯ', 'не является цитатой из канонического документа', 'AXIS / AETERNUM', 'STORY ARCHIVE', 'PUBLISHED</span>', 'NEURO-CONTROL CONGLOMERATE', 'совместные разработки с ENDEAVOR'):
     if needle not in index: errors.append(f'W2.R content missing: {needle}')
 for needle in ('TIER 9', 'tier 9', 'T9 ::', 'TIER<b>9', 'WITNESSES', 'NODE<b>VOIDLINK', 'ARTIFICIAL PERSONALITY', '06 CHAPTERS', 'AXIS / DEPTH', 'depth axis', 'BLACK ECHO — не источник', 'STATE<br/><b>NEUTRAL'):
     if needle in index: errors.append(f'W2.R content regressed: {needle}')
