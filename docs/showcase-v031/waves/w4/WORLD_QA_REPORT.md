@@ -29,7 +29,7 @@ Baseline `6b082e5f262c09a123748273da42277d3a29a6c2`, isolated worktree `0524-w4-
 | `python3 tests/smoke_showcase.py` | PASS / SOURCE STRUCTURE | Только статическая структура/ссылки/assets |
 | `python3 tests/smoke_showcase_v23.py` | SOURCE PASS: 13 named sections, 8 screens, 6 map nodes, 4 flow controls | Не проверяет браузерную раскладку/keyboard/latency |
 | Три независимых read-only research scope | Inventory, Canon sources, WORK/SYSTEM overlap получены и сверены Lead | Не Principal acceptance, не user study |
-| Docs scope, links, directive integrity, protected hashes | Проверить/зафиксировать в delivery trace | Доказательство только docs-only scope, не будущей G2 визуальной сохранности |
+| Docs scope, links, directive integrity, protected hashes | PASS на `6e165e4`: только docs, 27 relative links / 0 missing; 8 screenshot hashes; 9 originals совпадают с manifest | Доказательство только docs-only scope, не будущей G2 визуальной сохранности |
 
 Полные точные команды лёгких проверок и их вывод сохраняются в `G0_VALIDATION.txt` рядом с отчётом. Delivery commit указан в handoff и remote Draft PR. Ветка W4 не запускает live checkout/server `:8787` или `prod-starter-rs`; browser/server processes не создавались.
 
@@ -91,18 +91,31 @@ NODE_PATH=<existing-playwright-node_modules> node tests/browser/showcase_regress
 
 | Item | Статус / owner |
 | --- | --- |
-| G0/G1 consistency recheck | Перед delivery — отдельный read-only reviewer; его findings/исправления фиксируются ниже |
+| G0/G1 consistency recheck | PASS на `6e165e452adb7fe2430b855a10e98792acb86817`; отдельный read-only reviewer, record ниже |
 | G4 code/visual/Canon recheck | NOT RUN, после G2/G3; reviewer не автор runtime patch |
 | Gate A | PENDING CREATOR / Principal — обязательная остановка до существенной реализации по директиве §10 |
 | Protected III/IV labels | HOLD до отдельного explicit разрешения; основной G2 может оставить их исходными |
 | NEURA lifecycle и полная идеология | Canon/source debt; в предложенном тексте нет решения противоречия, подробной новой идеологии |
 | Retina master | Existing source limit; истинные ≥3344 px masters нужны для полного high-DPR source ratio |
 | Реальные устройства/Safari/SR | В G3 выполнить доступное, оставшиеся NOT RUN передать на Gate B с конкретным риском |
-| Draft PR | Docs-only предложение для Gate A; не final implementation PR acceptance |
+| Draft PR | [#11](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/11), docs-only предложение для Gate A; не final implementation PR acceptance |
 | Merge/deploy | HOLD; нет автоматического действия по прошлому W3.C approval |
 
 ### G0/G1 reviewer record
 
-PENDING на момент составления. Scope recheck — документы, trace и boundaries; runtime/visual quality не проверяются. Финальный record привязывается к reviewed commit/tree и не считается CREATOR или Principal Gate A.
+| Поле | Запись |
+| --- | --- |
+| Author | Codex Lead; документы G0/G1 |
+| Reviewer | Отдельный read-only subagent `world_inventory`, не автор документов; source recheck — subagent `canon_audit` |
+| Reviewed SHA | `6e165e452adb7fe2430b855a10e98792acb86817` |
+| Review scope | Директива/authority, сценический сценарий, Canon trace, WORK mapping, preservation/HOLD, QA honesty, ссылки/источники; runtime/visual quality не тестировались |
+| Verdict | **PASS — G0/G1 documentation consistency and scope only**; P0/P1/open correction findings отсутствуют |
+| Fixed findings | Future return сделан возможностью; новый порядок использует только удерживаемый control-layer; NEURA exact «совместные разработки»; AXIOM определён при первом упоминании; C01 дополнен Aeternum source; ложный ID исправлен на `.axiom-entity` |
+| Independent checks | 9 changed files только docs; пустой runtime/assets/tests diff; normalized directive integrity; 27 relative file links / 0 missing; все 9 originals совпадают с manifest |
+| Recovery point | Proposal SHA `6e165e4` запушен в `origin/docs/0524-w4-world-narrative-g0-g1`, Draft PR #11 |
+| Subsequent change | Следующий docs-only trace commit записывает этот review/PR и результат проверки. Сценарий/runtime не меняет; actual delivery HEAD читать через Git/PR |
+| Authority limit | **Не Principal approval, не Gate A, не G4 final acceptance**. Gate A/B остаются у CREATOR/Principal |
+
+Residuals: protected labels III/IV HOLD, NEURA lifecycle/идеология не разрешены, Retina master debt, весь W4 browser/visual/performance G3/G4 NOT RUN. Назначение этого record — доказать независимую проверку reviewable предложения до запроса решения.
 
 **Разделение handoff:** IMPLEMENTED — G0/G1 пакет документов; VERIFIED — source baseline/smoke/provenance checks по §1; NOT VERIFIED — W4 visual/runtime/browser/performance; CREATOR DECISION REQUIRED — Gate A и необязательные protected-label exceptions; BLOCKED — технической блокировки аудита нет, действует запрошенный review gate.

@@ -135,7 +135,7 @@ WORK уже имеет `#showcase-gallery`, `ax-tab-01…08` / `ax-panel-01…08
 | A Discovery | OBSERVED: isolated exact main, source inventory, три параллельных read-only аудита, Canon truth split, boundaries, source checks |
 | B Implementation | G0/G1 документы подготовлены; runtime implementation **NOT STARTED** |
 | C Documentation | Шесть deliverables, исходная директива, current-state handoff; исторические W1–W3 отчёты сохранены |
-| D QA | Два static smoke PASS на неизменённом baseline; документационные ссылки/сохранность проверяются на delivery commit. G3 browser/perf **NOT RUN** |
-| E Git | Exact docs-only delivery SHA, remote recovery point и Draft PR фиксируются в handoff/следующем trace commit; root/gitlinks не входят в patch |
+| D QA | Два static smoke PASS на неизменённом baseline; independent docs/source review PASS на `6e165e452adb7fe2430b855a10e98792acb86817`; 27 relative links / 0 missing, source/asset integrity. G3 browser/perf **NOT RUN** |
+| E Git | Proposal commit `6e165e452adb7fe2430b855a10e98792acb86817`, `docs(world): prepare 0524.W4 G0/G1 narrative and Canon review package`, запушен в `origin/docs/0524-w4-world-narrative-g0-g1`; [Draft PR #11](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/11). Последующий docs-only trace записывает review/PR; actual HEAD проверять в Git. Root/gitlinks не входят в patch |
 
 Детальные результаты проверок и независимый recheck этого пакета — [WORLD_QA_REPORT](WORLD_QA_REPORT.md). Настоящий deliverable **G0/G1 READY FOR GATE A**, не финальная W4 visual acceptance.

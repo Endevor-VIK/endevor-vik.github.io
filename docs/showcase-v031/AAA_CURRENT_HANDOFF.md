@@ -24,11 +24,11 @@ AXS_HEADER_META:
 
 - **Current authority:** [CREATOR 0524.W4 directive](waves/w4/W4_CREATOR_DIRECTIVE.md), especially §10: G0/G1 first, Gate A before substantial implementation.
 - **Frozen landing baseline:** remote main `6b082e5f262c09a123748273da42277d3a29a6c2` after W3.C PR #10. W3.C is merged; the old pre-merge snapshot below is historical. Deployment was not independently checked in W4.
-- **Branch/worktree:** `docs/0524-w4-world-narrative-g0-g1`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-narrative-g0-g1`. Delivery SHA/PR recorded after documentation verification; recheck current HEAD/status at takeover.
+- **Branch/worktree:** `docs/0524-w4-world-narrative-g0-g1`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-narrative-g0-g1`. Independently reviewed proposal `6e165e452adb7fe2430b855a10e98792acb86817`, [Draft PR #11](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/11); subsequent docs-only trace records review. Recheck current HEAD/status at takeover.
 - **Canon baseline:** remote main `3884ea43e125ddd39b18c80f91cc40310dd65e9f`, read-only. Detailed BLACK SUN/NEXARCH/VOIDLINK/NEURA materials contain DRAFT layers; use the explicit Canon trace.
 - **Prepared:** [narrative audit / AgentOps Steps A–E](waves/w4/WORLD_NARRATIVE_AUDIT.md), [Canon trace](waves/w4/WORLD_CANON_TRACE.md), [proposed scene script](waves/w4/WORLD_SCENE_SCRIPT.md), [typography audit](waves/w4/WORLD_TYPOGRAPHY_AUDIT.md), [before/after contract](waves/w4/WORLD_BEFORE_AFTER.md), [QA status and matrix](waves/w4/WORLD_QA_REPORT.md).
 - **Proposed design:** W01 English title; four W02 historical beats inside existing manifesto; WHAT REMAINS on retained `#modules`; static contextual concepts inside existing WORK panels 02/03/05; targeted factions copy, same art/cards. No second gallery or new top-level scenes.
-- **Verified now:** exact baseline/source audit; static smoke PASS twice by two scripts; W3.C runtime identical to historical QA `b53350e`. W4 browser/performance/after screenshots **NOT RUN / NOT CREATED**.
+- **Verified now:** exact baseline/source audit; both static smoke scripts PASS (one run each); independent G0/G1 documentation/source review PASS on `6e165e4`; W3.C runtime identical to historical QA `b53350e`. W4 browser/performance/after screenshots **NOT RUN / NOT CREATED**.
 - **Protected:** entire map/location/OMEGA and chars/AXIOM ∅, eight real captures/viewer, RED PROTOCOL/TYPE A/WORK B, original images. Replacing labels III/IV inside protected sections is only a separate proposal until explicit permission.
 - **Residuals:** NEURA lifecycle contradiction and incomplete final ideology; original 1672px Retina source limits; Firefox/WebKit/manual AT gaps from W3.C; W4 G3 matrix remains mandatory.
 - **Next:** CREATOR/Principal Gate A on the concrete script and WORK model; optionally approve two external protected labels separately. Reverify main before G2. No autonomous next-wave/release work.
@@ -41,7 +41,7 @@ AUTHORITY: CREATOR 0524.W4 directive, waves/w4/W4_CREATOR_DIRECTIVE.md; GATE A P
 PHASE / TASK: 0524.W4 WORLD NARRATIVE RECONSTRUCTION — G0/G1 READY FOR REVIEW
 REPOS + BRANCHES: landing docs/0524-w4-world-narrative-g0-g1 from main 6b082e5f262c09a123748273da42277d3a29a6c2
 CANON: 3884ea43e125ddd39b18c80f91cc40310dd65e9f, read-only; root/gitlinks excluded
-CLEAN/DIRTY: own docs only; exact delivery SHA/status in delivery record below; reverify
+CLEAN/DIRTY: reviewed proposal 6e165e452adb7fe2430b855a10e98792acb86817, then docs-only review trace; reverify HEAD/status
 DONE: source inventory, W1–W3 approval audit, Canon trace, scenario/copy, typography and WORK migration proposal
 PENDING: Gate A, optional protected-label exceptions, G2 implementation, G3 matrix, independent G4, Gate B
 NOT RUN: W4 browser/runtime/performance/real devices/SR; AFTER captures do not exist
@@ -54,7 +54,10 @@ FIRST ACTION: reread AGENTS/protocol/handoff; git status + HEAD + remote PR/main
 
 ### W4 delivery record
 
-Delivery commit/remote recovery point and independent documentation review are recorded after freezing the package. No W4 runtime patch exists at this stage.
+- Proposal/remote recovery point: `6e165e452adb7fe2430b855a10e98792acb86817`; [Draft PR #11](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/11), base `main`.
+- Independent read-only reviewer `world_inventory`: **PASS — G0/G1 documentation consistency/scope**, all six narrow wording/trace findings corrected before freeze; no open P0/P1. Separate `canon_audit` source recheck completed. These agents do not supply Principal/CREATOR approval.
+- Review record: `waves/w4/WORLD_QA_REPORT.md` §5. Subsequent trace commit changes only this handoff, audit/QA review records, and validation log; no scenario/runtime change. Actual latest SHA comes from Git/PR, not this snapshot.
+- No W4 runtime patch exists. **Gate A PENDING**, optional protected-label exceptions HOLD; G3/G4/after captures NOT RUN/NOT CREATED. Root/gitlinks/main/Canon untouched by this branch.
 
 ## HISTORICAL SNAPSHOT — 2026-10-19 / W3.C A «ПОРОГ» + OMEGA-0 IMPLEMENTED, READY FOR PRINCIPAL & CREATOR VISUAL RECHECK
 
