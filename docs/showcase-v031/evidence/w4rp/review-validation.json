@@ -1,0 +1,669 @@
+{
+  "kind": "R1P_OFFLINE_NATIVE_REVIEW_ROUTER",
+  "checks": [
+    {
+      "width": "1440",
+      "scene": "surfaces",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "surfaces",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "surfaces",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "doctrine",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "doctrine",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "doctrine",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "aftermath",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "aftermath",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "aftermath",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "world",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "world",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "world",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "characters",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "characters",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "characters",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work02",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work02",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work02",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work03",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work03",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work03",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work05",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work05",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1440",
+      "scene": "work05",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "surfaces",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "surfaces",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "surfaces",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "doctrine",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "doctrine",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "doctrine",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "aftermath",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "aftermath",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "aftermath",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "world",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "world",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "world",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "characters",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "characters",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "characters",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work02",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work02",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work02",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work03",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work03",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work03",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work05",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work05",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "1920",
+      "scene": "work05",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "surfaces",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "surfaces",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "surfaces",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "doctrine",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "doctrine",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "doctrine",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "aftermath",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "aftermath",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "aftermath",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "world",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "world",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "world",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "characters",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "characters",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "characters",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work02",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work02",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work02",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work03",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work03",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work03",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work05",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work05",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "390",
+      "scene": "work05",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "surfaces",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "surfaces",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "surfaces",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "doctrine",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "doctrine",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "doctrine",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "aftermath",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "aftermath",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "aftermath",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "world",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "world",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "world",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "characters",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "characters",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "characters",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work02",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work02",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work02",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work03",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work03",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work03",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work05",
+      "arm": "before",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work05",
+      "arm": "current",
+      "pass": true
+    },
+    {
+      "width": "360",
+      "scene": "work05",
+      "arm": "aplus",
+      "pass": true
+    },
+    {
+      "scene": "work02-disclosure",
+      "pass": true
+    },
+    {
+      "scene": "work03-disclosure",
+      "pass": true
+    },
+    {
+      "scene": "work05-disclosure",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 111,
+    "failed": []
+  }
+}

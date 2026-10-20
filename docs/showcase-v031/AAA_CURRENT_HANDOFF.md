@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: W4R_R0_R1_PROPOSED / GATE_B_NOT_ACCEPTED / GATE_R_A_PENDING
+  status: W4RP_SUBMITTED / GATE_B_NOT_ACCEPTED / GATE_R_A_CHANGES_REQUESTED / R2_NOT_AUTHORIZED
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,7 +18,38 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-21 / W4.R R0–R1 / GATE R-A PENDING
+## CURRENT STATE — 2026-10-21 / W4.R R1.P / GATE R-A CHANGES REQUESTED
+
+**A/B/C rejected. One A+ preservation proof submitted; R2 NOT AUTHORIZED.** [Latest Principal/CREATOR authority](waves/w4rp/PRINCIPAL_CHANGES_REQUESTED.md) supersedes the previous three-choice selection packet. Gate B remains NOT ACCEPTED; PR12 remains Draft/open. No merge/deployment permission.
+
+- Scope: **isolated full LANDING snapshot**, not production integration. [R1.P contract / Steps A–E](waves/w4rp/R1P_SPEC.md). Product index/assets/tests remain exact `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`; start reporting HEAD `4836a5da0314b910e8ad22c8298b110ff43cac81`. Reverify actual Git/PR HEAD, do not treat this starting SHA as current delivery identity.
+- [CREATOR handoff / preview commands / exact candidate hashes](waves/w4rp/R1P_HANDOFF.md); [45-row preservation matrix + all intentional changes + length tradeoff](waves/w4rp/PRESERVATION_MATRIX.md); [Canon trace](waves/w4rp/R1P_CANON_TRACE.md). Candidate HTML SHA256 `fb37809dc42bca9b8bc1e1f7d486795471a70cb36c1f5060babb612426e52a9d`; CSS `1181fbce3d445d7f10cde140de1a5ea758ef28808c45a967dfce274ae8688543`.
+- [Native BEFORE/CURRENT/A+ reviewer](evidence/w4rp/REVIEW.html): **346 frames**, full existing pages at1440×900/1920×1080/390×844/360×800, DPR1, matched gallery/map/dialog/RM state. Every complete section pass covers its start/end with overlapping native frames and natural neighbors. Extra real WORK02/03/05 and CURRENT disclosures clearly labelled. No portrait/map thumbnails as preservation evidence.
+- A+: original large3zone archive, terminal hierarchy and5fragment/glyph structures; four historical beats and authored provenance; three distinct human aftermath scenes. Original four full orbit/entity/routes/radar compositions restored inside WORK **after one8screen real archive/viewer, before existing public-route feature**. False status/metrics removed separately from their visual structures. Only prototype omits3duplicate simplified disclosures.
+- Protected W04/map/axes/6IDs/OMEGA/cards/bios/relationships/AXIOM∅ and8real figures/cases/viewer exact source; all13 protected geometry/image objects match BEFORE/CURRENT/A+ in4viewports. Source28/0, native142/0, prototype smoke110/0, offline reviewer111/0, artifact integrity768/0. Axe scoped0violations; color-contrast incompletes131/135 remain, no AA certification. Qualification failures/harness corrections are retained. [Evidence](evidence/w4rp/README.md).
+- **NOT VERIFIED:** artistic superiority/CREATOR R-A; new product integration/R3 cross-engine/actual200%/qualified paired performance/R4 independent verdict. Previous G4 applies only to rejectedb85. Two baseline HERO defects remain separate debt. No new performance measurement/quiet-window claim; foreign workloads untouched.
+- Read-only Canon remains3884ea43; BEFORE/main6b082e5; PR11af20ff6 unchanged/unmerged; root gitlinks/foreign dirty delta preserved. No version/main/Canon/protected/runtime/deployment changes. Existing W4/W4R evidence is historical and retained.
+- Next: CREATOR reviews **this one full-context A+** and gives new R-A decision. The latest directive§9 explicitly requires this before R2. No automatic progression or self-issued visual PASS.
+
+```text
+AXIOM SHOWCASE / R1.P RESUME PACKET
+AUTHORITY: waves/w4rp/PRINCIPAL_CHANGES_REQUESTED.md §§7–9
+TASK: 0524.W4.R R1.P only; one A+ full-page preservation proof
+BRANCH: w4/world-narrative / PR12 DRAFT; reverify actual HEAD/status
+SOURCE: BEFORE6b082e5; CURRENT productb85fbb0; Canon3884ea43 read-only
+PROPOSAL: full original archive +4 full original surfaces inside WORK; large aftermath art; full protected map/portraits
+EVIDENCE: evidence/w4rp/REVIEW.html;346nativeframes/4viewport/3arms
+MATRIX: waves/w4rp/PRESERVATION_MATRIX.md;45dimensions +intentionalchanges +sectionheights
+QA: source28/0;native142/0;smoke110/0;review111/0;integrity768/0;axe incompletes retained
+GATES: GateB NOT ACCEPTED; R-A CHANGES REQUESTED; R2 NOT AUTHORIZED
+NOT RUN: R2/R3/newperformance/independentR4; no new visual PASS
+PRESERVE: old W4/W4R evidence, all original components, root/Canon/PR11/main
+NEXT: CREATOR concrete A+ review; integrate only after explicit new direction authority
+CLEANUP: own bounded transient runs removed after durable hashes; no preview server/browser queued
+FIRST: read R1P_HANDOFF +newdirective; verify refs/runtime; do not restart rejected A/B/C or treat old G4 as new approval
+```
+
+## HISTORICAL SNAPSHOT — rejected A/B/C proposals before Principal preservation review
 
 **CREATOR rejected W4 visual direction: Gate B NOT ACCEPTED / REWORK REQUIRED.** [New authority](waves/w4r/W4R_CREATOR_DIRECTIVE.md) supersedes the previous ready-for-Gate-B recommendation. Previous G3/G4 remains historical technical evidence for exactb85fbb0; it is not artistic approval or proof for a new version.
 

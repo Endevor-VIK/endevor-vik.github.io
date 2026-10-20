@@ -1,0 +1,90 @@
+{
+  "kind": "R1P_SCOPED_PROTOTYPE_SMOKE",
+  "at": "2026-10-20T22:37:34.003Z",
+  "checks": [
+    {
+      "name": "1440: real archive eight screens / one viewer",
+      "pass": true
+    },
+    {
+      "name": "1440: four full compositions / no duplicate disclosures",
+      "pass": true
+    },
+    {
+      "name": "1440: exhibit after archive before public route",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 01",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 02",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 03",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 04",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 05",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 06",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 07",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 08",
+      "pass": true
+    },
+    {
+      "name": "1440: keyboard archive",
+      "pass": true
+    },
+    {
+      "name": "1440: keyboard viewer opens",
+      "pass": true
+    },
+    {
+      "name": "1440: original 1:1 screenshot",
+      "pass": true
+    },
+    {
+      "name": "1440: viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "1440: map keyboard selection",
+      "pass": true
+    },
+    {
+      "name": "1440: OMEGA return selects and focuses02.05",
+      "pass": false
+    }
+  ],
+  "axe": [],
+  "errors": [],
+  "limits": "Chromium only; no full R3/G4, performance, physical devices, screen-reader or artistic acceptance.",
+  "browser": "149.0.7827.55",
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#v23-open-map')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" id=\"v23-open-map\" class=\"v23-open-map\">РАССМОТРЕТЬ КАРТУ ↗</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <img width=\"1919\" height=\"1079\" decoding=\"async\" id=\"showcase-full-image\" alt=\"Скриншот: CHRONICLE — MEMORY ORBIT\" src=\"assets/showcase/hq/04-chronicle-full.webp\" sizes=\"(max-width: 760px) 98vw, min(1500px, 95vw)\" srcset=\"assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w\"/> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <dialog open=\"\" id=\"showcase-lightbox\" class=\"show-lightbox ax-viewer\" aria-labelledby=\"showcase-full-caption\">…</dialog> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <img width=\"1919\" height=\"1079\" decoding=\"async\" id=\"showcase-full-image\" alt=\"Скриншот: CHRONICLE — MEMORY ORBIT\" src=\"assets/showcase/hq/04-chronicle-full.webp\" sizes=\"(max-width: 760px) 98vw, min(1500px, 95vw)\" srcset=\"assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w\"/> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    14 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <img width=\"1919\" height=\"1079\" decoding=\"async\" id=\"showcase-full-image\" alt=\"Скриншот: CHRONICLE — MEMORY ORBIT\" src=\"assets/showcase/hq/04-chronicle-full.webp\" sizes=\"(max-width: 760px) 98vw, min(1500px, 95vw)\" srcset=\"assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w\"/> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <dialog open=\"\" id=\"showcase-lightbox\" class=\"show-lightbox ax-viewer\" aria-labelledby=\"showcase-full-caption\">…</dialog> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <img width=\"1919\" height=\"1079\" decoding=\"async\" id=\"showcase-full-image\" alt=\"Скриншот: CHRONICLE — MEMORY ORBIT\" src=\"assets/showcase/hq/04-chronicle-full.webp\" sizes=\"(max-width: 760px) 98vw, min(1500px, 95vw)\" srcset=\"assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w\"/> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <img width=\"1919\" height=\"1079\" decoding=\"async\" id=\"showcase-full-image\" alt=\"Скриншот: CHRONICLE — MEMORY ORBIT\" src=\"assets/showcase/hq/04-chronicle-full.webp\" sizes=\"(max-width: 760px) 98vw, min(1500px, 95vw)\" srcset=\"assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w\"/> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <img width=\"1919\" height=\"1079\" decoding=\"async\" id=\"showcase-full-image\" alt=\"Скриншот: CHRONICLE — MEMORY ORBIT\" src=\"assets/showcase/hq/04-chronicle-full.webp\" sizes=\"(max-width: 760px) 98vw, min(1500px, 95vw)\" srcset=\"assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w\"/> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <dialog open=\"\" id=\"showcase-lightbox\" class=\"show-lightbox ax-viewer\" aria-labelledby=\"showcase-full-caption\">…</dialog> from <section id=\"work\" aria-labelledby=\"work-title\" class=\"show-section show-work\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation/docs/showcase-v031/evidence/w4rp/preview/probe.cjs:22:39",
+  "inputs": {
+    "aplus.html": "fb37809dc42bca9b8bc1e1f7d486795471a70cb36c1f5060babb612426e52a9d",
+    "r1p.css": "1181fbce3d445d7f10cde140de1a5ea758ef28808c45a967dfce274ae8688543",
+    "probe.cjs": "76b940149b96485c7990a3041b3ac8b9577f8a1585bf9a38ee86e132c8cea136"
+  },
+  "summary": {
+    "checks": 17,
+    "failed": [
+      "1440: OMEGA return selects and focuses02.05"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "original": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "current": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+  "reportingStart": "4836a5da0314b910e8ad22c8298b110ff43cac81",
+  "candidateHtmlSha256": "fb37809dc42bca9b8bc1e1f7d486795471a70cb36c1f5060babb612426e52a9d",
+  "checks": {
+    "map": {
+      "exact": true,
+      "sha256": "ebe9d3f73603583d86db6616e9afd6580d2678b60595c8304fd05e1c87284831"
+    },
+    "axes": {
+      "exact": true,
+      "sha256": "174e0835af9eb99a380bc795dea2ad288599f71c5594e274b22786f8b1907e4a"
+    },
+    "omega": {
+      "exact": true,
+      "sha256": "e1caa0424658cec7cbc3fb3bcf0162e1e91c987b3f3e50c54cda366a213b1b98"
+    },
+    "cards": {
+      "exact": true,
+      "sha256": "ebde586ce2e551c1181386b6a001f19c9a3d569bbb156535b16380e5187aee95"
+    },
+    "axiom": {
+      "exact": true,
+      "sha256": "6680c3bfd01ec3a1f1faf3921f4c4be1d64d5d76e3bc0c2b5057c656e75f2c34"
+    },
+    "viewer": {
+      "exact": true,
+      "sha256": "cd8521a832bc4338a684a271e3fc2ba7646c115c0593bfa958a30a3008543fbf"
+    },
+    "ax-shot": {
+      "exact": true,
+      "count": 8,
+      "hashes": [
+        "edfc0d3bacd7892d86f372ac0298ee5b2973b20dac03ed77112a9b5290466ef1",
+        "9b3079b612d1a78fcc7f71c6616f61cf487d654ea382e9d3833ee1dfdae28d75",
+        "64f26ebe458da2ad34d9520c959764191abaa81b0caf19a0219cce027c0e8af0",
+        "1570a0b4471bd0525b1546b9d79b1995936cb6012516e9f8bdcd7e2009f4df9a",
+        "ae4f8974319097c3cbb5e8af1ce908a6b29410b3e63db9883de22d89cce21a9c",
+        "be4caf0670cee72a42260ef7cfade4632acaf3aeed963b0edda1de80cc45576f",
+        "3a29615a662a4c287b3d9fb60ea069e1936b235a6b2eefa901570fe1c88e5a08",
+        "f9b7c895ebda067d5ce7c6ed67c00581a0764d4430842c3fb533b7c62fce5625"
+      ]
+    },
+    "ax-case": {
+      "exact": true,
+      "count": 8,
+      "hashes": [
+        "940c8ce0de2bf75152e4dfade5a3218bfd0e8b67843bbb6f143d4bfb74ae6b34",
+        "2016e7b54d8fe6198f63c94f0e1c8c8e161b4884238e6d66d72a1021eab3005f",
+        "d3f8a52be511e2c7f866b9cd2ea5a072668577e13677440c51be066690a5f91b",
+        "e2e09a834734c3755f7dd3b80fd42121e13c9033873cbed85a398244f62cb9a0",
+        "404aedd6b51bfcc13dceb73d0735a7da1cf95b1b882148208aab4fdfceac47af",
+        "ff674d8e596da88b4b93e624273fc60d0690f7ac02d0a6a222d861fbb923d470",
+        "f8170dc229a2452bc9e513fb7c50f402f6f818703f0e6c659c86229e9120378b",
+        "0e11ad53d2dac23e995f3a906545a45cdb5a616aed12293abcc1bbcb55e871ac"
+      ]
+    }
+  },
+  "intendedChanges": [
+    "WORK: replace3 small disclosures in snapshot with original full4module exhibit after gallery/viewer before ax-work-intro",
+    "Doctrine: original3zone archive/terminal/fragments restored; authored copy/qualitative sidebars/four beats",
+    "Aftermath: W02 large composition + W04 threshold + personal-dependence object",
+    "World: external W04 overlay/header/intro only; native art frame/map/axes/OMEGA unchanged",
+    "Characters: external heading/intro only; full cards/portraits/bios/AXIOM unchanged"
+  ],
+  "restoredStructures": {
+    "orbit": {
+      "matchingClassOccurrences": 4
+    },
+    "content-vis": {
+      "matchingClassOccurrences": 1
+    },
+    "carto-vis": {
+      "matchingClassOccurrences": 1
+    },
+    "dog-vis": {
+      "matchingClassOccurrences": 1
+    }
+  }
+}

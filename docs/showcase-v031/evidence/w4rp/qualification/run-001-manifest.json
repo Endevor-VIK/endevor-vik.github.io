@@ -1,0 +1,905 @@
+{
+  "kind": "R1P_QUALIFICATION",
+  "at": "2026-10-20T22:32:45.550Z",
+  "refs": {
+    "before": "6b082e5f262c09a123748273da42277d3a29a6c2",
+    "current": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+    "aplus": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  "reportingStart": "4836a5da0314b910e8ad22c8298b110ff43cac81",
+  "states": {
+    "dpr": 1,
+    "reducedMotion": "reduce",
+    "gallery": "01",
+    "map": "02.01",
+    "dialogs": "closed",
+    "loader": "returning visitor via original sessionStorage flag",
+    "screenshots": "native viewport; no style injection, image retouch, stitching or resampling; WebP80"
+  },
+  "captures": [
+    {
+      "file": "aplus-1440-archive-01.webp",
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "scene": "archive",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 11405.375,
+      "sectionBottom": 12143.25,
+      "scrollY": 11295,
+      "bytes": 67528,
+      "sha256": "17078186356f4f48d0b54a30a368b416c41f5cb9388fb13e077d1e347996191f"
+    },
+    {
+      "file": "aplus-1440-fragments-01.webp",
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "scene": "fragments",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 12245.84375,
+      "sectionBottom": 12560.4375,
+      "scrollY": 12136,
+      "bytes": 69086,
+      "sha256": "053ff4caa9618d6e63b5267c4d3ae6a38f19a6e54909451230740c05260375bc"
+    },
+    {
+      "file": "aplus-1440-aftermath-01.webp",
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "scene": "aftermath",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 12753.03125,
+      "sectionBottom": 14310.046875,
+      "scrollY": 12643,
+      "bytes": 81408,
+      "sha256": "a39223d3d17acd5014075d5c0f5cf801d3fdbce513a0e7b59b5291d52012b8b9"
+    },
+    {
+      "file": "aplus-1440-world-01.webp",
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "scene": "world",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 14310.046875,
+      "sectionBottom": 16792.25,
+      "scrollY": 14200,
+      "bytes": 155366,
+      "sha256": "c816ed54c0e66bf843cc3ac32cd7589a2d556bf31036dd90aba1751f1ab8c467"
+    },
+    {
+      "file": "aplus-1440-characters-01.webp",
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "scene": "characters",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 16792.25,
+      "sectionBottom": 19387.75,
+      "scrollY": 16682,
+      "bytes": 69200,
+      "sha256": "0d6c11777621f52ebd8f010963763df829b6ba0d0eb2ffa79f2861a903b94224"
+    },
+    {
+      "file": "aplus-1440-surfaces-01.webp",
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "scene": "surfaces",
+      "segment": 1,
+      "total": 2,
+      "sectionTop": 5590.84375,
+      "sectionBottom": 7028.5,
+      "scrollY": 5481,
+      "bytes": 76612,
+      "sha256": "e9194c3905b9dcbb444a56ab8de607e2d8427a6f43134d093b8766a2522dfad3"
+    },
+    {
+      "file": "aplus-1440-surfaces-02.webp",
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "scene": "surfaces",
+      "segment": 2,
+      "total": 2,
+      "sectionTop": 5590.84375,
+      "sectionBottom": 7028.5,
+      "scrollY": 6129,
+      "bytes": 81480,
+      "sha256": "fee586f888ae7ccd9f7de0d6c1ea21419b07272c9dd6a647a814633ce7d4a549"
+    },
+    {
+      "file": "aplus-390-archive-01.webp",
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "scene": "archive",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 16574.25,
+      "sectionBottom": 17971.40625,
+      "scrollY": 16464,
+      "bytes": 24792,
+      "sha256": "b6755caa8877dcb0cdf70190c282d29d6a7a9b411979a4ab4ce3c78e8bee23a6"
+    },
+    {
+      "file": "aplus-390-fragments-01.webp",
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "scene": "fragments",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 18121.59375,
+      "sectionBottom": 19570.96875,
+      "scrollY": 18012,
+      "bytes": 21704,
+      "sha256": "8fe7fb4537a82f1c3a42e1b396f9a9ffe7e70e8dc2114582a9d7b6e7b5c7ec27"
+    },
+    {
+      "file": "aplus-390-aftermath-01.webp",
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "scene": "aftermath",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 19723.359375,
+      "sectionBottom": 21836.703125,
+      "scrollY": 19613,
+      "bytes": 28802,
+      "sha256": "d2ae9bf08d9c3ca4fd6bae0b9b64cb9bdaba1d7ccea9370a93727f5ffdaafa43"
+    },
+    {
+      "file": "aplus-390-world-01.webp",
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "scene": "world",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 21836.703125,
+      "sectionBottom": 24233.734375,
+      "scrollY": 21727,
+      "bytes": 39432,
+      "sha256": "e96b98c4bce2e7cb86d99b1fe6212fb079d14e8d2fcb3078523d68ed14011bf4"
+    },
+    {
+      "file": "aplus-390-characters-01.webp",
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "scene": "characters",
+      "segment": 1,
+      "total": 1,
+      "sectionTop": 24233.734375,
+      "sectionBottom": 29395.578125,
+      "scrollY": 24124,
+      "bytes": 23334,
+      "sha256": "9a9c3785d1fe61ba26f9ed48fe9883f0ac528a289e68e6bb12272de6d1ed8f8e"
+    },
+    {
+      "file": "aplus-390-surfaces-01.webp",
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "scene": "surfaces",
+      "segment": 1,
+      "total": 2,
+      "sectionTop": 7625.375,
+      "sectionBottom": 10784.6875,
+      "scrollY": 7515,
+      "bytes": 34760,
+      "sha256": "532d94ae9216bcfdefa76e5aae50352190a20f505f328c644103730972af57ca"
+    },
+    {
+      "file": "aplus-390-surfaces-02.webp",
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "scene": "surfaces",
+      "segment": 2,
+      "total": 2,
+      "sectionTop": 7625.375,
+      "sectionBottom": 10784.6875,
+      "scrollY": 8225,
+      "bytes": 27012,
+      "sha256": "abcd6dd812973d1db1c5e47be54fb493f7db5e9464280f55bff4a7267fcbb3f8"
+    }
+  ],
+  "geometry": [
+    {
+      "arm": "aplus",
+      "width": 1440,
+      "height": 900,
+      "items": {
+        "w04": [
+          {
+            "width": 1353,
+            "height": 252,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "w04Image": [
+          {
+            "width": 1351,
+            "height": 250,
+            "fontSize": "16px",
+            "objectFit": "cover",
+            "objectPosition": "50% 35%",
+            "display": "block",
+            "src": "showcase/world-library/web/W04_vertical_city-1672w.avif"
+          }
+        ],
+        "map": [
+          {
+            "width": 1353,
+            "height": 1080.9375,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "mapImage": [
+          {
+            "width": 1351,
+            "height": 759.9375,
+            "fontSize": "16px",
+            "objectFit": "contain",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": "world/world-spine-map-1440w.webp"
+          }
+        ],
+        "nodes": [
+          {
+            "width": 1305,
+            "height": 130,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "omega": [
+          {
+            "width": 1353,
+            "height": 588.484375,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "cards": [
+          {
+            "width": 1353,
+            "height": 884.078125,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "card": [
+          {
+            "width": 435,
+            "height": 884.078125,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          },
+          {
+            "width": 435,
+            "height": 884.078125,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          },
+          {
+            "width": 435,
+            "height": 884.078125,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "portrait": [],
+        "axiom": [
+          {
+            "width": 1353,
+            "height": 1120.1875,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "shot": [
+          {
+            "width": 831.375,
+            "height": 573.25,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "shotImage": [
+          {
+            "width": 792.375,
+            "height": 444.828125,
+            "fontSize": "13.3333px",
+            "objectFit": "contain",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": "showcase/hq/02-panel-login-960w.webp"
+          }
+        ],
+        "doctrine": [
+          {
+            "width": 1353,
+            "height": 737.875,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "terminal": [
+          {
+            "width": 877,
+            "height": 737.875,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "surfaces": [
+          {
+            "width": 1353,
+            "height": 1110.71875,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "orbit": [
+          {
+            "width": 576.5,
+            "height": 200,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "entity": [
+          {
+            "width": 576.5,
+            "height": 150,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "routes": [
+          {
+            "width": 576.5,
+            "height": 170,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "radar": [
+          {
+            "width": 155,
+            "height": 155,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ]
+      },
+      "sections": {
+        "top": {
+          "y": 97,
+          "height": 1059.140625
+        },
+        "about": {
+          "y": 1156.140625,
+          "height": 1181.6875
+        },
+        "creator": {
+          "y": 2407.828125,
+          "height": 1286.734375
+        },
+        "work": {
+          "y": 4303.5625,
+          "height": 3139.875
+        },
+        "system": {
+          "y": 7513.4375,
+          "height": 1542.796875
+        },
+        "world-guide": {
+          "y": 9141.234375,
+          "height": 1272.4375
+        },
+        "manifesto": {
+          "y": 10413.671875,
+          "height": 2339.359375
+        },
+        "modules": {
+          "y": 12753.03125,
+          "height": 1557.015625
+        },
+        "world": {
+          "y": 14310.046875,
+          "height": 2482.203125
+        },
+        "chars": {
+          "y": 16792.25,
+          "height": 2595.5
+        },
+        "factions": {
+          "y": 19387.75,
+          "height": 1297.78125
+        },
+        "vision": {
+          "y": 21273.921875,
+          "height": 2221.125
+        },
+        "collaboration": {
+          "y": 23565.046875,
+          "height": 842.609375
+        }
+      },
+      "scrollWidth": 1425,
+      "innerWidth": 1440,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ],
+      "brokenImages": [],
+      "states": {
+        "gallery": "ax-tab-01",
+        "map": "02.01",
+        "dialogs": 0
+      }
+    },
+    {
+      "arm": "aplus",
+      "width": 390,
+      "height": 844,
+      "items": {
+        "w04": [
+          {
+            "width": 347,
+            "height": 163.796875,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "w04Image": [
+          {
+            "width": 345,
+            "height": 161.796875,
+            "fontSize": "16px",
+            "objectFit": "cover",
+            "objectPosition": "50% 30%",
+            "display": "block",
+            "src": "showcase/world-library/web/W04_vertical_city-960w.avif"
+          }
+        ],
+        "map": [
+          {
+            "width": 347,
+            "height": 823.578125,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "mapImage": [
+          {
+            "width": 345,
+            "height": 194.0625,
+            "fontSize": "16px",
+            "objectFit": "contain",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": "world/world-spine-map-960w.webp"
+          }
+        ],
+        "nodes": [
+          {
+            "width": 315,
+            "height": 375.34375,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "omega": [
+          {
+            "width": 347,
+            "height": 765.28125,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "cards": [
+          {
+            "width": 347,
+            "height": 2123.5,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "card": [
+          {
+            "width": 347,
+            "height": 762.5,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          },
+          {
+            "width": 347,
+            "height": 668.5,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          },
+          {
+            "width": 347,
+            "height": 668.5,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "portrait": [],
+        "axiom": [
+          {
+            "width": 347,
+            "height": 2503.21875,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "shot": [
+          {
+            "width": 345,
+            "height": 203.8125,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "shotImage": [
+          {
+            "width": 323,
+            "height": 180.8125,
+            "fontSize": "13.3333px",
+            "objectFit": "contain",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": "showcase/hq/02-panel-login-960w.webp"
+          }
+        ],
+        "doctrine": [
+          {
+            "width": 347,
+            "height": 1397.15625,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "terminal": [
+          {
+            "width": 347,
+            "height": 527.515625,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "surfaces": [
+          {
+            "width": 347,
+            "height": 2566.75,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "orbit": [
+          {
+            "width": 287,
+            "height": 200,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "flex",
+            "src": null
+          }
+        ],
+        "entity": [
+          {
+            "width": 287,
+            "height": 257,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "grid",
+            "src": null
+          }
+        ],
+        "routes": [
+          {
+            "width": 287,
+            "height": 170,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ],
+        "radar": [
+          {
+            "width": 155,
+            "height": 155,
+            "fontSize": "16px",
+            "objectFit": "fill",
+            "objectPosition": "50% 50%",
+            "display": "block",
+            "src": null
+          }
+        ]
+      },
+      "sections": {
+        "top": {
+          "y": 126,
+          "height": 1076.21875
+        },
+        "about": {
+          "y": 1202.21875,
+          "height": 2073.3125
+        },
+        "creator": {
+          "y": 3338.125,
+          "height": 2167.234375
+        },
+        "work": {
+          "y": 5836.296875,
+          "height": 5572.8125
+        },
+        "system": {
+          "y": 11471.703125,
+          "height": 2652.96875
+        },
+        "world-guide": {
+          "y": 14190.265625,
+          "height": 1203.703125
+        },
+        "manifesto": {
+          "y": 15393.96875,
+          "height": 4329.390625
+        },
+        "modules": {
+          "y": 19723.359375,
+          "height": 2113.34375
+        },
+        "world": {
+          "y": 21836.703125,
+          "height": 2397.03125
+        },
+        "chars": {
+          "y": 24233.734375,
+          "height": 5161.84375
+        },
+        "factions": {
+          "y": 29395.578125,
+          "height": 1986.171875
+        },
+        "vision": {
+          "y": 31946.671875,
+          "height": 3189.53125
+        },
+        "collaboration": {
+          "y": 35198.796875,
+          "height": 1261.578125
+        }
+      },
+      "scrollWidth": 375,
+      "innerWidth": 390,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ],
+      "brokenImages": [],
+      "states": {
+        "gallery": "ax-tab-01",
+        "map": "02.01",
+        "dialogs": 0
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "aplus/1440: page overflow",
+      "pass": true,
+      "actual": 1425
+    },
+    {
+      "name": "aplus/1440: all images loaded",
+      "pass": true,
+      "broken": []
+    },
+    {
+      "name": "aplus/1440: fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "aplus/390: page overflow",
+      "pass": true,
+      "actual": 375
+    },
+    {
+      "name": "aplus/390: all images loaded",
+      "pass": true,
+      "broken": []
+    },
+    {
+      "name": "aplus/390: fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "no uncaught page errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "no HTTP failures",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "pageErrors": [],
+  "httpErrors": [],
+  "limits": "Isolated R1.P only, not product integration/G3/G4/performance/artistic PASS. Concurrent host workloads may exist.",
+  "hashes": {
+    "aplus.html": "da91db3762a1760d60796de1f3724015b9788e520e959f592cc99903506ee5ba",
+    "r1p.css": "bce48c840288af8f2b796369b7af919bf05b33cc4926ba1848c0896f872aa4e8",
+    "build_aplus.py": "dddb29914e20a807a2618f6fcb530f0b08372b8f3849de9eaa0b254a1f66867d",
+    "serve.cjs": "29e8e3fb110df8a13517f67dd95439db365c6df85a55fea25a8283a9726194cf",
+    "capture.cjs": "62362ca65a6be1662bc70e61ed71d33bf9cac32d5cef620a4e172559a42d4119"
+  },
+  "browser": "149.0.7827.55",
+  "playwright": "1.61.1",
+  "totalBytes": 800516,
+  "summary": {
+    "frames": 14,
+    "checks": 8,
+    "failed": []
+  }
+}

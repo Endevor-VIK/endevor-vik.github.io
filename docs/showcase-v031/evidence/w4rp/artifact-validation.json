@@ -1,0 +1,3089 @@
+{
+  "kind": "R1P_ARTIFACT_INTEGRITY_NOT_ART_APPROVAL",
+  "summary": {
+    "checks": 768,
+    "failed": []
+  },
+  "checks": [
+    {
+      "name": "before-1440-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1440-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work02-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work03-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1440-work05-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-surfaces-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1440-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-1920-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-1920-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-1920-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-aftermath-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-390-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work02-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work02-disclosure-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work03-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-390-work05-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work-09.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-doctrine-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-doctrine-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-doctrine-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-surfaces-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-surfaces-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-surfaces-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-390-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-doctrine-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-aftermath-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "before-360-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work02-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work02-disclosure-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work03-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "current-360-work05-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work-09.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-doctrine-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-doctrine-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-doctrine-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-surfaces-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-surfaces-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-surfaces-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-surfaces-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "aplus-360-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "frozen capture input aplus.html",
+      "pass_": true
+    },
+    {
+      "name": "frozen capture input r1p.css",
+      "pass_": true
+    },
+    {
+      "name": "frozen capture input build_aplus.py",
+      "pass_": true
+    },
+    {
+      "name": "frozen capture input serve.cjs",
+      "pass_": true
+    },
+    {
+      "name": "frozen capture input capture.cjs",
+      "pass_": true
+    },
+    {
+      "name": "before/1440/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1440/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1440/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1440/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1440/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1920/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1920/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1920/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1920/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/1920/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/390/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/390/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/390/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/390/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/390/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/360/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/360/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/360/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/360/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "before/360/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1440/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1440/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1440/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1440/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1440/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1920/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1920/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1920/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1920/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/1920/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/390/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/390/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/390/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/390/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/390/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/360/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/360/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/360/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/360/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "current/360/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1440/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1440/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1440/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1440/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1440/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1920/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1920/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1920/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1920/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/1920/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/390/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/390/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/390/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/390/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/390/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/360/work: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/360/doctrine: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/360/aftermath: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/360/world: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "aplus/360/characters: complete native pass >=100px overlap",
+      "pass_": true
+    },
+    {
+      "name": "source-validation.json: final assertions",
+      "pass_": true,
+      "summary": {
+        "checks": 28,
+        "failed": []
+      }
+    },
+    {
+      "name": "probe-validation.json: final assertions",
+      "pass_": true,
+      "summary": {
+        "checks": 110,
+        "failed": []
+      }
+    },
+    {
+      "name": "frozen probe input aplus.html",
+      "pass_": true
+    },
+    {
+      "name": "frozen probe input r1p.css",
+      "pass_": true
+    },
+    {
+      "name": "frozen probe input probe.cjs",
+      "pass_": true
+    },
+    {
+      "name": "capture run has no errors/failures",
+      "pass_": true
+    },
+    {
+      "name": "review link ../../waves/w4rp/PRESERVATION_MATRIX.md",
+      "pass_": true
+    },
+    {
+      "name": "review link ../../waves/w4rp/R1P_HANDOFF.md",
+      "pass_": true
+    },
+    {
+      "name": "review link manifest.json",
+      "pass_": true
+    },
+    {
+      "name": "review link source-validation.json",
+      "pass_": true
+    },
+    {
+      "name": "review link probe-validation.json",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1440-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work02-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work03-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1440-work05-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-surfaces-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1440-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-1920-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-1920-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-1920-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-aftermath-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-390-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work02-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work02-disclosure-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work03-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-390-work05-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work-09.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-doctrine-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-doctrine-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-doctrine-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-surfaces-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-surfaces-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-surfaces-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-390-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-doctrine-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-aftermath-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/before-360-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work02-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work02-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work02-disclosure-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work03-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work03-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work05-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work05-disclosure-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/current-360-work05-disclosure-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work-09.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-doctrine-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-doctrine-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-doctrine-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-doctrine-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-doctrine-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-doctrine-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-doctrine-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-aftermath-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-aftermath-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-aftermath-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-aftermath-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-world-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-world-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-world-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-world-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-07.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-characters-08.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-surfaces-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-surfaces-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-surfaces-03.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-surfaces-04.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-surfaces-05.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-surfaces-06.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work02-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work02-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work03-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work03-02.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work05-01.webp",
+      "pass_": true
+    },
+    {
+      "name": "review link captures/aplus-360-work05-02.webp",
+      "pass_": true
+    }
+  ]
+}

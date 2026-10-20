@@ -1,0 +1,1304 @@
+{
+  "kind": "R1P_SCOPED_PROTOTYPE_SMOKE",
+  "at": "2026-10-20T22:40:09.983Z",
+  "checks": [
+    {
+      "name": "1440: real archive eight screens / one viewer",
+      "pass": true
+    },
+    {
+      "name": "1440: four full compositions / no duplicate disclosures",
+      "pass": true
+    },
+    {
+      "name": "1440: exhibit after archive before public route",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 01",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 02",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 03",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 04",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 05",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 06",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 07",
+      "pass": true
+    },
+    {
+      "name": "1440: archive selection 08",
+      "pass": true
+    },
+    {
+      "name": "1440: keyboard archive",
+      "pass": true
+    },
+    {
+      "name": "1440: keyboard viewer opens",
+      "pass": true
+    },
+    {
+      "name": "1440: original 1:1 screenshot",
+      "pass": true
+    },
+    {
+      "name": "1440: viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "1440: map keyboard selection",
+      "pass": true
+    },
+    {
+      "name": "1440: OMEGA return selects and focuses02.05",
+      "pass": true
+    },
+    {
+      "name": "1440: map original viewer",
+      "pass": true
+    },
+    {
+      "name": "1440: map viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "1440: new content fits viewport",
+      "pass": true,
+      "bad": [],
+      "textOverflow": 0
+    },
+    {
+      "name": "1440: bilingual W04 overlay fits original frame",
+      "pass": true
+    },
+    {
+      "name": "1440: all five original glyphs visible",
+      "pass": true
+    },
+    {
+      "name": "1440: restored labels visible in RM",
+      "pass": true
+    },
+    {
+      "name": "1440: no duplicate DOM IDs",
+      "pass": true,
+      "duplicates": []
+    },
+    {
+      "name": "1440: new body prose >=16px",
+      "pass": true
+    },
+    {
+      "name": "1440: RM loops stopped / SMIL paused",
+      "pass": true,
+      "loops": 0,
+      "smil": true
+    },
+    {
+      "name": "1440: scoped axe no violations",
+      "pass": true
+    },
+    {
+      "name": "1920: real archive eight screens / one viewer",
+      "pass": true
+    },
+    {
+      "name": "1920: four full compositions / no duplicate disclosures",
+      "pass": true
+    },
+    {
+      "name": "1920: exhibit after archive before public route",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 01",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 02",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 03",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 04",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 05",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 06",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 07",
+      "pass": true
+    },
+    {
+      "name": "1920: archive selection 08",
+      "pass": true
+    },
+    {
+      "name": "1920: keyboard archive",
+      "pass": true
+    },
+    {
+      "name": "1920: keyboard viewer opens",
+      "pass": true
+    },
+    {
+      "name": "1920: original 1:1 screenshot",
+      "pass": true
+    },
+    {
+      "name": "1920: viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "1920: map keyboard selection",
+      "pass": true
+    },
+    {
+      "name": "1920: OMEGA return selects and focuses02.05",
+      "pass": true
+    },
+    {
+      "name": "1920: map original viewer",
+      "pass": true
+    },
+    {
+      "name": "1920: map viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "1920: new content fits viewport",
+      "pass": true,
+      "bad": [],
+      "textOverflow": 0
+    },
+    {
+      "name": "1920: bilingual W04 overlay fits original frame",
+      "pass": true
+    },
+    {
+      "name": "1920: all five original glyphs visible",
+      "pass": true
+    },
+    {
+      "name": "1920: restored labels visible in RM",
+      "pass": true
+    },
+    {
+      "name": "1920: no duplicate DOM IDs",
+      "pass": true,
+      "duplicates": []
+    },
+    {
+      "name": "1920: new body prose >=16px",
+      "pass": true
+    },
+    {
+      "name": "1920: RM loops stopped / SMIL paused",
+      "pass": true,
+      "loops": 0,
+      "smil": true
+    },
+    {
+      "name": "390: real archive eight screens / one viewer",
+      "pass": true
+    },
+    {
+      "name": "390: four full compositions / no duplicate disclosures",
+      "pass": true
+    },
+    {
+      "name": "390: exhibit after archive before public route",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 01",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 02",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 03",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 04",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 05",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 06",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 07",
+      "pass": true
+    },
+    {
+      "name": "390: archive selection 08",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard archive",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard viewer opens",
+      "pass": true
+    },
+    {
+      "name": "390: original 1:1 screenshot",
+      "pass": true
+    },
+    {
+      "name": "390: viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "390: map keyboard selection",
+      "pass": true
+    },
+    {
+      "name": "390: OMEGA return selects and focuses02.05",
+      "pass": true
+    },
+    {
+      "name": "390: map original viewer",
+      "pass": true
+    },
+    {
+      "name": "390: map viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "390: new content fits viewport",
+      "pass": true,
+      "bad": [],
+      "textOverflow": 0
+    },
+    {
+      "name": "390: bilingual W04 overlay fits original frame",
+      "pass": true
+    },
+    {
+      "name": "390: all five original glyphs visible",
+      "pass": true
+    },
+    {
+      "name": "390: restored labels visible in RM",
+      "pass": true
+    },
+    {
+      "name": "390: no duplicate DOM IDs",
+      "pass": true,
+      "duplicates": []
+    },
+    {
+      "name": "390: new body prose >=16px",
+      "pass": true
+    },
+    {
+      "name": "390: RM loops stopped / SMIL paused",
+      "pass": true,
+      "loops": 0,
+      "smil": true
+    },
+    {
+      "name": "360: real archive eight screens / one viewer",
+      "pass": true
+    },
+    {
+      "name": "360: four full compositions / no duplicate disclosures",
+      "pass": true
+    },
+    {
+      "name": "360: exhibit after archive before public route",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 01",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 02",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 03",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 04",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 05",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 06",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 07",
+      "pass": true
+    },
+    {
+      "name": "360: archive selection 08",
+      "pass": true
+    },
+    {
+      "name": "360: keyboard archive",
+      "pass": true
+    },
+    {
+      "name": "360: keyboard viewer opens",
+      "pass": true
+    },
+    {
+      "name": "360: original 1:1 screenshot",
+      "pass": true
+    },
+    {
+      "name": "360: viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "360: map keyboard selection",
+      "pass": true
+    },
+    {
+      "name": "360: OMEGA return selects and focuses02.05",
+      "pass": true
+    },
+    {
+      "name": "360: map original viewer",
+      "pass": true
+    },
+    {
+      "name": "360: map viewer focus returns",
+      "pass": true
+    },
+    {
+      "name": "360: new content fits viewport",
+      "pass": true,
+      "bad": [],
+      "textOverflow": 0
+    },
+    {
+      "name": "360: bilingual W04 overlay fits original frame",
+      "pass": true
+    },
+    {
+      "name": "360: all five original glyphs visible",
+      "pass": true
+    },
+    {
+      "name": "360: restored labels visible in RM",
+      "pass": true
+    },
+    {
+      "name": "360: no duplicate DOM IDs",
+      "pass": true,
+      "duplicates": []
+    },
+    {
+      "name": "360: new body prose >=16px",
+      "pass": true
+    },
+    {
+      "name": "360: RM loops stopped / SMIL paused",
+      "pass": true,
+      "loops": 0,
+      "smil": true
+    },
+    {
+      "name": "360: scoped axe no violations",
+      "pass": true
+    },
+    {
+      "name": "normal motion: original decorative composition loops retained / labelled concepts",
+      "pass": true,
+      "loop": 17,
+      "smil": true,
+      "concept": true
+    },
+    {
+      "name": "noJS: full eight-screen archive visible",
+      "pass": true
+    },
+    {
+      "name": "noJS: archive/authorship/four surfaces visible",
+      "pass": true
+    },
+    {
+      "name": "no uncaught page errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "axe": [
+    {
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              ".r1p-exhibit-heading > div > .show-kicker"
+            ],
+            [
+              ".r1p-exhibit-heading > div > h3"
+            ],
+            [
+              ".r1p-exhibit-heading > div > h3 > em"
+            ],
+            [
+              ".r1p-exhibit-heading > p"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(1) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(1) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(1) > .m-body > p"
+            ],
+            [
+              ".orbit-mini.l > span"
+            ],
+            [
+              ".orbit-mini.l > b"
+            ],
+            [
+              ".orbit-card > .tag"
+            ],
+            [
+              ".orbit-card > b"
+            ],
+            [
+              ".orbit-card > .meta"
+            ],
+            [
+              ".orbit-mini.r > span"
+            ],
+            [
+              ".orbit-mini.r > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(2) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(2) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(2) > .m-body > p"
+            ],
+            [
+              ".id-stamp"
+            ],
+            [
+              ".meta:nth-child(1) > span"
+            ],
+            [
+              ".meta:nth-child(1) > b"
+            ],
+            [
+              ".body > .name"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(1)"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(1) > b"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(2)"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(2) > b"
+            ],
+            [
+              ".chip:nth-child(1)"
+            ],
+            [
+              ".chip:nth-child(2)"
+            ],
+            [
+              ".chip.dim:nth-child(3)"
+            ],
+            [
+              ".chip.dim:nth-child(4)"
+            ],
+            [
+              ".lbl"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(3) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(3) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(3) > .m-body > p"
+            ],
+            [
+              "text[x=\"60\"]"
+            ],
+            [
+              "text[x=\"180\"]"
+            ],
+            [
+              "text[x=\"200\"]"
+            ],
+            [
+              "text[x=\"340\"][y=\"6\"][letter-spacing=\"1.5\"]"
+            ],
+            [
+              "text[y=\"146\"]"
+            ],
+            [
+              ".compass > span:nth-child(1) > b"
+            ],
+            [
+              ".compass > span:nth-child(2) > b"
+            ],
+            [
+              ".compass > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(4) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(4) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(4) > .m-body > p"
+            ],
+            [
+              "text[x=\"0\"]"
+            ],
+            [
+              ".l:nth-child(1) > b"
+            ],
+            [
+              ".l:nth-child(1) > .v"
+            ],
+            [
+              ".l:nth-child(1) > .s"
+            ],
+            [
+              ".l:nth-child(2) > b"
+            ],
+            [
+              ".l:nth-child(2) > .v"
+            ],
+            [
+              ".l:nth-child(2) > .s"
+            ],
+            [
+              ".l:nth-child(3) > b"
+            ],
+            [
+              ".l:nth-child(3) > .v"
+            ],
+            [
+              ".l:nth-child(3) > .s"
+            ],
+            [
+              ".log > .l:nth-child(4) > b"
+            ],
+            [
+              ".l:nth-child(4) > .v"
+            ],
+            [
+              ".l:nth-child(4) > .s"
+            ],
+            [
+              ".l:nth-child(5) > b"
+            ],
+            [
+              ".l:nth-child(5) > .v"
+            ],
+            [
+              ".l:nth-child(5) > .s"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".r1p-exhibit-note"
+            ],
+            [
+              ".ax-chapter-plate--w06 > .ax-chapter-copy > .ax-chapter-n"
+            ],
+            [
+              ".path"
+            ],
+            [
+              ".ql > .line:nth-child(1)"
+            ],
+            [
+              ".pre"
+            ],
+            [
+              ".r1p-word > em"
+            ],
+            [
+              ".ql > .line:nth-child(4)"
+            ],
+            [
+              ".line:nth-child(5) > em"
+            ],
+            [
+              ".red-mark"
+            ],
+            [
+              ".r1p-archive-last"
+            ],
+            [
+              ".frag:nth-child(1) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(1) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(1) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(2) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(2) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(2) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(3) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(3) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(3) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(4) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(4) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(4) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(5) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(5) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(5) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".r1p-gate-art > span"
+            ],
+            [
+              ".r1p-memory > figure > figcaption"
+            ],
+            [
+              ".r1p-plate-copy > .ax-chapter-n"
+            ],
+            [
+              "#world-title"
+            ],
+            [
+              "#world-title > em"
+            ],
+            [
+              ".r1p-plate-copy > .r1p-title-group > .r1p-translation[lang=\"ru\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              ".r1p-exhibit-heading > div > .show-kicker"
+            ],
+            [
+              ".r1p-exhibit-heading > div > h3"
+            ],
+            [
+              ".r1p-exhibit-heading > div > h3 > em"
+            ],
+            [
+              ".r1p-exhibit-heading > p"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(1) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(1) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(1) > .m-body > p"
+            ],
+            [
+              ".orbit-mini.l > span"
+            ],
+            [
+              ".orbit-mini.l > b"
+            ],
+            [
+              ".orbit-card > .tag"
+            ],
+            [
+              ".orbit-card > b"
+            ],
+            [
+              ".orbit-card > .meta"
+            ],
+            [
+              ".orbit-mini.r > span"
+            ],
+            [
+              ".orbit-mini.r > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(1) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(2) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(2) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(2) > .m-body > p"
+            ],
+            [
+              ".id-stamp"
+            ],
+            [
+              ".meta:nth-child(1) > span"
+            ],
+            [
+              ".meta:nth-child(1) > b"
+            ],
+            [
+              ".body > .name"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(1)"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(1) > b"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(2)"
+            ],
+            [
+              ".meta:nth-child(3) > span:nth-child(2) > b"
+            ],
+            [
+              ".chip:nth-child(1)"
+            ],
+            [
+              ".chip:nth-child(2)"
+            ],
+            [
+              ".chip.dim:nth-child(3)"
+            ],
+            [
+              ".chip.dim:nth-child(4)"
+            ],
+            [
+              ".lbl"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(2) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(3) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(3) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(3) > .m-body > p"
+            ],
+            [
+              "text[x=\"60\"]"
+            ],
+            [
+              "text[x=\"180\"]"
+            ],
+            [
+              "text[x=\"200\"]"
+            ],
+            [
+              "text[x=\"340\"][y=\"6\"][letter-spacing=\"1.5\"]"
+            ],
+            [
+              "text[y=\"146\"]"
+            ],
+            [
+              ".compass > span:nth-child(1) > b"
+            ],
+            [
+              ".compass > span:nth-child(2) > b"
+            ],
+            [
+              ".compass > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(3) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-num"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-tag"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-tag > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-head > .m-stat"
+            ],
+            [
+              ".module:nth-child(4) > .m-body > h3"
+            ],
+            [
+              ".module:nth-child(4) > .m-body > h3 > em"
+            ],
+            [
+              ".module:nth-child(4) > .m-body > p"
+            ],
+            [
+              "text[x=\"0\"]"
+            ],
+            [
+              ".l:nth-child(1) > b"
+            ],
+            [
+              ".l:nth-child(1) > .v"
+            ],
+            [
+              ".l:nth-child(1) > .s"
+            ],
+            [
+              ".l:nth-child(2) > b"
+            ],
+            [
+              ".l:nth-child(2) > .v"
+            ],
+            [
+              ".l:nth-child(2) > .s"
+            ],
+            [
+              ".l:nth-child(3) > b"
+            ],
+            [
+              ".l:nth-child(3) > .v"
+            ],
+            [
+              ".l:nth-child(3) > .s"
+            ],
+            [
+              ".log > .l:nth-child(4) > b"
+            ],
+            [
+              ".l:nth-child(4) > .v"
+            ],
+            [
+              ".l:nth-child(4) > .s"
+            ],
+            [
+              ".l:nth-child(5) > b"
+            ],
+            [
+              ".l:nth-child(5) > .v"
+            ],
+            [
+              ".l:nth-child(5) > .s"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(1)"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(2)"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(3)"
+            ],
+            [
+              ".module:nth-child(4) > .m-foot > span:nth-child(3) > b"
+            ],
+            [
+              ".r1p-exhibit-note"
+            ],
+            [
+              ".ax-chapter-plate--w06 > .ax-chapter-copy > .ax-chapter-n"
+            ],
+            [
+              ".path"
+            ],
+            [
+              ".ql > .line:nth-child(1)"
+            ],
+            [
+              ".pre"
+            ],
+            [
+              ".r1p-word > em"
+            ],
+            [
+              ".ql > .line:nth-child(4)"
+            ],
+            [
+              ".line:nth-child(5) > em"
+            ],
+            [
+              ".red-mark"
+            ],
+            [
+              ".r1p-archive-last"
+            ],
+            [
+              ".frag:nth-child(1) > .frag-foot > span:nth-child(1)"
+            ],
+            [
+              ".frag:nth-child(1) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(1) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(1) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(2) > .frag-foot > span:nth-child(1)"
+            ],
+            [
+              ".frag:nth-child(2) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(2) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(2) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(3) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(3) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(3) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(4) > .frag-foot > span:nth-child(1)"
+            ],
+            [
+              ".frag:nth-child(4) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(4) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(4) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".frag:nth-child(5) > .frag-foot > span:nth-child(1)"
+            ],
+            [
+              ".frag:nth-child(5) > .frag-foot > span:nth-child(1) > b"
+            ],
+            [
+              ".frag:nth-child(5) > .frag-foot > span:nth-child(2)"
+            ],
+            [
+              ".frag:nth-child(5) > .frag-foot > span:nth-child(2) > b"
+            ],
+            [
+              ".r1p-gate-art > span"
+            ],
+            [
+              ".r1p-memory > figure > figcaption"
+            ],
+            [
+              ".r1p-plate-copy > .ax-chapter-n"
+            ],
+            [
+              "#world-title"
+            ],
+            [
+              "#world-title > em"
+            ],
+            [
+              ".r1p-plate-copy > .r1p-title-group > .r1p-translation[lang=\"ru\"]"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "limits": "Chromium only; no full R3/G4, performance, physical devices, screen-reader or artistic acceptance.",
+  "browser": "149.0.7827.55",
+  "inputs": {
+    "aplus.html": "fb37809dc42bca9b8bc1e1f7d486795471a70cb36c1f5060babb612426e52a9d",
+    "r1p.css": "1181fbce3d445d7f10cde140de1a5ea758ef28808c45a967dfce274ae8688543",
+    "probe.cjs": "b070044df2820690adaf4cdbf34176ed8f9ec0b7f4d9784e9f41e2e18d02a6fe"
+  },
+  "summary": {
+    "checks": 110,
+    "failed": []
+  }
+}

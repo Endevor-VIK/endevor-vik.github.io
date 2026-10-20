@@ -1,0 +1,312 @@
+{
+  "kind": "R1P_SOURCE_PRESERVATION_NOT_INDEPENDENT_REVIEW",
+  "refs": {
+    "before": "6b082e5f262c09a123748273da42277d3a29a6c2",
+    "current": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  "candidate": {
+    "html": "fb37809dc42bca9b8bc1e1f7d486795471a70cb36c1f5060babb612426e52a9d",
+    "css": "1181fbce3d445d7f10cde140de1a5ea758ef28808c45a967dfce274ae8688543"
+  },
+  "checks": [
+    {
+      "name": "map: original=current=A+ exact source",
+      "pass_": true,
+      "sha256": "ebe9d3f73603583d86db6616e9afd6580d2678b60595c8304fd05e1c87284831"
+    },
+    {
+      "name": "axes: original=current=A+ exact source",
+      "pass_": true,
+      "sha256": "174e0835af9eb99a380bc795dea2ad288599f71c5594e274b22786f8b1907e4a"
+    },
+    {
+      "name": "omega: original=current=A+ exact source",
+      "pass_": true,
+      "sha256": "e1caa0424658cec7cbc3fb3bcf0162e1e91c987b3f3e50c54cda366a213b1b98"
+    },
+    {
+      "name": "cards: original=current=A+ exact source",
+      "pass_": true,
+      "sha256": "ebde586ce2e551c1181386b6a001f19c9a3d569bbb156535b16380e5187aee95"
+    },
+    {
+      "name": "axiom: original=current=A+ exact source",
+      "pass_": true,
+      "sha256": "6680c3bfd01ec3a1f1faf3921f4c4be1d64d5d76e3bc0c2b5057c656e75f2c34"
+    },
+    {
+      "name": "viewer: original=current=A+ exact source",
+      "pass_": true,
+      "sha256": "cd8521a832bc4338a684a271e3fc2ba7646c115c0593bfa958a30a3008543fbf"
+    },
+    {
+      "name": "top: current=A+ exact whole section",
+      "pass_": true,
+      "sha256": "9c1b968c33547fdb5b285fa648ef04703e6d39a61bb9140e54a4c1e959af0b41"
+    },
+    {
+      "name": "creator: current=A+ exact whole section",
+      "pass_": true,
+      "sha256": "344194824c67337c5fc3c4c2ca2e4794076e49dedab8adeddf24472d3f601e82"
+    },
+    {
+      "name": "system: current=A+ exact whole section",
+      "pass_": true,
+      "sha256": "d186cd459443f6ea56fc22cc653a9ffda3cb70f6b5533795bfb26ebf0f77b68c"
+    },
+    {
+      "name": "world-guide: current=A+ exact whole section",
+      "pass_": true,
+      "sha256": "33352adc086fb17759eade21a27e710633ae073dbb078cfb8897c64f2b203be2"
+    },
+    {
+      "name": "factions: current=A+ exact whole section",
+      "pass_": true,
+      "sha256": "199e5ba5f371c1db089e1d482656289ff8f1cf1be994a20583f8f0ed78d5ccfa"
+    },
+    {
+      "name": "vision: current=A+ exact whole section",
+      "pass_": true,
+      "sha256": "17019e58678c134a371e59b6d2c0f9cba8dc0080fc03d7004d024de31caf72ee"
+    },
+    {
+      "name": "real figures: eight exact originals",
+      "pass_": true,
+      "hashes": [
+        "edfc0d3bacd7892d86f372ac0298ee5b2973b20dac03ed77112a9b5290466ef1",
+        "9b3079b612d1a78fcc7f71c6616f61cf487d654ea382e9d3833ee1dfdae28d75",
+        "64f26ebe458da2ad34d9520c959764191abaa81b0caf19a0219cce027c0e8af0",
+        "1570a0b4471bd0525b1546b9d79b1995936cb6012516e9f8bdcd7e2009f4df9a",
+        "ae4f8974319097c3cbb5e8af1ce908a6b29410b3e63db9883de22d89cce21a9c",
+        "be4caf0670cee72a42260ef7cfade4632acaf3aeed963b0edda1de80cc45576f",
+        "3a29615a662a4c287b3d9fb60ea069e1936b235a6b2eefa901570fe1c88e5a08",
+        "f9b7c895ebda067d5ce7c6ed67c00581a0764d4430842c3fb533b7c62fce5625"
+      ]
+    },
+    {
+      "name": "real case descriptions: eight exact originals",
+      "pass_": true,
+      "hashes": [
+        "940c8ce0de2bf75152e4dfade5a3218bfd0e8b67843bbb6f143d4bfb74ae6b34",
+        "2016e7b54d8fe6198f63c94f0e1c8c8e161b4884238e6d66d72a1021eab3005f",
+        "d3f8a52be511e2c7f866b9cd2ea5a072668577e13677440c51be066690a5f91b",
+        "e2e09a834734c3755f7dd3b80fd42121e13c9033873cbed85a398244f62cb9a0",
+        "404aedd6b51bfcc13dceb73d0735a7da1cf95b1b882148208aab4fdfceac47af",
+        "ff674d8e596da88b4b93e624273fc60d0690f7ac02d0a6a222d861fbb923d470",
+        "f8170dc229a2452bc9e513fb7c50f402f6f818703f0e6c659c86229e9120378b",
+        "0e11ad53d2dac23e995f3a906545a45cdb5a616aed12293abcc1bbcb55e871ac"
+      ]
+    },
+    {
+      "name": "CHRONICLE: original ordered tag topology",
+      "pass_": true,
+      "originalCounts": {
+        "div": 11,
+        "i": 5,
+        "span": 14,
+        "b": 7,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "br": 1
+      },
+      "aplusCounts": {
+        "div": 11,
+        "i": 5,
+        "span": 14,
+        "b": 7,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "br": 1
+      }
+    },
+    {
+      "name": "CHRONICLE: exact original SVG element geometry/attributes",
+      "pass_": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "CONTENT: original ordered tag topology",
+      "pass_": false,
+      "originalCounts": {
+        "div": 15,
+        "i": 5,
+        "span": 16,
+        "b": 7,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "svg": 1,
+        "circle": 4,
+        "animatetransform": 1,
+        "animate": 3,
+        "br": 4
+      },
+      "aplusCounts": {
+        "div": 15,
+        "i": 5,
+        "span": 16,
+        "b": 7,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "svg": 1,
+        "circle": 4,
+        "animatetransform": 1,
+        "animate": 3
+      }
+    },
+    {
+      "name": "CONTENT: exact original SVG element geometry/attributes",
+      "pass_": true,
+      "sha256": "63197938445dd6b8f15e0937e4b117f6cd58f09cf324f1711477772a90643e9f"
+    },
+    {
+      "name": "CARTOGRAPHY: original ordered tag topology",
+      "pass_": false,
+      "originalCounts": {
+        "div": 9,
+        "i": 5,
+        "span": 9,
+        "b": 7,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "svg": 1,
+        "defs": 1,
+        "lineargradient": 1,
+        "stop": 3,
+        "g": 7,
+        "line": 8,
+        "path": 4,
+        "circle": 10,
+        "animate": 10,
+        "text": 5,
+        "polygon": 1,
+        "rect": 5,
+        "br": 3
+      },
+      "aplusCounts": {
+        "div": 9,
+        "i": 5,
+        "span": 9,
+        "b": 7,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "svg": 1,
+        "defs": 1,
+        "lineargradient": 1,
+        "stop": 3,
+        "g": 7,
+        "line": 8,
+        "path": 4,
+        "circle": 10,
+        "animate": 10,
+        "text": 5,
+        "polygon": 1,
+        "rect": 5
+      }
+    },
+    {
+      "name": "CARTOGRAPHY: exact original SVG element geometry/attributes",
+      "pass_": true,
+      "sha256": "60388f5d9946dbde60fba4b1aac47651c5d1874742efca271fab746fb729ee7b"
+    },
+    {
+      "name": "WATCH_DOG: original ordered tag topology",
+      "pass_": false,
+      "originalCounts": {
+        "div": 15,
+        "i": 5,
+        "span": 16,
+        "b": 9,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "svg": 1,
+        "defs": 1,
+        "lineargradient": 1,
+        "stop": 4,
+        "radialgradient": 1,
+        "circle": 8,
+        "g": 2,
+        "line": 2,
+        "path": 1,
+        "text": 1,
+        "br": 3
+      },
+      "aplusCounts": {
+        "div": 15,
+        "i": 5,
+        "span": 16,
+        "b": 9,
+        "h3": 1,
+        "em": 1,
+        "p": 1,
+        "svg": 1,
+        "defs": 1,
+        "lineargradient": 1,
+        "stop": 4,
+        "radialgradient": 1,
+        "circle": 8,
+        "g": 2,
+        "line": 2,
+        "path": 1,
+        "text": 1
+      }
+    },
+    {
+      "name": "WATCH_DOG: exact original SVG element geometry/attributes",
+      "pass_": true,
+      "sha256": "97667a6f153cb22b6b5f96718e72c012356e16156550000fa8c1a443b70e69c4"
+    },
+    {
+      "name": "original scripts/styles retained <script[^>]*src=\"([^\"]+)\"",
+      "pass_": true,
+      "paths": [
+        "assets/js/index.js",
+        "assets/js/showcase-gallery.js",
+        "assets/js/showcase-v22.js",
+        "assets/js/showcase-v23.js"
+      ]
+    },
+    {
+      "name": "original scripts/styles retained <link[^>]*rel=\"stylesheet\"[^>]*href=\"([^\"]+)\"",
+      "pass_": true,
+      "paths": [
+        "assets/css/fonts.css",
+        "assets/css/index.css",
+        "assets/css/showcase.css",
+        "assets/css/showcase-v22.css",
+        "assets/css/showcase-v23.css"
+      ]
+    },
+    {
+      "name": "product/assets/tests freeze unchanged",
+      "pass_": true,
+      "delta": []
+    },
+    {
+      "name": "6b082e5f: assets source tree recorded",
+      "pass_": true,
+      "treeSha256": "a77fbfd8d4f15fe0ed80b03508f944385d33b5fe93e4848fadba7806fbc01181",
+      "entries": 187
+    },
+    {
+      "name": "b85fbb0a: assets source tree recorded",
+      "pass_": true,
+      "treeSha256": "ff8826720bf4400e473ff15486426a6f17c027a4bc35f2308a2b05269d65a2bd",
+      "entries": 187
+    }
+  ],
+  "summary": {
+    "checks": 27,
+    "failed": [
+      "CONTENT: original ordered tag topology",
+      "CARTOGRAPHY: original ordered tag topology",
+      "WATCH_DOG: original ordered tag topology"
+    ]
+  }
+}

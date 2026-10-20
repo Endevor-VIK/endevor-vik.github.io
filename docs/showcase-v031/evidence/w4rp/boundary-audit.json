@@ -1,0 +1,33 @@
+{
+  "kind": "R1P_PRECOMMIT_BOUNDARY_AUDIT",
+  "reportingHead": "4836a5da0314b910e8ad22c8298b110ff43cac81",
+  "branch": "w4/world-narrative",
+  "mainLocal": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "mainRemote": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "runtimeFreeze": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+  "productDeltaAgainstFreeze": [],
+  "oldEvidenceDelta": [],
+  "canonHeadReadOnly": "3884ea43e125ddd39b18c80f91cc40310dd65e9f",
+  "rootIndexGitlinksObservedReadOnly": [
+    "160000 80595af2b2e21d18e86713971e6bb071b679dfb3 0\tapps/endevor-vik.github.io",
+    "160000 0b1c4bab8650b2998b4ea1147e8710508de46281 0\tcanon/v3"
+  ],
+  "pagesSourceObserved": {
+    "build_type": "legacy",
+    "branch": "main",
+    "path": "/"
+  },
+  "noWorkflowsInChildTree": true,
+  "pr11": {
+    "head": "af20ff6be8909b641070003795ff13ffadc334fd",
+    "draft": true,
+    "open": true,
+    "merged": false
+  },
+  "whitespaceCheck": {
+    "status": "ONE_RECORDED_SNAPSHOT_ONLY_WARNING",
+    "path": "preview/aplus.html:894",
+    "reason": "Four-space-only blank left when removing permitted external chapter-line; frozen capture input kept byte-identical. No product/runtime impact; not represented as clean diff-check."
+  },
+  "writes": "Only docs/showcase-v031/{evidence,waves}/w4rp + AAA_CURRENT_HANDOFF.md in isolated task branch. No root/main/Canon/gitlink/runtime/merge/deployment writes."
+}

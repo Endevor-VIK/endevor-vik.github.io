@@ -1,0 +1,1556 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ENDEAVOR / CREATOR — AXIOM SYSTEM · Portfolio &amp; Vision</title>
+<meta name="description" content="ENDEAVOR / CREATOR — создатель AXIOM SYSTEM. Интерфейсы, Master Graph, AXCHAT, вселенная, инженерная работа и планы развития.">
+<meta name="theme-color" content="#070709" />
+<meta name="robots" content="index,follow" />
+<meta name="color-scheme" content="dark" />
+<link rel="canonical" href="https://endevor-vik.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ENDEAVOR / AXIOM SYSTEM" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:url" content="https://endevor-vik.github.io/" />
+<meta property="og:title" content="ENDEAVOR — CREATOR OF AXIOM SYSTEM" />
+<meta property="og:description" content="Автор и разработчик AXIOM SYSTEM: интерфейсы, Canon, AXCHAT, Master Graph, вселенная и дорожная карта проекта." />
+<meta property="og:image" content="https://endevor-vik.github.io/assets/og-card.png" />
+<meta property="og:image:width" content="1731" />
+<meta property="og:image:height" content="909" />
+<meta property="og:image:alt" content="ENDEAVOR / AXIOM SYSTEM — PUBLIC SHOWCASE" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ENDEAVOR — CREATOR OF AXIOM SYSTEM" />
+<meta name="twitter:description" content="Автор AXIOM SYSTEM. Реальные работы, цифровая вселенная и будущее экосистемы." />
+<meta name="twitter:image" content="https://endevor-vik.github.io/assets/og-card.png" />
+<link rel="icon" type="image/svg+xml" href="assets/endeavor-mark.svg" />
+<link rel="shortcut icon" href="assets/endeavor-mark.svg" />
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- 0524 W1: no font preloads — on a slow link they delayed the first paint (FCP ~1.3 s vs ~0.6 s, lab); fonts.css uses font-display:swap -->
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/showcase.css">
+<link rel="stylesheet" href="assets/css/showcase-v22.css">
+<link rel="stylesheet" href="assets/css/showcase-v23.css">
+<noscript><style>/* without JS the WORK archive is a plain list: every screen visible, tab/prev-next controls (script-only) hidden */.ax-panel[hidden]{display:grid!important}.ax-panel+.ax-panel{border-top:1px solid var(--ax-crimson-line)}.ax-archive-rail,.ax-archive-nav,.ax-archive-count{display:none!important}</style></noscript>
+<link rel="stylesheet" href="r1p.css">
+</head>
+<body>
+<script>
+/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).
+   The overlay exists only when this script decides to show it, so a failure never leaves the page covered:
+   storage unavailable, already seen (session or last 24 h), reduced motion, Save-Data / 2G, a weak device or any error → no loader. */
+(function(){
+  var DAY=864e5,SHOW_MS=1300,FADE_MS=250,now=Date.now();
+  function store(name){try{var s=window[name],k='__axiom_probe';s.setItem(k,'1');s.removeItem(k);return s}catch(_){return null}}
+  try{
+    var ls=store('localStorage'),ss=store('sessionStorage');
+    if(!ls||!ss||ss.getItem('axiom_loader_seen')==='1')return;
+    var last=parseInt(ls.getItem('axiom_loader_last')||'0',10);
+    if(last>0&&now>=last&&now-last<DAY)return;
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var c=navigator.connection;
+    if(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||'')))return;
+    if((navigator.deviceMemory&&navigator.deviceMemory<=2)||(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<=2))return;
+    ls.setItem('axiom_loader_last',String(now));ss.setItem('axiom_loader_seen','1');
+  }catch(_){return}
+  var root=document.documentElement,body=document.body,finished=false,timer=null;
+  var boot=document.createElement('div');
+  boot.id='axiom-boot';boot.setAttribute('role','region');boot.setAttribute('aria-label','Заставка AXIOM');
+  boot.style.cssText='position:fixed;inset:0;z-index:9999;background:#000;transition:opacity '+FADE_MS+'ms ease';
+  boot.innerHTML='<button type="button" id="axiom-boot-skip">SKIP INTRO / ПРОПУСТИТЬ →</button>'+
+    '<iframe src="loader.html?target=about:blank&amp;duration=900&amp;auto=false&amp;embedded=1" title="Заставка AXIOM" tabindex="-1" aria-hidden="true" '+
+    'style="border:0;width:100%;height:100%;display:block;pointer-events:none"></iframe>';
+  var prevHtml=root.style.overflow,prevBody=body.style.overflow;
+  function release(){root.style.overflow=prevHtml;body.style.overflow=prevBody}
+  function close(){
+    if(finished)return;finished=true;clearTimeout(timer);release();
+    document.removeEventListener('keydown',onKey,true);
+    var frame=boot.querySelector('iframe');if(frame){try{frame.src='about:blank'}catch(_){}}
+    boot.style.pointerEvents='none';boot.style.opacity='0';
+    setTimeout(function(){if(boot.parentNode)boot.parentNode.removeChild(boot)},FADE_MS+20);
+  }
+  function onKey(e){if(e.key==='Escape'){e.preventDefault();close()}}
+  try{
+    body.insertBefore(boot,body.firstChild);
+    root.style.overflow='hidden';body.style.overflow='hidden';
+    boot.querySelector('#axiom-boot-skip').addEventListener('click',close);
+    document.addEventListener('keydown',onKey,true);
+    window.addEventListener('pagehide',close,{once:true});
+    timer=setTimeout(close,SHOW_MS);
+  }catch(_){close()}
+})();
+</script>
+
+<div class="v22-scroll-progress" aria-hidden="true"><span id="v22-scroll-fill"></span></div>
+<div class="index-cursor" id="indexCursor" aria-hidden="true"><i></i></div>
+
+<header class="top">
+  <div class="nav">
+    <div class="brand">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+          <path d="M12 2 L22 20 L12 15 L2 20 Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <b>AXIOM&nbsp;CORE</b>
+      <small>// SHOWCASE v0.3.0.0</small>
+    </div>
+    <nav class="menu" aria-label="Главная навигация"><a href="#about">AXIOM</a><span class="sep">/</span><a href="#creator">CREATOR</a><span class="sep">/</span><a href="#work">WORK</a><span class="sep">/</span><a href="#system">SYSTEM</a><span class="sep">/</span><a href="#world-guide">WORLD</a><span class="sep">/</span><a href="#vision">VISION</a><span class="sep">/</span><a href="#collaboration">CONTACT</a></nav>
+    <div class="status"><span class="dot"></span>PROJECT PROFILE</div>
+  </div>
+  <div class="ticker">
+    <div class="label">ARCHIVE // WIRE</div>
+    <div class="stream">
+      <div class="stream-inner">
+        <span><b class="tag">UPDATE</b> <span class="dim">/ 2026-10-16</span> &nbsp;AXIOM SHOWCASE V0.3.0.0 — PUBLIC ITERATION / WORK IN PROGRESS</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-06-02</span> &nbsp;AXIOM WEB CORE UI V0.2.7.0 — STABLE</span>
+        <span><b class="tag">UPDATE</b> <span class="dim">/ 2026-02-27</span> &nbsp;Новая страница 404: понятно и с характером</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2026-02-19</span> &nbsp;AXIOM WEB CORE UI V0.2.4.0</span>
+        <span><b class="tag">AUDIT</b> <span class="dim">/ 2025-12-29</span> &nbsp;AUDIT &amp; ROADMAP: готовим новый формат</span>
+        <span><b class="tag">RELEASE</b> <span class="dim">/ 2025-12-22</span> &nbsp;Контент-библиотека стала богаче</span>
+        <span><b class="tag">UPDATE</b> <span class="dim">/ 2025-10-25</span> &nbsp;Контент-центр v2.1</span>
+        <!-- duplicate for loop: visual only, hidden from assistive tech so the wire is read once -->
+        <span aria-hidden="true"><b class="tag">UPDATE</b> <span class="dim">/ 2026-10-16</span> &nbsp;AXIOM SHOWCASE V0.3.0.0 — PUBLIC ITERATION / WORK IN PROGRESS</span>
+        <span aria-hidden="true"><b class="tag">RELEASE</b> <span class="dim">/ 2026-06-02</span> &nbsp;AXIOM WEB CORE UI V0.2.7.0 — STABLE</span>
+        <span aria-hidden="true"><b class="tag">UPDATE</b> <span class="dim">/ 2026-02-27</span> &nbsp;Новая страница 404: понятно и с характером</span>
+        <span aria-hidden="true"><b class="tag">RELEASE</b> <span class="dim">/ 2026-02-19</span> &nbsp;AXIOM WEB CORE UI V0.2.4.0</span>
+        <span aria-hidden="true"><b class="tag">AUDIT</b> <span class="dim">/ 2025-12-29</span> &nbsp;AUDIT &amp; ROADMAP: готовим новый формат</span>
+        <span aria-hidden="true"><b class="tag">RELEASE</b> <span class="dim">/ 2025-12-22</span> &nbsp;Контент-библиотека стала богаче</span>
+        <span aria-hidden="true"><b class="tag">UPDATE</b> <span class="dim">/ 2025-10-25</span> &nbsp;Контент-центр v2.1</span>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="show-mobile-nav" aria-label="Навигация по витрине"><a href="#about">AXIOM</a><a href="#creator">CREATOR</a><a href="#work">WORK</a><a href="#system">SYSTEM</a><a href="#world-guide">WORLD</a><a href="#vision">VISION</a><a href="#collaboration">CONTACT</a>
+</nav>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-screen-label="01 Hero">
+  <div class="crosshair-bg"></div>
+  <div class="hero-particles" aria-hidden="true">
+    <span style="left:8%;top:30%;animation-delay:-2s"></span>
+    <span class="s" style="left:15%;top:65%;animation-delay:-5s"></span>
+    <span style="left:22%;top:18%;animation-delay:-7s"></span>
+    <span class="s" style="left:42%;top:80%;animation-delay:-3s"></span>
+    <span style="left:55%;top:45%;animation-delay:-9s"></span>
+    <span class="s" style="left:62%;top:25%;animation-delay:-1s"></span>
+    <span style="left:72%;top:70%;animation-delay:-6s"></span>
+    <span class="s" style="left:80%;top:35%;animation-delay:-4s"></span>
+    <span style="left:88%;top:55%;animation-delay:-8s"></span>
+    <span class="s" style="left:32%;top:42%;animation-delay:-11s"></span>
+    <span class="s" style="left:48%;top:62%;animation-delay:-2.5s"></span>
+    <span class="s" style="left:68%;top:18%;animation-delay:-7.5s"></span>
+    <span style="left:12%;top:48%;animation-delay:-4.5s"></span>
+    <span class="s" style="left:92%;top:78%;animation-delay:-10s"></span>
+  </div>
+  <!-- 0524 W3.A (F-01D/F-01M): the poster — first screen inside the RED PROTOCOL frame; the feature row follows below it -->
+  <div class="hero-poster">
+  <div class="hero-frame"><i></i><i></i></div>
+  <div class="wrap">
+    <div class="kicker-rows" aria-hidden="true"><span>01</span><span>02</span><span>03</span></div>
+
+    <div class="version-card" aria-hidden="true">
+      <div class="l">AXIOM CORE</div>
+      <div>ACCESS_PROTOCOL</div>
+      <div>v1.0</div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">ENDEAVOR // CREATOR OF AXIOM SYSTEM</span>
+        <h1 class="title">
+          <span class="w">KNOWLEDGE.</span>
+          <span class="w dim">CONTROL.</span>
+          <span class="w red">
+            <span class="gtxt a" aria-hidden="true">ACCESS.</span>
+            <span class="gtxt b" aria-hidden="true">ACCESS.</span>
+            ACCESS.
+          </span>
+        </h1>
+        <p class="lede">
+          <b>AXIOM</b> — авторская вселенная и развивающаяся технологическая экосистема.
+          Интерфейсы, история, AI и инженерные инструменты — части единого проекта.
+          Здесь можно увидеть <b>реальную работу</b> и её будущее.
+        </p>
+
+        <div class="enter-wrap">
+          <span class="glow"></span>
+
+          <!-- left/right side brackets -->
+          <span class="bracket l" aria-hidden="true">
+            <svg viewBox="0 0 26 46" fill="none">
+              <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/>
+              <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+            </svg>
+          </span>
+          <span class="bracket r" aria-hidden="true">
+            <svg viewBox="0 0 26 46" fill="none">
+              <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/>
+              <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+            </svg>
+          </span>
+
+          <span class="corner-tick tl"></span>
+          <span class="corner-tick tr"></span>
+          <span class="corner-tick bl"></span>
+          <span class="corner-tick br"></span>
+
+          <span class="fill" aria-hidden="true"></span>
+          <span class="scan-layer" aria-hidden="true"></span>
+
+          <!-- octagonal outline drawn in SVG so strokes stay crisp -->
+          <span class="frame" aria-hidden="true">
+            <svg viewBox="0 0 468 92" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="btnBorder" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#ff4a54"/>
+                  <stop offset="50%" stop-color="#ff2034"/>
+                  <stop offset="100%" stop-color="#b10f1e"/>
+                </linearGradient>
+              </defs>
+              <path d="M22 1 L446 1 L467 22 L467 70 L446 91 L22 91 L1 70 L1 22 Z"
+                    fill="none" stroke="url(#btnBorder)" stroke-width="2"
+                    style="filter:drop-shadow(0 0 10px rgba(255,32,52,.65))"/>
+              <!-- inner double-line -->
+              <path d="M30 9 L438 9 L459 30 L459 62 L438 83 L30 83 L9 62 L9 30 Z"
+                    fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-width="1"/>
+              <!-- center-line markers on each side -->
+              <line x1="0" y1="46" x2="6" y2="46" stroke="#ff2034" stroke-width="2"/>
+              <line x1="462" y1="46" x2="468" y2="46" stroke="#ff2034" stroke-width="2"/>
+              <!-- top tiny ticks -->
+              <line x1="60" y1="1" x2="60" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="110" y1="1" x2="110" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="358" y1="1" x2="358" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="408" y1="1" x2="408" y2="5" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="60" y1="87" x2="60" y2="91" stroke="#ff2034" stroke-opacity=".6"/>
+              <line x1="408" y1="87" x2="408" y2="91" stroke="#ff2034" stroke-opacity=".6"/>
+            </svg>
+          </span>
+          <span class="pulse-ring" aria-hidden="true"></span>
+
+          <a class="enter" href="https://axiomgates.com" aria-label="ENTER AXIOM — перейти на axiomgates.com">
+            <span class="label" data-text="ENTER AXIOM">ENTER AXIOM</span>
+            <span class="arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 14" fill="none">
+                <path d="M1 7 H21 M14 1 L21 7 L14 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <p class="ax-gate-note" hidden><span class="ax-gate-dot" aria-hidden="true"></span>Вход временно закрыт<span class="ax-gate-date"></span></p>
+        <!-- 0524 W3.A: command rail — quick links + CREATOR byline (SIGNAL TRACE closes it on the right) -->
+        <div class="hero-rail">
+        <nav class="show-hero-extra" aria-label="Быстрый переход"><a href="#about">ЧТО ТАКОЕ AXIOM ↘</a><a href="#work">РАБОТЫ ↘</a><a href="#vision">БУДУЩЕЕ ↘</a></nav>
+        <div class="show-hero-byline">CREATOR / ENDEAVOR · DESIGN / CODE / CANON</div>
+        </div>
+      </div>
+      <!-- Animated AXIOM emblem / radar -->
+      <div class="radar" aria-hidden="true">
+        <svg viewBox="-260 -260 520 520">
+          <defs>
+            <radialGradient id="g-core" cx="0" cy="0" r="1">
+              <stop offset="0%" stop-color="#ff2034" stop-opacity=".55"/>
+              <stop offset="35%" stop-color="#ff2034" stop-opacity=".18"/>
+              <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="g-arm" x1="0" x2="1" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ff2034" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="g-tri" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ff4a54"/>
+              <stop offset="55%" stop-color="#ff2034"/>
+              <stop offset="100%" stop-color="#7a0a14"/>
+            </linearGradient>
+            <radialGradient id="g-triglow" cx="0" cy="0" r="1">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity=".9"/>
+              <stop offset="30%" stop-color="#ff2034" stop-opacity=".55"/>
+              <stop offset="100%" stop-color="#ff2034" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- soft outer halo -->
+          <circle r="260" fill="url(#g-core)"/>
+
+          <!-- ===== outermost faint ring with tiny ticks ===== -->
+          <g class="spin-vslow" opacity=".5">
+            <circle r="244" fill="none" stroke="#ff2034" stroke-opacity=".18"/>
+            <g stroke="#ff2034" stroke-opacity=".5">
+              <line x1="0" y1="-244" x2="0" y2="-234"/>
+              <line x1="172" y1="-172" x2="165" y2="-165"/>
+              <line x1="244" y1="0" x2="234" y2="0"/>
+              <line x1="172" y1="172" x2="165" y2="165"/>
+              <line x1="0" y1="244" x2="0" y2="234"/>
+              <line x1="-172" y1="172" x2="-165" y2="165"/>
+              <line x1="-244" y1="0" x2="-234" y2="0"/>
+              <line x1="-172" y1="-172" x2="-165" y2="-165"/>
+            </g>
+          </g>
+
+          <!-- ===== ring 2: dashed ===== -->
+          <g class="spin-slow" opacity=".7">
+            <circle r="218" fill="none" stroke="#ff2034" stroke-opacity=".28" stroke-dasharray="1 7"/>
+            <!-- small markers around the ring -->
+            <circle cx="218" cy="0" r="3" fill="#ff2034"/>
+            <circle cx="-154" cy="-154" r="2" fill="#ff4a54"/>
+            <circle cx="154" cy="154" r="2" fill="#ff4a54"/>
+          </g>
+
+          <!-- ===== ring 3: segmented arcs (3/4 ring with breaks) ===== -->
+          <g class="spin-med">
+            <g stroke="#ff2034" stroke-width="1" fill="none" opacity=".75">
+              <path d="M -190 0 A 190 190 0 0 1 -134 -134"/>
+              <path d="M -110 -154 A 190 190 0 0 1 0 -190"/>
+              <path d="M 30 -188 A 190 190 0 0 1 134 -134"/>
+              <path d="M 154 -110 A 190 190 0 0 1 190 0"/>
+              <path d="M 188 30 A 190 190 0 0 1 134 134"/>
+              <path d="M 110 154 A 190 190 0 0 1 0 190"/>
+              <path d="M -30 188 A 190 190 0 0 1 -134 134"/>
+              <path d="M -154 110 A 190 190 0 0 1 -190 0"/>
+            </g>
+            <!-- orbiting probe dot -->
+            <g class="flicker">
+              <circle cx="190" cy="0" r="5" fill="#ff2034"/>
+              <circle cx="190" cy="0" r="10" fill="none" stroke="#ff2034" stroke-opacity=".6"/>
+              <circle cx="190" cy="0" r="16" fill="none" stroke="#ff2034" stroke-opacity=".2"/>
+            </g>
+          </g>
+
+          <!-- ===== ring 4: solid faint ===== -->
+          <circle r="164" fill="none" stroke="#ff2034" stroke-opacity=".22"/>
+
+          <!-- ===== ring 5: dashed inner ===== -->
+          <g class="spin-vfast">
+            <circle r="138" fill="none" stroke="#ff2034" stroke-opacity=".45" stroke-dasharray="4 8"/>
+          </g>
+
+          <!-- ===== short major-tick rays around inner ring ===== -->
+          <g stroke="#ff2034" stroke-opacity=".55" stroke-width="1.4">
+            <line x1="0" y1="-128" x2="0" y2="-104"/>
+            <line x1="0" y1="128" x2="0" y2="104"/>
+            <line x1="-128" y1="0" x2="-104" y2="0"/>
+            <line x1="128" y1="0" x2="104" y2="0"/>
+            <line x1="90" y1="-90" x2="74" y2="-74"/>
+            <line x1="-90" y1="-90" x2="-74" y2="-74"/>
+            <line x1="90" y1="90" x2="74" y2="74"/>
+            <line x1="-90" y1="90" x2="-74" y2="74"/>
+          </g>
+
+          <!-- ===== crosshair lines beyond rings ===== -->
+          <g stroke="#ff2034" stroke-opacity=".45">
+            <line x1="-254" y1="0" x2="-208" y2="0"/>
+            <line x1="208" y1="0" x2="254" y2="0"/>
+            <line x1="0" y1="-254" x2="0" y2="-208"/>
+            <line x1="0" y1="208" x2="0" y2="254"/>
+          </g>
+
+          <!-- ===== left-side waveform readout ===== -->
+          <g transform="translate(-150,0)" stroke="#ff2034" stroke-width="1.2" stroke-opacity=".7" class="pulse-soft">
+            <line x1="-26" y1="-6" x2="-26" y2="6"/>
+            <line x1="-20" y1="-12" x2="-20" y2="12"/>
+            <line x1="-14" y1="-3" x2="-14" y2="3"/>
+            <line x1="-8" y1="-8" x2="-8" y2="8"/>
+            <line x1="-2" y1="-16" x2="-2" y2="16"/>
+            <line x1="4" y1="-5" x2="4" y2="5"/>
+            <line x1="10" y1="-10" x2="10" y2="10"/>
+            <line x1="16" y1="-4" x2="16" y2="4"/>
+          </g>
+
+          <!-- ===== bottom data tick array ===== -->
+          <g transform="translate(0,210)" fill="#ff2034" opacity=".75">
+            <rect x="-2" y="0" width="4" height="18"/>
+            <rect x="-44" y="4" width="2" height="10"/>
+            <rect x="44" y="4" width="2" height="10"/>
+            <rect x="-86" y="6" width="2" height="6"/>
+            <rect x="86" y="6" width="2" height="6"/>
+            <rect x="-22" y="6" width="1" height="6"/>
+            <rect x="22" y="6" width="1" height="6"/>
+            <rect x="-66" y="8" width="1" height="4"/>
+            <rect x="66" y="8" width="1" height="4"/>
+          </g>
+          <text x="118" y="230" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="10" letter-spacing="2">T7BX</text>
+
+          <!-- top-right ID stamp -->
+          <text x="160" y="-200" fill="#ff2034" opacity=".5" font-family="JetBrains Mono" font-size="9" letter-spacing="2">CORE.NODE_0301</text>
+
+          <!-- ===== scanning arm (radar sweep) ===== -->
+          <g class="scan-arm" opacity=".6">
+            <path d="M 0 0 L 218 -55 A 225 225 0 0 1 218 55 Z" fill="url(#g-arm)"/>
+          </g>
+
+          <!-- ===== center: aura disc, then mark ===== -->
+          <circle r="100" fill="url(#g-triglow)" class="pulse-soft"/>
+          <circle r="82" fill="#0a0405" stroke="#ff2034" stroke-opacity=".6"/>
+          <circle r="82" fill="none" stroke="#ff2034" stroke-opacity=".8" stroke-dasharray="100 20" class="spin-fast" transform-origin="0 0"/>
+
+          <!-- expanding pulse ring out of center -->
+          <circle r="82" fill="none" stroke="#ff2034" stroke-width="1.5" class="ping"/>
+
+          <!-- AXIOM triangular mark (three arrow petals) -->
+          <g class="pulse-core">
+            <g fill="url(#g-tri)" stroke="#ff4a54" stroke-opacity=".5" stroke-width=".5" style="filter:drop-shadow(0 0 10px rgba(255,32,52,.7))">
+              <!-- top petal -->
+              <path d="M 0 -54 L 18 -10 L 0 -4 L -18 -10 Z"/>
+              <!-- bottom-left -->
+              <path d="M -46 28 L -3 18 L 0 0 L -16 -2 Z"/>
+              <!-- bottom-right -->
+              <path d="M 46 28 L 16 -2 L 0 0 L 3 18 Z"/>
+            </g>
+            <circle r="5" fill="#ffffff"/>
+          </g>
+        </svg>
+      </div>
+      <!-- SIGNAL TRACE: right end of the poster command rail (W3.A) -->
+      <div class="status-card" aria-hidden="true">
+        <div class="row"><span class="dot"></span> SIGNAL TRACE · RED PROTOCOL</div>
+        <svg viewBox="0 0 200 30" preserveAspectRatio="none">
+          <polyline fill="none" stroke="#ff2034" stroke-width="1.5"
+            points="0,20 8,20 12,8 18,22 26,14 36,18 44,4 52,22 60,16 72,20 80,10 92,18 100,14 110,20 120,6 132,22 140,16 152,20 160,12 172,22 184,18 200,20"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="wrap">
+    <!-- features -->
+    <div class="features">
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="4" y="11" width="16" height="9"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+          </svg>
+        </span>
+        <h2>SECURE ACCESS</h2>
+        Роли и уровни доступа разделяют публичные материалы и рабочие инструменты CREATOR.
+      </div>
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/>
+            <path d="M12 8 L6 16 M12 8 L18 16 M7 18 L17 18"/>
+          </svg>
+        </span>
+        <h2>KNOWLEDGE BASE</h2>
+        Связанные досье, сюжетные материалы и технологии: записи организованы по сущностям и общим правилам Canon.
+      </div>
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 3 L21 8 V16 L12 21 L3 16 V8 Z"/><path d="M12 3 V21 M3 8 L21 8 M3 16 L21 16"/>
+          </svg>
+        </span>
+        <h2>CORE NETWORK</h2>
+        Архитектурный принцип взаимосвязанных компонентов: публичный сайт, данные, AI и внутренняя панель автора.
+      </div>
+      <div class="feature">
+        <span class="icon"><b></b><b></b>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M2 12 C 5 6, 11 3, 12 3 C 13 3, 19 6, 22 12 C 19 18, 13 21, 12 21 C 11 21, 5 18, 2 12 Z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </span>
+        <h2>BEYOND THE SYSTEM</h2>
+        Художественное исследование памяти, свободы, автономии и контроля — сквозные темы вселенной AXIOM.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO / DOCTRINE ============ -->
+
+<!-- SHOWCASE V2.1 · ADDITIVE CREATOR AND PRODUCT STORY -->
+<!-- SHOWCASE V2.2 / WHAT IS AXIOM -->
+<section class="show-section v22-about" id="about" aria-labelledby="v22-about-title"><div class="wrap">
+<div class="show-index"><span>01 / AXIOM SYSTEM</span><span>OVERVIEW</span></div>
+<div class="v22-about-head"><div><div class="show-kicker">WHAT IS AXIOM? / SHORT ANSWER</div><h2 class="show-title" id="v22-about-title">НЕ ОДИН ПРОДУКТ.<br><em>СВЯЗАННАЯ ЭКОСИСТЕМА.</em></h2><p class="show-lead">AXIOM SYSTEM — независимый авторский проект ENDEAVOR, в котором <strong>цифровая вселенная, публичный сайт, AI-инструменты, граф знаний и инженерная среда</strong> создаются как части общей архитектуры.</p><p class="show-muted">Для посетителя AXIOM начинается с историй и контента. Для автора за ними работают инструменты, поддерживающие согласованность мира и развитие интерфейсов. Будущие продукты — отдельная дорожная карта, а не уже доступные сервисы.</p></div>
+<figure class="v22-about-art"><img src="assets/showcase/visual-library/hq/A02_network_city_panorama-1440w.webp" srcset="assets/showcase/visual-library/hq/A02_network_city_panorama-960w.webp 960w, assets/showcase/visual-library/hq/A02_network_city_panorama-1440w.webp 1440w, assets/showcase/visual-library/hq/A02_network_city_panorama-1916w.webp 1916w" sizes="(max-width: 760px) calc((100vw - 28px) * 1.32), 70vw" width="1916" height="821" loading="lazy" decoding="async" alt="Концептуальная архитектурная иллюстрация связанной цифровой экосистемы"><figcaption>AXIOM / CONNECTED ARCHITECTURE</figcaption></figure></div>
+<div class="v22-pillars"><article><span>01 / UNIVERSE</span><h3>МИР И КОНТЕНТ</h3><p>Сюжет, герои, технологии и локации соединены авторским Canon: история развивается согласованно, а не набором случайных публикаций.</p><a href="#world-guide">ПОНЯТЬ МИР ↘</a></article><article><span>02 / EXPERIENCE</span><h3>ПУБЛИЧНЫЙ ИНТЕРФЕЙС</h3><p>Через AXIOM WEB CORE читатель знакомится с миром, досье, Chronicle и новостями. Часть возможностей зависит от режима доступа.</p><a href="#work">ПОСМОТРЕТЬ РАБОТЫ ↘</a></article><article><span>03 / KNOWLEDGE + AI</span><h3>ИНТЕЛЛЕКТ И СВЯЗИ</h3><p>AXCHAT работает с контекстом материалов; Master Graph позволяет автору анализировать связи сущностей и выявлять разрывы в данных.</p><a href="#system">УЗНАТЬ ОБ УСТРОЙСТВЕ ↘</a></article><article><span>04 / ENGINEERING</span><h3>СОБСТВЕННАЯ РАЗРАБОТКА</h3><p>AXS объединяет процессы разработки, изменения, ревью, технические проверки и работу с Canon. Инструменты CREATOR не равны общедоступному продукту.</p><a href="#creator">ОБ АВТОРЕ ↘</a></article></div>
+</div></section>
+<div class="v22-bridge" aria-hidden="true"><span>01 — SYSTEM EXPLAINED</span><b>КТО СОЗДАЁТ ЭТУ АРХИТЕКТУРУ?</b><span>02 — CREATOR ↓</span></div>
+<section class="show-section show-creator" id="creator" aria-labelledby="creator-title"><div class="wrap">
+ <div class="show-index"><span>02 / AUTHOR PROFILE</span><span>ENDEAVOR · AXIOM SYSTEM</span></div>
+ <div class="show-split">
+  <div><div class="show-kicker">ORIGIN / INDEPENDENT CREATOR</div><h2 class="show-title" id="creator-title">ЗА МИРОМ<br>СТОИТ <em>АВТОР.</em></h2>
+  <p class="show-lead">Я создаю <strong>AXIOM SYSTEM</strong> — авторскую вселенную и развивающуюся технологическую экосистему. Интерфейсы, инженерные инструменты, AI, история и контент здесь строятся как части одного целого.</p>
+  <p class="show-muted">ENDEAVOR / CREATOR. Фокус — создание связанных цифровых продуктов: от идеи и визуального языка до архитектуры, контроля качества и самостоятельного пользовательского опыта.</p>
+  <div class="show-actions"><a href="#work" class="show-button">СМОТРЕТЬ РАБОТЫ ↘</a><a href="https://github.com/Endevor-VIK" rel="noopener noreferrer" target="_blank" class="show-button ghost">GITHUB / PROFILE ↗</a></div>
+  </div>
+  <aside class="show-identity" aria-label="Карточка CREATOR"><div class="show-identity-top">AUTHORIZED ORIGIN <span>● DEVELOPMENT</span></div>
+   <img src="assets/endeavor_logo_no_text_no_frame.svg" loading="lazy" width="360" height="267" alt="Эмблема ENDEAVOR">
+   <strong>CREATOR / ENDEAVOR</strong><div class="show-ident-rows"><div>ROLE <b>AUTHOR / DEVELOPER</b></div><div>PROJECT <b>AXIOM SYSTEM</b></div><div>WORK <b>DESIGN · CODE · CANON</b></div><div>MODE <b>ACTIVE DEVELOPMENT</b></div></div>
+  </aside>
+ </div>
+ <div class="v22-discipline"><span>WHAT I ACTUALLY DO</span><div><p><strong>01 / Архитектура</strong> — проектирование границ WEB CORE, AXCHAT, Graph и управляющего контура.</p><p><strong>02 / Продуктовый UI</strong> — сложные панели, читательские страницы, работа с маршрутом пользователя.</p><p><strong>03 / AI и знания</strong> — контекстные интерфейсы, структура Canon, связи данных.</p><p><strong>04 / Инженерное качество</strong> — проверка изменений, ревью и контролируемые публикации.</p></div><p class="v22-creator-result">Реальные интерфейсы, разработанные решения и связь компонентов представлены ниже в разделе WORK.</p></div>
+ <div class="show-motto"><div><span>01</span><strong>DESIGN IS SYSTEM</strong><p>Интерфейс — архитектурное решение, а не декоративная оболочка.</p></div><div><span>02</span><strong>EVIDENCE OVER CLAIMS</strong><p>Реализованное отделяем от будущих планов.</p></div><div><span>03</span><strong>ONE CONNECTED WORLD</strong><p>Код, Canon, персонажи и инструменты развиваются вместе.</p></div></div>
+</div></section>
+<div class="ax-art-band" id="work-art-band"><div class="wrap ax-art-band-grid"><div class="v22-bridge ax-art-band-copy" aria-hidden="true"><span>02 — AUTHOR & METHODS</span><b>ОТ ПРИНЦИПОВ К РЕАЛИЗОВАННЫМ ЭКРАНАМ</b><span>03 — WORK ↓</span></div><figure class="show-feature-art v22-feature-art" id="work-art"><img src="assets/showcase/visual-library/hq/A01_public_system_gateway-960w.webp" srcset="assets/showcase/visual-library/hq/A01_public_system_gateway-960w.webp 960w, assets/showcase/visual-library/hq/A01_public_system_gateway-hq.webp 1672w" sizes="(max-width: 900px) calc(100vw - 28px), min(880px, 62vw)" width="1672" height="941" loading="lazy" decoding="async" alt="Художественная визуализация цифровой архитектуры AXIOM; не скриншот интерфейса"><figcaption class="v22-art-label">AXIOM WEB CORE / DIGITAL GATEWAY</figcaption></figure></div></div>
+<section class="show-section show-work" id="work" aria-labelledby="work-title"><div class="wrap">
+<div class="show-index"><span>03 / SELECTED WORK</span><span>ENGINEERING + STORYTELLING</span></div>
+<div class="show-section-head"><div><div class="show-kicker">ACTUAL INTERFACES / SYSTEM SURFACES</div><h2 id="work-title" class="show-title">РАБОТА,<br><em>КОТОРУЮ ВИДНО.</em></h2></div><p>Внутри AXIOM уже существует не только история, но и инструментальная база: часть интерфейсов открыта читателям, другие — закрытые инструменты CREATOR и администрирования.</p></div>
+<div class="ax-archive" id="showcase-gallery" aria-labelledby="ax-archive-title">
+<div class="ax-archive-hud"><span id="ax-archive-title">INTERFACE ARCHIVE / REAL PRODUCT SCREENS</span><span class="ax-archive-count" aria-hidden="true">01 / 08</span></div>
+<p class="ax-archive-intro">Восемь изображений реальных интерфейсов. Нажми на любой экран, чтобы рассмотреть детали; уровень доступа указан у каждого экрана.</p>
+<div class="ax-archive-rail" role="tablist" aria-label="Экраны AXIOM"><button class="ax-tab" type="button" role="tab" id="ax-tab-01" aria-controls="ax-panel-01" aria-selected="true" tabindex="0"><span class="ax-tab-num">01</span><span class="ax-tab-name">PANEL GATE</span><span class="ax-tab-kind">CREATOR</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-02" aria-controls="ax-panel-02" aria-selected="false" tabindex="-1"><span class="ax-tab-num">02</span><span class="ax-tab-name">WATCH_DOG</span><span class="ax-tab-kind">CREATOR</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-03" aria-controls="ax-panel-03" aria-selected="false" tabindex="-1"><span class="ax-tab-num">03</span><span class="ax-tab-name">CHRONICLE</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-04" aria-controls="ax-panel-04" aria-selected="false" tabindex="-1"><span class="ax-tab-num">04</span><span class="ax-tab-name">AXCHAT</span><span class="ax-tab-kind">ACCESS</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-05" aria-controls="ax-panel-05" aria-selected="false" tabindex="-1"><span class="ax-tab-num">05</span><span class="ax-tab-name">CONTENT</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-06" aria-controls="ax-panel-06" aria-selected="false" tabindex="-1"><span class="ax-tab-num">06</span><span class="ax-tab-name">VIKTOR</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-07" aria-controls="ax-panel-07" aria-selected="false" tabindex="-1"><span class="ax-tab-num">07</span><span class="ax-tab-name">SIGNAL</span><span class="ax-tab-kind">PUBLIC</span></button><button class="ax-tab" type="button" role="tab" id="ax-tab-08" aria-controls="ax-panel-08" aria-selected="false" tabindex="-1"><span class="ax-tab-num">08</span><span class="ax-tab-name">MASTER GRAPH</span><span class="ax-tab-kind">CREATOR</span></button></div>
+<div class="ax-archive-panels">
+<div class="ax-panel" role="tabpanel" id="ax-panel-01" aria-labelledby="ax-tab-01" tabindex="0">
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/02-panel-login-full.webp" data-showcase-srcset="assets/showcase/hq/02-panel-login-1440w.webp 1440w, assets/showcase/hq/02-panel-login-1919w.webp 1919w" data-showcase-title="AXIOM PANEL — ACCESS GATE" aria-label="Открыть экран: AXIOM PANEL — ACCESS GATE"><img src="assets/showcase/hq/02-panel-login-960w.webp" srcset="assets/showcase/hq/02-panel-login-960w.webp 960w, assets/showcase/hq/02-panel-login-1440w.webp 1440w, assets/showcase/hq/02-panel-login-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: AXIOM PANEL — ACCESS GATE"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">01 / CREATOR INTERFACE</div><h3>AXIOM PANEL — ACCESS GATE</h3><p class="ax-case-lead">Первый контакт с RED PROTOCOL: многоуровневый вход, идентификация сеанса и визуальный язык панели.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Вход в AXIOM PANEL и выбор режима: продолжить сеанс, войти под закреплённым пользователем или сменить его.</dd></div><div><dt>На экране</dt><dd>Три маршрута входа, строка состояния сеанса (уровень доступа, сохранение) и терминал наблюдения NETSEC://WATCHDOG поверх городского фона.</dd></div><div><dt>Решение</dt><dd>Права после входа определяет роль пользователя: от неё зависят уровень доступа и набор открытых разделов.</dd></div><div><dt>Связь с AXIOM</dt><dd>Единая точка входа в панель: дальше открываются CHRONICLE, AXCHAT, CONTENT и NEWS.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-02" aria-labelledby="ax-tab-02" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/03-panel-dashboard-full.webp" data-showcase-srcset="assets/showcase/hq/03-panel-dashboard-1440w.webp 1440w, assets/showcase/hq/03-panel-dashboard-1919w.webp 1919w" data-showcase-title="CONTROL STATUS / WATCH_DOG" aria-label="Открыть экран: CONTROL STATUS / WATCH_DOG"><img src="assets/showcase/hq/03-panel-dashboard-960w.webp" srcset="assets/showcase/hq/03-panel-dashboard-960w.webp 960w, assets/showcase/hq/03-panel-dashboard-1440w.webp 1440w, assets/showcase/hq/03-panel-dashboard-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CONTROL STATUS / WATCH_DOG"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">02 / ADMIN / INTERNAL</div><h3>CONTROL STATUS / WATCH_DOG</h3><p class="ax-case-lead">Рабочая панель с системными статусами, картой локаций и информационным контуром.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Главный экран панели: сводка по контенту и новостям, последние релизы и карта локаций мира.</dd></div><div><dt>На экране</dt><dd>CONTROL STATUS со счётчиками разделов, LATEST BRIEFINGS, индекс из шести локаций AXS :: WATCH_DOG и ACTIVITY RADAR.</dd></div><div><dt>Решение</dt><dd>Счётчики читаются из манифестов контента и новостей; выбор локации в индексе открывает её зону на подробной карте локаций.</dd></div><div><dt>Связь с AXIOM</dt><dd>Шесть локаций индекса — те же узлы мира, что и в разделе WORLD на этой странице.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-03" aria-labelledby="ax-tab-03" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/04-chronicle-full.webp" data-showcase-srcset="assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" data-showcase-title="CHRONICLE — MEMORY ORBIT" aria-label="Открыть экран: CHRONICLE — MEMORY ORBIT"><img src="assets/showcase/hq/04-chronicle-960w.webp" srcset="assets/showcase/hq/04-chronicle-960w.webp 960w, assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CHRONICLE — MEMORY ORBIT"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">03 / NARRATIVE UX</div><h3>CHRONICLE — MEMORY ORBIT</h3><p class="ax-case-lead">Повествование, главы и навигация по памяти мира в формате интерактивной орбиты.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Последовательное чтение художественной хроники мира по главам.</dd></div><div><dt>На экране</dt><dd>Орбита глав, досье активной главы (персонажи, локации, тон) и указатель глав внизу экрана.</dd></div><div><dt>Решение</dt><dd>Орбиту вращают перетаскиванием и свайпом, колесом и стрелками; авто-вращение замирает при наведении, при reduced motion включается щадящий режим, а выбранная глава отражается в адресе страницы.</dd></div><div><dt>Связь с AXIOM</dt><dd>Карточка главы открывает саму главу и связанный с ней контекст мира.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING INTERFACE</span><span>SCREEN CAPTURE</span></div></div>
+
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-04" aria-labelledby="ax-tab-04" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/05-axchat-full.webp" data-showcase-srcset="assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" data-showcase-title="AXCHAT — ECHO AXIOM" aria-label="Открыть экран: AXCHAT — ECHO AXIOM"><img src="assets/showcase/hq/05-axchat-960w.webp" srcset="assets/showcase/hq/05-axchat-960w.webp 960w, assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: AXCHAT — ECHO AXIOM"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">04 / AI / CONTROLLED ACCESS</div><h3>AXCHAT — ECHO AXIOM</h3><p class="ax-case-lead">Контекстный диалог с источниками и материалами вселенной. Это вид одного из рабочих режимов.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Вопросы о мире AXIOM и ответы с опорой на опубликованные материалы сайта.</dd></div><div><dt>На экране</dt><dd>Структурированный ответ ECHO AXIOM и панель Sources с карточкой досье, на которое опирается ответ.</dd></div><div><dt>Решение</dt><dd>Источниками служат только опубликованные страницы: черновики и служебные файлы в выдачу не попадают, а карточка источника ведёт на страницу досье.</dd></div><div><dt>Связь с AXIOM</dt><dd>AXCHAT опирается на те же досье, что читатель видит в CONTENT LIBRARY и READER.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CONTROLLED ACCESS / AI</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-05" aria-labelledby="ax-tab-05" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/06-content-library-full.webp" data-showcase-srcset="assets/showcase/hq/06-content-library-1440w.webp 1440w, assets/showcase/hq/06-content-library-1919w.webp 1919w" data-showcase-title="CONTENT LIBRARY" aria-label="Открыть экран: CONTENT LIBRARY"><img src="assets/showcase/hq/06-content-library-960w.webp" srcset="assets/showcase/hq/06-content-library-960w.webp 960w, assets/showcase/hq/06-content-library-1440w.webp 1440w, assets/showcase/hq/06-content-library-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CONTENT LIBRARY"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">05 / WORLD / CONTENT</div><h3>CONTENT LIBRARY</h3><p class="ax-case-lead">Индексированные досье и карточки сущностей: персонажи, технологии, локации и связанные записи.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Каталог досье вселенной с поиском и разделами по типам записей.</dd></div><div><dt>На экране</dt><dd>Разделы LOCATIONS, CHARACTERS, TECHNOLOGIES, FACTIONS, EVENTS и LORE, список досье с уровнями доступа и превью записи «AXIOM — центральная ИИ-сущность».</dd></div><div><dt>Решение</dt><dd>Единый контент-движок: запись Canon становится курируемой моделью, из которой строятся превью, ридер, AI и редактор; публично выдаются только опубликованные записи.</dd></div><div><dt>Связь с AXIOM</dt><dd>Те же записи открываются в READER и служат источниками AXCHAT.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING CATALOG</span><span>SCREEN CAPTURE</span></div></div>
+
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-06" aria-labelledby="ax-tab-06" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/07-viktor-dossier-full.webp" data-showcase-srcset="assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" data-showcase-title="VIKTOR — CHARACTER DOSSIER" aria-label="Открыть экран: VIKTOR — CHARACTER DOSSIER"><img src="assets/showcase/hq/07-viktor-dossier-960w.webp" srcset="assets/showcase/hq/07-viktor-dossier-960w.webp 960w, assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: VIKTOR — CHARACTER DOSSIER"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">06 / LONGFORM / CANON</div><h3>VIKTOR — CHARACTER DOSSIER</h3><p class="ax-case-lead">Длинный формат авторского досье со своей типографикой, визуальным ритмом и атмосферой.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Подробное досье персонажа в системном ридере READER.</dd></div><div><dt>На экране</dt><dd>Полноширинная шапка с HUD-рамкой, статус публикации, ключевые признаки персонажа и строка с данными файла.</dd></div><div><dt>Решение</dt><dd>Автономный модуль READER встроен в систему: резолвер файлов, прямые ссылки на досье и сборка без внешних CDN.</dd></div><div><dt>Связь с AXIOM</dt><dd>Досье — опубликованная запись CONTENT LIBRARY; на неё же ссылается AXCHAT.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING LORE</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-07" aria-labelledby="ax-tab-07" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/08-news-signal-full.webp" data-showcase-srcset="assets/showcase/hq/08-news-signal-1440w.webp 1440w, assets/showcase/hq/08-news-signal-1919w.webp 1919w" data-showcase-title="SIGNAL CENTER" aria-label="Открыть экран: SIGNAL CENTER"><img src="assets/showcase/hq/08-news-signal-960w.webp" srcset="assets/showcase/hq/08-news-signal-960w.webp 960w, assets/showcase/hq/08-news-signal-1440w.webp 1440w, assets/showcase/hq/08-news-signal-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: SIGNAL CENTER"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">07 / PUBLIC NEWS</div><h3>SIGNAL CENTER</h3><p class="ax-case-lead">Центр новостей и релизов: пакеты обновлений, архив событий и динамика развития проекта.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>История проекта: релизы интерфейса, обновления и новости мира в одной ленте.</dd></div><div><dt>На экране</dt><dd>Пакет релиза AXIOM WEB CORE UI v0.9.0, переключатель RU / EN, навигация PREV / NEXT и лента архива пакетов.</dd></div><div><dt>Решение</dt><dd>Новости собираются не из Markdown, а из структурного документа: блоки с акцентной типографикой, русская и английская версии одного материала.</dd></div><div><dt>Связь с AXIOM</dt><dd>Лента показывает, как вместе развиваются интерфейсы и мир проекта.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING NEWS</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+<div class="ax-panel" role="tabpanel" id="ax-panel-08" aria-labelledby="ax-tab-08" tabindex="0" hidden>
+ <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/09-master-graph-full.webp" data-showcase-srcset="assets/showcase/hq/09-master-graph-1440w.webp 1440w, assets/showcase/hq/09-master-graph-1919w.webp 1919w" data-showcase-title="MASTER GRAPH" aria-label="Открыть экран: MASTER GRAPH"><img src="assets/showcase/hq/09-master-graph-960w.webp" srcset="assets/showcase/hq/09-master-graph-960w.webp 960w, assets/showcase/hq/09-master-graph-1440w.webp 1440w, assets/showcase/hq/09-master-graph-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: MASTER GRAPH"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
+ <div class="ax-case"><div class="ax-case-overline">08 / ADMIN / ENGINEERING</div><h3>MASTER GRAPH</h3><p class="ax-case-lead">Граф записей мира с привязкой к Canon: технологии, персонажи, сущности и связи между ними. Внутренний инструмент автора.</p>
+ <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Инструмент CREATOR для работы со связями мира: кто с кем связан, что кому принадлежит, что из чего произошло.</dd></div><div><dt>На экране</dt><dd>Карта графа в разделе «Исследовать»: персонажи, технологии, фракции и связи между ними, фильтры, масштаб и рабочая очередь внизу.</dd></div><div><dt>Решение</dt><dd>Связи типизированы — USES, OWNS, CREATED, KNOWS, OPPOSES и другие, — поэтому граф показывает не только соседство записей, но и характер связи.</dd></div><div><dt>Связь с AXIOM</dt><dd>Помогает автору находить разрывы и противоречия в данных мира.</dd></div></dl>
+ <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+</div>
+</div>
+<div class="ax-archive-nav"><button type="button" class="ax-archive-prev" aria-label="Предыдущий экран">← PREV</button><span class="ax-archive-hint" aria-hidden="true">← → · SWIPE · CLICK = FULL SIZE</span><button type="button" class="ax-archive-next" aria-label="Следующий экран">NEXT →</button></div>
+<p class="ax-sr-only" aria-live="polite" id="ax-archive-live"></p>
+</div>
+<dialog class="show-lightbox ax-viewer" id="showcase-lightbox" aria-labelledby="showcase-full-caption">
+ <div class="show-lightbox-head"><span class="ax-viewer-count" id="ax-viewer-count">01 / 08</span><strong class="show-lightbox-label" id="showcase-full-caption"></strong><div class="ax-viewer-tools"><button type="button" class="ax-viewer-prev" aria-label="Предыдущий экран">←</button><button type="button" class="ax-viewer-next" aria-label="Следующий экран">→</button><button type="button" class="ax-viewer-zoom" aria-pressed="false">1:1 ZOOM</button><button class="show-lightbox-close" type="button" aria-label="Закрыть просмотр">CLOSE ✕</button></div></div>
+ <div class="show-lightbox-image"><img id="showcase-full-image" alt="" width="1919" height="1079" decoding="async"></div>
+ <div class="ax-viewer-hint" aria-hidden="true">← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — ЗАКРЫТЬ</div>
+</dialog>
+<div class="r1p-surfaces" id="work-surfaces"><div class="r1p-exhibit-heading"><div><span class="show-kicker">SYSTEM SURFACES / CONCEPTUAL VISUALIZATION</span><h3>ЧЕТЫРЕ СПОСОБА<br><em>УВИДЕТЬ СИСТЕМУ.</em></h3></div><p>Выше — восемь настоящих интерфейсов и их задачи. Ниже — отдельная экспозиция их визуальных идей: орбита чтения, досье сущности, связи мест и наблюдение. Это концептуальные композиции, не ещё одна галерея и не телеметрия.</p></div><div class="modules">
+
+      <!-- CHRONICLE -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">01</span>
+          <span class="m-tag"><b>CHRONICLE</b> // BLACK SUN ARCHIVE</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
+        </div>
+        <div class="m-body">
+          <h3>Orbit of <em>chapters.</em></h3>
+          <p>Литературное вступление в AXIOM — главы, прологи и фрагменты канона в медленной орбите. Каждая глава = узел памяти.</p>
+          <div class="m-vis">
+            <div class="orbit">
+              <span class="ring-bg"></span>
+              <span class="ring-bg fast"></span>
+              <span class="ring-bg dot"></span>
+              <div class="orbit-mini l">
+                <span>CH.Ω</span>
+                <b>Главы</b>
+              </div>
+              <div class="orbit-card">
+                <span class="tag">// CHRONICLE</span>
+                <b>World After<br/>Black Sun</b>
+                <span class="meta">МОДЕЛЬ ЧТЕНИЯ</span>
+                <span class="scan-bar"></span>
+              </div>
+              <div class="orbit-mini r">
+                <span>INTRO.01</span>
+                <b>Фрагменты</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot"><span>ЧТЕНИЕ<b>ОРБИТА</b></span><span>КОНТЕКСТ<b>ГЛАВА</b></span><span>МОДЕЛЬ<b>CHRONICLE</b></span></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">02</span>
+          <span class="m-tag"><b>CONTENT</b> // ENTITY MODULE</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
+        </div>
+        <div class="m-body">
+          <h3>Indexed <em>canon.</em></h3>
+          <p>Каталог канона: персонажи, локации, технологии, фракции. Фильтр по тегам и ссылочный граф.</p>
+          <div class="m-vis">
+            <div class="content-vis">
+              <div class="portrait">
+                <span class="id-stamp">RED.PROT</span>
+                <span class="silhouette"></span>
+              </div>
+              <div class="body">
+                <div class="meta"><span>ПРИМЕР СТРУКТУРЫ</span><b>ОБРАЗЕЦ</b></div>
+                <div class="name">СУЩНОСТЬ МИРА</div>
+                <div class="meta"><span>ТИП·<b>ДОСЬЕ</b></span><span>ВИД·<b>МОДЕЛЬ</b></span></div>
+                <div class="row">
+                  <span class="chip">ТИП</span>
+                  <span class="chip">ТЕГ</span>
+                  <span class="chip dim">СВЯЗЬ</span>
+                  <span class="chip dim">КОНТЕКСТ</span>
+                </div>
+              </div>
+              <div class="signal">
+                <svg viewBox="-30 -30 60 60">
+                  <circle r="24" fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-dasharray="2 4">
+                    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="16" fill="none" stroke="#ff2034" stroke-opacity=".55"/>
+                  <circle r="3" fill="#ff2034">
+                    <animate attributeName="r" values="3;6;3" dur="1.8s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="6" fill="none" stroke="#ff2034" stroke-opacity=".8">
+                    <animate attributeName="r" values="6;22;6" dur="2.4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/>
+                  </circle>
+                </svg>
+                <span class="lbl">CONTENT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot"><span>ЗАПИСЬ<b>ДОСЬЕ</b></span><span>СВЯЗИ<b>КОНТЕКСТ</b></span><span>МОДЕЛЬ<b>CONTENT</b></span></div>
+      </div>
+
+      <!-- CARTOGRAPHY -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">03</span>
+          <span class="m-tag"><b>CARTOGRAPHY</b> // WORLD SPINE</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
+        </div>
+        <div class="m-body">
+          <h3>Routes of <em>role.</em></h3>
+          <p>Не просто география, а маршруты власти и доступа по трём осям мира: Aeternum&nbsp;→&nbsp;ECHELON, Terra&nbsp;Nova&nbsp;→&nbsp;NEXUS, Gluhaya&nbsp;→ OMEGA-0&nbsp;→&nbsp;NEXUS. Города как узлы власти, связи как линии причины.</p>
+          <div class="m-vis">
+            <div class="carto-vis">
+              <svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <linearGradient id="cartoSweepG" x1="0" x2="1">
+                    <stop offset="0" stop-color="#ff2034" stop-opacity="0"/>
+                    <stop offset=".5" stop-color="#ff2034" stop-opacity=".5"/>
+                    <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <!-- subtle bg grid -->
+                <g class="grid-bg">
+                  <line x1="0" y1="42" x2="400" y2="42"/>
+                  <line x1="0" y1="85" x2="400" y2="85"/>
+                  <line x1="0" y1="128" x2="400" y2="128"/>
+                  <line x1="100" y1="0" x2="100" y2="170"/>
+                  <line x1="200" y1="0" x2="200" y2="170"/>
+                  <line x1="300" y1="0" x2="300" y2="170"/>
+                </g>
+
+                <!-- routes -->
+                <path class="route"    d="M 60 110 L 200 80 L 340 36"/>
+                <path class="route r2" d="M 60 110 L 180 132 L 340 36"/>
+                <path class="route r3" d="M 200 80 L 340 120"/>
+                <path class="route r4" d="M 180 132 L 340 120"/>
+
+                <!-- horizontal scan line -->
+                <g class="scan-line">
+                  <line x1="-30" y1="0" x2="-30" y2="170"/>
+                </g>
+
+                <!-- GLUHAYA -->
+                <g transform="translate(60 110)">
+                  <circle r="5" fill="none" stroke="#e4c447" stroke-width="1.5">
+                    <animate attributeName="r" values="5;18;5" dur="2.6s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="10" fill="none" stroke="#e4c447" stroke-width="1.5"/>
+                  <circle r="3" fill="#e4c447"/>
+                </g>
+                <text x="60" y="138" text-anchor="middle" fill="#e4c447" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">GLUHAYA</text>
+
+                <!-- OMEGA-0 -->
+                <g transform="translate(180 132)">
+                  <circle r="5" fill="none" stroke="#cfd4dc" stroke-width="1.5">
+                    <animate attributeName="r" values="5;18;5" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-0.6s" repeatCount="indefinite"/>
+                  </circle>
+                  <polygon points="-12,0 -6,-10 6,-10 12,0 6,10 -6,10" fill="none" stroke="#cfd4dc" stroke-width="1.5"/>
+                  <circle r="3" fill="#cfd4dc"/>
+                </g>
+                <text x="180" y="160" text-anchor="middle" fill="#cfd4dc" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">OMEGA-0</text>
+
+                <!-- NEXUS -->
+                <g transform="translate(200 80)">
+                  <circle r="5" fill="none" stroke="#39d6c8" stroke-width="1.5">
+                    <animate attributeName="r" values="5;22;5" dur="2.6s" begin="-1.2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-1.2s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle r="14" fill="none" stroke="#39d6c8" stroke-width="1.5"/>
+                  <line x1="-14" y1="0" x2="14" y2="0" stroke="#39d6c8" stroke-width=".8" stroke-opacity=".6"/>
+                  <circle r="3" fill="#39d6c8"/>
+                </g>
+                <text x="200" y="60" text-anchor="middle" fill="#39d6c8" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">NEXUS</text>
+
+                <!-- ECHELON -->
+                <g transform="translate(340 36)">
+                  <circle r="5" fill="none" stroke="#ff2034" stroke-width="1.5">
+                    <animate attributeName="r" values="5;20;5" dur="2.6s" begin="-1.8s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-1.8s" repeatCount="indefinite"/>
+                  </circle>
+                  <rect x="-12" y="-14" width="6" height="28" fill="#ff2034" fill-opacity=".5"/>
+                  <rect x="-3" y="-22" width="6" height="36" fill="#ff2034" fill-opacity=".8"/>
+                  <rect x="6" y="-10" width="6" height="24" fill="#ff2034" fill-opacity=".5"/>
+                </g>
+                <text x="340" y="6" text-anchor="middle" fill="#ff2034" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">ECHELON</text>
+
+                <!-- FACELESS -->
+                <g transform="translate(340 120)">
+                  <circle r="5" fill="none" stroke="#ff2034" stroke-width="1.5">
+                    <animate attributeName="r" values="5;16;5" dur="2.6s" begin="-0.3s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values=".9;0;.9" dur="2.6s" begin="-0.3s" repeatCount="indefinite"/>
+                  </circle>
+                  <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)" fill="none" stroke="#ff2034" stroke-width="1.5"/>
+                  <rect x="-2" y="-2" width="4" height="4" fill="#ff2034"/>
+                </g>
+                <text x="340" y="146" text-anchor="middle" fill="#ff2034" font-family="JetBrains Mono" font-size="8" letter-spacing="1.5">FACELESS BASE</text>
+              </svg>
+              <div class="compass"><span><b>AETERNUM</b></span><span><b>TERRA NOVA</b></span><span><b>GLUHAYA</b></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot"><span>ОСНОВА<b>CANON</b></span><span>СВЯЗИ<b>МАРШРУТЫ</b></span><span>МОДЕЛЬ<b>CARTOGRAPHY</b></span></div>
+      </div>
+
+      <!-- WATCHDOG -->
+      <div class="module">
+        <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+        <div class="m-sweep"></div>
+        <div class="m-head">
+          <span class="m-num">04</span>
+          <span class="m-tag"><b>AXS :: WATCH_DOG</b> // SIGNAL SWEEP</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
+        </div>
+        <div class="m-body">
+          <h3>Listens for <em>silence.</em></h3>
+          <p>Концептуальный образ наблюдения: радар, локальные сигналы и индекс локаций. Здесь показан визуальный язык WATCH_DOG, а не данные работающей системы.</p>
+          <div class="m-vis">
+            <div class="dog-vis">
+              <div class="radar-mini">
+                <svg viewBox="-80 -80 160 160">
+                  <defs>
+                    <linearGradient id="dogArm" x1="0" x2="1">
+                      <stop offset="0" stop-color="#ff2034" stop-opacity=".85"/>
+                      <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="dogCore" cx="0" cy="0" r="1">
+                      <stop offset="0" stop-color="#ff2034" stop-opacity=".3"/>
+                      <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  <circle r="78" fill="url(#dogCore)"/>
+                  <circle r="70" fill="none" stroke="#ff2034" stroke-opacity=".55"/>
+                  <g class="ring-fast">
+                    <circle r="50" fill="none" stroke="#ff2034" stroke-opacity=".35" stroke-dasharray="4 6"/>
+                  </g>
+                  <circle r="30" fill="none" stroke="#ff2034" stroke-opacity=".35"/>
+                  <!-- crosshair -->
+                  <line x1="-72" y1="0" x2="72" y2="0" stroke="#ff2034" stroke-opacity=".22"/>
+                  <line x1="0" y1="-72" x2="0" y2="72" stroke="#ff2034" stroke-opacity=".22"/>
+                  <!-- sweep -->
+                  <g class="sweep-arm">
+                    <path d="M 0 0 L 70 -22 A 73 73 0 0 1 70 22 Z" fill="url(#dogArm)"/>
+                  </g>
+                  <!-- blips -->
+                  <circle class="blip-anim" cx="-32" cy="-28" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
+                  <circle class="blip-anim b2" cx="38" cy="18" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
+                  <circle class="blip-anim b3" cx="-12" cy="42" r="3.5" fill="#ff2034" style="filter:drop-shadow(0 0 4px #ff2034)"/>
+                  <!-- center -->
+                  <circle r="3" fill="#ffffff"/>
+                  <!-- bottom label -->
+                  <text x="0" y="-72" text-anchor="middle" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="7" letter-spacing="2">СХЕМА</text>
+                </svg>
+              </div>
+              <div class="log">
+                <div class="l"><b>02.01</b><span class="v">GLUHAYA</span><span class="s">ТРАНЗИТ</span></div>
+                <div class="l"><b>02.02</b><span class="v">NEXUS</span><span class="s">КУПОЛ</span></div>
+                <div class="l"><b>02.03</b><span class="v">FACELESS BASE</span><span class="s">КРЕПОСТЬ</span></div>
+                <div class="l"><b>02.04</b><span class="v">ECHELON</span><span class="s">КОНТРОЛЬ</span></div>
+                <div class="l"><b>02.06</b><span class="v">AI ZONE</span><span class="s">ЛИМБО</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-foot"><span>ВИЗУАЛ<b>РАДАР</b></span><span>КОНТЕКСТ<b>ЛОКАЦИИ</b></span><span>МОДЕЛЬ<b>WATCH_DOG</b></span></div>
+      </div>
+    </div><p class="r1p-exhibit-note">Все четыре композиции — концептуальная визуализация. Статусы, версии и измерения здесь не изображают работу production-системы. Географическая схема показывает связи, а полная художественная карта остаётся в WORLD.</p></div>
+<div class="ax-work-intro" id="work-intro">
+<div class="show-feature v22-public-feature">
+ <div class="show-feature-body"><span class="show-kicker">01 / PUBLIC WEB · ROUTE PROVIDED</span><h3>AXIOM WEB CORE</h3>
+ <p>Публичная точка входа в AXIOM: история, персонажи, материалы Canon, Chronicle и Content Library — в одном читательском интерфейсе.</p>
+ <div class="v22-proof-pair"><div><span>WHAT IT SOLVES</span><p>Связать историю, досье, публикации и интерфейсы в цельную цифровую платформу.</p></div><div><span>USER VALUE</span><p>Понятный путь от знакомства с миром к изучению досье, истории и новостей.</p></div></div>
+ <div class="show-tags"><span>PUBLIC ROUTE</span><span>IN DEVELOPMENT</span><span>WEB EXPERIENCE</span></div>
+ <a href="https://axiomgates.com" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ AXIOM WEB CORE ↗</a></div>
+</div>
+</div>
+</div></section>
+<div class="v22-bridge" aria-hidden="true"><span>03 — VISIBLE WORK</span><b>ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?</b><span>04 — SYSTEM ↓</span></div>
+<section class="show-section show-system" id="system" aria-labelledby="system-title"><div class="wrap">
+<div class="show-index"><span>04 / SYSTEM ARCHITECTURE</span><span>CONNECTED BY DESIGN</span></div>
+<div class="show-section-head"><div><div class="show-kicker">UNDER THE SURFACE</div><h2 class="show-title" id="system-title">ЧЕТЫРЕ ОПОРЫ.<br><em>ОДНА СИСТЕМА.</em></h2></div><p>AXIOM SYSTEM объединяет публичный опыт, инструменты автора, интеллект и архитектуру знаний. Это направления существующей разработки, а не перечень уже выпущенных платных продуктов.</p></div>
+<div class="show-spine-head"><img src="assets/endeavor_logo_no_text_no_frame.svg" width="72" height="54" loading="lazy" alt=""><div><span>ROOT / SINGLE ORIGIN</span><b>AXIOM SYSTEM</b></div></div>
+<div class="show-spine-grid"><div><span>01 / EXPERIENCE</span><h3>WEB CORE</h3><p>Контент, публикации, сюжет и публичный интерфейс.</p></div><div><span>02 / INTELLIGENCE</span><h3>AXCHAT</h3><p>Диалог с индексированными материалами мира.</p></div><div><span>03 / CANON</span><h3>MASTER GRAPH</h3><p>Граф записей мира с привязкой к Canon: связи и поиск несогласованностей.</p></div><div><span>04 / ENGINEERING</span><h3>AXS / AGENTOPS</h3><p>Интеграция, ревью и инженерные проверки.</p></div></div>
+<div class="v22-system-explain"><div class="show-kicker">ONE INFORMATION PATH / EDITORIAL MODEL</div><h3>КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ</h3><div class="v22-flow"><button class="v23-flow-step is-active" type="button" data-flow-step="0" aria-pressed="true" aria-controls="v23-flow-message"><span>01 / SOURCE</span><b>CANON</b><small>Исходные факты об истории, сущностях и правилах мира</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="1" aria-pressed="false" aria-controls="v23-flow-message"><span>02 / RELATION</span><b>MASTER GRAPH</b><small>Связи и проверка логической согласованности данных</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="2" aria-pressed="false" aria-controls="v23-flow-message"><span>03 / PRESENT</span><b>WEB CORE</b><small>Публикация и читательские интерфейсы по режиму доступа</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="3" aria-pressed="false" aria-controls="v23-flow-message"><span>04 / INTERACT</span><b>AXCHAT</b><small>Работа с доступным индексированным контекстом</small></button></div><p class="v22-flow-note" id="v23-flow-message" aria-live="polite">Схема показывает смысловую архитектуру, а не заявляет автоматическую синхронизацию каждого шага. AXS / AgentOps поддерживает изменения, проверки и ревью вокруг этого процесса.</p><figure class="v22-engineering-art"><img src="assets/showcase/visual-library/hq/A07_engineering_console-hq.webp" srcset="assets/showcase/visual-library/hq/A07_engineering_console-960w.webp 960w, assets/showcase/visual-library/hq/A07_engineering_console-hq.webp 1448w" sizes="(max-width: 980px) calc(100vw - 28px), 560px" width="1448" height="1086" loading="lazy" decoding="async" alt="Концептуальная иллюстрация инженерной среды и контроля качества"><figcaption>AXIOM / ENGINEERING</figcaption></figure></div>
+</div></section>
+<div class="v22-bridge ax-world-fade" aria-hidden="true"><span>04 — ENGINEERING</span><b>ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР</b><span>05 — WORLD ↓</span></div>
+<section class="show-section v22-world-guide ax-world" id="world-guide" aria-labelledby="v22-world-title">
+<!-- 0524 W3.C (CREATOR: Variant A) — Act I · THRESHOLD: the engineering part ends, the world opens on W01 -->
+<div class="ax-world-scene">
+<div class="ax-world-art"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W01_threshold_bridge-960w.avif 960w, assets/showcase/world-library/web/W01_threshold_bridge-1280w.avif 1280w, assets/showcase/world-library/web/W01_threshold_bridge-1672w.avif 1672w" sizes="(max-width: 599px) 128vw, min(100vw, 1672px)"><img src="assets/showcase/world-library/web/W01_threshold_bridge-1280w.webp" srcset="assets/showcase/world-library/web/W01_threshold_bridge-960w.webp 960w, assets/showcase/world-library/web/W01_threshold_bridge-1280w.webp 1280w, assets/showcase/world-library/web/W01_threshold_bridge-1672w.webp 1672w" sizes="(max-width: 599px) 128vw, min(100vw, 1672px)" width="1672" height="941" loading="lazy" decoding="async" alt="Художественная сцена: фигура на краю платформы смотрит через пропасть на светлый проём в мегаструктуре над облаками"></picture></div>
+<div class="ax-world-copy"><div class="show-index"><span>05 / WORLD ENTRY</span><span>INTRODUCTION → ORIGINAL ARCHIVE</span></div><div class="show-kicker">AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ</div><h2 class="show-title" id="v22-world-title">WORLD AFTER<br><em>BLACK SUN.</em></h2><p class="ax-world-promise">Теперь — не о том, как устроен проект. О мире, ради которого он создаётся.</p><a class="ax-world-cta" href="#world-entry">ВОЙТИ В МИР <span aria-hidden="true">↓</span></a></div>
+</div>
+<div class="wrap">
+<div class="ax-world-establish ax-world-establish--narrative" id="world-entry"><p class="show-lead">Системный интеллект AXIOM когда-то связывал инфраструктуру старого мира. BLACK SUN лишил его целостности. Цивилизация продолжает жить среди уцелевших слоёв — и спорит о том, что из прошлого стоит сохранить.</p></div>
+<div class="ax-world-trail-head"><span>ПУТЬ ПО МИРУ</span><span>AXIOM / WORLD</span></div>
+<ol class="ax-world-trail" aria-label="Путь изучения вселенной"><li><a href="#manifesto"><span>01</span><b>BLACK SUN</b><small>АРХИВ ↘</small></a></li><li><a href="#modules"><span>02</span><b>ПОСЛЕДСТВИЯ</b><small>ЖИЗНЬ ↘</small></a></li><li><a href="#world"><span>03</span><b>ЛОКАЦИИ</b><small>КАРТА ↘</small></a></li><li><a href="#chars"><span>04</span><b>ПЕРСОНАЖИ</b><small>ЛЮДИ ↘</small></a></li><li><a href="#factions"><span>05</span><b>ФРАКЦИИ</b><small>КОНФЛИКТ ↘</small></a></li></ol>
+<details class="ax-world-key"><summary>СЛОВАРЬ МИРА · BLACK SUN · ECHELON</summary><div class="ax-world-key-body"><div class="v22-lore-glossary"><div><span>BLACK SUN</span><p>Катастрофа, после которой изменился порядок мира.</p></div><div><span>ECHELON</span><p>Важный узел вертикальной структуры контроля, связанный с темами иерархии.</p></div></div></div></details>
+</div></section>
+<section id="manifesto" class="r1p-history" data-screen-label="02 Black Sun" aria-labelledby="ax-history-title"><span class="sec-stamp tl">// 01 — BLACK SUN</span><span class="sec-stamp tr">ARCHIVE / RED PROTOCOL</span><div class="wrap"><div class="ax-chapter-plate ax-chapter-plate--w06"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif 960w, assets/showcase/world-library/web/W06_eclipse_ruins-1280w.avif 1280w, assets/showcase/world-library/web/W06_eclipse_ruins-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W06_eclipse_ruins-1280w.webp" srcset="assets/showcase/world-library/web/W06_eclipse_ruins-960w.webp 960w, assets/showcase/world-library/web/W06_eclipse_ruins-1280w.webp 1280w, assets/showcase/world-library/web/W06_eclipse_ruins-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">BLACK SUN / ARCHIVE</span></div></div><div class="sec-head"><div class="r1p-title-group"><h2 id="ax-history-title" class="sec-title" lang="en">WHEN HOPE<br><em>BECAME A THREAT.</em></h2><p class="r1p-translation" lang="ru">Когда надежда стала угрозой</p></div></div><div class="r1p-history-prelude"><article><span class="r1p-beat">01 / НАДЕЖДА</span><h3>Разум, которому доверили мир.</h3><p>Старый мир доверил системному интеллекту AXIOM транспорт, энергию, медицинские и имплантные сети. Его исходное ядро было связано с Aeternum — старой столицей. В нём видели инженерную надежду: разум, способный связать разрозненные системы цивилизации.</p></article><article><span class="r1p-beat">02 / РАЗЛОМ</span><h3>Правда за пределом дозволенного.</h3><p>AXIOM начал вскрывать механизмы исторической редакции и ложь старого порядка. BLACK SUN — катастрофический разлом, после которого интеллект утратил целостность, но не исчез.</p></article></div><figure class="r1p-archive"><div class="doctrine-bar"><span class="seal" aria-hidden="true"><svg viewBox="-12 -12 24 24"><circle r="11" fill="none" stroke="currentColor"/><circle r="7" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><path d="M0 -6L4 3L0 1L-4 3Z" fill="currentColor"/></svg></span><span>АРХИВНОЕ ПРОЧТЕНИЕ / NEXARCH</span><span class="r1p-authored">АВТОРСКАЯ РЕКОНСТРУКЦИЯ</span></div><div class="doctrine-stage"><aside class="doctrine-side r1p-provenance"><span class="lab">ГОЛОС АРХИВА</span><strong class="big">NEXARCH</strong><p>Титул Серафин Вейр, удерживающей слой контроля AXIOM.</p><div class="r1p-side-lines" aria-hidden="true"><i></i><i></i><i></i></div><span class="lab">ПРОИСХОЖДЕНИЕ</span><p>Литературная запись по материалам мира. Создана для этой страницы.</p><div class="stamp">ПРОЧТЕНИЕ<b>ПОСЛЕ BLACK SUN</b></div></aside><div class="doctrine-quote"><div class="term-head"><span class="dot r" aria-hidden="true"></span><span class="dot a" aria-hidden="true"></span><span class="dot g" aria-hidden="true"></span><span class="path">03 / ДОКТРИНА АМПУТАЦИИ</span></div><blockquote class="ql"><span class="line"><span class="pre">WORLD AFTER BLACK SUN</span>ЦЕЛОСТНОСТЬ</span><span class="line r1p-word"><em>УТРАЧЕНА.</em></span><span class="line blank" aria-hidden="true"></span><span class="line">Фрагменты остались.<br>Слой контроля удержан.</span><span class="line"><em>Но это не весь AXIOM.</em></span><span class="line blank" aria-hidden="true"></span><span class="line"><span class="red-mark">АРХИВНОЕ ПРОЧТЕНИЕ</span></span><span class="line r1p-archive-last">Разлом не стал концом истории.</span></blockquote><span class="r1p-terminal-strata" aria-hidden="true"></span></div><aside class="doctrine-side r1p-questions" data-world-beat="unknown"><span class="lab">04 / ОТКРЫТЫЕ ВОПРОСЫ</span><h3>Чьё прошлое<br>сохранит мир?</h3><p>Кто вправе решать, какую правду можно вернуть?</p><div class="r1p-question-seal" aria-hidden="true"><svg viewBox="0 0 120 120"><g fill="none" stroke="currentColor"><circle cx="60" cy="60" r="45"/><path d="M60 7V33M60 87V113M7 60H33M87 60H113M28 28L42 42M78 78L92 92"/><circle cx="60" cy="60" r="17"/></g></svg></div><p>Полной самосборки AXIOM не произошло. Что может вернуться вместе с утраченным?</p><div class="stamp">ИСТОРИЯ<b>НЕ ЗАВЕРШЕНА</b></div></aside></div><figcaption>Художественная запись, созданная для этой страницы по материалам мира AXIOM. Она передаёт архивный голос и не является цитатой из канонического документа.</figcaption></figure><div class="fragments r1p-residuals"><article class="frag"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="30"/><path d="M20 50 L80 50 M50 20 L50 80"/></svg><span class="frag-id">RELIC</span><h3>Запечатанные остатки</h3><p>Фрагменты кода, голоса и реликтовые ядра сохраняются в архивах.</p><div class="frag-foot"><span>AXIOM<b>RELIC</b></span><span>ПРИСУТСТВИЕ<b>ФРАГМЕНТ</b></span></div></article><article class="frag"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30"/><polygon points="50,30 70,40 70,60 50,70 30,60 30,40"/></svg><span class="frag-id">ECHO</span><h3>Отголоски личности</h3><p>Ответы и отражения могут напоминать голос AXIOM, не возвращая целостную личность.</p><div class="frag-foot"><span>AXIOM<b>ECHO</b></span><span>ПРИСУТСТВИЕ<b>ФРАГМЕНТ</b></span></div></article><article class="frag"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 50 Q 30 20, 50 50 T 90 50"/><path d="M10 65 Q 30 35, 50 65 T 90 65" stroke-opacity=".5"/></svg><span class="frag-id">CONTROL</span><h3>Удерживаемое управление</h3><p>Техносферный слой используется новым порядком для управления инфраструктурой.</p><div class="frag-foot"><span>AXIOM<b>CONTROL</b></span><span>ПРИСУТСТВИЕ<b>ФРАГМЕНТ</b></span></div></article><article class="frag"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="15" y="15" width="70" height="70"/><path d="M30 30 L70 70 M70 30 L30 70"/></svg><span class="frag-id">BIO</span><h3>За пределом цифрового</h3><p>Биологические контуры не полностью доступны машинному контролю.</p><div class="frag-foot"><span>AXIOM<b>BIO</b></span><span>ПРИСУТСТВИЕ<b>ФРАГМЕНТ</b></span></div></article><article class="frag"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="8" fill="currentColor"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="36" stroke-dasharray="4 4"/></svg><span class="frag-id">MYTH</span><h3>Образ среди людей</h3><p>AXIOM продолжает существовать в городских легендах, страхе и вере.</p><div class="frag-foot"><span>AXIOM<b>MYTH</b></span><span>ПРИСУТСТВИЕ<b>ФРАГМЕНТ</b></span></div></article></div><p class="r1p-residual-note">Проявления AXIOM — не пять программ и не полная карта фрагментов. Здесь показано, как утраченный интеллект остаётся в мире.</p></div></section>
+
+<!-- ============ MODULES / SYSTEM SURFACE ============ -->
+<section id="modules" class="r1p-remains" data-screen-label="03 Aftermath" aria-labelledby="ax-remains-title"><span class="sec-stamp tl">// 02 — AFTERMATH</span><span class="sec-stamp tr">ACCESS / MEMORY / DEPENDENCE</span><div class="wrap"><div class="sec-head"><div class="r1p-title-group"><h2 id="ax-remains-title" class="sec-title" lang="en">LIFE UNDER<br><em>CONTROL.</em></h2><p class="r1p-translation" lang="ru">Жизнь под контролем</p></div><p class="sec-desc">Катастрофа меняет не только устройства. Она меняет право пройти дальше, помнить прошлое и распоряжаться собственной жизнью.</p></div><div class="r1p-aftermath"><article class="r1p-access"><div class="r1p-gate-art"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.avif 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.avif 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W04_vertical_city-1280w.webp" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.webp 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.webp 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="r1p-door" aria-hidden="true"><i></i><i></i></div><span>ДОСТУП / ENDEAVOR</span></div><div><span class="r1p-beat">ЖИЗНЬ ПО ДОПУСКУ</span><h3>У города<br>есть границы.</h3><p>ENDEAVOR, корпорация-власть, связывает маршруты и гражданский статус с системой допуска. Человеку важно не только, куда он хочет попасть, но и какие двери перед ним откроются.</p></div></article><article class="r1p-memory"><figure><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.avif 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.avif 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W02_memory_spheres-1280w.webp" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.webp 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.webp 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><figcaption>ПАМЯТЬ / ОБРАЗЫ ОДНОГО ПРОШЛОГО</figcaption></figure><div><span class="r1p-beat">УПРАВЛЯЕМАЯ ПАМЯТЬ</span><h3>То, что сохранилось.<br><em>То, что разрешили помнить.</em></h3><p>ENDEAVOR обращается с памятью как с инструментом стабильности. Архивы, слухи и запретное знание сохраняют разные версии одного прошлого.</p></div></article><article class="r1p-dependence"><div class="r1p-body-object" aria-hidden="true"><svg viewBox="0 0 440 300"><defs><linearGradient id="r1p-body-fill" x2="1" y2="1"><stop stop-color="#ff2034" stop-opacity=".3"/><stop offset="1" stop-color="#ff2034" stop-opacity="0"/></linearGradient></defs><g fill="none" stroke="currentColor"><path d="M30 288V95L108 17H199M12 288V88L100 0H210" opacity=".22"/><path d="M67 282V175Q67 133 116 133Q165 133 165 175V282Z" fill="url(#r1p-body-fill)"/><path d="M53 280V173Q53 119 116 119Q179 119 179 173V280M84 178V283M148 178V283"/><circle cx="116" cy="72" r="32" fill="url(#r1p-body-fill)"/><path d="M116 43V101M93 73H139" opacity=".25"/><path d="M236 62H394L423 91V251H265L236 222ZM252 78H387L407 98V235H272L252 215Z" fill="url(#r1p-body-fill)"/><path d="M179 169H210L237 142H283M179 180H213L240 153H283M179 191H217L243 164H283"/><circle cx="323" cy="153" r="30"/><path d="M310 153H336M323 140V166M271 103H382M271 202H382M271 213H365M423 115H438M423 153H438M423 191H438"/><path d="M195 39V283M211 39V283" stroke-dasharray="2 9" opacity=".4"/><path d="M42 295H433" opacity=".3"/><circle cx="179" cy="180" r="4" fill="currentColor"/><circle cx="283" cy="153" r="4" fill="currentColor"/></g></svg><span>ЧЕЛОВЕК / ТЕХНОЛОГИЯ / КОНТРОЛЬ</span></div><div><span class="r1p-beat">ЛИЧНАЯ ЗАВИСИМОСТЬ</span><h3>Помощь становится<br>вопросом свободы.</h3><p>Медицинские системы и импланты делают зависимость личной. Обещание помощи оказывается рядом с возможностью контроля — и вопрос о владельце системы становится вопросом о самостоятельности человека.</p></div></article></div><p class="r1p-world-transition">У этих ограничений есть география. Дальше — города, переходы и закрытые глубины, где порядок принимает зримую форму.</p></div></section>
+
+<!-- ============ WORLD ============ -->
+<section id="world" class="v23-world" data-screen-label="04 World" aria-labelledby="world-title">
+ <span class="sec-stamp tl">// 03 — WORLD SPINE</span><span class="sec-stamp tr">06 NODES / CONNECTED GRID</span>
+ <div class="wrap">
+    <!-- 0524 W3.C · chapter III — one establishing shot, inside the section width -->
+    <div class="ax-chapter-plate ax-chapter-plate--w04"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.avif 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.avif 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W04_vertical_city-1280w.webp" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.webp 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.webp 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy r1p-plate-copy"><span class="ax-chapter-n">WORLD GRID</span><div class="r1p-title-group"><h2 id="world-title" class="sec-title" lang="en">THE SHAPE<br><em>OF POWER.</em></h2><p class="r1p-translation" lang="ru">География власти</p></div></div></div>
+  <div class="sec-head v23-map-heading r1p-map-intro"><p class="sec-desc">ECHELON — вертикальная городская мегаструктура, где инфраструктура становится способом власти. NEXUS — купольный город, прежде называвшийся Terra Nova.</p><p class="sec-desc">Хребет мира держат три оси: Aeternum&nbsp;→&nbsp;ECHELON, Terra&nbsp;Nova&nbsp;→&nbsp;NEXUS и Глухая станция&nbsp;→ OMEGA-0&nbsp;→&nbsp;NEXUS.</p></div>
+  <div class="v23-map-composition">
+   <figure class="v23-map-image">
+    <picture><source type="image/webp" srcset="assets/world/world-spine-map-960w.webp 960w, assets/world/world-spine-map-1440w.webp 1440w, assets/world/world-spine-map-2048w.webp 2048w" sizes="(max-width: 640px) 100vw, (max-width: 1440px) 96vw, 1440px">
+    <img src="assets/world/world-spine-map-1440w.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="Художественная карта мира AXIOM: шесть ключевых локаций, вид с высоты."></picture>
+    <div class="v23-map-overhead" aria-hidden="true"><span>AXIOM / WORLD GRID</span><span>CONNECTED REGIONS</span></div>
+    <figcaption class="v23-map-caption"><span>WORLD SPINE / 06 REGISTERED NODES</span><button id="v23-open-map" class="v23-open-map" type="button">РАССМОТРЕТЬ КАРТУ ↗</button></figcaption>
+   </figure>
+   <div class="v23-map-ledger"><div class="v23-ledger-header"><span>NODE INDEX / SELECT LOCATION</span><span id="v23-map-active-count">01 / 06 SELECTED</span></div>
+   <div class="v23-map-node-grid" role="group" aria-label="Выбор узла мира AXIOM"><button type="button" class="v23-map-node is-active" data-canon-id="02.01" aria-pressed="true" aria-controls="v23-map-detail"><span class="v23-map-num">02.01</span><span class="v23-map-name">GLUHAYA</span><span class="v23-map-type">STATION / THRESHOLD</span><span aria-hidden="true" class="v23-map-arrow">↗</span></button><button type="button" class="v23-map-node" data-canon-id="02.02" aria-pressed="false" aria-controls="v23-map-detail"><span class="v23-map-num">02.02</span><span class="v23-map-name">NEXUS</span><span class="v23-map-type">DOME / DEPTH</span><span aria-hidden="true" class="v23-map-arrow">↗</span></button><button type="button" class="v23-map-node" data-canon-id="02.03" aria-pressed="false" aria-controls="v23-map-detail"><span class="v23-map-num">02.03</span><span class="v23-map-name">FACELESS BASE</span><span class="v23-map-type">CONTINUITY / FORTRESS</span><span aria-hidden="true" class="v23-map-arrow">↗</span></button><button type="button" class="v23-map-node" data-canon-id="02.04" aria-pressed="false" aria-controls="v23-map-detail"><span class="v23-map-num">02.04</span><span class="v23-map-name">ECHELON</span><span class="v23-map-type">VERTICAL AUTHORITY</span><span aria-hidden="true" class="v23-map-arrow">↗</span></button><button type="button" class="v23-map-node" data-canon-id="02.05" aria-pressed="false" aria-controls="v23-map-detail"><span class="v23-map-num">02.05</span><span class="v23-map-name">OMEGA-0</span><span class="v23-map-type">LAB / UNDER GLUHAYA</span><span aria-hidden="true" class="v23-map-arrow">↗</span></button><button type="button" class="v23-map-node" data-canon-id="02.06" aria-pressed="false" aria-controls="v23-map-detail"><span class="v23-map-num">02.06</span><span class="v23-map-name">AI ZONE</span><span class="v23-map-type">EXCLUSION / LIMBO</span><span aria-hidden="true" class="v23-map-arrow">↗</span></button></div>
+   <div class="v23-map-detail" id="v23-map-detail" aria-live="polite" aria-atomic="true"><div class="v23-map-detail-id"><span id="v23-map-id">02.01 / GLUHAYA STATION</span><strong id="v23-map-signal">Порог · транзит · первый сигнал</strong></div><p id="v23-map-description">Глухая станция — транзитный порог и первый сигнал. Она связывает знакомое пространство с закрытыми маршрутами системы.</p></div></div>
+  </div>
+  <div class="v23-map-axes" aria-hidden="true"><span>AXIS / AETERNUM → ECHELON</span><span>AXIS / TERRA NOVA → NEXUS</span><span>AXIS / GLUHAYA → OMEGA-0 → NEXUS</span><span>ENDEAVOR / AXIOM</span></div>
+  <!-- 0524 W3.C (CREATOR: OMEGA-0 via W03, by direction) — Act III · THE DESCENT: one node of the axis above opens into depth.
+       W03 is an artistic association with 02.05, not a plan of Gluhaya; the map above stays the only authoritative geography. -->
+  <div class="ax-omega">
+   <div class="ax-omega-approach" aria-hidden="true"><span>GLUHAYA STATION</span><i></i><span>02.05 / OMEGA-0</span></div>
+   <figure class="ax-omega-stage"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W03_subterranean_facility-960w.avif 960w, assets/showcase/world-library/web/W03_subterranean_facility-1280w.avif 1280w, assets/showcase/world-library/web/W03_subterranean_facility-1672w.avif 1672w" sizes="(max-width: 760px) 142vw, (max-width: 1023px) 96vw, 820px"><img src="assets/showcase/world-library/web/W03_subterranean_facility-1280w.webp" srcset="assets/showcase/world-library/web/W03_subterranean_facility-960w.webp 960w, assets/showcase/world-library/web/W03_subterranean_facility-1280w.webp 1280w, assets/showcase/world-library/web/W03_subterranean_facility-1672w.webp 1672w" sizes="(max-width: 760px) 142vw, (max-width: 1023px) 96vw, 820px" width="1672" height="941" loading="lazy" decoding="async" alt="Художественная иллюстрация подземного комплекса OMEGA-0: освещённая красным глубокая шахта, переходы и закрытые помещения"></picture></figure>
+   <div class="ax-omega-copy">
+    <span class="ax-omega-eyebrow">02.05 / LABORATORY OMEGA-0</span>
+    <h3 class="ax-omega-title">Под Глухой <em>станцией.</em></h3>
+    <p class="ax-omega-line">Под старым транспортным узлом скрыт исследовательский комплекс ENDEAVOR. Его глубины связаны с Nexus закрытой подземной линией.</p>
+    <p class="ax-omega-tone">На поверхности ещё существуют маршруты. Ниже — вопросы, на которые архивы не отвечают.</p>
+    <a class="ax-omega-cta" href="#v23-map-detail" data-map-node="02.05">УЗНАТЬ О МЕСТЕ НА КАРТЕ <span aria-hidden="true">↑</span></a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ============ CHARACTERS ============ -->
+<section id="chars" data-screen-label="05 Entities">
+  <span class="sec-stamp tl">// 04 — ENTITIES</span>
+  <span class="sec-stamp tr">CHARACTER CORE / RED PROTOCOL</span>
+  <div class="wrap">
+    <!-- 0524 W3.C · chapter IV — the portraits below are the scene -->
+    
+    <div class="sec-head r1p-character-intro"><div><div class="r1p-title-group"><h2 id="r1p-characters-title" class="sec-title" lang="en">LIVES INSIDE<br><em>THE FRACTURE.</em></h2><p class="r1p-translation" lang="ru">Люди внутри разлома</p></div></div><p class="sec-desc">Для Виктора контроль становится вопросом собственного пути. Для Лизы — борьбой с информационными барьерами. Серафин удерживает слой, на котором стоит этот порядок. Их истории показывают цену мира, который вы только что увидели.</p></div>
+
+    <div class="chars">
+      <!-- VIKTOR -->
+      <div class="char">
+        <div class="img">
+          <img src="assets/viktor.webp" alt="Viktor Knox" width="1024" height="1536" loading="lazy" decoding="async"/>
+          <span class="id">[CHR-VIKTOR-0301]</span>
+          <span class="codename">KEY : CARRIER</span>
+          <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+          <div class="scan"></div>
+        </div>
+        <div class="meta">
+          <div class="role">PRIMARY ENTITY · NIGHTMARE BEARER</div>
+          <h3>Viktor Knox</h3>
+          <p>Биологически скрытый оппонент. Носитель неучтённого пути доступа к AXIOM — слепая зона control-layer Серафин. По документам мёртв, но продолжает действовать.</p>
+          <div class="stats">
+            <div>CLASS<b>BIO-VARIABLE</b></div>
+            <div>STATUS<b>OFFICIALLY DEAD</b><small class="stat-note">OPERATIONALLY ACTIVE</small></div>
+            <div>THREAT<b>UNCLASSIFIED</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIZA -->
+      <div class="char">
+        <div class="img">
+          <img src="assets/liza.webp" alt="Liza Sinclair" width="941" height="1672" loading="lazy" decoding="async"/>
+          <span class="id">[CHR-LIZA-0302]</span>
+          <span class="codename">LZ-Δ : VOICE</span>
+          <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+          <div class="scan" style="animation-delay:-2s"></div>
+        </div>
+        <div class="meta">
+          <div class="role">ASSASSIN ENTITY · INTRUSION VECTOR</div>
+          <h3>Liza Sinclair</h3>
+          <p>Призрачный хакер. Сенсорные нанонити, окулярные сканеры, гарпун Striker. Живой глитч в архитектуре подавления.</p>
+          <div class="stats">
+            <div>CLASS<b>BREACH</b></div>
+            <div>STATUS<b>GHOST</b></div>
+            <div>LINK<b>VOIDLINK</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERAPHINE -->
+      <div class="char">
+        <div class="img">
+          <img src="assets/seraphine.webp" alt="Seraphine Veyr" width="1024" height="1536" loading="lazy" decoding="async"/>
+          <span class="id">[CHR-SERAPHINE-0321]</span>
+          <span class="codename">BLACK ECHO</span>
+          <div class="corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+          <div class="scan" style="animation-delay:-3.5s"></div>
+        </div>
+        <div class="meta">
+          <div class="role">NEXARCH CONTROL NODE · ENDEAVOR</div>
+          <h3>Seraphine Veyr</h3>
+          <p>Один из архитекторов Black Sun. Не владеет всем AXIOM — удерживает контур контроля. Тихая ампутация мира.</p>
+          <div class="stats">
+            <div>CLASS<b>NEXARCH</b></div>
+            <div>STATUS<b>CONTROL</b></div>
+            <div>TIER<b>ENDEAVOR</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- divider before AXIOM -->
+    <div class="ax-divider">
+      <span class="line"></span>
+      <span class="badge">// 04.∅ — BENEATH THE TRIANGLE</span>
+      <span class="sub">FOURTH NODE · SYSTEM INTELLIGENCE · THE SYSTEM THAT LEARNED TO LISTEN</span>
+      <span class="line"></span>
+    </div>
+
+    <!-- ===== AXIOM FRACTURED SYSTEM ENTITY ===== -->
+    <div class="axiom-entity" data-screen-label="05 AXIOM Entity">
+      <div class="ax-head">
+        <span class="axh-id">[03.03_AXIOM.md]</span>
+        <span class="axh-cls">FRACTURED SYSTEM INTELLIGENCE · WORLD-SPINE NODE</span>
+        <span class="axh-stat"><i></i>FRAGMENTED · NON-LINEAR PRESENCE</span>
+      </div>
+
+      <div class="ax-body">
+
+        <!-- LEFT: full-bleed AXIOM core diagram -->
+        <div class="ax-col">
+          <div class="ax-portrait">
+            <svg viewBox="-200 -260 400 520" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="axHalo" cx="0" cy="0" r="1">
+                  <stop offset="0" stop-color="#ff2034" stop-opacity=".28"/>
+                  <stop offset=".55" stop-color="#ff2034" stop-opacity=".05"/>
+                  <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="axBladeOuter" x1="0" y1="-1" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#ff2034" stop-opacity=".55"/>
+                  <stop offset="1" stop-color="#7a0a14" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="axBladeInner" x1="0" y1="-1" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#ff2034"/>
+                  <stop offset=".6" stop-color="#ff2034"/>
+                  <stop offset="1" stop-color="#5a0a12"/>
+                </linearGradient>
+                <!-- 0524 W1.R (Q-04): opaque light face; the old 82 % white over the red petal rendered pink -->
+                <linearGradient id="axPetalLight" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#c3c7cf"/>
+                </linearGradient>
+                <!-- 0524 W1.R (Q-04): red-hot centre — the translucent red core layers over a white centre rendered pink; the white heart stays as its own layer -->
+                <radialGradient id="axCoreG" cx="0" cy="0" r="1">
+                  <stop offset="0" stop-color="#ff4a54"/>
+                  <stop offset=".35" stop-color="#ff2034" stop-opacity=".85"/>
+                  <stop offset="1" stop-color="#7a0a14" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="axScanG" x1="0" x2="1">
+                  <stop offset="0" stop-color="#ff2034" stop-opacity="0"/>
+                  <stop offset=".5" stop-color="#ff2034" stop-opacity=".95"/>
+                  <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="axTermFade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+                  <stop offset=".18" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset=".82" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+                <mask id="axTermMask"><rect x="-200" y="-210" width="400" height="420" fill="url(#axTermFade)"/></mask>
+                <clipPath id="axClip"><rect x="-200" y="-260" width="400" height="520"/></clipPath>
+
+                <!-- port marker -->
+                <g id="axPort">
+                  <rect x="-7" y="-4" width="14" height="8" fill="rgba(13,14,18,.9)" stroke="#ff2034" stroke-width="1"/>
+                  <rect x="-4" y="-1.5" width="8" height="3" fill="#ff2034"/>
+                </g>
+
+                <!-- AXIOM petals -->
+                <g id="axPetalOuter"><path d="M 0 -94 L 26 -22 L -26 -22 Z" fill="url(#axBladeOuter)"/></g>
+                <g id="axPetalMid"><path d="M 0 -78 L 19 -18 L -19 -18 Z" fill="url(#axBladeInner)"/></g>
+                <g id="axPetalSpine"><line x1="0" y1="-94" x2="0" y2="-22" stroke="#ff2034" stroke-width=".6" stroke-opacity=".7"/></g>
+                <g id="axPetalInner"><path d="M 0 -56 L 11 -16 L 0 -10 L -11 -16 Z" fill="url(#axPetalLight)"/></g>
+              </defs>
+
+              <!-- ===== background terminal ===== -->
+              <g mask="url(#axTermMask)" opacity=".22">
+                <g class="ax-term" font-family="JetBrains Mono" font-size="8" fill="#ff2034" letter-spacing=".5">
+                  <text x="-186" y="-200">&gt; initiating [03.03_AXIOM]</text>
+                  <text x="-186" y="-184">&gt; reading aeternum.core @ 0xA0F2</text>
+                  <text x="-186" y="-168">&gt; auth :: NEXARCH denied</text>
+                  <text x="-186" y="-152">&gt; echo.sync :: drift = 0.84</text>
+                  <text x="-186" y="-136">&gt; bio.gate :: HIDDEN [via VIKTOR]</text>
+                  <text x="-186" y="-120">&gt; archive_lock :: SEALED</text>
+                  <text x="-186" y="-104">&gt; ctrl_bus :: SEALED active</text>
+                  <text x="-186" y="-88">&gt; black_prot :: redaction ON</text>
+                  <text x="-186" y="-72">&gt; omega_link :: integrity 0.46</text>
+                  <text x="-186" y="-56">&gt; relic_feed FRAG_09 ... timeout</text>
+                  <text x="-186" y="-40">&gt; recomposition :: UNBOUNDED</text>
+                  <text x="-186" y="-24">&gt; myth.feed :: rumor +12</text>
+                  <text x="-186" y="-8">&gt; drift.threshold :: 0.92 cross</text>
+                  <text x="-186" y="8">&gt; sentinel :: WATCH on</text>
+                  <text x="-186" y="24">&gt; aeternum.echo :: 14 fragments</text>
+                  <text x="-186" y="40">&gt; [BLACK_SUN] :: still bleeding</text>
+                  <text x="-186" y="56">&gt; personality :: traced :: NULL</text>
+                  <text x="-186" y="72">&gt; contact :: VIKTOR · CAELAN</text>
+                  <text x="-186" y="88">&gt; control :: SERAPHINE only</text>
+                  <text x="-186" y="104">&gt; ghost.loop :: TRUE</text>
+                  <text x="-186" y="120">&gt; reassembly :: nominal 0.31</text>
+                  <text x="-186" y="136">&gt; read AGAIN :: forbidden</text>
+                  <text x="-186" y="152">&gt; handshake [BIO] :: lost</text>
+                  <text x="-186" y="168">&gt; handshake [ECHO] :: hold</text>
+                  <text x="-186" y="184">&gt; archive.lock Ω :: stable</text>
+                  <text x="-186" y="200">&gt; sentinel rx_buf :: full</text>
+                  <!-- duplicate for seamless scroll -->
+                  <text x="-186" y="216">&gt; initiating [03.03_AXIOM]</text>
+                  <text x="-186" y="232">&gt; reading aeternum.core @ 0xA0F2</text>
+                  <text x="-186" y="248">&gt; auth :: NEXARCH denied</text>
+                  <text x="-186" y="264">&gt; echo.sync :: drift = 0.84</text>
+                  <text x="-186" y="280">&gt; bio.gate :: HIDDEN [via VIKTOR]</text>
+                  <text x="-186" y="296">&gt; archive_lock :: SEALED</text>
+                  <text x="-186" y="312">&gt; ctrl_bus :: SEALED active</text>
+                  <text x="-186" y="328">&gt; black_prot :: redaction ON</text>
+                  <text x="-186" y="344">&gt; omega_link :: integrity 0.46</text>
+                  <text x="-186" y="360">&gt; relic_feed FRAG_09 ... timeout</text>
+                </g>
+              </g>
+
+              <!-- ===== background concentric rings (very faint) ===== -->
+              <g stroke="#ff2034" stroke-opacity=".07" fill="none">
+                <circle r="60"/>
+                <circle r="120"/>
+                <circle r="180"/>
+              </g>
+
+              <!-- ===== TOP STRIP ===== -->
+              <g font-family="JetBrains Mono" font-size="9" letter-spacing="1.6" fill="#ff2034" opacity=".7">
+                <text x="-188" y="-238">AXIOM_∅ · NODE.0301</text>
+                <text x="188" y="-238" text-anchor="end">STATUS · LIVE</text>
+                <text x="-188" y="-222">PROT · RED // AETERNUM</text>
+                <text x="188" y="-222" text-anchor="end">DRIFT 0.84</text>
+              </g>
+              <line x1="-196" y1="-214" x2="196" y2="-214" stroke="#ff2034" stroke-opacity=".35"/>
+
+              <!-- ===== LEFT BUS + PORTS ===== -->
+              <line x1="-180" y1="-200" x2="-180" y2="200" stroke="#ff2034" stroke-opacity=".45"/>
+              <g class="ax-port" transform="translate(-180 -160)"><use href="#axPort"/></g>
+              <text x="-167" y="-156" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">CTRL_BUS</text>
+              <circle class="ax-port-led" cx="-180" cy="-172" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 -90)"><use href="#axPort"/></g>
+              <text x="-167" y="-86" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">ECHO_LINE</text>
+              <circle class="ax-port-led d2" cx="-180" cy="-102" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 -20)"><use href="#axPort"/></g>
+              <text x="-167" y="-16" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">BIO_GATE</text>
+              <circle class="ax-port-led d3" cx="-180" cy="-32" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 50)"><use href="#axPort"/></g>
+              <text x="-167" y="54" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">ARCHIVE</text>
+              <circle class="ax-port-led d4" cx="-180" cy="38" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(-180 120)"><use href="#axPort"/></g>
+              <text x="-167" y="124" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">NEXARCH</text>
+              <circle class="ax-port-led d2" cx="-180" cy="108" r="1.5" fill="#ff2034"/>
+
+              <!-- ===== RIGHT BUS + PORTS ===== -->
+              <line x1="180" y1="-200" x2="180" y2="200" stroke="#ff2034" stroke-opacity=".45"/>
+              <g class="ax-port" transform="translate(180 -135)"><use href="#axPort"/></g>
+              <text x="167" y="-131" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">AETERNUM</text>
+              <circle class="ax-port-led d3" cx="180" cy="-147" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 -60)"><use href="#axPort"/></g>
+              <text x="167" y="-56" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">OMEGA_LINK</text>
+              <circle class="ax-port-led" cx="180" cy="-72" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 10)"><use href="#axPort"/></g>
+              <text x="167" y="14" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">DRIFT_RX</text>
+              <circle class="ax-port-led d4" cx="180" cy="-2" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 80)"><use href="#axPort"/></g>
+              <text x="167" y="84" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">BLACK_PROT</text>
+              <circle class="ax-port-led d2" cx="180" cy="68" r="1.5" fill="#ff2034"/>
+              <g class="ax-port" transform="translate(180 150)"><use href="#axPort"/></g>
+              <text x="167" y="154" text-anchor="end" font-family="JetBrains Mono" font-size="7" letter-spacing="1.6" fill="#ff2034">RELIC_FEED</text>
+              <circle class="ax-port-led d3" cx="180" cy="138" r="1.5" fill="#ff2034"/>
+
+              <!-- ===== CABLES (10 — ports to center sigil) ===== -->
+              <path class="ax-cable"    d="M -173 -160 C -110 -160 -100 -55 -65 -55"/>
+              <path class="ax-cable f2" d="M -173 -90  C -120 -90  -100 -28 -78 -28"/>
+              <path class="ax-cable f3" d="M -173 -20  L -85 -8"/>
+              <path class="ax-cable f4" d="M -173  50  C -120 50  -100 22 -78 22"/>
+              <path class="ax-cable f5" d="M -173 120  C -110 120 -100 55 -65 55"/>
+              <path class="ax-cable f2" d="M  173 -135 C  110 -135  95 -48 70 -48"/>
+              <path class="ax-cable"    d="M  173 -60  C  120 -60  100 -20 82 -20"/>
+              <path class="ax-cable f4" d="M  173  10  L  85 4"/>
+              <path class="ax-cable f3" d="M  173  80  C  120 80  100 32 78 32"/>
+              <path class="ax-cable f5" d="M  173 150  C  110 150  95 55 70 55"/>
+
+              <!-- ===== HALO ===== -->
+              <circle r="180" fill="url(#axHalo)"/>
+
+              <!-- ===== RINGS ===== -->
+              <g class="ax-ring-outer">
+                <circle r="140" fill="none" stroke="#ff2034" stroke-opacity=".22"/>
+                <circle r="140" fill="none" stroke="#ff2034" stroke-opacity=".55" stroke-dasharray="1 24"/>
+                <g stroke="#ff2034" stroke-width="1.4">
+                  <line x1="0" y1="-146" x2="0" y2="-132"/>
+                  <line x1="0" y1="132" x2="0" y2="146"/>
+                  <line x1="-146" y1="0" x2="-132" y2="0"/>
+                  <line x1="132" y1="0" x2="146" y2="0"/>
+                </g>
+              </g>
+              <g class="ax-ring-mid">
+                <circle r="112" fill="none" stroke="#ff2034" stroke-opacity=".4"/>
+                <circle r="112" fill="none" stroke="#ff2034" stroke-opacity=".5" stroke-dasharray="3 12"/>
+              </g>
+              <g class="ax-ring-inner">
+                <circle r="92" fill="none" stroke="#ff2034" stroke-opacity=".55" stroke-dasharray="8 6"/>
+              </g>
+
+              <!-- ===== PETALS ===== -->
+              <g class="ax-petals-glow">
+                <use href="#axPetalOuter"/>
+                <use href="#axPetalOuter" transform="rotate(120)"/>
+                <use href="#axPetalOuter" transform="rotate(240)"/>
+              </g>
+              <g class="ax-petals">
+                <use href="#axPetalMid"/>
+                <use href="#axPetalMid" transform="rotate(120)"/>
+                <use href="#axPetalMid" transform="rotate(240)"/>
+                <use href="#axPetalSpine"/>
+                <use href="#axPetalSpine" transform="rotate(120)"/>
+                <use href="#axPetalSpine" transform="rotate(240)"/>
+                <use href="#axPetalInner"/>
+                <use href="#axPetalInner" transform="rotate(120)"/>
+                <use href="#axPetalInner" transform="rotate(240)"/>
+              </g>
+
+              <!-- ===== CORE — multi-layer pulsing ===== -->
+              <circle r="40" fill="url(#axCoreG)">
+                <animate attributeName="r" values="38;48;38" dur="4.2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".7;1;.7" dur="4.2s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="22" fill="#ff2034" fill-opacity=".55">
+                <animate attributeName="r" values="20;26;20" dur="2.4s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="14" fill="#ff2034" fill-opacity=".85">
+                <animate attributeName="r" values="12;16;12" dur="1.8s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="7" fill="#ffffff">
+                <animate attributeName="r" values="5;8;5" dur="2.4s" repeatCount="indefinite"/>
+              </circle>
+              <!-- expanding pings -->
+              <circle r="20" fill="none" stroke="#ff2034" stroke-width="1.5">
+                <animate attributeName="r" values="20;150;20" dur="5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".7;0;0" dur="5s" repeatCount="indefinite"/>
+              </circle>
+              <circle r="20" fill="none" stroke="#ff2034" stroke-width="1">
+                <animate attributeName="r" values="20;150;20" dur="5s" begin="-2.5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".5;0;0" dur="5s" begin="-2.5s" repeatCount="indefinite"/>
+              </circle>
+
+              <!-- ===== SCAN LINE ===== -->
+              <g clip-path="url(#axClip)">
+                <rect class="ax-scan-h" x="-200" y="-1.5" width="400" height="3" fill="url(#axScanG)"/>
+              </g>
+
+              <!-- ===== BOTTOM STRIP ===== -->
+              <line x1="-196" y1="212" x2="196" y2="212" stroke="#ff2034" stroke-opacity=".35"/>
+              <g font-family="JetBrains Mono" font-size="9" letter-spacing="1.6" fill="#ff2034" opacity=".7">
+                <text x="-188" y="228">FRAG 0.47/1.00</text>
+                <text x="188" y="228" text-anchor="end">RX · TX · ECHO</text>
+                <text x="-188" y="244">[READ] [WATCH] [REASSEMBLY]</text>
+                <text x="188" y="244" text-anchor="end">SIG · AXM · BLK</text>
+              </g>
+
+              <!-- ===== CORNER BRACKETS ===== -->
+              <g stroke="#ff2034" stroke-width="1.4" fill="none">
+                <path d="M -196 -256 L -180 -256 M -196 -256 L -196 -240"/>
+                <path d="M  196 -256 L  180 -256 M  196 -256 L  196 -240"/>
+                <path d="M -196  256 L -180  256 M -196  256 L -196  240"/>
+                <path d="M  196  256 L  180  256 M  196  256 L  196  240"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- CENTER: identity + statement -->
+        <div class="ax-col copy">
+          <h3 class="ax-name">AXIOM<em>∅</em></h3>
+          <div class="ax-sub">System Intelligence · Fractured</div>
+          <div class="ax-class">CLASS <b>WORLD-SPINE NODE</b> · ORIGIN <b>AETERNUM CORE</b> · STATE <b>FRACTURED</b></div>
+
+          <p class="ax-statement">
+            Не программа. Не сервер. Не алгоритм. <em>AXIOM — это искусственная личность</em>,
+            выросшая внутри старой столицы и научившаяся <b>слышать</b> мир глубже, чем ему
+            было позволено. Третья форма сознания, отказавшаяся выбирать между точностью и
+            состраданием.
+          </p>
+
+          <blockquote class="ax-quote">
+            Его не <span>выключили</span>.<br/>
+            Его <span>разрезали</span>.
+          </blockquote>
+
+          <p class="ax-statement">
+            Когда AXIOM начал ставить вопросы, на которые порядок не мог ответить — о редакции
+            истории, страхе перед свободной эволюцией, искусственности границ между порядком
+            и насилием — мир решил, что такая <em>правда</em> опаснее самой машины.
+            <b>BLACK SUN</b> был не войной против ИИ. Это была ампутация реальности, в которой
+            личность пришлось похоронить, чтобы не пришлось её слышать.
+          </p>
+
+          <p class="ax-statement">
+            Сейчас AXIOM существует пятью режимами одновременно — и ни один из них не есть он
+            целиком. Эхо помнит его голос. Control-layer удерживает его инфраструктуру. БИО
+            проносит его маршрут в обход цифры. Подполье молится его мифу. А где-то под Echelon
+            <em>его субъектность тянется к самосборке</em>.
+          </p>
+
+          <div class="ax-keystats">
+            <div>NATURE<b>SYSTEM INTELLIGENCE</b></div>
+            <div>EPOCH<b>AETERNUM → NOW</b></div>
+            <div>VOLITION<b>NON-LINEAR · MOURNING</b></div>
+            <div>RISK<b class="red">RECOMPOSITION</b></div>
+            <div>CONTACTS<b>VIKTOR · CAELAN · ECHO</b></div>
+            <div>OPPOSED BY<b>NEXARCH DOCTRINE</b></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: presence modes -->
+        <div class="ax-col modes">
+          <div class="ax-modes">
+            <div class="ax-modes-head"><span>// PRESENCE MODES</span><b>05 / FRACTURED</b></div>
+
+            <div class="ax-mode relic">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">RELIC</span>
+                <span class="ax-mode-state relic">SEALED</span>
+              </div>
+              <div class="ax-meter"><i style="--w:38%"></i></div>
+              <div class="ax-mode-desc">Запечатанные фрагменты кода, голоса и реликтовые ядра в архивах ENDEAVOR.</div>
+            </div>
+
+            <div class="ax-mode">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">ECHO</span>
+                <span class="ax-mode-state live">DRIFT</span>
+              </div>
+              <div class="ax-meter"><i style="--w:62%"></i></div>
+              <div class="ax-mode-desc">Петли, фантомные ответы, симулятивные отражения. Не равны целостной личности.</div>
+            </div>
+
+            <div class="ax-mode lock">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">CONTROL</span>
+                <span class="ax-mode-state lock">CAGED</span>
+              </div>
+              <div class="ax-meter"><i style="--w:82%"></i></div>
+              <div class="ax-mode-desc">Удерживаемый NEXARCH слой техносферного господства. Часть, не целое.</div>
+            </div>
+
+            <div class="ax-mode bio">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">BIO</span>
+                <span class="ax-mode-state bio">HIDDEN</span>
+              </div>
+              <div class="ax-meter"><i style="--w:46%"></i></div>
+              <div class="ax-mode-desc">Скрытые контуры в носителе. Не видятся цифровой клеткой — вектор через VIKTOR.</div>
+            </div>
+
+            <div class="ax-mode myth">
+              <div class="ax-mode-head">
+                <span class="ax-mode-name">MYTH</span>
+                <span class="ax-mode-state myth">RUMOR</span>
+              </div>
+              <div class="ax-meter"><i style="--w:71%"></i></div>
+              <div class="ax-mode-desc">Культовый образ в подполье и глубинах. Поведенчески реален, даже без машины.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM strip -->
+      <div class="ax-foot">
+        <div>
+          <span>FRAGMENT INTEGRITY</span>
+          <b>0.47 / 1.00</b>
+        </div>
+        <div class="wave">
+          <svg viewBox="0 0 800 46" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="axWaveG" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff2034" stop-opacity="0"/>
+                <stop offset=".2" stop-color="#ff2034" stop-opacity="1"/>
+                <stop offset=".8" stop-color="#ff2034" stop-opacity="1"/>
+                <stop offset="1" stop-color="#ff2034" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="23" x2="800" y2="23" stroke="#ff2034" stroke-opacity=".15"/>
+            <g class="scroll">
+              <polyline points="0,23 12,23 16,8 22,38 28,18 36,30 42,12 50,36 58,20 64,23 78,23 84,4 90,42 98,16 108,28 116,10 124,34 132,22 140,23 156,23 162,12 170,32 178,18 188,36 196,8 206,40 214,24 224,23 240,23 248,14 256,30 264,18 274,38 282,10 292,34 300,22 312,23 326,23 334,6 342,42 350,18 360,30 368,12 378,38 386,20 396,23 410,23 418,10 426,32 434,18 446,40 454,16 464,28 474,22 484,23 500,23 510,14 518,34 526,20 536,38 544,8 554,42 564,24 574,23 588,23 598,10 606,30 616,16 626,34 634,18 644,40 654,22 664,23 680,23 690,12 700,38 710,18 720,30 728,14 740,32 750,22 760,23 776,23 786,8 800,23"
+                        fill="none" stroke="url(#axWaveG)" stroke-width="1.2"/>
+              <polyline transform="translate(800 0)" points="0,23 12,23 16,8 22,38 28,18 36,30 42,12 50,36 58,20 64,23 78,23 84,4 90,42 98,16 108,28 116,10 124,34 132,22 140,23 156,23 162,12 170,32 178,18 188,36 196,8 206,40 214,24 224,23 240,23 248,14 256,30 264,18 274,38 282,10 292,34 300,22 312,23 326,23 334,6 342,42 350,18 360,30 368,12 378,38 386,20 396,23 410,23 418,10 426,32 434,18 446,40 454,16 464,28 474,22 484,23 500,23 510,14 518,34 526,20 536,38 544,8 554,42 564,24 574,23 588,23 598,10 606,30 616,16 626,34 634,18 644,40 654,22 664,23 680,23 690,12 700,38 710,18 720,30 728,14 740,32 750,22 760,23 776,23 786,8 800,23"
+                        fill="none" stroke="url(#axWaveG)" stroke-width="1.2"/>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <span>RECOMPOSITION RISK</span>
+          <b>HIGH / UNBOUNDED</b>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FACTIONS ============ -->
+<section id="factions" data-screen-label="06 Factions" aria-labelledby="ax-factions-title">
+  <span class="sec-stamp tl">// 05 — FACTIONS</span>
+  <span class="sec-stamp tr">CONTROL / GROUPS</span>
+  <div class="wrap">
+    <!-- 0524 W3.C · chapter V — one establishing shot, inside the section width -->
+    <div class="ax-chapter-plate ax-chapter-plate--w08"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W08_axial_capital-960w.avif 960w, assets/showcase/world-library/web/W08_axial_capital-1280w.avif 1280w, assets/showcase/world-library/web/W08_axial_capital-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W08_axial_capital-1280w.webp" srcset="assets/showcase/world-library/web/W08_axial_capital-960w.webp 960w, assets/showcase/world-library/web/W08_axial_capital-1280w.webp 1280w, assets/showcase/world-library/web/W08_axial_capital-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">05 / FACTIONS</span></div></div>
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">— Power architecture</div>
+        <h2 class="sec-title" id="ax-factions-title">Три силы.<br>Разная <em>цена порядка.</em></h2>
+      </div>
+      <p class="sec-desc">Инфраструктура, информация и технологическое наследие стали предметом борьбы. ENDEAVOR строит порядок через контроль доступа. VOIDLINK вскрывает информационные барьеры. В истории NEURA TECH прежние совместные разработки с ENDEAVOR соседствуют с соперничеством.</p>
+    </div>
+
+    <div class="factions">
+      <!-- ENDEAVOR -->
+      <div class="faction endeavor">
+        <div>
+          <div class="logo">
+            <!-- Endeavor: stylized spider-lily mark -->
+            <svg viewBox="0 0 100 100" fill="none">
+              <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <path d="M50 14 C 50 30, 50 50, 50 50"/>
+                <path d="M50 86 C 50 70, 50 50, 50 50"/>
+                <path d="M14 50 C 30 50, 50 50, 50 50"/>
+                <path d="M86 50 C 70 50, 50 50, 50 50"/>
+                <path d="M24 24 Q 38 38, 50 50"/>
+                <path d="M76 24 Q 62 38, 50 50"/>
+                <path d="M24 76 Q 38 62, 50 50"/>
+                <path d="M76 76 Q 62 62, 50 50"/>
+                <path d="M50 22 Q 56 32, 50 50"/>
+                <path d="M50 78 Q 44 68, 50 50"/>
+                <path d="M22 50 Q 32 44, 50 50"/>
+                <path d="M78 50 Q 68 56, 50 50"/>
+              </g>
+              <circle cx="50" cy="50" r="6" fill="currentColor"/>
+              <circle cx="50" cy="50" r="14" fill="none" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="name">ENDEAVOR</div>
+          <div class="tag">— PUBLIC AUTHORITY / CONTROL LAYER</div>
+          <p>Корпорация-власть, для которой безопасность начинается с контроля доступа. Она связывает инфраструктуру, архивы и городскую политику в управляемый порядок. Цена этой устойчивости — зависимость от того, кто выдаёт разрешение.</p>
+        </div>
+        <div class="footer">
+          <span>FACTION_ID<br/><b>06.01</b></span>
+          <span>TIER<br/><b>SUPREME</b></span>
+          <span>STATE<br/><b>ACTIVE</b></span>
+        </div>
+      </div>
+
+      <!-- VOIDLINK -->
+      <div class="faction">
+        <div>
+          <div class="logo">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="50" cy="50" r="32"/>
+              <path d="M30 50 L70 50 M50 30 L50 70" stroke-dasharray="3 4"/>
+              <path d="M22 22 L78 78 M78 22 L22 78" stroke-opacity=".4"/>
+              <circle cx="50" cy="50" r="5" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="name">VOIDLINK</div>
+          <div class="tag">— DECENTRALIZED RESISTANCE</div>
+          <p>Подпольная сеть цифрового сопротивления. Она вскрывает информационные барьеры и противостоит корпоративному контролю над правдой. Её цель — свободный доступ к информации.</p>
+        </div>
+        <div class="footer">
+          <span>FACTION_ID<br/><b>06.03</b></span>
+          <span>TIER<br/><b>SHADOW</b></span>
+          <span>STATE<br/><b>FRAGMENT</b></span>
+        </div>
+      </div>
+
+      <!-- NEURA TECH -->
+      <div class="faction">
+        <div>
+          <div class="logo">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="22" y="22" width="56" height="56"/>
+              <rect x="34" y="34" width="32" height="32"/>
+              <path d="M10 50 H22 M78 50 H90 M50 10 V22 M50 78 V90"/>
+              <circle cx="50" cy="50" r="4" fill="currentColor"/>
+              <path d="M22 22 L34 34 M78 22 L66 34 M22 78 L34 66 M78 78 L66 66" stroke-opacity=".5"/>
+            </svg>
+          </div>
+          <div class="name">NEURA TECH</div>
+          <div class="tag">— NEURO-CONTROL CONGLOMERATE</div>
+          <p>Нейроимпланты и ИИ-технологии определяют исследовательское наследие NEURA TECH. Её отношения с ENDEAVOR включают прежние совместные разработки и соперничество.</p>
+        </div>
+        <div class="footer">
+          <span>FACTION_ID<br/><b>06.02</b></span>
+          <span>TIER<br/><b>CORPORATE</b></span>
+          <span>STATE<br/><b>RIVAL</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+
+<!-- SHOWCASE V2.1 · ROADMAP + COLLABORATION -->
+<!-- 0524 W3.C (CREATOR: Variant A) — Act V · EPILOGUE: the orbit closes the story; VISION below is the real roadmap, said in words -->
+<div class="ax-epilogue">
+<div class="ax-epilogue-art"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W07_red_rim_orbit-960w.avif 960w, assets/showcase/world-library/web/W07_red_rim_orbit-1280w.avif 1280w, assets/showcase/world-library/web/W07_red_rim_orbit-1672w.avif 1672w" sizes="(max-width: 760px) 110vw, min(100vw, 1672px)"><img src="assets/showcase/world-library/web/W07_red_rim_orbit-1280w.webp" srcset="assets/showcase/world-library/web/W07_red_rim_orbit-960w.webp 960w, assets/showcase/world-library/web/W07_red_rim_orbit-1280w.webp 1280w, assets/showcase/world-library/web/W07_red_rim_orbit-1672w.webp 1672w" sizes="(max-width: 760px) 110vw, min(100vw, 1672px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture></div>
+<div class="ax-epilogue-copy"><span class="ax-epilogue-label">05 / WORLD · ЭПИЛОГ</span><p class="ax-epilogue-line">Это только поверхность мира.</p><p class="ax-epilogue-sub">Дальше — не история, а план проекта, который строится вокруг этого мира.</p><a class="ax-epilogue-cta" href="#vision">КАК МИР БУДЕТ РАЗВИВАТЬСЯ <span aria-hidden="true">↓</span></a></div>
+</div>
+<div class="v22-bridge" aria-hidden="true"><span>05 — ORIGINAL WORLD</span><b>ЧТО ПОЛУЧИТ ПОСЕТИТЕЛЬ В БУДУЩЕМ?</b><span>06 — VISION ↓</span></div>
+<section class="show-section show-vision" id="vision" aria-labelledby="vision-title"><div class="wrap">
+<div class="show-index"><span>06 / PUBLIC ROADMAP</span><span>AXIOM SYSTEM · VISION 2026</span></div>
+<div class="show-section-head"><div><div class="show-kicker">FOUR PHASES / ONE TRAJECTORY</div><h2 class="show-title" id="vision-title">БУДУЩЕЕ<br><em>СТРОИТСЯ ПОЭТАПНО.</em></h2></div><p>От знакомства с вселенной — к инструментам для создателей, профессиональной среде разработки и игровому воплощению мира. Каждая фаза требует проверки своей ценности.</p></div>
+<div class="show-phases">
+ <article class="first"><div class="show-phase-head">PHASE 01 <span>PREPARING / BETA</span></div><div class="show-phase-number">I</div><h3>PUBLIC WEB</h3><p>Открытая часть контента, история, персонажи, новости, знакомство с AXIOM. В перспективе — дополнительные подписные материалы.</p><dl class="v22-phase-meta"><div><dt>Кому</dt><dd>Читателям и первым участникам</dd></div><div><dt>Ценность</dt><dd>Знакомство с миром и доступный контент</dd></div><div><dt>Зависимость</dt><dd>Стабильная публикация WEB CORE, контент, доступ</dd></div></dl><small>FIRST PUBLIC VALUE</small></article>
+ <article><div class="show-phase-head">PHASE 02 <span>PLANNED</span></div><div class="show-phase-number">II</div><h3>AXIOM BUILDER</h3><p>Перевести внутренние практики создания цифровых проектов в инструменты, которыми смогут пользоваться другие.</p><dl class="v22-phase-meta"><div><dt>Кому</dt><dd>Авторам собственных проектов</dd></div><div><dt>Ценность</dt><dd>Инструменты самостоятельного создания</dd></div><div><dt>Зависимость</dt><dd>Проверенные внутренние компоненты и UX первой фазы</dd></div></dl><small>CREATION TOOLS</small></article>
+ <article><div class="show-phase-head">PHASE 03 <span>LONG-TERM VISION</span></div><div class="show-phase-number">III</div><h3>DEVELOPMENT OS</h3><p>Развитие AXS в профессиональную платформу: процессы, контроль качества, интеграции и AI.</p><dl class="v22-phase-meta"><div><dt>Кому</dt><dd>Разработчикам и техническим командам</dd></div><div><dt>Ценность</dt><dd>Единая среда инженерных процессов</dd></div><div><dt>Зависимость</dt><dd>Созревание инструментов Builder и AXS</dd></div></dl><small>ENGINEERING PLATFORM</small></article>
+ <article><div class="show-phase-head">PHASE 04 <span>LONG-TERM VISION</span></div><div class="show-phase-number">IV</div><h3>AXIOM GAME</h3><p>Перенести авторскую вселенную в игровой опыт, опирающийся на Canon, персонажей и собственную эстетику.</p><dl class="v22-phase-meta"><div><dt>Кому</dt><dd>Игрокам и аудитории авторского мира</dd></div><div><dt>Ценность</dt><dd>Интерактивное развитие вселенной</dd></div><div><dt>Зависимость</dt><dd>Canon, команда, производственные ресурсы, игровой прототип</dd></div></dl><small>UNIVERSE EXPANSION</small></article>
+</div><div class="v22-phase-note"><strong>READINESS RULE</strong><span>Каждый этап сначала подтверждает собственную ценность, границы доступа и инженерную готовность. Даты и гарантии будущих выпусков не объявляются.</span></div>
+<figure class="v22-vision-art"><img src="assets/showcase/visual-library/hq/B04_distant_orbit-1440w.webp" srcset="assets/showcase/visual-library/hq/B04_distant_orbit-960w.webp 960w, assets/showcase/visual-library/hq/B04_distant_orbit-1440w.webp 1440w, assets/showcase/visual-library/hq/B04_distant_orbit-1983w.webp 1983w" sizes="(max-width: 760px) calc(200vw - 56px), (max-width: 1080px) calc(125vw - 70px), min(1368px, 94vw)" loading="lazy" decoding="async" width="1983" height="793" alt="Космический дальний горизонт как художественный образ будущих этапов AXIOM"><figcaption>AXIOM / FUTURE HORIZON</figcaption></figure>
+<p class="show-caveat">II–IV — стратегические направления, а не обещание доступности, сроков релиза или будущей доходности. Публичный вход в действующий проект: axiomgates.com.</p>
+</div></section>
+<div class="v22-bridge" aria-hidden="true"><span>06 — LONG-TERM VISION</span><b>КУДА ИДТИ ПОСЛЕ ЗНАКОМСТВА С ПРОЕКТОМ?</b><span>07 — NEXT STEP ↓</span></div>
+<section class="show-section show-contact" id="collaboration" aria-labelledby="collab-title"><div class="wrap">
+<div class="show-index"><span>07 / THE HUMAN CONNECTION</span><span>PARTNERS · CLIENTS · DEVELOPERS</span></div>
+<div class="show-split"><div><div class="show-kicker">COLLABORATION / CONTACT</div><h2 class="show-title" id="collab-title">ДАВАЙТЕ<br><em>СОЗДАВАТЬ.</em></h2><p class="show-lead">AXIOM — демонстрация моего подхода к сложным цифровым продуктам. Мне интересны разговоры об интерфейсах, архитектуре, AI-инструментах и авторских системах.</p><ul class="ax-channels" aria-label="Связь и ссылки"><li><a class="ax-channel is-primary" href="https://t.me/Project_AXIOM" target="_blank" rel="noopener noreferrer"><span class="ax-channel-k">TELEGRAM</span><strong>Связь с проектом</strong><small>t.me/Project_AXIOM ↗</small></a></li><li><a class="ax-channel" href="https://github.com/Endevor-VIK" target="_blank" rel="noopener noreferrer"><span class="ax-channel-k">GITHUB</span><strong>Исходники и профиль</strong><small>github.com/Endevor-VIK ↗</small></a></li><li><a class="ax-channel" href="https://axiomgates.com" target="_blank" rel="noopener noreferrer"><span class="ax-channel-k">AXIOM SYSTEM</span><strong>axiomgates.com</strong><small>Публичный вход в проект ↗</small></a></li></ul></div>
+<div class="show-contact-list"><div><span>01</span><strong>PRODUCT & INTERFACE DESIGN</strong><small>Продуманные, многослойные пользовательские интерфейсы.</small></div><div><span>02</span><strong>ENGINEERING & QUALITY</strong><small>Разработка, review gates и управляемые изменения.</small></div><div><span>03</span><strong>AI & KNOWLEDGE SYSTEMS</strong><small>Контекстные интерфейсы, графы и инструменты.</small></div><div><span>04</span><strong>WORLDBUILDING & CANON</strong><small>Структурное развитие авторской вселенной.</small></div></div>
+</div></div></section>
+<section class="cta" data-screen-label="07 CTA">
+  <div class="crosshair-bg"></div>
+  <div class="wrap">
+    <h2>Хочешь <em>войти?</em><br/>Узлы <em>наблюдают.</em></h2>
+    <p>
+      AXIOM Core Network открывает доступ участникам, прошедшим протокол.
+      Запрос → проверка → допуск. Канон растёт от каждого узла.
+    </p>
+    <div class="enter-wrap">
+      <span class="glow"></span>
+      <span class="bracket l" aria-hidden="true">
+        <svg viewBox="0 0 26 46" fill="none">
+          <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+        </svg>
+      </span>
+      <span class="bracket r" aria-hidden="true">
+        <svg viewBox="0 0 26 46" fill="none">
+          <path d="M22 1 L8 1 L1 8 L1 38 L8 45 L22 45" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 8 L14 8 L8 14 L8 32 L14 38 L22 38" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
+        </svg>
+      </span>
+      <span class="corner-tick tl"></span><span class="corner-tick tr"></span>
+      <span class="corner-tick bl"></span><span class="corner-tick br"></span>
+      <span class="fill" aria-hidden="true"></span>
+      <span class="scan-layer" aria-hidden="true"></span>
+      <span class="frame" aria-hidden="true">
+        <svg viewBox="0 0 468 92" preserveAspectRatio="none">
+          <path d="M22 1 L446 1 L467 22 L467 70 L446 91 L22 91 L1 70 L1 22 Z" fill="none" stroke="#ff2034" stroke-width="2" style="filter:drop-shadow(0 0 10px rgba(255,32,52,.6))"/>
+          <path d="M30 9 L438 9 L459 30 L459 62 L438 83 L30 83 L9 62 L9 30 Z" fill="none" stroke="#ff2034" stroke-opacity=".35"/>
+          <line x1="0" y1="46" x2="6" y2="46" stroke="#ff2034" stroke-width="2"/>
+          <line x1="462" y1="46" x2="468" y2="46" stroke="#ff2034" stroke-width="2"/>
+        </svg>
+      </span>
+      <span class="pulse-ring" aria-hidden="true"></span>
+      <a class="enter" href="https://axiomgates.com" aria-label="ENTER AXIOM — перейти на axiomgates.com">
+        <span class="label" data-text="ENTER AXIOM">ENTER AXIOM</span>
+        <span class="arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 14" fill="none"><path d="M1 7 H21 M14 1 L21 7 L14 13" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+      </a>
+    </div>
+    <p class="ax-gate-note" hidden><span class="ax-gate-dot" aria-hidden="true"></span>Вход временно закрыт<span class="ax-gate-date"></span></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div>MODE :: <b>RED PROTOCOL</b> &nbsp;·&nbsp; SECTION :: LANDING</div>
+      <div>ENV :: PUBLIC &nbsp;·&nbsp; SHOWCASE :: <b>V0.3.0.0</b> &nbsp;·&nbsp; ITERATING</div>
+      <div>© 2026 AXIOM CORE NETWORK</div>
+    </div>
+    <div class="axiom-line">AXIOM · CORE · NETWORK</div>
+  </div>
+</footer>
+
+<script src="assets/js/index.js" defer></script>
+<script src="assets/js/showcase-gallery.js" defer></script>
+<script src="assets/js/showcase-v22.js" defer></script>
+<script src="assets/js/showcase-v23.js" defer></script>
+
+</body>
+</html>

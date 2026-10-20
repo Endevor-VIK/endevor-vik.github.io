@@ -1,0 +1,31 @@
+{
+  "kind": "OWNED_R1P_SCRATCH_CLEANUP",
+  "atEpoch": 1792536363.7710044,
+  "verifiedDurableFrames": 346,
+  "removed": [
+    {
+      "path": "/tmp/axs-0524-w4rp/run-001",
+      "bytes": 823273,
+      "uid": 1000,
+      "markerKind": "axs-w4rp-native"
+    },
+    {
+      "path": "/tmp/axs-0524-w4rp/run-002",
+      "bytes": 13660295,
+      "uid": 1000,
+      "markerKind": "axs-w4rp-native"
+    },
+    {
+      "path": "/tmp/axs-0524-w4rp/run-003",
+      "bytes": 18367593,
+      "uid": 1000,
+      "markerKind": "axs-w4rp-native"
+    }
+  ],
+  "removedBytes": 32851161,
+  "remainingOwnedNodeScripts": [],
+  "foreignWorktreesProcessesCachesEvidenceTouched": false,
+  "oldW4W4REvidencePreserved": true,
+  "durableBytes": 19350733,
+  "notes": "Playwright browsers/contexts and loopback servers closed by finally; no trace/video/profile directories retained. Only UID/kind/realpath-verified own run directories deleted after final hashes; intermediate raw manifests and3diagnostic frames retained."
+}
