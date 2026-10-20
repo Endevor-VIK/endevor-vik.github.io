@@ -2,13 +2,13 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: W4_G2_IMPLEMENTING / GATE_A_APPROVED / GATE_B_PENDING
+  status: W4_IMPLEMENTED / QUALIFIED_PERFORMANCE_PENDING / GATE_B_PENDING
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
   scope: endeavor-vik.github.io / current 0524 and future AAA waves
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   editable_by_agents: true
   change_policy: "Snapshot fields are never asserted current without Git recheck; update only in authorized task branch after every review"
   links:
@@ -18,27 +18,33 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-19 / 0524.W4 G2 — GATE A APPROVED
+## CURRENT STATE — 2026-10-20 / W4 IMPLEMENTED — QUALIFIED PERFORMANCE PENDING
 
-Authority: [Principal Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), reviewed PR #11 HEAD `af20ff6`; conditions R1–R6 mandatory. [G2 SPEC/ownership](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
+Authority: [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), reviewed proposal PR11/`af20ff6`; R1–R6 mandatory. [G2 SPEC](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
 
-- Branch `w4/world-narrative`, worktree `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`, starts from accepted `af20ff6`. PR #11 remains the docs-only proposal, unchanged and unmerged.
-- Runtime baseline frozen `6b082e5f262c09a123748273da42277d3a29a6c2` in separate `/tmp/axs-0524-w4-before-6b082e5`. Runtime edits wait for reproducible BEFORE captures.
-- Lead owns HTML/scoped CSS. QA agent owns W4 test/capture tooling; editorial/WORK agents read-only. Browser engines execute sequentially. WebKit installation needed; other existing tools available.
-- Protected `#world`, `#chars`, AXIOM ∅, map/OMEGA data/handlers/assets and **III/IV labels remain HOLD**. W01 composition/art, faction structure/art and all eight real captures/viewer preserved.
-- Planned: four BLACK SUN beats with visibly attributed author reconstruction; WHAT REMAINS focuses human consequences, no fragmentation recap; WORK collapsed static conceptual details secondary to screenshots; factions copy preserves NEURA uncertainty.
-- Next: complete BEFORE matrix → bounded implementation slices → frozen SHA / G3 → independent G4. G3/G4 not yet executed at this snapshot; inspect current Git/evidence rather than infer from this historical moment.
+- Branch/worktree: `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze + remote recovery: **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**. Current reporting/evidence delta only; never restart completed source slices. PR11 remains unchanged Draft/unmerged.
+- BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2` captured before runtime edits:327checks/0failed,702frames;455retained. AFTER full21matrix:1656checks/0failed,782frames;541retained. All996 native retained hashes independently checked. [Full pairs/index](waves/w4/WORLD_BEFORE_AFTER.md).
+- IMPLEMENTED: W01 English title;4BLACK SUN beats + visible authored reconstruction; human WHAT REMAINS;3closed WORK disclosures/4staticconcepts secondary to8realshots; single factions heading/NEURA legacy uncertainty. Entire world/chars/AXIOM∅/III-IV labels, map/OMEGA/source assets/handlers unchanged.
+- G3: smoke/source/style/behavior checks pass; legacy230PASS/2baselineFAIL (HERO3pxCR1024, gate-note2pxFF720), pairedBEFORE/AFTER3×. Narrowlandscape3engine pairs show identical initialCTAoutside390height, but nativeTab/manualscroll/hit-test reachable. Actual200%AFTER18/18pass +9visible readingframes; old blank capture attempt preserved and G4-F01resolved. [QA report](waves/w4/WORLD_QA_REPORT.md).
+- Independent G4 `canon_audit`: no new source/Canon/visual P0/P1;66frames viewed,13/13 riskbrowserPASS, correctednativezoom reviewed. Own record `W4_G4_REVIEW.md` final remains pending qualified performance. No more reviewer browsers planned.
+- **Performance unresolved:** first20observations completed but external Claude browser/build jobs contaminated them; OBSERVED/CONTAMINATED, not quiet gate. Guarded attempt2 refused preflight (0LH) because foreign tests remain live in `mgp7-ws/apps/e2e-run`. Never stop foreign processes. Need6minute quiet window,15s preflight +1s monitor, full5pairs rerun. CREATOR ответил: после завершения другой задачи; до фактического quiet window новый LH не запускается.
+- Host reboot cleared `/tmp`; main21matrix/996frames/legacyproof were already durable. BEFORE worktree restored at same `/tmp/axs-0524-w4-before-6b082e5`. Only lost narrowlandscape proof re-run, not fullmatrix. WebKitrootlessscratch cleaned by owner; browser cache retained.
+- Next: qualified5pairs → independentG4 final → finalreport/handoff/evidencecommit/newDraftPR. No Canon/rootgitlink/version/main/deploy writes. Required remaining approval: Gate B and any later merge/deploy/protected/Canon scope.
 
 ```text
 AXIOM SHOWCASE / RESUME PACKET
-AUTHORITY: W4_GATE_A_ACCEPTANCE.md (Principal; PR11 af20ff6), R1–R6; GateB PENDING
-TASK: 0524.W4 G2–G4 controlled implementation; SPEC waves/w4/W4_G2_SPEC.md
-BRANCH: w4/world-narrative from af20ff6; runtime baseline 6b082e5; Canon3884ea43 read-only
+AUTHORITY: W4_GATE_A_ACCEPTANCE.md, R1–R6; GateB PENDING
+TASK: 0524.W4; implementation frozen b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5
+BRANCH: w4/world-narrative; runtime baseline6b082e5; Canon3884ea43 read-only
 WORKTREE: /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation
-BEFORE: /tmp/axs-0524-w4-before-6b082e5; capture before runtime edits
-PRESERVE: full world/chars/AXIOM∅/III-IV labels; map/OMEGA; eight capture assets/viewer; art/fonts/palette
-FORBIDDEN: merge PR11/main, deploy, Canon/rootgitlink/version edits, protected changes
-NEXT: inspect status/HEAD, SPEC and evidence; finish baseline→G2→G3→independentG4; don't restart completed slices
+DONE: G2;21×3engine matrix1656/0;996retainedframes;native200%18/18AFTER;G4source/visual+13riskchecks
+PENDING: qualifiedquietperformance;G4final;deliveryreportcommit/newDraftPR;GateB
+PERF: qa/performance first20OBSERVED_CONTAMINATED; attempt2PREFLIGHT_NOT_QUIET0LH; foreignClaude mgp7-ws tests
+BROWSERS: allownclosed; perfagentreadyguard; don'tlaunchothersduringitsfutureGO
+EVIDENCE: evidence/w4/REVIEW.html + before/after/qa; WORLD_BEFORE_AFTER.md
+PRESERVE: fullworld/chars/AXIOM∅/III-IV,map/OMEGA,8realshots/viewer,art/fonts/palette
+FORBIDDEN: mergePR11/main,deploy,Canon/rootgitlink/version/protected edits,foreignprocesskill
+NEXT: verifyGit/status/currentexternalwork; getquietwindow→5pairs→G4final→docs/push/DraftPR;don'trepeatexecutedmatrix
 ```
 
 ## HISTORICAL SNAPSHOT — 2026-10-19 / 0524.W4 G0/G1 — READY FOR GATE A

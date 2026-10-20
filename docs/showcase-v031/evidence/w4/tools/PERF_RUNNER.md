@@ -2,10 +2,10 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.W4.PERF_RUNNER
   title: "W4 — reproducible sequential Lighthouse runner"
-  status: TOOLING / BASELINE_OBSERVED / PAIRED_NOT_EXECUTED
+  status: TOOLING / BASELINE_OBSERVED / PAIRED_CONTAMINATED / QUIET_ATTEMPT_PENDING
   deployment: NOT_DEPLOYED
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   editable_by_agents: true
 -->
 # W4 — Lighthouse
@@ -39,7 +39,58 @@ SHA-256 runner на этом запуске:
 WSL conversion профиля в chrome-launcher и синхронный `kill()` API. Исправлены
 Linux direct spawn/CDP и ожидание закрытия Chrome; exact собственный ошибочный
 UNC-каталог удалён после проверки завершения процесса. Успешный r2 выполнен после
-исправления, без параллельных QA browsers. Полные пять пар ещё **NOT RUN**.
+исправления, без параллельных QA browsers. На момент первичного baseline полные пять пар
+были **NOT RUN**; отдельная попытка следующего дня описана ниже.
+
+## 2026-10-20 — attempt 1 / CONTAMINATED
+
+BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2`, AFTER
+`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`. Все 20 наблюдений завершились,
+source manifests сверены до и после, raw reports проверены на одинаковые версии/config
+и соответствие чисел summary. Числа сохранены полностью:
+[`qa/performance/summary.json`](../qa/performance/summary.json),
+[`attempt1-qualification.json`](../qa/performance/attempt1-qualification.json),
+[`raw manifests`](../qa/performance/attempt1-raw-reports-manifest.json).
+
+**Это не квалифицированное измерение в тихом CPU-окне.** Хотя отдельный 3s preflight
+показал 1.29% aggregate CPU, последующий 5s monitor обнаружил внешние compiler/browser
+processes: tsc/esbuild, chrome-headless, Firefox; maximum foreign CPU — 284.83% одного
+ядра. Чужие браузеры попали в 10 интервалов, пересекающих шесть наблюдений. Никто из
+них не завершался агентом. Numeric floors не отменяют нарушение метода: весь attempt
+помечен CONTAMINATED, без выборочного исключения неудобных результатов.
+
+## Строгий повтор — согласованный guard
+
+Координатор разрешил полный повтор после завершения отдельных capture/G4 browsers.
+Обёртка [`run_guarded.py`](../qa/performance/run_guarded.py) не меняет frozen runner,
+runtime, Lighthouse settings или cache protocol. До запуска требует 15 последовательных
+1s samples aggregate CPU <10% и отсутствие внешних browsers/build tools; наблюдает
+процессы каждую секунду во всех 20 запусках. Внешний browser/build сразу отклоняет
+attempt; foreign CPU >100% одного ядра в двух последовательных samples — тоже.
+Останавливается только собственный Lighthouse runner, весь результат сохраняется.
+Регистрируются только PID/PPID/comm/executable basename/CPU/classification; чужие
+argv/env/URLs не записываются. Видимость ограничена Linux `/proc`, не Windows host load.
+
+Повтор разрешается запускать только после нового GO координатора:
+
+```bash
+python3 docs/showcase-v031/evidence/w4/qa/performance/run_guarded.py \
+  --repo "$PWD" \
+  --before-root /tmp/axs-0524-w4-before-6b082e5 \
+  --before-sha 6b082e5f262c09a123748273da42277d3a29a6c2 \
+  --after-root "$PWD" \
+  --after-sha b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5 \
+  --scratch /tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet \
+  --durable "$PWD/docs/showcase-v031/evidence/w4/qa/performance/attempt-2-quiet"
+```
+
+**Attempt 2: PREFLIGHT_NOT_QUIET, 0 Lighthouse observations.** Все 90 секунд
+предварительной проверки оставались внешние chrome-headless-shell и esbuild из
+независимой ветки процессов Claude (`claude → bash → timeout → npm exec playwr`).
+Guard не запустил ни одного браузера. Данные:
+[`attempt-2-quiet/guard.json`](../qa/performance/attempt-2-quiet/guard.json).
+Это корректный отказ метода, не product/performance FAIL. Квалифицированные пять пар
+остаются INCOMPLETE до реально свободного окна; чужие процессы не завершались.
 
 ## Воспроизведение
 

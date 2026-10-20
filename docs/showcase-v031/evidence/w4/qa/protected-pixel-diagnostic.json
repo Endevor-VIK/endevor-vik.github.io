@@ -1,0 +1,2369 @@
+{
+  "before_sha": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "after_sha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+  "method": "native RM, matching engine/viewport/DPR1; sticky chrome and outside-target pixels excluded; +/-1 px alignment; raw diagnostics plus symmetric 1.5px Gaussian composition comparison; no design injection; NOT pixel identity",
+  "exploratory_thresholds_not_acceptance": {
+    "raw_mean": 2,
+    "raw_fraction_gt24": 0.02
+  },
+  "samples": [
+    {
+      "path": "chromium/1920x1080/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 1.05113,
+        "changed_fraction_gt24": 0.001857,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.46379,
+        "changed_fraction_gt24": 9.8e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1920x1080/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        707
+      ],
+      "raw": {
+        "mean_luma_error": 1.1977,
+        "changed_fraction_gt24": 0.004361,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1157264
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.57714,
+        "changed_fraction_gt24": 4e-06,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1920x1080/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 0.61333,
+        "changed_fraction_gt24": 0.001053,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.34512,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1920x1080/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 0.89157,
+        "changed_fraction_gt24": 0.006593,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.41347,
+        "changed_fraction_gt24": 0.000301,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1440x900/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 1.40503,
+        "changed_fraction_gt24": 0.005631,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.60024,
+        "changed_fraction_gt24": 0.000244,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1440x900/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1438,
+        681
+      ],
+      "raw": {
+        "mean_luma_error": 2.60418,
+        "changed_fraction_gt24": 0.011455,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 830008
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.17072,
+        "changed_fraction_gt24": 0.002772,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "chromium/1440x900/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 1.20199,
+        "changed_fraction_gt24": 0.00484,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.63306,
+        "changed_fraction_gt24": 1.8e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1440x900/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 1.54123,
+        "changed_fraction_gt24": 0.011732,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.72839,
+        "changed_fraction_gt24": 0.000386,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1366x768/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.15757,
+        "changed_fraction_gt24": 0.005554,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.50055,
+        "changed_fraction_gt24": 0.00019,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1366x768/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1364,
+        652
+      ],
+      "raw": {
+        "mean_luma_error": 2.88661,
+        "changed_fraction_gt24": 0.014199,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 747738
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.27669,
+        "changed_fraction_gt24": 0.002708,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "chromium/1366x768/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.89282,
+        "changed_fraction_gt24": 0.009938,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.92701,
+        "changed_fraction_gt24": 0.000972,
+        "alignment": [
+          0,
+          -1
+        ]
+      }
+    },
+    {
+      "path": "chromium/1366x768/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.58527,
+        "changed_fraction_gt24": 0.014729,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.71129,
+        "changed_fraction_gt24": 0.000472,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/1024x768/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 2.54761,
+        "changed_fraction_gt24": 0.004515,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.88609,
+        "changed_fraction_gt24": 1.6e-05,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "chromium/1024x768/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        566
+      ],
+      "raw": {
+        "mean_luma_error": 1.83642,
+        "changed_fraction_gt24": 0.002814,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 526320
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.86013,
+        "changed_fraction_gt24": 0.002071,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "chromium/1024x768/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.85934,
+        "changed_fraction_gt24": 0.006463,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.84318,
+        "changed_fraction_gt24": 0.000912,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "chromium/1024x768/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 0.54035,
+        "changed_fraction_gt24": 5e-06,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.36491,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/768x1024/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 1.79062,
+        "changed_fraction_gt24": 0.004983,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.81228,
+        "changed_fraction_gt24": 0.002973,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/768x1024/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        50,
+        766,
+        928
+      ],
+      "raw": {
+        "mean_luma_error": 2.19946,
+        "changed_fraction_gt24": 0.013184,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 670792
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.88321,
+        "changed_fraction_gt24": 8.8e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/768x1024/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 1.10045,
+        "changed_fraction_gt24": 0.005075,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.51364,
+        "changed_fraction_gt24": 5e-06,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/768x1024/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 1.92011,
+        "changed_fraction_gt24": 0.009792,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.98657,
+        "changed_fraction_gt24": 0.000962,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/390x844/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 5.83224,
+        "changed_fraction_gt24": 0.052014,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 2.07244,
+        "changed_fraction_gt24": 0.004462,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/390x844/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        388,
+        783
+      ],
+      "raw": {
+        "mean_luma_error": 3.83135,
+        "changed_fraction_gt24": 0.01902,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 282552
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.55308,
+        "changed_fraction_gt24": 5e-05,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "chromium/390x844/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 1.32592,
+        "changed_fraction_gt24": 0.00508,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.80166,
+        "changed_fraction_gt24": 1.3e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/390x844/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 1.95124,
+        "changed_fraction_gt24": 0.012067,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.89561,
+        "changed_fraction_gt24": 0.00113,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/360x800/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 2.66486,
+        "changed_fraction_gt24": 0.009143,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.13511,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/360x800/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        358,
+        756
+      ],
+      "raw": {
+        "mean_luma_error": 2.32906,
+        "changed_fraction_gt24": 0.007443,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 250980
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.1154,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/360x800/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 0.57672,
+        "changed_fraction_gt24": 8e-06,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.35422,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "chromium/360x800/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 0.53948,
+        "changed_fraction_gt24": 4e-06,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.3733,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1920x1080/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 3.01342,
+        "changed_fraction_gt24": 0.017776,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.07397,
+        "changed_fraction_gt24": 0.000169,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1920x1080/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1918,
+        707
+      ],
+      "raw": {
+        "mean_luma_error": 2.05522,
+        "changed_fraction_gt24": 0.00942,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 1157264
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.87762,
+        "changed_fraction_gt24": 0.000715,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1920x1080/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 1.06841,
+        "changed_fraction_gt24": 0.004972,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.56652,
+        "changed_fraction_gt24": 0.001213,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1920x1080/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 0.93139,
+        "changed_fraction_gt24": 0.007187,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.38205,
+        "changed_fraction_gt24": 0.000304,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1440x900/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 0.82059,
+        "changed_fraction_gt24": 0.002268,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.33442,
+        "changed_fraction_gt24": 4e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1440x900/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        681
+      ],
+      "raw": {
+        "mean_luma_error": 0.65635,
+        "changed_fraction_gt24": 1.7e-05,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 830008
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.36267,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1440x900/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 0.28351,
+        "changed_fraction_gt24": 3e-06,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.19036,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1440x900/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 0.55628,
+        "changed_fraction_gt24": 0.002429,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.35505,
+        "changed_fraction_gt24": 0.001094,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1366x768/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 2.57103,
+        "changed_fraction_gt24": 0.024737,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.98932,
+        "changed_fraction_gt24": 0.002525,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1366x768/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1364,
+        661
+      ],
+      "raw": {
+        "mean_luma_error": 2.60233,
+        "changed_fraction_gt24": 0.014551,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 759996
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.04439,
+        "changed_fraction_gt24": 0.000374,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1366x768/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.90167,
+        "changed_fraction_gt24": 0.009555,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.9007,
+        "changed_fraction_gt24": 3.7e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1366x768/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.79897,
+        "changed_fraction_gt24": 0.014091,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.7645,
+        "changed_fraction_gt24": 0.000533,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1024x768/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 4.20245,
+        "changed_fraction_gt24": 0.024596,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.56102,
+        "changed_fraction_gt24": 6.3e-05,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "firefox/1024x768/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        50,
+        1022,
+        556
+      ],
+      "raw": {
+        "mean_luma_error": 2.0844,
+        "changed_fraction_gt24": 0.013677,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 516120
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.93557,
+        "changed_fraction_gt24": 0.0021,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/1024x768/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.7902,
+        "changed_fraction_gt24": 0.004795,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.73034,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "firefox/1024x768/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 0.28164,
+        "changed_fraction_gt24": 4e-06,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.20645,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/768x1024/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 1.59456,
+        "changed_fraction_gt24": 0.002956,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.72394,
+        "changed_fraction_gt24": 0.002438,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/768x1024/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        937
+      ],
+      "raw": {
+        "mean_luma_error": 0.91675,
+        "changed_fraction_gt24": 0.002016,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 677668
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.50302,
+        "changed_fraction_gt24": 0.001485,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/768x1024/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 1.00849,
+        "changed_fraction_gt24": 0.003457,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.43367,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/768x1024/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 0.45809,
+        "changed_fraction_gt24": 0.000694,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.27952,
+        "changed_fraction_gt24": 9e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/390x844/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 4.41343,
+        "changed_fraction_gt24": 0.036693,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.53239,
+        "changed_fraction_gt24": 0.00308,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/390x844/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        388,
+        784
+      ],
+      "raw": {
+        "mean_luma_error": 4.29271,
+        "changed_fraction_gt24": 0.024359,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 282938
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.71845,
+        "changed_fraction_gt24": 0.00446,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "firefox/390x844/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 2.1443,
+        "changed_fraction_gt24": 0.013774,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.08218,
+        "changed_fraction_gt24": 0.002151,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/390x844/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 0.62533,
+        "changed_fraction_gt24": 0.002581,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.32411,
+        "changed_fraction_gt24": 2e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/360x800/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 5.64483,
+        "changed_fraction_gt24": 0.049125,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.75994,
+        "changed_fraction_gt24": 0.003838,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "firefox/360x800/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        757
+      ],
+      "raw": {
+        "mean_luma_error": 1.35179,
+        "changed_fraction_gt24": 0.004166,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 251336
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.65369,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/360x800/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 1.97056,
+        "changed_fraction_gt24": 0.012386,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.92615,
+        "changed_fraction_gt24": 0.003333,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "firefox/360x800/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 1.01451,
+        "changed_fraction_gt24": 0.002522,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.57546,
+        "changed_fraction_gt24": 1.5e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1920x1080/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 1.5746,
+        "changed_fraction_gt24": 0.006444,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.70005,
+        "changed_fraction_gt24": 0.001237,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1920x1080/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        707
+      ],
+      "raw": {
+        "mean_luma_error": 1.88465,
+        "changed_fraction_gt24": 0.010363,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 1157264
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.80892,
+        "changed_fraction_gt24": 0.000137,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "webkit/1920x1080/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 1.13369,
+        "changed_fraction_gt24": 0.00533,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.5723,
+        "changed_fraction_gt24": 0.000145,
+        "alignment": [
+          0,
+          -1
+        ]
+      }
+    },
+    {
+      "path": "webkit/1920x1080/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1918,
+        1076
+      ],
+      "raw": {
+        "mean_luma_error": 1.86441,
+        "changed_fraction_gt24": 0.010814,
+        "alignment": [
+          0,
+          -1
+        ],
+        "pixels": 1864268
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.76014,
+        "changed_fraction_gt24": 0.000471,
+        "alignment": [
+          0,
+          -1
+        ]
+      }
+    },
+    {
+      "path": "webkit/1440x900/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 0.83779,
+        "changed_fraction_gt24": 0.00323,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.45777,
+        "changed_fraction_gt24": 0.003348,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1440x900/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1438,
+        682
+      ],
+      "raw": {
+        "mean_luma_error": 2.02349,
+        "changed_fraction_gt24": 0.012607,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 831444
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.87249,
+        "changed_fraction_gt24": 7.6e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1440x900/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 0.75886,
+        "changed_fraction_gt24": 0.002661,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.51604,
+        "changed_fraction_gt24": 0.001978,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1440x900/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1438,
+        896
+      ],
+      "raw": {
+        "mean_luma_error": 1.99949,
+        "changed_fraction_gt24": 0.006844,
+        "alignment": [
+          0,
+          -1
+        ],
+        "pixels": 1138748
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.84085,
+        "changed_fraction_gt24": 0.000256,
+        "alignment": [
+          0,
+          -1
+        ]
+      }
+    },
+    {
+      "path": "webkit/1366x768/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 2.32901,
+        "changed_fraction_gt24": 0.00921,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.97247,
+        "changed_fraction_gt24": 0.002341,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "webkit/1366x768/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1364,
+        661
+      ],
+      "raw": {
+        "mean_luma_error": 2.76563,
+        "changed_fraction_gt24": 0.016705,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 759996
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.18134,
+        "changed_fraction_gt24": 0.000395,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1366x768/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.58323,
+        "changed_fraction_gt24": 0.003757,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.86902,
+        "changed_fraction_gt24": 0.000878,
+        "alignment": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "path": "webkit/1366x768/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        103,
+        1364,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 2.77696,
+        "changed_fraction_gt24": 0.017752,
+        "alignment": [
+          0,
+          -1
+        ],
+        "pixels": 900282
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.19833,
+        "changed_fraction_gt24": 0.001849,
+        "alignment": [
+          0,
+          -1
+        ]
+      }
+    },
+    {
+      "path": "webkit/1024x768/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.21682,
+        "changed_fraction_gt24": 0.002104,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.61147,
+        "changed_fraction_gt24": 0.001957,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1024x768/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        557
+      ],
+      "raw": {
+        "mean_luma_error": 0.577,
+        "changed_fraction_gt24": 0.000205,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 517140
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.29532,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1024x768/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 1.09622,
+        "changed_fraction_gt24": 0.003895,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.58554,
+        "changed_fraction_gt24": 1.5e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/1024x768/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        1022,
+        764
+      ],
+      "raw": {
+        "mean_luma_error": 0.50127,
+        "changed_fraction_gt24": 0.000128,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 728280
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.36636,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/768x1024/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 5.67043,
+        "changed_fraction_gt24": 0.049506,
+        "alignment": [
+          0,
+          1
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 1.76996,
+        "changed_fraction_gt24": 0.002615,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/768x1024/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": true,
+      "crop": [
+        2,
+        50,
+        766,
+        937
+      ],
+      "raw": {
+        "mean_luma_error": 2.28561,
+        "changed_fraction_gt24": 0.014824,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 677668
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.99833,
+        "changed_fraction_gt24": 0.001608,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/768x1024/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 1.66584,
+        "changed_fraction_gt24": 0.009296,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.73481,
+        "changed_fraction_gt24": 0.001981,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/768x1024/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        50,
+        766,
+        1020
+      ],
+      "raw": {
+        "mean_luma_error": 1.36467,
+        "changed_fraction_gt24": 0.009336,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 741080
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.65316,
+        "changed_fraction_gt24": 0.001432,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/390x844/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 1.73773,
+        "changed_fraction_gt24": 0.006971,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.8108,
+        "changed_fraction_gt24": 0.003783,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/390x844/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        388,
+        783
+      ],
+      "raw": {
+        "mean_luma_error": 0.44783,
+        "changed_fraction_gt24": 1.8e-05,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 282552
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.25596,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/390x844/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 1.3875,
+        "changed_fraction_gt24": 0.004567,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.64109,
+        "changed_fraction_gt24": 6.6e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/390x844/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        388,
+        840
+      ],
+      "raw": {
+        "mean_luma_error": 0.67323,
+        "changed_fraction_gt24": 0.002561,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 304554
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.3583,
+        "changed_fraction_gt24": 2e-05,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/360x800/protected-map.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 0.98512,
+        "changed_fraction_gt24": 4.9e-05,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.40217,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/360x800/protected-omega.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        757
+      ],
+      "raw": {
+        "mean_luma_error": 0.80489,
+        "changed_fraction_gt24": 2e-05,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 251336
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.43554,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/360x800/protected-people.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 0.37617,
+        "changed_fraction_gt24": 2.3e-05,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.23584,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "webkit/360x800/protected-axiom.webp",
+      "status": "OBSERVED",
+      "raw_exploratory_threshold_exceeded": false,
+      "crop": [
+        2,
+        51,
+        358,
+        796
+      ],
+      "raw": {
+        "mean_luma_error": 0.59655,
+        "changed_fraction_gt24": 2.6e-05,
+        "alignment": [
+          0,
+          0
+        ],
+        "pixels": 265220
+      },
+      "low_pass_sigma_1_5": {
+        "mean_luma_error": 0.41571,
+        "changed_fraction_gt24": 0.0,
+        "alignment": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "pairs": 84,
+    "not_compared": 0,
+    "raw_exploratory_threshold_exceeded": 24
+  },
+  "verdict": "NONE \u2014 diagnostic only; exact source/computed styles and independent visual review are authoritative"
+}

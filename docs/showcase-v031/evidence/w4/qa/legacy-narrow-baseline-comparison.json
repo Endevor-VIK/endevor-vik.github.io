@@ -1,0 +1,5880 @@
+{
+  "generatedAt": "2026-10-19T17:31:48.334Z",
+  "scope": "Narrow paired reproduction only; no product/test edits; literal frozen legacy page() helper; no full-suite rerun",
+  "sourceSHAs": {
+    "before": "6b082e5f262c09a123748273da42277d3a29a6c2",
+    "after": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  "heroPredicate": "frame.b <= vh && all four children inside frame && frame.l===36 && titleFont>=76",
+  "overflowPredicate": "documentElement.scrollWidth <= documentElement.clientWidth + 1 immediately after load",
+  "samples": [
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "before",
+      "sample": 1,
+      "profile": {
+        "w": 1024,
+        "h": 768,
+        "dpr": 1
+      },
+      "geometry": {
+        "vh": 768,
+        "overflow": false,
+        "enter": {
+          "t": 585,
+          "b": 677,
+          "l": 60,
+          "r": 548
+        },
+        "gateBottom": 682,
+        "gateShown": true,
+        "frame": {
+          "t": 151,
+          "b": 771,
+          "l": 36,
+          "r": 973
+        },
+        "quick": {
+          "t": 711,
+          "b": 755,
+          "l": 60,
+          "r": 453
+        },
+        "byline": {
+          "t": 715,
+          "b": 753,
+          "l": 588,
+          "r": 767
+        },
+        "bylineLines": 2,
+        "bylineText": "CREATOR / ENDEAVOR · DESIGN / CODE / CANON",
+        "status": {
+          "t": 663,
+          "b": 755,
+          "l": 784,
+          "r": 949
+        },
+        "radar": {
+          "t": 236,
+          "b": 596,
+          "l": 588,
+          "r": 949
+        },
+        "title": {
+          "t": 211,
+          "b": 437,
+          "l": 60,
+          "r": 548
+        },
+        "titleFont": 81.92,
+        "eyebrowLines": 1,
+        "quickRows": 1
+      },
+      "conditions": {
+        "frameInside": false,
+        "quick": true,
+        "status": true,
+        "byline": true,
+        "radar": true,
+        "left36": true,
+        "scaleOk": true
+      },
+      "originalCheckPass": false
+    },
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "after",
+      "sample": 1,
+      "profile": {
+        "w": 1024,
+        "h": 768,
+        "dpr": 1
+      },
+      "geometry": {
+        "vh": 768,
+        "overflow": false,
+        "enter": {
+          "t": 585,
+          "b": 677,
+          "l": 60,
+          "r": 548
+        },
+        "gateBottom": 682,
+        "gateShown": true,
+        "frame": {
+          "t": 151,
+          "b": 771,
+          "l": 36,
+          "r": 973
+        },
+        "quick": {
+          "t": 711,
+          "b": 755,
+          "l": 60,
+          "r": 453
+        },
+        "byline": {
+          "t": 715,
+          "b": 753,
+          "l": 588,
+          "r": 767
+        },
+        "bylineLines": 2,
+        "bylineText": "CREATOR / ENDEAVOR · DESIGN / CODE / CANON",
+        "status": {
+          "t": 663,
+          "b": 755,
+          "l": 784,
+          "r": 949
+        },
+        "radar": {
+          "t": 236,
+          "b": 596,
+          "l": 588,
+          "r": 949
+        },
+        "title": {
+          "t": 211,
+          "b": 437,
+          "l": 60,
+          "r": 548
+        },
+        "titleFont": 81.92,
+        "eyebrowLines": 1,
+        "quickRows": 1
+      },
+      "conditions": {
+        "frameInside": false,
+        "quick": true,
+        "status": true,
+        "byline": true,
+        "radar": true,
+        "left36": true,
+        "scaleOk": true
+      },
+      "originalCheckPass": false
+    },
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "before",
+      "sample": 2,
+      "profile": {
+        "w": 1024,
+        "h": 768,
+        "dpr": 1
+      },
+      "geometry": {
+        "vh": 768,
+        "overflow": false,
+        "enter": {
+          "t": 585,
+          "b": 677,
+          "l": 60,
+          "r": 548
+        },
+        "gateBottom": 682,
+        "gateShown": true,
+        "frame": {
+          "t": 151,
+          "b": 771,
+          "l": 36,
+          "r": 973
+        },
+        "quick": {
+          "t": 711,
+          "b": 755,
+          "l": 60,
+          "r": 453
+        },
+        "byline": {
+          "t": 715,
+          "b": 753,
+          "l": 588,
+          "r": 767
+        },
+        "bylineLines": 2,
+        "bylineText": "CREATOR / ENDEAVOR · DESIGN / CODE / CANON",
+        "status": {
+          "t": 663,
+          "b": 755,
+          "l": 784,
+          "r": 949
+        },
+        "radar": {
+          "t": 236,
+          "b": 596,
+          "l": 588,
+          "r": 949
+        },
+        "title": {
+          "t": 211,
+          "b": 437,
+          "l": 60,
+          "r": 548
+        },
+        "titleFont": 81.92,
+        "eyebrowLines": 1,
+        "quickRows": 1
+      },
+      "conditions": {
+        "frameInside": false,
+        "quick": true,
+        "status": true,
+        "byline": true,
+        "radar": true,
+        "left36": true,
+        "scaleOk": true
+      },
+      "originalCheckPass": false
+    },
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "after",
+      "sample": 2,
+      "profile": {
+        "w": 1024,
+        "h": 768,
+        "dpr": 1
+      },
+      "geometry": {
+        "vh": 768,
+        "overflow": false,
+        "enter": {
+          "t": 585,
+          "b": 677,
+          "l": 60,
+          "r": 548
+        },
+        "gateBottom": 682,
+        "gateShown": true,
+        "frame": {
+          "t": 151,
+          "b": 771,
+          "l": 36,
+          "r": 973
+        },
+        "quick": {
+          "t": 711,
+          "b": 755,
+          "l": 60,
+          "r": 453
+        },
+        "byline": {
+          "t": 715,
+          "b": 753,
+          "l": 588,
+          "r": 767
+        },
+        "bylineLines": 2,
+        "bylineText": "CREATOR / ENDEAVOR · DESIGN / CODE / CANON",
+        "status": {
+          "t": 663,
+          "b": 755,
+          "l": 784,
+          "r": 949
+        },
+        "radar": {
+          "t": 236,
+          "b": 596,
+          "l": 588,
+          "r": 949
+        },
+        "title": {
+          "t": 211,
+          "b": 437,
+          "l": 60,
+          "r": 548
+        },
+        "titleFont": 81.92,
+        "eyebrowLines": 1,
+        "quickRows": 1
+      },
+      "conditions": {
+        "frameInside": false,
+        "quick": true,
+        "status": true,
+        "byline": true,
+        "radar": true,
+        "left36": true,
+        "scaleOk": true
+      },
+      "originalCheckPass": false
+    },
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "before",
+      "sample": 3,
+      "profile": {
+        "w": 1024,
+        "h": 768,
+        "dpr": 1
+      },
+      "geometry": {
+        "vh": 768,
+        "overflow": false,
+        "enter": {
+          "t": 585,
+          "b": 677,
+          "l": 60,
+          "r": 548
+        },
+        "gateBottom": 682,
+        "gateShown": true,
+        "frame": {
+          "t": 151,
+          "b": 771,
+          "l": 36,
+          "r": 973
+        },
+        "quick": {
+          "t": 711,
+          "b": 755,
+          "l": 60,
+          "r": 453
+        },
+        "byline": {
+          "t": 715,
+          "b": 753,
+          "l": 588,
+          "r": 767
+        },
+        "bylineLines": 2,
+        "bylineText": "CREATOR / ENDEAVOR · DESIGN / CODE / CANON",
+        "status": {
+          "t": 663,
+          "b": 755,
+          "l": 784,
+          "r": 949
+        },
+        "radar": {
+          "t": 236,
+          "b": 596,
+          "l": 588,
+          "r": 949
+        },
+        "title": {
+          "t": 211,
+          "b": 437,
+          "l": 60,
+          "r": 548
+        },
+        "titleFont": 81.92,
+        "eyebrowLines": 1,
+        "quickRows": 1
+      },
+      "conditions": {
+        "frameInside": false,
+        "quick": true,
+        "status": true,
+        "byline": true,
+        "radar": true,
+        "left36": true,
+        "scaleOk": true
+      },
+      "originalCheckPass": false
+    },
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "after",
+      "sample": 3,
+      "profile": {
+        "w": 1024,
+        "h": 768,
+        "dpr": 1
+      },
+      "geometry": {
+        "vh": 768,
+        "overflow": false,
+        "enter": {
+          "t": 585,
+          "b": 677,
+          "l": 60,
+          "r": 548
+        },
+        "gateBottom": 682,
+        "gateShown": true,
+        "frame": {
+          "t": 151,
+          "b": 771,
+          "l": 36,
+          "r": 973
+        },
+        "quick": {
+          "t": 711,
+          "b": 755,
+          "l": 60,
+          "r": 453
+        },
+        "byline": {
+          "t": 715,
+          "b": 753,
+          "l": 588,
+          "r": 767
+        },
+        "bylineLines": 2,
+        "bylineText": "CREATOR / ENDEAVOR · DESIGN / CODE / CANON",
+        "status": {
+          "t": 663,
+          "b": 755,
+          "l": 784,
+          "r": 949
+        },
+        "radar": {
+          "t": 236,
+          "b": 596,
+          "l": 588,
+          "r": 949
+        },
+        "title": {
+          "t": 211,
+          "b": 437,
+          "l": 60,
+          "r": 548
+        },
+        "titleFont": 81.92,
+        "eyebrowLines": 1,
+        "quickRows": 1
+      },
+      "conditions": {
+        "frameInside": false,
+        "quick": true,
+        "status": true,
+        "byline": true,
+        "radar": true,
+        "left36": true,
+        "scaleOk": true
+      },
+      "originalCheckPass": false
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "before",
+      "sample": 1,
+      "profile": {
+        "w": 720,
+        "h": 450,
+        "dpr": 2
+      },
+      "atLoad": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7558.42,
+              "r": 7904.87,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7620.6,
+              "r": 7727.2,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7558.42,
+              "r": 7611.72,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7039.6,
+              "r": 7510.42,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7110.67,
+              "r": 7217.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7039.6,
+              "r": 7101.78,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6485.25,
+              "r": 6991.6,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6538.55,
+              "r": 6645.15,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6485.25,
+              "r": 6529.67,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6010.85,
+              "r": 6437.25,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6081.92,
+              "r": 6188.52,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6010.85,
+              "r": 6073.03,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5403.2,
+              "r": 5962.85,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5465.38,
+              "r": 5571.98,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5403.2,
+              "r": 5456.5,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      },
+      "originalCheckPass": false,
+      "afterFontsAnd400ms": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7556.42,
+              "r": 7902.87,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7618.6,
+              "r": 7725.2,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7556.42,
+              "r": 7609.72,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7037.6,
+              "r": 7508.42,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7108.67,
+              "r": 7215.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7037.6,
+              "r": 7099.78,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6483.25,
+              "r": 6989.6,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6536.55,
+              "r": 6643.15,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6483.25,
+              "r": 6527.67,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6008.85,
+              "r": 6435.25,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6079.92,
+              "r": 6186.52,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6008.85,
+              "r": 6071.03,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5401.2,
+              "r": 5960.85,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5463.38,
+              "r": 5569.98,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5401.2,
+              "r": 5454.5,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "after",
+      "sample": 1,
+      "profile": {
+        "w": 720,
+        "h": 450,
+        "dpr": 2
+      },
+      "atLoad": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7558.48,
+              "r": 7904.93,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7620.67,
+              "r": 7727.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7558.48,
+              "r": 7611.78,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7039.67,
+              "r": 7510.48,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7110.73,
+              "r": 7217.33,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7039.67,
+              "r": 7101.85,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6485.32,
+              "r": 6991.67,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6538.62,
+              "r": 6645.22,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6485.32,
+              "r": 6529.73,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6010.92,
+              "r": 6437.32,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6081.98,
+              "r": 6188.58,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6010.92,
+              "r": 6073.1,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5403.27,
+              "r": 5962.92,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5465.45,
+              "r": 5572.05,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5403.27,
+              "r": 5456.57,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      },
+      "originalCheckPass": false,
+      "afterFontsAnd400ms": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7556.57,
+              "r": 7903.02,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7618.75,
+              "r": 7725.35,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7556.57,
+              "r": 7609.87,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7037.75,
+              "r": 7508.57,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7108.82,
+              "r": 7215.42,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7037.75,
+              "r": 7099.93,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6483.4,
+              "r": 6989.75,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6536.7,
+              "r": 6643.3,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6483.4,
+              "r": 6527.82,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6009,
+              "r": 6435.4,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6080.07,
+              "r": 6186.67,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6009,
+              "r": 6071.18,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5401.35,
+              "r": 5961,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5463.53,
+              "r": 5570.13,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5401.35,
+              "r": 5454.65,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "before",
+      "sample": 2,
+      "profile": {
+        "w": 720,
+        "h": 450,
+        "dpr": 2
+      },
+      "atLoad": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7558.65,
+              "r": 7905.1,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7620.83,
+              "r": 7727.43,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7558.65,
+              "r": 7611.95,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7039.83,
+              "r": 7510.65,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7110.9,
+              "r": 7217.5,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7039.83,
+              "r": 7102.02,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6485.48,
+              "r": 6991.83,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6538.78,
+              "r": 6645.38,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6485.48,
+              "r": 6529.9,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6011.08,
+              "r": 6437.48,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6082.15,
+              "r": 6188.75,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6011.08,
+              "r": 6073.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5403.43,
+              "r": 5963.08,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5465.62,
+              "r": 5572.22,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5403.43,
+              "r": 5456.73,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      },
+      "originalCheckPass": false,
+      "afterFontsAnd400ms": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7556.65,
+              "r": 7903.1,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7618.83,
+              "r": 7725.43,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7556.65,
+              "r": 7609.95,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7037.83,
+              "r": 7508.65,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7108.9,
+              "r": 7215.5,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7037.83,
+              "r": 7100.02,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6483.48,
+              "r": 6989.83,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6536.78,
+              "r": 6643.38,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6483.48,
+              "r": 6527.9,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6009.08,
+              "r": 6435.48,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6080.15,
+              "r": 6186.75,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6009.08,
+              "r": 6071.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5401.43,
+              "r": 5961.08,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5463.62,
+              "r": 5570.22,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5401.43,
+              "r": 5454.73,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "after",
+      "sample": 2,
+      "profile": {
+        "w": 720,
+        "h": 450,
+        "dpr": 2
+      },
+      "atLoad": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7558.57,
+              "r": 7905.02,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7620.75,
+              "r": 7727.35,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7558.57,
+              "r": 7611.87,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7039.75,
+              "r": 7510.57,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7110.82,
+              "r": 7217.42,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7039.75,
+              "r": 7101.93,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6485.4,
+              "r": 6991.75,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6538.7,
+              "r": 6645.3,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6485.4,
+              "r": 6529.82,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6011,
+              "r": 6437.4,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6082.07,
+              "r": 6188.67,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6011,
+              "r": 6073.18,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5403.35,
+              "r": 5963,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5465.53,
+              "r": 5572.13,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5403.35,
+              "r": 5456.65,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      },
+      "originalCheckPass": false,
+      "afterFontsAnd400ms": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7556.65,
+              "r": 7903.1,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7618.83,
+              "r": 7725.43,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7556.65,
+              "r": 7609.95,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7037.83,
+              "r": 7508.65,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7108.9,
+              "r": 7215.5,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7037.83,
+              "r": 7100.02,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6483.48,
+              "r": 6989.83,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6536.78,
+              "r": 6643.38,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6483.48,
+              "r": 6527.9,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6009.08,
+              "r": 6435.48,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6080.15,
+              "r": 6186.75,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6009.08,
+              "r": 6071.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5401.43,
+              "r": 5961.08,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5463.62,
+              "r": 5570.22,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5401.43,
+              "r": 5454.73,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "before",
+      "sample": 3,
+      "profile": {
+        "w": 720,
+        "h": 450,
+        "dpr": 2
+      },
+      "atLoad": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7558.42,
+              "r": 7904.87,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7620.6,
+              "r": 7727.2,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7558.42,
+              "r": 7611.72,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7039.6,
+              "r": 7510.42,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7110.67,
+              "r": 7217.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7039.6,
+              "r": 7101.78,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6485.25,
+              "r": 6991.6,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6538.55,
+              "r": 6645.15,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6485.25,
+              "r": 6529.67,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6010.85,
+              "r": 6437.25,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6081.92,
+              "r": 6188.52,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6010.85,
+              "r": 6073.03,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5403.2,
+              "r": 5962.85,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5465.38,
+              "r": 5571.98,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5403.2,
+              "r": 5456.5,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      },
+      "originalCheckPass": false,
+      "afterFontsAnd400ms": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 30862.07,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7556.42,
+              "r": 7902.87,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7618.6,
+              "r": 7725.2,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7556.42,
+              "r": 7609.72,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7037.6,
+              "r": 7508.42,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7108.67,
+              "r": 7215.27,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7037.6,
+              "r": 7099.78,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6483.25,
+              "r": 6989.6,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6536.55,
+              "r": 6643.15,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6483.25,
+              "r": 6527.67,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6008.85,
+              "r": 6435.25,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6079.92,
+              "r": 6186.52,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6008.85,
+              "r": 6071.03,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5401.2,
+              "r": 5960.85,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5463.38,
+              "r": 5569.98,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5401.2,
+              "r": 5454.5,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "after",
+      "sample": 3,
+      "profile": {
+        "w": 720,
+        "h": 450,
+        "dpr": 2
+      },
+      "atLoad": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7558.63,
+              "r": 7905.08,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7620.82,
+              "r": 7727.42,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7558.63,
+              "r": 7611.93,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7039.82,
+              "r": 7510.63,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7110.88,
+              "r": 7217.48,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7039.82,
+              "r": 7102,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6485.47,
+              "r": 6991.82,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6538.77,
+              "r": 6645.37,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6485.47,
+              "r": 6529.88,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6011.07,
+              "r": 6437.47,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6082.13,
+              "r": 6188.73,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6011.07,
+              "r": 6073.25,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5403.42,
+              "r": 5963.07,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5465.6,
+              "r": 5572.2,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5403.42,
+              "r": 5456.72,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      },
+      "originalCheckPass": false,
+      "afterFontsAnd400ms": {
+        "sw": 722,
+        "cw": 720,
+        "body": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "scrollWidth": 722,
+          "overflowX": "hidden"
+        },
+        "html": {
+          "box": {
+            "l": 0,
+            "r": 720,
+            "t": 0,
+            "b": 28526.43,
+            "w": 720
+          },
+          "overflowX": "visible"
+        },
+        "fontStatus": "loaded",
+        "unclipped": [],
+        "clipped": [
+          {
+            "selector": "span",
+            "box": {
+              "l": 7556.73,
+              "r": 7903.18,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 346.45
+            },
+            "scrollWidth": 346,
+            "clientWidth": 346,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7618.92,
+              "r": 7725.52,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-10-25"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7556.73,
+              "r": 7610.03,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 7037.92,
+              "r": 7508.73,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 470.82
+            },
+            "scrollWidth": 471,
+            "clientWidth": 471,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 7108.98,
+              "r": 7215.58,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-22"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 7037.92,
+              "r": 7100.1,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6483.57,
+              "r": 6989.92,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 506.35
+            },
+            "scrollWidth": 506,
+            "clientWidth": 506,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6536.87,
+              "r": 6643.47,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2025-12-29"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6483.57,
+              "r": 6527.98,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 44.42
+            },
+            "scrollWidth": 44,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "AUDIT"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 6009.17,
+              "r": 6435.57,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 426.4
+            },
+            "scrollWidth": 426,
+            "clientWidth": 426,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 6080.23,
+              "r": 6186.83,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-19"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 6009.17,
+              "r": 6071.35,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 62.18
+            },
+            "scrollWidth": 62,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "RELEASE"
+          },
+          {
+            "selector": "span",
+            "box": {
+              "l": 5401.52,
+              "r": 5961.17,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 559.65
+            },
+            "scrollWidth": 560,
+            "clientWidth": 560,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": null
+          },
+          {
+            "selector": "span.dim",
+            "box": {
+              "l": 5463.7,
+              "r": 5570.3,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 106.6
+            },
+            "scrollWidth": 107,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "/ 2026-02-27"
+          },
+          {
+            "selector": "b.tag",
+            "box": {
+              "l": 5401.52,
+              "r": 5454.82,
+              "t": 51.5,
+              "b": 67.5,
+              "w": 53.3
+            },
+            "scrollWidth": 53,
+            "clientWidth": 0,
+            "overflowX": "visible",
+            "position": "static",
+            "transform": "none",
+            "clip": {
+              "selector": "div.stream",
+              "overflowX": "hidden",
+              "box": {
+                "l": 168.5,
+                "r": 720,
+                "t": 51.5,
+                "b": 67.5,
+                "w": 551.5
+              }
+            },
+            "text": "UPDATE"
+          }
+        ]
+      }
+    }
+  ],
+  "helperHashes": {
+    "before": "49f0adf74cf140345eee516302aaf8585d3bd42b2e4309cc6534cb6682736f50",
+    "after": "49f0adf74cf140345eee516302aaf8585d3bd42b2e4309cc6534cb6682736f50"
+  },
+  "completedAt": "2026-10-19T17:31:57.913Z",
+  "firefoxOverflowElements": [
+    {
+      "phase": "before",
+      "value": {
+        "sw": 722,
+        "cw": 720,
+        "rootOverflowCandidates": [
+          {
+            "selector": "div#indexCursor",
+            "rect": {
+              "left": -13,
+              "right": 13,
+              "top": -13,
+              "bottom": 13,
+              "width": 26
+            },
+            "position": "fixed",
+            "overflowX": "visible",
+            "transform": "matrix(1, 0, 0, 1, -13, -13)",
+            "parent": "body",
+            "text": null
+          },
+          {
+            "selector": "i",
+            "rect": {
+              "left": -5,
+              "right": 5,
+              "top": -5,
+              "bottom": 5,
+              "width": 10
+            },
+            "position": "absolute",
+            "overflowX": "visible",
+            "transform": "matrix(1, 0, 0, 1, -5, -5)",
+            "parent": "div#indexCursor",
+            "text": ""
+          },
+          {
+            "selector": "span.ax-gate-date",
+            "rect": {
+              "left": 579.6,
+              "right": 722.1,
+              "top": 372.9,
+              "bottom": 388.9,
+              "width": 142.5
+            },
+            "position": "static",
+            "overflowX": "visible",
+            "transform": "none",
+            "parent": "p.ax-gate-note",
+            "text": "· статус на 17.10"
+          }
+        ],
+        "right722Candidates": [
+          {
+            "selector": "span.ax-gate-date",
+            "rect": {
+              "left": 579.6,
+              "right": 722.1,
+              "top": 372.9,
+              "bottom": 388.9,
+              "width": 142.5
+            },
+            "clippedBy": null,
+            "parent": "p.ax-gate-note"
+          }
+        ]
+      }
+    },
+    {
+      "phase": "after",
+      "value": {
+        "sw": 722,
+        "cw": 720,
+        "rootOverflowCandidates": [
+          {
+            "selector": "div#indexCursor",
+            "rect": {
+              "left": -13,
+              "right": 13,
+              "top": -13,
+              "bottom": 13,
+              "width": 26
+            },
+            "position": "fixed",
+            "overflowX": "visible",
+            "transform": "matrix(1, 0, 0, 1, -13, -13)",
+            "parent": "body",
+            "text": null
+          },
+          {
+            "selector": "i",
+            "rect": {
+              "left": -5,
+              "right": 5,
+              "top": -5,
+              "bottom": 5,
+              "width": 10
+            },
+            "position": "absolute",
+            "overflowX": "visible",
+            "transform": "matrix(1, 0, 0, 1, -5, -5)",
+            "parent": "div#indexCursor",
+            "text": ""
+          },
+          {
+            "selector": "span.ax-gate-date",
+            "rect": {
+              "left": 579.6,
+              "right": 722.1,
+              "top": 372.9,
+              "bottom": 388.9,
+              "width": 142.5
+            },
+            "position": "static",
+            "overflowX": "visible",
+            "transform": "none",
+            "parent": "p.ax-gate-note",
+            "text": "· статус на 17.10"
+          }
+        ],
+        "right722Candidates": [
+          {
+            "selector": "span.ax-gate-date",
+            "rect": {
+              "left": 579.6,
+              "right": 722.1,
+              "top": 372.9,
+              "bottom": 388.9,
+              "width": 142.5
+            },
+            "clippedBy": null,
+            "parent": "p.ax-gate-note"
+          }
+        ]
+      }
+    }
+  ],
+  "diagnosticCompletedAt": "2026-10-19T17:32:28.753Z"
+}

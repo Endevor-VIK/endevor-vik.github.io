@@ -1,0 +1,255 @@
+{
+  "status": "INCOMPLETE / QUIET PERFORMANCE NOT QUALIFIED",
+  "attempt1": "CONTAMINATED; all 20 observations retained",
+  "attempt2": "PREFLIGHT_NOT_QUIET; 0 observations",
+  "sources": {
+    "before": {
+      "root": "/tmp/axs-0524-w4-before-6b082e5",
+      "commit": "6b082e5f262c09a123748273da42277d3a29a6c2",
+      "productManifestSha256": "101c240eacd69c193473f40ec4367440eaa096e2ef3b92dad200f99378b39ee0",
+      "files": 190,
+      "sourceBytes": 67900004
+    },
+    "after": {
+      "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation",
+      "commit": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+      "productManifestSha256": "c3117174a500ed3b31ab530bc814a84f6dd3b8671293f7523aa298808c69c693",
+      "files": 190,
+      "sourceBytes": 67891699
+    }
+  },
+  "observationalChecks": {
+    "mobile": {
+      "performanceFloor": 90,
+      "observedMedian": 97,
+      "numericFloorMet": true,
+      "lcpMedianDeltaMs": 5.927200000000539,
+      "lcpMedianDeltaPercent": 0.24617686972439579,
+      "lcpInvestigationThresholdTriggered": false,
+      "clsMedianDelta": 0.0033649771410079136,
+      "clsInvestigationThresholdTriggered": false,
+      "absoluteLcpMedian2500MsNumericallyMet": true,
+      "lcpObservationsAbove2500Ms": 1,
+      "qualifiedAcceptance": false
+    },
+    "desktop": {
+      "performanceFloor": 95,
+      "observedMedian": 100,
+      "numericFloorMet": true,
+      "lcpMedianDeltaMs": -35.30605000000003,
+      "lcpMedianDeltaPercent": -6.18678361480712,
+      "lcpInvestigationThresholdTriggered": false,
+      "clsMedianDelta": 0.001292294225155908,
+      "clsInvestigationThresholdTriggered": false,
+      "absoluteLcpMedian2500MsNumericallyMet": true,
+      "lcpObservationsAbove2500Ms": 0,
+      "qualifiedAcceptance": false
+    }
+  },
+  "pairedDeltas": {
+    "mobile": {
+      "performance": {
+        "values": [
+          -2,
+          -1,
+          1,
+          1,
+          -2
+        ],
+        "median": -1
+      },
+      "accessibility": {
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "bestPractices": {
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "seo": {
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "fcpMs": {
+        "values": [
+          301.44229999999993,
+          4.67430000000013,
+          -450.3783000000003,
+          -600.0268500000002,
+          756.9183
+        ],
+        "median": 4.67430000000013
+      },
+      "lcpMs": {
+        "values": [
+          153.46880000000056,
+          -862.5963000000002,
+          154.20470000000023,
+          74.9642000000008,
+          -150.63779999999952
+        ],
+        "median": 74.9642000000008
+      },
+      "tbtMs": {
+        "values": [
+          -62.80510000000004,
+          185.15859999999998,
+          -56,
+          -11.5,
+          -40
+        ],
+        "median": -40
+      },
+      "cls": {
+        "values": [
+          0.006705599265143221,
+          0.0005231629809706456,
+          0.0027280673800847716,
+          -0.0006767404174251763,
+          0.004400240051990627
+        ],
+        "median": 0.0027280673800847716
+      },
+      "transferBytes": {
+        "values": [
+          -959,
+          -959,
+          -959,
+          -959,
+          -959
+        ],
+        "median": -959
+      },
+      "speedIndexMs": {
+        "values": [
+          42.353493881644226,
+          51.856759383524604,
+          -425.77880094285047,
+          -600.0268500000002,
+          496.0083481976626
+        ],
+        "median": 42.353493881644226
+      }
+    },
+    "desktop": {
+      "performance": {
+        "values": [
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "accessibility": {
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "bestPractices": {
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "seo": {
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "fcpMs": {
+        "values": [
+          103.30284999999998,
+          -128.78564999999998,
+          38.733900000000006,
+          -122.64299999999997,
+          -1.3161499999999933
+        ],
+        "median": -1.3161499999999933
+      },
+      "lcpMs": {
+        "values": [
+          0.8205999999998994,
+          -3.3578999999999724,
+          70.17759999999998,
+          -46.741499999999974,
+          -36.65565000000015
+        ],
+        "median": -3.3578999999999724
+      },
+      "tbtMs": {
+        "values": [
+          0,
+          0,
+          17.000000000000114,
+          0,
+          0
+        ],
+        "median": 0
+      },
+      "cls": {
+        "values": [
+          0.0003112875859962276,
+          0.004025285252181817,
+          0.0012566364849788845,
+          0.0005241791621289011,
+          0.0006851639351519801
+        ],
+        "median": 0.0006851639351519801
+      },
+      "transferBytes": {
+        "values": [
+          -959,
+          -959,
+          -959,
+          -959,
+          -959
+        ],
+        "median": -959
+      },
+      "speedIndexMs": {
+        "values": [
+          19.762192750497775,
+          -8.54497835336656,
+          229.79440491573814,
+          -60.72323578107398,
+          72.46355618299958
+        ],
+        "median": 19.762192750497775
+      }
+    }
+  }
+}

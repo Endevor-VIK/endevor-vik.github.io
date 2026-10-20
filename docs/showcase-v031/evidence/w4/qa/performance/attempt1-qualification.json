@@ -1,0 +1,364 @@
+{
+  "status": "CONTAMINATED / NOT QUALIFIED AS QUIET CPU",
+  "measurementStatus": "OBSERVED",
+  "dataPreserved": true,
+  "sources": {
+    "before": {
+      "root": "/tmp/axs-0524-w4-before-6b082e5",
+      "commit": "6b082e5f262c09a123748273da42277d3a29a6c2",
+      "productManifestSha256": "101c240eacd69c193473f40ec4367440eaa096e2ef3b92dad200f99378b39ee0",
+      "files": 190,
+      "sourceBytes": 67900004
+    },
+    "after": {
+      "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation",
+      "commit": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+      "productManifestSha256": "c3117174a500ed3b31ab530bc814a84f6dd3b8671293f7523aa298808c69c693",
+      "files": 190,
+      "sourceBytes": 67891699
+    }
+  },
+  "reason": "Foreign browser/compiler CPU observed during explicitly reserved performance window; own perf descendants separately identified. No foreign processes terminated. Numeric floors are observations, not clean-window acceptance.",
+  "window": [
+    "2026-10-20T10:17:02.312Z",
+    "2026-10-20T10:22:01.047Z"
+  ],
+  "preRunBusyPercent": 1.2922050854522718,
+  "foreignCpuOneCorePercent": {
+    "median": 18.08,
+    "maximum": 284.83
+  },
+  "foreignBrowserIntervals": [
+    {
+      "at": "2026-10-20T10:20:16.339398+00:00",
+      "seconds": 5.005,
+      "foreignBrowsers": [
+        {
+          "pid": 17605,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 29.17,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17571,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 14.18,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17551,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 13.39,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 251.94
+    },
+    {
+      "at": "2026-10-20T10:20:21.347029+00:00",
+      "seconds": 5.004,
+      "foreignBrowsers": [
+        {
+          "pid": 17551,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 39.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17571,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 38.96,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18141,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 17.38,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 178.62
+    },
+    {
+      "at": "2026-10-20T10:20:26.362312+00:00",
+      "seconds": 5.009,
+      "foreignBrowsers": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 47.51,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18482,
+          "name": "WebExtensions",
+          "cpuPercentOneCore": 6.59,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 106.42
+    },
+    {
+      "at": "2026-10-20T10:20:31.374093+00:00",
+      "seconds": 5.007,
+      "foreignBrowsers": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 126.22,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 171.14
+    },
+    {
+      "at": "2026-10-20T10:20:36.389974+00:00",
+      "seconds": 5.009,
+      "foreignBrowsers": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 127.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19217,
+          "name": "Web Content",
+          "cpuPercentOneCore": 29.35,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 208.22
+    },
+    {
+      "at": "2026-10-20T10:21:00.011636+00:00",
+      "seconds": 5.006,
+      "foreignBrowsers": [
+        {
+          "pid": 20100,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 20.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20039,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 13.98,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20059,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 11.99,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 284.83
+    },
+    {
+      "at": "2026-10-20T10:21:05.027339+00:00",
+      "seconds": 5.008,
+      "foreignBrowsers": [
+        {
+          "pid": 20059,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 46.93,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20039,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 42.54,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20512,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 37.54,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 228.67
+    },
+    {
+      "at": "2026-10-20T10:21:10.043182+00:00",
+      "seconds": 5.012,
+      "foreignBrowsers": [
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 13.17,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 62.06
+    },
+    {
+      "at": "2026-10-20T10:21:15.059611+00:00",
+      "seconds": 5.008,
+      "foreignBrowsers": [
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 131.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21239,
+          "name": "Web Content",
+          "cpuPercentOneCore": 25.56,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20792,
+          "name": "WebExtensions",
+          "cpuPercentOneCore": 6.79,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 212.05
+    },
+    {
+      "at": "2026-10-20T10:21:23.658727+00:00",
+      "seconds": 5.011,
+      "foreignBrowsers": [
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 139.3,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21483,
+          "name": "Web Content",
+          "cpuPercentOneCore": 20.16,
+          "perfDescendant": false
+        }
+      ],
+      "foreignCpuPercentOneCoreSum": 201.58
+    }
+  ],
+  "overlapByObservation": [
+    {
+      "pair": 1,
+      "formFactor": "mobile",
+      "arm": "before",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 1,
+      "formFactor": "mobile",
+      "arm": "after",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 1,
+      "formFactor": "desktop",
+      "arm": "before",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 1,
+      "formFactor": "desktop",
+      "arm": "after",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 2,
+      "formFactor": "mobile",
+      "arm": "before",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 2,
+      "formFactor": "mobile",
+      "arm": "after",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 2,
+      "formFactor": "desktop",
+      "arm": "before",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 2,
+      "formFactor": "desktop",
+      "arm": "after",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 3,
+      "formFactor": "mobile",
+      "arm": "before",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 3,
+      "formFactor": "mobile",
+      "arm": "after",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 3,
+      "formFactor": "desktop",
+      "arm": "before",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 3,
+      "formFactor": "desktop",
+      "arm": "after",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 4,
+      "formFactor": "mobile",
+      "arm": "before",
+      "foreignBrowserIntervals": 1
+    },
+    {
+      "pair": 4,
+      "formFactor": "mobile",
+      "arm": "after",
+      "foreignBrowserIntervals": 4
+    },
+    {
+      "pair": 4,
+      "formFactor": "desktop",
+      "arm": "before",
+      "foreignBrowserIntervals": 2
+    },
+    {
+      "pair": 4,
+      "formFactor": "desktop",
+      "arm": "after",
+      "foreignBrowserIntervals": 1
+    },
+    {
+      "pair": 5,
+      "formFactor": "mobile",
+      "arm": "before",
+      "foreignBrowserIntervals": 4
+    },
+    {
+      "pair": 5,
+      "formFactor": "mobile",
+      "arm": "after",
+      "foreignBrowserIntervals": 2
+    },
+    {
+      "pair": 5,
+      "formFactor": "desktop",
+      "arm": "before",
+      "foreignBrowserIntervals": 0
+    },
+    {
+      "pair": 5,
+      "formFactor": "desktop",
+      "arm": "after",
+      "foreignBrowserIntervals": 0
+    }
+  ],
+  "nextAction": "Await coordinator quiet-window GO; if repeated, retain this attempt rather than selecting only favorable samples."
+}

@@ -2,18 +2,22 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.WORLD_SCENE_SCRIPT
   title: "0524.W4 — proposed WORLD scene script"
-  status: PROPOSED / GATE_A_PENDING
+  status: G1_ARCHIVE / GATE_A_APPROVED_WITH_G2_CORRECTIONS
   deployment: NOT_DEPLOYED
   mode: Narrative and visual direction
   goal: "Дать CREATOR конкретный текст, ритм и композицию для Gate A"
   scope: W01 / W02 / WHAT REMAINS / WORK context / FACTIONS
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   editable_by_agents: true
   change_policy: "Не внедрять до Gate A; protected sections только read-only предложения"
 -->
 
 # WORLD — предлагаемый сценарий для Gate A
+
+**Исторический G1 proposal, принятый с условиями.** Gate A разрешён на `af20ff6`; обязательные [R1–R6](W4_GATE_A_ACCEPTANCE.md) имеют приоритет над текстом ниже. Реализация заморожена на `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`; результаты проверки и фактические пары находятся в [QA report](WORLD_QA_REPORT.md) и [before/after](WORLD_BEFORE_AFTER.md).
+
+В G2 архив получил видимые подпись **«NEXARCH · АВТОРСКАЯ РЕКОНСТРУКЦИЯ»** и пояснение, что запись создана для страницы и не является цитатой из канонического документа. WHAT REMAINS теперь раскрывает три человеческие темы: **жизнь по допуску, память под контролем, зависимость от технологий**. Предложенный ниже повтор «часть/целое» в этой сцене **не внедрён**. NEURA описана через исследовательское наследие, прежние совместные разработки и соперничество: её жизненный статус не установлен. VOIDLINK опирается на подтверждённое ядро цифрового сопротивления и свободы информации. Точные действующие формулировки — `index.html` на указанном frozen SHA; исходный proposal ниже сохранён для истории решения.
 
 **Драматургический ход:** миру доверили разум → разум стал неудобен порядку → BLACK SUN разрушил целостность → цивилизация продолжает жить с последствиями → места, люди и силы показывают цену этого наследия.
 

@@ -2,20 +2,20 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.WORLD_TYPOGRAPHY_AUDIT
   title: "0524.W4 — typography and anti-tautology audit"
-  status: AUDITED / REPLACEMENTS_PROPOSED
+  status: IMPLEMENTED / PROTECTED_PROPOSALS_HOLD
   deployment: NOT_DEPLOYED
   mode: Editorial audit
   goal: "Один доминирующий тезис на сцену; protected proposals отдельно"
   scope: WORLD typography and copy on 6b082e5
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   editable_by_agents: true
   change_policy: "Gate A для внедрения; map/chars отдельный scope approval"
 -->
 
 # WORLD — typography / anti-tautology
 
-Источник: `index.html` на `6b082e5f262c09a123748273da42277d3a29a6c2`, предоставленные CREATOR screenshots и source styles. Размеры/контраст новой композиции **не измерялись**, поскольку runtime ещё не изменён. Этот документ описывает находки и reviewable replacements.
+Исходный аудит: `index.html` на `6b082e5f262c09a123748273da42277d3a29a6c2`, предоставленные CREATOR screenshots и source styles. После Gate A разрешённые замены внедрены на frozen `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`. Старые номера строк в таблице относятся к BEFORE. Измеренные результаты вынесены в [QA report](WORLD_QA_REPORT.md); внешний текст III/IV остаётся HOLD.
 
 ## 1. Таблица повторов и конкретных замен
 
@@ -33,7 +33,7 @@ AXS_HEADER_META:
 | T10 P2 | Glossary Master Graph повторяет SYSTEM / 583–584 | Техническое объяснение остаётся SYSTEM; glossary WORLD концентрируется на терминах мира | Proposed G2 |
 | T11 P2 | В эпилоге «поверхность мира» + граница roadmap / 1672 | Сохранить: первая фраза закрывает fiction, вторая задаёт иной режим чтения | Осознанные разные функции, не tautology |
 
-Таблица перечисляет **предлагаемые устранения**, не утверждает, что они уже внедрены. До/после runtime текстов появится в G2/G4.
+Таблица сохраняет первоначальные находки и предложенные замены. **T01–T10 внедрены в разрешённых секциях**; T02/T06 исключают protected III/IV и карту. T11 сохранён как осознанный мотив. После первого browser qualification важные подписи схем увеличены с 11 до 12 px, основная проза фракций — до 16 px. BLACK SUN/WHAT REMAINS используют Golos 16–17 px; архивное пояснение — 14 px.
 
 ## 2. Типографический контракт
 
@@ -62,7 +62,7 @@ TYPE A остаётся: **Oswald** — один доминирующий h2 с�
 
 ## 3. Где повтор служит мотивом
 
-`BLACK SUN` на входе — название перелома; в W02 — исторический контекст; в WHAT REMAINS — человеческие последствия. «Часть не равна целому» в архиве объясняет фрагментацию, позже ограничивает притязание власти на весь AXIOM. Эти повторы добавляют смысл и сохраняются при умеренной частоте.
+`BLACK SUN` на входе — название перелома; в W02 — исторический контекст; WHAT REMAINS раскрывает человеческие последствия. По R2 объяснение фрагментации и границы «часть/целое» принадлежит только BLACK SUN. В следующей сцене вместо его повтора показаны двери и маршруты, доступ к памяти, медицина и личная самостоятельность.
 
 Нельзя повторять один факт в eyebrow, image question, h2 и вводном абзаце одновременно. Новая фраза под заголовком должна добавлять обстоятельство, последствие или вопрос.
 

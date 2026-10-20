@@ -1,0 +1,775 @@
+{
+  "createdAt": "2026-10-20T10:14:53.339Z",
+  "scope": "Narrow recovery only; original full matrices and legacy results retained separately",
+  "viewport": {
+    "width": 844,
+    "height": 390,
+    "dpr": 1,
+    "reducedMotion": "reduce",
+    "touch": false
+  },
+  "interpretation": "Initial-viewport failures remain failures. Native keyboard/manual reachability does not turn them into PASS.",
+  "samples": [
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "before",
+      "postMenu": {
+        "top": 834,
+        "bottom": 882,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 8673,
+        "section": {
+          "top": 139,
+          "height": 1448
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": false,
+        "focus": false,
+        "hitTestReachable": false,
+        "hash": "#world-guide"
+      },
+      "nativeKeyboard": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9309,
+        "section": {
+          "top": -497,
+          "height": 1448
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": true,
+        "hitTestReachable": true,
+        "hash": "#world-guide",
+        "tabPresses": 1
+      },
+      "manualScroll": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9309,
+        "section": {
+          "top": -497,
+          "height": 1448
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": false,
+        "hitTestReachable": true,
+        "hash": "#world-guide"
+      }
+    },
+    {
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "phase": "after",
+      "postMenu": {
+        "top": 834,
+        "bottom": 882,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 8673,
+        "section": {
+          "top": 139,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": false,
+        "focus": false,
+        "hitTestReachable": false,
+        "hash": "#world-guide"
+      },
+      "nativeKeyboard": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9309,
+        "section": {
+          "top": -497,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": true,
+        "hitTestReachable": true,
+        "hash": "#world-guide",
+        "tabPresses": 1
+      },
+      "manualScroll": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9309,
+        "section": {
+          "top": -497,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": false,
+        "hitTestReachable": true,
+        "hash": "#world-guide"
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "before",
+      "postMenu": {
+        "top": 834,
+        "bottom": 882,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 8649,
+        "section": {
+          "top": 139,
+          "height": 1427
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": false,
+        "focus": false,
+        "hitTestReachable": false,
+        "hash": "#world-guide"
+      },
+      "nativeKeyboard": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9285,
+        "section": {
+          "top": -497,
+          "height": 1427
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": true,
+        "hitTestReachable": true,
+        "hash": "#world-guide",
+        "tabPresses": 1
+      },
+      "manualScroll": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9285,
+        "section": {
+          "top": -497,
+          "height": 1427
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": false,
+        "hitTestReachable": true,
+        "hash": "#world-guide"
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "151.0",
+      "phase": "after",
+      "postMenu": {
+        "top": 834,
+        "bottom": 882,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 8649,
+        "section": {
+          "top": 139,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": false,
+        "focus": false,
+        "hitTestReachable": false,
+        "hash": "#world-guide"
+      },
+      "nativeKeyboard": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9285,
+        "section": {
+          "top": -497,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": true,
+        "hitTestReachable": true,
+        "hash": "#world-guide",
+        "tabPresses": 1
+      },
+      "manualScroll": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9285,
+        "section": {
+          "top": -497,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": false,
+        "hitTestReachable": true,
+        "hash": "#world-guide"
+      }
+    },
+    {
+      "engine": "webkit",
+      "version": "26.5",
+      "phase": "before",
+      "postMenu": {
+        "top": 835,
+        "bottom": 883,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 8639,
+        "section": {
+          "top": 139,
+          "height": 1427
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": false,
+        "focus": false,
+        "hitTestReachable": false,
+        "hash": "#world-guide"
+      },
+      "nativeKeyboard": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9276,
+        "section": {
+          "top": -498,
+          "height": 1427
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": true,
+        "hitTestReachable": true,
+        "hash": "#world-guide",
+        "tabPresses": 1
+      },
+      "manualScroll": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9276,
+        "section": {
+          "top": -498,
+          "height": 1427
+        },
+        "title": {
+          "text": "МИР ПОСЛЕЧЁРНОГО СОЛНЦА.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": false,
+        "hitTestReachable": true,
+        "hash": "#world-guide"
+      }
+    },
+    {
+      "engine": "webkit",
+      "version": "26.5",
+      "phase": "after",
+      "postMenu": {
+        "top": 835,
+        "bottom": 883,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 8639,
+        "section": {
+          "top": 139,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": false,
+        "focus": false,
+        "hitTestReachable": false,
+        "hash": "#world-guide"
+      },
+      "nativeKeyboard": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9276,
+        "section": {
+          "top": -498,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": true,
+        "hitTestReachable": true,
+        "hash": "#world-guide",
+        "tabPresses": 1
+      },
+      "manualScroll": {
+        "top": 198,
+        "bottom": 246,
+        "header": 44,
+        "vh": 390,
+        "scrollY": 9276,
+        "section": {
+          "top": -498,
+          "height": 1374
+        },
+        "title": {
+          "text": "WORLD AFTERBLACK SUN.",
+          "height": 91
+        },
+        "originalViewportCheckPass": true,
+        "focus": false,
+        "hitTestReachable": true,
+        "hash": "#world-guide"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "engine": "chromium",
+      "matchingInitialGeometry": true,
+      "initialViewportFailures": 2,
+      "nativeKeyboardReachable": true,
+      "manualScrollReachable": true
+    },
+    {
+      "engine": "firefox",
+      "matchingInitialGeometry": true,
+      "initialViewportFailures": 2,
+      "nativeKeyboardReachable": true,
+      "manualScrollReachable": true
+    },
+    {
+      "engine": "webkit",
+      "matchingInitialGeometry": true,
+      "initialViewportFailures": 2,
+      "nativeKeyboardReachable": true,
+      "manualScrollReachable": true
+    }
+  ],
+  "captures": [
+    {
+      "engine": "chromium",
+      "phase": "before",
+      "state": "post-menu",
+      "path": "chromium-before-post-menu.webp",
+      "sha256": "64074894431fb799d0b25624fc85298bde91c4c53f6d983201c829f7cc428de4",
+      "bytes": 15774
+    },
+    {
+      "engine": "chromium",
+      "phase": "before",
+      "state": "keyboard-cta",
+      "path": "chromium-before-keyboard-cta.webp",
+      "sha256": "0a42f6bfc085ccf1143e65d21680ad24907dd410435e893b208cd9a69a2cb3fc",
+      "bytes": 20686
+    },
+    {
+      "engine": "chromium",
+      "phase": "before",
+      "state": "manual-cta",
+      "path": "chromium-before-manual-cta.webp",
+      "sha256": "117d6ebf7625e7da594b1e5f7b21a7d3208c37c1c1e0bc8b3ab26fd9b13e2134",
+      "bytes": 20636
+    },
+    {
+      "engine": "chromium",
+      "phase": "after",
+      "state": "post-menu",
+      "path": "chromium-after-post-menu.webp",
+      "sha256": "96dad6ea28e9ca1f5ae59a9ee1628a1f5224a4c249f8e77e07cd4515e9fe86eb",
+      "bytes": 15734
+    },
+    {
+      "engine": "chromium",
+      "phase": "after",
+      "state": "keyboard-cta",
+      "path": "chromium-after-keyboard-cta.webp",
+      "sha256": "393ca47e5db8b5565d822324ca92646eb542ac18c3aa9eb89e997ffcc9b64db3",
+      "bytes": 18136
+    },
+    {
+      "engine": "chromium",
+      "phase": "after",
+      "state": "manual-cta",
+      "path": "chromium-after-manual-cta.webp",
+      "sha256": "f35912d62361fd3e9dc0fb1b920ecb7a9ed1cedbe1b06aadb48d44633631024a",
+      "bytes": 18090
+    },
+    {
+      "engine": "firefox",
+      "phase": "before",
+      "state": "post-menu",
+      "path": "firefox-before-post-menu.webp",
+      "sha256": "e40d4ae12d9665175af78288ede88342bc26a6e0dd74744d70336507a5b51487",
+      "bytes": 17310
+    },
+    {
+      "engine": "firefox",
+      "phase": "before",
+      "state": "keyboard-cta",
+      "path": "firefox-before-keyboard-cta.webp",
+      "sha256": "7b00d8e3edc5109bcee03e6ffe664a06e9a74192bcaf61b7890f18ce27655f16",
+      "bytes": 20068
+    },
+    {
+      "engine": "firefox",
+      "phase": "before",
+      "state": "manual-cta",
+      "path": "firefox-before-manual-cta.webp",
+      "sha256": "b40f7eaa11ab0109253c8c12505af14fcf56ed401cd28f45fb042004077f5437",
+      "bytes": 19936
+    },
+    {
+      "engine": "firefox",
+      "phase": "after",
+      "state": "post-menu",
+      "path": "firefox-after-post-menu.webp",
+      "sha256": "a843d40371be49d3c909cb91e3dc653aab6bfd98d1d1147b8c1553b2362b73ca",
+      "bytes": 17310
+    },
+    {
+      "engine": "firefox",
+      "phase": "after",
+      "state": "keyboard-cta",
+      "path": "firefox-after-keyboard-cta.webp",
+      "sha256": "dd967fe19cde6705c6653ae7571138324d5e168b56dc20f596d6d6ca7a603eb0",
+      "bytes": 18456
+    },
+    {
+      "engine": "firefox",
+      "phase": "after",
+      "state": "manual-cta",
+      "path": "firefox-after-manual-cta.webp",
+      "sha256": "4b3e15827bddf14f10939faebea703fef95a50a51830359ef4b4e94f2f2c17dc",
+      "bytes": 18358
+    },
+    {
+      "engine": "webkit",
+      "phase": "before",
+      "state": "post-menu",
+      "path": "webkit-before-post-menu.webp",
+      "sha256": "3bb25721c8896b65375de8cbc4deb4c3541ce885a4707fb1ff007c22b69562ec",
+      "bytes": 16138
+    },
+    {
+      "engine": "webkit",
+      "phase": "before",
+      "state": "keyboard-cta",
+      "path": "webkit-before-keyboard-cta.webp",
+      "sha256": "94f436fc989b7fc43341e3b0d215352ed4cd4bf114d5dde6028ea0f875b1ca1d",
+      "bytes": 20252
+    },
+    {
+      "engine": "webkit",
+      "phase": "before",
+      "state": "manual-cta",
+      "path": "webkit-before-manual-cta.webp",
+      "sha256": "a7b356d0980d29d2034f8ec6f0626ba952882c6a9070a11e8c0b6fab90835fd5",
+      "bytes": 20158
+    },
+    {
+      "engine": "webkit",
+      "phase": "after",
+      "state": "post-menu",
+      "path": "webkit-after-post-menu.webp",
+      "sha256": "cf392a9956ad9b92328e08c72f21bfa864c0b88d4d67754cf9f20749023b7a03",
+      "bytes": 16128
+    },
+    {
+      "engine": "webkit",
+      "phase": "after",
+      "state": "keyboard-cta",
+      "path": "webkit-after-keyboard-cta.webp",
+      "sha256": "b31fddd66de16b8406bfde7b09baf065315b53aec4a5759b21d0c0cff9035189",
+      "bytes": 17980
+    },
+    {
+      "engine": "webkit",
+      "phase": "after",
+      "state": "manual-cta",
+      "path": "webkit-after-manual-cta.webp",
+      "sha256": "ef42ddd27c165ee33f58814226e56e7efe6c2ffe978ecfe4328c06a744b78435",
+      "bytes": 17908
+    }
+  ],
+  "resourceGuard": {
+    "SizeRemaining": 54086275072,
+    "Size": 511206285312
+  },
+  "retention": "Owned /tmp runs: latest 3 and <=14 days, prune at write. Durable fixed recovery package preserved; no source assets/profiles/videos/traces copied. Captures <=5 MiB; console <=256 KiB.",
+  "probeSha256": "0f3551f428d367731accf0151643b4ae7aadd807a99fbed766ea149c60281034",
+  "sources": {
+    "before": {
+      "root": "/tmp/axs-0524-w4-before-6b082e5",
+      "head": "6b082e5f262c09a123748273da42277d3a29a6c2",
+      "testedRuntimeFreeze": "6b082e5f262c09a123748273da42277d3a29a6c2",
+      "indexSha256": "6bfce267505824f142579a402c982f69ecc67193dfec2cd363b3333e08c05f42",
+      "assetsTree": "e744206a0845af42022a661033dea804bde3da29"
+    },
+    "after": {
+      "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation",
+      "head": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+      "testedRuntimeFreeze": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+      "indexSha256": "66e186cd8ce2b4f4050bed68cc14e2754bfbff5347c57fe2fc9a5c2df2279b1c",
+      "assetsTree": "fca9a1e9308d9ddf606b06d78118d2d167c4062f"
+    }
+  },
+  "frozenRunnerSha256": "e8e1dd4f12097f438d665b11742ad4f7a25b6f347ef928635b1222310828ec63",
+  "helperPrefixSha256": "7e735d39ecffde5c1cc0feeced72d36749ac497ae0ef64042160dc955ee10223",
+  "webkitRootlessDependencies": {
+    "packages": [
+      "libabsl20220623t64",
+      "libaspell15",
+      "libavif16",
+      "libdav1d7",
+      "libenchant-2-2",
+      "libevent-2.1-7t64",
+      "libflite1",
+      "libgav1-1",
+      "libgssdp-1.6-0",
+      "libgstreamer-gl1.0-0",
+      "libgstreamer-plugins-bad1.0-0",
+      "libgstreamer-plugins-base1.0-0",
+      "libgudev-1.0-0",
+      "libgupnp-1.6-0",
+      "libgupnp-igd-1.6-0",
+      "libharfbuzz-icu0",
+      "libhunspell-1.7-0",
+      "libhyphen0",
+      "libnice10",
+      "libopus0",
+      "liborc-0.4-0t64",
+      "libproxy1v5",
+      "librav1e0",
+      "libsoup-3.0-0",
+      "libsvtav1enc1d1",
+      "libva-drm2",
+      "libva2",
+      "libwoff1",
+      "libyuv0"
+    ],
+    "debs": [
+      {
+        "file": "libabsl20220623t64_20220623.1-3.1ubuntu3.2_amd64.deb",
+        "bytes": 422920,
+        "sha256": "dec97687bc3bc4edbd1c26bc9182f7584e3ff1c36a9bb7ce80211951e5a5893d"
+      },
+      {
+        "file": "libaspell15_0.60.8.1-1build1_amd64.deb",
+        "bytes": 322544,
+        "sha256": "3461b6c567898d90d2b66cb2910b24cfd46e8c27d1fbcb81a1af1f44a3c99a8f"
+      },
+      {
+        "file": "libavif16_1.0.4-1ubuntu3_amd64.deb",
+        "bytes": 91250,
+        "sha256": "b295a9954a4b756af05ff381d9808f3c0c582a111b7e4c7678cfe13de9ae8818"
+      },
+      {
+        "file": "libdav1d7_1.4.1-1build1_amd64.deb",
+        "bytes": 604018,
+        "sha256": "7246303bd3ed4b99a2fb98e6199950ceb2520e7572265aefa0a6e44352adb3f0"
+      },
+      {
+        "file": "libenchant-2-2_2.3.3-2build2_amd64.deb",
+        "bytes": 51354,
+        "sha256": "4faecb5cee57ff00649b3ea4d83c072d9da2670797b7d2854708ff60cef17426"
+      },
+      {
+        "file": "libevent-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+        "bytes": 145930,
+        "sha256": "083ced6efb23476cb4de4e441b741af02db5653e67fa7fcd6cf7e5f7b78f6101"
+      },
+      {
+        "file": "libflite1_2.2-6build3_amd64.deb",
+        "bytes": 13601102,
+        "sha256": "367f1d0da5cd38759a0515eafc27aa133b2d7bf99308cac34831df0212e96b75"
+      },
+      {
+        "file": "libgav1-1_0.18.0-1build3_amd64.deb",
+        "bytes": 357148,
+        "sha256": "428f353f449e6b15cdcf5823215416e36adcfba75fe9f0fedc1cd132d68e6b3f"
+      },
+      {
+        "file": "libgssdp-1.6-0_1.6.3-1build3_amd64.deb",
+        "bytes": 40374,
+        "sha256": "49aa7c3eb2e75f55da069f5f18d3babc0376e4bf8f3bcbbf22a76d60d9f40f9e"
+      },
+      {
+        "file": "libgstreamer-gl1.0-0_1.24.2-1ubuntu0.5_amd64.deb",
+        "bytes": 213954,
+        "sha256": "fb87a72e431d2c57c35b0b2bd4189bb6a6e771788c3ba389a9e3623886486b22"
+      },
+      {
+        "file": "libgstreamer-plugins-bad1.0-0_1.24.2-1ubuntu4_amd64.deb",
+        "bytes": 797390,
+        "sha256": "6e8da41c0cbb2070f3477cf02360c2ce2eb55e825ba09e12b4270b3254e04f45"
+      },
+      {
+        "file": "libgstreamer-plugins-base1.0-0_1.24.2-1ubuntu0.5_amd64.deb",
+        "bytes": 862170,
+        "sha256": "3c5826eee14cb5077c7e53707fbe86cc0882c787ffe79b330cad636c0009473d"
+      },
+      {
+        "file": "libgudev-1.0-0_1%3a238-5ubuntu1_amd64.deb",
+        "bytes": 15906,
+        "sha256": "8bdd42c584a8d18759df2311b126dc679d438e9780038743b792cf5315f248dc"
+      },
+      {
+        "file": "libgupnp-1.6-0_1.6.6-1build3_amd64.deb",
+        "bytes": 92722,
+        "sha256": "491670df1732d15ced827446e26bcea76326d3c9cfc4856b5806e9911dc4264f"
+      },
+      {
+        "file": "libgupnp-igd-1.6-0_1.6.0-3build3_amd64.deb",
+        "bytes": 16540,
+        "sha256": "e71897a39779ffc327b704ca7baef4fe079cfc6a5e1bd56819ac2ad05f8f9b86"
+      },
+      {
+        "file": "libharfbuzz-icu0_8.3.0-2build2_amd64.deb",
+        "bytes": 13310,
+        "sha256": "9098670758e60b190d7edf367ad57e954bfc1b2a616def3f4e281062e036a843"
+      },
+      {
+        "file": "libhunspell-1.7-0_1.7.2+really1.7.2-10build3_amd64.deb",
+        "bytes": 294152,
+        "sha256": "77849069ed487a16c1dcf71122cc9578f6610542e52a85fc259aa0932a13da22"
+      },
+      {
+        "file": "libhyphen0_2.8.8-7build3_amd64.deb",
+        "bytes": 26516,
+        "sha256": "b508d3a5da168ddb2ae6e79ea0521ba64cd121285db0ece438d0bd56ba628556"
+      },
+      {
+        "file": "libnice10_0.1.21-2build3_amd64.deb",
+        "bytes": 157152,
+        "sha256": "fd24e18e0d9d9ead31e192d46df04473fab2d51390ccb2a4a62cf3b90bf6f311"
+      },
+      {
+        "file": "libopus0_1.4-1build1_amd64.deb",
+        "bytes": 208122,
+        "sha256": "6d8da32a832e655c9603543b47a0bc90c6f60bdee0c00fe7499bd50acad566cf"
+      },
+      {
+        "file": "liborc-0.4-0t64_1%3a0.4.38-1ubuntu0.1_amd64.deb",
+        "bytes": 207380,
+        "sha256": "a546ca6e237748693596ba469e84a2e0581bc39113abc62b718931df00a4c682"
+      },
+      {
+        "file": "libproxy1v5_0.5.4-4build1_amd64.deb",
+        "bytes": 26508,
+        "sha256": "4fa847fdf40dfaf198d94b1534bbc616410647dd917bca95bd28aba79d3796ba"
+      },
+      {
+        "file": "librav1e0_0.7.1-2_amd64.deb",
+        "bytes": 1021698,
+        "sha256": "be10d7e2dc028d9d7791997a8710b7a9a3147151613750f0f08963fbe9ac993c"
+      },
+      {
+        "file": "libsoup-3.0-0_3.4.4-5ubuntu0.9_amd64.deb",
+        "bytes": 290828,
+        "sha256": "cd6bab2b426b0c81b0f7856df11f3633df118df33517378049545ff440751fcc"
+      },
+      {
+        "file": "libsvtav1enc1d1_1.7.0+dfsg-2build1_amd64.deb",
+        "bytes": 2424900,
+        "sha256": "bac5f768bff928e85cecb39da8e37276a579639ef884692b089ed2de6c1cd2ad"
+      },
+      {
+        "file": "libva-drm2_2.20.0-2ubuntu0.2_amd64.deb",
+        "bytes": 7124,
+        "sha256": "7919c889e0bc8221dcfb595bc0707959354a5404cc1d9b818f85fc43914ca0d4"
+      },
+      {
+        "file": "libva2_2.20.0-2ubuntu0.2_amd64.deb",
+        "bytes": 66362,
+        "sha256": "a8ff8d3d16dba715cd24d67c0f8787016194fcee0dee20344a92d057577c0b40"
+      },
+      {
+        "file": "libwoff1_1.0.2-2build1_amd64.deb",
+        "bytes": 45252,
+        "sha256": "e23a6287ff611ff60a5a598de21f8f60f6236b6ad9443376318e6cc7914219c1"
+      },
+      {
+        "file": "libyuv0_0.0~git202401110.af6ac82-1_amd64.deb",
+        "bytes": 178208,
+        "sha256": "88bd472e50a7e45469e31f8e0ba232b4d8ed30322f5badb285c58cc1ba0d2176"
+      }
+    ]
+  },
+  "completedAt": "2026-10-20T10:15:10.770Z",
+  "captureBytes": 329058,
+  "summary": {
+    "pairedEngines": 3,
+    "initialViewportFailures": 6,
+    "matchingInitialGeometry": true,
+    "nativeKeyboardReachable": true,
+    "manualScrollReachable": true,
+    "captures": 18
+  }
+}

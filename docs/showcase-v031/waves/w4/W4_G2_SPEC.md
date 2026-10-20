@@ -2,18 +2,20 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.G2_SPEC
   title: "0524.W4 — controlled implementation contract"
-  status: IMPLEMENTING / BASELINE_FIRST
+  status: IMPLEMENTED_FROZEN / G3_G4_RESULTS_SEPARATE
   deployment: NOT_DEPLOYED
   mode: Task SPEC and ownership
   goal: "Внедрить принятый G1 с R1–R6, доказать сохранность и передать Gate B"
   scope: Landing W4 G2–G4
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   editable_by_agents: true
   change_policy: "Не расширять protected/Canon/release scope; изменения трассировать"
 -->
 
 # W4 G2–G4 — execution contract
+
+Execution snapshot: S0–S3 выполнены отдельными commits; runtime/test freeze `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`. BELOW сохраняет исходный execution contract. Фактическое прохождение G3/G4 фиксируется в [WORLD_QA_REPORT](WORLD_QA_REPORT.md), а не выводится из плана. Gate B PENDING.
 
 Authority: [Gate A acceptance](W4_GATE_A_ACCEPTANCE.md), reviewed proposal `af20ff6`. Предыдущие G0/G1 документы в PR #11 — принятый исторический proposal; условия R1–R6 имеют приоритет над его исходной формулировкой.
 

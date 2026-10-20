@@ -1,0 +1,24 @@
+(node:11828) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PERF /tmp/axs-0524-w4-perf/run-final-paired-20261020
+01-mobile-before {"performance":98,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":1356.3898,"lcpMs":2409.5847,"tbtMs":62.80510000000004,"cls":0.012891716215350566,"transferBytes":340264,"speedIndexMs":1615.4786061183556}
+01-mobile-after {"performance":96,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":1657.8320999999999,"lcpMs":2563.0535000000004,"tbtMs":0,"cls":0.019597315480493788,"transferBytes":339305,"speedIndexMs":1657.8320999999999}
+01-desktop-before {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":387.44675,"lcpMs":529.929,"tbtMs":0,"cls":0.005280964157539482,"transferBytes":429991,"speedIndexMs":981.3171801674977}
+01-desktop-after {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":490.7496,"lcpMs":530.7495999999999,"tbtMs":0,"cls":0.00559225174353571,"transferBytes":429032,"speedIndexMs":1001.0793729179954}
+02-mobile-before {"performance":98,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":1353.8499,"lcpMs":2407.6998000000003,"tbtMs":4,"cls":0.016323186332975782,"transferBytes":340264,"speedIndexMs":1587.7146502678042}
+02-mobile-after {"performance":97,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":1358.5242,"lcpMs":1545.1035000000002,"tbtMs":189.15859999999998,"cls":0.016846349313946428,"transferBytes":339305,"speedIndexMs":1639.5714096513288}
+02-desktop-before {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":497.14545,"lcpMs":554.2909,"tbtMs":0,"cls":0.0013389347830578212,"transferBytes":429991,"speedIndexMs":1003.3254147694752}
+02-desktop-after {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":368.3598,"lcpMs":550.933,"tbtMs":0,"cls":0.005364220035239639,"transferBytes":429032,"speedIndexMs":994.7804364161086}
+03-mobile-before {"performance":96,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":2114.1273,"lcpMs":2264.1273,"tbtMs":70,"cls":0.013475435715964107,"transferBytes":340264,"speedIndexMs":2114.1273}
+03-mobile-after {"performance":97,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":1663.7489999999998,"lcpMs":2418.3320000000003,"tbtMs":14,"cls":0.016203503096048878,"transferBytes":339305,"speedIndexMs":1688.3484990571496}
+03-desktop-before {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":495.1126,"lcpMs":570.6689,"tbtMs":0,"cls":0.004006856400687085,"transferBytes":429991,"speedIndexMs":1030.637351538995}
+03-desktop-after {"performance":99,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":533.8465,"lcpMs":640.8465,"tbtMs":17.000000000000114,"cls":0.005263492885665969,"transferBytes":429032,"speedIndexMs":1260.4317564547332}
+04-mobile-before {"performance":96,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":2260.2471,"lcpMs":2338.6628,"tbtMs":11.5,"cls":0.016925065488173158,"transferBytes":340264,"speedIndexMs":2260.2471}
+04-mobile-after {"performance":97,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":1660.2202499999999,"lcpMs":2413.627000000001,"tbtMs":0,"cls":0.01624832507074798,"transferBytes":339305,"speedIndexMs":1660.2202499999999}
+04-desktop-before {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":492.32624999999996,"lcpMs":579.6524999999999,"tbtMs":0,"cls":0.004774971463714092,"transferBytes":429991,"speedIndexMs":1053.1472892418499}
+04-desktop-after {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":369.68325,"lcpMs":532.911,"tbtMs":0,"cls":0.005299150625842993,"transferBytes":429032,"speedIndexMs":992.4240534607759}
+05-mobile-before {"performance":98,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":1357.5561,"lcpMs":2415.1121999999996,"tbtMs":48,"cls":0.012440172804981393,"transferBytes":340264,"speedIndexMs":1618.4660518023375}
+05-mobile-after {"performance":96,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":2114.4744,"lcpMs":2264.4744,"tbtMs":8,"cls":0.01684041285697202,"transferBytes":339305,"speedIndexMs":2114.4744}
+05-desktop-before {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":496.679,"lcpMs":572.0185000000001,"tbtMs":0,"cls":0.003943498227688205,"transferBytes":429991,"speedIndexMs":1003.5172571813562}
+05-desktop-after {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"fcpMs":495.36285,"lcpMs":535.36285,"tbtMs":0,"cls":0.004628662162840185,"transferBytes":429032,"speedIndexMs":1075.9808133643558}
+Summary: /tmp/axs-0524-w4-perf/run-final-paired-20261020/summary.json

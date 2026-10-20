@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-20T10:16:30.229410+00:00",
+  "removedOwnTransientOnly": [
+    {
+      "path": "/tmp/axs-0524-w4-landscape-recovery/run-20261020-1",
+      "fileBytes": 357555,
+      "ownMarker": ".w4-owned"
+    },
+    {
+      "path": "/tmp/axs-0524-w4-webkit-deps",
+      "fileBytes": 131287893,
+      "ownMarker": ".w4-owned"
+    }
+  ],
+  "preserved": "Durable recovery manifest/log/18frames and package hashes; Playwright browser cache; registered BEFORE worktree belongs to lead"
+}

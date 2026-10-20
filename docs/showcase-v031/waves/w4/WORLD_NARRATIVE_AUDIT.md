@@ -2,18 +2,20 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.WORLD_NARRATIVE_AUDIT
   title: "0524.W4 — G0/G1 audit and execution contract"
-  status: G0_G1_COMPLETE / GATE_A_PENDING
+  status: G0_G1_ACCEPTED / G2_IMPLEMENTED / GATE_B_PENDING
   deployment: NOT_DEPLOYED
   mode: Audit / AgentOps continuation
   goal: "Согласовать понятную историю WORLD до изменения публичной страницы"
   scope: Landing WORLD / WORK contextual migration / task 0524.W4
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   editable_by_agents: true
   change_policy: "Сценарий принимает CREATOR/Principal; G2 только после Gate A"
 -->
 
 # 0524.W4 — G0/G1: история прежде досье
+
+**Текущая стадия:** [Gate A принят с R1–R6](W4_GATE_A_ACCEPTANCE.md); G2 реализован и заморожен на `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`. Продолжение AgentOps Steps A–E — [implementation report](W4_IMPLEMENTATION_REPORT.md), измерения — [QA report](WORLD_QA_REPORT.md), [полные визуальные пары](WORLD_BEFORE_AFTER.md). Gate B PENDING. Ниже сохранён исходный аудит G0/G1, включая исторические статусы до Gate A; он не отменяет текущее разрешение и его условия.
 
 **Результат этой стадии:** аудит исходного кода, источников Canon и утверждённых решений; конкретный сценарий для Gate A. В этой ветке меняются только документы. G2–G4, визуальная приёмка и публикация ещё не выполнены.
 

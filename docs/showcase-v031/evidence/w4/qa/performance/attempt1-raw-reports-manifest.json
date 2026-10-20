@@ -1,0 +1,192 @@
+{
+  "classification": "ATTEMPT 1 / CONTAMINATED; full reports retained for G4, not the final qualified result",
+  "rawDirectory": "/tmp/axs-0524-w4-perf/run-final-paired-20261020",
+  "rawReports": [
+    {
+      "pair": 1,
+      "arm": "before",
+      "formFactor": "mobile",
+      "relativePath": "reports/01-mobile-before.json",
+      "sha256": "5ae376281e2efa21260466a66461cbf3985a406c59f19c8f09e8685842b74d21",
+      "bytes": 891500,
+      "runtimeError": false
+    },
+    {
+      "pair": 1,
+      "arm": "after",
+      "formFactor": "mobile",
+      "relativePath": "reports/01-mobile-after.json",
+      "sha256": "75405de3b48fc03dd9a322837f84a12fe94fc6c6b9303f19d25a149525fcbd76",
+      "bytes": 928094,
+      "runtimeError": false
+    },
+    {
+      "pair": 1,
+      "arm": "before",
+      "formFactor": "desktop",
+      "relativePath": "reports/01-desktop-before.json",
+      "sha256": "f7b87f95479f9e5b95379abea3f8053e9f5936c394e33cfcd2d4cf48ba6b177a",
+      "bytes": 851639,
+      "runtimeError": false
+    },
+    {
+      "pair": 1,
+      "arm": "after",
+      "formFactor": "desktop",
+      "relativePath": "reports/01-desktop-after.json",
+      "sha256": "a433acc04e5cd50b65d954dc440ea715819b83f93ad0442d5da369d4d7d0f01b",
+      "bytes": 871935,
+      "runtimeError": false
+    },
+    {
+      "pair": 2,
+      "arm": "before",
+      "formFactor": "mobile",
+      "relativePath": "reports/02-mobile-before.json",
+      "sha256": "ad8d1fd63ae00950aa4975d3b60606f24eec391511dc78bf1b7b80fd8cf5439e",
+      "bytes": 891429,
+      "runtimeError": false
+    },
+    {
+      "pair": 2,
+      "arm": "after",
+      "formFactor": "mobile",
+      "relativePath": "reports/02-mobile-after.json",
+      "sha256": "2464891e59a402cfe0ed9e7f95e8d2837043c53f73131e53b3298dbaff0cba08",
+      "bytes": 931364,
+      "runtimeError": false
+    },
+    {
+      "pair": 2,
+      "arm": "before",
+      "formFactor": "desktop",
+      "relativePath": "reports/02-desktop-before.json",
+      "sha256": "f40458c5f289751961dacf2047b8833c4ae591f7223c78544b72aa6e3b181b3e",
+      "bytes": 845481,
+      "runtimeError": false
+    },
+    {
+      "pair": 2,
+      "arm": "after",
+      "formFactor": "desktop",
+      "relativePath": "reports/02-desktop-after.json",
+      "sha256": "15c1f48843679180105add0e2efea2bd60cfa6431bcb5eceedbf3b5afa95e2d2",
+      "bytes": 820540,
+      "runtimeError": false
+    },
+    {
+      "pair": 3,
+      "arm": "before",
+      "formFactor": "mobile",
+      "relativePath": "reports/03-mobile-before.json",
+      "sha256": "636103291fd3933696cc405a1227784cd5a444c66d2bf5804f089b3a532c3682",
+      "bytes": 858015,
+      "runtimeError": false
+    },
+    {
+      "pair": 3,
+      "arm": "after",
+      "formFactor": "mobile",
+      "relativePath": "reports/03-mobile-after.json",
+      "sha256": "2b0fb5363eb80108bc6f1866d513b263588c35ec7cb8ebd61fb4d2b6466b18ea",
+      "bytes": 930367,
+      "runtimeError": false
+    },
+    {
+      "pair": 3,
+      "arm": "before",
+      "formFactor": "desktop",
+      "relativePath": "reports/03-desktop-before.json",
+      "sha256": "445b146d4aae3bd4875e0d165e25c352cb69708fa8740f88a85cfb9628c244b7",
+      "bytes": 821154,
+      "runtimeError": false
+    },
+    {
+      "pair": 3,
+      "arm": "after",
+      "formFactor": "desktop",
+      "relativePath": "reports/03-desktop-after.json",
+      "sha256": "411c8f676939353efeebd91409fc4627f9fc9e4d4d1b16e8f08405861ac6776b",
+      "bytes": 869584,
+      "runtimeError": false
+    },
+    {
+      "pair": 4,
+      "arm": "before",
+      "formFactor": "mobile",
+      "relativePath": "reports/04-mobile-before.json",
+      "sha256": "85b1635fda80ee77756ea0c016602c2a615b226ca3713481353ef909f198c9ae",
+      "bytes": 854116,
+      "runtimeError": false
+    },
+    {
+      "pair": 4,
+      "arm": "after",
+      "formFactor": "mobile",
+      "relativePath": "reports/04-mobile-after.json",
+      "sha256": "6db132caa8d63c0d27d6314ea1aaac3a23610776a77c13cbef5e020de38390d5",
+      "bytes": 922297,
+      "runtimeError": false
+    },
+    {
+      "pair": 4,
+      "arm": "before",
+      "formFactor": "desktop",
+      "relativePath": "reports/04-desktop-before.json",
+      "sha256": "ddcaff080c1fd8d46de0c54e7e5db557664893188dd7054125c35e62c136edf0",
+      "bytes": 852119,
+      "runtimeError": false
+    },
+    {
+      "pair": 4,
+      "arm": "after",
+      "formFactor": "desktop",
+      "relativePath": "reports/04-desktop-after.json",
+      "sha256": "f6eef8e28b7686cda3ad649c6edfac634790298e49b3100613fc2631262532ea",
+      "bytes": 876944,
+      "runtimeError": false
+    },
+    {
+      "pair": 5,
+      "arm": "before",
+      "formFactor": "mobile",
+      "relativePath": "reports/05-mobile-before.json",
+      "sha256": "fa865611eccae2b9cddad7a39c6513a2adaba2786a0a4d7333acc88cbd7504db",
+      "bytes": 892420,
+      "runtimeError": false
+    },
+    {
+      "pair": 5,
+      "arm": "after",
+      "formFactor": "mobile",
+      "relativePath": "reports/05-mobile-after.json",
+      "sha256": "e653cbe70018a83666ca21d200c10123404bc012b370c377f5719a566a67d41a",
+      "bytes": 932286,
+      "runtimeError": false
+    },
+    {
+      "pair": 5,
+      "arm": "before",
+      "formFactor": "desktop",
+      "relativePath": "reports/05-desktop-before.json",
+      "sha256": "0e6545b2ab77d61573023a5c8473181c3eac95117c9bf8a4f795354fbc0b3186",
+      "bytes": 823214,
+      "runtimeError": false
+    },
+    {
+      "pair": 5,
+      "arm": "after",
+      "formFactor": "desktop",
+      "relativePath": "reports/05-desktop-after.json",
+      "sha256": "b7cda4d44de30331802ef329a0e3b1dc6e3181712ec7993c3047fce8007fc28c",
+      "bytes": 873182,
+      "runtimeError": false
+    }
+  ],
+  "reportCount": 20,
+  "settingsIdenticalWithinEachProfile": true,
+  "versionsMatch": true,
+  "summaryLcpClsMatchAllRawReports": true,
+  "summarySha256": "92207b67fb4d46599d8bd5a513ed5ac4fc4a3cc7dda72619609c0214a71fbbbe",
+  "preservation": "Runtime product manifests verified by runner before and after"
+}

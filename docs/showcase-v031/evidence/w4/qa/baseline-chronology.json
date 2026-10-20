@@ -1,0 +1,7 @@
+{
+  "before_source": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "before_completed_at": "2026-10-19T17:04:36.323Z",
+  "first_runtime_commit": "63e4ac6003952b731cccc4a9936d8d742c0c34a5",
+  "first_runtime_commit_time": "2026-10-19T20:07:03+03:00",
+  "basis": "BEFORE full overlapping matrix completed and retained before S1 runtime mutation; exact baseline sourceSHA protected/runtime trees and capture hashes are in before manifest."
+}

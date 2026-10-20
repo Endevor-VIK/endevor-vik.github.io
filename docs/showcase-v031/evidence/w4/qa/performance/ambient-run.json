@@ -1,0 +1,4610 @@
+{
+  "startedAt": "2026-10-20T10:16:59.540770+00:00",
+  "logicalCpus": 8,
+  "sampling": "5s /proc/stat and process CPU deltas; perf descendants distinguished by PPID ancestry; process churn may undercount exited processes",
+  "preRun": {
+    "at": "2026-10-20T10:16:59.540644+00:00",
+    "seconds": 3.003,
+    "aggregateBusyPercent": 1.2922050854522718,
+    "foreignCpuPercentOneCoreSum": 8.67,
+    "foreignTop": [
+      {
+        "pid": 7625,
+        "name": "claude",
+        "cpuPercentOneCore": 3.0,
+        "perfDescendant": false
+      },
+      {
+        "pid": 1459,
+        "name": "MainThread",
+        "cpuPercentOneCore": 2.33,
+        "perfDescendant": false
+      },
+      {
+        "pid": 2334,
+        "name": "codex",
+        "cpuPercentOneCore": 2.0,
+        "perfDescendant": false
+      },
+      {
+        "pid": 844,
+        "name": "MainThread",
+        "cpuPercentOneCore": 0.67,
+        "perfDescendant": false
+      },
+      {
+        "pid": 1441,
+        "name": "MainThread",
+        "cpuPercentOneCore": 0.67,
+        "perfDescendant": false
+      }
+    ],
+    "allTop": [
+      {
+        "pid": 7625,
+        "name": "claude",
+        "cpuPercentOneCore": 3.0,
+        "perfDescendant": false
+      },
+      {
+        "pid": 1459,
+        "name": "MainThread",
+        "cpuPercentOneCore": 2.33,
+        "perfDescendant": false
+      },
+      {
+        "pid": 2334,
+        "name": "codex",
+        "cpuPercentOneCore": 2.0,
+        "perfDescendant": false
+      },
+      {
+        "pid": 844,
+        "name": "MainThread",
+        "cpuPercentOneCore": 0.67,
+        "perfDescendant": false
+      },
+      {
+        "pid": 1441,
+        "name": "MainThread",
+        "cpuPercentOneCore": 0.67,
+        "perfDescendant": false
+      }
+    ]
+  },
+  "samples": [
+    {
+      "at": "2026-10-20T10:17:04.546005+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 4.875545291249679,
+      "foreignCpuPercentOneCoreSum": 10.0,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 227,
+          "name": "systemd",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 11860,
+          "name": "chrome",
+          "cpuPercentOneCore": 11.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11852,
+          "name": "node",
+          "cpuPercentOneCore": 6.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11828,
+          "name": "node",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 11907,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12021,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:13.133580+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 16.719862509206973,
+      "foreignCpuPercentOneCoreSum": 22.59,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 14.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 11852,
+          "name": "node",
+          "cpuPercentOneCore": 44.17,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12003,
+          "name": "chrome",
+          "cpuPercentOneCore": 38.58,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 14.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 11894,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11860,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 11907,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": true
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:18.137236+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 23.483933317226384,
+      "foreignCpuPercentOneCoreSum": 7.8,
+      "foreignTop": [
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12003,
+          "name": "chrome",
+          "cpuPercentOneCore": 64.56,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11894,
+          "name": "chrome",
+          "cpuPercentOneCore": 46.77,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11852,
+          "name": "node",
+          "cpuPercentOneCore": 31.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11860,
+          "name": "chrome",
+          "cpuPercentOneCore": 17.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12118,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.19,
+          "perfDescendant": true
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:23.140879+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 15.725905841754992,
+      "foreignCpuPercentOneCoreSum": 10.8,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12218,
+          "name": "node",
+          "cpuPercentOneCore": 16.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12226,
+          "name": "chrome",
+          "cpuPercentOneCore": 5.4,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12267,
+          "name": "chrome",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": true
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:28.145349+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 21.139795421334632,
+      "foreignCpuPercentOneCoreSum": 11.6,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12382,
+          "name": "chrome",
+          "cpuPercentOneCore": 65.95,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12260,
+          "name": "chrome",
+          "cpuPercentOneCore": 32.98,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12218,
+          "name": "node",
+          "cpuPercentOneCore": 22.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12226,
+          "name": "chrome",
+          "cpuPercentOneCore": 18.99,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12430,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.19,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12267,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:33.149508+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 22.763831342919815,
+      "foreignCpuPercentOneCoreSum": 14.0,
+      "foreignTop": [
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 6.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12218,
+          "name": "node",
+          "cpuPercentOneCore": 45.77,
+          "perfDescendant": true
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 6.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 11828,
+          "name": "node",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:38.153855+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 18.201970443349754,
+      "foreignCpuPercentOneCoreSum": 9.0,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12706,
+          "name": "chrome",
+          "cpuPercentOneCore": 46.57,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12586,
+          "name": "chrome",
+          "cpuPercentOneCore": 34.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12542,
+          "name": "node",
+          "cpuPercentOneCore": 32.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12550,
+          "name": "chrome",
+          "cpuPercentOneCore": 13.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12590,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:46.741567+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 30.68705996601117,
+      "foreignCpuPercentOneCoreSum": 17.59,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 12.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12586,
+          "name": "chrome",
+          "cpuPercentOneCore": 96.54,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12706,
+          "name": "chrome",
+          "cpuPercentOneCore": 64.96,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12542,
+          "name": "node",
+          "cpuPercentOneCore": 33.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12550,
+          "name": "chrome",
+          "cpuPercentOneCore": 20.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 12.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12743,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12590,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:51.746003+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 15.105963528831937,
+      "foreignCpuPercentOneCoreSum": 10.2,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12898,
+          "name": "node",
+          "cpuPercentOneCore": 30.98,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12906,
+          "name": "chrome",
+          "cpuPercentOneCore": 7.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13062,
+          "name": "chrome",
+          "cpuPercentOneCore": 7.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12947,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12940,
+          "name": "chrome",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:17:56.751355+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 27.413501088797485,
+      "foreignCpuPercentOneCoreSum": 11.79,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12940,
+          "name": "chrome",
+          "cpuPercentOneCore": 86.73,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13062,
+          "name": "chrome",
+          "cpuPercentOneCore": 66.75,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12906,
+          "name": "chrome",
+          "cpuPercentOneCore": 22.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 12898,
+          "name": "node",
+          "cpuPercentOneCore": 14.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13121,
+          "name": "chrome",
+          "cpuPercentOneCore": 7.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 12947,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:01.758133+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 18.328840970350406,
+      "foreignCpuPercentOneCoreSum": 7.39,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 12898,
+          "name": "node",
+          "cpuPercentOneCore": 35.96,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:06.762859+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 18.904377598434824,
+      "foreignCpuPercentOneCoreSum": 16.99,
+      "foreignTop": [
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 10.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 13407,
+          "name": "chrome",
+          "cpuPercentOneCore": 49.57,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13243,
+          "name": "node",
+          "cpuPercentOneCore": 32.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13286,
+          "name": "chrome",
+          "cpuPercentOneCore": 23.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13251,
+          "name": "chrome",
+          "cpuPercentOneCore": 14.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 10.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 13298,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11828,
+          "name": "node",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:11.769319+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 25.278990781174187,
+      "foreignCpuPercentOneCoreSum": 7.0,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 13407,
+          "name": "chrome",
+          "cpuPercentOneCore": 66.13,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13286,
+          "name": "chrome",
+          "cpuPercentOneCore": 56.14,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13243,
+          "name": "node",
+          "cpuPercentOneCore": 29.77,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13251,
+          "name": "chrome",
+          "cpuPercentOneCore": 28.57,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13444,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:16.774129+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 16.304347826086957,
+      "foreignCpuPercentOneCoreSum": 6.6,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 13541,
+          "name": "node",
+          "cpuPercentOneCore": 31.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13705,
+          "name": "chrome",
+          "cpuPercentOneCore": 25.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13549,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 13586,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13583,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11828,
+          "name": "node",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:25.363349+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 38.14258001939864,
+      "foreignCpuPercentOneCoreSum": 12.39,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 13705,
+          "name": "chrome",
+          "cpuPercentOneCore": 62.16,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13583,
+          "name": "chrome",
+          "cpuPercentOneCore": 44.37,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13541,
+          "name": "node",
+          "cpuPercentOneCore": 30.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13549,
+          "name": "chrome",
+          "cpuPercentOneCore": 26.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 13752,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 13586,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:30.368395+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 16.121897272057016,
+      "foreignCpuPercentOneCoreSum": 11.6,
+      "foreignTop": [
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 13541,
+          "name": "node",
+          "cpuPercentOneCore": 22.78,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:35.373434+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 37.06327876862937,
+      "foreignCpuPercentOneCoreSum": 20.4,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 6.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14640,
+          "name": "npm exec tsc --",
+          "cpuPercentOneCore": 5.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14184,
+          "name": "chrome",
+          "cpuPercentOneCore": 54.97,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14312,
+          "name": "chrome",
+          "cpuPercentOneCore": 54.97,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14143,
+          "name": "node",
+          "cpuPercentOneCore": 34.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14151,
+          "name": "chrome",
+          "cpuPercentOneCore": 16.99,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 6.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14640,
+          "name": "npm exec tsc --",
+          "cpuPercentOneCore": 5.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14191,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:40.382182+00:00",
+      "seconds": 5.007,
+      "aggregateBusyPercent": 50.134048257372655,
+      "foreignCpuPercentOneCoreSum": 173.77,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 163.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 163.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14184,
+          "name": "chrome",
+          "cpuPercentOneCore": 99.87,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14312,
+          "name": "chrome",
+          "cpuPercentOneCore": 71.31,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14143,
+          "name": "node",
+          "cpuPercentOneCore": 38.95,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14151,
+          "name": "chrome",
+          "cpuPercentOneCore": 23.77,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14415,
+          "name": "chrome",
+          "cpuPercentOneCore": 10.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:45.389059+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 41.72330097087379,
+      "foreignCpuPercentOneCoreSum": 215.62,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 205.22,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14640,
+          "name": "npm exec tsc --",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 205.22,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14761,
+          "name": "node",
+          "cpuPercentOneCore": 36.37,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14925,
+          "name": "chrome",
+          "cpuPercentOneCore": 15.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14769,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.99,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14817,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:50.397774+00:00",
+      "seconds": 5.006,
+      "aggregateBusyPercent": 45.86156824782188,
+      "foreignCpuPercentOneCoreSum": 157.01,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 141.83,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 141.83,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14804,
+          "name": "chrome",
+          "cpuPercentOneCore": 93.69,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14925,
+          "name": "chrome",
+          "cpuPercentOneCore": 70.72,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14769,
+          "name": "chrome",
+          "cpuPercentOneCore": 27.17,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14761,
+          "name": "node",
+          "cpuPercentOneCore": 18.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15002,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.39,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:18:58.989866+00:00",
+      "seconds": 5.008,
+      "aggregateBusyPercent": 44.903446590075774,
+      "foreignCpuPercentOneCoreSum": 152.94,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 126.58,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 9.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 126.58,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14804,
+          "name": "chrome",
+          "cpuPercentOneCore": 79.86,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14761,
+          "name": "node",
+          "cpuPercentOneCore": 48.92,
+          "perfDescendant": true
+        },
+        {
+          "pid": 14769,
+          "name": "chrome",
+          "cpuPercentOneCore": 28.55,
+          "perfDescendant": true
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 9.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 14817,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:03.998632+00:00",
+      "seconds": 5.006,
+      "aggregateBusyPercent": 34.71439078205442,
+      "foreignCpuPercentOneCoreSum": 144.05,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 125.86,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 11.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 125.86,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15144,
+          "name": "node",
+          "cpuPercentOneCore": 46.55,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15309,
+          "name": "chrome",
+          "cpuPercentOneCore": 44.35,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15152,
+          "name": "chrome",
+          "cpuPercentOneCore": 18.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15185,
+          "name": "chrome",
+          "cpuPercentOneCore": 14.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 11.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15188,
+          "name": "chrome",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:09.007046+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 44.41240086517664,
+      "foreignCpuPercentOneCoreSum": 179.82,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 170.83,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 170.83,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15309,
+          "name": "chrome",
+          "cpuPercentOneCore": 70.53,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15185,
+          "name": "chrome",
+          "cpuPercentOneCore": 41.96,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15144,
+          "name": "node",
+          "cpuPercentOneCore": 40.56,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15152,
+          "name": "chrome",
+          "cpuPercentOneCore": 22.58,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15353,
+          "name": "chrome",
+          "cpuPercentOneCore": 10.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:14.013135+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 37.704918032786885,
+      "foreignCpuPercentOneCoreSum": 158.49,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 133.1,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 10.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 5.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 133.1,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15185,
+          "name": "chrome",
+          "cpuPercentOneCore": 107.52,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15309,
+          "name": "chrome",
+          "cpuPercentOneCore": 32.97,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 10.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 5.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15152,
+          "name": "chrome",
+          "cpuPercentOneCore": 5.0,
+          "perfDescendant": true
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15469,
+          "name": "chrome",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:19.073976+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 39.01655547319002,
+      "foreignCpuPercentOneCoreSum": 142.9,
+      "foreignTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 129.1,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 14653,
+          "name": "node",
+          "cpuPercentOneCore": 129.1,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15518,
+          "name": "node",
+          "cpuPercentOneCore": 44.97,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15682,
+          "name": "chrome",
+          "cpuPercentOneCore": 26.78,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15526,
+          "name": "chrome",
+          "cpuPercentOneCore": 13.99,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15561,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15634,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:24.081705+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 32.0677146311971,
+      "foreignCpuPercentOneCoreSum": 14.79,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 9.59,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 15682,
+          "name": "chrome",
+          "cpuPercentOneCore": 68.94,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15561,
+          "name": "chrome",
+          "cpuPercentOneCore": 49.36,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15518,
+          "name": "node",
+          "cpuPercentOneCore": 31.77,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15526,
+          "name": "chrome",
+          "cpuPercentOneCore": 27.58,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 9.59,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15741,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.19,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15634,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:29.089576+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 17.68774703557312,
+      "foreignCpuPercentOneCoreSum": 9.8,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 15518,
+          "name": "node",
+          "cpuPercentOneCore": 27.97,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:37.685056+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 25.49019607843137,
+      "foreignCpuPercentOneCoreSum": 29.18,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.59,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16129,
+          "name": "npm exec tsx /h",
+          "cpuPercentOneCore": 6.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16160,
+          "name": "node",
+          "cpuPercentOneCore": 5.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16148,
+          "name": "node",
+          "cpuPercentOneCore": 1.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 16038,
+          "name": "chrome",
+          "cpuPercentOneCore": 53.75,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15917,
+          "name": "chrome",
+          "cpuPercentOneCore": 49.15,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15874,
+          "name": "node",
+          "cpuPercentOneCore": 41.96,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15882,
+          "name": "chrome",
+          "cpuPercentOneCore": 17.58,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.59,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16129,
+          "name": "npm exec tsx /h",
+          "cpuPercentOneCore": 6.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16160,
+          "name": "node",
+          "cpuPercentOneCore": 5.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.4,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:42.691806+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 32.745287578540356,
+      "foreignCpuPercentOneCoreSum": 13.59,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 15917,
+          "name": "chrome",
+          "cpuPercentOneCore": 95.92,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16038,
+          "name": "chrome",
+          "cpuPercentOneCore": 74.94,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15874,
+          "name": "node",
+          "cpuPercentOneCore": 39.77,
+          "perfDescendant": true
+        },
+        {
+          "pid": 15882,
+          "name": "chrome",
+          "cpuPercentOneCore": 23.78,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16082,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 7.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 15924,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.6,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:47.697695+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 15.262636273538156,
+      "foreignCpuPercentOneCoreSum": 6.4,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 16287,
+          "name": "node",
+          "cpuPercentOneCore": 31.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16451,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.99,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16295,
+          "name": "chrome",
+          "cpuPercentOneCore": 7.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16333,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": true
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16328,
+          "name": "chrome",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:52.705458+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 33.41380975374215,
+      "foreignCpuPercentOneCoreSum": 50.97,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 44.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1442,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 16328,
+          "name": "chrome",
+          "cpuPercentOneCore": 88.53,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16451,
+          "name": "chrome",
+          "cpuPercentOneCore": 65.95,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 44.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16295,
+          "name": "chrome",
+          "cpuPercentOneCore": 24.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16287,
+          "name": "node",
+          "cpuPercentOneCore": 17.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16579,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16333,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.8,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:19:57.712607+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 19.69548133595285,
+      "foreignCpuPercentOneCoreSum": 13.79,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 16287,
+          "name": "node",
+          "cpuPercentOneCore": 38.57,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:02.719044+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 29.76572133168927,
+      "foreignCpuPercentOneCoreSum": 64.96,
+      "foreignTop": [
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 14.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17108,
+          "name": "npm exec tsx se",
+          "cpuPercentOneCore": 11.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17186,
+          "name": "node",
+          "cpuPercentOneCore": 9.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17069,
+          "name": "node",
+          "cpuPercentOneCore": 4.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 16925,
+          "name": "chrome",
+          "cpuPercentOneCore": 60.95,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16761,
+          "name": "node",
+          "cpuPercentOneCore": 36.17,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16802,
+          "name": "chrome",
+          "cpuPercentOneCore": 33.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16769,
+          "name": "chrome",
+          "cpuPercentOneCore": 16.79,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 14.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17108,
+          "name": "npm exec tsx se",
+          "cpuPercentOneCore": 11.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17186,
+          "name": "node",
+          "cpuPercentOneCore": 9.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 8.79,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:11.327192+00:00",
+      "seconds": 5.019,
+      "aggregateBusyPercent": 47.44810744810745,
+      "foreignCpuPercentOneCoreSum": 181.1,
+      "foreignTop": [
+        {
+          "pid": 17186,
+          "name": "node",
+          "cpuPercentOneCore": 47.61,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 27.29,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 24.11,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17216,
+          "name": "esbuild",
+          "cpuPercentOneCore": 21.72,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17445,
+          "name": "node",
+          "cpuPercentOneCore": 20.32,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 16925,
+          "name": "chrome",
+          "cpuPercentOneCore": 76.3,
+          "perfDescendant": true
+        },
+        {
+          "pid": 16802,
+          "name": "chrome",
+          "cpuPercentOneCore": 56.98,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17186,
+          "name": "node",
+          "cpuPercentOneCore": 47.61,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16761,
+          "name": "node",
+          "cpuPercentOneCore": 33.07,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 27.29,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 24.11,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17216,
+          "name": "esbuild",
+          "cpuPercentOneCore": 21.72,
+          "perfDescendant": false
+        },
+        {
+          "pid": 16769,
+          "name": "chrome",
+          "cpuPercentOneCore": 20.72,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:16.339398+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 45.91411042944785,
+      "foreignCpuPercentOneCoreSum": 251.94,
+      "foreignTop": [
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 135.86,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17605,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 29.17,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17526,
+          "name": "esbuild",
+          "cpuPercentOneCore": 22.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17571,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 14.18,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17551,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 13.39,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 135.86,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17724,
+          "name": "node",
+          "cpuPercentOneCore": 36.76,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17605,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 29.17,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17526,
+          "name": "esbuild",
+          "cpuPercentOneCore": 22.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17571,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 14.18,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17551,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 13.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17539,
+          "name": "node",
+          "cpuPercentOneCore": 11.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17732,
+          "name": "chrome",
+          "cpuPercentOneCore": 7.59,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:21.347029+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 46.67487684729064,
+      "foreignCpuPercentOneCoreSum": 178.62,
+      "foreignTop": [
+        {
+          "pid": 17551,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 39.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17571,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 38.96,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17539,
+          "name": "node",
+          "cpuPercentOneCore": 25.18,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 17.38,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18141,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 17.38,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 17888,
+          "name": "chrome",
+          "cpuPercentOneCore": 66.74,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17551,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 39.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17571,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 38.96,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17767,
+          "name": "chrome",
+          "cpuPercentOneCore": 38.37,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17539,
+          "name": "node",
+          "cpuPercentOneCore": 25.18,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17732,
+          "name": "chrome",
+          "cpuPercentOneCore": 20.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 17.38,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18141,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 17.38,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:26.362312+00:00",
+      "seconds": 5.009,
+      "aggregateBusyPercent": 47.421931735657225,
+      "foreignCpuPercentOneCoreSum": 106.42,
+      "foreignTop": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 47.51,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 16.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18343,
+          "name": "node",
+          "cpuPercentOneCore": 13.58,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 6.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18482,
+          "name": "WebExtensions",
+          "cpuPercentOneCore": 6.59,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 17767,
+          "name": "chrome",
+          "cpuPercentOneCore": 59.49,
+          "perfDescendant": true
+        },
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 47.51,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17724,
+          "name": "node",
+          "cpuPercentOneCore": 40.33,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17732,
+          "name": "chrome",
+          "cpuPercentOneCore": 33.14,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 16.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18343,
+          "name": "node",
+          "cpuPercentOneCore": 13.58,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 6.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18482,
+          "name": "WebExtensions",
+          "cpuPercentOneCore": 6.59,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:31.374093+00:00",
+      "seconds": 5.007,
+      "aggregateBusyPercent": 43.27556748840615,
+      "foreignCpuPercentOneCoreSum": 171.14,
+      "foreignTop": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 126.22,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18343,
+          "name": "node",
+          "cpuPercentOneCore": 17.97,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 11.18,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.19,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 126.22,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18805,
+          "name": "node",
+          "cpuPercentOneCore": 42.34,
+          "perfDescendant": true
+        },
+        {
+          "pid": 18983,
+          "name": "chrome",
+          "cpuPercentOneCore": 35.75,
+          "perfDescendant": true
+        },
+        {
+          "pid": 18343,
+          "name": "node",
+          "cpuPercentOneCore": 17.97,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18826,
+          "name": "chrome",
+          "cpuPercentOneCore": 13.98,
+          "perfDescendant": true
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 11.18,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18860,
+          "name": "chrome",
+          "cpuPercentOneCore": 5.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.39,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:36.389974+00:00",
+      "seconds": 5.009,
+      "aggregateBusyPercent": 58.07870936201418,
+      "foreignCpuPercentOneCoreSum": 208.22,
+      "foreignTop": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 127.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19217,
+          "name": "Web Content",
+          "cpuPercentOneCore": 29.35,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18343,
+          "name": "node",
+          "cpuPercentOneCore": 16.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 13.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 17494,
+          "name": "node",
+          "cpuPercentOneCore": 13.18,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 18355,
+          "name": "firefox",
+          "cpuPercentOneCore": 127.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18860,
+          "name": "chrome",
+          "cpuPercentOneCore": 107.6,
+          "perfDescendant": true
+        },
+        {
+          "pid": 18983,
+          "name": "chrome",
+          "cpuPercentOneCore": 62.09,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19217,
+          "name": "Web Content",
+          "cpuPercentOneCore": 29.35,
+          "perfDescendant": false
+        },
+        {
+          "pid": 18805,
+          "name": "node",
+          "cpuPercentOneCore": 27.75,
+          "perfDescendant": true
+        },
+        {
+          "pid": 18826,
+          "name": "chrome",
+          "cpuPercentOneCore": 20.36,
+          "perfDescendant": true
+        },
+        {
+          "pid": 18343,
+          "name": "node",
+          "cpuPercentOneCore": 16.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 13.57,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:44.982252+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 29.472646623952684,
+      "foreignCpuPercentOneCoreSum": 19.59,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 9.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 18805,
+          "name": "node",
+          "cpuPercentOneCore": 33.97,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 9.19,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1442,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 11828,
+          "name": "node",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:49.988347+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 19.789628180039138,
+      "foreignCpuPercentOneCoreSum": 7.8,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 19619,
+          "name": "chrome",
+          "cpuPercentOneCore": 45.37,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19498,
+          "name": "chrome",
+          "cpuPercentOneCore": 41.17,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19455,
+          "name": "node",
+          "cpuPercentOneCore": 34.58,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19463,
+          "name": "chrome",
+          "cpuPercentOneCore": 15.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19505,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": true
+        },
+        {
+          "pid": 11828,
+          "name": "node",
+          "cpuPercentOneCore": 1.0,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:20:54.998180+00:00",
+      "seconds": 5.006,
+      "aggregateBusyPercent": 42.30490456632037,
+      "foreignCpuPercentOneCoreSum": 101.89,
+      "foreignTop": [
+        {
+          "pid": 19760,
+          "name": "node",
+          "cpuPercentOneCore": 43.35,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19962,
+          "name": "node",
+          "cpuPercentOneCore": 13.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 8.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19735,
+          "name": "npm exec tsx se",
+          "cpuPercentOneCore": 7.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 6.19,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 19498,
+          "name": "chrome",
+          "cpuPercentOneCore": 98.48,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19619,
+          "name": "chrome",
+          "cpuPercentOneCore": 69.51,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19760,
+          "name": "node",
+          "cpuPercentOneCore": 43.35,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19455,
+          "name": "node",
+          "cpuPercentOneCore": 35.95,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19463,
+          "name": "chrome",
+          "cpuPercentOneCore": 22.57,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19962,
+          "name": "node",
+          "cpuPercentOneCore": 13.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 8.79,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19656,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.19,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:00.011636+00:00",
+      "seconds": 5.006,
+      "aggregateBusyPercent": 50.70562020302055,
+      "foreignCpuPercentOneCoreSum": 284.83,
+      "foreignTop": [
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 169.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20015,
+          "name": "node",
+          "cpuPercentOneCore": 21.77,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19996,
+          "name": "esbuild",
+          "cpuPercentOneCore": 20.77,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20100,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 20.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20039,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 13.98,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 169.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20153,
+          "name": "node",
+          "cpuPercentOneCore": 46.14,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20015,
+          "name": "node",
+          "cpuPercentOneCore": 21.77,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19996,
+          "name": "esbuild",
+          "cpuPercentOneCore": 20.77,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20100,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 20.57,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20039,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 13.98,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20059,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 11.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20161,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.79,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:05.027339+00:00",
+      "seconds": 5.008,
+      "aggregateBusyPercent": 53.77921432123322,
+      "foreignCpuPercentOneCoreSum": 228.67,
+      "foreignTop": [
+        {
+          "pid": 20059,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 46.93,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20039,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 42.54,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 40.54,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20512,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 37.54,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20015,
+          "name": "node",
+          "cpuPercentOneCore": 31.15,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 20317,
+          "name": "chrome",
+          "cpuPercentOneCore": 83.47,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20059,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 46.93,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20195,
+          "name": "chrome",
+          "cpuPercentOneCore": 46.33,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20039,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 42.54,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 40.54,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20512,
+          "name": "chrome-headless",
+          "cpuPercentOneCore": 37.54,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20015,
+          "name": "node",
+          "cpuPercentOneCore": 31.15,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20161,
+          "name": "chrome",
+          "cpuPercentOneCore": 20.97,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:10.043182+00:00",
+      "seconds": 5.012,
+      "aggregateBusyPercent": 48.869223205506394,
+      "foreignCpuPercentOneCoreSum": 62.06,
+      "foreignTop": [
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 19.55,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20648,
+          "name": "node",
+          "cpuPercentOneCore": 14.37,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 13.17,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.99,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.19,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 20317,
+          "name": "chrome",
+          "cpuPercentOneCore": 85.6,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20195,
+          "name": "chrome",
+          "cpuPercentOneCore": 64.85,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20153,
+          "name": "node",
+          "cpuPercentOneCore": 38.31,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20161,
+          "name": "chrome",
+          "cpuPercentOneCore": 22.95,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 19.55,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20648,
+          "name": "node",
+          "cpuPercentOneCore": 14.37,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 13.17,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.99,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:15.059611+00:00",
+      "seconds": 5.008,
+      "aggregateBusyPercent": 45.252623871125216,
+      "foreignCpuPercentOneCoreSum": 212.05,
+      "foreignTop": [
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 131.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21239,
+          "name": "Web Content",
+          "cpuPercentOneCore": 25.56,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20648,
+          "name": "node",
+          "cpuPercentOneCore": 19.37,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 10.58,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20792,
+          "name": "WebExtensions",
+          "cpuPercentOneCore": 6.79,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 131.78,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21018,
+          "name": "node",
+          "cpuPercentOneCore": 38.74,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21239,
+          "name": "Web Content",
+          "cpuPercentOneCore": 25.56,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20648,
+          "name": "node",
+          "cpuPercentOneCore": 19.37,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21217,
+          "name": "chrome",
+          "cpuPercentOneCore": 16.37,
+          "perfDescendant": true
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 10.58,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21060,
+          "name": "chrome",
+          "cpuPercentOneCore": 9.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20792,
+          "name": "WebExtensions",
+          "cpuPercentOneCore": 6.79,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:23.658727+00:00",
+      "seconds": 5.011,
+      "aggregateBusyPercent": 50.46568627450981,
+      "foreignCpuPercentOneCoreSum": 201.58,
+      "foreignTop": [
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 139.3,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21483,
+          "name": "Web Content",
+          "cpuPercentOneCore": 20.16,
+          "perfDescendant": false
+        },
+        {
+          "pid": 20648,
+          "name": "node",
+          "cpuPercentOneCore": 16.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 19988,
+          "name": "node",
+          "cpuPercentOneCore": 11.38,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.39,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 20687,
+          "name": "firefox",
+          "cpuPercentOneCore": 139.3,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21217,
+          "name": "chrome",
+          "cpuPercentOneCore": 74.44,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21094,
+          "name": "chrome",
+          "cpuPercentOneCore": 52.69,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21060,
+          "name": "chrome",
+          "cpuPercentOneCore": 26.34,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21483,
+          "name": "Web Content",
+          "cpuPercentOneCore": 20.16,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21018,
+          "name": "node",
+          "cpuPercentOneCore": 19.16,
+          "perfDescendant": true
+        },
+        {
+          "pid": 20648,
+          "name": "node",
+          "cpuPercentOneCore": 16.36,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21356,
+          "name": "chrome",
+          "cpuPercentOneCore": 11.77,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:28.681535+00:00",
+      "seconds": 5.011,
+      "aggregateBusyPercent": 48.97286330205427,
+      "foreignCpuPercentOneCoreSum": 18.57,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 9.98,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 503,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 21217,
+          "name": "chrome",
+          "cpuPercentOneCore": 69.25,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21094,
+          "name": "chrome",
+          "cpuPercentOneCore": 67.45,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21018,
+          "name": "node",
+          "cpuPercentOneCore": 43.9,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21060,
+          "name": "chrome",
+          "cpuPercentOneCore": 26.34,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 9.98,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 5.39,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21101,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.2,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:33.688863+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 18.150600932057884,
+      "foreignCpuPercentOneCoreSum": 10.2,
+      "foreignTop": [
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 21694,
+          "name": "node",
+          "cpuPercentOneCore": 34.58,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21858,
+          "name": "chrome",
+          "cpuPercentOneCore": 27.98,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21702,
+          "name": "chrome",
+          "cpuPercentOneCore": 12.39,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 21742,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21737,
+          "name": "chrome",
+          "cpuPercentOneCore": 1.8,
+          "perfDescendant": true
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 1.4,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:38.696296+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 31.587878787878786,
+      "foreignCpuPercentOneCoreSum": 12.2,
+      "foreignTop": [
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 21737,
+          "name": "chrome",
+          "cpuPercentOneCore": 106.92,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21858,
+          "name": "chrome",
+          "cpuPercentOneCore": 63.16,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21694,
+          "name": "node",
+          "cpuPercentOneCore": 35.18,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21702,
+          "name": "chrome",
+          "cpuPercentOneCore": 22.78,
+          "perfDescendant": true
+        },
+        {
+          "pid": 21911,
+          "name": "chrome",
+          "cpuPercentOneCore": 10.19,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 3.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:43.703661+00:00",
+      "seconds": 5.003,
+      "aggregateBusyPercent": 16.33809758501725,
+      "foreignCpuPercentOneCoreSum": 9.2,
+      "foreignTop": [
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 21694,
+          "name": "node",
+          "cpuPercentOneCore": 25.38,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 3.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 3.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.2,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        },
+        {
+          "pid": 11828,
+          "name": "node",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": true
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:48.712573+00:00",
+      "seconds": 5.004,
+      "aggregateBusyPercent": 22.06205717077938,
+      "foreignCpuPercentOneCoreSum": 11.6,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.6,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 22070,
+          "name": "chrome",
+          "cpuPercentOneCore": 52.76,
+          "perfDescendant": true
+        },
+        {
+          "pid": 22191,
+          "name": "chrome",
+          "cpuPercentOneCore": 48.36,
+          "perfDescendant": true
+        },
+        {
+          "pid": 22027,
+          "name": "node",
+          "cpuPercentOneCore": 33.97,
+          "perfDescendant": true
+        },
+        {
+          "pid": 22035,
+          "name": "chrome",
+          "cpuPercentOneCore": 16.19,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 5.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 22076,
+          "name": "chrome",
+          "cpuPercentOneCore": 2.4,
+          "perfDescendant": true
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 2.0,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:21:57.309209+00:00",
+      "seconds": 5.005,
+      "aggregateBusyPercent": 33.349491032476976,
+      "foreignCpuPercentOneCoreSum": 12.0,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 844,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.8,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 22070,
+          "name": "chrome",
+          "cpuPercentOneCore": 97.31,
+          "perfDescendant": true
+        },
+        {
+          "pid": 22191,
+          "name": "chrome",
+          "cpuPercentOneCore": 75.53,
+          "perfDescendant": true
+        },
+        {
+          "pid": 22027,
+          "name": "node",
+          "cpuPercentOneCore": 43.76,
+          "perfDescendant": true
+        },
+        {
+          "pid": 22035,
+          "name": "chrome",
+          "cpuPercentOneCore": 28.17,
+          "perfDescendant": true
+        },
+        {
+          "pid": 22242,
+          "name": "chrome",
+          "cpuPercentOneCore": 8.59,
+          "perfDescendant": true
+        },
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 4.6,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 4.0,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 2.6,
+          "perfDescendant": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T10:22:01.090969+00:00",
+      "seconds": 3.778,
+      "aggregateBusyPercent": 11.304633585277687,
+      "foreignCpuPercentOneCoreSum": 14.03,
+      "foreignTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 6.09,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 5.56,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.85,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.53,
+          "perfDescendant": false
+        }
+      ],
+      "allTop": [
+        {
+          "pid": 7625,
+          "name": "claude",
+          "cpuPercentOneCore": 6.09,
+          "perfDescendant": false
+        },
+        {
+          "pid": 2334,
+          "name": "codex",
+          "cpuPercentOneCore": 5.56,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1459,
+          "name": "MainThread",
+          "cpuPercentOneCore": 1.85,
+          "perfDescendant": false
+        },
+        {
+          "pid": 1441,
+          "name": "MainThread",
+          "cpuPercentOneCore": 0.53,
+          "perfDescendant": false
+        }
+      ]
+    }
+  ],
+  "runnerPid": 11828,
+  "finishedAt": "2026-10-20T10:22:01.095600+00:00",
+  "runnerExitCode": 0
+}

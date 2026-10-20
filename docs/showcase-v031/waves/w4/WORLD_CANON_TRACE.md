@@ -2,18 +2,20 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.WORLD_CANON_TRACE
   title: "0524.W4 — Canon fact and uncertainty trace"
-  status: SOURCE_AUDITED / PUBLIC_COPY_PROPOSED
+  status: SOURCE_AUDITED / G2_COPY_BOUNDARIES_APPLIED
   deployment: NOT_DEPLOYED
   mode: Read-only Canon audit
   goal: "Отделить утверждённую основу от DRAFT, архивного голоса и неизвестного"
   scope: Canon V3 3884ea43 / WORLD W4
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   editable_by_agents: true
   change_policy: "Не изменять Canon; новую публичную формулировку принимает Gate A"
 -->
 
 # WORLD — Canon trace
+
+G2 применяет этот trace вместе с [Gate A R1–R6](W4_GATE_A_ACCEPTANCE.md). Точная публичная копия на frozen `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`; отличия от первоначального G1 текста явно отмечены в [scene script](WORLD_SCENE_SCRIPT.md). Архив — авторская реконструкция, NEURA lifecycle не установлен, Canon не изменён. Независимый G4 проверяется отдельно и не подразумевается этим source audit.
 
 Canon прочитан на **`3884ea43e125ddd39b18c80f91cc40310dd65e9f`**, remote main подтверждён GitHub API; локальный checkout clean. Прочитаны local `AGENTS.md`, `CANON_V3_RULES.md`, Master NODE Pattern и GMS profile. Это аудит источников, не запуск Canon validators и не изменение официального Canon.
 

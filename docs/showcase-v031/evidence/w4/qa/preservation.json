@@ -1,0 +1,54 @@
+{
+  "baseline": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "checked_head": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+  "protected_sections": {
+    "top": {
+      "baseline_sha256": "9c1b968c33547fdb5b285fa648ef04703e6d39a61bb9140e54a4c1e959af0b41",
+      "actual_sha256": "9c1b968c33547fdb5b285fa648ef04703e6d39a61bb9140e54a4c1e959af0b41",
+      "identical": true
+    },
+    "about": {
+      "baseline_sha256": "49f6849f5972c713542b250ad849fd259b20638d999bcd4647e825aba4156138",
+      "actual_sha256": "49f6849f5972c713542b250ad849fd259b20638d999bcd4647e825aba4156138",
+      "identical": true
+    },
+    "creator": {
+      "baseline_sha256": "344194824c67337c5fc3c4c2ca2e4794076e49dedab8adeddf24472d3f601e82",
+      "actual_sha256": "344194824c67337c5fc3c4c2ca2e4794076e49dedab8adeddf24472d3f601e82",
+      "identical": true
+    },
+    "system": {
+      "baseline_sha256": "d186cd459443f6ea56fc22cc653a9ffda3cb70f6b5533795bfb26ebf0f77b68c",
+      "actual_sha256": "d186cd459443f6ea56fc22cc653a9ffda3cb70f6b5533795bfb26ebf0f77b68c",
+      "identical": true
+    },
+    "world": {
+      "baseline_sha256": "131e982b2e005d84134786d4c0305a95e4e7068ff0437e611439227bb99ce4da",
+      "actual_sha256": "131e982b2e005d84134786d4c0305a95e4e7068ff0437e611439227bb99ce4da",
+      "identical": true
+    },
+    "chars": {
+      "baseline_sha256": "163196355c2b0b6aabdb0b2711a5184f95fccc374dcf25dcdababb6d221dfaf0",
+      "actual_sha256": "163196355c2b0b6aabdb0b2711a5184f95fccc374dcf25dcdababb6d221dfaf0",
+      "identical": true
+    },
+    "vision": {
+      "baseline_sha256": "17019e58678c134a371e59b6d2c0f9cba8dc0080fc03d7004d024de31caf72ee",
+      "actual_sha256": "17019e58678c134a371e59b6d2c0f9cba8dc0080fc03d7004d024de31caf72ee",
+      "identical": true
+    },
+    "collaboration": {
+      "baseline_sha256": "dd27b209797d1d290f089935146ecc93efe660fd1ce2c34a91c98165c9a2d7d7",
+      "actual_sha256": "dd27b209797d1d290f089935146ecc93efe660fd1ce2c34a91c98165c9a2d7d7",
+      "identical": true
+    }
+  },
+  "eight_screens_identical": true,
+  "section_order_identical": true,
+  "baseline_asset_files": 187,
+  "asset_delta": [
+    "assets/css/showcase-v23.css"
+  ],
+  "failures": [],
+  "limit": "Source proof only; shared CSS rendering and runtime behavior require browser checks."
+}
