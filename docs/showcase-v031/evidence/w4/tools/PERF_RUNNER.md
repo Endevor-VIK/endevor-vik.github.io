@@ -10,6 +10,28 @@ AXS_HEADER_META:
 -->
 # W4 — Lighthouse
 
+## Текущий checkpoint — cohort 4 / обязательный cohort 5
+
+Первый методически qualified набор: [cohort4](../qa/performance/attempt-4-quiet/summary.json),
+20 observations /5 pairs, 17:26:14–17:30:46 UTC. Независимый G4 сверил все raw LHR,
+но потребовал ещё один фиксированный полный5-pair cohort из-за mobile LCP distribution:
+median +0.213ms при paired mean +277.481ms (+12.96%). Все40 observations будут показаны
+отдельно по cohort и вместе; contaminated attempts1–3 не смешиваются с ними.
+
+Original guard cohort4 имел nominal1s sampling, но actual recorded timestamp gaps
+median1.0074/max4.6013s: поле seconds исключало scan/write/parse overhead. Это ограничение
+сохранено явно; исходный guard4 не переписывается. [Guard v2 validation/predeclaration](../qa/performance/guard-v2-validation.json)
+фиксирует для cohort5 actual monotonic CPU denominator, CPU-read timestamp/scan duration,
+отказ всего нового attempt при gap>3s и пропуск ненужного чтения argv собственных workers.
+Frozen Lighthouse runner, runtime, presets, order и CPU thresholds не менялись.
+Мониторинг дискретный; strict continuous1s tracing не заявляется. Разные guard versions
+учитываются как различие instrumentation между cohorts; обе версии одинаковы для BEFORE/AFTER внутри своего cohort.
+
+Следующие новые пути: `attempt-5-fixed` и `/tmp/axs-0524-w4-perf/run-fixed-cohort-20261020-5`.
+60s outer readiness + собственный15s preflight сохраняются. Новый guard SHA256:
+`1b0db3920a0db59799add498418db9ac7d3871d1783276d675d9976d5321cd6b`.
+Общий G4 пока INCOMPLETE, Gate B HOLD.
+
 Исходник: [tests/browser/w4_perf.cjs](../../../../../tests/browser/w4_perf.cjs).
 Подготовка инструмента не означает выполнения замеров. Только lab; полевой INP,
 реальные устройства и визуальное принятие этим инструментом не проверяются.

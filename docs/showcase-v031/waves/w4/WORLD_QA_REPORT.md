@@ -76,7 +76,9 @@ Standard cross-product: **1920×1080,1440×900,1366×768,1024×768,768×1024,390
 
 ## 4. Paired lab performance
 
-**PENDING: окончательный quiet-CPU performance gate.** Первый набор загрязнён внешней работой; ни один guarded повтор пока не дал полного qualified набора.
+**COHORT 4 RECORDED / FINAL CLASSIFICATION PENDING.** [Полный cohort4](../../evidence/w4/qa/performance/attempt-4-quiet/summary.json):20 observations /5 pairs, guard QUIET_CPU_QUALIFIED, 17:26:14–17:30:46 UTC. Независимый G4 сверил все raw LHR, sources/config/UA/hash. Mobile score97→97, desktop100→100; LCP medians2407.6006→2407.8136ms /530.6714→529.3208ms. Однако mobile paired mean +277.481ms (+12.96%) и широкий разброс требуют **фиксированный дополнительный полный cohort5**, затем separate+pooled40 analysis без выборочного исключения. [Все medians/ranges/SD/paired deltas](../../evidence/w4/qa/performance/attempt-4-quiet/analysis.json), [независимое требование](W4_G4_REVIEW.md).
+
+Cohort4 monitoring был sampled: original seconds median1.0038/max1.0112s — denominator, а recorded timestamp gaps median1.0074/max4.6013s. Strict continuous1s coverage не заявлена. [Guard v2 predeclaration](../../evidence/w4/qa/performance/guard-v2-validation.json) исправляет actual monotonic CPU interval/scan timing для cohort5 и заранее отклоняет whole attempt при gap>3s. LH runner/runtime/presets/order неизменны; guard versions различаются между cohorts и одинаковы для BEFORE/AFTER внутри своего cohort. G4 INCOMPLETE / Gate B HOLD до нового набора и независимой классификации.
 
 Дополнение 20.10 16:59 UTC: [attempt3](../../evidence/w4/qa/performance/attempt-3-quiet/guard.json) прошёл 15 тихих preflight samples, но новый внешний esbuild прервал первый worker. **0 completed observations**, весь attempt CONTAMINATED; собственные процессы/profiles/lock закрыты. Следующий outer readiness watcher требует 60 тихих секунд до неизменённого guard, затем новый полный 5-pair набор. Runtime/test freeze не изменён.
 

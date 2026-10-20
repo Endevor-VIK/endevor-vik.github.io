@@ -18,46 +18,37 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-20 / W4 IMPLEMENTED — QUALIFIED PERFORMANCE PENDING
+## CURRENT STATE — 2026-10-20 / FIXED SECOND PERFORMANCE COHORT REQUIRED
 
-Authority: [Principal interim review](waves/w4/W4_PRINCIPAL_INTERIM_REVIEW.md): G2 ACCEPTED FOR FINAL VERIFICATION, G4 INCOMPLETE, Gate B HOLD. [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), proposal PR11/`af20ff6`, R1–R6 remain binding. [G2 SPEC](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
+Authority: [Principal interim review](waves/w4/W4_PRINCIPAL_INTERIM_REVIEW.md): G2 ACCEPTED FOR FINAL VERIFICATION, G4 INCOMPLETE, Gate B HOLD. [Gate A/R1–R6](waves/w4/W4_GATE_A_ACCEPTANCE.md) сохраняются; новая художественная/архитектурная переработка не требуется.
 
-### Active execution checkpoint — 20.10, 17:09 UTC
-
-Последний reporting HEAD `f3d208e6f6b269ad0ee212c9e40940789da93220` запушен; runtime/assets/tests exact `b85fbb0a`, remote main `6b082e5`, PR12 Draft перепроверены перед attempt 3. [HERO debt](waves/w4/W4_BASELINE_HERO_DEBT.md), [Gate B preparation](waves/w4/W4_GATE_B_RECORD.md) и независимый scoped scorecard сохранены. G4 INCOMPLETE / Gate B HOLD.
-
-Performance owner `work_migration` завершился с model-capacity error; мониторинг/измерение продолжает Lead. Bounded watchers `20870` и `42398` завершены. Последний автоматически запустил [attempt 3](evidence/w4/qa/performance/attempt-3-quiet/guard.json): после успешного preflight новый внешний esbuild остановил первый worker, **0 completed observations / CONTAMINATED**. [Cleanup](evidence/w4/qa/performance/attempt-3-quiet/cleanup.json): own browser/profile/server/lock отсутствуют. Никакой contaminated sample не используется для final gate. Активный watcher attempt 4 — exec session `6626`; не запускать дубликат. Он автоматически проверяет clean HEAD/runtime/remote main/PR Draft и передаёт управление guard только после 60 тихих samples. Пока внешняя задача активна, LH ещё не запущен. Operational readiness после условия будет записана в собственный `/tmp/axs-0524-w4-readiness4.json`, затем guard создаст новый attempt-4 child.
-
-Следующий conditional GO сохраняется, но outer readiness теперь строже: **60 последовательных тихих секунд** без foreign browser/build и с aggregate CPU <10%, затем recheck clean HEAD/runtime/main/PR Draft и неизменённый 15s guard. Новые пути: scratch `/tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet4`, durable `evidence/w4/qa/performance/attempt-4-quiet/`. Не запускать два watcher/LH одновременно: сначала проверить actual exec session/processes, guard status и owned `.runner-lock`, не удалять lock вслепую. После qualified набора сохранить все medians/spread/paired deltas/conditions/raw hashes; вызвать независимого `canon_audit` через followup. Raw LHR оставить до его проверки.
-
-Windows disk guard исполняется runner непосредственно перед heavy work. Retained evidence после attempt3 <49 MiB, новый compact attempt ≤1 MiB, общий budget <50 MiB. Все собственные browsers закрыты, внешняя задача ещё активна. Дополнительного разрешения после выполнения conditional GO не требуется. Полную G3 matrix не повторять.
-
-- Branch/worktree: `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze + remote recovery: **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**. Current reporting/evidence delta only; never restart completed source slices. PR11 remains unchanged Draft/unmerged.
-- Implementation [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), base main. Durable evidence/source-review checkpoint **`e5f90f4`** pushed; its runtime/assets/tests diff against b85fbb0 is empty. Later trace commits remain documentation only. This is a reviewable checkpoint, not completed G3/G4 or Gate B readiness.
-- BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2` captured before runtime edits:327checks/0failed,702frames;455retained. AFTER full21matrix:1656checks/0failed,782frames;541retained. All996 native retained hashes independently checked. [Full pairs/index](waves/w4/WORLD_BEFORE_AFTER.md).
-- IMPLEMENTED: W01 English title;4BLACK SUN beats + visible authored reconstruction; human WHAT REMAINS;3closed WORK disclosures/4staticconcepts secondary to8realshots; single factions heading/NEURA legacy uncertainty. Entire world/chars/AXIOM∅/III-IV labels, map/OMEGA/source assets/handlers unchanged.
-- G3: smoke/source/style/behavior checks pass; legacy230PASS/2baselineFAIL (HERO3pxCR1024, gate-note2pxFF720), pairedBEFORE/AFTER3×. Narrowlandscape3engine pairs show identical initialCTAoutside390height, but nativeTab/manualscroll/hit-test reachable. Actual200%AFTER18/18pass +9visible readingframes; old blank capture attempt preserved and G4-F01resolved. [QA report](waves/w4/WORLD_QA_REPORT.md).
-- Independent G4 `canon_audit`: no new source/Canon/visual P0/P1;66frames viewed,13/13 riskbrowserPASS, correctednativezoom reviewed. Own record `W4_G4_REVIEW.md` final remains pending qualified performance. No more reviewer browsers planned.
-- **Performance unresolved:** first20observations completed but external Claude browser/build jobs contaminated them; OBSERVED/CONTAMINATED, not quiet gate. Guarded attempt2 refused preflight (0LH) because foreign tests remain live in `mgp7-ws/apps/e2e-run`. Never stop foreign processes. Need6minute quiet window,15s preflight +1s monitor, full5pairs rerun. CREATOR ответил: после завершения другой задачи; до фактического quiet window новый LH не запускается.
-- Host reboot cleared `/tmp`; main21matrix/996frames/legacyproof were already durable. BEFORE worktree restored at same `/tmp/axs-0524-w4-before-6b082e5`. Only lost narrowlandscape proof re-run, not fullmatrix. WebKitrootlessscratch cleaned by owner; browser cache retained.
-- Interim execution resumed20.10: HEAD/PR12 `3b4add5` clean, runtime/test diff vs b85fbb0 empty, both190-file source manifests revalidated. Root has conditionally authorized perf owner to start attempt3 automatically after external browser/build work ends and15quiet samples pass; no additional permission is needed. Foreign processes remain untouched. New authority/debt docs are reporting-only; no runtime correction made.
-- Next: qualified5pairs → independentG4 final → finalreport/handoff/evidencecommit/update DraftPR12. No Canon/rootgitlink/version/main/deploy writes. Required remaining approval: Gate B and any later merge/deploy/protected/Canon scope.
+- Repo/worktree: `Endevor-VIK/endevor-vik.github.io`, branch `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**; все последующие изменения — reporting/QA instrumentation. Последний remote reporting HEAD до этого checkpoint: `b333b345c0cd1d038f2a70c326489eb93278c560`.
+- [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), main/BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2`. PR11 `af20ff6` неизменён и не слит. Canon `3884ea43` read-only. Root/gitlinks/main/deploy не входят в write scope.
+- G2 принят Principal: W01 English title; четыре такта BLACK SUN; visible authored NEXARCH reconstruction; human WHAT REMAINS; три закрытых WORK disclosures вторичны к восьми real shots; FACTIONS/NEURA uncertainty. Runtime: только HTML и86 scoped CSS lines; app JS/fonts/media/protected III/IV/map/OMEGA/chars/AXIOM∅ неизменны.
+- G3 выполнен: BEFORE327/0,455 retained frames; AFTER1656/0,541 frames,3engines×7viewports. Native200% AFTER18/18 PASS и corrected reading frames; независимый browser risk13/13 PASS. Legacy230PASS/2baselineFAIL — [отдельная HERO debt](waves/w4/W4_BASELINE_HERO_DEBT.md). Полную матрицу не повторять. [QA](waves/w4/WORLD_QA_REPORT.md), [полные пары](waves/w4/WORLD_BEFORE_AFTER.md), [offline index](evidence/w4/REVIEW.html).
+- Performance attempts1–3 не qualified: первый20-run contaminated; второй отказал preflight; третий прерван guard до первого completed observation. Они сохранены целиком и не смешиваются с новой выборкой.
+- **Cohort4 qualified по original guard policy:**20 observations /5pairs,17:26:14–17:30:46 UTC. [Data/analysis/raw hashes/readiness/cleanup](evidence/w4/qa/performance/OBSERVATIONS.md). Все20 raw LHR независимо сверены G4. Scores medians mobile97→97/desktop100→100; LCP medians2407.6006→2407.8136ms /530.6714→529.3208ms. Mobile paired LCP mean+277.481ms (+12.96%), SD397.245ms при median+0.213ms: **G4 требует один заранее фиксированный дополнительный полный5-pair cohort**, затем separate+pooled40/n10 per arm. Никакого optional stopping/culling/contaminated pooling.
+- Original guard4 был sampled, recorded timestamp gaps median1.0074/max4.6013s; поле seconds исключало scan/write/parse overhead. Никакого strict continuous1s claim. [Guard v2 predeclaration/fixture](evidence/w4/qa/performance/guard-v2-validation.json): actual monotonic CPU-read interval/scan timestamps, own worker argv не читаются, whole-new-attempt rejection при gap>3s. Runtime/LH runner/presets/order/CPU thresholds прежние; guard versions различаются между cohorts и одинаковы между arms своего cohort.
+- Следующий run: новые scratch `/tmp/axs-0524-w4-perf/run-fixed-cohort-20261020-5`, durable `evidence/w4/qa/performance/attempt-5-fixed/`. Сначала60 тихих секунд, recheck clean HEAD/runtime/main/PR Draft, затем собственный15s preflight и монитор. Проверить actual active exec/process/lock перед запуском, не создавать дубликат. Все предыдущие own watcher/Chrome/profile/server/lock закрыты; raw cohort4 оставлен для G4. Performance-agent capacity failure компенсирует Lead; `canon_audit` ждёт cohort5 без нового browser rerun.
+- Evidence49.053MiB, budget<50MiB; новый compact attempt≤1MiB (ожидается~0.4). Host Windows disk guard перед heavy run; CRITICAL останавливает, WARNING допустим при запасе. Own transient max3runs/14days; source BEFORE worktree сохранять до cohort5/G4, чужие процессы/data не трогать.
+- Следующие шаги: фиксированный cohort5 → separate+pooled40 + independentG4 final → окончательные QA/report/Gate B record/visual handoff → commit/push/update DraftPR12. [Gate B preparation](waves/w4/W4_GATE_B_RECORD.md) пока HOLD. Merge/deploy/Canon/protected требуют отдельных решений CREATOR.
 
 ```text
 AXIOM SHOWCASE / RESUME PACKET
-AUTHORITY: W4_PRINCIPAL_INTERIM_REVIEW.md; G2accepted/R1–R6; GateB HOLD
-TASK: 0524.W4; implementation frozen b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5
-BRANCH: w4/world-narrative; runtime baseline6b082e5; Canon3884ea43 read-only
-WORKTREE: /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation
-DONE: G2;21×3engine matrix1656/0;996retainedframes;native200%18/18AFTER;G4source/visual+13riskchecks
-PENDING: qualifiedquietperformance;G4final;finalreport/updateDraftPR12;GateB
-PR: https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12 (Draft); evidence checkpoint e5f90f4
-PERF: qa/performance first20OBSERVED_CONTAMINATED; attempt2PREFLIGHT_NOT_QUIET0LH; foreignClaude mgp7-ws tests
-BROWSERS: allownclosed; perfagentreadyguard; don'tlaunchothersduringitsfutureGO
-EVIDENCE: evidence/w4/REVIEW.html + before/after/qa; WORLD_BEFORE_AFTER.md
-PRESERVE: fullworld/chars/AXIOM∅/III-IV,map/OMEGA,8realshots/viewer,art/fonts/palette
-FORBIDDEN: mergePR11/main,deploy,Canon/rootgitlink/version/protected edits,foreignprocesskill
-NEXT: verifyGit/status/currentexternalwork; getquietwindow→5pairs→G4final→docs/push/updatePR12;don'trepeatexecutedmatrix
+AUTHORITY: Principal interim; G2 accepted; G4 INCOMPLETE; Gate B HOLD
+TASK: 0524.W4 final verification, no new artistic/architecture work
+RUNTIME: b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5; BEFORE6b082e5; Canon3884ea43 read-only
+BRANCH: w4/world-narrative; recheck actual HEAD/PR12 Draft/main/status
+DONE: G2;1656/0 standard matrix;996 retained frames;native200%18/18;G4source/visual/risk13/13
+PERF: attempts1-3 excluded;cohort4=20qualified observations but LCP distribution needs fixed cohort5
+REQUIRED: exactly5 additional pairs/20runs; unchanged LH presets/order/runtime; retain separate+pooled40
+GUARD V2: actual monotonic interval; gap>3s rejects whole new attempt; sampled not continuous
+NEXT PATHS: attempt-5-fixed; /tmp/axs-0524-w4-perf/run-fixed-cohort-20261020-5
+RAW: cohort4 /tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet4; keep until review
+NO DUPLICATE: inspect actual exec/processes/runner-lock before fresh guarded run
+EVIDENCE: REVIEW.html + WORLD_BEFORE_AFTER.md + qa/performance/OBSERVATIONS.md
+FORBIDDEN: merge/deploy, Canon/rootgitlink/protected edits, foreign-process kill, premature G4 PASS
+NEXT: qualifiedcohort5→independentseparate+pooled40verdict→finalreports/DraftPR12→CREATORGateB
 ```
 
 ## HISTORICAL SNAPSHOT — 2026-10-19 / 0524.W4 G0/G1 — READY FOR GATE A

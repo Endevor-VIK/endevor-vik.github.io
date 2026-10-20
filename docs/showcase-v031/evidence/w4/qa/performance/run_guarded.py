@@ -6,6 +6,7 @@ Full Lighthouse reports remain in the harness's bounded /tmp run directory.
 """
 import argparse
 import datetime as dt
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -20,6 +21,9 @@ BUILD_EXES = {"rustc", "cargo", "esbuild", "tsc", "vite", "webpack", "vitest", "
 BUILD_ARG_PARTS = ("/typescript/bin/tsc", "/typescript/lib/tsc", "/typescript/lib/_tsc",
                    "/vitest/", "/vite/bin/", "/webpack/", "/jest/bin/", "/esbuild/bin/")
 POLICY = {
+    "sampling": {"nominalPollSeconds": 1, "maxActualCpuSnapshotIntervalSeconds": 3,
+                 "cpuDenominator": "Actual monotonic interval between /proc/stat reads, including scan/write/parse overhead",
+                 "claim": "Discrete /proc sampling; not continuous process tracing"},
     "preflight": {"consecutiveQuietSeconds": 15, "sampleSeconds": 1, "maxWaitSeconds": 90,
                   "aggregateBusyPercentStrictlyBelow": 10, "foreignBrowsersAllowed": 0, "foreignBuildsAllowed": 0},
     "measurement": {"sampleSeconds": 1, "foreignBrowsersAllowed": 0, "foreignBuildsAllowed": 0,
@@ -46,7 +50,9 @@ def write_json(file, value):
 
 
 def snapshot():
+    scan_started = time.monotonic()
     cpu = list(map(int, Path("/proc/stat").read_text().splitlines()[0].split()[1:]))
+    cpu_at, cpu_utc = time.monotonic(), now()
     processes = {}
     for directory in Path("/proc").iterdir():
         if not directory.name.isdigit():
@@ -58,22 +64,47 @@ def snapshot():
             if fields[0] == "Z":
                 continue
             exe = Path(os.readlink(directory / "exe")).name
-            # Inspect arguments only to classify known compiler tools; never retain them.
-            argv = (directory / "cmdline").read_bytes().split(b"\0")
-            build_arg = any(part.encode() in arg for arg in argv for part in BUILD_ARG_PARTS)
             processes[int(directory.name)] = {
                 "pid": int(directory.name), "ppid": int(fields[1]), "comm": comm, "executableBasename": exe,
                 "ticks": int(fields[11]) + int(fields[12]), "browser": comm in BROWSERS or exe in BROWSERS,
-                "build": exe in BUILD_EXES or comm in BUILD_EXES or build_arg,
+                "build": exe in BUILD_EXES or comm in BUILD_EXES,
             }
         except (OSError, ValueError):
             continue
-    return cpu, processes
+    # Own Chrome/worker cmdline reads are unnecessary and may block on process memory.
+    # First collect ancestry using stat/exe; inspect only foreign JS compiler hosts.
+    def is_owned(pid):
+        seen = set()
+        while pid not in seen:
+            if pid == os.getpid():
+                return True
+            if pid not in processes:
+                return False
+            seen.add(pid)
+            pid = processes[pid]["ppid"]
+        return False
+
+    for pid, process in processes.items():
+        if is_owned(pid) or process["browser"] or process["build"]:
+            continue
+        if process["executableBasename"] not in {"node", "nodejs", "bun", "deno"}:
+            continue
+        try:
+            argv = Path("/proc", str(pid), "cmdline").read_bytes().split(b"\0")
+            process["build"] = any(part.encode() in arg for arg in argv for part in BUILD_ARG_PARTS)
+        except OSError:
+            pass
+    return cpu, processes, {"cpuMonotonicSeconds": cpu_at, "cpuReadAtUtc": cpu_utc,
+                            "snapshotScanSeconds": time.monotonic() - scan_started}
 
 
 def measure(old, new, seconds, own_root):
-    before, previous = old
-    after, processes = new
+    before, previous, old_clock = old
+    after, processes, new_clock = new
+    requested_wait = seconds
+    seconds = new_clock["cpuMonotonicSeconds"] - old_clock["cpuMonotonicSeconds"]
+    if seconds <= 0:
+        raise RuntimeError("CPU snapshot monotonic interval must be positive")
     total = sum(after) - sum(before)
     idle = (after[3] + after[4]) - (before[3] + before[4])
     hz = os.sysconf("SC_CLK_TCK")
@@ -104,7 +135,11 @@ def measure(old, new, seconds, own_root):
         if process["build"]:
             builds.append(row)
     foreign.sort(key=lambda item: -item["cpuPercentOneCore"])
-    return {"at": now(), "seconds": seconds, "aggregateBusyPercent": 100 * (total - idle) / total,
+    return {"at": new_clock["cpuReadAtUtc"], "seconds": seconds,
+            "requestedWaitSeconds": requested_wait,
+            "cpuMonotonicSeconds": new_clock["cpuMonotonicSeconds"],
+            "snapshotScanSeconds": new_clock["snapshotScanSeconds"],
+            "aggregateBusyPercent": 100 * (total - idle) / total,
             "foreignCpuPercentOneCoreSum": round(sum(item["cpuPercentOneCore"] for item in foreign), 3),
             "foreignBrowsers": browsers, "foreignBuilds": builds, "foreignTop": foreign[:8]}
 
@@ -128,6 +163,7 @@ def main():
         parser.error("Durable child must start with attempt-")
     durable.mkdir()
     record = {"startedAt": now(), "status": "PREFLIGHT", "policy": POLICY, "logicalCpus": os.cpu_count(),
+              "guardWrapperSha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
               "preflight": [], "samples": [], "runnerExitCode": None, "noForeignProcessesTerminated": True}
     write_json(durable / "guard.json", record)
     command = ["node", "tests/browser/w4_perf.cjs", "--before-root", str(args.before_root.resolve()),
@@ -142,7 +178,8 @@ def main():
         time.sleep(1)
         new = snapshot()
         sample = measure(old, new, time.monotonic() - started, os.getpid())
-        clear = not sample["foreignBrowsers"] and not sample["foreignBuilds"] and sample["aggregateBusyPercent"] < 10
+        clear = (not sample["foreignBrowsers"] and not sample["foreignBuilds"] and sample["aggregateBusyPercent"] < 10
+                 and sample["seconds"] <= POLICY["sampling"]["maxActualCpuSnapshotIntervalSeconds"])
         quiet = quiet + 1 if clear else 0
         sample["consecutiveQuietSamples"] = quiet
         record["preflight"].append(sample)
@@ -171,7 +208,9 @@ def main():
         old = new
         record["samples"].append(sample)
         hot = hot + 1 if sample["foreignCpuPercentOneCoreSum"] > 100 else 0
-        reason = "foreign browser/build" if sample["foreignBrowsers"] or sample["foreignBuilds"] else "sustained foreign CPU" if hot > 1 else None
+        reason = ("monitoring gap exceeds declared maximum" if sample["seconds"] > POLICY["sampling"]["maxActualCpuSnapshotIntervalSeconds"]
+                  else "foreign browser/build" if sample["foreignBrowsers"] or sample["foreignBuilds"]
+                  else "sustained foreign CPU" if hot > 1 else None)
         if reason and not violations:
             violations.append({"at": sample["at"], "reason": reason, "sample": sample})
             print("GUARD REJECTED", reason, flush=True)

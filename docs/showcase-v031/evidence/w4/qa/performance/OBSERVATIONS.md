@@ -2,20 +2,60 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.W4.PERFORMANCE_OBSERVATIONS
   title: "W4 — performance observations and quiet-window qualification"
-  status: INCOMPLETE / QUIET_PERFORMANCE_NOT_QUALIFIED
+  status: COHORT4_QUALIFIED / FIXED_COHORT5_REQUIRED / G4_INCOMPLETE
   deployment: NOT_DEPLOYED
   lang: ru
   last_updated: 2026-10-20
   editable_by_agents: true
 -->
-# W4 — performance: INCOMPLETE
+# W4 — performance: cohort 4 recorded / final classification pending
 
-Нужные пять пар в чистом CPU-окне пока не квалифицированы. Все 20 наблюдений attempt 1
+Первый qualified cohort из пяти пар сохранён ниже; финальная классификация ожидает фиксированный второй полный cohort по независимому G4. Исторические attempts1–3 не используются для final gate. Все 20 наблюдений attempt 1
 сохранены, но помечены CONTAMINATED; attempt 2 остановлен до запуска Lighthouse,
 поскольку внешний Claude Playwright/devserver оставался активным все 90 секунд preflight.
 Ни один чужой процесс не завершался. Числовые floors ниже — наблюдения, не final PASS.
 Attempt 3 после успешного preflight прерван guard из-за нового внешнего esbuild;
 завершённых observations = 0. Он также не квалифицирован.
+
+## Qualified cohort 4 — recorded; fixed cohort 5 required
+
+20 observations, 5 pairs × mobile/desktop, 17:26:14–17:30:46 UTC. Method qualification: `QUIET_CPU_QUALIFIED` under the original guard policy. This is not final regression classification or G4 PASS.
+
+[Summary](attempt-4-quiet/summary.json) · [descriptive analysis](attempt-4-quiet/analysis.json) · [raw hashes](attempt-4-quiet/raw-reports-manifest.json) · [guard](attempt-4-quiet/guard.json) · [60s readiness](attempt-4-quiet/readiness.json) · [cleanup](attempt-4-quiet/cleanup.json).
+
+Each cell: median [min–max]; population SD, n=5. All values retained; no contaminated attempts pooled.
+
+### mobile
+
+| Metric | BEFORE | AFTER | Delta medians |
+| --- | --- | --- | --- |
+| Perf | 97 [92–100]; SD 3 | 97 [97–98]; SD 0 | 0 |
+| FCP, ms | 1657.23 [1363.17–2260.81]; SD 316.59 | 1655.71 [1353.78–1656.35]; SD 147.87 | -1.52 |
+| LCP, ms | 2407.60 [1513.17–2566.22]; SD 407.49 | 2407.81 [2407.56–2460.47]; SD 21.00 | 0.21 |
+| TBT, ms | 5.00 [0.00–177.00]; SD 68.33 | 0.00 [0.00–2.00]; SD 0.80 | -5.00 |
+| CLS | 0.016841 [0.016246–0.019717]; SD 0.001494 | 0.016325 [0.016314–0.019681]; SD 0.001646 | -0.000517 |
+| Speed Index, ms | 1657.23 [1590.60–2260.81]; SD 255.26 | 1655.71 [1555.97–1674.97]; SD 46.89 | -1.52 |
+| Transfer, bytes | 340264 [340264–340264]; SD 0 | 339305 [339305–339305]; SD 0 | -959 |
+
+### desktop
+
+| Metric | BEFORE | AFTER | Delta medians |
+| --- | --- | --- | --- |
+| Perf | 100 [99–100]; SD 0 | 100 [100–100]; SD 0 | 0 |
+| FCP, ms | 386.58 [346.75–536.93]; SD 65.89 | 386.12 [324.54–407.65]; SD 34.40 | -0.46 |
+| LCP, ms | 530.67 [528.30–625.40]; SD 38.32 | 529.32 [528.16–531.51]; SD 1.13 | -1.35 |
+| TBT, ms | 0.00 [0.00–22.00]; SD 8.80 | 0.00 [0.00–0.00]; SD 0.00 | 0.00 |
+| CLS | 0.005324 [0.005298–0.005502]; SD 0.000088 | 0.005434 [0.005278–0.005657]; SD 0.000151 | 0.000109 |
+| Speed Index, ms | 963.40 [950.37–1008.35]; SD 21.62 | 981.98 [948.42–1009.48]; SD 20.53 | 18.57 |
+| Transfer, bytes | 429991 [429991–429991]; SD 0 | 429032 [429032–429032]; SD 0 | -959 |
+
+A11y/BP/SEO medians are 100 for all four arms; all initial loads have 0 world-library requests. Transfer AFTER is 959 bytes lower. Sources/settings/UA and every raw metric were independently checked. Windows host: 47.587 GiB /9.995% free, WARNING with substantial margin for the bounded128MiB run; not CRITICAL. Own browsers, profiles, server and lock closed; raw LHR remain for review.
+
+Declared median budgets are numerically met: mobile≥90, desktop≥95; median LCP investigation (>10% AND >150ms) and CLS delta>.02 are not crossed. **This does not resolve distribution uncertainty.** Mobile paired LCP mean +277.481ms (+12.96% of BEFORE mean), median +0.213ms, SD397.245ms, range−105.750…+895.770ms. BEFORE lower-mode samples and AFTER concentration around2.4s require the independent reviewer's fixed second complete5-pair cohort. LCP element is the same `div.show-hero-byline`; a causal zero-cost or source-regression claim is not established.
+
+Monitoring is sampled. Original `seconds` (median1.0038/max1.0112s) omitted scan/write/parse overhead; recorded timestamp gaps are median1.0074/max4.6013s. Both summaries are now labelled separately in analysis.json; original guard.json stays unchanged. No strict continuous1s coverage is claimed. Cohort4 has247 samples,0 foreign browser/build samples, max reported foreignCPU59.782% of one core.
+
+For cohort5, [guard v2 validation/predeclaration](guard-v2-validation.json) records corrected actual monotonic CPU denominator, actual CPU-read timestamps/scan duration and whole-attempt rejection if a snapshot interval exceeds3s. Own Chrome/worker argv are no longer read; only foreign potential JS compiler hosts need argument classification. LH runner/runtime/presets/order remain frozen. Guard instrumentation versions differ; comparisons remain paired within each cohort, with separate and pooled reporting.
 
 ## Источники и метод
 
