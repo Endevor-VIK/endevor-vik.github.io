@@ -22,6 +22,16 @@ AXS_HEADER_META:
 
 Authority: [Principal interim review](waves/w4/W4_PRINCIPAL_INTERIM_REVIEW.md): G2 ACCEPTED FOR FINAL VERIFICATION, G4 INCOMPLETE, Gate B HOLD. [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), proposal PR11/`af20ff6`, R1–R6 remain binding. [G2 SPEC](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
 
+### Active execution checkpoint — 20.10, 16:42 UTC
+
+Последний перепроверенный reporting HEAD: `0151bdc9391f1596ae02609f67bfac0a16a8c971`, запушен в Draft PR12. До этой записи worktree чистая; `index.html/assets/tests` идентичны frozen `b85fbb0a`. Отдельные [HERO debt](waves/w4/W4_BASELINE_HERO_DEBT.md), [Gate B preparation](waves/w4/W4_GATE_B_RECORD.md) и независимый scoped V1–V10/T01–T10 scorecard сохранены. Ни один из них не объявляет qualified performance или общий G4 PASS.
+
+Performance owner `work_migration` завершился с model-capacity error; мониторинг и фактический запуск продолжает Lead. **Не запускать второй watcher/Lighthouse одновременно.** Активная exec session `20870`: read-only watcher ждёт естественного завершения внешних browser/build процессов и 15 тихих samples, затем повторно проверяет clean HEAD/runtime и заменяет себя guarded attempt 3. Guard отдельно повторяет preflight и мониторит все 20 observations. Чужие процессы не завершаются. Несколько коротких пауз между внешними фазами пока не выполнили условия, LH observations = 0.
+
+Пути следующей попытки: scratch `/tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet3`, durable `docs/showcase-v031/evidence/w4/qa/performance/attempt-3-quiet/`. Пока watcher ждёт, durable child ещё не создан. Перед любым повтором проверить actual session/processes, наличие этого child, guard status и owned `.runner-lock`; не удалять lock вслепую. Если новый набор qualified, сохранить все metrics/medians/spread/paired deltas, raw LHR hashes и условия, затем вызвать независимого `canon_audit` через followup для итогового G4. Raw LHR оставить до его проверки.
+
+Host C последний раз: 51,152,908,288 bytes free из 511,206,285,312; runner повторяет Windows disk guard непосредственно перед heavy run. Retained evidence 48.648 MiB; новый compact attempt ограничен 1 MiB, общий budget <50 MiB. Frozen runner/settings не менялись. Все собственные браузеры закрыты; внешняя задача ещё выполняется. Новое разрешение на измерение после выполнения conditional GO не требуется.
+
 - Branch/worktree: `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze + remote recovery: **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**. Current reporting/evidence delta only; never restart completed source slices. PR11 remains unchanged Draft/unmerged.
 - Implementation [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), base main. Durable evidence/source-review checkpoint **`e5f90f4`** pushed; its runtime/assets/tests diff against b85fbb0 is empty. Later trace commits remain documentation only. This is a reviewable checkpoint, not completed G3/G4 or Gate B readiness.
 - BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2` captured before runtime edits:327checks/0failed,702frames;455retained. AFTER full21matrix:1656checks/0failed,782frames;541retained. All996 native retained hashes independently checked. [Full pairs/index](waves/w4/WORLD_BEFORE_AFTER.md).
