@@ -1,0 +1,1784 @@
+{
+  "kind": "R1_PROPOSED_NOT_PRODUCT_QA",
+  "at": "2026-10-20T21:53:44.801Z",
+  "sourceHead": "7413405628aba95ff7b34d486d6b3d167d32f66b",
+  "runtimeFreeze": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+  "checks": [
+    {
+      "name": "a/1920: horizontal overflow",
+      "pass": true,
+      "actual": 1905
+    },
+    {
+      "name": "a/1920: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "a/1920: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "a/1920: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "a/1920: static",
+      "pass": true
+    },
+    {
+      "name": "a/1440: horizontal overflow",
+      "pass": true,
+      "actual": 1425
+    },
+    {
+      "name": "a/1440: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "a/1440: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "a/1440: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "a/1440: static",
+      "pass": true
+    },
+    {
+      "name": "a/1366: horizontal overflow",
+      "pass": true,
+      "actual": 1351
+    },
+    {
+      "name": "a/1366: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "a/1366: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "a/1366: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "a/1366: static",
+      "pass": true
+    },
+    {
+      "name": "a/1024: horizontal overflow",
+      "pass": true,
+      "actual": 1009
+    },
+    {
+      "name": "a/1024: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "a/1024: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "a/1024: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "a/1024: static",
+      "pass": true
+    },
+    {
+      "name": "a/768: horizontal overflow",
+      "pass": true,
+      "actual": 753
+    },
+    {
+      "name": "a/768: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "a/768: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "a/768: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "a/768: static",
+      "pass": true
+    },
+    {
+      "name": "a/390: horizontal overflow",
+      "pass": true,
+      "actual": 375
+    },
+    {
+      "name": "a/390: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "a/390: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "a/390: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "a/390: static",
+      "pass": true
+    },
+    {
+      "name": "a/360: horizontal overflow",
+      "pass": true,
+      "actual": 345
+    },
+    {
+      "name": "a/360: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "a/360: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "a/360: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "a/360: static",
+      "pass": true
+    },
+    {
+      "name": "a/desktop: axe violations",
+      "pass": true
+    },
+    {
+      "name": "a/mobile: axe violations",
+      "pass": true
+    },
+    {
+      "name": "b/1920: horizontal overflow",
+      "pass": true,
+      "actual": 1905
+    },
+    {
+      "name": "b/1920: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "b/1920: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "b/1920: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "b/1920: static",
+      "pass": true
+    },
+    {
+      "name": "b/1440: horizontal overflow",
+      "pass": true,
+      "actual": 1425
+    },
+    {
+      "name": "b/1440: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "b/1440: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "b/1440: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "b/1440: static",
+      "pass": true
+    },
+    {
+      "name": "b/1366: horizontal overflow",
+      "pass": true,
+      "actual": 1351
+    },
+    {
+      "name": "b/1366: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "b/1366: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "b/1366: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "b/1366: static",
+      "pass": true
+    },
+    {
+      "name": "b/1024: horizontal overflow",
+      "pass": true,
+      "actual": 1009
+    },
+    {
+      "name": "b/1024: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "b/1024: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "b/1024: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "b/1024: static",
+      "pass": true
+    },
+    {
+      "name": "b/768: horizontal overflow",
+      "pass": true,
+      "actual": 753
+    },
+    {
+      "name": "b/768: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "b/768: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "b/768: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "b/768: static",
+      "pass": true
+    },
+    {
+      "name": "b/390: horizontal overflow",
+      "pass": true,
+      "actual": 375
+    },
+    {
+      "name": "b/390: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "b/390: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "b/390: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "b/390: static",
+      "pass": true
+    },
+    {
+      "name": "b/360: horizontal overflow",
+      "pass": true,
+      "actual": 345
+    },
+    {
+      "name": "b/360: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "b/360: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "b/360: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "b/360: static",
+      "pass": true
+    },
+    {
+      "name": "b/desktop: axe violations",
+      "pass": true
+    },
+    {
+      "name": "b/mobile: axe violations",
+      "pass": true
+    },
+    {
+      "name": "c/1920: horizontal overflow",
+      "pass": true,
+      "actual": 1905
+    },
+    {
+      "name": "c/1920: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "c/1920: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "c/1920: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "c/1920: static",
+      "pass": true
+    },
+    {
+      "name": "c/1440: horizontal overflow",
+      "pass": true,
+      "actual": 1425
+    },
+    {
+      "name": "c/1440: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "c/1440: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "c/1440: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "c/1440: static",
+      "pass": true
+    },
+    {
+      "name": "c/1366: horizontal overflow",
+      "pass": true,
+      "actual": 1351
+    },
+    {
+      "name": "c/1366: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "c/1366: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "c/1366: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "c/1366: static",
+      "pass": true
+    },
+    {
+      "name": "c/1024: horizontal overflow",
+      "pass": true,
+      "actual": 1009
+    },
+    {
+      "name": "c/1024: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "c/1024: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "c/1024: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "c/1024: static",
+      "pass": true
+    },
+    {
+      "name": "c/768: horizontal overflow",
+      "pass": true,
+      "actual": 753
+    },
+    {
+      "name": "c/768: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "c/768: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "c/768: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "c/768: static",
+      "pass": true
+    },
+    {
+      "name": "c/390: horizontal overflow",
+      "pass": true,
+      "actual": 375
+    },
+    {
+      "name": "c/390: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "c/390: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "c/390: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "c/390: static",
+      "pass": true
+    },
+    {
+      "name": "c/360: horizontal overflow",
+      "pass": true,
+      "actual": 345
+    },
+    {
+      "name": "c/360: heading bounds",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "c/360: prose floor16",
+      "pass": true
+    },
+    {
+      "name": "c/360: three fonts",
+      "pass": true,
+      "fonts": [
+        {
+          "font": "Oswald",
+          "loaded": true
+        },
+        {
+          "font": "Golos Text",
+          "loaded": true
+        },
+        {
+          "font": "JetBrains Mono",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "c/360: static",
+      "pass": true
+    },
+    {
+      "name": "c/desktop: axe violations",
+      "pass": true
+    },
+    {
+      "name": "c/mobile: axe violations",
+      "pass": true
+    },
+    {
+      "name": "a: noJS archive prose",
+      "pass": true
+    },
+    {
+      "name": "b: noJS archive prose",
+      "pass": true
+    },
+    {
+      "name": "c: noJS archive prose",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true
+    },
+    {
+      "name": "no HTTP errors",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "a-desktop-doctrine-1.webp",
+      "bytes": 72400,
+      "sha256": "bc8607250e02fbe6dacbe471d5e8e59d3d0c074407d011912486d782b6835843",
+      "concept": "a",
+      "device": "desktop",
+      "scene": "doctrine",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 99
+    },
+    {
+      "file": "a-desktop-doctrine-2.webp",
+      "bytes": 53210,
+      "sha256": "3614dcc812e6a6fe33aa828577f72106a5c3956c624eef32868470e0359913ad",
+      "concept": "a",
+      "device": "desktop",
+      "scene": "doctrine",
+      "segment": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 909
+    },
+    {
+      "file": "a-desktop-remains-1.webp",
+      "bytes": 67554,
+      "sha256": "0a92cb7c034f8262b7a467d61a49f1ffd1a201416e0b92470a5373a67b2e8210",
+      "concept": "a",
+      "device": "desktop",
+      "scene": "remains",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 1758
+    },
+    {
+      "file": "a-desktop-remains-2.webp",
+      "bytes": 52828,
+      "sha256": "0a9cd52aa883f78c47af67970bbb9d25f2e1a1ba1e6681557edb68bf20bb232f",
+      "concept": "a",
+      "device": "desktop",
+      "scene": "remains",
+      "segment": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2568
+    },
+    {
+      "file": "a-desktop-geography-1.webp",
+      "bytes": 67536,
+      "sha256": "38ea6396c2c675d3a38f8cc139e78c87f1d9abd89031180ae9899f9a8cbb5b4e",
+      "concept": "a",
+      "device": "desktop",
+      "scene": "geography",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2981
+    },
+    {
+      "file": "a-desktop-people-1.webp",
+      "bytes": 54212,
+      "sha256": "f056f5459baab9878d765382a168dc2747ce9c8af7ce7cbb16e873319e523345",
+      "concept": "a",
+      "device": "desktop",
+      "scene": "people",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3799
+    },
+    {
+      "file": "a-desktop-archive.webp",
+      "bytes": 54516,
+      "sha256": "536330aac57067117fa04a2446ebcd36bd0351f8a6fa1e8f8ee7ef27bbb063a2",
+      "concept": "a",
+      "device": "desktop",
+      "scene": "archive",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport spotlight; may show a segment of the full archive on mobile",
+      "scrollY": 880
+    },
+    {
+      "file": "a-mobile-doctrine-1.webp",
+      "bytes": 40512,
+      "sha256": "9dd0d156dcb4236c11c836fabe7b32cbb62759fa4297a1cb436637eb3d19777d",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 134
+    },
+    {
+      "file": "a-mobile-doctrine-2.webp",
+      "bytes": 28430,
+      "sha256": "cd0611ac315269f32245d18aef4f855926c4c1aa3e7860b5f01884bb702ed163",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 888
+    },
+    {
+      "file": "a-mobile-doctrine-3.webp",
+      "bytes": 28850,
+      "sha256": "078c476fcc1e78ea5d5927f57c249f54c891a94c8227e394a3597c1e948a1afc",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 3,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 1642
+    },
+    {
+      "file": "a-mobile-doctrine-4.webp",
+      "bytes": 31230,
+      "sha256": "ceb55a7b836bf9f0ae3f98983aad999c5f99bbc80ddcff87f62c3d4211a140cd",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 4,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2396
+    },
+    {
+      "file": "a-mobile-remains-1.webp",
+      "bytes": 33206,
+      "sha256": "34568aa05a106b2b1190c990472f590cbed904b25ee5c1646f595d543d20760a",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2496
+    },
+    {
+      "file": "a-mobile-remains-2.webp",
+      "bytes": 33204,
+      "sha256": "13f3b5c22d15a6e8f7f1b5dbc0c2abcb4ad689012b3a0c8c5789b0f64fe91a8b",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3250
+    },
+    {
+      "file": "a-mobile-remains-3.webp",
+      "bytes": 38322,
+      "sha256": "ae56ea724039c93b9af16fa63238cbdeb360e5bb3d371ae9343203190375bea7",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 3,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4004
+    },
+    {
+      "file": "a-mobile-geography-1.webp",
+      "bytes": 34848,
+      "sha256": "d1a5beef348396ab8041023831f859d7baa20906662659c10c47eaca2a83818d",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "geography",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4153
+    },
+    {
+      "file": "a-mobile-people-1.webp",
+      "bytes": 29810,
+      "sha256": "fc32ce497a55b26d8c6781bee1019a427775ca15521aa3be2e84f16b12bfe7ac",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "people",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4930
+    },
+    {
+      "file": "a-mobile-archive.webp",
+      "bytes": 22456,
+      "sha256": "1b9703ae836ddfc8bbe7c3ec4cd2df646e48439c275dc1bfd36d24f737f7b611",
+      "concept": "a",
+      "device": "mobile",
+      "scene": "archive",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport spotlight; may show a segment of the full archive on mobile",
+      "scrollY": 1053
+    },
+    {
+      "file": "b-desktop-doctrine-1.webp",
+      "bytes": 75628,
+      "sha256": "359ed0e43ae493a38a85ad45e24a4c6bee3139762b5072e5105ddaa4019ca3f9",
+      "concept": "b",
+      "device": "desktop",
+      "scene": "doctrine",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 99
+    },
+    {
+      "file": "b-desktop-doctrine-2.webp",
+      "bytes": 50158,
+      "sha256": "bec3e4ec2bff86f67ecbc7238ac2584de1026f59a4dfd1e300c15792b0e99b61",
+      "concept": "b",
+      "device": "desktop",
+      "scene": "doctrine",
+      "segment": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 909
+    },
+    {
+      "file": "b-desktop-remains-1.webp",
+      "bytes": 51216,
+      "sha256": "bfa87fdc46d68d79da63b71cd6fc21f665b0cddd308fba5884f809b6a9db2049",
+      "concept": "b",
+      "device": "desktop",
+      "scene": "remains",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 1619
+    },
+    {
+      "file": "b-desktop-remains-2.webp",
+      "bytes": 38972,
+      "sha256": "482cb61684e8c9adefb683c7beb37fbc4111fc04c0096e4f24edcf679767b826",
+      "concept": "b",
+      "device": "desktop",
+      "scene": "remains",
+      "segment": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2429
+    },
+    {
+      "file": "b-desktop-geography-1.webp",
+      "bytes": 69042,
+      "sha256": "2243bbc0a8c6ed4512513764b9bd5b4721b2d33852614373f1ff49b87b1dd6b6",
+      "concept": "b",
+      "device": "desktop",
+      "scene": "geography",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3097
+    },
+    {
+      "file": "b-desktop-people-1.webp",
+      "bytes": 52002,
+      "sha256": "22f98345b71568315f9618f6a6267b6425a2665f59eaa6daff1e2f9f26c131ba",
+      "concept": "b",
+      "device": "desktop",
+      "scene": "people",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3957
+    },
+    {
+      "file": "b-desktop-archive.webp",
+      "bytes": 50770,
+      "sha256": "9c65ef59c03cc410566ece83f717b92840efb493d696009a2be0da18281134a7",
+      "concept": "b",
+      "device": "desktop",
+      "scene": "archive",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport spotlight; may show a segment of the full archive on mobile",
+      "scrollY": 949
+    },
+    {
+      "file": "b-mobile-doctrine-1.webp",
+      "bytes": 32974,
+      "sha256": "b8cbc1d42493aca0cf2cc6c7310099847b56060119a42f27701b6eaeed6cf614",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 134
+    },
+    {
+      "file": "b-mobile-doctrine-2.webp",
+      "bytes": 30210,
+      "sha256": "906607e33a90d704d2077b48b629eb06058e19f65bac7273a28cd6bcbd7ea87c",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 888
+    },
+    {
+      "file": "b-mobile-doctrine-3.webp",
+      "bytes": 31342,
+      "sha256": "5469fca3519fdcd0b78b8d2ceded6ef907ec6a430476b3cf8a2173a399f1facb",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 3,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 1642
+    },
+    {
+      "file": "b-mobile-doctrine-4.webp",
+      "bytes": 30316,
+      "sha256": "07a31f9ae3521f2de72112edfbf49a34cf2882bff0750ca11e145a594dd5348b",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 4,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2396
+    },
+    {
+      "file": "b-mobile-remains-1.webp",
+      "bytes": 31706,
+      "sha256": "36701c38e6c64a97e808ddc1d78b2eddefc1a1bde7a9d49e32f600f9db0cf033",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2509
+    },
+    {
+      "file": "b-mobile-remains-2.webp",
+      "bytes": 30264,
+      "sha256": "1990a58c8de940a3b3df041c6301b0efffaa3d902beaea24ca599ba65e306fef",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3263
+    },
+    {
+      "file": "b-mobile-remains-3.webp",
+      "bytes": 35242,
+      "sha256": "89874b0c061b06c942c298936a79af6589bcf1f7caa7e2e50d551602d08bca01",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 3,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4017
+    },
+    {
+      "file": "b-mobile-geography-1.webp",
+      "bytes": 34684,
+      "sha256": "48dec0fbfcf53fbe45e9e3fbc84d4cbcec3c307739aae01e1c72b9c1e5b8546d",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "geography",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4181
+    },
+    {
+      "file": "b-mobile-people-1.webp",
+      "bytes": 29870,
+      "sha256": "f72d3aa5a6b87b0f042daf253f993ec201afbc09789af5333f22460c4e707350",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "people",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4958
+    },
+    {
+      "file": "b-mobile-archive.webp",
+      "bytes": 30652,
+      "sha256": "6d8425a696f3175d7b6e0b6ede3102ccb8d232a9941d88f32c778e0ee73a32b7",
+      "concept": "b",
+      "device": "mobile",
+      "scene": "archive",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport spotlight; may show a segment of the full archive on mobile",
+      "scrollY": 1308
+    },
+    {
+      "file": "c-desktop-doctrine-1.webp",
+      "bytes": 66052,
+      "sha256": "cd28d120cf48e8fa4359f101d89c4b4cc01d9f182213450dc6a39db9b0e609cf",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "doctrine",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 99
+    },
+    {
+      "file": "c-desktop-doctrine-2.webp",
+      "bytes": 45728,
+      "sha256": "25e5ad7a142ff1b5216d453f6cad1d04a8d5d8700d3ed6d10898345b7911cfa3",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "doctrine",
+      "segment": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 909
+    },
+    {
+      "file": "c-desktop-doctrine-3.webp",
+      "bytes": 64708,
+      "sha256": "0ab6110f5f9a8b79b211b70b1396b35b43ce1c6f5028f4449c9a2ba5fb5befa4",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "doctrine",
+      "segment": 3,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 1719
+    },
+    {
+      "file": "c-desktop-remains-1.webp",
+      "bytes": 73034,
+      "sha256": "e772844106568051ff7466e9dfbdbcba9e165fd9f40bc7b6e6585f3ae7736323",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "remains",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 1818
+    },
+    {
+      "file": "c-desktop-remains-2.webp",
+      "bytes": 50072,
+      "sha256": "ba83f49c4a4eb3b1ddab42bf622e9fcc0845a23df1e234218a6a68ad80c2151a",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "remains",
+      "segment": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2628
+    },
+    {
+      "file": "c-desktop-geography-1.webp",
+      "bytes": 67296,
+      "sha256": "c302dec05573070f5a0a751034e10eabe751a2bbabccbd3c18c373e07a7a2e3e",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "geography",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3133
+    },
+    {
+      "file": "c-desktop-people-1.webp",
+      "bytes": 54330,
+      "sha256": "d503d71d6e2a498bb4b3cc0f83498f9367001cfd34af27fc6885d7d13b018d98",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "people",
+      "segment": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3952
+    },
+    {
+      "file": "c-desktop-archive.webp",
+      "bytes": 45936,
+      "sha256": "bd4309802c875dbcf532a6d6eb69b7afd1f85975b2bc63d92c35e57c3402993b",
+      "concept": "c",
+      "device": "desktop",
+      "scene": "archive",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": 1,
+      "mode": "native viewport spotlight; may show a segment of the full archive on mobile",
+      "scrollY": 975
+    },
+    {
+      "file": "c-mobile-doctrine-1.webp",
+      "bytes": 34350,
+      "sha256": "1fd0a10272777573647880ce4e5179f25cab3b3fb7ae9f4aca898988f0f802dc",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 134
+    },
+    {
+      "file": "c-mobile-doctrine-2.webp",
+      "bytes": 23040,
+      "sha256": "e6380d09349d913c135f3e7dfe443a7512b03456ea5443e2508ee4eb64df9f81",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 888
+    },
+    {
+      "file": "c-mobile-doctrine-3.webp",
+      "bytes": 33828,
+      "sha256": "ad1e2f67c97241aa3c34e85f42f7bd996e5b4f6f659c1ebf819145b072f7e0a2",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 3,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 1642
+    },
+    {
+      "file": "c-mobile-doctrine-4.webp",
+      "bytes": 31380,
+      "sha256": "459424f394177978ef3926a2d688ad7251b6c8395d7a7c079ac89b7c3ddce649",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "doctrine",
+      "segment": 4,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2396
+    },
+    {
+      "file": "c-mobile-remains-1.webp",
+      "bytes": 34014,
+      "sha256": "df7e7ad4ecfb59dbc8c9fb9f1e19220444a4be6a42099fc175b4b42c9b5dc824",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 2492
+    },
+    {
+      "file": "c-mobile-remains-2.webp",
+      "bytes": 32286,
+      "sha256": "f39d1f5ccf442368f5ad3377c7a17f454cfafb19c672f7952e83cf445eacfb86",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 3246
+    },
+    {
+      "file": "c-mobile-remains-3.webp",
+      "bytes": 35344,
+      "sha256": "2e1c9bd5f1c2239a782d5c138935093cef231f0814b8cd0a0d98a5dc742f06a3",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "remains",
+      "segment": 3,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4000
+    },
+    {
+      "file": "c-mobile-geography-1.webp",
+      "bytes": 34676,
+      "sha256": "b1f9d2e020679717c0bcd865d72f41b6511c32ccac6ee3bf3d8dd76066f35b6e",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "geography",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 4272
+    },
+    {
+      "file": "c-mobile-people-1.webp",
+      "bytes": 29836,
+      "sha256": "cca6f516bad500ca73a5458f7b38a147317561c3ef8b808a6ad3b51e866faa9d",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "people",
+      "segment": 1,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport; reduced motion; WebP80; no retouch/stitch",
+      "scrollY": 5049
+    },
+    {
+      "file": "c-mobile-archive.webp",
+      "bytes": 25466,
+      "sha256": "50ef6bddb65812f37545b8bb408ed4f2c8e69e5f9a0fdbb765e5facd93fa4f00",
+      "concept": "c",
+      "device": "mobile",
+      "scene": "archive",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": 1,
+      "mode": "native viewport spotlight; may show a segment of the full archive on mobile",
+      "scrollY": 1318
+    }
+  ],
+  "axe": [
+    {
+      "concept": "a",
+      "device": "desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              ".plate > .eyebrow"
+            ],
+            [
+              ".gate > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "a",
+      "device": "mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              ".plate > .eyebrow"
+            ],
+            [
+              ".gate > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "b",
+      "device": "desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              ".fracture-opening > .heading > h2"
+            ],
+            [
+              ".fracture-opening > .heading > h2 > em"
+            ],
+            [
+              ".fracture-opening > .heading > .translation[lang=\"ru\"]"
+            ],
+            [
+              "text"
+            ],
+            [
+              ".gate > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "b",
+      "device": "mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              ".fracture-opening > .heading > h2"
+            ],
+            [
+              ".fracture-opening > .heading > h2 > em"
+            ],
+            [
+              ".fracture-opening > .heading > .translation[lang=\"ru\"]"
+            ],
+            [
+              "text"
+            ],
+            [
+              ".gate > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "c",
+      "device": "desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "text"
+            ],
+            [
+              ".gate > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "c",
+      "device": "mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "text"
+            ],
+            [
+              ".gate > span"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "httpErrors": [],
+  "limits": "Chromium concept checks only. No R2 integration/R3 cross-engine/actual200%/performance or independent R4 verdict.",
+  "browser": "149.0.7827.55",
+  "playwright": "1.61.1",
+  "totalBytes": 2229548,
+  "pass": true,
+  "summary": {
+    "checks": 116,
+    "failed": 0,
+    "captures": 52
+  },
+  "prototypeHashes": {
+    "a.html": "8f63fb97e23e9ea50951f9c3d0e2c29899e5882bb40b96feee3d577c71c653a7",
+    "b.html": "666126e4674740df1688a5449215a58b9a5f9b56f60b8dd407902974fd64fbb6",
+    "c.html": "85746883081fc3ffec6817b67d3ceb5bb6f151cd7d8a8dafd0e823cadaf19708",
+    "concepts.css": "51892b8612b1460c076447f9be3de1e82b8db03fc5dd62cdd11228d3e343edd4",
+    "build_concepts.py": "fd3dace2538c5fadaa2627724a59c83154c9e14ddd3709961dd464b1c9bc3b19",
+    "capture.cjs": "fb772b47425447b7f6b127b3687c77606459ad16c4d81d35e59712ce6339ff6e"
+  }
+}

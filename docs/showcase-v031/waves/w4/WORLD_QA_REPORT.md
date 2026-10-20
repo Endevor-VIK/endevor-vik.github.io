@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.WORLD_QA_REPORT
   title: "0524.W4 — G3/G4 measured QA and residuals"
-  status: G3_EXECUTED / G4_COMPLETE_WITH_LIMITS / GATE_B_PENDING
+  status: HISTORICAL_G3_G4 / CREATOR_VISUAL_REJECTED
   deployment: NOT_DEPLOYED
   mode: QA report / reproducibility contract
   goal: "Зафиксировать реально исполненные G3/G4 checks, baseline failures и границы evidence"
@@ -14,6 +14,8 @@ AXS_HEADER_META:
 -->
 
 # WORLD — G3 / G4 QA
+
+**Subsequent CREATOR visual decision: Gate B NOT ACCEPTED.** [W4.R directive](../w4r/W4R_CREATOR_DIRECTIVE.md) requires artistic recovery. The following is historical verification/implementation evidence for b85fbb0; it does not approve R1 concepts or a new implementation.
 
 **Runtime/test freeze:** `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`. **BEFORE:** `6b082e5f262c09a123748273da42277d3a29a6c2`. G2 реализован по [Gate A R1–R6](W4_GATE_A_ACCEPTANCE.md); Gate B PENDING. Этот отчёт разделяет выполненные проверки, исходные failures и неподтверждённые области. Он не является CREATOR visual acceptance или разрешением merge/deploy.
 

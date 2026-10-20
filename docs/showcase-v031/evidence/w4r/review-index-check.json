@@ -1,0 +1,200 @@
+{
+  "scope": "offline R1 comparison router only",
+  "browser": "149.0.7827.55",
+  "checks": [
+    {
+      "concept": "a",
+      "device": "desktop",
+      "scene": "archive",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "desktop",
+      "scene": "doctrine",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "desktop",
+      "scene": "remains",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "desktop",
+      "scene": "geography",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "desktop",
+      "scene": "people",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "mobile",
+      "scene": "archive",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "mobile",
+      "scene": "doctrine",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "mobile",
+      "scene": "remains",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "mobile",
+      "scene": "geography",
+      "pass": true
+    },
+    {
+      "concept": "a",
+      "device": "mobile",
+      "scene": "people",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "desktop",
+      "scene": "archive",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "desktop",
+      "scene": "doctrine",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "desktop",
+      "scene": "remains",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "desktop",
+      "scene": "geography",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "desktop",
+      "scene": "people",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "mobile",
+      "scene": "archive",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "mobile",
+      "scene": "doctrine",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "mobile",
+      "scene": "remains",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "mobile",
+      "scene": "geography",
+      "pass": true
+    },
+    {
+      "concept": "b",
+      "device": "mobile",
+      "scene": "people",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "desktop",
+      "scene": "archive",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "desktop",
+      "scene": "doctrine",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "desktop",
+      "scene": "remains",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "desktop",
+      "scene": "geography",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "desktop",
+      "scene": "people",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "mobile",
+      "scene": "archive",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "mobile",
+      "scene": "doctrine",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "mobile",
+      "scene": "remains",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "mobile",
+      "scene": "geography",
+      "pass": true
+    },
+    {
+      "concept": "c",
+      "device": "mobile",
+      "scene": "people",
+      "pass": true
+    },
+    {
+      "name": "offline router overflow 1440",
+      "pass": true
+    },
+    {
+      "name": "offline router overflow 390",
+      "pass": true
+    },
+    {
+      "name": "keyboard focusable native control/link",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

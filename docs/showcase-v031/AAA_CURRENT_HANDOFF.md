@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: W4_VERIFIED_WITH_LIMITS / G4_COMPLETE / GATE_B_PENDING
+  status: W4R_R0_R1_PROPOSED / GATE_B_NOT_ACCEPTED / GATE_R_A_PENDING
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,7 +18,39 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-21 / READY FOR CREATOR GATE B
+## CURRENT STATE — 2026-10-21 / W4.R R0–R1 / GATE R-A PENDING
+
+**CREATOR rejected W4 visual direction: Gate B NOT ACCEPTED / REWORK REQUIRED.** [New authority](waves/w4r/W4R_CREATOR_DIRECTIVE.md) supersedes the previous ready-for-Gate-B recommendation. Previous G3/G4 remains historical technical evidence for exactb85fbb0; it is not artistic approval or proof for a new version.
+
+- PR12 `w4/world-narrative` remains Draft/open; start reportingHEAD7413405628aba95ff7b34d486d6b3d167d32f66b. Runtime/assets/tests still exactb85fbb0; main6b082e5/PR11af20ff6/Canon3884ea43/root gitlinks untouched. Actual HEAD/status/PR recheck required.
+- Authorized now: R0 visual root-cause/Canon terminology and R1 **three alternatives**, preview before full integration. [SPEC / Steps A–E](waves/w4r/W4R_SPEC.md). Product R2 starts only after explicit CREATOR Gate R-A direction selection.
+- Done: [removal/WHY audit and AXIOM∅ comparison](waves/w4r/R0_VISUAL_ROOT_CAUSE.md); [first-use Canon trace](waves/w4r/R0_TERMINOLOGY_TRACE.md); [three art directions/wireframes/typography](waves/w4r/R0_R1_PROPOSAL.md); [native choices](waves/w4r/R1_VISUAL_CHOICES.md); [offline BEFORE/CURRENT/PROPOSED](evidence/w4r/REVIEW.html). A=palimpsest (Lead recommends), B=fracture line, C=witness chamber. No selection inferred.
+- New limited unlock for later R2: external map/chars headings/introductions/transitions only. Protected map data/6IDs/images/axes/OMEGA/selection/focus; portraits/cards/bios/relations/AXIOM∅ internals untouched. WORK8real shots/viewer still primary; NEURA lifecycle not resolved.
+- R1 comp checks116/0, axe6/0violations with incompletes;7 geometry sizes;52 native1440desktop/390mobile frames;33/0 offline-router checks. [QA and limitations](waves/w4r/R1_QA_REPORT.md). Raw first noJS harness assertion failure retained. New evidence separate≤6MiB; old W4 evidence unchanged. Own transient cleanup recorded; no benchmark/browser queued.
+- **NOT RUN:** R2 implementation, R3 newproduct3engines×7viewport/actual200%/keyboard/noJS/RM/protected/performance againstb85; R4 independent artistic+technical review. Do not reuse old G4 as new PASS. R-B pending; Gate B rejected; merge/deploy prohibited.
+- Next: CREATOR views A/B/C and approves one direction at Gate R-A. Per directiveI, no full integration before this choice. No Canon/main/gitlink/production/version change.
+
+```text
+AXIOM SHOWCASE / RESUME PACKET
+AUTHORITY: CREATOR W4.R visual rejection; waves/w4r/W4R_CREATOR_DIRECTIVE.md
+TASK: 0524.W4.R R0/R1 proposal complete; Gate R-A choice pending
+BRANCH: w4/world-narrative / PR12 Draft; recheck actual HEAD/status/main
+SOURCE: rejected runtime b85fbb0; historical BEFORE6b082e5; Canon3884ea43 read-only
+DONE: removalWHY + terminology audit;3distinct comps A/B/C;52nativeframes;116/0 compchecks;33/0 router
+ART CHOICE: A recommended by Lead; CREATOR has not selected
+EVIDENCE: evidence/w4r/REVIEW.html; waves/w4r/R1_VISUAL_CHOICES.md; R0_R1_PROPOSAL.md
+NEW LIMITED UNLOCK: only external map/chars intros; protected internals still exact
+NOT RUN: R2/R3/R4/new performance; old G4 applies only to rejected b85
+GATES: GateB NOT ACCEPTED; R-A PENDING; R-B PENDING; PR12 DRAFT
+FORBIDDEN: premature integration, merge/deploy, Canon/rootgitlinks, protected internals edits
+NEXT: CREATOR Gate R-A selection, then scoped R2 and new exactSHA R3/R4
+CLEANUP: own marked proposal scratch removed after durable promotion; no server/browser queued
+FIRST: read new directive/spec; verify refs/runtime; do not treat previous technical PASS as visual approval
+```
+
+## HISTORICAL SNAPSHOT — W4 verification before CREATOR rejection
+
+### W4 state before visual rejection
 
 Authority: [Gate A/R1–R6](waves/w4/W4_GATE_A_ACCEPTANCE.md), [Principal interim review](waves/w4/W4_PRINCIPAL_INTERIM_REVIEW.md) и команда CREATOR продолжать. G2 принят; оставшееся исполнение завершено: qualified fixed40 → independent G4 → final visual/decision packet. **Gate B HOLD / CREATOR decision not given.** Нового художественного/архитектурного change request нет.
 

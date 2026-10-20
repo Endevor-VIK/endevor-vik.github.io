@@ -1,0 +1,22 @@
+{
+  "clientDate": "2026-10-21",
+  "recordedAtUtc": "2026-10-20T21:58:47.635887+00:00",
+  "status": "R0_R1_PROPOSAL_VALIDATED; GATE_R_A_PENDING",
+  "sourceReportingStart": "7413405628aba95ff7b34d486d6b3d167d32f66b",
+  "runtimeFreeze": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+  "runtimeAssetsTestsDelta": "",
+  "markdownFilesChecked": 13,
+  "relativeLinksChecked": 132,
+  "brokenRelativeLinks": [],
+  "nativeFrameHashChecks": 52,
+  "prototypeHashes": "all match capture manifest",
+  "referenceFramesReusedAndVerified": 38,
+  "compChecks": "116/0",
+  "offlineRouterChecks": "33/0",
+  "evidenceBytesBeforeRecord": 2450473,
+  "budgetMiB": 6,
+  "R2_R3_R4": "NOT RUN",
+  "GateB": "NOT ACCEPTED / visual rework required",
+  "GateR_A": "PENDING / CREATOR selection",
+  "scope": "Documentation and standalone R1 concepts only; product/Canon/protected internals untouched"
+}

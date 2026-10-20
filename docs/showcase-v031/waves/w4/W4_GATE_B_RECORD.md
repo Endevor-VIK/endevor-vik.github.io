@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.GATE_B_RECORD
   title: "0524.W4 — Gate B decision record and CREATOR visual handoff"
-  status: READY_FOR_CREATOR_GATE_B / GATE_B_HOLD
+  status: CREATOR_NOT_ACCEPTED / W4R_VISUAL_RECOVERY_REQUIRED
   deployment: NOT_DEPLOYED
   mode: Final-review packet / decision reserved to CREATOR
   goal: "Собрать exact source, evidence, независимый verdict и визуальную передачу без самоприёмки"
@@ -14,7 +14,9 @@ AXS_HEADER_META:
 -->
 # 0524.W4 — Gate B record
 
-**CREATOR decision: HOLD / NOT YET GIVEN.** Пакет готов для финального визуального решения: qualified fixed40 performance и независимый G4 завершены на frozen b85fbb0 с записанными ограничениями. Это техническая передача, не самостоятельное принятие Gate B.
+**CREATOR decision: NOT ACCEPTED — VISUAL REWORK REQUIRED.** [W4.R recovery directive](../w4r/W4R_CREATOR_DIRECTIVE.md) supersedes the prior ready-for-decision recommendation. Functional verification remains PASS WITH LIMITS for b85fbb0; AAA visual direction rejected. R0/R1 alternatives precede CREATOR Gate R-A; new R2/R3/R4 and final Gate R-B remain required.
+
+Below is the historical W4 verification/visual handoff packet, not new approval.
 
 ## Exact review object
 
@@ -36,7 +38,7 @@ AXS_HEADER_META:
 | Legacy baseline debt | 230 PASS / 2 existing FAIL; без исправления в W4 | [Separate HERO debt](W4_BASELINE_HERO_DEBT.md) |
 | Qualified paired performance | **PASS bounded lab / recorded limits**, fixed40 / n=10/profile/arm | [Full medians/ranges/SD/method](../../evidence/w4/qa/performance/OBSERVATIONS.md) |
 | Independent G4 overall | **COMPLETE / PASS WITH RECORDED LIMITS**, exact b85fbb0 | [Independent review](W4_G4_REVIEW.md), F01/F02 resolved |
-| CREATOR Gate B | **HOLD / decision pending** | Reserved to CREATOR |
+| CREATOR Gate B | **NOT ACCEPTED / visual rework required** | [New CREATOR direction](../w4r/W4R_CREATOR_DIRECTIVE.md) |
 
 ## Performance decision evidence
 

@@ -1,0 +1,306 @@
+[
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/black-sun-1.webp",
+    "name": "black-sun-1",
+    "sha256": "db68736aaa05060f0879b4d420706e926f111757b81323d6285c200dcc731671",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/black-sun-2.webp",
+    "name": "black-sun-2",
+    "sha256": "493305f879a3f3c5d53433981e6f82b5fb6cd034996d7131c9de4738ef1393a1",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/black-sun-3.webp",
+    "name": "black-sun-3",
+    "sha256": "bce22ff8e87a462413a414fa0d514ae289429071837d5372f7de1d7daafa6610",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/what-remains-1.webp",
+    "name": "what-remains-1",
+    "sha256": "08473ffafc58fddbdeb5bee9ca55e3d149e4f471ff7f0463bc1cd733079a3463",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/what-remains-2.webp",
+    "name": "what-remains-2",
+    "sha256": "670febea903415126d52e0c11077b6ed19bf337ebb0de848dd56c95a77047fd5",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/what-remains-3.webp",
+    "name": "what-remains-3",
+    "sha256": "e54816e36dd53a2191762203a71bb2b7d47e7821134f33f53d7d6050d6a6cb34",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/protected-map.webp",
+    "name": "protected-map",
+    "sha256": "e6ab0c96479dd9123e698d3823c84de8828705ef86acb1a4564f568789aa72b1",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/protected-people.webp",
+    "name": "protected-people",
+    "sha256": "23cd58e34f01ad5908a5da34bf13eb96f65aacfbaae3d0e085ba668a26721611",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "1440x900",
+    "file": "../w4/before/chromium/1440x900/protected-axiom.webp",
+    "name": "protected-axiom",
+    "sha256": "1411554eb8927517f1c26e21daaa76b2268d4a2059d6e65dbd0a455d7d27cd85",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/black-sun-1.webp",
+    "name": "black-sun-1",
+    "sha256": "ec8800d573bb8ed5d523481574aeb2aa3b3d7796accdcac4191d661cfcf0c264",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/black-sun-2.webp",
+    "name": "black-sun-2",
+    "sha256": "b63f5232fecf147f44f48b7aefd518de7b65f6e030048fcb57865a5ffe3f17fe",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/black-sun-3.webp",
+    "name": "black-sun-3",
+    "sha256": "7c6ce1a0f4014d9df9dacaa031610bcd579326de6db3feee1b5d5821ed8dc205",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/black-sun-4.webp",
+    "name": "black-sun-4",
+    "sha256": "94e938e03cd53070e92321e96a5025d5edd62fcafaa32263b992e4c10388c836",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/what-remains-1.webp",
+    "name": "what-remains-1",
+    "sha256": "bcbba420d8fc0d6699ec8ca2e434abaa92780f17056f9b43dfe1a8d9d2ee5309",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/what-remains-2.webp",
+    "name": "what-remains-2",
+    "sha256": "3591fab5009d3667965cb4007a21d94902a9189bdfbdda72861b3c7b617b2dfc",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/what-remains-3.webp",
+    "name": "what-remains-3",
+    "sha256": "f99429c18e4bc3a1277760fb48441fc6f9eb91b634d785b5ee883d77588f693f",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/what-remains-4.webp",
+    "name": "what-remains-4",
+    "sha256": "4a8974199abfb62ceb1d20a0803e6e491c1d28d7442d34e822db1d9afc1ef597",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/what-remains-5.webp",
+    "name": "what-remains-5",
+    "sha256": "ebf9afe3a46cb649cb8a867b609211e266f0ca17c4fa70536054cac707fd9736",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/protected-map.webp",
+    "name": "protected-map",
+    "sha256": "7685d1870677982ad496b86ba58a1c122326ed921a22b2a5a424738279928b8a",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/protected-people.webp",
+    "name": "protected-people",
+    "sha256": "227383905ae832e22fb3cb0ab93857fe95292500fc5150786a0cce89d71756ff",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "before",
+    "viewport": "390x844",
+    "file": "../w4/before/chromium/390x844/protected-axiom.webp",
+    "name": "protected-axiom",
+    "sha256": "7c923394867e2b6498059b717d41df2b2967fc54e40511acfd3f798022cb8c19",
+    "sourceSha": "6b082e5f262c09a123748273da42277d3a29a6c2"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/black-sun-1.webp",
+    "name": "black-sun-1",
+    "sha256": "f23973f49d8e6e1367f6e49cb0777aaf9af48f9d7ed429fed80f7cf99a9ae2e7",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/black-sun-2.webp",
+    "name": "black-sun-2",
+    "sha256": "6ea15d1d99f2773ea5c7f73d92e11a8f1d1f35f007c6ebc8211367844d53899f",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/black-sun-3.webp",
+    "name": "black-sun-3",
+    "sha256": "23450b519b539c0bc24e9032d0fa876f93ba8ee740fcbe85110817fa2d8c9b17",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/what-remains-1.webp",
+    "name": "what-remains-1",
+    "sha256": "4cdd3fa36a0446dd9b88368c00611c9b87d0da21921006c77e69253cea2c4b10",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/what-remains-2.webp",
+    "name": "what-remains-2",
+    "sha256": "11265cfb8b39caa64e1d0e938165747c43cbd561b1a66fb9cb245db907a70a5c",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/protected-map.webp",
+    "name": "protected-map",
+    "sha256": "0c22531aed5b9c62bda30cfce9eb64301363ddd952762b00e493fa9a9460bbca",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/protected-people.webp",
+    "name": "protected-people",
+    "sha256": "9e744a861759574d7731975f5abd94f77cab6f6a0cd11d5a6c364d756c683231",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "1440x900",
+    "file": "../w4/after/chromium/1440x900/protected-axiom.webp",
+    "name": "protected-axiom",
+    "sha256": "193236f1402c3eb120ee6fc6555c8e2caa0e577824220d2bfb3e59ebcabff49c",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/black-sun-1.webp",
+    "name": "black-sun-1",
+    "sha256": "f8097d9aa9a19a3da2467409507d5738a22119c3aca4c3acca64e5971e9ce013",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/black-sun-2.webp",
+    "name": "black-sun-2",
+    "sha256": "c4e0120f2cad63b0569821964e1317d93c9c87fe97e427029bda60a397a23592",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/black-sun-3.webp",
+    "name": "black-sun-3",
+    "sha256": "df8b3fa735d013a7802604105e401d39676e2b8f3642c2403a5e566c47202e16",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/what-remains-1.webp",
+    "name": "what-remains-1",
+    "sha256": "969ee7a7528fb6c5f9cfbed5b2b5b5d35f13ce65a42dff1129e0a64b1393c343",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/what-remains-2.webp",
+    "name": "what-remains-2",
+    "sha256": "54e35d06d601e62bdbb774b68403cf13fafa6d131be9e62df74b42903c04ac4e",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/what-remains-3.webp",
+    "name": "what-remains-3",
+    "sha256": "b835d3b052c7eff2e97a8b478789af4cdc705d7452f6e5fb338f5340554daf1b",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/protected-map.webp",
+    "name": "protected-map",
+    "sha256": "7450e42120b2040f712c469b22cff1dd57e531883b186e125e7ad1a65008eb21",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/protected-people.webp",
+    "name": "protected-people",
+    "sha256": "e0e7bb305e456d5c6d342811c381c920c585747b5a7daea5363a554e2094e77a",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  {
+    "phase": "after",
+    "viewport": "390x844",
+    "file": "../w4/after/chromium/390x844/protected-axiom.webp",
+    "name": "protected-axiom",
+    "sha256": "84e7ebe6fedc4511bb8eaad0888a12fb0760905e9ebd06c1086615b172133840",
+    "sourceSha": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  }
+]

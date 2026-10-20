@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.IMPLEMENTATION_REPORT
   title: "0524.W4 — controlled WORLD implementation"
-  status: IMPLEMENTED_FROZEN / GATE_B_PENDING
+  status: HISTORICAL_IMPLEMENTATION_FROZEN / W4R_REQUIRED
   deployment: NOT_DEPLOYED
   mode: AgentOps Steps A–E and implementation record
   goal: "Передать проверяемую реализацию, сохранность и ограничения без самоприёмки"
@@ -13,6 +13,8 @@ AXS_HEADER_META:
   change_policy: "Факты QA только по manifest; protected/Canon/merge/deploy требуют отдельного разрешения"
 -->
 # 0524.W4 — implementation
+
+**Subsequent CREATOR visual decision: Gate B NOT ACCEPTED.** [W4.R directive](../w4r/W4R_CREATOR_DIRECTIVE.md) requires artistic recovery. The following is historical verification/implementation evidence for b85fbb0; it does not approve R1 concepts or a new implementation.
 
 WORLD теперь вводит читателя в историю прежде архивной доктрины. Продуктовые концепции перенесены в контекст трёх существующих WORK-карточек; на их месте показана жизнь цивилизации после BLACK SUN. RED PROTOCOL, TYPE A, оригинальные изображения и единственный архив восьми реальных интерфейсов сохранены.
 

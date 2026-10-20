@@ -1,0 +1,35 @@
+{
+  "clientDate": "2026-10-21",
+  "recordedAtUtc": "2026-10-20T21:57:58.725473+00:00",
+  "status": "OWN_MARKED_R1_SCRATCH_REMOVED_AFTER_PROMOTION",
+  "removed": [
+    {
+      "path": "/tmp/axs-0524-w4r-concepts/run-001",
+      "bytes": 2202868,
+      "ownerMarker": {
+        "kind": "axs-w4r-concept",
+        "uid": 1000,
+        "createdAt": "2026-10-20T21:51:37.699Z",
+        "retention": "last3 or14days; <=12MiB captures; no profiles/videos/traces"
+      },
+      "existsAfter": false
+    },
+    {
+      "path": "/tmp/axs-0524-w4r-concepts/run-002",
+      "bytes": 2270715,
+      "ownerMarker": {
+        "kind": "axs-w4r-concept",
+        "uid": 1000,
+        "createdAt": "2026-10-20T21:53:44.801Z",
+        "retention": "last3 or14days; <=12MiB captures; no profiles/videos/traces"
+      },
+      "existsAfter": false
+    }
+  ],
+  "durableFramesRehashed": 52,
+  "prototypeHashesMatched": true,
+  "chromeProcessIdsObservedAfterClose": [],
+  "processAction": "none; capture and router harness closed own browser/server in finally",
+  "runtimeAssetsTestsDelta": "",
+  "preserved": "Existing W4 evidence, product sources/assets/tests, project worktrees, Canon, gitlinks, global browser/dependency caches, foreign data/processes."
+}
