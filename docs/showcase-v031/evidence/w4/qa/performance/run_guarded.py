@@ -25,6 +25,7 @@ POLICY = {
     "measurement": {"sampleSeconds": 1, "foreignBrowsersAllowed": 0, "foreignBuildsAllowed": 0,
                     "foreignCpuPercentOneCoreThreshold": 100, "consecutiveHighCpuSamplesAllowed": 1,
                     "onViolation": "Stop only the owned Lighthouse runner; preserve the entire attempt; no selective sample culling"},
+    "storage": {"maxNewDurableAttemptBytes": 1048576, "format": "Compact JSON; every sample and diagnostic retained; raw Lighthouse reports only in bounded scratch"},
     "limits": "Only /proc-visible Linux activity is observed; Windows workloads and real-device/field performance are not certified."
 }
 OWN_RUNNER = None
@@ -36,7 +37,11 @@ def now():
 
 def write_json(file, value):
     temp = file.with_name(file.name + ".writing")
-    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n")
+    data = json.dumps(value, ensure_ascii=False, separators=(",", ":")) + "\n"
+    others = sum(p.stat().st_size for p in file.parent.iterdir() if p.is_file() and p not in (file, temp))
+    if others + len(data.encode("utf-8")) > POLICY["storage"]["maxNewDurableAttemptBytes"]:
+        raise RuntimeError("Owned durable attempt exceeds 1 MiB; stopping without discarding samples")
+    temp.write_text(data)
     temp.replace(file)
 
 

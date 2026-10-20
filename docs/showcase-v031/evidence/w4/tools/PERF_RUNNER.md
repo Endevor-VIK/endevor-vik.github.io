@@ -71,7 +71,12 @@ attempt; foreign CPU >100% одного ядра в двух последова�
 Регистрируются только PID/PPID/comm/executable basename/CPU/classification; чужие
 argv/env/URLs не записываются. Видимость ограничена Linux `/proc`, не Windows host load.
 
-Повтор разрешается запускать только после нового GO координатора:
+20.10 координатор выдал conditional GO для следующего полного повтора: естественное
+завершение внешних browser/build процессов и 15 последовательных тихих samples.
+Дополнительного разрешения после выполнения этого условия не требуется. До него
+работает только read-only watcher; повтор проверяет собственный preflight заново.
+Следующий пример показывает уже завершившийся attempt 2; для нового запуска нужны
+новые, ещё не существующие scratch/durable пути.
 
 ```bash
 python3 docs/showcase-v031/evidence/w4/qa/performance/run_guarded.py \
@@ -91,6 +96,12 @@ Guard не запустил ни одного браузера. Данные:
 [`attempt-2-quiet/guard.json`](../qa/performance/attempt-2-quiet/guard.json).
 Это корректный отказ метода, не product/performance FAIL. Квалифицированные пять пар
 остаются INCOMPLETE до реально свободного окна; чужие процессы не завершались.
+
+Guard сохраняет compact JSON со всеми samples и диагностикой, с потолком 1 MiB на
+новый durable attempt. Изменение сериализации не меняет frozen Lighthouse runner,
+sampling policy или settings. Общий retained evidence budget остаётся <50 MiB;
+полные raw LHR сохраняются в bounded scratch до независимой проверки, затем собственные
+временные данные удаляются после переноса summary и hash manifest.
 
 ## Воспроизведение
 

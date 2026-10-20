@@ -24,6 +24,7 @@ AXS_HEADER_META:
 - Reviewer: отдельный агент **canon_audit**. Подготовил read-only Canon audit и текстовые рекомендации до реализации; **не писал runtime HTML/CSS/JS или QA harness**, не внедрял исправления. Единственная запись reviewer в этой ветке — этот review record.
 - Authority: [Gate A](W4_GATE_A_ACCEPTANCE.md), [G2 SPEC](W4_G2_SPEC.md), R1–R6. Политика review прочитана в local AGENTS / AAA agent protocol / scorecard; protected и release boundaries соблюдаются.
 - После перерыва 20.10 повторно прочитаны Git status/HEAD и handoff. Runtime/assets/tests остались идентичны freeze; параллельный reporting delta Lead не изменялся reviewer.
+- При следующем reporting-only checkpoint повторно проверен HEAD `04492681a6ec5800f6da102cbd9462d31d47189f`: committed и working product/assets/tests diff против `b85fbb0` пуст. [Principal interim review](W4_PRINCIPAL_INTERIM_REVIEW.md) принимает G2 только для final verification и оставляет G4 INCOMPLETE / Gate B HOLD; [два HERO debt items](W4_BASELINE_HERO_DEBT.md) сохраняют literal FAIL. Эти записи согласуются с evidence и не дают authority исправлять HERO/protected scope или переобъявлять contaminated performance PASS. Параллельные правки guard/Gate B draft принадлежат Lead и reviewer не изменялись.
 
 ## Independent source and Canon checks
 
@@ -76,6 +77,40 @@ Full offline comparison router: [REVIEW.html](../../evidence/w4/REVIEW.html); em
 Изучен [diagnostic JSON](../../evidence/w4/qa/protected-pixel-diagnostic.json):84 pairs,0 missing;24 выходят за exploratory raw thresholds. Это **не pixel-identity PASS**. Диагностика включает matching engine/viewport/DPR1, excludes sticky/outside-target, ±1px alignment и дополнительный symmetric low-pass comparison; эти операции помогают исследованию, но не заменяют нативные изображения.
 
 Reviewer лично сравнил худшие рекомендованные native pairs: Chromium390 map, WebKit768 map, Firefox360 map и Firefox390 OMEGA; дополнительно Chromium1440 AXIOM и WebKit390 people. Во всех шести парах совпадают видимые объекты, crop, текстовые строки/переносы, геометрическая композиция и controls. Наблюдаются тонкие raster/вертикальные субпиксельные различия. Из этих кадров **не обнаружено композиционной регрессии**, но её отсутствие не доказывается для каждого uninspected кадра, каждой динамической фазы или физического устройства. Причина всей raw-разницы не объявляется установленной.
+
+## Scoped scorecard V1–V10 / T01–T10
+
+Применён [AAA_REVIEW_SCORECARD](../../AAA_REVIEW_SCORECARD.md). Ниже оцениваются только перечисленные лично просмотренные W4 samples и проверенные evidence contracts. Число `3/4` означает «уверенно профессионально» по этой шкале, а не требование новой художественной переработки уже принятого G2. `NOT RATED` не равно нулю или PASS. Средний балл не вычисляется: часть измерений отсутствует, а выборка не представляет весь сайт. Оценки не являются AAA/Principal/CREATOR acceptance.
+
+| Dimension | Scoped score | Лично наблюдавшаяся основа / непроверенная граница |
+| --- | --- | --- |
+| V1 Identity & originality | **3/4**, W4 visual samples | W01/W06/W02/W08, RED/graphite и собственный terminal/emblem language сохранены; новые тексты не вводят другую визуальную систему. Это оценка сохранённой идентичности изменённых сцен, не оригинальности всего продукта |
+| V2 Composition & hierarchy | **3/4**, changed scenes | Один dominant heading, контекст до archive, три последствия вместо product dossier grid; desktop/mobile pairs читаются последовательнее. Нет observed overlap в просмотренных кадрах; несмотренные кадры не получают балла |
+| V3 Typography & density | **3/4**, prose/captions in samples | Oswald/Golos/Mono выполняют разные роли; Golos body и reconstruction caption читаемы на390px и в corrected native200% reading frames. Все fonts/contrast conditions на физических экранах не измерялись |
+| V4 Imagery & sharpness | **3/4**, inspected native DPR1/crop | Основные объекты W01 и inherited art не потеряны, real captures отделены от concepts. Большие Retina/source-ratio limitations не получают числовой оценки и не объявляются исправленными |
+| V5 Motion & tactility | **NOT RATED** for full dimension | Static frames не измеряют плавность/FPS. Собственный RM keyboard journey и source/static-concept checks пройдены; обычное движение оценено только по QA artifacts, новый полный motion/GPU verdict не выдаётся |
+| V6 Responsive art direction | **3/4**, inspected360/390/768/1440 + reading zoom | Mobile сохраняет image→story, prose/context доступны; WebKit tablet и narrow Firefox samples не показывают сжатия текста. Это не оценка каждого viewport, физического телефона или Safari |
+| V7 Story & pacing | **3/4**, W4 narrative | У понятного обещания старого мира появился переход к разлому, затем человеческие последствия и силы. Загадка не заменена вымышленным объяснением. Reader-confidence — агентская heuristic, без user-study claims |
+| V8 Proof & professional confidence | **3/4**, WORK02/03/05 | Реальный screenshot/case доминирует в closed state; concepts вторичны и явно подписаны. Подтверждена честность новой подачи, не функциональная готовность всех показанных продуктов |
+| V9 Accessibility & inclusivity | **NOT RATED** for full dimension | Собственные13 keyboard/browser checks PASS, automation artifacts проверены, но manual NVDA/VoiceOver, полный ручной contrast audit и реальные слабые устройства не исполнены. Числом эти ограничения не закрываются |
+| V10 Cohesion & completeness | **3/4**, W4 transitions only | Entry→BLACK SUN→WHAT REMAINS→protected map и factions→epilogue сохраняют язык страницы. Whole HERO→CONTACT/404/loader visual completeness не пересматривалась и общей оценки не получает |
+
+Технические статусы ниже различают **W4 scoped contract** и более широкий scorecard. `PASS scoped` не означает новую сертификацию неизменённых подсистем; `NOT RUN` в ограничениях не превращается в PASS. Уже согласованные residuals не создают здесь новый scope для runtime ремонта.
+
+| Gate | Status in this review | Evidence / practical limit |
+| --- | --- | --- |
+| T01 Source integrity | **PASS scoped** | Exact runtime/test freeze, source blobs, whole protected sections и retained hashes перепроверены независимо. Reporting HEAD отличается только вне product/test trees; чужая delta не менялась |
+| T02 Functional navigation | **PASS W4 scoped** | Required matrix anchor/menu artifacts и собственный viewer/map focus-return journey; landscape initial-fold limit сохранён как baseline observation. Свежий reviewer walkthrough CONTACT/nested404/loader **NOT RUN**, их source не менялся |
+| T03 Archive and map | **PASS scoped** | Standard matrix/legacy artifacts плюс собственные disclosure/real1:1/map-open/focus checks; eight real triggers preserved. Полный drag/swipe/pixel-extents suite reviewer заново не исполнял, использовал названные QA artifacts |
+| T04 Access and semantics | **PASS automated/keyboard scope; manual AT NOT RUN** |24 axe runs с0 violations, recorded incomplete items, no-JS/RM artifacts, собственный13-check journey. Полный WCAG/SR PASS не заявлен |
+| T05 Responsive geometry | **W4 required matrix PASS; broader baseline FAIL retained** |21 combinations/0 failures, corrected native zoom, named visual samples. Literal legacy230/2 и short-landscape initial CTA limit не скрыты; scorecard в целом не объявляется all-green |
+| T06 Performance | **INCOMPLETE** | Первый20-run set CONTAMINATED, следующий preflight отказал до LH. Qualified paired medians/spread/regression classification ещё отсутствуют; FCP/LCP/CLS наблюдения не заменяют gate |
+| T07 Mobile resource behavior | **PASS changed-effect source/RM scope; broader device probes NOT RUN** | Новые concepts статичны, новые app JS/fonts/media отсутствуют; normal/no-JS/RM и DPR artifacts названы. Самостоятельный новый Save-Data/weak-memory/physical-device resource probe **NOT RUN**, CPU/performance остаётся T06 |
+| T08 Content/Canon integrity | **PASS scoped** | Explicit Canon trace, R1–R6 public-copy audit, authored reconstruction label, NEURA uncertainty, отсутствие новых live metrics/спойлерных утверждений |
+| T09 Privacy/rights | **PASS product-media delta preservation; fresh full audit NOT RUN** | Existing screenshots, art и font/media assets не менялись; source/hash proof проверен. Reviewer не повторял исторический full-size/derivative privacy/license audit и не заявляет новые права/лицензии |
+| T10 Release safety | **HOLD release; branch-authority boundary verified** | Gate A + Principal interim позволяют final verification; PR12 остаётся Draft, Gate B/merge/deploy не разрешены. Current production/gate TTL не проверялся этим source/visual review; готовность release не заявлена |
+
+Здесь нет нового художественного/архитектурного change request. Незаполненные широкие измерения записаны как границы уже выполненного review; единственный оставшийся обязательный execution gate текущего final-verification контракта — квалифицированный paired performance и последующий independent append.
 
 ## QA evidence scrutiny / remaining execution
 
