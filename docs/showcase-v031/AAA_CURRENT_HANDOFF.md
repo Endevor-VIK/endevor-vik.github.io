@@ -30,7 +30,7 @@ Authority: [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), reviewed propo
 - Independent G4 `canon_audit`: no new source/Canon/visual P0/P1;66frames viewed,13/13 riskbrowserPASS, correctednativezoom reviewed. Own record `W4_G4_REVIEW.md` final remains pending qualified performance. No more reviewer browsers planned.
 - **Performance unresolved:** first20observations completed but external Claude browser/build jobs contaminated them; OBSERVED/CONTAMINATED, not quiet gate. Guarded attempt2 refused preflight (0LH) because foreign tests remain live in `mgp7-ws/apps/e2e-run`. Never stop foreign processes. Need6minute quiet window,15s preflight +1s monitor, full5pairs rerun. CREATOR ответил: после завершения другой задачи; до фактического quiet window новый LH не запускается.
 - Host reboot cleared `/tmp`; main21matrix/996frames/legacyproof were already durable. BEFORE worktree restored at same `/tmp/axs-0524-w4-before-6b082e5`. Only lost narrowlandscape proof re-run, not fullmatrix. WebKitrootlessscratch cleaned by owner; browser cache retained.
-- Next: qualified5pairs → independentG4 final → finalreport/handoff/evidencecommit/newDraftPR. No Canon/rootgitlink/version/main/deploy writes. Required remaining approval: Gate B and any later merge/deploy/protected/Canon scope.
+- Next: qualified5pairs → independentG4 final → finalreport/handoff/evidencecommit/update DraftPR12. No Canon/rootgitlink/version/main/deploy writes. Required remaining approval: Gate B and any later merge/deploy/protected/Canon scope.
 
 ```text
 AXIOM SHOWCASE / RESUME PACKET
@@ -39,14 +39,14 @@ TASK: 0524.W4; implementation frozen b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5
 BRANCH: w4/world-narrative; runtime baseline6b082e5; Canon3884ea43 read-only
 WORKTREE: /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation
 DONE: G2;21×3engine matrix1656/0;996retainedframes;native200%18/18AFTER;G4source/visual+13riskchecks
-PENDING: qualifiedquietperformance;G4final;deliveryreportcommit/newDraftPR;GateB
+PENDING: qualifiedquietperformance;G4final;finalreport/updateDraftPR12;GateB
 PR: https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12 (Draft); evidence checkpoint e5f90f4
 PERF: qa/performance first20OBSERVED_CONTAMINATED; attempt2PREFLIGHT_NOT_QUIET0LH; foreignClaude mgp7-ws tests
 BROWSERS: allownclosed; perfagentreadyguard; don'tlaunchothersduringitsfutureGO
 EVIDENCE: evidence/w4/REVIEW.html + before/after/qa; WORLD_BEFORE_AFTER.md
 PRESERVE: fullworld/chars/AXIOM∅/III-IV,map/OMEGA,8realshots/viewer,art/fonts/palette
 FORBIDDEN: mergePR11/main,deploy,Canon/rootgitlink/version/protected edits,foreignprocesskill
-NEXT: verifyGit/status/currentexternalwork; getquietwindow→5pairs→G4final→docs/push/DraftPR;don'trepeatexecutedmatrix
+NEXT: verifyGit/status/currentexternalwork; getquietwindow→5pairs→G4final→docs/push/updatePR12;don'trepeatexecutedmatrix
 ```
 
 ## HISTORICAL SNAPSHOT — 2026-10-19 / 0524.W4 G0/G1 — READY FOR GATE A
