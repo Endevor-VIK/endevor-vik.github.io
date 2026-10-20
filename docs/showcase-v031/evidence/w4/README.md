@@ -20,6 +20,7 @@ AXS_HEADER_META:
 - [AFTER manifest](after/manifest.json): frozen `b85fbb0`, 541 сохранённый кадр из782, 1656 checks/0 failed. Эти counts относятся к W4 matrix; общая legacy regression и остальные probes имеют отдельные результаты.
 - [QA report](../../waves/w4/WORLD_QA_REPORT.md): команды, реальные результаты, residuals и ограничения метода.
 - [Independent G4](../../waves/w4/W4_G4_REVIEW.md): reviewer без runtime authorship, exact frozen SHA, source/Canon/visual recheck; Gate B остаётся за CREATOR.
+- [Performance observations](qa/performance/OBSERVATIONS.md):20 исходных наблюдений CONTAMINATED, guarded attempt2 остановлен до LH. Qualified performance и общий G4 PENDING до окна после внешней задачи. [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12) — checkpoint для review.
 - [Tooling](tools/README.md), [performance method](tools/PERF_RUNNER.md); `review_index.py` воспроизводит HTML из сохранённых manifests и проверяет SHA256 файлов.
 
 `qualification/after-8816036.json` — manifest первого непрошедшего qualification с11px labels; его transient frames не включены в retained набор. Исправление12px относится к итоговому SHA. Это не финальный PASS run.

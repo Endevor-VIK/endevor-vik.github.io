@@ -23,6 +23,7 @@ AXS_HEADER_META:
 Authority: [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), reviewed proposal PR11/`af20ff6`; R1–R6 mandatory. [G2 SPEC](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
 
 - Branch/worktree: `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze + remote recovery: **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**. Current reporting/evidence delta only; never restart completed source slices. PR11 remains unchanged Draft/unmerged.
+- Implementation [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), base main. Durable evidence/source-review checkpoint **`e5f90f4`** pushed; its runtime/assets/tests diff against b85fbb0 is empty. Later trace commits remain documentation only. This is a reviewable checkpoint, not completed G3/G4 or Gate B readiness.
 - BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2` captured before runtime edits:327checks/0failed,702frames;455retained. AFTER full21matrix:1656checks/0failed,782frames;541retained. All996 native retained hashes independently checked. [Full pairs/index](waves/w4/WORLD_BEFORE_AFTER.md).
 - IMPLEMENTED: W01 English title;4BLACK SUN beats + visible authored reconstruction; human WHAT REMAINS;3closed WORK disclosures/4staticconcepts secondary to8realshots; single factions heading/NEURA legacy uncertainty. Entire world/chars/AXIOM∅/III-IV labels, map/OMEGA/source assets/handlers unchanged.
 - G3: smoke/source/style/behavior checks pass; legacy230PASS/2baselineFAIL (HERO3pxCR1024, gate-note2pxFF720), pairedBEFORE/AFTER3×. Narrowlandscape3engine pairs show identical initialCTAoutside390height, but nativeTab/manualscroll/hit-test reachable. Actual200%AFTER18/18pass +9visible readingframes; old blank capture attempt preserved and G4-F01resolved. [QA report](waves/w4/WORLD_QA_REPORT.md).
@@ -39,6 +40,7 @@ BRANCH: w4/world-narrative; runtime baseline6b082e5; Canon3884ea43 read-only
 WORKTREE: /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation
 DONE: G2;21×3engine matrix1656/0;996retainedframes;native200%18/18AFTER;G4source/visual+13riskchecks
 PENDING: qualifiedquietperformance;G4final;deliveryreportcommit/newDraftPR;GateB
+PR: https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12 (Draft); evidence checkpoint e5f90f4
 PERF: qa/performance first20OBSERVED_CONTAMINATED; attempt2PREFLIGHT_NOT_QUIET0LH; foreignClaude mgp7-ws tests
 BROWSERS: allownclosed; perfagentreadyguard; don'tlaunchothersduringitsfutureGO
 EVIDENCE: evidence/w4/REVIEW.html + before/after/qa; WORLD_BEFORE_AFTER.md
