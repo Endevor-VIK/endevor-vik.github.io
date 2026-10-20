@@ -20,6 +20,7 @@ AXS_HEADER_META:
 
 - [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), branch `w4/world-narrative`, base main. Draft сохраняется до финального решения.
 - Implementation/test freeze: **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**. Последующие commits меняют reporting/evidence; `index.html/assets/tests` остаются идентичны этому SHA.
+- Final evidence packet / remote recovery: [`e43ca7cc9d314f7e55b85cc5a06ec513438b7e36`](https://github.com/Endevor-VIK/endevor-vik.github.io/commit/e43ca7cc9d314f7e55b85cc5a06ec513438b7e36); PR12 Draft/open и обновлённый body перепроверены. Последующий delivery trace не меняет reviewed runtime.
 - BEFORE: `6b082e5f262c09a123748273da42277d3a29a6c2`, воспроизводимо снят до первой runtime mutation.
 - Product manifests, 190 файлов: BEFORE `101c240eacd69c193473f40ec4367440eaa096e2ef3b92dad200f99378b39ee0`, AFTER `c3117174a500ed3b31ab530bc814a84f6dd3b8671293f7523aa298808c69c693`.
 - Authority: [Gate A R1–R6](W4_GATE_A_ACCEPTANCE.md) и [Principal interim decision](W4_PRINCIPAL_INTERIM_REVIEW.md): G2 ACCEPTED FOR FINAL VERIFICATION; оставшееся исполнение закрыто QA/G4 records ниже. Исходное Principal решение не переписывается. Gate B HOLD.
