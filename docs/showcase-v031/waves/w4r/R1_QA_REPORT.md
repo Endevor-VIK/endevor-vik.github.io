@@ -23,6 +23,7 @@ Product freeze: b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5. Reporting start7413405
 | Total comp checks |**116 /0 failures** on run002 |
 | Offline review router |**33/0**, A/B/C×desktop/mobile×5scenes; bounds1440/390; keyboard focus;0 page errors |
 | Captures |**52** native1440×900/390×844 WebP80/DPR1/RM, all doctrine/aftermath segments + external introduction/spotlight |
+| Full bilingual specimens |7 additional bounds checks PASS;14 native frames for all7 main scene titles, typography only |
 | Old references |**38** native W4 frames reused without copies; byte hashes match original BEFORE/AFTER manifests |
 | Source/Canon |Existing b85 runtime preserved; Canon3884ea43 read-only; first-use proposals traced individually |
 

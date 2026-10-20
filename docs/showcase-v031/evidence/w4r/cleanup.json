@@ -31,5 +31,11 @@
   "chromeProcessIdsObservedAfterClose": [],
   "processAction": "none; capture and router harness closed own browser/server in finally",
   "runtimeAssetsTestsDelta": "",
-  "preserved": "Existing W4 evidence, product sources/assets/tests, project worktrees, Canon, gitlinks, global browser/dependency caches, foreign data/processes."
+  "preserved": "Existing W4 evidence, product sources/assets/tests, project worktrees, Canon, gitlinks, global browser/dependency caches, foreign data/processes.",
+  "additionalHeadingSpecimens": {
+    "nativeFramesPromotedAndRehashed": 14,
+    "ownedPath": "/tmp/axs-0524-w4r-heading-specimens",
+    "cleanup": "exact marker kind/UID/realpath checked then removed by capture finally; no server; own browser closed",
+    "existsAfter": false
+  }
 }

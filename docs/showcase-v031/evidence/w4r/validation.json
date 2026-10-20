@@ -18,5 +18,16 @@
   "R2_R3_R4": "NOT RUN",
   "GateB": "NOT ACCEPTED / visual rework required",
   "GateR_A": "PENDING / CREATOR selection",
-  "scope": "Documentation and standalone R1 concepts only; product/Canon/protected internals untouched"
+  "scope": "Documentation and standalone R1 concepts only; product/Canon/protected internals untouched",
+  "finalSupplement": {
+    "modifiedMarkdownChecks": 7,
+    "relativeLinksChecked": 89,
+    "brokenLinks": [],
+    "nativeFramesRehashed": 66,
+    "headingBoundsChecks": 7,
+    "headingSourceHash": "match",
+    "allCorePrototypeHashes": "match",
+    "evidenceBytes": 2935614,
+    "runtimeAssetsTestsDelta": ""
+  }
 }

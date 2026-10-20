@@ -33,3 +33,5 @@ Visual DoD: BEFORE/CURRENT/PROPOSED router; complete doctrine four beats and att
 ## E. Handoff / rollback
 
 Record gate rejection without rewriting historical G4 evidence. Deliver visual audit, terminology trace, three concepts, comparison index, capture manifests and concrete Gate R-A choice. PR12 Draft; no merge/deploy/main/gitlink/Canon/version changes. Revert only new proposal docs via reviewed Git revert if needed. Stop before R2 until CREATOR explicitly selects direction; source changes, foreign delta or critical host state stop execution.
+
+R0/R1 core remote recovery point:3358da94cce9de0da223be8cdffcd41ea05f5bdc, PR12 Draft/open. Full bilingual typography sheet adds14 native frames/7bounds checks outside the52 core captures. Every preserved prototype input matches its own capture manifest; public runtime/assets/tests remainb85fbb0. Gate R-A PENDING; R2 not begun.

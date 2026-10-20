@@ -1,0 +1,218 @@
+{
+  "scope": "R1 typography specimen only; not integrated W01/factions/epilogue",
+  "checks": [
+    {
+      "width": 1920,
+      "pass": true,
+      "overflow": false,
+      "headings": []
+    },
+    {
+      "width": 1440,
+      "pass": true,
+      "overflow": false,
+      "headings": []
+    },
+    {
+      "width": 1366,
+      "pass": true,
+      "overflow": false,
+      "headings": []
+    },
+    {
+      "width": 1024,
+      "pass": true,
+      "overflow": false,
+      "headings": []
+    },
+    {
+      "width": 768,
+      "pass": true,
+      "overflow": false,
+      "headings": []
+    },
+    {
+      "width": 390,
+      "pass": true,
+      "overflow": false,
+      "headings": []
+    },
+    {
+      "width": 360,
+      "pass": true,
+      "overflow": false,
+      "headings": []
+    }
+  ],
+  "captures": [
+    {
+      "file": "type-desktop-entry.webp",
+      "scene": "entry",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 39672,
+      "sha256": "81e81d1b9dee14c352f0fcfe26b6daa798b572e41793a1dec58baae9f6b93e50",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-desktop-doctrine.webp",
+      "scene": "doctrine",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 37210,
+      "sha256": "a5dddead35eacfceee1d9b36fa32a7222059cb48bf4530a16060ebf424fe2025",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-desktop-remains.webp",
+      "scene": "remains",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 33986,
+      "sha256": "1cf7216ea86c1d6db2825f08d086379dd1ab089c6e58e500ddc612b6cb5778d6",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-desktop-geography.webp",
+      "scene": "geography",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 36336,
+      "sha256": "0036e29cb4fc8cde338f2b7ccafc905de1ad2072e3345aaa6cececd5d7d9985e",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-desktop-characters.webp",
+      "scene": "characters",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 38264,
+      "sha256": "10ef617cdabee387d40bdd2d500bef27a810c9dec6e9de12a2e8701701b9644a",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-desktop-factions.webp",
+      "scene": "factions",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 36454,
+      "sha256": "655e918becede13d62ce030edd759df6b66e35020fb753a788ce5fdaaf8fa768",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-desktop-epilogue.webp",
+      "scene": "epilogue",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 38312,
+      "sha256": "8e8d0f3be471d2c45264837387b1a7ca250ab94a4edb5ed635a051a8b103161d",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-mobile-entry.webp",
+      "scene": "entry",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 31474,
+      "sha256": "7724af10ab25e6b7f9ac21f6cffb7e2cad9baa94949da2017d2672f7a250befb",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-mobile-doctrine.webp",
+      "scene": "doctrine",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 30020,
+      "sha256": "1a1ae2cf01ac38a92ee785f954beb8ac8a3ed45fd6099c2b25a5cb8566ac7bcd",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-mobile-remains.webp",
+      "scene": "remains",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 28256,
+      "sha256": "d26afed1143f8b760bde30e4662866a5d7dacaf59a3b0598e7fbb53c173865cd",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-mobile-geography.webp",
+      "scene": "geography",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 29414,
+      "sha256": "b2055ce86b61e59a0bc68f82b5e7608f6894643afe13b06893ac0bbc6a49da8e",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-mobile-characters.webp",
+      "scene": "characters",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 30470,
+      "sha256": "55c52039c3ae1fd75bfabfd42c3ddf0010002b18f5791bb6fb63361a1fa0a26f",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-mobile-factions.webp",
+      "scene": "factions",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 31334,
+      "sha256": "871f6e18e1eb6a43d96a551b80d9d678bfe55ad4bb202c89d7b631eab3e0979b",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    },
+    {
+      "file": "type-mobile-epilogue.webp",
+      "scene": "epilogue",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 31382,
+      "sha256": "363d40d0d3ff1410bcfa873686f91bea9944f99ca69b225ecb0720617ac00252",
+      "mode": "native viewport, may include next specimen; no retouch/stitch"
+    }
+  ],
+  "sourceSha256": "e62721aef9b6005aa8bf323210ccef0ff3c8a37c3ca5515627919f5a3651f304"
+}

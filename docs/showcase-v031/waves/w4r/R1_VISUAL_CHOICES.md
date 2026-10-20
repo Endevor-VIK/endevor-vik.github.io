@@ -10,7 +10,7 @@ AXS_HEADER_META:
 -->
 # R1 — визуальный выбор
 
-**PROPOSED / NOT INTEGRATED.** Здесь нативные кадры самостоятельных макетов, а не результат R2. [Полное интерактивное сравнение BEFORE/CURRENT/PROPOSED](../../evidence/w4r/REVIEW.html) показывает все52 новых кадра и38 исходных references, включая полные сегменты на mobile. [Причины и tradeoffs](R0_R1_PROPOSAL.md). ENG primary + подчинённый RU translation общие для всех трёх направлений.
+**PROPOSED / NOT INTEGRATED.** Здесь нативные кадры самостоятельных макетов, а не результат R2. [Полное интерактивное сравнение BEFORE/CURRENT/PROPOSED](../../evidence/w4r/REVIEW.html) показывает все52 основных новых кадра и38 исходных references, включая полные сегменты на mobile. [Причины и tradeoffs](R0_R1_PROPOSAL.md). ENG primary + подчинённый RU translation общие для всех трёх направлений.
 
 ## A — Палимпсест
 
@@ -71,6 +71,10 @@ Desktop / WHAT REMAINS, первый нативный сегмент; продо
 Mobile / WHAT REMAINS, первый сегмент; весь рассказ доступен в index:
 
 ![C PROPOSED aftermath mobile](../../evidence/w4r/captures/c-mobile-remains-1.webp)
+
+## Полная bilingual-система
+
+[Семь ENG/RU heading specimens](R1_TYPE_SPECIMENS.md): entry, doctrine, aftermath, geography, characters, factions, epilogue —14 отдельных native desktop/mobile кадров. Это типографические образцы для проверки переносов, без предложения изменить утверждённую композицию W01.
 
 ## Gate R-A
 
