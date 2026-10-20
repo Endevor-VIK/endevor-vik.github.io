@@ -1,0 +1,11 @@
+(node:384502) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PERF /tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet3
+Error: LH worker failed 01-mobile-before.log: {"code":130,"signal":null,"timedOut":false} (node:384668) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+    at ChildProcess.<anonymous> (/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation/tests/browser/w4_perf.cjs:158:36)
+    at Object.onceWrapper (node:events:634:26)
+    at ChildProcess.emit (node:events:519:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)

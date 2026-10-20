@@ -14,6 +14,8 @@ AXS_HEADER_META:
 сохранены, но помечены CONTAMINATED; attempt 2 остановлен до запуска Lighthouse,
 поскольку внешний Claude Playwright/devserver оставался активным все 90 секунд preflight.
 Ни один чужой процесс не завершался. Числовые floors ниже — наблюдения, не final PASS.
+Attempt 3 после успешного preflight прерван guard из-за нового внешнего esbuild;
+завершённых observations = 0. Он также не квалифицирован.
 
 ## Источники и метод
 
@@ -68,6 +70,25 @@ chrome-headless-shell и esbuild/devserver; отдельная owner session, н
 Guard требует 15 последовательных 1s samples CPU<10% и ни одного внешнего browser/build.
 Во время измерения внешний browser/build или foreign CPU>100% одного ядра две секунды
 подряд отклоняет весь attempt и завершает только наш runner. Полные argv/env не логируются.
+
+## Attempt 3: новый внешний build после успешного preflight
+
+[Guard](attempt-3-quiet/guard.json), [source check](attempt-3-quiet/source-check.json),
+[incomplete summary](attempt-3-quiet/summary.json), [runner log](attempt-3-quiet/runner.log),
+[cleanup](attempt-3-quiet/cleanup.json). 16:57:57–16:59:13 UTC, reporting HEAD `bbfe4d0`;
+runtime exact `b85fbb0a`, remote main `6b082e5`, PR12 Draft перепроверены до запуска.
+В 62 preflight samples были CPU spikes; затем прошли 15 последовательных тихих samples.
+Через четыре measurement samples появился внешний esbuild (foreign CPU sum 206.937%
+одного ядра). Guard остановил только собственный worker. Первый mobile BEFORE observation
+не завершён: **0 completed observations / 0 raw LHR**, status CONTAMINATED, summary INCOMPLETE.
+Профиль, browser, server и runner lock закрыты; frozen runner SHA256 не изменился.
+
+Следующая попытка использует новые scratch/durable пути и полный набор из пяти пар.
+Readiness watcher теперь требует **60 последовательных тихих секунд** до передачи
+управления неизменённому guard. Это более строгое ожидание после нескольких коротких
+пауз между внешними фазами; собственные 15s preflight/1s monitor guard и Lighthouse
+settings остаются прежними. Ни старые contaminated значения, ни нулевые attempts
+не добавляются к будущему qualified набору.
 
 ## Воспроизведение / сохранность
 

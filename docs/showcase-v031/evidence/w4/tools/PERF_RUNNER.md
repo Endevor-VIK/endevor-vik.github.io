@@ -103,6 +103,14 @@ sampling policy или settings. Общий retained evidence budget остаё�
 полные raw LHR сохраняются в bounded scratch до независимой проверки, затем собственные
 временные данные удаляются после переноса summary и hash manifest.
 
+**Attempt 3: CONTAMINATED / 0 completed observations.** После успешного 15s preflight
+возник новый внешний esbuild; guard прервал первый worker. [Record](../qa/performance/OBSERVATIONS.md)
+и [cleanup](../qa/performance/attempt-3-quiet/cleanup.json) сохраняют отказ и отсутствие
+собственных browsers/profiles/lock. Для следующего полного набора outer readiness watcher
+ждёт 60 последовательных тихих секунд, чтобы не стартовать в коротких межфазных паузах.
+Guard, frozen runner и measurement settings не меняются; новые пути — `attempt-4-quiet`
+и `/tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet4`.
+
 ## Воспроизведение
 
 Runner сверяет каждый продуктовый файл `index.html`, `404.html`, `loader.html`,

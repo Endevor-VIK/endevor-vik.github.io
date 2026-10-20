@@ -76,7 +76,9 @@ Standard cross-product: **1920×1080,1440×900,1366×768,1024×768,768×1024,390
 
 ## 4. Paired lab performance
 
-**PENDING: окончательный quiet-CPU performance gate.** Чужая браузерная работа не позволила квалифицировать первый набор; guarded повтор пока не прошёл preflight.
+**PENDING: окончательный quiet-CPU performance gate.** Первый набор загрязнён внешней работой; ни один guarded повтор пока не дал полного qualified набора.
+
+Дополнение 20.10 16:59 UTC: [attempt3](../../evidence/w4/qa/performance/attempt-3-quiet/guard.json) прошёл 15 тихих preflight samples, но новый внешний esbuild прервал первый worker. **0 completed observations**, весь attempt CONTAMINATED; собственные процессы/profiles/lock закрыты. Следующий outer readiness watcher требует 60 тихих секунд до неизменённого guard, затем новый полный 5-pair набор. Runtime/test freeze не изменён.
 
 [20 observational runs / classification](../../evidence/w4/qa/performance/OBSERVATIONS.md) · [attempt1 qualification](../../evidence/w4/qa/performance/attempt1-qualification.json) · [attempt2 preflight](../../evidence/w4/qa/performance/attempt-2-quiet/guard.json). CREATOR выбрал свободное окно после завершения другой задачи; ожидание не считается PASS. [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12) сохраняет текущий review checkpoint с явным performance pending.
 
