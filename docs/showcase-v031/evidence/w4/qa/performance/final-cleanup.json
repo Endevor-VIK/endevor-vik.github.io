@@ -1,0 +1,53 @@
+{
+  "clientReportDate": "2026-10-21",
+  "recordedAtUtc": "2026-10-20T21:18:14.217858+00:00",
+  "status": "OWNED_TRANSIENT_CLEANUP_COMPLETE_AFTER_INDEPENDENT_REVIEW",
+  "independentReview": "W4_G4_REVIEW.md / COMPLETE PASS WITH RECORDED LIMITS / exact b85fbb0",
+  "rawReportsRehashedImmediatelyBeforeDeletion": 40,
+  "removed": [
+    {
+      "path": "/tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet3",
+      "existsAfter": false,
+      "method": "shutil.rmtree after exact realpath, expected parent, UID1000, all-descendant UID and kind/UID ownership marker checks"
+    },
+    {
+      "path": "/tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet4",
+      "existsAfter": false,
+      "method": "shutil.rmtree after exact realpath, expected parent, UID1000, all-descendant UID and kind/UID ownership marker checks"
+    },
+    {
+      "path": "/tmp/axs-0524-w4-perf/run-fixed-cohort-20261020-5",
+      "existsAfter": false,
+      "method": "shutil.rmtree after exact realpath, expected parent, UID1000, all-descendant UID and kind/UID ownership marker checks"
+    },
+    {
+      "path": "/tmp/axs-0524-w4-readiness4.json",
+      "existsAfter": false,
+      "durableCopy": "attempt-4-quiet/readiness.json",
+      "copyCheck": "parsed JSON equal; serialization differs"
+    },
+    {
+      "path": "/tmp/axs-0524-w4-readiness5.json",
+      "existsAfter": false,
+      "durableCopy": "attempt-5-fixed/readiness.json",
+      "copyCheck": "parsed JSON equal; serialization differs"
+    },
+    {
+      "path": "/tmp/axs-0524-w4-landscape-recovery",
+      "existsAfter": false,
+      "method": "empty rmdir"
+    },
+    {
+      "path": "/tmp/axs-0524-w4-before-6b082e5",
+      "source": "6b082e5f262c09a123748273da42277d3a29a6c2",
+      "statusBefore": "clean detached",
+      "existsAfter": false,
+      "method": "git worktree remove without force"
+    }
+  ],
+  "ownedBenchmarkBrowserServerProcessesRemaining": [],
+  "cleanupRetry": "Initial cleanup stopped after raw removal at byte-equality assertion for readiness copies. Parsed JSON equality confirmed; only serialization differed. Cleanup resumed without touching durable records.",
+  "rawAvailability": "All40 raw LHR existed and were independently audited before deletion. Durable summaries/per-run metrics/config/source checks/raw hashes/clock timelines remain. Full raw reinspection now requires reproduction.",
+  "preserved": "All durable evidence, active/project worktrees, Canon, root gitlinks, main, browser caches, global dependencies and foreign processes/data.",
+  "runtimeAssetsTestsDiffFromFreeze": ""
+}

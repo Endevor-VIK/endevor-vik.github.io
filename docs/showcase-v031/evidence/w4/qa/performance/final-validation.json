@@ -1,0 +1,33 @@
+{
+  "clientReportDate": "2026-10-21",
+  "recordedAtUtc": "2026-10-20T21:19:20.056093+00:00",
+  "status": "FINAL_REPORTING_PACKET_VALIDATED",
+  "runtimeAndTestFreeze": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+  "before": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "reportingParent": "157f01b23904a5ea014dd9bb30218d48e82a01e7",
+  "runtimeAssetsTestsDelta": "",
+  "checks": {
+    "changedMarkdownMetadataAndClientDate": 9,
+    "relativeMarkdownLinks": 164,
+    "brokenRelativeLinks": 0,
+    "newModifiedJsonParse": "PASS",
+    "fixed40Membership": "PASS / n10 per profile and arm",
+    "cohort4and5SummaryAndGuardSha256": "PASS",
+    "clockTimelineAndGuardHashes": "PASS /246samples /7discrepancies",
+    "frozenLighthouseRunnerHash": "PASS",
+    "guardV2SourceHash": "PASS",
+    "gitDiffCheck": "PASS",
+    "cleanup": "OWNED_TRANSIENT_CLEANUP_COMPLETE_AFTER_INDEPENDENT_REVIEW"
+  },
+  "independentG4": {
+    "reviewer": "canon_audit / no runtime or QA authorship",
+    "sourceFreeze": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+    "status": "COMPLETE / PASS WITH RECORDED LIMITS",
+    "recordSha256": "6a323d3c17fc875fa1dea69d90621184e656f0a3f3faab9b9e805fb0da8826b7"
+  },
+  "evidenceBytesBeforeThisSmallRecord": 51879315,
+  "evidenceBudgetMiB": 50,
+  "gateB": "HOLD / CREATOR decision not given",
+  "release": "PR12 Draft; main6b082e5 and PR11af20ff6 unmerged; no autoMergeRequest; no merge/deploy/Canon/protected authorization",
+  "ci": "PR12 statusCheckRollup empty at final precommit check; local required evidence used, no CI PASS invented"
+}

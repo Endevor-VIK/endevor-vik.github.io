@@ -2,13 +2,13 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4.WORLD_QA_REPORT
   title: "0524.W4 — G3/G4 measured QA and residuals"
-  status: G3_EXECUTED / G4_FINAL_PENDING / GATE_B_PENDING
+  status: G3_EXECUTED / G4_COMPLETE_WITH_LIMITS / GATE_B_PENDING
   deployment: NOT_DEPLOYED
   mode: QA report / reproducibility contract
   goal: "Зафиксировать реально исполненные G3/G4 checks, baseline failures и границы evidence"
   scope: 0524.W4 frozen implementation / G3 / G4
   lang: ru
-  last_updated: 2026-10-20
+  last_updated: 2026-10-21
   editable_by_agents: true
   change_policy: "PASS только по исполненному check на exact SHA; review не заменяет Gate A/B"
 -->
@@ -76,23 +76,33 @@ Standard cross-product: **1920×1080,1440×900,1366×768,1024×768,768×1024,390
 
 ## 4. Paired lab performance
 
-**COHORT 4 RECORDED / FINAL CLASSIFICATION PENDING.** [Полный cohort4](../../evidence/w4/qa/performance/attempt-4-quiet/summary.json):20 observations /5 pairs, guard QUIET_CPU_QUALIFIED, 17:26:14–17:30:46 UTC. Независимый G4 сверил все raw LHR, sources/config/UA/hash. Mobile score97→97, desktop100→100; LCP medians2407.6006→2407.8136ms /530.6714→529.3208ms. Однако mobile paired mean +277.481ms (+12.96%) и широкий разброс требуют **фиксированный дополнительный полный cohort5**, затем separate+pooled40 analysis без выборочного исключения. [Все medians/ranges/SD/paired deltas](../../evidence/w4/qa/performance/attempt-4-quiet/analysis.json), [независимое требование](W4_G4_REVIEW.md).
+**FIXED40 COMPLETE / PASS WITH RECORDED LIMITS — bounded simulated lab comparison.** По требованию независимого G4 выполнены два полных фиксированных cohorts:4 и5, каждый20 observations/5 пар mobile+desktop. Все40 используются: n=10 на profile/arm; contaminated attempts1–3 исключены целиком. Независимый reviewer сверил все raw LHR metrics/categories/config/UA, sizes/hashes,190 source files/arm и separate/pooled statistics без расхождений. [Final G4 exact b85fbb0](W4_G4_REVIEW.md) закрывает G4-F02 с сохранённой uncertainty. Нового product patch не требовалось.
 
-Cohort4 monitoring был sampled: original seconds median1.0038/max1.0112s — denominator, а recorded timestamp gaps median1.0074/max4.6013s. Strict continuous1s coverage не заявлена. [Guard v2 predeclaration](../../evidence/w4/qa/performance/guard-v2-validation.json) исправляет actual monotonic CPU interval/scan timing для cohort5 и заранее отклоняет whole attempt при gap>3s. LH runner/runtime/presets/order неизменны; guard versions различаются между cohorts и одинаковы для BEFORE/AFTER внутри своего cohort. G4 INCOMPLETE / Gate B HOLD до нового набора и независимой классификации.
+| Pooled median, n=10/arm | Mobile BEFORE → AFTER | Desktop BEFORE → AFTER |
+| --- | --- | --- |
+| Performance |97 →97 |100 →100 |
+| FCP, ms |1656.500 →1506.150 |388.676 →387.490 |
+| LCP, ms |2407.8717 →2407.9031 |531.630 →530.1328 |
+| TBT, ms |2.750 →0 |0 →0 |
+| CLS |.016842 →.019590 |.005372 →.005440 |
+| Speed Index, ms |1657.655 →1647.181 |961.827 →986.681 |
+| Initial transfer, bytes |340264 →339305 |429991 →429032 |
 
-Дополнение 20.10 16:59 UTC: [attempt3](../../evidence/w4/qa/performance/attempt-3-quiet/guard.json) прошёл 15 тихих preflight samples, но новый внешний esbuild прервал первый worker. **0 completed observations**, весь attempt CONTAMINATED; собственные процессы/profiles/lock закрыты. Следующий outer readiness watcher требует 60 тихих секунд до неизменённого guard, затем новый полный 5-pair набор. Runtime/test freeze не изменён.
+Все AFTER scores≥95 mobile/99 desktop проходят floors90/95. Median LCP investigation budget **>10% и >150ms** не пересечён; median CLS delta+.002748 mobile/+.000068 desktop ниже+.02. Все40 initial loads:0 world-library requests. CSS gzip вырос12768→14143 bytes (+1375), суммарный initial transfer снизился на959bytes.
 
-[20 observational runs / classification](../../evidence/w4/qa/performance/OBSERVATIONS.md) · [attempt1 qualification](../../evidence/w4/qa/performance/attempt1-qualification.json) · [attempt2 preflight](../../evidence/w4/qa/performance/attempt-2-quiet/guard.json). CREATOR выбрал свободное окно после завершения другой задачи; ожидание не считается PASS. [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12) сохраняет текущий review checkpoint с явным performance pending.
+**Разброс и классификация:** cohort4 mobile LCP mean+277.481ms/+12.96% потребовал заранее фиксированный второй набор. Cohort5 mean+42.472ms/+1.93% не повторил рост в том же размере. Pooled mean+159.977ms/+7.36%, разность marginal medians+.0314ms; paired Δ median−.0493ms, SD492.446ms, range−846.623…+895.770ms. BEFORE fast LCP<2s3/10, AFTER1/10. Mobile AFTER TBT max234.638ms и desktop Speed Index mean+39.776ms также сохранены. Повторяемая существенная регрессия по согласованному contract не установлена; это не доказательство statistical equivalence, нулевой стоимости или улучшения всех показателей.
 
-Первый20-observation attempt полностью сохранён как **OBSERVED / CONTAMINATED / NOT QUALIFIED FOR QUIET CPU**: чужие browser/build jobs появились после чистого preflight. Его числовые scores не являются финальным performance gate. Повтор выполняется целиком, без выборочного удаления samples. Заранее задан guard:15×1s preflight aggregateCPU<10%/8cores, нет foreignbrowser/build; monitor1s во время run, foreignbrowser/build либо foreignCPU>100%onecore2samples подряд дисквалифицируют whole attempt и останавливают только собственный runner. Чужие процессы не завершаются.
+**Условия:** Chromium149/Lighthouse12.8.2/Playwright1.61.1/Node22.23.1. Один URL внутри cohort, Pages-like gzip/cache/MIME/404 server, fresh Linux Chrome/profile, default storage reset/первый визит с обычным loader/motion, default mobile/desktop presets и simulated throttling. Порядок B→A одинаковый, без рандомизации;190 product files сверены до/после с exact SHA. Между cohorts различаются ephemeral ports и внешний guard, но frozen Lighthouse runner/runtime/presets/order прежние. WindowsC47.58GiB/~9.99%: WARNING с запасом для128MiB, не CRITICAL.
 
-Метод: одинаковый URL и Pages-like gzip/cache/MIME/404 server, fresh Linux Chrome/profile на observation, стандартные mobile/desktop LH configs, simulated throttling, cold storage/первый визит. `index.html/404/loader/assets` —190 файлов каждого arm сверяются до/после с exact SHA. Ни visibility tricks, ни принудительного reduced motion для score нет. Full Lighthouse JSON transient, summary включает все raw per-run metrics/medians/spread/deltas/source manifests. Lighthouse12.8.2/Chromium149. [Method/reproduction](../../evidence/w4/tools/PERF_RUNNER.md).
+**Quiet/clock limits:**60 outer readiness samples и15 guard preflight; в cohorts4/5 соответственно247/246 measurement samples,0 sampled foreign browsers/builds/violations. Guard5 actual MONOTONIC interval max1.022587s проходит заранее заданные3s. UTC interval max4.776223s, UTC span271.007534s против MONOTONIC245.837832s; причина расхождения неизвестна. Cohort4 не сохранял CPU-read mono stamps; его UTC gaps не доказывают actual mono gaps или overhead. Непрерывная1s тишина, wallgap≤3s и Windows-host/physical-clock calibration не заявляются. [Clock domains](../../evidence/w4/qa/performance/CLOCK_DOMAINS.md) сохраняет полную диагностику, original guards/raw metrics не редактировались.
 
-Budgets согласованного contract: mobileperf≥90, desktop≥95; investigate LCP regression **>10% и >150ms** либо CLSdelta>.02. Initial baseline n=1 mobileLCP2.565s — существовавший lab target debt, не PASS≤2.5s. Field INP/CWV не измерены.
+[Все per-cohort/pooled medians, extrema, population SD, paired deltas и40 memberships](../../evidence/w4/qa/performance/OBSERVATIONS.md) · [cohort4](../../evidence/w4/qa/performance/attempt-4-quiet/summary.json) · [cohort5](../../evidence/w4/qa/performance/attempt-5-fixed/summary.json) · [pooled JSON](../../evidence/w4/qa/performance/pooled-analysis.json) · [method](../../evidence/w4/tools/PERF_RUNNER.md).
+
+Attempts1–3 остаются историческими nonqualified records:20-run contaminated first attempt, preflight refusal второго, guard interruption третьего до первого completed observation. Они не используются для final classification; summary/qualification/log/hash records сохранены. Full raw JSON были доступны независимому reviewer при проверке; собственный scratch удаляется после этой сверки по retention/cleanup record. Initial baseline n=1 отдельно: mobileLCP2.565s — исторический lab target debt, не PASS≤2.5s. Field INP/CWV не измерены.
 
 ## 5. Independent review / residuals / release boundary
 
-**Source/Canon/visual review и13/13 independent browser checks выполнены.** Финальный G4 verdict ожидает квалифицированный performance; [review record](W4_G4_REVIEW.md).
+**G4 COMPLETE / PASS WITH RECORDED LIMITS** на exact implementation/test freeze b85fbb0. Source/Canon/visual review,13/13 independent browser checks и fixed40 bounded lab performance завершены. Reviewer не автор runtime/QA patch; [полный независимый verdict](W4_G4_REVIEW.md) сохраняет baseline failures и все ограничения. Это не Gate B и не общая AAA-сертификация.
 
 Не выполнены: реальные телефоны/tablets/GPU, Safari, human NVDA/VoiceOver walkthrough, field INP/CWV, production Pages QA. Headless WebKit — проверенный engine, не реальный Safari. Оригинальные1672px W01/plate/epilogue masters мягче на широких high-DPR дисплеях; ≥3344px source masters требуют CREATOR. W03 не имеет этого source-ratio failure.
 

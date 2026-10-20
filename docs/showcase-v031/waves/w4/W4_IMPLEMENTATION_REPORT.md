@@ -8,7 +8,7 @@ AXS_HEADER_META:
   goal: "Передать проверяемую реализацию, сохранность и ограничения без самоприёмки"
   scope: W01 / BLACK SUN / WHAT REMAINS / WORK 02-03-05 / FACTIONS
   lang: ru
-  last_updated: 2026-10-20
+  last_updated: 2026-10-21
   editable_by_agents: true
   change_policy: "Факты QA только по manifest; protected/Canon/merge/deploy требуют отдельного разрешения"
 -->
@@ -54,7 +54,7 @@ Anti-tautology выполнен только в разрешённых секц�
 
 ## D. Verification / visual evidence
 
-Фактические totals, команды, версии, performance medians/spread и ограничения: [WORLD_QA_REPORT](WORLD_QA_REPORT.md). Полные пары: [WORLD_BEFORE_AFTER](WORLD_BEFORE_AFTER.md). Независимый итог G4 фиксируется отдельным review record на том же frozen SHA. Green automation не означает AAA/CREATOR visual acceptance. Текущий checkpoint: source/Canon/visual и13 независимых browser checks завершены; qualified performance ожидает окончания внешней задачи. Общий G4 пока INCOMPLETE только по этому пункту.
+Фактические totals, команды, версии, performance medians/spread и ограничения: [WORLD_QA_REPORT](WORLD_QA_REPORT.md). Полные пары: [WORLD_BEFORE_AFTER](WORLD_BEFORE_AFTER.md). [Независимый G4](W4_G4_REVIEW.md) завершён на том же frozen SHA: COMPLETE / PASS WITH RECORDED LIMITS. Source/Canon/visual,13 independent browser checks и fixed40 bounded lab comparison проверены; F01/F02 закрыты с сохранённой uncertainty. Green automation не означает AAA/CREATOR visual acceptance. Pooled mobile LCP mean+7.36% при median+.0314ms и pairedSD492.446ms; UTC/MONOTONIC caveat не скрыт. Полные medians/spread/classification — в QA.
 
 Первый browser qualification выявил шесть срабатываний одного дефекта: подписи схем11px в трёх panels на двух viewport. Manifest сохранён в `evidence/w4/qualification/after-8816036.json`; итоговая версия использует12px. Failed attempt не превращён в PASS и не используется как финальное доказательство.
 
@@ -63,5 +63,7 @@ Preservation разделён на source, browser computed geometry/styles, beh
 ## E. Handoff / decisions
 
 IMPLEMENTED — разрешённые W01/BLACK SUN/WHAT REMAINS/WORK/factions изменения и R1–R6. VERIFIED — только перечисленные в QA report реальные проверки. NOT VERIFIED — реальные устройства/GPU, Safari, human screen-reader walkthrough и field INP; high-DPR source softness остаётся известным ограничением1672px art. CREATOR DECISION REQUIRED — Gate B, затем отдельное разрешение на финальный merge/deploy; III/IV/Canon требуют собственного scope approval. Runtime freeze не меняется документирующими delivery commits; совпадение `index.html/assets/tests` с ним проверяется перед handoff.
+
+Delivery: [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), branch `w4/world-narrative`; reporting recovery parent `157f01b23904a5ea014dd9bb30218d48e82a01e7`. Итоговый reporting commit определяется Git/PR, independent review object остаётся exact b85fbb0. [Gate B record](W4_GATE_B_RECORD.md) готов, decision HOLD. Два baseline HERO failures остаются [отдельной задолженностью](W4_BASELINE_HERO_DEBT.md). После независимой проверки удалён только собственный temporary scratch — [cleanup](../../evidence/w4/qa/performance/final-cleanup.json).
 
 Rollback — обычный reviewed revert bounded runtime commits, без force/reset main и без удаления исходного art. Эта работа не открывает следующую волну автоматически.

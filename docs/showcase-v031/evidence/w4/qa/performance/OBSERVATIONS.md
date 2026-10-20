@@ -1,70 +1,77 @@
 <!--
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.W4.PERFORMANCE_OBSERVATIONS
-  title: "W4 — performance observations and quiet-window qualification"
-  status: COHORT4_QUALIFIED / FIXED_COHORT5_REQUIRED / G4_INCOMPLETE
+  title: "W4 — qualified paired performance and final classification"
+  status: FIXED40_COMPLETE / PASS_WITH_RECORDED_LIMITS / GATE_B_HOLD
   deployment: NOT_DEPLOYED
   lang: ru
-  last_updated: 2026-10-20
+  last_updated: 2026-10-21
   editable_by_agents: true
 -->
-# W4 — performance: cohort 4 recorded / final classification pending
+# W4 — qualified paired performance
 
-Первый qualified cohort из пяти пар сохранён ниже; финальная классификация ожидает фиксированный второй полный cohort по независимому G4. Исторические attempts1–3 не используются для final gate. Все 20 наблюдений attempt 1
-сохранены, но помечены CONTAMINATED; attempt 2 остановлен до запуска Lighthouse,
-поскольку внешний Claude Playwright/devserver оставался активным все 90 секунд preflight.
-Ни один чужой процесс не завершался. Числовые floors ниже — наблюдения, не final PASS.
-Attempt 3 после успешного preflight прерван guard из-за нового внешнего esbuild;
-завершённых observations = 0. Он также не квалифицирован.
+**Independent G4: PASS bounded lab comparison, with recorded limits.** Measurement date20.10 UTC, report21.10. Exactly two complete fixed cohorts4/5,40 observations total, n=10/profile/arm. No optional stopping, culling or contaminated pooling. [Independent exact-SHA verdict](../../../../waves/w4/W4_G4_REVIEW.md), [pooled JSON with all40 membership](pooled-analysis.json), [clock-domain evidence](CLOCK_DOMAINS.md). Gate B HOLD; PR12 Draft.
 
-## Qualified cohort 4 — recorded; fixed cohort 5 required
+## Conditions / source freeze
 
-20 observations, 5 pairs × mobile/desktop, 17:26:14–17:30:46 UTC. Method qualification: `QUIET_CPU_QUALIFIED` under the original guard policy. This is not final regression classification or G4 PASS.
+BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2`,190files, digest `101c240eacd69c193473f40ec4367440eaa096e2ef3b92dad200f99378b39ee0`.
+AFTER `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`,190files, digest `c3117174a500ed3b31ab530bc814a84f6dd3b8671293f7523aa298808c69c693`.
+Frozen LH runner SHA256 `872431acbd0cab155fb904353194b869d49b7429df11d50c81468a3981345b37`; source files checked before/after and again independently.
 
-[Summary](attempt-4-quiet/summary.json) · [descriptive analysis](attempt-4-quiet/analysis.json) · [raw hashes](attempt-4-quiet/raw-reports-manifest.json) · [guard](attempt-4-quiet/guard.json) · [60s readiness](attempt-4-quiet/readiness.json) · [cleanup](attempt-4-quiet/cleanup.json).
+Chromium149 / LH12.8.2 / PW1.61.1 / Node22.23.1. Fresh Chrome/profile per observation, first visit/default storage reset, normal loader/motion. One identical localhost URL within each cohort, same gzip/cache/MIME/404 server; different ephemeral ports across cohorts. Default mobile412×823@1.75 CPU×4/RTT150ms; desktop1350×940@1 CPU×1/RTT40ms; simulated throttling. Fixed order five times mobile B→A;desktop B→A. Guard versions differ between cohorts, identical within each cohort's arms. Windows host47.587/47.583GiB (~9.99%) WARNING with128MiB budget/margin; not CRITICAL. Windows activity and real devices are outside `/proc` guard visibility.
 
-Each cell: median [min–max]; population SD, n=5. All values retained; no contaminated attempts pooled.
+## Fixed cohorts / classification
 
-### mobile
+| Cohort | Observations | Mobile LCP mean Δ | LCP marginal-median Δ | Status |
+| --- | --- | --- | --- | --- |
+|4 |20 /5pairs |+277.481ms /+12.96% |+.213ms |Original sampled quiet policy qualified; independent F02 required fixed extra cohort |
+|5 |20 /5pairs |+42.472ms /+1.93% |−.150ms |Predeclared extra cohort completed fully; guard v2 MONOTONIC predicate passed |
+|Pooled |40 /10pairs |+159.977ms /+7.36% |+.0314ms |Bounded lab PASS with uncertainty; no product correction justified by agreed budgets |
 
-| Metric | BEFORE | AFTER | Delta medians |
+[Cohort4 summary](attempt-4-quiet/summary.json) · [analysis](attempt-4-quiet/analysis.json) · [raw hashes](attempt-4-quiet/raw-reports-manifest.json) · [guard](attempt-4-quiet/guard.json) · [readiness](attempt-4-quiet/readiness.json) · [cleanup](attempt-4-quiet/cleanup.json).
+[Cohort5 summary](attempt-5-fixed/summary.json) · [analysis](attempt-5-fixed/analysis.json) · [raw hashes](attempt-5-fixed/raw-reports-manifest.json) · [guard](attempt-5-fixed/guard.json) · [readiness](attempt-5-fixed/readiness.json) · [cleanup](attempt-5-fixed/cleanup.json).
+
+Cohort4 completed17:26:14–17:30:46 UTC; cohort5 completed17:43:37–17:48:06 UTC. All40 raw metrics/categories/config/UA/size/hash, both source manifests and all separate/pooled statistics independently matched. A11y/BP/SEO scores100;0 initial world-library requests. All AFTER performance scores≥95mobile/99desktop pass floors90/95; medians97/100. Median LCP regression>10% AND>150ms and CLS delta>.02 are not crossed.
+
+Pooled mobile paired LCP Δ mean+159.977ms, median−.0493ms, population SD492.446ms, range−846.623…+895.770ms. Marginal median difference+.0314ms is a different statistic. Fast BEFORE LCP<2s3/10 versus AFTER1/10 remains an observation. AFTER mobile TBT max234.638ms; desktop Speed Index mean+39.776ms (~4.13%) remains. CSS gzip+1375bytes, initial total transfer−959bytes. The extra cohort did not reproduce the first mean shift at the same magnitude; agreed median budgets pass. This is **not** statistical equivalence, a zero-cost/causal guarantee or improvement of every metric.
+
+## Pooled medians / range / population SD
+
+Each arm n=10, all observations retained; metric units in row labels.
+
+### Mobile
+
+| Метрика | BEFORE median [min–max]; SD | AFTER median [min–max]; SD | Δ медиан |
 | --- | --- | --- | --- |
-| Perf | 97 [92–100]; SD 3 | 97 [97–98]; SD 0 | 0 |
-| FCP, ms | 1657.23 [1363.17–2260.81]; SD 316.59 | 1655.71 [1353.78–1656.35]; SD 147.87 | -1.52 |
-| LCP, ms | 2407.60 [1513.17–2566.22]; SD 407.49 | 2407.81 [2407.56–2460.47]; SD 21.00 | 0.21 |
-| TBT, ms | 5.00 [0.00–177.00]; SD 68.33 | 0.00 [0.00–2.00]; SD 0.80 | -5.00 |
-| CLS | 0.016841 [0.016246–0.019717]; SD 0.001494 | 0.016325 [0.016314–0.019681]; SD 0.001646 | -0.000517 |
-| Speed Index, ms | 1657.23 [1590.60–2260.81]; SD 255.26 | 1655.71 [1555.97–1674.97]; SD 46.89 | -1.52 |
-| Transfer, bytes | 340264 [340264–340264]; SD 0 | 339305 [339305–339305]; SD 0 | -959 |
+| Performance | 97.00 [92.00–100.00]; 1.97 | 97.00 [95.00–98.00]; 0.87 | 0.00 |
+| FCP, ms | 1656.500 [1359.393–2260.810]; 281.428 | 1506.150 [1353.781–1656.349]; 150.544 | -150.349 |
+| LCP, ms | 2407.872 [1513.173–2566.216]; 375.309 | 2407.903 [1562.405–2460.465]; 257.708 | 0.031 |
+| TBT, ms | 2.750 [0.000–177.000]; 67.009 | 0.000 [0.000–234.638]; 70.294 | -2.750 |
+| CLS | 0.016842 [0.016236–0.019717]; 0.001429 | 0.019590 [0.016314–0.019681]; 0.001557 | 0.002748 |
+| Speed Index, ms | 1657.654 [1460.533–2260.810]; 235.700 | 1647.181 [1526.039–1686.067]; 52.588 | -10.473 |
+| Transfer, bytes | 340264.00 [340264.00–340264.00]; 0.00 | 339305.00 [339305.00–339305.00]; 0.00 | -959.00 |
 
-### desktop
+### Desktop
 
-| Metric | BEFORE | AFTER | Delta medians |
+| Метрика | BEFORE median [min–max]; SD | AFTER median [min–max]; SD | Δ медиан |
 | --- | --- | --- | --- |
-| Perf | 100 [99–100]; SD 0 | 100 [100–100]; SD 0 | 0 |
-| FCP, ms | 386.58 [346.75–536.93]; SD 65.89 | 386.12 [324.54–407.65]; SD 34.40 | -0.46 |
-| LCP, ms | 530.67 [528.30–625.40]; SD 38.32 | 529.32 [528.16–531.51]; SD 1.13 | -1.35 |
-| TBT, ms | 0.00 [0.00–22.00]; SD 8.80 | 0.00 [0.00–0.00]; SD 0.00 | 0.00 |
-| CLS | 0.005324 [0.005298–0.005502]; SD 0.000088 | 0.005434 [0.005278–0.005657]; SD 0.000151 | 0.000109 |
-| Speed Index, ms | 963.40 [950.37–1008.35]; SD 21.62 | 981.98 [948.42–1009.48]; SD 20.53 | 18.57 |
-| Transfer, bytes | 429991 [429991–429991]; SD 0 | 429032 [429032–429032]; SD 0 | -959 |
+| Performance | 100.00 [99.00–100.00]; 0.30 | 100.00 [99.00–100.00]; 0.30 | 0.00 |
+| FCP, ms | 388.676 [346.747–536.934]; 59.306 | 387.490 [324.543–491.442]; 43.580 | -1.186 |
+| LCP, ms | 531.630 [528.299–625.402]; 29.310 | 530.133 [528.155–532.727]; 1.276 | -1.497 |
+| TBT, ms | 0.000 [0.000–22.000]; 6.600 | 0.000 [0.000–0.000]; 0.000 | 0.000 |
+| CLS | 0.005372 [0.003975–0.005514]; 0.000495 | 0.005440 [0.005278–0.005657]; 0.000126 | 0.000068 |
+| Speed Index, ms | 961.827 [937.840–1008.353]; 19.128 | 986.681 [948.416–1195.113]; 65.778 | 24.855 |
+| Transfer, bytes | 429991.00 [429991.00–429991.00]; 0.00 | 429032.00 [429032.00–429032.00]; 0.00 | -959.00 |
 
-A11y/BP/SEO medians are 100 for all four arms; all initial loads have 0 world-library requests. Transfer AFTER is 959 bytes lower. Sources/settings/UA and every raw metric were independently checked. Windows host: 47.587 GiB /9.995% free, WARNING with substantial margin for the bounded128MiB run; not CRITICAL. Own browsers, profiles, server and lock closed; raw LHR remain for review.
+## Sampling / clock limitations
 
-Declared median budgets are numerically met: mobile≥90, desktop≥95; median LCP investigation (>10% AND >150ms) and CLS delta>.02 are not crossed. **This does not resolve distribution uncertainty.** Mobile paired LCP mean +277.481ms (+12.96% of BEFORE mean), median +0.213ms, SD397.245ms, range−105.750…+895.770ms. BEFORE lower-mode samples and AFTER concentration around2.4s require the independent reviewer's fixed second complete5-pair cohort. LCP element is the same `div.show-hero-byline`; a causal zero-cost or source-regression claim is not established.
+Outer60 readiness samples, guard15 preflight;247/246 measurement samples for4/5,0 foreign browser/build samples or violations, foreign CPU maxima59.782/19.932%onecore. V1 denominator omitted some known scan/write work but lacked CPU-read MONOTONIC stamps: recorded UTC max4.601346s does not establish actual mono gaps or their cause. V2 uses actual CPU-read MONOTONIC intervals, max1.022587s; scan max.011263s, predeclared whole-attempt3s MONOTONIC predicate passed. [Validation/predeclaration](guard-v2-validation.json).
 
-Monitoring is sampled. Original `seconds` (median1.0038/max1.0112s) omitted scan/write/parse overhead; recorded timestamp gaps are median1.0074/max4.6013s. Both summaries are now labelled separately in analysis.json; original guard.json stays unchanged. No strict continuous1s coverage is claimed. Cohort4 has247 samples,0 foreign browser/build samples, max reported foreignCPU59.782% of one core.
+Cohort5 UTC span271.007534s versus MONOTONIC245.837832s, seven UTC jumps and max UTC interval4.776223s: **cause unknown**. Original guards/LHR were not edited. No wallgap≤3s, continuous1s quiet, physical-time calibration, Windows-load or field-CWV claim. [Clock note/timeline](CLOCK_DOMAINS.md) separates those domains. Fixed B→A order, small n, sampled visibility and instrumentation difference limit causal/general conclusions; independent reviewer accepts bounded simulated comparison with these limits.
 
-For cohort5, [guard v2 validation/predeclaration](guard-v2-validation.json) records corrected actual monotonic CPU denominator, actual CPU-read timestamps/scan duration and whole-attempt rejection if a snapshot interval exceeds3s. Own Chrome/worker argv are no longer read; only foreign potential JS compiler hosts need argument classification. LH runner/runtime/presets/order remain frozen. Guard instrumentation versions differ; comparisons remain paired within each cohort, with separate and pooled reporting.
+## Excluded attempts — historical evidence
 
-## Источники и метод
-
-- BEFORE: `6b082e5f262c09a123748273da42277d3a29a6c2`, 190 файлов, manifest `101c240eacd69c193473f40ec4367440eaa096e2ef3b92dad200f99378b39ee0`.
-- AFTER: `b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`, 190 файлов, manifest `c3117174a500ed3b31ab530bc814a84f6dd3b8671293f7523aa298808c69c693`.
-- Runner неизменён относительно frozen SHA; исходные продуктовые файлы проверены до и после.
-- Chromium 149 / Lighthouse 12.8.2 / Playwright 1.61.1; один localhost URL/server, gzip text, `max-age=600`, одинаковые MIME/404, свежий профиль и default storage reset для каждого наблюдения.
-- Default mobile: 412×823@1.75, simulated CPU×4 / RTT150ms; desktop preset: 1350×940@1, CPU×1 / RTT40ms. Обычный motion/loader, без скрытия контента.
-- Порядок: пять раз mobile BEFORE→AFTER, desktop BEFORE→AFTER. Выполнено 20/20 2026-10-20 13:17–13:22 MSK (10:17–10:22 UTC).
+Attempts1–3 are wholly excluded from the fixed40 result. Their numeric records remain observations, not qualified PASS.
 
 ## Attempt 1: числовые наблюдения
 
@@ -123,20 +130,7 @@ runtime exact `b85fbb0a`, remote main `6b082e5`, PR12 Draft перепровер
 не завершён: **0 completed observations / 0 raw LHR**, status CONTAMINATED, summary INCOMPLETE.
 Профиль, browser, server и runner lock закрыты; frozen runner SHA256 не изменился.
 
-Следующая попытка использует новые scratch/durable пути и полный набор из пяти пар.
-Readiness watcher теперь требует **60 последовательных тихих секунд** до передачи
-управления неизменённому guard. Это более строгое ожидание после нескольких коротких
-пауз между внешними фазами; собственные 15s preflight/1s monitor guard и Lighthouse
-settings остаются прежними. Ни старые contaminated значения, ни нулевые attempts
-не добавляются к будущему qualified набору.
 
-## Воспроизведение / сохранность
+## Retention / reproducibility
 
-[Метод и команды](../../tools/PERF_RUNNER.md), [guard wrapper](run_guarded.py),
-[readiness](readiness.json), [derived numbers](observational-analysis.json).
-Raw first-attempt reports остаются в `/tmp/axs-0524-w4-perf/run-final-paired-20261020/`
-по 3-run/14-day retention; 17.83MB, без профилей. Все 20 raw JSON разобраны, версии,
-settings и LCP/CLS совпали с summary; hashes сохранены для G4.
-[Cleanup](cleanup.json): own browsers/profiles/lock/UNC отсутствуют.
-Следующее действие — отдельное разрешённое окно после естественного завершения чужой
-работы; новый полный attempt в отдельном каталоге, без изменения runtime/tests.
+Все raw LHR cohorts4/5 были доступны и сверены независимо до очистки. Raw attempt1 удалён frozen runner retention при старте cohort5 после прежней сверки; его summary/qualification/log/hash records сохранены. Final cleanup record фиксирует удаление только собственных marked scratch, без изменения durable evidence. [Метод](../../tools/PERF_RUNNER.md), [cleanup](final-cleanup.json), [independent G4](../../../../waves/w4/W4_G4_REVIEW.md).

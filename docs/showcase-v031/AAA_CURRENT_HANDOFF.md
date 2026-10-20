@@ -2,13 +2,13 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: W4_IMPLEMENTED / QUALIFIED_PERFORMANCE_PENDING / GATE_B_PENDING
+  status: W4_VERIFIED_WITH_LIMITS / G4_COMPLETE / GATE_B_PENDING
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
   scope: endeavor-vik.github.io / current 0524 and future AAA waves
   lang: ru
-  last_updated: 2026-10-20
+  last_updated: 2026-10-21
   editable_by_agents: true
   change_policy: "Snapshot fields are never asserted current without Git recheck; update only in authorized task branch after every review"
   links:
@@ -18,37 +18,37 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-20 / FIXED SECOND PERFORMANCE COHORT REQUIRED
+## CURRENT STATE — 2026-10-21 / READY FOR CREATOR GATE B
 
-Authority: [Principal interim review](waves/w4/W4_PRINCIPAL_INTERIM_REVIEW.md): G2 ACCEPTED FOR FINAL VERIFICATION, G4 INCOMPLETE, Gate B HOLD. [Gate A/R1–R6](waves/w4/W4_GATE_A_ACCEPTANCE.md) сохраняются; новая художественная/архитектурная переработка не требуется.
+Authority: [Gate A/R1–R6](waves/w4/W4_GATE_A_ACCEPTANCE.md), [Principal interim review](waves/w4/W4_PRINCIPAL_INTERIM_REVIEW.md) и команда CREATOR продолжать. G2 принят; оставшееся исполнение завершено: qualified fixed40 → independent G4 → final visual/decision packet. **Gate B HOLD / CREATOR decision not given.** Нового художественного/архитектурного change request нет.
 
-- Repo/worktree: `Endevor-VIK/endevor-vik.github.io`, branch `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**; все последующие изменения — reporting/QA instrumentation. Последний remote reporting HEAD до этого checkpoint: `b333b345c0cd1d038f2a70c326489eb93278c560`.
-- [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), main/BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2`. PR11 `af20ff6` неизменён и не слит. Canon `3884ea43` read-only. Root/gitlinks/main/deploy не входят в write scope.
-- G2 принят Principal: W01 English title; четыре такта BLACK SUN; visible authored NEXARCH reconstruction; human WHAT REMAINS; три закрытых WORK disclosures вторичны к восьми real shots; FACTIONS/NEURA uncertainty. Runtime: только HTML и86 scoped CSS lines; app JS/fonts/media/protected III/IV/map/OMEGA/chars/AXIOM∅ неизменны.
-- G3 выполнен: BEFORE327/0,455 retained frames; AFTER1656/0,541 frames,3engines×7viewports. Native200% AFTER18/18 PASS и corrected reading frames; независимый browser risk13/13 PASS. Legacy230PASS/2baselineFAIL — [отдельная HERO debt](waves/w4/W4_BASELINE_HERO_DEBT.md). Полную матрицу не повторять. [QA](waves/w4/WORLD_QA_REPORT.md), [полные пары](waves/w4/WORLD_BEFORE_AFTER.md), [offline index](evidence/w4/REVIEW.html).
-- Performance attempts1–3 не qualified: первый20-run contaminated; второй отказал preflight; третий прерван guard до первого completed observation. Они сохранены целиком и не смешиваются с новой выборкой.
-- **Cohort4 qualified по original guard policy:**20 observations /5pairs,17:26:14–17:30:46 UTC. [Data/analysis/raw hashes/readiness/cleanup](evidence/w4/qa/performance/OBSERVATIONS.md). Все20 raw LHR независимо сверены G4. Scores medians mobile97→97/desktop100→100; LCP medians2407.6006→2407.8136ms /530.6714→529.3208ms. Mobile paired LCP mean+277.481ms (+12.96%), SD397.245ms при median+0.213ms: **G4 требует один заранее фиксированный дополнительный полный5-pair cohort**, затем separate+pooled40/n10 per arm. Никакого optional stopping/culling/contaminated pooling.
-- Original guard4 был sampled, recorded timestamp gaps median1.0074/max4.6013s; поле seconds исключало scan/write/parse overhead. Никакого strict continuous1s claim. [Guard v2 predeclaration/fixture](evidence/w4/qa/performance/guard-v2-validation.json): actual monotonic CPU-read interval/scan timestamps, own worker argv не читаются, whole-new-attempt rejection при gap>3s. Runtime/LH runner/presets/order/CPU thresholds прежние; guard versions различаются между cohorts и одинаковы между arms своего cohort.
-- Следующий run: новые scratch `/tmp/axs-0524-w4-perf/run-fixed-cohort-20261020-5`, durable `evidence/w4/qa/performance/attempt-5-fixed/`. Сначала60 тихих секунд, recheck clean HEAD/runtime/main/PR Draft, затем собственный15s preflight и монитор. Проверить actual active exec/process/lock перед запуском, не создавать дубликат. Все предыдущие own watcher/Chrome/profile/server/lock закрыты; raw cohort4 оставлен для G4. Performance-agent capacity failure компенсирует Lead; `canon_audit` ждёт cohort5 без нового browser rerun.
-- Evidence49.053MiB, budget<50MiB; новый compact attempt≤1MiB (ожидается~0.4). Host Windows disk guard перед heavy run; CRITICAL останавливает, WARNING допустим при запасе. Own transient max3runs/14days; source BEFORE worktree сохранять до cohort5/G4, чужие процессы/data не трогать.
-- Следующие шаги: фиксированный cohort5 → separate+pooled40 + independentG4 final → окончательные QA/report/Gate B record/visual handoff → commit/push/update DraftPR12. [Gate B preparation](waves/w4/W4_GATE_B_RECORD.md) пока HOLD. Merge/deploy/Canon/protected требуют отдельных решений CREATOR.
+- Repo/worktree: `Endevor-VIK/endevor-vik.github.io`, branch `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**; subsequent commits reporting/QA instrumentation only. Последний remote reporting parent перед final packet: `157f01b23904a5ea014dd9bb30218d48e82a01e7`. Actual HEAD проверять Git/PR.
+- [PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12) **Draft/open**. Main/BEFORE `6b082e5f262c09a123748273da42277d3a29a6c2`; PR11 `af20ff6` unchanged/unmerged; Canon `3884ea43` read-only. Root/gitlinks/main/deploy вне write scope.
+- G2: W01 English title; four BLACK SUN beats; visibly authored NEXARCH reconstruction; human WHAT REMAINS; three closed WORK disclosures secondary to8real shots; FACTIONS/NEURA uncertainty. Runtime onlyHTML+86scopedCSSlines, no appJS/fonts/media/protected change.
+- G3: BEFORE327/0,455frames; AFTER1656/0,541frames,3engines×7viewports. Actual200% AFTER18/18; independent risk13/13. Legacy230PASS/2baselineFAIL — [separate HERO debt](waves/w4/W4_BASELINE_HERO_DEBT.md). Full matrix complete; no rerun queued. [QA](waves/w4/WORLD_QA_REPORT.md).
+- Qualified performance: **two fixed complete cohorts4/5,40 observations, n=10/profile/arm**. All40 raw/config/source/hash and separate/pooled stats independently matched. Attempts1–3 excluded wholly. Mobile/desktop performance medians97→97/100→100; LCP medians2407.8717→2407.9031ms/531.630→530.1328ms; median CLS+.002748/+.000068; floors/median budgets pass. Cohort5 mobileLCPmean+1.93% did not reproduce cohort4+12.96% at same magnitude; pooledmean+7.36%/+159.977ms, pairedSD492.446ms, fastLCP frequency3/10→1/10 remain. MobileTBTmax234.638ms/desktopSImean+39.776ms retained. [Full data/method](evidence/w4/qa/performance/OBSERVATIONS.md).
+- Clock limits: guard5 passes predeclared MONOTONIC sampled3s predicate, max1.022587s. UTCspan271.007534 vs MONOTONIC245.837832s,7jumps, causeunknown. Cohort4 UTC gaps do not establish actual monotonic intervals/overhead. No continuousquiet/wallgap≤3/Windowsload/physicaltime/field/equivalence claim. [Clock record](evidence/w4/qa/performance/CLOCK_DOMAINS.md).
+- **[Independent G4 COMPLETE / PASS WITH RECORDED LIMITS](waves/w4/W4_G4_REVIEW.md)** on exactb85fbb0. Reviewer authored no runtime/QA patch, source/Canon/protected/native visual samples + riskbrowser + fixed40 checked; F01/F02 resolved. No confirmed new P0/P1 in inspected W4 scope. Broad AAA certification, physical devices/GPU/Safari, humanNVDA/VoiceOver/fieldINP/production not performed; original1672px art/Retina limits remain. III/IV external labels/protected scenes HOLD, NEURA lifecycle unknown.
+- **[Final Gate B record](waves/w4/W4_GATE_B_RECORD.md)** supplies complete [BEFORE/AFTER pairs](waves/w4/WORLD_BEFORE_AFTER.md) for BLACK SUN/WHAT REMAINS/WORK02/03/05/FACTIONS plusentry/protected and [offline21-combination review index](evidence/w4/REVIEW.html). All996 primary frames plus corrected zoom/landscape evidence retained natively; evidence<50MiB.
+- Cleanup after independent raw review: [final owned-scratch record](evidence/w4/qa/performance/final-cleanup.json). Own rawLHR/profiles/servers/locks/temporary BEFORE worktree removed; durable summaries/hashes/diagnostics retained. No foreign process/data/cache or project checkout removed. Measurement UTC20.10 timestamps preserved; final report date21.10.
+- Next action belongs to CREATOR: aesthetic/final Gate B decision on supplied packet. Even Gate B approval does not imply merge/deployment/Canon/protected authority unless explicitly included. No automatic next wave, benchmark rerun, release or version bump.
 
 ```text
 AXIOM SHOWCASE / RESUME PACKET
-AUTHORITY: Principal interim; G2 accepted; G4 INCOMPLETE; Gate B HOLD
-TASK: 0524.W4 final verification, no new artistic/architecture work
-RUNTIME: b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5; BEFORE6b082e5; Canon3884ea43 read-only
-BRANCH: w4/world-narrative; recheck actual HEAD/PR12 Draft/main/status
-DONE: G2;1656/0 standard matrix;996 retained frames;native200%18/18;G4source/visual/risk13/13
-PERF: attempts1-3 excluded;cohort4=20qualified observations but LCP distribution needs fixed cohort5
-REQUIRED: exactly5 additional pairs/20runs; unchanged LH presets/order/runtime; retain separate+pooled40
-GUARD V2: actual monotonic interval; gap>3s rejects whole new attempt; sampled not continuous
-NEXT PATHS: attempt-5-fixed; /tmp/axs-0524-w4-perf/run-fixed-cohort-20261020-5
-RAW: cohort4 /tmp/axs-0524-w4-perf/run-final-paired-20261020-quiet4; keep until review
-NO DUPLICATE: inspect actual exec/processes/runner-lock before fresh guarded run
-EVIDENCE: REVIEW.html + WORLD_BEFORE_AFTER.md + qa/performance/OBSERVATIONS.md
-FORBIDDEN: merge/deploy, Canon/rootgitlink/protected edits, foreign-process kill, premature G4 PASS
-NEXT: qualifiedcohort5→independentseparate+pooled40verdict→finalreports/DraftPR12→CREATORGateB
+AUTHORITY: Gate A R1–R6 + Principal interim + CREATOR continue
+TASK: 0524.W4 final verification COMPLETE; CREATOR Gate B HOLD
+RUNTIME/TEST SHA: b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5
+BEFORE: 6b082e5f262c09a123748273da42277d3a29a6c2; Canon3884ea43 read-only
+BRANCH/PR: w4/world-narrative; PR12 Draft OPEN; recheck actual HEAD/status/main
+DONE: G2;1656/0 requiredmatrix;996primaryframes;actual200%18/18;risk13/13
+PERF: fixed40/allrawreviewed; floor/medianbudgets PASS boundedlab, mean/distribution/clock limits retained
+G4: independent COMPLETE/PASS WITH RECORDED LIMITS on exact b85fbb0; F01/F02 resolved
+EVIDENCE: W4_GATE_B_RECORD.md; WORLD_BEFORE_AFTER.md; REVIEW.html; performance/OBSERVATIONS.md
+RESIDUAL: 2baselineHEROFAIL; physicaldevices/Safari/manualAT/fieldNOTRUN; Retina source limit
+CLEANUP: own raw scratch/temporaryBEFORE removed after review; no browser/benchmark queued
+FORBIDDEN: merge/deploy, Canon/rootgitlink/protected edits, foreignprocesskill, blanketAAA/zero-costclaim
+NEXT: CREATOR visual/Gate B decision; explicit separate release authority required
+FIRST: recheck Git/PR/sourcefreeze, read finalrecords; do not rerun completed matrix without new reason
 ```
 
 ## HISTORICAL SNAPSHOT — 2026-10-19 / 0524.W4 G0/G1 — READY FOR GATE A
