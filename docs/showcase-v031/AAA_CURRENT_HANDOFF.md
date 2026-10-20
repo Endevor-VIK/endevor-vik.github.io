@@ -20,7 +20,7 @@ AXS_HEADER_META:
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
 ## CURRENT STATE — 2026-10-20 / W4 IMPLEMENTED — QUALIFIED PERFORMANCE PENDING
 
-Authority: [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), reviewed proposal PR11/`af20ff6`; R1–R6 mandatory. [G2 SPEC](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
+Authority: [Principal interim review](waves/w4/W4_PRINCIPAL_INTERIM_REVIEW.md): G2 ACCEPTED FOR FINAL VERIFICATION, G4 INCOMPLETE, Gate B HOLD. [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), proposal PR11/`af20ff6`, R1–R6 remain binding. [G2 SPEC](waves/w4/W4_G2_SPEC.md). **Gate B PENDING; no automatic merge/deploy.**
 
 - Branch/worktree: `w4/world-narrative`, `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation`. Implementation/test freeze + remote recovery: **`b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5`**. Current reporting/evidence delta only; never restart completed source slices. PR11 remains unchanged Draft/unmerged.
 - Implementation [Draft PR12](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/12), base main. Durable evidence/source-review checkpoint **`e5f90f4`** pushed; its runtime/assets/tests diff against b85fbb0 is empty. Later trace commits remain documentation only. This is a reviewable checkpoint, not completed G3/G4 or Gate B readiness.
@@ -30,11 +30,12 @@ Authority: [Gate A acceptance](waves/w4/W4_GATE_A_ACCEPTANCE.md), reviewed propo
 - Independent G4 `canon_audit`: no new source/Canon/visual P0/P1;66frames viewed,13/13 riskbrowserPASS, correctednativezoom reviewed. Own record `W4_G4_REVIEW.md` final remains pending qualified performance. No more reviewer browsers planned.
 - **Performance unresolved:** first20observations completed but external Claude browser/build jobs contaminated them; OBSERVED/CONTAMINATED, not quiet gate. Guarded attempt2 refused preflight (0LH) because foreign tests remain live in `mgp7-ws/apps/e2e-run`. Never stop foreign processes. Need6minute quiet window,15s preflight +1s monitor, full5pairs rerun. CREATOR ответил: после завершения другой задачи; до фактического quiet window новый LH не запускается.
 - Host reboot cleared `/tmp`; main21matrix/996frames/legacyproof were already durable. BEFORE worktree restored at same `/tmp/axs-0524-w4-before-6b082e5`. Only lost narrowlandscape proof re-run, not fullmatrix. WebKitrootlessscratch cleaned by owner; browser cache retained.
+- Interim execution resumed20.10: HEAD/PR12 `3b4add5` clean, runtime/test diff vs b85fbb0 empty, both190-file source manifests revalidated. Root has conditionally authorized perf owner to start attempt3 automatically after external browser/build work ends and15quiet samples pass; no additional permission is needed. Foreign processes remain untouched. New authority/debt docs are reporting-only; no runtime correction made.
 - Next: qualified5pairs → independentG4 final → finalreport/handoff/evidencecommit/update DraftPR12. No Canon/rootgitlink/version/main/deploy writes. Required remaining approval: Gate B and any later merge/deploy/protected/Canon scope.
 
 ```text
 AXIOM SHOWCASE / RESUME PACKET
-AUTHORITY: W4_GATE_A_ACCEPTANCE.md, R1–R6; GateB PENDING
+AUTHORITY: W4_PRINCIPAL_INTERIM_REVIEW.md; G2accepted/R1–R6; GateB HOLD
 TASK: 0524.W4; implementation frozen b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5
 BRANCH: w4/world-narrative; runtime baseline6b082e5; Canon3884ea43 read-only
 WORKTREE: /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-world-implementation
