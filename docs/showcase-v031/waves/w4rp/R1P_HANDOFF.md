@@ -14,6 +14,8 @@ AXS_HEADER_META:
 
 **Gate R-A: CHANGES REQUESTED. R2: NOT AUTHORIZED. PR12: DRAFT.** Это R1.P prototype/snapshot по [последней директиве Principal/CREATOR, §§7–9](PRINCIPAL_CHANGES_REQUESTED.md), а не интеграция нового дизайна в продукт. A/B/C не утверждены. Художественное превосходство A+ не объявляется проверенным исполнителем.
 
+**Запушенный remote recovery point полного R1.P пакета:** [`ba8b128b1ed70bd60b72e4e8e9f3201dff33a777`](https://github.com/Endevor-VIK/endevor-vik.github.io/commit/ba8b128b1ed70bd60b72e4e8e9f3201dff33a777). PR12 Draft title/body обновлены под этот A+, без изменения gate. Более поздний delivery trace меняет только ссылки на этот freeze; actual PR HEAD проверять отдельно.
+
 ## Просмотр
 
 Начните с [нативного BEFORE / W4 CURRENT / A+ PROPOSED](../../evidence/w4rp/REVIEW.html). Выберите viewport, сцену и версию; переходите по всем кадрам. Изображения показываются **1:1**, с горизонтальной прокруткой при узком окне, без уменьшения. Исходные размеры каждого файла и SHA256 доступны рядом. Это 346 кадров внутри трёх настоящих полных страниц, не отдельные иллюстрации новых введений.

@@ -45,4 +45,4 @@ R1.P only. R2 NOT AUTHORIZED; R3 full cross-engine/actual200%/paired performance
 
 ## E — передача
 
-Пакет ограничен docs/snapshot/evidence +living handoff, branch w4/world-narrative. Remote recovery point будет дополнен после commit/push. PR12 остаётся Draft; актуальная директива§9 требует повторного решения CREATOR по конкретному A+ до R2. Все прежние evidence/source сохранены. No Canon/main/gitlink/version/protected/runtime/merge/deploy writes.
+Пакет ограничен docs/snapshot/evidence +living handoff, branch w4/world-narrative. Remote recovery point полного пакета: `ba8b128b1ed70bd60b72e4e8e9f3201dff33a777`, pushed; PR12 Draft/title/body обновлены без смены gate. Subsequent delivery trace only records this immutable proof SHA. PR12 остаётся Draft; актуальная директива§9 требует повторного решения CREATOR по конкретному A+ до R2. Все прежние evidence/source сохранены. No Canon/main/gitlink/version/protected/runtime/merge/deploy writes.
