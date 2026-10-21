@@ -643,12 +643,12 @@ async function run(engineName, base) {
       record(`R-W3A-06-type-floor-${w}`, engineName, small.length === 0, small.slice(0, 6));
       await ctx.close();
     }
-    // R-W3A-07 (N-2) the ticker's loop clone is hidden from assistive tech; the original seven items are not
+    // R-W3A-07 (N-2) the ticker's loop clone is hidden from assistive tech; the original eight items are not
     {
       const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
       await p.goto(base, { waitUntil: 'load' });
       const tk = await p.evaluate(() => { const items = [...document.querySelectorAll('.ticker .stream-inner > span')]; return { total: items.length, hidden: items.filter((s) => s.getAttribute('aria-hidden') === 'true').length, firstHalfHidden: items.slice(0, items.length / 2).some((s) => s.getAttribute('aria-hidden') === 'true') }; });
-      record('R-W3A-07-ticker-clone-hidden', engineName, tk.total === 14 && tk.hidden === 7 && !tk.firstHalfHidden, tk);
+      record('R-W3A-07-ticker-clone-hidden', engineName, tk.total === 16 && tk.hidden === 8 && !tk.firstHalfHidden, tk);
       await ctx.close();
     }
     // R-W3A-08 (F-01M) weak device / Save-Data and reduced motion: the radar stage runs no infinite loop (it is CSS-animated, no SMIL)

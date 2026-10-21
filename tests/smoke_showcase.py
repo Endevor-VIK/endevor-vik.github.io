@@ -61,7 +61,7 @@ except (OSError, ValueError) as e: errors.append(f'gate.json invalid: {e}')
 if index.count('href="https://axiomgates.com" aria-label="ENTER AXIOM') != 2: errors.append('ENTER AXIOM CTA address changed')
 # W2 (C1–C4): Canon-confirmed names, no fictitious canon provenance, no simulated service status, real version labelled as SHOWCASE
 v23js = (BASE/'assets/js/showcase-v23.js').read_text('utf-8')
-for needle in ('FACELESS BASE', 'AI ZONE', 'LAB / UNDER GLUHAYA', 'EXCLUSION / LIMBO', '// SHOWCASE v0.3.0.0'):
+for needle in ('FACELESS BASE', 'AI ZONE', 'LAB / UNDER GLUHAYA', 'EXCLUSION / LIMBO', '// SHOWCASE v0.3.1'):
     if needle not in index: errors.append(f'W2 content missing: {needle}')
 for needle in ('~/canon/v3/', 'DOC_ID ::', 'X-CLASS', 'NIGHTMARE PROTOCOL', 'NETWORK STATUS · ONLINE', 'NODES ONLINE', 'в реальном времени', 'MASKED ANOMALY', 'AI_ZONE', 'REL</span><span class="dim">0.3.0.0'):
     if needle in index or needle in v23js: errors.append(f'W2 content regressed: {needle}')
