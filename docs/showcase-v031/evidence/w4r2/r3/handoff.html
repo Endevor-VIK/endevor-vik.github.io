@@ -1,0 +1,160 @@
+<title>AXIOM Landing R2</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@500&display=swap">
+<style>
+/* Layout: one column of scenes; each scene = notes, then native frames A+ / A+AD with viewport and version switches.
+   Deliberately single-theme: the landing's own RED PROTOCOL palette and TYPE A faces, so the frames sit on their ground. */
+:root{
+  --void:#070709; --surface:#101218; --raise:#161922; --line:#262830;
+  --crimson:#ff2034; --crimson-soft:rgba(255,32,52,.14);
+  --ink:#f1f1f4; --read:#b4b8c3; --dim:#7f8491;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--void);color:var(--read);font:400 16px/1.65 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--void)}
+.page{max-width:1480px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:56px;min-width:0}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-transform:uppercase;color:var(--ink);margin:0;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:clamp(40px,7vw,88px);line-height:.95}
+h1 em,h2 em{font-style:normal;color:var(--crimson)}
+h2{font-size:clamp(28px,3.6vw,46px);line-height:1.05}
+p{margin:0;max-width:68ch}
+a{color:var(--ink);text-decoration-color:var(--crimson);text-underline-offset:3px}
+.k{font:500 12px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.k b{color:var(--crimson);font-weight:500}
+code{font:400 .9em var(--mono);color:var(--ink)}
+
+/* Masthead */
+.mast{padding-top:40px;display:grid;gap:22px;border-bottom:1px solid var(--line);padding-bottom:36px}
+.lede{font-size:18px;color:var(--read)}
+.gates{display:flex;flex-wrap:wrap;gap:8px}
+.gate{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.gate.hold{border-color:var(--crimson);color:var(--crimson)}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.fig{background:var(--surface);padding:18px 18px 16px;display:grid;gap:6px;min-width:0}
+.fig strong{font:500 34px/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+.fig strong.neg{color:var(--crimson)}
+.fig span{font-size:14px;color:var(--read)}
+
+/* Sticky controls */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--void) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px))}
+.bar-in{max-width:1480px;margin:0 auto;display:flex;gap:10px 18px;align-items:center;flex-wrap:wrap}
+.toc{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;min-width:0;flex:1 1 420px}
+.toc a{flex:none;font:500 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--read);padding:10px 11px;border:1px solid transparent}
+.toc a:hover,.toc a:focus-visible{color:var(--ink);border-color:var(--line)}
+.seg{display:inline-flex;border:1px solid var(--line);background:var(--surface)}
+.seg button{font:500 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--read);background:none;border:0;padding:11px 12px;cursor:pointer;min-height:40px}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--crimson);color:#fff}
+.seg button:focus-visible,.toc a:focus-visible,.strip:focus-visible{outline:2px solid var(--crimson);outline-offset:2px}
+.ctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* Scenes */
+.scene{display:grid;gap:22px;scroll-margin-top:84px;min-width:0}
+.scene-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px 48px;align-items:start}
+.notes{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.notes li{padding-left:18px;position:relative}
+.notes li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:var(--crimson)}
+.cond{border-left:2px solid var(--crimson);background:var(--crimson-soft);padding:10px 14px;color:var(--ink);font-size:15px}
+.cond .k{display:block;margin-bottom:4px;color:var(--crimson)}
+.meta{display:flex;gap:10px 22px;flex-wrap:wrap;align-items:center}
+.delta{font:500 13px/1.4 var(--mono);color:var(--read);font-variant-numeric:tabular-nums}
+.delta b{color:var(--ink);font-weight:500}
+.delta i{font-style:normal;color:var(--crimson)}
+.frames{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--col,340px)),1fr));align-items:start;min-width:0}
+figure{margin:0;display:grid;gap:8px;min-width:0}
+figcaption{display:flex;justify-content:space-between;gap:10px;font:500 12px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+figcaption b{color:var(--ink);font-weight:500}
+figcaption b.ad{color:var(--crimson)}
+.frame{overflow-x:auto;border:1px solid var(--line);background:#000;max-width:100%}
+.frame img{display:block;height:auto;max-width:100%}
+.native .frame img{max-width:none}
+.strip-wrap{display:grid;gap:10px;min-width:0}
+.strip{display:flex;gap:12px;overflow-x:auto;padding-bottom:10px;scrollbar-color:var(--crimson) transparent;max-width:100%}
+.strip figure{flex:none;width:min(300px,78vw)}
+.native .strip figure{width:auto}
+.strip .frame{overflow:hidden}
+.copy{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px}
+.copy div{background:var(--surface);border:1px solid var(--line);padding:14px 16px;display:grid;gap:6px;min-width:0}
+.copy div p{color:var(--ink);font-size:15px}
+.copy div.was p{color:var(--read)}
+.tbl{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line);font-size:15px;white-space:nowrap}
+th{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);background:var(--surface)}
+th:first-child,td:first-child{text-align:left}
+td.neg{color:var(--crimson)}
+tr:last-child td{border-bottom:0;color:var(--ink)}
+.foot{border-top:1px solid var(--line);padding-top:24px;display:grid;gap:10px;font-size:14px}
+@media (max-width:820px){.scene-head{grid-template-columns:1fr}.bar-in{gap:8px}.toc{flex-basis:100%;order:2}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.stack{display:grid;gap:6px;min-width:0}
+.engines{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--ecol,300px)),1fr));gap:12px;min-width:0}
+</style>
+
+<div class="page">
+  <header class="mast">
+    <span class="k">AXIOM · Landing Phase I · W4.R · R2 → Gate B</span>
+    <h1>До <em>→</em> после R2</h1>
+    <p class="lede">Пять изменённых секций лендинга: сайт до R2 (<code>b85fbb0a</code>) и реализация (<code>b6040e3</code>) — нативными кадрами окна Chromium. Соседние кадры перекрываются на 120 px. Ниже каждой секции — первый кадр реализации в Chromium, Firefox и WebKit. Фиксированная навигация скрыта только в кадрах.</p>
+    <div class="gates">
+      <span class="gate hold">Gate B: решение CREATOR</span>
+      <span class="gate">Runtime: b6040e3</span>
+      <span class="gate">R3 исполнителя: PASS с ограничениями</span>
+      <span class="gate">Производительность: BLOCKED (диск хоста)</span>
+      <span class="gate">R4: не выполнен</span>
+      <span class="gate">Merge / deploy: закрыто</span>
+    </div>
+    <div class="figures">
+      <div class="fig"><span class="k">Матрица · 3 движка × 10 размеров</span><strong>224 / 225</strong><span>один нестабильный шаг клавиатуры WebKit; дополнительная проверка 40/40</span></div>
+      <div class="fig"><span class="k">Проход ширин 320–1920</span><strong>0 / 1 403</strong><span>ни одного вылета текста в трёх движках</span></div>
+      <div class="fig"><span class="k">Zoom 200 %</span><strong>22 / 22</strong><span>настоящий масштаб браузера</span></div>
+      <div class="fig"><span class="k">Регрессия</span><strong>230 / 2</strong><span>только старые долги HERO, как до R2</span></div>
+    </div>
+  </header>
+  <nav class="bar" aria-label="Секции и масштаб"><div class="bar-in"><div class="toc" id="toc"></div>
+    <div class="ctl"><span class="k">Масштаб</span><div class="seg" role="group" aria-label="Масштаб кадров"><button type="button" id="scale-fit" aria-pressed="true">Вписать</button><button type="button" id="scale-native" aria-pressed="false">1:1</button></div></div></div></nav>
+  <main class="page" id="scenes" style="gap:72px"></main>
+  <footer class="foot"><span class="k">Источник</span>
+    <p>PR #12 (<code>w4/world-narrative</code>, Draft): решения — <code>waves/w4ad/OPUS_DECISIONS.md</code>; отчёт — <code>waves/w4ad/R3_REPORT.md</code>; пакет — <code>waves/w4ad/GATE_B_PACKAGE.md</code>; кадры и JSON — <code>evidence/w4r2/r3/</code>. Эталон A+AD — отдельная страница сравнения A+ → A+AD.</p>
+    <p>Это R3 исполнителя (Opus), не независимый R4. Физические устройства, screen reader и производительность не проверены.</p></footer>
+</div>
+<script>
+const F={"chromium-before-1440-chars":[["chromium-before-1440-chars-01.webp",1440,900],["chromium-before-1440-chars-02.webp",1440,900],["chromium-before-1440-chars-03.webp",1440,900],["chromium-before-1440-chars-04.webp",1440,900]],"chromium-before-1440-manifesto":[["chromium-before-1440-manifesto-01.webp",1440,900],["chromium-before-1440-manifesto-02.webp",1440,900],["chromium-before-1440-manifesto-03.webp",1440,900]],"chromium-before-1440-modules":[["chromium-before-1440-modules-01.webp",1440,900],["chromium-before-1440-modules-02.webp",1440,900]],"chromium-before-1440-work":[["chromium-before-1440-work-01.webp",1440,900],["chromium-before-1440-work-02.webp",1440,900]],"chromium-before-1440-world":[["chromium-before-1440-world-01.webp",1440,900],["chromium-before-1440-world-02.webp",1440,900],["chromium-before-1440-world-03.webp",1440,900],["chromium-before-1440-world-04.webp",1440,900]],"chromium-before-390-chars":[["chromium-before-390-chars-01.webp",390,844],["chromium-before-390-chars-02.webp",390,844],["chromium-before-390-chars-03.webp",390,844],["chromium-before-390-chars-04.webp",390,844],["chromium-before-390-chars-05.webp",390,844],["chromium-before-390-chars-06.webp",390,844],["chromium-before-390-chars-07.webp",390,844]],"chromium-before-390-manifesto":[["chromium-before-390-manifesto-01.webp",390,844],["chromium-before-390-manifesto-02.webp",390,844],["chromium-before-390-manifesto-03.webp",390,844]],"chromium-before-390-modules":[["chromium-before-390-modules-01.webp",390,844],["chromium-before-390-modules-02.webp",390,844]],"chromium-before-390-work":[["chromium-before-390-work-01.webp",390,844],["chromium-before-390-work-02.webp",390,844],["chromium-before-390-work-03.webp",390,844],["chromium-before-390-work-04.webp",390,844]],"chromium-before-390-world":[["chromium-before-390-world-01.webp",390,844],["chromium-before-390-world-02.webp",390,844],["chromium-before-390-world-03.webp",390,844],["chromium-before-390-world-04.webp",390,844]],"chromium-impl-1440-chars":[["chromium-impl-1440-chars-01.webp",1440,900],["chromium-impl-1440-chars-02.webp",1440,900],["chromium-impl-1440-chars-03.webp",1440,900],["chromium-impl-1440-chars-04.webp",1440,900]],"chromium-impl-1440-manifesto":[["chromium-impl-1440-manifesto-01.webp",1440,900],["chromium-impl-1440-manifesto-02.webp",1440,900],["chromium-impl-1440-manifesto-03.webp",1440,900]],"chromium-impl-1440-modules":[["chromium-impl-1440-modules-01.webp",1440,900],["chromium-impl-1440-modules-02.webp",1440,900],["chromium-impl-1440-modules-03.webp",1440,900]],"chromium-impl-1440-work":[["chromium-impl-1440-work-01.webp",1440,900],["chromium-impl-1440-work-02.webp",1440,900],["chromium-impl-1440-work-03.webp",1440,900],["chromium-impl-1440-work-04.webp",1440,900]],"chromium-impl-1440-world":[["chromium-impl-1440-world-01.webp",1440,900],["chromium-impl-1440-world-02.webp",1440,900],["chromium-impl-1440-world-03.webp",1440,900],["chromium-impl-1440-world-04.webp",1440,900]],"chromium-impl-390-chars":[["chromium-impl-390-chars-01.webp",390,844],["chromium-impl-390-chars-02.webp",390,844],["chromium-impl-390-chars-03.webp",390,844],["chromium-impl-390-chars-04.webp",390,844],["chromium-impl-390-chars-05.webp",390,844],["chromium-impl-390-chars-06.webp",390,844],["chromium-impl-390-chars-07.webp",390,844],["chromium-impl-390-chars-08.webp",390,844]],"chromium-impl-390-manifesto":[["chromium-impl-390-manifesto-01.webp",390,844],["chromium-impl-390-manifesto-02.webp",390,844],["chromium-impl-390-manifesto-03.webp",390,844],["chromium-impl-390-manifesto-04.webp",390,844],["chromium-impl-390-manifesto-05.webp",390,844]],"chromium-impl-390-modules":[["chromium-impl-390-modules-01.webp",390,844],["chromium-impl-390-modules-02.webp",390,844],["chromium-impl-390-modules-03.webp",390,844]],"chromium-impl-390-work":[["chromium-impl-390-work-01.webp",390,844],["chromium-impl-390-work-02.webp",390,844],["chromium-impl-390-work-03.webp",390,844],["chromium-impl-390-work-04.webp",390,844],["chromium-impl-390-work-05.webp",390,844],["chromium-impl-390-work-06.webp",390,844]],"chromium-impl-390-world":[["chromium-impl-390-world-01.webp",390,844],["chromium-impl-390-world-02.webp",390,844],["chromium-impl-390-world-03.webp",390,844],["chromium-impl-390-world-04.webp",390,844]],"firefox-impl-1440-chars":[["firefox-impl-1440-chars-01.webp",1440,900]],"firefox-impl-1440-manifesto":[["firefox-impl-1440-manifesto-01.webp",1440,900]],"firefox-impl-1440-modules":[["firefox-impl-1440-modules-01.webp",1440,900]],"firefox-impl-1440-work":[["firefox-impl-1440-work-01.webp",1440,900]],"firefox-impl-1440-world":[["firefox-impl-1440-world-01.webp",1440,900]],"firefox-impl-390-chars":[["firefox-impl-390-chars-01.webp",390,844]],"firefox-impl-390-manifesto":[["firefox-impl-390-manifesto-01.webp",390,844]],"firefox-impl-390-modules":[["firefox-impl-390-modules-01.webp",390,844]],"firefox-impl-390-work":[["firefox-impl-390-work-01.webp",390,844]],"firefox-impl-390-world":[["firefox-impl-390-world-01.webp",390,844]],"webkit-impl-1440-chars":[["webkit-impl-1440-chars-01.webp",1440,900]],"webkit-impl-1440-manifesto":[["webkit-impl-1440-manifesto-01.webp",1440,900]],"webkit-impl-1440-modules":[["webkit-impl-1440-modules-01.webp",1440,900]],"webkit-impl-1440-work":[["webkit-impl-1440-work-01.webp",1440,900]],"webkit-impl-1440-world":[["webkit-impl-1440-world-01.webp",1440,900]],"webkit-impl-390-chars":[["webkit-impl-390-chars-01.webp",390,844]],"webkit-impl-390-manifesto":[["webkit-impl-390-manifesto-01.webp",390,844]],"webkit-impl-390-modules":[["webkit-impl-390-modules-01.webp",390,844]],"webkit-impl-390-work":[["webkit-impl-390-work-01.webp",390,844]],"webkit-impl-390-world":[["webkit-impl-390-world-01.webp",390,844]]};
+const S=[['manifesto','BLACK SUN','Доктрина и <em>пять следов</em>','Трёхзонный архив, терминал с кольцом фрагментации и строкой состояния, «Пять следов. Одно имя.» На планшете терминал перестраивается (D-04).'],
+ ['modules','WHAT REMAINS','Жизнь <em>под контролем</em>','Порог A08, память W02, отдельная сцена зависимости. W04 больше не повторяется перед WORLD GRID.'],
+ ['work','WORK','Этюды <em>визуального языка</em>','Восемь реальных интерфейсов без изменений; после них — четыре полных исходных модуля вместо трёх упрощённых раскрытий. На телефоне — лента с индексом.'],
+ ['world','WORLD GRID','The city rises. <em>The depth is sealed.</em>','Только внешний заголовок и вводная о шести узлах; W04, карта и OMEGA-0 побайтно прежние.'],
+ ['chars','CHARACTERS','Three lives <em>inside the fracture.</em>','Только заголовок и последняя фраза вводной; портреты, карточки и AXIOM ∅ без изменений.']];
+const el=(t,a={},h='')=>{const e=document.createElement(t);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);if(h)e.innerHTML=h;return e;};
+const im=([f,w,h],eager)=>`<div class="frame"><img src="frames/${f}" width="${w}" height="${h}" alt="" ${eager?'':'loading="lazy"'} decoding="async"></div>`;
+const state={};
+function draw(id){const st=state[id],w=st.w,arms=st.v==='both'?['before','impl']:[st.v],box=document.getElementById('frames-'+id);
+ box.style.setProperty('--col',w>400?'560px':'300px');box.innerHTML='';
+ for(const a of arms){const list=F[`chromium-${a}-${w}-${id}`]||[];const f=el('figure');
+  f.innerHTML=`<figcaption><b class="${a==='impl'?'ad':''}">${a==='impl'?'IMPLEMENTED · b6040e3':'BEFORE · b85fbb0a'}</b><span>${w}px · ${list.length} кадр.</span></figcaption><div class="stack">${list.map((x,i)=>im(x,id==='manifesto'&&i===0)).join('')}</div>`;box.append(f);}
+ const eng=document.getElementById('eng-'+id);eng.style.setProperty('--ecol',w>400?'420px':'260px');
+ eng.innerHTML=['chromium','firefox','webkit'].map(e=>{const x=(F[`${e}-impl-${w}-${id}`]||[])[0];return x?`<figure><figcaption><b class="ad">${e}</b><span>${w}px · кадр 1</span></figcaption>${im(x)}</figure>`:'';}).join('');
+ document.querySelectorAll(`#s-${id} [data-w]`).forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.w===w)));
+ document.querySelectorAll(`#s-${id} [data-v]`).forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===st.v)));}
+const scenes=document.getElementById('scenes'),toc=document.getElementById('toc');
+S.forEach(([id,sec,name,note],i)=>{state[id]={w:1440,v:'both'};toc.append(el('a',{href:'#'+id},sec));
+ const s=el('section',{class:'scene',id,'aria-labelledby':'t-'+id});
+ s.innerHTML=`<div id="s-${id}" style="display:grid;gap:22px;min-width:0"><div class="scene-head"><div style="display:grid;gap:10px"><span class="k">${String(i+1).padStart(2,'0')} · ${sec}</span><h2 id="t-${id}">${name}</h2></div><ul class="notes"><li>${note}</li></ul></div>
+ <div class="meta"><div class="seg" role="group" aria-label="Ширина"><button type="button" data-w="1440">1440</button><button type="button" data-w="390">390</button></div>
+ <div class="seg" role="group" aria-label="Версия"><button type="button" data-v="before">До</button><button type="button" data-v="impl">После</button><button type="button" data-v="both">Обе</button></div></div>
+ <div class="frames" id="frames-${id}"></div><div class="strip-wrap"><span class="k">Реализация в трёх движках</span><div class="engines" id="eng-${id}"></div></div></div>`;
+ s.querySelectorAll('[data-w]').forEach(b=>b.addEventListener('click',()=>{state[id].w=+b.dataset.w;draw(id);}));
+ s.querySelectorAll('[data-v]').forEach(b=>b.addEventListener('click',()=>{state[id].v=b.dataset.v;draw(id);}));
+ scenes.append(s);draw(id);});
+const fit=document.getElementById('scale-fit'),nat=document.getElementById('scale-native');
+const setScale=n=>{document.body.classList.toggle('native',n);fit.setAttribute('aria-pressed',String(!n));nat.setAttribute('aria-pressed',String(n));try{localStorage.setItem('r2-scale',n?'1':'0');}catch(e){}};
+fit.addEventListener('click',()=>setScale(false));nat.addEventListener('click',()=>setScale(true));try{if(localStorage.getItem('r2-scale')==='1')setScale(true);}catch(e){}
+if(location.hash){const t=document.getElementById(location.hash.slice(1));if(t)requestAnimationFrame(()=>t.scrollIntoView());}
+</script>

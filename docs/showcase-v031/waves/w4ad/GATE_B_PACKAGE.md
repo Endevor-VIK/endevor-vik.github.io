@@ -30,6 +30,11 @@ AXS_HEADER_META:
 
 Отклонения от A+AD — пять, все в CSS, разметка равна прототипу: [OPUS_DECISIONS](OPUS_DECISIONS.md). D-01 — белая искра пульса вместо розовой (правило палитры). D-02…D-05 — посадка текста на узких телефонах и планшетах.
 
+## Визуальная передача
+
+- **До → после R2:** [`evidence/w4r2/r3/handoff.html`](../../evidence/w4r2/r3/handoff.html), опубликована приватно: https://claude.ai/artifact/7CXkQXnRonabYL6BKu2R7q. Пять секций, BEFORE `b85fbb0a` / IMPLEMENTED `b6040e3`, нативные кадры 1440/390, контроль в Chromium, Firefox и WebKit.
+- **A+ → A+AD** (художественное решение): https://claude.ai/artifact/REi9LvzkgmXBga9hRtu7xw.
+
 ## Проверки
 
 R3 исполнителя: [R3_REPORT](R3_REPORT.md). Коротко:
