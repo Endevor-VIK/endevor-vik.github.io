@@ -1,0 +1,3705 @@
+{
+ "base": "http://127.0.0.1:42109/",
+ "generatedAt": "2026-10-21T14:15:49.231Z",
+ "passed": 230,
+ "failed": 2,
+ "skipped": 0,
+ "results": [
+  {
+   "id": "R01-no-h-overflow-360x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 360,
+    "cw": 360
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-390x844",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 390,
+    "cw": 390
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-430x932",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 430,
+    "cw": 430
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-768x1024",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 768,
+    "cw": 768
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1024x768",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1009,
+    "cw": 1024
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1100x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1085,
+    "cw": 1100
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1280x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1265,
+    "cw": 1280
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1440x900",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1425,
+    "cw": 1440
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1920x1080",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 1905,
+    "cw": 1920
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-844x390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 829,
+    "cw": 844
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-720x450@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sw": 707,
+    "cw": 720
+   }
+  },
+  {
+   "id": "R02-work-intro-360",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R02-work-intro-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R02-work-intro-430",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R03-one-archive-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "tabs": 8,
+    "panels": 8,
+    "shown": 1,
+    "linked": true,
+    "legacyGrid": 0,
+    "facts": [
+     "Назначение",
+     "На экране",
+     "Решение",
+     "Связь с AXIOM"
+    ],
+    "panelCols": 1
+   }
+  },
+  {
+   "id": "R03-one-archive-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "tabs": 8,
+    "panels": 8,
+    "shown": 1,
+    "linked": true,
+    "legacyGrid": 0,
+    "facts": [
+     "Назначение",
+     "На экране",
+     "Решение",
+     "Связь с AXIOM"
+    ],
+    "panelCols": 2
+   }
+  },
+  {
+   "id": "R04-archive-sharp-after-select",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "04-chronicle-1919w.webp",
+    "filePx": 1919,
+    "needPx": 1582,
+    "ratio": 1.21,
+    "srcset": [
+     960,
+     1440,
+     1919
+    ]
+   }
+  },
+  {
+   "id": "R05-viewer-focus-return",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "active": "ax-panel-04",
+    "y": 4632,
+    "shown": 3,
+    "y0": 4632
+   }
+  },
+  {
+   "id": "R07-pointer-visible-in-modal",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cssCursor": "zoom-in",
+    "customCursorShown": false
+   }
+  },
+  {
+   "id": "R19-viewer-zoom-paging-keys",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "zoomed": true,
+    "src": "05-axchat-full.webp",
+    "pans": true,
+    "pressed": "true",
+    "fit": true,
+    "last": "08 / 08",
+    "wrapped": "01 / 08",
+    "cyrillicZ": true
+   }
+  },
+  {
+   "id": "R38-viewer-1to1-left-edge",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "zoomed": true,
+    "left": 0,
+    "top": 0,
+    "w": 1919,
+    "scrollW": 1919
+   }
+  },
+  {
+   "id": "R39-map-viewer-1to1",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "f": {
+     "open": true,
+     "focus": "show-lightbox-close"
+    },
+    "z": {
+     "src": "world-spine-map-3840w.webp",
+     "w": 3840,
+     "left": 0,
+     "scrollW": 3840
+    },
+    "pan": 80,
+    "back": {
+     "open": false,
+     "focus": "v23-open-map"
+    }
+   }
+  },
+  {
+   "id": "R40-map-viewer-low-memory",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "src": "world-spine-map-2880w.webp",
+    "w": 960,
+    "left": 0,
+    "scrollW": 960,
+    "loaded3840": false
+   }
+  },
+  {
+   "id": "R41-gate-note-manual-flag",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "404": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25778,
+     "enterBottoms": [
+      782,
+      25530
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "layoutUnchanged": true,
+    "live": {
+     "shown": [
+      true,
+      true
+     ],
+     "text": "Вход временно закрыт · статус на 17.10",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25778,
+     "enterBottoms": [
+      782,
+      25530
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "expired": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25778,
+     "enterBottoms": [
+      783,
+      25530
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "available": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25778,
+     "enterBottoms": [
+      783,
+      25531
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "network-error": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25778,
+     "enterBottoms": [
+      782,
+      25530
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "timeout": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25778,
+     "enterBottoms": [
+      781,
+      25529
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    }
+   }
+  },
+  {
+   "id": "R42-world-canon-ids-sync",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cards": [
+     [
+      "02.01",
+      "02.01",
+      "GLUHAYA"
+     ],
+     [
+      "02.02",
+      "02.02",
+      "NEXUS"
+     ],
+     [
+      "02.03",
+      "02.03",
+      "FACELESS BASE"
+     ],
+     [
+      "02.04",
+      "02.04",
+      "ECHELON"
+     ],
+     [
+      "02.05",
+      "02.05",
+      "OMEGA-0"
+     ],
+     [
+      "02.06",
+      "02.06",
+      "AI ZONE"
+     ]
+    ],
+    "bad": []
+   }
+  },
+  {
+   "id": "R44-char-stats-no-clip",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    {
+     "w": 360,
+     "over": 0
+    },
+    {
+     "w": 430,
+     "over": 0
+    },
+    {
+     "w": 768,
+     "over": 0
+    },
+    {
+     "w": 1024,
+     "over": 0
+    },
+    {
+     "w": 1100,
+     "over": 0
+    },
+    {
+     "w": 1280,
+     "over": 0
+    },
+    {
+     "w": 1920,
+     "over": 0
+    }
+   ]
+  },
+  {
+   "id": "R16-archive-keyboard",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "s1": {
+     "selected": 1,
+     "visible": [
+      1
+     ],
+     "tabStops": 1,
+     "focused": 1,
+     "count": "02 / 08"
+    },
+    "s2": 7,
+    "s3": 0,
+    "s4": 0
+   }
+  },
+  {
+   "id": "R17-archive-prev-next",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "afterPrev": 7,
+    "afterNext2": 1,
+    "liveText": "02 / 08 — CONTROL STATUS / WATCH_DOG"
+   }
+  },
+  {
+   "id": "R18-archive-swipe",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "afterSwipeLeft": 2,
+    "clickAfterSwipeOpenedViewer": false
+   }
+  },
+  {
+   "id": "R06-map-dialog-lazy",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "requestedBeforeOpen": 0,
+    "naturalAfterOpen": 1411
+   }
+  },
+  {
+   "id": "R09-open-map-styled",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "cls": "v23-open-map",
+    "bg": "rgb(255, 32, 52)",
+    "font": "\"JetBrains Mono\""
+   }
+  },
+  {
+   "id": "R10-vision-meta-no-collision",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R11-enter-axiom-label-in-name",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    "ENTER AXIOM — перейти на axiomgates.com",
+    "ENTER AXIOM — перейти на axiomgates.com"
+   ]
+  },
+  {
+   "id": "R15-shot-label-in-name",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    "Открыть экран: AXIOM PANEL — ACCESS GATE",
+    "Открыть экран: CONTROL STATUS / WATCH_DOG"
+   ]
+  },
+  {
+   "id": "R14-anchor-offset",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "sectionTop": 97,
+    "headerBottom": 97
+   }
+  },
+  {
+   "id": "R29-numbering-and-label",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "nums": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "labelNodes": 0,
+    "ariaCurrentAbout": [
+     "#about"
+    ],
+    "ariaCurrentVision": [
+     "#vision"
+    ]
+   }
+  },
+  {
+   "id": "R08-reduced-motion-smil-paused",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "svgsWithSmil": 3,
+    "paused": 3
+   }
+  },
+  {
+   "id": "R12-404-return-link",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "href": "http://127.0.0.1:42109/",
+    "expected": "http://127.0.0.1:42109/"
+   }
+  },
+  {
+   "id": "R13-no-console-errors",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R21-loader-first-visit",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shownMs": 1573,
+    "firstStop": "axiom-boot-skip",
+    "stored": true,
+    "inlineLock": "/"
+   }
+  },
+  {
+   "id": "R22-loader-24h-1h",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "lastShownHoursAgo": 1,
+    "shown": false
+   }
+  },
+  {
+   "id": "R22-loader-24h-25h",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "lastShownHoursAgo": 25,
+    "shown": true
+   }
+  },
+  {
+   "id": "R23-loader-storage-setItem-throws",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "lock": "/",
+    "errors": []
+   }
+  },
+  {
+   "id": "R23-loader-storage-getter-throws",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "lock": "/",
+    "errors": []
+   }
+  },
+  {
+   "id": "R24-loader-escape",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "skipToGoneMs": 274,
+    "inlineLock": "/"
+   }
+  },
+  {
+   "id": "R25-loader-reduced-motion",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false
+   }
+  },
+  {
+   "id": "R26-no-js-fallback",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "overlay": false,
+    "panelsShown": 8,
+    "rail": "none",
+    "h1": true
+   }
+  },
+  {
+   "id": "R27-contact-channels",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    {
+     "href": "https://t.me/Project_AXIOM",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    },
+    {
+     "href": "https://github.com/Endevor-VIK",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    },
+    {
+     "href": "https://axiomgates.com/",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    }
+   ]
+  },
+  {
+   "id": "R28-desktop-menu-contact",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "contact": true,
+    "visible": true,
+    "clearOfStatus": true
+   }
+  },
+  {
+   "id": "R33-fonts-self-hosted",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "google": 0,
+    "oswald": true,
+    "mono": true,
+    "golos": true,
+    "title": "Oswald",
+    "unboundedFace": false
+   }
+  },
+  {
+   "id": "R30-old-variant-url-work=a_type=b",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R30-old-variant-url-work=b_type=a",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R30-old-variant-url-type=b",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R28-mobile-strip-follows",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "current": "location",
+    "inView": true,
+    "contact": true
+   }
+  },
+  {
+   "id": "R31-red-fill-text-contrast",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "checked": 12,
+    "bad": []
+   }
+  },
+  {
+   "id": "R32-no-pink-computed",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R43-vision-b04-phone-crop",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "ratio": 0.92,
+    "pos": "57% 30%",
+    "file": "B04_distant_orbit-1983w.webp",
+    "filePx": 1983,
+    "needPx": 2161
+   }
+  },
+  {
+   "id": "R34-archive-sharp-390@3",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "02-panel-login-1440w.webp",
+    "filePx": 1440,
+    "needPx": 1009,
+    "ratio": 1.43
+   }
+  },
+  {
+   "id": "R34-art-sharp-1440@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "A02": {
+     "file": "A02_network_city_panorama-1916w.webp",
+     "filePx": 1916,
+     "needPx": 1902,
+     "ratio": 1.01
+    },
+    "B04": {
+     "file": "B04_distant_orbit-1983w.webp",
+     "filePx": 1983,
+     "needPx": 2702,
+     "ratio": 0.73
+    }
+   }
+  },
+  {
+   "id": "R43-system-a07-sharp-1440@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "A07_engineering_console-hq.webp",
+    "filePx": 1448,
+    "needPx": 1116,
+    "ratio": 1.3
+   }
+  },
+  {
+   "id": "R37-emblem-no-pink-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "perceptiblePinkPct": 0.106
+   }
+  },
+  {
+   "id": "R37-emblem-no-pink-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "perceptiblePinkPct": 0.068
+   }
+  },
+  {
+   "id": "R35-landscape-cta-first-screen",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "bottom": 384,
+    "vh": 390
+   }
+  },
+  {
+   "id": "R36-kicker-no-overlap-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "overlap": false
+   }
+  },
+  {
+   "id": "R36-kicker-no-overlap-1600",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "shown": true,
+    "overlap": false
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-960x540",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 452,
+     "b": 518,
+     "l": 48,
+     "r": 568
+    },
+    "gateBottom": 528,
+    "vh": 540,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1024x768",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 574,
+     "b": 666,
+     "l": 60,
+     "r": 548
+    },
+    "gateBottom": 682,
+    "vh": 768,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1024x768",
+   "engine": "chromium",
+   "ok": false,
+   "detail": {
+    "frame": {
+     "t": 151,
+     "b": 771,
+     "l": 36,
+     "r": 973
+    },
+    "vh": 768,
+    "quick": {
+     "t": 711,
+     "b": 755,
+     "l": 60,
+     "r": 453
+    },
+    "status": {
+     "t": 663,
+     "b": 755,
+     "l": 784,
+     "r": 949
+    },
+    "titleFont": 81.92
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1100x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 595,
+     "b": 687,
+     "l": 60,
+     "r": 580
+    },
+    "gateBottom": 696,
+    "vh": 800,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1100x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 782,
+     "l": 36,
+     "r": 1049
+    },
+    "vh": 800,
+    "quick": {
+     "t": 722,
+     "b": 766,
+     "l": 60,
+     "r": 453
+    },
+    "status": {
+     "t": 688,
+     "b": 766,
+     "l": 828,
+     "r": 1025
+    },
+    "titleFont": 88
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1280x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 597,
+     "b": 689,
+     "l": 60,
+     "r": 580
+    },
+    "gateBottom": 706,
+    "vh": 800,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1280x800",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 782,
+     "l": 36,
+     "r": 1229
+    },
+    "vh": 800,
+    "quick": {
+     "t": 722,
+     "b": 766,
+     "l": 60,
+     "r": 453
+    },
+    "status": {
+     "t": 702,
+     "b": 766,
+     "l": 918,
+     "r": 1205
+    },
+    "titleFont": 92
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1440x900",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 694,
+     "b": 786,
+     "l": 60,
+     "r": 580
+    },
+    "gateBottom": 800,
+    "vh": 900,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1440x900",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 882,
+     "l": 36,
+     "r": 1389
+    },
+    "vh": 900,
+    "quick": {
+     "t": 807,
+     "b": 851,
+     "l": 60,
+     "r": 453
+    },
+    "status": {
+     "t": 787,
+     "b": 851,
+     "l": 1078,
+     "r": 1365
+    },
+    "titleFont": 115.2
+   }
+  },
+  {
+   "id": "R-W3A-03-byline-beside-quick-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "byline": {
+     "t": 813,
+     "b": 851,
+     "l": 475,
+     "r": 664
+    },
+    "quick": {
+     "t": 807,
+     "b": 851,
+     "l": 60,
+     "r": 453
+    },
+    "lines": 2
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1920x1080",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 835,
+     "b": 927,
+     "l": 173,
+     "r": 693
+    },
+    "gateBottom": 935,
+    "vh": 1080,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1920x1080",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 1062,
+     "l": 36,
+     "r": 1869
+    },
+    "vh": 1080,
+    "quick": {
+     "t": 982,
+     "b": 1026,
+     "l": 173,
+     "r": 566
+    },
+    "status": {
+     "t": 962,
+     "b": 1026,
+     "l": 1445,
+     "r": 1733
+    },
+    "titleFont": 132
+   }
+  },
+  {
+   "id": "R-W3A-04-mobile-radar-scene-360",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "svgs": 1,
+    "position": "absolute",
+    "pe": "none",
+    "enterHit": true,
+    "titleOnTop": true,
+    "behind": true,
+    "overflow": false,
+    "eyebrowLines": 1,
+    "quickRows": 1,
+    "bylineLines": 2,
+    "enter": {
+     "t": 549,
+     "b": 619,
+     "l": 14,
+     "r": 346
+    }
+   }
+  },
+  {
+   "id": "R-W3A-04-mobile-radar-scene-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "svgs": 1,
+    "position": "absolute",
+    "pe": "none",
+    "enterHit": true,
+    "titleOnTop": true,
+    "behind": true,
+    "overflow": false,
+    "eyebrowLines": 1,
+    "quickRows": 1,
+    "bylineLines": 2,
+    "enter": {
+     "t": 563,
+     "b": 633,
+     "l": 14,
+     "r": 376
+    }
+   }
+  },
+  {
+   "id": "R-W3A-04-mobile-radar-scene-430",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "svgs": 1,
+    "position": "absolute",
+    "pe": "none",
+    "enterHit": true,
+    "titleOnTop": true,
+    "behind": true,
+    "overflow": false,
+    "eyebrowLines": 1,
+    "quickRows": 1,
+    "bylineLines": 2,
+    "enter": {
+     "t": 551,
+     "b": 621,
+     "l": 14,
+     "r": 416
+    }
+   }
+  },
+  {
+   "id": "R-W3A-05-bridge-visible-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    {
+     "id": "#system",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    },
+    {
+     "id": "#creator(direct)",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#creator",
+      "#creator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R-W3A-05-bridge-visible-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": [
+    {
+     "id": "#system",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "current": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "current": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    },
+    {
+     "id": "#creator(direct)",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 112,
+     "sectionTop": 112,
+     "current": [
+      "#creator",
+      "#creator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R-W3A-06-type-floor-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3A-06-type-floor-1024",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3A-06-type-floor-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3A-07-ticker-clone-hidden",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "total": 14,
+    "hidden": 7,
+    "firstHalfHidden": false
+   }
+  },
+  {
+   "id": "R-W3A-08-radar-held-then-loops",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "heldAtLoad": 0,
+    "lite": false,
+    "smil": 0,
+    "runningInfiniteCss": 11
+   }
+  },
+  {
+   "id": "R-W3A-08-radar-still-lite",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "heldAtLoad": 0,
+    "lite": true,
+    "smil": 0,
+    "runningInfiniteCss": 0
+   }
+  },
+  {
+   "id": "R-W3A-08-radar-still-reduced",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "heldAtLoad": 0,
+    "lite": false,
+    "smil": 0,
+    "runningInfiniteCss": 0
+   }
+  },
+  {
+   "id": "R-W3C-01-structure-and-anchors",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "order": "top about creator work system world-guide manifesto modules world chars axiom-entity factions vision collaboration",
+    "threshold": true,
+    "trail": "#manifesto #modules #world #chars #factions",
+    "key": true,
+    "plates": true,
+    "omegaInWorld": true,
+    "epilogue": true,
+    "canonIds": "02.01,02.02,02.03,02.04,02.05,02.06"
+   }
+  },
+  {
+   "id": "R-W3C-02-library-lazy-at-open-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "requested": []
+   }
+  },
+  {
+   "id": "R-W3C-02-library-lazy-at-open-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "requested": []
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-960@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 44,
+    "vh": 540,
+    "title": {
+     "t": 288,
+     "b": 379
+    },
+    "promise": {
+     "t": 399,
+     "b": 450
+    },
+    "cta": {
+     "t": 476,
+     "b": 524
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1890,
+     "ratio": 0.88
+    },
+    "sourceLimited": true
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-1280@1",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 97,
+    "vh": 800,
+    "title": {
+     "t": 503,
+     "b": 614
+    },
+    "promise": {
+     "t": 634,
+     "b": 686
+    },
+    "cta": {
+     "t": 712,
+     "b": 760
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1280w.avif",
+     "filePx": 1280,
+     "needPx": 1265,
+     "ratio": 1.01
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-1440@1",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 97,
+    "vh": 900,
+    "title": {
+     "t": 581,
+     "b": 706
+    },
+    "promise": {
+     "t": 726,
+     "b": 779
+    },
+    "cta": {
+     "t": 805,
+     "b": 853
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1425,
+     "ratio": 1.17
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-1920@1",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 97,
+    "vh": 1080,
+    "title": {
+     "t": 699,
+     "b": 867
+    },
+    "promise": {
+     "t": 887,
+     "b": 948
+    },
+    "cta": {
+     "t": 974,
+     "b": 1022
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1672,
+     "ratio": 1
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-768@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 44,
+    "vh": 1024,
+    "title": {
+     "t": 603,
+     "b": 695
+    },
+    "promise": {
+     "t": 715,
+     "b": 766
+    },
+    "cta": {
+     "t": 792,
+     "b": 840
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1536,
+     "ratio": 1.09
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-390@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 45,
+    "vh": 844,
+    "title": {
+     "t": 421,
+     "b": 507
+    },
+    "promise": {
+     "t": 523,
+     "b": 574
+    },
+    "cta": {
+     "t": 596,
+     "b": 644
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1280w.avif",
+     "filePx": 1280,
+     "needPx": 998,
+     "ratio": 1.28
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-390@3",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 45,
+    "vh": 844,
+    "title": {
+     "t": 422,
+     "b": 508
+    },
+    "promise": {
+     "t": 524,
+     "b": 575
+    },
+    "cta": {
+     "t": 597,
+     "b": 645
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1497,
+     "ratio": 1.12
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-430@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "chrome": 45,
+    "vh": 932,
+    "title": {
+     "t": 450,
+     "b": 545
+    },
+    "promise": {
+     "t": 561,
+     "b": 612
+    },
+    "cta": {
+     "t": 634,
+     "b": 682
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1280w.avif",
+     "filePx": 1280,
+     "needPx": 1101,
+     "ratio": 1.16
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-04-omega-return-to-02.05-click",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "id": "02.05 / LABORATORY OMEGA-0",
+    "pressed": "true",
+    "focused": true,
+    "inView": true,
+    "hash": ""
+   }
+  },
+  {
+   "id": "R-W3C-04-omega-return-to-02.05-keyboard",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "id": "02.05 / LABORATORY OMEGA-0",
+    "pressed": "true",
+    "focused": true,
+    "inView": true,
+    "hash": ""
+   }
+  },
+  {
+   "id": "R-W3C-04-omega-return-no-js",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "href": "#v23-map-detail",
+    "target": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-motion",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": true,
+    "armed": true,
+    "open": true,
+    "clip": "inset(0px)",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-reduced",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": false,
+    "armed": false,
+    "open": false,
+    "clip": "none",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-lite",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": false,
+    "armed": false,
+    "open": false,
+    "clip": "none",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-no-js",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": false,
+    "armed": false,
+    "open": false,
+    "clip": "none",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-1440@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1636,
+    "ratio": 1.02,
+    "box": {
+     "w": 820,
+     "ratio": 1.78
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-1920@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1636,
+    "ratio": 1.02,
+    "box": {
+     "w": 820,
+     "ratio": 1.78
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-1024@2",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 963,
+    "ratio": 1.74,
+    "box": {
+     "w": 483,
+     "ratio": 1.78
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-390@3",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1533,
+    "ratio": 1.09,
+    "box": {
+     "w": 362,
+     "ratio": 1.25
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-430@3",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1704,
+    "ratio": 0.98,
+    "box": {
+     "w": 402,
+     "ratio": 1.25
+    }
+   }
+  },
+  {
+   "id": "R-W3C-07-world-ctas-land-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "entry": {
+     "top": 97,
+     "chrome": 97
+    },
+    "vision": {
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "chrome": 97,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    }
+   }
+  },
+  {
+   "id": "R-W3C-07-world-ctas-land-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": {
+    "entry": {
+     "top": 49,
+     "chrome": 45
+    },
+    "vision": {
+     "bridgeTop": 48,
+     "bridgeBottom": 111,
+     "chrome": 45,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    }
+   }
+  },
+  {
+   "id": "R-W3C-08-type-floor-390",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3C-08-type-floor-1440",
+   "engine": "chromium",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R01-no-h-overflow-360x800",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 360,
+    "cw": 360
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-390x844",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 390,
+    "cw": 390
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-430x932",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 430,
+    "cw": 430
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-768x1024",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 768,
+    "cw": 768
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1024x768",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 1024,
+    "cw": 1024
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1100x800",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 1100,
+    "cw": 1100
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1280x800",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 1280,
+    "cw": 1280
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1440x900",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 1440,
+    "cw": 1440
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-1920x1080",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 1920,
+    "cw": 1920
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-844x390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sw": 844,
+    "cw": 844
+   }
+  },
+  {
+   "id": "R01-no-h-overflow-720x450@2",
+   "engine": "firefox",
+   "ok": false,
+   "detail": {
+    "sw": 722,
+    "cw": 720
+   }
+  },
+  {
+   "id": "R02-work-intro-360",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R02-work-intro-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R02-work-intro-430",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "cols": 1,
+    "headingVisible": true,
+    "art": false,
+    "artInside": true
+   }
+  },
+  {
+   "id": "R03-one-archive-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "tabs": 8,
+    "panels": 8,
+    "shown": 1,
+    "linked": true,
+    "legacyGrid": 0,
+    "facts": [
+     "Назначение",
+     "На экране",
+     "Решение",
+     "Связь с AXIOM"
+    ],
+    "panelCols": 1
+   }
+  },
+  {
+   "id": "R03-one-archive-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "tabs": 8,
+    "panels": 8,
+    "shown": 1,
+    "linked": true,
+    "legacyGrid": 0,
+    "facts": [
+     "Назначение",
+     "На экране",
+     "Решение",
+     "Связь с AXIOM"
+    ],
+    "panelCols": 2
+   }
+  },
+  {
+   "id": "R04-archive-sharp-after-select",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "04-chronicle-1919w.webp",
+    "filePx": 1919,
+    "needPx": 1601,
+    "ratio": 1.2,
+    "srcset": [
+     960,
+     1440,
+     1919
+    ]
+   }
+  },
+  {
+   "id": "R05-viewer-focus-return",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "active": "ax-panel-04",
+    "y": 4657,
+    "shown": 3,
+    "y0": 4657
+   }
+  },
+  {
+   "id": "R07-pointer-visible-in-modal",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "cssCursor": "zoom-in",
+    "customCursorShown": false
+   }
+  },
+  {
+   "id": "R19-viewer-zoom-paging-keys",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "zoomed": true,
+    "src": "05-axchat-full.webp",
+    "pans": true,
+    "pressed": "true",
+    "fit": true,
+    "last": "08 / 08",
+    "wrapped": "01 / 08",
+    "cyrillicZ": true
+   }
+  },
+  {
+   "id": "R38-viewer-1to1-left-edge",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "zoomed": true,
+    "left": 0,
+    "top": 0,
+    "w": 1919,
+    "scrollW": 1919
+   }
+  },
+  {
+   "id": "R39-map-viewer-1to1",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "f": {
+     "open": true,
+     "focus": "show-lightbox-close"
+    },
+    "z": {
+     "src": "world-spine-map-3840w.webp",
+     "w": 3840,
+     "left": 0,
+     "scrollW": 3839
+    },
+    "pan": 80,
+    "back": {
+     "open": false,
+     "focus": "v23-open-map"
+    }
+   }
+  },
+  {
+   "id": "R40-map-viewer-low-memory",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "src": "world-spine-map-2880w.webp",
+    "w": 960,
+    "left": 0,
+    "scrollW": 960,
+    "loaded3840": false
+   }
+  },
+  {
+   "id": "R41-gate-note-manual-flag",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "404": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25784,
+     "enterBottoms": [
+      781,
+      25533
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "layoutUnchanged": true,
+    "live": {
+     "shown": [
+      true,
+      true
+     ],
+     "text": "Вход временно закрыт · статус на 17.10",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25784,
+     "enterBottoms": [
+      782,
+      25534
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "expired": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25784,
+     "enterBottoms": [
+      782,
+      25534
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "available": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25784,
+     "enterBottoms": [
+      781,
+      25533
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "network-error": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25784,
+     "enterBottoms": [
+      783,
+      25535
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    },
+    "timeout": {
+     "shown": [
+      false,
+      false
+     ],
+     "text": "Вход временно закрыт",
+     "hrefs": [
+      "https://axiomgates.com",
+      "https://axiomgates.com"
+     ],
+     "docH": 25784,
+     "enterBottoms": [
+      781,
+      25533
+     ],
+     "nextTop": 807,
+     "probed": false,
+     "ok": true
+    }
+   }
+  },
+  {
+   "id": "R42-world-canon-ids-sync",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "cards": [
+     [
+      "02.01",
+      "02.01",
+      "GLUHAYA"
+     ],
+     [
+      "02.02",
+      "02.02",
+      "NEXUS"
+     ],
+     [
+      "02.03",
+      "02.03",
+      "FACELESS BASE"
+     ],
+     [
+      "02.04",
+      "02.04",
+      "ECHELON"
+     ],
+     [
+      "02.05",
+      "02.05",
+      "OMEGA-0"
+     ],
+     [
+      "02.06",
+      "02.06",
+      "AI ZONE"
+     ]
+    ],
+    "bad": []
+   }
+  },
+  {
+   "id": "R44-char-stats-no-clip",
+   "engine": "firefox",
+   "ok": true,
+   "detail": [
+    {
+     "w": 360,
+     "over": 0
+    },
+    {
+     "w": 430,
+     "over": 0
+    },
+    {
+     "w": 768,
+     "over": 0
+    },
+    {
+     "w": 1024,
+     "over": 0
+    },
+    {
+     "w": 1100,
+     "over": 0
+    },
+    {
+     "w": 1280,
+     "over": 0
+    },
+    {
+     "w": 1920,
+     "over": 0
+    }
+   ]
+  },
+  {
+   "id": "R16-archive-keyboard",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "s1": {
+     "selected": 1,
+     "visible": [
+      1
+     ],
+     "tabStops": 1,
+     "focused": 1,
+     "count": "02 / 08"
+    },
+    "s2": 7,
+    "s3": 0,
+    "s4": 0
+   }
+  },
+  {
+   "id": "R17-archive-prev-next",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "afterPrev": 7,
+    "afterNext2": 1,
+    "liveText": "02 / 08 — CONTROL STATUS / WATCH_DOG"
+   }
+  },
+  {
+   "id": "R18-archive-swipe",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "afterSwipeLeft": 2,
+    "clickAfterSwipeOpenedViewer": false
+   }
+  },
+  {
+   "id": "R06-map-dialog-lazy",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "requestedBeforeOpen": 0,
+    "naturalAfterOpen": 1411
+   }
+  },
+  {
+   "id": "R09-open-map-styled",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "cls": "v23-open-map",
+    "bg": "rgb(255, 32, 52)",
+    "font": "\"JetBrains Mono\""
+   }
+  },
+  {
+   "id": "R10-vision-meta-no-collision",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R11-enter-axiom-label-in-name",
+   "engine": "firefox",
+   "ok": true,
+   "detail": [
+    "ENTER AXIOM — перейти на axiomgates.com",
+    "ENTER AXIOM — перейти на axiomgates.com"
+   ]
+  },
+  {
+   "id": "R15-shot-label-in-name",
+   "engine": "firefox",
+   "ok": true,
+   "detail": [
+    "Открыть экран: AXIOM PANEL — ACCESS GATE",
+    "Открыть экран: CONTROL STATUS / WATCH_DOG"
+   ]
+  },
+  {
+   "id": "R14-anchor-offset",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "sectionTop": 98,
+    "headerBottom": 97
+   }
+  },
+  {
+   "id": "R29-numbering-and-label",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "nums": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "labelNodes": 0,
+    "ariaCurrentAbout": [
+     "#about"
+    ],
+    "ariaCurrentVision": [
+     "#vision"
+    ]
+   }
+  },
+  {
+   "id": "R08-reduced-motion-smil-paused",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "svgsWithSmil": 3,
+    "paused": 3
+   }
+  },
+  {
+   "id": "R12-404-return-link",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "href": "http://127.0.0.1:42109/",
+    "expected": "http://127.0.0.1:42109/"
+   }
+  },
+  {
+   "id": "R13-no-console-errors",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R21-loader-first-visit",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "shownMs": 1601,
+    "firstStop": "axiom-boot-skip",
+    "stored": true,
+    "inlineLock": "/"
+   }
+  },
+  {
+   "id": "R22-loader-24h-1h",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "lastShownHoursAgo": 1,
+    "shown": false
+   }
+  },
+  {
+   "id": "R22-loader-24h-25h",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "lastShownHoursAgo": 25,
+    "shown": true
+   }
+  },
+  {
+   "id": "R23-loader-storage-setItem-throws",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "lock": "/",
+    "errors": []
+   }
+  },
+  {
+   "id": "R23-loader-storage-getter-throws",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "lock": "/",
+    "errors": []
+   }
+  },
+  {
+   "id": "R24-loader-escape",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "skipToGoneMs": 281,
+    "inlineLock": "/"
+   }
+  },
+  {
+   "id": "R25-loader-reduced-motion",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "shown": false
+   }
+  },
+  {
+   "id": "R26-no-js-fallback",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "overlay": false,
+    "panelsShown": 8,
+    "rail": "none",
+    "h1": true
+   }
+  },
+  {
+   "id": "R27-contact-channels",
+   "engine": "firefox",
+   "ok": true,
+   "detail": [
+    {
+     "href": "https://t.me/Project_AXIOM",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    },
+    {
+     "href": "https://github.com/Endevor-VIK",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    },
+    {
+     "href": "https://axiomgates.com/",
+     "blank": true,
+     "rel": "noopener noreferrer"
+    }
+   ]
+  },
+  {
+   "id": "R28-desktop-menu-contact",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "contact": true,
+    "visible": true,
+    "clearOfStatus": true
+   }
+  },
+  {
+   "id": "R33-fonts-self-hosted",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "google": 0,
+    "oswald": true,
+    "mono": true,
+    "golos": true,
+    "title": "Oswald",
+    "unboundedFace": false
+   }
+  },
+  {
+   "id": "R30-old-variant-url-work=a_type=b",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R30-old-variant-url-work=b_type=a",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R30-old-variant-url-type=b",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "dataWork": null,
+    "dataType": null,
+    "artInBand": true,
+    "archiveBeforeIntro": true,
+    "title": "Oswald",
+    "unboundedRequests": 0,
+    "errors": []
+   }
+  },
+  {
+   "id": "R28-mobile-strip-follows",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "current": "location",
+    "inView": true,
+    "contact": true
+   }
+  },
+  {
+   "id": "R31-red-fill-text-contrast",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "checked": 12,
+    "bad": []
+   }
+  },
+  {
+   "id": "R32-no-pink-computed",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R43-vision-b04-phone-crop",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "ratio": 0.92,
+    "pos": "57% 30%",
+    "file": "B04_distant_orbit-1983w.webp",
+    "filePx": 1983,
+    "needPx": 2161
+   }
+  },
+  {
+   "id": "R34-archive-sharp-390@3",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "02-panel-login-1440w.webp",
+    "filePx": 1440,
+    "needPx": 1009,
+    "ratio": 1.43
+   }
+  },
+  {
+   "id": "R34-art-sharp-1440@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "A02": {
+     "file": "A02_network_city_panorama-1916w.webp",
+     "filePx": 1916,
+     "needPx": 1924,
+     "ratio": 1
+    },
+    "B04": {
+     "file": "B04_distant_orbit-1983w.webp",
+     "filePx": 1983,
+     "needPx": 2732,
+     "ratio": 0.73
+    }
+   }
+  },
+  {
+   "id": "R43-system-a07-sharp-1440@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "A07_engineering_console-hq.webp",
+    "filePx": 1448,
+    "needPx": 1116,
+    "ratio": 1.3
+   }
+  },
+  {
+   "id": "R37-emblem-no-pink-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "perceptiblePinkPct": 0.118
+   }
+  },
+  {
+   "id": "R37-emblem-no-pink-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "perceptiblePinkPct": 0.067
+   }
+  },
+  {
+   "id": "R35-landscape-cta-first-screen",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "bottom": 364,
+    "vh": 390
+   }
+  },
+  {
+   "id": "R36-kicker-no-overlap-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "shown": false,
+    "overlap": false
+   }
+  },
+  {
+   "id": "R36-kicker-no-overlap-1600",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "shown": true,
+    "overlap": false
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-960x540",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 452,
+     "b": 518,
+     "l": 48,
+     "r": 568
+    },
+    "gateBottom": 528,
+    "vh": 540,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1024x768",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 585,
+     "b": 677,
+     "l": 60,
+     "r": 557
+    },
+    "gateBottom": 682,
+    "vh": 768,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1024x768",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 151,
+     "b": 759,
+     "l": 36,
+     "r": 988
+    },
+    "vh": 768,
+    "quick": {
+     "t": 699,
+     "b": 743,
+     "l": 60,
+     "r": 460
+    },
+    "status": {
+     "t": 663,
+     "b": 743,
+     "l": 793,
+     "r": 964
+    },
+    "titleFont": 81.9167
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1100x800",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 597,
+     "b": 689,
+     "l": 60,
+     "r": 580
+    },
+    "gateBottom": 694,
+    "vh": 800,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1100x800",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 782,
+     "l": 36,
+     "r": 1064
+    },
+    "vh": 800,
+    "quick": {
+     "t": 722,
+     "b": 766,
+     "l": 60,
+     "r": 460
+    },
+    "status": {
+     "t": 686,
+     "b": 766,
+     "l": 837,
+     "r": 1040
+    },
+    "titleFont": 88
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1280x800",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 608,
+     "b": 700,
+     "l": 60,
+     "r": 580
+    },
+    "gateBottom": 706,
+    "vh": 800,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1280x800",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 782,
+     "l": 36,
+     "r": 1244
+    },
+    "vh": 800,
+    "quick": {
+     "t": 722,
+     "b": 766,
+     "l": 60,
+     "r": 460
+    },
+    "status": {
+     "t": 701,
+     "b": 766,
+     "l": 943,
+     "r": 1220
+    },
+    "titleFont": 92
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1440x900",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 703,
+     "b": 795,
+     "l": 60,
+     "r": 580
+    },
+    "gateBottom": 800,
+    "vh": 900,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1440x900",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 882,
+     "l": 36,
+     "r": 1404
+    },
+    "vh": 900,
+    "quick": {
+     "t": 807,
+     "b": 851,
+     "l": 60,
+     "r": 460
+    },
+    "status": {
+     "t": 786,
+     "b": 851,
+     "l": 1103,
+     "r": 1380
+    },
+    "titleFont": 115.2
+   }
+  },
+  {
+   "id": "R-W3A-03-byline-beside-quick-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "byline": {
+     "t": 813,
+     "b": 851,
+     "l": 482,
+     "r": 671
+    },
+    "quick": {
+     "t": 807,
+     "b": 851,
+     "l": 60,
+     "r": 460
+    },
+    "lines": 2
+   }
+  },
+  {
+   "id": "R-W3A-01-cta-gate-first-screen-1920x1080",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "enter": {
+     "t": 835,
+     "b": 927,
+     "l": 180,
+     "r": 700
+    },
+    "gateBottom": 934,
+    "vh": 1080,
+    "overflow": false
+   }
+  },
+  {
+   "id": "R-W3A-02-poster-frame-1920x1080",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "frame": {
+     "t": 127,
+     "b": 1062,
+     "l": 36,
+     "r": 1884
+    },
+    "vh": 1080,
+    "quick": {
+     "t": 982,
+     "b": 1026,
+     "l": 180,
+     "r": 580
+    },
+    "status": {
+     "t": 961,
+     "b": 1026,
+     "l": 1463,
+     "r": 1740
+    },
+    "titleFont": 132
+   }
+  },
+  {
+   "id": "R-W3A-04-mobile-radar-scene-360",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "svgs": 1,
+    "position": "absolute",
+    "pe": "none",
+    "enterHit": true,
+    "titleOnTop": true,
+    "behind": true,
+    "overflow": false,
+    "eyebrowLines": 1,
+    "quickRows": 1,
+    "bylineLines": 2,
+    "enter": {
+     "t": 547,
+     "b": 617,
+     "l": 14,
+     "r": 346
+    }
+   }
+  },
+  {
+   "id": "R-W3A-04-mobile-radar-scene-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "svgs": 1,
+    "position": "absolute",
+    "pe": "none",
+    "enterHit": true,
+    "titleOnTop": true,
+    "behind": true,
+    "overflow": false,
+    "eyebrowLines": 1,
+    "quickRows": 1,
+    "bylineLines": 2,
+    "enter": {
+     "t": 563,
+     "b": 633,
+     "l": 14,
+     "r": 376
+    }
+   }
+  },
+  {
+   "id": "R-W3A-04-mobile-radar-scene-430",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "svgs": 1,
+    "position": "absolute",
+    "pe": "none",
+    "enterHit": true,
+    "titleOnTop": true,
+    "behind": true,
+    "overflow": false,
+    "eyebrowLines": 1,
+    "quickRows": 1,
+    "bylineLines": 2,
+    "enter": {
+     "t": 555,
+     "b": 625,
+     "l": 14,
+     "r": 416
+    }
+   }
+  },
+  {
+   "id": "R-W3A-05-bridge-visible-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": [
+    {
+     "id": "#system",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    },
+    {
+     "id": "#creator(direct)",
+     "chrome": 97,
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "sectionTop": 167,
+     "current": [
+      "#creator",
+      "#creator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R-W3A-05-bridge-visible-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": [
+    {
+     "id": "#system",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "current": [
+      "#system",
+      "#system"
+     ]
+    },
+    {
+     "id": "#vision",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    },
+    {
+     "id": "#collaboration",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "current": [
+      "#collaboration",
+      "#collaboration"
+     ]
+    },
+    {
+     "id": "#creator(direct)",
+     "chrome": 45,
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "sectionTop": 111,
+     "current": [
+      "#creator",
+      "#creator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R-W3A-06-type-floor-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3A-06-type-floor-1024",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3A-06-type-floor-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3A-07-ticker-clone-hidden",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "total": 14,
+    "hidden": 7,
+    "firstHalfHidden": false
+   }
+  },
+  {
+   "id": "R-W3A-08-radar-held-then-loops",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "heldAtLoad": 0,
+    "lite": false,
+    "smil": 0,
+    "runningInfiniteCss": 11
+   }
+  },
+  {
+   "id": "R-W3A-08-radar-still-lite",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "heldAtLoad": 0,
+    "lite": true,
+    "smil": 0,
+    "runningInfiniteCss": 0
+   }
+  },
+  {
+   "id": "R-W3A-08-radar-still-reduced",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "heldAtLoad": 0,
+    "lite": false,
+    "smil": 0,
+    "runningInfiniteCss": 0
+   }
+  },
+  {
+   "id": "R-W3C-01-structure-and-anchors",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "order": "top about creator work system world-guide manifesto modules world chars axiom-entity factions vision collaboration",
+    "threshold": true,
+    "trail": "#manifesto #modules #world #chars #factions",
+    "key": true,
+    "plates": true,
+    "omegaInWorld": true,
+    "epilogue": true,
+    "canonIds": "02.01,02.02,02.03,02.04,02.05,02.06"
+   }
+  },
+  {
+   "id": "R-W3C-02-library-lazy-at-open-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "requested": []
+   }
+  },
+  {
+   "id": "R-W3C-02-library-lazy-at-open-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "requested": []
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-960@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 44,
+    "vh": 540,
+    "title": {
+     "t": 288,
+     "b": 379
+    },
+    "promise": {
+     "t": 399,
+     "b": 450
+    },
+    "cta": {
+     "t": 476,
+     "b": 524
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1920,
+     "ratio": 0.87
+    },
+    "sourceLimited": true
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-1280@1",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 97,
+    "vh": 800,
+    "title": {
+     "t": 503,
+     "b": 615
+    },
+    "promise": {
+     "t": 635,
+     "b": 686
+    },
+    "cta": {
+     "t": 712,
+     "b": 760
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1280w.avif",
+     "filePx": 1280,
+     "needPx": 1280,
+     "ratio": 1
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-1440@1",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 97,
+    "vh": 900,
+    "title": {
+     "t": 581,
+     "b": 707
+    },
+    "promise": {
+     "t": 727,
+     "b": 780
+    },
+    "cta": {
+     "t": 806,
+     "b": 854
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1440,
+     "ratio": 1.16
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-1920@1",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 97,
+    "vh": 1080,
+    "title": {
+     "t": 699,
+     "b": 867
+    },
+    "promise": {
+     "t": 887,
+     "b": 948
+    },
+    "cta": {
+     "t": 974,
+     "b": 1022
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1672,
+     "ratio": 1
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-768@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 44,
+    "vh": 1024,
+    "title": {
+     "t": 603,
+     "b": 694
+    },
+    "promise": {
+     "t": 714,
+     "b": 765
+    },
+    "cta": {
+     "t": 791,
+     "b": 839
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1536,
+     "ratio": 1.09
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-390@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 45,
+    "vh": 844,
+    "title": {
+     "t": 421,
+     "b": 507
+    },
+    "promise": {
+     "t": 523,
+     "b": 574
+    },
+    "cta": {
+     "t": 596,
+     "b": 644
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1280w.avif",
+     "filePx": 1280,
+     "needPx": 998,
+     "ratio": 1.28
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-390@3",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 45,
+    "vh": 844,
+    "title": {
+     "t": 421,
+     "b": 507
+    },
+    "promise": {
+     "t": 523,
+     "b": 574
+    },
+    "cta": {
+     "t": 596,
+     "b": 644
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1672w.avif",
+     "filePx": 1672,
+     "needPx": 1497,
+     "ratio": 1.12
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-03-threshold-after-jump-430@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "chrome": 45,
+    "vh": 932,
+    "title": {
+     "t": 450,
+     "b": 544
+    },
+    "promise": {
+     "t": 560,
+     "b": 612
+    },
+    "cta": {
+     "t": 634,
+     "b": 682
+    },
+    "overflow": false,
+    "whole": true,
+    "sharp": {
+     "file": "W01_threshold_bridge-1280w.avif",
+     "filePx": 1280,
+     "needPx": 1101,
+     "ratio": 1.16
+    },
+    "sourceLimited": false
+   }
+  },
+  {
+   "id": "R-W3C-04-omega-return-to-02.05-click",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "id": "02.05 / LABORATORY OMEGA-0",
+    "pressed": "true",
+    "focused": true,
+    "inView": true,
+    "hash": ""
+   }
+  },
+  {
+   "id": "R-W3C-04-omega-return-to-02.05-keyboard",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "id": "02.05 / LABORATORY OMEGA-0",
+    "pressed": "true",
+    "focused": true,
+    "inView": true,
+    "hash": ""
+   }
+  },
+  {
+   "id": "R-W3C-04-omega-return-no-js",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "href": "#v23-map-detail",
+    "target": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-motion",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": true,
+    "armed": true,
+    "open": true,
+    "clip": "inset(0px)",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-reduced",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": false,
+    "armed": false,
+    "open": false,
+    "clip": "none",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-lite",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": false,
+    "armed": false,
+    "open": false,
+    "clip": "none",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-05-omega-descent-no-js",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "armedAtLoad": false,
+    "armed": false,
+    "open": false,
+    "clip": "none",
+    "visible": true
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-1440@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1636,
+    "ratio": 1.02,
+    "box": {
+     "w": 820,
+     "ratio": 1.78
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-1920@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1636,
+    "ratio": 1.02,
+    "box": {
+     "w": 820,
+     "ratio": 1.78
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-1024@2",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 993,
+    "ratio": 1.68,
+    "box": {
+     "w": 498,
+     "ratio": 1.78
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-390@3",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1533,
+    "ratio": 1.09,
+    "box": {
+     "w": 362,
+     "ratio": 1.25
+    }
+   }
+  },
+  {
+   "id": "R-W3C-06-w03-sharp-430@3",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "file": "W03_subterranean_facility-1672w.avif",
+    "filePx": 1672,
+    "needPx": 1704,
+    "ratio": 0.98,
+    "box": {
+     "w": 402,
+     "ratio": 1.25
+    }
+   }
+  },
+  {
+   "id": "R-W3C-07-world-ctas-land-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "entry": {
+     "top": 97,
+     "chrome": 97
+    },
+    "vision": {
+     "bridgeTop": 97,
+     "bridgeBottom": 167,
+     "chrome": 97,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    }
+   }
+  },
+  {
+   "id": "R-W3C-07-world-ctas-land-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": {
+    "entry": {
+     "top": 49,
+     "chrome": 45
+    },
+    "vision": {
+     "bridgeTop": 49,
+     "bridgeBottom": 111,
+     "chrome": 45,
+     "current": [
+      "#vision",
+      "#vision"
+     ]
+    }
+   }
+  },
+  {
+   "id": "R-W3C-08-type-floor-390",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "R-W3C-08-type-floor-1440",
+   "engine": "firefox",
+   "ok": true,
+   "detail": []
+  }
+ ]
+}

@@ -1,0 +1,692 @@
+{
+ "kind": "W4R_R2_STAGE_SELF_CHECK",
+ "label": "SELF-CHECK — executor verification, not independent PASS",
+ "stage": "R2.2",
+ "impl": "44467477b51bb52104e632160f48ed8642dc7894",
+ "freeze": "9cf78b0",
+ "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "at": "2026-10-21T14:09:53.392Z",
+ "browser": "149.0.7827.55",
+ "heights": {
+  "360": {
+   "work": {
+    "impl": 4041.84,
+    "ad": 4041.84,
+    "base": 2443.13
+   },
+   "system": {
+    "impl": 2668.39,
+    "ad": 2668.39,
+    "base": 2668.39
+   },
+   "manifesto": {
+    "impl": 3751.98,
+    "ad": 3751.98,
+    "base": 2028.25
+   },
+   "modules": {
+    "impl": 2268.17,
+    "ad": 2268.17,
+    "base": 1567.75
+   },
+   "world": {
+    "impl": 2364.13,
+    "ad": 2534.34,
+    "base": 2364.13
+   },
+   "chars": {
+    "impl": 5163.97,
+    "ad": 5261.8,
+    "base": 5163.97
+   },
+   "factions": {
+    "impl": 2002.36,
+    "ad": 2002.36,
+    "base": 2002.36
+   },
+   "vision": {
+    "impl": 3295.83,
+    "ad": 3295.83,
+    "base": 3295.83
+   }
+  },
+  "390": {
+   "work": {
+    "impl": 3884.23,
+    "ad": 3884.23,
+    "base": 2357.5
+   },
+   "system": {
+    "impl": 2652.97,
+    "ad": 2652.97,
+    "base": 2652.97
+   },
+   "manifesto": {
+    "impl": 3604.02,
+    "ad": 3604.02,
+    "base": 1980.88
+   },
+   "modules": {
+    "impl": 2169.98,
+    "ad": 2169.98,
+    "base": 1436.86
+   },
+   "world": {
+    "impl": 2401.75,
+    "ad": 2512.22,
+    "base": 2401.75
+   },
+   "chars": {
+    "impl": 5110.47,
+    "ad": 5216.3,
+    "base": 5110.47
+   },
+   "factions": {
+    "impl": 1986.17,
+    "ad": 1986.17,
+    "base": 1986.17
+   },
+   "vision": {
+    "impl": 3189.53,
+    "ad": 3189.53,
+    "base": 3189.53
+   }
+  },
+  "1440": {
+   "work": {
+    "impl": 3143.5,
+    "ad": 3143.5,
+    "base": 1624.22
+   },
+   "system": {
+    "impl": 1542.8,
+    "ad": 1542.8,
+    "base": 1542.8
+   },
+   "manifesto": {
+    "impl": 2398.77,
+    "ad": 2398.77,
+    "base": 1680.23
+   },
+   "modules": {
+    "impl": 1937.16,
+    "ad": 1937.16,
+    "base": 1161.69
+   },
+   "world": {
+    "impl": 2604.58,
+    "ad": 2543.39,
+    "base": 2604.58
+   },
+   "chars": {
+    "impl": 2575.66,
+    "ad": 2624.83,
+    "base": 2575.66
+   },
+   "factions": {
+    "impl": 1297.78,
+    "ad": 1297.78,
+    "base": 1297.78
+   },
+   "vision": {
+    "impl": 2221.13,
+    "ad": 2221.13,
+    "base": 2221.13
+   }
+  },
+  "1920": {
+   "work": {
+    "impl": 3158.52,
+    "ad": 3158.52,
+    "base": 1639.23
+   },
+   "system": {
+    "impl": 1546.86,
+    "ad": 1546.86,
+    "base": 1546.86
+   },
+   "manifesto": {
+    "impl": 2568.16,
+    "ad": 2568.16,
+    "base": 1751.58
+   },
+   "modules": {
+    "impl": 1943.92,
+    "ad": 1943.92,
+    "base": 1182.91
+   },
+   "world": {
+    "impl": 2704.78,
+    "ad": 2643.59,
+    "base": 2704.78
+   },
+   "chars": {
+    "impl": 2586.33,
+    "ad": 2631.5,
+    "base": 2586.33
+   },
+   "factions": {
+    "impl": 1348.17,
+    "ad": 1348.17,
+    "base": 1348.17
+   },
+   "vision": {
+    "impl": 2235.25,
+    "ad": 2235.25,
+    "base": 2235.25
+   }
+  }
+ },
+ "captures": [
+  {
+   "file": "captures/impl-1440-work.webp",
+   "size": [
+    1440,
+    3143
+   ],
+   "bytes": 233706,
+   "sha256": "8e841c46bb45509fe3ad3c96cd572a5c78d1386a3e49b7b3a8dc442857ca926b"
+  },
+  {
+   "file": "captures/impl-360-work.webp",
+   "size": [
+    360,
+    4041
+   ],
+   "bytes": 139172,
+   "sha256": "59419edea62a6bb7ec600b95f8dc6ea473b00f9a2a21cf256ef696f752f16e4f"
+  },
+  {
+   "file": "captures/impl-390-surfaces-rail-01.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 22656,
+   "sha256": "773ad2c23cc5e4cc2a6f5dbac620514bd69f4f7a6b072213223909f2570c9702"
+  },
+  {
+   "file": "captures/impl-390-surfaces-rail-02.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 21730,
+   "sha256": "441ecab16adf094381e487aec490561ebd739d087e1e421ac94bca3c419b0bb0"
+  },
+  {
+   "file": "captures/impl-390-surfaces-rail-03.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 21500,
+   "sha256": "ccf06b00bc4aabe1e16171ed5099586a8a6da390cccf498f170a97b8021f0559"
+  },
+  {
+   "file": "captures/impl-390-surfaces-rail-04.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 23730,
+   "sha256": "04eb9e2e6f7529995cf4847ac4630b24edd02b8e2d7dca038cda659a8bbad36b"
+  },
+  {
+   "file": "captures/impl-390-work.webp",
+   "size": [
+    390,
+    3884
+   ],
+   "bytes": 137582,
+   "sha256": "c1e23c23eea8f085ed2b7b22824fe74ba6f4aa6afc68b9528272a84acf7537cb"
+  }
+ ],
+ "axe_impl_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 170
+   }
+  ]
+ },
+ "axe_ad_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 170
+   }
+  ]
+ },
+ "axe_impl_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 100
+   }
+  ]
+ },
+ "axe_ad_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 100
+   }
+  ]
+ },
+ "checks": [
+  {
+   "name": "1440: #work height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 3143.5,
+   "ad": 3143.5,
+   "delta": 0,
+   "tol": 31.4
+  },
+  {
+   "name": "1440: #work text equals A+AD",
+   "pass": true,
+   "len": 7917
+  },
+  {
+   "name": "1440: #work SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 5
+  },
+  {
+   "name": "1440: untouched #system height equals b85",
+   "pass": true,
+   "impl": 1542.8,
+   "base": 1542.8
+  },
+  {
+   "name": "1440: untouched #world height equals b85",
+   "pass": true,
+   "impl": 2604.58,
+   "base": 2604.58
+  },
+  {
+   "name": "1440: untouched #chars height equals b85",
+   "pass": true,
+   "impl": 2575.66,
+   "base": 2575.66
+  },
+  {
+   "name": "1440: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 1297.78,
+   "base": 1297.78
+  },
+  {
+   "name": "1440: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 2221.13,
+   "base": 2221.13
+  },
+  {
+   "name": "1440: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "1920: #work height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 3158.52,
+   "ad": 3158.52,
+   "delta": 0,
+   "tol": 31.6
+  },
+  {
+   "name": "1920: #work text equals A+AD",
+   "pass": true,
+   "len": 7917
+  },
+  {
+   "name": "1920: #work SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 5
+  },
+  {
+   "name": "1920: untouched #system height equals b85",
+   "pass": true,
+   "impl": 1546.86,
+   "base": 1546.86
+  },
+  {
+   "name": "1920: untouched #world height equals b85",
+   "pass": true,
+   "impl": 2704.78,
+   "base": 2704.78
+  },
+  {
+   "name": "1920: untouched #chars height equals b85",
+   "pass": true,
+   "impl": 2586.33,
+   "base": 2586.33
+  },
+  {
+   "name": "1920: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 1348.17,
+   "base": 1348.17
+  },
+  {
+   "name": "1920: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 2235.25,
+   "base": 2235.25
+  },
+  {
+   "name": "1920: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "390: #work height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 3884.23,
+   "ad": 3884.23,
+   "delta": 0,
+   "tol": 38.8
+  },
+  {
+   "name": "390: #work text equals A+AD",
+   "pass": true,
+   "len": 7917
+  },
+  {
+   "name": "390: #work SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 5
+  },
+  {
+   "name": "390: untouched #system height equals b85",
+   "pass": true,
+   "impl": 2652.97,
+   "base": 2652.97
+  },
+  {
+   "name": "390: untouched #world height equals b85",
+   "pass": true,
+   "impl": 2401.75,
+   "base": 2401.75
+  },
+  {
+   "name": "390: untouched #chars height equals b85",
+   "pass": true,
+   "impl": 5110.47,
+   "base": 5110.47
+  },
+  {
+   "name": "390: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 1986.17,
+   "base": 1986.17
+  },
+  {
+   "name": "390: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 3189.53,
+   "base": 3189.53
+  },
+  {
+   "name": "390: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "360: #work height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 4041.84,
+   "ad": 4041.84,
+   "delta": 0,
+   "tol": 40.4
+  },
+  {
+   "name": "360: #work text equals A+AD",
+   "pass": true,
+   "len": 7917
+  },
+  {
+   "name": "360: #work SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 5
+  },
+  {
+   "name": "360: untouched #system height equals b85",
+   "pass": true,
+   "impl": 2668.39,
+   "base": 2668.39
+  },
+  {
+   "name": "360: untouched #world height equals b85",
+   "pass": true,
+   "impl": 2364.13,
+   "base": 2364.13
+  },
+  {
+   "name": "360: untouched #chars height equals b85",
+   "pass": true,
+   "impl": 5163.97,
+   "base": 5163.97
+  },
+  {
+   "name": "360: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 2002.36,
+   "base": 2002.36
+  },
+  {
+   "name": "360: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 3295.83,
+   "base": 3295.83
+  },
+  {
+   "name": "360: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "JS/390: surfaces rail native, nothing hidden, bar present",
+   "pass": true,
+   "items": 4,
+   "scrollable": true,
+   "snap": "x mandatory",
+   "hidden": 0,
+   "bar": true
+  },
+  {
+   "name": "keyboard JS/390: every surfaces item fully visible in turn",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "noJS/390: surfaces rail native, nothing hidden, no JS bar",
+   "pass": true,
+   "items": 4,
+   "scrollable": true,
+   "snap": "x mandatory",
+   "hidden": 0,
+   "bar": false
+  },
+  {
+   "name": "keyboard noJS/390: every surfaces item fully visible in turn",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "JS/360: surfaces rail native, nothing hidden, bar present",
+   "pass": true,
+   "items": 4,
+   "scrollable": true,
+   "snap": "x mandatory",
+   "hidden": 0,
+   "bar": true
+  },
+  {
+   "name": "keyboard JS/360: every surfaces item fully visible in turn",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "noJS/360: surfaces rail native, nothing hidden, no JS bar",
+   "pass": true,
+   "items": 4,
+   "scrollable": true,
+   "snap": "x mandatory",
+   "hidden": 0,
+   "bar": false
+  },
+  {
+   "name": "keyboard noJS/360: every surfaces item fully visible in turn",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "touch/390: swipe reaches every surfaces item",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "touch/360: swipe reaches every surfaces item",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "noJS/390: four study index anchors resolve",
+   "pass": true,
+   "r": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "JS/390: index scrolls the rail to WATCH_DOG without a page jump; equal card heights",
+   "pass": true,
+   "left": 938,
+   "target": 938,
+   "current": "04WATCH_DOG",
+   "hash": "",
+   "heights": [
+    766
+   ]
+  },
+  {
+   "name": "390: rail buttons and index targets ≥ 44 px",
+   "pass": true,
+   "min": 44,
+   "n": 8
+  },
+  {
+   "name": "390: study footers do not break words",
+   "pass": true,
+   "wrap": []
+  },
+  {
+   "name": "1440: 2×2 studies, no rail/bar; after viewer, before #work-intro; no W4 disclosures",
+   "pass": true,
+   "cols": 2,
+   "scrollable": false,
+   "bar": "none",
+   "afterViewer": true,
+   "beforeIntro": true,
+   "disclosures": 0,
+   "modules": 4
+  },
+  {
+   "name": "axe/1440: stage sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 170
+    }
+   ]
+  },
+  {
+   "name": "axe/390: stage sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 100
+    }
+   ]
+  },
+  {
+   "name": "runtime: no page errors or HTTP ≥ 400 (impl, ad, base)",
+   "pass": true,
+   "errors": []
+  }
+ ],
+ "summary": "54/54"
+}

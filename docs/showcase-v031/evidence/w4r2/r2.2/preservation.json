@@ -1,0 +1,98 @@
+{
+  "baseline": "6b082e5f262c09a123748273da42277d3a29a6c2",
+  "checked_head": "44467477b51bb52104e632160f48ed8642dc7894",
+  "protected": {
+    "#top": {
+      "baseline_sha256": "9c1b968c33547fdb5b285fa648ef04703e6d39a61bb9140e54a4c1e959af0b41",
+      "actual_sha256": "9c1b968c33547fdb5b285fa648ef04703e6d39a61bb9140e54a4c1e959af0b41",
+      "identical": true
+    },
+    "#about": {
+      "baseline_sha256": "49f6849f5972c713542b250ad849fd259b20638d999bcd4647e825aba4156138",
+      "actual_sha256": "49f6849f5972c713542b250ad849fd259b20638d999bcd4647e825aba4156138",
+      "identical": true
+    },
+    "#creator": {
+      "baseline_sha256": "344194824c67337c5fc3c4c2ca2e4794076e49dedab8adeddf24472d3f601e82",
+      "actual_sha256": "344194824c67337c5fc3c4c2ca2e4794076e49dedab8adeddf24472d3f601e82",
+      "identical": true
+    },
+    "#system": {
+      "baseline_sha256": "d186cd459443f6ea56fc22cc653a9ffda3cb70f6b5533795bfb26ebf0f77b68c",
+      "actual_sha256": "d186cd459443f6ea56fc22cc653a9ffda3cb70f6b5533795bfb26ebf0f77b68c",
+      "identical": true
+    },
+    "#vision": {
+      "baseline_sha256": "17019e58678c134a371e59b6d2c0f9cba8dc0080fc03d7004d024de31caf72ee",
+      "actual_sha256": "17019e58678c134a371e59b6d2c0f9cba8dc0080fc03d7004d024de31caf72ee",
+      "identical": true
+    },
+    "#collaboration": {
+      "baseline_sha256": "dd27b209797d1d290f089935146ecc93efe660fd1ce2c34a91c98165c9a2d7d7",
+      "actual_sha256": "dd27b209797d1d290f089935146ecc93efe660fd1ce2c34a91c98165c9a2d7d7",
+      "identical": true
+    },
+    "#world outside heading/intro": {
+      "baseline_sha256": "3014997df8429e0ef5f311a1586bc4c880d707f36cd35de4bb5b5842f342c11b",
+      "actual_sha256": "3014997df8429e0ef5f311a1586bc4c880d707f36cd35de4bb5b5842f342c11b",
+      "identical": true
+    },
+    "#chars outside heading/intro": {
+      "baseline_sha256": "6a94987dfe3128a430cfd47b2696e984e1b70e13ed71a4b6bcf83971e38de13e",
+      "actual_sha256": "6a94987dfe3128a430cfd47b2696e984e1b70e13ed71a4b6bcf83971e38de13e",
+      "identical": true
+    },
+    "map": {
+      "baseline_sha256": "ebe9d3f73603583d86db6616e9afd6580d2678b60595c8304fd05e1c87284831",
+      "actual_sha256": "ebe9d3f73603583d86db6616e9afd6580d2678b60595c8304fd05e1c87284831",
+      "identical": true
+    },
+    "axes": {
+      "baseline_sha256": "174e0835af9eb99a380bc795dea2ad288599f71c5594e274b22786f8b1907e4a",
+      "actual_sha256": "174e0835af9eb99a380bc795dea2ad288599f71c5594e274b22786f8b1907e4a",
+      "identical": true
+    },
+    "OMEGA-0": {
+      "baseline_sha256": "e1caa0424658cec7cbc3fb3bcf0162e1e91c987b3f3e50c54cda366a213b1b98",
+      "actual_sha256": "e1caa0424658cec7cbc3fb3bcf0162e1e91c987b3f3e50c54cda366a213b1b98",
+      "identical": true
+    },
+    "character cards": {
+      "baseline_sha256": "ebde586ce2e551c1181386b6a001f19c9a3d569bbb156535b16380e5187aee95",
+      "actual_sha256": "ebde586ce2e551c1181386b6a001f19c9a3d569bbb156535b16380e5187aee95",
+      "identical": true
+    },
+    "AXIOM ∅": {
+      "baseline_sha256": "6680c3bfd01ec3a1f1faf3921f4c4be1d64d5d76e3bc0c2b5057c656e75f2c34",
+      "actual_sha256": "6680c3bfd01ec3a1f1faf3921f4c4be1d64d5d76e3bc0c2b5057c656e75f2c34",
+      "identical": true
+    },
+    "viewer": {
+      "baseline_sha256": "cd8521a832bc4338a684a271e3fc2ba7646c115c0593bfa958a30a3008543fbf",
+      "actual_sha256": "cd8521a832bc4338a684a271e3fc2ba7646c115c0593bfa958a30a3008543fbf",
+      "identical": true
+    },
+    "W04 picture": {
+      "baseline_sha256": "7b7feacce721ccd2dfcbb2c3b37f08fdef43aaaf9a242b100ac4b737a3c352c9",
+      "actual_sha256": "7b7feacce721ccd2dfcbb2c3b37f08fdef43aaaf9a242b100ac4b737a3c352c9",
+      "identical": true
+    }
+  },
+  "eight_screens_identical": true,
+  "section_order_identical": true,
+  "baseline_asset_files": 187,
+  "asset_delta": [
+    "assets/css/showcase-v23.css",
+    "assets/css/showcase-w4r.css",
+    "assets/js/showcase-w4r.js",
+    "assets/showcase/visual-library/README.md",
+    "assets/showcase/visual-library/web/A08_protocol_gate-480w.avif",
+    "assets/showcase/visual-library/web/A08_protocol_gate-480w.webp",
+    "assets/showcase/visual-library/web/A08_protocol_gate-720w.avif",
+    "assets/showcase/visual-library/web/A08_protocol_gate-720w.webp",
+    "assets/showcase/visual-library/web/A08_protocol_gate-941w.avif",
+    "assets/showcase/visual-library/web/A08_protocol_gate-941w.webp"
+  ],
+  "failures": [],
+  "limit": "Source proof only; shared CSS rendering and runtime behavior require browser checks."
+}
