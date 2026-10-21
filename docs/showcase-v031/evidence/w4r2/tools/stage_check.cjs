@@ -114,6 +114,22 @@ const REVIEW_ONLY_CSS='header.top,.nav,.ticker,.show-mobile-nav,.index-cursor,.v
    for(const rm of ['reduce','no-preference']){const {ctx,page}=await open('impl',1440,900,{reducedMotion:rm});
     const a=await page.evaluate(()=>getComputedStyle(document.querySelector('.ad-pulse-trace')).animationName);check(`1440 RM=${rm}: pulse animation ${rm==='reduce'?'off':'on'}`,rm==='reduce'?a==='none':a==='ad-pulse',{animation:a});await ctx.close();}
   }
+  if(STAGE===2){
+   {const {ctx,page}=await open('impl',390,844,{javaScriptEnabled:false});
+    const r=await page.evaluate(()=>[...document.querySelectorAll('.ad-surface-index a')].map(a=>!!document.querySelector(a.getAttribute('href'))));
+    check('noJS/390: four study index anchors resolve',r.length===4&&r.every(Boolean),{r});await ctx.close();}
+   {const {ctx,page}=await open('impl',390,844);const s=page.locator('[data-ad-rail="surfaces"]');await s.scrollIntoViewIfNeeded();
+    await page.locator('.ad-surface-index a').nth(3).click();await page.waitForTimeout(700);
+    const st=await s.evaluate(e=>{const it=[...e.children],pad=parseFloat(getComputedStyle(e).paddingLeft);return {left:e.scrollLeft,target:Math.min(it[3].offsetLeft-pad,e.scrollWidth-e.clientWidth),current:document.querySelector('.ad-surface-index a[aria-current]')?.textContent,hash:location.hash,heights:[...new Set(it.map(c=>Math.round(c.getBoundingClientRect().height)))]};});
+    check('JS/390: index scrolls the rail to WATCH_DOG without a page jump; equal card heights',Math.abs(st.left-st.target)<4&&/WATCH_DOG/.test(st.current||'')&&st.hash===''&&st.heights.length===1,st);
+    const t=await page.evaluate(()=>[...document.querySelectorAll('.ad-rail-bar button,.ad-surface-index a')].map(e=>{const r=e.getBoundingClientRect();return Math.min(r.width,r.height);}));
+    check('390: rail buttons and index targets ≥ 44 px',t.length>=8&&t.every(v=>v>=44),{min:Math.min(...t),n:t.length});
+    const wrap=await page.evaluate(()=>[...document.querySelectorAll('.r1p-surfaces .m-foot b')].filter(b=>b.getClientRects().length>1).map(b=>b.textContent));
+    check('390: study footers do not break words',!wrap.length,{wrap});await ctx.close();}
+   {const {ctx,page}=await open('impl',1440,900);
+    const r=await page.evaluate(()=>{const m=document.querySelector('.r1p-surfaces .modules');return {cols:getComputedStyle(m).gridTemplateColumns.split(' ').length,scrollable:m.scrollWidth>m.clientWidth+4,bar:getComputedStyle(m.nextElementSibling).display,afterViewer:!!(document.getElementById('showcase-lightbox').compareDocumentPosition(document.getElementById('work-surfaces'))&Node.DOCUMENT_POSITION_FOLLOWING),beforeIntro:!!(document.getElementById('work-surfaces').compareDocumentPosition(document.getElementById('work-intro'))&Node.DOCUMENT_POSITION_FOLLOWING),disclosures:document.querySelectorAll('.ax-case-context').length,modules:document.querySelectorAll('#work-surfaces .module').length};});
+    check('1440: 2×2 studies, no rail/bar; after viewer, before #work-intro; no W4 disclosures',r.cols===2&&!r.scrollable&&r.bar==='none'&&r.afterViewer&&r.beforeIntro&&r.disclosures===0&&r.modules===4,r);await ctx.close();}
+  }
   for(const w of [1440,390])for(const arm of ['impl','ad']){
    const {ctx,page}=await open(arm,w,844);await page.addScriptTag({content:AXE});
    const r=await page.evaluate(async ids=>{const x=await axe.run({include:ids.map(i=>['#'+i])},{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return {v:x.violations.map(v=>({id:v.id,n:v.nodes.length})),inc:x.incomplete.map(v=>({id:v.id,n:v.nodes.length}))};},NOW);
