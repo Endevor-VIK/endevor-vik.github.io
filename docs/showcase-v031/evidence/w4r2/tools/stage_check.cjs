@@ -38,7 +38,8 @@ function serve(){
 }
 const checks=[],captures=[],errors=[];const check=(name,pass,detail={})=>{checks.push({name,pass:!!pass,...detail});console.log((pass?'PASS ':'FAIL ')+name+(Object.keys(detail).length?' '+JSON.stringify(detail).slice(0,300):''));};
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
-const REVIEW_ONLY_CSS='.nav,.ticker,.show-mobile-nav,.index-cursor,.v22-scroll-progress{visibility:hidden!important}';
+// Review crops only: the fixed header (backdrop blur), nav, ticker, cursor and progress bar would float over full-page clips.
+const REVIEW_ONLY_CSS='header.top,.nav,.ticker,.show-mobile-nav,.index-cursor,.v22-scroll-progress{visibility:hidden!important}';
 (async()=>{
  fs.mkdirSync(OUT,{recursive:true});
  const server=serve();await new Promise(r=>server.listen(0,'127.0.0.1',r));const url='http://127.0.0.1:'+server.address().port;
