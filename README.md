@@ -68,7 +68,12 @@ AXS_HEADER_META:
 - Production and main merge remain prohibited until CREATOR review and reproducible browser QA.
 
 
-## Current published-branch milestone — AXIOM SHOWCASE v0.3.0.0 (2026-10-16)
+## Current published-branch milestone — AXIOM SHOWCASE v0.3.1 (2026-10-22)
+- W4.R (task 0524): five sections rebuilt to the CREATOR-approved art direction A+AD; protected content unchanged. Runtime reviewed independently: `685140a` (R4 PASS WITH RECORDED LIMITS).
+- Still a public iteration, not final. Release record: `docs/releases/AXIOM_SHOWCASE_V0_3_1.md`. Evidence is not deployed: `docs/showcase-v031/release/w4r/EVIDENCE_INDEX.md` (tag `evidence/0524-w4r-pr12`).
+
+
+## Previous milestone — AXIOM SHOWCASE v0.3.0.0 (2026-10-16)
 - Incremental release of the personal CREATOR / ENDEAVOR / AXIOM SYSTEM showcase, integrating V2.1 → V2.2 → V2.3.
 - **Still in development**: this is not a final release or confirmation of full responsive/accessibility/performance QA.
 - The original artwork, lore sections, and archived ECHELON HTML remain; main WORLD now uses the CREATOR-supplied six-node image.
