@@ -52,7 +52,50 @@ const checks=[];const check=(name,pass,detail={})=>{checks.push({name,pass:!!pas
    check('1440: no page errors',!errors.length,{errors});
    await ctx.close();
   }
-  // 3. Scoped axe on changed external regions, both arms.
+  // 3. Every item of both rails is fully reachable: keyboard (JS on/off) and touch swipe (CDP synthetic gesture).
+  const visibleItems=rail=>rail.evaluate(e=>{const b=e.getBoundingClientRect(),pad=parseFloat(getComputedStyle(e).paddingLeft);return [...e.children].map((c,i)=>{const r=c.getBoundingClientRect();return r.left>=b.left+pad-2&&r.right<=b.right-pad+2?i:-1;}).filter(i=>i>=0);});
+  for(const [width,js] of [[390,true],[390,false],[360,true],[360,false]]){
+   const {ctx,page}=await open('ad',width,844,{javaScriptEnabled:js});
+   for(const name of ['traces','surfaces']){
+    const rail=page.locator(`[data-ad-rail="${name}"]`);await rail.scrollIntoViewIfNeeded();await rail.focus();
+    const seen=new Set(await visibleItems(rail));const n=await rail.evaluate(e=>e.children.length);
+    for(let k=0;k<n+2;k++){await page.keyboard.press('ArrowRight');await page.waitForTimeout(350);(await visibleItems(rail)).forEach(i=>seen.add(i));}
+    check(`keyboard ${js?'JS':'noJS'}/${width}: all ${name} items fully visible in turn, last included`,seen.size===n&&seen.has(n-1),{seen:[...seen].sort(),n});
+   }
+   await ctx.close();
+  }
+  for(const width of [390,360]){
+   const {ctx,page}=await open('ad',width,844,{hasTouch:true,isMobile:true});const cdp=await ctx.newCDPSession(page);
+   for(const name of ['traces','surfaces']){
+    const rail=page.locator(`[data-ad-rail="${name}"]`);await rail.scrollIntoViewIfNeeded();
+    const n=await rail.evaluate(e=>e.children.length),seen=new Set(await visibleItems(rail)),stops=[];
+    for(let k=0;k<n+1;k++){
+     const b=await rail.boundingBox();
+     // Raw touch stream: synthesizeScrollGesture is a no-op in this headless build (qualification record kept).
+     const y=Math.round(b.y+Math.min(b.height/2,300)),x0=Math.round(b.width*.8),dx=Math.round(b.width*.45);
+     await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:x0,y}]});
+     for(let i=1;i<=10;i++){await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x0-Math.round(dx*i/10),y}]});await page.waitForTimeout(16);}
+     await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+     await page.waitForTimeout(500);(await visibleItems(rail)).forEach(i=>seen.add(i));
+     stops.push(await rail.evaluate(e=>{const pad=parseFloat(getComputedStyle(e).paddingLeft),max=e.scrollWidth-e.clientWidth;return [...e.children].some(c=>Math.abs(c.offsetLeft-pad-e.scrollLeft)<3)||Math.abs(e.scrollLeft-max)<3;}));
+    }
+    check(`touch swipe/${width}: ${name} reaches all items and snaps`,seen.size===n&&stops.every(Boolean),{seen:[...seen].sort(),n,snapped:stops});
+   }
+   await ctx.close();
+  }
+  // 4. A08 threshold: source is the high-resolution original set, never upscaled beyond it; gate core + beam stay inside.
+  const CORE={x:.501,y:.388};
+  for(const [w,h,dpr] of [[1440,900,1],[1440,900,2],[390,844,1],[390,844,3],[360,800,1],[360,800,3]]){
+   const {ctx,page}=await open('ad',w,h,{deviceScaleFactor:dpr});
+   const img=page.locator('.ad-gate img');await img.scrollIntoViewIfNeeded();await img.evaluate(i=>i.decode());
+   const r=await img.evaluate((i,CORE)=>{const b=i.getBoundingClientRect(),s=getComputedStyle(i),[px,py]=s.objectPosition.split(' ').map(v=>parseFloat(v)/100);
+    const k=Math.max(b.width/i.naturalWidth,b.height/i.naturalHeight),rw=i.naturalWidth*k,rh=i.naturalHeight*k,ox=(b.width-rw)*px,oy=(b.height-rh)*py;
+    const src=i.currentSrc.split('/').pop();return {src,natural:+(src.match(/-(\d+)w\./)||[0,0])[1],box:[Math.round(b.width),Math.round(b.height)],coreX:+((ox+CORE.x*rw)/b.width).toFixed(3),coreY:+((oy+CORE.y*rh)/b.height).toFixed(3),neededPx:Math.round(rw*devicePixelRatio)};},CORE);
+   const inside=r.coreX>.12&&r.coreX<.88&&r.coreY>.12&&r.coreY<.88,res=/^A08_protocol_gate-\d+w\.(avif|webp)$/.test(r.src)&&(r.natural>=Math.min(r.neededPx*.98,941));
+   check(`A08 ${w}@${dpr}x: original-derived source (true px from w-descriptor), gate core inside crop`,inside&&res,r);
+   await ctx.close();
+  }
+  // 5. Scoped axe on changed external regions, both arms.
   for(const arm of ['aplus','ad'])for(const [w,h] of [[1440,900],[390,844]]){
    const {ctx,page}=await open(arm,w,h);await page.addScriptTag({content:AXE});
    const res=await page.evaluate(async scope=>{const r=await axe.run({include:scope},{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return {violations:r.violations.map(v=>({id:v.id,nodes:v.nodes.length,targets:v.nodes.slice(0,4).map(n=>n.target.join(' '))})),incomplete:r.incomplete.map(v=>({id:v.id,nodes:v.nodes.length}))};},SCOPE);

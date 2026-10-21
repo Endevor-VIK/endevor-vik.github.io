@@ -1,0 +1,69 @@
+{
+ "id": "A08_protocol_gate",
+ "archive": "AXIOM_SHOWCASE_VISUAL_LIBRARY_V1.zip",
+ "member": "AXIOM_SHOWCASE_VISUAL_LIBRARY_V1/originals_png/A08_protocol_gate.png",
+ "original": {
+  "sha256": "736a2df314ca582f7593e204ef975aa062a9f2021c2a80f0d102cebaec1e7416",
+  "width": 941,
+  "height": 1672
+ },
+ "manifestRole": "вертикальный разделитель / карточка доступа",
+ "manifestNote": "Декоративный образ контролируемого доступа, не гарантия безопасности.",
+ "textRule": "не размещать мелкий текст в центре",
+ "web": [
+  {
+   "file": "A08_protocol_gate-480w.avif",
+   "width": 480,
+   "height": 853,
+   "bytes": 51159,
+   "sha256": "1c9035275495e01af5fe6825e243dbb47c615ecd30f77bc8ea59a1bfbb738787",
+   "psnr_db": 41.7,
+   "edge_retention": 0.95
+  },
+  {
+   "file": "A08_protocol_gate-480w.webp",
+   "width": 480,
+   "height": 853,
+   "bytes": 58482,
+   "sha256": "6e399eac5505b1c24cf2d7c9baef476ba50089439498af541c87045b81ad4cfb",
+   "psnr_db": 36.6,
+   "edge_retention": 0.94
+  },
+  {
+   "file": "A08_protocol_gate-720w.avif",
+   "width": 720,
+   "height": 1279,
+   "bytes": 97948,
+   "sha256": "7259268c4bd75caf631fd81d940c4dc46b00f1f9b9041faf276cc0b9c1af50e2",
+   "psnr_db": 42.5,
+   "edge_retention": 0.95
+  },
+  {
+   "file": "A08_protocol_gate-720w.webp",
+   "width": 720,
+   "height": 1279,
+   "bytes": 112850,
+   "sha256": "4db8d1475a1b9452ff74f94f04008da9bf7441725bab5f712d6a92186656c620",
+   "psnr_db": 37.8,
+   "edge_retention": 0.93
+  },
+  {
+   "file": "A08_protocol_gate-941w.avif",
+   "width": 941,
+   "height": 1672,
+   "bytes": 145633,
+   "sha256": "1ef7afe86b6c7f2577fe6a6dfe69853f3d62a452aea081360895f29eee2efaac",
+   "psnr_db": 43.2,
+   "edge_retention": 0.95
+  },
+  {
+   "file": "A08_protocol_gate-941w.webp",
+   "width": 941,
+   "height": 1672,
+   "bytes": 167416,
+   "sha256": "f809160a2cc4a740d800ba22dbcda08ec779282126014cebf86f384eb900fb82",
+   "psnr_db": 39.4,
+   "edge_retention": 0.94
+  }
+ ]
+}

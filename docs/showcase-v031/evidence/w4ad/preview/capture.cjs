@@ -8,7 +8,7 @@ fs.mkdirSync(out,{recursive:true});
 const VIEWPORTS=[[1440,900],[1920,1080],[390,844],[360,800]];
 const SECTIONS=['work','system','manifesto','modules','world','chars'];
 const PARTS={surfaces:'#work-surfaces',archive:'.r1p-archive',traces:'#manifesto .fragments',terminal:'.doctrine-quote',stage:'.doctrine-stage',access:'.r1p-access',memory:'.r1p-memory',dependence:'.r1p-dependence',worldPlate:'#world .ax-chapter-plate',map:'.v23-map-composition',omega:'.ax-omega',cards:'#chars .chars',axiom:'.axiom-entity',shot:'.ax-panel:not([hidden]) .ax-shot'};
-const CROPS={1440:[['doctrine','#manifesto .r1p-archive'],['traces','#manifesto .ad-traces, #manifesto .fragments'],['aftermath','#modules'],['surfaces','#work-surfaces'],['world-head','#world .ax-chapter-plate'],['chars-head','#chars .sec-head']],390:[['doctrine','#manifesto .r1p-archive'],['traces','#manifesto .ad-traces, #manifesto .fragments'],['aftermath','#modules'],['surfaces','#work-surfaces'],['world-head','#world .ax-chapter-plate'],['chars-head','#chars .sec-head']]};
+const CROPS={1440:[['doctrine','#manifesto .r1p-archive'],['traces','#manifesto .ad-traces, #manifesto .fragments'],['aftermath','#modules'],['surfaces','#work-surfaces'],['world-head','#world .ax-chapter-plate'],['world-intro','#world .r1p-map-intro'],['chars-head','#chars .sec-head']],360:[['doctrine','#manifesto .r1p-archive'],['aftermath','#modules']],390:[['doctrine','#manifesto .r1p-archive'],['traces','#manifesto .ad-traces, #manifesto .fragments'],['aftermath','#modules'],['surfaces','#work-surfaces'],['world-head','#world .ax-chapter-plate'],['world-intro','#world .r1p-map-intro'],['chars-head','#chars .sec-head']]};
 const report={kind:'W4AD_HEIGHTS_AND_REVIEW_CROPS',at:new Date().toISOString(),states:{dpr:1,reducedMotion:'reduce',gallery:'01',map:'02.01',loader:'returning visitor flag',reviewCrops:'fixed nav/ticker/cursor hidden via REVIEW_ONLY_CSS after measurement; no other style change'},results:[],captures:[],pageErrors:[],httpErrors:[]};
 // Review crops only: fixed nav/ticker/custom cursor would float over full-page clips. Heights are measured before this.
 const REVIEW_ONLY_CSS='.nav,.ticker,.show-mobile-nav,.index-cursor,.v22-scroll-progress{visibility:hidden!important}';
@@ -47,6 +47,22 @@ const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
     const file=`${arm}-${width}-${name}.png`;
     const buf=await page.screenshot({path:path.join(out,file),fullPage:true,animations:'disabled',clip:{x:0,y:Math.max(0,b.y+sy-24),width,height:Math.min(b.height+48,7000)}});
     report.captures.push({file,arm,width,selector:sel,top:Math.round(b.y+sy),height:Math.round(b.height),sha256:hash(buf)});
+   }
+   // A+AD rails at 390: every item, natively, as a visitor sees it after swiping (rail + its bar).
+   // fullPage capture re-lays out the page and lets snap rails drift, so rail frames use an in-viewport clip in a taller
+   // window of the same width (width-driven layout unchanged); the rail position is set after the resize.
+   if(shots&&arm==='ad'&&width===390)for(const name of ['traces','surfaces']){
+    await page.setViewportSize({width,height:1500});await page.waitForTimeout(300);
+    const rail=page.locator(`[data-ad-rail="${name}"]`);await rail.evaluate(e=>e.scrollIntoView({block:'start'}));await page.evaluate(()=>scrollBy(0,-12));
+    const n=await rail.evaluate(e=>e.children.length);
+    for(let i=0;i<n;i++){
+     await rail.evaluate((e,i)=>{e.style.scrollBehavior='auto';e.scrollLeft=e.children[i].offsetLeft-parseFloat(getComputedStyle(e).paddingLeft);e.dispatchEvent(new Event('scroll'));},i);await page.waitForTimeout(350);
+     const b=await rail.boundingBox(),bar=await page.locator(`[data-ad-rail="${name}"] + .ad-rail-bar`).boundingBox(),sy=await page.evaluate(()=>scrollY);
+     const file=`ad-390-${name}-rail-${String(i+1).padStart(2,'0')}.png`,h=(bar?bar.y+bar.height:b.y+b.height)-b.y+24;
+     if(b.y<0||b.y+h>1500)throw Error('rail frame outside viewport '+name);
+     const buf=await page.screenshot({path:path.join(out,file),animations:'disabled',clip:{x:0,y:Math.max(0,b.y-12),width,height:Math.round(h)}});
+     report.captures.push({file,arm,width,selector:`[data-ad-rail="${name}"] item ${i+1}/${n}`,top:Math.round(b.y+sy),height:Math.round(h),sha256:hash(buf)});
+    }
    }
    await ctx.close();
   }

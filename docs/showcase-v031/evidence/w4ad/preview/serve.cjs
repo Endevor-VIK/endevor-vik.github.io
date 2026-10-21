@@ -15,10 +15,12 @@ function makeServer(){
    const m=p.match(/^\/(aplus|ad)(\/.*)?$/);if(!m){res.writeHead(404);return res.end();}
    if(!m[2]){res.writeHead(302,{Location:`/${m[1]}/`});return res.end();}
    let file=m[2].slice(1)||'index.html';
-   if(file.includes('..')||!(/^assets\/[a-zA-Z0-9_./@ -]+$/.test(file)||LOCAL[m[1]][file])){res.writeHead(403);return res.end();}
+   const proposed=m[1]==='ad'&&/^proposed\/A08_protocol_gate-\d+w\.(avif|webp)$/.test(file)?path.join(__dirname,'proposed-assets',file.slice(9)):null;
+   if(file.includes('..')||!(/^assets\/[a-zA-Z0-9_./@ -]+$/.test(file)||LOCAL[m[1]][file]||proposed)){res.writeHead(403);return res.end();}
    let data=cache.get(m[1]+file);
    if(!data){
-    if(LOCAL[m[1]][file])data=fs.readFileSync(LOCAL[m[1]][file]);
+    if(proposed)data=fs.readFileSync(proposed);
+    else if(LOCAL[m[1]][file])data=fs.readFileSync(LOCAL[m[1]][file]);
     else{const o=cp.spawnSync('git',['show',`${PRODUCT}:${file}`],{cwd:ROOT,maxBuffer:16*1024*1024});if(o.status!==0){res.writeHead(404);return res.end();}data=o.stdout;cache.set(m[1]+file,data);}
    }
    res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});res.end(data);

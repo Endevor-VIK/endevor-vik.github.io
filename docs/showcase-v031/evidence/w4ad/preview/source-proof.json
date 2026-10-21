@@ -4,8 +4,8 @@
     "aplusSha256": "fb37809dc42bca9b8bc1e1f7d486795471a70cb36c1f5060babb612426e52a9d",
     "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
   },
-  "reportingStart": "895b7cfd8ceab87c5f5579b19458320eee214972",
-  "candidateHtmlSha256": "4e01dbf083a8899387c46ffe18acdcad710080fb490fb38c2899fe42762b8ce5",
+  "reportingStart": "2dd1c1382b0fb332d09d9799cc605aee2e5b4b30",
+  "candidateHtmlSha256": "699cc4ae866b32ea5f83d23fe68e545bc2cd6eddc00664759dfe6d102319597b",
   "edits": [
     "head: scoped AD stylesheet after r1p.css",
     "body: progressive rail enhancement",
@@ -13,7 +13,7 @@
     "doctrine: provenance of the state ledger",
     "doctrine: five fragments rewritten as recognition traces; mobile rail",
     "doctrine: residual note absorbed into traces head",
-    "aftermath: W04 reuse replaced by reserved library A08 threshold (CREATOR confirmation required)",
+    "aftermath: W04 reuse replaced by library A08 threshold from the 941×1672 original (Principal: YES)",
     "aftermath: access headline speaks from the threshold",
     "aftermath: dependence object becomes a human pulse passing through a foreign protocol",
     "work: exhibit names visual studies, not a second system explanation",

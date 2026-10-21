@@ -1,0 +1,230 @@
+<title>AXIOM Landing A+AD</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@500&display=swap">
+<style>
+/* Layout: one column of scenes; each scene = notes, then native frames A+ / A+AD with viewport and version switches.
+   Deliberately single-theme: the landing's own RED PROTOCOL palette and TYPE A faces, so the frames sit on their ground. */
+:root{
+  --void:#070709; --surface:#101218; --raise:#161922; --line:#262830;
+  --crimson:#ff2034; --crimson-soft:rgba(255,32,52,.14);
+  --ink:#f1f1f4; --read:#b4b8c3; --dim:#7f8491;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--void);color:var(--read);font:400 16px/1.65 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--void)}
+.page{max-width:1480px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:56px;min-width:0}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-transform:uppercase;color:var(--ink);margin:0;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:clamp(40px,7vw,88px);line-height:.95}
+h1 em,h2 em{font-style:normal;color:var(--crimson)}
+h2{font-size:clamp(28px,3.6vw,46px);line-height:1.05}
+p{margin:0;max-width:68ch}
+a{color:var(--ink);text-decoration-color:var(--crimson);text-underline-offset:3px}
+.k{font:500 12px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.k b{color:var(--crimson);font-weight:500}
+code{font:400 .9em var(--mono);color:var(--ink)}
+
+/* Masthead */
+.mast{padding-top:40px;display:grid;gap:22px;border-bottom:1px solid var(--line);padding-bottom:36px}
+.lede{font-size:18px;color:var(--read)}
+.gates{display:flex;flex-wrap:wrap;gap:8px}
+.gate{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.gate.hold{border-color:var(--crimson);color:var(--crimson)}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.fig{background:var(--surface);padding:18px 18px 16px;display:grid;gap:6px;min-width:0}
+.fig strong{font:500 34px/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+.fig strong.neg{color:var(--crimson)}
+.fig span{font-size:14px;color:var(--read)}
+
+/* Sticky controls */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--void) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px))}
+.bar-in{max-width:1480px;margin:0 auto;display:flex;gap:10px 18px;align-items:center;flex-wrap:wrap}
+.toc{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;min-width:0;flex:1 1 420px}
+.toc a{flex:none;font:500 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--read);padding:10px 11px;border:1px solid transparent}
+.toc a:hover,.toc a:focus-visible{color:var(--ink);border-color:var(--line)}
+.seg{display:inline-flex;border:1px solid var(--line);background:var(--surface)}
+.seg button{font:500 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--read);background:none;border:0;padding:11px 12px;cursor:pointer;min-height:40px}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--crimson);color:#fff}
+.seg button:focus-visible,.toc a:focus-visible,.strip:focus-visible{outline:2px solid var(--crimson);outline-offset:2px}
+.ctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* Scenes */
+.scene{display:grid;gap:22px;scroll-margin-top:84px;min-width:0}
+.scene-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px 48px;align-items:start}
+.notes{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.notes li{padding-left:18px;position:relative}
+.notes li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:var(--crimson)}
+.cond{border-left:2px solid var(--crimson);background:var(--crimson-soft);padding:10px 14px;color:var(--ink);font-size:15px}
+.cond .k{display:block;margin-bottom:4px;color:var(--crimson)}
+.meta{display:flex;gap:10px 22px;flex-wrap:wrap;align-items:center}
+.delta{font:500 13px/1.4 var(--mono);color:var(--read);font-variant-numeric:tabular-nums}
+.delta b{color:var(--ink);font-weight:500}
+.delta i{font-style:normal;color:var(--crimson)}
+.frames{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--col,340px)),1fr));align-items:start;min-width:0}
+figure{margin:0;display:grid;gap:8px;min-width:0}
+figcaption{display:flex;justify-content:space-between;gap:10px;font:500 12px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+figcaption b{color:var(--ink);font-weight:500}
+figcaption b.ad{color:var(--crimson)}
+.frame{overflow-x:auto;border:1px solid var(--line);background:#000;max-width:100%}
+.frame img{display:block;height:auto;max-width:100%}
+.native .frame img{max-width:none}
+.strip-wrap{display:grid;gap:10px;min-width:0}
+.strip{display:flex;gap:12px;overflow-x:auto;padding-bottom:10px;scrollbar-color:var(--crimson) transparent;max-width:100%}
+.strip figure{flex:none;width:min(300px,78vw)}
+.native .strip figure{width:auto}
+.strip .frame{overflow:hidden}
+.copy{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px}
+.copy div{background:var(--surface);border:1px solid var(--line);padding:14px 16px;display:grid;gap:6px;min-width:0}
+.copy div p{color:var(--ink);font-size:15px}
+.copy div.was p{color:var(--read)}
+.tbl{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line);font-size:15px;white-space:nowrap}
+th{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);background:var(--surface)}
+th:first-child,td:first-child{text-align:left}
+td.neg{color:var(--crimson)}
+tr:last-child td{border-bottom:0;color:var(--ink)}
+.foot{border-top:1px solid var(--line);padding-top:24px;display:grid;gap:10px;font-size:14px}
+@media (max-width:820px){.scene-head{grid-template-columns:1fr}.bar-in{gap:8px}.toc{flex-basis:100%;order:2}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="page">
+  <header class="mast">
+    <span class="k">AXIOM · Landing Phase I · W4.AD · art direction</span>
+    <h1>A+ <em>→</em> A+AD</h1>
+    <p class="lede">Одни и те же сцены лендинга до и после художественной доработки, в исходном масштабе. Кадры сняты в Chromium с плотностью пикселей 1 и снижением анимации. Чтобы ничего не перекрывало сцену, фиксированная навигация скрыта — только в этих кадрах.</p>
+    <div class="gates">
+      <span class="gate">Principal: условно рекомендовано</span>
+      <span class="gate hold">Gate R-A: ждёт решения CREATOR</span>
+      <span class="gate">R2: не разрешён</span>
+      <span class="gate">Merge / deploy: закрыто</span>
+    </div>
+    <div class="figures">
+      <div class="fig"><span class="k">Телефон 390 · пять областей</span><strong class="neg">−2 488 px</strong><span>19 875 → 17 387 px, без удаления компонентов</span></div>
+      <div class="fig"><span class="k">Телефон 360</span><strong class="neg">−2 596 px</strong><span>20 454 → 17 858 px</span></div>
+      <div class="fig"><span class="k">Десктоп 1440</span><strong>+445 px</strong><span>из них +325 — отдельная сцена зависимости (одобрено)</span></div>
+      <div class="fig"><span class="k">Проверки поведения</span><strong>39 / 39</strong><span>no-JS, клавиатура, свайп, A08 в 1440/390/360</span></div>
+    </div>
+  </header>
+
+  <nav class="bar" aria-label="Сцены и масштаб">
+    <div class="bar-in">
+      <div class="toc" id="toc"></div>
+      <div class="ctl">
+        <span class="k">Масштаб</span>
+        <div class="seg" role="group" aria-label="Масштаб кадров">
+          <button type="button" id="scale-fit" aria-pressed="true">Вписать</button>
+          <button type="button" id="scale-native" aria-pressed="false">1:1</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page" id="scenes" style="gap:72px"></main>
+
+  <section class="scene" id="heights" aria-labelledby="heights-title">
+    <h2 id="heights-title">Высота секций, <em>px</em></h2>
+    <div class="tbl" tabindex="0" role="region" aria-label="Таблица высот">
+      <table>
+        <thead><tr><th>Секция</th><th>390 · A+</th><th>390 · A+AD</th><th>Δ</th><th>1440 · A+</th><th>1440 · A+AD</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td>WORK</td><td>5 668</td><td>3 884</td><td class="neg">−1 784</td><td>3 140</td><td>3 144</td><td>+4</td></tr>
+          <tr><td>BLACK SUN</td><td>4 354</td><td>3 604</td><td class="neg">−750</td><td>2 344</td><td>2 399</td><td>+54</td></tr>
+          <tr><td>AFTERMATH</td><td>2 239</td><td>2 170</td><td class="neg">−69</td><td>1 612</td><td>1 937</td><td>+325</td></tr>
+          <tr><td>WORLD GRID</td><td>2 397</td><td>2 512</td><td>+115</td><td>2 482</td><td>2 543</td><td>+61</td></tr>
+          <tr><td>CHARACTERS</td><td>5 216</td><td>5 216</td><td>0</td><td>2 625</td><td>2 625</td><td>0</td></tr>
+          <tr><td>Пять областей</td><td>19 875</td><td>17 387</td><td class="neg">−2 488</td><td>12 203</td><td>12 648</td><td>+445</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>WORLD GRID на телефоне вырос на 115 px из-за вводной о шести узлах: это условие Principal. Рамка W04 сохраняет исходную высоту (163,8 px на 390). Относительно отклонённой W4 пять областей всё ещё длиннее примерно на 4 100 px — это цена восстановленных объектов.</p>
+  </section>
+
+  <footer class="foot">
+    <span class="k">Источник</span>
+    <p>Ветка <code>docs/0524-w4-ad-opus-art-direction</code> в <code>endevor-vik.github.io</code>: решения — <code>waves/w4ad/AD_REVIEW.md</code>; сборка — <code>evidence/w4ad/preview/build_ad.py</code> (A+AD HTML SHA256 <code>699cc4ae…</code>); замеры и хэши кадров — <code>evidence/w4ad/heights-and-crops.json</code>. Продукт <code>b85fbb0a</code> и Draft PR #12 не изменены.</p>
+    <p>Это обзорные кадры для художественного решения, не R3: Firefox, WebKit, масштаб 200 %, физические устройства и производительность не проверялись.</p>
+  </footer>
+</div>
+
+<script>
+const SCENES=[
+ {id:'doctrine',title:'Доктрина',name:'Терминал <em>доктрины</em>',sec:'BLACK SUN',widths:[1440,390,360],crop:'doctrine',
+  d:{1440:[2344,2399],390:[4354,3604],360:[4536,3752]},
+  notes:['Боковые колонки шире (236 / 248 px), минимальная высота терминала снята: пустота ушла без уменьшения архива.','Нижний регистр терминала: кольцо фрагментации (пять дуг вокруг пустого центра, CONTROL удержан скобами) и строка состояния — фрагментирован, не стёрт, не восстановлен (Canon 03.03 B05.S03) вместо прежних псевдометрик.','На телефоне кольцо стоит рядом со строкой состояния.']},
+ {id:'traces',title:'Пять следов',name:'Пять следов. <em>Одно имя.</em>',sec:'BLACK SUN',widths:[1440,390],crop:'traces',rail:{n:5,name:'traces',label:'Лента на 390 · каждая карточка'},
+  d:{1440:[2344,2399],390:[4354,3604]},
+  notes:['Фрагменты рассказывают, кто встречает след и за что его принимает (B05.S05). Природу режимов раскрывает AXIOM ∅ в разделе персонажей.','Пять исходных карточек, рамки и глифы сохранены. На телефоне — лента с кнопками и счётчиком; без JS она листается обычной прокруткой.'],
+  cond:'BIO опирается на B05.S02: это скрытое присутствие, а не пятая ошибка узнавания. Карточка выделена пунктирной рамкой, подпись — «РЕЖИМ / СКРЫТОЕ ПРИСУТСТВИЕ».',
+  copy:[['A+ · BIO','За пределом цифрового. Биологические контуры не полностью доступны машинному контролю.',1],['A+AD · BIO','Слепое пятно. Не ошибка узнавания, а скрытое присутствие: эти контуры не до конца доступны цифровой клетке.',0],['A+AD · вводная ряда','Разные люди встречают разные остатки AXIOM — и называют увиденное одним словом. Четыре следа узнают ошибочно; пятый скрыт от цифрового контроля.',0]]},
+ {id:'aftermath',title:'Последствия',name:'Жизнь <em>под контролем</em>',sec:'AFTERMATH',widths:[1440,390,360],crop:'aftermath',
+  d:{1440:[1612,1937],390:[2239,2170],360:[2334,2268]},
+  notes:['«Жизнь по допуску» — A08 protocol_gate вместо второго W04: вертикальный мост к вратам, сканирующая линия проходит через их центр. W04 остался только в WORLD GRID.','Зависимость — человек с закрытыми глазами: его пульс проходит через чужую систему и выходит ступенчатым сигналом к «разрешению». Сцена на всю ширину (+325 px на десктопе, одобрено).'],
+  cond:'A08 собран из оригинала 941×1672 (SHA256 совпадает с манифестом библиотеки): AVIF/WebP 480/720/941w. Центр ворот внутри кадра в 1440, 390 и 360 при 1x–3x. На 1440 при 2x нативных 941 px покрывают 98 % потребности.'},
+ {id:'surfaces',title:'WORK',name:'Этюды <em>визуального языка</em>',sec:'WORK',widths:[1440,390],crop:'surfaces',rail:{n:4,name:'surfaces',label:'Лента на 390 · каждый этюд целиком'},
+  d:{1440:[3140,3144],390:[5668,3884]},
+  notes:['Экспозиция названа этюдами, без слова «система»: архитектуру объясняет следующий раздел SYSTEM. Тексты модулей описывают визуальную идею, перечень осей убран из CARTOGRAPHY.','На телефоне — индекс 2×2 и лента из четырёх полных модулей одинаковой высоты. SVG-геометрия модулей побайтно как в A+.'],
+  cond:'Формулировка «работающие интерфейсы» заменена на «снимки реальных интерфейсов проекта».',
+  copy:[['A+','ЧЕТЫРЕ СПОСОБА УВИДЕТЬ СИСТЕМУ. Выше — восемь настоящих интерфейсов и их задачи.',1],['A+AD','ЭТЮДЫ ВИЗУАЛЬНОГО ЯЗЫКА. Выше — восемь снимков реальных интерфейсов проекта. Здесь — художественные этюды того, как мир AXIOM может выглядеть на экране. Как устроена сама система, рассказывает следующий раздел.',0]]},
+ {id:'world',title:'WORLD GRID',name:'The city rises. <em>The depth is sealed.</em>',sec:'WORLD GRID',widths:[1440,390],crop:'world-head',extra:'world-intro',
+  d:{1440:[2482,2543],390:[2397,2512]},
+  notes:['Один заголовок на исходной W04 называет устройство именно этой географии: вертикальный ECHELON и закрытая глубина OMEGA-0. Рамка W04, карта, шесть Canon ID, оси и OMEGA-0 побайтно прежние.'],
+  cond:'Вводная начинается с «шесть узлов между двумя полюсами». Об OMEGA-0 сказано «глубина, куда пускают не всех»: это образ ограниченного доступа, а не утверждение о полной изоляции. «Глубина закрыта» читается как «закрытый объект» и совпадает с текстом карточки OMEGA-0 («закрытой подземной линией»).',
+  copy:[['A+','THE SHAPE OF POWER · География власти. ECHELON — вертикальная городская мегаструктура… NEXUS — купольный город, прежде называвшийся Terra Nova.',1],['A+AD','THE CITY RISES. THE DEPTH IS SEALED · Город растёт вверх. Глубина закрыта. География AXIOM — шесть узлов между двумя полюсами. Вверх растёт ECHELON… Вниз, под Глухую станцию, уходит путь к OMEGA-0 — глубине, куда пускают не всех. Между ними — NEXUS… и остальные узлы сети.',0]]},
+ {id:'chars',title:'Персонажи',name:'Three lives <em>inside the fracture.</em>',sec:'CHARACTERS',widths:[1440,390],crop:'chars-head',
+  d:{1440:[2625,2625],390:[5216,5216]},
+  notes:['Изменены только заголовок («Три жизни внутри разлома») и последняя фраза вводной: «На карте порядок выглядит как схема. В их судьбах — как цена.» Портреты, карточки и AXIOM ∅ не тронуты.']}
+];
+const SIZE={"ad-1440-aftermath":[1440,1985],"ad-1440-chars-head":[1440,265],"ad-1440-doctrine":[1440,870],"ad-1440-surfaces":[1440,1489],"ad-1440-traces":[1440,564],"ad-1440-world-head":[1440,300],"ad-1440-world-intro":[1440,234],"ad-360-aftermath":[360,2316],"ad-360-doctrine":[360,1852],"ad-390-aftermath":[390,2217],"ad-390-chars-head":[390,422],"ad-390-doctrine":[390,1742],"ad-390-surfaces-rail-01":[390,854],"ad-390-surfaces-rail-02":[390,854],"ad-390-surfaces-rail-03":[390,854],"ad-390-surfaces-rail-04":[390,854],"ad-390-surfaces":[390,1518],"ad-390-traces-rail-01":[390,437],"ad-390-traces-rail-02":[390,437],"ad-390-traces-rail-03":[390,437],"ad-390-traces-rail-04":[390,437],"ad-390-traces-rail-05":[390,437],"ad-390-traces":[390,790],"ad-390-world-head":[390,211],"ad-390-world-intro":[390,469],"aplus-1440-aftermath":[1440,1659],"aplus-1440-chars-head":[1440,265],"aplus-1440-doctrine":[1440,941],"aplus-1440-surfaces":[1440,1485],"aplus-1440-traces":[1440,367],"aplus-1440-world-head":[1440,300],"aplus-1440-world-intro":[1440,173],"aplus-360-aftermath":[360,2381],"aplus-360-doctrine":[360,1715],"aplus-390-aftermath":[390,2287],"aplus-390-chars-head":[390,422],"aplus-390-doctrine":[390,1665],"aplus-390-surfaces":[390,3302],"aplus-390-traces":[390,1522],"aplus-390-world-head":[390,211],"aplus-390-world-intro":[390,354]};
+const fmt=n=>n.toLocaleString('ru-RU').replace(/ /g,' ');
+const el=(tag,attrs={},html='')=>{const e=document.createElement(tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);if(html)e.innerHTML=html;return e;};
+const img=(name,eager)=>{const [w,h]=SIZE[name];return `<img src="captures/${name}.webp" width="${w}" height="${h}" alt="" ${eager?'':'loading="lazy"'} decoding="async">`;};
+const state={};
+function frames(s){
+ const st=state[s.id],w=st.width,both=st.version==='both',arms=both?['aplus','ad']:[st.version];
+ const box=document.getElementById('frames-'+s.id);box.style.setProperty('--col',w>400?'560px':'300px');
+ box.innerHTML='';
+ for(const arm of arms){
+  for(const part of [s.crop,...(s.extra?[s.extra]:[])]){
+   const name=`${arm}-${w}-${part}`;if(!SIZE[name])continue;
+   const f=el('figure');f.innerHTML=`<figcaption><b class="${arm==='ad'?'ad':''}">${arm==='ad'?'A+AD':'A+'}</b><span>${w}px · ${SIZE[name][0]}×${SIZE[name][1]}</span></figcaption><div class="frame">${img(name,s.id==='doctrine')}</div>`;
+   box.append(f);
+  }
+ }
+ const [a,b]=s.d[w]||[];const dl=document.getElementById('delta-'+s.id);
+ dl.innerHTML=a?`${s.sec} · ${w}px: <b>${fmt(a)}</b> → <b>${fmt(b)}</b> <i>${b-a>0?'+':'−'}${fmt(Math.abs(b-a))}</i>`:'';
+ for(const [k,v] of [['w',w],['v',st.version]])document.querySelectorAll(`#scene-${s.id} [data-${k}]`).forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset[k]==String(v))));
+}
+const scenes=document.getElementById('scenes'),toc=document.getElementById('toc');
+SCENES.forEach((s,i)=>{
+ state[s.id]={width:s.widths[0],version:'both'};
+ toc.append(el('a',{href:'#'+s.id},s.title));
+ const sec=el('section',{class:'scene',id:s.id,'aria-labelledby':'t-'+s.id});sec.id=s.id;sec.dataset.scene='';
+ sec.innerHTML=`<div id="scene-${s.id}" style="display:grid;gap:22px;min-width:0">
+  <div class="scene-head"><div style="display:grid;gap:10px"><span class="k">${String(i+1).padStart(2,'0')} · ${s.sec}</span><h2 id="t-${s.id}">${s.name}</h2></div>
+  <div style="display:grid;gap:14px;min-width:0"><ul class="notes">${s.notes.map(n=>`<li>${n}</li>`).join('')}</ul>${s.cond?`<p class="cond"><span class="k">Условие Principal — выполнено</span>${s.cond}</p>`:''}</div></div>
+  ${s.copy?`<div class="copy">${s.copy.map(([k,t,was])=>`<div class="${was?'was':''}"><span class="k">${k}</span><p>${t}</p></div>`).join('')}</div>`:''}
+  <div class="meta"><div class="seg" role="group" aria-label="Ширина экрана">${s.widths.map(w=>`<button type="button" data-w="${w}">${w}</button>`).join('')}</div>
+   <div class="seg" role="group" aria-label="Версия"><button type="button" data-v="aplus">A+</button><button type="button" data-v="ad">A+AD</button><button type="button" data-v="both">Обе</button></div>
+   <span class="delta" id="delta-${s.id}"></span></div>
+  <div class="frames" id="frames-${s.id}"></div>
+  ${s.rail?`<div class="strip-wrap"><span class="k">${s.rail.label}</span><div class="strip" tabindex="0" role="region" aria-label="${s.rail.label}">${Array.from({length:s.rail.n},(_,k)=>{const n=`ad-390-${s.rail.name}-rail-${String(k+1).padStart(2,'0')}`;return `<figure><figcaption><b class="ad">A+AD</b><span>${k+1} / ${s.rail.n}</span></figcaption><div class="frame">${img(n)}</div></figure>`;}).join('')}</div></div>`:''}
+ </div>`;
+ sec.querySelectorAll('[data-w]').forEach(b=>b.addEventListener('click',()=>{state[s.id].width=+b.dataset.w;frames(s);}));
+ sec.querySelectorAll('[data-v]').forEach(b=>b.addEventListener('click',()=>{state[s.id].version=b.dataset.v;frames(s);}));
+ scenes.append(sec);frames(s);
+});
+const fit=document.getElementById('scale-fit'),native=document.getElementById('scale-native');
+const setScale=n=>{document.body.classList.toggle('native',n);fit.setAttribute('aria-pressed',String(!n));native.setAttribute('aria-pressed',String(n));try{localStorage.setItem('ad-scale',n?'1':'0');}catch(e){}};
+fit.addEventListener('click',()=>setScale(false));native.addEventListener('click',()=>setScale(true));
+try{if(localStorage.getItem('ad-scale')==='1')setScale(true);}catch(e){}
+toc.append(el('a',{href:'#heights'},'Высоты'));
+if(location.hash){const t=document.getElementById(location.hash.slice(1));if(t)requestAnimationFrame(()=>t.scrollIntoView());}
+</script>

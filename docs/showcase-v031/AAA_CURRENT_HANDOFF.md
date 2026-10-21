@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: W4AD_SUBMITTED / GATE_B_NOT_ACCEPTED / GATE_R_A_AWAITS_CREATOR / R2_NOT_AUTHORIZED
+  status: W4AD_R1_SUBMITTED / GATE_B_NOT_ACCEPTED / GATE_R_A_AWAITS_CREATOR_VISUAL_CHECK / R2_NOT_AUTHORIZED
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,7 +18,9 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-21 / W4.AD OPUS ART DIRECTION / GATE R-A AWAITS CREATOR
+## CURRENT STATE — 2026-10-21 / W4.AD.R1 / PRINCIPAL CONDITIONAL APPROVAL RECOMMENDED / CREATOR VISUAL CHECK PENDING
+
+**AD.R1:** [Principal review of A+AD](waves/w4ad/PRINCIPAL_AD_REVIEW.md) recommends all five decisions with conditions; conditions executed (BIO = hidden presence B05.S02; WORK «снимки реальных интерфейсов проекта»; WORLD six-node intro; A08 from 941×1672 original, crop verified 1440/390/360; touch/keyboard/no-JS for all rail items). Probe 39/39. Mobile 390 five areas 19 875 → 17 387 px (−2 488). Comparison page `evidence/w4ad/compare.html`, published privately (https://claude.ai/artifact/REi9LvzkgmXBga9hRtu7xw). No new PR (per Principal). Opus owns art direction; Sol deviations need Opus sign-off; Opus review after each R2 stage.
 
 **Principal R1.P review (PR #12 · `895b7cf`): A+ ACCEPTED AS DESIGN BASIS — NOT FINAL; art direction returned to Opus.** Opus confirmed A+ and delivered targeted solution A+AD as an isolated prototype. [AD_REVIEW](waves/w4ad/AD_REVIEW.md) · [evidence](evidence/w4ad/README.md).
 
@@ -35,7 +37,7 @@ PROTOTYPE: evidence/w4ad/preview/build_ad.py -> ad.html + ad.css + ad.js over w4
 DECISIONS: waves/w4ad/AD_REVIEW.md §4 (5 questions); R2 contract §5 (R2.1 doctrine+aftermath, R2.2 WORK, R2.3 world/chars)
 QA: build 22 asserted edits; protected exact; 4 viewports clean; probe 21/21; axe 0 violations
 NOT RUN: R2/R3 cross-engine/200%/performance/R4; no artistic PASS
-NEXT: CREATOR Gate R-A on A+AD; then Sol implements R2 in stages; no merge/deploy/Canon/gitlink
+NEXT: CREATOR views compare page (PC+phone) → final Gate R-A → bounded R2 by Sol, Opus art check per stage → independent R3/R4; no merge/deploy/Canon/gitlink
 ```
 
 ## PREVIOUS STATE — 2026-10-21 / W4.R R1.P / GATE R-A CHANGES REQUESTED

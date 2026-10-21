@@ -1,6 +1,6 @@
 {
  "kind": "W4AD_HEIGHTS_AND_REVIEW_CROPS",
- "at": "2026-10-21T08:54:42.943Z",
+ "at": "2026-10-21T11:35:03.051Z",
  "states": {
   "dpr": 1,
   "reducedMotion": "reduce",
@@ -157,10 +157,10 @@
     "world": {
      "y": 14753,
      "w": 1425,
-     "h": 2512.8
+     "h": 2543.39
     },
     "chars": {
-     "y": 17266,
+     "y": 17297,
      "w": 1425,
      "h": 2624.83
     }
@@ -212,22 +212,22 @@
      "h": 252
     },
     "map": {
-     "y": 15346,
+     "y": 15376,
      "w": 1353,
      "h": 1080.94
     },
     "omega": {
-     "y": 16557,
+     "y": 16587,
      "w": 1353,
      "h": 588.48
     },
     "cards": {
-     "y": 17664,
+     "y": 17694,
      "w": 1353,
      "h": 884.08
     },
     "axiom": {
-     "y": 18650,
+     "y": 18680,
      "w": 1353,
      "h": 1120.19
     },
@@ -251,7 +251,7 @@
      "clientWidth": 1353
     }
    ],
-   "pageHeight": 25735,
+   "pageHeight": 25766,
    "scrollWidth": 1425,
    "brokenImages": [],
    "hiddenTextInRails": 0,
@@ -408,10 +408,10 @@
     "world": {
      "y": 15331,
      "w": 1905,
-     "h": 2613
+     "h": 2643.59
     },
     "chars": {
-     "y": 17944,
+     "y": 17975,
      "w": 1905,
      "h": 2631.5
     }
@@ -463,22 +463,22 @@
      "h": 302.39
     },
     "map": {
-     "y": 15974,
+     "y": 16005,
      "w": 1368,
      "h": 1089.38
     },
     "omega": {
-     "y": 17209,
+     "y": 17240,
      "w": 1368,
      "h": 613.67
     },
     "cards": {
-     "y": 18342,
+     "y": 18372,
      "w": 1368,
      "h": 890.75
     },
     "axiom": {
-     "y": 19334,
+     "y": 19365,
      "w": 1368,
      "h": 1120.19
     },
@@ -502,7 +502,7 @@
      "clientWidth": 1368
     }
    ],
-   "pageHeight": 26675,
+   "pageHeight": 26706,
    "scrollWidth": 1905,
    "brokenImages": [],
    "hiddenTextInRails": 0,
@@ -649,20 +649,20 @@
     "manifesto": {
      "y": 13705,
      "w": 375,
-     "h": 3576.02
+     "h": 3604.02
     },
     "modules": {
-     "y": 17281,
+     "y": 17309,
      "w": 375,
      "h": 2169.98
     },
     "world": {
-     "y": 19451,
+     "y": 19479,
      "w": 375,
-     "h": 2425.83
+     "h": 2512.22
     },
     "chars": {
-     "y": 21877,
+     "y": 21992,
      "w": 375,
      "h": 5216.3
     }
@@ -679,7 +679,7 @@
      "h": 1694.7
     },
     "traces": {
-     "y": 16811,
+     "y": 16839,
      "w": 375,
      "h": 362.94
     },
@@ -694,42 +694,42 @@
      "h": 1426.73
     },
     "access": {
-     "y": 17623,
+     "y": 17651,
      "w": 347,
      "h": 380.44
     },
     "memory": {
-     "y": 18039,
+     "y": 18067,
      "w": 347,
      "h": 549.78
     },
     "dependence": {
-     "y": 18625,
+     "y": 18653,
      "w": 347,
      "h": 581.58
     },
     "worldPlate": {
-     "y": 19507,
+     "y": 19535,
      "w": 347,
      "h": 163.8
     },
     "map": {
-     "y": 20060,
+     "y": 20175,
      "w": 347,
      "h": 823.58
     },
     "omega": {
-     "y": 21055,
+     "y": 21169,
      "w": 347,
      "h": 765.28
     },
     "cards": {
-     "y": 22332,
+     "y": 22446,
      "w": 347,
      "h": 2123.5
     },
     "axiom": {
-     "y": 24533,
+     "y": 24648,
      "w": 347,
      "h": 2503.22
     },
@@ -753,7 +753,7 @@
      "clientWidth": 375
     }
    ],
-   "pageHeight": 34754,
+   "pageHeight": 34868,
    "scrollWidth": 375,
    "brokenImages": [],
    "hiddenTextInRails": 0,
@@ -900,20 +900,20 @@
     "manifesto": {
      "y": 14126,
      "w": 345,
-     "h": 3695.98
+     "h": 3751.98
     },
     "modules": {
-     "y": 17822,
+     "y": 17878,
      "w": 345,
      "h": 2268.17
     },
     "world": {
-     "y": 20090,
+     "y": 20146,
      "w": 345,
-     "h": 2447.95
+     "h": 2534.34
     },
     "chars": {
-     "y": 22538,
+     "y": 22680,
      "w": 345,
      "h": 5261.8
     }
@@ -930,7 +930,7 @@
      "h": 1804.48
     },
     "traces": {
-     "y": 17352,
+     "y": 17408,
      "w": 345,
      "h": 362.94
     },
@@ -945,42 +945,42 @@
      "h": 1512.72
     },
     "access": {
-     "y": 18163,
+     "y": 18219,
      "w": 317,
      "h": 438.03
     },
     "memory": {
-     "y": 18637,
+     "y": 18693,
      "w": 317,
      "h": 578.58
     },
     "dependence": {
-     "y": 19252,
+     "y": 19308,
      "w": 317,
      "h": 593.38
     },
     "worldPlate": {
-     "y": 20146,
+     "y": 20202,
      "w": 317,
      "h": 151.19
     },
     "map": {
-     "y": 20744,
+     "y": 20886,
      "w": 317,
      "h": 830.09
     },
     "omega": {
-     "y": 21745,
+     "y": 21887,
      "w": 317,
      "h": 735.91
     },
     "cards": {
-     "y": 22984,
+     "y": 23127,
      "w": 317,
      "h": 2068.5
     },
     "axiom": {
-     "y": 25131,
+     "y": 25273,
      "w": 317,
      "h": 2611.72
     },
@@ -1004,7 +1004,7 @@
      "clientWidth": 345
     }
    ],
-   "pageHeight": 35586,
+   "pageHeight": 35728,
    "scrollWidth": 345,
    "brokenImages": [],
    "hiddenTextInRails": 0,
@@ -1022,8 +1022,8 @@
     1440,
     1985
    ],
-   "bytes": 157740,
-   "sha256": "9dea0be8dd6af041fc65ea944f23bf04f8a37ca6589ca8682cbfca286ad7b801",
+   "bytes": 159298,
+   "sha256": "ff7ef6c390cc9143df87121f1b9ffbb0f9372cc93247db381dcd39fb2f8e1981",
    "arm": "ad",
    "width": 1440,
    "selector": "#modules",
@@ -1036,12 +1036,12 @@
     1440,
     265
    ],
-   "bytes": 22588,
-   "sha256": "848b7e833c447295e933c8bcd519e1b870fd2558c88dcbcc3ea0466a2c927c99",
+   "bytes": 22438,
+   "sha256": "14ed4146d3cf97ee8fa494d5124e14cd5a358d8359a2e0feac15ae944077afa5",
    "arm": "ad",
    "width": 1440,
    "selector": "#chars .sec-head",
-   "top": 17386,
+   "top": 17417,
    "height": 218
   },
   {
@@ -1064,8 +1064,8 @@
     1440,
     1489
    ],
-   "bytes": 115802,
-   "sha256": "c18850e7ae31725a0b24947333dc8e216c27d68de0ec185d6f8915ab4fb4fb79",
+   "bytes": 116162,
+   "sha256": "a03aeeed077da08320f114362a71cab6c847e382a2dbd141f080e5d415701cc0",
    "arm": "ad",
    "width": 1440,
    "selector": "#work-surfaces",
@@ -1078,8 +1078,8 @@
     1440,
     564
    ],
-   "bytes": 58060,
-   "sha256": "ea2c1b861b7bf39a58f469c8dad5820bdc90c55cd3af0e2f1b13f709eedd374b",
+   "bytes": 63766,
+   "sha256": "7135a881e816da371b25f72df8136873056dd7e85ef27cc1097822ef300560ed",
    "arm": "ad",
    "width": 1440,
    "selector": "#manifesto .ad-traces, #manifesto .fragments",
@@ -1101,17 +1101,59 @@
    "height": 252
   },
   {
+   "file": "captures/ad-1440-world-intro.webp",
+   "size": [
+    1440,
+    234
+   ],
+   "bytes": 24602,
+   "sha256": "7532ba87f096020e019651966ca452a691f764225c3e8feb6bd6bc5191eef667",
+   "arm": "ad",
+   "width": 1440,
+   "selector": "#world .r1p-map-intro",
+   "top": 15159,
+   "height": 187
+  },
+  {
+   "file": "captures/ad-360-aftermath.webp",
+   "size": [
+    360,
+    2316
+   ],
+   "bytes": 89398,
+   "sha256": "f7209b7180fe4209b62e336010125c434d032e2b94c4603774cc3f699a3a8c1d",
+   "arm": "ad",
+   "width": 360,
+   "selector": "#modules",
+   "top": 17878,
+   "height": 2268
+  },
+  {
+   "file": "captures/ad-360-doctrine.webp",
+   "size": [
+    360,
+    1852
+   ],
+   "bytes": 60120,
+   "sha256": "98b45203e23b814eaa35da073b97fb20a734f594cf9da18851940ada197747ad",
+   "arm": "ad",
+   "width": 360,
+   "selector": "#manifesto .r1p-archive",
+   "top": 15211,
+   "height": 1804
+  },
+  {
    "file": "captures/ad-390-aftermath.webp",
    "size": [
     390,
     2217
    ],
-   "bytes": 91516,
-   "sha256": "a4ce2777e84a037c4bb2cb1b1b801b4578a3c32b7c90d1d7e0bfd8d3ef769d08",
+   "bytes": 91368,
+   "sha256": "4dbacf133395d4ab9dfcfb760d34d796acef4eb875af5c232e2a56b0ecd3b22b",
    "arm": "ad",
    "width": 390,
    "selector": "#modules",
-   "top": 17281,
+   "top": 17309,
    "height": 2170
   },
   {
@@ -1121,11 +1163,11 @@
     422
    ],
    "bytes": 19160,
-   "sha256": "7103014a8e02ce68ee6c98695d191155206f07ef5f2c0d6660fde5f86c218470",
+   "sha256": "4b586bfc4deb5058c673326be4a3a8577c30f9f13be30279d6d1e26453adb87f",
    "arm": "ad",
    "width": 390,
    "selector": "#chars .sec-head",
-   "top": 21933,
+   "top": 22048,
    "height": 375
   },
   {
@@ -1143,13 +1185,69 @@
    "height": 1695
   },
   {
+   "file": "captures/ad-390-surfaces-rail-01.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 22656,
+   "sha256": "773ad2c23cc5e4cc2a6f5dbac620514bd69f4f7a6b072213223909f2570c9702",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"surfaces\"] item 1/4",
+   "top": 8167,
+   "height": 854
+  },
+  {
+   "file": "captures/ad-390-surfaces-rail-02.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 21730,
+   "sha256": "441ecab16adf094381e487aec490561ebd739d087e1e421ac94bca3c419b0bb0",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"surfaces\"] item 2/4",
+   "top": 8167,
+   "height": 854
+  },
+  {
+   "file": "captures/ad-390-surfaces-rail-03.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 21500,
+   "sha256": "ccf06b00bc4aabe1e16171ed5099586a8a6da390cccf498f170a97b8021f0559",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"surfaces\"] item 3/4",
+   "top": 8167,
+   "height": 854
+  },
+  {
+   "file": "captures/ad-390-surfaces-rail-04.webp",
+   "size": [
+    390,
+    854
+   ],
+   "bytes": 23730,
+   "sha256": "04eb9e2e6f7529995cf4847ac4630b24edd02b8e2d7dca038cda659a8bbad36b",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"surfaces\"] item 4/4",
+   "top": 8167,
+   "height": 854
+  },
+  {
    "file": "captures/ad-390-surfaces.webp",
    "size": [
     390,
     1518
    ],
-   "bytes": 51042,
-   "sha256": "8358ab9206c586f8f8efc62cea0e4cc60627e6bc07bf8d9a32e182baa1b3e083",
+   "bytes": 51436,
+   "sha256": "f72e66fe99a93c87a66d3e518919c28a4c0a73ec60bb15132df8f619cc1f4e0c",
    "arm": "ad",
    "width": 390,
    "selector": "#work-surfaces",
@@ -1157,18 +1255,88 @@
    "height": 1471
   },
   {
+   "file": "captures/ad-390-traces-rail-01.webp",
+   "size": [
+    390,
+    437
+   ],
+   "bytes": 13772,
+   "sha256": "11f50c1b018f9224d84cad0eb0fc1a73367fafb3ed4400f3c7dc34a9575bcdc7",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"traces\"] item 1/5",
+   "top": 16839,
+   "height": 437
+  },
+  {
+   "file": "captures/ad-390-traces-rail-02.webp",
+   "size": [
+    390,
+    437
+   ],
+   "bytes": 13038,
+   "sha256": "78211cb020fe8db5c1e279e5f40d1742652dbd38b3a413a196c35f97c71d5110",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"traces\"] item 2/5",
+   "top": 16839,
+   "height": 437
+  },
+  {
+   "file": "captures/ad-390-traces-rail-03.webp",
+   "size": [
+    390,
+    437
+   ],
+   "bytes": 12322,
+   "sha256": "492b5548757c64a0ffc5e1d7edc603f6057dd34fa1d3afe5b7e27eeeb632621f",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"traces\"] item 3/5",
+   "top": 16839,
+   "height": 437
+  },
+  {
+   "file": "captures/ad-390-traces-rail-04.webp",
+   "size": [
+    390,
+    437
+   ],
+   "bytes": 13598,
+   "sha256": "3ed21d2d0d7b6ae6de3f328336072212c126e522810702e83694f4c5eca1324d",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"traces\"] item 4/5",
+   "top": 16839,
+   "height": 437
+  },
+  {
+   "file": "captures/ad-390-traces-rail-05.webp",
+   "size": [
+    390,
+    437
+   ],
+   "bytes": 10948,
+   "sha256": "53dd9ad690ccd6376ffb45766ef92ad1de3d3bf40880db77868d974527345a59",
+   "arm": "ad",
+   "width": 390,
+   "selector": "[data-ad-rail=\"traces\"] item 5/5",
+   "top": 16839,
+   "height": 437
+  },
+  {
    "file": "captures/ad-390-traces.webp",
    "size": [
     390,
-    762
+    790
    ],
-   "bytes": 26794,
-   "sha256": "f90e680e531dae914ba219ef49d8b0e8db717332ddbf9a44583bb49cb349f9b9",
+   "bytes": 30480,
+   "sha256": "ba7ace327f88cecd0fa4b53f0fdbcd1b898b7b1a2fa6c625ab7739d7237d645e",
    "arm": "ad",
    "width": 390,
    "selector": "#manifesto .ad-traces, #manifesto .fragments",
    "top": 16510,
-   "height": 714
+   "height": 742
   },
   {
    "file": "captures/ad-390-world-head.webp",
@@ -1176,13 +1344,27 @@
     390,
     211
    ],
-   "bytes": 8880,
-   "sha256": "2825eb0c1d9c97949e988014132cd041069bf8ef2e8251e4186eb8f6f2fef780",
+   "bytes": 8876,
+   "sha256": "494cf4c8a9b75116ddd1cb1490af422372223e10d6eb62ff46db7fe441038ae6",
    "arm": "ad",
    "width": 390,
    "selector": "#world .ax-chapter-plate",
-   "top": 19507,
+   "top": 19535,
    "height": 164
+  },
+  {
+   "file": "captures/ad-390-world-intro.webp",
+   "size": [
+    390,
+    469
+   ],
+   "bytes": 23940,
+   "sha256": "d59f9548fc5bcbc166e927dd7a5fdf7e5fe401eee53aceaf42b9e45078817119",
+   "arm": "ad",
+   "width": 390,
+   "selector": "#world .r1p-map-intro",
+   "top": 19723,
+   "height": 422
   },
   {
    "file": "captures/aplus-1440-aftermath.webp",
@@ -1269,6 +1451,48 @@
    "height": 252
   },
   {
+   "file": "captures/aplus-1440-world-intro.webp",
+   "size": [
+    1440,
+    173
+   ],
+   "bytes": 15238,
+   "sha256": "fd105461501814d8b6793305d02f9459d96910f3f9f41c0ec004785d71efd4e7",
+   "arm": "aplus",
+   "width": 1440,
+   "selector": "#world .r1p-map-intro",
+   "top": 14776,
+   "height": 126
+  },
+  {
+   "file": "captures/aplus-360-aftermath.webp",
+   "size": [
+    360,
+    2381
+   ],
+   "bytes": 92958,
+   "sha256": "4f58ff402fe432536ea0287f2bb43610de3b00400e6c5551b579c9b1da730e07",
+   "arm": "aplus",
+   "width": 360,
+   "selector": "#modules",
+   "top": 20544,
+   "height": 2334
+  },
+  {
+   "file": "captures/aplus-360-doctrine.webp",
+   "size": [
+    360,
+    1715
+   ],
+   "bytes": 52308,
+   "sha256": "a882bdd31432e5a955bd5adc1357c943f7f312648f177729b7916e1300498f13",
+   "arm": "aplus",
+   "width": 360,
+   "selector": "#manifesto .r1p-archive",
+   "top": 17093,
+   "height": 1668
+  },
+  {
    "file": "captures/aplus-390-aftermath.webp",
    "size": [
     390,
@@ -1351,6 +1575,20 @@
    "selector": "#world .ax-chapter-plate",
    "top": 22139,
    "height": 164
+  },
+  {
+   "file": "captures/aplus-390-world-intro.webp",
+   "size": [
+    390,
+    354
+   ],
+   "bytes": 14592,
+   "sha256": "c2ed6e12361665b3e83b7698d1485b0e343ea2021e231f19cc7d9f390d73a2e0",
+   "arm": "aplus",
+   "width": 390,
+   "selector": "#world .r1p-map-intro",
+   "top": 22326,
+   "height": 306
   }
  ],
  "pageErrors": [],

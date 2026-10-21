@@ -35,6 +35,8 @@
 .ad-traces-head p{font:400 16px/1.75 var(--ax-font-body);color:var(--ax-text);margin:0;max-width:62ch}
 #manifesto.r1p-history .ad-traces .frag h3{font-size:23px}
 #manifesto.r1p-history .ad-traces .frag-foot b{font-size:12px}
+#manifesto.r1p-history .ad-traces .frag.ad-hidden-mode{border-style:dashed}
+#manifesto.r1p-history .ad-traces .frag.ad-hidden-mode h3{color:var(--ax-ink-2)}
 
 /* AFTERMATH — threshold (A08) instead of a second W04; dependence becomes the closing full-width scene. */
 .r1p-aftermath{grid-template-columns:.95fr 1.6fr}
@@ -42,7 +44,7 @@
 .r1p-gate-art.ad-gate{height:520px;margin-bottom:28px}
 .ad-gate img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
 .r1p-gate-art.ad-gate:after{background:linear-gradient(0deg,#070709 0,rgba(7,7,9,0) 42%),linear-gradient(90deg,rgba(7,7,9,.45),transparent 28%,transparent 72%,rgba(7,7,9,.45))}
-.r1p-gate-art.ad-gate>.ad-gate-scan{left:0;right:0;bottom:auto;top:30%;height:1px;background:var(--ax-crimson);box-shadow:0 0 16px 1px rgba(255,32,52,.75);opacity:.9;z-index:1}
+.r1p-gate-art.ad-gate>.ad-gate-scan{left:0;right:0;bottom:auto;top:26.4%;height:1px;background:var(--ax-crimson);box-shadow:0 0 16px 1px rgba(255,32,52,.75);opacity:.9;z-index:1}
 .r1p-gate-art.ad-gate>.ad-gate-frame{inset:16px;z-index:1}
 .ad-gate-frame i{position:absolute;width:20px;height:20px;border:0 solid var(--ax-crimson)}
 .ad-gate-frame i:nth-child(1){left:0;top:0;border-width:1px 0 0 1px}.ad-gate-frame i:nth-child(2){right:0;top:0;border-width:1px 1px 0 0}
@@ -100,6 +102,7 @@
  .ad-rail>*{scroll-snap-align:start;min-width:0}
  .r1p-surfaces .modules.ad-rail .module{display:flex;flex-direction:column}
  .r1p-surfaces .modules.ad-rail .m-body{flex:1 0 auto}
+ .r1p-surfaces .modules.ad-rail .m-foot b{letter-spacing:0;overflow-wrap:normal}
  #manifesto.r1p-history .ad-traces .frag{min-height:0}
  #manifesto.r1p-history .ad-traces .frag h3{font-size:25px}
  .ad-rail-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
@@ -111,6 +114,7 @@
  .ad-surface-index a{padding:12px;font-size:11px;letter-spacing:.06em;min-height:44px}
  .r1p-aftermath{grid-template-columns:1fr}
  .r1p-gate-art.ad-gate{height:100%;min-height:300px;margin:0}
+ .r1p-gate-art.ad-gate>.ad-gate-scan{top:38.8%}
  .r1p-gate-art.ad-gate>.ad-gate-frame{inset:8px}
  .ad-gate-frame i{width:12px;height:12px}
  .r1p-gate-art.ad-gate>.ad-gate-cap{left:12px;right:8px;bottom:14px;font-size:10px}

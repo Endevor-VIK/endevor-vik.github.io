@@ -92,7 +92,7 @@ TRACES = [
     ('RELIC', 'Ядро под печатью', 'Технократы видят в запечатанном реликте доказательство: сборку можно провести инженерной процедурой.', 'ВСТРЕЧАЮТ', 'ТЕХНОКРАТЫ', 'ПРИНИМАЮТ ЗА', 'ЧЕРТЁЖ СБОРКИ'),
     ('ECHO', 'Голос, который отвечает', 'Подполье слышит в фантомных ответах возвращение целой личности. Но эхо — только отражение.', 'ВСТРЕЧАЕТ', 'ПОДПОЛЬЕ', 'ПРИНИМАЕТ ЗА', 'ВОЗВРАЩЕНИЕ'),
     ('CONTROL', 'Рычаги порядка', 'Власть принимает удержанный слой контроля за остаток полного господства над AXIOM.', 'ВСТРЕЧАЕТ', 'ВЛАСТЬ', 'ПРИНИМАЕТ ЗА', 'ГОСПОДСТВО'),
-    ('BIO', 'Слепое пятно', 'Скрытые контуры не до конца доступны цифровой клетке. Этот след труднее всего заметить.', 'ДЛЯ МАШИН', 'СЛЕПАЯ ЗОНА', 'СЛЕД', 'ВНЕ ЦИФРЫ'),
+    ('BIO', 'Слепое пятно', 'Не ошибка узнавания, а скрытое присутствие: эти контуры не до конца доступны цифровой клетке.', 'РЕЖИМ', 'СКРЫТОЕ ПРИСУТСТВИЕ', 'ДЛЯ МАШИН', 'СЛЕПАЯ ЗОНА'),
     ('MYTH', 'Знамение', 'Культы принимают мифический отклик за божественное явление, а городские легенды несут его дальше.', 'ВСТРЕЧАЮТ', 'КУЛЬТЫ', 'ПРИНИМАЮТ ЗА', 'ЯВЛЕНИЕ'),
 ]
 m = re.search(r'<div class="fragments r1p-residuals">[\s\S]*?</div></article></div>', out)
@@ -100,24 +100,28 @@ assert m and out.count('<div class="fragments r1p-residuals">') == 1
 glyphs = re.findall(r'<svg class="glyph"[\s\S]*?</svg>', m.group())
 assert len(glyphs) == 5
 cards = ''.join(
-    f'<article class="frag" id="trace-{mode.lower()}">{g}<span class="frag-id">{mode}</span><h3>{title}</h3><p>{text}</p>'
+    f'<article class="frag{" ad-hidden-mode" if mode == "BIO" else ""}" id="trace-{mode.lower()}">{g}<span class="frag-id">{mode}</span><h3>{title}</h3><p>{text}</p>'
     f'<div class="frag-foot"><span>{k1}<b>{v1}</b></span><span>{k2}<b>{v2}</b></span></div></article>'
     for (mode, title, text, k1, v1, k2, v2), g in zip(TRACES, glyphs))
 traces = ('<div class="ad-traces"><div class="ad-traces-head"><div><span class="r1p-beat">05 / СЛЕДЫ В МИРЕ</span>'
           '<h3>Пять следов.<br><em>Одно имя.</em></h3></div>'
-          '<p>Разные люди встречают разные остатки AXIOM — и называют всё это одним словом. '
-          'Чем является каждый режим, раскрывает досье AXIOM&nbsp;∅ в разделе персонажей.</p></div>'
+          '<p>Разные люди встречают разные остатки AXIOM — и называют увиденное одним словом. Четыре следа узнают ошибочно; '
+          'пятый скрыт от цифрового контроля. Чем является каждый режим, раскрывает досье AXIOM&nbsp;∅ в разделе персонажей.</p></div>'
           '<div class="fragments r1p-residuals ad-rail" data-ad-rail="traces" tabindex="0" role="region" aria-label="Пять следов AXIOM, горизонтальная лента">'
           + cards + '</div></div>')
 sub1(m.group(), traces, 'doctrine: five fragments rewritten as recognition traces; mobile rail')
 resub1(r'<p class="r1p-residual-note">[\s\S]*?</p>', '', 'doctrine: residual note absorbed into traces head')
 
 # ---------------------------------------------------------------- P1 AFTERMATH
+A08_SET = lambda t: ', '.join(f'proposed/A08_protocol_gate-{w}w.{t} {w}w' for w in (480, 720, 941))
+A08_SIZES = '(max-width: 760px) 250px, (max-width: 1100px) 38vw, 620px'  # mobile slot is height-driven: cover width ≈ box height × .563
 resub1(r'<div class="r1p-gate-art"><picture>[\s\S]*?</picture><div class="r1p-door" aria-hidden="true"><i></i><i></i></div><span>ДОСТУП / ENDEAVOR</span></div>',
-       '<div class="r1p-gate-art ad-gate"><img src="assets/showcase/visual-library/A08_protocol_gate.webp" width="675" height="1200" loading="lazy" decoding="async" alt="">'
+       '<div class="r1p-gate-art ad-gate"><picture>'
+       + ''.join(f'<source type="image/{t}" srcset="{A08_SET(t)}" sizes="{A08_SIZES}">' for t in ('avif',))
+       + f'<img src="proposed/A08_protocol_gate-720w.webp" srcset="{A08_SET("webp")}" sizes="{A08_SIZES}" width="941" height="1672" loading="lazy" decoding="async" alt=""></picture>'
        '<span class="ad-gate-scan" aria-hidden="true"></span><span class="ad-gate-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></span>'
        '<span class="ad-gate-cap">ПОРОГ / ДОПУСК</span></div>',
-       'aftermath: W04 reuse replaced by reserved library A08 threshold (CREATOR confirmation required)')
+       'aftermath: W04 reuse replaced by library A08 threshold from the 941×1672 original (Principal: YES)')
 sub1('<h3>У города<br>есть границы.</h3>', '<h3>Дальше —<br>только по допуску.</h3>', 'aftermath: access headline speaks from the threshold')
 assert out.count('W04_vertical_city') == 7, out.count('W04_vertical_city')
 
@@ -154,7 +158,7 @@ sub1('<span class="show-kicker">SYSTEM SURFACES / CONCEPTUAL VISUALIZATION</span
      '<span class="show-kicker">SURFACE STUDIES / ЭТЮДЫ ИНТЕРФЕЙСОВ</span><h3>ЭТЮДЫ<br><em>ВИЗУАЛЬНОГО ЯЗЫКА.</em></h3>',
      'work: exhibit names visual studies, not a second system explanation')
 sub1('<p>Выше — восемь настоящих интерфейсов и их задачи. Ниже — отдельная экспозиция их визуальных идей: орбита чтения, досье сущности, связи мест и наблюдение. Это концептуальные композиции, не ещё одна галерея и не телеметрия.</p>',
-     '<p>Восемь экранов выше — работающие интерфейсы. Здесь — художественные этюды того, как мир AXIOM может выглядеть на экране: орбита глав, досье сущности, маршруты власти, радар тишины. Как устроена сама система, рассказывает следующий раздел.</p>',
+     '<p>Выше — восемь снимков реальных интерфейсов проекта. Здесь — художественные этюды того, как мир AXIOM может выглядеть на экране: орбита глав, досье сущности, маршруты власти, радар тишины. Как устроена сама система, рассказывает следующий раздел.</p>',
      'work: exhibit intro hands architecture to SYSTEM')
 SURF = [('chronicle', 'CHRONICLE'), ('content', 'CONTENT'), ('cartography', 'CARTOGRAPHY'), ('watchdog', 'WATCH_DOG')]
 index = ('<nav class="ad-surface-index" aria-label="Этюды интерфейсов">'
@@ -189,7 +193,7 @@ sub1('<h2 id="world-title" class="sec-title" lang="en">THE SHAPE<br><em>OF POWER
      '<h2 id="world-title" class="sec-title" lang="en">THE CITY RISES.<br><em>THE DEPTH IS SEALED.</em></h2><p class="r1p-translation" lang="ru">Город растёт вверх. Глубина закрыта.</p>',
      'world: headline names AXIOM vertical/subterranean geography')
 sub1('<p class="sec-desc">ECHELON — вертикальная городская мегаструктура, где инфраструктура становится способом власти. NEXUS — купольный город, прежде называвшийся Terra Nova.</p>',
-     '<p class="sec-desc">Вверх растёт ECHELON — вертикальная мегаструктура, где инфраструктура становится способом власти. Под Глухой станцией начинается путь вниз, к OMEGA-0. Между ними — NEXUS, купольный город, прежде называвшийся Terra Nova.</p>',
+     '<p class="sec-desc">География AXIOM — шесть узлов между двумя полюсами. Вверх растёт ECHELON — вертикальная мегаструктура, где инфраструктура становится способом власти. Вниз, под Глухую станцию, уходит путь к OMEGA-0 — глубине, куда пускают не всех. Между ними — NEXUS, купольный город, прежде называвшийся Terra Nova, и остальные узлы сети.</p>',
      'world: intro maps headline to ECHELON / OMEGA-0 / NEXUS')
 sub1('<h2 id="r1p-characters-title" class="sec-title" lang="en">LIVES INSIDE<br><em>THE FRACTURE.</em></h2><p class="r1p-translation" lang="ru">Люди внутри разлома</p>',
      '<h2 id="r1p-characters-title" class="sec-title" lang="en">THREE LIVES<br><em>INSIDE THE FRACTURE.</em></h2><p class="r1p-translation" lang="ru">Три жизни внутри разлома</p>',

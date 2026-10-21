@@ -1,0 +1,447 @@
+{
+ "kind": "W4AD_BEHAVIOUR_PROBE",
+ "at": "2026-10-21T11:26:29.543Z",
+ "checks": [
+  {
+   "name": "noJS/390: two native rails, all items",
+   "pass": true,
+   "rails": [
+    {
+     "rail": "surfaces",
+     "items": 4,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    },
+    {
+     "rail": "traces",
+     "items": 5,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    }
+   ]
+  },
+  {
+   "name": "noJS/390: no text hidden in rails, no JS-only bars",
+   "pass": true,
+   "hidden": 0,
+   "bars": 0
+  },
+  {
+   "name": "noJS/390: four study anchors resolve",
+   "pass": true
+  },
+  {
+   "name": "noJS/390: five trace texts present",
+   "pass": true
+  },
+  {
+   "name": "noJS/390: no horizontal page overflow",
+   "pass": true
+  },
+  {
+   "name": "noJS/360: two native rails, all items",
+   "pass": true,
+   "rails": [
+    {
+     "rail": "surfaces",
+     "items": 4,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    },
+    {
+     "rail": "traces",
+     "items": 5,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    }
+   ]
+  },
+  {
+   "name": "noJS/360: no text hidden in rails, no JS-only bars",
+   "pass": true,
+   "hidden": 0,
+   "bars": 0
+  },
+  {
+   "name": "noJS/360: four study anchors resolve",
+   "pass": true
+  },
+  {
+   "name": "noJS/360: five trace texts present",
+   "pass": true
+  },
+  {
+   "name": "noJS/360: no horizontal page overflow",
+   "pass": true
+  },
+  {
+   "name": "390: traces rail focusable and scrolls by keyboard",
+   "pass": true,
+   "x0": 0,
+   "x1": 303,
+   "focused": true
+  },
+  {
+   "name": "390: next button advances counter",
+   "pass": true,
+   "counter": "03 / 05"
+  },
+  {
+   "name": "390: prev disabled at first item",
+   "pass": true
+  },
+  {
+   "name": "390: index link scrolls rail to WATCH_DOG without page hash jump",
+   "pass": true,
+   "left": 938,
+   "target": 938,
+   "current": "04WATCH_DOG",
+   "hash": ""
+  },
+  {
+   "name": "390: rail buttons/index targets ≥44px",
+   "pass": true,
+   "min": 44
+  },
+  {
+   "name": "390: no page errors",
+   "pass": true,
+   "errors": []
+  },
+  {
+   "name": "1440: desktop keeps 5-column traces and 2-column studies, no rails/bars",
+   "pass": true,
+   "rails": [
+    false,
+    false
+   ],
+   "bars": [
+    "none",
+    "none"
+   ],
+   "cols": 5,
+   "mods": 2,
+   "pulse": "none"
+  },
+  {
+   "name": "1440 RM: pulse animation off",
+   "pass": true,
+   "pulse": "none"
+  },
+  {
+   "name": "1440: no page errors",
+   "pass": true,
+   "errors": []
+  },
+  {
+   "name": "keyboard JS/390: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard JS/390: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "keyboard noJS/390: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard noJS/390: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "keyboard JS/360: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard JS/360: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "keyboard noJS/360: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard noJS/360: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "touch swipe/390: traces reaches all items and snaps",
+   "pass": false,
+   "seen": [
+    0
+   ],
+   "n": 5,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "touch swipe/390: surfaces reaches all items and snaps",
+   "pass": false,
+   "seen": [
+    0
+   ],
+   "n": 4,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "touch swipe/360: traces reaches all items and snaps",
+   "pass": false,
+   "seen": [
+    0
+   ],
+   "n": 5,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "touch swipe/360: surfaces reaches all items and snaps",
+   "pass": false,
+   "seen": [
+    0
+   ],
+   "n": 4,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "A08 1440@1x: original-derived source, gate core inside crop",
+   "pass": true,
+   "src": "A08_protocol_gate-720w.avif",
+   "natural": 620,
+   "box": [
+    480,
+    518
+   ],
+   "coreX": 0.501,
+   "coreY": 0.264,
+   "neededPx": 480
+  },
+  {
+   "name": "A08 1440@2x: original-derived source, gate core inside crop",
+   "pass": false,
+   "src": "A08_protocol_gate-941w.avif",
+   "natural": 620,
+   "box": [
+    480,
+    518
+   ],
+   "coreX": 0.501,
+   "coreY": 0.264,
+   "neededPx": 961
+  },
+  {
+   "name": "A08 390@1x: original-derived source, gate core inside crop",
+   "pass": false,
+   "src": "A08_protocol_gate-480w.avif",
+   "natural": 190,
+   "box": [
+    103,
+    378
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 213
+  },
+  {
+   "name": "A08 390@3x: original-derived source, gate core inside crop",
+   "pass": false,
+   "src": "A08_protocol_gate-720w.avif",
+   "natural": 190,
+   "box": [
+    103,
+    378
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 640
+  },
+  {
+   "name": "A08 360@1x: original-derived source, gate core inside crop",
+   "pass": false,
+   "src": "A08_protocol_gate-480w.avif",
+   "natural": 190,
+   "box": [
+    103,
+    436
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 246
+  },
+  {
+   "name": "A08 360@3x: original-derived source, gate core inside crop",
+   "pass": false,
+   "src": "A08_protocol_gate-720w.avif",
+   "natural": 190,
+   "box": [
+    103,
+    436
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 738
+  },
+  {
+   "name": "axe/1440: A+AD scoped violations 0",
+   "pass": true,
+   "aplus": [],
+   "ad": [],
+   "incompleteAplus": [
+    {
+     "id": "color-contrast",
+     "nodes": 131
+    }
+   ],
+   "incompleteAd": [
+    {
+     "id": "color-contrast",
+     "nodes": 155
+    }
+   ]
+  },
+  {
+   "name": "axe/390: A+AD scoped violations 0",
+   "pass": true,
+   "aplus": [],
+   "ad": [],
+   "incompleteAplus": [
+    {
+     "id": "color-contrast",
+     "nodes": 135
+    }
+   ],
+   "incompleteAd": [
+    {
+     "id": "color-contrast",
+     "nodes": 105
+    }
+   ]
+  }
+ ],
+ "axe": {
+  "aplus/1440": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 131
+    }
+   ]
+  },
+  "aplus/390": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 135
+    }
+   ]
+  },
+  "ad/1440": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 155
+    }
+   ]
+  },
+  "ad/390": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 105
+    }
+   ]
+  }
+ }
+}

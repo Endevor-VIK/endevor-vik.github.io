@@ -1,6 +1,6 @@
 {
  "kind": "W4AD_BEHAVIOUR_PROBE",
- "at": "2026-10-21T08:55:09.864Z",
+ "at": "2026-10-21T11:33:57.774Z",
  "checks": [
   {
    "name": "noJS/390: two native rails, all items",
@@ -136,6 +136,252 @@
    "name": "1440: no page errors",
    "pass": true,
    "errors": []
+  },
+  {
+   "name": "keyboard JS/390: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard JS/390: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "keyboard noJS/390: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard noJS/390: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "keyboard JS/360: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard JS/360: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "keyboard noJS/360: all traces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5
+  },
+  {
+   "name": "keyboard noJS/360: all surfaces items fully visible in turn, last included",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4
+  },
+  {
+   "name": "touch swipe/390: traces reaches all items and snaps",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "touch swipe/390: surfaces reaches all items and snaps",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "touch swipe/360: traces reaches all items and snaps",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "n": 5,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "touch swipe/360: surfaces reaches all items and snaps",
+   "pass": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n": 4,
+   "snapped": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "A08 1440@1x: original-derived source (true px from w-descriptor), gate core inside crop",
+   "pass": true,
+   "src": "A08_protocol_gate-720w.avif",
+   "natural": 720,
+   "box": [
+    480,
+    518
+   ],
+   "coreX": 0.501,
+   "coreY": 0.264,
+   "neededPx": 480
+  },
+  {
+   "name": "A08 1440@2x: original-derived source (true px from w-descriptor), gate core inside crop",
+   "pass": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "natural": 941,
+   "box": [
+    480,
+    518
+   ],
+   "coreX": 0.501,
+   "coreY": 0.264,
+   "neededPx": 961
+  },
+  {
+   "name": "A08 390@1x: original-derived source (true px from w-descriptor), gate core inside crop",
+   "pass": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "natural": 480,
+   "box": [
+    103,
+    378
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 213
+  },
+  {
+   "name": "A08 390@3x: original-derived source (true px from w-descriptor), gate core inside crop",
+   "pass": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "natural": 941,
+   "box": [
+    103,
+    378
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 639
+  },
+  {
+   "name": "A08 360@1x: original-derived source (true px from w-descriptor), gate core inside crop",
+   "pass": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "natural": 480,
+   "box": [
+    103,
+    436
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 246
+  },
+  {
+   "name": "A08 360@3x: original-derived source (true px from w-descriptor), gate core inside crop",
+   "pass": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "natural": 941,
+   "box": [
+    103,
+    436
+   ],
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "neededPx": 737
   },
   {
    "name": "axe/1440: A+AD scoped violations 0",
