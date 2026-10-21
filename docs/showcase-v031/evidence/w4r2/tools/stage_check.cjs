@@ -130,6 +130,13 @@ const REVIEW_ONLY_CSS='header.top,.nav,.ticker,.show-mobile-nav,.index-cursor,.v
     const r=await page.evaluate(()=>{const m=document.querySelector('.r1p-surfaces .modules');return {cols:getComputedStyle(m).gridTemplateColumns.split(' ').length,scrollable:m.scrollWidth>m.clientWidth+4,bar:getComputedStyle(m.nextElementSibling).display,afterViewer:!!(document.getElementById('showcase-lightbox').compareDocumentPosition(document.getElementById('work-surfaces'))&Node.DOCUMENT_POSITION_FOLLOWING),beforeIntro:!!(document.getElementById('work-surfaces').compareDocumentPosition(document.getElementById('work-intro'))&Node.DOCUMENT_POSITION_FOLLOWING),disclosures:document.querySelectorAll('.ax-case-context').length,modules:document.querySelectorAll('#work-surfaces .module').length};});
     check('1440: 2×2 studies, no rail/bar; after viewer, before #work-intro; no W4 disclosures',r.cols===2&&!r.scrollable&&r.bar==='none'&&r.afterViewer&&r.beforeIntro&&r.disclosures===0&&r.modules===4,r);await ctx.close();}
   }
+  if(STAGE===3)for(const [w,h] of [[1440,900],[1920,1080],[390,844],[360,800]]){
+   const get=async arm=>{const {ctx,page}=await open(arm,w,h);const r=await page.evaluate(()=>{const pl=document.querySelector('#world .ax-chapter-plate'),cp=pl.querySelector('.ax-chapter-copy'),pb=pl.getBoundingClientRect(),cb=cp.getBoundingClientRect();
+    const tr=pl.querySelector('.r1p-translation'),lines=tr?Math.round(tr.getBoundingClientRect().height/parseFloat(getComputedStyle(tr).lineHeight)):null,ch=document.querySelector('#chars h2');
+    return {plate:+pb.height.toFixed(2),copyInside:!cp||(cb.top>=pb.top-1&&cb.bottom<=pb.bottom+1&&cb.left>=pb.left-1&&cb.right<=pb.right+1),translation:tr?.textContent,lines,charsTitle:ch.textContent,charsFont:getComputedStyle(ch).fontSize};});await ctx.close();return r;};
+   const impl=await get('impl'),base=await get('base');
+   check(`${w}: W04 frame height equals b85; heading copy inside the frame; RU line single`,Math.abs(impl.plate-base.plate)<.5&&impl.copyInside&&impl.lines===1&&impl.translation==='Город растёт вверх. Глубина закрыта.',{impl,basePlate:base.plate});
+  }
   for(const w of [1440,390])for(const arm of ['impl','ad']){
    const {ctx,page}=await open(arm,w,844);await page.addScriptTag({content:AXE});
    const r=await page.evaluate(async ids=>{const x=await axe.run({include:ids.map(i=>['#'+i])},{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return {v:x.violations.map(v=>({id:v.id,n:v.nodes.length})),inc:x.incomplete.map(v=>({id:v.id,n:v.nodes.length}))};},NOW);

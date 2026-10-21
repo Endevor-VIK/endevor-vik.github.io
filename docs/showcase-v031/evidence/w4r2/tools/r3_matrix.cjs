@@ -15,7 +15,7 @@ const WEBKIT='/tmp/axs-0524-w4-webkit-deps/webkit-headless.sh';
 const AD='docs/showcase-v031/evidence/w4ad/preview/',AXE=fs.readFileSync(require.resolve('axe-core/axe.min.js'),'utf8');
 const CHANGED=['manifesto','modules','work','world','chars'],UNTOUCHED=['top','about','creator','system','world-guide','factions','vision','collaboration'];
 const PROTECTED={w04:'#world .ax-chapter-plate',map:'.v23-map-composition',omega:'.ax-omega',cards:'#chars .chars',axiom:'.axiom-entity',shot:'.ax-panel:not([hidden]) .ax-shot'};
-const VIEWPORTS=[[1920,1080],[1440,900],[1280,800],[1024,768],[768,1024],[430,932],[390,844],[360,800],[844,390]];
+const VIEWPORTS=[[1920,1080],[1440,900],[1280,800],[1024,768],[768,1024],[430,932],[390,844],[360,800],[320,568],[844,390]];
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.webp':'image/webp','.avif':'image/avif','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2'};
 const show=(ref,p)=>{const o=cp.spawnSync('git',['show',`${ref}:${p}`],{cwd:ROOT,maxBuffer:32*1024*1024});return o.status===0?o.stdout:null;};
 const AD_LOCAL={'index.html':AD+'ad.html','r1p.css':'docs/showcase-v031/evidence/w4rp/preview/r1p.css','ad.css':AD+'ad.css','ad.js':AD+'ad.js'};
