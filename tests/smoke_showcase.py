@@ -69,10 +69,18 @@ if re.search(r'alt="[^"]*(остров|мост)', index): errors.append('Map al
 # W2.R: CREATOR decisions D-01…D-17 and the gate flag TTL (D-15: at most 14 days from the observation)
 ids = re.findall(r'data-canon-id="([0-9.]+)"', index)
 if ids != ['02.01', '02.02', '02.03', '02.04', '02.05', '02.06']: errors.append(f'WORLD canon IDs/order wrong: {ids}')
-for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', '// signed: NEXARCH<', 'AXIS / AETERNUM', 'STORY ARCHIVE', 'PUBLISHED</span>', 'NEURO-CONTROL CONGLOMERATE', 'совместные разработки с ENDEAVOR'):
+# W4 Gate A R1 supersedes the simulated NEXARCH signature: the archive is visibly authored reconstruction.
+# W4.R A+AD (art freeze 9cf78b0) keeps that label in the archive bar: «АРХИВНОЕ ПРОЧТЕНИЕ / NEXARCH» + «АВТОРСКАЯ РЕКОНСТРУКЦИЯ».
+for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', 'АРХИВНОЕ ПРОЧТЕНИЕ / NEXARCH', 'АВТОРСКАЯ РЕКОНСТРУКЦИЯ', 'не является цитатой из канонического документа', 'AXIS / AETERNUM', 'NEURO-CONTROL CONGLOMERATE', 'прежние совместные разработки'):
     if needle not in index: errors.append(f'W2.R content missing: {needle}')
 for needle in ('TIER 9', 'tier 9', 'T9 ::', 'TIER<b>9', 'WITNESSES', 'NODE<b>VOIDLINK', 'ARTIFICIAL PERSONALITY', '06 CHAPTERS', 'AXIS / DEPTH', 'depth axis', 'BLACK ECHO — не источник', 'STATE<br/><b>NEUTRAL'):
     if needle in index: errors.append(f'W2.R content regressed: {needle}')
+# W4.R A+AD (art freeze 9cf78b0): four full surface studies replace W4's «КОНЦЕПТУАЛЬНАЯ СХЕМА» disclosures, stay labelled as
+# art, never as live product state, and the eight real screens are named as snapshots of real interfaces.
+for needle in ('SURFACE STUDIES / ЭТЮДЫ ИНТЕРФЕЙСОВ', 'художественная визуализация', 'снимков реальных интерфейсов проекта'):
+    if 'id="work-surfaces"' in index and needle not in index: errors.append(f'W4.R content missing: {needle}')
+for needle in ('20 ENTRIES', 'PING_', 'DRAFT · v0.12', 'CHR-WHITE-CONTOUR'):
+    if needle in index: errors.append(f'W4.R fictitious module status returned: {needle}')
 try:
     if (datetime.datetime.fromisoformat(gate['expires'].replace('Z', '+00:00')).date() - datetime.date.fromisoformat(gate['checkedAt'])).days > 14: errors.append('gate.json TTL > 14 days')
 except (NameError, KeyError, ValueError) as e: errors.append(f'gate.json TTL check: {e}')

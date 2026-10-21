@@ -514,3 +514,89 @@ a.ax-epilogue-cta:hover,a.ax-epilogue-cta:focus-visible{background:var(--ax23-re
   .ax-epilogue-copy{margin:-26px auto 0;padding:0 14px}
   .ax-epilogue-copy:before{display:none}
 }
+
+/* 0524.W4 S1: Gate A four-beat narrative; the W01 scene/art and all protected styles stay intact. */
+.ax-world-establish.ax-world-establish--narrative{display:block}
+.ax-world-establish--narrative .show-lead{max-width:72ch;font:400 clamp(16px,1.3vw,19px)/1.8 var(--ax-font-body);color:var(--ax-text)}
+#manifesto.ax-history .sec-head{margin-bottom:40px}
+.ax-history-preamble{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,88px);margin-bottom:44px}
+#manifesto .ax-history-beat h3{margin:0 0 16px;font:500 clamp(23px,2vw,30px)/1.18 var(--ax-font-display);text-transform:uppercase;letter-spacing:.025em;color:var(--ax-ink)}
+#manifesto .ax-history-beat>p{margin:0;max-width:66ch;font:400 17px/1.8 var(--ax-font-body);color:var(--ax-text)}
+#manifesto .ax-history-archive{margin:0 0 22px}
+#manifesto .doctrine-bar{margin:0 0 16px;flex-wrap:wrap;gap:12px;font-size:12px;line-height:1.6;letter-spacing:.1em;color:var(--ax-text)}
+#manifesto .ax-archive-channel{margin-left:auto;color:var(--ax-crimson)}
+#manifesto .doctrine-stage{grid-template-columns:160px minmax(0,1fr);margin:0 0 16px}
+#manifesto .doctrine-side{background:#0c0c0e;justify-content:center}
+#manifesto .doctrine-side .lab{color:var(--ax-text-dim)}
+#manifesto .doctrine-quote{background:radial-gradient(ellipse at 40% 0,rgba(255,32,52,.08),transparent 70%),#0c0c0e}
+#manifesto .term-head{padding:13px 20px;flex-wrap:wrap;gap:10px;font-size:11px;letter-spacing:.1em}
+#manifesto .ql{padding:28px 32px 32px;font-size:clamp(26px,2.6vw,42px);line-height:1.22}
+#manifesto .ql .line{opacity:1;transform:none;animation:none}
+#manifesto .seal,#manifesto .term-head .dot{animation:none}
+#manifesto .ax-archive-attribution{max-width:85ch;font:400 14px/1.7 var(--ax-font-body);color:var(--ax-text-dim)}
+#manifesto .ax-history-context{max-width:80ch}
+#manifesto .ax-history-question{margin-top:40px;padding:26px 0 0 26px;border-top:1px solid var(--ax-hairline);border-left:2px solid var(--ax-crimson)}
+#manifesto .ax-history-question>p{max-width:66ch;color:var(--ax-ink-2)}
+@media(max-width:760px){
+ .ax-history-preamble{grid-template-columns:1fr;gap:28px;margin-bottom:32px}
+ #manifesto.ax-history .sec-head{margin-bottom:30px}
+ #manifesto .ax-history-beat>p{font-size:16px;line-height:1.8}
+ #manifesto .doctrine-stage{display:grid;grid-template-columns:1fr;gap:12px}
+ #manifesto .doctrine-quote{order:0}
+ #manifesto .doctrine-side{display:flex;flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:8px 16px;padding:12px 16px}
+ #manifesto .doctrine-side .big{font-size:16px}
+ #manifesto .doctrine-side .stamp{margin:0;padding:0;border:0}
+ #manifesto .doctrine-side .stamp b{display:inline;margin-left:8px}
+ #manifesto .ql{padding:22px 18px 26px}
+ #manifesto .ax-archive-channel{display:none}
+ #manifesto .ax-history-question{margin-top:30px;padding-left:18px}
+}
+
+/* 0524.W4 S2: human aftermath replaces product theater; concepts support the existing real archive. */
+#modules.ax-remains .sec-head{margin-bottom:38px}
+.ax-remains-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3.5vw,56px)}
+.ax-remains-topics>article{min-width:0;border-top:1px solid var(--ax-hairline);padding-top:22px}
+#modules.ax-remains h3{margin:0 0 16px;font:500 clamp(24px,2vw,30px)/1.18 var(--ax-font-display);text-transform:uppercase;letter-spacing:.02em;color:var(--ax-ink)}
+#modules.ax-remains p{margin:0;max-width:66ch;font:400 17px/1.8 var(--ax-font-body);color:var(--ax-text)}
+#modules.ax-remains .ax-remains-transition{margin-top:42px;padding-top:24px;border-top:1px solid var(--ax-hairline);color:var(--ax-ink-2)}
+#showcase-gallery .ax-case-context{grid-column:1/-1;min-width:0;border-top:1px solid var(--ax-hairline);background:#0a0b0f}
+#showcase-gallery .ax-case-context>summary{min-height:48px;padding:14px 18px;cursor:pointer;color:var(--ax-text);font:600 12px/1.6 var(--ax-font-mono);letter-spacing:.04em}
+#showcase-gallery .ax-case-context>summary:focus-visible{outline:2px solid var(--ax-focus);outline-offset:-3px}
+#showcase-gallery .ax-context-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:0 18px 18px}
+#showcase-gallery .ax-context-grid--single{grid-template-columns:1fr}
+#showcase-gallery .ax-context-grid>figure{min-width:0;margin:0;padding:16px;border:1px dashed var(--ax-hairline);background:#08090c}
+#showcase-gallery .ax-context-art{position:relative;max-width:620px;width:100%;height:180px;margin:0 auto;color:var(--ax-crimson);overflow:hidden}
+#showcase-gallery .ax-context-art *,#showcase-gallery .ax-context-art *::before,#showcase-gallery .ax-context-art *::after{animation:none!important;transition:none!important}
+#showcase-gallery .ax-context-art svg{display:block;width:100%;height:100%}
+#showcase-gallery .ax-context-radar svg{width:180px;margin:auto}
+#showcase-gallery .ax-context-grid figcaption{display:grid;gap:8px;margin-top:16px}
+#showcase-gallery .ax-context-grid figcaption b{font:600 12px/1.7 var(--ax-font-mono);letter-spacing:.035em;color:var(--ax-text-dim)}
+#showcase-gallery .ax-context-grid figcaption span{font:400 14px/1.7 var(--ax-font-body);color:var(--ax-text)}
+#showcase-gallery .ax-context-art .ring-bg{width:92%;max-width:560px}
+#showcase-gallery .ax-context-art .ring-bg.fast{width:76%;max-width:460px}
+#showcase-gallery .ax-context-art .ring-bg.dot{width:84%;max-width:510px}
+#showcase-gallery .ax-context-art .orbit-card{width:190px;max-width:66%;box-shadow:none}
+#showcase-gallery .ax-context-art .orbit-card .meta{color:var(--ax-text-dim);font-size:10px;line-height:1.5}
+#showcase-gallery .ax-context-art .orbit-mini{width:78px;backdrop-filter:none}
+#showcase-gallery .ax-context-art .orbit-mini.l{transform:rotate(-3deg)}
+#showcase-gallery .ax-context-art .orbit-mini.r{transform:rotate(3deg)}
+#showcase-gallery .ax-context-art.content-vis{grid-template-columns:80px minmax(0,1fr) 64px;gap:16px;max-width:520px}
+#showcase-gallery .ax-context-art .portrait::after{display:none}
+#showcase-gallery .ax-context-art .body .meta{color:var(--ax-text-dim);font-size:11px;letter-spacing:.06em}
+#showcase-gallery .ax-context-art .body .name{font-size:22px;line-height:1.2}
+#showcase-gallery .ax-context-art .chip{opacity:1;transform:none;font-size:10px;letter-spacing:.08em}
+#showcase-gallery .ax-context-art .signal{color:var(--ax-crimson)}
+@media(max-width:900px){.ax-remains-topics{grid-template-columns:1fr;gap:28px}#modules.ax-remains p{font-size:16px}}
+@media(max-width:640px){
+ #showcase-gallery .ax-context-grid{grid-template-columns:1fr;padding:0 14px 14px;gap:14px}
+ #showcase-gallery .ax-context-grid>figure{padding:14px}
+ #showcase-gallery .ax-context-art .orbit-mini{width:62px}
+ #showcase-gallery .ax-context-art .orbit-mini.l{left:0}
+ #showcase-gallery .ax-context-art .orbit-mini.r{right:0}
+ #showcase-gallery .ax-context-art.content-vis{grid-template-columns:58px minmax(0,1fr) 30px;gap:10px}
+ #showcase-gallery .ax-context-art .body .name{font-size:19px}
+}
+
+/* 0524.W4 S3: readable faction prose; original art, emblems, columns and status fields retained. */
+#factions .sec-desc{font-size:16px;color:var(--ax-text)}
+#factions .faction p{font:400 16px/1.75 var(--ax-font-body);color:var(--ax-text)}

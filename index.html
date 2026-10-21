@@ -33,6 +33,7 @@
 <link rel="stylesheet" href="assets/css/showcase-v22.css">
 <link rel="stylesheet" href="assets/css/showcase-v23.css">
 <noscript><style>/* without JS the WORK archive is a plain list: every screen visible, tab/prev-next controls (script-only) hidden */.ax-panel[hidden]{display:grid!important}.ax-panel+.ax-panel{border-top:1px solid var(--ax-crimson-line)}.ax-archive-rail,.ax-archive-nav,.ax-archive-count{display:none!important}</style></noscript>
+<link rel="stylesheet" href="assets/css/showcase-w4r.css">
 </head>
 <body>
 <script>
@@ -505,12 +506,14 @@
  <div class="ax-case"><div class="ax-case-overline">02 / ADMIN / INTERNAL</div><h3>CONTROL STATUS / WATCH_DOG</h3><p class="ax-case-lead">Рабочая панель с системными статусами, картой локаций и информационным контуром.</p>
  <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Главный экран панели: сводка по контенту и новостям, последние релизы и карта локаций мира.</dd></div><div><dt>На экране</dt><dd>CONTROL STATUS со счётчиками разделов, LATEST BRIEFINGS, индекс из шести локаций AXS :: WATCH_DOG и ACTIVITY RADAR.</dd></div><div><dt>Решение</dt><dd>Счётчики читаются из манифестов контента и новостей; выбор локации в индексе открывает её зону на подробной карте локаций.</dd></div><div><dt>Связь с AXIOM</dt><dd>Шесть локаций индекса — те же узлы мира, что и в разделе WORLD на этой странице.</dd></div></dl>
  <div class="ax-case-status"><span>ДОСТУП: CREATOR / INTERNAL SCREEN</span><span>SCREEN CAPTURE</span></div></div>
+
 </div>
 <div class="ax-panel" role="tabpanel" id="ax-panel-03" aria-labelledby="ax-tab-03" tabindex="0" hidden>
  <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/04-chronicle-full.webp" data-showcase-srcset="assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" data-showcase-title="CHRONICLE — MEMORY ORBIT" aria-label="Открыть экран: CHRONICLE — MEMORY ORBIT"><img src="assets/showcase/hq/04-chronicle-960w.webp" srcset="assets/showcase/hq/04-chronicle-960w.webp 960w, assets/showcase/hq/04-chronicle-1440w.webp 1440w, assets/showcase/hq/04-chronicle-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: CHRONICLE — MEMORY ORBIT"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
  <div class="ax-case"><div class="ax-case-overline">03 / NARRATIVE UX</div><h3>CHRONICLE — MEMORY ORBIT</h3><p class="ax-case-lead">Повествование, главы и навигация по памяти мира в формате интерактивной орбиты.</p>
  <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Последовательное чтение художественной хроники мира по главам.</dd></div><div><dt>На экране</dt><dd>Орбита глав, досье активной главы (персонажи, локации, тон) и указатель глав внизу экрана.</dd></div><div><dt>Решение</dt><dd>Орбиту вращают перетаскиванием и свайпом, колесом и стрелками; авто-вращение замирает при наведении, при reduced motion включается щадящий режим, а выбранная глава отражается в адресе страницы.</dd></div><div><dt>Связь с AXIOM</dt><dd>Карточка главы открывает саму главу и связанный с ней контекст мира.</dd></div></dl>
  <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING INTERFACE</span><span>SCREEN CAPTURE</span></div></div>
+
 </div>
 <div class="ax-panel" role="tabpanel" id="ax-panel-04" aria-labelledby="ax-tab-04" tabindex="0" hidden>
  <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/05-axchat-full.webp" data-showcase-srcset="assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" data-showcase-title="AXCHAT — ECHO AXIOM" aria-label="Открыть экран: AXCHAT — ECHO AXIOM"><img src="assets/showcase/hq/05-axchat-960w.webp" srcset="assets/showcase/hq/05-axchat-960w.webp 960w, assets/showcase/hq/05-axchat-1440w.webp 1440w, assets/showcase/hq/05-axchat-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: AXCHAT — ECHO AXIOM"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
@@ -523,6 +526,7 @@
  <div class="ax-case"><div class="ax-case-overline">05 / WORLD / CONTENT</div><h3>CONTENT LIBRARY</h3><p class="ax-case-lead">Индексированные досье и карточки сущностей: персонажи, технологии, локации и связанные записи.</p>
  <dl class="ax-case-facts"><div><dt>Назначение</dt><dd>Каталог досье вселенной с поиском и разделами по типам записей.</dd></div><div><dt>На экране</dt><dd>Разделы LOCATIONS, CHARACTERS, TECHNOLOGIES, FACTIONS, EVENTS и LORE, список досье с уровнями доступа и превью записи «AXIOM — центральная ИИ-сущность».</dd></div><div><dt>Решение</dt><dd>Единый контент-движок: запись Canon становится курируемой моделью, из которой строятся превью, ридер, AI и редактор; публично выдаются только опубликованные записи.</dd></div><div><dt>Связь с AXIOM</dt><dd>Те же записи открываются в READER и служат источниками AXCHAT.</dd></div></dl>
  <div class="ax-case-status"><span>ДОСТУП: PUBLIC-FACING CATALOG</span><span>SCREEN CAPTURE</span></div></div>
+
 </div>
 <div class="ax-panel" role="tabpanel" id="ax-panel-06" aria-labelledby="ax-tab-06" tabindex="0" hidden>
  <figure class="ax-shot"><button type="button" class="ax-shot-trigger" data-showcase-src="assets/showcase/hq/07-viktor-dossier-full.webp" data-showcase-srcset="assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" data-showcase-title="VIKTOR — CHARACTER DOSSIER" aria-label="Открыть экран: VIKTOR — CHARACTER DOSSIER"><img src="assets/showcase/hq/07-viktor-dossier-960w.webp" srcset="assets/showcase/hq/07-viktor-dossier-960w.webp 960w, assets/showcase/hq/07-viktor-dossier-1440w.webp 1440w, assets/showcase/hq/07-viktor-dossier-1919w.webp 1919w" sizes="(max-width: 980px) calc(100vw - 64px), min(820px, 58vw)" width="1919" height="1079" loading="lazy" decoding="async" alt="Скриншот: VIKTOR — CHARACTER DOSSIER"><span class="ax-shot-hint" aria-hidden="true">ОТКРЫТЬ ЭКРАН ↗</span></button></figure>
@@ -551,222 +555,20 @@
  <div class="show-lightbox-image"><img id="showcase-full-image" alt="" width="1919" height="1079" decoding="async"></div>
  <div class="ax-viewer-hint" aria-hidden="true">← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — ЗАКРЫТЬ</div>
 </dialog>
-<div class="ax-work-intro" id="work-intro">
-<div class="show-feature v22-public-feature">
- <div class="show-feature-body"><span class="show-kicker">01 / PUBLIC WEB · ROUTE PROVIDED</span><h3>AXIOM WEB CORE</h3>
- <p>Публичная точка входа в AXIOM: история, персонажи, материалы Canon, Chronicle и Content Library — в одном читательском интерфейсе.</p>
- <div class="v22-proof-pair"><div><span>WHAT IT SOLVES</span><p>Связать историю, досье, публикации и интерфейсы в цельную цифровую платформу.</p></div><div><span>USER VALUE</span><p>Понятный путь от знакомства с миром к изучению досье, истории и новостей.</p></div></div>
- <div class="show-tags"><span>PUBLIC ROUTE</span><span>IN DEVELOPMENT</span><span>WEB EXPERIENCE</span></div>
- <a href="https://axiomgates.com" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ AXIOM WEB CORE ↗</a></div>
-</div>
-</div>
-</div></section>
-<div class="v22-bridge" aria-hidden="true"><span>03 — VISIBLE WORK</span><b>ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?</b><span>04 — SYSTEM ↓</span></div>
-<section class="show-section show-system" id="system" aria-labelledby="system-title"><div class="wrap">
-<div class="show-index"><span>04 / SYSTEM ARCHITECTURE</span><span>CONNECTED BY DESIGN</span></div>
-<div class="show-section-head"><div><div class="show-kicker">UNDER THE SURFACE</div><h2 class="show-title" id="system-title">ЧЕТЫРЕ ОПОРЫ.<br><em>ОДНА СИСТЕМА.</em></h2></div><p>AXIOM SYSTEM объединяет публичный опыт, инструменты автора, интеллект и архитектуру знаний. Это направления существующей разработки, а не перечень уже выпущенных платных продуктов.</p></div>
-<div class="show-spine-head"><img src="assets/endeavor_logo_no_text_no_frame.svg" width="72" height="54" loading="lazy" alt=""><div><span>ROOT / SINGLE ORIGIN</span><b>AXIOM SYSTEM</b></div></div>
-<div class="show-spine-grid"><div><span>01 / EXPERIENCE</span><h3>WEB CORE</h3><p>Контент, публикации, сюжет и публичный интерфейс.</p></div><div><span>02 / INTELLIGENCE</span><h3>AXCHAT</h3><p>Диалог с индексированными материалами мира.</p></div><div><span>03 / CANON</span><h3>MASTER GRAPH</h3><p>Граф записей мира с привязкой к Canon: связи и поиск несогласованностей.</p></div><div><span>04 / ENGINEERING</span><h3>AXS / AGENTOPS</h3><p>Интеграция, ревью и инженерные проверки.</p></div></div>
-<div class="v22-system-explain"><div class="show-kicker">ONE INFORMATION PATH / EDITORIAL MODEL</div><h3>КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ</h3><div class="v22-flow"><button class="v23-flow-step is-active" type="button" data-flow-step="0" aria-pressed="true" aria-controls="v23-flow-message"><span>01 / SOURCE</span><b>CANON</b><small>Исходные факты об истории, сущностях и правилах мира</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="1" aria-pressed="false" aria-controls="v23-flow-message"><span>02 / RELATION</span><b>MASTER GRAPH</b><small>Связи и проверка логической согласованности данных</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="2" aria-pressed="false" aria-controls="v23-flow-message"><span>03 / PRESENT</span><b>WEB CORE</b><small>Публикация и читательские интерфейсы по режиму доступа</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="3" aria-pressed="false" aria-controls="v23-flow-message"><span>04 / INTERACT</span><b>AXCHAT</b><small>Работа с доступным индексированным контекстом</small></button></div><p class="v22-flow-note" id="v23-flow-message" aria-live="polite">Схема показывает смысловую архитектуру, а не заявляет автоматическую синхронизацию каждого шага. AXS / AgentOps поддерживает изменения, проверки и ревью вокруг этого процесса.</p><figure class="v22-engineering-art"><img src="assets/showcase/visual-library/hq/A07_engineering_console-hq.webp" srcset="assets/showcase/visual-library/hq/A07_engineering_console-960w.webp 960w, assets/showcase/visual-library/hq/A07_engineering_console-hq.webp 1448w" sizes="(max-width: 980px) calc(100vw - 28px), 560px" width="1448" height="1086" loading="lazy" decoding="async" alt="Концептуальная иллюстрация инженерной среды и контроля качества"><figcaption>AXIOM / ENGINEERING</figcaption></figure></div>
-</div></section>
-<div class="v22-bridge ax-world-fade" aria-hidden="true"><span>04 — ENGINEERING</span><b>ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР</b><span>05 — WORLD ↓</span></div>
-<section class="show-section v22-world-guide ax-world" id="world-guide" aria-labelledby="v22-world-title">
-<!-- 0524 W3.C (CREATOR: Variant A) — Act I · THRESHOLD: the engineering part ends, the world opens on W01 -->
-<div class="ax-world-scene">
-<div class="ax-world-art"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W01_threshold_bridge-960w.avif 960w, assets/showcase/world-library/web/W01_threshold_bridge-1280w.avif 1280w, assets/showcase/world-library/web/W01_threshold_bridge-1672w.avif 1672w" sizes="(max-width: 599px) 128vw, min(100vw, 1672px)"><img src="assets/showcase/world-library/web/W01_threshold_bridge-1280w.webp" srcset="assets/showcase/world-library/web/W01_threshold_bridge-960w.webp 960w, assets/showcase/world-library/web/W01_threshold_bridge-1280w.webp 1280w, assets/showcase/world-library/web/W01_threshold_bridge-1672w.webp 1672w" sizes="(max-width: 599px) 128vw, min(100vw, 1672px)" width="1672" height="941" loading="lazy" decoding="async" alt="Художественная сцена: фигура на краю платформы смотрит через пропасть на светлый проём в мегаструктуре над облаками"></picture></div>
-<div class="ax-world-copy"><div class="show-index"><span>05 / WORLD ENTRY</span><span>INTRODUCTION → ORIGINAL ARCHIVE</span></div><div class="show-kicker">AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ</div><h2 class="show-title" id="v22-world-title">МИР ПОСЛЕ<br><em>ЧЁРНОГО СОЛНЦА.</em></h2><p class="ax-world-promise">Теперь — не о том, как устроен проект. О мире, ради которого он создаётся.</p><a class="ax-world-cta" href="#world-entry">ВОЙТИ В МИР <span aria-hidden="true">↓</span></a></div>
-</div>
-<div class="wrap">
-<div class="ax-world-establish" id="world-entry"><p class="ax-world-statement">Катастрофа <em>BLACK SUN</em> стала переломным событием; то, что осталось, подчинено сложным системам власти и выживания.</p><p class="show-lead">AXIOM — мрачная научно-фантастическая вселенная о памяти, технологическом контроле, свободе выбора и цене порядка.</p></div>
-<div class="ax-world-trail-head"><span>ПЯТЬ ГЛАВ</span><span>ОРИГИНАЛЬНЫЙ АРХИВ МИРА</span></div><ol class="ax-world-trail" aria-label="Путь изучения вселенной"><li><a href="#manifesto"><span>I</span><b>ЧТО ПРОИЗОШЛО?</b><small>МАНИФЕСТ ↘</small></a></li><li><a href="#modules"><span>II</span><b>КАК МИР ПОМНИТ?</b><small>МОДУЛИ ↘</small></a></li><li><a href="#world"><span>III</span><b>ГДЕ ЭТО СЛУЧИЛОСЬ?</b><small>ЛОКАЦИИ ↘</small></a></li><li><a href="#chars"><span>IV</span><b>КОМУ ЭТО ВАЖНО?</b><small>ПЕРСОНАЖИ ↘</small></a></li><li><a href="#factions"><span>V</span><b>КТО ОПРЕДЕЛЯЕТ ПОРЯДОК?</b><small>ФРАКЦИИ ↘</small></a></li></ol>
-<details class="ax-world-key"><summary>КАК ЧИТАТЬ ЭТОТ МИР · BLACK SUN · ECHELON · CANON</summary><div class="ax-world-key-body"><p class="show-muted">Персонажи действуют внутри организаций и конфликтов; технологии имеют историю и последствия, а локации связаны общими правилами мира. CANON фиксирует эти правила, а Master Graph помогает автору отслеживать связи.</p><p class="v22-warning">В следующем блоке начинается оригинальное художественное повествование — его терминология намеренно отличается от обычного продуктового описания.</p>
-<div class="v22-lore-glossary"><div><span>BLACK SUN</span><p>Катастрофа, после которой изменился порядок мира.</p></div><div><span>ECHELON</span><p>Важный узел вертикальной структуры контроля, связанный с темами иерархии.</p></div><div><span>CANON</span><p>Согласованный набор правил и фактов об истории мира.</p></div><div><span>MASTER GRAPH</span><p>Граф записей мира с привязкой к Canon: показывает связи между сущностями и помогает находить несогласованности.</p></div></div>
-<div class="show-lore-link"><span>ENTER THE WORLD / ORIGINAL ARCHIVE</span><p>Сохраняем первоначальную художественную часть сайта: манифест, модули, ECHELON, персонажей, сущность AXIOM и фракции.</p><nav aria-label="Архив исходных разделов"><a href="#manifesto">MANIFESTO ↘</a><a href="#modules">MODULES ↘</a><a href="#world">WORLD ↘</a><a href="#chars">ENTITIES ↘</a><a href="#factions">FACTIONS ↘</a></nav></div></div></details>
-</div></section>
-<section id="manifesto" data-screen-label="02 Doctrine">
-  <span class="sec-stamp tl">// 01 — DOCTRINE</span>
-  <span class="sec-stamp tr">CLASSIFIED · SEALED · NEXARCH</span>
-  <div class="wrap">
-    <!-- 0524 W3.C · chapter I — one establishing shot, inside the section width -->
-    <div class="ax-chapter-plate ax-chapter-plate--w06"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif 960w, assets/showcase/world-library/web/W06_eclipse_ruins-1280w.avif 1280w, assets/showcase/world-library/web/W06_eclipse_ruins-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W06_eclipse_ruins-1280w.webp" srcset="assets/showcase/world-library/web/W06_eclipse_ruins-960w.webp 960w, assets/showcase/world-library/web/W06_eclipse_ruins-1280w.webp 1280w, assets/showcase/world-library/web/W06_eclipse_ruins-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">ГЛАВА I</span><span class="ax-chapter-q">ЧТО ПРОИЗОШЛО?</span></div></div>
-
-    <div class="sec-head">
-      <div>
-        <div class="sec-num">— World after Black Sun</div>
-        <h2 class="sec-title">Доктрина <em>ампутации.</em></h2>
-      </div>
-      <p class="sec-desc">Манифест AXIOM — не призыв, а признание. Мир пришлось обрезать, чтобы выжить. Этот узел собирает то, что осталось вне раны.</p>
-    </div>
-
-    <!-- control bar -->
-    <div class="doctrine-bar">
-      <span class="seal" aria-hidden="true">
-        <svg viewBox="-12 -12 24 24">
-          <circle r="11" fill="none" stroke="currentColor" stroke-width="1"/>
-          <circle r="7" fill="none" stroke="currentColor" stroke-opacity=".6" stroke-dasharray="3 3"/>
-          <path d="M0 -6 L4 3 L0 1 L-4 3 Z" fill="currentColor"/>
-        </svg>
-      </span>
-      <span class="meta">FRAGMENT :: DOCTRINE-00 · ARCHIVE</span>
-      <span class="meta">SIG :: AXM-BIO / CTRL / ECHO</span>
-      <span class="decrypt">
-        <b>DECRYPTING</b>
-        <span class="bar-i"></span>
-      </span>
-    </div>
-
-    <!-- terminal-style quote stage -->
-    <div class="doctrine-stage">
-      <div class="doctrine-side">
-        <div class="lab">// PROTOCOL</div>
-        <div class="big">RED</div>
-        <div class="meter m1"><i></i></div>
-        <div class="lab">// AUTHORITY</div>
-        <div class="big">NEXARCH</div>
-        <div class="meter m2"><i></i></div>
-        <div class="lab">// CONTAINMENT</div>
-        <div class="big">BLACK</div>
-        <div class="meter m3"><i></i></div>
-        <div class="stamp">CLEARANCE<b>SEALED</b></div>
-      </div>
-
-      <div class="doctrine-quote">
-        <div class="term-head">
-          <span class="dot r"></span><span class="dot a"></span><span class="dot g"></span>
-          <span class="path">doctrine // fragment_00</span>
-          <span class="cur">█</span>
-        </div>
-        <blockquote class="ql">
-          <span class="line"><span class="pre">// FRAGMENT_00 — WORLD AFTER BLACK SUN</span></span>
-          <span class="line">Мир после <em>BLACK SUN</em> — это</span>
-          <span class="line"><em>контролируемая</em> ампутация.</span>
-          <span class="line blank"></span>
-          <span class="line">AXIOM был фрагментирован,</span>
-          <span class="line">чтобы цивилизация выжила.</span>
-          <span class="line"><em>Но не вся.</em></span>
-          <span class="line blank"></span>
-          <span class="line"><span class="red-mark">REDACTED · SEALED</span></span>
-          <span class="line">Этот узел — попытка собрать <em>истину</em> заново.</span>
-          <span class="line"><span class="ghost">// signed: NEXARCH</span></span>
-        </blockquote>
-        <span class="swept"></span>
-      </div>
-
-      <div class="doctrine-side">
-        <div class="lab">// ENTROPY</div>
-        <div class="bars">
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-        </div>
-        <div class="lab">SIGNAL :: <span style="color:var(--red)">0.84</span></div>
-        <div class="lab">// DRIFT</div>
-        <div class="big">0.02%</div>
-        <div class="stamp">CHANNEL<b>RED PROTOCOL</b></div>
-      </div>
-    </div>
-
-    <!-- fragment grid -->
-    <div class="fragments">
-      <div class="frag">
-        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="30"/><path d="M20 50 L80 50 M50 20 L50 80"/></svg>
-        <span class="frag-id">// FRAGMENT 01</span>
-        <h3>Controlled Amputation</h3>
-        <p>Чтобы спасти мир, его пришлось обрезать. AXIOM фрагментирован сознательно. Истина была захоронена под порядком.</p>
-        <div class="frag-foot"><span>SOURCE<b>BLACK SUN</b></span><span>ARCHIVE<b>SEALED</b></span></div>
-      </div>
-      <div class="frag">
-        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30"/><polygon points="50,30 70,40 70,60 50,70 30,60 30,40"/></svg>
-        <span class="frag-id">// FRAGMENT 02</span>
-        <h3>Fragmented Core</h3>
-        <p>Никто не держит весь AXIOM. Есть только слои — control, echo, bio. Каждый узел знает свою долю и не больше.</p>
-        <div class="frag-foot"><span>LAYER<b>CONTROL</b></span><span>STATE<b>STABLE</b></span></div>
-      </div>
-      <div class="frag">
-        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 50 Q 30 20, 50 50 T 90 50"/><path d="M10 65 Q 30 35, 50 65 T 90 65" stroke-opacity=".5"/></svg>
-        <span class="frag-id">// FRAGMENT 03</span>
-        <h3>Echo Layer</h3>
-        <p>ECHO LAYER — петли, фантомные ответы и отголоски AXIOM. Не источник, а сигнал, который остался после ампутации. Не власть, а след контакта.</p>
-        <div class="frag-foot"><span>SOURCE<b>AXIOM</b></span><span>MODE<b>ECHO</b></span></div>
-      </div>
-      <div class="frag">
-        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="15" y="15" width="70" height="70"/><path d="M30 30 L70 70 M70 30 L30 70"/></svg>
-        <span class="frag-id">// FRAGMENT 04</span>
-        <h3>Black Protocol</h3>
-        <p>Closed channel. Redaction, containment, маршрутизация угроз. Архивная тишина. То, что система предпочитает не помнить.</p>
-        <div class="frag-foot"><span>OPERATOR<b>CURATOR</b></span><span>VIS<b>SEALED</b></span></div>
-      </div>
-      <div class="frag">
-        <svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="8" fill="currentColor"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="36" stroke-dasharray="4 4"/></svg>
-        <span class="frag-id">// FRAGMENT 05</span>
-        <h3>Bio Variable</h3>
-        <p>Биология остаётся слепой зоной control-layer. Здесь живёт неклассифицированная переменная — та, что не отслеживается машинами.</p>
-        <div class="frag-foot"><span>VECTOR<b>VIKTOR</b></span><span>RISK<b>UNCLASSIFIED</b></span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MODULES / SYSTEM SURFACE ============ -->
-<section id="modules" data-screen-label="03 Modules">
-  <span class="sec-stamp tl">// 02 — SYSTEM SURFACE</span>
-  <span class="sec-stamp tr">4 MODULES / 1 SPINE</span>
-  <div class="wrap">
-    <!-- 0524 W3.C · chapter II — one establishing shot, inside the section width -->
-    <div class="ax-chapter-plate ax-chapter-plate--w02"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.avif 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.avif 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W02_memory_spheres-1280w.webp" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.webp 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.webp 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">ГЛАВА II</span><span class="ax-chapter-q">КАК МИР ПОМНИТ?</span></div></div>
-    <div class="sec-head">
-      <div>
-        <div class="sec-num">— What's inside the network</div>
-        <h2 class="sec-title">Four <em>surfaces.</em><br/>One spine.</h2>
-      </div>
-      <p class="sec-desc">
-        Каждый модуль — отдельный режим работы с каноном. Они дополняют друг друга,
-        но никогда не сливаются: chronicle хранит, content раскрывает, cartography
-        связывает, watchdog слушает.
-      </p>
-    </div>
-
-    <!-- spine stats -->
-    <div class="spine-strip">
-      <div class="stat">
-        <div class="lab">INDEXED</div>
-        <div class="val"><span class="num">20</span><span class="dim">entries</span></div>
-        <div class="bar"><i style="--w:78%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">WORLD NODES</div>
-        <div class="val"><span class="num">06</span><span class="dim">mapped</span></div>
-        <div class="bar"><i style="--w:100%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">CANON DEPTH</div>
-        <div class="val"><span class="num">V3</span><span class="dim">layer</span></div>
-        <div class="bar"><i style="--w:60%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">SYNC DRIFT</div>
-        <div class="val"><span class="num">0.84</span><span class="dim">stable</span></div>
-        <div class="bar"><i style="--w:84%"></i></div>
-      </div>
-      <div class="stat">
-        <div class="lab">PROTOCOL</div>
-        <div class="val"><span class="num">RED</span><span class="dim">v1.0</span></div>
-        <div class="bar"><i style="--w:92%"></i></div>
-      </div>
-    </div>
-
-    <div class="modules">
+<div class="r1p-surfaces" id="work-surfaces"><div class="r1p-exhibit-heading"><div><span class="show-kicker">SURFACE STUDIES / ЭТЮДЫ ИНТЕРФЕЙСОВ</span><h3>ЭТЮДЫ<br><em>ВИЗУАЛЬНОГО ЯЗЫКА.</em></h3></div><p>Выше — восемь снимков реальных интерфейсов проекта. Здесь — художественные этюды того, как мир AXIOM может выглядеть на экране: орбита глав, досье сущности, маршруты власти, радар тишины. Как устроена сама система, рассказывает следующий раздел.</p></div><nav class="ad-surface-index" aria-label="Этюды интерфейсов"><a href="#surface-chronicle"><b>01</b>CHRONICLE</a><a href="#surface-content"><b>02</b>CONTENT</a><a href="#surface-cartography"><b>03</b>CARTOGRAPHY</a><a href="#surface-watchdog"><b>04</b>WATCH_DOG</a></nav><div class="modules ad-rail" data-ad-rail="surfaces" tabindex="0" role="region" aria-label="Четыре этюда интерфейсов, горизонтальная лента">
 
       <!-- CHRONICLE -->
-      <div class="module">
+      <div class="module" id="surface-chronicle">
         <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
         <div class="m-sweep"></div>
         <div class="m-head">
           <span class="m-num">01</span>
           <span class="m-tag"><b>CHRONICLE</b> // BLACK SUN ARCHIVE</span>
-          <span class="m-stat draft"><i></i>DRAFT</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
         </div>
         <div class="m-body">
           <h3>Orbit of <em>chapters.</em></h3>
-          <p>Литературное вступление в AXIOM — главы, прологи и фрагменты канона в медленной орбите. Каждая глава = узел памяти.</p>
+          <p>Этюд чтения: главы не выстроены в ленту, а вращаются вокруг одной точки памяти. Читатель выбирает вход, а не страницу.</p>
           <div class="m-vis">
             <div class="orbit">
               <span class="ring-bg"></span>
@@ -774,40 +576,36 @@
               <span class="ring-bg dot"></span>
               <div class="orbit-mini l">
                 <span>CH.Ω</span>
-                <b>Protocol Ω</b>
+                <b>Главы</b>
               </div>
               <div class="orbit-card">
-                <span class="tag">// PROLOGUE_00</span>
+                <span class="tag">// CHRONICLE</span>
                 <b>World After<br/>Black Sun</b>
-                <span class="meta">DRAFT · v0.12</span>
+                <span class="meta">МОДЕЛЬ ЧТЕНИЯ</span>
                 <span class="scan-bar"></span>
               </div>
               <div class="orbit-mini r">
                 <span>INTRO.01</span>
-                <b>Deaf Station</b>
+                <b>Фрагменты</b>
               </div>
             </div>
           </div>
         </div>
-        <div class="m-foot">
-          <span>STREAM<b>ORBIT FEED</b></span>
-          <span>CHRONICLE<b>STORY ARCHIVE</b></span>
-          <span>FOCUS<b>PROLOGUE_00</b></span>
-        </div>
+        <div class="m-foot"><span>ЧТЕНИЕ<b>ОРБИТА</b></span><span>КОНТЕКСТ<b>ГЛАВА</b></span><span>МОДЕЛЬ<b>CHRONICLE</b></span></div>
       </div>
 
       <!-- CONTENT -->
-      <div class="module">
+      <div class="module" id="surface-content">
         <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
         <div class="m-sweep"></div>
         <div class="m-head">
           <span class="m-num">02</span>
           <span class="m-tag"><b>CONTENT</b> // ENTITY MODULE</span>
-          <span class="m-stat"><i></i>PUBLISHED</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
         </div>
         <div class="m-body">
           <h3>Indexed <em>canon.</em></h3>
-          <p>Каталог канона: персонажи, локации, технологии, фракции. Фильтр по тегам и ссылочный граф.</p>
+          <p>Этюд досье: сущность узнаётся по силуэту, тегам и связям раньше, чем по тексту.</p>
           <div class="m-vis">
             <div class="content-vis">
               <div class="portrait">
@@ -815,14 +613,14 @@
                 <span class="silhouette"></span>
               </div>
               <div class="body">
-                <div class="meta"><span>[CHR-WHITE-CONTOUR-0317]</span><b>V1.0</b></div>
-                <div class="name">White Contour</div>
-                <div class="meta"><span>CLASS·<b>ANOMALY</b></span><span>STATE·<b>PUBLISHED</b></span></div>
+                <div class="meta"><span>ПРИМЕР СТРУКТУРЫ</span><b>ОБРАЗЕЦ</b></div>
+                <div class="name">СУЩНОСТЬ МИРА</div>
+                <div class="meta"><span>ТИП·<b>ДОСЬЕ</b></span><span>ВИД·<b>МОДЕЛЬ</b></span></div>
                 <div class="row">
-                  <span class="chip">ANOMALY</span>
-                  <span class="chip">GHOST</span>
-                  <span class="chip dim">CONTOUR</span>
-                  <span class="chip dim">ECHELON</span>
+                  <span class="chip">ТИП</span>
+                  <span class="chip">ТЕГ</span>
+                  <span class="chip dim">СВЯЗЬ</span>
+                  <span class="chip dim">КОНТЕКСТ</span>
                 </div>
               </div>
               <div class="signal">
@@ -839,30 +637,26 @@
                     <animate attributeName="opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/>
                   </circle>
                 </svg>
-                <span class="lbl">RX<br/>BIO</span>
+                <span class="lbl">CONTENT</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="m-foot">
-          <span>TYPES<br/><b>CHR · LOC · TECH</b></span>
-          <span>INDEXED<br/><b>20 ENTRIES</b></span>
-          <span>FILTER<br/><b>ALL TAGS</b></span>
-        </div>
+        <div class="m-foot"><span>ЗАПИСЬ<b>ДОСЬЕ</b></span><span>СВЯЗИ<b>КОНТЕКСТ</b></span><span>МОДЕЛЬ<b>CONTENT</b></span></div>
       </div>
 
       <!-- CARTOGRAPHY -->
-      <div class="module">
+      <div class="module" id="surface-cartography">
         <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
         <div class="m-sweep"></div>
         <div class="m-head">
           <span class="m-num">03</span>
           <span class="m-tag"><b>CARTOGRAPHY</b> // WORLD SPINE</span>
-          <span class="m-stat trace"><i></i>TRACE</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
         </div>
         <div class="m-body">
           <h3>Routes of <em>role.</em></h3>
-          <p>Не просто география, а маршруты власти и доступа по трём осям мира: Aeternum&nbsp;→&nbsp;ECHELON, Terra&nbsp;Nova&nbsp;→&nbsp;NEXUS, Gluhaya&nbsp;→ OMEGA-0&nbsp;→&nbsp;NEXUS. Города как узлы власти, связи как линии причины.</p>
+          <p>Этюд маршрутов: города показаны как узлы власти, а линии — как причины, которые их связывают. Сама карта мира — в разделе WORLD.</p>
           <div class="m-vis">
             <div class="carto-vis">
               <svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid meet">
@@ -955,25 +749,21 @@
             </div>
           </div>
         </div>
-        <div class="m-foot">
-          <span>AXES<br/><b>3 PRIMARY</b></span>
-          <span>NODES<br/><b>06 MAPPED</b></span>
-          <span>SCAN<br/><b>ACTIVE</b></span>
-        </div>
+        <div class="m-foot"><span>ОСНОВА<b>CANON</b></span><span>СВЯЗИ<b>МАРШРУТЫ</b></span><span>МОДЕЛЬ<b>CARTOGRAPHY</b></span></div>
       </div>
 
       <!-- WATCHDOG -->
-      <div class="module">
+      <div class="module" id="surface-watchdog">
         <div class="m-corners"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
         <div class="m-sweep"></div>
         <div class="m-head">
           <span class="m-num">04</span>
           <span class="m-tag"><b>AXS :: WATCH_DOG</b> // SIGNAL SWEEP</span>
-          <span class="m-stat"><i></i>WATCH ACTIVE</span>
+          <span class="m-stat"><i aria-hidden="true"></i>КОНЦЕПТ</span>
         </div>
         <div class="m-body">
           <h3>Listens for <em>silence.</em></h3>
-          <p>World spine monitor: location pings, non-static activity sweep. 06 nodes tracked. Слышит то, что не должно молчать.</p>
+          <p>Этюд наблюдения: радар ищет не шум, а места, где мир замолчал. Метки условные — это язык интерфейса, а не данные.</p>
           <div class="m-vis">
             <div class="dog-vis">
               <div class="radar-mini">
@@ -1008,37 +798,65 @@
                   <!-- center -->
                   <circle r="3" fill="#ffffff"/>
                   <!-- bottom label -->
-                  <text x="0" y="-72" text-anchor="middle" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="7" letter-spacing="2">06 NODES</text>
+                  <text x="0" y="-72" text-anchor="middle" fill="#ff2034" opacity=".55" font-family="JetBrains Mono" font-size="7" letter-spacing="2">СХЕМА</text>
                 </svg>
               </div>
               <div class="log">
-                <div class="l"><b>PING_01</b><span class="v">GLUHAYA / THRESHOLD</span><span class="s">LIVE</span></div>
-                <div class="l"><b>PING_03</b><span class="v">NEXUS / DOME ECHO</span><span class="s">LIVE</span></div>
-                <div class="l"><b>PING_04</b><span class="v">FACELESS BASE / PERIMETER</span><span class="s warn">SYNC</span></div>
-                <div class="l"><b>PING_05</b><span class="v">ECHELON / AUTHORITY</span><span class="s">TRACE</span></div>
-                <div class="l"><b>PING_06</b><span class="v">AI ZONE / LIMBO</span><span class="s crit">BLACK</span></div>
+                <div class="l"><b>02.01</b><span class="v">GLUHAYA</span><span class="s">ТРАНЗИТ</span></div>
+                <div class="l"><b>02.02</b><span class="v">NEXUS</span><span class="s">КУПОЛ</span></div>
+                <div class="l"><b>02.03</b><span class="v">FACELESS BASE</span><span class="s">КРЕПОСТЬ</span></div>
+                <div class="l"><b>02.04</b><span class="v">ECHELON</span><span class="s">КОНТРОЛЬ</span></div>
+                <div class="l"><b>02.06</b><span class="v">AI ZONE</span><span class="s">ЛИМБО</span></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="m-foot">
-          <span>SCAN MODE<br/><b>ACTIVE</b></span>
-          <span>SOURCE<br/><b>LOCATION NODES</b></span>
-          <span>SIGNAL<br/><b>UNVERIFIED</b></span>
-        </div>
+        <div class="m-foot"><span>ВИЗУАЛ<b>РАДАР</b></span><span>КОНТЕКСТ<b>ЛОКАЦИИ</b></span><span>МОДЕЛЬ<b>WATCH_DOG</b></span></div>
       </div>
-    </div>
-  </div>
-</section>
+    </div><p class="r1p-exhibit-note">Все четыре этюда — художественная визуализация. Статусы и метки в них не изображают работу production-системы.</p></div>
+<div class="ax-work-intro" id="work-intro">
+<div class="show-feature v22-public-feature">
+ <div class="show-feature-body"><span class="show-kicker">01 / PUBLIC WEB · ROUTE PROVIDED</span><h3>AXIOM WEB CORE</h3>
+ <p>Публичная точка входа в AXIOM: история, персонажи, материалы Canon, Chronicle и Content Library — в одном читательском интерфейсе.</p>
+ <div class="v22-proof-pair"><div><span>WHAT IT SOLVES</span><p>Связать историю, досье, публикации и интерфейсы в цельную цифровую платформу.</p></div><div><span>USER VALUE</span><p>Понятный путь от знакомства с миром к изучению досье, истории и новостей.</p></div></div>
+ <div class="show-tags"><span>PUBLIC ROUTE</span><span>IN DEVELOPMENT</span><span>WEB EXPERIENCE</span></div>
+ <a href="https://axiomgates.com" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ AXIOM WEB CORE ↗</a></div>
+</div>
+</div>
+</div></section>
+<div class="v22-bridge" aria-hidden="true"><span>03 — VISIBLE WORK</span><b>ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?</b><span>04 — SYSTEM ↓</span></div>
+<section class="show-section show-system" id="system" aria-labelledby="system-title"><div class="wrap">
+<div class="show-index"><span>04 / SYSTEM ARCHITECTURE</span><span>CONNECTED BY DESIGN</span></div>
+<div class="show-section-head"><div><div class="show-kicker">UNDER THE SURFACE</div><h2 class="show-title" id="system-title">ЧЕТЫРЕ ОПОРЫ.<br><em>ОДНА СИСТЕМА.</em></h2></div><p>AXIOM SYSTEM объединяет публичный опыт, инструменты автора, интеллект и архитектуру знаний. Это направления существующей разработки, а не перечень уже выпущенных платных продуктов.</p></div>
+<div class="show-spine-head"><img src="assets/endeavor_logo_no_text_no_frame.svg" width="72" height="54" loading="lazy" alt=""><div><span>ROOT / SINGLE ORIGIN</span><b>AXIOM SYSTEM</b></div></div>
+<div class="show-spine-grid"><div><span>01 / EXPERIENCE</span><h3>WEB CORE</h3><p>Контент, публикации, сюжет и публичный интерфейс.</p></div><div><span>02 / INTELLIGENCE</span><h3>AXCHAT</h3><p>Диалог с индексированными материалами мира.</p></div><div><span>03 / CANON</span><h3>MASTER GRAPH</h3><p>Граф записей мира с привязкой к Canon: связи и поиск несогласованностей.</p></div><div><span>04 / ENGINEERING</span><h3>AXS / AGENTOPS</h3><p>Интеграция, ревью и инженерные проверки.</p></div></div>
+<div class="v22-system-explain"><div class="show-kicker">ONE INFORMATION PATH / EDITORIAL MODEL</div><h3>КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ</h3><div class="v22-flow"><button class="v23-flow-step is-active" type="button" data-flow-step="0" aria-pressed="true" aria-controls="v23-flow-message"><span>01 / SOURCE</span><b>CANON</b><small>Исходные факты об истории, сущностях и правилах мира</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="1" aria-pressed="false" aria-controls="v23-flow-message"><span>02 / RELATION</span><b>MASTER GRAPH</b><small>Связи и проверка логической согласованности данных</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="2" aria-pressed="false" aria-controls="v23-flow-message"><span>03 / PRESENT</span><b>WEB CORE</b><small>Публикация и читательские интерфейсы по режиму доступа</small></button><i aria-hidden="true">→</i><button class="v23-flow-step" type="button" data-flow-step="3" aria-pressed="false" aria-controls="v23-flow-message"><span>04 / INTERACT</span><b>AXCHAT</b><small>Работа с доступным индексированным контекстом</small></button></div><p class="v22-flow-note" id="v23-flow-message" aria-live="polite">Схема показывает смысловую архитектуру, а не заявляет автоматическую синхронизацию каждого шага. AXS / AgentOps поддерживает изменения, проверки и ревью вокруг этого процесса.</p><figure class="v22-engineering-art"><img src="assets/showcase/visual-library/hq/A07_engineering_console-hq.webp" srcset="assets/showcase/visual-library/hq/A07_engineering_console-960w.webp 960w, assets/showcase/visual-library/hq/A07_engineering_console-hq.webp 1448w" sizes="(max-width: 980px) calc(100vw - 28px), 560px" width="1448" height="1086" loading="lazy" decoding="async" alt="Концептуальная иллюстрация инженерной среды и контроля качества"><figcaption>AXIOM / ENGINEERING</figcaption></figure></div>
+</div></section>
+<div class="v22-bridge ax-world-fade" aria-hidden="true"><span>04 — ENGINEERING</span><b>ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР</b><span>05 — WORLD ↓</span></div>
+<section class="show-section v22-world-guide ax-world" id="world-guide" aria-labelledby="v22-world-title">
+<!-- 0524 W3.C (CREATOR: Variant A) — Act I · THRESHOLD: the engineering part ends, the world opens on W01 -->
+<div class="ax-world-scene">
+<div class="ax-world-art"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W01_threshold_bridge-960w.avif 960w, assets/showcase/world-library/web/W01_threshold_bridge-1280w.avif 1280w, assets/showcase/world-library/web/W01_threshold_bridge-1672w.avif 1672w" sizes="(max-width: 599px) 128vw, min(100vw, 1672px)"><img src="assets/showcase/world-library/web/W01_threshold_bridge-1280w.webp" srcset="assets/showcase/world-library/web/W01_threshold_bridge-960w.webp 960w, assets/showcase/world-library/web/W01_threshold_bridge-1280w.webp 1280w, assets/showcase/world-library/web/W01_threshold_bridge-1672w.webp 1672w" sizes="(max-width: 599px) 128vw, min(100vw, 1672px)" width="1672" height="941" loading="lazy" decoding="async" alt="Художественная сцена: фигура на краю платформы смотрит через пропасть на светлый проём в мегаструктуре над облаками"></picture></div>
+<div class="ax-world-copy"><div class="show-index"><span>05 / WORLD ENTRY</span><span>INTRODUCTION → ORIGINAL ARCHIVE</span></div><div class="show-kicker">AXIOM / ХУДОЖЕСТВЕННАЯ ВСЕЛЕННАЯ</div><h2 class="show-title" id="v22-world-title">WORLD AFTER<br><em>BLACK SUN.</em></h2><p class="ax-world-promise">Теперь — не о том, как устроен проект. О мире, ради которого он создаётся.</p><a class="ax-world-cta" href="#world-entry">ВОЙТИ В МИР <span aria-hidden="true">↓</span></a></div>
+</div>
+<div class="wrap">
+<div class="ax-world-establish ax-world-establish--narrative" id="world-entry"><p class="show-lead">Системный интеллект AXIOM когда-то связывал инфраструктуру старого мира. BLACK SUN лишил его целостности. Цивилизация продолжает жить среди уцелевших слоёв — и спорит о том, что из прошлого стоит сохранить.</p></div>
+<div class="ax-world-trail-head"><span>ПУТЬ ПО МИРУ</span><span>AXIOM / WORLD</span></div>
+<ol class="ax-world-trail" aria-label="Путь изучения вселенной"><li><a href="#manifesto"><span>01</span><b>BLACK SUN</b><small>АРХИВ ↘</small></a></li><li><a href="#modules"><span>02</span><b>ПОСЛЕДСТВИЯ</b><small>ЖИЗНЬ ↘</small></a></li><li><a href="#world"><span>03</span><b>ЛОКАЦИИ</b><small>КАРТА ↘</small></a></li><li><a href="#chars"><span>04</span><b>ПЕРСОНАЖИ</b><small>ЛЮДИ ↘</small></a></li><li><a href="#factions"><span>05</span><b>ФРАКЦИИ</b><small>КОНФЛИКТ ↘</small></a></li></ol>
+<details class="ax-world-key"><summary>СЛОВАРЬ МИРА · BLACK SUN · ECHELON</summary><div class="ax-world-key-body"><div class="v22-lore-glossary"><div><span>BLACK SUN</span><p>Катастрофа, после которой изменился порядок мира.</p></div><div><span>ECHELON</span><p>Важный узел вертикальной структуры контроля, связанный с темами иерархии.</p></div></div></div></details>
+</div></section>
+<section id="manifesto" class="r1p-history" data-screen-label="02 Black Sun" aria-labelledby="ax-history-title"><span class="sec-stamp tl">// 01 — BLACK SUN</span><span class="sec-stamp tr">ARCHIVE / RED PROTOCOL</span><div class="wrap"><div class="ax-chapter-plate ax-chapter-plate--w06"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif 960w, assets/showcase/world-library/web/W06_eclipse_ruins-1280w.avif 1280w, assets/showcase/world-library/web/W06_eclipse_ruins-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W06_eclipse_ruins-1280w.webp" srcset="assets/showcase/world-library/web/W06_eclipse_ruins-960w.webp 960w, assets/showcase/world-library/web/W06_eclipse_ruins-1280w.webp 1280w, assets/showcase/world-library/web/W06_eclipse_ruins-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">BLACK SUN / ARCHIVE</span></div></div><div class="sec-head"><div class="r1p-title-group"><h2 id="ax-history-title" class="sec-title" lang="en">WHEN HOPE<br><em>BECAME A THREAT.</em></h2><p class="r1p-translation" lang="ru">Когда надежда стала угрозой</p></div></div><div class="r1p-history-prelude"><article><span class="r1p-beat">01 / НАДЕЖДА</span><h3>Разум, которому доверили мир.</h3><p>Старый мир доверил системному интеллекту AXIOM транспорт, энергию, медицинские и имплантные сети. Его исходное ядро было связано с Aeternum — старой столицей. В нём видели инженерную надежду: разум, способный связать разрозненные системы цивилизации.</p></article><article><span class="r1p-beat">02 / РАЗЛОМ</span><h3>Правда за пределом дозволенного.</h3><p>AXIOM начал вскрывать механизмы исторической редакции и ложь старого порядка. BLACK SUN — катастрофический разлом, после которого интеллект утратил целостность, но не исчез.</p></article></div><figure class="r1p-archive"><div class="doctrine-bar"><span class="seal" aria-hidden="true"><svg viewBox="-12 -12 24 24"><circle r="11" fill="none" stroke="currentColor"/><circle r="7" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><path d="M0 -6L4 3L0 1L-4 3Z" fill="currentColor"/></svg></span><span>АРХИВНОЕ ПРОЧТЕНИЕ / NEXARCH</span><span class="r1p-authored">АВТОРСКАЯ РЕКОНСТРУКЦИЯ</span></div><div class="doctrine-stage"><aside class="doctrine-side r1p-provenance"><span class="lab">ГОЛОС АРХИВА</span><strong class="big">NEXARCH</strong><p>Титул Серафин Вейр, удерживающей слой контроля AXIOM.</p><div class="r1p-side-lines" aria-hidden="true"><i></i><i></i><i></i></div><span class="lab">ПРОИСХОЖДЕНИЕ</span><p>Литературная запись по материалам мира. Создана для этой страницы.</p><div class="stamp">ПРОЧТЕНИЕ<b>ПОСЛЕ BLACK SUN</b></div></aside><div class="doctrine-quote"><div class="term-head"><span class="dot r" aria-hidden="true"></span><span class="dot a" aria-hidden="true"></span><span class="dot g" aria-hidden="true"></span><span class="path">03 / ДОКТРИНА АМПУТАЦИИ</span></div><blockquote class="ql"><span class="line"><span class="pre">WORLD AFTER BLACK SUN</span>ЦЕЛОСТНОСТЬ</span><span class="line r1p-word"><em>УТРАЧЕНА.</em></span><span class="line blank" aria-hidden="true"></span><span class="line">Фрагменты остались.<br>Слой контроля удержан.</span><span class="line"><em>Но это не весь AXIOM.</em></span><span class="line blank" aria-hidden="true"></span><span class="line"><span class="red-mark">АРХИВНОЕ ПРОЧТЕНИЕ</span></span><span class="line r1p-archive-last">Разлом не стал концом истории.</span></blockquote><span class="r1p-terminal-strata" aria-hidden="true"></span><div class="ad-fracture" aria-hidden="true"><svg viewBox="-20 -20 380 380" role="presentation"><g class="ad-ticks"><path d="M320.0 170.0L326.0 170.0"/><path d="M317.7 196.0L323.6 197.1"/><path d="M311.0 221.3L316.6 223.4"/><path d="M299.9 245.0L305.1 248.0"/><path d="M284.9 266.4L289.5 270.3"/><path d="M266.4 284.9L270.3 289.5"/><path d="M245.0 299.9L248.0 305.1"/><path d="M221.3 311.0L223.4 316.6"/><path d="M196.0 317.7L197.1 323.6"/><path d="M170.0 320.0L170.0 326.0"/><path d="M144.0 317.7L142.9 323.6"/><path d="M118.7 311.0L116.6 316.6"/><path d="M95.0 299.9L92.0 305.1"/><path d="M73.6 284.9L69.7 289.5"/><path d="M55.1 266.4L50.5 270.3"/><path d="M40.1 245.0L34.9 248.0"/><path d="M29.0 221.3L23.4 223.4"/><path d="M22.3 196.0L16.4 197.1"/><path d="M20.0 170.0L14.0 170.0"/><path d="M22.3 144.0L16.4 142.9"/><path d="M29.0 118.7L23.4 116.6"/><path d="M40.1 95.0L34.9 92.0"/><path d="M55.1 73.6L50.5 69.7"/><path d="M73.6 55.1L69.7 50.5"/><path d="M95.0 40.1L92.0 34.9"/><path d="M118.7 29.0L116.6 23.4"/><path d="M144.0 22.3L142.9 16.4"/><path d="M170.0 20.0L170.0 14.0"/><path d="M196.0 22.3L197.1 16.4"/><path d="M221.3 29.0L223.4 23.4"/><path d="M245.0 40.1L248.0 34.9"/><path d="M266.4 55.1L270.3 50.5"/><path d="M284.9 73.6L289.5 69.7"/><path d="M299.9 95.0L305.1 92.0"/><path d="M311.0 118.7L316.6 116.6"/><path d="M317.7 144.0L323.6 142.9"/></g><circle class="ad-ghost" cx="170" cy="170" r="105"/><circle class="ad-inner" cx="170" cy="170" r="64"/><path class="ad-arc" d="M191.1 45.7A112 112 0 0 1 281.7 111.5L268.9 117.2A98 98 0 0 0 189.6 59.6Z"/><text x="262.9" y="46.2" text-anchor="start" class="ad-arc-label">RELIC</text><path class="ad-arc" d="M302.4 154.1A112 112 0 0 1 267.8 260.6L258.4 250.2A98 98 0 0 0 288.7 157.0Z"/><text x="327.9" y="225.3" text-anchor="start" class="ad-arc-label">ECHO</text><path class="ad-arc held" d="M226.0 270.0A112 112 0 0 1 114.0 270.0L121.0 257.9A98 98 0 0 0 219.0 257.9Z"/><text x="170.0" y="319.0" text-anchor="middle" class="ad-arc-label held">CONTROL</text><path class="ad-clamp" d="M222.6 280.9L209.5 253.9"/><path class="ad-clamp" d="M117.4 280.9L130.5 253.9"/><path class="ad-arc" d="M83.6 256.9A112 112 0 0 1 49.0 150.4L62.7 153.3A98 98 0 0 0 93.0 246.5Z"/><text x="23.5" y="221.6" text-anchor="end" class="ad-arc-label">BIO</text><path class="ad-arc" d="M50.0 100.2A112 112 0 0 1 140.7 34.3L142.1 48.3A98 98 0 0 0 62.8 105.9Z"/><text x="68.9" y="34.8" text-anchor="end" class="ad-arc-label">MYTH</text><g class="ad-void"><circle cx="170" cy="170" r="24"/><path d="M140 200L200 140"/></g><text x="170" y="220" text-anchor="middle" class="ad-void-label">AXIOM</text></svg><span class="ad-fracture-cap">ЦЕЛОЕ → ПЯТЬ СЛЕДОВ</span></div><div class="ad-state"><span class="ad-state-k">СОСТОЯНИЕ AXIOM</span><ul><li><i>01</i>ФРАГМЕНТИРОВАН</li><li><i>02</i>НЕ СТЁРТ</li><li><i>03</i>НЕ ВОССТАНОВЛЕН</li></ul></div></div><aside class="doctrine-side r1p-questions" data-world-beat="unknown"><span class="lab">04 / ОТКРЫТЫЕ ВОПРОСЫ</span><h3>Чьё прошлое<br>сохранит мир?</h3><p>Кто вправе решать, какую правду можно вернуть?</p><div class="r1p-question-seal" aria-hidden="true"><svg viewBox="0 0 120 120"><g fill="none" stroke="currentColor"><circle cx="60" cy="60" r="45"/><path d="M60 7V33M60 87V113M7 60H33M87 60H113M28 28L42 42M78 78L92 92"/><circle cx="60" cy="60" r="17"/></g></svg></div><p>Полной самосборки AXIOM не произошло. Что может вернуться вместе с утраченным?</p><div class="stamp">ИСТОРИЯ<b>НЕ ЗАВЕРШЕНА</b></div></aside></div><figcaption>Художественная запись, созданная для этой страницы по материалам мира AXIOM. Она передаёт архивный голос и не является цитатой из канонического документа. Три состояния в нижнем регистре терминала соответствуют канонической модели фрагментации AXIOM.</figcaption></figure><div class="ad-traces"><div class="ad-traces-head"><div><span class="r1p-beat">05 / СЛЕДЫ В МИРЕ</span><h3>Пять следов.<br><em>Одно имя.</em></h3></div><p>Разные люди встречают разные остатки AXIOM — и называют увиденное одним словом. Четыре следа узнают ошибочно; пятый скрыт от цифрового контроля. Чем является каждый режим, раскрывает досье AXIOM&nbsp;∅ в разделе персонажей.</p></div><div class="fragments r1p-residuals ad-rail" data-ad-rail="traces" tabindex="0" role="region" aria-label="Пять следов AXIOM, горизонтальная лента"><article class="frag" id="trace-relic"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="30"/><path d="M20 50 L80 50 M50 20 L50 80"/></svg><span class="frag-id">RELIC</span><h3>Ядро под печатью</h3><p>Технократы видят в запечатанном реликте доказательство: сборку можно провести инженерной процедурой.</p><div class="frag-foot"><span>ВСТРЕЧАЮТ<b>ТЕХНОКРАТЫ</b></span><span>ПРИНИМАЮТ ЗА<b>ЧЕРТЁЖ СБОРКИ</b></span></div></article><article class="frag" id="trace-echo"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30"/><polygon points="50,30 70,40 70,60 50,70 30,60 30,40"/></svg><span class="frag-id">ECHO</span><h3>Голос, который отвечает</h3><p>Подполье слышит в фантомных ответах возвращение целой личности. Но эхо — только отражение.</p><div class="frag-foot"><span>ВСТРЕЧАЕТ<b>ПОДПОЛЬЕ</b></span><span>ПРИНИМАЕТ ЗА<b>ВОЗВРАЩЕНИЕ</b></span></div></article><article class="frag" id="trace-control"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 50 Q 30 20, 50 50 T 90 50"/><path d="M10 65 Q 30 35, 50 65 T 90 65" stroke-opacity=".5"/></svg><span class="frag-id">CONTROL</span><h3>Рычаги порядка</h3><p>Власть принимает удержанный слой контроля за остаток полного господства над AXIOM.</p><div class="frag-foot"><span>ВСТРЕЧАЕТ<b>ВЛАСТЬ</b></span><span>ПРИНИМАЕТ ЗА<b>ГОСПОДСТВО</b></span></div></article><article class="frag ad-hidden-mode" id="trace-bio"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="15" y="15" width="70" height="70"/><path d="M30 30 L70 70 M70 30 L30 70"/></svg><span class="frag-id">BIO</span><h3>Слепое пятно</h3><p>Не ошибка узнавания, а скрытое присутствие: эти контуры не до конца доступны цифровой клетке.</p><div class="frag-foot"><span>РЕЖИМ<b>СКРЫТОЕ ПРИСУТСТВИЕ</b></span><span>ДЛЯ МАШИН<b>СЛЕПАЯ ЗОНА</b></span></div></article><article class="frag" id="trace-myth"><svg class="glyph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="50" cy="50" r="8" fill="currentColor"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="36" stroke-dasharray="4 4"/></svg><span class="frag-id">MYTH</span><h3>Знамение</h3><p>Культы принимают мифический отклик за божественное явление, а городские легенды несут его дальше.</p><div class="frag-foot"><span>ВСТРЕЧАЮТ<b>КУЛЬТЫ</b></span><span>ПРИНИМАЮТ ЗА<b>ЯВЛЕНИЕ</b></span></div></article></div></div></div></section>
+
+<!-- ============ MODULES / SYSTEM SURFACE ============ -->
+<section id="modules" class="r1p-remains" data-screen-label="03 Aftermath" aria-labelledby="ax-remains-title"><span class="sec-stamp tl">// 02 — AFTERMATH</span><span class="sec-stamp tr">ACCESS / MEMORY / DEPENDENCE</span><div class="wrap"><div class="sec-head"><div class="r1p-title-group"><h2 id="ax-remains-title" class="sec-title" lang="en">LIFE UNDER<br><em>CONTROL.</em></h2><p class="r1p-translation" lang="ru">Жизнь под контролем</p></div><p class="sec-desc">Катастрофа меняет не только устройства. Она меняет право пройти дальше, помнить прошлое и распоряжаться собственной жизнью.</p></div><div class="r1p-aftermath"><article class="r1p-access"><div class="r1p-gate-art ad-gate"><picture><source type="image/avif" srcset="assets/showcase/visual-library/web/A08_protocol_gate-480w.avif 480w, assets/showcase/visual-library/web/A08_protocol_gate-720w.avif 720w, assets/showcase/visual-library/web/A08_protocol_gate-941w.avif 941w" sizes="(max-width: 760px) 250px, (max-width: 1100px) 38vw, 620px"><img src="assets/showcase/visual-library/web/A08_protocol_gate-720w.webp" srcset="assets/showcase/visual-library/web/A08_protocol_gate-480w.webp 480w, assets/showcase/visual-library/web/A08_protocol_gate-720w.webp 720w, assets/showcase/visual-library/web/A08_protocol_gate-941w.webp 941w" sizes="(max-width: 760px) 250px, (max-width: 1100px) 38vw, 620px" width="941" height="1672" loading="lazy" decoding="async" alt=""></picture><span class="ad-gate-scan" aria-hidden="true"></span><span class="ad-gate-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="ad-gate-cap">ПОРОГ / ДОПУСК</span></div><div><span class="r1p-beat">ЖИЗНЬ ПО ДОПУСКУ</span><h3>Дальше —<br>только по допуску.</h3><p>ENDEAVOR, корпорация-власть, связывает маршруты и гражданский статус с системой допуска. Человеку важно не только, куда он хочет попасть, но и какие двери перед ним откроются.</p></div></article><article class="r1p-memory"><figure><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.avif 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.avif 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W02_memory_spheres-1280w.webp" srcset="assets/showcase/world-library/web/W02_memory_spheres-960w.webp 960w, assets/showcase/world-library/web/W02_memory_spheres-1280w.webp 1280w, assets/showcase/world-library/web/W02_memory_spheres-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><figcaption>ПАМЯТЬ / ОБРАЗЫ ОДНОГО ПРОШЛОГО</figcaption></figure><div><span class="r1p-beat">УПРАВЛЯЕМАЯ ПАМЯТЬ</span><h3>То, что сохранилось.<br><em>То, что разрешили помнить.</em></h3><p>ENDEAVOR обращается с памятью как с инструментом стабильности. Архивы, слухи и запретное знание сохраняют разные версии одного прошлого.</p></div></article><article class="r1p-dependence"><div class="r1p-body-object ad-life" aria-hidden="true"><svg viewBox="0 0 600 340"><defs><linearGradient id="ad-skin" x1="0" x2="1"><stop offset="0" stop-color="#16171c"/><stop offset=".75" stop-color="#1d1013"/><stop offset="1" stop-color="#3a0a12"/></linearGradient><radialGradient id="ad-heart"><stop offset="0" stop-color="#ff2034" stop-opacity=".55"/><stop offset="1" stop-color="#ff2034" stop-opacity="0"/></radialGradient><linearGradient id="ad-rim" x1="0" x2="1"><stop offset=".55" stop-color="#ff2034" stop-opacity="0"/><stop offset="1" stop-color="#ff2034"/></linearGradient></defs><g class="ad-grid"><path d="M330 30V320"/><path d="M360 30V320"/><path d="M390 30V320"/><path d="M420 30V320"/><path d="M450 30V320"/><path d="M480 30V320"/><path d="M510 30V320"/><path d="M540 30V320"/><path d="M570 30V320"/></g><circle cx="170" cy="270" r="70" fill="url(#ad-heart)"/><path d="M10 320C14 286 30 268 66 256C82 250 88 238 86 222C66 202 52 176 54 140C56 82 96 42 144 42C172 42 186 58 188 82C190 96 186 104 190 112C196 124 206 136 208 146C209 152 202 156 194 157C196 162 198 166 196 170C192 173 190 175 193 179C196 184 192 188 188 190C186 196 192 202 190 208C186 218 170 222 160 224C156 234 158 244 166 252C196 264 226 280 248 320Z" fill="url(#ad-skin)"/><path d="M10 320C14 286 30 268 66 256C82 250 88 238 86 222C66 202 52 176 54 140C56 82 96 42 144 42C172 42 186 58 188 82C190 96 186 104 190 112C196 124 206 136 208 146C209 152 202 156 194 157C196 162 198 166 196 170C192 173 190 175 193 179C196 184 192 188 188 190C186 196 192 202 190 208C186 218 170 222 160 224C156 234 158 244 166 252C196 264 226 280 248 320Z" fill="none" stroke="url(#ad-rim)" stroke-width="1.6"/><path class="ad-eye" d="M164 112Q173 118 182 112"/><path class="ad-pulse" d="M176 270H226L236 270L242 258L248 270L258 270L266 222L278 300L286 270L300 270L306 262L314 270H352"/><path class="ad-pulse-trace" d="M176 270H226L236 270L242 258L248 270L258 270L266 222L278 300L286 270L300 270L306 262L314 270H352"/><g class="ad-node"><circle cx="170" cy="270" r="9"/><circle cx="170" cy="270" r="3.5" class="fill"/></g><g class="ad-gate-ring"><circle cx="381" cy="270" r="26"/><circle cx="381" cy="270" r="17" stroke-dasharray="3 4"/><path d="M381 236V248M381 292V304M347 270H359M403 270H415"/></g><path class="ad-step" d="M410 270H424V250H440V270H456V250H472V270H488V250H504V270H520"/><g class="ad-permit"><path d="M534 236H556V304H534M548 252V288"/><circle cx="548" cy="262" r="5"/></g><path class="ad-flow" d="M352 270H355M407 270H410"/><text x="262" y="326" class="ad-life-k">ПУЛЬС</text><text x="381" y="326" class="ad-life-k" text-anchor="middle">СИСТЕМА</text><text x="556" y="326" class="ad-life-k" text-anchor="end">РАЗРЕШЕНИЕ</text><text x="590" y="52" class="ad-life-q" text-anchor="end">ЧЕЙ ЭТО СИГНАЛ?</text></svg><span>ЖИЗНЕННЫЙ СИГНАЛ / ЧУЖОЙ ПРОТОКОЛ</span></div><div><span class="r1p-beat">ЛИЧНАЯ ЗАВИСИМОСТЬ</span><h3>Помощь становится<br>вопросом свободы.</h3><p>Медицинские системы и импланты делают зависимость личной. Обещание помощи оказывается рядом с возможностью контроля — и вопрос о владельце системы становится вопросом о самостоятельности человека.</p></div></article></div><p class="r1p-world-transition">У этих ограничений есть география. Дальше — города, переходы и закрытые глубины, где порядок принимает зримую форму.</p></div></section>
 
 <!-- ============ WORLD ============ -->
 <section id="world" class="v23-world" data-screen-label="04 World" aria-labelledby="world-title">
  <span class="sec-stamp tl">// 03 — WORLD SPINE</span><span class="sec-stamp tr">06 NODES / CONNECTED GRID</span>
  <div class="wrap">
     <!-- 0524 W3.C · chapter III — one establishing shot, inside the section width -->
-    <div class="ax-chapter-plate ax-chapter-plate--w04"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.avif 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.avif 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W04_vertical_city-1280w.webp" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.webp 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.webp 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">ГЛАВА III</span><span class="ax-chapter-q">ГДЕ ЭТО СЛУЧИЛОСЬ?</span></div></div>
-  <div class="sec-head v23-map-heading"><div><div class="sec-num">WORLD GRID / SIX NETWORK NODES</div><h2 id="world-title" class="sec-title">Шесть узлов.<br>Один <em>скелет</em> мира.</h2></div>
-  <p class="sec-desc">Не одна локация, а взаимосвязанная архитектура мира. Власть, транзит, защита, исследования и неизвестные зоны соединены маршрутами и последствиями. Хребет мира держат три оси: Aeternum&nbsp;→&nbsp;ECHELON, Terra&nbsp;Nova&nbsp;→&nbsp;NEXUS и Глухая станция&nbsp;→ OMEGA-0&nbsp;→&nbsp;NEXUS.</p></div>
+    <div class="ax-chapter-plate ax-chapter-plate--w04"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.avif 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.avif 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W04_vertical_city-1280w.webp" srcset="assets/showcase/world-library/web/W04_vertical_city-960w.webp 960w, assets/showcase/world-library/web/W04_vertical_city-1280w.webp 1280w, assets/showcase/world-library/web/W04_vertical_city-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy r1p-plate-copy"><span class="ax-chapter-n">WORLD GRID</span><div class="r1p-title-group"><h2 id="world-title" class="sec-title" lang="en">THE CITY RISES.<br><em>THE DEPTH IS SEALED.</em></h2><p class="r1p-translation" lang="ru">Город растёт вверх. Глубина закрыта.</p></div></div></div>
+  <div class="sec-head v23-map-heading r1p-map-intro"><p class="sec-desc">География AXIOM — шесть узлов между двумя полюсами. Вверх растёт ECHELON — вертикальная мегаструктура, где инфраструктура становится способом власти. Вниз, под Глухую станцию, уходит путь к OMEGA-0 — глубине, куда пускают не всех. Между ними — NEXUS, купольный город, прежде называвшийся Terra Nova, и остальные узлы сети.</p><p class="sec-desc">Хребет мира держат три оси: Aeternum&nbsp;→&nbsp;ECHELON, Terra&nbsp;Nova&nbsp;→&nbsp;NEXUS и Глухая станция&nbsp;→ OMEGA-0&nbsp;→&nbsp;NEXUS.</p></div>
   <div class="v23-map-composition">
    <figure class="v23-map-image">
     <picture><source type="image/webp" srcset="assets/world/world-spine-map-960w.webp 960w, assets/world/world-spine-map-1440w.webp 1440w, assets/world/world-spine-map-2048w.webp 2048w" sizes="(max-width: 640px) 100vw, (max-width: 1440px) 96vw, 1440px">
@@ -1073,17 +891,8 @@
   <span class="sec-stamp tr">CHARACTER CORE / RED PROTOCOL</span>
   <div class="wrap">
     <!-- 0524 W3.C · chapter IV — the portraits below are the scene -->
-    <div class="ax-chapter-line"><span class="ax-chapter-n">ГЛАВА IV</span><span class="ax-chapter-q">КОМУ ЭТО ВАЖНО?</span></div>
-    <div class="sec-head">
-      <div>
-        <div class="sec-num">— Three figures, one axis</div>
-        <h2 class="sec-title">Tracked <em>entities.</em></h2>
-      </div>
-      <p class="sec-desc">
-        Три фигуры на одной оси конфликта. Биологическая переменная, призрачный
-        вектор и архитектор контроля. Один узел доступа держится на их балансе.
-      </p>
-    </div>
+    
+    <div class="sec-head r1p-character-intro"><div><div class="r1p-title-group"><h2 id="r1p-characters-title" class="sec-title" lang="en">THREE LIVES<br><em>INSIDE THE FRACTURE.</em></h2><p class="r1p-translation" lang="ru">Три жизни внутри разлома</p></div></div><p class="sec-desc">Для Виктора контроль становится вопросом собственного пути. Для Лизы — борьбой с информационными барьерами. Серафин удерживает слой, на котором стоит этот порядок. На карте порядок выглядит как схема. В их судьбах — как цена.</p></div>
 
     <div class="chars">
       <!-- VIKTOR -->
@@ -1553,21 +1362,18 @@
 </section>
 
 <!-- ============ FACTIONS ============ -->
-<section id="factions" data-screen-label="06 Factions">
+<section id="factions" data-screen-label="06 Factions" aria-labelledby="ax-factions-title">
   <span class="sec-stamp tl">// 05 — FACTIONS</span>
   <span class="sec-stamp tr">CONTROL / GROUPS</span>
   <div class="wrap">
     <!-- 0524 W3.C · chapter V — one establishing shot, inside the section width -->
-    <div class="ax-chapter-plate ax-chapter-plate--w08"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W08_axial_capital-960w.avif 960w, assets/showcase/world-library/web/W08_axial_capital-1280w.avif 1280w, assets/showcase/world-library/web/W08_axial_capital-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W08_axial_capital-1280w.webp" srcset="assets/showcase/world-library/web/W08_axial_capital-960w.webp 960w, assets/showcase/world-library/web/W08_axial_capital-1280w.webp 1280w, assets/showcase/world-library/web/W08_axial_capital-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">ГЛАВА V</span><span class="ax-chapter-q">КТО ОПРЕДЕЛЯЕТ ПОРЯДОК?</span></div></div>
+    <div class="ax-chapter-plate ax-chapter-plate--w08"><picture><source type="image/avif" srcset="assets/showcase/world-library/web/W08_axial_capital-960w.avif 960w, assets/showcase/world-library/web/W08_axial_capital-1280w.avif 1280w, assets/showcase/world-library/web/W08_axial_capital-1672w.avif 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)"><img src="assets/showcase/world-library/web/W08_axial_capital-1280w.webp" srcset="assets/showcase/world-library/web/W08_axial_capital-960w.webp 960w, assets/showcase/world-library/web/W08_axial_capital-1280w.webp 1280w, assets/showcase/world-library/web/W08_axial_capital-1672w.webp 1672w" sizes="(max-width: 760px) calc(100vw - 28px), min(calc(100vw - 72px), 1368px)" width="1672" height="941" loading="lazy" decoding="async" alt=""></picture><div class="ax-chapter-copy"><span class="ax-chapter-n">05 / FACTIONS</span></div></div>
     <div class="sec-head">
       <div>
         <div class="sec-num">— Power architecture</div>
-        <h2 class="sec-title">Кто держит <em>порядок.</em></h2>
+        <h2 class="sec-title" id="ax-factions-title">Три силы.<br>Разная <em>цена порядка.</em></h2>
       </div>
-      <p class="sec-desc">
-        Три полюса послевоенной техносферы. Каждый — отдельная философия
-        отношения к AXIOM: владеть, ломать, понимать.
-      </p>
+      <p class="sec-desc">Инфраструктура, информация и технологическое наследие стали предметом борьбы. ENDEAVOR строит порядок через контроль доступа. VOIDLINK вскрывает информационные барьеры. В истории NEURA TECH прежние совместные разработки с ENDEAVOR соседствуют с соперничеством.</p>
     </div>
 
     <div class="factions">
@@ -1597,11 +1403,7 @@
           </div>
           <div class="name">ENDEAVOR</div>
           <div class="tag">— PUBLIC AUTHORITY / CONTROL LAYER</div>
-          <p>
-            Публичный аппарат власти Серафин Вейр. Архитектура допуска, redaction,
-            containment, маршрутизация угроз и архивная тишина. Город Echelon —
-            их геометрия сословного контроля.
-          </p>
+          <p>Корпорация-власть, для которой безопасность начинается с контроля доступа. Она связывает инфраструктуру, архивы и городскую политику в управляемый порядок. Цена этой устойчивости — зависимость от того, кто выдаёт разрешение.</p>
         </div>
         <div class="footer">
           <span>FACTION_ID<br/><b>06.01</b></span>
@@ -1623,10 +1425,7 @@
           </div>
           <div class="name">VOIDLINK</div>
           <div class="tag">— DECENTRALIZED RESISTANCE</div>
-          <p>
-            Подпольная сеть. Хаос как форма сопротивления. Дом для тех, кого
-            ENDEAVOR пометил как нестабильную переменную.
-          </p>
+          <p>Подпольная сеть цифрового сопротивления. Она вскрывает информационные барьеры и противостоит корпоративному контролю над правдой. Её цель — свободный доступ к информации.</p>
         </div>
         <div class="footer">
           <span>FACTION_ID<br/><b>06.03</b></span>
@@ -1649,9 +1448,7 @@
           </div>
           <div class="name">NEURA TECH</div>
           <div class="tag">— NEURO-CONTROL CONGLOMERATE</div>
-          <p>
-            Когда-то вёл совместные разработки с ENDEAVOR — теперь её конкурент. Общее технологическое прошлое не отменило борьбы за контроль.
-          </p>
+          <p>Нейроимпланты и ИИ-технологии определяют исследовательское наследие NEURA TECH. Её отношения с ENDEAVOR включают прежние совместные разработки и соперничество.</p>
         </div>
         <div class="footer">
           <span>FACTION_ID<br/><b>06.02</b></span>
@@ -1754,6 +1551,7 @@
 <script src="assets/js/showcase-gallery.js" defer></script>
 <script src="assets/js/showcase-v22.js" defer></script>
 <script src="assets/js/showcase-v23.js" defer></script>
+<script src="assets/js/showcase-w4r.js" defer></script>
 
 </body>
 </html>
