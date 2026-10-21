@@ -13,7 +13,9 @@ if(![1,2,3].includes(STAGE)||!arg('--out')||fs.existsSync(OUT))throw Error('usag
 const ROOT=path.resolve(__dirname,'../../../../..'),FREEZE='9cf78b0',PRODUCT='b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5';
 const AD='docs/showcase-v031/evidence/w4ad/preview/',AXE=fs.readFileSync(require.resolve('axe-core/axe.min.js'),'utf8');
 const STAGES={1:['manifesto','modules'],2:['work'],3:['world','chars']},ALL=['work','system','manifesto','modules','world','chars','factions','vision'];
-const CHANGED=[1,2,3].filter(n=>n<=STAGE).flatMap(n=>STAGES[n]),NOW=STAGES[STAGE];
+// --final: checking a stage's sections on the final runtime, where later stages have changed the other sections too.
+const FINAL=process.argv.includes('--final');
+const CHANGED=[1,2,3].filter(n=>FINAL||n<=STAGE).flatMap(n=>STAGES[n]),NOW=STAGES[STAGE];
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.webp':'image/webp','.avif':'image/avif','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2'};
 const show=(ref,p)=>{const o=cp.spawnSync('git',['show',`${ref}:${p}`],{cwd:ROOT,maxBuffer:32*1024*1024});return o.status===0?o.stdout:null;};
 const AD_LOCAL={'index.html':AD+'ad.html','r1p.css':'docs/showcase-v031/evidence/w4rp/preview/r1p.css','ad.css':AD+'ad.css','ad.js':AD+'ad.js'};
@@ -70,7 +72,7 @@ const REVIEW_ONLY_CSS='header.top,.nav,.ticker,.show-mobile-nav,.index-cursor,.v
    paths:Object.fromEntries(NOW.map(id=>[id,[...sec(id).querySelectorAll('path[d]')].map(p=>p.getAttribute('d'))])),
    overflow:document.documentElement.scrollWidth>innerWidth,broken:[...document.images].filter(i=>i.currentSrc&&(!i.complete||!i.naturalWidth)).map(i=>i.currentSrc),
    fonts:['Oswald','Golos Text','JetBrains Mono'].every(f=>document.fonts.check(`16px "${f}"`))};},{ALL,NOW});
- const report={kind:'W4R_R2_STAGE_SELF_CHECK',label:'SELF-CHECK — executor verification, not independent PASS',stage:`R2.${STAGE}`,impl:REF||'working tree',freeze:FREEZE,product:PRODUCT,at:new Date().toISOString(),browser:browser.version(),heights:{},captures};
+ const report={kind:'W4R_R2_STAGE_SELF_CHECK',label:'SELF-CHECK — executor verification, not independent PASS',stage:`R2.${STAGE}`+(FINAL?' (on final runtime)':''),impl:REF||'working tree',freeze:FREEZE,product:PRODUCT,at:new Date().toISOString(),browser:browser.version(),heights:{},captures};
  try{
   for(const [w,h] of [[1440,900],[1920,1080],[390,844],[360,800]]){
    const got={};

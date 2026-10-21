@@ -16,6 +16,8 @@ const server=http.createServer((q,r)=>{const f=decodeURIComponent(new URL(q.url,
   const browser=await pw[engine].launch(engine==='webkit'?{headless:true,executablePath:'/tmp/axs-0524-w4-webkit-deps/webkit-headless.sh'}:{headless:true});
   const page=await (await browser.newContext({viewport:{width:1440,height:900},reducedMotion:'reduce'})).newPage();
   await page.goto(url,{waitUntil:'load',timeout:60000});await page.evaluate(()=>Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,5000))]));
+  // Warm-up: the first jump from 1440 to 320 px needs a real reflow before measuring (WebKit needed > 60 ms).
+  await page.setViewportSize({width:320,height:900});await page.waitForTimeout(1500);
   const bad=[];let widths=0;
   for(let w=320;w<=1920;w+=STEP[engine]){widths++;await page.setViewportSize({width:w,height:900});await page.waitForTimeout(engine==='webkit'?60:15);
    const r=await page.evaluate(()=>{const els=[...document.querySelectorAll('#manifesto,#modules,#work,#world,#chars')].flatMap(s=>[...s.querySelectorAll('p,h2,h3,li,figcaption,blockquote .line,.frag-foot b,.m-foot b,.ad-state-k,.ax-chapter-n')]);

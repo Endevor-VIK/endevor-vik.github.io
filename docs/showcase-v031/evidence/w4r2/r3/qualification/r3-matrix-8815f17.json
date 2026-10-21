@@ -1,0 +1,4287 @@
+{
+ "kind": "W4R_R3_EXECUTOR_MATRIX",
+ "label": "Executor-run R3 (Opus). Not the independent R4.",
+ "impl": "8815f17d5bdcf407769a3c03da5c72e264d95436",
+ "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "freeze": "9cf78b0",
+ "at": "2026-10-21T15:43:36.458Z",
+ "engines": {
+  "chromium": "149.0.7827.55",
+  "firefox": "151.0",
+  "webkit": "26.5"
+ },
+ "heights": {
+  "chromium": {
+   "320": {
+    "manifesto": 4038.5,
+    "modules": 2521.31,
+    "work": 4319.8,
+    "world": 2588.44,
+    "chars": 5473.14,
+    "top": 1205.66,
+    "about": 2326.78,
+    "creator": 2373.53,
+    "system": 2757.23,
+    "world-guide": 1275.13,
+    "factions": 2169.97,
+    "vision": 3523.44,
+    "collaboration": 1319.16
+   },
+   "360": {
+    "manifesto": 3751.98,
+    "modules": 2268.17,
+    "work": 4041.84,
+    "world": 2534.34,
+    "chars": 5261.8,
+    "top": 1142.8,
+    "about": 2214.3,
+    "creator": 2198.22,
+    "system": 2668.39,
+    "world-guide": 1204.73,
+    "factions": 2002.36,
+    "vision": 3295.83,
+    "collaboration": 1259.36
+   },
+   "390": {
+    "manifesto": 3604.02,
+    "modules": 2169.98,
+    "work": 3884.23,
+    "world": 2512.22,
+    "chars": 5216.3,
+    "top": 1076.22,
+    "about": 2073.31,
+    "creator": 2167.23,
+    "system": 2652.97,
+    "world-guide": 1203.7,
+    "factions": 1986.17,
+    "vision": 3189.53,
+    "collaboration": 1261.58
+   },
+   "430": {
+    "manifesto": 3578.45,
+    "modules": 2010.42,
+    "work": 3729.97,
+    "world": 2541.67,
+    "chars": 5264.73,
+    "top": 1071.34,
+    "about": 1998.89,
+    "creator": 2043.69,
+    "system": 2556.8,
+    "world-guide": 1212.52,
+    "factions": 1856.17,
+    "vision": 3077.55,
+    "collaboration": 1246.3
+   },
+   "768": {
+    "manifesto": 3379.22,
+    "modules": 1897.73,
+    "work": 4786.23,
+    "world": 2908.73,
+    "chars": 4304.88,
+    "top": 1825.28,
+    "about": 1528.78,
+    "creator": 1476.34,
+    "system": 2084.08,
+    "world-guide": 1364.98,
+    "factions": 2168.5,
+    "vision": 2173.5,
+    "collaboration": 848.36
+   },
+   "844": {
+    "manifesto": 3050.41,
+    "modules": 1811.19,
+    "work": 4726.33,
+    "world": 2764.84,
+    "chars": 4323.41,
+    "top": 1005.52,
+    "about": 1415.05,
+    "creator": 1333.53,
+    "system": 2029.3,
+    "world-guide": 1373.83,
+    "factions": 2063.78,
+    "vision": 2179.11,
+    "collaboration": 792.06
+   },
+   "1024": {
+    "manifesto": 2744.58,
+    "modules": 1738.33,
+    "work": 4589.03,
+    "world": 2440.92,
+    "chars": 4472.69,
+    "top": 991.8,
+    "about": 1361.58,
+    "creator": 1301.58,
+    "system": 1815.36,
+    "world-guide": 1214.14,
+    "factions": 2012.81,
+    "vision": 2188.22,
+    "collaboration": 781.61
+   },
+   "1280": {
+    "manifesto": 2414.64,
+    "modules": 1909.78,
+    "work": 3260.53,
+    "world": 2399.94,
+    "chars": 2658.56,
+    "top": 981.53,
+    "about": 1185.83,
+    "creator": 1307.83,
+    "system": 1526.45,
+    "world-guide": 1150.64,
+    "factions": 1297.78,
+    "vision": 2141.41,
+    "collaboration": 814.59
+   },
+   "1440": {
+    "manifesto": 2398.77,
+    "modules": 1937.16,
+    "work": 3143.5,
+    "world": 2543.39,
+    "chars": 2624.83,
+    "top": 1059.14,
+    "about": 1181.69,
+    "creator": 1286.73,
+    "system": 1542.8,
+    "world-guide": 1272.44,
+    "factions": 1297.78,
+    "vision": 2221.13,
+    "collaboration": 842.61
+   },
+   "1920": {
+    "manifesto": 2568.16,
+    "modules": 1943.92,
+    "work": 3158.52,
+    "world": 2643.59,
+    "chars": 2631.5,
+    "top": 1216.75,
+    "about": 1192.41,
+    "creator": 1300.59,
+    "system": 1546.86,
+    "world-guide": 1472.95,
+    "factions": 1348.17,
+    "vision": 2235.25,
+    "collaboration": 849.72
+   }
+  },
+  "firefox": {
+   "320": {
+    "manifesto": 3919.1,
+    "modules": 2341.57,
+    "work": 4238.25,
+    "world": 2563.23,
+    "chars": 5437.03,
+    "top": 1159.25,
+    "about": 2256.18,
+    "creator": 2288.12,
+    "system": 2753.42,
+    "world-guide": 1218.6,
+    "factions": 2114,
+    "vision": 3399.35,
+    "collaboration": 1319.3
+   },
+   "360": {
+    "manifesto": 3725.58,
+    "modules": 2161.68,
+    "work": 3970.57,
+    "world": 2504.73,
+    "chars": 5240.65,
+    "top": 1103.7,
+    "about": 2116.18,
+    "creator": 2178.47,
+    "system": 2683.02,
+    "world-guide": 1177,
+    "factions": 2002.4,
+    "vision": 3225.92,
+    "collaboration": 1259.5
+   },
+   "390": {
+    "manifesto": 3549.55,
+    "modules": 2149.88,
+    "work": 3830.77,
+    "world": 2482.1,
+    "chars": 5236.45,
+    "top": 1076.3,
+    "about": 2054.9,
+    "creator": 2130.08,
+    "system": 2642.4,
+    "world-guide": 1204.73,
+    "factions": 1895.4,
+    "vision": 3094.75,
+    "collaboration": 1261.73
+   },
+   "430": {
+    "manifesto": 3406.97,
+    "modules": 2019.08,
+    "work": 3685.9,
+    "world": 2473.9,
+    "chars": 5294.55,
+    "top": 1048.25,
+    "about": 2007.4,
+    "creator": 2052.67,
+    "system": 2550.93,
+    "world-guide": 1213.53,
+    "factions": 1800.2,
+    "vision": 3012.58,
+    "collaboration": 1217.6
+   },
+   "768": {
+    "manifesto": 3337.15,
+    "modules": 1832.03,
+    "work": 4804.13,
+    "world": 2930.68,
+    "chars": 4317.22,
+    "top": 1827.45,
+    "about": 1435.4,
+    "creator": 1449.4,
+    "system": 1989.75,
+    "world-guide": 1365.05,
+    "factions": 2168.52,
+    "vision": 2168.1,
+    "collaboration": 832.4
+   },
+   "844": {
+    "manifesto": 3012.18,
+    "modules": 1803.23,
+    "work": 4744.22,
+    "world": 2786.82,
+    "chars": 4348.72,
+    "top": 985.55,
+    "about": 1415.15,
+    "creator": 1315.9,
+    "system": 2021.35,
+    "world-guide": 1373.88,
+    "factions": 2063.8,
+    "vision": 2156.65,
+    "collaboration": 792.1
+   },
+   "1024": {
+    "manifesto": 2744.77,
+    "modules": 1740.83,
+    "work": 4553.82,
+    "world": 2443.23,
+    "chars": 4496.92,
+    "top": 979.9,
+    "about": 1332.85,
+    "creator": 1306.08,
+    "system": 1818.38,
+    "world-guide": 1214.17,
+    "factions": 2012.83,
+    "vision": 2182.78,
+    "collaboration": 781.63
+   },
+   "1280": {
+    "manifesto": 2397.07,
+    "modules": 1883.98,
+    "work": 3219.83,
+    "world": 2408.62,
+    "chars": 2686.57,
+    "top": 1004,
+    "about": 1185.78,
+    "creator": 1307.88,
+    "system": 1528.52,
+    "world-guide": 1150.58,
+    "factions": 1269.8,
+    "vision": 2134.45,
+    "collaboration": 814.62
+   },
+   "1440": {
+    "manifesto": 2399.12,
+    "modules": 1937.27,
+    "work": 3149.85,
+    "world": 2553.88,
+    "chars": 2596.78,
+    "top": 1059.2,
+    "about": 1181.67,
+    "creator": 1287.78,
+    "system": 1544.82,
+    "world-guide": 1272.42,
+    "factions": 1297.8,
+    "vision": 2231.17,
+    "collaboration": 842.62
+   },
+   "1920": {
+    "manifesto": 2568.7,
+    "modules": 1944,
+    "work": 3164.87,
+    "world": 2645.68,
+    "chars": 2596.78,
+    "top": 1216.8,
+    "about": 1192.45,
+    "creator": 1301.67,
+    "system": 1548.92,
+    "world-guide": 1473,
+    "factions": 1348.2,
+    "vision": 2239.33,
+    "collaboration": 849.77
+   }
+  },
+  "webkit": {
+   "320": {
+    "manifesto": 3917.59,
+    "modules": 2341.36,
+    "work": 4227.56,
+    "world": 2552.08,
+    "chars": 5427.39,
+    "top": 1159.11,
+    "about": 2256.03,
+    "creator": 2284.84,
+    "system": 2748.14,
+    "world-guide": 1218.47,
+    "factions": 2113.97,
+    "vision": 3390.92,
+    "collaboration": 1319.16
+   },
+   "360": {
+    "manifesto": 3724.08,
+    "modules": 2161.48,
+    "work": 3982.34,
+    "world": 2493.56,
+    "chars": 5232.17,
+    "top": 1103.55,
+    "about": 2116.05,
+    "creator": 2175.22,
+    "system": 2677.77,
+    "world-guide": 1176.88,
+    "factions": 2002.36,
+    "vision": 3217.55,
+    "collaboration": 1259.36
+   },
+   "390": {
+    "manifesto": 3548.11,
+    "modules": 2149.69,
+    "work": 3820.2,
+    "world": 2474,
+    "chars": 5228,
+    "top": 1076.17,
+    "about": 2054.75,
+    "creator": 2126.83,
+    "system": 2637.16,
+    "world-guide": 1204.64,
+    "factions": 1895.38,
+    "vision": 3086.41,
+    "collaboration": 1261.58
+   },
+   "430": {
+    "manifesto": 3405.56,
+    "modules": 2018.92,
+    "work": 3677.38,
+    "world": 2467.81,
+    "chars": 5287.11,
+    "top": 1048.09,
+    "about": 2007.28,
+    "creator": 2049.47,
+    "system": 2545.75,
+    "world-guide": 1213.45,
+    "factions": 1800.17,
+    "vision": 3004.28,
+    "collaboration": 1217.47
+   },
+   "768": {
+    "manifesto": 3336.91,
+    "modules": 1831.91,
+    "work": 4794.67,
+    "world": 2925.61,
+    "chars": 4342.47,
+    "top": 1825.28,
+    "about": 1435.3,
+    "creator": 1448.25,
+    "system": 1986.67,
+    "world-guide": 1364.98,
+    "factions": 2254.89,
+    "vision": 2163.95,
+    "collaboration": 832.36
+   },
+   "844": {
+    "manifesto": 3011.98,
+    "modules": 1803.11,
+    "work": 4734.73,
+    "world": 2781.72,
+    "chars": 4343.41,
+    "top": 985.38,
+    "about": 1415,
+    "creator": 1314.73,
+    "system": 2018.25,
+    "world-guide": 1373.81,
+    "factions": 2121.38,
+    "vision": 2152.47,
+    "collaboration": 792.03
+   },
+   "1024": {
+    "manifesto": 2744.55,
+    "modules": 1740.75,
+    "work": 4544.22,
+    "world": 2440.17,
+    "chars": 4492.67,
+    "top": 977.75,
+    "about": 1332.73,
+    "creator": 1305,
+    "system": 1815.33,
+    "world-guide": 1214.14,
+    "factions": 2012.81,
+    "vision": 2178.64,
+    "collaboration": 781.58
+   },
+   "1280": {
+    "manifesto": 2396.88,
+    "modules": 1883.89,
+    "work": 3235.78,
+    "world": 2406.59,
+    "chars": 2681.23,
+    "top": 1003.92,
+    "about": 1185.77,
+    "creator": 1307.83,
+    "system": 1526.45,
+    "world-guide": 1150.53,
+    "factions": 1269.78,
+    "vision": 2130.36,
+    "collaboration": 814.55
+   },
+   "1440": {
+    "manifesto": 2398.94,
+    "modules": 1937.16,
+    "work": 3143.5,
+    "world": 2551.83,
+    "chars": 2592.5,
+    "top": 1059.14,
+    "about": 1181.69,
+    "creator": 1286.73,
+    "system": 1542.8,
+    "world-guide": 1272.44,
+    "factions": 1297.78,
+    "vision": 2227,
+    "collaboration": 842.61
+   },
+   "1920": {
+    "manifesto": 2568.52,
+    "modules": 1943.92,
+    "work": 3158.52,
+    "world": 2643.59,
+    "chars": 2592.5,
+    "top": 1216.75,
+    "about": 1192.41,
+    "creator": 1300.59,
+    "system": 1546.86,
+    "world-guide": 1472.95,
+    "factions": 1348.17,
+    "vision": 2235.25,
+    "collaboration": 849.72
+   }
+  }
+ },
+ "captures": [
+  {
+   "file": "chromium-impl-1440-manifesto-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 10417.296875,
+   "bytes": 66910,
+   "sha256": "4f757e61e3a3c6533d94f1100d3eabb0ed6749acf67865ac1ae9935cf11b98d0"
+  },
+  {
+   "file": "chromium-impl-1440-manifesto-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 11197.296875,
+   "bytes": 72092,
+   "sha256": "cca039a8f54e25bd2b1a8e8a468dcc6fa7f698bb0736fb5c7a81c72de896bf50"
+  },
+  {
+   "file": "chromium-impl-1440-manifesto-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 11977.296875,
+   "bytes": 71160,
+   "sha256": "c8bf01863c2f1c79364bc09dd0fa8da88502452a831d30b669e17b0024d483b0"
+  },
+  {
+   "file": "chromium-impl-1440-modules-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 12816.0625,
+   "bytes": 73986,
+   "sha256": "f10f7675ff8f83f96a44b9cea75dad1c95e1d5cbb386cae083b60ce041881b68"
+  },
+  {
+   "file": "chromium-impl-1440-modules-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 13596.0625,
+   "bytes": 67660,
+   "sha256": "4686c84eae1bb294ad9423fe52791c795200d1763c8eda34057f1a8301b07104"
+  },
+  {
+   "file": "chromium-impl-1440-modules-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 14376.0625,
+   "bytes": 64886,
+   "sha256": "122dbaff9232d5c1aa5f1ba036f003c0f6b92dcb29451e51d416fad03bb153f0"
+  },
+  {
+   "file": "chromium-impl-1440-work-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 4303.5625,
+   "bytes": 57630,
+   "sha256": "656eaa9fa8403d5bbff7e02c3feaf51f1d819d2c0b6bec5e836fdc6fd62d3445"
+  },
+  {
+   "file": "chromium-impl-1440-work-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 5083.5625,
+   "bytes": 68896,
+   "sha256": "ee363d5f21c01c711edd48d2ea94e1e6943311ece6e0c13598e40f7d748e5ced"
+  },
+  {
+   "file": "chromium-impl-1440-work-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 3,
+   "scrollY": 5863.5625,
+   "bytes": 62914,
+   "sha256": "7f73a45235df933ed6a73f3ebe224a1766e3e448a34a4e24fb35c801bfcee4ab"
+  },
+  {
+   "file": "chromium-impl-1440-work-04.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 4,
+   "scrollY": 6643.5625,
+   "bytes": 46276,
+   "sha256": "84e0fc2e285b874d8a214382ba362cfc1da96904e47d9ce40963ab0acb777655"
+  },
+  {
+   "file": "chromium-impl-1440-world-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 14753.21875,
+   "bytes": 154516,
+   "sha256": "41557d39b27fd392f290172ecfe0b7a4d20864fca1f61185bfd297848387fa53"
+  },
+  {
+   "file": "chromium-impl-1440-world-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 15533.21875,
+   "bytes": 221782,
+   "sha256": "92fe36a65883324529ed16fca3b4fd93482c6ffc8ec4d03f5725f0493be668a7"
+  },
+  {
+   "file": "chromium-impl-1440-world-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 16313.21875,
+   "bytes": 68974,
+   "sha256": "f4a6cdcd07c4d53ce9d81f28c2056619bc522ccf78c9a339d9591be7d306a5db"
+  },
+  {
+   "file": "chromium-impl-1440-world-04.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 17093.21875,
+   "bytes": 53922,
+   "sha256": "6c2a6e059048bb0b4bbe24502abba0998dc7d3c54161a3656af38ea8a66cd9b8"
+  },
+  {
+   "file": "chromium-impl-1440-chars-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 17296.609375,
+   "bytes": 57294,
+   "sha256": "2dcb62f930010c33b36b471598327319fd35e26e8883580ffe1724441f859caf"
+  },
+  {
+   "file": "chromium-impl-1440-chars-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 18076.609375,
+   "bytes": 57884,
+   "sha256": "e47ac9e7eb2f72b7dbae4fc0397bba7711b3ae1cf24c837693faa7a2722420df"
+  },
+  {
+   "file": "chromium-impl-1440-chars-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 18856.609375,
+   "bytes": 75792,
+   "sha256": "a5f6ec4cabe8b3209c0d450c4d06c130f0e841742917738ee598452b7cbccefa"
+  },
+  {
+   "file": "chromium-impl-1440-chars-04.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 19636.609375,
+   "bytes": 62198,
+   "sha256": "e2a5ad36b22a09ea895e36358fab5dc6a6b099c3d4b74fdb8c9e0c16c0f0bb59"
+  },
+  {
+   "file": "chromium-before-1440-manifesto-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 8898.015625,
+   "bytes": 62882,
+   "sha256": "96cf78967cd3589c980f2d26583686cef76a78f642ecbbec721bfb267db43a9a"
+  },
+  {
+   "file": "chromium-before-1440-manifesto-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 9678.015625,
+   "bytes": 45152,
+   "sha256": "c9290d02dae1f1fdb35a558e0e10d7f4ac411236be0814ac004d8931b5bfb4bf"
+  },
+  {
+   "file": "chromium-before-1440-manifesto-03.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 10458.015625,
+   "bytes": 59312,
+   "sha256": "3dcaa682fa14633f1371d839452ae9d11286a8911b06f13a6adf4daa8db95a80"
+  },
+  {
+   "file": "chromium-before-1440-modules-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 10578.25,
+   "bytes": 73276,
+   "sha256": "817110e3c53fd95c06d630aa7a5a56572bb93b16f1df5691ac85c0a8d1b5d10d"
+  },
+  {
+   "file": "chromium-before-1440-modules-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 11358.25,
+   "bytes": 57756,
+   "sha256": "ffd578e385a77815f5f4047574be9e167e18b831c81cb0c95df905f71ef3ba1b"
+  },
+  {
+   "file": "chromium-before-1440-work-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 4303.5625,
+   "bytes": 54024,
+   "sha256": "286a03cd356ef849de35e33600202daa0211c047840091ac25ccb51fd6a01dec"
+  },
+  {
+   "file": "chromium-before-1440-work-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 5083.5625,
+   "bytes": 58148,
+   "sha256": "561cc8798579259b8ab37008df129b3ea3a4be7504efd46c70177549d91055a9"
+  },
+  {
+   "file": "chromium-before-1440-world-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 11739.9375,
+   "bytes": 124642,
+   "sha256": "045dc375714705df1962773d4ac165ac82d7274ed2adf5857ed19def3164aa7f"
+  },
+  {
+   "file": "chromium-before-1440-world-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 12519.9375,
+   "bytes": 239312,
+   "sha256": "2595fccf3029f2cf84fae015d900873017800cfd200b765cd4f20d68d5893720"
+  },
+  {
+   "file": "chromium-before-1440-world-03.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 13299.9375,
+   "bytes": 76266,
+   "sha256": "c21b1d6eb991e289cc4b881522167824632ac5b95163a0d67831d5e5822552b7"
+  },
+  {
+   "file": "chromium-before-1440-world-04.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 14079.9375,
+   "bytes": 51500,
+   "sha256": "04493ee122adc8cb38bc40adde935e924d45b5e3bc75fa8b06b3c6991b629518"
+  },
+  {
+   "file": "chromium-before-1440-chars-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 14344.515625,
+   "bytes": 49688,
+   "sha256": "7023cf233f1895d3c63a010c64ac72973569346684b9f8f2fb2bc89af4305672"
+  },
+  {
+   "file": "chromium-before-1440-chars-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 15124.515625,
+   "bytes": 57734,
+   "sha256": "9967c1b8d32e84172b8843a87ffc60df279dbaba60383d3107eb09c053b3ffaa"
+  },
+  {
+   "file": "chromium-before-1440-chars-03.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 15904.515625,
+   "bytes": 74272,
+   "sha256": "dbe453f3823f80f6a08e21cab0db1ac148cbf0721a9316ce89716de2aec0f5ec"
+  },
+  {
+   "file": "chromium-before-1440-chars-04.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 1440,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 16684.515625,
+   "bytes": 59894,
+   "sha256": "2cfb68aebf3836a113d8bb60c86b454725877641a8cad4aef8b154d499c2a0ef"
+  },
+  {
+   "file": "chromium-impl-390-manifesto-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 13705.390625,
+   "bytes": 27830,
+   "sha256": "8be3f7015a00deb118b45a0ddbacc62ad0218e61597fae8bb3d60916dc0ff3e1"
+  },
+  {
+   "file": "chromium-impl-390-manifesto-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 14429.390625,
+   "bytes": 27648,
+   "sha256": "e6733b706bd2e66bc333ecf2f91c0288929b7b87477e2926735f2da00a8518bf"
+  },
+  {
+   "file": "chromium-impl-390-manifesto-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 15153.390625,
+   "bytes": 22736,
+   "sha256": "80b1cf6a95a6657f8cd67b84a72d39967daff694e2efde291cf541a9c0dc4c66"
+  },
+  {
+   "file": "chromium-impl-390-manifesto-04.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 4,
+   "scrollY": 15877.390625,
+   "bytes": 26792,
+   "sha256": "3833eea3b4dc24c27d71b24ca1290249cedb64c56437752296f883a24e40cdf7"
+  },
+  {
+   "file": "chromium-impl-390-manifesto-05.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 5,
+   "scrollY": 16601.390625,
+   "bytes": 27424,
+   "sha256": "5261745b833c9c39c7e214b14987f669b88a5f5017731861fc53bd48dc763f49"
+  },
+  {
+   "file": "chromium-impl-390-modules-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 17309.40625,
+   "bytes": 30366,
+   "sha256": "b57fd090ef49b73773ec9bde967c53ad2116e557f843b72844b3aac0c2e7beb0"
+  },
+  {
+   "file": "chromium-impl-390-modules-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 18033.40625,
+   "bytes": 30720,
+   "sha256": "b0baab49a631de17dc25faad4f40a0a2b1f58cbea3b500ea8f5d51cb7fd1c4f8"
+  },
+  {
+   "file": "chromium-impl-390-modules-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 18757.40625,
+   "bytes": 29876,
+   "sha256": "5cbf8544103fa7adc27fcc04dff91f9e7e2d358ebf0909d616ae7309f5587417"
+  },
+  {
+   "file": "chromium-impl-390-work-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 5836.296875,
+   "bytes": 26624,
+   "sha256": "a72149861054f1c88bb188fe2cebbd3ebe476f3a7ba3637f10ec8d998dd0f7b4"
+  },
+  {
+   "file": "chromium-impl-390-work-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 6560.296875,
+   "bytes": 34818,
+   "sha256": "8d7b3a529420dbc83e238e04f7adf331da936a0993ef28acb6f2b24f08c4376b"
+  },
+  {
+   "file": "chromium-impl-390-work-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 3,
+   "scrollY": 7284.296875,
+   "bytes": 30460,
+   "sha256": "8728a2328a3db06f28989020fc861704f5caf484fe3937f028cc9d933cc1770f"
+  },
+  {
+   "file": "chromium-impl-390-work-04.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 4,
+   "scrollY": 8008.296875,
+   "bytes": 19868,
+   "sha256": "5c5b51350d960eb1e8d330858cdf233baba0777627c9bfe84ed5688bb3edc4ee"
+  },
+  {
+   "file": "chromium-impl-390-work-05.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 5,
+   "scrollY": 8732.296875,
+   "bytes": 22378,
+   "sha256": "a98c6ae5a63b18ca9b53268462cbedc8a5248936f751a780f311d15a12803697"
+  },
+  {
+   "file": "chromium-impl-390-work-06.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 6,
+   "scrollY": 9456.296875,
+   "bytes": 23664,
+   "sha256": "425a104826e1a62378c68fb0815486a67eb0ebf0a2a64cce5be734014b723af6"
+  },
+  {
+   "file": "chromium-impl-390-world-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 19479.390625,
+   "bytes": 45792,
+   "sha256": "66ff7c875f76d268e5b1c408ad3a34cba5cd1439c4ffded41184bd239254979c"
+  },
+  {
+   "file": "chromium-impl-390-world-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 20203.390625,
+   "bytes": 34578,
+   "sha256": "cc0d7fbc3a116a1fbbc325e1226e6f126cc19843fafc98b9c11f1a15cbcf0b71"
+  },
+  {
+   "file": "chromium-impl-390-world-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 20927.390625,
+   "bytes": 34166,
+   "sha256": "f457243bd0d33ed52165a59db92217184b013f2f0c51d035849c01a917aceb21"
+  },
+  {
+   "file": "chromium-impl-390-world-04.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 21651.390625,
+   "bytes": 31030,
+   "sha256": "4199e563613c43e9bef259bd407d46dd351aa22795b1a9764749e98a157d492c"
+  },
+  {
+   "file": "chromium-impl-390-chars-01.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 21991.609375,
+   "bytes": 22576,
+   "sha256": "dcbe51549bcae80f0a56ff033a0b710800a9603b30e7cf93e264e4e491a05f2c"
+  },
+  {
+   "file": "chromium-impl-390-chars-02.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 22715.609375,
+   "bytes": 23544,
+   "sha256": "a8b50d5570e3e2532b95f70bb5ddc29b3ae7405af6302d936fb9d0f1e1ba9297"
+  },
+  {
+   "file": "chromium-impl-390-chars-03.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 23439.609375,
+   "bytes": 19248,
+   "sha256": "afe05ec5ea8d6f97f67c3d4692aceee87c098f27545f1a3ad171bbda673f57fd"
+  },
+  {
+   "file": "chromium-impl-390-chars-04.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 24163.609375,
+   "bytes": 18340,
+   "sha256": "568639c2f0c375e3c4dce7b89710d88d9af40c128ba2cac4e67df79eb2937d9c"
+  },
+  {
+   "file": "chromium-impl-390-chars-05.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 5,
+   "scrollY": 24887.609375,
+   "bytes": 28274,
+   "sha256": "095b9507444c8c96c26d169b91c19a5f6043cae5296bdd30f98ca98d188f2fd4"
+  },
+  {
+   "file": "chromium-impl-390-chars-06.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 6,
+   "scrollY": 25611.609375,
+   "bytes": 34874,
+   "sha256": "663ce798eaa3f900d4d2652c5fa0eba8c08696ee4e14100b1bfee6d5d927ed57"
+  },
+  {
+   "file": "chromium-impl-390-chars-07.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 7,
+   "scrollY": 26335.609375,
+   "bytes": 16064,
+   "sha256": "2e1e268a45dd8c838155ec92ced5708d3735073cc1287b8fb424738bd0a0e185"
+  },
+  {
+   "file": "chromium-impl-390-chars-08.webp",
+   "engine": "chromium",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 8,
+   "scrollY": 27059.609375,
+   "bytes": 26712,
+   "sha256": "2f888c3ca6cd7b99c2f016ef63e08fc75f7eb15bd6d118bf5a160af24dc0a2f0"
+  },
+  {
+   "file": "chromium-before-390-manifesto-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 12178.65625,
+   "bytes": 31152,
+   "sha256": "23af2244c72437ca5618f3ebbe526f59e61546bc9b2877e0794f9a4c2fe29fdd"
+  },
+  {
+   "file": "chromium-before-390-manifesto-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 12902.65625,
+   "bytes": 31274,
+   "sha256": "3f3d663cb0b79c153b096edc211023554ad79f61c8c3edc858d8f9245cfe7cf8"
+  },
+  {
+   "file": "chromium-before-390-manifesto-03.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 13626.65625,
+   "bytes": 26834,
+   "sha256": "2eb27a187d7d432733b2ded044a804bf6ca8f7fb262a67e8d55fbf8c2e43a814"
+  },
+  {
+   "file": "chromium-before-390-modules-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 14159.53125,
+   "bytes": 29376,
+   "sha256": "a618434cb35770592f7b6602ebfff1a2cd58540ea67704795cfe70031db1d894"
+  },
+  {
+   "file": "chromium-before-390-modules-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 14883.53125,
+   "bytes": 31738,
+   "sha256": "0131d4ab8ffcc84dd249569ce11bdafad12999ef8d71c9ad139a17734b4e5fce"
+  },
+  {
+   "file": "chromium-before-390-work-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 5836.296875,
+   "bytes": 26624,
+   "sha256": "a72149861054f1c88bb188fe2cebbd3ebe476f3a7ba3637f10ec8d998dd0f7b4"
+  },
+  {
+   "file": "chromium-before-390-work-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 6560.296875,
+   "bytes": 34818,
+   "sha256": "8d7b3a529420dbc83e238e04f7adf331da936a0993ef28acb6f2b24f08c4376b"
+  },
+  {
+   "file": "chromium-before-390-work-03.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "work",
+   "segment": 3,
+   "scrollY": 7284.296875,
+   "bytes": 26036,
+   "sha256": "fccf3064dc80a75edacf408ed3cdb2d142e720dc2d15b5ba310285859a23e47a"
+  },
+  {
+   "file": "chromium-before-390-work-04.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "work",
+   "segment": 4,
+   "scrollY": 8008.296875,
+   "bytes": 22462,
+   "sha256": "09f68f6093f9bf35669355d464dc72f26240800e29cf3bd56b7190b7300cf467"
+  },
+  {
+   "file": "chromium-before-390-world-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 15596.390625,
+   "bytes": 40882,
+   "sha256": "6f011051f9c3decb6ff5413e61e10e026868d741d7140cdd90ecc84d301d463f"
+  },
+  {
+   "file": "chromium-before-390-world-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 16320.390625,
+   "bytes": 24080,
+   "sha256": "c68ffcd12d5ee50c15ece12de46b7efc59274e3c2ac3bb503278086d3c59fecd"
+  },
+  {
+   "file": "chromium-before-390-world-03.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 17044.390625,
+   "bytes": 33632,
+   "sha256": "3f6a2353ed0b15f8a619d3ec3bc351956e81c9037f44a6c4f47c2ce67cfb73c2"
+  },
+  {
+   "file": "chromium-before-390-world-04.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 17768.390625,
+   "bytes": 21162,
+   "sha256": "d6b740a76547a1a6b8fa6730f3c4d435f2dea8e8c166536fa451e96cdca2c4f9"
+  },
+  {
+   "file": "chromium-before-390-chars-01.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 17998.140625,
+   "bytes": 18386,
+   "sha256": "e3a0776ca05bb3bff7e0a814da5019d8a66a976887af887b9ee0336e99926a23"
+  },
+  {
+   "file": "chromium-before-390-chars-02.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 18722.140625,
+   "bytes": 24960,
+   "sha256": "df19f6fb86c06d0665e490e19bca592e28efb489abc4b6dfc6cc19420b800344"
+  },
+  {
+   "file": "chromium-before-390-chars-03.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 19446.140625,
+   "bytes": 17476,
+   "sha256": "40c86f57d02d53492dcc40eca457e38b401e5c66dfb0b50064ce30df22642e0c"
+  },
+  {
+   "file": "chromium-before-390-chars-04.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 20170.140625,
+   "bytes": 19990,
+   "sha256": "a1288f55ebc5a22b0a6eac6a125d57f134166ba40e0c068657d50cf114e53b21"
+  },
+  {
+   "file": "chromium-before-390-chars-05.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "chars",
+   "segment": 5,
+   "scrollY": 20894.140625,
+   "bytes": 31052,
+   "sha256": "87059d002bfb80429decbfd6bed1a5cb043f604636a1051c50ffa36cb1c4563d"
+  },
+  {
+   "file": "chromium-before-390-chars-06.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "chars",
+   "segment": 6,
+   "scrollY": 21618.140625,
+   "bytes": 33768,
+   "sha256": "c420443fa7572cd9dca15ac5db1908fac3d95e8cc384f5f398ad6a8d8e4895c3"
+  },
+  {
+   "file": "chromium-before-390-chars-07.webp",
+   "engine": "chromium",
+   "arm": "base",
+   "w": 390,
+   "section": "chars",
+   "segment": 7,
+   "scrollY": 22342.140625,
+   "bytes": 14958,
+   "sha256": "c42560bf46df77179e3bb1b42c89919a72d5e37d243da75d35c6b97a46fd9ea5"
+  },
+  {
+   "file": "firefox-impl-1440-manifesto-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 10426.7333984375,
+   "bytes": 63862,
+   "sha256": "308d577b8016621b2446e56785d156ba055cf8d5b8fb211507171cc8b52e39a8"
+  },
+  {
+   "file": "firefox-impl-1440-manifesto-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 11206.7333984375,
+   "bytes": 66154,
+   "sha256": "1a78de4f4a2edcfee7b28ad835fc9f32afcbcc51087a85d9c1b1f9d21d720cb3"
+  },
+  {
+   "file": "firefox-impl-1440-manifesto-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 11986.7333984375,
+   "bytes": 64208,
+   "sha256": "8fb2dfe5b912183e4380b870729ade0023e290f58eebcb75f76bd793bbf6cc99"
+  },
+  {
+   "file": "firefox-impl-1440-modules-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 12825.849975585938,
+   "bytes": 72606,
+   "sha256": "043469f939b5812307227172472e9632c7f053c613fd5718151da370f1ba688c"
+  },
+  {
+   "file": "firefox-impl-1440-modules-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 13605.849975585938,
+   "bytes": 59646,
+   "sha256": "c4d782f93a5123740d86ae10c3232993cddd4cc71844b87520e103ec5780284c"
+  },
+  {
+   "file": "firefox-impl-1440-modules-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 14385.849975585938,
+   "bytes": 62622,
+   "sha256": "81b9e3e59fdd43279f44c2cf186012796d9ab82c6afddadbedba96d7204f2c92"
+  },
+  {
+   "file": "firefox-impl-1440-work-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 4304.650390625,
+   "bytes": 56040,
+   "sha256": "8a203c3dad9e26d06213ac935b04c0b0fb4df58f60e7b80782edd5f2e11a5434"
+  },
+  {
+   "file": "firefox-impl-1440-work-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 5084.650390625,
+   "bytes": 66078,
+   "sha256": "4f90266715b4450c0415f62702c44db471d9ffbfe2f364d5e48c996f1f0fac0e"
+  },
+  {
+   "file": "firefox-impl-1440-work-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 3,
+   "scrollY": 5864.650390625,
+   "bytes": 57278,
+   "sha256": "93b7c7fb67a707c865137f5e8010876b962552930144f7b8fc8a3e09caa56a9b"
+  },
+  {
+   "file": "firefox-impl-1440-work-04.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 4,
+   "scrollY": 6644.650390625,
+   "bytes": 43544,
+   "sha256": "9e5d440b9007e4538ae5db40a5f72cabdfb710f6e709d44b2a045fd7a3789754"
+  },
+  {
+   "file": "firefox-impl-1440-world-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 14763.11669921875,
+   "bytes": 168388,
+   "sha256": "236bc9bdb8c779a699b6a56f92dbdcf5f457cadf4d909c4a6a9e55b5aa7e323f"
+  },
+  {
+   "file": "firefox-impl-1440-world-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 15543.11669921875,
+   "bytes": 257850,
+   "sha256": "135eade4ae302f731af0df1a0fb8e46e7a9ce3198340026099cd3ea47e49de9c"
+  },
+  {
+   "file": "firefox-impl-1440-world-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 16323.11669921875,
+   "bytes": 72458,
+   "sha256": "28517c48a0af09d49ae830399304e67e0e7efc64fdc3b13ee8a7204da5d36d89"
+  },
+  {
+   "file": "firefox-impl-1440-world-04.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 17103.11669921875,
+   "bytes": 55998,
+   "sha256": "2da86f91d418a07a231344fd8e71db0187ea204ad69e709d513322c777ee4bdc"
+  },
+  {
+   "file": "firefox-impl-1440-chars-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 17317,
+   "bytes": 59798,
+   "sha256": "d8da41479ce878988cf447a38585d4d187e5334894a445ff0424bca3f12dd6ad"
+  },
+  {
+   "file": "firefox-impl-1440-chars-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 18097,
+   "bytes": 56906,
+   "sha256": "f8ebd1aa3826a5ec699aa2acb0fa01a80c061f4a8ea0fa5f4680b2adbb4d69b7"
+  },
+  {
+   "file": "firefox-impl-1440-chars-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 18877,
+   "bytes": 77202,
+   "sha256": "11947771a312b1045c9e33aff4afc33d7531e9f98282bb7a704c19c09e16eb69"
+  },
+  {
+   "file": "firefox-impl-1440-chars-04.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 19657,
+   "bytes": 61696,
+   "sha256": "af5cde4e67f67c5749a56d699fb9063673d83554b05038b1ad5234828493410b"
+  },
+  {
+   "file": "firefox-impl-390-manifesto-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 13593.5830078125,
+   "bytes": 29624,
+   "sha256": "9da111c247ffac72628c5bc988084d9f605e9ec35be787a02ed6472c976cca14"
+  },
+  {
+   "file": "firefox-impl-390-manifesto-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 14317.5830078125,
+   "bytes": 28768,
+   "sha256": "228dfab8a664d87561da1a2e85eef14764fabf5bdccdd458550610cfd7b1c182"
+  },
+  {
+   "file": "firefox-impl-390-manifesto-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 15041.5830078125,
+   "bytes": 21342,
+   "sha256": "f7c865adef3064bd7dd60e415e4acbe8d313085551e282f293a953ce9c8841f0"
+  },
+  {
+   "file": "firefox-impl-390-manifesto-04.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 4,
+   "scrollY": 15765.5830078125,
+   "bytes": 27688,
+   "sha256": "382023bca072d1b4487fa116f5591edb59d08c67e5d94f918f2ee2edf1719f8b"
+  },
+  {
+   "file": "firefox-impl-390-manifesto-05.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 5,
+   "scrollY": 16489.5830078125,
+   "bytes": 24050,
+   "sha256": "27e5644eceac75796bfabdb6a5e0b5a045875c0b5bdea1eec59b0c9f0b675e7a"
+  },
+  {
+   "file": "firefox-impl-390-modules-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 17143.13330078125,
+   "bytes": 30492,
+   "sha256": "da2b2e43c83fb553f30e60260946cc2bcb88a176cab7850602c830ec0f71b6da"
+  },
+  {
+   "file": "firefox-impl-390-modules-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 17867.13330078125,
+   "bytes": 30838,
+   "sha256": "7e9b9eecda7710f6f10db9c2d25e6cf6750e5421c767d9989a289eeb2cdc378b"
+  },
+  {
+   "file": "firefox-impl-390-modules-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 18591.13330078125,
+   "bytes": 28022,
+   "sha256": "56da25e80a7cc06c4c970628606d015f1b89ae69f2697de338cdfecbef2ab6e2"
+  },
+  {
+   "file": "firefox-impl-390-work-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 5788.68359375,
+   "bytes": 25576,
+   "sha256": "b14f24fd2ad87e98f2be820bea3f794919c1544bd745249554f6c48427d57be1"
+  },
+  {
+   "file": "firefox-impl-390-work-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 6512.68359375,
+   "bytes": 34268,
+   "sha256": "c0155a63b5138eeb9b77abc1abb3b9f8655e6873360b343ab1267b98cea36498"
+  },
+  {
+   "file": "firefox-impl-390-work-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 3,
+   "scrollY": 7236.68359375,
+   "bytes": 25798,
+   "sha256": "58b8e0a4c1e414e55c07c962153363e35737499d2f72c19b7fcf3d4065dc6b60"
+  },
+  {
+   "file": "firefox-impl-390-work-04.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 4,
+   "scrollY": 7960.68359375,
+   "bytes": 20028,
+   "sha256": "e343c84ae8b5903931162aea42fe069a658b32a91371532420789e48b3db772a"
+  },
+  {
+   "file": "firefox-impl-390-work-05.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 5,
+   "scrollY": 8684.68359375,
+   "bytes": 21190,
+   "sha256": "6041f8a919d8641dbdcfde3648f05ac637cb80de929cc923d0a03deb3fccffa0"
+  },
+  {
+   "file": "firefox-impl-390-work-06.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 6,
+   "scrollY": 9408.68359375,
+   "bytes": 20732,
+   "sha256": "58fc0f0691c9d327a659d3a9e22b42e2df188c2abd3dc34e76e01a7636fb2076"
+  },
+  {
+   "file": "firefox-impl-390-world-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 19293.0166015625,
+   "bytes": 45716,
+   "sha256": "25f32a9d4e4a55f8a04bf964e053122174f94c6a034a899692e12e3e85a089de"
+  },
+  {
+   "file": "firefox-impl-390-world-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 20017.0166015625,
+   "bytes": 36004,
+   "sha256": "5077857f60ad6bf3aee8f01eb4f7b23d0ff0cb25d755a2b8fd69a4bc53c3f4c6"
+  },
+  {
+   "file": "firefox-impl-390-world-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 20741.0166015625,
+   "bytes": 34218,
+   "sha256": "01f5e9c7844cabbb1d38650578b61b87bdd5d97261c72e45f6b10de0f3b9cccb"
+  },
+  {
+   "file": "firefox-impl-390-world-04.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 21465.0166015625,
+   "bytes": 26124,
+   "sha256": "0f230610b433e8b564165c8aa2843a101d6698930334048783a455216826c075"
+  },
+  {
+   "file": "firefox-impl-390-chars-01.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 21775.116668701172,
+   "bytes": 21006,
+   "sha256": "14318d6adaaaa8f1ec8efbbddd06129954e3cf510c4de26191f2e8cc70f5a669"
+  },
+  {
+   "file": "firefox-impl-390-chars-02.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 22499.116668701172,
+   "bytes": 25050,
+   "sha256": "2aa797a9d93b57e67824a73fa66c3153a52bec877f30d8e51e06a4d55cdaa5a5"
+  },
+  {
+   "file": "firefox-impl-390-chars-03.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 23223.116668701172,
+   "bytes": 20440,
+   "sha256": "b5206d4e23545ef006dbdf862bf26209927e1cfdfff926d818a886364b02e183"
+  },
+  {
+   "file": "firefox-impl-390-chars-04.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 23947.116668701172,
+   "bytes": 19680,
+   "sha256": "446b92490f7f418636a9aba864a1823fbf9fff34b3e6e9252ed47052bd9a7c8b"
+  },
+  {
+   "file": "firefox-impl-390-chars-05.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 5,
+   "scrollY": 24671.116668701172,
+   "bytes": 27530,
+   "sha256": "89ebc2471784c53f0553da4190836c7745a68f5ee364a6697ceee11ce1114457"
+  },
+  {
+   "file": "firefox-impl-390-chars-06.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 6,
+   "scrollY": 25395.116668701172,
+   "bytes": 32394,
+   "sha256": "45850c41203c8996e0213a49ae485a916e32d079712a317f657b2690eea881e6"
+  },
+  {
+   "file": "firefox-impl-390-chars-07.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 7,
+   "scrollY": 26119.116668701172,
+   "bytes": 16968,
+   "sha256": "f346f9f9200b1ecba15f5d0f9c9d8722ead1d3f97b8cd3e31b53d9ffc616a141"
+  },
+  {
+   "file": "firefox-impl-390-chars-08.webp",
+   "engine": "firefox",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 8,
+   "scrollY": 26843.116668701172,
+   "bytes": 26504,
+   "sha256": "593c5bba45261e654dbcd6e911ebe1d35141d9f1538eb35e73f981fd51959e04"
+  },
+  {
+   "file": "webkit-impl-1440-manifesto-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 10417.296875,
+   "bytes": 61880,
+   "sha256": "69c9fb401eba350a970fcac276bbed389dba66b417fceb2d53c4a8283c698481"
+  },
+  {
+   "file": "webkit-impl-1440-manifesto-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 11197.296875,
+   "bytes": 66786,
+   "sha256": "cf44619fa65a200e723adc86f42ba012232935fef7fc18291f93da259e3d95f1"
+  },
+  {
+   "file": "webkit-impl-1440-manifesto-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 11977.296875,
+   "bytes": 63930,
+   "sha256": "a001f1fbdc40cd79f17d81f9321c2cc3fbd2e4472a38626d7ef7160e658b65da"
+  },
+  {
+   "file": "webkit-impl-1440-modules-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 12816.234375,
+   "bytes": 72926,
+   "sha256": "fffefad8247bd77831c3c0fc6d552ae61cb16cb0eaf20531be2838cbc5c3db48"
+  },
+  {
+   "file": "webkit-impl-1440-modules-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 13596.234375,
+   "bytes": 60782,
+   "sha256": "c92bddf1134011a7d38aaaf696a698f66ed0472ea3500936c71b4c0057f94676"
+  },
+  {
+   "file": "webkit-impl-1440-modules-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 14376.234375,
+   "bytes": 60146,
+   "sha256": "7751e276031897acb7e9eabf79b4b43617a826d94431c36142dced2905e78309"
+  },
+  {
+   "file": "webkit-impl-1440-work-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 4303.5625,
+   "bytes": 56508,
+   "sha256": "ad19c4eacc0725e651ae1a4f8a7c521cd9a9c14940626c16d339c3659dc2a040"
+  },
+  {
+   "file": "webkit-impl-1440-work-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 5083.5625,
+   "bytes": 66012,
+   "sha256": "84efca7d8727897f0b41d973395be2da3ea74fe2af26403075fc89561ab81969"
+  },
+  {
+   "file": "webkit-impl-1440-work-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 3,
+   "scrollY": 5863.5625,
+   "bytes": 58988,
+   "sha256": "1f561051dbdc063ad6f75c7493655e3847c544f594285a117422f5b853026765"
+  },
+  {
+   "file": "webkit-impl-1440-work-04.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "work",
+   "segment": 4,
+   "scrollY": 6643.5625,
+   "bytes": 44940,
+   "sha256": "fc634e59f4a06b9fba4b0d401e3e739101eb68fde3c229f747441aac5ecb7378"
+  },
+  {
+   "file": "webkit-impl-1440-world-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 14753.390625,
+   "bytes": 150686,
+   "sha256": "cd047023f2382a00a9cb6fb67058a67668cb77e82d258fb8ccf26629f267131d"
+  },
+  {
+   "file": "webkit-impl-1440-world-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 15533.390625,
+   "bytes": 224908,
+   "sha256": "5eb64c341c6e9e01fc5e9c33f96b1986d1423d9684accf3bcc35656e1be2f201"
+  },
+  {
+   "file": "webkit-impl-1440-world-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 16313.390625,
+   "bytes": 67042,
+   "sha256": "8924146b1e8f049dc07d6d6e027c10dc04960ecc3f2fe77a76b4d16139b67b91"
+  },
+  {
+   "file": "webkit-impl-1440-world-04.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 17093.390625,
+   "bytes": 51736,
+   "sha256": "ef03bef3db5bb7b4f5321593b4688bdebda9cd1d4a66f5a5ba2ce4df3cdb3797"
+  },
+  {
+   "file": "webkit-impl-1440-chars-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 17305.21875,
+   "bytes": 55262,
+   "sha256": "59bc7ba0efe5e6aba131849afc3719e89d55156606ab118d19fd65dc014ee951"
+  },
+  {
+   "file": "webkit-impl-1440-chars-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 18085.21875,
+   "bytes": 56898,
+   "sha256": "8a4db01415f9cfd46f8baa80d9a90f8a9e3329aed81948ab3f0152f647e1bf28"
+  },
+  {
+   "file": "webkit-impl-1440-chars-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 18865.21875,
+   "bytes": 77618,
+   "sha256": "f019f711369c7089179437453751de6dbd6cdd7eab40e8b49538cae84237561b"
+  },
+  {
+   "file": "webkit-impl-1440-chars-04.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 1440,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 19645.21875,
+   "bytes": 58386,
+   "sha256": "29779a0d9328deef6acf424fa1021fb61394453b0ad1717e29e5f5153f4ca4aa"
+  },
+  {
+   "file": "webkit-impl-390-manifesto-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 13574.125,
+   "bytes": 29104,
+   "sha256": "797d249ecf1f180a89d2f390f724dbf497c61177b6c815462344a61d3e575426"
+  },
+  {
+   "file": "webkit-impl-390-manifesto-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 14298.125,
+   "bytes": 28772,
+   "sha256": "17be17493c9cad5c09464c47b9ad586239f114ad30ea4fe2abbaa3621c223b58"
+  },
+  {
+   "file": "webkit-impl-390-manifesto-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 15022.125,
+   "bytes": 21716,
+   "sha256": "c818342a87f93743f887d6c7f4e95f0d7d0a75e4a1c60ce9ce4731efc1898599"
+  },
+  {
+   "file": "webkit-impl-390-manifesto-04.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 4,
+   "scrollY": 15746.125,
+   "bytes": 29554,
+   "sha256": "4d8ff3e4037da67eaad670020953ab0252ebcb055cb08a8d52878ed73b16f15a"
+  },
+  {
+   "file": "webkit-impl-390-manifesto-05.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "manifesto",
+   "segment": 5,
+   "scrollY": 16470.125,
+   "bytes": 25506,
+   "sha256": "d23eef976a7a22e51563a24002e4a4017c65cbcccef98df8c45edbd791ff0494"
+  },
+  {
+   "file": "webkit-impl-390-modules-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 17122.234375,
+   "bytes": 29154,
+   "sha256": "70a8c9dee78f67beb6dff153c22c9d0dcfa6342e1fbf28936c52bd8fbff5786e"
+  },
+  {
+   "file": "webkit-impl-390-modules-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 17846.234375,
+   "bytes": 28784,
+   "sha256": "eab0ce6f15f40fc68a1978a27e0f86cfb0f68d0dc36916cd1df36b3d49d2c97d"
+  },
+  {
+   "file": "webkit-impl-390-modules-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 18570.234375,
+   "bytes": 28112,
+   "sha256": "b447e1395cfe76a4fb61423ec65b8b310ff0e9cc6bc034a54193df9140cfdbb0"
+  },
+  {
+   "file": "webkit-impl-390-work-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 1,
+   "scrollY": 5785.125,
+   "bytes": 26220,
+   "sha256": "f8b525f5ee96e244f4806d07cfb8f800fa4f40c29bdd2f3925b98ac9f48961b6"
+  },
+  {
+   "file": "webkit-impl-390-work-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 2,
+   "scrollY": 6509.125,
+   "bytes": 34218,
+   "sha256": "1b6176c65866b341bde5d30b2b93a30876c0d92959be6997425f0094b6a19015"
+  },
+  {
+   "file": "webkit-impl-390-work-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 3,
+   "scrollY": 7233.125,
+   "bytes": 26436,
+   "sha256": "b80352b0ead9b83962d394dde464b712605659923a318fb2b63d16c9928b53f6"
+  },
+  {
+   "file": "webkit-impl-390-work-04.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 4,
+   "scrollY": 7957.125,
+   "bytes": 20562,
+   "sha256": "8f16c363e3a63944c53d26593249996075a605ed285ce2e9ed596650a857dead"
+  },
+  {
+   "file": "webkit-impl-390-work-05.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 5,
+   "scrollY": 8681.125,
+   "bytes": 22028,
+   "sha256": "ccbcb42111881b777c63d1c420f29dccf17c9b34d1c935380a91208a843a3910"
+  },
+  {
+   "file": "webkit-impl-390-work-06.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "work",
+   "segment": 6,
+   "scrollY": 9405.125,
+   "bytes": 21316,
+   "sha256": "52be043e5264c5a6f10e9fdacdcfcad25e82dfc922165bd324204a7beff9d485"
+  },
+  {
+   "file": "webkit-impl-390-world-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 1,
+   "scrollY": 19271.921875,
+   "bytes": 44266,
+   "sha256": "eb92bb7382b68d2fc5e4f602669432ee33da07ee78f2d206771856fd9d50e0bb"
+  },
+  {
+   "file": "webkit-impl-390-world-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 2,
+   "scrollY": 19995.921875,
+   "bytes": 34508,
+   "sha256": "6dc735ebfdfc96e6b30eb8b6f1e61f17337829aee6162fdaf0e0488800632ed6"
+  },
+  {
+   "file": "webkit-impl-390-world-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 3,
+   "scrollY": 20719.921875,
+   "bytes": 33754,
+   "sha256": "e4fff1e4d2fdbb28d6b58a0a9e4c03d07feec398a98cac209a30664e12183780"
+  },
+  {
+   "file": "webkit-impl-390-world-04.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "world",
+   "segment": 4,
+   "scrollY": 21443.921875,
+   "bytes": 26480,
+   "sha256": "585fa3108b9c2ac13863e9a10ad079c144b720bef916cf66d131f33fe0ab6f5d"
+  },
+  {
+   "file": "webkit-impl-390-chars-01.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 21745.921875,
+   "bytes": 21320,
+   "sha256": "6195c2964adcec225f26780bee552922a69a8bb77269136e2f48d829675f6e21"
+  },
+  {
+   "file": "webkit-impl-390-chars-02.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 22469.921875,
+   "bytes": 24720,
+   "sha256": "4f433b46b245e0fb84ebf74762577916db0043cc542516e4d3328cea6c1213fa"
+  },
+  {
+   "file": "webkit-impl-390-chars-03.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 23193.921875,
+   "bytes": 18186,
+   "sha256": "ac9fa78592284e5ddb4e2368796df10403736b39691d8bd14089266681d9afa5"
+  },
+  {
+   "file": "webkit-impl-390-chars-04.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 23917.921875,
+   "bytes": 19564,
+   "sha256": "b7ef6c817bbe51c1b4d6eef4a2c1b64e59c6a2bcf8422a2f31572bdb23ba2b78"
+  },
+  {
+   "file": "webkit-impl-390-chars-05.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 5,
+   "scrollY": 24641.921875,
+   "bytes": 28290,
+   "sha256": "6475a1e2588671c982f528e2815c23757e8d177782586ca100f09d5cbae703e9"
+  },
+  {
+   "file": "webkit-impl-390-chars-06.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 6,
+   "scrollY": 25365.921875,
+   "bytes": 32704,
+   "sha256": "6262faf91f364c6647fef027d038f9c13a866384f01606820c3f96fa31edcba1"
+  },
+  {
+   "file": "webkit-impl-390-chars-07.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 7,
+   "scrollY": 26089.921875,
+   "bytes": 16978,
+   "sha256": "3f0e56a1d7625a22bf78c8cdcebb4cfb959786ea714bb338eb829f0495ca5b79"
+  },
+  {
+   "file": "webkit-impl-390-chars-08.webp",
+   "engine": "webkit",
+   "arm": "impl",
+   "w": 390,
+   "section": "chars",
+   "segment": 8,
+   "scrollY": 26813.921875,
+   "bytes": 26144,
+   "sha256": "1622d43258d7efda829fbb54d9cb17ae7ea8cfa7370f73ee1f779f89c37c5dce"
+  }
+ ],
+ "axe_chromium_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 336
+   }
+  ]
+ },
+ "axe_chromium_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 288
+   }
+  ]
+ },
+ "axe_firefox_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 336
+   }
+  ]
+ },
+ "axe_firefox_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 288
+   }
+  ]
+ },
+ "checks": [
+  {
+   "engine": "chromium",
+   "name": "1920×1080: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-impl-1440-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 35.01
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-impl-1440-modules-03.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 37.8
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-impl-1440-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 37.8
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-impl-1440-chars-04.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 43.59
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-1440-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 34.95
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-1440-manifesto-03.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 19.68
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-1440-modules-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 19.68
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-1440-modules-02.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 34.03
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-1440-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 34.03
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-1440-chars-04.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 43.59
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-impl-390-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 24.11
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-impl-390-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 34.51
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-impl-390-chars-08.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 36.18
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-390-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 23.95
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-390-manifesto-03.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 14.39
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-390-modules-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 14.39
+  },
+  {
+   "engine": "chromium",
+   "name": "frame chromium-before-390-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 26.1
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -13,
+   "baseOverflow": -13,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "noJS 1440: no content cut (hidden text only decorative or as in b85), rails as grids, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": false
+    },
+    {
+     "n": 5,
+     "scroll": false
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": -15,
+   "hidden": [
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "chromium",
+   "name": "noJS 390: no content cut (hidden text only decorative or as in b85), rails native-scroll, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": true
+    },
+    {
+     "n": 5,
+     "scroll": true
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": -15,
+   "hidden": [
+    {
+     "cls": "",
+     "aria": false,
+     "text": "ENGINEERING + STORYTELLING"
+    },
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    },
+    {
+     "cls": "ax-archive-hint",
+     "aria": true,
+     "text": "← → · SWIPE · CLICK = FULL SIZE"
+    },
+    {
+     "cls": "ax-viewer-hint",
+     "aria": true,
+     "text": "← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — З"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 01 — BLACK SUN"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ARCHIVE / RED PROTOCOL"
+    },
+    {
+     "cls": "ad-fracture-cap",
+     "aria": true,
+     "text": "ЦЕЛОЕ → ПЯТЬ СЛЕДОВ"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 02 — AFTERMATH"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ACCESS / MEMORY / DEPENDENCE"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard JS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "JS 390: traces next button walks to 5/5",
+   "pass": true,
+   "last": "05 / 05",
+   "nextDisabled": true
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard JS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "JS 390: surfaces next button walks to 4/4",
+   "pass": true,
+   "last": "04 / 04",
+   "nextDisabled": true
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard noJS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard noJS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "RM=reduce: pulse off",
+   "pass": true,
+   "a": "none"
+  },
+  {
+   "engine": "chromium",
+   "name": "RM=no-preference: pulse on",
+   "pass": true,
+   "a": "ad-pulse"
+  },
+  {
+   "engine": "chromium",
+   "name": "A08 1440@2x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.501,
+   "coreY": 0.264,
+   "need": 961,
+   "dpr": 2
+  },
+  {
+   "engine": "chromium",
+   "name": "A08 390@3x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 639,
+   "dpr": 3
+  },
+  {
+   "engine": "chromium",
+   "name": "A08 360@1x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 245,
+   "dpr": 1
+  },
+  {
+   "engine": "chromium",
+   "name": "axe 1440: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 336
+    }
+   ]
+  },
+  {
+   "engine": "chromium",
+   "name": "axe 390: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 288
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "frame firefox-impl-1440-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 34.86
+  },
+  {
+   "engine": "firefox",
+   "name": "frame firefox-impl-1440-modules-03.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 37.58
+  },
+  {
+   "engine": "firefox",
+   "name": "frame firefox-impl-1440-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 37.58
+  },
+  {
+   "engine": "firefox",
+   "name": "frame firefox-impl-1440-chars-04.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 43.44
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "frame firefox-impl-390-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 24.92
+  },
+  {
+   "engine": "firefox",
+   "name": "frame firefox-impl-390-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 33.76
+  },
+  {
+   "engine": "firefox",
+   "name": "frame firefox-impl-390-chars-08.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 36.2
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "noJS 1440: no content cut (hidden text only decorative or as in b85), rails as grids, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": false
+    },
+    {
+     "n": 5,
+     "scroll": false
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "firefox",
+   "name": "noJS 390: no content cut (hidden text only decorative or as in b85), rails native-scroll, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": true
+    },
+    {
+     "n": 5,
+     "scroll": true
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "",
+     "aria": false,
+     "text": "ENGINEERING + STORYTELLING"
+    },
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    },
+    {
+     "cls": "ax-archive-hint",
+     "aria": true,
+     "text": "← → · SWIPE · CLICK = FULL SIZE"
+    },
+    {
+     "cls": "ax-viewer-hint",
+     "aria": true,
+     "text": "← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — З"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 01 — BLACK SUN"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ARCHIVE / RED PROTOCOL"
+    },
+    {
+     "cls": "ad-fracture-cap",
+     "aria": true,
+     "text": "ЦЕЛОЕ → ПЯТЬ СЛЕДОВ"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 02 — AFTERMATH"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ACCESS / MEMORY / DEPENDENCE"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard JS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "JS 390: traces next button walks to 5/5",
+   "pass": true,
+   "last": "05 / 05",
+   "nextDisabled": true
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard JS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "JS 390: surfaces next button walks to 4/4",
+   "pass": true,
+   "last": "04 / 04",
+   "nextDisabled": true
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard noJS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard noJS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "RM=reduce: pulse off",
+   "pass": true,
+   "a": "none"
+  },
+  {
+   "engine": "firefox",
+   "name": "RM=no-preference: pulse on",
+   "pass": true,
+   "a": "ad-pulse"
+  },
+  {
+   "engine": "firefox",
+   "name": "A08 1440@2x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.501,
+   "coreY": 0.26,
+   "need": 972,
+   "dpr": 2
+  },
+  {
+   "engine": "firefox",
+   "name": "A08 390@3x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 590,
+   "dpr": 3
+  },
+  {
+   "engine": "firefox",
+   "name": "A08 360@1x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 213,
+   "dpr": 1
+  },
+  {
+   "engine": "firefox",
+   "name": "axe 1440: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 336
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "axe 390: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 288
+    }
+   ]
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "frame webkit-impl-1440-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 35.23
+  },
+  {
+   "engine": "webkit",
+   "name": "frame webkit-impl-1440-modules-03.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 37.82
+  },
+  {
+   "engine": "webkit",
+   "name": "frame webkit-impl-1440-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 37.82
+  },
+  {
+   "engine": "webkit",
+   "name": "frame webkit-impl-1440-chars-04.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 43.7
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "frame webkit-impl-390-manifesto-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 24.84
+  },
+  {
+   "engine": "webkit",
+   "name": "frame webkit-impl-390-world-01.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 33.7
+  },
+  {
+   "engine": "webkit",
+   "name": "frame webkit-impl-390-chars-08.webp: chapter plate painted",
+   "pass": true,
+   "luminance": 36.32
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: changed sections within max(1%,16px) of A+AD",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "noJS 1440: no content cut (hidden text only decorative or as in b85), rails as grids, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": false
+    },
+    {
+     "n": 5,
+     "scroll": false
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "webkit",
+   "name": "noJS 390: no content cut (hidden text only decorative or as in b85), rails native-scroll, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": true
+    },
+    {
+     "n": 5,
+     "scroll": true
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "",
+     "aria": false,
+     "text": "ENGINEERING + STORYTELLING"
+    },
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    },
+    {
+     "cls": "ax-archive-hint",
+     "aria": true,
+     "text": "← → · SWIPE · CLICK = FULL SIZE"
+    },
+    {
+     "cls": "ax-viewer-hint",
+     "aria": true,
+     "text": "← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — З"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 01 — BLACK SUN"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ARCHIVE / RED PROTOCOL"
+    },
+    {
+     "cls": "ad-fracture-cap",
+     "aria": true,
+     "text": "ЦЕЛОЕ → ПЯТЬ СЛЕДОВ"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 02 — AFTERMATH"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ACCESS / MEMORY / DEPENDENCE"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard JS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "JS 390: traces next button walks to 5/5",
+   "pass": true,
+   "last": "05 / 05",
+   "nextDisabled": true
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard JS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "JS 390: surfaces next button walks to 4/4",
+   "pass": true,
+   "last": "04 / 04",
+   "nextDisabled": true
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard noJS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard noJS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "RM=reduce: pulse off",
+   "pass": true,
+   "a": "none"
+  },
+  {
+   "engine": "webkit",
+   "name": "RM=no-preference: pulse on",
+   "pass": true,
+   "a": "ad-pulse"
+  },
+  {
+   "engine": "webkit",
+   "name": "A08 1440@2x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.501,
+   "coreY": 0.26,
+   "need": 972,
+   "dpr": 2
+  },
+  {
+   "engine": "webkit",
+   "name": "A08 390@3x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 590,
+   "dpr": 3
+  },
+  {
+   "engine": "webkit",
+   "name": "A08 360@1x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 213,
+   "dpr": 1
+  },
+  {
+   "engine": "all",
+   "name": "runtime: no page errors or HTTP ≥ 400 in any arm",
+   "pass": true,
+   "errors": []
+  }
+ ],
+ "summary": "225/225",
+ "errors": []
+}

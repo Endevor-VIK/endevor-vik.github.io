@@ -1,0 +1,27 @@
+[chromium] 82/82
+[firefox] 72/72
+page.evaluate: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /tmp/axs-0524-w4-webkit-deps/webkit-headless.sh --inspector-pipe --headless --no-startup-window
+<launched> pid=235920
+[pid=235920][err] 
+[pid=235920][err] ** (MiniBrowser:235920): CRITICAL **: 17:39:17.277: WebKitWebView is-controlled-by-automation set but automation is not allowed in the context, falling back to default session.
+[pid=235920][err] libEGL warning: failed to get driver name for fd -1
+[pid=235920][err] 
+[pid=235920][err] libEGL warning: MESA-LOADER: failed to retrieve device information
+[pid=235920][err] 
+[pid=235920][err] libEGL warning: failed to get driver name for fd -1
+[pid=235920][err] 
+[pid=235920][err] MESA: error: ZINK: failed to choose pdev
+[pid=235920][err] libEGL warning: egl: failed to create dri2 screen
+[pid=235920] <gracefully close start>
+[pid=235920] <forcefully close>
+[pid=235920] <kill>
+[pid=235920] <will force kill>
+[pid=235920] <process did exit: exitCode=null, signal=SIGTERM>
+[pid=235920] starting temporary directories cleanup
+    at settle (/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-ad-opus-art-direction/docs/showcase-v031/evidence/w4r2/tools/r3_matrix.cjs:47:15)
+    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-ad-opus-art-direction/docs/showcase-v031/evidence/w4r2/tools/r3_matrix.cjs:57:80 {
+  log: []
+}

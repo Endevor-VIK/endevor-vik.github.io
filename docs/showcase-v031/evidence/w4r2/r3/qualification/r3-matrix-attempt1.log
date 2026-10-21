@@ -1,0 +1,65 @@
+FAIL [chromium] noJS 1440: content present, rails as grids, no JS controls, anchors resolve {"rails":[{"n":4,"scroll":false},{"n":5,"scroll":false}],"hidden":1,"anchors":true,"bars":0,"overflow":-15}
+FAIL [chromium] noJS 390: content present, rails native-scroll, no JS controls, anchors resolve {"rails":[{"n":4,"scroll":true},{"n":5,"scroll":true}],"hidden":9,"anchors":true,"bars":0,"overflow":-15}
+[chromium] 80/82
+page.evaluate: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/axiom/.cache/ms-playwright/firefox-1532/firefox/firefox -no-remote -headless -profile /tmp/playwright_firefoxdev_profile-f3TT6V -juggler-pipe -silent
+<launched> pid=224852
+[pid=224852][err] *** You are running in headless mode.
+[pid=224852][err] JavaScript warning: resource://services-settings/Utils.sys.mjs, line 119: unreachable code after return statement
+[pid=224852][out] 
+[pid=224852][out] Juggler listening to the pipe
+[pid=224852][out] console.error: (new TypeError("can't access property \"find\", this._searchProviderInfo is null", "moz-src:///browser/components/search/SearchSERPTelemetry.sys.mjs", 1206))
+[pid=224852][out] console.warn: services.settings: #fetchAttachment: Forcing fallbackToDump to false due to Utils.LOAD_DUMPS being false
+[pid=224852][out] console.error: (new NotFoundError("Could not find fa0fc42c-d91d-fca7-34eb-806ff46062dc in cache or dump", "resource://services-settings/Attachments.sys.mjs", 48))
+[pid=224852][out] console.warn: "Unable to find the attachment for" "fa0fc42c-d91d-fca7-34eb-806ff46062dc"
+[pid=224852][out] console.error: "Error fetching remote settings base url from CDN. Falling back to https://firefox-settings-attachments.cdn.mozilla.net/" (new SyntaxError("XMLHttpRequest.open: '/' is not a valid URL.", (void 0), 126))
+[pid=224852][out] console.error: services.settings: 
+[pid=224852][out]   Message: EmptyDatabaseError: "main/nimbus-desktop-experiments" has not been synced yet
+[pid=224852][out]   Stack:
+[pid=224852][out]     EmptyDatabaseError@resource://services-settings/Database.sys.mjs:19:5
+[pid=224852][out] list@resource://services-settings/Database.sys.mjs:96:13
+[pid=224852][out] 
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript warning: http://127.0.0.1:45903/base/assets/js/index.js, line 24: Script terminated by timeout at:
+[pid=224852][err] @http://127.0.0.1:45903/base/assets/js/index.js:24:49
+[pid=224852][err] EventListener.handleEvent*@http://127.0.0.1:45903/base/assets/js/index.js:24:12
+[pid=224852][err] 
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][out] console.warn: BackupService: "There was an error while trying to get the Document's directory" [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIProperties.get]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource:///modules/backup/BackupService.sys.mjs :: get docsDirFolderPath :: line 1229"  data: no]
+[pid=224852][err] JavaScript error: resource:///modules/backup/BackupService.sys.mjs, line 4091: NotAllowedError: PathUtils.join: PathUtils does not support empty paths
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript warning: http://127.0.0.1:45903/impl/assets/js/index.js, line 24: Script terminated by timeout at:
+[pid=224852][err] @http://127.0.0.1:45903/impl/assets/js/index.js:24:49
+[pid=224852][err] EventListener.handleEvent*@http://127.0.0.1:45903/impl/assets/js/index.js:24:12
+[pid=224852][err] 
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript warning: resource://gre/modules/UpdateService.sys.mjs, line 4029: unreachable code after return statement
+[pid=224852][err] JavaScript warning: http://127.0.0.1:45903/ad/assets/js/index.js, line 24: Script terminated by timeout at:
+[pid=224852][err] @http://127.0.0.1:45903/ad/assets/js/index.js:24:49
+[pid=224852][err] EventListener.handleEvent*@http://127.0.0.1:45903/ad/assets/js/index.js:24:12
+[pid=224852][err] 
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852][out] console.error: "Could not download new icon" (new ServerInfoError("Server response is invalid SyntaxError: XMLHttpRequest.open: '/' is not a valid URL.", "resource://services-settings/Attachments.sys.mjs", 40))
+[pid=224852][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=224852] <gracefully close start>
+[pid=224852] <forcefully close>
+[pid=224852] <kill>
+[pid=224852] <will force kill>
+    at settle (/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-ad-opus-art-direction/docs/showcase-v031/evidence/w4r2/tools/r3_matrix.cjs:46:127)
+    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-ad-opus-art-direction/docs/showcase-v031/evidence/w4r2/tools/r3_matrix.cjs:57:80 {
+  log: []
+}

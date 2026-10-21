@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: GATE_R_A_APPROVED / R2_AUTHORIZED_OPUS_ONLY / GATE_B_PENDING / MERGE_DEPLOY_NOT_AUTHORIZED
+  status: R2_DONE_b6040e3 / R3_EXECUTOR_PASS_WITH_LIMITS / PERFORMANCE_BLOCKED / R4_PENDING / GATE_B_PENDING / MERGE_DEPLOY_NOT_AUTHORIZED
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,7 +18,25 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-21 / GATE R-A APPROVED / R2 AUTHORIZED / OPUS SOLE EXECUTOR
+## CURRENT STATE — 2026-10-21 / R2 DONE (b6040e3) / R3 EXECUTOR PASS WITH LIMITS / PERF BLOCKED / R4 + GATE B PENDING
+
+**R2 implemented by Opus** in PR #12 (`w4/world-narrative`, Draft): R2.1 `e651c63`, R2.2 `4446747`, R2.3 `8815f17`, R3 fit fixes `b6040e3` = **runtime freeze**. `index.html` equals the approved A+AD prototype (`9cf78b0`) up to paths; deviations D-01…D-05 are CSS-only ([OPUS_DECISIONS](waves/w4ad/OPUS_DECISIONS.md)). Stage records are SELF-CHECK ([R2.1](waves/w4ad/OPUS_REVIEW_R2_1.md), [R2.2](waves/w4ad/OPUS_REVIEW_R2_2.md), [R2.3](waves/w4ad/OPUS_REVIEW_R2_3.md)).
+
+- **R3 (executor-run):** [R3_REPORT](waves/w4ad/R3_REPORT.md) — matrix 3 engines × 10 viewports 224/225 (one WebKit keyboard flake; supplement 40/40), width sweep 0/1403, native zoom 200 % 22/22, regression 230/2 (HERO debts only), stage checks on final runtime 61/61 · 46/46 · 47/47, axe 0 violations, protected byte-identical. [Canon trace](waves/w4ad/R3_CANON_TRACE.md), [PR size audit](waves/w4ad/R3_PR_SIZE_AUDIT.md).
+- **BLOCKED:** paired performance vs `b85fbb0a` — host C: dropped to 14.15 GiB / 2.97 % (CRITICAL) during the session; not explained by task files. Roots and runner prepared (`tests/browser/w4_perf.cjs`, see R3_REPORT).
+- **PENDING:** independent R4 ([brief](waves/w4ad/R4_INDEPENDENT_BRIEF.md)); evidence placement before merge; CREATOR Gate B ([package](waves/w4ad/GATE_B_PACKAGE.md)). Merge/deploy/Canon/gitlink/version NOT authorized.
+
+```text
+AXIOM SHOWCASE / GATE B RESUME PACKET
+RUNTIME: b6040e3cbd110b807c5a33d6cccf4b52f7b05ed7 (PR #12, Draft); later commits docs-only — verify `git diff b6040e3 HEAD -- index.html assets tests` empty
+BUILD: docs/showcase-v031/evidence/w4r2/tools/build_r2.py --stage 3 (asserts product == A+AD 9cf78b0 up to paths)
+EVIDENCE: evidence/w4r2/{r2.1,r2.2,r2.3,r3}; tools in evidence/w4r2/tools
+OPEN: performance (host disk), independent R4, evidence placement decision, Gate B
+NOT RUN: physical devices, screen reader, field data
+FORBIDDEN: merge, deploy, Canon, root gitlink, version bump without CREATOR
+```
+
+## PREVIOUS — 2026-10-21 / GATE R-A APPROVED / R2 AUTHORIZED / OPUS SOLE EXECUTOR
 
 **[CREATOR EXECUTOR AMENDMENT](waves/w4ad/GATE_R_A_EXECUTOR_AMENDMENT.md):** CREATOR removed Sol from LANDING PHASE I and assigned **Opus** as sole R2 implementation executor and art director. This newer explicit authority supersedes former references to Sol in the historical Gate R-A authorization and stage-review records. The approved A+AD art freeze remains `9cf78b0`. Opus owns R2.1 BLACK SUN/WHAT REMAINS → R2.2 WORK → R2.3 WORLD/CHARACTERS. His intermediate checks are **SELF-CHECK**, not independent artistic acceptance. Independent Principal review and R3/R4 are required before CREATOR Gate B. The previous R2 stage acceptance checklist still applies as an objective target, with the executor/independence override noted in [OPUS_STAGE_REVIEW_PROTOCOL](waves/w4ad/OPUS_STAGE_REVIEW_PROTOCOL.md).
 

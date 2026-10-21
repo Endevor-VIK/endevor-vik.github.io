@@ -1,0 +1,328 @@
+{
+ "kind": "W4R_R3_NATIVE_ZOOM_200",
+ "label": "Executor-run R3, not the independent R4",
+ "impl": "b6040e3cbd110b807c5a33d6cccf4b52f7b05ed7",
+ "before": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "at": "2026-10-21T16:22:42.097Z",
+ "checks": [
+  {
+   "id": "before: native 200 % page zoom",
+   "ok": true,
+   "detail": {
+    "native": {
+     "zoom": 2
+    },
+    "m": {
+     "innerWidth": 959,
+     "innerHeight": 496,
+     "dpr": 2,
+     "visualScale": 1,
+     "overflow": 0
+    }
+   }
+  },
+  {
+   "id": "before: no horizontal page overflow at 200 %",
+   "ok": true,
+   "detail": {
+    "overflow": 0
+   }
+  },
+  {
+   "id": "before #manifesto: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "before #modules: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "before #work: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "before #world: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "before #chars: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "impl: native 200 % page zoom",
+   "ok": true,
+   "detail": {
+    "native": {
+     "zoom": 2
+    },
+    "m": {
+     "innerWidth": 959,
+     "innerHeight": 496,
+     "dpr": 2,
+     "visualScale": 1,
+     "overflow": 0
+    }
+   }
+  },
+  {
+   "id": "impl: no horizontal page overflow at 200 %",
+   "ok": true,
+   "detail": {
+    "overflow": 0
+   }
+  },
+  {
+   "id": "impl #manifesto: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": [
+     {
+      "rail": "traces",
+      "scroll": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "impl #modules: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "impl #work: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": [
+     {
+      "rail": "surfaces",
+      "scroll": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "impl #world: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "impl #chars: reflow at 200 % (no overflow, prose inside)",
+   "ok": true,
+   "detail": {
+    "sectionOverflow": 0,
+    "proseOverflow": [],
+    "outside": [],
+    "rails": []
+   }
+  },
+  {
+   "id": "impl frame terminal: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 18178,
+    "dominant": 0.21219941922036006
+   }
+  },
+  {
+   "id": "impl frame traces: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 17315,
+    "dominant": 0.3562186916909008
+   }
+  },
+  {
+   "id": "impl frame aftermath: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 25821,
+    "dominant": 0.10668568979139001
+   }
+  },
+  {
+   "id": "impl frame dependence: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 18388,
+    "dominant": 0.6829555674158247
+   }
+  },
+  {
+   "id": "impl frame surfaces: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 14266,
+    "dominant": 0.4752275630788885
+   }
+  },
+  {
+   "id": "impl frame world-heading: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 62875,
+    "dominant": 0.37507511892955
+   }
+  },
+  {
+   "id": "impl frame world-intro: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 109972,
+    "dominant": 0.24333647817243523
+   }
+  },
+  {
+   "id": "impl frame chars-intro: native, non-blank",
+   "ok": true,
+   "detail": {
+    "w": 1919,
+    "h": 992,
+    "colors": 32046,
+    "dominant": 0.4024866992217049
+   }
+  }
+ ],
+ "captures": [
+  {
+   "file": "zoom200-impl-terminal.jpg",
+   "selector": "#manifesto .doctrine-quote",
+   "bytes": 122258,
+   "sha256": "37d50fcc8743ccf95550bc73c16616647a717f45e196d16425127fbc2ede52f6",
+   "w": 1919,
+   "h": 992,
+   "colors": 18178,
+   "dominant": 0.21219941922036006
+  },
+  {
+   "file": "zoom200-impl-traces.jpg",
+   "selector": "#manifesto .ad-traces",
+   "bytes": 161841,
+   "sha256": "1db1b0a79afc81a8a9cf76d6710fdabedac0944a78c3bdf8bc25ffaecca95325",
+   "w": 1919,
+   "h": 992,
+   "colors": 17315,
+   "dominant": 0.3562186916909008
+  },
+  {
+   "file": "zoom200-impl-aftermath.jpg",
+   "selector": "#modules .r1p-aftermath",
+   "bytes": 154990,
+   "sha256": "778195a2962ea923ce1897370513e57dde580afccc85952365fee8070f1b2469",
+   "w": 1919,
+   "h": 992,
+   "colors": 25821,
+   "dominant": 0.10668568979139001
+  },
+  {
+   "file": "zoom200-impl-dependence.jpg",
+   "selector": "#modules .r1p-dependence",
+   "bytes": 127340,
+   "sha256": "9613c9c1d129cff0fbbb2d33f61160232f945771e26f23a836d119c57aea6bd6",
+   "w": 1919,
+   "h": 992,
+   "colors": 18388,
+   "dominant": 0.6829555674158247
+  },
+  {
+   "file": "zoom200-impl-surfaces.jpg",
+   "selector": "#work-surfaces",
+   "bytes": 96336,
+   "sha256": "77e8f9ef3b2f4f756ae93aac976fe4eeec61a9e2e1c042893694d880994a06a4",
+   "w": 1919,
+   "h": 992,
+   "colors": 14266,
+   "dominant": 0.4752275630788885
+  },
+  {
+   "file": "zoom200-impl-world-heading.jpg",
+   "selector": "#world .ax-chapter-plate",
+   "bytes": 206255,
+   "sha256": "9fc751820908064170d03ffe741640fa2d0f932d2c0992944d1d4da801fbe9f1",
+   "w": 1919,
+   "h": 992,
+   "colors": 62875,
+   "dominant": 0.37507511892955
+  },
+  {
+   "file": "zoom200-impl-world-intro.jpg",
+   "selector": "#world .r1p-map-intro",
+   "bytes": 320288,
+   "sha256": "6f847064e4b534de288dc6ce5ea73cfa88f787d5eaed02cd3e96513760b6359d",
+   "w": 1919,
+   "h": 992,
+   "colors": 109972,
+   "dominant": 0.24333647817243523
+  },
+  {
+   "file": "zoom200-impl-chars-intro.jpg",
+   "selector": "#chars .r1p-character-intro",
+   "bytes": 125871,
+   "sha256": "09873f44c751a4b8f937e8ea7adfa10bc27081ebb9d5c57cad54758d98bd12ef",
+   "w": 1919,
+   "h": 992,
+   "colors": 32046,
+   "dominant": 0.4024866992217049
+  }
+ ],
+ "summary": "22/22"
+}
