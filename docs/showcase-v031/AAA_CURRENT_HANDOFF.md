@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: W4AD_R1_SUBMITTED / GATE_B_NOT_ACCEPTED / GATE_R_A_AWAITS_CREATOR_VISUAL_CHECK / R2_NOT_AUTHORIZED
+  status: GATE_R_A_APPROVED / R2_AUTHORIZED_SOL / OPUS_STAGE_REVIEW / GATE_B_PENDING / MERGE_DEPLOY_NOT_AUTHORIZED
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,7 +18,22 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-21 / W4.AD.R1 / PRINCIPAL CONDITIONAL APPROVAL RECOMMENDED / CREATOR VISUAL CHECK PENDING
+## CURRENT STATE — 2026-10-21 / GATE R-A APPROVED / R2 AUTHORIZED
+
+**[FINAL GATE R-A AUTHORIZATION](waves/w4ad/GATE_R_A_AUTHORIZATION.md):** CREATOR 100% approves A+AD; art freeze `9cf78b0` (`docs/0524-w4-ad-opus-art-direction`). R2 authorized for **Sol** in PR #12 in three stages (R2.1 BLACK SUN/WHAT REMAINS → R2.2 WORK → R2.3 WORLD/CHARACTERS); **Opus art review after each stage** per [OPUS_STAGE_REVIEW_PROTOCOL](waves/w4ad/OPUS_STAGE_REVIEW_PROTOCOL.md) (submission package, ±1 %/16 px geometry vs A+AD, exact copy/SVG, protected exact, deviation procedure). Then independent R3/R4 (3 engines, 200 %, touch/keyboard/no-JS/RM, all rail items, protected, performance vs `b85fbb0a`, PR size audit). Gate B PENDING; merge/deploy/Canon/gitlink/version NOT authorized. Recommended before R2.1: fast-forward `w4/world-narrative` to the Opus branch tip (built on `895b7cf`, docs-only after `9cf78b0`).
+
+```text
+AXIOM SHOWCASE / R2 RESUME PACKET
+AUTHORITY: waves/w4ad/GATE_R_A_AUTHORIZATION.md (CREATOR, 2026-10-21)
+ART FREEZE: 9cf78b0 — evidence/w4ad/preview (build_ad.py, ad.html/css/js, build_a08.py, proposed-assets) + captures
+IMPLEMENTATION: Sol, PR #12 w4/world-narrative (from 895b7cf); product runtime b85fbb0a until R2.1
+REVIEW: Opus after R2.1 / R2.2 / R2.3 -> waves/w4ad/OPUS_REVIEW_R2_x.md; next stage only after PASS
+DEVIATIONS: stop + ask Opus -> waves/w4ad/OPUS_DECISIONS.md
+FORBIDDEN: new art iteration, simplification, merge/deploy, Canon, root gitlink, version bump
+NEXT: Sol implements R2.1 and submits SHA + native IMPLEMENTED frames + heights + checks
+```
+
+## PREVIOUS — 2026-10-21 / W4.AD.R1 / PRINCIPAL CONDITIONAL APPROVAL RECOMMENDED
 
 **AD.R1:** [Principal review of A+AD](waves/w4ad/PRINCIPAL_AD_REVIEW.md) recommends all five decisions with conditions; conditions executed (BIO = hidden presence B05.S02; WORK «снимки реальных интерфейсов проекта»; WORLD six-node intro; A08 from 941×1672 original, crop verified 1440/390/360; touch/keyboard/no-JS for all rail items). Probe 39/39. Mobile 390 five areas 19 875 → 17 387 px (−2 488). Comparison page `evidence/w4ad/compare.html`, published privately (https://claude.ai/artifact/REi9LvzkgmXBga9hRtu7xw). No new PR (per Principal). Opus owns art direction; Sol deviations need Opus sign-off; Opus review after each R2 stage.
 

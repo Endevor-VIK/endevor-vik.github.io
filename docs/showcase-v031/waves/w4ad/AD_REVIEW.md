@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4AD.ART_DIRECTION_REVIEW
   title: "W4.AD — Opus art direction review of A+ and targeted solution"
-  status: AD_R1 / PRINCIPAL_CONDITIONAL_APPROVAL_RECOMMENDED / CREATOR_VISUAL_CONFIRMATION_PENDING / R2_NOT_AUTHORIZED / MERGE_DEPLOY_HOLD
+  status: GATE_R_A_APPROVED / ART_FREEZE_9cf78b0 / R2_AUTHORIZED (Sol) / OPUS_STAGE_REVIEW / GATE_B_PENDING / MERGE_DEPLOY_NOT_AUTHORIZED
   deployment: NOT_DEPLOYED
   goal: "Confirm or correct A+ as design basis; fix Principal P1/P2 items with targeted art direction, without a new redesign"
   scope: endeavor-vik.github.io / 0524.W4.R / isolated prototype on top of frozen R1.P snapshot
@@ -21,6 +21,8 @@ AXS_HEADER_META:
 **Исполнитель:** Opus (art direction). **Authority:** ревью Principal «R1.P REVIEW COMPLETE», вставленное CREATOR 2026-10-21, §3 ART DIRECTION AUTHORITY: «оценить существующую архитектуру, выявить композиционные недочёты и подготовить точечное решение». **Не** новый LANDING, **не** цикл A/B/C, **не** перегенерация изображений.
 
 **Gate R-A:** решение CREATOR. **R2:** NOT AUTHORIZED. **PR #12:** не изменён (`895b7cf`, Draft). **Merge / deploy:** HOLD. Продукт `index.html`/`assets`/`tests` = `b85fbb0a`, diff пуст.
+
+**GATE R-A APPROVED / CLOSED (2026-10-21):** CREATOR утвердил A+AD полностью — [authorization](GATE_R_A_AUTHORIZATION.md). Художественная заморозка — `9cf78b0`; R2 разрешена исполнителю Sol, Opus ревьюирует каждую стадию по [протоколу](OPUS_STAGE_REVIEW_PROTOCOL.md). Gate B ждёт; merge, deploy, Canon, root gitlink и версия не разрешены.
 
 **AD.R1 (2026-10-21):** [Principal review A+AD](PRINCIPAL_AD_REVIEW.md) — CONDITIONAL APPROVAL RECOMMENDATION по всем пяти пунктам. Условия исполнены (§7), [страница сравнения A+ → A+AD](../../evidence/w4ad/compare.html) готова для визуального решения CREATOR. Документ ниже приведён к итоговому состоянию A+AD.R1.
 
