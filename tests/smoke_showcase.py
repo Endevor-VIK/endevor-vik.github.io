@@ -70,7 +70,8 @@ if re.search(r'alt="[^"]*(остров|мост)', index): errors.append('Map al
 ids = re.findall(r'data-canon-id="([0-9.]+)"', index)
 if ids != ['02.01', '02.02', '02.03', '02.04', '02.05', '02.06']: errors.append(f'WORLD canon IDs/order wrong: {ids}')
 # W4 Gate A R1 supersedes the simulated NEXARCH signature: the archive is visibly authored reconstruction.
-for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', 'NEXARCH · АВТОРСКАЯ РЕКОНСТРУКЦИЯ', 'не является цитатой из канонического документа', 'AXIS / AETERNUM', 'КОНЦЕПТУАЛЬНАЯ СХЕМА', 'NEURO-CONTROL CONGLOMERATE', 'прежние совместные разработки'):
+# W4.R A+AD (art freeze 9cf78b0) keeps that label in the archive bar: «АРХИВНОЕ ПРОЧТЕНИЕ / NEXARCH» + «АВТОРСКАЯ РЕКОНСТРУКЦИЯ».
+for needle in ('OFFICIALLY DEAD', 'OPERATIONALLY ACTIVE', 'LINK<b>VOIDLINK', 'SYSTEM INTELLIGENCE', 'CONTACTS<b>', 'АРХИВНОЕ ПРОЧТЕНИЕ / NEXARCH', 'АВТОРСКАЯ РЕКОНСТРУКЦИЯ', 'не является цитатой из канонического документа', 'AXIS / AETERNUM', 'КОНЦЕПТУАЛЬНАЯ СХЕМА', 'NEURO-CONTROL CONGLOMERATE', 'прежние совместные разработки'):
     if needle not in index: errors.append(f'W2.R content missing: {needle}')
 for needle in ('TIER 9', 'tier 9', 'T9 ::', 'TIER<b>9', 'WITNESSES', 'NODE<b>VOIDLINK', 'ARTIFICIAL PERSONALITY', '06 CHAPTERS', 'AXIS / DEPTH', 'depth axis', 'BLACK ECHO — не источник', 'STATE<br/><b>NEUTRAL'):
     if needle in index: errors.append(f'W2.R content regressed: {needle}')

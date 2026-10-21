@@ -16,8 +16,9 @@ Original full-resolution PNG files remain preserved in CREATOR-supplied `AXIOM_S
 - A05_canon_archive — Canon explanation art (optional).
 - A07_engineering_console — engineering approach (optional).
 - B04_distant_orbit — VISION phase horizon (optional).
+- **A08_protocol_gate — IN USE (0524.W4.R, CREATOR Gate R-A, 2026-10-21):** WHAT REMAINS «Жизнь по допуску» threshold. Decorative image of controlled access (library manifest role «вертикальный разделитель / карточка доступа»), never a named location. The page loads `web/A08_protocol_gate-{480,720,941}w.{avif,webp}`, made from the 941×1672 PNG original (sha256 `736a2df314ca582f7593e204ef975aa062a9f2021c2a80f0d102cebaec1e7416`, equal to the library manifest) with the world-library recipe: AVIF 4:4:4 q80 + WebP q92, never upscaled. Provenance, PSNR and edge retention: `docs/showcase-v031/evidence/w4ad/preview/proposed-assets/derivatives.json`; rebuild: `docs/showcase-v031/evidence/w4ad/preview/build_a08.py`. The flat `A08_protocol_gate.webp` (675×1200, q74) stays as the library copy and is not used on the page.
 
-Other thirteen images are reserved for future evaluation, not automatically inserted.
+Other twelve images are reserved for future evaluation, not automatically inserted.
 
 For image text overlays, use HTML copy and high-contrast opaque or gradient backgrounds, not visually embedded invented UI labels.
 
