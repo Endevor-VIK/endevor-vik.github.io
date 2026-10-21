@@ -1,0 +1,80 @@
+{
+  "base": {
+    "aplus": "docs/showcase-v031/evidence/w4rp/preview/aplus.html",
+    "aplusSha256": "fb37809dc42bca9b8bc1e1f7d486795471a70cb36c1f5060babb612426e52a9d",
+    "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5"
+  },
+  "reportingStart": "895b7cfd8ceab87c5f5579b19458320eee214972",
+  "candidateHtmlSha256": "4e01dbf083a8899387c46ffe18acdcad710080fb490fb38c2899fe42762b8ce5",
+  "edits": [
+    "head: scoped AD stylesheet after r1p.css",
+    "body: progressive rail enhancement",
+    "doctrine: fractured ring + canonical state ledger fill the terminal lower register",
+    "doctrine: provenance of the state ledger",
+    "doctrine: five fragments rewritten as recognition traces; mobile rail",
+    "doctrine: residual note absorbed into traces head",
+    "aftermath: W04 reuse replaced by reserved library A08 threshold (CREATOR confirmation required)",
+    "aftermath: access headline speaks from the threshold",
+    "aftermath: dependence object becomes a human pulse passing through a foreign protocol",
+    "work: exhibit names visual studies, not a second system explanation",
+    "work: exhibit intro hands architecture to SYSTEM",
+    "work: compact index + rail container for four full studies",
+    "work: stable anchors for four studies",
+    "work: chronicle copy",
+    "work: content copy",
+    "work: cartography copy (axes stay in WORLD only)",
+    "work: watchdog copy",
+    "work: shorter honesty note",
+    "world: headline names AXIOM vertical/subterranean geography",
+    "world: intro maps headline to ECHELON / OMEGA-0 / NEXUS",
+    "characters: concrete count, same structure",
+    "characters: bridge from map to people"
+  ],
+  "checks": {
+    "map": {
+      "exactVsAplus": true,
+      "sha256": "ebe9d3f73603583d86db6616e9afd6580d2678b60595c8304fd05e1c87284831"
+    },
+    "axes": {
+      "exactVsAplus": true,
+      "sha256": "174e0835af9eb99a380bc795dea2ad288599f71c5594e274b22786f8b1907e4a"
+    },
+    "omega": {
+      "exactVsAplus": true,
+      "sha256": "e1caa0424658cec7cbc3fb3bcf0162e1e91c987b3f3e50c54cda366a213b1b98"
+    },
+    "cards": {
+      "exactVsAplus": true,
+      "sha256": "ebde586ce2e551c1181386b6a001f19c9a3d569bbb156535b16380e5187aee95"
+    },
+    "axiom": {
+      "exactVsAplus": true,
+      "sha256": "6680c3bfd01ec3a1f1faf3921f4c4be1d64d5d76e3bc0c2b5057c656e75f2c34"
+    },
+    "viewer": {
+      "exactVsAplus": true,
+      "sha256": "cd8521a832bc4338a684a271e3fc2ba7646c115c0593bfa958a30a3008543fbf"
+    },
+    "system": {
+      "exactVsAplus": true,
+      "sha256": "d186cd459443f6ea56fc22cc653a9ffda3cb70f6b5533795bfb26ebf0f77b68c"
+    },
+    "worldW04Picture": {
+      "exactVsAplus": true,
+      "sha256": "7b7feacce721ccd2dfcbb2c3b37f08fdef43aaaf9a242b100ac4b737a3c352c9"
+    },
+    "ax-shot": {
+      "exactVsAplus": true,
+      "count": 8
+    },
+    "ax-case": {
+      "exactVsAplus": true,
+      "count": 8
+    },
+    "surfaceSvgGeometry": {
+      "exactVsAplus": true,
+      "count": 3
+    },
+    "productDiffVsB85": "empty"
+  }
+}

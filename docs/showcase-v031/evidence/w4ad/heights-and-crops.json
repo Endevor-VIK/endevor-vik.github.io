@@ -1,0 +1,1359 @@
+{
+ "kind": "W4AD_HEIGHTS_AND_REVIEW_CROPS",
+ "at": "2026-10-21T08:54:42.943Z",
+ "states": {
+  "dpr": 1,
+  "reducedMotion": "reduce",
+  "gallery": "01",
+  "map": "02.01",
+  "loader": "returning visitor flag",
+  "reviewCrops": "fixed nav/ticker/cursor hidden via REVIEW_ONLY_CSS after measurement; no other style change"
+ },
+ "results": [
+  {
+   "arm": "aplus",
+   "width": 1440,
+   "height": 900,
+   "sections": {
+    "work": {
+     "y": 4304,
+     "w": 1425,
+     "h": 3139.88
+    },
+    "system": {
+     "y": 7513,
+     "w": 1425,
+     "h": 1542.8
+    },
+    "manifesto": {
+     "y": 10414,
+     "w": 1425,
+     "h": 2344.36
+    },
+    "modules": {
+     "y": 12758,
+     "w": 1425,
+     "h": 1611.98
+    },
+    "world": {
+     "y": 14370,
+     "w": 1425,
+     "h": 2482.2
+    },
+    "chars": {
+     "y": 16852,
+     "w": 1425,
+     "h": 2624.83
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 5591,
+     "w": 1353,
+     "h": 1437.66
+    },
+    "archive": {
+     "y": 11317,
+     "w": 1353,
+     "h": 893.47
+    },
+    "traces": {
+     "y": 12246,
+     "w": 1353,
+     "h": 319.59
+    },
+    "terminal": {
+     "y": 11405,
+     "w": 877,
+     "h": 737.88
+    },
+    "stage": {
+     "y": 11405,
+     "w": 1353,
+     "h": 737.88
+    },
+    "access": {
+     "y": 13137,
+     "w": 457.05,
+     "h": 979.81
+    },
+    "memory": {
+     "y": 13137,
+     "w": 837.95,
+     "h": 621.88
+    },
+    "dependence": {
+     "y": 13797,
+     "w": 837.95,
+     "h": 319.94
+    },
+    "worldPlate": {
+     "y": 14490,
+     "w": 1353,
+     "h": 252
+    },
+    "map": {
+     "y": 14932,
+     "w": 1353,
+     "h": 1080.94
+    },
+    "omega": {
+     "y": 16143,
+     "w": 1353,
+     "h": 588.48
+    },
+    "cards": {
+     "y": 17250,
+     "w": 1353,
+     "h": 884.08
+    },
+    "axiom": {
+     "y": 18236,
+     "w": 1353,
+     "h": 1120.19
+    },
+    "shot": {
+     "y": 4898,
+     "w": 831.38,
+     "h": 573.25
+    }
+   },
+   "rails": [],
+   "pageHeight": 25322,
+   "scrollWidth": 1425,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "arm": "ad",
+   "width": 1440,
+   "height": 900,
+   "sections": {
+    "work": {
+     "y": 4304,
+     "w": 1425,
+     "h": 3143.5
+    },
+    "system": {
+     "y": 7517,
+     "w": 1425,
+     "h": 1542.8
+    },
+    "manifesto": {
+     "y": 10417,
+     "w": 1425,
+     "h": 2398.77
+    },
+    "modules": {
+     "y": 12816,
+     "w": 1425,
+     "h": 1937.16
+    },
+    "world": {
+     "y": 14753,
+     "w": 1425,
+     "h": 2512.8
+    },
+    "chars": {
+     "y": 17266,
+     "w": 1425,
+     "h": 2624.83
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 5591,
+     "w": 1353,
+     "h": 1441.28
+    },
+    "archive": {
+     "y": 11321,
+     "w": 1353,
+     "h": 822.22
+    },
+    "traces": {
+     "y": 12352,
+     "w": 1353,
+     "h": 342.69
+    },
+    "terminal": {
+     "y": 11409,
+     "w": 833,
+     "h": 642.83
+    },
+    "stage": {
+     "y": 11409,
+     "w": 1353,
+     "h": 642.83
+    },
+    "access": {
+     "y": 13195,
+     "w": 482.44,
+     "h": 803.06
+    },
+    "memory": {
+     "y": 13195,
+     "w": 812.56,
+     "h": 803.06
+    },
+    "dependence": {
+     "y": 14036,
+     "w": 1353,
+     "h": 463.92
+    },
+    "worldPlate": {
+     "y": 14873,
+     "w": 1353,
+     "h": 252
+    },
+    "map": {
+     "y": 15346,
+     "w": 1353,
+     "h": 1080.94
+    },
+    "omega": {
+     "y": 16557,
+     "w": 1353,
+     "h": 588.48
+    },
+    "cards": {
+     "y": 17664,
+     "w": 1353,
+     "h": 884.08
+    },
+    "axiom": {
+     "y": 18650,
+     "w": 1353,
+     "h": 1120.19
+    },
+    "shot": {
+     "y": 4898,
+     "w": 831.38,
+     "h": 573.25
+    }
+   },
+   "rails": [
+    {
+     "rail": "surfaces",
+     "scrollable": false,
+     "items": 4,
+     "clientWidth": 1353
+    },
+    {
+     "rail": "traces",
+     "scrollable": false,
+     "items": 5,
+     "clientWidth": 1353
+    }
+   ],
+   "pageHeight": 25735,
+   "scrollWidth": 1425,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "arm": "aplus",
+   "width": 1920,
+   "height": 1080,
+   "sections": {
+    "work": {
+     "y": 4486,
+     "w": 1905,
+     "h": 3154.89
+    },
+    "system": {
+     "y": 7711,
+     "w": 1905,
+     "h": 1546.86
+    },
+    "manifesto": {
+     "y": 10815,
+     "w": 1905,
+     "h": 2397.3
+    },
+    "modules": {
+     "y": 13213,
+     "w": 1905,
+     "h": 1621.45
+    },
+    "world": {
+     "y": 14834,
+     "w": 1905,
+     "h": 2582.41
+    },
+    "chars": {
+     "y": 17417,
+     "w": 1905,
+     "h": 2631.5
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 5778,
+     "w": 1368,
+     "h": 1437.66
+    },
+    "archive": {
+     "y": 11772,
+     "w": 1368,
+     "h": 893.47
+    },
+    "traces": {
+     "y": 12701,
+     "w": 1368,
+     "h": 319.59
+    },
+    "terminal": {
+     "y": 11860,
+     "w": 892,
+     "h": 737.88
+    },
+    "stage": {
+     "y": 11860,
+     "w": 1368,
+     "h": 737.88
+    },
+    "access": {
+     "y": 13594,
+     "w": 462.34,
+     "h": 987.17
+    },
+    "memory": {
+     "y": 13594,
+     "w": 847.66,
+     "h": 626.53
+    },
+    "dependence": {
+     "y": 14259,
+     "w": 847.66,
+     "h": 322.64
+    },
+    "worldPlate": {
+     "y": 14954,
+     "w": 1368,
+     "h": 302.39
+    },
+    "map": {
+     "y": 15446,
+     "w": 1368,
+     "h": 1089.38
+    },
+    "omega": {
+     "y": 16682,
+     "w": 1368,
+     "h": 613.67
+    },
+    "cards": {
+     "y": 17814,
+     "w": 1368,
+     "h": 890.75
+    },
+    "axiom": {
+     "y": 18807,
+     "w": 1368,
+     "h": 1120.19
+    },
+    "shot": {
+     "y": 5084,
+     "w": 840.61,
+     "h": 574.58
+    }
+   },
+   "rails": [],
+   "pageHeight": 26148,
+   "scrollWidth": 1905,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "arm": "ad",
+   "width": 1920,
+   "height": 1080,
+   "sections": {
+    "work": {
+     "y": 4486,
+     "w": 1905,
+     "h": 3158.52
+    },
+    "system": {
+     "y": 7714,
+     "w": 1905,
+     "h": 1546.86
+    },
+    "manifesto": {
+     "y": 10819,
+     "w": 1905,
+     "h": 2568.16
+    },
+    "modules": {
+     "y": 13387,
+     "w": 1905,
+     "h": 1943.92
+    },
+    "world": {
+     "y": 15331,
+     "w": 1905,
+     "h": 2613
+    },
+    "chars": {
+     "y": 17944,
+     "w": 1905,
+     "h": 2631.5
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 5778,
+     "w": 1368,
+     "h": 1441.28
+    },
+    "archive": {
+     "y": 11776,
+     "w": 1368,
+     "h": 927.61
+    },
+    "traces": {
+     "y": 12924,
+     "w": 1368,
+     "h": 342.69
+    },
+    "terminal": {
+     "y": 11864,
+     "w": 848,
+     "h": 748.22
+    },
+    "stage": {
+     "y": 11864,
+     "w": 1368,
+     "h": 748.22
+    },
+    "access": {
+     "y": 13769,
+     "w": 488.03,
+     "h": 807.72
+    },
+    "memory": {
+     "y": 13769,
+     "w": 821.97,
+     "h": 807.72
+    },
+    "dependence": {
+     "y": 14614,
+     "w": 1368,
+     "h": 463.92
+    },
+    "worldPlate": {
+     "y": 15451,
+     "w": 1368,
+     "h": 302.39
+    },
+    "map": {
+     "y": 15974,
+     "w": 1368,
+     "h": 1089.38
+    },
+    "omega": {
+     "y": 17209,
+     "w": 1368,
+     "h": 613.67
+    },
+    "cards": {
+     "y": 18342,
+     "w": 1368,
+     "h": 890.75
+    },
+    "axiom": {
+     "y": 19334,
+     "w": 1368,
+     "h": 1120.19
+    },
+    "shot": {
+     "y": 5084,
+     "w": 840.61,
+     "h": 574.58
+    }
+   },
+   "rails": [
+    {
+     "rail": "surfaces",
+     "scrollable": false,
+     "items": 4,
+     "clientWidth": 1368
+    },
+    {
+     "rail": "traces",
+     "scrollable": false,
+     "items": 5,
+     "clientWidth": 1368
+    }
+   ],
+   "pageHeight": 26675,
+   "scrollWidth": 1905,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "arm": "aplus",
+   "width": 390,
+   "height": 844,
+   "sections": {
+    "work": {
+     "y": 5836,
+     "w": 375,
+     "h": 5667.81
+    },
+    "system": {
+     "y": 11567,
+     "w": 375,
+     "h": 2652.97
+    },
+    "manifesto": {
+     "y": 15489,
+     "w": 375,
+     "h": 4354.39
+    },
+    "modules": {
+     "y": 19843,
+     "w": 375,
+     "h": 2239.17
+    },
+    "world": {
+     "y": 22083,
+     "w": 375,
+     "h": 2397.03
+    },
+    "chars": {
+     "y": 24480,
+     "w": 375,
+     "h": 5216.3
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 7625,
+     "w": 347,
+     "h": 3254.31
+    },
+    "archive": {
+     "y": 16564,
+     "w": 347,
+     "h": 1617.53
+    },
+    "traces": {
+     "y": 18217,
+     "w": 347,
+     "h": 1474.38
+    },
+    "terminal": {
+     "y": 16669,
+     "w": 347,
+     "h": 527.52
+    },
+    "stage": {
+     "y": 16669,
+     "w": 347,
+     "h": 1397.16
+    },
+    "access": {
+     "y": 20185,
+     "w": 347,
+     "h": 346.81
+    },
+    "memory": {
+     "y": 20567,
+     "w": 347,
+     "h": 589.78
+    },
+    "dependence": {
+     "y": 21193,
+     "w": 347,
+     "h": 644.39
+    },
+    "worldPlate": {
+     "y": 22139,
+     "w": 347,
+     "h": 163.8
+    },
+    "map": {
+     "y": 22663,
+     "w": 347,
+     "h": 823.58
+    },
+    "omega": {
+     "y": 23657,
+     "w": 347,
+     "h": 765.28
+    },
+    "cards": {
+     "y": 24934,
+     "w": 347,
+     "h": 2123.5
+    },
+    "axiom": {
+     "y": 27136,
+     "w": 347,
+     "h": 2503.22
+    },
+    "shot": {
+     "y": 6633,
+     "w": 345,
+     "h": 203.81
+    }
+   },
+   "rails": [],
+   "pageHeight": 37356,
+   "scrollWidth": 375,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "arm": "ad",
+   "width": 390,
+   "height": 844,
+   "sections": {
+    "work": {
+     "y": 5836,
+     "w": 375,
+     "h": 3884.23
+    },
+    "system": {
+     "y": 9783,
+     "w": 375,
+     "h": 2652.97
+    },
+    "manifesto": {
+     "y": 13705,
+     "w": 375,
+     "h": 3576.02
+    },
+    "modules": {
+     "y": 17281,
+     "w": 375,
+     "h": 2169.98
+    },
+    "world": {
+     "y": 19451,
+     "w": 375,
+     "h": 2425.83
+    },
+    "chars": {
+     "y": 21877,
+     "w": 375,
+     "h": 5216.3
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 7625,
+     "w": 347,
+     "h": 1470.73
+    },
+    "archive": {
+     "y": 14780,
+     "w": 347,
+     "h": 1694.7
+    },
+    "traces": {
+     "y": 16811,
+     "w": 375,
+     "h": 362.94
+    },
+    "terminal": {
+     "y": 14886,
+     "w": 347,
+     "h": 625.69
+    },
+    "stage": {
+     "y": 14886,
+     "w": 347,
+     "h": 1426.73
+    },
+    "access": {
+     "y": 17623,
+     "w": 347,
+     "h": 380.44
+    },
+    "memory": {
+     "y": 18039,
+     "w": 347,
+     "h": 549.78
+    },
+    "dependence": {
+     "y": 18625,
+     "w": 347,
+     "h": 581.58
+    },
+    "worldPlate": {
+     "y": 19507,
+     "w": 347,
+     "h": 163.8
+    },
+    "map": {
+     "y": 20060,
+     "w": 347,
+     "h": 823.58
+    },
+    "omega": {
+     "y": 21055,
+     "w": 347,
+     "h": 765.28
+    },
+    "cards": {
+     "y": 22332,
+     "w": 347,
+     "h": 2123.5
+    },
+    "axiom": {
+     "y": 24533,
+     "w": 347,
+     "h": 2503.22
+    },
+    "shot": {
+     "y": 6633,
+     "w": 345,
+     "h": 203.81
+    }
+   },
+   "rails": [
+    {
+     "rail": "surfaces",
+     "scrollable": true,
+     "items": 4,
+     "clientWidth": 375
+    },
+    {
+     "rail": "traces",
+     "scrollable": true,
+     "items": 5,
+     "clientWidth": 375
+    }
+   ],
+   "pageHeight": 34754,
+   "scrollWidth": 375,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "arm": "aplus",
+   "width": 360,
+   "height": 800,
+   "sections": {
+    "work": {
+     "y": 6058,
+     "w": 345,
+     "h": 5923.8
+    },
+    "system": {
+     "y": 12044,
+     "w": 345,
+     "h": 2668.39
+    },
+    "manifesto": {
+     "y": 16008,
+     "w": 345,
+     "h": 4536.3
+    },
+    "modules": {
+     "y": 20544,
+     "w": 345,
+     "h": 2333.91
+    },
+    "world": {
+     "y": 22878,
+     "w": 345,
+     "h": 2390.36
+    },
+    "chars": {
+     "y": 25268,
+     "w": 345,
+     "h": 5269.8
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 7897,
+     "w": 317,
+     "h": 3424.67
+    },
+    "archive": {
+     "y": 17093,
+     "w": 317,
+     "h": 1667.69
+    },
+    "traces": {
+     "y": 18796,
+     "w": 317,
+     "h": 1595.94
+    },
+    "terminal": {
+     "y": 17198,
+     "w": 317,
+     "h": 523.3
+    },
+    "stage": {
+     "y": 17198,
+     "w": 317,
+     "h": 1447.31
+    },
+    "access": {
+     "y": 20885,
+     "w": 317,
+     "h": 404.41
+    },
+    "memory": {
+     "y": 21326,
+     "w": 317,
+     "h": 618.58
+    },
+    "dependence": {
+     "y": 21980,
+     "w": 317,
+     "h": 652.73
+    },
+    "worldPlate": {
+     "y": 22934,
+     "w": 317,
+     "h": 151.19
+    },
+    "map": {
+     "y": 23474,
+     "w": 317,
+     "h": 830.09
+    },
+    "omega": {
+     "y": 24475,
+     "w": 317,
+     "h": 735.91
+    },
+    "cards": {
+     "y": 25723,
+     "w": 317,
+     "h": 2068.5
+    },
+    "axiom": {
+     "y": 27869,
+     "w": 317,
+     "h": 2611.72
+    },
+    "shot": {
+     "y": 6852,
+     "w": 315,
+     "h": 186.94
+    }
+   },
+   "rails": [],
+   "pageHeight": 38325,
+   "scrollWidth": 345,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "arm": "ad",
+   "width": 360,
+   "height": 800,
+   "sections": {
+    "work": {
+     "y": 6058,
+     "w": 345,
+     "h": 4041.84
+    },
+    "system": {
+     "y": 10162,
+     "w": 345,
+     "h": 2668.39
+    },
+    "manifesto": {
+     "y": 14126,
+     "w": 345,
+     "h": 3695.98
+    },
+    "modules": {
+     "y": 17822,
+     "w": 345,
+     "h": 2268.17
+    },
+    "world": {
+     "y": 20090,
+     "w": 345,
+     "h": 2447.95
+    },
+    "chars": {
+     "y": 22538,
+     "w": 345,
+     "h": 5261.8
+    }
+   },
+   "parts": {
+    "surfaces": {
+     "y": 7897,
+     "w": 317,
+     "h": 1542.72
+    },
+    "archive": {
+     "y": 15211,
+     "w": 317,
+     "h": 1804.48
+    },
+    "traces": {
+     "y": 17352,
+     "w": 345,
+     "h": 362.94
+    },
+    "terminal": {
+     "y": 15316,
+     "w": 317,
+     "h": 657.3
+    },
+    "stage": {
+     "y": 15316,
+     "w": 317,
+     "h": 1512.72
+    },
+    "access": {
+     "y": 18163,
+     "w": 317,
+     "h": 438.03
+    },
+    "memory": {
+     "y": 18637,
+     "w": 317,
+     "h": 578.58
+    },
+    "dependence": {
+     "y": 19252,
+     "w": 317,
+     "h": 593.38
+    },
+    "worldPlate": {
+     "y": 20146,
+     "w": 317,
+     "h": 151.19
+    },
+    "map": {
+     "y": 20744,
+     "w": 317,
+     "h": 830.09
+    },
+    "omega": {
+     "y": 21745,
+     "w": 317,
+     "h": 735.91
+    },
+    "cards": {
+     "y": 22984,
+     "w": 317,
+     "h": 2068.5
+    },
+    "axiom": {
+     "y": 25131,
+     "w": 317,
+     "h": 2611.72
+    },
+    "shot": {
+     "y": 6852,
+     "w": 315,
+     "h": 186.94
+    }
+   },
+   "rails": [
+    {
+     "rail": "surfaces",
+     "scrollable": true,
+     "items": 4,
+     "clientWidth": 345
+    },
+    {
+     "rail": "traces",
+     "scrollable": true,
+     "items": 5,
+     "clientWidth": 345
+    }
+   ],
+   "pageHeight": 35586,
+   "scrollWidth": 345,
+   "brokenImages": [],
+   "hiddenTextInRails": 0,
+   "fonts": [
+    true,
+    true,
+    true
+   ]
+  }
+ ],
+ "captures": [
+  {
+   "file": "captures/ad-1440-aftermath.webp",
+   "size": [
+    1440,
+    1985
+   ],
+   "bytes": 157740,
+   "sha256": "9dea0be8dd6af041fc65ea944f23bf04f8a37ca6589ca8682cbfca286ad7b801",
+   "arm": "ad",
+   "width": 1440,
+   "selector": "#modules",
+   "top": 12816,
+   "height": 1937
+  },
+  {
+   "file": "captures/ad-1440-chars-head.webp",
+   "size": [
+    1440,
+    265
+   ],
+   "bytes": 22588,
+   "sha256": "848b7e833c447295e933c8bcd519e1b870fd2558c88dcbcc3ea0466a2c927c99",
+   "arm": "ad",
+   "width": 1440,
+   "selector": "#chars .sec-head",
+   "top": 17386,
+   "height": 218
+  },
+  {
+   "file": "captures/ad-1440-doctrine.webp",
+   "size": [
+    1440,
+    870
+   ],
+   "bytes": 68866,
+   "sha256": "0d2e4a524bc2889445f692f61b876e1bd4ae8f08386ae422a8f1ce74fc538a3d",
+   "arm": "ad",
+   "width": 1440,
+   "selector": "#manifesto .r1p-archive",
+   "top": 11321,
+   "height": 822
+  },
+  {
+   "file": "captures/ad-1440-surfaces.webp",
+   "size": [
+    1440,
+    1489
+   ],
+   "bytes": 115802,
+   "sha256": "c18850e7ae31725a0b24947333dc8e216c27d68de0ec185d6f8915ab4fb4fb79",
+   "arm": "ad",
+   "width": 1440,
+   "selector": "#work-surfaces",
+   "top": 5591,
+   "height": 1441
+  },
+  {
+   "file": "captures/ad-1440-traces.webp",
+   "size": [
+    1440,
+    564
+   ],
+   "bytes": 58060,
+   "sha256": "ea2c1b861b7bf39a58f469c8dad5820bdc90c55cd3af0e2f1b13f709eedd374b",
+   "arm": "ad",
+   "width": 1440,
+   "selector": "#manifesto .ad-traces, #manifesto .fragments",
+   "top": 12178,
+   "height": 517
+  },
+  {
+   "file": "captures/ad-1440-world-head.webp",
+   "size": [
+    1440,
+    300
+   ],
+   "bytes": 35890,
+   "sha256": "7b843abf5cfbe1c1e2e07379d2becd2190f1088efcb917f3b96f63a4d76ed5eb",
+   "arm": "ad",
+   "width": 1440,
+   "selector": "#world .ax-chapter-plate",
+   "top": 14873,
+   "height": 252
+  },
+  {
+   "file": "captures/ad-390-aftermath.webp",
+   "size": [
+    390,
+    2217
+   ],
+   "bytes": 91516,
+   "sha256": "a4ce2777e84a037c4bb2cb1b1b801b4578a3c32b7c90d1d7e0bfd8d3ef769d08",
+   "arm": "ad",
+   "width": 390,
+   "selector": "#modules",
+   "top": 17281,
+   "height": 2170
+  },
+  {
+   "file": "captures/ad-390-chars-head.webp",
+   "size": [
+    390,
+    422
+   ],
+   "bytes": 19160,
+   "sha256": "7103014a8e02ce68ee6c98695d191155206f07ef5f2c0d6660fde5f86c218470",
+   "arm": "ad",
+   "width": 390,
+   "selector": "#chars .sec-head",
+   "top": 21933,
+   "height": 375
+  },
+  {
+   "file": "captures/ad-390-doctrine.webp",
+   "size": [
+    390,
+    1742
+   ],
+   "bytes": 60246,
+   "sha256": "0d987c0f345c0e456597c914e52cb8880a249dd5d70a59d648b2b04ed13708a0",
+   "arm": "ad",
+   "width": 390,
+   "selector": "#manifesto .r1p-archive",
+   "top": 14780,
+   "height": 1695
+  },
+  {
+   "file": "captures/ad-390-surfaces.webp",
+   "size": [
+    390,
+    1518
+   ],
+   "bytes": 51042,
+   "sha256": "8358ab9206c586f8f8efc62cea0e4cc60627e6bc07bf8d9a32e182baa1b3e083",
+   "arm": "ad",
+   "width": 390,
+   "selector": "#work-surfaces",
+   "top": 7625,
+   "height": 1471
+  },
+  {
+   "file": "captures/ad-390-traces.webp",
+   "size": [
+    390,
+    762
+   ],
+   "bytes": 26794,
+   "sha256": "f90e680e531dae914ba219ef49d8b0e8db717332ddbf9a44583bb49cb349f9b9",
+   "arm": "ad",
+   "width": 390,
+   "selector": "#manifesto .ad-traces, #manifesto .fragments",
+   "top": 16510,
+   "height": 714
+  },
+  {
+   "file": "captures/ad-390-world-head.webp",
+   "size": [
+    390,
+    211
+   ],
+   "bytes": 8880,
+   "sha256": "2825eb0c1d9c97949e988014132cd041069bf8ef2e8251e4186eb8f6f2fef780",
+   "arm": "ad",
+   "width": 390,
+   "selector": "#world .ax-chapter-plate",
+   "top": 19507,
+   "height": 164
+  },
+  {
+   "file": "captures/aplus-1440-aftermath.webp",
+   "size": [
+    1440,
+    1659
+   ],
+   "bytes": 133866,
+   "sha256": "3eefa7db1f57bb04d30ecc900a5a682862dbb7c44d7d36953ff70f78ca72aab4",
+   "arm": "aplus",
+   "width": 1440,
+   "selector": "#modules",
+   "top": 12758,
+   "height": 1612
+  },
+  {
+   "file": "captures/aplus-1440-chars-head.webp",
+   "size": [
+    1440,
+    265
+   ],
+   "bytes": 21446,
+   "sha256": "8e7bfc700a8dde2928236bb2c7c4fff99ae64f6a051ef6d98c698ea244c720ad",
+   "arm": "aplus",
+   "width": 1440,
+   "selector": "#chars .sec-head",
+   "top": 16972,
+   "height": 218
+  },
+  {
+   "file": "captures/aplus-1440-doctrine.webp",
+   "size": [
+    1440,
+    941
+   ],
+   "bytes": 57944,
+   "sha256": "1092af1b36249760e618a688de89a81569be7083e097c4f8fcbcb3f0ff5aedfc",
+   "arm": "aplus",
+   "width": 1440,
+   "selector": "#manifesto .r1p-archive",
+   "top": 11317,
+   "height": 893
+  },
+  {
+   "file": "captures/aplus-1440-surfaces.webp",
+   "size": [
+    1440,
+    1485
+   ],
+   "bytes": 121098,
+   "sha256": "becbef6b2611cd17a38184fba9929d719b01664cc8ad5e1bae959bcde2257ca0",
+   "arm": "aplus",
+   "width": 1440,
+   "selector": "#work-surfaces",
+   "top": 5591,
+   "height": 1438
+  },
+  {
+   "file": "captures/aplus-1440-traces.webp",
+   "size": [
+    1440,
+    367
+   ],
+   "bytes": 42336,
+   "sha256": "b06a7dcbebdae77e525377d79dd1bd1553c836bd9a1eec42a8fb3363054cad5c",
+   "arm": "aplus",
+   "width": 1440,
+   "selector": "#manifesto .ad-traces, #manifesto .fragments",
+   "top": 12246,
+   "height": 320
+  },
+  {
+   "file": "captures/aplus-1440-world-head.webp",
+   "size": [
+    1440,
+    300
+   ],
+   "bytes": 32852,
+   "sha256": "9a1b38d370d9e4610c5b710cb6a0600d5e7bd949063af8aaaf243acc03580039",
+   "arm": "aplus",
+   "width": 1440,
+   "selector": "#world .ax-chapter-plate",
+   "top": 14490,
+   "height": 252
+  },
+  {
+   "file": "captures/aplus-390-aftermath.webp",
+   "size": [
+    390,
+    2287
+   ],
+   "bytes": 93822,
+   "sha256": "88f6e702ea134e4ceb3d2dab20e39e6d499056e6d26ab79d0e1f6b9f438a7a17",
+   "arm": "aplus",
+   "width": 390,
+   "selector": "#modules",
+   "top": 19843,
+   "height": 2239
+  },
+  {
+   "file": "captures/aplus-390-chars-head.webp",
+   "size": [
+    390,
+    422
+   ],
+   "bytes": 18418,
+   "sha256": "eb9ed1c4611af1780ad903bbd67efe6fd747842738f0aad6709f54853586cafd",
+   "arm": "aplus",
+   "width": 390,
+   "selector": "#chars .sec-head",
+   "top": 24536,
+   "height": 375
+  },
+  {
+   "file": "captures/aplus-390-doctrine.webp",
+   "size": [
+    390,
+    1665
+   ],
+   "bytes": 53008,
+   "sha256": "79c9f198c8d269296ace5d139bf57ba2c8f455b2664b360fded5d44270536d76",
+   "arm": "aplus",
+   "width": 390,
+   "selector": "#manifesto .r1p-archive",
+   "top": 16564,
+   "height": 1618
+  },
+  {
+   "file": "captures/aplus-390-surfaces.webp",
+   "size": [
+    390,
+    3302
+   ],
+   "bytes": 117220,
+   "sha256": "00a315f0d51d9ba7a23c00872d5427e30192e80d39e64b93379c992babe08ba3",
+   "arm": "aplus",
+   "width": 390,
+   "selector": "#work-surfaces",
+   "top": 7625,
+   "height": 3254
+  },
+  {
+   "file": "captures/aplus-390-traces.webp",
+   "size": [
+    390,
+    1522
+   ],
+   "bytes": 46340,
+   "sha256": "fa44be115f5299fbc0aec0d5492406e897612e4d7322632e42929aa0983fe032",
+   "arm": "aplus",
+   "width": 390,
+   "selector": "#manifesto .ad-traces, #manifesto .fragments",
+   "top": 18217,
+   "height": 1474
+  },
+  {
+   "file": "captures/aplus-390-world-head.webp",
+   "size": [
+    390,
+    211
+   ],
+   "bytes": 6684,
+   "sha256": "325bde5f29ac364f41fc8067bdab36c7adf59260bd82ae5b2526de815ef1530c",
+   "arm": "aplus",
+   "width": 390,
+   "selector": "#world .ax-chapter-plate",
+   "top": 22139,
+   "height": 164
+  }
+ ],
+ "pageErrors": [],
+ "httpErrors": [],
+ "browser": "149.0.7827.55"
+}

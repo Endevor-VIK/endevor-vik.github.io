@@ -1,0 +1,125 @@
+/* W4.AD art-direction prototype only. Loaded after r1p.css by ad.html; never by product index.html. */
+
+/* DOCTRINE — rebalance the three zones; the terminal's lower register carries content, not min-height. */
+#manifesto.r1p-history .doctrine-stage{grid-template-columns:236px minmax(0,1fr) 248px}
+#manifesto.r1p-history .doctrine-quote{min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,40%);grid-template-rows:auto 1fr auto}
+#manifesto.r1p-history .doctrine-quote .term-head{grid-column:1/-1}
+#manifesto.r1p-history .doctrine-quote .ql{grid-column:1;grid-row:2;padding-right:6px}
+#manifesto.r1p-history .doctrine-side h3{font-size:30px}
+#manifesto.r1p-history .r1p-question-seal svg{max-width:104px}
+#manifesto.r1p-history .r1p-side-lines{min-height:72px}
+.ad-fracture{grid-column:2;grid-row:2;align-self:center;padding:30px 34px 18px 4px;color:var(--ax-crimson);position:relative;z-index:1}
+.ad-fracture svg{display:block;width:100%;height:auto;overflow:visible}
+.ad-arc{fill:rgba(255,32,52,.1);stroke:currentColor;stroke-opacity:.72;stroke-width:1.2}
+.ad-arc.held{fill:rgba(255,32,52,.42);stroke-opacity:1;filter:drop-shadow(0 0 6px rgba(255,32,52,.55))}
+.ad-arc-label{font:500 12px var(--ax-font-mono);letter-spacing:.14em;fill:var(--ax-ink-2)}
+.ad-arc-label.held{fill:var(--ax-crimson)}
+.ad-clamp{stroke:var(--ax-ink);stroke-width:2.4}
+.ad-ticks path{stroke:currentColor;stroke-opacity:.3}
+.ad-ghost{fill:none;stroke:currentColor;stroke-opacity:.2;stroke-dasharray:2 7}
+.ad-inner{fill:none;stroke:currentColor;stroke-opacity:.32;stroke-dasharray:3 4}
+.ad-void circle{fill:#070709;stroke:var(--ax-ink);stroke-width:1.2}
+.ad-void path{stroke:var(--ax-crimson);stroke-width:1.8}
+.ad-void-label{font:500 10px var(--ax-font-mono);letter-spacing:.32em;fill:var(--ax-text-dim)}
+.ad-fracture-cap{display:block;text-align:center;font:500 11px/1.6 var(--ax-font-mono);letter-spacing:.14em;color:var(--ax-text-dim);margin-top:14px}
+.ad-state{grid-column:1/-1;grid-row:3;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:center;border-top:1px solid var(--ax-crimson-line);padding:18px 38px;position:relative;z-index:1;background:rgba(7,7,9,.6)}
+.ad-state-k{font:500 11px/1.6 var(--ax-font-mono);letter-spacing:.14em;color:var(--ax-text-dim)}
+.ad-state ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ad-state li{font:500 13px/1.35 var(--ax-font-mono);letter-spacing:.08em;color:var(--ax-ink);border-left:2px solid var(--ax-crimson);padding:2px 0 2px 12px}
+.ad-state li i{display:block;font-style:normal;font-size:10px;letter-spacing:.14em;color:var(--ax-crimson);margin-bottom:3px}
+
+/* Five traces: who meets which remnant and what they mistake it for. */
+.ad-traces-head{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:end;margin:0 0 24px;padding-top:34px;border-top:1px solid var(--ax-hairline)}
+.ad-traces-head h3{font:500 clamp(30px,2.7vw,44px)/1.08 var(--ax-font-display);text-transform:uppercase;margin:12px 0 0;color:var(--ax-ink)}
+.ad-traces-head h3 em{font-style:normal;color:var(--ax-crimson)}
+.ad-traces-head p{font:400 16px/1.75 var(--ax-font-body);color:var(--ax-text);margin:0;max-width:62ch}
+#manifesto.r1p-history .ad-traces .frag h3{font-size:23px}
+#manifesto.r1p-history .ad-traces .frag-foot b{font-size:12px}
+
+/* AFTERMATH — threshold (A08) instead of a second W04; dependence becomes the closing full-width scene. */
+.r1p-aftermath{grid-template-columns:.95fr 1.6fr}
+.r1p-access{grid-row:auto}
+.r1p-gate-art.ad-gate{height:520px;margin-bottom:28px}
+.ad-gate img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.r1p-gate-art.ad-gate:after{background:linear-gradient(0deg,#070709 0,rgba(7,7,9,0) 42%),linear-gradient(90deg,rgba(7,7,9,.45),transparent 28%,transparent 72%,rgba(7,7,9,.45))}
+.r1p-gate-art.ad-gate>.ad-gate-scan{left:0;right:0;bottom:auto;top:30%;height:1px;background:var(--ax-crimson);box-shadow:0 0 16px 1px rgba(255,32,52,.75);opacity:.9;z-index:1}
+.r1p-gate-art.ad-gate>.ad-gate-frame{inset:16px;z-index:1}
+.ad-gate-frame i{position:absolute;width:20px;height:20px;border:0 solid var(--ax-crimson)}
+.ad-gate-frame i:nth-child(1){left:0;top:0;border-width:1px 0 0 1px}.ad-gate-frame i:nth-child(2){right:0;top:0;border-width:1px 1px 0 0}
+.ad-gate-frame i:nth-child(3){left:0;bottom:0;border-width:0 0 1px 1px}.ad-gate-frame i:nth-child(4){right:0;bottom:0;border-width:0 1px 1px 0}
+.r1p-gate-art.ad-gate>.ad-gate-cap{left:30px;bottom:30px}
+.r1p-memory picture,.r1p-memory img{height:520px}
+.r1p-dependence{grid-column:1/-1;grid-template-columns:1.25fr 1fr;gap:64px;padding-top:44px}
+.r1p-dependence h3{font-size:clamp(30px,2.6vw,40px)}
+.ad-life{color:var(--ax-crimson);padding:0}
+.ad-life svg{max-width:680px}
+.ad-grid path{stroke:currentColor;stroke-opacity:.09}
+.ad-eye{fill:none;stroke:var(--ax-ink);stroke-width:1.5;stroke-linecap:round;opacity:.75}
+.ad-pulse{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round}
+.ad-pulse-trace{fill:none;stroke:#ffd5da;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:16 420;animation:ad-pulse 3.4s linear infinite}
+@keyframes ad-pulse{from{stroke-dashoffset:16}to{stroke-dashoffset:-420}}
+.ad-node circle{fill:none;stroke:currentColor;stroke-width:1.4}.ad-node .fill{fill:#ffd5da;stroke:none}
+.ad-gate-ring circle,.ad-gate-ring path{fill:none;stroke:var(--ax-ink);stroke-opacity:.85}
+.ad-step{fill:none;stroke:var(--ax-ink-2);stroke-width:1.5;stroke-linejoin:miter}
+.ad-permit path{fill:none;stroke:var(--ax-ink);stroke-width:1.5}.ad-permit circle{fill:var(--ax-crimson)}
+.ad-flow{stroke:currentColor;stroke-width:1.5}
+.ad-life-k{font:500 12px var(--ax-font-mono);letter-spacing:.14em;fill:var(--ax-text-dim)}
+.ad-life-q{font:500 26px var(--ax-font-display);letter-spacing:.05em;fill:var(--ax-ink)}
+.ad-life>span{color:var(--ax-crimson)}
+
+/* WORK — index for four full studies; same 2×2 exhibition on desktop. */
+.ad-surface-index{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.ad-surface-index a{display:inline-flex;gap:10px;align-items:center;padding:11px 15px;border:1px solid var(--ax-hairline);background:var(--ax-graphite-1);font:500 12px/1 var(--ax-font-mono);letter-spacing:.1em;color:var(--ax-ink-2);text-decoration:none;transition:border-color .2s,color .2s}
+.ad-surface-index a b{font-weight:500;color:var(--ax-crimson)}
+.ad-surface-index a:hover,.ad-surface-index a[aria-current="true"]{border-color:var(--ax-crimson);color:var(--ax-ink)}
+.ad-surface-index a:focus-visible,.ad-rail:focus-visible,.ad-rail-bar button:focus-visible{outline:2px solid var(--ax-crimson);outline-offset:2px}
+.r1p-surfaces .module{scroll-margin-top:120px}
+.ad-rail-bar{display:none}
+
+@media(max-width:1100px){#manifesto.r1p-history .doctrine-stage{grid-template-columns:190px minmax(0,1fr) 196px}#manifesto.r1p-history .doctrine-quote{grid-template-columns:minmax(0,1fr) minmax(170px,36%)}.ad-fracture{padding:22px 18px 12px 0}.ad-state{padding:16px 25px}.r1p-dependence{display:grid;grid-template-columns:1fr 1fr;gap:36px}}
+
+/* MOBILE — native direction: full components in snap rails instead of desktop columns stacked end-to-end. */
+@media(max-width:760px){
+ #manifesto.r1p-history .doctrine-stage{grid-template-columns:1fr}
+ #manifesto.r1p-history .doctrine-quote{grid-template-columns:minmax(0,1fr) 150px;grid-template-rows:auto auto auto}
+ #manifesto.r1p-history .doctrine-quote .ql{grid-column:1/-1;grid-row:2;padding-bottom:10px}
+ .ad-fracture{grid-column:2;grid-row:3;padding:0 16px 18px 0;align-self:center}
+ .ad-fracture-cap{display:none}
+ .ad-arc-label{font-size:27px;letter-spacing:.04em}
+ .ad-void-label{font-size:20px;letter-spacing:.2em}
+ .ad-state{grid-column:1;grid-row:3;grid-template-columns:1fr;gap:10px;padding:2px 10px 16px 22px;border-top:0;background:none}
+ .ad-state ul{grid-template-columns:1fr;gap:8px}
+ .ad-state li{font-size:12px}
+ .ad-state li i{display:inline;margin:0 8px 0 0}
+ #manifesto.r1p-history .r1p-side-lines{min-height:0;flex-direction:row;gap:8px;padding:2px 0}
+ #manifesto.r1p-history .r1p-side-lines i{flex:1;height:10px;margin:0}
+ .ad-traces-head{grid-template-columns:1fr;gap:14px;padding-top:28px;margin-bottom:18px}
+ .ad-traces-head h3{font-size:32px}
+ #manifesto.r1p-history .fragments.ad-rail,.r1p-surfaces .modules.ad-rail{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:84%;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;margin-inline:-36px;padding:0 36px 14px;scroll-padding-inline:36px;scrollbar-width:thin;scrollbar-color:var(--ax-crimson) transparent}
+ .r1p-surfaces .modules.ad-rail{grid-auto-columns:90%;align-items:stretch}
+ .ad-rail>*{scroll-snap-align:start;min-width:0}
+ .r1p-surfaces .modules.ad-rail .module{display:flex;flex-direction:column}
+ .r1p-surfaces .modules.ad-rail .m-body{flex:1 0 auto}
+ #manifesto.r1p-history .ad-traces .frag{min-height:0}
+ #manifesto.r1p-history .ad-traces .frag h3{font-size:25px}
+ .ad-rail-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
+ .ad-rail-bar button{min-width:48px;min-height:44px;border:1px solid var(--ax-hairline);background:var(--ax-graphite-1);color:var(--ax-ink);font:500 16px/1 var(--ax-font-mono);cursor:pointer}
+ .ad-rail-bar button:disabled{opacity:.35;cursor:default}
+ .ad-rail-bar output{font:500 12px/1 var(--ax-font-mono);letter-spacing:.14em;color:var(--ax-text-dim)}
+ .ad-rail-bar output b{color:var(--ax-crimson);font-weight:500}
+ .ad-surface-index{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .ad-surface-index a{padding:12px;font-size:11px;letter-spacing:.06em;min-height:44px}
+ .r1p-aftermath{grid-template-columns:1fr}
+ .r1p-gate-art.ad-gate{height:100%;min-height:300px;margin:0}
+ .r1p-gate-art.ad-gate>.ad-gate-frame{inset:8px}
+ .ad-gate-frame i{width:12px;height:12px}
+ .r1p-gate-art.ad-gate>.ad-gate-cap{left:12px;right:8px;bottom:14px;font-size:10px}
+ .r1p-memory picture,.r1p-memory img{height:260px}
+ .r1p-dependence{display:block;padding-top:30px}
+ .ad-life{margin:0 -6px 22px}
+ .ad-life-k{font-size:16px;letter-spacing:.06em}
+ .ad-life-q{font-size:30px}
+}
+@media(max-width:380px){.r1p-character-intro .sec-title{font-size:34px}}
+@media(max-width:640px){#manifesto.r1p-history .fragments.ad-rail,.r1p-surfaces .modules.ad-rail{margin-inline:-14px;padding-inline:14px;scroll-padding-inline:14px}}
+@media(prefers-reduced-motion:reduce){.ad-pulse-trace{animation:none;stroke-dasharray:none;opacity:0}.ad-rail{scroll-behavior:auto}.ad-surface-index a{transition:none}}

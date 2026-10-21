@@ -1,0 +1,215 @@
+{
+ "kind": "W4AD_BEHAVIOUR_PROBE",
+ "at": "2026-10-21T08:54:25.812Z",
+ "checks": [
+  {
+   "name": "noJS/390: two native rails, all items",
+   "pass": true,
+   "rails": [
+    {
+     "rail": "surfaces",
+     "items": 4,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    },
+    {
+     "rail": "traces",
+     "items": 5,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    }
+   ]
+  },
+  {
+   "name": "noJS/390: no text hidden in rails, no JS-only bars",
+   "pass": true,
+   "hidden": 0,
+   "bars": 0
+  },
+  {
+   "name": "noJS/390: four study anchors resolve",
+   "pass": true
+  },
+  {
+   "name": "noJS/390: five trace texts present",
+   "pass": true
+  },
+  {
+   "name": "noJS/390: no horizontal page overflow",
+   "pass": true
+  },
+  {
+   "name": "noJS/360: two native rails, all items",
+   "pass": true,
+   "rails": [
+    {
+     "rail": "surfaces",
+     "items": 4,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    },
+    {
+     "rail": "traces",
+     "items": 5,
+     "scrollable": true,
+     "overflowX": "auto",
+     "snap": "x mandatory"
+    }
+   ]
+  },
+  {
+   "name": "noJS/360: no text hidden in rails, no JS-only bars",
+   "pass": true,
+   "hidden": 0,
+   "bars": 0
+  },
+  {
+   "name": "noJS/360: four study anchors resolve",
+   "pass": true
+  },
+  {
+   "name": "noJS/360: five trace texts present",
+   "pass": true
+  },
+  {
+   "name": "noJS/360: no horizontal page overflow",
+   "pass": true
+  },
+  {
+   "name": "390: traces rail focusable and scrolls by keyboard",
+   "pass": true,
+   "x0": 0,
+   "x1": 303,
+   "focused": true
+  },
+  {
+   "name": "390: next button advances counter",
+   "pass": true,
+   "counter": "03 / 05"
+  },
+  {
+   "name": "390: prev disabled at first item",
+   "pass": true
+  },
+  {
+   "name": "390: index link scrolls rail to WATCH_DOG without page hash jump",
+   "pass": false,
+   "left": 938,
+   "target": 973,
+   "current": "04WATCH_DOG",
+   "hash": ""
+  },
+  {
+   "name": "390: rail buttons/index targets ≥44px",
+   "pass": true,
+   "min": 44
+  },
+  {
+   "name": "390: no page errors",
+   "pass": true,
+   "errors": []
+  },
+  {
+   "name": "1440: desktop keeps 5-column traces and 2-column studies, no rails/bars",
+   "pass": true,
+   "rails": [
+    false,
+    false
+   ],
+   "bars": [
+    "none",
+    "none"
+   ],
+   "cols": 5,
+   "mods": 2,
+   "pulse": "none"
+  },
+  {
+   "name": "1440 RM: pulse animation off",
+   "pass": true,
+   "pulse": "none"
+  },
+  {
+   "name": "1440: no page errors",
+   "pass": true,
+   "errors": []
+  },
+  {
+   "name": "axe/1440: A+AD scoped violations 0",
+   "pass": true,
+   "aplus": [],
+   "ad": [],
+   "incompleteAplus": [
+    {
+     "id": "color-contrast",
+     "nodes": 131
+    }
+   ],
+   "incompleteAd": [
+    {
+     "id": "color-contrast",
+     "nodes": 155
+    }
+   ]
+  },
+  {
+   "name": "axe/390: A+AD scoped violations 0",
+   "pass": true,
+   "aplus": [],
+   "ad": [],
+   "incompleteAplus": [
+    {
+     "id": "color-contrast",
+     "nodes": 135
+    }
+   ],
+   "incompleteAd": [
+    {
+     "id": "color-contrast",
+     "nodes": 105
+    }
+   ]
+  }
+ ],
+ "axe": {
+  "aplus/1440": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 131
+    }
+   ]
+  },
+  "aplus/390": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 135
+    }
+   ]
+  },
+  "ad/1440": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 155
+    }
+   ]
+  },
+  "ad/390": {
+   "violations": [],
+   "incomplete": [
+    {
+     "id": "color-contrast",
+     "nodes": 105
+    }
+   ]
+  }
+ }
+}

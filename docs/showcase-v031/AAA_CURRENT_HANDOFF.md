@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: W4RP_SUBMITTED / GATE_B_NOT_ACCEPTED / GATE_R_A_CHANGES_REQUESTED / R2_NOT_AUTHORIZED
+  status: W4AD_SUBMITTED / GATE_B_NOT_ACCEPTED / GATE_R_A_AWAITS_CREATOR / R2_NOT_AUTHORIZED
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,7 +18,27 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-21 / W4.R R1.P / GATE R-A CHANGES REQUESTED
+## CURRENT STATE — 2026-10-21 / W4.AD OPUS ART DIRECTION / GATE R-A AWAITS CREATOR
+
+**Principal R1.P review (PR #12 · `895b7cf`): A+ ACCEPTED AS DESIGN BASIS — NOT FINAL; art direction returned to Opus.** Opus confirmed A+ and delivered targeted solution A+AD as an isolated prototype. [AD_REVIEW](waves/w4ad/AD_REVIEW.md) · [evidence](evidence/w4ad/README.md).
+
+- Branch `docs/0524-w4-ad-opus-art-direction` from `895b7cf`; worktree `/home/axiom/ENDEAVOR/AXS-WORKTREES/0524-w4-ad-opus-art-direction`. PR #12 / `w4/world-narrative` **not modified**. Product `index.html`/assets/tests = `b85fbb0a`, diff empty. Canon `3884ea43` read-only.
+- A+AD: doctrine terminal filled by fracture ring + canonical state ledger (B05.S03); five fragments → «Пять следов. Одно имя.» (B05.S05, distinct from AXIOM ∅); aftermath threshold = reserved library A08 (no W04 reuse), new human-pulse dependence scene; mobile snap rails for 5 traces + 4 full studies (no-JS native, keyboard); WORK exhibit renamed «ЭТЮДЫ ВИЗУАЛЬНОГО ЯЗЫКА» to separate from SYSTEM; WORLD `THE CITY RISES. / THE DEPTH IS SEALED.`; CHARACTERS `THREE LIVES / INSIDE THE FRACTURE.`
+- Mobile 390, five areas: 19 875 → 17 272 px (−2 602; WORK −1 784, BLACK SUN −778). Desktop 1440 +414 px (AFTERMATH +325). Protected exact vs A+; probe 21/21; scoped axe 0 violations (incompletes retained).
+- **CREATOR decisions pending:** A+AD as R2 baseline; A08 use; trace copy; headlines; desktop AFTERMATH growth. **R2 NOT AUTHORIZED; merge/deploy HOLD.** NOT RUN: Firefox/WebKit, 200 %, performance, independent R3/R4.
+
+```text
+AXIOM SHOWCASE / W4.AD RESUME PACKET
+AUTHORITY: Principal R1.P review §3 (CREATOR-pasted 2026-10-21): Opus limited art review
+BRANCH: docs/0524-w4-ad-opus-art-direction (from 895b7cf); PR12 untouched; reverify HEADs
+PROTOTYPE: evidence/w4ad/preview/build_ad.py -> ad.html + ad.css + ad.js over w4rp aplus.html/r1p.css
+DECISIONS: waves/w4ad/AD_REVIEW.md §4 (5 questions); R2 contract §5 (R2.1 doctrine+aftermath, R2.2 WORK, R2.3 world/chars)
+QA: build 22 asserted edits; protected exact; 4 viewports clean; probe 21/21; axe 0 violations
+NOT RUN: R2/R3 cross-engine/200%/performance/R4; no artistic PASS
+NEXT: CREATOR Gate R-A on A+AD; then Sol implements R2 in stages; no merge/deploy/Canon/gitlink
+```
+
+## PREVIOUS STATE — 2026-10-21 / W4.R R1.P / GATE R-A CHANGES REQUESTED
 
 **A/B/C rejected. One A+ preservation proof submitted; R2 NOT AUTHORIZED.** [Latest Principal/CREATOR authority](waves/w4rp/PRINCIPAL_CHANGES_REQUESTED.md) supersedes the previous three-choice selection packet. Gate B remains NOT ACCEPTED; PR12 remains Draft/open. No merge/deployment permission.
 
