@@ -20,6 +20,10 @@ AD = 'docs/showcase-v031/evidence/w4ad/preview/'
 R1P = 'docs/showcase-v031/evidence/w4rp/preview/r1p.css'
 CSS_OUT, JS_OUT = 'assets/css/showcase-w4r.css', 'assets/js/showcase-w4r.js'
 A08_DIR = 'assets/showcase/visual-library/web/'
+# D-06 (release performance): the stylesheet only styles sections far below the first screen, so it must not block the
+# first paint (it moved mobile LCP 2410 → 2558 ms). Applied after load; a resize event lets the rail script re-sync; noscript keeps no-JS.
+CSS_LINK = (f'<link rel="stylesheet" href="{CSS_OUT}" media="print" onload="this.media=\'all\';window.dispatchEvent(new Event(\'resize\'))">'
+            f'<noscript><link rel="stylesheet" href="{CSS_OUT}"></noscript>')
 STAGE_SECTIONS = {1: ('manifesto', 'modules'), 2: ('work',), 3: ('world', 'chars')}
 # Recorded deviations from the frozen prototype (waves/w4ad/OPUS_DECISIONS.md). Nothing else may differ.
 CSS_DEVIATIONS = [('#ffd5da', 'var(--ax-ink)', 'D-01: standing CREATOR palette rule (no pink); pulse glint becomes neutral ink')]
@@ -148,7 +152,7 @@ def main():
             assert 'proposed/' not in new
             out = sub1(out, section(out, sid), new, f'R2.{n}: #{sid} from A+AD')
             log.append(f'R2.{n}: #{sid} replaced verbatim from {FREEZE} (A08 paths mapped to {A08_DIR})')
-    out = sub1(out, '</head>', f'<link rel="stylesheet" href="{CSS_OUT}">\n</head>', 'head: scoped stylesheet last, as in prototype')
+    out = sub1(out, '</head>', CSS_LINK + '\n</head>', 'head: scoped stylesheet last, as in prototype; D-06 non-render-blocking load')
     out = sub1(out, '<script src="assets/js/showcase-v23.js" defer></script>',
                f'<script src="assets/js/showcase-v23.js" defer></script>\n<script src="{JS_OUT}" defer></script>', 'body: rail script after v23')
 
@@ -168,7 +172,7 @@ def main():
     assert len(shots(base)) == 8 and shots(base) == shots(out), 'eight real screenshots'
 
     if stage == 3:  # the product is the approved prototype, up to the recorded mapping
-        expect = ad.replace('<link rel="stylesheet" href="r1p.css">\n<link rel="stylesheet" href="ad.css">\n</head>', f'<link rel="stylesheet" href="{CSS_OUT}">\n</head>')
+        expect = ad.replace('<link rel="stylesheet" href="r1p.css">\n<link rel="stylesheet" href="ad.css">\n</head>', CSS_LINK + '\n</head>')
         expect = expect.replace('<script src="ad.js" defer></script>', f'<script src="{JS_OUT}" defer></script>').replace('proposed/A08_protocol_gate-', A08_DIR + 'A08_protocol_gate-')
         assert out == expect, 'final product differs from A+AD beyond the recorded mapping'
         log.append('R2.3: index.html == A+AD prototype modulo stylesheet/script/A08 paths')
