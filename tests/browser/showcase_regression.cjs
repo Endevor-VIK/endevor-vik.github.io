@@ -643,12 +643,12 @@ async function run(engineName, base) {
       record(`R-W3A-06-type-floor-${w}`, engineName, small.length === 0, small.slice(0, 6));
       await ctx.close();
     }
-    // R-W3A-07 (N-2) the ticker's loop clone is hidden from assistive tech; the original seven items are not
+    // R-W3A-07 (N-2) the ticker's loop clone is hidden from assistive tech; the original eight items are not
     {
       const { ctx, p } = await page(browser, engineName, { w: 1440, h: 900 });
       await p.goto(base, { waitUntil: 'load' });
       const tk = await p.evaluate(() => { const items = [...document.querySelectorAll('.ticker .stream-inner > span')]; return { total: items.length, hidden: items.filter((s) => s.getAttribute('aria-hidden') === 'true').length, firstHalfHidden: items.slice(0, items.length / 2).some((s) => s.getAttribute('aria-hidden') === 'true') }; });
-      record('R-W3A-07-ticker-clone-hidden', engineName, tk.total === 14 && tk.hidden === 7 && !tk.firstHalfHidden, tk);
+      record('R-W3A-07-ticker-clone-hidden', engineName, tk.total === 16 && tk.hidden === 8 && !tk.firstHalfHidden, tk);
       await ctx.close();
     }
     // R-W3A-08 (F-01M) weak device / Save-Data and reduced motion: the radar stage runs no infinite loop (it is CSS-animated, no SMIL)
@@ -682,8 +682,13 @@ async function run(engineName, base) {
           order: order.join(' '),
           threshold: !!wg.querySelector('.ax-world-scene img[src*="W01_threshold_bridge"]') && wg.querySelector('h2#v22-world-title') !== null && !!document.getElementById('world-entry'),
           trail: [...wg.querySelectorAll('.ax-world-trail a')].map((a) => a.getAttribute('href')).join(' '),
-          key: !!wg.querySelector('details.ax-world-key .v22-lore-glossary') && !!wg.querySelector('details.ax-world-key .show-lore-link') && !document.querySelector('#system .show-lore-link'),
-          plates: ['manifesto', 'modules', 'world', 'factions'].map((id) => !!document.querySelector(`#${id} > .wrap > .ax-chapter-plate:first-child`)).every(Boolean) && !!document.querySelector('#chars > .wrap > .ax-chapter-line:first-child'),
+          // W4 Gate A: the reading key explains world terms; engineering prose remains in SYSTEM.
+          key: !!wg.querySelector('details.ax-world-key .v22-lore-glossary') && !/MASTER GRAPH/.test(wg.querySelector('.ax-world-key-body').textContent) && !document.querySelector('#system .show-lore-link'),
+          // W4.R A+AD (Gate R-A, art freeze 9cf78b0): WHAT REMAINS carries W02 as its large memory scene instead of a chapter
+          // plate, and CHARACTERS opens with the approved bilingual introduction instead of the chapter line (R2.3).
+          plates: ['manifesto', 'world', 'factions'].map((id) => !!document.querySelector(`#${id} > .wrap > .ax-chapter-plate:first-child`)).every(Boolean)
+            && !!(document.querySelector('#modules > .wrap > .ax-chapter-plate:first-child') || document.querySelector('#modules.r1p-remains .r1p-memory figure img[src*="W02_"], #modules.r1p-remains .r1p-memory figure source[srcset*="W02_"]'))
+            && !!(document.querySelector('#chars > .wrap > .ax-chapter-line:first-child') || document.querySelector('#chars .r1p-character-intro h2')),
           omegaInWorld: !!omega && world.contains(omega) && after(document.querySelector('.v23-map-axes'), omega) && after(omega, document.getElementById('chars')),
           epilogue: !!epi && epi.nextElementSibling && epi.nextElementSibling.matches('.v22-bridge') && epi.nextElementSibling.nextElementSibling === vision,
           canonIds: [...document.querySelectorAll('.v23-map-node')].map((b) => b.dataset.canonId).join(),
