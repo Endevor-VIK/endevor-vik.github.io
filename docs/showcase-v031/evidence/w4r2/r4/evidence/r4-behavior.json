@@ -1,0 +1,165 @@
+{
+ "kind": "W4R_R4_INDEPENDENT_PROBE",
+ "part": "behavior",
+ "impl": "685140a40e55f151f9edcf9e7ab0170773ad4f55",
+ "base": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "freeze": "9cf78b0",
+ "at": "2026-10-21T21:57:59.508Z",
+ "engines": {
+  "chromium": "149.0.7827.55",
+  "firefox": "151.0",
+  "webkit": "26.5"
+ },
+ "results": [
+  {
+   "part": "behavior",
+   "engine": "chromium",
+   "w": 390,
+   "cssApplied": "all",
+   "omega": true,
+   "pulseAnim": "ad-pulse",
+   "viewerOpen": true,
+   "viewerClosed": true,
+   "focusReturned": true,
+   "tracesButtons": {
+    "n": 5,
+    "last": "05 / 05",
+    "nextDisabledAtEnd": true,
+    "first": "01 / 05",
+    "prevDisabledAtStart": true
+   },
+   "surfacesButtons": {
+    "n": 4,
+    "last": "04 / 04",
+    "nextDisabledAtEnd": true,
+    "first": "01 / 04",
+    "prevDisabledAtStart": true
+   },
+   "indexLinks": [
+    "01 / 04",
+    "02 / 04",
+    "03 / 04",
+    "04 / 04"
+   ],
+   "errors": []
+  },
+  {
+   "part": "behavior",
+   "engine": "chromium",
+   "w": 1440,
+   "cssApplied": "all",
+   "omega": true,
+   "pulseAnim": "ad-pulse",
+   "viewerOpen": true,
+   "viewerClosed": true,
+   "focusReturned": true,
+   "errors": []
+  },
+  {
+   "part": "behavior-rm",
+   "engine": "chromium",
+   "pulseAnimRM": "none",
+   "railSmooth": "auto"
+  },
+  {
+   "part": "behavior",
+   "engine": "firefox",
+   "w": 390,
+   "cssApplied": "all",
+   "omega": true,
+   "pulseAnim": "ad-pulse",
+   "viewerOpen": true,
+   "viewerClosed": true,
+   "focusReturned": true,
+   "tracesButtons": {
+    "n": 5,
+    "last": "05 / 05",
+    "nextDisabledAtEnd": true,
+    "first": "01 / 05",
+    "prevDisabledAtStart": true
+   },
+   "surfacesButtons": {
+    "n": 4,
+    "last": "04 / 04",
+    "nextDisabledAtEnd": true,
+    "first": "01 / 04",
+    "prevDisabledAtStart": true
+   },
+   "indexLinks": [
+    "01 / 04",
+    "02 / 04",
+    "03 / 04",
+    "04 / 04"
+   ],
+   "errors": []
+  },
+  {
+   "part": "behavior",
+   "engine": "firefox",
+   "w": 1440,
+   "cssApplied": "all",
+   "omega": true,
+   "pulseAnim": "ad-pulse",
+   "viewerOpen": true,
+   "viewerClosed": true,
+   "focusReturned": true,
+   "errors": []
+  },
+  {
+   "part": "behavior-rm",
+   "engine": "firefox",
+   "pulseAnimRM": "none",
+   "railSmooth": "auto"
+  },
+  {
+   "part": "behavior",
+   "engine": "webkit",
+   "w": 390,
+   "cssApplied": "all",
+   "omega": true,
+   "pulseAnim": "ad-pulse",
+   "viewerOpen": true,
+   "viewerClosed": true,
+   "focusReturned": true,
+   "tracesButtons": {
+    "n": 5,
+    "last": "05 / 05",
+    "nextDisabledAtEnd": true,
+    "first": "01 / 05",
+    "prevDisabledAtStart": true
+   },
+   "surfacesButtons": {
+    "n": 4,
+    "last": "04 / 04",
+    "nextDisabledAtEnd": true,
+    "first": "01 / 04",
+    "prevDisabledAtStart": true
+   },
+   "indexLinks": [
+    "01 / 04",
+    "02 / 04",
+    "03 / 04",
+    "04 / 04"
+   ],
+   "errors": []
+  },
+  {
+   "part": "behavior",
+   "engine": "webkit",
+   "w": 1440,
+   "cssApplied": "all",
+   "omega": true,
+   "pulseAnim": "ad-pulse",
+   "viewerOpen": true,
+   "viewerClosed": true,
+   "focusReturned": true,
+   "errors": []
+  },
+  {
+   "part": "behavior-rm",
+   "engine": "webkit",
+   "pulseAnimRM": "none",
+   "railSmooth": "auto"
+  }
+ ]
+}

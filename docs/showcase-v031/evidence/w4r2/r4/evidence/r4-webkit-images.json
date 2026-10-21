@@ -1,0 +1,141 @@
+{
+ "out": [
+  {
+   "w": 1440,
+   "h": 900,
+   "arm": "impl",
+   "rep": 1,
+   "withSrc": 26,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  },
+  {
+   "w": 1440,
+   "h": 900,
+   "arm": "impl",
+   "rep": 2,
+   "withSrc": 26,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  },
+  {
+   "w": 1440,
+   "h": 900,
+   "arm": "base",
+   "rep": 1,
+   "withSrc": 25,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  },
+  {
+   "w": 1440,
+   "h": 900,
+   "arm": "base",
+   "rep": 2,
+   "withSrc": 25,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  },
+  {
+   "w": 844,
+   "h": 390,
+   "arm": "impl",
+   "rep": 1,
+   "withSrc": 26,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  },
+  {
+   "w": 844,
+   "h": 390,
+   "arm": "impl",
+   "rep": 2,
+   "withSrc": 26,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  },
+  {
+   "w": 844,
+   "h": 390,
+   "arm": "base",
+   "rep": 1,
+   "withSrc": 25,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  },
+  {
+   "w": 844,
+   "h": 390,
+   "arm": "base",
+   "rep": 2,
+   "withSrc": 25,
+   "incomplete": [
+    "03-panel-dashboard-960w.webp",
+    "04-chronicle-960w.webp",
+    "05-axchat-960w.webp",
+    "06-content-library-960w.webp",
+    "07-viktor-dossier-960w.webp",
+    "08-news-signal-960w.webp",
+    "09-master-graph-960w.webp"
+   ],
+   "zeroNatural": []
+  }
+ ],
+ "http404": []
+}

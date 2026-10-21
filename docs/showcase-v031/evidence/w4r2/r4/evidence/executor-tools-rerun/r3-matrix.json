@@ -1,0 +1,2372 @@
+{
+ "kind": "W4R_R3_EXECUTOR_MATRIX",
+ "label": "Executor-run R3 (Opus). Not the independent R4.",
+ "impl": "685140a40e55f151f9edcf9e7ab0170773ad4f55",
+ "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "freeze": "9cf78b0",
+ "at": "2026-10-21T22:06:55.186Z",
+ "engines": {
+  "chromium": "149.0.7827.55",
+  "firefox": "151.0",
+  "webkit": "26.5"
+ },
+ "heights": {
+  "chromium": {
+   "320": {
+    "manifesto": 4038.5,
+    "modules": 2521.31,
+    "work": 4316.8,
+    "world": 2588.44,
+    "chars": 5473.14,
+    "top": 1205.66,
+    "about": 2326.78,
+    "creator": 2373.53,
+    "system": 2757.23,
+    "world-guide": 1275.13,
+    "factions": 2169.97,
+    "vision": 3523.44,
+    "collaboration": 1319.16
+   },
+   "360": {
+    "manifesto": 3751.98,
+    "modules": 2268.17,
+    "work": 4038.84,
+    "world": 2534.34,
+    "chars": 5261.8,
+    "top": 1142.8,
+    "about": 2214.3,
+    "creator": 2198.22,
+    "system": 2668.39,
+    "world-guide": 1204.73,
+    "factions": 2002.36,
+    "vision": 3295.83,
+    "collaboration": 1259.36
+   },
+   "390": {
+    "manifesto": 3604.02,
+    "modules": 2169.98,
+    "work": 3884.23,
+    "world": 2512.22,
+    "chars": 5216.3,
+    "top": 1076.22,
+    "about": 2073.31,
+    "creator": 2167.23,
+    "system": 2652.97,
+    "world-guide": 1203.7,
+    "factions": 1986.17,
+    "vision": 3189.53,
+    "collaboration": 1261.58
+   },
+   "430": {
+    "manifesto": 3578.45,
+    "modules": 2010.42,
+    "work": 3729.97,
+    "world": 2541.67,
+    "chars": 5264.73,
+    "top": 1071.34,
+    "about": 1998.89,
+    "creator": 2043.69,
+    "system": 2556.8,
+    "world-guide": 1212.52,
+    "factions": 1856.17,
+    "vision": 3077.55,
+    "collaboration": 1246.3
+   },
+   "768": {
+    "manifesto": 3407.27,
+    "modules": 1897.73,
+    "work": 4786.23,
+    "world": 2908.73,
+    "chars": 4304.88,
+    "top": 1825.28,
+    "about": 1528.78,
+    "creator": 1476.34,
+    "system": 2084.08,
+    "world-guide": 1364.98,
+    "factions": 2168.5,
+    "vision": 2173.5,
+    "collaboration": 848.36
+   },
+   "844": {
+    "manifesto": 3175.89,
+    "modules": 1811.19,
+    "work": 4726.33,
+    "world": 2764.84,
+    "chars": 4323.41,
+    "top": 1005.52,
+    "about": 1415.05,
+    "creator": 1333.53,
+    "system": 2029.3,
+    "world-guide": 1373.83,
+    "factions": 2063.78,
+    "vision": 2179.11,
+    "collaboration": 792.06
+   },
+   "1024": {
+    "manifesto": 2910.09,
+    "modules": 1738.33,
+    "work": 4589.03,
+    "world": 2440.92,
+    "chars": 4472.69,
+    "top": 991.8,
+    "about": 1361.58,
+    "creator": 1301.58,
+    "system": 1815.36,
+    "world-guide": 1214.14,
+    "factions": 2012.81,
+    "vision": 2188.22,
+    "collaboration": 781.61
+   },
+   "1280": {
+    "manifesto": 2426.69,
+    "modules": 1909.78,
+    "work": 3260.53,
+    "world": 2399.94,
+    "chars": 2658.56,
+    "top": 981.53,
+    "about": 1185.83,
+    "creator": 1307.83,
+    "system": 1526.45,
+    "world-guide": 1150.64,
+    "factions": 1297.78,
+    "vision": 2141.41,
+    "collaboration": 814.59
+   },
+   "1440": {
+    "manifesto": 2398.77,
+    "modules": 1937.16,
+    "work": 3143.5,
+    "world": 2543.39,
+    "chars": 2624.83,
+    "top": 1059.14,
+    "about": 1181.69,
+    "creator": 1286.73,
+    "system": 1542.8,
+    "world-guide": 1272.44,
+    "factions": 1297.78,
+    "vision": 2221.13,
+    "collaboration": 842.61
+   },
+   "1920": {
+    "manifesto": 2568.16,
+    "modules": 1943.92,
+    "work": 3158.52,
+    "world": 2643.59,
+    "chars": 2631.5,
+    "top": 1216.75,
+    "about": 1192.41,
+    "creator": 1300.59,
+    "system": 1546.86,
+    "world-guide": 1472.95,
+    "factions": 1348.17,
+    "vision": 2235.25,
+    "collaboration": 849.72
+   }
+  },
+  "firefox": {
+   "320": {
+    "manifesto": 3919.1,
+    "modules": 2341.57,
+    "work": 4234.25,
+    "world": 2563.23,
+    "chars": 5437.03,
+    "top": 1159.25,
+    "about": 2256.18,
+    "creator": 2288.12,
+    "system": 2753.42,
+    "world-guide": 1218.6,
+    "factions": 2114,
+    "vision": 3399.35,
+    "collaboration": 1319.3
+   },
+   "360": {
+    "manifesto": 3725.58,
+    "modules": 2161.68,
+    "work": 3966.57,
+    "world": 2504.73,
+    "chars": 5240.65,
+    "top": 1103.7,
+    "about": 2116.18,
+    "creator": 2178.47,
+    "system": 2683.02,
+    "world-guide": 1177,
+    "factions": 2002.4,
+    "vision": 3225.92,
+    "collaboration": 1259.5
+   },
+   "390": {
+    "manifesto": 3549.55,
+    "modules": 2149.88,
+    "work": 3830.77,
+    "world": 2482.1,
+    "chars": 5236.45,
+    "top": 1076.3,
+    "about": 2054.9,
+    "creator": 2130.08,
+    "system": 2642.4,
+    "world-guide": 1204.73,
+    "factions": 1895.4,
+    "vision": 3094.75,
+    "collaboration": 1261.73
+   },
+   "430": {
+    "manifesto": 3406.97,
+    "modules": 2019.08,
+    "work": 3685.9,
+    "world": 2473.9,
+    "chars": 5294.55,
+    "top": 1048.25,
+    "about": 2007.4,
+    "creator": 2052.67,
+    "system": 2550.93,
+    "world-guide": 1213.53,
+    "factions": 1800.2,
+    "vision": 3012.58,
+    "collaboration": 1217.6
+   },
+   "768": {
+    "manifesto": 3396.33,
+    "modules": 1832.03,
+    "work": 4804.13,
+    "world": 2930.68,
+    "chars": 4317.22,
+    "top": 1827.45,
+    "about": 1435.4,
+    "creator": 1449.4,
+    "system": 1989.75,
+    "world-guide": 1365.05,
+    "factions": 2168.52,
+    "vision": 2168.1,
+    "collaboration": 832.4
+   },
+   "844": {
+    "manifesto": 3176.48,
+    "modules": 1803.23,
+    "work": 4744.22,
+    "world": 2786.82,
+    "chars": 4348.72,
+    "top": 985.55,
+    "about": 1415.15,
+    "creator": 1315.9,
+    "system": 2021.35,
+    "world-guide": 1373.88,
+    "factions": 2063.8,
+    "vision": 2156.65,
+    "collaboration": 792.1
+   },
+   "1024": {
+    "manifesto": 2910.67,
+    "modules": 1740.83,
+    "work": 4553.82,
+    "world": 2443.23,
+    "chars": 4496.92,
+    "top": 979.9,
+    "about": 1332.85,
+    "creator": 1306.08,
+    "system": 1818.38,
+    "world-guide": 1214.17,
+    "factions": 2012.83,
+    "vision": 2182.78,
+    "collaboration": 781.63
+   },
+   "1280": {
+    "manifesto": 2426.67,
+    "modules": 1883.98,
+    "work": 3219.83,
+    "world": 2408.62,
+    "chars": 2686.57,
+    "top": 1004,
+    "about": 1185.78,
+    "creator": 1307.88,
+    "system": 1528.52,
+    "world-guide": 1150.58,
+    "factions": 1269.8,
+    "vision": 2134.45,
+    "collaboration": 814.62
+   },
+   "1440": {
+    "manifesto": 2399.12,
+    "modules": 1937.27,
+    "work": 3149.85,
+    "world": 2553.88,
+    "chars": 2596.78,
+    "top": 1059.2,
+    "about": 1181.67,
+    "creator": 1287.78,
+    "system": 1544.82,
+    "world-guide": 1272.42,
+    "factions": 1297.8,
+    "vision": 2231.17,
+    "collaboration": 842.62
+   },
+   "1920": {
+    "manifesto": 2568.7,
+    "modules": 1944,
+    "work": 3164.87,
+    "world": 2645.68,
+    "chars": 2596.78,
+    "top": 1216.8,
+    "about": 1192.45,
+    "creator": 1301.67,
+    "system": 1548.92,
+    "world-guide": 1473,
+    "factions": 1348.2,
+    "vision": 2239.33,
+    "collaboration": 849.77
+   }
+  },
+  "webkit": {
+   "320": {
+    "manifesto": 3917.59,
+    "modules": 2341.36,
+    "work": 4224.56,
+    "world": 2552.08,
+    "chars": 5427.39,
+    "top": 1159.11,
+    "about": 2256.03,
+    "creator": 2284.84,
+    "system": 2748.14,
+    "world-guide": 1218.47,
+    "factions": 2113.97,
+    "vision": 3390.92,
+    "collaboration": 1319.16
+   },
+   "360": {
+    "manifesto": 3724.08,
+    "modules": 2161.48,
+    "work": 3979.34,
+    "world": 2493.56,
+    "chars": 5232.17,
+    "top": 1103.55,
+    "about": 2116.05,
+    "creator": 2175.22,
+    "system": 2677.77,
+    "world-guide": 1176.88,
+    "factions": 2002.36,
+    "vision": 3217.55,
+    "collaboration": 1259.36
+   },
+   "390": {
+    "manifesto": 3548.11,
+    "modules": 2149.69,
+    "work": 3820.2,
+    "world": 2474,
+    "chars": 5228,
+    "top": 1076.17,
+    "about": 2054.75,
+    "creator": 2126.83,
+    "system": 2637.16,
+    "world-guide": 1204.64,
+    "factions": 1895.38,
+    "vision": 3086.41,
+    "collaboration": 1261.58
+   },
+   "430": {
+    "manifesto": 3405.56,
+    "modules": 2018.92,
+    "work": 3677.38,
+    "world": 2467.81,
+    "chars": 5287.11,
+    "top": 1048.09,
+    "about": 2007.28,
+    "creator": 2049.47,
+    "system": 2545.75,
+    "world-guide": 1213.45,
+    "factions": 1800.17,
+    "vision": 3004.28,
+    "collaboration": 1217.47
+   },
+   "768": {
+    "manifesto": 3396.13,
+    "modules": 1831.91,
+    "work": 4794.67,
+    "world": 2925.61,
+    "chars": 4342.47,
+    "top": 1825.28,
+    "about": 1435.3,
+    "creator": 1448.25,
+    "system": 1986.67,
+    "world-guide": 1364.98,
+    "factions": 2254.89,
+    "vision": 2163.95,
+    "collaboration": 832.36
+   },
+   "844": {
+    "manifesto": 3176.31,
+    "modules": 1803.11,
+    "work": 4734.73,
+    "world": 2781.72,
+    "chars": 4343.41,
+    "top": 985.38,
+    "about": 1415,
+    "creator": 1314.73,
+    "system": 2018.25,
+    "world-guide": 1373.81,
+    "factions": 2121.38,
+    "vision": 2152.47,
+    "collaboration": 792.03
+   },
+   "1024": {
+    "manifesto": 2910.52,
+    "modules": 1740.75,
+    "work": 4544.22,
+    "world": 2440.17,
+    "chars": 4492.67,
+    "top": 977.75,
+    "about": 1332.73,
+    "creator": 1305,
+    "system": 1815.33,
+    "world-guide": 1214.14,
+    "factions": 2012.81,
+    "vision": 2178.64,
+    "collaboration": 781.58
+   },
+   "1280": {
+    "manifesto": 2426.47,
+    "modules": 1883.89,
+    "work": 3235.78,
+    "world": 2406.59,
+    "chars": 2681.23,
+    "top": 1003.92,
+    "about": 1185.77,
+    "creator": 1307.83,
+    "system": 1526.45,
+    "world-guide": 1150.53,
+    "factions": 1269.78,
+    "vision": 2130.36,
+    "collaboration": 814.55
+   },
+   "1440": {
+    "manifesto": 2398.94,
+    "modules": 1937.16,
+    "work": 3143.5,
+    "world": 2551.83,
+    "chars": 2592.5,
+    "top": 1059.14,
+    "about": 1181.69,
+    "creator": 1286.73,
+    "system": 1542.8,
+    "world-guide": 1272.44,
+    "factions": 1297.78,
+    "vision": 2227,
+    "collaboration": 842.61
+   },
+   "1920": {
+    "manifesto": 2568.52,
+    "modules": 1943.92,
+    "work": 3158.52,
+    "world": 2643.59,
+    "chars": 2592.5,
+    "top": 1216.75,
+    "about": 1192.41,
+    "creator": 1300.59,
+    "system": 1546.86,
+    "world-guide": 1472.95,
+    "factions": 1348.17,
+    "vision": 2235.25,
+    "collaboration": 849.72
+   }
+  }
+ },
+ "captures": [],
+ "axe_chromium_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 336
+   }
+  ]
+ },
+ "axe_chromium_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 288
+   }
+  ]
+ },
+ "axe_firefox_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 336
+   }
+  ]
+ },
+ "axe_firefox_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "aria-prohibited-attr",
+    "n": 1
+   },
+   {
+    "id": "color-contrast",
+    "n": 288
+   }
+  ]
+ },
+ "checks": [
+  {
+   "engine": "chromium",
+   "name": "1920×1080: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1920×1080: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1440×900: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1280×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 2910.09,
+     "ad": 2744.58,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "1024×768: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "768×1024: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "430×932: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "390×844: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "360×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "320×568: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -13,
+   "baseOverflow": -13,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 3175.89,
+     "ad": 3050.41,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "chromium",
+   "name": "844×390: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": -15,
+   "baseOverflow": -15,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "chromium",
+   "name": "noJS 1440: no content cut (hidden text only decorative or as in b85), rails as grids, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": false
+    },
+    {
+     "n": 5,
+     "scroll": false
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": -15,
+   "hidden": [
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "chromium",
+   "name": "noJS 390: no content cut (hidden text only decorative or as in b85), rails native-scroll, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": true
+    },
+    {
+     "n": 5,
+     "scroll": true
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": -15,
+   "hidden": [
+    {
+     "cls": "",
+     "aria": false,
+     "text": "ENGINEERING + STORYTELLING"
+    },
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    },
+    {
+     "cls": "ax-archive-hint",
+     "aria": true,
+     "text": "← → · SWIPE · CLICK = FULL SIZE"
+    },
+    {
+     "cls": "ax-viewer-hint",
+     "aria": true,
+     "text": "← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — З"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 01 — BLACK SUN"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ARCHIVE / RED PROTOCOL"
+    },
+    {
+     "cls": "ad-fracture-cap",
+     "aria": true,
+     "text": "ЦЕЛОЕ → ПЯТЬ СЛЕДОВ"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 02 — AFTERMATH"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ACCESS / MEMORY / DEPENDENCE"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard JS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "JS 390: traces next button walks to 5/5",
+   "pass": true,
+   "last": "05 / 05",
+   "nextDisabled": true
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard JS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "JS 390: surfaces next button walks to 4/4",
+   "pass": true,
+   "last": "04 / 04",
+   "nextDisabled": true
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard noJS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "keyboard noJS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "chromium",
+   "name": "RM=reduce: pulse off",
+   "pass": true,
+   "a": "none"
+  },
+  {
+   "engine": "chromium",
+   "name": "RM=no-preference: pulse on",
+   "pass": true,
+   "a": "ad-pulse"
+  },
+  {
+   "engine": "chromium",
+   "name": "A08 1440@2x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.501,
+   "coreY": 0.264,
+   "need": 961,
+   "dpr": 2
+  },
+  {
+   "engine": "chromium",
+   "name": "A08 390@3x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 639,
+   "dpr": 3
+  },
+  {
+   "engine": "chromium",
+   "name": "A08 360@1x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 245,
+   "dpr": 1
+  },
+  {
+   "engine": "chromium",
+   "name": "axe 1440: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 336
+    }
+   ]
+  },
+  {
+   "engine": "chromium",
+   "name": "axe 390: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 288
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1920×1080: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1440×900: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 2426.67,
+     "ad": 2397.07,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1280×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 2910.67,
+     "ad": 2744.77,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "1024×768: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 3396.33,
+     "ad": 3337.15,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "768×1024: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "430×932: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "390×844: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "360×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "320×568: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 3176.48,
+     "ad": 3012.18,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "firefox",
+   "name": "844×390: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 0,
+   "pendingBase": 0,
+   "fonts": true
+  },
+  {
+   "engine": "firefox",
+   "name": "noJS 1440: no content cut (hidden text only decorative or as in b85), rails as grids, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": false
+    },
+    {
+     "n": 5,
+     "scroll": false
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "firefox",
+   "name": "noJS 390: no content cut (hidden text only decorative or as in b85), rails native-scroll, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": true
+    },
+    {
+     "n": 5,
+     "scroll": true
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "",
+     "aria": false,
+     "text": "ENGINEERING + STORYTELLING"
+    },
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    },
+    {
+     "cls": "ax-archive-hint",
+     "aria": true,
+     "text": "← → · SWIPE · CLICK = FULL SIZE"
+    },
+    {
+     "cls": "ax-viewer-hint",
+     "aria": true,
+     "text": "← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — З"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 01 — BLACK SUN"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ARCHIVE / RED PROTOCOL"
+    },
+    {
+     "cls": "ad-fracture-cap",
+     "aria": true,
+     "text": "ЦЕЛОЕ → ПЯТЬ СЛЕДОВ"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 02 — AFTERMATH"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ACCESS / MEMORY / DEPENDENCE"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard JS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "JS 390: traces next button walks to 5/5",
+   "pass": true,
+   "last": "05 / 05",
+   "nextDisabled": true
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard JS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "JS 390: surfaces next button walks to 4/4",
+   "pass": true,
+   "last": "04 / 04",
+   "nextDisabled": true
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard noJS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "keyboard noJS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "firefox",
+   "name": "RM=reduce: pulse off",
+   "pass": true,
+   "a": "none"
+  },
+  {
+   "engine": "firefox",
+   "name": "RM=no-preference: pulse on",
+   "pass": true,
+   "a": "ad-pulse"
+  },
+  {
+   "engine": "firefox",
+   "name": "A08 1440@2x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.501,
+   "coreY": 0.26,
+   "need": 972,
+   "dpr": 2
+  },
+  {
+   "engine": "firefox",
+   "name": "A08 390@3x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 590,
+   "dpr": 3
+  },
+  {
+   "engine": "firefox",
+   "name": "A08 360@1x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 213,
+   "dpr": 1
+  },
+  {
+   "engine": "firefox",
+   "name": "axe 1440: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 336
+    }
+   ]
+  },
+  {
+   "engine": "firefox",
+   "name": "axe 390: changed sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "aria-prohibited-attr",
+     "n": 1
+    },
+    {
+     "id": "color-contrast",
+     "n": 288
+    }
+   ]
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1920×1080: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1440×900: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": false,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [
+    "A07_engineering_console-960w.webp",
+    "W01_threshold_bridge-1672w.avif",
+    "W06_eclipse_ruins-1672w.avif",
+    "W02_memory_spheres-1672w.avif"
+   ],
+   "pendingImpl": 10,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 2426.47,
+     "ad": 2396.88,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1280×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 2910.52,
+     "ad": 2744.55,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "1024×768: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 3396.13,
+     "ad": 3336.91,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "768×1024: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "430×932: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "390×844: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "360×800: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "320×568: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": true,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [],
+   "pendingImpl": 5,
+   "pendingBase": 5,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: changed sections within max(1%,16px) of A+AD (recorded deviations reported)",
+   "pass": true,
+   "fails": [],
+   "recorded": [
+    {
+     "id": "manifesto",
+     "impl": 3176.31,
+     "ad": 3011.98,
+     "deviation": "D-04"
+    }
+   ]
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: changed-section text equals A+AD",
+   "pass": true,
+   "textDiff": []
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: untouched sections equal b85",
+   "pass": true,
+   "un": []
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: protected object boxes equal b85",
+   "pass": true,
+   "pb": []
+  },
+  {
+   "engine": "webkit",
+   "name": "844×390: no overflow beyond b85, no new broken images vs b85, fonts",
+   "pass": false,
+   "overflow": 0,
+   "baseOverflow": 0,
+   "newBroken": [
+    "W08_axial_capital-960w.avif",
+    "W07_red_rim_orbit-960w.avif",
+    "B04_distant_orbit-1440w.webp"
+   ],
+   "pendingImpl": 8,
+   "pendingBase": 6,
+   "fonts": true
+  },
+  {
+   "engine": "webkit",
+   "name": "noJS 1440: no content cut (hidden text only decorative or as in b85), rails as grids, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": false
+    },
+    {
+     "n": 5,
+     "scroll": false
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "webkit",
+   "name": "noJS 390: no content cut (hidden text only decorative or as in b85), rails native-scroll, no JS controls, anchors resolve",
+   "pass": true,
+   "rails": [
+    {
+     "n": 4,
+     "scroll": true
+    },
+    {
+     "n": 5,
+     "scroll": true
+    }
+   ],
+   "anchors": true,
+   "bars": 0,
+   "overflow": 0,
+   "hidden": [
+    {
+     "cls": "",
+     "aria": false,
+     "text": "ENGINEERING + STORYTELLING"
+    },
+    {
+     "cls": "ax-archive-count",
+     "aria": true,
+     "text": "01 / 08"
+    },
+    {
+     "cls": "ax-archive-hint",
+     "aria": true,
+     "text": "← → · SWIPE · CLICK = FULL SIZE"
+    },
+    {
+     "cls": "ax-viewer-hint",
+     "aria": true,
+     "text": "← → ЛИСТАТЬ · КЛИК ИЛИ + — 1:1 · ESC — З"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 01 — BLACK SUN"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ARCHIVE / RED PROTOCOL"
+    },
+    {
+     "cls": "ad-fracture-cap",
+     "aria": true,
+     "text": "ЦЕЛОЕ → ПЯТЬ СЛЕДОВ"
+    },
+    {
+     "cls": "sec-stamp.tl",
+     "aria": false,
+     "text": "// 02 — AFTERMATH"
+    },
+    {
+     "cls": "sec-stamp.tr",
+     "aria": false,
+     "text": "ACCESS / MEMORY / DEPENDENCE"
+    }
+   ],
+   "cut": []
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard JS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "JS 390: traces next button walks to 5/5",
+   "pass": true,
+   "last": "05 / 05",
+   "nextDisabled": true
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard JS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "JS 390: surfaces next button walks to 4/4",
+   "pass": true,
+   "last": "04 / 04",
+   "nextDisabled": true
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard noJS 390: traces rail focusable, every item reachable",
+   "pass": true,
+   "n": 5,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "keyboard noJS 390: surfaces rail focusable, every item reachable",
+   "pass": true,
+   "n": 4,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "focused": true
+  },
+  {
+   "engine": "webkit",
+   "name": "RM=reduce: pulse off",
+   "pass": true,
+   "a": "none"
+  },
+  {
+   "engine": "webkit",
+   "name": "RM=no-preference: pulse on",
+   "pass": true,
+   "a": "ad-pulse"
+  },
+  {
+   "engine": "webkit",
+   "name": "A08 1440@2x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.501,
+   "coreY": 0.26,
+   "need": 972,
+   "dpr": 2
+  },
+  {
+   "engine": "webkit",
+   "name": "A08 390@3x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-941w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 590,
+   "dpr": 3
+  },
+  {
+   "engine": "webkit",
+   "name": "A08 360@1x: loads when shown, original-derived source, gate core inside crop",
+   "pass": true,
+   "loaded": true,
+   "src": "A08_protocol_gate-480w.avif",
+   "coreX": 0.502,
+   "coreY": 0.388,
+   "need": 213,
+   "dpr": 1
+  },
+  {
+   "engine": "all",
+   "name": "runtime: no page errors or HTTP ≥ 400 in any arm",
+   "pass": true,
+   "errors": []
+  }
+ ],
+ "summary": "192/194",
+ "errors": []
+}

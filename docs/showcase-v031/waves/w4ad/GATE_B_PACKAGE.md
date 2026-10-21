@@ -1,23 +1,24 @@
 <!--
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4R.GATE_B_PACKAGE
-  title: "0524.W4.R — Gate B package for CREATOR"
-  status: GATE_B_PENDING / R4_PENDING / PERFORMANCE_BLOCKED / MERGE_DEPLOY_NOT_AUTHORIZED
+  title: "0524.W4.R — Gate B record"
+  status: R4_PASS_WITH_RECORDED_LIMITS / PERF_PASS_17_OF_17 / CREATOR_AUTHORITY_2026-10-22 / RELEASE_VIA_CLEAN_BRANCH
   deployment: NOT_DEPLOYED
   lang: ru
-  last_updated: 2026-10-21
+  last_updated: 2026-10-22
   editable_by_agents: true
 -->
-# Gate B — пакет для CREATOR
+# Gate B — запись
 
-## Что готово к решению
+## Объекты
 
 | Объект | Значение |
 | --- | --- |
-| Implementation SHA (runtime-заморозка) | **`b6040e3cbd110b807c5a33d6cccf4b52f7b05ed7`** |
-| Ветка / PR | `w4/world-narrative`, PR #12, Draft (fast-forward от `895b7cf` через ветку Opus) |
+| Runtime, прошедший R4 | **`685140a40e55f151f9edcf9e7ab0170773ad4f55`** = R2.3 `8815f17` + R3 D-04/D-05 (`b6040e3`) + D-06 perf |
+| Ветка доказательств | `w4/world-narrative`, PR #12 (Draft). Не сливается: 87 МиБ доказательств, 37 файлов с локальными путями хоста |
+| Ветка релиза | `release/0524-w4r` от `main` `6b082e5`: только продукт и тесты из `685140a` + версия v0.3.1 + короткие release-документы |
 | Утверждённый эталон | A+AD `9cf78b0`, Gate R-A APPROVED |
-| Продукт до R2 | `b85fbb0a` (на сайте сейчас `main` `6b082e5`) |
+| Продукт до R2 | `b85fbb0a` |
 
 Стадии (Opus — исполнитель и арт-директор, записи — SELF-CHECK):
 
@@ -27,30 +28,41 @@ AXS_HEADER_META:
 | R2.2 WORK / FOUR SURFACES | `4446747` | [OPUS_REVIEW_R2_2](OPUS_REVIEW_R2_2.md) |
 | R2.3 WORLD GRID / CHARACTERS | `8815f17` | [OPUS_REVIEW_R2_3](OPUS_REVIEW_R2_3.md) |
 | R3 fit fixes D-04/D-05 | `b6040e3` | [R3_REPORT](R3_REPORT.md) |
-
-Отклонения от A+AD — пять, все в CSS, разметка равна прототипу: [OPUS_DECISIONS](OPUS_DECISIONS.md). D-01 — белая искра пульса вместо розовой (правило палитры). D-02…D-05 — посадка текста на узких телефонах и планшетах.
-
-## Визуальная передача
-
-- **До → после R2:** [`evidence/w4r2/r3/handoff.html`](../../evidence/w4r2/r3/handoff.html), опубликована приватно: https://claude.ai/artifact/7CXkQXnRonabYL6BKu2R7q. Пять секций, BEFORE `b85fbb0a` / IMPLEMENTED `b6040e3`, нативные кадры 1440/390, контроль в Chromium, Firefox и WebKit.
-- **A+ → A+AD** (художественное решение): https://claude.ai/artifact/REi9LvzkgmXBga9hRtu7xw.
+| D-06 perf (стиль без блокировки отрисовки) | `685140a` | [R3_REPORT](R3_REPORT.md), [OPUS_DECISIONS](OPUS_DECISIONS.md) |
 
 ## Проверки
 
-R3 исполнителя: [R3_REPORT](R3_REPORT.md). Коротко:
-- матрица из 3 движков и 10 размеров — 224/225 (один нестабильный шаг клавиатуры в WebKit; дополнительная проверка 40/40);
-- проход ширин — 0 сбоев в 1 403 ширинах;
-- zoom 200 % — 22/22;
-- регрессия — 230/2 (только долги HERO);
-- самопроверки стадий — 61/61, 46/46, 47/47;
-- axe — 0 нарушений;
-- защищённое (карта, OMEGA-0, W04, портреты, AXIOM ∅, viewer, 8 скриншотов) — побайтно как было.
+| Проверка | Итог | Запись |
+| --- | --- | --- |
+| R3 исполнителя на `685140a` (SELF-CHECK) | матрица 225/225, ширины 0 сбоев, zoom 200 % 22/22, регрессия 230/2 (долги HERO), стадии 61/61 · 46/46 · 47/47 | [R3_REPORT](R3_REPORT.md) |
+| Производительность, бюджеты объявлены до результатов | `b6040e3` — FAIL B2 (сохранён); `685140a` — **17/17 PASS**, mobile LCP 2 491,7 мс при пороге 2 500 | [R3P_PERF_BUDGETS](R3P_PERF_BUDGETS.md) |
+| **Независимый R4** (отдельный агент, не Opus) | **PASS WITH RECORDED LIMITS**, P0 и P1 нет; повторный замер 17/17 PASS (mobile LCP 2 491,2 мс) | [R4_INDEPENDENT_REVIEW](../../evidence/w4r2/r4/R4_INDEPENDENT_REVIEW.md), доказательства `evidence/w4r2/r4/evidence/` (`SHA256SUMS`) |
 
-## Открытые пункты до Gate B
+Исходные отчёты Lighthouse повторного замера R4 (19 МБ) — вне репозитория: `AXS/sandbox/evidence/2026-10-22_0524_w4r-release/r4-perf-raw-reports.tar.gz`, sha256 `f4abd17a50472d689c0fbb083af1738f95ea2c43b451e629c22e90ceda48722b`.
 
-1. **Производительность — BLOCKED** из-за диска хоста (C: 14,15 ГиБ, 2,97 %). Нужно восстановить место на хосте (сжатие vhdx / очистка — операция хоста), затем парный замер (~25 мин).
-2. **Независимый R4 — не выполнен.** Исполнитель не может быть своим проверяющим. Бриф: [R4_INDEPENDENT_BRIEF](R4_INDEPENDENT_BRIEF.md).
-3. **Размещение доказательств перед merge** (77 МиБ в `docs/showcase-v031/evidence/**`): [R3_PR_SIZE_AUDIT](R3_PR_SIZE_AUDIT.md).
-4. Базовые долги HERO `W4-DEBT-HERO-01/02` — вне R2, отдельной задачей.
+## Находки R4 и решения
 
-Merge, deploy, Canon, root gitlink и версия — не разрешены, до отдельного решения CREATOR.
+| ID | Находка | Решение |
+| --- | --- | --- |
+| P2-1 | Доказательства PR #12 (1 937 файлов / 87,2 МиБ; 37 файлов с путями хоста) попали бы на GitHub Pages | **Закрыто схемой релиза:** сливается только чистая ветка `release/0524-w4r`; доказательства сохраняются неизменяемым тегом на голове PR #12 + манифест SHA256 в ветке релиза. Аудит размера `R3_PR_SIZE_AUDIT` устарел (1 778 / 78,3 МиБ) — актуальные числа здесь |
+| P3-1 | D-06: при искусственной задержке одного `showcase-w4r.css` на 2 с переход по `/#manifesto` и `/#modules` уезжает; при реалистичном троттлинге — как у `b85`. D-06 зависит от inline `onload` — будущий CSP без `'unsafe-inline'` оставит стиль неприменённым | Записанное ограничение. CSP на сайте сейчас нет; при введении CSP — пересмотреть D-06 |
+| P3-2 | Firefox, лента следов, 375–430 px: каждое второе ArrowRight не сдвигает ленту; все карточки достижимы | Записанное ограничение, отдельная задача |
+| P3-3 | WebKit, нестабильный первый ArrowRight (2/160 в headless WPE), карточка достижима другими способами | Записанное ограничение; проверить на настоящем Safari macOS, исправлять отдельной задачей |
+| P3-4 | Исполнитель правил охранные тесты | В рамках Gate R-A; независимое сравнение R4 с `b85fbb0a` подтверждает, что ничего не скрыто |
+| P3-5 | Слабости инструментов исполнителя: клавиатурная проверка матрицы откатывается на `scrollBy`; проверка изображений WebKit зависит от времени загрузки; `w4_perf.cjs` жёстко чистит `/tmp/axs-0524-w4-perf` | Записано; инструменты не входят в продукт |
+| P3-6 | Пустая строка в `#chars`; на 1024 px терминал выше A+AD на 166 px (у A+AD там наложение текста) | Записано |
+
+Базовые долги HERO `W4-DEBT-HERO-01/02` (`R-W3A-02-poster-frame-1024x768`, `R01-no-h-overflow-720x450@2`) остаются FAIL — они есть и в `b85fbb0a`.
+
+## Полномочия
+
+CREATOR, 2026-10-22: «разрешаю делать: Merge, деплой, Canon, gitlink и версия». Версия — **v0.3.1** (выбор CREATOR). Canon менять не требуется: тексты W4.R сверены с Canon `3884ea43` только на чтение.
+
+## Не проверено
+
+Физические устройства, настоящий Safari macOS/iOS, screen reader, полевые Web Vitals и CDN Pages.
+
+## Визуальная передача
+
+- До → после: https://claude.ai/artifact/7CXkQXnRonabYL6BKu2R7q (`evidence/w4r2/r3/handoff.html`; кадры `b6040e3`, разметка секций с тех пор не менялась).
+- A+ → A+AD: https://claude.ai/artifact/REi9LvzkgmXBga9hRtu7xw.

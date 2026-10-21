@@ -1,0 +1,36 @@
+{
+ "stage": "R2.3",
+ "freeze": "9cf78b0",
+ "product_base": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "edits": [
+  "R2.1: #manifesto replaced verbatim from 9cf78b0 (A08 paths mapped to assets/showcase/visual-library/web/)",
+  "R2.1: #modules replaced verbatim from 9cf78b0 (A08 paths mapped to assets/showcase/visual-library/web/)",
+  "R2.2: #work replaced verbatim from 9cf78b0 (A08 paths mapped to assets/showcase/visual-library/web/)",
+  "R2.3: #world replaced verbatim from 9cf78b0 (A08 paths mapped to assets/showcase/visual-library/web/)",
+  "R2.3: #chars replaced verbatim from 9cf78b0 (A08 paths mapped to assets/showcase/visual-library/web/)",
+  "R2.3: index.html == A+AD prototype modulo stylesheet/script/A08 paths"
+ ],
+ "css_rules": "343/329",
+ "deviations": [
+  "D-01: standing CREATOR palette rule (no pink); pulse glint becomes neutral ink",
+  "D-04: tablet terminal — text takes the full terminal width",
+  "D-04",
+  "D-04: ring centred under the text",
+  "D-04: state ledger as a list",
+  "D-04",
+  "D-04",
+  "D-04: narrow desktop — ledger label above its items",
+  "D-04: ledger items wrap instead of overflowing",
+  "D-05: study footer labels fit at 320–380 px",
+  "D-05",
+  "D-03: WORLD plate label meets the W3.C 12 px type floor (prototype 11 px)",
+  "D-02: the approved RU line «Город растёт вверх. Глубина закрыта.» stays on one line inside the W04 frame at 360 px",
+  "D-02: two-line ENG heading inside the W04 frame down to 320 px",
+  "D-02: one-line RU line inside the W04 frame down to 320 px"
+ ],
+ "sha256": {
+  "index.html": "ba4b9558fc154bebe74814963bc1855dbdf02b32091b70a0bda73c594ca7e236",
+  "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+  "assets/js/showcase-w4r.js": "87780ac3f479bd6cfc7d897f1d62e7df71d44fae4c243600d8342e13d255cdec"
+ }
+}

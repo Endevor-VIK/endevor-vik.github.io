@@ -1,0 +1,633 @@
+{
+ "kind": "W4R_R3_WEBKIT_KEYBOARD",
+ "impl": "685140a40e55f151f9edcf9e7ab0170773ad4f55",
+ "webkit": "26.5",
+ "at": "2026-10-21T22:00:03.740Z",
+ "runs": [
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 390,
+   "repeat": 1,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 390,
+   "repeat": 2,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 390,
+   "repeat": 3,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 390,
+   "repeat": 4,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 390,
+   "repeat": 5,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 360,
+   "repeat": 1,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 360,
+   "repeat": 2,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 360,
+   "repeat": 3,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 360,
+   "repeat": 4,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": true,
+   "w": 360,
+   "repeat": 5,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 390,
+   "repeat": 1,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 390,
+   "repeat": 2,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 390,
+   "repeat": 3,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 390,
+   "repeat": 4,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 390,
+   "repeat": 5,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 360,
+   "repeat": 1,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 360,
+   "repeat": 2,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 360,
+   "repeat": 3,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 360,
+   "repeat": 4,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "traces",
+   "js": false,
+   "w": 360,
+   "repeat": 5,
+   "n": 5,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 390,
+   "repeat": 1,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 390,
+   "repeat": 2,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 390,
+   "repeat": 3,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 390,
+   "repeat": 4,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 390,
+   "repeat": 5,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 360,
+   "repeat": 1,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 360,
+   "repeat": 2,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 360,
+   "repeat": 3,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 360,
+   "repeat": 4,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": true,
+   "w": 360,
+   "repeat": 5,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 390,
+   "repeat": 1,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 390,
+   "repeat": 2,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 390,
+   "repeat": 3,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 390,
+   "repeat": 4,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 390,
+   "repeat": 5,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 360,
+   "repeat": 1,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 360,
+   "repeat": 2,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 360,
+   "repeat": 3,
+   "n": 4,
+   "forwardOnly": false,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 360,
+   "repeat": 4,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "rail": "surfaces",
+   "js": false,
+   "w": 360,
+   "repeat": 5,
+   "n": 4,
+   "forwardOnly": true,
+   "reachable": true,
+   "seen": [
+    0,
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "summary": {
+  "runs": 40,
+  "reachable": 40,
+  "forwardOnlyComplete": 39
+ }
+}

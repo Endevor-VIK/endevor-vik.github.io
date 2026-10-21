@@ -1,0 +1,712 @@
+{
+ "n_observations": 40,
+ "summary_vs_raw_mismatches": [],
+ "profiles": {
+  "mobile": {
+   "performance": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 97.5,
+    "median_after": 97.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     90,
+     95,
+     97,
+     97,
+     97,
+     97,
+     97,
+     97,
+     99,
+     100
+    ],
+    "before_values": [
+     94,
+     95,
+     97,
+     97,
+     97,
+     98,
+     98,
+     98,
+     98,
+     98
+    ],
+    "mean_after": 96.6,
+    "sd_after": 2.537715508089904
+   },
+   "accessibility": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "bestPractices": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "seo": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "fcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 1356.0492,
+    "median_after": 1509.5109750000001,
+    "paired_delta_median": 1.4851999999998498,
+    "after_values": [
+     1355.8,
+     1356.5,
+     1357.0,
+     1359.0,
+     1361.0,
+     1658.0,
+     1658.9,
+     1659.3,
+     1665.8,
+     2263.6
+    ],
+    "before_values": [
+     1354.5,
+     1354.9,
+     1355.0,
+     1355.2,
+     1355.3,
+     1356.8,
+     1357.0,
+     1658.0,
+     2262.9,
+     2265.3
+    ],
+    "mean_after": 1569.50356,
+    "sd_after": 271.82893485758547
+   },
+   "lcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 2412.8748,
+    "median_after": 2491.2266499999996,
+    "paired_delta_median": -90.93822499999987,
+    "after_values": [
+     1514.7,
+     1628.0,
+     1890.8,
+     2489.7,
+     2491.1,
+     2491.4,
+     2492.0,
+     2492.9,
+     2494.3,
+     2534.4
+    ],
+    "before_values": [
+     2409.9,
+     2410.1,
+     2410.7,
+     2410.7,
+     2412.2,
+     2413.5,
+     2456.2,
+     2580.6,
+     2615.3,
+     2634.1
+    ],
+    "mean_after": 2251.928525,
+    "sd_after": 385.81766012769293
+   },
+   "tbtMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 0.0,
+    "median_after": 16.0,
+    "paired_delta_median": 14,
+    "after_values": [
+     6,
+     7,
+     11,
+     11,
+     14,
+     18,
+     33,
+     45,
+     50.3,
+     391.0
+    ],
+    "before_values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     4,
+     5,
+     21
+    ],
+    "mean_after": 58.63258999999998,
+    "sd_after": 111.80216043723347
+   },
+   "cls": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 0.016322840752612415,
+    "median_after": 0.01625096160479698,
+    "paired_delta_median": -0.0006557995464107902,
+    "after_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "before_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mean_after": 0.015516496321423125,
+    "sd_after": 0.0013233000136216627
+   },
+   "lcpElements_after": [
+    "<div class=\"show-hero-byline\">"
+   ],
+   "lcpElements_before": [
+    "<div class=\"show-hero-byline\">"
+   ],
+   "renderBlocking_after": [
+    "fonts.css",
+    "index.css",
+    "showcase-v22.css",
+    "showcase-v23.css",
+    "showcase.css"
+   ],
+   "runtimeErrors": []
+  },
+  "desktop": {
+   "performance": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     99,
+     99,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "accessibility": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "bestPractices": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "seo": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "fcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 388.703825,
+    "median_after": 387.66184999999996,
+    "paired_delta_median": -33.84185000000002,
+    "after_values": [
+     329.5,
+     332.6,
+     368.7,
+     368.7,
+     387.4,
+     387.9,
+     495.5,
+     496.4,
+     498.3,
+     500.3
+    ],
+    "before_values": [
+     325.8,
+     325.9,
+     386.6,
+     388.5,
+     388.6,
+     388.8,
+     389.1,
+     389.1,
+     534.2,
+     536.7
+    ],
+    "mean_after": 416.53878499999996,
+    "sd_after": 68.69399962782794
+   },
+   "lcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 531.7718,
+    "median_after": 540.16615,
+    "paired_delta_median": 3.0468000000000757,
+    "after_values": [
+     534.8,
+     535.9,
+     536.4,
+     537.3,
+     537.5,
+     542.9,
+     547.4,
+     550.6,
+     571.1,
+     582.5
+    ],
+    "before_values": [
+     528.9,
+     531.4,
+     531.5,
+     531.6,
+     531.7,
+     531.8,
+     532.1,
+     532.1,
+     644.7,
+     645.2
+    ],
+    "mean_after": 547.631715,
+    "sd_after": 15.609843269585497
+   },
+   "tbtMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 0.0,
+    "median_after": 0.0,
+    "paired_delta_median": 0,
+    "after_values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "before_values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     18,
+     21
+    ],
+    "mean_after": 0,
+    "sd_after": 0.0
+   },
+   "cls": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 0.005280000296983971,
+    "median_after": 0.0035658748723522322,
+    "paired_delta_median": -0.0013564234865991965,
+    "after_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "before_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mean_after": 0.003577197579931115,
+    "sd_after": 0.0008488359541403251
+   },
+   "lcpElements_after": [
+    "<text x=\"118\" y=\"230\" fill=\"#ff2034\" opacity=\".55\" font-family=\"JetBrains Mono\" font-size="
+   ],
+   "lcpElements_before": [
+    "<text x=\"118\" y=\"230\" fill=\"#ff2034\" opacity=\".55\" font-family=\"JetBrains Mono\" font-size="
+   ],
+   "renderBlocking_after": [
+    "index.css",
+    "showcase-v22.css",
+    "showcase-v23.css",
+    "showcase.css"
+   ],
+   "runtimeErrors": []
+  }
+ },
+ "budgets": [
+  {
+   "id": "B1",
+   "check": "mobile perf AFTER >= 90",
+   "pass": true,
+   "detail": 97.0
+  },
+  {
+   "id": "B1",
+   "check": "desktop perf AFTER >= 95",
+   "pass": true,
+   "detail": 100.0
+  },
+  {
+   "id": "B2",
+   "check": "mobile lcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": -90.9,
+    "pct": -3.77
+   }
+  },
+  {
+   "id": "B5",
+   "check": "mobile fcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": 1.5,
+    "pct": 0.11
+   }
+  },
+  {
+   "id": "B3",
+   "check": "mobile CLS delta<=0.02 and AFTER<=0.1",
+   "pass": true,
+   "detail": {
+    "delta": -0.0006557995464107902,
+    "after": 0.01625096160479698
+   }
+  },
+  {
+   "id": "B4",
+   "check": "mobile TBT delta<=50 and AFTER<=200",
+   "pass": true,
+   "detail": {
+    "delta": 14,
+    "after": 16.0
+   }
+  },
+  {
+   "id": "B6",
+   "check": "mobile accessibility AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "mobile bestPractices AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "mobile seo AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B2",
+   "check": "desktop lcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": 3.0,
+    "pct": 0.57
+   }
+  },
+  {
+   "id": "B5",
+   "check": "desktop fcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": -33.8,
+    "pct": -8.71
+   }
+  },
+  {
+   "id": "B3",
+   "check": "desktop CLS delta<=0.02 and AFTER<=0.1",
+   "pass": true,
+   "detail": {
+    "delta": -0.0013564234865991965,
+    "after": 0.0035658748723522322
+   }
+  },
+  {
+   "id": "B4",
+   "check": "desktop TBT delta<=50",
+   "pass": true,
+   "detail": {
+    "delta": 0,
+    "after": 0.0
+   }
+  },
+  {
+   "id": "B6",
+   "check": "desktop accessibility AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "desktop bestPractices AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "desktop seo AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B2",
+   "check": "mobile LCP AFTER median <= 2500",
+   "pass": true,
+   "detail": 2491.2
+  }
+ ],
+ "budget_summary": "17/17"
+}

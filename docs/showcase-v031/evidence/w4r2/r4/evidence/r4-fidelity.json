@@ -1,0 +1,431 @@
+{
+ "kind": "W4R_R4_INDEPENDENT_PROBE",
+ "part": "fidelity",
+ "impl": "685140a40e55f151f9edcf9e7ab0170773ad4f55",
+ "base": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "freeze": "9cf78b0",
+ "at": "2026-10-21T22:26:16.324Z",
+ "engines": {
+  "chromium": "149.0.7827.55"
+ },
+ "results": [
+  {
+   "part": "fidelity",
+   "w": 1440,
+   "section": "manifesto",
+   "size_impl": [
+    1425,
+    2400
+   ],
+   "size_ad": [
+    1425,
+    2400
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1440,
+   "section": "modules",
+   "size_impl": [
+    1425,
+    1938
+   ],
+   "size_ad": [
+    1425,
+    1938
+   ],
+   "diff_px": 46,
+   "diff_pct": 0.0017,
+   "bbox": [
+    225,
+    1567,
+    232,
+    1575
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1440,
+   "section": "work",
+   "size_impl": [
+    1425,
+    3145
+   ],
+   "size_ad": [
+    1425,
+    3145
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1440,
+   "section": "world",
+   "size_impl": [
+    1425,
+    2544
+   ],
+   "size_ad": [
+    1425,
+    2544
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1440,
+   "section": "chars",
+   "size_impl": [
+    1425,
+    2626
+   ],
+   "size_ad": [
+    1425,
+    2626
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1024,
+   "section": "manifesto",
+   "size_impl": [
+    1009,
+    2911
+   ],
+   "size_ad": [
+    1009,
+    2745
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1024,
+   "section": "modules",
+   "size_impl": [
+    1009,
+    1739
+   ],
+   "size_ad": [
+    1009,
+    1740
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1024,
+   "section": "work",
+   "size_impl": [
+    1009,
+    4590
+   ],
+   "size_ad": [
+    1009,
+    4590
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1024,
+   "section": "world",
+   "size_impl": [
+    1009,
+    2442
+   ],
+   "size_ad": [
+    1009,
+    2442
+   ],
+   "diff_px": 264359,
+   "diff_pct": 10.729,
+   "bbox": [
+    0,
+    0,
+    1009,
+    2442
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 1024,
+   "section": "chars",
+   "size_impl": [
+    1009,
+    4474
+   ],
+   "size_ad": [
+    1009,
+    4473
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 390,
+   "section": "manifesto",
+   "size_impl": [
+    375,
+    3605
+   ],
+   "size_ad": [
+    375,
+    3605
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 390,
+   "section": "modules",
+   "size_impl": [
+    375,
+    2171
+   ],
+   "size_ad": [
+    375,
+    2171
+   ],
+   "diff_px": 10,
+   "diff_pct": 0.0012,
+   "bbox": [
+    108,
+    1535,
+    112,
+    1538
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 390,
+   "section": "work",
+   "size_impl": [
+    375,
+    3885
+   ],
+   "size_ad": [
+    375,
+    3885
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 390,
+   "section": "world",
+   "size_impl": [
+    375,
+    2513
+   ],
+   "size_ad": [
+    375,
+    2513
+   ],
+   "diff_px": 415,
+   "diff_pct": 0.044,
+   "bbox": [
+    33,
+    80,
+    125,
+    90
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 390,
+   "section": "chars",
+   "size_impl": [
+    375,
+    5217
+   ],
+   "size_ad": [
+    375,
+    5217
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 360,
+   "section": "manifesto",
+   "size_impl": [
+    345,
+    3753
+   ],
+   "size_ad": [
+    345,
+    3753
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 360,
+   "section": "modules",
+   "size_impl": [
+    345,
+    2269
+   ],
+   "size_ad": [
+    345,
+    2269
+   ],
+   "diff_px": 10,
+   "diff_pct": 0.0013,
+   "bbox": [
+    100,
+    1608,
+    103,
+    1612
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 360,
+   "section": "work",
+   "size_impl": [
+    345,
+    4040
+   ],
+   "size_ad": [
+    345,
+    4043
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 360,
+   "section": "world",
+   "size_impl": [
+    345,
+    2536
+   ],
+   "size_ad": [
+    345,
+    2536
+   ],
+   "diff_px": 12762,
+   "diff_pct": 1.4586,
+   "bbox": [
+    33,
+    72,
+    308,
+    183
+   ],
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  },
+  {
+   "part": "fidelity",
+   "w": 360,
+   "section": "chars",
+   "size_impl": [
+    345,
+    5263
+   ],
+   "size_ad": [
+    345,
+    5263
+   ],
+   "diff_px": 0,
+   "diff_pct": 0,
+   "bbox": null,
+   "errs": {
+    "impl": 0,
+    "ad": 0
+   }
+  }
+ ]
+}

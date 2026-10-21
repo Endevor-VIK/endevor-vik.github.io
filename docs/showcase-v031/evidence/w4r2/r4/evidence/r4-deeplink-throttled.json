@@ -1,0 +1,479 @@
+[
+ {
+  "arm": "base",
+  "hash": "#manifesto",
+  "w": 390,
+  "rep": 1,
+  "top": 50,
+  "y": 12129,
+  "media": null,
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#manifesto",
+  "w": 390,
+  "rep": 2,
+  "top": 50,
+  "y": 12129,
+  "media": null,
+  "cls": 0.0044,
+  "shifts": [
+   0.0007,
+   0.0035,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#manifesto",
+  "w": 1440,
+  "rep": 1,
+  "top": 97,
+  "y": 8719,
+  "media": null,
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#manifesto",
+  "w": 1440,
+  "rep": 2,
+  "top": 97,
+  "y": 8719,
+  "media": null,
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#modules",
+  "w": 390,
+  "rep": 1,
+  "top": 50,
+  "y": 14110,
+  "media": null,
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#modules",
+  "w": 390,
+  "rep": 2,
+  "top": 50,
+  "y": 14110,
+  "media": null,
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#modules",
+  "w": 1440,
+  "rep": 1,
+  "top": 97,
+  "y": 10384,
+  "media": null,
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#modules",
+  "w": 1440,
+  "rep": 2,
+  "top": 97,
+  "y": 10384,
+  "media": null,
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#world",
+  "w": 390,
+  "rep": 1,
+  "top": 49,
+  "y": 15547,
+  "media": null,
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#world",
+  "w": 390,
+  "rep": 2,
+  "top": 49,
+  "y": 15547,
+  "media": null,
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#world",
+  "w": 1440,
+  "rep": 1,
+  "top": 97,
+  "y": 11530,
+  "media": null,
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#world",
+  "w": 1440,
+  "rep": 2,
+  "top": 97,
+  "y": 11530,
+  "media": null,
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#chars",
+  "w": 390,
+  "rep": 1,
+  "top": 49,
+  "y": 17949,
+  "media": null,
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#chars",
+  "w": 390,
+  "rep": 2,
+  "top": 49,
+  "y": 17949,
+  "media": null,
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#chars",
+  "w": 1440,
+  "rep": 1,
+  "top": 97,
+  "y": 14106,
+  "media": null,
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "base",
+  "hash": "#chars",
+  "w": 1440,
+  "rep": 2,
+  "top": 97,
+  "y": 14106,
+  "media": null,
+  "cls": 0.0008,
+  "shifts": [
+   0,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#manifesto",
+  "w": 390,
+  "rep": 1,
+  "top": 49,
+  "y": 13656,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#manifesto",
+  "w": 390,
+  "rep": 2,
+  "top": 49,
+  "y": 13656,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#manifesto",
+  "w": 1440,
+  "rep": 1,
+  "top": 98,
+  "y": 10238,
+  "media": "all",
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#manifesto",
+  "w": 1440,
+  "rep": 2,
+  "top": 98,
+  "y": 10238,
+  "media": "all",
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#modules",
+  "w": 390,
+  "rep": 1,
+  "top": 49,
+  "y": 17260,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#modules",
+  "w": 390,
+  "rep": 2,
+  "top": 49,
+  "y": 17260,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#modules",
+  "w": 1440,
+  "rep": 1,
+  "top": 98,
+  "y": 12621,
+  "media": "all",
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#modules",
+  "w": 1440,
+  "rep": 2,
+  "top": 98,
+  "y": 12621,
+  "media": "all",
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#world",
+  "w": 390,
+  "rep": 1,
+  "top": 49,
+  "y": 19430,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#world",
+  "w": 390,
+  "rep": 2,
+  "top": 49,
+  "y": 19430,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#world",
+  "w": 1440,
+  "rep": 1,
+  "top": 98,
+  "y": 14558,
+  "media": "all",
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#world",
+  "w": 1440,
+  "rep": 2,
+  "top": 98,
+  "y": 14558,
+  "media": "all",
+  "cls": 0.0046,
+  "shifts": [
+   0,
+   0.0038,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#chars",
+  "w": 390,
+  "rep": 1,
+  "top": 50,
+  "y": 21942,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#chars",
+  "w": 390,
+  "rep": 2,
+  "top": 50,
+  "y": 21942,
+  "media": "all",
+  "cls": 0.0045,
+  "shifts": [
+   0.0007,
+   0.0036,
+   0.0002
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#chars",
+  "w": 1440,
+  "rep": 1,
+  "top": 98,
+  "y": 17073,
+  "media": "all",
+  "cls": 0.0008,
+  "shifts": [
+   0,
+   0.0008
+  ]
+ },
+ {
+  "arm": "impl",
+  "hash": "#chars",
+  "w": 1440,
+  "rep": 2,
+  "top": 98,
+  "y": 17073,
+  "media": "all",
+  "cls": 0.0015,
+  "shifts": [
+   0.0005,
+   0.001
+  ]
+ }
+]

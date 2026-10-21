@@ -1,0 +1,712 @@
+{
+ "n_observations": 40,
+ "summary_vs_raw_mismatches": [],
+ "profiles": {
+  "mobile": {
+   "performance": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 97.0,
+    "median_after": 97.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     90,
+     97,
+     97,
+     97,
+     97,
+     97,
+     97,
+     97,
+     97,
+     97
+    ],
+    "before_values": [
+     92,
+     96,
+     97,
+     97,
+     97,
+     97,
+     98,
+     98,
+     99,
+     99
+    ],
+    "mean_after": 96.3,
+    "sd_after": 2.1
+   },
+   "accessibility": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "bestPractices": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "seo": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "fcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 1657.898775,
+    "median_after": 1659.728025,
+    "paired_delta_median": 1.7484750000000986,
+    "after_values": [
+     1356.1,
+     1356.1,
+     1658.1,
+     1658.6,
+     1659.3,
+     1660.2,
+     1660.7,
+     2111.9,
+     2114.1,
+     2262.8
+    ],
+    "before_values": [
+     1354.5,
+     1362.8,
+     1656.1,
+     1656.8,
+     1657.1,
+     1658.7,
+     1663.3,
+     1958.2,
+     2113.2,
+     2261.4
+    ],
+    "mean_after": 1749.77088,
+    "sd_after": 296.28274658735467
+   },
+   "lcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 2408.5231,
+    "median_after": 2491.7172499999997,
+    "paired_delta_median": 84.06631249999964,
+    "after_values": [
+     2263.8,
+     2271.1,
+     2489.9,
+     2490.7,
+     2491.7,
+     2491.7,
+     2492.0,
+     2493.6,
+     2494.7,
+     2601.9
+    ],
+    "before_values": [
+     1519.2,
+     1813.3,
+     2033.2,
+     2263.2,
+     2408.1,
+     2408.9,
+     2409.1,
+     2411.6,
+     2561.9,
+     2567.1
+    ],
+    "mean_after": 2458.12363,
+    "sd_after": 100.73520031932475
+   },
+   "tbtMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 3.75,
+    "median_after": 16.0,
+    "paired_delta_median": 10.75,
+    "after_values": [
+     8,
+     11,
+     12,
+     13,
+     15,
+     17,
+     20,
+     21.5,
+     33,
+     236
+    ],
+    "before_values": [
+     0,
+     0,
+     0,
+     0,
+     3.5,
+     4,
+     8,
+     16,
+     134.0,
+     191
+    ],
+    "mean_after": 38.65,
+    "sd_after": 66.12187610768467
+   },
+   "cls": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 0.01684388120273168,
+    "median_after": 0.016285832746349895,
+    "paired_delta_median": -0.00032140563955905185,
+    "after_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "before_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mean_after": 0.016363626268039392,
+    "sd_after": 0.00025657950224654757
+   },
+   "lcpElements_after": [
+    "<div class=\"show-hero-byline\">"
+   ],
+   "lcpElements_before": [
+    "<div class=\"show-hero-byline\">"
+   ],
+   "renderBlocking_after": [
+    "fonts.css",
+    "index.css",
+    "showcase-v22.css",
+    "showcase-v23.css",
+    "showcase.css"
+   ],
+   "runtimeErrors": []
+  },
+  "desktop": {
+   "performance": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     99,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     99,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 99.9,
+    "sd_after": 0.3
+   },
+   "accessibility": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "bestPractices": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "seo": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 100.0,
+    "median_after": 100.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "before_values": [
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "mean_after": 100,
+    "sd_after": 0.0
+   },
+   "fcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 388.85997499999996,
+    "median_after": 441.313,
+    "paired_delta_median": -2.7342999999999904,
+    "after_values": [
+     369.2,
+     370.4,
+     371.6,
+     372.5,
+     389.8,
+     492.8,
+     493.0,
+     495.9,
+     501.1,
+     501.7
+    ],
+    "before_values": [
+     324.3,
+     325.4,
+     326.5,
+     388.0,
+     388.2,
+     389.5,
+     390.2,
+     490.9,
+     491.6,
+     546.4
+    ],
+    "mean_after": 435.808575,
+    "sd_after": 61.4067304347628
+   },
+   "lcpMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 531.8133,
+    "median_after": 542.4715249999999,
+    "paired_delta_median": 11.114837499999908,
+    "after_values": [
+     538.3,
+     539.7,
+     540.8,
+     541.3,
+     541.7,
+     543.3,
+     544.9,
+     576.9,
+     586.2,
+     658.9
+    ],
+    "before_values": [
+     528.5,
+     529.7,
+     530.7,
+     530.8,
+     530.9,
+     532.7,
+     533.5,
+     541.9,
+     565.3,
+     631.7
+    ],
+    "mean_after": 561.2094275,
+    "sd_after": 36.30864087897409
+   },
+   "tbtMs": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 0.0,
+    "median_after": 0.0,
+    "paired_delta_median": 0.0,
+    "after_values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     31
+    ],
+    "before_values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "mean_after": 3.1,
+    "sd_after": 9.3
+   },
+   "cls": {
+    "n_before": 10,
+    "n_after": 10,
+    "median_before": 0.005345522855960192,
+    "median_after": 0.004067240546686618,
+    "paired_delta_median": -0.0004236238389955815,
+    "after_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "before_values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mean_after": 0.004309276030552826,
+    "sd_after": 0.0005607956298495381
+   },
+   "lcpElements_after": [
+    "<text x=\"118\" y=\"230\" fill=\"#ff2034\" opacity=\".55\" font-family=\"JetBrains Mono\" font-size="
+   ],
+   "lcpElements_before": [
+    "<text x=\"118\" y=\"230\" fill=\"#ff2034\" opacity=\".55\" font-family=\"JetBrains Mono\" font-size="
+   ],
+   "renderBlocking_after": [
+    "index.css",
+    "showcase-v22.css",
+    "showcase-v23.css",
+    "showcase.css"
+   ],
+   "runtimeErrors": []
+  }
+ },
+ "budgets": [
+  {
+   "id": "B1",
+   "check": "mobile perf AFTER >= 90",
+   "pass": true,
+   "detail": 97.0
+  },
+  {
+   "id": "B1",
+   "check": "desktop perf AFTER >= 95",
+   "pass": true,
+   "detail": 100.0
+  },
+  {
+   "id": "B2",
+   "check": "mobile lcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": 84.1,
+    "pct": 3.49
+   }
+  },
+  {
+   "id": "B5",
+   "check": "mobile fcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": 1.7,
+    "pct": 0.11
+   }
+  },
+  {
+   "id": "B3",
+   "check": "mobile CLS delta<=0.02 and AFTER<=0.1",
+   "pass": true,
+   "detail": {
+    "delta": -0.00032140563955905185,
+    "after": 0.016285832746349895
+   }
+  },
+  {
+   "id": "B4",
+   "check": "mobile TBT delta<=50 and AFTER<=200",
+   "pass": true,
+   "detail": {
+    "delta": 10.75,
+    "after": 16.0
+   }
+  },
+  {
+   "id": "B6",
+   "check": "mobile accessibility AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "mobile bestPractices AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "mobile seo AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B2",
+   "check": "desktop lcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": 11.1,
+    "pct": 2.09
+   }
+  },
+  {
+   "id": "B5",
+   "check": "desktop fcpMs paired delta not (>+10% AND >+150ms)",
+   "pass": true,
+   "detail": {
+    "delta_ms": -2.7,
+    "pct": -0.7
+   }
+  },
+  {
+   "id": "B3",
+   "check": "desktop CLS delta<=0.02 and AFTER<=0.1",
+   "pass": true,
+   "detail": {
+    "delta": -0.0004236238389955815,
+    "after": 0.004067240546686618
+   }
+  },
+  {
+   "id": "B4",
+   "check": "desktop TBT delta<=50",
+   "pass": true,
+   "detail": {
+    "delta": 0.0,
+    "after": 0.0
+   }
+  },
+  {
+   "id": "B6",
+   "check": "desktop accessibility AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "desktop bestPractices AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B6",
+   "check": "desktop seo AFTER >= BEFORE",
+   "pass": true,
+   "detail": [
+    100.0,
+    100.0
+   ]
+  },
+  {
+   "id": "B2",
+   "check": "mobile LCP AFTER median <= 2500",
+   "pass": true,
+   "detail": 2491.7
+  }
+ ],
+ "budget_summary": "17/17"
+}
