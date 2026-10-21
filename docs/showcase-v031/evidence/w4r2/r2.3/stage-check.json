@@ -1,0 +1,983 @@
+{
+ "kind": "W4R_R2_STAGE_SELF_CHECK",
+ "label": "SELF-CHECK — executor verification, not independent PASS",
+ "stage": "R2.3",
+ "impl": "8815f17d5bdcf407769a3c03da5c72e264d95436",
+ "freeze": "9cf78b0",
+ "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
+ "at": "2026-10-21T14:30:13.132Z",
+ "browser": "149.0.7827.55",
+ "heights": {
+  "360": {
+   "work": {
+    "impl": 4041.84,
+    "ad": 4041.84,
+    "base": 2443.13
+   },
+   "system": {
+    "impl": 2668.39,
+    "ad": 2668.39,
+    "base": 2668.39
+   },
+   "manifesto": {
+    "impl": 3751.98,
+    "ad": 3751.98,
+    "base": 2028.25
+   },
+   "modules": {
+    "impl": 2268.17,
+    "ad": 2268.17,
+    "base": 1567.75
+   },
+   "world": {
+    "impl": 2534.34,
+    "ad": 2534.34,
+    "base": 2364.13
+   },
+   "chars": {
+    "impl": 5261.8,
+    "ad": 5261.8,
+    "base": 5163.97
+   },
+   "factions": {
+    "impl": 2002.36,
+    "ad": 2002.36,
+    "base": 2002.36
+   },
+   "vision": {
+    "impl": 3295.83,
+    "ad": 3295.83,
+    "base": 3295.83
+   }
+  },
+  "390": {
+   "work": {
+    "impl": 3884.23,
+    "ad": 3884.23,
+    "base": 2357.5
+   },
+   "system": {
+    "impl": 2652.97,
+    "ad": 2652.97,
+    "base": 2652.97
+   },
+   "manifesto": {
+    "impl": 3604.02,
+    "ad": 3604.02,
+    "base": 1980.88
+   },
+   "modules": {
+    "impl": 2169.98,
+    "ad": 2169.98,
+    "base": 1436.86
+   },
+   "world": {
+    "impl": 2512.22,
+    "ad": 2512.22,
+    "base": 2401.75
+   },
+   "chars": {
+    "impl": 5216.3,
+    "ad": 5216.3,
+    "base": 5110.47
+   },
+   "factions": {
+    "impl": 1986.17,
+    "ad": 1986.17,
+    "base": 1986.17
+   },
+   "vision": {
+    "impl": 3189.53,
+    "ad": 3189.53,
+    "base": 3189.53
+   }
+  },
+  "1440": {
+   "work": {
+    "impl": 3143.5,
+    "ad": 3143.5,
+    "base": 1624.22
+   },
+   "system": {
+    "impl": 1542.8,
+    "ad": 1542.8,
+    "base": 1542.8
+   },
+   "manifesto": {
+    "impl": 2398.77,
+    "ad": 2398.77,
+    "base": 1680.23
+   },
+   "modules": {
+    "impl": 1937.16,
+    "ad": 1937.16,
+    "base": 1161.69
+   },
+   "world": {
+    "impl": 2543.39,
+    "ad": 2543.39,
+    "base": 2604.58
+   },
+   "chars": {
+    "impl": 2624.83,
+    "ad": 2624.83,
+    "base": 2575.66
+   },
+   "factions": {
+    "impl": 1297.78,
+    "ad": 1297.78,
+    "base": 1297.78
+   },
+   "vision": {
+    "impl": 2221.13,
+    "ad": 2221.13,
+    "base": 2221.13
+   }
+  },
+  "1920": {
+   "work": {
+    "impl": 3158.52,
+    "ad": 3158.52,
+    "base": 1639.23
+   },
+   "system": {
+    "impl": 1546.86,
+    "ad": 1546.86,
+    "base": 1546.86
+   },
+   "manifesto": {
+    "impl": 2568.16,
+    "ad": 2568.16,
+    "base": 1751.58
+   },
+   "modules": {
+    "impl": 1943.92,
+    "ad": 1943.92,
+    "base": 1182.91
+   },
+   "world": {
+    "impl": 2643.59,
+    "ad": 2643.59,
+    "base": 2704.78
+   },
+   "chars": {
+    "impl": 2631.5,
+    "ad": 2631.5,
+    "base": 2586.33
+   },
+   "factions": {
+    "impl": 1348.17,
+    "ad": 1348.17,
+    "base": 1348.17
+   },
+   "vision": {
+    "impl": 2235.25,
+    "ad": 2235.25,
+    "base": 2235.25
+   }
+  }
+ },
+ "captures": [
+  {
+   "file": "captures/impl-1440-chars-01.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 54830,
+   "sha256": "0e111cf41b56dada1fead5cd48fdd9c5b887f5dafa82e27bcdafc9cfb3490b56",
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 17296.609375,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-chars-02.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 55506,
+   "sha256": "3ea6672f9253610416a6336a0539bffe34642ca83dfc7978325fe9da9c8237da",
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 18076.609375,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-chars-03.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 73208,
+   "sha256": "b851fe65cd32201d1f5ce1543f12b70fff7908fcd931edb04b9898ba1c5bf263",
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 18856.609375,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-chars-04.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 59320,
+   "sha256": "ce917dcb6e11254563c4f4ba15204b17b2146ad9870579c67f236b27ab05bef2",
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 19636.609375,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-world-01.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 147956,
+   "sha256": "fe4774b6050505df61633b31da7c2784c5cfa4f7748095fb15e684f3764b9387",
+   "section": "world",
+   "segment": 1,
+   "scrollY": 14753.21875,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-world-02.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 214742,
+   "sha256": "53863a451a1a05b3e1318c78222c02caa35eeee56bb7a94d3a9baa324a47ed8a",
+   "section": "world",
+   "segment": 2,
+   "scrollY": 15533.21875,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-world-03.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 66120,
+   "sha256": "a2fe1b1a9182e3f4ad77ee7e933e8e64817e4c96c02c13196e5c142e60b17de2",
+   "section": "world",
+   "segment": 3,
+   "scrollY": 16313.21875,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-world-04.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 51776,
+   "sha256": "c1543b7df3945803e944a13b49ee4a607c767591b5cd92feca9d0d5e221dc0e0",
+   "section": "world",
+   "segment": 4,
+   "scrollY": 17093.21875,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-360-chars-01.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 19642,
+   "sha256": "925eca589ebb6196186fa099bf65e5ce7ec43d82100ca622b90c1c7dc0b45f09",
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 22680.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-chars-02.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 21208,
+   "sha256": "64dcee90576e55750fa5b5f77e1f0c82ed93d12e082b1cdfa90b5e502e4ed114",
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 23360.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-chars-03.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 17964,
+   "sha256": "6efafe73fb316b6e18581a0072029a5e5ccfb920a729fdf7b3af2ed8cc380c1d",
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 24040.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-chars-04.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 15266,
+   "sha256": "54b40814e0bc4d21d0ed1fcf826e2eff247f5ab80e6d03411099a1591a5d195d",
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 24720.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-chars-05.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 23088,
+   "sha256": "12f24de35aa08b31f2c103966a9ad17ae78d02a6119e4fc6ad6ae7bba44cde71",
+   "section": "chars",
+   "segment": 5,
+   "scrollY": 25400.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-chars-06.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 33124,
+   "sha256": "c064745eae6ed7b4809ab3937842490d65c0519adfb6022eca619b2e3ed2a0f8",
+   "section": "chars",
+   "segment": 6,
+   "scrollY": 26080.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-chars-07.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 20832,
+   "sha256": "3ed996b62bea3af76bc74bf15593bc98b8730334f5442878624e18b4dbe8422b",
+   "section": "chars",
+   "segment": 7,
+   "scrollY": 26760.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-chars-08.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 14656,
+   "sha256": "f20bdf93ec79e56b676bd7eaf4aa9bdc5034761f5c9a40ceb78ac30cab9b08bc",
+   "section": "chars",
+   "segment": 8,
+   "scrollY": 27440.21875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-world-01.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 31156,
+   "sha256": "983ed5f49ac86b2a078eab6496244e2e6545fcbfd27d32008e199b237bd5b57a",
+   "section": "world",
+   "segment": 1,
+   "scrollY": 20145.875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-world-02.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 27374,
+   "sha256": "e1a84505792308c639691b127a49d66c9d9c15fc4fe66ff1e86ddaf6f9d97a56",
+   "section": "world",
+   "segment": 2,
+   "scrollY": 20825.875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-world-03.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 22846,
+   "sha256": "807d652f825455315d5817664890db0d20a7892c6ee82b2b06e9e301eadac0de",
+   "section": "world",
+   "segment": 3,
+   "scrollY": 21505.875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-world-04.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 25404,
+   "sha256": "e459c4e1edf4307fe26428efa027347493f19ce3464f8b6a525a77a06c6b81d5",
+   "section": "world",
+   "segment": 4,
+   "scrollY": 22185.875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-390-chars-01.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 19948,
+   "sha256": "6446c6480b460404b8830c25c7447b3d18dc23cd65777582a6d489875a3d8b98",
+   "section": "chars",
+   "segment": 1,
+   "scrollY": 21991.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-chars-02.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 22250,
+   "sha256": "896ecac3456deff970194f4c7fe11b26b889de9db683ee2b8c4d23f4394bde8b",
+   "section": "chars",
+   "segment": 2,
+   "scrollY": 22715.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-chars-03.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 18246,
+   "sha256": "8da3e6fb6855b8af396c71c49fc974397421ad7d01e2045a26823ea6c479efac",
+   "section": "chars",
+   "segment": 3,
+   "scrollY": 23439.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-chars-04.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 17692,
+   "sha256": "62df4464d7f223cb1da4143bb9d69aefc3ad838954759bc72594b99f600addce",
+   "section": "chars",
+   "segment": 4,
+   "scrollY": 24163.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-chars-05.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27384,
+   "sha256": "78a9ebbcb6ab8f321d8edfd6353ffc4ff555d43605ae38958a08f0940dd68fce",
+   "section": "chars",
+   "segment": 5,
+   "scrollY": 24887.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-chars-06.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 33766,
+   "sha256": "6bf658b4df8e5382de5621653823688b698c5b4da2874e8cc5b3aad81d8468d0",
+   "section": "chars",
+   "segment": 6,
+   "scrollY": 25611.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-chars-07.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 15558,
+   "sha256": "907a7ca037baedb5a5b07188f262202e708a6ec4b79ecbe4cf3aa0da592f8c81",
+   "section": "chars",
+   "segment": 7,
+   "scrollY": 26335.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-chars-08.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 25356,
+   "sha256": "96e01a9cdc5238ad9cf3cb48d7d4959be955ed4a0887b277c53d31d3a26a9b36",
+   "section": "chars",
+   "segment": 8,
+   "scrollY": 27059.609375,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-world-01.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 41668,
+   "sha256": "13b351d4e7a7acb14fd5a0b7a5f604318033d47f51fa8edd8546a9c0b45022dc",
+   "section": "world",
+   "segment": 1,
+   "scrollY": 19479.390625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-world-02.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 32206,
+   "sha256": "1fb9dcf04436c96a479b4b5f5d7e74ef750ae228630890c38f3f27ba95cd0ee3",
+   "section": "world",
+   "segment": 2,
+   "scrollY": 20203.390625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-world-03.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 30864,
+   "sha256": "24c34e06c2dfe32f845ad10a6427ae0767066cdf967bb77b645cd6fb0ade5dfb",
+   "section": "world",
+   "segment": 3,
+   "scrollY": 20927.390625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-world-04.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27224,
+   "sha256": "81ecd406a16ccaf7c438a348f22b94d58131ca57deac31653b86fba11cc7a3ca",
+   "section": "world",
+   "segment": 4,
+   "scrollY": 21651.390625,
+   "w": 390
+  }
+ ],
+ "axe_impl_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "color-contrast",
+    "n": 124
+   }
+  ]
+ },
+ "axe_ad_1440": {
+  "v": [],
+  "inc": [
+   {
+    "id": "color-contrast",
+    "n": 124
+   }
+  ]
+ },
+ "axe_impl_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "color-contrast",
+    "n": 128
+   }
+  ]
+ },
+ "axe_ad_390": {
+  "v": [],
+  "inc": [
+   {
+    "id": "color-contrast",
+    "n": 128
+   }
+  ]
+ },
+ "checks": [
+  {
+   "name": "frame impl-1440-world-01.png: chapter plate painted",
+   "pass": true,
+   "luminance": 37.8
+  },
+  {
+   "name": "frame impl-1440-chars-04.png: chapter plate painted",
+   "pass": true,
+   "luminance": 43.59
+  },
+  {
+   "name": "1440: #world height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 2543.39,
+   "ad": 2543.39,
+   "delta": 0,
+   "tol": 25.4
+  },
+  {
+   "name": "1440: #world text equals A+AD",
+   "pass": true,
+   "len": 1466
+  },
+  {
+   "name": "1440: #world SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 0
+  },
+  {
+   "name": "1440: #chars height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 2624.83,
+   "ad": 2624.83,
+   "delta": 0,
+   "tol": 26.2
+  },
+  {
+   "name": "1440: #chars text equals A+AD",
+   "pass": true,
+   "len": 4272
+  },
+  {
+   "name": "1440: #chars SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 17
+  },
+  {
+   "name": "1440: untouched #system height equals b85",
+   "pass": true,
+   "impl": 1542.8,
+   "base": 1542.8
+  },
+  {
+   "name": "1440: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 1297.78,
+   "base": 1297.78
+  },
+  {
+   "name": "1440: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 2221.13,
+   "base": 2221.13
+  },
+  {
+   "name": "1440: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "1920: #world height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 2643.59,
+   "ad": 2643.59,
+   "delta": 0,
+   "tol": 26.4
+  },
+  {
+   "name": "1920: #world text equals A+AD",
+   "pass": true,
+   "len": 1466
+  },
+  {
+   "name": "1920: #world SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 0
+  },
+  {
+   "name": "1920: #chars height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 2631.5,
+   "ad": 2631.5,
+   "delta": 0,
+   "tol": 26.3
+  },
+  {
+   "name": "1920: #chars text equals A+AD",
+   "pass": true,
+   "len": 4272
+  },
+  {
+   "name": "1920: #chars SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 17
+  },
+  {
+   "name": "1920: untouched #system height equals b85",
+   "pass": true,
+   "impl": 1546.86,
+   "base": 1546.86
+  },
+  {
+   "name": "1920: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 1348.17,
+   "base": 1348.17
+  },
+  {
+   "name": "1920: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 2235.25,
+   "base": 2235.25
+  },
+  {
+   "name": "1920: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "frame impl-390-world-01.png: chapter plate painted",
+   "pass": true,
+   "luminance": 34.51
+  },
+  {
+   "name": "frame impl-390-chars-08.png: chapter plate painted",
+   "pass": true,
+   "luminance": 36.18
+  },
+  {
+   "name": "390: #world height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 2512.22,
+   "ad": 2512.22,
+   "delta": 0,
+   "tol": 25.1
+  },
+  {
+   "name": "390: #world text equals A+AD",
+   "pass": true,
+   "len": 1466
+  },
+  {
+   "name": "390: #world SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 0
+  },
+  {
+   "name": "390: #chars height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 5216.3,
+   "ad": 5216.3,
+   "delta": 0,
+   "tol": 52.2
+  },
+  {
+   "name": "390: #chars text equals A+AD",
+   "pass": true,
+   "len": 4272
+  },
+  {
+   "name": "390: #chars SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 17
+  },
+  {
+   "name": "390: untouched #system height equals b85",
+   "pass": true,
+   "impl": 2652.97,
+   "base": 2652.97
+  },
+  {
+   "name": "390: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 1986.17,
+   "base": 1986.17
+  },
+  {
+   "name": "390: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 3189.53,
+   "base": 3189.53
+  },
+  {
+   "name": "390: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "frame impl-360-world-01.png: chapter plate painted",
+   "pass": true,
+   "luminance": 37.07
+  },
+  {
+   "name": "frame impl-360-chars-08.png: chapter plate painted",
+   "pass": true,
+   "luminance": 36.19
+  },
+  {
+   "name": "360: #world height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 2534.34,
+   "ad": 2534.34,
+   "delta": 0,
+   "tol": 25.3
+  },
+  {
+   "name": "360: #world text equals A+AD",
+   "pass": true,
+   "len": 1466
+  },
+  {
+   "name": "360: #world SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 0
+  },
+  {
+   "name": "360: #chars height vs A+AD within max(1%,16px)",
+   "pass": true,
+   "impl": 5261.8,
+   "ad": 5261.8,
+   "delta": 0,
+   "tol": 52.6
+  },
+  {
+   "name": "360: #chars text equals A+AD",
+   "pass": true,
+   "len": 4272
+  },
+  {
+   "name": "360: #chars SVG geometry equals A+AD",
+   "pass": true,
+   "paths": 17
+  },
+  {
+   "name": "360: untouched #system height equals b85",
+   "pass": true,
+   "impl": 2668.39,
+   "base": 2668.39
+  },
+  {
+   "name": "360: untouched #factions height equals b85",
+   "pass": true,
+   "impl": 2002.36,
+   "base": 2002.36
+  },
+  {
+   "name": "360: untouched #vision height equals b85",
+   "pass": true,
+   "impl": 3295.83,
+   "base": 3295.83
+  },
+  {
+   "name": "360: no overflow, no broken images, TYPE A fonts",
+   "pass": true,
+   "broken": []
+  },
+  {
+   "name": "1440: W04 frame height equals b85; heading copy inside the frame; RU line single",
+   "pass": true,
+   "impl": {
+    "plate": 252,
+    "copyInside": true,
+    "translation": "Город растёт вверх. Глубина закрыта.",
+    "lines": 1,
+    "charsTitle": "THREE LIVESINSIDE THE FRACTURE.",
+    "charsFont": "66.24px"
+   },
+   "basePlate": 252
+  },
+  {
+   "name": "1920: W04 frame height equals b85; heading copy inside the frame; RU line single",
+   "pass": true,
+   "impl": {
+    "plate": 302.39,
+    "copyInside": true,
+    "translation": "Город растёт вверх. Глубина закрыта.",
+    "lines": 1,
+    "charsTitle": "THREE LIVESINSIDE THE FRACTURE.",
+    "charsFont": "70px"
+   },
+   "basePlate": 302.39
+  },
+  {
+   "name": "390: W04 frame height equals b85; heading copy inside the frame; RU line single",
+   "pass": true,
+   "impl": {
+    "plate": 163.8,
+    "copyInside": true,
+    "translation": "Город растёт вверх. Глубина закрыта.",
+    "lines": 1,
+    "charsTitle": "THREE LIVESINSIDE THE FRACTURE.",
+    "charsFont": "38px"
+   },
+   "basePlate": 163.8
+  },
+  {
+   "name": "360: W04 frame height equals b85; heading copy inside the frame; RU line single",
+   "pass": true,
+   "impl": {
+    "plate": 151.19,
+    "copyInside": true,
+    "translation": "Город растёт вверх. Глубина закрыта.",
+    "lines": 1,
+    "charsTitle": "THREE LIVESINSIDE THE FRACTURE.",
+    "charsFont": "34px"
+   },
+   "basePlate": 151.19
+  },
+  {
+   "name": "axe/1440: stage sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "color-contrast",
+     "n": 124
+    }
+   ]
+  },
+  {
+   "name": "axe/390: stage sections 0 violations",
+   "pass": true,
+   "v": [],
+   "inc": [
+    {
+     "id": "color-contrast",
+     "n": 128
+    }
+   ]
+  },
+  {
+   "name": "runtime: no page errors or HTTP ≥ 400 (impl, ad, base)",
+   "pass": true,
+   "errors": []
+  }
+ ],
+ "summary": "53/53",
+ "captureMethod": "native viewport frames, overlap 120 px, fixed header/nav/ticker/cursor/progress hidden after measurement; chapter-plate luminance guard"
+}

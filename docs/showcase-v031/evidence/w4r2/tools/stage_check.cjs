@@ -38,6 +38,19 @@ function serve(){
 }
 const checks=[],captures=[],errors=[];const check=(name,pass,detail={})=>{checks.push({name,pass:!!pass,...detail});console.log((pass?'PASS ':'FAIL ')+name+(Object.keys(detail).length?' '+JSON.stringify(detail).slice(0,300):''));};
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+// Native viewport frames with overlap (no fullPage: full-page clips intermittently left chapter-plate images unpainted at 1440).
+// Guard: a chapter plate inside the frame must not render near-black.
+const lum=(png,r)=>+cp.execFileSync('python3',['-c','import io,sys;from PIL import Image,ImageStat;a=[int(x) for x in sys.argv[1:]];im=Image.open(io.BytesIO(sys.stdin.buffer.read())).convert("L").crop(tuple(a));print(round(ImageStat.Stat(im).mean[0],2))',...r.map(String)],{input:png}).toString();
+async function segments(page,id,w,h,prefix){
+ const geo=await page.evaluate(id=>{const e=document.getElementById(id),r=e.getBoundingClientRect();return {top:r.top+scrollY,bottom:r.bottom+scrollY,max:document.documentElement.scrollHeight-innerHeight};},id);
+ const step=h-120;let i=0;
+ for(let y=geo.top;;y+=step){const yy=Math.min(y,geo.max);await page.evaluate(y=>window.scrollTo({top:y,behavior:'instant'}),yy);await page.waitForTimeout(150);
+  const png=await page.screenshot({animations:'disabled'}),file=`${prefix}-${id}-${String(++i).padStart(2,'0')}.png`;fs.writeFileSync(path.join(OUT,file),png);
+  const plates=await page.evaluate(()=>[...document.querySelectorAll('.ax-chapter-plate')].map(p=>p.getBoundingClientRect()).filter(r=>r.top>=0&&r.bottom<=innerHeight&&r.height>60).map(r=>[Math.round(r.left+8),Math.round(r.top+8),Math.round(r.right-8),Math.round(r.bottom-8)]));
+  for(const r of plates){const L=lum(png,r);check(`frame ${file}: chapter plate painted`,L>3,{luminance:L});}
+  captures.push({file,w,section:id,segment:i,scrollY:yy,sha256:hash(png)});
+  if(yy+h>=geo.bottom||yy>=geo.max)break;}
+}
 // Review crops only: the fixed header (backdrop blur), nav, ticker, cursor and progress bar would float over full-page clips.
 const REVIEW_ONLY_CSS='header.top,.nav,.ticker,.show-mobile-nav,.index-cursor,.v22-scroll-progress{visibility:hidden!important}';
 (async()=>{
@@ -64,8 +77,7 @@ const REVIEW_ONLY_CSS='header.top,.nav,.ticker,.show-mobile-nav,.index-cursor,.v
    for(const arm of ['impl','ad','base']){const {ctx,page}=await open(arm,w,h);await settle(page);got[arm]=await facts(page);
     if(arm==='impl'&&SHOTS&&w!==1920||arm==='impl'&&SHOTS&&w===1920&&NOW.includes('manifesto')){
      await page.mouse.move(0,0);await page.addStyleTag({content:REVIEW_ONLY_CSS});
-     for(const id of NOW){const loc=page.locator('#'+id);await loc.scrollIntoViewIfNeeded();await page.waitForTimeout(60);const b=await loc.boundingBox(),sy=await page.evaluate(()=>scrollY);
-      const file=`impl-${w}-${id}.png`,buf=await page.screenshot({path:path.join(OUT,file),fullPage:true,animations:'disabled',clip:{x:0,y:Math.max(0,b.y+sy),width:w,height:Math.min(b.height,9000)}});captures.push({file,w,section:id,sha256:hash(buf)});}
+     for(const id of NOW)await segments(page,id,w,h,`impl-${w}`);
      if(w===390)for(const name of (STAGE===1?['traces']:STAGE===2?['surfaces']:[])){
       await page.setViewportSize({width:w,height:1500});await page.waitForTimeout(300);const rail=page.locator(`[data-ad-rail="${name}"]`);await rail.evaluate(e=>e.scrollIntoView({block:'start'}));await page.evaluate(()=>scrollBy(0,-12));
       const n=await rail.evaluate(e=>e.children.length);

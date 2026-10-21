@@ -57,9 +57,12 @@ async function webp(png,file){const p=cp.spawnSync('python3',['-c','import sys,i
    for(const arm of ['impl','base','ad']){const {ctx,page}=await open(arm,w,h);await settle(page);got[arm]=await facts(page);
     if(SHOTS&&[1440,390].includes(w)&&(arm!=='ad')&&(engine==='chromium'||arm==='impl')){
      await page.mouse.move(0,0);await page.addStyleTag({content:REVIEW_ONLY_CSS});
-     for(const id of CHANGED){const loc=page.locator('#'+id);await loc.scrollIntoViewIfNeeded();await page.waitForTimeout(80);const b=await loc.boundingBox(),sy=await page.evaluate(()=>scrollY);
-      const png=await page.screenshot({fullPage:true,animations:'disabled',clip:{x:0,y:Math.max(0,b.y+sy),width:w,height:Math.min(b.height,9000)}});
-      const file=`${engine}-${arm==='base'?'before':'impl'}-${w}-${id}.webp`,buf=await webp(png,file);captures.push({file,engine,arm,w,section:id,bytes:buf.length,sha256:hash(buf)});}}
+     for(const id of CHANGED){const geo=await page.evaluate(id=>{const r=document.getElementById(id).getBoundingClientRect();return {top:r.top+scrollY,bottom:r.bottom+scrollY,max:document.documentElement.scrollHeight-innerHeight};},id);
+      let i=0;for(let y=geo.top;;y+=h-120){const yy=Math.min(y,geo.max);await page.evaluate(y=>window.scrollTo({top:y,behavior:'instant'}),yy);await page.waitForTimeout(150);
+       const png=await page.screenshot({animations:'disabled'}),file=`${engine}-${arm==='base'?'before':'impl'}-${w}-${id}-${String(++i).padStart(2,'0')}.webp`,buf=await webp(png,file);
+       const plates=await page.evaluate(()=>[...document.querySelectorAll('.ax-chapter-plate')].map(p=>p.getBoundingClientRect()).filter(r=>r.top>=0&&r.bottom<=innerHeight&&r.height>60).map(r=>[Math.round(r.left+8),Math.round(r.top+8),Math.round(r.right-8),Math.round(r.bottom-8)]));
+       for(const r of plates){const L=+cp.execFileSync('python3',['-c','import io,sys;from PIL import Image,ImageStat;a=[int(x) for x in sys.argv[1:]];print(round(ImageStat.Stat(Image.open(io.BytesIO(sys.stdin.buffer.read())).convert("L").crop(tuple(a))).mean[0],2))',...r.map(String)],{input:png}).toString();check(engine,`frame ${file}: chapter plate painted`,L>3,{luminance:L});}
+       captures.push({file,engine,arm,w,section:id,segment:i,scrollY:yy,bytes:buf.length,sha256:hash(buf)});if(yy+h>=geo.bottom||yy>=geo.max)break;}}}
     await ctx.close();}
    report.heights[engine][w]=got.impl.heights;
    const fails=[];

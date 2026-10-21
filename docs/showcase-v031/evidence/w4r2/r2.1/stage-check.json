@@ -5,7 +5,7 @@
  "impl": "e651c632227cc94aa32b30150e2db6fdcc1c98c6",
  "freeze": "9cf78b0",
  "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
- "at": "2026-10-21T14:02:25.237Z",
+ "at": "2026-10-21T14:28:18.975Z",
  "browser": "149.0.7827.55",
  "heights": {
   "360": {
@@ -179,76 +179,381 @@
  },
  "captures": [
   {
-   "file": "captures/impl-1440-manifesto.webp",
+   "file": "captures/impl-1440-manifesto-01.webp",
    "size": [
     1440,
-    2398
+    900
    ],
-   "bytes": 182424,
-   "sha256": "27bba33ef7543c1cf067ae89c176026d108cf4efe235016544edc9e13903f876"
+   "bytes": 64560,
+   "sha256": "ff58d206a63c3772943788f7971fc6799f152ea0727e5e4841fe7077eff779a8",
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 8898.015625,
+   "w": 1440
   },
   {
-   "file": "captures/impl-1440-modules.webp",
+   "file": "captures/impl-1440-manifesto-02.webp",
    "size": [
     1440,
-    1937
+    900
    ],
-   "bytes": 159360,
-   "sha256": "59dfe8d1084e49188a2bbeca438f066b7651b827194f912c3058aac57a65a37c"
+   "bytes": 69710,
+   "sha256": "d339007c8d174b8cb40cdc616e480d0da298833df904e0f377d18022c5e98510",
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 9678.015625,
+   "w": 1440
   },
   {
-   "file": "captures/impl-1920-manifesto.webp",
+   "file": "captures/impl-1440-manifesto-03.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 69744,
+   "sha256": "bad826d4f9add4a5bed4792e78aa2ef8dbd0756e4e2a3e7e869b5df7c24f0533",
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 10458.015625,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-modules-01.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 71196,
+   "sha256": "155a8b3197df898d5989f3759bb79353ca45cf504f3a1d82f9c6d47a075b155d",
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 11296.78125,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-modules-02.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 65964,
+   "sha256": "88ab95f15c577114a2295fec883a975f5775d7e927d8c93cbe21d19972b2e21f",
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 12076.78125,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-modules-03.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 50940,
+   "sha256": "e2121e488785e29db3b86342d75ca8ea472c18589f351dbcd814ab788d8037af",
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 12856.78125,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1920-manifesto-01.webp",
    "size": [
     1920,
-    2568
+    1080
    ],
-   "bytes": 221680,
-   "sha256": "ef0617faf0414174e0580dcac2ea1acef3c100752d2cc6152592ea1952e58971"
+   "bytes": 74862,
+   "sha256": "a3436f4caa258cc39faa06055821852cbcc8a1896d5d7352071538f1170fe92c",
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 9299.796875,
+   "w": 1920
   },
   {
-   "file": "captures/impl-1920-modules.webp",
+   "file": "captures/impl-1920-manifesto-02.webp",
    "size": [
     1920,
-    1943
+    1080
    ],
-   "bytes": 160590,
-   "sha256": "c06dd35966e75771b8c6cc428583bbef70e1284dee0d40d9d0db46b4e4022330"
+   "bytes": 75912,
+   "sha256": "7009867e5be591d6b0518434b7dfd567956bb17f4e0c29bf759995326d82ab4a",
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 10259.796875,
+   "w": 1920
   },
   {
-   "file": "captures/impl-360-manifesto.webp",
+   "file": "captures/impl-1920-manifesto-03.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "bytes": 72598,
+   "sha256": "e20705ef584c729c33c5d78f5fed43e742e1fe0a3ba948172a2f55db02abc2c7",
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 11219.796875,
+   "w": 1920
+  },
+  {
+   "file": "captures/impl-1920-modules-01.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "bytes": 88708,
+   "sha256": "7995f6bd9d1a8823b0affa5b4d414b17233966ad580f32c9817fa459dd77585d",
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 11867.953125,
+   "w": 1920
+  },
+  {
+   "file": "captures/impl-1920-modules-02.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "bytes": 63356,
+   "sha256": "9f5bda5433650e3f78474aa8b2dba5803fad65d74790542dc4a2ff8b496a4eda",
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 12827.953125,
+   "w": 1920
+  },
+  {
+   "file": "captures/impl-360-manifesto-01.webp",
    "size": [
     360,
-    3751
+    800
    ],
-   "bytes": 134256,
-   "sha256": "b20d556d25507932a0adcf4c1ac2514114ac0fd742cc173d341df0c48c684ab9"
+   "bytes": 24916,
+   "sha256": "ebaadeb00d8a4e6220d7a90efcc668d6bd794e5b66edb38b0a74a7fb9014d2af",
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 12527,
+   "w": 360
   },
   {
-   "file": "captures/impl-360-modules.webp",
+   "file": "captures/impl-360-manifesto-02.webp",
    "size": [
     360,
-    2268
+    800
    ],
-   "bytes": 89154,
-   "sha256": "0a85fcfee1021e6754f3b92e20e35ad3989adddf712662143419705457d65319"
+   "bytes": 24920,
+   "sha256": "4ef10bc8dcb6d038944d98848ced9d253434d3d6678971dff37f3f4f33a27a76",
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 13207,
+   "w": 360
   },
   {
-   "file": "captures/impl-390-manifesto.webp",
+   "file": "captures/impl-360-manifesto-03.webp",
    "size": [
-    390,
-    3604
+    360,
+    800
    ],
-   "bytes": 138324,
-   "sha256": "c60c38e5c7defe7174055c815262c39e649feab549563e1ef5d7d131928fc9cc"
+   "bytes": 21038,
+   "sha256": "af26b9a1b4433fe51bfd21559bac1fc0585e9d7c0a8006c6ce7cd0c2fa14e21c",
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 13887,
+   "w": 360
   },
   {
-   "file": "captures/impl-390-modules.webp",
+   "file": "captures/impl-360-manifesto-04.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 21418,
+   "sha256": "605b2bf037b265f06442502b51aeea0ebab2b38e167a03ddd1c2a5dddb128056",
+   "section": "manifesto",
+   "segment": 4,
+   "scrollY": 14567,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-manifesto-05.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 28064,
+   "sha256": "639b29e8424e2e06c958594b7f1cfea43f0abe1e066533677d92f0b804c27651",
+   "section": "manifesto",
+   "segment": 5,
+   "scrollY": 15247,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-manifesto-06.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 20032,
+   "sha256": "854af87ed02cfa225b5ffef049a9c1d441f25aea99861717b53ac348787bc731",
+   "section": "manifesto",
+   "segment": 6,
+   "scrollY": 15927,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-modules-01.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 24052,
+   "sha256": "8064416823ecdb34fcba0a8a626c059f5714a5d1810675756491a89ac94a60b1",
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 16278.984375,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-modules-02.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 28670,
+   "sha256": "4293dbf2c4d4f3780b68acc24215d6e2948d40d1eef3b183babd7d7d60906fac",
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 16958.984375,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-modules-03.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 23302,
+   "sha256": "0997e3fc6feebdc4b144329398961211b73668c2688c4380da1efc705406c3f6",
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 17638.984375,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-modules-04.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 26478,
+   "sha256": "fc05a8b1c43730551e7b6bbaf14bfd4ec005b3fb5ee30b9168e43a0ebe8d6150",
+   "section": "modules",
+   "segment": 4,
+   "scrollY": 18318.984375,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-390-manifesto-01.webp",
    "size": [
     390,
-    2169
+    844
    ],
-   "bytes": 90352,
-   "sha256": "e2d25bf223e5fb15bcb1d4a69d9246985b3357192b0e8b58f329320785b7b95e"
+   "bytes": 26690,
+   "sha256": "715ce11300435f043d4669412f2cb9308c4b55d1053ed37dc8147e885e8d1fb7",
+   "section": "manifesto",
+   "segment": 1,
+   "scrollY": 12178.65625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-manifesto-02.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27076,
+   "sha256": "b7312391be340801369b9dc1a95477e58b819da3d4d83fca6462e6d79aafbe7f",
+   "section": "manifesto",
+   "segment": 2,
+   "scrollY": 12902.65625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-manifesto-03.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 22294,
+   "sha256": "87e0368de5ed971168651e78ad7d450941bb4eee1e15d5d671e875b904ea15ed",
+   "section": "manifesto",
+   "segment": 3,
+   "scrollY": 13626.65625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-manifesto-04.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27184,
+   "sha256": "f07c09abc683a735dd2ac51c26e8a874650a887893e6144eeeec92eec99af61b",
+   "section": "manifesto",
+   "segment": 4,
+   "scrollY": 14350.65625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-manifesto-05.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 23964,
+   "sha256": "00fb798c08309b1bf880c4e8cd56883afdfedd1d502922237b63c904caa1930c",
+   "section": "manifesto",
+   "segment": 5,
+   "scrollY": 15074.65625,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-modules-01.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27300,
+   "sha256": "79461a78035a3b7bb24c4e797e66b8bd2470d4642cb3e530cb30d0de9afac5ef",
+   "section": "modules",
+   "segment": 1,
+   "scrollY": 15782.671875,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-modules-02.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27046,
+   "sha256": "33f938a303920460b576ff6ba3e24f269dc30ce82a26a00635ae301ee8768cbe",
+   "section": "modules",
+   "segment": 2,
+   "scrollY": 16506.671875,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-modules-03.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27762,
+   "sha256": "d75cbc925a1b2c321f0644f35ad77a1562545e3408a66c93eb67ae0b2862067c",
+   "section": "modules",
+   "segment": 3,
+   "scrollY": 17230.671875,
+   "w": 390
   },
   {
    "file": "captures/impl-390-traces-rail-01.webp",
@@ -256,8 +561,11 @@
     390,
     437
    ],
-   "bytes": 13572,
-   "sha256": "2f07d7d0fe8dc5bb59615253c87894be0c9976a94e97b55112419f5a383c4a59"
+   "bytes": 11850,
+   "sha256": "3be94b4b9c90452c31d1580dfdfc937f843cc6e97112de8a8479a0326d5a1699",
+   "rail": "traces",
+   "item": 1,
+   "w": 390
   },
   {
    "file": "captures/impl-390-traces-rail-02.webp",
@@ -265,8 +573,11 @@
     390,
     437
    ],
-   "bytes": 13054,
-   "sha256": "d78d417d599b12e458953b11030272fd9823c1ca74988a545bd91d23a9318ddc"
+   "bytes": 11246,
+   "sha256": "0224e83399f2e7123835d19cf2b72034ad72de619a0dac4389b9570cd838a20e",
+   "rail": "traces",
+   "item": 2,
+   "w": 390
   },
   {
    "file": "captures/impl-390-traces-rail-03.webp",
@@ -274,8 +585,11 @@
     390,
     437
    ],
-   "bytes": 12128,
-   "sha256": "8990f2347fbc84346a67d7e2f1280f03cc42b4fa63d67a2c477bffe2a1815a6d"
+   "bytes": 10364,
+   "sha256": "a6a43387d3280a466f9d1a06da6266215e9d43d2d0cb6c4e8a356425ac922e1d",
+   "rail": "traces",
+   "item": 3,
+   "w": 390
   },
   {
    "file": "captures/impl-390-traces-rail-04.webp",
@@ -283,8 +597,11 @@
     390,
     437
    ],
-   "bytes": 13426,
-   "sha256": "5af1daec8baa72392b88ebb582ae39aef1d13c3aa0c2ccd58c00212c958c649b"
+   "bytes": 11524,
+   "sha256": "520c730aa69b4681ddf10a220b51fb9769aa9296ea66947bfc1ad686a25eb359",
+   "rail": "traces",
+   "item": 4,
+   "w": 390
   },
   {
    "file": "captures/impl-390-traces-rail-05.webp",
@@ -292,8 +609,11 @@
     390,
     437
    ],
-   "bytes": 10848,
-   "sha256": "3e5e6293d9a07e0717314c8c4a3d485721cd1c3853ff071b070cc35f4b1988b5"
+   "bytes": 9306,
+   "sha256": "b01aec11648aaa0d042940cb71fb7385866bf5eca10fa3fec3f2f16b1c16e021",
+   "rail": "traces",
+   "item": 5,
+   "w": 390
   }
  ],
  "axe_impl_1440": {
@@ -333,6 +653,16 @@
   ]
  },
  "checks": [
+  {
+   "name": "frame impl-1440-manifesto-01.png: chapter plate painted",
+   "pass": true,
+   "luminance": 35.01
+  },
+  {
+   "name": "frame impl-1440-modules-03.png: chapter plate painted",
+   "pass": true,
+   "luminance": 34.03
+  },
   {
    "name": "1440: #manifesto height vs A+AD within max(1%,16px)",
    "pass": true,
@@ -409,6 +739,11 @@
    "name": "1440: no overflow, no broken images, TYPE A fonts",
    "pass": true,
    "broken": []
+  },
+  {
+   "name": "frame impl-1920-manifesto-01.png: chapter plate painted",
+   "pass": true,
+   "luminance": 34.52
   },
   {
    "name": "1920: #manifesto height vs A+AD within max(1%,16px)",
@@ -488,6 +823,11 @@
    "broken": []
   },
   {
+   "name": "frame impl-390-manifesto-01.png: chapter plate painted",
+   "pass": true,
+   "luminance": 24.22
+  },
+  {
    "name": "390: #manifesto height vs A+AD within max(1%,16px)",
    "pass": true,
    "impl": 3604.02,
@@ -563,6 +903,16 @@
    "name": "390: no overflow, no broken images, TYPE A fonts",
    "pass": true,
    "broken": []
+  },
+  {
+   "name": "frame impl-360-manifesto-01.png: chapter plate painted",
+   "pass": true,
+   "luminance": 24.2
+  },
+  {
+   "name": "frame impl-360-modules-04.png: chapter plate painted",
+   "pass": true,
+   "luminance": 26.5
   },
   {
    "name": "360: #manifesto height vs A+AD within max(1%,16px)",
@@ -847,5 +1197,6 @@
    "errors": []
   }
  ],
- "summary": "73/73"
+ "summary": "79/79",
+ "captureMethod": "native viewport frames, overlap 120 px, fixed header/nav/ticker/cursor/progress hidden after measurement; chapter-plate luminance guard"
 }

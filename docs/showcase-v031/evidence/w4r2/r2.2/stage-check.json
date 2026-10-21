@@ -5,7 +5,7 @@
  "impl": "44467477b51bb52104e632160f48ed8642dc7894",
  "freeze": "9cf78b0",
  "product": "b85fbb0a1cb4f4370dd35347b5b6dc57fac1f0b5",
- "at": "2026-10-21T14:09:53.392Z",
+ "at": "2026-10-21T14:29:19.024Z",
  "browser": "149.0.7827.55",
  "heights": {
   "360": {
@@ -179,22 +179,134 @@
  },
  "captures": [
   {
-   "file": "captures/impl-1440-work.webp",
+   "file": "captures/impl-1440-work-01.webp",
    "size": [
     1440,
-    3143
+    900
    ],
-   "bytes": 233706,
-   "sha256": "8e841c46bb45509fe3ad3c96cd572a5c78d1386a3e49b7b3a8dc442857ca926b"
+   "bytes": 56020,
+   "sha256": "2a8137cb55daeb834438a89cd592b54adfe1b7b89b3e2d7118db36a3b3ddd7c7",
+   "section": "work",
+   "segment": 1,
+   "scrollY": 4303.5625,
+   "w": 1440
   },
   {
-   "file": "captures/impl-360-work.webp",
+   "file": "captures/impl-1440-work-02.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 67068,
+   "sha256": "90cb5fadcd87299e63b22616b3ce02ba7d872c67aebc2f6ddc6033dec12f5a1f",
+   "section": "work",
+   "segment": 2,
+   "scrollY": 5083.5625,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-work-03.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 60572,
+   "sha256": "efbd65ccf7c1edf38ad087e9c465899725bc848deb594ae42b4a194823310794",
+   "section": "work",
+   "segment": 3,
+   "scrollY": 5863.5625,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-1440-work-04.webp",
+   "size": [
+    1440,
+    900
+   ],
+   "bytes": 44744,
+   "sha256": "6a58ebe3b2d6cafbd4e448a677d7ea4ccea45b4f0d5633af3f0d0adad5a8c974",
+   "section": "work",
+   "segment": 4,
+   "scrollY": 6643.5625,
+   "w": 1440
+  },
+  {
+   "file": "captures/impl-360-work-01.webp",
    "size": [
     360,
-    4041
+    800
    ],
-   "bytes": 139172,
-   "sha256": "59419edea62a6bb7ec600b95f8dc6ea473b00f9a2a21cf256ef696f752f16e4f"
+   "bytes": 23374,
+   "sha256": "761076741d60b270520ca0bd963dfe42c79a75e558b6fcedbe18fda4503b27cd",
+   "section": "work",
+   "segment": 1,
+   "scrollY": 6057.96875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-work-02.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 26256,
+   "sha256": "9ee370b3d9635d8ca41d762c6abe80c72d35a9c109d4b096bcf5abad9b83c132",
+   "section": "work",
+   "segment": 2,
+   "scrollY": 6737.96875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-work-03.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 26526,
+   "sha256": "cee335c4cc2f4c66ff2afccf167acc48fcda6e8312a4c65f7c08a02c4319038d",
+   "section": "work",
+   "segment": 3,
+   "scrollY": 7417.96875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-work-04.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 22586,
+   "sha256": "68ca49b581abe2f3a66f72468d9fc610c2f4fede03c59fd9a529f6211d86bea8",
+   "section": "work",
+   "segment": 4,
+   "scrollY": 8097.96875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-work-05.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 15874,
+   "sha256": "d244157640b7f752d745ff589491ef3399b3e4fee4461ba27369293a9d9646ca",
+   "section": "work",
+   "segment": 5,
+   "scrollY": 8777.96875,
+   "w": 360
+  },
+  {
+   "file": "captures/impl-360-work-06.webp",
+   "size": [
+    360,
+    800
+   ],
+   "bytes": 18094,
+   "sha256": "9053c9f5fca6b065245ca070b3a4fe7dc8f1bd1b19a0b4a8b5ac7a113b22e3f7",
+   "section": "work",
+   "segment": 6,
+   "scrollY": 9457.96875,
+   "w": 360
   },
   {
    "file": "captures/impl-390-surfaces-rail-01.webp",
@@ -202,8 +314,11 @@
     390,
     854
    ],
-   "bytes": 22656,
-   "sha256": "773ad2c23cc5e4cc2a6f5dbac620514bd69f4f7a6b072213223909f2570c9702"
+   "bytes": 19396,
+   "sha256": "bdf3ca0a396cdb06667a1234d311a5416e14e00b300bcaf7c7cd7d9fbfff8239",
+   "rail": "surfaces",
+   "item": 1,
+   "w": 390
   },
   {
    "file": "captures/impl-390-surfaces-rail-02.webp",
@@ -211,8 +326,11 @@
     390,
     854
    ],
-   "bytes": 21730,
-   "sha256": "441ecab16adf094381e487aec490561ebd739d087e1e421ac94bca3c419b0bb0"
+   "bytes": 18440,
+   "sha256": "51d4780b7c65d5907b51d91c74126dbe25060d45181d170603d106f793e3f2f1",
+   "rail": "surfaces",
+   "item": 2,
+   "w": 390
   },
   {
    "file": "captures/impl-390-surfaces-rail-03.webp",
@@ -220,8 +338,11 @@
     390,
     854
    ],
-   "bytes": 21500,
-   "sha256": "ccf06b00bc4aabe1e16171ed5099586a8a6da390cccf498f170a97b8021f0559"
+   "bytes": 18342,
+   "sha256": "c8d594e79fbec72e0a9939d7f8d09f60c0c3d4934057a04bd28b47b828a8f8fc",
+   "rail": "surfaces",
+   "item": 3,
+   "w": 390
   },
   {
    "file": "captures/impl-390-surfaces-rail-04.webp",
@@ -229,17 +350,89 @@
     390,
     854
    ],
-   "bytes": 23730,
-   "sha256": "04eb9e2e6f7529995cf4847ac4630b24edd02b8e2d7dca038cda659a8bbad36b"
+   "bytes": 20376,
+   "sha256": "777dc6b6fdf4b81c3a5a37b4e94682ebb026ed7a950d77ea998701ecc6cabd7a",
+   "rail": "surfaces",
+   "item": 4,
+   "w": 390
   },
   {
-   "file": "captures/impl-390-work.webp",
+   "file": "captures/impl-390-work-01.webp",
    "size": [
     390,
-    3884
+    844
    ],
-   "bytes": 137582,
-   "sha256": "c1e23c23eea8f085ed2b7b22824fe74ba6f4aa6afc68b9528272a84acf7537cb"
+   "bytes": 24054,
+   "sha256": "b4b8bc0ce04b69763d2a31449d74f50a44d4c7b85f75f21abcf67e5d3ef8e01f",
+   "section": "work",
+   "segment": 1,
+   "scrollY": 5836.296875,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-work-02.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 30772,
+   "sha256": "20c6b054924b48073c62b0d754e09936b67572fdfa14086e3c62f09311843410",
+   "section": "work",
+   "segment": 2,
+   "scrollY": 6560.296875,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-work-03.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 27434,
+   "sha256": "48254c309b165f64ddcb108f8c79f7ab1b5cf10f32249d39ff6f0429ea3add59",
+   "section": "work",
+   "segment": 3,
+   "scrollY": 7284.296875,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-work-04.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 17774,
+   "sha256": "e93ba9055ca5acba7d7a5db6380a8d4c5b2a099c84b4f215a04ee26d3afed60e",
+   "section": "work",
+   "segment": 4,
+   "scrollY": 8008.296875,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-work-05.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 20310,
+   "sha256": "c57dd0695468889c7daaeeefc2889ca7b1eefd61cc0bb0a387e0f49b6fd8077f",
+   "section": "work",
+   "segment": 5,
+   "scrollY": 8732.296875,
+   "w": 390
+  },
+  {
+   "file": "captures/impl-390-work-06.webp",
+   "size": [
+    390,
+    844
+   ],
+   "bytes": 21526,
+   "sha256": "efc49cb2c523ef22b311b7f811c5258f44f6c5876eb8623709d475cb517f6a6f",
+   "section": "work",
+   "segment": 6,
+   "scrollY": 9456.296875,
+   "w": 390
   }
  ],
  "axe_impl_1440": {
@@ -688,5 +881,6 @@
    "errors": []
   }
  ],
- "summary": "54/54"
+ "summary": "54/54",
+ "captureMethod": "native viewport frames, overlap 120 px, fixed header/nav/ticker/cursor/progress hidden after measurement; chapter-plate luminance guard"
 }
