@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: GATE_R_A_APPROVED / R2_AUTHORIZED_SOL / OPUS_STAGE_REVIEW / GATE_B_PENDING / MERGE_DEPLOY_NOT_AUTHORIZED
+  status: GATE_R_A_APPROVED / R2_AUTHORIZED_OPUS_ONLY / GATE_B_PENDING / MERGE_DEPLOY_NOT_AUTHORIZED
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
@@ -18,19 +18,22 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
-## CURRENT STATE — 2026-10-21 / GATE R-A APPROVED / R2 AUTHORIZED
+## CURRENT STATE — 2026-10-21 / GATE R-A APPROVED / R2 AUTHORIZED / OPUS SOLE EXECUTOR
 
-**[FINAL GATE R-A AUTHORIZATION](waves/w4ad/GATE_R_A_AUTHORIZATION.md):** CREATOR 100% approves A+AD; art freeze `9cf78b0` (`docs/0524-w4-ad-opus-art-direction`). R2 authorized for **Sol** in PR #12 in three stages (R2.1 BLACK SUN/WHAT REMAINS → R2.2 WORK → R2.3 WORLD/CHARACTERS); **Opus art review after each stage** per [OPUS_STAGE_REVIEW_PROTOCOL](waves/w4ad/OPUS_STAGE_REVIEW_PROTOCOL.md) (submission package, ±1 %/16 px geometry vs A+AD, exact copy/SVG, protected exact, deviation procedure). Then independent R3/R4 (3 engines, 200 %, touch/keyboard/no-JS/RM, all rail items, protected, performance vs `b85fbb0a`, PR size audit). Gate B PENDING; merge/deploy/Canon/gitlink/version NOT authorized. Recommended before R2.1: fast-forward `w4/world-narrative` to the Opus branch tip (built on `895b7cf`, docs-only after `9cf78b0`).
+**[CREATOR EXECUTOR AMENDMENT](waves/w4ad/GATE_R_A_EXECUTOR_AMENDMENT.md):** CREATOR removed Sol from LANDING PHASE I and assigned **Opus** as sole R2 implementation executor and art director. This newer explicit authority supersedes former references to Sol in the historical Gate R-A authorization and stage-review records. The approved A+AD art freeze remains `9cf78b0`. Opus owns R2.1 BLACK SUN/WHAT REMAINS → R2.2 WORK → R2.3 WORLD/CHARACTERS. His intermediate checks are **SELF-CHECK**, not independent artistic acceptance. Independent Principal review and R3/R4 are required before CREATOR Gate B. The previous R2 stage acceptance checklist still applies as an objective target, with the executor/independence override noted in [OPUS_STAGE_REVIEW_PROTOCOL](waves/w4ad/OPUS_STAGE_REVIEW_PROTOCOL.md).
+
+**Current state at amendment:** PR #12 `w4/world-narrative` was still Draft at `895b7cf` before Opus begins R2.1; verify HEAD again prior to takeover. Opus docs branch is a strict descendant of that PR HEAD; a safe `--ff-only` update is permitted after verification, with no force/reset/clean. Gate B PENDING. Merge, deploy, Canon changes, root gitlink and version bump NOT authorized.
 
 ```text
 AXIOM SHOWCASE / R2 RESUME PACKET
-AUTHORITY: waves/w4ad/GATE_R_A_AUTHORIZATION.md (CREATOR, 2026-10-21)
+AUTHORITY: waves/w4ad/GATE_R_A_EXECUTOR_AMENDMENT.md (CREATOR, 2026-10-21)
 ART FREEZE: 9cf78b0 — evidence/w4ad/preview (build_ad.py, ad.html/css/js, build_a08.py, proposed-assets) + captures
-IMPLEMENTATION: Sol, PR #12 w4/world-narrative (from 895b7cf); product runtime b85fbb0a until R2.1
-REVIEW: Opus after R2.1 / R2.2 / R2.3 -> waves/w4ad/OPUS_REVIEW_R2_x.md; next stage only after PASS
-DEVIATIONS: stop + ask Opus -> waves/w4ad/OPUS_DECISIONS.md
-FORBIDDEN: new art iteration, simplification, merge/deploy, Canon, root gitlink, version bump
-NEXT: Sol implements R2.1 and submits SHA + native IMPLEMENTED frames + heights + checks
+IMPLEMENTATION + ART OWNERSHIP: Opus ONLY, PR #12 w4/world-narrative; product runtime b85fbb0a until R2.1
+SELF-CHECK: Opus after R2.1 / R2.2 / R2.3; deliver SHA, full-size screenshots, section heights, behavioral and protected proofs
+INDEPENDENCE: Opus self-check != independent PASS; independent R3/R4 + external Principal + CREATOR Gate B
+DEVIATIONS: log with technical reason and capture; CREATOR decides substantive art changes against frozen 9cf78b0
+FORBIDDEN: Sol involvement, new art iteration, simplification, merge/deploy, Canon, root gitlink, version bump
+NEXT: Opus safely takes PR #12 branch and implements R2.1.
 ```
 
 ## PREVIOUS — 2026-10-21 / W4.AD.R1 / PRINCIPAL CONDITIONAL APPROVAL RECOMMENDED
