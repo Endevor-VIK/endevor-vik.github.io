@@ -1,0 +1,44 @@
+a OBSERVED 20 2026-10-21T20:49:05.147Z 2026-10-21T20:53:47.698Z
+b OBSERVED 20 2026-10-21T20:53:49.153Z 2026-10-21T20:58:26.107Z
+== mobile
+performance    n=10/10 med 97.0 -> 97.0 mean 97 -> 96.3 sd 1.8974/2.1 A 90..97 Δmed 0.0 Δmean -0.7
+fcpMs          n=10/10 med 1657.8988 -> 1659.728 mean 1734.2053 -> 1749.7709 sd 279.7548/296.2827 A 1356.0737..2262.7564 Δmed 1.7485 Δmean 15.5656
+lcpMs          n=10/10 med 2408.5231 -> 2491.7172 mean 2239.5548 -> 2458.1236 sd 327.1604/100.7352 A 2263.8386..2601.9455 Δmed 84.0663 Δmean 218.5689
+tbtMs          n=10/10 med 3.75 -> 16.0 mean 35.65 -> 38.65 sd 64.866/66.1219 A 8..236 Δmed 10.75 Δmean 3.0
+cls            n=10/10 med 0.0168 -> 0.0163 mean 0.0168 -> 0.0164 sd 0.0018/0.0003 A 0.016..0.0169 Δmed -0.0003 Δmean -0.0005
+speedIndexMs   n=10/10 med 1667.0802 -> 1712.2915 mean 1797.3107 -> 1833.0758 sd 218.7077/220.8612 A 1633.6982..2262.7564 Δmed 40.1901 Δmean 35.7651
+transferBytes  n=10/10 med 339305.0 -> 353302.0 mean 339305 -> 353302 sd 0.0/0.0 A 353302..353302 Δmed 13997.0 Δmean 13997
+accessibility  n=10/10 med 100.0 -> 100.0 mean 100 -> 100 sd 0.0/0.0 A 100..100 Δmed 0.0 Δmean 0
+bestPractices  n=10/10 med 100.0 -> 100.0 mean 100 -> 100 sd 0.0/0.0 A 100..100 Δmed 0.0 Δmean 0
+seo            n=10/10 med 100.0 -> 100.0 mean 100 -> 100 sd 0.0/0.0 A 100..100 Δmed 0.0 Δmean 0
+ LCP after [2602, 2264, 2492, 2494, 2271, 2490, 2492, 2495, 2492, 2491] 
+ LCP before [1519, 2409, 2263, 2409, 2033, 1813, 2567, 2412, 2408, 2562]
+== desktop
+performance    n=10/10 med 100.0 -> 100.0 mean 99.9 -> 99.9 sd 0.3/0.3 A 99..100 Δmed 0.0 Δmean 0
+fcpMs          n=10/10 med 388.86 -> 441.313 mean 406.1014 -> 435.8086 sd 74.1064/61.4067 A 369.1692..501.7302 Δmed -2.7343 Δmean 29.7072
+lcpMs          n=10/10 med 531.8133 -> 542.4715 mean 545.574 -> 561.2094 sd 30.5277/36.3086 A 538.3384..658.8884 Δmed 11.1148 Δmean 15.6354
+tbtMs          n=10/10 med 0.0 -> 0.0 mean 0 -> 3.1 sd 0.0/9.3 A 0..31 Δmed 0.0 Δmean 3.1
+cls            n=10/10 med 0.0053 -> 0.0041 mean 0.005 -> 0.0043 sd 0.0006/0.0006 A 0.0036..0.0053 Δmed -0.0004 Δmean -0.0006
+speedIndexMs   n=10/10 med 996.7133 -> 986.0415 mean 993.6588 -> 987.3724 sd 18.9766/24.1983 A 934.6009..1036.0043 Δmed -14.8613 Δmean -6.2864
+transferBytes  n=10/10 med 429032.0 -> 443029.0 mean 429032 -> 443029 sd 0.0/0.0 A 443029..443029 Δmed 13997.0 Δmean 13997
+accessibility  n=10/10 med 100.0 -> 100.0 mean 100 -> 100 sd 0.0/0.0 A 100..100 Δmed 0.0 Δmean 0
+bestPractices  n=10/10 med 100.0 -> 100.0 mean 100 -> 100 sd 0.0/0.0 A 100..100 Δmed 0.0 Δmean 0
+seo            n=10/10 med 100.0 -> 100.0 mean 100 -> 100 sd 0.0/0.0 A 100..100 Δmed 0.0 Δmean 0
+== budgets
+PASS B1 mobile perf 97.0>=90
+PASS B1 desktop perf 100.0>=95
+PASS B2 mobile lcpMs Δ 84.1 (3.49%) not (>10% and >150)
+PASS B5 mobile fcpMs Δ 1.7 (0.11%) not (>10% and >150)
+PASS B2 desktop lcpMs Δ 11.1 (2.09%) not (>10% and >150)
+PASS B5 desktop fcpMs Δ -2.7 (-0.70%) not (>10% and >150)
+PASS B2 mobile LCP AFTER 2491.7 <=2500
+PASS B3 mobile CLS Δ -0.00032<=0.02 AFTER 0.01629<=0.1
+PASS B3 desktop CLS Δ -0.00042<=0.02 AFTER 0.00407<=0.1
+PASS B4 mobile TBT AFTER 16.0<=200 Δ 10.75<=50
+PASS B4 desktop TBT Δ 0.0<=50
+PASS B6 mobile accessibility 100.0->100.0
+PASS B6 mobile bestPractices 100.0->100.0
+PASS B6 mobile seo 100.0->100.0
+PASS B6 desktop accessibility 100.0->100.0
+PASS B6 desktop bestPractices 100.0->100.0
+PASS B6 desktop seo 100.0->100.0

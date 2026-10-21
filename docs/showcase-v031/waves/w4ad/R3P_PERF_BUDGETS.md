@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.0524.W4R.PERF_BUDGETS
   title: "W4.R — predeclared performance budgets (committed before results)"
-  status: PREDECLARED / RUN_IN_PROGRESS
+  status: PREDECLARED / b6040e3_FAIL_B2 / 685140a_PASS_17_OF_17
   deployment: NOT_DEPLOYED
   lang: ru
   last_updated: 2026-10-21
@@ -32,3 +32,12 @@ AXS_HEADER_META:
 | B6 | Accessibility / Best Practices / SEO AFTER | не ниже BEFORE | ниже |
 
 Отдельно сообщаются средние, SD, размах, вес передачи и запросы. Это лабораторные данные: никаких выводов о статистической эквивалентности или реальных устройствах. Нарушение бюджета → STOP MERGE, классификация и точечное исправление.
+
+## Результаты (дописано после замеров; бюджеты выше не менялись)
+
+| Прогон | AFTER | Итог | Доказательство |
+| --- | --- | --- | --- |
+| 1 | `b6040e3` | 16 PASS, **1 FAIL B2**: mobile LCP AFTER медиана 2 558 мс > 2 500 (BEFORE 2 411; попарная Δ +148 мс / +6,2 %) → STOP, исправление D-06 | [perf/b6040e3-budget-fail](../../evidence/w4r2/perf/b6040e3-budget-fail/) |
+| 2 | `685140a` (D-06) | **17/17 PASS**. Mobile: Perf 97 → 97, LCP 2 409 → **2 492** (Δ +84 мс / +3,5 %), FCP Δ +2 мс, TBT 16 мс (Δ +11), CLS 0,0163. Desktop: Perf 100, LCP Δ +11 мс, TBT 0. A11y / BP / SEO 100 везде | [perf/685140a](../../evidence/w4r2/perf/685140a/) |
+
+Прогон 2 — 40 наблюдений, исключений нет, статус обоих полупрогонов `OBSERVED`, корни сверены с блобами коммитов. Запас mobile LCP до порога — 8 мс (0,3 %). Load хоста во время прогона 2: медиана 3,74 (2,43…6,41) против ~1,2 в прогоне 1; фон не принадлежит задаче.

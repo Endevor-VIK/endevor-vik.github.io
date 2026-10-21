@@ -1,0 +1,26 @@
+{
+ "kind": "W4R_R3_OVERFLOW_SWEEP",
+ "label": "Executor-run R3, not the independent R4",
+ "impl": "685140a40e55f151f9edcf9e7ab0170773ad4f55",
+ "at": "2026-10-21T20:42:05.065Z",
+ "engines": {
+  "chromium": {
+   "version": "149.0.7827.55",
+   "widths": 801,
+   "step": 2,
+   "failures": []
+  },
+  "firefox": {
+   "version": "151.0",
+   "widths": 401,
+   "step": 4,
+   "failures": []
+  },
+  "webkit": {
+   "version": "26.5",
+   "widths": 201,
+   "step": 8,
+   "failures": []
+  }
+ }
+}
