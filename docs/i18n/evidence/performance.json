@@ -1,0 +1,1512 @@
+{
+  "createdAt": "2026-11-07T00:15:09.267Z",
+  "scope": "Independent local Chromium probe only; no field or release approval claims",
+  "geometry": [
+    {
+      "lang": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollW": 1425,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1425,
+        "h": 97,
+        "right": 1425,
+        "bottom": 97,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "w": 1425,
+        "h": 62,
+        "right": 1425,
+        "bottom": 62,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "flex",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "brand": {
+        "x": 30.234375,
+        "y": 18,
+        "w": 291.609375,
+        "h": 26,
+        "right": 321.84375,
+        "bottom": 44,
+        "scrollW": 292,
+        "clientW": 292,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "menu": {
+        "x": 375.5,
+        "y": 23,
+        "w": 663.359375,
+        "h": 16,
+        "right": 1038.859375,
+        "bottom": 39,
+        "scrollW": 663,
+        "clientW": 663,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "status": {
+        "x": 1239.359375,
+        "y": 23,
+        "w": 155.40625,
+        "h": 16,
+        "right": 1394.765625,
+        "bottom": 39,
+        "scrollW": 155,
+        "clientW": 155,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "language": {
+        "x": 1092.53125,
+        "y": 9,
+        "w": 93.171875,
+        "h": 44,
+        "right": 1185.703125,
+        "bottom": 53,
+        "scrollW": 93,
+        "clientW": 93,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "mobile": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "mobileLinks": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "mobileLanguage": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "hero": {
+        "x": 0,
+        "y": 97,
+        "w": 1425,
+        "h": 1081.53125,
+        "right": 1425,
+        "bottom": 1178.53125,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "poster": {
+        "x": 0,
+        "y": 127,
+        "w": 1425,
+        "h": 755,
+        "right": 1425,
+        "bottom": 882,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "flex",
+        "minHeight": "755px",
+        "font": "16px"
+      },
+      "frame": {
+        "x": 36,
+        "y": 127,
+        "w": 1353,
+        "h": 755,
+        "right": 1389,
+        "bottom": 882,
+        "scrollW": 1353,
+        "clientW": 1351,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "grid": {
+        "x": 36,
+        "y": 127,
+        "w": 1353,
+        "h": 755,
+        "right": 1389,
+        "bottom": 882,
+        "scrollW": 1353,
+        "clientW": 1353,
+        "display": "grid",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "title": {
+        "x": 60,
+        "y": 225.46875,
+        "w": 637.671875,
+        "h": 317.953125,
+        "right": 697.671875,
+        "bottom": 543.421875,
+        "scrollW": 648,
+        "clientW": 638,
+        "display": "block",
+        "minHeight": "auto",
+        "font": "115.2px"
+      },
+      "lede": {
+        "x": 60,
+        "y": 557.421875,
+        "w": 500,
+        "h": 102,
+        "right": 560,
+        "bottom": 659.421875,
+        "scrollW": 500,
+        "clientW": 500,
+        "display": "block",
+        "minHeight": "auto",
+        "font": "15px"
+      },
+      "cta": {
+        "x": 60,
+        "y": 689.421875,
+        "w": 520,
+        "h": 92,
+        "right": 580,
+        "bottom": 781.421875,
+        "scrollW": 530,
+        "clientW": 520,
+        "display": "block",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "rail": {
+        "x": 60,
+        "y": 787.40625,
+        "w": 637.671875,
+        "h": 64,
+        "right": 697.671875,
+        "bottom": 851.40625,
+        "scrollW": 638,
+        "clientW": 638,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "navLinks": [
+        {
+          "text": "AXIOM",
+          "r": {
+            "x": 375.5,
+            "y": 23,
+            "width": 45.8125,
+            "height": 16,
+            "top": 23,
+            "right": 421.3125,
+            "bottom": 39,
+            "left": 375.5
+          }
+        },
+        {
+          "text": "CREATOR",
+          "r": {
+            "x": 470.796875,
+            "y": 23,
+            "width": 64.125,
+            "height": 16,
+            "top": 23,
+            "right": 534.921875,
+            "bottom": 39,
+            "left": 470.796875
+          }
+        },
+        {
+          "text": "WORK",
+          "r": {
+            "x": 584.40625,
+            "y": 23,
+            "width": 36.640625,
+            "height": 16,
+            "top": 23,
+            "right": 621.046875,
+            "bottom": 39,
+            "left": 584.40625
+          }
+        },
+        {
+          "text": "SYSTEM",
+          "r": {
+            "x": 670.53125,
+            "y": 23,
+            "width": 54.96875,
+            "height": 16,
+            "top": 23,
+            "right": 725.5,
+            "bottom": 39,
+            "left": 670.53125
+          }
+        },
+        {
+          "text": "WORLD",
+          "r": {
+            "x": 774.984375,
+            "y": 23,
+            "width": 45.8125,
+            "height": 16,
+            "top": 23,
+            "right": 820.796875,
+            "bottom": 39,
+            "left": 774.984375
+          }
+        },
+        {
+          "text": "VISION",
+          "r": {
+            "x": 870.28125,
+            "y": 23,
+            "width": 54.96875,
+            "height": 16,
+            "top": 23,
+            "right": 925.25,
+            "bottom": 39,
+            "left": 870.28125
+          }
+        },
+        {
+          "text": "CONTACT",
+          "r": {
+            "x": 974.734375,
+            "y": 23,
+            "width": 64.125,
+            "height": 16,
+            "top": 23,
+            "right": 1038.859375,
+            "bottom": 39,
+            "left": 974.734375
+          }
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "viewport": [
+        1440,
+        900
+      ],
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollW": 1425,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1425,
+        "h": 97,
+        "right": 1425,
+        "bottom": 97,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "w": 1425,
+        "h": 62,
+        "right": 1425,
+        "bottom": 62,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "flex",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "brand": {
+        "x": 30.234375,
+        "y": 18,
+        "w": 283.40625,
+        "h": 26,
+        "right": 313.640625,
+        "bottom": 44,
+        "scrollW": 283,
+        "clientW": 283,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "menu": {
+        "x": 373.09375,
+        "y": 23,
+        "w": 654.203125,
+        "h": 16,
+        "right": 1027.296875,
+        "bottom": 39,
+        "scrollW": 654,
+        "clientW": 654,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "status": {
+        "x": 1239.359375,
+        "y": 23,
+        "w": 155.40625,
+        "h": 16,
+        "right": 1394.765625,
+        "bottom": 39,
+        "scrollW": 155,
+        "clientW": 155,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "language": {
+        "x": 1086.734375,
+        "y": 9,
+        "w": 93.171875,
+        "h": 44,
+        "right": 1179.90625,
+        "bottom": 53,
+        "scrollW": 93,
+        "clientW": 93,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "mobile": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "mobileLinks": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "mobileLanguage": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "hero": {
+        "x": 0,
+        "y": 97,
+        "w": 1425,
+        "h": 1059.140625,
+        "right": 1425,
+        "bottom": 1156.140625,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "poster": {
+        "x": 0,
+        "y": 127,
+        "w": 1425,
+        "h": 755,
+        "right": 1425,
+        "bottom": 882,
+        "scrollW": 1425,
+        "clientW": 1425,
+        "display": "flex",
+        "minHeight": "755px",
+        "font": "16px"
+      },
+      "frame": {
+        "x": 36,
+        "y": 127,
+        "w": 1353,
+        "h": 755,
+        "right": 1389,
+        "bottom": 882,
+        "scrollW": 1353,
+        "clientW": 1351,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "grid": {
+        "x": 36,
+        "y": 127,
+        "w": 1353,
+        "h": 755,
+        "right": 1389,
+        "bottom": 882,
+        "scrollW": 1353,
+        "clientW": 1353,
+        "display": "grid",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "title": {
+        "x": 60,
+        "y": 225.46875,
+        "w": 637.671875,
+        "h": 317.953125,
+        "right": 697.671875,
+        "bottom": 543.421875,
+        "scrollW": 648,
+        "clientW": 638,
+        "display": "block",
+        "minHeight": "auto",
+        "font": "115.2px"
+      },
+      "lede": {
+        "x": 60,
+        "y": 557.421875,
+        "w": 500,
+        "h": 102,
+        "right": 560,
+        "bottom": 659.421875,
+        "scrollW": 500,
+        "clientW": 500,
+        "display": "block",
+        "minHeight": "auto",
+        "font": "15px"
+      },
+      "cta": {
+        "x": 60,
+        "y": 689.421875,
+        "w": 520,
+        "h": 92,
+        "right": 580,
+        "bottom": 781.421875,
+        "scrollW": 530,
+        "clientW": 520,
+        "display": "block",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "rail": {
+        "x": 60,
+        "y": 787.40625,
+        "w": 637.671875,
+        "h": 64,
+        "right": 697.671875,
+        "bottom": 851.40625,
+        "scrollW": 638,
+        "clientW": 638,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "navLinks": [
+        {
+          "text": "AXIOM",
+          "r": {
+            "x": 373.09375,
+            "y": 23,
+            "width": 45.8125,
+            "height": 16,
+            "top": 23,
+            "right": 418.90625,
+            "bottom": 39,
+            "left": 373.09375
+          }
+        },
+        {
+          "text": "АВТОР",
+          "r": {
+            "x": 468.390625,
+            "y": 23,
+            "width": 45.8125,
+            "height": 16,
+            "top": 23,
+            "right": 514.203125,
+            "bottom": 39,
+            "left": 468.390625
+          }
+        },
+        {
+          "text": "РАБОТЫ",
+          "r": {
+            "x": 563.6875,
+            "y": 23,
+            "width": 54.96875,
+            "height": 16,
+            "top": 23,
+            "right": 618.65625,
+            "bottom": 39,
+            "left": 563.6875
+          }
+        },
+        {
+          "text": "СИСТЕМА",
+          "r": {
+            "x": 668.140625,
+            "y": 23,
+            "width": 64.125,
+            "height": 16,
+            "top": 23,
+            "right": 732.265625,
+            "bottom": 39,
+            "left": 668.140625
+          }
+        },
+        {
+          "text": "МИР",
+          "r": {
+            "x": 781.75,
+            "y": 23,
+            "width": 27.484375,
+            "height": 16,
+            "top": 23,
+            "right": 809.234375,
+            "bottom": 39,
+            "left": 781.75
+          }
+        },
+        {
+          "text": "ПЛАНЫ",
+          "r": {
+            "x": 858.71875,
+            "y": 23,
+            "width": 45.8125,
+            "height": 16,
+            "top": 23,
+            "right": 904.53125,
+            "bottom": 39,
+            "left": 858.71875
+          }
+        },
+        {
+          "text": "КОНТАКТЫ",
+          "r": {
+            "x": 954.015625,
+            "y": 23,
+            "width": 73.28125,
+            "height": 16,
+            "top": 23,
+            "right": 1027.296875,
+            "bottom": 39,
+            "left": 954.015625
+          }
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "viewport": [
+        320,
+        844
+      ],
+      "innerWidth": 320,
+      "innerHeight": 844,
+      "scrollW": 320,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 81,
+        "right": 320,
+        "bottom": 81,
+        "scrollW": 320,
+        "clientW": 320,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 50,
+        "right": 320,
+        "bottom": 50,
+        "scrollW": 320,
+        "clientW": 320,
+        "display": "flex",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "brand": {
+        "x": 14,
+        "y": 12,
+        "w": 122.40625,
+        "h": 26,
+        "right": 136.40625,
+        "bottom": 38,
+        "scrollW": 122,
+        "clientW": 122,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "menu": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "status": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "language": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "mobile": {
+        "x": 0,
+        "y": 81,
+        "w": 320,
+        "h": 45,
+        "right": 320,
+        "bottom": 126,
+        "scrollW": 320,
+        "clientW": 320,
+        "display": "flex",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "mobileLinks": {
+        "x": 0,
+        "y": 81,
+        "w": 228.546875,
+        "h": 44,
+        "right": 228.546875,
+        "bottom": 125,
+        "scrollW": 531,
+        "clientW": 229,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "mobileLanguage": {
+        "x": 228.546875,
+        "y": 81,
+        "w": 91.453125,
+        "h": 44,
+        "right": 320,
+        "bottom": 125,
+        "scrollW": 90,
+        "clientW": 90,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "hero": {
+        "x": 0,
+        "y": 126,
+        "w": 320,
+        "h": 1145.421875,
+        "right": 320,
+        "bottom": 1271.421875,
+        "scrollW": 387,
+        "clientW": 320,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "poster": {
+        "x": 0,
+        "y": 158,
+        "w": 320,
+        "h": 598.40625,
+        "right": 320,
+        "bottom": 756.40625,
+        "scrollW": 387,
+        "clientW": 320,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "grid": {
+        "x": 14,
+        "y": 158,
+        "w": 292,
+        "h": 598.40625,
+        "right": 306,
+        "bottom": 756.40625,
+        "scrollW": 373,
+        "clientW": 292,
+        "display": "grid",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "title": {
+        "x": 14,
+        "y": 218,
+        "w": 292,
+        "h": 141.28125,
+        "right": 306,
+        "bottom": 359.28125,
+        "scrollW": 302,
+        "clientW": 292,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "51.2px"
+      },
+      "lede": {
+        "x": 14,
+        "y": 374.28125,
+        "w": 292,
+        "h": 162.75,
+        "right": 306,
+        "bottom": 537.03125,
+        "scrollW": 292,
+        "clientW": 292,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "15px"
+      },
+      "cta": {
+        "x": 14,
+        "y": 557.03125,
+        "w": 292,
+        "h": 70,
+        "right": 306,
+        "bottom": 627.03125,
+        "scrollW": 292,
+        "clientW": 292,
+        "display": "inline-block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "rail": {
+        "x": 14,
+        "y": 656.03125,
+        "w": 292,
+        "h": 100.375,
+        "right": 306,
+        "bottom": 756.40625,
+        "scrollW": 292,
+        "clientW": 292,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "navLinks": [
+        {
+          "text": "AXIOM",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "CREATOR",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "WORK",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "SYSTEM",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "WORLD",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "VISION",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "CONTACT",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "viewport": [
+        320,
+        844
+      ],
+      "innerWidth": 320,
+      "innerHeight": 844,
+      "scrollW": 320,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 81,
+        "right": 320,
+        "bottom": 81,
+        "scrollW": 320,
+        "clientW": 320,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 50,
+        "right": 320,
+        "bottom": 50,
+        "scrollW": 320,
+        "clientW": 320,
+        "display": "flex",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "brand": {
+        "x": 14,
+        "y": 12,
+        "w": 122.40625,
+        "h": 26,
+        "right": 136.40625,
+        "bottom": 38,
+        "scrollW": 122,
+        "clientW": 122,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "12px"
+      },
+      "menu": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "status": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "language": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "12px"
+      },
+      "mobile": {
+        "x": 0,
+        "y": 81,
+        "w": 320,
+        "h": 45,
+        "right": 320,
+        "bottom": 126,
+        "scrollW": 320,
+        "clientW": 320,
+        "display": "flex",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "mobileLinks": {
+        "x": 0,
+        "y": 81,
+        "w": 228.546875,
+        "h": 44,
+        "right": 228.546875,
+        "bottom": 125,
+        "scrollW": 523,
+        "clientW": 229,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "mobileLanguage": {
+        "x": 228.546875,
+        "y": 81,
+        "w": 91.453125,
+        "h": 44,
+        "right": 320,
+        "bottom": 125,
+        "scrollW": 90,
+        "clientW": 90,
+        "display": "flex",
+        "minHeight": "auto",
+        "font": "16px"
+      },
+      "hero": {
+        "x": 0,
+        "y": 126,
+        "w": 320,
+        "h": 1145.421875,
+        "right": 320,
+        "bottom": 1271.421875,
+        "scrollW": 387,
+        "clientW": 320,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "poster": {
+        "x": 0,
+        "y": 158,
+        "w": 320,
+        "h": 598.40625,
+        "right": 320,
+        "bottom": 756.40625,
+        "scrollW": 387,
+        "clientW": 320,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0,
+        "scrollW": 0,
+        "clientW": 0,
+        "display": "none",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "grid": {
+        "x": 14,
+        "y": 158,
+        "w": 292,
+        "h": 598.40625,
+        "right": 306,
+        "bottom": 756.40625,
+        "scrollW": 373,
+        "clientW": 292,
+        "display": "grid",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "title": {
+        "x": 14,
+        "y": 218,
+        "w": 292,
+        "h": 141.28125,
+        "right": 306,
+        "bottom": 359.28125,
+        "scrollW": 302,
+        "clientW": 292,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "51.2px"
+      },
+      "lede": {
+        "x": 14,
+        "y": 374.28125,
+        "w": 292,
+        "h": 162.75,
+        "right": 306,
+        "bottom": 537.03125,
+        "scrollW": 292,
+        "clientW": 292,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "15px"
+      },
+      "cta": {
+        "x": 14,
+        "y": 557.03125,
+        "w": 292,
+        "h": 70,
+        "right": 306,
+        "bottom": 627.03125,
+        "scrollW": 292,
+        "clientW": 292,
+        "display": "inline-block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "rail": {
+        "x": 14,
+        "y": 656.03125,
+        "w": 292,
+        "h": 100.375,
+        "right": 306,
+        "bottom": 756.40625,
+        "scrollW": 292,
+        "clientW": 292,
+        "display": "block",
+        "minHeight": "0px",
+        "font": "16px"
+      },
+      "navLinks": [
+        {
+          "text": "AXIOM",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "АВТОР",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "РАБОТЫ",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "СИСТЕМА",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "МИР",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "ПЛАНЫ",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "КОНТАКТЫ",
+          "r": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      ]
+    }
+  ],
+  "viewer": [],
+  "perf": [
+    {
+      "run": 1,
+      "label": "baseline",
+      "locale": "ru",
+      "cls": 0,
+      "lcp": 232,
+      "fcp": 232,
+      "load": 306,
+      "resources": 389062
+    },
+    {
+      "run": 1,
+      "label": "current",
+      "locale": "ru",
+      "cls": 0,
+      "lcp": 412,
+      "fcp": 100,
+      "load": 686,
+      "resources": 434815
+    },
+    {
+      "run": 2,
+      "label": "current",
+      "locale": "ru",
+      "cls": 0,
+      "lcp": 164,
+      "fcp": 164,
+      "load": 318,
+      "resources": 344948
+    },
+    {
+      "run": 2,
+      "label": "baseline",
+      "locale": "ru",
+      "cls": 0,
+      "lcp": 396,
+      "fcp": 340,
+      "load": 437,
+      "resources": 389062
+    },
+    {
+      "run": 3,
+      "label": "baseline",
+      "locale": "ru",
+      "cls": 0,
+      "lcp": 300,
+      "fcp": 300,
+      "load": 403,
+      "resources": 389062
+    },
+    {
+      "run": 3,
+      "label": "current",
+      "locale": "ru",
+      "cls": 0,
+      "lcp": 212,
+      "fcp": 212,
+      "load": 385,
+      "resources": 344948
+    },
+    {
+      "label": "current-en-spot",
+      "locale": "en",
+      "cls": 0,
+      "lcp": 236,
+      "fcp": 236,
+      "load": 416,
+      "lang": "en",
+      "title": "ENDEAVOR / CREATOR — AXIOM SYSTEM · Portfolio & Vision",
+      "scrollWidth": 390
+    }
+  ],
+  "console": [],
+  "payload": {
+    "index.html": {
+      "raw": 197829,
+      "gzip": 44961,
+      "rawDelta": 35717,
+      "gzipDelta": 4509
+    },
+    "assets/i18n/catalogs.js": {
+      "raw": 128710,
+      "gzip": 39669,
+      "rawDelta": 128710,
+      "gzipDelta": 39669
+    },
+    "assets/js/language-preference.js": {
+      "raw": 954,
+      "gzip": 498,
+      "rawDelta": 954,
+      "gzipDelta": 498
+    },
+    "assets/js/i18n.js": {
+      "raw": 6407,
+      "gzip": 2528,
+      "rawDelta": 6407,
+      "gzipDelta": 2528
+    },
+    "assets/css/fonts.css": {
+      "raw": 2548,
+      "gzip": 735,
+      "rawDelta": 0,
+      "gzipDelta": 0
+    },
+    "assets/css/index.css": {
+      "raw": 73819,
+      "gzip": 16030,
+      "rawDelta": 27,
+      "gzipDelta": 17
+    },
+    "assets/css/showcase.css": {
+      "raw": 14063,
+      "gzip": 4000,
+      "rawDelta": 0,
+      "gzipDelta": 0
+    },
+    "assets/css/showcase-v22.css": {
+      "raw": 7571,
+      "gzip": 2237,
+      "rawDelta": 0,
+      "gzipDelta": 0
+    },
+    "assets/css/showcase-v23.css": {
+      "raw": 55654,
+      "gzip": 13893,
+      "rawDelta": 26,
+      "gzipDelta": 13
+    },
+    "assets/css/showcase-w4r.css": {
+      "raw": 27570,
+      "gzip": 6058,
+      "rawDelta": 0,
+      "gzipDelta": 0
+    },
+    "assets/css/i18n.css": {
+      "raw": 3091,
+      "gzip": 1088,
+      "rawDelta": 3091,
+      "gzipDelta": 1088
+    },
+    "assets/js/index.js": {
+      "raw": 4417,
+      "gzip": 1791,
+      "rawDelta": 0,
+      "gzipDelta": 0
+    },
+    "assets/js/showcase-gallery.js": {
+      "raw": 8387,
+      "gzip": 2975,
+      "rawDelta": 884,
+      "gzipDelta": 265
+    },
+    "assets/js/showcase-v22.js": {
+      "raw": 2960,
+      "gzip": 1408,
+      "rawDelta": 116,
+      "gzipDelta": 40
+    },
+    "assets/js/showcase-v23.js": {
+      "raw": 13782,
+      "gzip": 5674,
+      "rawDelta": 1427,
+      "gzipDelta": 391
+    },
+    "assets/js/showcase-w4r.js": {
+      "raw": 2345,
+      "gzip": 1208,
+      "rawDelta": 95,
+      "gzipDelta": 44
+    }
+  },
+  "sourceSha": "4aafcbe9ef022f612ddc29e0de671d6aab565da9",
+  "baselineSha": "b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994",
+  "sourceStatus": "",
+  "method": {
+    "viewport": "390x844",
+    "dpr": 1,
+    "locale": "ru-RU plus ?lang=ru; EN spot ?lang=en",
+    "motion": "reduced",
+    "loader": "seen flag",
+    "server": "gzip, no-store, ephemeral loopback",
+    "warmup": "one full navigation per baseline/current",
+    "timings": "native PerformanceObserver FCP/LCP/CLS; no throttling; three interleaved; no Lighthouse or field claims",
+    "capture": "actual unmodified source, 1440x900 and320x844, DPR1 reduced motion",
+    "contention": "Other root/audit browser suites may be active; own Chromium sequential one page/context"
+  },
+  "payloadTotalGzipDelta": 49062,
+  "fingerprints": {
+    "index.html": "7d93aaec959a65678910c08a0d799fdaa628c2c6a0e5aaf505a35616db32fcfb",
+    "assets/i18n/catalogs.js": "7dbdc51346c56569136566725e6bddb8f589dda1789f4161d6ae1b0a00491c8c",
+    "assets/js/language-preference.js": "16260c2b89ea2362a519b02f99d84df1cc014da3e05379b2fe2d2b1df49ece8e",
+    "assets/js/i18n.js": "8b8ed5a2c5c3a109b03b33dcc958e6becaeef3cd2e89b4700c06c387b09a28ea",
+    "assets/css/fonts.css": "6fb4a90f2b06e94758eeebcea0282d72f2735c22190cdbc2232d4bb02aa6ed93",
+    "assets/css/index.css": "4a6196cdfc1a1272e57d28757e49da564d99f25f81f01f9bacbf25bf3387fefe",
+    "assets/css/showcase.css": "40af4501f8b519d52877216276a02e6dd4741541d37cf696259c618f2a98217e",
+    "assets/css/showcase-v22.css": "3a97ca926037c1e44fa4a90f422ed903d0bc649ca85e490bae4b57073f50a427",
+    "assets/css/showcase-v23.css": "fccb56115e6664827e336311381fdf5d5d16584d8257af8c80ff89c09a85bd3a",
+    "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+    "assets/css/i18n.css": "f9b914b775807e0b7d4f146583379b867c637ef2bf64bb9d81a80e7cf3eb55be",
+    "assets/js/index.js": "dd15d072008f5f76c05f0b8b13dc407590dfcf6bf8ba5f2054c84e9e91bd722d",
+    "assets/js/showcase-gallery.js": "3981dfa56d16da3ca528a1dcd13e4d782ac42680309d43bce6fe9160da412234",
+    "assets/js/showcase-v22.js": "139b124a538663fe5b65be1c65c78eae96523597dac58a1a0abb4d9853b4b3ca",
+    "assets/js/showcase-v23.js": "593e03f51192a0ff3ef7e6f30ec6bb6c78107acf5d6ae197d6c30c31be212d42",
+    "assets/js/showcase-w4r.js": "44a02da57852d2994915150fce930d9d93b7c763c6cd4db5682cd0b77d904f29"
+  },
+  "browser": "149.0.7827.55",
+  "sourceShaEnd": "4aafcbe9ef022f612ddc29e0de671d6aab565da9",
+  "runtimeUnchanged": true
+}

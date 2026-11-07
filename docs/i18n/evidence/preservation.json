@@ -1,0 +1,35 @@
+{
+  "baseline": "b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994",
+  "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9",
+  "sectionIdsAndOrderUnchanged": true,
+  "sections": [
+    "top",
+    "about",
+    "creator",
+    "work",
+    "system",
+    "world-guide",
+    "manifesto",
+    "modules",
+    "world",
+    "chars",
+    "factions",
+    "vision",
+    "collaboration",
+    ""
+  ],
+  "canonIdsUnchanged": true,
+  "canonIds": [
+    "02.01",
+    "02.02",
+    "02.03",
+    "02.04",
+    "02.05",
+    "02.06"
+  ],
+  "anchorDestinationsUnchanged": true,
+  "sourceImageElementsAndLoadingUnchanged": true,
+  "changedImageOrFontAssets": [],
+  "paletteAndFontsOwningStylesheetsUnchanged": true,
+  "sharedMainUnchanged": true
+}

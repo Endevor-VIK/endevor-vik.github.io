@@ -1,0 +1,1851 @@
+{
+  "sourceSha": "4aafcbe9ef022f612ddc29e0de671d6aab565da9",
+  "createdAt": "2026-11-07T00:17:58.877Z",
+  "snapshots": [
+    {
+      "label": "initial",
+      "scrollY": 0,
+      "innerHeight": 900,
+      "hash": "",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": null,
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": null,
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": null,
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": 97,
+          "bottom": 1156.140625,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": 1180.140625,
+          "bottom": 2361.828125,
+          "height": 1181.6875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "creator",
+          "top": 2431.828125,
+          "bottom": 3718.5625,
+          "height": 1286.734375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "work",
+          "top": 4327.5625,
+          "bottom": 7471.0625,
+          "height": 3143.5,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "system",
+          "top": 7541.0625,
+          "bottom": 9083.859375,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": 9168.859375,
+          "bottom": 10441.296875,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": 21849.609375,
+          "bottom": 24070.734375,
+          "height": 2221.125,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "collaboration",
+          "top": 24140.734375,
+          "bottom": 24983.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "top",
+      "probe": []
+    },
+    {
+      "label": "R14",
+      "scrollY": 4207,
+      "innerHeight": 900,
+      "hash": "#work",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": null,
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": "location",
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": null,
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": -4110,
+          "bottom": -3050.859375,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": -3050.859375,
+          "bottom": -1869.171875,
+          "height": 1181.6875,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "creator",
+          "top": -1799.171875,
+          "bottom": -512.4375,
+          "height": 1286.734375,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "work",
+          "top": 96.5625,
+          "bottom": 3240.0625,
+          "height": 3143.5,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "system",
+          "top": 3334.0625,
+          "bottom": 4876.859375,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": 4961.859375,
+          "bottom": 6234.296875,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": 17642.609375,
+          "bottom": 19863.734375,
+          "height": 2221.125,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "collaboration",
+          "top": 19933.734375,
+          "bottom": 20776.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "work",
+      "probe": [
+        {
+          "kind": "aria",
+          "t": 3824.5,
+          "y": 4190,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3841.300000000745,
+          "y": 4194,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3842.599999997765,
+          "y": 4194,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3862.300000000745,
+          "y": 4198,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3863.099999997765,
+          "y": 4198,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3875.89999999851,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3876.699999999255,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3890.300000000745,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3891,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3906.699999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3907.199999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3925,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3925.39999999851,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3940.300000000745,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3941.099999997765,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "top-before-R29",
+      "scrollY": 0,
+      "innerHeight": 900,
+      "hash": "#work",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": null,
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": null,
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": null,
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": 97,
+          "bottom": 1156.140625,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": 1156.140625,
+          "bottom": 2337.828125,
+          "height": 1181.6875,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "creator",
+          "top": 2407.828125,
+          "bottom": 3694.5625,
+          "height": 1286.734375,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "work",
+          "top": 4303.5625,
+          "bottom": 7447.0625,
+          "height": 3143.5,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "system",
+          "top": 7541.0625,
+          "bottom": 9083.859375,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": 9168.859375,
+          "bottom": 10441.296875,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": 21849.609375,
+          "bottom": 24070.734375,
+          "height": 2221.125,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "collaboration",
+          "top": 24140.734375,
+          "bottom": 24983.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "top",
+      "probe": [
+        {
+          "kind": "aria",
+          "t": 3842.599999997765,
+          "y": 4194,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3862.300000000745,
+          "y": 4198,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3863.099999997765,
+          "y": 4198,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3875.89999999851,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3876.699999999255,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3890.300000000745,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3891,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3906.699999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3907.199999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3925,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3925.39999999851,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3940.300000000745,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3941.099999997765,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4276.800000000745,
+          "y": 0,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4277.699999999255,
+          "y": 0,
+          "focused": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "label": "about400",
+      "scrollY": 1156,
+      "innerHeight": 900,
+      "hash": "#work",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": "location",
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": null,
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": null,
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": -1059,
+          "bottom": 0.140625,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": 0.140625,
+          "bottom": 1181.828125,
+          "height": 1181.6875,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "creator",
+          "top": 1251.828125,
+          "bottom": 2538.5625,
+          "height": 1286.734375,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "work",
+          "top": 3147.5625,
+          "bottom": 6291.0625,
+          "height": 3143.5,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "system",
+          "top": 6385.0625,
+          "bottom": 7927.859375,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": 8012.859375,
+          "bottom": 9285.296875,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": 20693.609375,
+          "bottom": 22914.734375,
+          "height": 2221.125,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "collaboration",
+          "top": 22984.734375,
+          "bottom": 23827.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "about",
+      "probe": [
+        {
+          "kind": "aria",
+          "t": 3863.099999997765,
+          "y": 4198,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3875.89999999851,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3876.699999999255,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3890.300000000745,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3891,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3906.699999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3907.199999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3925,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3925.39999999851,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3940.300000000745,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3941.099999997765,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4276.800000000745,
+          "y": 0,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4277.699999999255,
+          "y": 0,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "scroll",
+          "t": 4622,
+          "y": 1156,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "aria",
+          "t": 4623.300000000745,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vision400",
+      "scrollY": 21850,
+      "innerHeight": 900,
+      "hash": "#work",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": null,
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": null,
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": "location",
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": -21753,
+          "bottom": -20693.859375,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": -20693.859375,
+          "bottom": -19512.171875,
+          "height": 1181.6875,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "creator",
+          "top": -19442.171875,
+          "bottom": -18155.4375,
+          "height": 1286.734375,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "work",
+          "top": -17546.4375,
+          "bottom": -14402.9375,
+          "height": 3143.5,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "system",
+          "top": -14308.9375,
+          "bottom": -12766.140625,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": -12681.140625,
+          "bottom": -11408.703125,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": -22.28515625,
+          "bottom": 2198.83984375,
+          "height": 2221.125,
+          "opacity": "0.705752",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.10605)"
+        },
+        {
+          "id": "collaboration",
+          "top": 2290.734375,
+          "bottom": 3133.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "vision",
+      "probe": [
+        {
+          "kind": "aria",
+          "t": 3876.699999999255,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3890.300000000745,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3891,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3906.699999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3907.199999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3925,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3925.39999999851,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3940.300000000745,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3941.099999997765,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4276.800000000745,
+          "y": 0,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4277.699999999255,
+          "y": 0,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "scroll",
+          "t": 4622,
+          "y": 1156,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "aria",
+          "t": 4623.300000000745,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4992.699999999255,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4993.599999997765,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#vision"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "vision1900",
+      "scrollY": 21850,
+      "innerHeight": 900,
+      "hash": "#work",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": null,
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": null,
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": "location",
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": -21753,
+          "bottom": -20693.859375,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": -20693.859375,
+          "bottom": -19512.171875,
+          "height": 1181.6875,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "creator",
+          "top": -19442.171875,
+          "bottom": -18155.4375,
+          "height": 1286.734375,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "work",
+          "top": -17546.4375,
+          "bottom": -14402.9375,
+          "height": 3143.5,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "system",
+          "top": -14308.9375,
+          "bottom": -12766.140625,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": -12681.140625,
+          "bottom": -11408.703125,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": -24.390625,
+          "bottom": 2196.734375,
+          "height": 2221.125,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "collaboration",
+          "top": 2290.734375,
+          "bottom": 3133.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "vision",
+      "probe": [
+        {
+          "kind": "aria",
+          "t": 3876.699999999255,
+          "y": 4201,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3890.300000000745,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3891,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3906.699999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3907.199999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3925,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3925.39999999851,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3940.300000000745,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3941.099999997765,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4276.800000000745,
+          "y": 0,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4277.699999999255,
+          "y": 0,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "scroll",
+          "t": 4622,
+          "y": 1156,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "aria",
+          "t": 4623.300000000745,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4992.699999999255,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4993.599999997765,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#vision"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "about-repeat400",
+      "scrollY": 1156,
+      "innerHeight": 900,
+      "hash": "#work",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": "location",
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": null,
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": null,
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": -1059,
+          "bottom": 0.140625,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": 0.140625,
+          "bottom": 1181.828125,
+          "height": 1181.6875,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "creator",
+          "top": 1251.828125,
+          "bottom": 2538.5625,
+          "height": 1286.734375,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "work",
+          "top": 3147.5625,
+          "bottom": 6291.0625,
+          "height": 3143.5,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "system",
+          "top": 6385.0625,
+          "bottom": 7927.859375,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": 8012.859375,
+          "bottom": 9285.296875,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": 20669.609375,
+          "bottom": 22890.734375,
+          "height": 2221.125,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "collaboration",
+          "top": 22984.734375,
+          "bottom": 23827.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "about",
+      "probe": [
+        {
+          "kind": "aria",
+          "t": 3891,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3906.699999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3907.199999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3925,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3925.39999999851,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3940.300000000745,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3941.099999997765,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4276.800000000745,
+          "y": 0,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4277.699999999255,
+          "y": 0,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "scroll",
+          "t": 4622,
+          "y": 1156,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "aria",
+          "t": 4623.300000000745,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4992.699999999255,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4993.599999997765,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#vision"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 6923.5,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#vision"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 6924.199999999255,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "about-repeat1900",
+      "scrollY": 1156,
+      "innerHeight": 900,
+      "hash": "#work",
+      "active": "<body>\n<script>\n/* 0524 W1 (Q-08): intro loader — at most once per 24 h, about 1.3 s plus a 0.25 s fade, skippable at once (button first in tab order, Esc).\n   The overlay exists only when this script decides to show it, so a failure never leaves the",
+      "headerBottom": 97,
+      "links": [
+        {
+          "href": "#about",
+          "ariaCurrent": "location",
+          "label": "AXIOM"
+        },
+        {
+          "href": "#creator",
+          "ariaCurrent": null,
+          "label": "АВТОР"
+        },
+        {
+          "href": "#work",
+          "ariaCurrent": null,
+          "label": "РАБОТЫ"
+        },
+        {
+          "href": "#system",
+          "ariaCurrent": null,
+          "label": "СИСТЕМА"
+        },
+        {
+          "href": "#world-guide",
+          "ariaCurrent": null,
+          "label": "МИР"
+        },
+        {
+          "href": "#vision",
+          "ariaCurrent": null,
+          "label": "ПЛАНЫ"
+        },
+        {
+          "href": "#collaboration",
+          "ariaCurrent": null,
+          "label": "КОНТАКТЫ"
+        }
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "top": -1059,
+          "bottom": 0.140625,
+          "height": 1059.140625,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "about",
+          "top": 0.140625,
+          "bottom": 1181.828125,
+          "height": 1181.6875,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "creator",
+          "top": 1251.828125,
+          "bottom": 2538.5625,
+          "height": 1286.734375,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "work",
+          "top": 3147.5625,
+          "bottom": 6291.0625,
+          "height": 3143.5,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "system",
+          "top": 6385.0625,
+          "bottom": 7927.859375,
+          "height": 1542.796875,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "world-guide",
+          "top": 8012.859375,
+          "bottom": 9285.296875,
+          "height": 1272.4375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        },
+        {
+          "id": "vision",
+          "top": 20669.609375,
+          "bottom": 22890.734375,
+          "height": 2221.125,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "id": "collaboration",
+          "top": 22984.734375,
+          "bottom": 23827.34375,
+          "height": 842.609375,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 24)"
+        }
+      ],
+      "candidate": "about",
+      "probe": [
+        {
+          "kind": "aria",
+          "t": 3891,
+          "y": 4204,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3906.699999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3907.199999999255,
+          "y": 4205,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3925,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3925.39999999851,
+          "y": 4206,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 3940.300000000745,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 3941.099999997765,
+          "y": 4207,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4276.800000000745,
+          "y": 0,
+          "focused": "",
+          "links": [
+            "#work"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4277.699999999255,
+          "y": 0,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "scroll",
+          "t": 4622,
+          "y": 1156,
+          "focused": "",
+          "links": []
+        },
+        {
+          "kind": "aria",
+          "t": 4623.300000000745,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 4992.699999999255,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 4993.599999997765,
+          "y": 21850,
+          "focused": "",
+          "links": [
+            "#vision"
+          ]
+        },
+        {
+          "kind": "scroll",
+          "t": 6923.5,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#vision"
+          ]
+        },
+        {
+          "kind": "aria",
+          "t": 6924.199999999255,
+          "y": 1156,
+          "focused": "",
+          "links": [
+            "#about"
+          ]
+        }
+      ]
+    }
+  ],
+  "pageerrors": [],
+  "console": [],
+  "nums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

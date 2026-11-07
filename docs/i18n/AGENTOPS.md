@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.I18N.AGENTOPS
   title: "ENG/RU — GLOBAL LOG"
-  status: ACTIVE
+  status: TECH_PASS / CREATOR_VISUAL_REVIEW_PENDING
   deployment: NOT_DEPLOYED
   mode: AgentOps
   goal: "Exact execution trace for localization"
@@ -48,11 +48,40 @@ SPEC и этот trace созданы до product mutations; добавлен m
 
 ## Step D — QA
 
-Предварительные проверки: static localization 5/5 и оба smoke PASS.
-Targeted Chromium149/Firefox151: streamed HERO, streamed RU loader и открытый
-WORK viewer — 6/6 PASS (до финальных pan/close/standalone archive расширений).
-Полные окончательные suites / screenshots / final source SHA — ещё NOT_RUN.
+- `python3 tests/test_i18n.py`: PASS 5/5; dictionary equality/nonempty/placeholders,
+  source coverage, dynamic sources, bootstrap order and generated catalog guard.
+- `python3 tests/smoke_showcase.py` / `python3 tests/smoke_showcase_v23.py`: PASS.
+- `node assets/i18n/build-catalogs.cjs --check`: PASS.
+- `NODE_PATH=<existing Playwright> node tests/browser/i18n_regression.cjs`: PASS
+  84/84 Chromium149 + Firefox151, clean runtime `4aafcbe9`, before/after hashes
+  equal. Includes 40 captures, storage/query/keyboard/state/XSS/streaming contracts.
+- `NODE_PATH=<existing Playwright> node tests/browser/showcase_regression.cjs
+  --firefox`: final sequential run PASS 232/232, 0 FAIL, 0 SKIP, harness `8da15b6`,
+  runtime identical `4aafcbe9`. Initial parallel run 231/232 (R29 fixed 400ms wait),
+  isolated R29 PASS; test wait changed to exact state with 5s bound, strict
+  assertions retained. Original missed event is not proven; evidence preserved.
+- Exact-code performance: local Chromium149 gzip, 3 interleaved mobile RU pairs:
+  FCP median300→164ms, LCP300→212ms, CLS0→0; EN spot236ms/0. Added gzip49,062B.
+  Local lab scope only, not field CWV or production network proof.
+- Independent screenshot review all requested widths and both locales: no blocking
+  overlap observed. CREATOR visual acceptance remains pending.
+- Preservation checks: section/order/CanonIDs/hrefs/image attributes identical;
+  no image/font assets changed; original main checkout and root gitlink unchanged.
+- Evidence: [REPORT](REPORT.md), `evidence/*.json`, selected captures and hashes.
+- NOT_RUN: real devices/GPU, manual SR, Safari/WebKit, Lighthouse/field CWV,
+  crawler SEO localization and production deploy. No PASS inferred for these.
+- Host guard refreshed at resume: Windows C91,561,938,944bytes free (~85.3GiB).
+  Own transient runs bounded at write time; own browsers/static servers closed.
 
 ## Step E — Git
 
-База и ветка приведены выше. Main / deployment / root gitlink — HOLD.
+- Contract: `6159d8e9bae00b81888b4d6cb1c104b7d1b6391d`.
+- Runtime/code/tests: `4aafcbe9ef022f612ddc29e0de671d6aab565da9`.
+- Test-only R29 wait: `8da15b60471b3d892bc8fb78ebc88081d5b25eda`.
+- Branch remote recovery point: `origin/feature/showcase-i18n-en-ru`; final
+  documentation/evidence commit is the commit containing this record.
+- Root gitlink stays `babbaa37baf4a13ea0546f19cc00d4f95b2d23f5`; original landing
+  main stays `b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994`. No root commit.
+- No amend/rebase/force update, version bump, Canon write, merge or deploy.
+- `git log --oneline origin/main..feature/showcase-i18n-en-ru` restores exact
+  task commits; refresh remote refs/PR before continuing, never trust a snapshot.

@@ -2,13 +2,13 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: STRATEGY_BOOTSTRAP / SNAPSHOT / UPDATE_REQUIRED_ON_WAVE
+  status: CURRENT_TASK_SNAPSHOT / RELEASE_HOLD
   deployment: NOT_DEPLOYED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
   scope: endeavor-vik.github.io / current 0524 and future AAA waves
   lang: ru
-  last_updated: 2026-10-19
+  last_updated: 2026-11-07
   editable_by_agents: true
   change_policy: "Snapshot fields are never asserted current without Git recheck; update only in authorized task branch after every review"
   links:
@@ -18,6 +18,50 @@ AXS_HEADER_META:
     task_handoff: ./REVIEW_HANDOFF.md
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
+
+## CURRENT TASK — 2026-11-07 / ENG–RU LOCALIZATION
+
+Эта запись supersedes task snapshots ниже только для текущей локализации.
+Основание — отдельная директива CREATOR «LANDING INTERNATIONALIZATION — ENG / RU».
+Она не разрешает продолжить остальные AAA waves, merge main или production deploy.
+
+- Repository: `Endevor-VIK/endevor-vik.github.io`; branch `feature/showcase-i18n-en-ru`.
+- Baseline main: `b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994`.
+- Runtime: `4aafcbe9ef022f612ddc29e0de671d6aab565da9`; test-only follow-up `8da15b60471b3d892bc8fb78ebc88081d5b25eda`.
+- Implemented: 929-key ENG/RU catalogs, language detection/persistence, controls in
+  nav/dialogs, metadata, all public showcase/dynamic viewer/map/flow copy, loader,
+  404; existing standalone fan archive shares preference helper.
+- Preservation: RED PROTOCOL, fonts, image assets/loading, all section IDs/order,
+  Canon IDs, AXIOM URLs, WORK B, motion/cursor; no version/Canon/root gitlink change.
+- Evidence / authoritative latest QA: [localization report](../i18n/REPORT.md),
+  [AgentOps](../i18n/AGENTOPS.md), [SPEC](../i18n/SPEC.md),
+  [translation guide](../i18n/README.md). These record executed PASS/FAIL/NOT_RUN;
+  this snapshot does not substitute for those results.
+- Main and original submodule checkout remain unchanged. Implementation worktree:
+  `/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-i18n-en-ru`.
+- Next: inspect ENG/RU comparison screenshots, Principal/code review and CREATOR
+  visual acceptance; merge and deployment require a separate explicit instruction.
+
+### RESUME PACKET — ENG / RU
+
+```text
+AXIOM SHOWCASE / RESUME PACKET
+AUTHORITY: CREATOR / LANDING INTERNATIONALIZATION — ENG / RU
+TASK: showcase-i18n-en-ru / TECHNICAL QA + CREATOR VISUAL REVIEW
+REPO + BRANCH: Endevor-VIK/endevor-vik.github.io / feature/showcase-i18n-en-ru
+RUNTIME SHA: 4aafcbe9ef022f612ddc29e0de671d6aab565da9
+TEST FOLLOW-UP: 8da15b60471b3d892bc8fb78ebc88081d5b25eda
+BASELINE: main b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994
+DONE: ENG/RU runtime, copy, dynamic state preservation, loader/404, tests, comparison captures
+QA / LIMITS: read docs/i18n/REPORT.md + evidence JSON; never infer PASS from this packet
+FROZEN: RED PROTOCOL / TYPE A / WORK B / images + Canon IDs + section order + AXIOM URLs
+FORBIDDEN: main merge / production deploy / Canon write / root gitlink / version bump
+NEXT: fetch exact PR head; verify clean ownership + runtime diff; review visual comparisons
+FIRST ACTION: reread AGENTS and i18n SPEC/report/AgentOps; recheck actual refs/CI
+```
+
+---
+
 ## CURRENT STATE — 2026-10-19 / W3.C A «ПОРОГ» + OMEGA-0 IMPLEMENTED, READY FOR PRINCIPAL & CREATOR VISUAL RECHECK
 
 **Supersedes the concepts block below.** Refresh every SHA at takeover.

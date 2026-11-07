@@ -1,0 +1,98 @@
+[
+  {
+    "file": "captures/en-320-hero.png",
+    "sha256": "7e1634975900dd695f19943222f014134fb442ee1b4d3cde16aac63cdb76e955",
+    "source": "chromium-en-320-hero.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/ru-320-hero.png",
+    "sha256": "675ca60d6922bd7f86ff86c375561d20a18e7a28634c98f0a6bc2536cb179bec",
+    "source": "chromium-ru-320-hero.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/en-390-hero.png",
+    "sha256": "d8f40e35fa4a1526fbe854fe332a60eec788621b34e1195c6e0199e53492aef9",
+    "source": "chromium-en-390-hero.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/en-390-work.png",
+    "sha256": "f035686b9d370e5fec9d939bfbeb818b3e58530c144497c82fb67bbf8d4204c7",
+    "source": "chromium-en-390-work.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/en-390-world.png",
+    "sha256": "6ece7708eca7342a88441551cdb943427abff28a145a020fecd99dfaa9af7183",
+    "source": "chromium-en-390-world.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/ru-390-hero.png",
+    "sha256": "46d2d76cec7c6a852fed93a7e74272d868bda98b74e808cb59989737a473f638",
+    "source": "chromium-ru-390-hero.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/ru-390-work.png",
+    "sha256": "40c0aed1f15cb4a129795aa5d1ee7fa50d54135c707b3ed4bba74c2c80a3d20a",
+    "source": "chromium-ru-390-work.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/ru-390-world.png",
+    "sha256": "566a6c7cbe849dc4857cc8e53b41d67d90f17dbf2a158420be1c0554ddd9c3ef",
+    "source": "chromium-ru-390-world.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/en-1440-hero.png",
+    "sha256": "6873aa1d13b2f8a88d4725970d383fe9ce38d3cd56afb072df8f13c4cf1338a9",
+    "source": "chromium-en-1440-hero.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/en-1440-work.png",
+    "sha256": "f9e161f1c48e8d62ff6b8bfd6d8a0b0b7c8c7fd60c18ae11addf82f176400bdd",
+    "source": "chromium-en-1440-work.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/en-1440-world.png",
+    "sha256": "24a9f17d3578072848fb7a035c073f3edfc4d2fe71219d413160a46019d41422",
+    "source": "chromium-en-1440-world.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/ru-1440-hero.png",
+    "sha256": "9238ba8b4d57d08de4978dd358a6eab75b714135cd7f1f993146408bc9c2f34f",
+    "source": "chromium-ru-1440-hero.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/ru-1440-work.png",
+    "sha256": "3bb7dd909994b5eed2a7a781e77109859acba997ec7c52b91ade26fa69f4f554",
+    "source": "chromium-ru-1440-work.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/ru-1440-world.png",
+    "sha256": "cd5aef17a5d44cba0e6fee71092a3a54cb00f1398bbbbf0132d319d55c5f0411",
+    "source": "chromium-ru-1440-world.png",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/compare-390-hero.png",
+    "sha256": "23c9bba000362ad81f43ae66124cd40a8eb918ef6abf0315eda010a98fdbb28f",
+    "composition": "ENG left / RU right; native screenshot pixels; no scaling",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  },
+  {
+    "file": "captures/compare-1440-hero.png",
+    "sha256": "1cb1f2f79527334712202ef573c1edca407ac29b5c52a2b4505602a19e3e838f",
+    "composition": "ENG left / RU right; native screenshot pixels; no scaling",
+    "codeCommit": "4aafcbe9ef022f612ddc29e0de671d6aab565da9"
+  }
+]

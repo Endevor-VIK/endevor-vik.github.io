@@ -2,13 +2,13 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.I18N.SPEC
   title: "AXIOM SHOWCASE — ENG/RU implementation contract"
-  status: IMPLEMENTING
+  status: READY_FOR_REVIEW
   deployment: NOT_DEPLOYED
   mode: Task SPEC
   goal: "Полная ENG/RU локализация без изменения дизайна и фактов"
   scope: public showcase, loader, 404, existing character archive language preference
   lang: ru
-  last_updated: 2026-11-06
+  last_updated: 2026-11-07
   editable_by_agents: true
   change_policy: "Только в scope директивы CREATOR LANDING INTERNATIONALIZATION"
 -->
