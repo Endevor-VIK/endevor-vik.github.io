@@ -29,6 +29,8 @@ html body .hero-grid p.ax-heading-translation.ax-heading-translation{grid-area:t
   html[lang=ru] .hero-poster .hero-grid{padding-top:16px;padding-bottom:6px}
   html body .hero-grid p.ax-heading-translation.ax-heading-translation{margin-bottom:10px}
 }
+/* The archival aside owns an ID-scoped body font; the reading line remains a caption. */
+html body #manifesto .doctrine-side p.ax-heading-translation.ax-heading-translation{font:400 12px/1.6 'JetBrains Mono',monospace;color:#a0a4b0;margin:10px 0 18px}
 /* Compact editorial cards already have their own flex rhythm; avoid stacking margins. */
 html body #manifesto .frag p.ax-heading-translation.ax-heading-translation{margin:0;font-size:12px;line-height:1.6}
 html body .module .m-body p.ax-heading-translation.ax-heading-translation{margin:0 0 4px;font-size:12px;line-height:1.6}
