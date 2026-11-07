@@ -1,0 +1,2780 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "adb87e5b8c8ba778aedfddd0655ec0b957e045ef",
+  "audit_commit": "006f7482295e3558a09e4348cd30229069959fe7",
+  "audit_date": "2026-11-07",
+  "status": "PRE_IMPLEMENTATION_INVENTORY",
+  "sources": {
+    "index.html": {
+      "sha256": "7d93aaec959a65678910c08a0d799fdaa628c2c6a0e5aaf505a35616db32fcfb",
+      "h1_h3_count": 62
+    },
+    "404.html": {
+      "sha256": "fc766b5b485cdaf05fe433f7d8496c33faaacc47010602b6cd6d968fb711709b",
+      "h1_h3_count": 1
+    },
+    "loader.html": {
+      "sha256": "6eebdbbba72f0db2d2de45047a0a4e0ed796a761b5cc1c1e81afe08024183627",
+      "h1_h3_count": 0
+    },
+    "serafim-veyr/index.html": {
+      "sha256": "408b13faff57a30b3024b2b55e292f1100f2e9a9f45f5eb66956e5252701e52f",
+      "h1_h3_count": 7
+    }
+  },
+  "definitions": {
+    "bilingual": "Fixed canonical English (lang=en), one subordinate Russian-only translation (lang=ru), hidden with zero layout/a11y footprint in ENG.",
+    "localized": "Existing ordinary active-locale localization; compact functional title.",
+    "invariant": "Proper-name/brand exception; no semantic phrase to translate, no redundant transliteration.",
+    "body": "Authored quote or real body; preserve full normal localization and do not duplicate."
+  },
+  "entries": [
+    {
+      "audit_id": "index-h01",
+      "file": "index.html",
+      "ordinal": 1,
+      "tag": "h1",
+      "id": null,
+      "classes": "title",
+      "line": 176,
+      "source_range": [
+        14442,
+        14953
+      ],
+      "keys": [
+        "main.top.006",
+        "main.top.007",
+        "main.top.008"
+      ],
+      "all_keys": [
+        "main.top.006",
+        "main.top.007",
+        "main.top.008",
+        "main.top.008",
+        "main.top.008"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "KNOWLEDGE. CONTROL. ACCESS.",
+      "ru_current": "ЗНАНИЕ. КОНТРОЛЬ. ДОСТУП.",
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "ru_subtitle": "ЗНАНИЕ. КОНТРОЛЬ. ДОСТУП",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h02",
+      "file": "index.html",
+      "ordinal": 2,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 439,
+      "source_range": [
+        28664,
+        28718
+      ],
+      "keys": [
+        "main.top.023"
+      ],
+      "all_keys": [
+        "main.top.023"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "SECURE ACCESS",
+      "ru_current": "ЗАЩИЩЁННЫЙ ДОСТУП",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h03",
+      "file": "index.html",
+      "ordinal": 3,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 449,
+      "source_range": [
+        29262,
+        29317
+      ],
+      "keys": [
+        "main.top.025"
+      ],
+      "all_keys": [
+        "main.top.025"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "KNOWLEDGE BASE",
+      "ru_current": "БАЗА ЗНАНИЙ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h04",
+      "file": "index.html",
+      "ordinal": 4,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 458,
+      "source_range": [
+        29822,
+        29875
+      ],
+      "keys": [
+        "main.top.027"
+      ],
+      "all_keys": [
+        "main.top.027"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "CORE NETWORK",
+      "ru_current": "СЕТЬ ЯДРА",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h05",
+      "file": "index.html",
+      "ordinal": 5,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 468,
+      "source_range": [
+        30432,
+        30490
+      ],
+      "keys": [
+        "main.top.029"
+      ],
+      "all_keys": [
+        "main.top.029"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "BEYOND THE SYSTEM",
+      "ru_current": "ЗА ПРЕДЕЛАМИ СИСТЕМЫ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h06",
+      "file": "index.html",
+      "ordinal": 6,
+      "tag": "h2",
+      "id": "v22-about-title",
+      "classes": "show-title",
+      "line": 481,
+      "source_range": [
+        31230,
+        31397
+      ],
+      "keys": [
+        "main.about.004",
+        "main.about.005"
+      ],
+      "all_keys": [
+        "main.about.004",
+        "main.about.005"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "MORE THAN ONE PRODUCT. ONE CONNECTED ECOSYSTEM.",
+      "ru_current": "НЕ ОДИН ПРОДУКТ. СВЯЗАННАЯ ЭКОСИСТЕМА.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "НЕ ОДИН ПРОДУКТ — СВЯЗАННАЯ ЭКОСИСТЕМА",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h07",
+      "file": "index.html",
+      "ordinal": 7,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 483,
+      "source_range": [
+        32800,
+        32856
+      ],
+      "keys": [
+        "main.about.013"
+      ],
+      "all_keys": [
+        "main.about.013"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "WORLD AND CONTENT",
+      "ru_current": "МИР И КОНТЕНТ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h08",
+      "file": "index.html",
+      "ordinal": 8,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 483,
+      "source_range": [
+        33181,
+        33243
+      ],
+      "keys": [
+        "main.about.017"
+      ],
+      "all_keys": [
+        "main.about.017"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "PUBLIC INTERFACE",
+      "ru_current": "ПУБЛИЧНЫЙ ИНТЕРФЕЙС",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h09",
+      "file": "index.html",
+      "ordinal": 9,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 483,
+      "source_range": [
+        33567,
+        33627
+      ],
+      "keys": [
+        "main.about.021"
+      ],
+      "all_keys": [
+        "main.about.021"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "INTELLIGENCE AND CONNECTIONS",
+      "ru_current": "ИНТЕЛЛЕКТ И СВЯЗИ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h10",
+      "file": "index.html",
+      "ordinal": 10,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 483,
+      "source_range": [
+        33957,
+        34022
+      ],
+      "keys": [
+        "main.about.025"
+      ],
+      "all_keys": [
+        "main.about.025"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "INDEPENDENT DEVELOPMENT",
+      "ru_current": "СОБСТВЕННАЯ РАЗРАБОТКА",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional capability/pillar card title; ordinary localization keeps compact cards readable."
+    },
+    {
+      "audit_id": "index-h11",
+      "file": "index.html",
+      "ordinal": 11,
+      "tag": "h2",
+      "id": "creator-title",
+      "classes": "show-title",
+      "line": 489,
+      "source_range": [
+        34966,
+        35155
+      ],
+      "keys": [
+        "main.creator.004",
+        "main.creator.005",
+        "main.creator.006"
+      ],
+      "all_keys": [
+        "main.creator.004",
+        "main.creator.005",
+        "main.creator.006"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "BEHIND THE WORLD IS A CREATOR.",
+      "ru_current": "ЗА МИРОМ СТОИТ АВТОР.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "ЗА ЭТИМ МИРОМ СТОИТ АВТОР",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h12",
+      "file": "index.html",
+      "ordinal": 12,
+      "tag": "h2",
+      "id": "work-title",
+      "classes": "show-title",
+      "line": 505,
+      "source_range": [
+        40095,
+        40239
+      ],
+      "keys": [
+        "main.work.004",
+        "main.work.005"
+      ],
+      "all_keys": [
+        "main.work.004",
+        "main.work.005"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "WORK YOU CAN SEE.",
+      "ru_current": "РАБОТА, КОТОРУЮ ВИДНО.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "РАБОТА, КОТОРУЮ ВИДНО",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h13",
+      "file": "index.html",
+      "ordinal": 13,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 513,
+      "source_range": [
+        44816,
+        44883
+      ],
+      "keys": [
+        "main.work.020"
+      ],
+      "all_keys": [
+        "main.work.020"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXIOM PANEL — ACCESS GATE",
+      "ru_current": "AXIOM PANEL — ШЛЮЗ ДОСТУПА",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h14",
+      "file": "index.html",
+      "ordinal": 14,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 519,
+      "source_range": [
+        47338,
+        47406
+      ],
+      "keys": [
+        "main.work.036"
+      ],
+      "all_keys": [
+        "main.work.036"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "CONTROL STATUS / WATCH_DOG",
+      "ru_current": "СТАТУС УПРАВЛЕНИЯ / WATCH_DOG",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h15",
+      "file": "index.html",
+      "ordinal": 15,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 526,
+      "source_range": [
+        49770,
+        49836
+      ],
+      "keys": [
+        "main.work.045"
+      ],
+      "all_keys": [
+        "main.work.045"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "CHRONICLE — MEMORY ORBIT",
+      "ru_current": "CHRONICLE — ОРБИТА ПАМЯТИ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h16",
+      "file": "index.html",
+      "ordinal": 16,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 533,
+      "source_range": [
+        52176,
+        52237
+      ],
+      "keys": [
+        "main.work.055"
+      ],
+      "all_keys": [
+        "main.work.055"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXCHAT — ECHO AXIOM",
+      "ru_current": "AXCHAT — ECHO AXIOM",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h17",
+      "file": "index.html",
+      "ordinal": 17,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 539,
+      "source_range": [
+        54615,
+        54672
+      ],
+      "keys": [
+        "main.work.065"
+      ],
+      "all_keys": [
+        "main.work.065"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "CONTENT LIBRARY",
+      "ru_current": "БИБЛИОТЕКА МАТЕРИАЛОВ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h18",
+      "file": "index.html",
+      "ordinal": 18,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 546,
+      "source_range": [
+        57124,
+        57192
+      ],
+      "keys": [
+        "main.work.075"
+      ],
+      "all_keys": [
+        "main.work.075"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "VIKTOR — CHARACTER DOSSIER",
+      "ru_current": "VIKTOR — ДОСЬЕ ПЕРСОНАЖА",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h19",
+      "file": "index.html",
+      "ordinal": 19,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 552,
+      "source_range": [
+        59467,
+        59522
+      ],
+      "keys": [
+        "main.work.085"
+      ],
+      "all_keys": [
+        "main.work.085"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "SIGNAL CENTER",
+      "ru_current": "ЦЕНТР СИГНАЛОВ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h20",
+      "file": "index.html",
+      "ordinal": 20,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 558,
+      "source_range": [
+        61859,
+        61913
+      ],
+      "keys": [
+        "main.work.019"
+      ],
+      "all_keys": [
+        "main.work.019"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "MASTER GRAPH",
+      "ru_current": "MASTER GRAPH",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Actual product screen name; ordinary localization matches the archive tab, viewer and accessible controls."
+    },
+    {
+      "audit_id": "index-h21",
+      "file": "index.html",
+      "ordinal": 21,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 571,
+      "source_range": [
+        65025,
+        65136
+      ],
+      "keys": [
+        "main.work.113",
+        "main.work.114"
+      ],
+      "all_keys": [
+        "main.work.113",
+        "main.work.114"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "STUDIES IN VISUAL LANGUAGE.",
+      "ru_current": "ЭТЮДЫ ВИЗУАЛЬНОГО ЯЗЫКА.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ЭТЮДЫ ВИЗУАЛЬНОГО ЯЗЫКА",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h22",
+      "file": "index.html",
+      "ordinal": 22,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 583,
+      "source_range": [
+        66642,
+        66745
+      ],
+      "keys": [
+        "main.work.121",
+        "main.work.122"
+      ],
+      "all_keys": [
+        "main.work.121",
+        "main.work.122"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Orbit of chapters.",
+      "ru_current": "Орбита глав.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ОРБИТА ГЛАВ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h23",
+      "file": "index.html",
+      "ordinal": 23,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 620,
+      "source_range": [
+        68885,
+        68984
+      ],
+      "keys": [
+        "main.work.138",
+        "main.work.139"
+      ],
+      "all_keys": [
+        "main.work.138",
+        "main.work.139"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Indexed Canon.",
+      "ru_current": "Индексированный Canon.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ИНДЕКСИРОВАННЫЙ CANON",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h24",
+      "file": "index.html",
+      "ordinal": 24,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 671,
+      "source_range": [
+        72338,
+        72438
+      ],
+      "keys": [
+        "main.work.154",
+        "main.work.155"
+      ],
+      "all_keys": [
+        "main.work.154",
+        "main.work.155"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Routes of power.",
+      "ru_current": "Маршруты власти.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "МАРШРУТЫ ВЛАСТИ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h25",
+      "file": "index.html",
+      "ordinal": 25,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 778,
+      "source_range": [
+        79509,
+        79614
+      ],
+      "keys": [
+        "main.work.169",
+        "main.work.170"
+      ],
+      "all_keys": [
+        "main.work.169",
+        "main.work.170"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Listens for silence.",
+      "ru_current": "Слушает тишину.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "СЛУШАЕТ ТИШИНУ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h26",
+      "file": "index.html",
+      "ordinal": 26,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 832,
+      "source_range": [
+        83857,
+        83913
+      ],
+      "keys": [
+        "main.work.184"
+      ],
+      "all_keys": [
+        "main.work.184"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXIOM WEB CORE",
+      "ru_current": "AXIOM WEB CORE",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Owning product/system component name; ordinary localization preserves product identity."
+    },
+    {
+      "audit_id": "index-h27",
+      "file": "index.html",
+      "ordinal": 27,
+      "tag": "h2",
+      "id": "system-title",
+      "classes": "show-title",
+      "line": 843,
+      "source_range": [
+        85513,
+        85668
+      ],
+      "keys": [
+        "main.system.004",
+        "main.system.005"
+      ],
+      "all_keys": [
+        "main.system.004",
+        "main.system.005"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "FOUR PILLARS. ONE SYSTEM.",
+      "ru_current": "ЧЕТЫРЕ ОПОРЫ. ОДНА СИСТЕМА.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "ЧЕТЫРЕ ОПОРЫ. ОДНА СИСТЕМА",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h28",
+      "file": "index.html",
+      "ordinal": 28,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 845,
+      "source_range": [
+        86268,
+        86320
+      ],
+      "keys": [
+        "main.system.009"
+      ],
+      "all_keys": [
+        "main.system.009"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "WEB CORE",
+      "ru_current": "WEB CORE",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Owning product/system component name; ordinary localization preserves product identity."
+    },
+    {
+      "audit_id": "index-h29",
+      "file": "index.html",
+      "ordinal": 29,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 845,
+      "source_range": [
+        86487,
+        86535
+      ],
+      "keys": [
+        "main.work.014"
+      ],
+      "all_keys": [
+        "main.work.014"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXCHAT",
+      "ru_current": "AXCHAT",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Owning product/system component name; ordinary localization preserves product identity."
+    },
+    {
+      "audit_id": "index-h30",
+      "file": "index.html",
+      "ordinal": 30,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 845,
+      "source_range": [
+        86689,
+        86743
+      ],
+      "keys": [
+        "main.work.019"
+      ],
+      "all_keys": [
+        "main.work.019"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "MASTER GRAPH",
+      "ru_current": "MASTER GRAPH",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Owning product/system component name; ordinary localization preserves product identity."
+    },
+    {
+      "audit_id": "index-h31",
+      "file": "index.html",
+      "ordinal": 31,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 845,
+      "source_range": [
+        86931,
+        86989
+      ],
+      "keys": [
+        "main.system.015"
+      ],
+      "all_keys": [
+        "main.system.015"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXS / AGENTOPS",
+      "ru_current": "AXS / AGENTOPS",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Owning product/system component name; ordinary localization preserves product identity."
+    },
+    {
+      "audit_id": "index-h32",
+      "file": "index.html",
+      "ordinal": 32,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 846,
+      "source_range": [
+        87220,
+        87301
+      ],
+      "keys": [
+        "main.system.018"
+      ],
+      "all_keys": [
+        "main.system.018"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "HOW AN ELEMENT OF THE WORLD BECOMES CONTENT",
+      "ru_current": "КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Functional process diagram label, not an artistic proposition; ordinary localization avoids double labels in flow control."
+    },
+    {
+      "audit_id": "index-h33",
+      "file": "index.html",
+      "ordinal": 33,
+      "tag": "h2",
+      "id": "v22-world-title",
+      "classes": "show-title",
+      "line": 853,
+      "source_range": [
+        91386,
+        91549
+      ],
+      "keys": [
+        "main.world-guide.005",
+        "main.world-guide.006"
+      ],
+      "all_keys": [
+        "main.world-guide.005",
+        "main.world-guide.006"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "WORLD AFTER BLACK SUN.",
+      "ru_current": "МИР ПОСЛЕ BLACK SUN.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "МИР ПОСЛЕ BLACK SUN",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h34",
+      "file": "index.html",
+      "ordinal": 34,
+      "tag": "h2",
+      "id": "ax-history-title",
+      "classes": "sec-title",
+      "line": 861,
+      "source_range": [
+        95270,
+        95433
+      ],
+      "keys": [
+        "main.manifesto.005",
+        "main.manifesto.006"
+      ],
+      "all_keys": [
+        "main.manifesto.005",
+        "main.manifesto.006"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "WHEN HOPE BECAME A THREAT.",
+      "ru_current": "КОГДА НАДЕЖДА СТАЛА УГРОЗОЙ.",
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "ru_subtitle": "КОГДА НАДЕЖДА СТАЛА УГРОЗОЙ",
+      "duplicate_action": "reuse existing duplicate paragraph as RU-only subtitle; remove English repeat",
+      "reuse_subtitle_key": "main.manifesto.007",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h35",
+      "file": "index.html",
+      "ordinal": 35,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        95663,
+        95739
+      ],
+      "keys": [
+        "main.manifesto.009"
+      ],
+      "all_keys": [
+        "main.manifesto.009"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "An intelligence entrusted with the world.",
+      "ru_current": "Разум, которому доверили мир.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "РАЗУМ, КОТОРОМУ ДОВЕРИЛИ МИР",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h36",
+      "file": "index.html",
+      "ordinal": 36,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        96132,
+        96211
+      ],
+      "keys": [
+        "main.manifesto.012"
+      ],
+      "all_keys": [
+        "main.manifesto.012"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Truth beyond what was permitted.",
+      "ru_current": "Правда за пределом дозволенного.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ПРАВДА ЗА ПРЕДЕЛОМ ДОЗВОЛЕННОГО",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h37",
+      "file": "index.html",
+      "ordinal": 37,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        102293,
+        102406
+      ],
+      "keys": [
+        "main.manifesto.043",
+        "main.manifesto.044"
+      ],
+      "all_keys": [
+        "main.manifesto.043",
+        "main.manifesto.044"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Whose past will the world preserve?",
+      "ru_current": "Чьё прошлое сохранит мир?",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ЧЬЁ ПРОШЛОЕ СОХРАНИТ МИР?",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h38",
+      "file": "index.html",
+      "ordinal": 38,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        103490,
+        103609
+      ],
+      "keys": [
+        "main.manifesto.051",
+        "main.manifesto.052"
+      ],
+      "all_keys": [
+        "main.manifesto.051",
+        "main.manifesto.052"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Five traces. One name.",
+      "ru_current": "Пять следов. Одно имя.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ПЯТЬ СЛЕДОВ. ОДНО ИМЯ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h39",
+      "file": "index.html",
+      "ordinal": 39,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        104360,
+        104423
+      ],
+      "keys": [
+        "main.manifesto.055"
+      ],
+      "all_keys": [
+        "main.manifesto.055"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "A sealed core",
+      "ru_current": "Ядро под печатью",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ЯДРО ПОД ПЕЧАТЬЮ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h40",
+      "file": "index.html",
+      "ordinal": 40,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        105162,
+        105232
+      ],
+      "keys": [
+        "main.manifesto.061"
+      ],
+      "all_keys": [
+        "main.manifesto.061"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "A voice that answers",
+      "ru_current": "Голос, который отвечает",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ГОЛОС, КОТОРЫЙ ОТВЕЧАЕТ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h41",
+      "file": "index.html",
+      "ordinal": 41,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        105955,
+        106016
+      ],
+      "keys": [
+        "main.manifesto.067"
+      ],
+      "all_keys": [
+        "main.manifesto.067"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Levers of order",
+      "ru_current": "Рычаги порядка",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "РЫЧАГИ ПОРЯДКА",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h42",
+      "file": "index.html",
+      "ordinal": 42,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        106716,
+        106775
+      ],
+      "keys": [
+        "main.manifesto.071"
+      ],
+      "all_keys": [
+        "main.manifesto.071"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "A blind spot",
+      "ru_current": "Слепое пятно",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "СЛЕПОЕ ПЯТНО",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h43",
+      "file": "index.html",
+      "ordinal": 43,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 861,
+      "source_range": [
+        107535,
+        107590
+      ],
+      "keys": [
+        "main.manifesto.077"
+      ],
+      "all_keys": [
+        "main.manifesto.077"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "An omen",
+      "ru_current": "Знамение",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ЗНАМЕНИЕ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h44",
+      "file": "index.html",
+      "ordinal": 44,
+      "tag": "h2",
+      "id": "ax-remains-title",
+      "classes": "sec-title",
+      "line": 864,
+      "source_range": [
+        108498,
+        108661
+      ],
+      "keys": [
+        "main.modules.004",
+        "main.modules.controlHeading"
+      ],
+      "all_keys": [
+        "main.modules.004",
+        "main.modules.controlHeading"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "LIFE UNDER CONTROL.",
+      "ru_current": "ЖИЗНЬ ПОД КОНТРОЛЕМ.",
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "ru_subtitle": "ЖИЗНЬ ПОД КОНТРОЛЕМ",
+      "duplicate_action": "reuse existing duplicate paragraph as RU-only subtitle; remove English repeat",
+      "reuse_subtitle_key": "main.modules.005",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h45",
+      "file": "index.html",
+      "ordinal": 45,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 864,
+      "source_range": [
+        110088,
+        110199
+      ],
+      "keys": [
+        "main.modules.009",
+        "main.modules.010"
+      ],
+      "all_keys": [
+        "main.modules.009",
+        "main.modules.010"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Beyond this point — clearance required.",
+      "ru_current": "Дальше — только по допуску.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ДАЛЬШЕ — ТОЛЬКО ПО ДОПУСКУ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h46",
+      "file": "index.html",
+      "ordinal": 46,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 864,
+      "source_range": [
+        111440,
+        111580
+      ],
+      "keys": [
+        "main.modules.014",
+        "main.modules.015"
+      ],
+      "all_keys": [
+        "main.modules.014",
+        "main.modules.015"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "What survived. What they let you remember.",
+      "ru_current": "То, что сохранилось. То, что разрешили помнить.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ТО, ЧТО СОХРАНИЛОСЬ. ТО, ЧТО РАЗРЕШИЛИ ПОМНИТЬ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h47",
+      "file": "index.html",
+      "ordinal": 47,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 864,
+      "source_range": [
+        114923,
+        115042
+      ],
+      "keys": [
+        "main.modules.023",
+        "main.modules.024"
+      ],
+      "all_keys": [
+        "main.modules.023",
+        "main.modules.024"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Help becomes a question of freedom.",
+      "ru_current": "Помощь становится вопросом свободы.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ПОМОЩЬ СТАНОВИТСЯ ВОПРОСОМ СВОБОДЫ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h48",
+      "file": "index.html",
+      "ordinal": 48,
+      "tag": "h2",
+      "id": "world-title",
+      "classes": "sec-title",
+      "line": 871,
+      "source_range": [
+        116963,
+        117123
+      ],
+      "keys": [
+        "main.world.005",
+        "main.world.006"
+      ],
+      "all_keys": [
+        "main.world.005",
+        "main.world.006"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "THE CITY RISES. THE DEPTH IS SEALED.",
+      "ru_current": "ГОРОД РАСТЁТ ВВЕРХ. ГЛУБИНА ЗАКРЫТА.",
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "ru_subtitle": "ГОРОД РАСТЁТ ВВЕРХ. ГЛУБИНА ЗАКРЫТА",
+      "duplicate_action": "reuse existing duplicate paragraph as RU-only subtitle; remove English repeat",
+      "reuse_subtitle_key": "main.world.007",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h49",
+      "file": "index.html",
+      "ordinal": 49,
+      "tag": "h3",
+      "id": null,
+      "classes": "ax-omega-title",
+      "line": 892,
+      "source_range": [
+        124018,
+        124148
+      ],
+      "keys": [
+        "main.world.035",
+        "main.world.036"
+      ],
+      "all_keys": [
+        "main.world.035",
+        "main.world.036"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Beneath Gluhaya Station.",
+      "ru_current": "Под Глухой станцией.",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ПОД ГЛУХОЙ СТАНЦИЕЙ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h50",
+      "file": "index.html",
+      "ordinal": 50,
+      "tag": "h2",
+      "id": "r1p-characters-title",
+      "classes": "sec-title",
+      "line": 908,
+      "source_range": [
+        125216,
+        125381
+      ],
+      "keys": [
+        "main.chars.004",
+        "main.chars.005"
+      ],
+      "all_keys": [
+        "main.chars.004",
+        "main.chars.005"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "THREE LIVES INSIDE THE FRACTURE.",
+      "ru_current": "ТРИ ЖИЗНИ ВНУТРИ РАЗЛОМА.",
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "ru_subtitle": "ТРИ ЖИЗНИ ВНУТРИ РАЗЛОМА",
+      "duplicate_action": "reuse existing duplicate paragraph as RU-only subtitle; remove English repeat",
+      "reuse_subtitle_key": "main.chars.006",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h51",
+      "file": "index.html",
+      "ordinal": 51,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 922,
+      "source_range": [
+        126493,
+        126547
+      ],
+      "keys": [
+        "main.chars.008"
+      ],
+      "all_keys": [
+        "main.chars.008"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Viktor Knox",
+      "ru_current": "Viktor Knox",
+      "category": "DISPLAY",
+      "action": "invariant",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Proper entity name / canonical AXIOM name; a second transliteration would duplicate identity rather than translate a headline."
+    },
+    {
+      "audit_id": "index-h52",
+      "file": "index.html",
+      "ordinal": 52,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 943,
+      "source_range": [
+        127992,
+        128048
+      ],
+      "keys": [
+        "main.chars.020"
+      ],
+      "all_keys": [
+        "main.chars.020"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Liza Sinclair",
+      "ru_current": "Liza Sinclair",
+      "category": "DISPLAY",
+      "action": "invariant",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Proper entity name / canonical AXIOM name; a second transliteration would duplicate identity rather than translate a headline."
+    },
+    {
+      "audit_id": "index-h53",
+      "file": "index.html",
+      "ordinal": 53,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 964,
+      "source_range": [
+        129351,
+        129408
+      ],
+      "keys": [
+        "main.chars.029"
+      ],
+      "all_keys": [
+        "main.chars.029"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Seraphine Veyr",
+      "ru_current": "Seraphine Veyr",
+      "category": "DISPLAY",
+      "action": "invariant",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Proper entity name / canonical AXIOM name; a second transliteration would duplicate identity rather than translate a headline."
+    },
+    {
+      "audit_id": "index-h54",
+      "file": "index.html",
+      "ordinal": 54,
+      "tag": "h3",
+      "id": null,
+      "classes": "ax-name",
+      "line": 1248,
+      "source_range": [
+        149801,
+        149876
+      ],
+      "keys": [
+        "main.header.011"
+      ],
+      "all_keys": [
+        "main.header.011"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXIOM",
+      "ru_current": "AXIOM",
+      "category": "DISPLAY",
+      "action": "invariant",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Proper entity name / canonical AXIOM name; a second transliteration would duplicate identity rather than translate a headline."
+    },
+    {
+      "audit_id": "index-h55",
+      "file": "index.html",
+      "ordinal": 55,
+      "tag": "h2",
+      "id": "ax-factions-title",
+      "classes": "sec-title",
+      "line": 1387,
+      "source_range": [
+        160241,
+        160445
+      ],
+      "keys": [
+        "main.factions.006",
+        "main.factions.007",
+        "main.factions.008"
+      ],
+      "all_keys": [
+        "main.factions.006",
+        "main.factions.007",
+        "main.factions.008"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Three forces. A different price for order.",
+      "ru_current": "Три силы. Разная цена порядка.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "ТРИ СИЛЫ. РАЗНАЯ ЦЕНА ПОРЯДКА",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h56",
+      "file": "index.html",
+      "ordinal": 56,
+      "tag": "h2",
+      "id": "vision-title",
+      "classes": "show-title",
+      "line": 1487,
+      "source_range": [
+        167719,
+        167873
+      ],
+      "keys": [
+        "main.vision.004",
+        "main.vision.005"
+      ],
+      "all_keys": [
+        "main.vision.004",
+        "main.vision.005"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "THE FUTURE IS BUILT IN PHASES.",
+      "ru_current": "БУДУЩЕЕ СТРОИТСЯ ПОЭТАПНО.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "БУДУЩЕЕ СТРОИТСЯ ПОЭТАПНО",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h57",
+      "file": "index.html",
+      "ordinal": 57,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 1489,
+      "source_range": [
+        168360,
+        168414
+      ],
+      "keys": [
+        "main.vision.010"
+      ],
+      "all_keys": [
+        "main.vision.010"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "PUBLIC WEB",
+      "ru_current": "ПУБЛИЧНЫЙ САЙТ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Roadmap product/phase card label; ordinary localization avoids overload and preserves current release meaning."
+    },
+    {
+      "audit_id": "index-h58",
+      "file": "index.html",
+      "ordinal": 58,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 1490,
+      "source_range": [
+        169345,
+        169402
+      ],
+      "keys": [
+        "main.vision.022"
+      ],
+      "all_keys": [
+        "main.vision.022"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXIOM BUILDER",
+      "ru_current": "AXIOM BUILDER",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Roadmap product/phase card label; ordinary localization avoids overload and preserves current release meaning."
+    },
+    {
+      "audit_id": "index-h59",
+      "file": "index.html",
+      "ordinal": 59,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 1491,
+      "source_range": [
+        170323,
+        170381
+      ],
+      "keys": [
+        "main.vision.031"
+      ],
+      "all_keys": [
+        "main.vision.031"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "DEVELOPMENT OS",
+      "ru_current": "ОС РАЗРАБОТКИ",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Roadmap product/phase card label; ordinary localization avoids overload and preserves current release meaning."
+    },
+    {
+      "audit_id": "index-h60",
+      "file": "index.html",
+      "ordinal": 60,
+      "tag": "h3",
+      "id": null,
+      "classes": "",
+      "line": 1492,
+      "source_range": [
+        171278,
+        171332
+      ],
+      "keys": [
+        "main.vision.039"
+      ],
+      "all_keys": [
+        "main.vision.039"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "AXIOM GAME",
+      "ru_current": "AXIOM GAME",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Roadmap product/phase card label; ordinary localization avoids overload and preserves current release meaning."
+    },
+    {
+      "audit_id": "index-h61",
+      "file": "index.html",
+      "ordinal": 61,
+      "tag": "h2",
+      "id": "collab-title",
+      "classes": "show-title",
+      "line": 1500,
+      "source_range": [
+        173950,
+        174110
+      ],
+      "keys": [
+        "main.collaboration.004",
+        "main.collaboration.005"
+      ],
+      "all_keys": [
+        "main.collaboration.004",
+        "main.collaboration.005"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "LET'S CREATE.",
+      "ru_current": "ДАВАЙТЕ СОЗДАВАТЬ.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "ru_subtitle": "ДАВАЙТЕ СОЗДАВАТЬ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "index-h62",
+      "file": "index.html",
+      "ordinal": 62,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 1506,
+      "source_range": [
+        176569,
+        176799
+      ],
+      "keys": [
+        "main.collaboration.025",
+        "main.collaboration.026",
+        "main.collaboration.027",
+        "main.collaboration.028"
+      ],
+      "all_keys": [
+        "main.collaboration.025",
+        "main.collaboration.026",
+        "main.collaboration.027",
+        "main.collaboration.028"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "Want to enter? The nodes are watching.",
+      "ru_current": "Хочешь войти? Узлы наблюдают.",
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "ru_subtitle": "ХОЧЕШЬ ВОЙТИ? УЗЛЫ НАБЛЮДАЮТ",
+      "duplicate_action": "no semantic duplicate detected; preserve description",
+      "reason": "Artistic proposition / narrative chapter headline; fixed canonical EN with subordinate RU-only translation."
+    },
+    {
+      "audit_id": "error-h01",
+      "file": "404.html",
+      "ordinal": 1,
+      "tag": "h1",
+      "id": null,
+      "classes": "title",
+      "line": 244,
+      "source_range": [
+        15747,
+        15946
+      ],
+      "keys": [
+        "error.header.006",
+        "error.header.007"
+      ],
+      "all_keys": [
+        "error.header.006",
+        "error.header.007"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "O-OPS ROUTE LOST",
+      "ru_current": "УПС МАРШРУТ ПОТЕРЯН",
+      "ru_subtitle": "УПС. МАРШРУТ ПОТЕРЯН",
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "duplicate_action": "no semantic duplicate; retain explanatory message and recovery controls",
+      "reason": "Editorial lost-route title; retain single H1 and independent small RU line."
+    },
+    {
+      "audit_id": "fan-h01",
+      "file": "serafim-veyr/index.html",
+      "ordinal": 1,
+      "tag": "h1",
+      "id": "hero-name",
+      "classes": "",
+      "line": 49,
+      "source_range": [
+        3264,
+        3324
+      ],
+      "keys": [],
+      "all_keys": [],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "SERAFIM VEYR.",
+      "ru_current": "Серафим Вейр",
+      "ru_subtitle": null,
+      "category": "DISPLAY",
+      "action": "invariant",
+      "duplicate_action": "no semantic duplicate; preserve all game/AI/preset disclosures",
+      "reason": "Proper character name; retain the canonical Latin name without redundant transliteration."
+    },
+    {
+      "audit_id": "fan-h02",
+      "file": "serafim-veyr/index.html",
+      "ordinal": 2,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 61,
+      "source_range": [
+        4428,
+        4502
+      ],
+      "keys": [
+        "story_head"
+      ],
+      "all_keys": [],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "NOT A NEW LEGEND. JUST MY VERSION OF V.",
+      "ru_current": "НЕ НОВАЯ ЛЕГЕНДА. ПРОСТО МОЯ ВЕРСИЯ V.",
+      "ru_subtitle": "НЕ НОВАЯ ЛЕГЕНДА. ПРОСТО МОЯ ВЕРСИЯ V.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "duplicate_action": "no semantic duplicate; preserve all game/AI/preset disclosures",
+      "reason": "Independent fan-archive section headline; pair using local Impact/Consolas identity."
+    },
+    {
+      "audit_id": "fan-h03",
+      "file": "serafim-veyr/index.html",
+      "ordinal": 3,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 74,
+      "source_range": [
+        6297,
+        6360
+      ],
+      "keys": [
+        "identity_head"
+      ],
+      "all_keys": [],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "BUILT FROM SMALL DETAILS.",
+      "ru_current": "ВСЁ РЕШАЮТ ДЕТАЛИ.",
+      "ru_subtitle": "ВСЁ РЕШАЮТ ДЕТАЛИ.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "duplicate_action": "no semantic duplicate; preserve all game/AI/preset disclosures",
+      "reason": "Independent fan-archive section headline; pair using local Impact/Consolas identity."
+    },
+    {
+      "audit_id": "fan-h04",
+      "file": "serafim-veyr/index.html",
+      "ordinal": 4,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 79,
+      "source_range": [
+        7077,
+        7150
+      ],
+      "keys": [
+        "gallery_head"
+      ],
+      "all_keys": [],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "THE CITY NEVER LOOKS THE SAME TWICE.",
+      "ru_current": "У КАЖДОГО ВЕЧЕРА СВОЙ НАЙТ-СИТИ.",
+      "ru_subtitle": "У КАЖДОГО ВЕЧЕРА СВОЙ НАЙТ-СИТИ.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "duplicate_action": "no semantic duplicate; preserve all game/AI/preset disclosures",
+      "reason": "Independent fan-archive section headline; pair using local Impact/Consolas identity."
+    },
+    {
+      "audit_id": "fan-h05",
+      "file": "serafim-veyr/index.html",
+      "ordinal": 5,
+      "tag": "h2",
+      "id": "comparison-title",
+      "classes": "",
+      "line": 91,
+      "source_range": [
+        9233,
+        9304
+      ],
+      "keys": [
+        "compare_head"
+      ],
+      "all_keys": [],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "BEFORE / AFTER.",
+      "ru_current": "ДО / ПОСЛЕ.",
+      "ru_subtitle": "ДО / ПОСЛЕ.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "duplicate_action": "no semantic duplicate; preserve all game/AI/preset disclosures",
+      "reason": "Independent fan-archive section headline; pair using local Impact/Consolas identity."
+    },
+    {
+      "audit_id": "fan-h06",
+      "file": "serafim-veyr/index.html",
+      "ordinal": 6,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 94,
+      "source_range": [
+        10838,
+        10901
+      ],
+      "keys": [
+        "origin_head"
+      ],
+      "all_keys": [],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "ONE WORLD INSPIRED ANOTHER.",
+      "ru_current": "ОДИН МИР ВДОХНОВИЛ ДРУГОЙ.",
+      "ru_subtitle": "ОДИН МИР ВДОХНОВИЛ ДРУГОЙ.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "duplicate_action": "no semantic duplicate; preserve all game/AI/preset disclosures",
+      "reason": "Independent fan-archive section headline; pair using local Impact/Consolas identity."
+    },
+    {
+      "audit_id": "fan-h07",
+      "file": "serafim-veyr/index.html",
+      "ordinal": 7,
+      "tag": "h2",
+      "id": null,
+      "classes": "",
+      "line": 95,
+      "source_range": [
+        11960,
+        12028
+      ],
+      "keys": [
+        "preset_head"
+      ],
+      "all_keys": [],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain all following meaningful prose",
+      "en": "THE PRESET IS STILL BEING BUILT.",
+      "ru_current": "ПРЕСЕТ ЕЩЁ СОБИРАЕТСЯ.",
+      "ru_subtitle": "ПРЕСЕТ ЕЩЁ СОБИРАЕТСЯ.",
+      "category": "SECTION",
+      "action": "bilingual",
+      "duplicate_action": "no semantic duplicate; preserve all game/AI/preset disclosures",
+      "reason": "Independent fan-archive section headline; pair using local Impact/Consolas identity."
+    },
+    {
+      "audit_id": "extra-01",
+      "file": "index.html",
+      "selector": ".show-motto strong [main.creator.034]",
+      "tag": "strong",
+      "line": 500,
+      "keys": [
+        "main.creator.034"
+      ],
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "en": "DESIGN IS SYSTEM",
+      "ru_current": "ДИЗАЙН — ЭТО СИСТЕМА",
+      "ru_subtitle": "ДИЗАЙН — ЭТО СИСТЕМА",
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Visual manifesto heading in a compact three-column composition; retain following explanatory body.",
+      "source_range": [
+        38078,
+        38147
+      ]
+    },
+    {
+      "audit_id": "extra-02",
+      "file": "index.html",
+      "selector": ".show-motto strong [main.creator.036]",
+      "tag": "strong",
+      "line": 500,
+      "keys": [
+        "main.creator.036"
+      ],
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "en": "EVIDENCE OVER CLAIMS",
+      "ru_current": "ДОКАЗАТЕЛЬСТВА ПРЕВЫШЕ СЛОВ",
+      "ru_subtitle": "ДОКАЗАТЕЛЬСТВА ВАЖНЕЕ ЗАЯВЛЕНИЙ",
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Visual manifesto heading in a compact three-column composition; retain following explanatory body.",
+      "source_range": [
+        38278,
+        38351
+      ]
+    },
+    {
+      "audit_id": "extra-03",
+      "file": "index.html",
+      "selector": ".show-motto strong [main.creator.038]",
+      "tag": "strong",
+      "line": 500,
+      "keys": [
+        "main.creator.038"
+      ],
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "en": "ONE CONNECTED WORLD",
+      "ru_current": "ЕДИНЫЙ СВЯЗАННЫЙ МИР",
+      "ru_subtitle": "ОДИН СВЯЗАННЫЙ МИР",
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Visual manifesto heading in a compact three-column composition; retain following explanatory body.",
+      "source_range": [
+        38461,
+        38533
+      ]
+    },
+    {
+      "audit_id": "extra-04",
+      "file": "index.html",
+      "selector": ".ax-epilogue-line",
+      "tag": "p",
+      "line": 1482,
+      "keys": [
+        "main.factions.026"
+      ],
+      "category": "DISPLAY",
+      "action": "bilingual",
+      "en": "This is only the surface of the world.",
+      "ru_current": "Это только поверхность мира.",
+      "ru_subtitle": "ЭТО ЛИШЬ ПОВЕРХНОСТЬ МИРА",
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Expressive epilogue headline despite P tag; following transition to VISION is meaningful body.",
+      "source_range": [
+        166660,
+        166757
+      ]
+    },
+    {
+      "audit_id": "extra-05",
+      "file": "index.html",
+      "selector": ".show-ident strong",
+      "tag": "strong",
+      "line": 496,
+      "keys": [
+        "main.creator.017"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "CREATOR / ENDEAVOR",
+      "ru_current": "АВТОР / ENDEAVOR",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Identity card role/name label; second line would overload compact dossier metadata.",
+      "source_range": [
+        36449,
+        36520
+      ]
+    },
+    {
+      "audit_id": "extra-06",
+      "file": "index.html",
+      "selector": ".doctrine-side .big",
+      "tag": "strong",
+      "line": 861,
+      "keys": [
+        "main.manifesto.017"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "invariant",
+      "en": "NEXARCH",
+      "ru_current": "NEXARCH",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Canonical NEXARCH title; identity label, not a translatable proposition.",
+      "source_range": [
+        97079,
+        97153
+      ]
+    },
+    {
+      "audit_id": "extra-07",
+      "file": "index.html",
+      "selector": ".doctrine-quote .ql",
+      "tag": "dynamic",
+      "line": null,
+      "keys": [
+        "main.manifesto.025",
+        "main.manifesto.026",
+        "main.manifesto.027",
+        "main.manifesto.028",
+        "main.manifesto.029"
+      ],
+      "category": "EDITORIAL",
+      "action": "body",
+      "en": "INTEGRITY / LOST. / Fragments remain. / The control layer holds. / But that is not all of AXIOM.",
+      "ru_current": "ЦЕЛОСТНОСТЬ / УТРАЧЕНА. / Фрагменты остались. / Слой контроля удержан. / Но это не весь AXIOM.",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Authored multi-line quotation, not a headline: localize its complete reading normally; do not turn the quote into a duplicate bilingual block."
+    },
+    {
+      "audit_id": "extra-08",
+      "file": "index.html",
+      "selector": ".faction .name ENDEAVOR",
+      "tag": "b",
+      "line": 969,
+      "keys": [
+        "main.chars.035"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "invariant",
+      "en": "ENDEAVOR",
+      "ru_current": "ENDEAVOR",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
+      "source_range": [
+        129882,
+        129931
+      ]
+    },
+    {
+      "audit_id": "extra-09",
+      "file": "index.html",
+      "selector": ".faction .name VOIDLINK",
+      "tag": "b",
+      "line": 948,
+      "keys": [
+        "main.chars.028"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "invariant",
+      "en": "VOIDLINK",
+      "ru_current": "VOIDLINK",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
+      "source_range": [
+        128516,
+        128565
+      ]
+    },
+    {
+      "audit_id": "extra-10",
+      "file": "index.html",
+      "selector": ".faction .name NEURA TECH",
+      "tag": "div",
+      "line": 1462,
+      "keys": [
+        "main.factions.020"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "invariant",
+      "en": "NEURA TECH",
+      "ru_current": "NEURA TECH",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
+      "source_range": [
+        164709,
+        164780
+      ]
+    },
+    {
+      "audit_id": "extra-11",
+      "file": "loader.html",
+      "selector": "#wordmark",
+      "tag": "div",
+      "line": 473,
+      "keys": [],
+      "category": "DISPLAY",
+      "action": "invariant",
+      "en": "AXIOM",
+      "ru_current": "AXIOM",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "AXIOM brand lettermark with decorative glitch copies; no translatable proposition, no Russian duplicate.",
+      "source_range": [
+        19172,
+        20001
+      ]
+    },
+    {
+      "audit_id": "extra-12",
+      "file": "loader.html",
+      "selector": ".loader status/log",
+      "tag": "dynamic",
+      "line": null,
+      "keys": [],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "Local loader phase/log/prompt strings",
+      "ru_current": "Локализованные фазы/журнал/приглашение",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Phase, progress, entry prompt and log statuses are functional feedback; ordinary localization; preserve startup timeline."
+    },
+    {
+      "audit_id": "extra-13",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.020",
+      "tag": "h3",
+      "line": 513,
+      "keys": [
+        "main.work.020"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "AXIOM PANEL — ACCESS GATE",
+      "ru_current": "AXIOM PANEL — ШЛЮЗ ДОСТУПА",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        44816,
+        44883
+      ]
+    },
+    {
+      "audit_id": "extra-14",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.036",
+      "tag": "h3",
+      "line": 519,
+      "keys": [
+        "main.work.036"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "CONTROL STATUS / WATCH_DOG",
+      "ru_current": "СТАТУС УПРАВЛЕНИЯ / WATCH_DOG",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        47338,
+        47406
+      ]
+    },
+    {
+      "audit_id": "extra-15",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.045",
+      "tag": "h3",
+      "line": 526,
+      "keys": [
+        "main.work.045"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "CHRONICLE — MEMORY ORBIT",
+      "ru_current": "CHRONICLE — ОРБИТА ПАМЯТИ",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        49770,
+        49836
+      ]
+    },
+    {
+      "audit_id": "extra-16",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.055",
+      "tag": "h3",
+      "line": 533,
+      "keys": [
+        "main.work.055"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "AXCHAT — ECHO AXIOM",
+      "ru_current": "AXCHAT — ECHO AXIOM",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        52176,
+        52237
+      ]
+    },
+    {
+      "audit_id": "extra-17",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.065",
+      "tag": "h3",
+      "line": 539,
+      "keys": [
+        "main.work.065"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "CONTENT LIBRARY",
+      "ru_current": "БИБЛИОТЕКА МАТЕРИАЛОВ",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        54615,
+        54672
+      ]
+    },
+    {
+      "audit_id": "extra-18",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.075",
+      "tag": "h3",
+      "line": 546,
+      "keys": [
+        "main.work.075"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "VIKTOR — CHARACTER DOSSIER",
+      "ru_current": "VIKTOR — ДОСЬЕ ПЕРСОНАЖА",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        57124,
+        57192
+      ]
+    },
+    {
+      "audit_id": "extra-19",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.085",
+      "tag": "h3",
+      "line": 552,
+      "keys": [
+        "main.work.085"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "SIGNAL CENTER",
+      "ru_current": "ЦЕНТР СИГНАЛОВ",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        59467,
+        59522
+      ]
+    },
+    {
+      "audit_id": "extra-20",
+      "file": "index.html",
+      "selector": "#showcase-full-caption <- main.work.019",
+      "tag": "span",
+      "line": 509,
+      "keys": [
+        "main.work.019"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "MASTER GRAPH",
+      "ru_current": "MASTER GRAPH",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
+      "source_range": [
+        43427,
+        43505
+      ]
+    },
+    {
+      "audit_id": "extra-21",
+      "file": "index.html",
+      "selector": "#v23-map-dialog-title",
+      "tag": "dynamic",
+      "line": null,
+      "keys": [
+        "ui.mapTitle"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "AXIOM world map",
+      "ru_current": "Карта мира AXIOM",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Map-dialog utility title with pan/zoom controls; ordinary localization; preserve node/zoom/pan state."
+    },
+    {
+      "audit_id": "extra-22",
+      "file": "index.html",
+      "selector": ".v23-map-name <- main.work.157",
+      "tag": "text",
+      "line": 713,
+      "keys": [
+        "main.work.157"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "GLUHAYA",
+      "ru_current": "GLUHAYA",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
+      "source_range": [
+        74641,
+        74809
+      ]
+    },
+    {
+      "audit_id": "extra-23",
+      "file": "index.html",
+      "selector": ".v23-map-name <- main.work.159",
+      "tag": "text",
+      "line": 736,
+      "keys": [
+        "main.work.159"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "NEXUS",
+      "ru_current": "NEXUS",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
+      "source_range": [
+        76327,
+        76493
+      ]
+    },
+    {
+      "audit_id": "extra-24",
+      "file": "index.html",
+      "selector": ".v23-map-name <- main.work.161",
+      "tag": "text",
+      "line": 759,
+      "keys": [
+        "main.work.161"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "FACELESS BASE",
+      "ru_current": "FACELESS BASE",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
+      "source_range": [
+        78096,
+        78271
+      ]
+    },
+    {
+      "audit_id": "extra-25",
+      "file": "index.html",
+      "selector": ".v23-map-name <- main.work.160",
+      "tag": "text",
+      "line": 748,
+      "keys": [
+        "main.work.160"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "ECHELON",
+      "ru_current": "ECHELON",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
+      "source_range": [
+        77249,
+        77416
+      ]
+    },
+    {
+      "audit_id": "extra-26",
+      "file": "index.html",
+      "selector": ".v23-map-name <- main.work.158",
+      "tag": "text",
+      "line": 724,
+      "keys": [
+        "main.work.158"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "OMEGA-0",
+      "ru_current": "OMEGA-0",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
+      "source_range": [
+        75448,
+        75617
+      ]
+    },
+    {
+      "audit_id": "extra-27",
+      "file": "index.html",
+      "selector": ".v23-map-name <- main.work.177",
+      "tag": "span",
+      "line": 822,
+      "keys": [
+        "main.work.177"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "AI ZONE",
+      "ru_current": "AI ZONE",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
+      "source_range": [
+        82895,
+        82958
+      ]
+    },
+    {
+      "audit_id": "extra-28",
+      "file": "index.html",
+      "selector": ".v23 flow dynamic labels",
+      "tag": "dynamic",
+      "line": null,
+      "keys": [],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "Dynamic flow labels from existing ui.flow* / main.system.* catalog",
+      "ru_current": "Локализованные узлы/маршруты",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Active flow-node/route utility titles and statuses; ordinary localization, no duplicated labels."
+    },
+    {
+      "audit_id": "extra-29",
+      "file": "serafim-veyr/index.html",
+      "selector": ".hero-tag",
+      "tag": "p",
+      "line": 51,
+      "keys": [
+        "hero_tag"
+      ],
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "en": "ONE CHARACTER. COUNTLESS STORIES IN NIGHT CITY.",
+      "ru_current": "ОДИН ПЕРСОНАЖ. БЕСЧИСЛЕННЫЕ ИСТОРИИ В НАЙТ-СИТИ.",
+      "ru_subtitle": "ОДИН ПЕРСОНАЖ. БЕСЧИСЛЕННЫЕ ИСТОРИИ В НАЙТ-СИТИ",
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Artistic non-H fan-archive motto; pair locally without importing AXIOM typography.",
+      "source_range": [
+        3375,
+        3467
+      ]
+    },
+    {
+      "audit_id": "extra-30",
+      "file": "serafim-veyr/index.html",
+      "selector": "#lightbox-title",
+      "tag": "div",
+      "line": 98,
+      "keys": [],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "Current SV_LIBRARY item.title.en",
+      "ru_current": "Current SV_LIBRARY item.title.ru",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Dynamic media item title; preserve visible image, index, filter, slider, focus and all AI/original provenance labels.",
+      "source_range": [
+        13897,
+        13951
+      ]
+    },
+    {
+      "audit_id": "extra-31",
+      "file": "index.html",
+      "selector": ".ax-tab-name",
+      "tag": "span",
+      "line": 509,
+      "keys": [
+        "main.work.010",
+        "main.work.011",
+        "main.work.012",
+        "main.work.014",
+        "main.work.016",
+        "main.work.017",
+        "main.work.018",
+        "main.work.019"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "PANEL GATE / WATCH_DOG / CHRONICLE / AXCHAT / CONTENT / VIKTOR / SIGNAL / MASTER GRAPH",
+      "ru_current": "ВХОД В ПАНЕЛЬ / WATCH_DOG / CHRONICLE / AXCHAT / КОНТЕНТ / VIKTOR / СИГНАЛ / MASTER GRAPH",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Interactive archive tab labels are controls, not editorial headlines.",
+      "source_range": [
+        41212,
+        41288
+      ]
+    },
+    {
+      "audit_id": "extra-32",
+      "file": "index.html",
+      "selector": "#ax-archive-title",
+      "tag": "span",
+      "line": 507,
+      "keys": [
+        "main.work.007"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "INTERFACE ARCHIVE / REAL PRODUCT SCREENS",
+      "ru_current": "АРХИВ ИНТЕРФЕЙСОВ / РЕАЛЬНЫЕ ЭКРАНЫ ПРОДУКТА",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Compact archive utility bar title.",
+      "source_range": [
+        40572,
+        40680
+      ]
+    },
+    {
+      "audit_id": "extra-33",
+      "file": "index.html",
+      "selector": ".ax-mode-name",
+      "tag": "span",
+      "line": 1296,
+      "keys": [
+        "main.manifesto.032",
+        "main.manifesto.033",
+        "main.manifesto.034",
+        "main.manifesto.035",
+        "main.manifesto.036"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "RELIC / ECHO / CONTROL / BIO / MYTH",
+      "ru_current": "РЕЛИКТ / ЭХО / КОНТРОЛЬ / БИО / МИФ",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Five canonical AXIOM mode selector labels; no duplicate bilingual controls.",
+      "source_range": [
+        153574,
+        153651
+      ]
+    },
+    {
+      "audit_id": "extra-34",
+      "file": "index.html",
+      "selector": ".name (entity preview)",
+      "tag": "dynamic",
+      "line": null,
+      "keys": [
+        "main.work.144"
+      ],
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "en": "WORLD ENTITY",
+      "ru_current": "СУЩНОСТЬ МИРА",
+      "ru_subtitle": null,
+      "duplicate_action": "no semantic duplicate; preserve meaningful prose",
+      "visual_result": "NOT_RUN",
+      "reason": "Technical graph demonstration label; not a narrative headline."
+    }
+  ]
+}
