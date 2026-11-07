@@ -41,8 +41,16 @@
           : [{opacity: start.opacity, translate: start.translate}, {opacity: 0, translate: '0 -4px'}],
           {duration: incoming ? 180 : 80, delay, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'both'});
       });
-      // Offscreen documents can have no visible text; commit immediately in that case.
-      await Promise.all(animations.map(animation => animation.finished.catch(() => {})));
+      // A throttled rendering timeline must not hold a queued language indefinitely.
+      // Only our text animations are bounded/cancelled; unrelated site effects keep running.
+      const deadline=(incoming ? 180+(elements.some(element=>subtitles.has(element)) ? 60 : 0) : 80)+80;
+      let timer;
+      try {
+        await Promise.race([
+          Promise.all(animations.map(animation => animation.finished.catch(() => {}))),
+          new Promise(resolve=>{timer=setTimeout(resolve,deadline);})
+        ]);
+      } finally { clearTimeout(timer); }
     }
     function request(next) {
       if (!['en','ru'].includes(next)) return settled;
