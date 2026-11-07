@@ -26,7 +26,7 @@ html body .hero-grid p.ax-heading-translation.ax-heading-translation{grid-area:t
   html[lang=ru] .hero-poster h1.title{margin-top:10px;margin-bottom:6px}
   html[lang=ru] .hero-poster .lede{margin-bottom:12px}
   html[lang=ru] .hero-poster .hero-rail{padding-top:6px}
-  html[lang=ru] .hero-poster .hero-grid{padding-top:16px;padding-bottom:8px}
+  html[lang=ru] .hero-poster .hero-grid{padding-top:16px;padding-bottom:6px}
   html body .hero-grid p.ax-heading-translation.ax-heading-translation{margin-bottom:10px}
 }
 /* Compact editorial cards already have their own flex rhythm; avoid stacking margins. */
@@ -36,4 +36,11 @@ html body .module .m-body p.ax-heading-translation.ax-heading-translation{margin
   html body p.ax-heading-translation.ax-heading-translation{margin:10px 0 20px;padding-left:10px;font-size:12px}
   html body .hero-grid p.ax-heading-translation.ax-heading-translation{margin:12px 0 18px}
   html body .r1p-plate-copy p.ax-heading-translation.ax-heading-translation{font-size:12px;line-height:1.5;margin:8px 0 0}
+}
+
+/* Landscape phones have a separate two-column copy grid: the translation belongs
+   below the title, while the CTA keeps the right column and its original reach. */
+@media(max-height:520px) and (min-width:600px) and (orientation:landscape){
+  .hero-grid>div:first-child{grid-template-areas:"eyebrow eyebrow" "title lede" "title cta" "translation cta" "extra extra"}
+  html body .hero-grid p.ax-heading-translation.ax-heading-translation{margin:8px 0 0}
 }
