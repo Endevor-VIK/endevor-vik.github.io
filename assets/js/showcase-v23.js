@@ -1,8 +1,16 @@
 /* AXIOM V2.3 / WORLD + SYSTEM interactions; no animation loop */
-(()=>{/* 0524 W2.R (D-01): world nodes are keyed by their Canon V3 ID (02_LOCATIONS); the card order on screen is only the display index */
+(()=>{const I=window.AXI18n,tr=(key,fallback,values)=>I?I.t(key,values):fallback;
+/* 0524 W2.R (D-01): world nodes are keyed by their Canon V3 ID (02_LOCATIONS); the card order on screen is only the display index */
 const data={"02.01":{"name":"GLUHAYA STATION","signal":"Порог · транзит · первый сигнал","description":"Глухая станция — транзитный порог и первый сигнал. Она связывает знакомое пространство с закрытыми маршрутами системы."},"02.02":{"name":"NEXUS","signal":"Купол · контроль · глубина","description":"NEXUS — контролируемый купол с внутренними уровнями, изоляцией и собственным порядком."},"02.03":{"name":"FACELESS BASE","signal":"Резерв · ремонт · оборона","description":"FACELESS BASE — скрытая автономная крепость за внешним периметром NEXUS: резерв управления, ремонт и оборона купола."},"02.04":{"name":"ECHELON","signal":"Вертикаль · власть · иерархия","description":"ECHELON — вертикаль власти и опорный узел иерархии. Здесь архитектура становится инструментом порядка."},"02.05":{"name":"LABORATORY OMEGA-0","signal":"Лаборатория · под Глухой станцией","description":"OMEGA-0 — довоенная секретная лаборатория, погребённая под Глухой станцией. После инцидента комплекс запечатан вместе с результатами экспериментов."},"02.06":{"name":"AI ZONE","signal":"Контакт · удержание · карантин","description":"AI ZONE — закрытый исследовательский комплекс для контролируемого контакта с LIMBO: изоляция, удержание и карантин."}};
 const nodes=[...document.querySelectorAll('.v23-map-node')],id=document.getElementById('v23-map-id'),sig=document.getElementById('v23-map-signal'),detail=document.getElementById('v23-map-description'),mapCount=document.getElementById('v23-map-active-count'),mapShell=document.querySelector('.v23-map-composition');
-nodes.forEach((n,i)=>n.addEventListener('click',()=>{const node=data[n.dataset.canonId];if(!node)return;nodes.forEach((b,j)=>{b.classList.toggle('is-active',i===j);b.setAttribute('aria-pressed',String(i===j))});if(id)id.textContent=n.dataset.canonId+' / '+node.name;if(sig)sig.textContent=node.signal;if(detail)detail.textContent=node.description;if(mapCount)mapCount.textContent=String(i+1).padStart(2,'0')+' / '+String(nodes.length).padStart(2,'0')+' SELECTED';if(mapShell)mapShell.style.setProperty('--v23-node-progress',String((i+1)/nodes.length*100)+'%')}));
+let selectedNode=Math.max(0,nodes.findIndex(n=>n.getAttribute('aria-pressed')==='true'));
+function nodeLabels(i){const n=nodes[i];if(!n)return;const node=data[n.dataset.canonId];if(!node)return;
+ if(id)id.textContent=n.dataset.canonId+' / '+node.name;
+ if(sig)sig.textContent=tr('runtime.world.'+n.dataset.canonId+'.signal',node.signal);
+ if(detail)detail.textContent=tr('runtime.world.'+n.dataset.canonId+'.description',node.description);
+ if(mapCount)mapCount.textContent=String(i+1).padStart(2,'0')+' / '+String(nodes.length).padStart(2,'0')+' '+tr('ui.selected','SELECTED');
+}
+nodes.forEach((n,i)=>n.addEventListener('click',()=>{if(!data[n.dataset.canonId])return;selectedNode=i;nodes.forEach((b,j)=>{b.classList.toggle('is-active',i===j);b.setAttribute('aria-pressed',String(i===j))});nodeLabels(i);if(mapShell)mapShell.style.setProperty('--v23-node-progress',String((i+1)/nodes.length*100)+'%')}));
 const flowMessages=[
   'CANON фиксирует мир и его внутреннюю логику: события, определения, связи и редакционные решения.',
   'MASTER GRAPH — граф записей мира с привязкой к Canon: показывает связи между сущностями, помогает изучать структуру мира и находить несогласованности.',
@@ -11,7 +19,11 @@ const flowMessages=[
 ];
 const flowButtons=[...document.querySelectorAll('.v23-flow-step')];
 const flowMessage=document.getElementById('v23-flow-message');
-flowButtons.forEach((btn,i)=>btn.addEventListener('click',()=>{flowButtons.forEach((b,j)=>{b.classList.toggle('is-active',j===i);b.setAttribute('aria-pressed',String(i===j))});if(flowMessage)flowMessage.textContent=flowMessages[i]}));
+let selectedFlow=Math.max(0,flowButtons.findIndex(n=>n.getAttribute('aria-pressed')==='true'));
+function flowLabels(){if(flowMessage)flowMessage.textContent=tr('runtime.flow.'+selectedFlow,flowMessages[selectedFlow]);}
+flowButtons.forEach((btn,i)=>btn.addEventListener('click',()=>{selectedFlow=i;flowButtons.forEach((b,j)=>{b.classList.toggle('is-active',j===i);b.setAttribute('aria-pressed',String(i===j))});flowLabels()}));
+window.addEventListener('axiom:languagechange',()=>{nodeLabels(selectedNode);flowLabels()});
+nodeLabels(selectedNode);flowLabels();
 const trigger=document.getElementById('v23-open-map');
 /* 0524 W2 (Q-11): the map viewer follows the archive viewer — FIT ↔ 1:1 on the V10 derivative (1:1 in device pixels), drag / arrows / touch scroll to pan, focus back to the button.
    Nothing is fetched before the first open; 1:1 uses 3840w, or 2880w on low-memory or Save-Data devices */
@@ -20,14 +32,17 @@ if(trigger){
  const full=lite?{src:'assets/world/world-spine-map-2880w.webp',w:2880,h:1620}:{src:'assets/world/world-spine-map-3840w.webp',w:3840,h:2160};
  const fitSet='assets/world/world-spine-map-1440w.webp 1440w, assets/world/world-spine-map-2048w.webp 2048w, assets/world/world-spine-map-2880w.webp 2880w';
  const dialog=document.createElement('dialog');dialog.className='show-lightbox ax-viewer v23-map-dialog';dialog.setAttribute('aria-labelledby','v23-map-dialog-title');
- dialog.innerHTML='<div class="show-lightbox-head"><span class="ax-viewer-count">AXIOM / WORLD MAP</span><strong class="show-lightbox-label" id="v23-map-dialog-title">Карта мира AXIOM</strong><div class="ax-viewer-tools"><button type="button" class="ax-viewer-zoom" aria-pressed="false">1:1 ZOOM</button><button type="button" class="show-lightbox-close" aria-label="Закрыть карту">ЗАКРЫТЬ ✕</button></div></div>'
-  +'<div class="show-lightbox-image"><img width="'+full.w+'" height="'+full.h+'" decoding="async" draggable="false" alt="Художественная карта мира AXIOM: шесть ключевых локаций, вид с высоты."></div>'
-  +'<div class="ax-viewer-hint" aria-hidden="true">КЛИК ИЛИ + — 1:1 · ПЕРЕТАЩИТЬ ИЛИ СТРЕЛКИ — ОБЗОР · ESC — ЗАКРЫТЬ</div>';
+ dialog.innerHTML='<div class="show-lightbox-head"><span class="ax-viewer-count" data-i18n="ui.mapKicker">AXIOM / WORLD MAP</span><strong class="show-lightbox-label" id="v23-map-dialog-title" data-i18n="ui.mapTitle">Карта мира AXIOM</strong><div class="ax-viewer-tools"><button type="button" class="ax-viewer-zoom" aria-pressed="false" data-i18n="ui.zoom">1:1 ZOOM</button><button type="button" class="show-lightbox-close" aria-label="Закрыть карту" data-i18n-aria-label="ui.closeMap" data-i18n="ui.close">ЗАКРЫТЬ ✕</button></div></div>'
+  +'<div class="show-lightbox-image"><img width="'+full.w+'" height="'+full.h+'" decoding="async" draggable="false" data-i18n-alt="ui.mapAlt" alt="Художественная карта мира AXIOM: шесть ключевых локаций, вид с высоты."></div>'
+  +'<div class="ax-viewer-hint" aria-hidden="true" data-i18n="ui.mapHint">КЛИК ИЛИ + — 1:1 · ПЕРЕТАЩИТЬ ИЛИ СТРЕЛКИ — ОБЗОР · ESC — ЗАКРЫТЬ</div>';
  document.body.appendChild(dialog);
+ if(I){I.apply(dialog);dialog.querySelector('.ax-viewer-tools').append(I.switcher());}
  const stage=dialog.querySelector('.show-lightbox-image'),img=stage.querySelector('img'),zoomBtn=dialog.querySelector('.ax-viewer-zoom'),closeBtn=dialog.querySelector('.show-lightbox-close');
  let zoomed=false,drag=null;
+ zoomBtn.removeAttribute('data-i18n');
+ window.addEventListener('axiom:languagechange',()=>{zoomBtn.textContent=zoomed?tr('ui.fit','FIT'):tr('ui.zoom','1:1 ZOOM')});
  const setZoom=(on,at)=>{
-  zoomed=on;dialog.classList.toggle('is-zoomed',on);zoomBtn.setAttribute('aria-pressed',String(on));zoomBtn.textContent=on?'FIT':'1:1 ZOOM';
+  zoomed=on;dialog.classList.toggle('is-zoomed',on);zoomBtn.setAttribute('aria-pressed',String(on));zoomBtn.removeAttribute('data-i18n');zoomBtn.textContent=on?tr('ui.fit','FIT'):tr('ui.zoom','1:1 ZOOM');
   if(on){img.removeAttribute('srcset');img.removeAttribute('sizes');if(img.getAttribute('src')!==full.src){stage.classList.add('is-loading');img.src=full.src}
    /* 1:1 = one map pixel per device pixel (a phone at DPR 3 is not upscaled ×3) */
    const zw=Math.round(full.w/Math.min(3,Math.max(1,window.devicePixelRatio||1))),zh=Math.round(zw*full.h/full.w);
@@ -77,8 +92,10 @@ if(trigger){
  const ctl=window.AbortController?new AbortController():null,timer=setTimeout(()=>{if(ctl)ctl.abort()},2500);
  fetch('assets/status/gate.json',{cache:'no-cache',signal:ctl?ctl.signal:undefined}).then(r=>r.ok?r.json():null).then(s=>{
   if(!s||s.state!=='unavailable'||!(Date.parse(s.expires)>Date.now()))return;
-  const day=/^(\d{4})-(\d{2})-(\d{2})/.exec(s.checkedAt||''),date=day?' · статус на '+day[3]+'.'+day[2]:'';
-  notes.forEach(n=>{const d=n.querySelector('.ax-gate-date');if(d)d.textContent=date;n.hidden=false});
+  const day=/^(\d{4})-(\d{2})-(\d{2})/.exec(s.checkedAt||''),date=day?day[3]+'.'+day[2]:'';
+  const update=()=>notes.forEach(n=>{const d=n.querySelector('.ax-gate-date');if(d)d.textContent=date?(window.AXI18n?window.AXI18n.t('ui.statusDate',{date}):' · '+date):''});
+  window.addEventListener('axiom:languagechange',update);update();
+  notes.forEach(n=>{const d=n.querySelector('.ax-gate-date');n.hidden=false});
  }).catch(()=>{}).finally(()=>clearTimeout(timer));
 })();
 /* 0524 W3.C (S3) OMEGA-0 / THE DESCENT. «Узнать о месте» returns the reader to the real 02.05 node: it selects the card through

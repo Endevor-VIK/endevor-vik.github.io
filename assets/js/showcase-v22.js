@@ -6,7 +6,7 @@
  const nodes=ids.map(id=>({id,el:document.getElementById(id)})).filter(x=>x.el);
  const line=document.getElementById('v22-scroll-fill');
  const navLinks=[...document.querySelectorAll('.menu a[href^="#"],.show-mobile-nav a[href^="#"]')];
- const strip=document.querySelector('.show-mobile-nav');
+ const strip=document.querySelector('.ax-mobile-links')||document.querySelector('.show-mobile-nav');
  let scheduled=false,lastId=null;
  /* 0524 W1: the swipe strip follows the reader, so VISION and CONTACT come into view on their own (horizontal scroll only) */
  function reveal(a){
@@ -37,5 +37,6 @@
  function request(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
  addEventListener('scroll',request,{passive:true});
  addEventListener('resize',request,{passive:true});
+ addEventListener('axiom:languagechange',()=>{fitBridges();request()});
  update();
 })();

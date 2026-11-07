@@ -2,8 +2,12 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
+<link rel="stylesheet" href="assets/css/i18n.css">
+<script src="assets/i18n/catalogs.js"></script>
+<script src="assets/js/language-preference.js"></script>
+<script src="assets/js/i18n.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>AXIOM // CORE BOOT</title>
+<title data-i18n="loader.header.001">AXIOM // CORE BOOT</title>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <style>
 /* =========================================================
@@ -440,10 +444,10 @@ body{
 
 <!-- HUD chrome -->
 <div class="hud">
-  <div class="tl"><span class="dot"></span>AXIOM // CORE BOOT <span class="sep">::</span> v4.2.1</div>
-  <div class="tr">NODE <b id="node">0xA17F</b> <span class="sep">::</span> SECURE</div>
-  <div class="bl">UPLINK <span class="sep">::</span> <span id="uplink">000.000.000.000</span></div>
-  <div class="br">TS <span class="sep">::</span> <span id="ts">--:--:--.---</span></div>
+  <div class="tl"><span class="dot"></span><!--i18n:loader.header.001|[""," "]-->AXIOM // CORE BOOT <span class="sep">::</span><!--i18n:loader.header.002|[" ",""]--> v4.2.1</div>
+  <div class="tr"><!--i18n:loader.header.003|[""," "]-->NODE <b id="node"><!--i18n:loader.header.004|["",""]-->0xA17F</b> <span class="sep">::</span><!--i18n:loader.header.005|[" ",""]--> SECURE</div>
+  <div class="bl"><!--i18n:loader.header.006|[""," "]-->UPLINK <span class="sep">::</span> <span id="uplink">000.000.000.000</span></div>
+  <div class="br"><!--i18n:loader.header.007|[""," "]-->TS <span class="sep">::</span> <span id="ts">--:--:--.---</span></div>
 </div>
 
 <!-- Side ascii decoration -->
@@ -457,29 +461,29 @@ body{
     <!-- 1. Terminal -->
     <section class="term-wrap">
       <header class="term-head">
-        <span class="l">core.handshake</span>
-        <span>PID 0x2E04 :: TX/RX</span>
+        <span class="l"><!--i18n:loader.header.008|["",""]-->core.handshake</span>
+        <span><!--i18n:loader.header.009|["",""]-->PID 0x2E04 :: TX/RX</span>
       </header>
       <div class="term-body" id="term"></div>
     </section>
 
     <!-- 2. Logo -->
     <section class="logo-block">
-      <div class="logo-eyebrow"><span>NEURAL CORE INITIALIZED</span></div>
-      <div class="wordmark" id="wordmark" aria-label="AXIOM">
-        <span class="ch" style="animation-delay:1.55s">A</span><span class="ch" style="animation-delay:1.65s">X</span><span class="ch" style="animation-delay:1.75s">I</span><span class="ch" style="animation-delay:1.85s">O</span><span class="ch" style="animation-delay:1.95s">M</span>
-        <span class="glitch a" aria-hidden="true">AXIOM</span>
-        <span class="glitch b" aria-hidden="true">AXIOM</span>
+      <div class="logo-eyebrow"><span><!--i18n:loader.header.010|["",""]-->NEURAL CORE INITIALIZED</span></div>
+      <div class="wordmark" id="wordmark" aria-label="AXIOM" data-i18n-aria-label="main.header.011">
+        <span class="ch" style="animation-delay:1.55s"><!--i18n:loader.header.011|["",""]-->A</span><span class="ch" style="animation-delay:1.65s"><!--i18n:loader.header.012|["",""]-->X</span><span class="ch" style="animation-delay:1.75s"><!--i18n:main.vision.009|["",""]-->I</span><span class="ch" style="animation-delay:1.85s"><!--i18n:loader.header.013|["",""]-->O</span><span class="ch" style="animation-delay:1.95s"><!--i18n:loader.header.014|["",""]-->M</span>
+        <span class="glitch a" aria-hidden="true"><!--i18n:main.header.011|["",""]-->AXIOM</span>
+        <span class="glitch b" aria-hidden="true"><!--i18n:main.header.011|["",""]-->AXIOM</span>
         <span class="logo-scan" aria-hidden="true"></span>
       </div>
-      <div class="tag-line"><span class="bar"></span><span>CORE <em>// NETWORK</em> <em>// PROTOCOL</em></span><span class="bar"></span></div>
+      <div class="tag-line"><span class="bar"></span><span><!--i18n:loader.header.015|[""," "]-->CORE <em><!--i18n:loader.header.016|["",""]-->// NETWORK</em> <em><!--i18n:loader.header.017|["",""]-->// PROTOCOL</em></span><span class="bar"></span></div>
     </section>
 
     <!-- 3. Progress -->
     <section class="progress-block">
       <div class="progress-meta">
-        <span class="l" id="phaseLabel">SYS // BOOTSTRAPPING KERNEL</span>
-        <span class="r"><span>FRAME <b id="frame">000000</b></span><span>BUF <b id="buf">0.00MB</b></span></span>
+        <span class="l" id="phaseLabel" data-i18n="loader.phase.0" data-i18n-runtime="loader.phase">SYS // BOOTSTRAPPING KERNEL</span>
+        <span class="r"><span><!--i18n:loader.header.019|[""," "]-->FRAME <b id="frame">000000</b></span><span><!--i18n:loader.header.020|[""," "]-->BUF <b id="buf"><!--i18n:loader.header.021|["",""]-->0.00MB</b></span></span>
       </div>
       <div class="bar-wrap"><div class="bar-fill" id="barFill"></div></div>
       <div class="bar-pct"><span id="pct">000</span><small>%</small></div>
@@ -492,12 +496,12 @@ body{
 
   <!-- Enter prompt -->
   <button class="enter-prompt" id="enterPrompt" type="button">
-    <span class="arr">&gt;</span><span>ENTER AXIOM CORE NETWORK</span><span class="blink"></span>
+    <span class="arr">&gt;</span><span><!--i18n:loader.header.022|["",""]-->ENTER AXIOM CORE NETWORK</span><span class="blink"></span>
   </button>
 
   <!-- Skip hint -->
-  <button class="skip-hint" id="skipBtn" type="button" aria-label="ESC skip boot sequence">
-    <kbd>ESC</kbd>
+  <button class="skip-hint" id="skipBtn" type="button" aria-label="ESC skip boot sequence" data-i18n-aria-label="loader.header.023">
+    <kbd><!--i18n:loader.header.024|["",""]-->ESC</kbd>
   </button>
 </div>
 
@@ -510,14 +514,19 @@ body{
 <script>
 (() => {
   /* ---------- CONFIG ---------- */
+  const I=window.AXI18n,translate=(key,fallback,values)=>I?I.t(key,values):fallback;
   const params = new URLSearchParams(location.search);
-  const TARGET = params.get('target') || document.body.dataset.target || 'index.html';
+  const requestedTarget=params.get('target') || document.body.dataset.target || 'index.html';
+  let TARGET=requestedTarget;
+  // Carry a browser-derived or query language into the landing even when storage is disabled.
+  try{const destination=new URL(requestedTarget,location.href);if(destination.origin===location.origin&&I){destination.searchParams.set('lang',I.language);TARGET=destination.href}}catch(_){}
   const DURATION = parseInt(params.get('duration') || document.body.dataset.duration || '4800', 10);
   const AUTO = params.get('auto') !== 'false';
   /* 0524 W1: embedded=1 — shown by the landing (it owns skip/close: no ESC hint, enter prompt or crosshair here).
      A short DURATION compresses the CSS timeline so the wordmark is complete inside the ~1.3 s window. */
   const EMBEDDED = params.get('embedded') === '1';
   if (EMBEDDED) document.documentElement.classList.add('embedded');
+  else if(I){const mount=I.switcher();mount.classList.add('ax-loader-language');document.body.append(mount);}
   if (DURATION < 2000 && document.getAnimations) {
     const k = Math.max(.2, DURATION / 2600);
     for (const a of document.getAnimations()) {
@@ -614,14 +623,26 @@ body{
     ['CORE', 'ready :: opening uplink', 'OK'],
   ];
 
+  const LOG_VALUES=LOG_LINES.map(()=>({}));
+  LOG_VALUES[2]={hex:rndHex(4)};LOG_VALUES[3]={hex:rndHex(8)};
+  LOG_VALUES[5]={ip:'192.168.'+Math.floor(Math.random()*255)+'.'+Math.floor(Math.random()*255)};
+  LOG_VALUES[6]={drift:'-0.000'+Math.floor(Math.random()*99)};
+  LOG_VALUES[11]={coverage:rndHex(2)};LOG_VALUES[13]={user:rndHex(4)};
   let logIdx = 0;
   function pushLine(){
     if(logIdx >= LOG_LINES.length) return;
-    const [tag, msg, status] = LOG_LINES[logIdx++];
+    const index=logIdx++, [tag, msg, status] = LOG_LINES[index];
     const row = document.createElement('div');
     row.className = 'line';
     const statusCls = status === 'OK' ? 'ok' : status === 'WARN' ? 'warn' : 'err';
-    row.innerHTML = `<span class="pfx">&gt;</span><span class="body">[<span class="hex">${tag}</span>] ${msg}</span><span class="${statusCls}">[${status}]</span>`;
+    const pfx=document.createElement('span');pfx.className='pfx';pfx.textContent='>';
+    const body=document.createElement('span');body.className='body';
+    const code=document.createElement('span');code.className='hex';code.textContent=tag;
+    const message=document.createElement('span');message.dataset.loaderLog=String(index);
+    message.textContent=translate('loader.log.'+index,msg,LOG_VALUES[index]);
+    body.append('[',code,'] ',message);
+    const result=document.createElement('span');result.className=statusCls;result.textContent='['+status+']';
+    row.append(pfx,body,result);
     term.appendChild(row);
     // keep last 9 lines visible
     while(term.children.length > 9) term.removeChild(term.firstChild);
@@ -635,7 +656,10 @@ body{
       // final cursor line
       const row = document.createElement('div');
       row.className = 'line';
-      row.innerHTML = `<span class="pfx">&gt;</span><span class="body">awaiting operator<span class="cursor"></span></span>`;
+      const pfx=document.createElement('span');pfx.className='pfx';pfx.textContent='>';
+      const body=document.createElement('span');body.className='body';
+      const message=document.createElement('span');message.setAttribute('data-i18n','loader.awaiting');message.textContent=translate('loader.awaiting','awaiting operator');
+      const cursor=document.createElement('span');cursor.className='cursor';body.append(message,cursor);row.append(pfx,body);
       term.appendChild(row);
       while(term.children.length > 9) term.removeChild(term.firstChild);
     }
@@ -645,8 +669,11 @@ body{
   const fill = document.getElementById('barFill');
   const pctEl = document.getElementById('pct');
   const phaseEl = document.getElementById('phaseLabel');
+  phaseEl.removeAttribute('data-i18n');
+  phaseEl.textContent=translate('loader.phase.0',PHASES[0].label);
   const wordmark = document.getElementById('wordmark');
 
+  let activePhase=0;
   let pct = 0;
   const t0 = performance.now();
   let finished = false;
@@ -657,10 +684,12 @@ body{
     pctEl.textContent = pad(Math.floor(pct), 3);
     // phase label
     const ratio = pct/100;
-    for(const ph of PHASES){
+    for(const [index,ph] of PHASES.entries()){
       if(ratio >= ph.start && ratio < ph.end){
-        if(phaseEl.textContent !== ph.label){
-          phaseEl.textContent = ph.label;
+        activePhase=index;
+        const text=translate('loader.phase.'+index,ph.label);
+        if(phaseEl.textContent !== text){
+          phaseEl.textContent = text;
           // trigger small glitch on phase change
           wordmark.classList.add('glitch-on');
           setTimeout(()=>wordmark.classList.remove('glitch-on'), 300);
@@ -696,7 +725,7 @@ body{
     finished = true;
     wordmark.classList.add('filled', 'glitch-on');
     setTimeout(()=>wordmark.classList.remove('glitch-on'), 400);
-    phaseEl.textContent = 'CORE // READY :: AWAITING OPERATOR';
+    phaseEl.textContent = translate('loader.ready','CORE // READY :: AWAITING OPERATOR');
 
     const prompt = document.getElementById('enterPrompt');
     prompt.classList.add('show');
@@ -706,6 +735,12 @@ body{
       setTimeout(transitionOut, 1100);
     }
   }
+
+  window.addEventListener('axiom:languagechange',()=>{
+    phaseEl.textContent=finished?translate('loader.ready','CORE // READY :: AWAITING OPERATOR'):translate('loader.phase.'+activePhase,PHASES[activePhase].label);
+    document.querySelectorAll('[data-loader-log]').forEach(node=>{const i=+node.dataset.loaderLog;node.textContent=translate('loader.log.'+i,LOG_LINES[i][1],LOG_VALUES[i]);});
+    try{const destination=new URL(TARGET,location.href);if(destination.origin===location.origin&&I){destination.searchParams.set('lang',I.language);TARGET=destination.href}}catch(_){}
+  });
 
   /* ---------- TRANSITION OUT ---------- */
   let transitioning = false;
@@ -730,6 +765,7 @@ body{
     transitionOut();
   }
   addEventListener('keydown', (e) => {
+    if(e.target.closest?.('.ax-language'))return;
     if(e.key === 'Escape' || e.key === 'Enter' || e.key === ' '){
       e.preventDefault();
       skip();

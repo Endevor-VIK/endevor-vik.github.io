@@ -8,7 +8,7 @@ AXS_HEADER_META:
   goal: "Exact execution trace for localization"
   scope: landing repository only
   lang: ru
-  last_updated: 2026-11-06
+  last_updated: 2026-11-07
   editable_by_agents: true
   change_policy: "Append measured results; no inferred PASS"
 -->
@@ -31,15 +31,27 @@ root 0524 относится к предыдущей программе, root sh
 
 ## Step B — Implementation
 
-В работе согласно SPEC.
+Реализованы JSON catalogs (929 keys), generated bundle, preference helper/runtime,
+text-node/attribute bindings, ENG/RU controls в navigation/dialogs, все dynamic
+states, loader/404 и preference continuity самостоятельного fan archive.
+Без изменения изображений/шрифтов/Canon/URL AXIOM. Небольшие header/viewer/tablet
+geometry corrections сохраняют композицию и доступность.
+
+При review исправлены performance regression (повторные parser subtree scans),
+поздний browser scroll anchor после смены языка в viewer, streaming characterData,
+исходные whitespace у inline tags и неверные descendant lang overrides.
 
 ## Step C — Documentation
 
-SPEC и этот trace созданы до product mutations; финальный report/translating guide впереди.
+SPEC и этот trace созданы до product mutations; добавлен maintenance guide;
+финальный report/captures фиксируются после QA.
 
 ## Step D — QA
 
-NOT_RUN — реализация ещё не завершена.
+Предварительные проверки: static localization 5/5 и оба smoke PASS.
+Targeted Chromium149/Firefox151: streamed HERO, streamed RU loader и открытый
+WORK viewer — 6/6 PASS (до финальных pan/close/standalone archive расширений).
+Полные окончательные suites / screenshots / final source SHA — ещё NOT_RUN.
 
 ## Step E — Git
 

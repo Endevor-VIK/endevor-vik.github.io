@@ -7,8 +7,9 @@
  for(const rail of document.querySelectorAll('[data-ad-rail]')){
   const items=[...rail.children],pad=()=>parseFloat(getComputedStyle(rail).paddingLeft)||0;
   const bar=document.createElement('div');bar.className='ad-rail-bar';
-  bar.innerHTML='<button type="button" aria-label="Предыдущий">←</button><output aria-live="polite"></output><button type="button" aria-label="Следующий">→</button>';
+  bar.innerHTML='<button type="button" aria-label="Предыдущий" data-i18n-aria-label="ui.previous">←</button><output aria-live="polite"></output><button type="button" aria-label="Следующий" data-i18n-aria-label="ui.next">→</button>';
   rail.after(bar);
+  window.AXI18n?.apply(bar);
   const [prev,next]=bar.querySelectorAll('button'),out=bar.querySelector('output');
   const index=document.querySelector(`.ad-surface-index`),links=rail.dataset.adRail==='surfaces'&&index?[...index.querySelectorAll('a')]:[];
   const current=()=>{const x=rail.scrollLeft;let best=0,dist=Infinity;items.forEach((el,i)=>{const d=Math.abs(el.offsetLeft-pad()-x);if(d<dist){dist=d;best=i;}});return best;};

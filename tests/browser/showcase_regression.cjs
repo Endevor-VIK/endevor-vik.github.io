@@ -251,7 +251,7 @@ async function run(engineName, base) {
       for (const i of [3, 2, 5, 0, 4, 1]) {
         if (i % 2) await p.locator('.v23-map-node').nth(i).click(); else { await p.locator('.v23-map-node').nth(i).focus(); await p.keyboard.press('Enter'); }
         const st = await state();
-        sel.push({ i, ...st, ok: st.id === `${expect[i][0]} / ${expect[i][2]}` && st.desc.startsWith(expect[i][3]) && st.active === i && st.count === `${String(i + 1).padStart(2, '0')} / 06 SELECTED` });
+        sel.push({ i, ...st, ok: st.id === `${expect[i][0]} / ${expect[i][2]}` && st.desc.startsWith(expect[i][3]) && st.active === i && st.count === `${String(i + 1).padStart(2, '0')} / 06 ВЫБРАНО` });
       }
       record('R42-world-canon-ids-sync', engineName, orderOk && sel.every((x) => x.ok), { cards, bad: sel.filter((x) => !x.ok) });
       await ctx.close();
@@ -309,7 +309,7 @@ async function run(engineName, base) {
       record('R10-vision-meta-no-collision', engineName, dl.every((x) => x.gap >= 6), dl.filter((x) => x.gap < 6));
       // R11 / R15 accessible names contain visible labels (WCAG 2.5.3) (A-A11Y-02)
       const names = await p.evaluate(() => ({ enter: [...document.querySelectorAll('a.enter')].map((a) => a.getAttribute('aria-label') || a.textContent.trim()), shots: [...document.querySelectorAll('.ax-shot-trigger')].map((b) => b.getAttribute('aria-label') || '') }));
-      record('R11-enter-axiom-label-in-name', engineName, names.enter.length === 2 && names.enter.every((n) => /ENTER AXIOM/i.test(n)), names.enter);
+      record('R11-enter-axiom-label-in-name', engineName, names.enter.length === 2 && names.enter.every((n) => /ВОЙТИ В AXIOM/i.test(n)), names.enter);
       record('R15-shot-label-in-name', engineName, names.shots.length === 8 && names.shots.every((n) => /открыть экран/i.test(n)), names.shots.slice(0, 2));
       // R14 anchor lands right under the sticky header (A-NAV-02)
       await p.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
@@ -342,7 +342,7 @@ async function run(engineName, base) {
       const is404Page = /404/.test(await p.title());
       if (!is404Page) skip('R12-404-return-link', engineName, 'server does not serve 404.html (run without --url or behind GitHub Pages)');
       else {
-        const href = await p.evaluate(() => { const a = [...document.querySelectorAll('a')].find((x) => /landing/i.test(x.textContent)); return a ? a.href : null; });
+        const href = await p.evaluate(() => { const a = document.querySelector('a[href="/"]'); return a ? a.href : null; });
         record('R12-404-return-link', engineName, href === base, { href, expected: base });
       }
       await ctx.close();
@@ -586,7 +586,7 @@ async function run(engineName, base) {
       }
       if (w === 1440) {
         // R-W3A-03 (F-03) two-line CREATOR byline beside the quick links on large screens, wording unchanged
-        record('R-W3A-03-byline-beside-quick-1440', engineName, g.bylineLines === 2 && g.byline.l > g.quick.r && Math.abs(g.byline.b - g.quick.b) <= 6 && g.bylineText === 'CREATOR / ENDEAVOR · DESIGN / CODE / CANON', { byline: g.byline, quick: g.quick, lines: g.bylineLines });
+        record('R-W3A-03-byline-beside-quick-1440', engineName, g.bylineLines === 2 && g.byline.l > g.quick.r && Math.abs(g.byline.b - g.quick.b) <= 6 && g.bylineText === 'АВТОР / ENDEAVOR · ДИЗАЙН / КОД / Canon', { byline: g.byline, quick: g.quick, lines: g.bylineLines });
       }
       await ctx.close();
     }

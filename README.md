@@ -9,7 +9,7 @@ AXS_HEADER_META:
   goal: "Публичный GitHub Pages лендинг профиля ENDEVOR / AXIOM"
   scope: apps/endevor-vik.github.io
   lang: ru
-  last_updated: 2026-10-16
+  last_updated: 2026-11-07
   editable_by_agents: true
   change_policy: "Обновлять при изменении структуры/контента лендинга"
   links:
@@ -90,3 +90,16 @@ AXS_HEADER_META:
 - Final design decisions: WORK B (archive first, concept art A01 in its own band), TYPE A (Oswald + JetBrains Mono + Golos Text). Old `?work=` / `?type=` links open the same page.
 - Browser regression suite: `NODE_PATH=<playwright node_modules> node tests/browser/showcase_regression.cjs --firefox` (58 checks × Chromium + Firefox = 116).
 - MAIN MERGE and PRODUCTION DEPLOY remain on HOLD until AXIOM Principal Review and CREATOR visual approval.
+
+
+## ENG / RU localization (feature branch, review pending)
+
+Основной showcase, WORK/map viewers, loader и 404 используют централизованные
+ENG/RU словари и безопасный runtime без зависимостей. Язык определяется по URL,
+сохранённому ручному выбору и главному языку браузера; переключение сохраняет
+состояние интерфейса и прокрутку. Существующий `/serafim-veyr/` использует тот же
+preference helper со своими переводами.
+
+[Инструкция переводчика](docs/i18n/README.md) · [контракт](docs/i18n/SPEC.md) ·
+[QA и screenshots](docs/i18n/REPORT.md) · [AgentOps](docs/i18n/AGENTOPS.md).
+Merge и production deployment требуют отдельного разрешения CREATOR.
