@@ -26,6 +26,7 @@ AXS_HEADER_META:
 Она не разрешает продолжить остальные AAA waves, merge main или production deploy.
 
 - Repository: `Endevor-VIK/endevor-vik.github.io`; branch `feature/showcase-i18n-en-ru`.
+- PR [#14](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/14) OPEN / NOT MERGED; remote recovery point available.
 - Baseline main: `b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994`.
 - Runtime: `4aafcbe9ef022f612ddc29e0de671d6aab565da9`; test-only follow-up `8da15b60471b3d892bc8fb78ebc88081d5b25eda`.
 - Implemented: 929-key ENG/RU catalogs, language detection/persistence, controls in
@@ -49,6 +50,7 @@ AXIOM SHOWCASE / RESUME PACKET
 AUTHORITY: CREATOR / LANDING INTERNATIONALIZATION — ENG / RU
 TASK: showcase-i18n-en-ru / TECHNICAL QA + CREATOR VISUAL REVIEW
 REPO + BRANCH: Endevor-VIK/endevor-vik.github.io / feature/showcase-i18n-en-ru
+PR: https://github.com/Endevor-VIK/endevor-vik.github.io/pull/14 / OPEN / MERGE-DEPLOY HOLD
 RUNTIME SHA: 4aafcbe9ef022f612ddc29e0de671d6aab565da9
 TEST FOLLOW-UP: 8da15b60471b3d892bc8fb78ebc88081d5b25eda
 BASELINE: main b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994

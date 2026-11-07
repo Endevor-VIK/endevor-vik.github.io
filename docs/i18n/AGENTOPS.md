@@ -78,8 +78,12 @@ SPEC и этот trace созданы до product mutations; добавлен m
 - Contract: `6159d8e9bae00b81888b4d6cb1c104b7d1b6391d`.
 - Runtime/code/tests: `4aafcbe9ef022f612ddc29e0de671d6aab565da9`.
 - Test-only R29 wait: `8da15b60471b3d892bc8fb78ebc88081d5b25eda`.
-- Branch remote recovery point: `origin/feature/showcase-i18n-en-ru`; final
-  documentation/evidence commit is the commit containing this record.
+- Documentation/evidence: `213b8c0139d419e931944e1b1ae19f3548d69935`.
+- PR [#14](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/14) OPEN / NOT MERGED; remote head confirmed
+  at creation `213b8c0`, base `b4d9c4d`, mergeable true. No remote CI statuses or
+  PR workflow runs were returned; local test results above are not CI claims.
+- Branch remote recovery point: `origin/feature/showcase-i18n-en-ru`; delivery
+  trace is completed by the documentation-only commit containing this PR link.
 - Root gitlink stays `babbaa37baf4a13ea0546f19cc00d4f95b2d23f5`; original landing
   main stays `b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994`. No root commit.
 - No amend/rebase/force update, version bump, Canon write, merge or deploy.

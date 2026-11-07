@@ -14,6 +14,7 @@ AXS_HEADER_META:
 -->
 # ENG / RU — реализация и приёмка
 
+PR [#14](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/14) открыт для code review и визуальной приёмки.
 Ветка `feature/showcase-i18n-en-ru`, база `b4d9c4dcd63131079c0cf8ccee80ecc00d3c5994`.
 Runtime commit: `4aafcbe9ef022f612ddc29e0de671d6aab565da9`.
 Следующий commit `8da15b60471b3d892bc8fb78ebc88081d5b25eda` меняет только ожидание
