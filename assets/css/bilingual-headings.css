@@ -15,6 +15,7 @@ html body p.ax-heading-translation.ax-heading-translation--editorial{font-size:1
 .show-motto p.ax-heading-translation.ax-heading-translation{margin:10px 0 14px}
 .ax-epilogue-copy p.ax-heading-translation.ax-heading-translation{margin:12px 0 22px;max-width:46ch}
 .r1p-plate-copy p.ax-heading-translation.ax-heading-translation{margin:10px 0 0;max-width:48ch}
+html body .cta p.ax-heading-translation.ax-heading-translation,html body .ax-epilogue-copy p.ax-heading-translation.ax-heading-translation{margin-inline:auto;width:fit-content;text-align:center}
 html body .hero-grid p.ax-heading-translation.ax-heading-translation{grid-area:translation;font-size:12px;line-height:1.5;margin:0 0 16px;max-width:100%;align-self:start}
 /* A dedicated poster cell keeps the subtitle in the copy column at desktop widths.
    In ENG the hidden cell has zero height, including its margins. */
