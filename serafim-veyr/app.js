@@ -40,8 +40,24 @@ const typeName = type => (lang === 'ru'
   : {cinematic:'AI MEDIA',original:'IN-GAME',art:'AI ART'})[type];
 const filtered = () => filter === 'all' ? library : library.filter(item => item.type === filter);
 
-function setLanguage(next) {
+let scrollFrame = 0, previousScrollBehavior = '';
+function stopScrollCorrection() {
+  if (!scrollFrame) return;
+  cancelAnimationFrame(scrollFrame);
+  scrollFrame = 0;
+  document.documentElement.style.scrollBehavior = previousScrollBehavior;
+}
+function commitLanguage(next, {persist = false, preserveScroll = true} = {}) {
   if (!COPY[next]) return;
+  stopScrollCorrection();
+  const x = window.scrollX, y = window.scrollY;
+  const root = document.documentElement;
+  if (preserveScroll) {
+    previousScrollBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    root.style.overflowAnchor = 'none';
+  }
+  if (persist) window.AXIOMLanguage?.remember(next);
   lang = next;
   document.documentElement.lang = lang;
   document.title=COPY[lang].archive_name;
@@ -49,9 +65,14 @@ function setLanguage(next) {
     document.querySelector(selector)?.setAttribute('content',value);
   }
   for (const el of document.querySelectorAll('[data-i18n]')) {
-    const value = COPY[lang][el.dataset.i18n];
+    const sourceLanguage = el.closest('[data-copy-language]')?.dataset.copyLanguage || lang;
+    let value = COPY[sourceLanguage]?.[el.dataset.i18n];
     if (value === undefined) continue;
+    if (el.hasAttribute('data-heading-translation')) value = value.split('<br>').join(' ');
     el.replaceChildren(...value.split('<br>').flatMap((part,index)=>index?[document.createElement('br'),document.createTextNode(part)]:[document.createTextNode(part)]));
+  }
+  for (const el of document.querySelectorAll('[data-language-only]')) {
+    el.hidden = el.dataset.languageOnly !== lang;
   }
   for (const [data, attribute] of [['i18nAria','aria-label'], ['i18nAlt','alt']]) {
     const selector = data === 'i18nAria' ? '[data-i18n-aria]' : '[data-i18n-alt]';
@@ -62,9 +83,70 @@ function setLanguage(next) {
     button.classList.toggle('active', active);
     button.setAttribute('aria-pressed', String(active));
   }
-  render(false);
+  if (!grid.children.length) render(false);
+  else refreshGalleryCopy();
   updateCompare();
   if (dialog.open) showSelected();
+  window.dispatchEvent(new CustomEvent('axiom:languagechange', {detail: {language: lang}}));
+  if (preserveScroll) {
+    window.scrollTo(x, y);
+    scrollFrame = requestAnimationFrame(() => {
+      window.scrollTo(x, y);
+      scrollFrame = requestAnimationFrame(() => {
+        window.scrollTo(x, y);
+        scrollFrame = 0;
+        root.style.scrollBehavior = previousScrollBehavior;
+      });
+    });
+  }
+}
+const motion = window.AXIOMLanguageMotion?.create({
+  getLanguage: () => lang,
+  commit: next => commitLanguage(next, {persist: true}),
+  targets: () => document.querySelectorAll('[data-i18n], [data-heading], .media-caption b, .media-tag, #gallery-status, #lightbox-title, #lightbox-meta, #lightbox-counter'),
+  secondary: () => document.querySelectorAll('[data-language-only]')
+});
+function setLanguage(next, {persist = true} = {}) {
+  if (!COPY[next]) return;
+  motion?.cancel();
+  commitLanguage(next, {persist});
+}
+function transitionTo(next) {
+  if (!COPY[next]) return Promise.resolve();
+  if (motion) return motion.request(next);
+  setLanguage(next);
+  return Promise.resolve();
+}
+window.SVArchive = Object.freeze({
+  setLanguage, transitionTo,
+  get language() { return lang; },
+  get whenSettled() { return motion?.whenSettled || Promise.resolve(); }
+});
+for (const type of ['wheel', 'touchstart', 'pointerdown']) {
+  window.addEventListener(type, stopScrollCorrection, {passive: true});
+}
+window.addEventListener('keydown', event => {
+  if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(event.key)) stopScrollCorrection();
+});
+
+function updateGalleryStatus() {
+  document.querySelector('#gallery-status').textContent = lang === 'ru'
+    ? `Показано ${shown} из ${visible.length} изображений.`
+    : `Showing ${shown} of ${visible.length} images.`;
+}
+function refreshGalleryCopy() {
+  // Keep the existing buttons, loaded thumbnails and focus when only copy changes.
+  for (const card of grid.querySelectorAll('.media-card')) {
+    const button = card.querySelector('.media-button');
+    const item = library.find(candidate => candidate.id === button.dataset.id);
+    if (!item) continue;
+    button.dataset.view = COPY[lang].view;
+    button.setAttribute('aria-label', `${item.title[lang]} — ${typeName(item.type)} — ${COPY[lang].open}`);
+    button.querySelector('img').alt = item.title[lang];
+    card.querySelector('.media-caption b').textContent = item.title[lang];
+    card.querySelector('.media-tag').textContent = typeName(item.type);
+  }
+  updateGalleryStatus();
 }
 
 function render(reset = true) {
@@ -105,9 +187,7 @@ function render(reset = true) {
   }
   grid.append(fragment);
   loadBtn.hidden = shown >= visible.length;
-  document.querySelector('#gallery-status').textContent = lang === 'ru'
-    ? `Показано ${shown} из ${visible.length} изображений.`
-    : `Showing ${shown} of ${visible.length} images.`;
+  updateGalleryStatus();
 }
 
 function openAt(index) {
@@ -121,7 +201,7 @@ function openAt(index) {
 function showSelected() {
   const item = visible[selected];
   if (!item) return;
-  img.src = item.src;
+  if (img.getAttribute('src') !== item.src) img.src = item.src;
   img.alt = item.title[lang];
   title.textContent = item.title[lang];
   meta.textContent = `${typeName(item.type)} // ${item.source}`;
@@ -143,7 +223,7 @@ for (const button of document.querySelectorAll('[data-filter]')) {
   });
 }
 for (const button of document.querySelectorAll('[data-lang]')) {
-  button.addEventListener('click', () => {window.AXIOMLanguage?.remember(button.dataset.lang);setLanguage(button.dataset.lang);});
+  button.addEventListener('click', () => transitionTo(button.dataset.lang));
 }
 loadBtn.addEventListener('click', () => {
   const previous = shown;
@@ -190,6 +270,6 @@ for (const type of ['all','cinematic','original','art']) {
   const count = document.querySelector(`#count-${type}`);
   if (count) count.textContent = type === 'all' ? library.length : library.filter(item => item.type === type).length;
 }
-setLanguage(window.AXIOMLanguage?.detect()||'en');
+commitLanguage(window.AXIOMLanguage?.detect()||'en', {preserveScroll: false});
 document.documentElement.classList.remove('sv-language-pending');
 })();

@@ -2178,7 +2178,7 @@
       "file": "index.html",
       "selector": ".doctrine-quote .ql",
       "tag": "dynamic",
-      "line": null,
+      "line": 861,
       "keys": [
         "main.manifesto.025",
         "main.manifesto.026",
@@ -2193,14 +2193,18 @@
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
       "visual_result": "NOT_RUN",
-      "reason": "Authored multi-line quotation, not a headline: localize its complete reading normally; do not turn the quote into a duplicate bilingual block."
+      "reason": "Authored multi-line quotation, not a headline: localize its complete reading normally; do not turn the quote into a duplicate bilingual block.",
+      "source_range": [
+        97934,
+        98786
+      ]
     },
     {
       "audit_id": "extra-08",
       "file": "index.html",
       "selector": ".faction .name ENDEAVOR",
       "tag": "b",
-      "line": 969,
+      "line": 1417,
       "keys": [
         "main.chars.035"
       ],
@@ -2213,8 +2217,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
       "source_range": [
-        129882,
-        129931
+        161978,
+        162044
       ]
     },
     {
@@ -2222,7 +2226,7 @@
       "file": "index.html",
       "selector": ".faction .name VOIDLINK",
       "tag": "b",
-      "line": 948,
+      "line": 1439,
       "keys": [
         "main.chars.028"
       ],
@@ -2235,8 +2239,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
       "source_range": [
-        128516,
-        128565
+        163327,
+        163393
       ]
     },
     {
@@ -2302,7 +2306,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.020",
       "tag": "h3",
-      "line": 513,
+      "line": 567,
       "keys": [
         "main.work.020"
       ],
@@ -2315,8 +2319,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        44816,
-        44883
+        63936,
+        64008
       ]
     },
     {
@@ -2324,7 +2328,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.036",
       "tag": "h3",
-      "line": 519,
+      "line": 567,
       "keys": [
         "main.work.036"
       ],
@@ -2337,8 +2341,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        47338,
-        47406
+        63936,
+        64008
       ]
     },
     {
@@ -2346,7 +2350,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.045",
       "tag": "h3",
-      "line": 526,
+      "line": 567,
       "keys": [
         "main.work.045"
       ],
@@ -2359,8 +2363,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        49770,
-        49836
+        63936,
+        64008
       ]
     },
     {
@@ -2368,7 +2372,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.055",
       "tag": "h3",
-      "line": 533,
+      "line": 567,
       "keys": [
         "main.work.055"
       ],
@@ -2381,8 +2385,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        52176,
-        52237
+        63936,
+        64008
       ]
     },
     {
@@ -2390,7 +2394,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.065",
       "tag": "h3",
-      "line": 539,
+      "line": 567,
       "keys": [
         "main.work.065"
       ],
@@ -2403,8 +2407,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        54615,
-        54672
+        63936,
+        64008
       ]
     },
     {
@@ -2412,7 +2416,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.075",
       "tag": "h3",
-      "line": 546,
+      "line": 567,
       "keys": [
         "main.work.075"
       ],
@@ -2425,8 +2429,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        57124,
-        57192
+        63936,
+        64008
       ]
     },
     {
@@ -2434,7 +2438,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.085",
       "tag": "h3",
-      "line": 552,
+      "line": 567,
       "keys": [
         "main.work.085"
       ],
@@ -2447,8 +2451,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        59467,
-        59522
+        63936,
+        64008
       ]
     },
     {
@@ -2456,7 +2460,7 @@
       "file": "index.html",
       "selector": "#showcase-full-caption <- main.work.019",
       "tag": "span",
-      "line": 509,
+      "line": 567,
       "keys": [
         "main.work.019"
       ],
@@ -2469,8 +2473,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
-        43427,
-        43505
+        63936,
+        64008
       ]
     },
     {
@@ -2496,7 +2500,7 @@
       "file": "index.html",
       "selector": ".v23-map-name <- main.work.157",
       "tag": "text",
-      "line": 713,
+      "line": 881,
       "keys": [
         "main.work.157"
       ],
@@ -2509,8 +2513,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
-        74641,
-        74809
+        119417,
+        119491
       ]
     },
     {
@@ -2518,7 +2522,7 @@
       "file": "index.html",
       "selector": ".v23-map-name <- main.work.159",
       "tag": "text",
-      "line": 736,
+      "line": 881,
       "keys": [
         "main.work.159"
       ],
@@ -2531,8 +2535,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
-        76327,
-        76493
+        119797,
+        119869
       ]
     },
     {
@@ -2540,7 +2544,7 @@
       "file": "index.html",
       "selector": ".v23-map-name <- main.work.161",
       "tag": "text",
-      "line": 759,
+      "line": 881,
       "keys": [
         "main.work.161"
       ],
@@ -2553,8 +2557,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
-        78096,
-        78271
+        120168,
+        120248
       ]
     },
     {
@@ -2562,7 +2566,7 @@
       "file": "index.html",
       "selector": ".v23-map-name <- main.work.160",
       "tag": "text",
-      "line": 748,
+      "line": 881,
       "keys": [
         "main.work.160"
       ],
@@ -2575,8 +2579,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
-        77249,
-        77416
+        120556,
+        120630
       ]
     },
     {
@@ -2584,7 +2588,7 @@
       "file": "index.html",
       "selector": ".v23-map-name <- main.work.158",
       "tag": "text",
-      "line": 724,
+      "line": 881,
       "keys": [
         "main.work.158"
       ],
@@ -2597,8 +2601,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
-        75448,
-        75617
+        120935,
+        121009
       ]
     },
     {
@@ -2606,7 +2610,7 @@
       "file": "index.html",
       "selector": ".v23-map-name <- main.work.177",
       "tag": "span",
-      "line": 822,
+      "line": 881,
       "keys": [
         "main.work.177"
       ],
@@ -2619,8 +2623,8 @@
       "visual_result": "NOT_RUN",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
-        82895,
-        82958
+        121315,
+        121389
       ]
     },
     {
@@ -2652,7 +2656,7 @@
       "action": "bilingual",
       "en": "ONE CHARACTER. COUNTLESS STORIES IN NIGHT CITY.",
       "ru_current": "ОДИН ПЕРСОНАЖ. БЕСЧИСЛЕННЫЕ ИСТОРИИ В НАЙТ-СИТИ.",
-      "ru_subtitle": "ОДИН ПЕРСОНАЖ. БЕСЧИСЛЕННЫЕ ИСТОРИИ В НАЙТ-СИТИ",
+      "ru_subtitle": "ОДИН ПЕРСОНАЖ. БЕСЧИСЛЕННЫЕ ИСТОРИИ В НАЙТ-СИТИ.",
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
       "visual_result": "NOT_RUN",
       "reason": "Artistic non-H fan-archive motto; pair locally without importing AXIOM typography.",
@@ -2763,7 +2767,7 @@
       "file": "index.html",
       "selector": ".name (entity preview)",
       "tag": "dynamic",
-      "line": null,
+      "line": 630,
       "keys": [
         "main.work.144"
       ],
@@ -2774,7 +2778,11 @@
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
       "visual_result": "NOT_RUN",
-      "reason": "Technical graph demonstration label; not a narrative headline."
+      "reason": "Technical graph demonstration label; not a narrative headline.",
+      "source_range": [
+        69577,
+        69647
+      ]
     }
   ]
 }

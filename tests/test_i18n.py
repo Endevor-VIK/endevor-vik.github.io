@@ -36,6 +36,9 @@ class SourceScan(HTMLParser):
         self.inline_scripts = []
         self.script = None
         self.bound_count = 0
+        self.semantic_headings = []
+        self.heading_decisions = []
+        self.heading_translations = {}
 
     def error(self, message):
         self.errors.append(f'{self.filename}:{self.getpos()[0]}: {message}')
@@ -43,6 +46,16 @@ class SourceScan(HTMLParser):
     def handle_starttag(self, tag, pairs):
         attrs = dict(pairs)
         self.pending = None
+        if tag in ('h1', 'h2', 'h3'):
+            self.semantic_headings.append((tag, attrs))
+        if attrs.get('data-heading'):
+            self.heading_decisions.append((tag, attrs))
+        if attrs.get('data-heading-translation'):
+            self.heading_translations.setdefault(attrs['data-heading-translation'], []).append((tag, attrs))
+        if 'data-copy-language' in attrs and attrs['data-copy-language'] not in LANGS:
+            self.error('Invalid fixed copy locale')
+        if 'data-language-only' in attrs and attrs['data-language-only'] != 'ru':
+            self.error('Unexpected conditional translation locale')
         for name in ATTRS:
             value = attrs.get(name, '')
             if value and re.search(r'[^\W\d_]', value, re.UNICODE):
@@ -209,6 +222,52 @@ class LocalizationContract(unittest.TestCase):
         command = ['node', str(ROOT/'assets/i18n/build-catalogs.cjs'), '--check']
         result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=15)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_global_heading_inventory_and_semantics(self):
+        inventory = json.loads((ROOT/'docs/bilingual-headings/inventory.json').read_text('utf-8'))
+        entries = inventory['entries']
+        self.assertEqual(len(entries), 104, 'Complete pre-implementation audit was truncated')
+        self.assertEqual(len({entry['audit_id'] for entry in entries}), len(entries), 'Duplicate audit identity')
+        fan = SourceScan('serafim-veyr/index.html')
+        fan.feed((ROOT/'serafim-veyr/index.html').read_text('utf-8'))
+        scans = {**self.scans, 'serafim-veyr/index.html': fan}
+        expected_counts = {'index.html': 62, '404.html': 1, 'loader.html': 0, 'serafim-veyr/index.html': 7}
+        for filename, scan in scans.items():
+            with self.subTest(page=filename):
+                self.assertEqual(len(scan.semantic_headings), expected_counts[filename], 'Semantic heading levels/count changed')
+                owning = {entry['audit_id']: entry for entry in entries if entry['file'] == filename}
+                decisions = {attrs['data-heading']: (tag, attrs) for tag, attrs in scan.heading_decisions}
+                self.assertEqual(len(decisions), len(scan.heading_decisions), 'Duplicate heading DOM identity')
+                for tag, attrs in scan.semantic_headings:
+                    self.assertIn(attrs.get('data-heading'), owning, 'Semantic heading missing audit decision')
+                for identity, (tag, attrs) in decisions.items():
+                    self.assertIn(identity, owning, 'Undocumented heading decision')
+                    decision = owning[identity]
+                    self.assertEqual(attrs.get('data-heading-kind', '').upper(), decision['category'])
+                    self.assertEqual(attrs.get('data-heading-mode'), decision['action'])
+                bilingual = [entry for entry in owning.values() if entry['action'] == 'bilingual']
+                for entry in bilingual:
+                    identity = entry['audit_id']
+                    self.assertIn(identity, decisions, 'Bilingual heading omitted from implementation')
+                    _, attrs = decisions[identity]
+                    self.assertEqual(attrs.get('lang'), 'en')
+                    self.assertEqual(attrs.get('data-copy-language'), 'en')
+                    translations = scan.heading_translations.get(identity, [])
+                    self.assertEqual(len(translations), 1, 'Expected exactly one subordinate translation')
+                    tag, translation = translations[0]
+                    self.assertNotRegex(tag, r'^h[1-6]$', 'RU translation creates a duplicate semantic heading')
+                    self.assertEqual(translation.get('lang'), 'ru')
+                    self.assertEqual(translation.get('data-copy-language'), 'ru')
+                    self.assertEqual(translation.get('data-language-only'), 'ru')
+                    self.assertTrue(translation.get('data-i18n'), 'Subtitle is outside the existing translation system')
+                    if filename != 'serafim-veyr/index.html':
+                        key = translation['data-i18n']
+                        self.assertIn(key, self.catalogs['en'])
+                        self.assertIn(key, self.catalogs['ru'])
+                        normalize = lambda value: re.sub(r'\s+', ' ', value).strip()
+                        self.assertEqual(normalize(self.catalogs['ru'][key]), normalize(entry['ru_subtitle']))
+                self.assertEqual(set(scan.heading_translations), {entry['audit_id'] for entry in bilingual}, 'Orphan subtitle')
+        self.assertEqual(sum(entry['action'] == 'bilingual' for entry in entries), 44)
 
     def test_bootstrap_precedes_public_content(self):
         for filename in PAGES:

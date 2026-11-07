@@ -157,23 +157,25 @@ async function switchLanguage(page, lang, scope='', key='Enter') {
   await button.evaluate(element => element.focus({preventScroll:true}));
   await page.keyboard.press(key);
   await page.waitForFunction(expected => window.AXI18n.language===expected,lang);
+  await page.evaluate(() => window.AXI18n.whenSettled);
   await page.evaluate(() => new Promise(resolve => requestAnimationFrame(()=>requestAnimationFrame(resolve))));
   return language(page,lang);
 }
 async function auditBindings(page) {
   const findings = await page.evaluate(() => {
-    const catalog=window.AXIOM_I18N_CATALOGS[window.AXI18n.language], failures=[];
+    const failures=[];
+    const catalogFor=element=>window.AXIOM_I18N_CATALOGS[element?.closest('[data-copy-language]')?.dataset.copyLanguage || window.AXI18n.language];
     const normalize=value=>String(value).replace(/\s+/g,' ').trim();
     const walker=document.createTreeWalker(document,NodeFilter.SHOW_COMMENT);let comment;
     while((comment=walker.nextNode())) {
       if(!comment.data.startsWith('i18n:'))continue;
-      const key=comment.data.slice(5).split('|')[0].trim(), node=comment.nextSibling, expected=catalog[key];
+      const key=comment.data.slice(5).split('|')[0].trim(), node=comment.nextSibling, expected=catalogFor(comment.parentElement)[key];
       if(typeof expected!=='string') {failures.push({key,why:'missing'});continue;}
       if(node?.nodeType===Node.TEXT_NODE && !/\{\w+\}/.test(expected) && normalize(node.textContent)!==normalize(expected))failures.push({key,expected,actual:node.textContent});
     }
     for(const element of document.querySelectorAll('*'))for(const attribute of element.attributes) {
       if(attribute.name==='data-i18n' || (attribute.name.startsWith('data-i18n-')&&attribute.name!=='data-i18n-runtime')) {
-        const expected=catalog[attribute.value];
+        const expected=catalogFor(element)[attribute.value];
         const actual=attribute.name==='data-i18n'?element.textContent:element.getAttribute(attribute.name.slice(10));
         if(typeof expected!=='string')failures.push({key:attribute.value,why:'missing attr key'});
         else if(!/\{\w+\}/.test(expected)&&normalize(actual)!==normalize(expected))failures.push({key:attribute.value,expected,actual});
@@ -273,7 +275,7 @@ async function runEngine(name, engine, base) {
       assert(await page.evaluate(()=>document.activeElement.dataset.language)==='ru','Tab did not reach RU switch');
       const focused=await page.evaluate(()=>{const button=document.activeElement;const css=getComputedStyle(button);return{visible:button.matches(':focus-visible'),outline:css.outlineStyle,width:parseFloat(css.outlineWidth)}});
       assert(focused.visible&&focused.outline!=='none'&&focused.width>=1,'Keyboard focus is not visible',focused);
-      await page.keyboard.press('Space');await language(page,'ru');
+      await page.keyboard.press('Space');await page.evaluate(()=>window.AXI18n.whenSettled);await language(page,'ru');
       assert(await page.evaluate(()=>performance.timeOrigin)===origin,'Manual switch reloaded the page');
       await page.reload({waitUntil:'load'});await ready(page);await language(page,'ru');
       await switchLanguage(page,'en');await page.goto(base,{waitUntil:'load'});await ready(page);await language(page,'en');
@@ -308,6 +310,7 @@ async function runEngine(name, engine, base) {
       await switchLanguage(page,'ru','#showcase-lightbox');await auditBindings(page);
       const after=await page.evaluate(()=>{const dialog=document.querySelector('#showcase-lightbox'),image=dialog.querySelector('img');return{open:dialog.open,src:image.getAttribute('src'),width:image.style.width,zoom:dialog.classList.contains('is-zoomed'),caption:document.querySelector('#showcase-full-caption').textContent,alt:image.alt,count:document.querySelector('#ax-viewer-count').textContent,title:document.querySelector('#ax-panel-01 .ax-shot-trigger').dataset.showcaseTitle,pan:{left:dialog.querySelector('.show-lightbox-image').scrollLeft,top:dialog.querySelector('.show-lightbox-image').scrollTop},y:scrollY};});
       assert(after.open&&after.zoom&&after.src===before.src&&after.width===before.width&&after.count===before.count,'Switch reset viewer state',{before,after});
+      assert(Math.abs(after.pan.left-before.pan.left)<=1&&Math.abs(after.pan.top-before.pan.top)<=1,'Switch reset WORK viewer pan',{before:before.pan,after:after.pan});
       assert(after.caption===after.title&&after.caption!==before.caption&&after.alt!==before.alt,'Open viewer text was not refreshed',{before,after});
       assert(Math.abs(after.y-before.y)<=1,'Open-viewer switch moved document',{before,after,events:await page.evaluate(()=>window.__i18nScrollLog)});
       await page.keyboard.press('Escape');assert(!await page.locator('#showcase-lightbox').evaluate(dialog=>dialog.open),'Viewer Escape failed');
@@ -412,7 +415,8 @@ async function runEngine(name, engine, base) {
     await check(name,'standalone-archive-shares-language-preference',()=>using(browser,base,{locale:'ru-RU'},async fixture=>{
       const {page}=fixture;await page.goto(base+'serafim-veyr/',{waitUntil:'load'});
       await page.waitForFunction(()=>document.documentElement.lang==='ru'&&!document.documentElement.classList.contains('sv-language-pending'));
-      const ruTitle=await page.title();await page.locator('[data-lang="en"]').click();
+      const ruTitle=await page.title();await page.locator('[data-lang="en"]').click();await page.evaluate(()=>window.SVArchive?.whenSettled);
+      await page.waitForFunction(()=>document.documentElement.lang==='en');
       assert(await page.evaluate(key=>localStorage.getItem(key),KEY)==='en','Archive did not save manual choice');
       await page.reload({waitUntil:'load'});assert(await page.evaluate(()=>document.documentElement.lang)==='en','Archive lost saved preference');
       assert((await page.title())!==ruTitle,'Archive metadata did not follow locale');

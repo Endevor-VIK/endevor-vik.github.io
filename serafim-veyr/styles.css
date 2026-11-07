@@ -145,6 +145,15 @@ img{max-width:100%;display:block}
 #lightbox-counter{white-space:nowrap}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
+
+/* Bilingual editorial pairs keep the archive's own Impact / Consolas identity. */
+.sv-heading-pair{min-width:0}
+p.sv-heading-translation{max-width:64ch;margin:18px 0 24px;padding-left:12px;border-left:2px solid var(--cyan);color:#9eb0ba;font:clamp(12px,.95vw,14px)/1.65 var(--mono);letter-spacing:.015em;overflow-wrap:break-word}
+p.sv-heading-translation--tag{font-size:11px;margin:6px 0 18px;max-width:51ch}
+.sv-heading-translation[hidden]{display:none!important}
+.feature-copy h2[data-heading-mode="bilingual"]{margin-bottom:0}
+.hero-tag:has(+.sv-heading-translation:not([hidden])){margin-bottom:6px}
+
 @media(max-width:1130px){.brand-label{display:none}
 .header-nav{gap:14px}
 .header-inner{gap:12px}

@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.BILINGUAL_HEADINGS.AGENTOPS
   title: "Global bilingual headings — GLOBAL LOG"
-  status: DISCOVERY
+  status: READY_FOR_QA
   deployment: NOT_DEPLOYED
   mode: AgentOps
   goal: "Прослеживаемость inventory, реализации и measured QA"
@@ -29,7 +29,14 @@ AXS_HEADER_META:
 
 ## Step B — Implementation
 
-NOT_STARTED — inventory до изменения кода.
+IMPLEMENTED — inventory принят commit `d73a8c8` до product mutation.
+44 bilingual pairs (36 main + 1 error + 7 fan); 70 semantic H1–H3 preserved.
+Общий fixed-locale/subordinate template, четыре повтора преобразованы;
+body/anchors/Canon identities сохранены. Text-only motion: 80 ms exit + 180 ms
+enter / 8 px, RU +60 ms; sync API, last intent wins, reduced motion immediate.
+Fan archive сохраняет собственную типографику и gallery node/focus identity.
+Independent static review обнаружил и исправлены CSS specificity, dynamic motion
+coverage, interrupted opacity, invalid-input cancellation и pointer scroll intent.
 
 ## Step C — Documentation
 
@@ -37,7 +44,10 @@ NOT_STARTED — inventory до изменения кода.
 
 ## Step D — QA
 
-NOT_RUN — implementation ещё не начата.
+Source tests 6/6 PASS (исходные 5 + полный audit contract), оба structural smoke
+PASS, generated catalogs current, JS syntax/diff checks PASS.
+Browser QA IN_PROGRESS; первый 232-run диагностический, не финальное evidence
+(во время него выполнены review fixes). Полный frozen-source run обязателен.
 
 ## Step E — Git
 

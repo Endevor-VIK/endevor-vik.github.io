@@ -1,0 +1,39 @@
+/* TYPE A / RED PROTOCOL. One headline, one subordinate RU reading, three scales.
+   The language runtime also sets hidden; this initial-paint guard covers streamed HTML. */
+[data-language-only][hidden],html[lang=en] [data-language-only=ru]{display:none!important}
+html body p.ax-heading-translation.ax-heading-translation{
+  box-sizing:border-box;max-width:64ch;
+  margin:12px 0 24px;padding:0 0 0 12px;
+  border-left:1px solid var(--red,#ff2034);
+  font:400 clamp(12px,.9vw,14px)/1.6 'JetBrains Mono',monospace;
+  color:#a0a4b0;letter-spacing:.025em;text-transform:uppercase;
+  overflow-wrap:break-word;text-wrap:pretty;
+}
+html body p.ax-heading-translation.ax-heading-translation--display{font-size:clamp(12px,1vw,15px);max-width:58ch}
+html body p.ax-heading-translation.ax-heading-translation--editorial{font-size:12px;line-height:1.6;margin:10px 0 18px;max-width:54ch}
+[data-heading-mode=bilingual]:has(+[data-language-only]:not([hidden])){margin-bottom:0}
+.show-motto p.ax-heading-translation.ax-heading-translation{margin:10px 0 14px}
+.ax-epilogue-copy p.ax-heading-translation.ax-heading-translation{margin:12px 0 22px;max-width:46ch}
+.r1p-plate-copy p.ax-heading-translation.ax-heading-translation{margin:10px 0 0;max-width:48ch}
+html body .hero-grid p.ax-heading-translation.ax-heading-translation{grid-area:translation;font-size:12px;line-height:1.5;margin:0 0 16px;max-width:100%;align-self:start}
+/* A dedicated poster cell keeps the subtitle in the copy column at desktop widths.
+   In ENG the hidden cell has zero height, including its margins. */
+@media(min-width:901px) and (min-height:621px){
+  .hero-poster .hero-grid{grid-template-rows:minmax(0,1fr) repeat(6,auto) minmax(0,.55fr) auto;grid-template-areas:". stage" "eyebrow stage" "title stage" "translation stage" "lede stage" "cta stage" "gate stage" ". stage" "rail rail-end"}
+  html[lang=ru] .hero-poster h1.title{margin-bottom:10px}
+}
+@media(min-width:901px) and (min-height:621px) and (max-height:820px){
+  html[lang=ru] .hero-poster h1.title{margin-top:10px;margin-bottom:6px}
+  html[lang=ru] .hero-poster .lede{margin-bottom:12px}
+  html[lang=ru] .hero-poster .hero-rail{padding-top:6px}
+  html[lang=ru] .hero-poster .hero-grid{padding-top:16px;padding-bottom:8px}
+  html body .hero-grid p.ax-heading-translation.ax-heading-translation{margin-bottom:10px}
+}
+/* Compact editorial cards already have their own flex rhythm; avoid stacking margins. */
+html body #manifesto .frag p.ax-heading-translation.ax-heading-translation{margin:0;font-size:12px;line-height:1.6}
+html body .module .m-body p.ax-heading-translation.ax-heading-translation{margin:0 0 4px;font-size:12px;line-height:1.6}
+@media(max-width:760px){
+  html body p.ax-heading-translation.ax-heading-translation{margin:10px 0 20px;padding-left:10px;font-size:12px}
+  html body .hero-grid p.ax-heading-translation.ax-heading-translation{margin:12px 0 18px}
+  html body .r1p-plate-copy p.ax-heading-translation.ax-heading-translation{font-size:12px;line-height:1.5;margin:8px 0 0}
+}

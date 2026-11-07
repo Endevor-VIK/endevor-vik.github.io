@@ -10,18 +10,21 @@
   const root = document.documentElement;
   const bindings = new WeakMap();
   const attributes = ['aria-label', 'alt', 'title', 'content', 'data-text', 'data-showcase-title', 'data-screen-label'];
-  const t = (key, values = {}) => {
-    const value = catalogs[language][key];
+  const t = (key, values = {}, locale = language) => {
+    const value = catalogs[locale][key];
     if (typeof value !== 'string') { console.error('AXIOM i18n missing key:', key); return key; }
     return value.replace(/\{(\w+)\}/g, (match, name) => Object.prototype.hasOwnProperty.call(values, name) ? String(values[name]) : match);
   };
+  const copyLanguage = el => el?.closest?.('[data-copy-language]')?.dataset.copyLanguage || language;
   function element(el) {
     if (el.nodeType !== 1) return;
+    const locale = copyLanguage(el);
     const key = el.getAttribute('data-i18n');
-    if (key && el.textContent !== t(key)) el.textContent = t(key);
+    if (key && el.textContent !== t(key, {}, locale)) el.textContent = t(key, {}, locale);
+    if (el.hasAttribute('data-language-only')) el.hidden = el.dataset.languageOnly !== language;
     for (const attribute of attributes) {
       const key = el.getAttribute('data-i18n-' + attribute);
-      if (key && el.getAttribute(attribute) !== t(key)) el.setAttribute(attribute, t(key));
+      if (key && el.getAttribute(attribute) !== t(key, {}, locale)) el.setAttribute(attribute, t(key, {}, locale));
     }
   }
   function bind(comment){
@@ -34,13 +37,13 @@
       const edges=separator<0?[node.data.match(/^\s*/)[0],node.data.match(/\s*$/)[0]]:JSON.parse(marker.slice(separator+1));
       bindings.set(comment,{key,edges});
     }
-    const {key,edges:[before,after]}=bindings.get(comment),value=before+t(key)+after;
+    const {key,edges:[before,after]}=bindings.get(comment),value=before+t(key,{},copyLanguage(comment.parentElement))+after;
     if(node.data!==value)node.data=value;
   }
   function apply(scope = document) {
     element(scope);bind(scope);
     if(scope.nodeType===Node.TEXT_NODE)bind(scope.previousSibling);
-    if (scope.querySelectorAll) scope.querySelectorAll('[data-i18n],'+attributes.map(a => '[data-i18n-'+a+']').join(',')).forEach(element);
+    if (scope.querySelectorAll) scope.querySelectorAll('[data-language-only],[data-i18n],'+attributes.map(a => '[data-i18n-'+a+']').join(',')).forEach(element);
     const walker = document.createTreeWalker(scope, NodeFilter.SHOW_COMMENT);
     let comment;
     while ((comment = walker.nextNode())) bind(comment);
@@ -55,7 +58,7 @@
     });
   }
   let settleFrame=0,scrollStyles=null;
-  function setLanguage(next, { persist = true } = {}) {
+  function commitLanguage(next, { persist = true } = {}) {
     if (!valid(next)) return;
     const x=window.scrollX,y=window.scrollY;
     if(settleFrame)cancelAnimationFrame(settleFrame);
@@ -80,6 +83,34 @@
       });
     });
   }
+  // Stop only our short viewport hold when the visitor asks to move.
+  function releaseScrollHold() {
+    if (settleFrame) cancelAnimationFrame(settleFrame);
+    settleFrame=0;
+    if (scrollStyles) root.style.scrollBehavior=scrollStyles.behavior;
+    scrollStyles=null;
+  }
+  addEventListener('wheel', releaseScrollHold, {passive:true});
+  addEventListener('touchstart', releaseScrollHold, {passive:true});
+  addEventListener('pointerdown', releaseScrollHold, {passive:true});
+  addEventListener('keydown', event => {if(['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(event.key))releaseScrollHold();});
+  function motionTargets() {
+    const nodes = new Set();
+    const add = element => {
+      if (!element || element.closest('head,script,style,svg,[aria-hidden="true"]')) return;
+      let target=element.closest('h1,h2,h3,p,dt,dd,summary,figcaption,button,a,li') || element;
+      if (target.querySelector('img,svg,canvas,video,h1,h2,h3,p')) target=element;
+      if (target.matches('html,body,section,article,dialog') || target.querySelector('img,svg,canvas,video')) return;
+      nodes.add(target);
+    };
+    document.querySelectorAll('[data-i18n],[data-heading],.show-lightbox-label,.ax-mode-name,.v23-flow-title,#v23-map-signal,#v23-map-description,#v23-map-active-count,#v23-flow-message,.ax-viewer-zoom').forEach(add);
+    const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_COMMENT);
+    let comment;while((comment=walker.nextNode()))if(comment.data.startsWith('i18n:'))add(comment.parentElement);
+    return [...nodes];
+  }
+  const motion=window.AXIOMLanguageMotion?.create({getLanguage:()=>language,commit:commitLanguage,targets:motionTargets,secondary:()=>document.querySelectorAll('[data-language-only]')});
+  function setLanguage(next, options) { if(!valid(next))return; motion?.cancel(); commitLanguage(next, options); }
+  function transitionTo(next) { return motion ? motion.request(next) : (commitLanguage(next),Promise.resolve()); }
   function switcher() {
     const group = document.createElement('div');
     group.className = 'ax-language';
@@ -96,7 +127,7 @@
     group.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.language===language)));
     return group;
   }
-  window.AXI18n = Object.freeze({ t, apply, setLanguage, switcher, STORAGE_KEY, get language() { return language; } });
+  window.AXI18n = Object.freeze({ t, apply, setLanguage, transitionTo, switcher, STORAGE_KEY, get whenSettled() { return motion?.whenSettled || Promise.resolve(); }, get language() { return language; } });
   sync();
   root.classList.add('i18n-loading');
   // A broken unrelated script must never strand the source page behind a loading class.
@@ -104,7 +135,7 @@
   const fallback = setTimeout(() => {apply();sync();reveal();}, 2000);
   document.addEventListener('click', event => {
     const button = event.target.closest('[data-language]');
-    if (button) setLanguage(button.dataset.language);
+    if (button) transitionTo(button.dataset.language);
   });
   const observer = new MutationObserver(records => {
     // Parser batches report both ancestors and all descendants. Translate each subtree once.
