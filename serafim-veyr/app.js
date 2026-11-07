@@ -44,11 +44,14 @@ function setLanguage(next) {
   if (!COPY[next]) return;
   lang = next;
   document.documentElement.lang = lang;
+  document.title=COPY[lang].archive_name;
+  for(const [selector,value] of [['meta[name="description"]',COPY[lang].hero_lede],['meta[property="og:title"]',COPY[lang].archive_name],['meta[property="og:description"]',COPY[lang].hero_tag]]){
+    document.querySelector(selector)?.setAttribute('content',value);
+  }
   for (const el of document.querySelectorAll('[data-i18n]')) {
     const value = COPY[lang][el.dataset.i18n];
     if (value === undefined) continue;
-    if (value.includes('<br>')) el.innerHTML = value;
-    else el.textContent = value;
+    el.replaceChildren(...value.split('<br>').flatMap((part,index)=>index?[document.createElement('br'),document.createTextNode(part)]:[document.createTextNode(part)]));
   }
   for (const [data, attribute] of [['i18nAria','aria-label'], ['i18nAlt','alt']]) {
     const selector = data === 'i18nAria' ? '[data-i18n-aria]' : '[data-i18n-alt]';
@@ -140,7 +143,7 @@ for (const button of document.querySelectorAll('[data-filter]')) {
   });
 }
 for (const button of document.querySelectorAll('[data-lang]')) {
-  button.addEventListener('click', () => setLanguage(button.dataset.lang));
+  button.addEventListener('click', () => {window.AXIOMLanguage?.remember(button.dataset.lang);setLanguage(button.dataset.lang);});
 }
 loadBtn.addEventListener('click', () => {
   const previous = shown;
@@ -187,5 +190,6 @@ for (const type of ['all','cinematic','original','art']) {
   const count = document.querySelector(`#count-${type}`);
   if (count) count.textContent = type === 'all' ? library.length : library.filter(item => item.type === type).length;
 }
-setLanguage('en');
+setLanguage(window.AXIOMLanguage?.detect()||'en');
+document.documentElement.classList.remove('sv-language-pending');
 })();

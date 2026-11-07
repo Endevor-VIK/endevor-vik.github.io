@@ -1045,7 +1045,7 @@ footer .axiom-line::before,footer .axiom-line::after{content:"";flex:1;max-width
 .ax-statement em{font-style:normal;color:var(--ax-red);font-weight:500}
 .ax-statement b{color:var(--ax-ink-2);font-weight:500}
 .ax-quote{margin:0 0 24px;padding:18px 22px;border-left:2px solid var(--ax-red);font-family:'Oswald',sans-serif;font-size:21px;text-transform:uppercase;letter-spacing:.02em;color:var(--ax-ink);background:linear-gradient(90deg, rgba(255,32,52,.06), transparent 80%);position:relative;line-height:1.2}
-.ax-quote::before{content:"// FRAGMENT ∅";color:var(--ax-red);font-family:'JetBrains Mono',monospace;font-size:.48em;display:block;margin-bottom:10px;letter-spacing:.32em;font-weight:600}
+.ax-quote::before{content:var(--i18n-fragment-label,"// FRAGMENT ∅");color:var(--ax-red);font-family:'JetBrains Mono',monospace;font-size:.48em;display:block;margin-bottom:10px;letter-spacing:.32em;font-weight:600}
 .ax-quote span{color:var(--ax-red);font-weight:500}
 .ax-keystats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;font-size:10px;letter-spacing:.22em;color:var(--ax-mute);text-transform:uppercase;border-top:1px dashed var(--ax-mute-2);padding-top:18px}
 .ax-keystats b{display:block;color:var(--ax-ink);font-size:12px;letter-spacing:.16em;margin-top:4px}

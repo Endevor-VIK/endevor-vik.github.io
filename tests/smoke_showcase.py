@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 
 BASE = Path(__file__).resolve().parent.parent
-index = (BASE/"index.html").read_text("utf-8")
+index = re.sub(r"<!--i18n:[^>]+-->", "", (BASE/"index.html").read_text("utf-8"))
 missing = []
 ids, anchor_targets, assets, ctas = set(), [], set(), []
 screenshot_buttons = 0

@@ -103,7 +103,7 @@ body{background:var(--ax23-void);color:var(--ax23-ink)}
 .ax-viewer.is-zoomed .show-lightbox-image{display:block;place-items:start;overflow:auto;overscroll-behavior:contain;touch-action:auto;cursor:grab}
 .ax-viewer.is-zoomed .show-lightbox-image:active{cursor:grabbing}
 .ax-viewer.is-zoomed .show-lightbox-image img{max-width:none;max-height:none;object-fit:fill;cursor:inherit;user-select:none;-webkit-user-drag:none}
-.ax-viewer .show-lightbox-image.is-loading::after{content:"LOADING…";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:var(--ax-text-dim);font:700 11px var(--ax-font-mono);letter-spacing:.14em}
+.ax-viewer .show-lightbox-image.is-loading::after{content:var(--i18n-loading-label,"LOADING…");position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:var(--ax-text-dim);font:700 11px var(--ax-font-mono);letter-spacing:.14em}
 .ax-viewer-hint{padding:9px 16px;border-top:1px solid #14161c;color:var(--ax-text-dim);font:600 11px var(--ax-font-mono);letter-spacing:.1em}
 @media(max-width:760px){.ax-viewer .show-lightbox-head{grid-template-columns:auto minmax(0,1fr);padding:8px 10px;gap:8px}.ax-viewer-tools{grid-column:1/-1;justify-content:space-between}.ax-viewer-tools button{flex:1;padding:0 8px}.ax-viewer .show-lightbox-image{height:auto;aspect-ratio:16/9}.ax-viewer .show-lightbox-image img{height:auto}.ax-viewer.is-zoomed .show-lightbox-image{height:calc(92dvh - 160px);aspect-ratio:auto}.ax-viewer-hint{display:none}}
 /* 0524 W1 — WORK (Q-02 = B): the archive opens WORK; concept art A01 lives in its own band above the section; the WEB CORE card follows the archive */

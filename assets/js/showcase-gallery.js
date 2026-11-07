@@ -1,5 +1,7 @@
 /* AXIOM Showcase / WORK archive (ARIA tabs) + screenshot viewer — 0524 W1, Q-01: one archive instead of stage + duplicate grid */
-(()=>{const archive=document.getElementById('showcase-gallery');
+(()=>{const I=window.AXI18n;
+const tr=(key,fallback,values)=>I?I.t(key,values):fallback;
+const archive=document.getElementById('showcase-gallery');
 const dialog=document.getElementById('showcase-lightbox');
 if(!archive)return;
 const tabs=[...archive.querySelectorAll('[role="tab"]')];
@@ -55,7 +57,7 @@ const closeBtn=dialog.querySelector('.show-lightbox-close');
 const zoomBtn=dialog.querySelector('.ax-viewer-zoom');
 let vIndex=0,zoomed=false,opened=false;
 
-function zoomState(on){zoomed=on;dialog.classList.toggle('is-zoomed',on);zoomBtn.setAttribute('aria-pressed',String(on));zoomBtn.textContent=on?'FIT':'1:1 ZOOM'}
+function zoomState(on){zoomed=on;dialog.classList.toggle('is-zoomed',on);zoomBtn.setAttribute('aria-pressed',String(on));zoomBtn.textContent=on?tr('ui.fit','FIT'):tr('ui.zoom','1:1 ZOOM')}
 function setZoom(on,at){
  const t=triggers[vIndex];if(!t)return;
  zoomState(on);
@@ -74,12 +76,22 @@ function setZoom(on,at){
 function show(i){
  vIndex=(i%total+total)%total;const t=triggers[vIndex];if(!t)return;
  stage.classList.add('is-loading');
- image.alt='Скриншот: '+t.dataset.showcaseTitle;caption.textContent=t.dataset.showcaseTitle;vCounter.textContent=label(vIndex);
+ if(typeof failure!=='undefined')failure.hidden=true;
+ refreshLabels();vCounter.textContent=label(vIndex);
  setZoom(false);
  select(vIndex);
 }
-image.addEventListener('load',()=>stage.classList.remove('is-loading'));
-image.addEventListener('error',()=>stage.classList.remove('is-loading'));
+const failure=document.createElement('p');failure.className='ax-viewer-error';failure.setAttribute('role','status');failure.hidden=true;stage.after(failure);
+function refreshLabels(){
+ const t=triggers[vIndex];if(t){image.alt=tr('ui.screenshot','Screenshot: '+t.dataset.showcaseTitle,{title:t.dataset.showcaseTitle});caption.textContent=t.dataset.showcaseTitle;}
+ zoomState(zoomed);
+ if(live&&live.textContent)live.textContent=label(current)+' — '+titleOf(current);
+ if(!failure.hidden)failure.textContent=tr('ui.imageError','Unable to load the image.');
+}
+window.addEventListener('axiom:languagechange',refreshLabels);
+if(I)dialog.querySelector('.ax-viewer-tools').append(I.switcher());
+image.addEventListener('load',()=>{stage.classList.remove('is-loading');failure.hidden=true});
+image.addEventListener('error',()=>{stage.classList.remove('is-loading');failure.hidden=false;failure.textContent=tr('ui.imageError','Unable to load the image.')});
 function open(i){
  show(i);opened=true;
  if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');
