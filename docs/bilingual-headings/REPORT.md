@@ -22,6 +22,8 @@ AXS_HEADER_META:
 
 База: merged PR #14, `adb87e5b8c8ba778aedfddd0655ec0b957e045ef`.
 Ветка: `feature/showcase-global-bilingual-headings`, isolated worktree.
+[PR #15](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/15) — OPEN / DRAFT;
+remote recovery / delivery `0d0c4f82240c103a2915e026981c24714fdfefbe`.
 Последний runtime/test commit: **`ae3dc2d33cf68d76b95346775b695342473455fd`**.
 Последующие delivery-файлы не меняют runtime. `main`, production, root gitlink,
 Canon и продуктовая версия этой задачей не изменялись.

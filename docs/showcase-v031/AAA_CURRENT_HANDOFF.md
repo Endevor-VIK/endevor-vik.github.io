@@ -39,7 +39,9 @@ Merge PR #14 уже принят; разрешения merge/deploy новой t
   [GLOBAL LOG](../bilingual-headings/AGENTOPS.md), [SPEC](../bilingual-headings/SPEC.md),
   [HEADING AUDIT](../bilingual-headings/HEADING_AUDIT.md),
   [112 native screenshots](../bilingual-headings/captures/review.html).
-- Delivery PR / remote recovery: pending completion of original regression.
+- Delivery: [PR #15](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/15),
+  OPEN / DRAFT; pushed `0d0c4f82240c103a2915e026981c24714fdfefbe`.
+  This closure adds docs only; recheck actual feature HEAD when resuming.
 - NOT_VERIFIED: CREATOR visual acceptance, independent Principal, Safari/WebKit,
   real devices/GPU, screen reader, actual zoom, fresh LH/field CWV, production.
 - Known preserved limitation: mobile loader decorative HUD overlaps. Outer shell
@@ -57,13 +59,15 @@ TASK: showcase-global-bilingual-headings / DELIVERY + CREATOR VISUAL REVIEW
 REPO + BRANCH: Endevor-VIK/endevor-vik.github.io / feature/showcase-global-bilingual-headings
 RUNTIME SHA: ae3dc2d33cf68d76b95346775b695342473455fd
 BASELINE: adb87e5b8c8ba778aedfddd0655ec0b957e045ef (merged PR14)
-OWN DIRTY: delivery docs, 112 captures/evidence, source-preservation guard
+REMOTE RECOVERY: 0d0c4f82240c103a2915e026981c24714fdfefbe
+PR: https://github.com/Endevor-VIK/endevor-vik.github.io/pull/15 / OPEN / DRAFT
+WORKTREE: clean after docs-only closure commit/push; reverify actual HEAD
 DONE: 110 audit entries / 45 pairs / text motion / preservation / 124 + 84 + 232 PASS
-PENDING: delivery commit/push/PR, independent + CREATOR visual review
+PENDING: independent Principal + CREATOR visual review; merge/deploy HOLD
 QA AUTHORITY: docs/bilingual-headings/REPORT.md and raw evidence; counts are not release approval
 FROZEN: RED PROTOCOL / TYPE A / WORK B / artwork / section order / Canon IDs / URLs / cursor
 FORBIDDEN: main merge / production deploy / root gitlink / Canon write / version bump
-NEXT: verify regression output and exact runtime diff; commit only task-owned delivery; open PR
+NEXT: verify exact PR HEAD/runtime diff; inspect REPORT + screenshots; perform independent review
 FIRST ACTION: reread AGENTS + current SPEC/log/report; reverify Git/PR/CI and ownership
 ```
 

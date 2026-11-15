@@ -2,10 +2,10 @@
   "runtime_commit": "ae3dc2d33cf68d76b95346775b695342473455fd",
   "files": {
     "docs/bilingual-headings/00_LOG_INDEX.md": "1d4da4eb9607a8907f05dbeefa04576e2824fc6ca120744f9068eb5975635015",
-    "docs/bilingual-headings/AGENTOPS.md": "243b8e3b9a2f2111884792123fce63b9f850218e8b685990ca1819f88a63b46d",
+    "docs/bilingual-headings/AGENTOPS.md": "871a8a5ada4ac65ce396909b376b4e9a0399abe54d3b9f9fd4b260401fe2e355",
     "docs/bilingual-headings/HEADING_AUDIT.md": "c5163b3510faee157ef0d9c4e4383b775703ea0f1fdb9910783743663e434028",
     "docs/bilingual-headings/README.md": "fbe8a90cdbaf05ea038738640650f7ecf91a2a913043e78808557dc5fc24c544",
-    "docs/bilingual-headings/REPORT.md": "e0243d5e05bd73df02291c9cee651d01471ce958e2de1e2b3f409c87f1d98d67",
+    "docs/bilingual-headings/REPORT.md": "a3b2fdba653d4ce5fd2deff53ec19aaf6b72a52a4cc8ae618b0ba00a60e3da4a",
     "docs/bilingual-headings/SPEC.md": "f7e3e1cecd392e3280f88b2e479e4e4c8fb2320e235545039d38c847f1cf0282",
     "docs/bilingual-headings/captures/chromium-en-1440-404.png": "35bee44b7780dce6cda80f0045628ad24690bc5424ad3567b45ea4d27b5e6a5f",
     "docs/bilingual-headings/captures/chromium-en-1440-about.png": "46689a5d51290a07ba00168df8e1d7344030ae9ea8f007ac5be615339c8631e7",
@@ -133,7 +133,7 @@
     "docs/bilingual-headings/evidence/pre-art-band-browser.json": "fda615b2ab53157fe09dad7916bc8a6cef2ff933cd634c645f93521214c48886",
     "docs/bilingual-headings/evidence/preservation.json": "26d2db1712698696ea1e3a17b90d05b28f42d1574af728bdeac92fba473eb220",
     "docs/bilingual-headings/inventory.json": "7e1884d615d610a1e6d27128d09126433ee308406f3fd3b9728fb8cb673f5462",
-    "docs/showcase-v031/AAA_CURRENT_HANDOFF.md": "6af949688e0cf0e49664be70a332544cc4e9b1dc43a426aa4dafbc7f7fce49eb",
+    "docs/showcase-v031/AAA_CURRENT_HANDOFF.md": "a4daf5766aa69b1a6e7c114a68e97159a236c08d605bcf9700ce86619172290f",
     "tests/check_bilingual_preservation.py": "cd911317a41ec730fbb13163d06cbea2ca560cd520cc2a703fb4282a7db8c4e0"
   }
 }

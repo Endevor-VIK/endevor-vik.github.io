@@ -115,3 +115,17 @@ Baseline main остаётся `adb87e5b8c8ba778aedfddd0655ec0b957e045ef`.
 Original regression завершилась exit 0; 232/232 PASS. Далее: delivery commit, push exact feature HEAD,
 PR и remote recovery point. Main merge / production / version / root gitlink /
 Canon write не разрешены текущей директивой и не выполняются.
+
+
+### Step E — Remote recovery / PR opened
+
+- Delivery commit: `0d0c4f82240c103a2915e026981c24714fdfefbe`, pushed to exact
+  `origin/feature/showcase-global-bilingual-headings`.
+- [PR #15](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/15): OPEN / DRAFT,
+  base main `adb87e5`, runtime `ae3dc2d`. 440 primary checks PASS + lifecycle 14/14 exit 0.
+- Эта closure-правка меняет только task docs, living handoff и их hash manifest;
+  runtime diff к `ae3dc2d` пуст. Source preservation guard остаётся PASS.
+- Root HEAD `c05d0964daa6f542fa71dc5d3712db7bae99d964` и index gitlink landing
+  `babbaa37baf4a13ea0546f19cc00d4f95b2d23f5` проверены read-only и не менялись.
+- IMPLEMENTED / VERIFIED (automated). NOT_VERIFIED / CREATOR DECISION REQUIRED:
+  independent Principal + CREATOR visual acceptance. Merge/deploy не выполнены.
