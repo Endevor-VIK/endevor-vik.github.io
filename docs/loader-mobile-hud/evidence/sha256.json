@@ -1,9 +1,9 @@
 {
   "runtime_fix": "8d26d0a143240fd1fe095eee48edfee9e6757161",
   "files": {
-    "docs/loader-mobile-hud/AGENTOPS.md": "b2487d31fc5569ce2ea3b4cda3edc1d618496bd28f12c039d5b3a4a6fdd86f25",
-    "docs/loader-mobile-hud/REPORT.md": "82381bf425f50f9f49a6923f443ea7e7a201595ef1d7879b8813e9dcc2ea68fb",
-    "docs/loader-mobile-hud/SPEC.md": "9ef322e9eaacbd842c2c4b97400a12b7e65eb3160eda3759b4846263b6adab34",
+    "docs/loader-mobile-hud/AGENTOPS.md": "bf3747e924756d5b77edf81fc65e7981476fb78a06e144cfc4987638ffda3b4d",
+    "docs/loader-mobile-hud/REPORT.md": "60a0519a7942df240c7f2c373f6e82a730c3ce4fcdf29ebe0494f81a1c7f818f",
+    "docs/loader-mobile-hud/SPEC.md": "4aaf6fb2a94d86e3166261d0b8119a90d929d1d154dfe9bcd67ac74bb2dc6817",
     "docs/loader-mobile-hud/evidence/after-chromium-en-1440.png": "54f384105f2f9cdd4d602ee07d608715dbf531e6fc18cad086a492f3f5b1ef55",
     "docs/loader-mobile-hud/evidence/after-chromium-en-320.png": "67b67d1ee2f2f7c03f3b5989d9c90f4a0ca4a9230cd546a58e43b3f9fae4e61f",
     "docs/loader-mobile-hud/evidence/after-chromium-en-390.png": "90fd92e1c5fcf0218431bbde002a05b52a95438888362e01b611fe6b1c217daf",
@@ -19,6 +19,7 @@
     "docs/loader-mobile-hud/evidence/first-correction-diagnostic.json": "af6e297e46cc599c7d9147e1bdc7a57be30af9a781896a20f304f6b05e920a19",
     "docs/loader-mobile-hud/evidence/layout-browser.json": "7c3c3b93178a8811a34e481e3fd1a8b804c2db4244368f641af721f3e72bb968",
     "docs/loader-mobile-hud/evidence/portrait-tablet-gate.json": "c0395f9e8fed246c5e509c60f0e717e22ee3ca5ec595b624f055966b0a3444ad",
-    "docs/loader-mobile-hud/evidence/preservation.json": "c704a7541ef32a3b5db607f8a3bab8debdf04718e4080c77af9cfcf239aefc4b"
+    "docs/loader-mobile-hud/evidence/preservation.json": "c704a7541ef32a3b5db607f8a3bab8debdf04718e4080c77af9cfcf239aefc4b",
+    "docs/loader-mobile-hud/evidence/preview-composition.json": "37cf6f3f62392e87c30f85313f32bc39a2f014a9e0aa8c24dc75c5401cf3f504"
   }
 }

@@ -84,3 +84,15 @@ python3 tests/test_i18n.py
 
 Temporary output: последние 3 runs /14 дней, 32 MiB/run. Выбранные screenshots,
 raw JSON и hash manifest сохраняются в Git; свои временные артефакты очищаются.
+
+
+## Remote delivery / preview
+
+[PR16](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/16) OPEN/DRAFT;
+remote delivery `19d9b2b0fb4afd68d2d0a67fd2e18e55396ad023`, runtime `8d26d0a`.
+[Закрытый PREVIEW / NOT LIVE](https://axiom-showcase-pr15-preview.endeavor-prime.chatgpt.site/preview.html)
+даёт loader до/после. Export сочетает PR15 markup/scripts с этим CSS;
+[10/10 composition checks](evidence/preview-composition.json) PASS. Native private
+stand publication succeeded 2026-11-15 10:43:59 UTC; GitHub main/Pages не изменены.
+Новое CLI `--page` поддерживает проверку отдельного loader-fixed.html; default
+loader.html и runtime fix не изменились. Main merge / live verification ожидают CREATOR.

@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.LOADER_MOBILE_HUD.SPEC
   title: "Mobile loader — bounded layout correction"
-  status: DISCOVERY
+  status: IMPLEMENTED / READY_FOR_REVIEW
   deployment: NOT_DEPLOYED
   mode: Task Contract
   goal: "Устранить наложения HUD и controls на мобильном loader"

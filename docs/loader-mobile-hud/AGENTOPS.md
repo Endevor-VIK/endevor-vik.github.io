@@ -51,3 +51,11 @@ Branch `fix/showcase-mobile-loader-hud`; main merge / deploy HOLD.
 Runtime fix `8d26d0a143240fd1fe095eee48edfee9e6757161`.
 Separate PR in main pending push; merge/deploy HOLD. Private preview supplies an
 explicit before/after loader route while retaining exact PR15 root runtime.
+
+
+## Remote handoff
+
+PR16 OPEN/DRAFT: https://github.com/Endevor-VIK/endevor-vik.github.io/pull/16
+Delivery 19d9b2b, runtime 8d26d0a; последующие изменения tests/docs only.
+Private preview owner-only succeeded; composition 10/10 PASS.
+Source unchanged, product main / root gitlinks / Pages untouched.
