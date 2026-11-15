@@ -1,0 +1,16 @@
+{
+  "project_id": "appgprj_6af986033f748191acd3b689627b56e1",
+  "source_commit": "e5c06d1bbfb1b61c9fb103c4182f1ae1efdaf411",
+  "version_id": "appgprj_6af986033f748191acd3b689627b56e1~appgver_cd244b553af88191a9973a430ce19d27",
+  "deployment_id": "appgdep_6af98cd3b35c81919b278ef511284788",
+  "status": "succeeded",
+  "url": "https://axiom-showcase-pr15-preview.endeavor-prime.chatgpt.site",
+  "entry_url": "https://axiom-showcase-pr15-preview.endeavor-prime.chatgpt.site/preview.html",
+  "updated_at": "2026-11-15T10:43:59.339984+00:00",
+  "audience": "owner-only; confirmed current caller is sole allowed viewer; no groups/external visitors",
+  "purpose": "PREVIEW / NOT LIVE — distinct from GitHub Pages main",
+  "feature_runtime": "6887f74c90fea055320ec8ac6f14cead5431108f",
+  "loader_css": "8d26d0a143240fd1fe095eee48edfee9e6757161",
+  "main_merged": false,
+  "public_live_verified": false
+}

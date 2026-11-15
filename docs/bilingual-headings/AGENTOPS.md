@@ -129,3 +129,16 @@ Canon write не разрешены текущей директивой и не 
   `babbaa37baf4a13ea0546f19cc00d4f95b2d23f5` проверены read-only и не менялись.
 - IMPLEMENTED / VERIFIED (automated). NOT_VERIFIED / CREATOR DECISION REQUIRED:
   independent Principal + CREATOR visual acceptance. Merge/deploy не выполнены.
+
+
+## Principal continuation / 2026-11-15
+
+- Fresh GitHub: PR15 OPEN/DRAFT, mergeable, exact head 6887f74; main adb87e5.
+- [PUBLICATION_HANDOFF](PUBLICATION_HANDOFF.md) фиксирует code/preview/main/live отдельно.
+- Runtime unchanged from 6887f74/ae3dc2d. Fresh first paint 10/10, BLACK SUN 8/8
+  real pointer/scroll trace; tests-only follow-up plus corrected source guard.
+- Loader изолирован в PR16: runtime 8d26d0a, 64+8 PASS; preview composition 10/10.
+- Private owner-only Sites deployment succeeded at 2026-11-15T10:43:59Z; exact
+  source e5c06d1. Нет новых secrets в source/evidence.
+- Product main/root gitlinks/production untouched. Next: CREATOR visual decision
+  and explicit merge authority, then Pages deployment and public verification.

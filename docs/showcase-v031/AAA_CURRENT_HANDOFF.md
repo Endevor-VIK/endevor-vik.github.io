@@ -19,7 +19,37 @@ AXS_HEADER_META:
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
 
-## CURRENT TASK — 2026-11-15 / GLOBAL BILINGUAL TYPOGRAPHY
+## CURRENT CONTINUATION — PR15 REVIEW / PRIVATE PREVIEW / LOADER PR16
+
+Новая инструкция CREATOR + Principal comment требуют accessible preview, focused
+BLACK SUN smoke и отдельный loader fix перед решением о publication.
+[Current publication handoff](../bilingual-headings/PUBLICATION_HANDOFF.md) — authority
+по текущим status/evidence. Предыдущий snapshot ниже сохраняется историей.
+
+- PR15: OPEN / DRAFT. Reviewed head `6887f74`, runtime `ae3dc2d`; новые commits
+  только tests/docs, product byte identity проверена. Fresh 10+8 PASS.
+- PR16: OPEN / DRAFT, CSS-only loader fix `8d26d0a`; 64+8 PASS. Preview composition 10/10.
+- [PREVIEW / NOT LIVE](https://axiom-showcase-pr15-preview.endeavor-prime.chatgpt.site/preview.html)
+  — отдельный owner-only стенд; succeeded 2026-11-15 10:43:59 UTC; source `e5c06d1`.
+- MAIN MERGED = NO (`adb87e5`); LIVE VERIFIED = NO. Pages не публиковался этой работой.
+- Last review working ref before docs closure: PR15 branch `8c645e3`;
+  loader branch `19d9b2b` before test/docs closure. Reverify actual remote PR HEADs.
+- NEXT: CREATOR visual acceptance + explicit merge authorization; then observe Pages
+  success and verify cache-busted public HTML + clean-browser RU/ENG, not branch screenshots.
+
+```text
+RESUME: read AGENTS + docs/bilingual-headings/PUBLICATION_HANDOFF.md
+REPOS: showcase-global-bilingual-headings and showcase-mobile-loader-hud worktrees
+PRESERVED: PR15 runtime / Canon / versions / root gitlinks / product main
+PR CODE VERIFIED: YES (focused 18 PASS); independent visual acceptance pending
+PREVIEW: owner-only Sites appgprj_6af986033f748191acd3b689627b56e1, source e5c06d1
+MAIN MERGED: NO; LIVE VERIFIED: NO; CREATOR MERGE AUTHORIZATION REQUIRED
+FIRST: fetch exact PR15/PR16 HEADs; inspect preview and current status/evidence
+```
+
+---
+
+## PREVIOUS TASK SNAPSHOT — 2026-11-15 / GLOBAL BILINGUAL TYPOGRAPHY
 
 Текущая директива CREATOR — «SHOWCASE — GLOBAL BILINGUAL TYPOGRAPHY & LANGUAGE
 TRANSITIONS». Она supersedes перевод крупных headlines на RU из прежней задачи.

@@ -14,7 +14,7 @@ AXS_HEADER_META:
 -->
 # Bilingual headings
 
-[Контракт](SPEC.md) · [Полный аудит](HEADING_AUDIT.md) ·
+[Публикация / доступный preview](PUBLICATION_HANDOFF.md) · [Контракт](SPEC.md) · [Полный аудит](HEADING_AUDIT.md) ·
 [Машинный inventory](inventory.json) · [AgentOps](AGENTOPS.md) ·
 [Отчёт](REPORT.md) · [112 screenshots](captures/review.html).
 

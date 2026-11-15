@@ -2,10 +2,11 @@
   "runtime_commit": "ae3dc2d33cf68d76b95346775b695342473455fd",
   "files": {
     "docs/bilingual-headings/00_LOG_INDEX.md": "1d4da4eb9607a8907f05dbeefa04576e2824fc6ca120744f9068eb5975635015",
-    "docs/bilingual-headings/AGENTOPS.md": "871a8a5ada4ac65ce396909b376b4e9a0399abe54d3b9f9fd4b260401fe2e355",
+    "docs/bilingual-headings/AGENTOPS.md": "3ef022d58521a6814688d24f6011006426c187a529c93fa4d3034cb654f5b17a",
     "docs/bilingual-headings/HEADING_AUDIT.md": "c5163b3510faee157ef0d9c4e4383b775703ea0f1fdb9910783743663e434028",
-    "docs/bilingual-headings/README.md": "fbe8a90cdbaf05ea038738640650f7ecf91a2a913043e78808557dc5fc24c544",
-    "docs/bilingual-headings/REPORT.md": "a3b2fdba653d4ce5fd2deff53ec19aaf6b72a52a4cc8ae618b0ba00a60e3da4a",
+    "docs/bilingual-headings/PUBLICATION_HANDOFF.md": "65f82c57de0babc040c837aa19c6902a8cbf9e4d183e9ee01ebd111a5a988fa1",
+    "docs/bilingual-headings/README.md": "c04c50f0380f1ef4ab0a4b7acf5be9912c9449768be297979db5d92ad6e4a7e7",
+    "docs/bilingual-headings/REPORT.md": "caea7546d14fbd4a204df1f90af6059f4516b57d77b71368c98b97e3f930057b",
     "docs/bilingual-headings/SPEC.md": "f7e3e1cecd392e3280f88b2e479e4e4c8fb2320e235545039d38c847f1cf0282",
     "docs/bilingual-headings/captures/chromium-en-1440-404.png": "35bee44b7780dce6cda80f0045628ad24690bc5424ad3567b45ea4d27b5e6a5f",
     "docs/bilingual-headings/captures/chromium-en-1440-about.png": "46689a5d51290a07ba00168df8e1d7344030ae9ea8f007ac5be615339c8631e7",
@@ -133,7 +134,19 @@
     "docs/bilingual-headings/evidence/pre-art-band-browser.json": "fda615b2ab53157fe09dad7916bc8a6cef2ff933cd634c645f93521214c48886",
     "docs/bilingual-headings/evidence/preservation.json": "26d2db1712698696ea1e3a17b90d05b28f42d1574af728bdeac92fba473eb220",
     "docs/bilingual-headings/inventory.json": "7e1884d615d610a1e6d27128d09126433ee308406f3fd3b9728fb8cb673f5462",
-    "docs/showcase-v031/AAA_CURRENT_HANDOFF.md": "a4daf5766aa69b1a6e7c114a68e97159a236c08d605bcf9700ce86619172290f",
-    "tests/check_bilingual_preservation.py": "cd911317a41ec730fbb13163d06cbea2ca560cd520cc2a703fb4282a7db8c4e0"
+    "docs/bilingual-headings/review-publication/black-sun-pointer.json": "666cfddfb7ebd1610316dd68dcad8cf75fbb495a7c8669ba6c1c661416268650",
+    "docs/bilingual-headings/review-publication/chromium-en-1440-black-sun-review.png": "75ac69057771026b80fe99c2b0f45b43e40bc1482b41248636154d87e9cdcbe6",
+    "docs/bilingual-headings/review-publication/chromium-en-390-black-sun-review.png": "36f506c682f188b1cf2cf7a7422a10d56e2693c1e166ecfc02f2005f37b3f32e",
+    "docs/bilingual-headings/review-publication/chromium-ru-1440-black-sun-review.png": "db5bca131b14eb1373c8e476e0032ad8eb341abca9f232ccf6c4ce3e5803df1c",
+    "docs/bilingual-headings/review-publication/chromium-ru-390-black-sun-review.png": "fd4d73601f2a03adaef9bc4d48a355ca95028bb8079e9b480eceed271e381edd",
+    "docs/bilingual-headings/review-publication/combined-loader.json": "ce0e6addff00cdb08632e8839d07a35a43982742b17e9eb46f037a39f47a8ee3",
+    "docs/bilingual-headings/review-publication/first-paint.json": "70fe006db7072452c7ad6e6c2e1a80cf80a373da857d3145948050588f10c994",
+    "docs/bilingual-headings/review-publication/locator-scroll-diagnostic-1.json": "abf245a798bdafb15a4f1b5e7fbab72ffc68658ed4dabe9edeb72649d4f6a4f1",
+    "docs/bilingual-headings/review-publication/locator-scroll-diagnostic-2.json": "74389daecff43da53a6776354df265baa263b83528aadd21ec36f3142de10739",
+    "docs/bilingual-headings/review-publication/pointer-diagnosis.json": "3f224f253749e719302819f445ca44a500b5b69dce003e0db337f5b5f69d237b",
+    "docs/bilingual-headings/review-publication/preservation-diagnosis.json": "0224e72dc46feda5720dcc943acebf4ff653f95fc9ae471fcc7595b27f1423f6",
+    "docs/bilingual-headings/review-publication/preview.json": "8218550eb0345a03353f99fc97c609feef25799ff58fe4c4b05b8faa4ff6998b",
+    "docs/showcase-v031/AAA_CURRENT_HANDOFF.md": "6632511146e64a0e413576ebe6a1e41206c51e22b69f981d1ddba6f7cd8fc28d",
+    "tests/check_bilingual_preservation.py": "d2d9b5b2b27fd3582a1ca5b88a4cbdf3ba13bc11c6be82abf80ba0a56a6f1528"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "observed": "First fresh preservation guard returned FAIL after evidence PNGs were committed",
+  "cause": "Guard treated every changed PNG, including docs evidence, as a runtime asset change",
+  "correction": "Only runtime assets/ and serafim-veyr/ media/fonts are protected; deliberate docs captures are excluded",
+  "runtime_changed": false,
+  "scope": "test guard only; source/catalog/structural checks remain unchanged"
+}

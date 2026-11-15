@@ -170,3 +170,12 @@ Shared main, чужие worktrees/evidence и root delta не очищаются
 Rollback до merge: feature branch не влияет на опубликованную базу. После отдельного
 решения merge — обычный revert по отдельной authority, без переписывания history.
 Точный remote recovery point и PR фиксируются в [AgentOps](AGENTOPS.md) и living handoff.
+
+
+## Продолжение после Principal review
+
+Актуальная доступная проверка и тройка `PR CODE VERIFIED / MAIN MERGED / LIVE VERIFIED`
+в [PUBLICATION_HANDOFF](PUBLICATION_HANDOFF.md). Закрытый PREVIEW опубликован отдельно
+от GitHub Pages; PR15 runtime не изменён. Fresh focused 10+8 PASS; loader исправлен
+в отдельном PR16 (64+8 PASS), с 10-case export composition check. Это не новый
+полный прогон прежних 440; ограничения и diagnostic FAIL сохранены.
