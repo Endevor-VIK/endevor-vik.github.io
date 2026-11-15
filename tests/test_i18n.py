@@ -226,8 +226,9 @@ class LocalizationContract(unittest.TestCase):
     def test_global_heading_inventory_and_semantics(self):
         inventory = json.loads((ROOT/'docs/bilingual-headings/inventory.json').read_text('utf-8'))
         entries = inventory['entries']
-        self.assertEqual(len(entries), 104, 'Complete pre-implementation audit was truncated')
+        self.assertEqual(len(entries), 110, 'Complete pre-implementation audit was truncated')
         self.assertEqual(len({entry['audit_id'] for entry in entries}), len(entries), 'Duplicate audit identity')
+        self.assertEqual(sum(entry.get('classes') == '.v22-bridge b' for entry in entries), 6, 'Bridge visual titles missing from audit')
         fan = SourceScan('serafim-veyr/index.html')
         fan.feed((ROOT/'serafim-veyr/index.html').read_text('utf-8'))
         scans = {**self.scans, 'serafim-veyr/index.html': fan}
@@ -240,6 +241,11 @@ class LocalizationContract(unittest.TestCase):
                 self.assertEqual(len(decisions), len(scan.heading_decisions), 'Duplicate heading DOM identity')
                 for tag, attrs in scan.semantic_headings:
                     self.assertIn(attrs.get('data-heading'), owning, 'Semantic heading missing audit decision')
+                if filename == 'index.html':
+                    for ordinal in range(35, 41):
+                        self.assertIn(f'extra-{ordinal:02d}', decisions, 'Inventoried visual bridge missing its DOM decision')
+                    for identity in ('extra-08', 'extra-09'):
+                        self.assertIn(identity, decisions, 'Faction proper-name decision missing from DOM')
                 for identity, (tag, attrs) in decisions.items():
                     self.assertIn(identity, owning, 'Undocumented heading decision')
                     decision = owning[identity]
@@ -267,7 +273,7 @@ class LocalizationContract(unittest.TestCase):
                         normalize = lambda value: re.sub(r'\s+', ' ', value).strip()
                         self.assertEqual(normalize(self.catalogs['ru'][key]), normalize(entry['ru_subtitle']))
                 self.assertEqual(set(scan.heading_translations), {entry['audit_id'] for entry in bilingual}, 'Orphan subtitle')
-        self.assertEqual(sum(entry['action'] == 'bilingual' for entry in entries), 44)
+        self.assertEqual(sum(entry['action'] == 'bilingual' for entry in entries), 45)
 
     def test_bootstrap_precedes_public_content(self):
         for filename in PAGES:

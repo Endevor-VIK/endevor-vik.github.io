@@ -13,6 +13,9 @@ html body p.ax-heading-translation.ax-heading-translation--display{font-size:cla
 html body p.ax-heading-translation.ax-heading-translation--editorial{font-size:12px;line-height:1.6;margin:10px 0 18px;max-width:54ch}
 [data-heading-mode=bilingual]:has(+[data-language-only]:not([hidden])){margin-bottom:0}
 .show-motto p.ax-heading-translation.ax-heading-translation{margin:10px 0 14px}
+.ax-art-band-heading{min-width:0;width:100%}
+.ax-art-band .ax-art-band-copy .ax-art-band-heading b{display:block}
+html body .ax-art-band-heading p.ax-heading-translation.ax-heading-translation{margin:12px 0 0;text-align:left}
 .ax-epilogue-copy p.ax-heading-translation.ax-heading-translation{margin:12px 0 22px;max-width:46ch}
 .r1p-plate-copy p.ax-heading-translation.ax-heading-translation{margin:10px 0 0;max-width:48ch}
 html body .cta p.ax-heading-translation.ax-heading-translation,html body .ax-epilogue-copy p.ax-heading-translation.ax-heading-translation{margin-inline:auto;width:fit-content;text-align:center}
