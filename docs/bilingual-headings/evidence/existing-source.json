@@ -1,0 +1,9 @@
+{
+  "runtime_commit": "ae3dc2d33cf68d76b95346775b695342473455fd",
+  "basis": "Frozen bilingual sourceAfter snapshot immediately precedes unchanged runtime throughout i18n and original regression; final runtime hashes rechecked.",
+  "runtime_hashes_unchanged": true,
+  "documentation_only_exception": "inventory visual_result and verification metadata updated after its measured run",
+  "original_regression_harness_sha256": "bfc77b18c91d4f611645237d610c6b6d9445fb3a3fdfb32487ace78abe0798cb",
+  "original_regression_harness_unchanged_from_runtime_commit": true,
+  "process_exit_code": 0
+}

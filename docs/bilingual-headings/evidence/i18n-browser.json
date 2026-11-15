@@ -1,0 +1,1311 @@
+{
+  "started": "run-20261115093149-48bc8f",
+  "finished": "2026-11-15T09:33:05.758Z",
+  "source": {
+    "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-global-bilingual-headings",
+    "commit": "ae3dc2d33cf68d76b95346775b695342473455fd",
+    "status": "?? docs/bilingual-headings/00_LOG_INDEX.md\n?? docs/bilingual-headings/README.md\n?? docs/bilingual-headings/evidence/\n?? tests/check_bilingual_preservation.py",
+    "hashes": {
+      "404.html": "dcb9c0902abcfd343b06348948e4eb3643b93ad9e0894f7e48b254c6919305a2",
+      "assets/css/bilingual-headings.css": "6fee29af583b17db18d7cd64b79b27175c42f05f115f4b4253430f22218b9d50",
+      "assets/css/fonts.css": "6fb4a90f2b06e94758eeebcea0282d72f2735c22190cdbc2232d4bb02aa6ed93",
+      "assets/css/i18n.css": "f9b914b775807e0b7d4f146583379b867c637ef2bf64bb9d81a80e7cf3eb55be",
+      "assets/css/index.css": "4a6196cdfc1a1272e57d28757e49da564d99f25f81f01f9bacbf25bf3387fefe",
+      "assets/css/showcase-v22.css": "3a97ca926037c1e44fa4a90f422ed903d0bc649ca85e490bae4b57073f50a427",
+      "assets/css/showcase-v23.css": "fccb56115e6664827e336311381fdf5d5d16584d8257af8c80ff89c09a85bd3a",
+      "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+      "assets/css/showcase.css": "40af4501f8b519d52877216276a02e6dd4741541d37cf696259c618f2a98217e",
+      "assets/i18n/build-catalogs.cjs": "c4a9eeaec1649edbaee8f73be09d8c24bf55a23d1c6461ad0d0a486030bc318b",
+      "assets/i18n/catalogs.js": "02bdfc93528c1018b24f84b11eb1965578b72c2df193dd0f5669d6fd43267a14",
+      "assets/i18n/en.json": "cf0e5d0e851896b6b6f5e1e83d25b45a87d8da7ab9e4baa393f1715700ac70f4",
+      "assets/i18n/ru.json": "16414258d28689d0243fda0b5d52ff775f7732cb09e51eb8888cbf1fcbb87d44",
+      "assets/js/i18n.js": "42bad2f23b4e513c95ac5e09e0ef555fed1b913f34930f67e29736950fe36c7f",
+      "assets/js/index.js": "dd15d072008f5f76c05f0b8b13dc407590dfcf6bf8ba5f2054c84e9e91bd722d",
+      "assets/js/language-motion.js": "4be24a0ae4eb55e5844b9a82ac28aeff0884e0609b2e8438b42e3c27b87ce171",
+      "assets/js/language-preference.js": "16260c2b89ea2362a519b02f99d84df1cc014da3e05379b2fe2d2b1df49ece8e",
+      "assets/js/showcase-gallery.js": "3981dfa56d16da3ca528a1dcd13e4d782ac42680309d43bce6fe9160da412234",
+      "assets/js/showcase-v22.js": "139b124a538663fe5b65be1c65c78eae96523597dac58a1a0abb4d9853b4b3ca",
+      "assets/js/showcase-v23.js": "593e03f51192a0ff3ef7e6f30ec6bb6c78107acf5d6ae197d6c30c31be212d42",
+      "assets/js/showcase-w4r.js": "44a02da57852d2994915150fce930d9d93b7c763c6cd4db5682cd0b77d904f29",
+      "index.html": "0e12b2bef50f2538499c6212bca449ccfc2135d54975825b2270fd26d2c95019",
+      "loader.html": "7b684a7d720419f35b95e685e0c8a7f32a3018c5b0921d66b3e0aada9794f251"
+    }
+  },
+  "sourceAfter": {
+    "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-global-bilingual-headings",
+    "commit": "ae3dc2d33cf68d76b95346775b695342473455fd",
+    "status": "?? docs/bilingual-headings/00_LOG_INDEX.md\n?? docs/bilingual-headings/README.md\n?? docs/bilingual-headings/evidence/\n?? tests/check_bilingual_preservation.py",
+    "hashes": {
+      "404.html": "dcb9c0902abcfd343b06348948e4eb3643b93ad9e0894f7e48b254c6919305a2",
+      "assets/css/bilingual-headings.css": "6fee29af583b17db18d7cd64b79b27175c42f05f115f4b4253430f22218b9d50",
+      "assets/css/fonts.css": "6fb4a90f2b06e94758eeebcea0282d72f2735c22190cdbc2232d4bb02aa6ed93",
+      "assets/css/i18n.css": "f9b914b775807e0b7d4f146583379b867c637ef2bf64bb9d81a80e7cf3eb55be",
+      "assets/css/index.css": "4a6196cdfc1a1272e57d28757e49da564d99f25f81f01f9bacbf25bf3387fefe",
+      "assets/css/showcase-v22.css": "3a97ca926037c1e44fa4a90f422ed903d0bc649ca85e490bae4b57073f50a427",
+      "assets/css/showcase-v23.css": "fccb56115e6664827e336311381fdf5d5d16584d8257af8c80ff89c09a85bd3a",
+      "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+      "assets/css/showcase.css": "40af4501f8b519d52877216276a02e6dd4741541d37cf696259c618f2a98217e",
+      "assets/i18n/build-catalogs.cjs": "c4a9eeaec1649edbaee8f73be09d8c24bf55a23d1c6461ad0d0a486030bc318b",
+      "assets/i18n/catalogs.js": "02bdfc93528c1018b24f84b11eb1965578b72c2df193dd0f5669d6fd43267a14",
+      "assets/i18n/en.json": "cf0e5d0e851896b6b6f5e1e83d25b45a87d8da7ab9e4baa393f1715700ac70f4",
+      "assets/i18n/ru.json": "16414258d28689d0243fda0b5d52ff775f7732cb09e51eb8888cbf1fcbb87d44",
+      "assets/js/i18n.js": "42bad2f23b4e513c95ac5e09e0ef555fed1b913f34930f67e29736950fe36c7f",
+      "assets/js/index.js": "dd15d072008f5f76c05f0b8b13dc407590dfcf6bf8ba5f2054c84e9e91bd722d",
+      "assets/js/language-motion.js": "4be24a0ae4eb55e5844b9a82ac28aeff0884e0609b2e8438b42e3c27b87ce171",
+      "assets/js/language-preference.js": "16260c2b89ea2362a519b02f99d84df1cc014da3e05379b2fe2d2b1df49ece8e",
+      "assets/js/showcase-gallery.js": "3981dfa56d16da3ca528a1dcd13e4d782ac42680309d43bce6fe9160da412234",
+      "assets/js/showcase-v22.js": "139b124a538663fe5b65be1c65c78eae96523597dac58a1a0abb4d9853b4b3ca",
+      "assets/js/showcase-v23.js": "593e03f51192a0ff3ef7e6f30ec6bb6c78107acf5d6ae197d6c30c31be212d42",
+      "assets/js/showcase-w4r.js": "44a02da57852d2994915150fce930d9d93b7c763c6cd4db5682cd0b77d904f29",
+      "index.html": "0e12b2bef50f2538499c6212bca449ccfc2135d54975825b2270fd26d2c95019",
+      "loader.html": "7b684a7d720419f35b95e685e0c8a7f32a3018c5b0921d66b3e0aada9794f251"
+    }
+  },
+  "summary": {
+    "PASS": 84,
+    "FAIL": 0,
+    "NOT_RUN": 0,
+    "OBSERVED": 2
+  },
+  "results": [
+    {
+      "engine": "chromium",
+      "id": "engine-version",
+      "status": "OBSERVED",
+      "detail": "149.0.7827.55"
+    },
+    {
+      "engine": "chromium",
+      "id": "first-ru-RU",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "first-en-US",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "first-en-GB",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "first-de-DE-fallback",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "primary-language-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "saved-choice-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "query-en-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "query-ru-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "invalid-query-uses-saved",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "invalid-saved-uses-browser",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "storage-denied-browser-ru",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "storage-denied-query-en",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "query-is-not-markup",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "streamed-hero-text-node-and-inline-whitespace",
+      "status": "PASS",
+      "detail": {
+        "visibleLoadingFrames": 27,
+        "rawTailAbsent": true,
+        "inlineWhitespacePreserved": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "streamed-initial-ru-loader-phase",
+      "status": "PASS",
+      "detail": {
+        "visiblePreScriptFrames": 14,
+        "initialPhase": "SYS // ЗАГРУЗКА ЯДРА"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "manual-keyboard-persist-reload-query",
+      "status": "PASS",
+      "detail": {
+        "reloadPersistence": true,
+        "queryUpdated": true,
+        "keyboard": [
+          "Tab",
+          "Enter",
+          "Space"
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "hero-and-work-scroll-preserved",
+      "status": "PASS",
+      "detail": [
+        {
+          "selector": "#top",
+          "y": 0
+        },
+        {
+          "selector": "#work",
+          "y": 4327
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "id": "all-eight-work-screens-and-open-viewer",
+      "status": "PASS",
+      "detail": {
+        "screens": 8,
+        "zoomPreserved": true,
+        "captionRefreshed": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "active-map-flow-details-and-map-viewer",
+      "status": "PASS",
+      "detail": {
+        "selected": "02.05",
+        "flowStep": 2,
+        "detailsPreserved": true,
+        "mapZoomPreserved": true,
+        "localizedStates": 20
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "image-load-error-remains-localized",
+      "status": "PASS",
+      "detail": {
+        "before": "Unable to load the image. Try opening it again.",
+        "after": "Не удалось загрузить изображение. Откройте его ещё раз."
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "localized-metadata-and-text-safety",
+      "status": "PASS",
+      "detail": {
+        "runtimeMetadata": true,
+        "catalogTextEscaped": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "loader-standalone-en",
+      "status": "PASS",
+      "detail": {
+        "initial": "en",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "loader-standalone-ru",
+      "status": "PASS",
+      "detail": {
+        "initial": "ru",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "loader-embedded-language-and-safe-release",
+      "status": "PASS",
+      "detail": {
+        "src": "loader.html?target=about:blank&duration=900&auto=false&embedded=1&lang=en",
+        "lang": "en",
+        "title": "AXIOM intro",
+        "skip": "SKIP INTRO →"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "nested-404-and-language-change-during-typing-en",
+      "status": "PASS",
+      "detail": {
+        "status": 404,
+        "typingStable": true,
+        "rootReturn": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "nested-404-and-language-change-during-typing-ru",
+      "status": "PASS",
+      "detail": {
+        "status": 404,
+        "typingStable": true,
+        "rootReturn": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "anchors-and-destination-integrity-en",
+      "status": "PASS",
+      "detail": {
+        "anchorCount": 7,
+        "ctaDestinationsPreserved": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "anchors-and-destination-integrity-ru",
+      "status": "PASS",
+      "detail": {
+        "anchorCount": 7,
+        "ctaDestinationsPreserved": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-en-320",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 307,
+        "clientWidth": 320,
+        "button": {
+          "left": 218.546875,
+          "right": 253,
+          "top": 81,
+          "bottom": 125,
+          "width": 34.453125,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-en-390",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 375,
+        "clientWidth": 390,
+        "button": {
+          "left": 288.546875,
+          "right": 323,
+          "top": 81,
+          "bottom": 125,
+          "width": 34.453125,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-en-768",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 753,
+        "clientWidth": 768,
+        "button": {
+          "left": 655,
+          "right": 693,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-en-1024",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1009,
+        "clientWidth": 1024,
+        "button": {
+          "left": 911,
+          "right": 949,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-en-1440",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1425,
+        "clientWidth": 1440,
+        "button": {
+          "left": 1092.53125,
+          "right": 1130.53125,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-en-1600",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1585,
+        "clientWidth": 1600,
+        "button": {
+          "left": 1207.015625,
+          "right": 1245.015625,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-ru-320",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 307,
+        "clientWidth": 320,
+        "button": {
+          "left": 218.546875,
+          "right": 253,
+          "top": 81,
+          "bottom": 125,
+          "width": 34.453125,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-ru-390",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 375,
+        "clientWidth": 390,
+        "button": {
+          "left": 288.546875,
+          "right": 323,
+          "top": 81,
+          "bottom": 125,
+          "width": 34.453125,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-ru-768",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 753,
+        "clientWidth": 768,
+        "button": {
+          "left": 655,
+          "right": 693,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-ru-1024",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1009,
+        "clientWidth": 1024,
+        "button": {
+          "left": 911,
+          "right": 949,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-ru-1440",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1425,
+        "clientWidth": 1440,
+        "button": {
+          "left": 1086.734375,
+          "right": 1124.734375,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "visual-ru-1600",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1585,
+        "clientWidth": 1600,
+        "button": {
+          "left": 1201.21875,
+          "right": 1239.21875,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "standalone-archive-shares-language-preference",
+      "status": "PASS",
+      "detail": {
+        "archiveAndLandingPreference": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "javascript-disabled-source-remains-readable",
+      "status": "PASS",
+      "detail": {
+        "visible": "visible",
+        "text": 29432,
+        "work": 8
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "engine-version",
+      "status": "OBSERVED",
+      "detail": "151.0"
+    },
+    {
+      "engine": "firefox",
+      "id": "first-ru-RU",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "first-en-US",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "first-en-GB",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "first-de-DE-fallback",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "primary-language-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "saved-choice-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "query-en-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "query-ru-wins",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "invalid-query-uses-saved",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "invalid-saved-uses-browser",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "storage-denied-browser-ru",
+      "status": "PASS",
+      "detail": {
+        "language": "ru",
+        "firstVisibleLanguage": "ru"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "storage-denied-query-en",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "query-is-not-markup",
+      "status": "PASS",
+      "detail": {
+        "language": "en",
+        "firstVisibleLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "streamed-hero-text-node-and-inline-whitespace",
+      "status": "PASS",
+      "detail": {
+        "visibleLoadingFrames": 19,
+        "rawTailAbsent": true,
+        "inlineWhitespacePreserved": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "streamed-initial-ru-loader-phase",
+      "status": "PASS",
+      "detail": {
+        "visiblePreScriptFrames": 19,
+        "initialPhase": "SYS // ЗАГРУЗКА ЯДРА"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "manual-keyboard-persist-reload-query",
+      "status": "PASS",
+      "detail": {
+        "reloadPersistence": true,
+        "queryUpdated": true,
+        "keyboard": [
+          "Tab",
+          "Enter",
+          "Space"
+        ]
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "hero-and-work-scroll-preserved",
+      "status": "PASS",
+      "detail": [
+        {
+          "selector": "#top",
+          "y": 0
+        },
+        {
+          "selector": "#work",
+          "y": 4329
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "id": "all-eight-work-screens-and-open-viewer",
+      "status": "PASS",
+      "detail": {
+        "screens": 8,
+        "zoomPreserved": true,
+        "captionRefreshed": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "active-map-flow-details-and-map-viewer",
+      "status": "PASS",
+      "detail": {
+        "selected": "02.05",
+        "flowStep": 2,
+        "detailsPreserved": true,
+        "mapZoomPreserved": true,
+        "localizedStates": 20
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "image-load-error-remains-localized",
+      "status": "PASS",
+      "detail": {
+        "before": "Unable to load the image. Try opening it again.",
+        "after": "Не удалось загрузить изображение. Откройте его ещё раз."
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "localized-metadata-and-text-safety",
+      "status": "PASS",
+      "detail": {
+        "runtimeMetadata": true,
+        "catalogTextEscaped": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "loader-standalone-en",
+      "status": "PASS",
+      "detail": {
+        "initial": "en",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "loader-standalone-ru",
+      "status": "PASS",
+      "detail": {
+        "initial": "ru",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "loader-embedded-language-and-safe-release",
+      "status": "PASS",
+      "detail": {
+        "src": "loader.html?target=about:blank&duration=900&auto=false&embedded=1&lang=en",
+        "lang": "en",
+        "title": "AXIOM intro",
+        "skip": "SKIP INTRO →"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "nested-404-and-language-change-during-typing-en",
+      "status": "PASS",
+      "detail": {
+        "status": 404,
+        "typingStable": true,
+        "rootReturn": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "nested-404-and-language-change-during-typing-ru",
+      "status": "PASS",
+      "detail": {
+        "status": 404,
+        "typingStable": true,
+        "rootReturn": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "anchors-and-destination-integrity-en",
+      "status": "PASS",
+      "detail": {
+        "anchorCount": 7,
+        "ctaDestinationsPreserved": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "anchors-and-destination-integrity-ru",
+      "status": "PASS",
+      "detail": {
+        "anchorCount": 7,
+        "ctaDestinationsPreserved": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-en-320",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "button": {
+          "left": 233.35000610351562,
+          "right": 268.3999938964844,
+          "top": 81,
+          "bottom": 125,
+          "width": 35.04998779296875,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-en-390",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "button": {
+          "left": 303.3500061035156,
+          "right": 338.3999938964844,
+          "top": 81,
+          "bottom": 125,
+          "width": 35.04998779296875,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-en-768",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "button": {
+          "left": 670.4000244140625,
+          "right": 708.4000244140625,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-en-1024",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "button": {
+          "left": 926.4000244140625,
+          "right": 964.4000244140625,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-en-1440",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "button": {
+          "left": 1104.0999755859375,
+          "right": 1142.0999755859375,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-en-1600",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1600,
+        "clientWidth": 1600,
+        "button": {
+          "left": 1218.5833740234375,
+          "right": 1256.5833740234375,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-ru-320",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "button": {
+          "left": 233.35000610351562,
+          "right": 268.3999938964844,
+          "top": 81,
+          "bottom": 125,
+          "width": 35.04998779296875,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-ru-390",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "button": {
+          "left": 303.3500061035156,
+          "right": 338.3999938964844,
+          "top": 81,
+          "bottom": 125,
+          "width": 35.04998779296875,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-ru-768",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "button": {
+          "left": 670.4000244140625,
+          "right": 708.4000244140625,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-ru-1024",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "button": {
+          "left": 926.4000244140625,
+          "right": 964.4000244140625,
+          "top": 97,
+          "bottom": 140,
+          "width": 38,
+          "height": 43
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-ru-1440",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "button": {
+          "left": 1098.2333984375,
+          "right": 1136.2333984375,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "visual-ru-1600",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 1600,
+        "clientWidth": 1600,
+        "button": {
+          "left": 1212.7166748046875,
+          "right": 1250.7166748046875,
+          "top": 9,
+          "bottom": 53,
+          "width": 38,
+          "height": 44
+        },
+        "hit": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "standalone-archive-shares-language-preference",
+      "status": "PASS",
+      "detail": {
+        "archiveAndLandingPreference": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "javascript-disabled-source-remains-readable",
+      "status": "PASS",
+      "detail": {
+        "visible": "visible",
+        "text": 29366,
+        "work": 8
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "filename": "chromium-en-320-hero.png",
+      "bytes": 95523,
+      "sha256": "7e1634975900dd695f19943222f014134fb442ee1b4d3cde16aac63cdb76e955"
+    },
+    {
+      "filename": "chromium-en-390-hero.png",
+      "bytes": 112064,
+      "sha256": "d8f40e35fa4a1526fbe854fe332a60eec788621b34e1195c6e0199e53492aef9"
+    },
+    {
+      "filename": "chromium-en-390-work.png",
+      "bytes": 71195,
+      "sha256": "f035686b9d370e5fec9d939bfbeb818b3e58530c144497c82fb67bbf8d4204c7"
+    },
+    {
+      "filename": "chromium-en-390-world.png",
+      "bytes": 163030,
+      "sha256": "c90e0682f540baf753acdbbe083a76d8dcb30486adce93a6cfa2312eed972858"
+    },
+    {
+      "filename": "chromium-en-768-hero.png",
+      "bytes": 216818,
+      "sha256": "fb32119d887190730de19f72e4d9976f46ed58ddf5944c179851dc3d800b37ad"
+    },
+    {
+      "filename": "chromium-en-1024-hero.png",
+      "bytes": 264035,
+      "sha256": "330b6a0963ab890fdfe30c7f609ae318c6456f7f6ba0590f719badddd394b0c2"
+    },
+    {
+      "filename": "chromium-en-1440-hero.png",
+      "bytes": 377962,
+      "sha256": "6873aa1d13b2f8a88d4725970d383fe9ce38d3cd56afb072df8f13c4cf1338a9"
+    },
+    {
+      "filename": "chromium-en-1440-work.png",
+      "bytes": 204073,
+      "sha256": "6ccc95cdff32c183ae5e9934810da08118639d4892c3849a9ebc30f0d8e0e41d"
+    },
+    {
+      "filename": "chromium-en-1440-world.png",
+      "bytes": 682130,
+      "sha256": "d0e435379d53c70cacdc7e212f3cc7ac752138d0b1573de3b4650f01d1d19b01"
+    },
+    {
+      "filename": "chromium-en-1600-hero.png",
+      "bytes": 383722,
+      "sha256": "748cdc651eb7fe80dcff6222944186f1351e12909d191fffd71ade7f79da3dc9"
+    },
+    {
+      "filename": "chromium-ru-320-hero.png",
+      "bytes": 97616,
+      "sha256": "62ce94b246f8b1270093d106b7f2560940171f7164eea9e95d8eeb8a7c4391fa"
+    },
+    {
+      "filename": "chromium-ru-390-hero.png",
+      "bytes": 114743,
+      "sha256": "7494350602d0e14991807e70ca419693f9dc1b7c4dadccf4bb7cc3588d7fd1c5"
+    },
+    {
+      "filename": "chromium-ru-390-work.png",
+      "bytes": 77832,
+      "sha256": "a839b620996d686d135197f56cc0cd86e75a110e5755f84a3198d3fe73c75fa0"
+    },
+    {
+      "filename": "chromium-ru-390-world.png",
+      "bytes": 160171,
+      "sha256": "7ad72cb9069f3707191def1032924f812bb551fda87f686fc33c874693fcf3d8"
+    },
+    {
+      "filename": "chromium-ru-768-hero.png",
+      "bytes": 215026,
+      "sha256": "758ddabeb3f7f3ed3401b416dd651031f0b98b7a7fc2bd32a3b313a266068d87"
+    },
+    {
+      "filename": "chromium-ru-1024-hero.png",
+      "bytes": 268032,
+      "sha256": "b89af3983ec96c365db9744d1b41b7ac92331cb8f6c2336a64721344d178942a"
+    },
+    {
+      "filename": "chromium-ru-1440-hero.png",
+      "bytes": 384544,
+      "sha256": "374ccdb82160d27f05093eb7086a7e51e3d06760db69053cb7bb6419f3f7088b"
+    },
+    {
+      "filename": "chromium-ru-1440-work.png",
+      "bytes": 189179,
+      "sha256": "eced8cec3ae9d56b8b6e38519f192df9cdd35144da1ad6b1eafb61b26f408384"
+    },
+    {
+      "filename": "chromium-ru-1440-world.png",
+      "bytes": 669045,
+      "sha256": "08c78082d8f306e645d086234fc605c1fc841d4dbe54c3dd31c7656907d6e802"
+    },
+    {
+      "filename": "chromium-ru-1600-hero.png",
+      "bytes": 391185,
+      "sha256": "958c64a633bec6b84cba6f35e73e282f6cf6b3d4fb63c0fdf199970932b03a71"
+    },
+    {
+      "filename": "firefox-en-320-hero.png",
+      "bytes": 113507,
+      "sha256": "a884a67d282ae5f66bba5bf307e93a850667668ffe353a08bfb58f2d45d6441f"
+    },
+    {
+      "filename": "firefox-en-390-hero.png",
+      "bytes": 134768,
+      "sha256": "5ba33b6f03c8d6221fb54da6bda04c46d29cdd6749a67f208d80cf81dabf023e"
+    },
+    {
+      "filename": "firefox-en-390-work.png",
+      "bytes": 91378,
+      "sha256": "2a606976540bdab4773ba927922ef9b55b42a7338af6771bc9b4576bad640179"
+    },
+    {
+      "filename": "firefox-en-390-world.png",
+      "bytes": 209787,
+      "sha256": "16eae9b91ae49586be9d091fa1334197e745c4541eed13dceed68af1114edfff"
+    },
+    {
+      "filename": "firefox-en-768-hero.png",
+      "bytes": 218222,
+      "sha256": "a285dfdcb4f60c5535661a9dd711c2a0541349c7f51ae3fca2c8c82970d64ddf"
+    },
+    {
+      "filename": "firefox-en-1024-hero.png",
+      "bytes": 280466,
+      "sha256": "1f545df1c38881dc082ee7d50e5abdd2b1cf93e9c5eb283b399d6ed21b32def0"
+    },
+    {
+      "filename": "firefox-en-1440-hero.png",
+      "bytes": 389171,
+      "sha256": "3b6603b198d700ea01c70837b95c7cdc7290d729534b807c6bddbbb5f08bae3c"
+    },
+    {
+      "filename": "firefox-en-1440-work.png",
+      "bytes": 316364,
+      "sha256": "cd7dc8d7615d9c805883a890b5a4985c9c5d0cba2627bdcc6af77b0cd094e3ff"
+    },
+    {
+      "filename": "firefox-en-1440-world.png",
+      "bytes": 964116,
+      "sha256": "8b6f81f97c79489d91a4e5fe4eafcea769f6dff3a2a5b4de36e85da71c77cf0a"
+    },
+    {
+      "filename": "firefox-en-1600-hero.png",
+      "bytes": 398275,
+      "sha256": "4db675fa5419d4b15c85d54bcf329195861c9192b235b43354698b809f1ad6d9"
+    },
+    {
+      "filename": "firefox-ru-320-hero.png",
+      "bytes": 115935,
+      "sha256": "3bb81947f83682e98d07270ed9c6a01beaec5e77e36fd1a00fd6e4dc33e1878a"
+    },
+    {
+      "filename": "firefox-ru-390-hero.png",
+      "bytes": 134014,
+      "sha256": "58691a46284163c81a4dd1987c10ad7bcf8d0d657df4c568165c184bcdba1a2b"
+    },
+    {
+      "filename": "firefox-ru-390-work.png",
+      "bytes": 97419,
+      "sha256": "e169fd7a483edfdd9cf6498045f10797e7bf5f24bdc899de165ca6dcbcae2ac4"
+    },
+    {
+      "filename": "firefox-ru-390-world.png",
+      "bytes": 205121,
+      "sha256": "359c3fade878306fc395c471e332c49354b1acd21cb446cb6d665d85dc1e9425"
+    },
+    {
+      "filename": "firefox-ru-768-hero.png",
+      "bytes": 222272,
+      "sha256": "6bebe550318ed7102ecd4528af99d257d164b24163147692788982e03f6c32cb"
+    },
+    {
+      "filename": "firefox-ru-1024-hero.png",
+      "bytes": 289645,
+      "sha256": "14c52e3737284db021534f3baccaf72b445a88765bca084642772179f3d67d0e"
+    },
+    {
+      "filename": "firefox-ru-1440-hero.png",
+      "bytes": 395019,
+      "sha256": "3e9a26b4634f50fb92d0750b2d91f91046a7aa2baad9259fc8e0a3eb1c5cfc57"
+    },
+    {
+      "filename": "firefox-ru-1440-work.png",
+      "bytes": 258188,
+      "sha256": "3e2753bca083ce719c62d033d750e833050a0882289bb5f083e320224df34a35"
+    },
+    {
+      "filename": "firefox-ru-1440-world.png",
+      "bytes": 944272,
+      "sha256": "a41463de95059df2528ec9b5b47cc58fdf5adf47d90c6a1f0e9fb093cfa0719c"
+    },
+    {
+      "filename": "firefox-ru-1600-hero.png",
+      "bytes": 404368,
+      "sha256": "59cb5e6ba03a6803a34e7444d27bb95f5e74867aaa9e24ab53cacb2805d50fe4"
+    }
+  ],
+  "artifactBytes": 11320232,
+  "limits": {
+    "retainedRuns": 3,
+    "retentionDays": 14,
+    "runBytes": 100663296
+  },
+  "notRun": [
+    "real-device/GPU",
+    "manual screen reader",
+    "human visual acceptance",
+    "field CWV",
+    "full crawler SEO localization"
+  ]
+}

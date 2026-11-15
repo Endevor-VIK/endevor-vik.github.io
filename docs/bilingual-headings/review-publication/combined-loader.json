@@ -1,0 +1,8 @@
+{
+  "method": "git merge-tree --write-tree (read-only analysis, no merge/ref update)",
+  "feature_ref": "8c645e3cfe8dc7ccf47b69cabac001969a06eedb",
+  "loader_ref": "19d9b2b0fb4afd68d2d0a67fd2e18e55396ad023",
+  "tree": "666d36b060d385f4ee3b33fd66fdec7a839baada",
+  "preview_loader_sha256": "e6f898e6113bcc9698714a81a2e06563cbddb26de0d8556e6ce69c85f2130c16",
+  "matches_candidate_combination": true
+}

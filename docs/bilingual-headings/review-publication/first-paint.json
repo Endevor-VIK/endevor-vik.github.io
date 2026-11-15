@@ -1,0 +1,205 @@
+{
+  "started": "run-20261115101630-96b305",
+  "finished": "2026-11-15T10:16:41.258Z",
+  "source": {
+    "commit": "6887f74c90fea055320ec8ac6f14cead5431108f",
+    "status": "",
+    "hashes": {
+      "404.html": "dcb9c0902abcfd343b06348948e4eb3643b93ad9e0894f7e48b254c6919305a2",
+      "assets/css/bilingual-headings.css": "6fee29af583b17db18d7cd64b79b27175c42f05f115f4b4253430f22218b9d50",
+      "assets/css/fonts.css": "6fb4a90f2b06e94758eeebcea0282d72f2735c22190cdbc2232d4bb02aa6ed93",
+      "assets/css/i18n.css": "f9b914b775807e0b7d4f146583379b867c637ef2bf64bb9d81a80e7cf3eb55be",
+      "assets/css/index.css": "4a6196cdfc1a1272e57d28757e49da564d99f25f81f01f9bacbf25bf3387fefe",
+      "assets/css/showcase-v22.css": "3a97ca926037c1e44fa4a90f422ed903d0bc649ca85e490bae4b57073f50a427",
+      "assets/css/showcase-v23.css": "fccb56115e6664827e336311381fdf5d5d16584d8257af8c80ff89c09a85bd3a",
+      "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+      "assets/css/showcase.css": "40af4501f8b519d52877216276a02e6dd4741541d37cf696259c618f2a98217e",
+      "assets/i18n/build-catalogs.cjs": "c4a9eeaec1649edbaee8f73be09d8c24bf55a23d1c6461ad0d0a486030bc318b",
+      "assets/i18n/catalogs.js": "02bdfc93528c1018b24f84b11eb1965578b72c2df193dd0f5669d6fd43267a14",
+      "assets/i18n/en.json": "cf0e5d0e851896b6b6f5e1e83d25b45a87d8da7ab9e4baa393f1715700ac70f4",
+      "assets/i18n/ru.json": "16414258d28689d0243fda0b5d52ff775f7732cb09e51eb8888cbf1fcbb87d44",
+      "assets/js/i18n.js": "42bad2f23b4e513c95ac5e09e0ef555fed1b913f34930f67e29736950fe36c7f",
+      "assets/js/index.js": "dd15d072008f5f76c05f0b8b13dc407590dfcf6bf8ba5f2054c84e9e91bd722d",
+      "assets/js/language-motion.js": "4be24a0ae4eb55e5844b9a82ac28aeff0884e0609b2e8438b42e3c27b87ce171",
+      "assets/js/language-preference.js": "16260c2b89ea2362a519b02f99d84df1cc014da3e05379b2fe2d2b1df49ece8e",
+      "assets/js/showcase-gallery.js": "3981dfa56d16da3ca528a1dcd13e4d782ac42680309d43bce6fe9160da412234",
+      "assets/js/showcase-v22.js": "139b124a538663fe5b65be1c65c78eae96523597dac58a1a0abb4d9853b4b3ca",
+      "assets/js/showcase-v23.js": "593e03f51192a0ff3ef7e6f30ec6bb6c78107acf5d6ae197d6c30c31be212d42",
+      "assets/js/showcase-w4r.js": "44a02da57852d2994915150fce930d9d93b7c763c6cd4db5682cd0b77d904f29",
+      "docs/bilingual-headings/inventory.json": "7e1884d615d610a1e6d27128d09126433ee308406f3fd3b9728fb8cb673f5462",
+      "index.html": "0e12b2bef50f2538499c6212bca449ccfc2135d54975825b2270fd26d2c95019",
+      "loader.html": "7b684a7d720419f35b95e685e0c8a7f32a3018c5b0921d66b3e0aada9794f251",
+      "serafim-veyr/app.js": "1ec8f7aa9d2aff3d3f69a4f4fe324b676c1cab5dce0ae7aba28d56af8a191ff1",
+      "serafim-veyr/index.html": "5b27a237e782c26ef7236b66d6c07c4d5eae44e4f55019dec671f08a97fbb9e7",
+      "serafim-veyr/styles.css": "ec4d6e40dcf6f921d87f414a61e81c68744fd8d500f4c2e261b37f18ddfd11d1",
+      "tests/browser/bilingual_headings.cjs": "63d641627c68a83baed7b9b8f9fb0fe3905967a4d96c5927c9482beaf7ccd106",
+      "tests/browser/i18n_regression.cjs": "5f83193d48fcfb99c9674015e89f6babe8994f100428e28aad793c6e9a389294",
+      "tests/test_i18n.py": "e64b9b7d2df5aa59ef8e1f2b4cf4fc5b25351ca3e4338971b351b1a7c3242cda"
+    }
+  },
+  "sourceAfter": {
+    "commit": "6887f74c90fea055320ec8ac6f14cead5431108f",
+    "status": "",
+    "hashes": {
+      "404.html": "dcb9c0902abcfd343b06348948e4eb3643b93ad9e0894f7e48b254c6919305a2",
+      "assets/css/bilingual-headings.css": "6fee29af583b17db18d7cd64b79b27175c42f05f115f4b4253430f22218b9d50",
+      "assets/css/fonts.css": "6fb4a90f2b06e94758eeebcea0282d72f2735c22190cdbc2232d4bb02aa6ed93",
+      "assets/css/i18n.css": "f9b914b775807e0b7d4f146583379b867c637ef2bf64bb9d81a80e7cf3eb55be",
+      "assets/css/index.css": "4a6196cdfc1a1272e57d28757e49da564d99f25f81f01f9bacbf25bf3387fefe",
+      "assets/css/showcase-v22.css": "3a97ca926037c1e44fa4a90f422ed903d0bc649ca85e490bae4b57073f50a427",
+      "assets/css/showcase-v23.css": "fccb56115e6664827e336311381fdf5d5d16584d8257af8c80ff89c09a85bd3a",
+      "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+      "assets/css/showcase.css": "40af4501f8b519d52877216276a02e6dd4741541d37cf696259c618f2a98217e",
+      "assets/i18n/build-catalogs.cjs": "c4a9eeaec1649edbaee8f73be09d8c24bf55a23d1c6461ad0d0a486030bc318b",
+      "assets/i18n/catalogs.js": "02bdfc93528c1018b24f84b11eb1965578b72c2df193dd0f5669d6fd43267a14",
+      "assets/i18n/en.json": "cf0e5d0e851896b6b6f5e1e83d25b45a87d8da7ab9e4baa393f1715700ac70f4",
+      "assets/i18n/ru.json": "16414258d28689d0243fda0b5d52ff775f7732cb09e51eb8888cbf1fcbb87d44",
+      "assets/js/i18n.js": "42bad2f23b4e513c95ac5e09e0ef555fed1b913f34930f67e29736950fe36c7f",
+      "assets/js/index.js": "dd15d072008f5f76c05f0b8b13dc407590dfcf6bf8ba5f2054c84e9e91bd722d",
+      "assets/js/language-motion.js": "4be24a0ae4eb55e5844b9a82ac28aeff0884e0609b2e8438b42e3c27b87ce171",
+      "assets/js/language-preference.js": "16260c2b89ea2362a519b02f99d84df1cc014da3e05379b2fe2d2b1df49ece8e",
+      "assets/js/showcase-gallery.js": "3981dfa56d16da3ca528a1dcd13e4d782ac42680309d43bce6fe9160da412234",
+      "assets/js/showcase-v22.js": "139b124a538663fe5b65be1c65c78eae96523597dac58a1a0abb4d9853b4b3ca",
+      "assets/js/showcase-v23.js": "593e03f51192a0ff3ef7e6f30ec6bb6c78107acf5d6ae197d6c30c31be212d42",
+      "assets/js/showcase-w4r.js": "44a02da57852d2994915150fce930d9d93b7c763c6cd4db5682cd0b77d904f29",
+      "docs/bilingual-headings/inventory.json": "7e1884d615d610a1e6d27128d09126433ee308406f3fd3b9728fb8cb673f5462",
+      "index.html": "0e12b2bef50f2538499c6212bca449ccfc2135d54975825b2270fd26d2c95019",
+      "loader.html": "7b684a7d720419f35b95e685e0c8a7f32a3018c5b0921d66b3e0aada9794f251",
+      "serafim-veyr/app.js": "1ec8f7aa9d2aff3d3f69a4f4fe324b676c1cab5dce0ae7aba28d56af8a191ff1",
+      "serafim-veyr/index.html": "5b27a237e782c26ef7236b66d6c07c4d5eae44e4f55019dec671f08a97fbb9e7",
+      "serafim-veyr/styles.css": "ec4d6e40dcf6f921d87f414a61e81c68744fd8d500f4c2e261b37f18ddfd11d1",
+      "tests/browser/bilingual_headings.cjs": "63d641627c68a83baed7b9b8f9fb0fe3905967a4d96c5927c9482beaf7ccd106",
+      "tests/browser/i18n_regression.cjs": "5f83193d48fcfb99c9674015e89f6babe8994f100428e28aad793c6e9a389294",
+      "tests/test_i18n.py": "e64b9b7d2df5aa59ef8e1f2b4cf4fc5b25351ca3e4338971b351b1a7c3242cda"
+    }
+  },
+  "summary": {
+    "PASS": 10,
+    "FAIL": 0,
+    "NOT_RUN": 0,
+    "OBSERVED": 2
+  },
+  "results": [
+    {
+      "engine": "chromium",
+      "id": "engine-version",
+      "status": "OBSERVED",
+      "detail": "149.0.7827.55"
+    },
+    {
+      "engine": "chromium",
+      "id": "first-paint-heading-language-en",
+      "status": "PASS",
+      "detail": {
+        "visibleFrames": 4,
+        "initialLanguage": "en"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "first-paint-heading-language-ru",
+      "status": "PASS",
+      "detail": {
+        "visibleFrames": 2,
+        "initialLanguage": "ru"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "streamed-first-paint-bilingual-heading-en",
+      "status": "PASS",
+      "detail": {
+        "visibleLoadingFrames": 25,
+        "canonicalEnglishBeforeDOMContentLoaded": true,
+        "subtitleLanguageCorrect": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "streamed-first-paint-bilingual-heading-ru",
+      "status": "PASS",
+      "detail": {
+        "visibleLoadingFrames": 25,
+        "canonicalEnglishBeforeDOMContentLoaded": true,
+        "subtitleLanguageCorrect": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "global-canonical-english-and-russian-semantics",
+      "status": "PASS",
+      "detail": {
+        "headings": 77,
+        "bilingual": 37,
+        "canonicalUnchanged": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "engine-version",
+      "status": "OBSERVED",
+      "detail": "151.0"
+    },
+    {
+      "engine": "firefox",
+      "id": "first-paint-heading-language-en",
+      "status": "PASS",
+      "detail": {
+        "visibleFrames": 3,
+        "initialLanguage": "en"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "first-paint-heading-language-ru",
+      "status": "PASS",
+      "detail": {
+        "visibleFrames": 7,
+        "initialLanguage": "ru"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "streamed-first-paint-bilingual-heading-en",
+      "status": "PASS",
+      "detail": {
+        "visibleLoadingFrames": 7,
+        "canonicalEnglishBeforeDOMContentLoaded": true,
+        "subtitleLanguageCorrect": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "streamed-first-paint-bilingual-heading-ru",
+      "status": "PASS",
+      "detail": {
+        "visibleLoadingFrames": 8,
+        "canonicalEnglishBeforeDOMContentLoaded": true,
+        "subtitleLanguageCorrect": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "global-canonical-english-and-russian-semantics",
+      "status": "PASS",
+      "detail": {
+        "headings": 77,
+        "bilingual": 37,
+        "canonicalUnchanged": true
+      }
+    }
+  ],
+  "screenshots": [],
+  "bytes": 0,
+  "limits": {
+    "retainedRuns": 3,
+    "retentionDays": 14,
+    "runBytes": 100663296
+  },
+  "notRun": [
+    "real devices/GPU",
+    "manual screen reader",
+    "human visual acceptance",
+    "field CLS"
+  ]
+}

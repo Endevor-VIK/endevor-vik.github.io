@@ -1,0 +1,78 @@
+{
+  "baseline": "adb87e5b8c8ba778aedfddd0655ec0b957e045ef",
+  "source_commit": "ae3dc2d33cf68d76b95346775b695342473455fd",
+  "status": "PASS",
+  "static": {
+    "index.html": {
+      "ids_unchanged": true,
+      "sections_unchanged": true,
+      "headings_unchanged": true,
+      "canon_unchanged": true,
+      "media_unchanged": true,
+      "urls_unchanged": true,
+      "original_translation_bindings_retained": true
+    },
+    "loader.html": {
+      "ids_unchanged": true,
+      "sections_unchanged": true,
+      "headings_unchanged": true,
+      "canon_unchanged": true,
+      "media_unchanged": true,
+      "urls_unchanged": true,
+      "original_translation_bindings_retained": true
+    },
+    "404.html": {
+      "ids_unchanged": true,
+      "sections_unchanged": true,
+      "headings_unchanged": true,
+      "canon_unchanged": true,
+      "media_unchanged": true,
+      "urls_unchanged": true,
+      "original_translation_bindings_retained": true
+    },
+    "serafim-veyr/index.html": {
+      "ids_unchanged": true,
+      "sections_unchanged": true,
+      "headings_unchanged": true,
+      "canon_unchanged": true,
+      "media_unchanged": true,
+      "urls_unchanged": true,
+      "original_translation_bindings_retained": true
+    }
+  },
+  "catalogs": {
+    "en": {
+      "original_keys_preserved": true,
+      "original_key_count": 929,
+      "new_keys": 34,
+      "changed_existing_values": {},
+      "allowed_changes_only": true
+    },
+    "ru": {
+      "original_keys_preserved": true,
+      "original_key_count": 929,
+      "new_keys": 34,
+      "changed_existing_values": {
+        "main.manifesto.007": {
+          "before": "Когда надежда стала угрозой",
+          "after": "КОГДА НАДЕЖДА СТАЛА УГРОЗОЙ"
+        },
+        "main.modules.005": {
+          "before": "Жизнь под контролем",
+          "after": "ЖИЗНЬ ПОД КОНТРОЛЕМ"
+        },
+        "main.world.007": {
+          "before": "Город растёт вверх. Глубина закрыта.",
+          "after": "ГОРОД РАСТЁТ ВВЕРХ. ГЛУБИНА ЗАКРЫТА"
+        },
+        "main.chars.006": {
+          "before": "Три жизни внутри разлома",
+          "after": "ТРИ ЖИЗНИ ВНУТРИ РАЗЛОМА"
+        }
+      },
+      "allowed_changes_only": true
+    }
+  },
+  "image_font_assets_unchanged": true,
+  "scope": "Source preservation only; rendering, version labels and Canon acceptance are separate."
+}
