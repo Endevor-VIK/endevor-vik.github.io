@@ -3,7 +3,7 @@
   "baseline_commit": "adb87e5b8c8ba778aedfddd0655ec0b957e045ef",
   "audit_commit": "006f7482295e3558a09e4348cd30229069959fe7",
   "audit_date": "2026-11-07",
-  "status": "PRE_IMPLEMENTATION_INVENTORY",
+  "status": "IMPLEMENTED / AUTOMATED_LAYOUT_PASS / CREATOR_VISUAL_PENDING",
   "sources": {
     "index.html": {
       "sha256": "7d93aaec959a65678910c08a0d799fdaa628c2c6a0e5aaf505a35616db32fcfb",
@@ -53,7 +53,7 @@
         "main.top.008",
         "main.top.008"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "KNOWLEDGE. CONTROL. ACCESS.",
       "ru_current": "ЗНАНИЕ. КОНТРОЛЬ. ДОСТУП.",
@@ -81,7 +81,7 @@
       "all_keys": [
         "main.top.023"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "SECURE ACCESS",
       "ru_current": "ЗАЩИЩЁННЫЙ ДОСТУП",
@@ -109,7 +109,7 @@
       "all_keys": [
         "main.top.025"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "KNOWLEDGE BASE",
       "ru_current": "БАЗА ЗНАНИЙ",
@@ -137,7 +137,7 @@
       "all_keys": [
         "main.top.027"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "CORE NETWORK",
       "ru_current": "СЕТЬ ЯДРА",
@@ -165,7 +165,7 @@
       "all_keys": [
         "main.top.029"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "BEYOND THE SYSTEM",
       "ru_current": "ЗА ПРЕДЕЛАМИ СИСТЕМЫ",
@@ -195,7 +195,7 @@
         "main.about.004",
         "main.about.005"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "MORE THAN ONE PRODUCT. ONE CONNECTED ECOSYSTEM.",
       "ru_current": "НЕ ОДИН ПРОДУКТ. СВЯЗАННАЯ ЭКОСИСТЕМА.",
@@ -223,7 +223,7 @@
       "all_keys": [
         "main.about.013"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "WORLD AND CONTENT",
       "ru_current": "МИР И КОНТЕНТ",
@@ -251,7 +251,7 @@
       "all_keys": [
         "main.about.017"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "PUBLIC INTERFACE",
       "ru_current": "ПУБЛИЧНЫЙ ИНТЕРФЕЙС",
@@ -279,7 +279,7 @@
       "all_keys": [
         "main.about.021"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "INTELLIGENCE AND CONNECTIONS",
       "ru_current": "ИНТЕЛЛЕКТ И СВЯЗИ",
@@ -307,7 +307,7 @@
       "all_keys": [
         "main.about.025"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "INDEPENDENT DEVELOPMENT",
       "ru_current": "СОБСТВЕННАЯ РАЗРАБОТКА",
@@ -339,7 +339,7 @@
         "main.creator.005",
         "main.creator.006"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "BEHIND THE WORLD IS A CREATOR.",
       "ru_current": "ЗА МИРОМ СТОИТ АВТОР.",
@@ -369,7 +369,7 @@
         "main.work.004",
         "main.work.005"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "WORK YOU CAN SEE.",
       "ru_current": "РАБОТА, КОТОРУЮ ВИДНО.",
@@ -397,7 +397,7 @@
       "all_keys": [
         "main.work.020"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXIOM PANEL — ACCESS GATE",
       "ru_current": "AXIOM PANEL — ШЛЮЗ ДОСТУПА",
@@ -425,7 +425,7 @@
       "all_keys": [
         "main.work.036"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "CONTROL STATUS / WATCH_DOG",
       "ru_current": "СТАТУС УПРАВЛЕНИЯ / WATCH_DOG",
@@ -453,7 +453,7 @@
       "all_keys": [
         "main.work.045"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "CHRONICLE — MEMORY ORBIT",
       "ru_current": "CHRONICLE — ОРБИТА ПАМЯТИ",
@@ -481,7 +481,7 @@
       "all_keys": [
         "main.work.055"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXCHAT — ECHO AXIOM",
       "ru_current": "AXCHAT — ECHO AXIOM",
@@ -509,7 +509,7 @@
       "all_keys": [
         "main.work.065"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "CONTENT LIBRARY",
       "ru_current": "БИБЛИОТЕКА МАТЕРИАЛОВ",
@@ -537,7 +537,7 @@
       "all_keys": [
         "main.work.075"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "VIKTOR — CHARACTER DOSSIER",
       "ru_current": "VIKTOR — ДОСЬЕ ПЕРСОНАЖА",
@@ -565,7 +565,7 @@
       "all_keys": [
         "main.work.085"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "SIGNAL CENTER",
       "ru_current": "ЦЕНТР СИГНАЛОВ",
@@ -593,7 +593,7 @@
       "all_keys": [
         "main.work.019"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "MASTER GRAPH",
       "ru_current": "MASTER GRAPH",
@@ -623,7 +623,7 @@
         "main.work.113",
         "main.work.114"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "STUDIES IN VISUAL LANGUAGE.",
       "ru_current": "ЭТЮДЫ ВИЗУАЛЬНОГО ЯЗЫКА.",
@@ -653,7 +653,7 @@
         "main.work.121",
         "main.work.122"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Orbit of chapters.",
       "ru_current": "Орбита глав.",
@@ -683,7 +683,7 @@
         "main.work.138",
         "main.work.139"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Indexed Canon.",
       "ru_current": "Индексированный Canon.",
@@ -713,7 +713,7 @@
         "main.work.154",
         "main.work.155"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Routes of power.",
       "ru_current": "Маршруты власти.",
@@ -743,7 +743,7 @@
         "main.work.169",
         "main.work.170"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Listens for silence.",
       "ru_current": "Слушает тишину.",
@@ -771,7 +771,7 @@
       "all_keys": [
         "main.work.184"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXIOM WEB CORE",
       "ru_current": "AXIOM WEB CORE",
@@ -801,7 +801,7 @@
         "main.system.004",
         "main.system.005"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "FOUR PILLARS. ONE SYSTEM.",
       "ru_current": "ЧЕТЫРЕ ОПОРЫ. ОДНА СИСТЕМА.",
@@ -829,7 +829,7 @@
       "all_keys": [
         "main.system.009"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "WEB CORE",
       "ru_current": "WEB CORE",
@@ -857,7 +857,7 @@
       "all_keys": [
         "main.work.014"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXCHAT",
       "ru_current": "AXCHAT",
@@ -885,7 +885,7 @@
       "all_keys": [
         "main.work.019"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "MASTER GRAPH",
       "ru_current": "MASTER GRAPH",
@@ -913,7 +913,7 @@
       "all_keys": [
         "main.system.015"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXS / AGENTOPS",
       "ru_current": "AXS / AGENTOPS",
@@ -941,7 +941,7 @@
       "all_keys": [
         "main.system.018"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "HOW AN ELEMENT OF THE WORLD BECOMES CONTENT",
       "ru_current": "КАК ЭЛЕМЕНТ МИРА СТАНОВИТСЯ КОНТЕНТОМ",
@@ -971,7 +971,7 @@
         "main.world-guide.005",
         "main.world-guide.006"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "WORLD AFTER BLACK SUN.",
       "ru_current": "МИР ПОСЛЕ BLACK SUN.",
@@ -1001,7 +1001,7 @@
         "main.manifesto.005",
         "main.manifesto.006"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "WHEN HOPE BECAME A THREAT.",
       "ru_current": "КОГДА НАДЕЖДА СТАЛА УГРОЗОЙ.",
@@ -1030,7 +1030,7 @@
       "all_keys": [
         "main.manifesto.009"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "An intelligence entrusted with the world.",
       "ru_current": "Разум, которому доверили мир.",
@@ -1058,7 +1058,7 @@
       "all_keys": [
         "main.manifesto.012"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Truth beyond what was permitted.",
       "ru_current": "Правда за пределом дозволенного.",
@@ -1088,7 +1088,7 @@
         "main.manifesto.043",
         "main.manifesto.044"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Whose past will the world preserve?",
       "ru_current": "Чьё прошлое сохранит мир?",
@@ -1118,7 +1118,7 @@
         "main.manifesto.051",
         "main.manifesto.052"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Five traces. One name.",
       "ru_current": "Пять следов. Одно имя.",
@@ -1146,7 +1146,7 @@
       "all_keys": [
         "main.manifesto.055"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "A sealed core",
       "ru_current": "Ядро под печатью",
@@ -1174,7 +1174,7 @@
       "all_keys": [
         "main.manifesto.061"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "A voice that answers",
       "ru_current": "Голос, который отвечает",
@@ -1202,7 +1202,7 @@
       "all_keys": [
         "main.manifesto.067"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Levers of order",
       "ru_current": "Рычаги порядка",
@@ -1230,7 +1230,7 @@
       "all_keys": [
         "main.manifesto.071"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "A blind spot",
       "ru_current": "Слепое пятно",
@@ -1258,7 +1258,7 @@
       "all_keys": [
         "main.manifesto.077"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "An omen",
       "ru_current": "Знамение",
@@ -1288,7 +1288,7 @@
         "main.modules.004",
         "main.modules.controlHeading"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "LIFE UNDER CONTROL.",
       "ru_current": "ЖИЗНЬ ПОД КОНТРОЛЕМ.",
@@ -1319,7 +1319,7 @@
         "main.modules.009",
         "main.modules.010"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Beyond this point — clearance required.",
       "ru_current": "Дальше — только по допуску.",
@@ -1349,7 +1349,7 @@
         "main.modules.014",
         "main.modules.015"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "What survived. What they let you remember.",
       "ru_current": "То, что сохранилось. То, что разрешили помнить.",
@@ -1379,7 +1379,7 @@
         "main.modules.023",
         "main.modules.024"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Help becomes a question of freedom.",
       "ru_current": "Помощь становится вопросом свободы.",
@@ -1409,7 +1409,7 @@
         "main.world.005",
         "main.world.006"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "THE CITY RISES. THE DEPTH IS SEALED.",
       "ru_current": "ГОРОД РАСТЁТ ВВЕРХ. ГЛУБИНА ЗАКРЫТА.",
@@ -1440,7 +1440,7 @@
         "main.world.035",
         "main.world.036"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Beneath Gluhaya Station.",
       "ru_current": "Под Глухой станцией.",
@@ -1470,7 +1470,7 @@
         "main.chars.004",
         "main.chars.005"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "THREE LIVES INSIDE THE FRACTURE.",
       "ru_current": "ТРИ ЖИЗНИ ВНУТРИ РАЗЛОМА.",
@@ -1499,7 +1499,7 @@
       "all_keys": [
         "main.chars.008"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Viktor Knox",
       "ru_current": "Viktor Knox",
@@ -1527,7 +1527,7 @@
       "all_keys": [
         "main.chars.020"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Liza Sinclair",
       "ru_current": "Liza Sinclair",
@@ -1555,7 +1555,7 @@
       "all_keys": [
         "main.chars.029"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Seraphine Veyr",
       "ru_current": "Seraphine Veyr",
@@ -1583,7 +1583,7 @@
       "all_keys": [
         "main.header.011"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXIOM",
       "ru_current": "AXIOM",
@@ -1615,7 +1615,7 @@
         "main.factions.007",
         "main.factions.008"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Three forces. A different price for order.",
       "ru_current": "Три силы. Разная цена порядка.",
@@ -1645,7 +1645,7 @@
         "main.vision.004",
         "main.vision.005"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "THE FUTURE IS BUILT IN PHASES.",
       "ru_current": "БУДУЩЕЕ СТРОИТСЯ ПОЭТАПНО.",
@@ -1673,7 +1673,7 @@
       "all_keys": [
         "main.vision.010"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "PUBLIC WEB",
       "ru_current": "ПУБЛИЧНЫЙ САЙТ",
@@ -1701,7 +1701,7 @@
       "all_keys": [
         "main.vision.022"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXIOM BUILDER",
       "ru_current": "AXIOM BUILDER",
@@ -1729,7 +1729,7 @@
       "all_keys": [
         "main.vision.031"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "DEVELOPMENT OS",
       "ru_current": "ОС РАЗРАБОТКИ",
@@ -1757,7 +1757,7 @@
       "all_keys": [
         "main.vision.039"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "AXIOM GAME",
       "ru_current": "AXIOM GAME",
@@ -1787,7 +1787,7 @@
         "main.collaboration.004",
         "main.collaboration.005"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "LET'S CREATE.",
       "ru_current": "ДАВАЙТЕ СОЗДАВАТЬ.",
@@ -1821,7 +1821,7 @@
         "main.collaboration.027",
         "main.collaboration.028"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "Want to enter? The nodes are watching.",
       "ru_current": "Хочешь войти? Узлы наблюдают.",
@@ -1851,7 +1851,7 @@
         "error.header.006",
         "error.header.007"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "O-OPS ROUTE LOST",
       "ru_current": "УПС МАРШРУТ ПОТЕРЯН",
@@ -1875,7 +1875,7 @@
       ],
       "keys": [],
       "all_keys": [],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "SERAFIM VEYR.",
       "ru_current": "Серафим Вейр",
@@ -1901,7 +1901,7 @@
         "story_head"
       ],
       "all_keys": [],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "NOT A NEW LEGEND. JUST MY VERSION OF V.",
       "ru_current": "НЕ НОВАЯ ЛЕГЕНДА. ПРОСТО МОЯ ВЕРСИЯ V.",
@@ -1927,7 +1927,7 @@
         "identity_head"
       ],
       "all_keys": [],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "BUILT FROM SMALL DETAILS.",
       "ru_current": "ВСЁ РЕШАЮТ ДЕТАЛИ.",
@@ -1953,7 +1953,7 @@
         "gallery_head"
       ],
       "all_keys": [],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "THE CITY NEVER LOOKS THE SAME TWICE.",
       "ru_current": "У КАЖДОГО ВЕЧЕРА СВОЙ НАЙТ-СИТИ.",
@@ -1979,7 +1979,7 @@
         "compare_head"
       ],
       "all_keys": [],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "BEFORE / AFTER.",
       "ru_current": "ДО / ПОСЛЕ.",
@@ -2005,7 +2005,7 @@
         "origin_head"
       ],
       "all_keys": [],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "ONE WORLD INSPIRED ANOTHER.",
       "ru_current": "ОДИН МИР ВДОХНОВИЛ ДРУГОЙ.",
@@ -2031,7 +2031,7 @@
         "preset_head"
       ],
       "all_keys": [],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain all following meaningful prose",
       "en": "THE PRESET IS STILL BEING BUILT.",
       "ru_current": "ПРЕСЕТ ЕЩЁ СОБИРАЕТСЯ.",
@@ -2056,7 +2056,7 @@
       "ru_current": "ДИЗАЙН — ЭТО СИСТЕМА",
       "ru_subtitle": "ДИЗАЙН — ЭТО СИСТЕМА",
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "reason": "Visual manifesto heading in a compact three-column composition; retain following explanatory body.",
       "source_range": [
         38078,
@@ -2078,7 +2078,7 @@
       "ru_current": "ДОКАЗАТЕЛЬСТВА ПРЕВЫШЕ СЛОВ",
       "ru_subtitle": "ДОКАЗАТЕЛЬСТВА ВАЖНЕЕ ЗАЯВЛЕНИЙ",
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "reason": "Visual manifesto heading in a compact three-column composition; retain following explanatory body.",
       "source_range": [
         38278,
@@ -2100,7 +2100,7 @@
       "ru_current": "ЕДИНЫЙ СВЯЗАННЫЙ МИР",
       "ru_subtitle": "ОДИН СВЯЗАННЫЙ МИР",
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "reason": "Visual manifesto heading in a compact three-column composition; retain following explanatory body.",
       "source_range": [
         38461,
@@ -2122,7 +2122,7 @@
       "ru_current": "Это только поверхность мира.",
       "ru_subtitle": "ЭТО ЛИШЬ ПОВЕРХНОСТЬ МИРА",
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "reason": "Expressive epilogue headline despite P tag; following transition to VISION is meaningful body.",
       "source_range": [
         166660,
@@ -2144,7 +2144,7 @@
       "ru_current": "АВТОР / ENDEAVOR",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Identity card role/name label; second line would overload compact dossier metadata.",
       "source_range": [
         36449,
@@ -2166,7 +2166,7 @@
       "ru_current": "NEXARCH",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Canonical NEXARCH title; identity label, not a translatable proposition.",
       "source_range": [
         97079,
@@ -2192,7 +2192,7 @@
       "ru_current": "ЦЕЛОСТНОСТЬ / УТРАЧЕНА. / Фрагменты остались. / Слой контроля удержан. / Но это не весь AXIOM.",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Authored multi-line quotation, not a headline: localize its complete reading normally; do not turn the quote into a duplicate bilingual block.",
       "source_range": [
         97934,
@@ -2214,7 +2214,7 @@
       "ru_current": "ENDEAVOR",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
       "source_range": [
         161978,
@@ -2236,7 +2236,7 @@
       "ru_current": "VOIDLINK",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
       "source_range": [
         163327,
@@ -2258,7 +2258,7 @@
       "ru_current": "NEURA TECH",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Faction/company proper-name label inside card; unchanged canonical identity, no duplicate transliteration.",
       "source_range": [
         164709,
@@ -2278,7 +2278,7 @@
       "ru_current": "AXIOM",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_WORDMARK / SECTION_VISUAL_SAMPLE",
       "reason": "AXIOM brand lettermark with decorative glitch copies; no translatable proposition, no Russian duplicate.",
       "source_range": [
         19172,
@@ -2298,7 +2298,7 @@
       "ru_current": "Локализованные фазы/журнал/приглашение",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Phase, progress, entry prompt and log statuses are functional feedback; ordinary localization; preserve startup timeline."
     },
     {
@@ -2316,7 +2316,7 @@
       "ru_current": "AXIOM PANEL — ШЛЮЗ ДОСТУПА",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2338,7 +2338,7 @@
       "ru_current": "СТАТУС УПРАВЛЕНИЯ / WATCH_DOG",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2360,7 +2360,7 @@
       "ru_current": "CHRONICLE — ОРБИТА ПАМЯТИ",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2382,7 +2382,7 @@
       "ru_current": "AXCHAT — ECHO AXIOM",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2404,7 +2404,7 @@
       "ru_current": "БИБЛИОТЕКА МАТЕРИАЛОВ",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2426,7 +2426,7 @@
       "ru_current": "VIKTOR — ДОСЬЕ ПЕРСОНАЖА",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2448,7 +2448,7 @@
       "ru_current": "ЦЕНТР СИГНАЛОВ",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2470,7 +2470,7 @@
       "ru_current": "MASTER GRAPH",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic actual-screen viewer caption matching active WORK screen; one compact caption, no editorial subtitle.",
       "source_range": [
         63936,
@@ -2492,7 +2492,7 @@
       "ru_current": "Карта мира AXIOM",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Map-dialog utility title with pan/zoom controls; ordinary localization; preserve node/zoom/pan state."
     },
     {
@@ -2510,7 +2510,7 @@
       "ru_current": "GLUHAYA",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
         119417,
@@ -2532,7 +2532,7 @@
       "ru_current": "NEXUS",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
         119797,
@@ -2554,7 +2554,7 @@
       "ru_current": "FACELESS BASE",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
         120168,
@@ -2576,7 +2576,7 @@
       "ru_current": "ECHELON",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
         120556,
@@ -2598,7 +2598,7 @@
       "ru_current": "OMEGA-0",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
         120935,
@@ -2620,7 +2620,7 @@
       "ru_current": "AI ZONE",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Canonical map node designation; ordinary catalog localization only; never alter Canon node IDs or map geometry.",
       "source_range": [
         121315,
@@ -2640,7 +2640,7 @@
       "ru_current": "Локализованные узлы/маршруты",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Active flow-node/route utility titles and statuses; ordinary localization, no duplicated labels."
     },
     {
@@ -2658,7 +2658,7 @@
       "ru_current": "ОДИН ПЕРСОНАЖ. БЕСЧИСЛЕННЫЕ ИСТОРИИ В НАЙТ-СИТИ.",
       "ru_subtitle": "ОДИН ПЕРСОНАЖ. БЕСЧИСЛЕННЫЕ ИСТОРИИ В НАЙТ-СИТИ.",
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "reason": "Artistic non-H fan-archive motto; pair locally without importing AXIOM typography.",
       "source_range": [
         3375,
@@ -2678,7 +2678,7 @@
       "ru_current": "Current SV_LIBRARY item.title.ru",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Dynamic media item title; preserve visible image, index, filter, slider, focus and all AI/original provenance labels.",
       "source_range": [
         13897,
@@ -2707,7 +2707,7 @@
       "ru_current": "ВХОД В ПАНЕЛЬ / WATCH_DOG / CHRONICLE / AXCHAT / КОНТЕНТ / VIKTOR / СИГНАЛ / MASTER GRAPH",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Interactive archive tab labels are controls, not editorial headlines.",
       "source_range": [
         41212,
@@ -2729,7 +2729,7 @@
       "ru_current": "АРХИВ ИНТЕРФЕЙСОВ / РЕАЛЬНЫЕ ЭКРАНЫ ПРОДУКТА",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Compact archive utility bar title.",
       "source_range": [
         40572,
@@ -2755,7 +2755,7 @@
       "ru_current": "РЕЛИКТ / ЭХО / КОНТРОЛЬ / БИО / МИФ",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Five canonical AXIOM mode selector labels; no duplicate bilingual controls.",
       "source_range": [
         153574,
@@ -2777,7 +2777,7 @@
       "ru_current": "СУЩНОСТЬ МИРА",
       "ru_subtitle": null,
       "duplicate_action": "no semantic duplicate; preserve meaningful prose",
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "reason": "Technical graph demonstration label; not a narrative headline.",
       "source_range": [
         69577,
@@ -2801,7 +2801,7 @@
       "all_keys": [
         "main.about.029"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain navigation context and all artwork",
       "en": "WHO CREATES THIS ARCHITECTURE?",
       "ru_current": "КТО СОЗДАЁТ ЭТУ АРХИТЕКТУРУ?",
@@ -2829,7 +2829,7 @@
       "all_keys": [
         "main.creator.041"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PASS_AUTO_LAYOUT / SECTION_VISUAL_SAMPLE",
       "body_action": "retain navigation context and all artwork",
       "en": "FROM PRINCIPLES TO IMPLEMENTED SCREENS",
       "ru_current": "ОТ ПРИНЦИПОВ К РЕАЛИЗОВАННЫМ ЭКРАНАМ",
@@ -2857,7 +2857,7 @@
       "all_keys": [
         "main.work.195"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain navigation context and all artwork",
       "en": "WHY ARE ALL THESE INTERFACES CONNECTED?",
       "ru_current": "ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?",
@@ -2885,7 +2885,7 @@
       "all_keys": [
         "main.system.031"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain navigation context and all artwork",
       "en": "TECHNOLOGY SERVES THE AUTHOR’S WORLD",
       "ru_current": "ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР",
@@ -2913,7 +2913,7 @@
       "all_keys": [
         "main.factions.030"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain navigation context and all artwork",
       "en": "WHAT WILL VISITORS FIND IN THE FUTURE?",
       "ru_current": "ЧТО ПОЛУЧИТ ПОСЕТИТЕЛЬ В БУДУЩЕМ?",
@@ -2941,7 +2941,7 @@
       "all_keys": [
         "main.vision.051"
       ],
-      "visual_result": "NOT_RUN",
+      "visual_result": "PRESERVED / SECTION_VISUAL_SAMPLE",
       "body_action": "retain navigation context and all artwork",
       "en": "WHERE NEXT AFTER DISCOVERING THE PROJECT?",
       "ru_current": "КУДА ИДТИ ПОСЛЕ ЗНАКОМСТВА С ПРОЕКТОМ?",
@@ -2957,5 +2957,13 @@
     "date": "2026-11-15",
     "entries_added": 6,
     "reason": "Visual review found a large non-H art-band title and classified every compact bridge explicitly before mutation."
+  },
+  "verification": {
+    "date": "2026-11-15",
+    "runtime_commit": "ae3dc2d33cf68d76b95346775b695342473455fd",
+    "browser_evidence": "evidence/bilingual-browser.json",
+    "matrix": "Chromium + Firefox; ENG/RU; 320/390/768/1024/1440/1600",
+    "visual_samples": "captures/review.html",
+    "limits": "Every bilingual pair has automated geometry; section samples do not certify every functional label or human acceptance."
   }
 }

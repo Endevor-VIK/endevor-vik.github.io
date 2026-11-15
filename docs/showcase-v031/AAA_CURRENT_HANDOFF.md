@@ -8,7 +8,7 @@ AXS_HEADER_META:
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
   scope: endeavor-vik.github.io / current 0524 and future AAA waves
   lang: ru
-  last_updated: 2026-11-07
+  last_updated: 2026-11-15
   editable_by_agents: true
   change_policy: "Snapshot fields are never asserted current without Git recheck; update only in authorized task branch after every review"
   links:
@@ -19,7 +19,57 @@ AXS_HEADER_META:
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
 
-## CURRENT TASK — 2026-11-07 / ENG–RU LOCALIZATION
+## CURRENT TASK — 2026-11-15 / GLOBAL BILINGUAL TYPOGRAPHY
+
+Текущая директива CREATOR — «SHOWCASE — GLOBAL BILINGUAL TYPOGRAPHY & LANGUAGE
+TRANSITIONS». Она supersedes перевод крупных headlines на RU из прежней задачи.
+Merge PR #14 уже принят; разрешения merge/deploy новой typography задачи нет.
+
+- Repo / branch: `Endevor-VIK/endevor-vik.github.io` /
+  `feature/showcase-global-bilingual-headings`.
+- Isolated worktree: `/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-global-bilingual-headings`.
+- Fresh base: main `adb87e5b8c8ba778aedfddd0655ec0b957e045ef`.
+- Runtime + heading-test freeze: `ae3dc2d33cf68d76b95346775b695342473455fd`.
+- IMPLEMENTED: 110 audit decisions, 45 bilingual pairs, English canonical headlines,
+  RU-only subordinate translation, text-only 260 ms motion / 60 ms subtitle stagger,
+  rapid-switch/reduced-motion/state retention, independent fan-archive identity.
+- VERIFIED so far: source 6/6 + smoke 2/2 + preservation; heading/motion 124/124,
+  i18n 84/84; original browser regression 232/232, 0 FAIL / SKIP.
+- Evidence / authoritative current status: [REPORT](../bilingual-headings/REPORT.md),
+  [GLOBAL LOG](../bilingual-headings/AGENTOPS.md), [SPEC](../bilingual-headings/SPEC.md),
+  [HEADING AUDIT](../bilingual-headings/HEADING_AUDIT.md),
+  [112 native screenshots](../bilingual-headings/captures/review.html).
+- Delivery PR / remote recovery: pending completion of original regression.
+- NOT_VERIFIED: CREATOR visual acceptance, independent Principal, Safari/WebKit,
+  real devices/GPU, screen reader, actual zoom, fresh LH/field CWV, production.
+- Known preserved limitation: mobile loader decorative HUD overlaps. Outer shell
+  reported 143 after complete final heading JSON; REPORT distinguishes this from
+  124 passing assertions and records the original failed/diagnostic runs. A final
+  lifecycle repeat passed 14/14 with exit 0.
+- Root main/gitlink/foreign work, Canon, versions and production remain outside scope.
+
+### RESUME PACKET — GLOBAL BILINGUAL TYPOGRAPHY
+
+```text
+AXIOM SHOWCASE / RESUME PACKET
+AUTHORITY: CREATOR / SHOWCASE — GLOBAL BILINGUAL TYPOGRAPHY & LANGUAGE TRANSITIONS
+TASK: showcase-global-bilingual-headings / DELIVERY + CREATOR VISUAL REVIEW
+REPO + BRANCH: Endevor-VIK/endevor-vik.github.io / feature/showcase-global-bilingual-headings
+RUNTIME SHA: ae3dc2d33cf68d76b95346775b695342473455fd
+BASELINE: adb87e5b8c8ba778aedfddd0655ec0b957e045ef (merged PR14)
+OWN DIRTY: delivery docs, 112 captures/evidence, source-preservation guard
+DONE: 110 audit entries / 45 pairs / text motion / preservation / 124 + 84 + 232 PASS
+PENDING: delivery commit/push/PR, independent + CREATOR visual review
+QA AUTHORITY: docs/bilingual-headings/REPORT.md and raw evidence; counts are not release approval
+FROZEN: RED PROTOCOL / TYPE A / WORK B / artwork / section order / Canon IDs / URLs / cursor
+FORBIDDEN: main merge / production deploy / root gitlink / Canon write / version bump
+NEXT: verify regression output and exact runtime diff; commit only task-owned delivery; open PR
+FIRST ACTION: reread AGENTS + current SPEC/log/report; reverify Git/PR/CI and ownership
+```
+
+---
+
+## PREVIOUS TASK SNAPSHOT — 2026-11-07 / ENG–RU LOCALIZATION
 
 Эта запись supersedes task snapshots ниже только для текущей локализации.
 Основание — отдельная директива CREATOR «LANDING INTERNATIONALIZATION — ENG / RU».

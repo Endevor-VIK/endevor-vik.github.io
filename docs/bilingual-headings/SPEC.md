@@ -2,13 +2,13 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.BILINGUAL_HEADINGS.SPEC
   title: "Global bilingual typography and language transitions"
-  status: DISCOVERY
+  status: IMPLEMENTED / CREATOR_VISUAL_PENDING
   deployment: NOT_DEPLOYED
   mode: Task Contract
   goal: "Единая editorial-логика заголовков и управляемый переход ENG/RU"
   scope: public showcase, auxiliary pages, standalone fan archive
   lang: ru
-  last_updated: 2026-11-07
+  last_updated: 2026-11-15
   editable_by_agents: true
   change_policy: "В scope текущей директивы CREATOR; merge/deploy отдельно"
 -->
@@ -82,3 +82,9 @@ Stop: foreign overlapping delta, host critical, Canon ambiguity, blocking regres
 или scope выходящий за директиву. Известная геометрическая зависимость HERO grid
 проверяется до тиражирования шаблона. Отчёт `REPORT.md`, audit `HEADING_AUDIT.md`,
 captures/evidence выбранные в Git; PR передаётся CREATOR без merge/deploy.
+
+
+Продолжение 2026-11-15: дополнен inventory шести non-H bridge titles до product
+правки (commit `1c8b0a8`). Один крупный art-band title — EDITORIAL / bilingual;
+пять компактных навигационных строк — FUNCTIONAL / localized. Итого 110 решений,
+45 bilingual pairs. Финальный runtime `ae3dc2d`; актуальные QA/лимиты — [REPORT](REPORT.md).
