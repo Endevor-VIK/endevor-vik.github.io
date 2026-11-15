@@ -1,0 +1,3815 @@
+{
+  "source": {
+    "sha": "1e09f2727c879f9d736963ea3a5e2756f141234c",
+    "loader": "dd764628085b863fea91628c08fce7ade176b31752d32101dfa8ffc8ca0f0b5f"
+  },
+  "sourceAfter": {
+    "sha": "1e09f2727c879f9d736963ea3a5e2756f141234c",
+    "loader": "dd764628085b863fea91628c08fce7ade176b31752d32101dfa8ffc8ca0f0b5f"
+  },
+  "before": false,
+  "summary": {
+    "PASS": 34,
+    "FAIL": 30,
+    "NOT_RUN": 0
+  },
+  "results": [
+    {
+      "engine": "chromium",
+      "id": "after-en-320x568-reduce",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-320x568-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 217.90625,
+              "right": 161.09375,
+              "bottom": 233.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 206.3125,
+              "y": 217.90625,
+              "right": 353,
+              "bottom": 233.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 315,
+              "bottom": 529.09375,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 176.140625,
+              "y": 535.09375,
+              "right": 366,
+              "bottom": 549.09375,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 208.90625,
+              "right": 366,
+              "bottom": 339.90625,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 361.90625,
+              "right": 366,
+              "bottom": 493.09375,
+              "width": 342,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 366,
+              "bottom": 582.09375,
+              "width": 342,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 598.09375,
+              "right": 366,
+              "bottom": 611.09375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 627.09375,
+              "right": 366,
+              "bottom": 671.09375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 308.671875,
+              "y": 687.09375,
+              "right": 366,
+              "bottom": 733.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.453125,
+              "bottom": 820,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-390x844-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 217.90625,
+              "right": 161.09375,
+              "bottom": 233.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 206.3125,
+              "y": 217.90625,
+              "right": 353,
+              "bottom": 233.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 315,
+              "bottom": 529.09375,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 176.140625,
+              "y": 535.09375,
+              "right": 366,
+              "bottom": 549.09375,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 208.90625,
+              "right": 366,
+              "bottom": 339.90625,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 361.90625,
+              "right": 366,
+              "bottom": 493.09375,
+              "width": 342,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 366,
+              "bottom": 582.09375,
+              "width": 342,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 598.09375,
+              "right": 366,
+              "bottom": 611.09375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 627.09375,
+              "right": 366,
+              "bottom": 671.09375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 308.671875,
+              "y": 687.09375,
+              "right": 366,
+              "bottom": 733.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.453125,
+              "bottom": 820,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-430x932-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 261.90625,
+              "right": 161.09375,
+              "bottom": 277.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 246.3125,
+              "y": 261.90625,
+              "right": 393,
+              "bottom": 277.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 315,
+              "bottom": 573.09375,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 216.140625,
+              "y": 579.09375,
+              "right": 406,
+              "bottom": 593.09375,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 252.90625,
+              "right": 406,
+              "bottom": 383.90625,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 405.90625,
+              "right": 406,
+              "bottom": 537.09375,
+              "width": 382,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 406,
+              "bottom": 626.09375,
+              "width": 382,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 642.09375,
+              "right": 406,
+              "bottom": 655.09375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 671.09375,
+              "right": 406,
+              "bottom": 715.09375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 348.671875,
+              "y": 731.09375,
+              "right": 406,
+              "bottom": 777.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.453125,
+              "bottom": 908,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-430x932-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 261.90625,
+              "right": 161.09375,
+              "bottom": 277.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 246.3125,
+              "y": 261.90625,
+              "right": 393,
+              "bottom": 277.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 315,
+              "bottom": 573.09375,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 216.140625,
+              "y": 579.09375,
+              "right": 406,
+              "bottom": 593.09375,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 252.90625,
+              "right": 406,
+              "bottom": 383.90625,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 405.90625,
+              "right": 406,
+              "bottom": 537.09375,
+              "width": 382,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 406,
+              "bottom": 626.09375,
+              "width": 382,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 642.09375,
+              "right": 406,
+              "bottom": 655.09375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 671.09375,
+              "right": 406,
+              "bottom": 715.09375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 348.671875,
+              "y": 731.09375,
+              "right": 406,
+              "bottom": 777.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.453125,
+              "bottom": 908,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-720x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 243.34375,
+              "right": 161.09375,
+              "bottom": 259.34375,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 536.3125,
+              "y": 243.34375,
+              "right": 683,
+              "bottom": 259.34375,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 315,
+              "bottom": 560.65625,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 506.140625,
+              "y": 566.65625,
+              "right": 696,
+              "bottom": 580.65625,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 234.34375,
+              "right": 696,
+              "bottom": 365.34375,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 387.34375,
+              "right": 696,
+              "bottom": 524.65625,
+              "width": 672,
+              "height": 137.3125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 696,
+              "bottom": 613.65625,
+              "width": 672,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 629.65625,
+              "right": 696,
+              "bottom": 642.65625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 658.65625,
+              "right": 560,
+              "bottom": 702.65625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 638.671875,
+              "y": 718.65625,
+              "right": 696,
+              "bottom": 764.65625,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 136,
+              "bottom": 876,
+              "width": 112,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-720x900-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 243.34375,
+              "right": 161.09375,
+              "bottom": 259.34375,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 536.3125,
+              "y": 243.34375,
+              "right": 683,
+              "bottom": 259.34375,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 315,
+              "bottom": 560.65625,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 506.140625,
+              "y": 566.65625,
+              "right": 696,
+              "bottom": 580.65625,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 234.34375,
+              "right": 696,
+              "bottom": 365.34375,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 387.34375,
+              "right": 696,
+              "bottom": 524.65625,
+              "width": 672,
+              "height": 137.3125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 696,
+              "bottom": 613.65625,
+              "width": 672,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 629.65625,
+              "right": 696,
+              "bottom": 642.65625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 658.65625,
+              "right": 560,
+              "bottom": 702.65625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 638.671875,
+              "y": 718.65625,
+              "right": 696,
+              "bottom": 764.65625,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 136,
+              "bottom": 876,
+              "width": 112,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-768x1024-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.70077133178711,\"right\":359.453125,\"bottom\":51.70077133178711,\"width\":269.453125,\"height\":14},\".hud .tr\":{\"x\":487.0625,\"y\":37.70077133178711,\"right\":678,\"bottom\":51.70077133178711,\"width\":190.9375,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":967.7007446289062,\"right\":315.640625,\"bottom\":981.7007446289062,\"width\":225.640625,\"height\":14},\".hud .br\":{\"x\":514.9375,\"y\":967.7007446289062,\"right\":678,\"bottom\":981.7007446289062,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":99.484375,\"y\":188.09375,\"right\":238.6875,\"bottom\":201.09375,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":501.3125,\"y\":188.09375,\"right\":668.515625,\"bottom\":201.09375,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":84.484375,\"y\":635.9902954101562,\"right\":404.453125,\"bottom\":649.9902954101562,\"width\":319.96875,\"height\":14},\".progress-meta .r\":{\"x\":468.828125,\"y\":635.9902954101562,\"right\":683.515625,\"bottom\":649.9902954101562,\"width\":214.6875,\"height\":14},\".term-wrap\":{\"x\":84.484375,\"y\":179.09375,\"right\":683.515625,\"bottom\":395.09375,\"width\":599.03125,\"height\":216},\".logo-block\":{\"x\":173.109375,\"y\":431.09375,\"right\":594.875,\"bottom\":592.890625,\"width\":421.765625,\"height\":161.796875},\".progress-block\":{\"x\":84.484375,\"y\":635.9902954101562,\"right\":683.515625,\"bottom\":682.9902954101562,\"width\":599.03125,\"height\":47},\"#hexdump\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13},\"#enterPrompt\":{\"x\":195.78125,\"y\":890,\"right\":572.21875,\"bottom\":934,\"width\":376.4375,\"height\":44},\"#skipBtn\":{\"x\":620.671875,\"y\":904,\"right\":678,\"bottom\":936,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":136,\"bottom\":948,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":967.7007446289062,\"right\":315.640625,\"bottom\":981.7007446289062,\"width\":225.640625,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":514.9375,\"y\":967.7007446289062,\"right\":678,\"bottom\":981.7007446289062,\"width\":163.0625,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-768x1024-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":35.895851135253906,\"right\":359.453125,\"bottom\":49.895851135253906,\"width\":269.453125,\"height\":14},\".hud .tr\":{\"x\":487.0625,\"y\":35.895851135253906,\"right\":678,\"bottom\":49.895851135253906,\"width\":190.9375,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":965.8958740234375,\"right\":315.640625,\"bottom\":979.8958740234375,\"width\":225.640625,\"height\":14},\".hud .br\":{\"x\":514.9375,\"y\":965.8958740234375,\"right\":678,\"bottom\":979.8958740234375,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":99.484375,\"y\":189.09251403808594,\"right\":238.6875,\"bottom\":202.09251403808594,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":501.3125,\"y\":189.09251403808594,\"right\":668.515625,\"bottom\":202.09251403808594,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":84.484375,\"y\":628.890625,\"right\":404.453125,\"bottom\":642.890625,\"width\":319.96875,\"height\":14},\".progress-meta .r\":{\"x\":468.828125,\"y\":628.890625,\"right\":683.515625,\"bottom\":642.890625,\"width\":214.6875,\"height\":14},\".term-wrap\":{\"x\":84.484375,\"y\":180.09251403808594,\"right\":683.515625,\"bottom\":396.092529296875,\"width\":599.03125,\"height\":216.00001525878906},\".logo-block\":{\"x\":173.109375,\"y\":431.09375,\"right\":594.875,\"bottom\":592.890625,\"width\":421.765625,\"height\":161.796875},\".progress-block\":{\"x\":84.484375,\"y\":628.890625,\"right\":683.515625,\"bottom\":675.890625,\"width\":599.03125,\"height\":47},\"#hexdump\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13},\"#enterPrompt\":{\"x\":195.78125,\"y\":898,\"right\":572.21875,\"bottom\":942,\"width\":376.4375,\"height\":44},\"#skipBtn\":{\"x\":620.671875,\"y\":904,\"right\":678,\"bottom\":936,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":136,\"bottom\":948,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":965.8958740234375,\"right\":315.640625,\"bottom\":979.8958740234375,\"width\":225.640625,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":514.9375,\"y\":965.8958740234375,\"right\":678,\"bottom\":979.8958740234375,\"width\":163.0625,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-1440x900-reduce",
+      "status": "FAIL",
+      "detail": "Error: Language switch restored overlap: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":399.078125,\"bottom\":52,\"width\":309.078125,\"height\":14},\".hud .tr\":{\"x\":1137.328125,\"y\":38,\"right\":1350,\"bottom\":52,\"width\":212.671875,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":844,\"right\":363.5625,\"bottom\":858,\"width\":273.5625,\"height\":14},\".hud .br\":{\"x\":1186.9375,\"y\":844,\"right\":1350,\"bottom\":858,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":375,\"y\":129,\"right\":514.203125,\"bottom\":142,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":897.796875,\"y\":129,\"right\":1065,\"bottom\":142,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":360,\"y\":632.640625,\"right\":705.25,\"bottom\":646.640625,\"width\":345.25,\"height\":14},\".progress-meta .r\":{\"x\":853.46875,\"y\":632.640625,\"right\":1080,\"bottom\":646.640625,\"width\":226.53125,\"height\":14},\".term-wrap\":{\"x\":360,\"y\":120,\"right\":1080,\"bottom\":336,\"width\":720,\"height\":216},\".logo-block\":{\"x\":510.5625,\"y\":372,\"right\":929.421875,\"bottom\":596.640625,\"width\":418.859375,\"height\":224.640625},\".progress-block\":{\"x\":360,\"y\":632.640625,\"right\":1080,\"bottom\":679.640625,\"width\":720,\"height\":47},\"#hexdump\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13},\"#enterPrompt\":{\"x\":541.59375,\"y\":766,\"right\":898.40625,\"bottom\":810,\"width\":356.8125,\"height\":44},\"#skipBtn\":{\"x\":1292.671875,\"y\":780,\"right\":1350,\"bottom\":812,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":778,\"right\":136,\"bottom\":824,\"width\":112,\"height\":46}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":844,\"right\":363.5625,\"bottom\":858,\"width\":273.5625,\"height\":14},\"y\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:1079\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:452:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-1440x900-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Language switch restored overlap: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":399.078125,\"bottom\":52,\"width\":309.078125,\"height\":14},\".hud .tr\":{\"x\":1137.328125,\"y\":38,\"right\":1350,\"bottom\":52,\"width\":212.671875,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":844,\"right\":363.5625,\"bottom\":858,\"width\":273.5625,\"height\":14},\".hud .br\":{\"x\":1186.9375,\"y\":844,\"right\":1350,\"bottom\":858,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":375,\"y\":129,\"right\":514.203125,\"bottom\":142,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":897.796875,\"y\":129,\"right\":1065,\"bottom\":142,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":360,\"y\":632.640625,\"right\":705.25,\"bottom\":646.640625,\"width\":345.25,\"height\":14},\".progress-meta .r\":{\"x\":853.46875,\"y\":632.640625,\"right\":1080,\"bottom\":646.640625,\"width\":226.53125,\"height\":14},\".term-wrap\":{\"x\":360,\"y\":120,\"right\":1080,\"bottom\":336,\"width\":720,\"height\":216},\".logo-block\":{\"x\":510.5625,\"y\":372,\"right\":929.421875,\"bottom\":596.640625,\"width\":418.859375,\"height\":224.640625},\".progress-block\":{\"x\":360,\"y\":632.640625,\"right\":1080,\"bottom\":679.640625,\"width\":720,\"height\":47},\"#hexdump\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13},\"#enterPrompt\":{\"x\":541.59375,\"y\":766,\"right\":898.40625,\"bottom\":810,\"width\":356.8125,\"height\":44},\"#skipBtn\":{\"x\":1292.671875,\"y\":780,\"right\":1350,\"bottom\":812,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":778,\"right\":136,\"bottom\":824,\"width\":112,\"height\":46}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":844,\"right\":363.5625,\"bottom\":858,\"width\":273.5625,\"height\":14},\"y\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:1079\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-844x390-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.70055389404297,\"right\":359.453125,\"bottom\":51.70055389404297,\"width\":269.453125,\"height\":14},\".hud .tr\":{\"x\":563.0625,\"y\":37.70055389404297,\"right\":754,\"bottom\":51.70055389404297,\"width\":190.9375,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":333.7005615234375,\"right\":315.640625,\"bottom\":347.7005615234375,\"width\":225.640625,\"height\":14},\".hud .br\":{\"x\":590.9375,\"y\":333.7005615234375,\"right\":754,\"bottom\":347.7005615234375,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":107.84375,\"y\":129,\"right\":247.046875,\"bottom\":142,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.953125,\"y\":129,\"right\":736.15625,\"bottom\":142,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":92.84375,\"y\":584.007568359375,\"right\":412.8125,\"bottom\":598.007568359375,\"width\":319.96875,\"height\":14},\".progress-meta .r\":{\"x\":536.46875,\"y\":584.007568359375,\"right\":751.15625,\"bottom\":598.007568359375,\"width\":214.6875,\"height\":14},\".term-wrap\":{\"x\":92.84375,\"y\":120,\"right\":751.15625,\"bottom\":336,\"width\":658.3125,\"height\":216},\".logo-block\":{\"x\":211.109375,\"y\":372,\"right\":632.875,\"bottom\":540.90625,\"width\":421.765625,\"height\":168.90625},\".progress-block\":{\"x\":92.84375,\"y\":584.007568359375,\"right\":751.15625,\"bottom\":631.007568359375,\"width\":658.3125,\"height\":47},\"#hexdump\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13},\"#enterPrompt\":{\"x\":233.78125,\"y\":256,\"right\":610.21875,\"bottom\":300,\"width\":376.4375,\"height\":44},\"#skipBtn\":{\"x\":696.671875,\"y\":270,\"right\":754,\"bottom\":302,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":136,\"bottom\":314,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":333.7005615234375,\"right\":315.640625,\"bottom\":347.7005615234375,\"width\":225.640625,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":590.9375,\"y\":333.7005615234375,\"right\":754,\"bottom\":347.7005615234375,\"width\":163.0625,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-844x390-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":36.53056716918945,\"right\":359.453125,\"bottom\":50.53056716918945,\"width\":269.453125,\"height\":14},\".hud .tr\":{\"x\":563.0625,\"y\":36.53056716918945,\"right\":754,\"bottom\":50.53056716918945,\"width\":190.9375,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":332.53057861328125,\"right\":315.640625,\"bottom\":346.53057861328125,\"width\":225.640625,\"height\":14},\".hud .br\":{\"x\":590.9375,\"y\":332.53057861328125,\"right\":754,\"bottom\":346.53057861328125,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":107.84375,\"y\":129.7256622314453,\"right\":247.046875,\"bottom\":142.7256622314453,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.953125,\"y\":129.7256622314453,\"right\":736.15625,\"bottom\":142.7256622314453,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":92.84375,\"y\":584.6834716796875,\"right\":412.8125,\"bottom\":598.6834716796875,\"width\":319.96875,\"height\":14},\".progress-meta .r\":{\"x\":536.46875,\"y\":584.6834716796875,\"right\":751.15625,\"bottom\":598.6834716796875,\"width\":214.6875,\"height\":14},\".term-wrap\":{\"x\":92.84375,\"y\":120.72566223144531,\"right\":751.15625,\"bottom\":336.72564697265625,\"width\":658.3125,\"height\":215.99998474121094},\".logo-block\":{\"x\":211.109375,\"y\":372,\"right\":632.875,\"bottom\":540.90625,\"width\":421.765625,\"height\":168.90625},\".progress-block\":{\"x\":92.84375,\"y\":584.6834716796875,\"right\":751.15625,\"bottom\":631.6834716796875,\"width\":658.3125,\"height\":47},\"#hexdump\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13},\"#enterPrompt\":{\"x\":233.78125,\"y\":264,\"right\":610.21875,\"bottom\":308,\"width\":376.4375,\"height\":44},\"#skipBtn\":{\"x\":696.671875,\"y\":270,\"right\":754,\"bottom\":302,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":136,\"bottom\":314,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":332.53057861328125,\"right\":315.640625,\"bottom\":346.53057861328125,\"width\":225.640625,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":590.9375,\"y\":332.53057861328125,\"right\":754,\"bottom\":346.53057861328125,\"width\":163.0625,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-320x568-reduce",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-320x568-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 217.90625,
+              "right": 161.09375,
+              "bottom": 233.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 206.3125,
+              "y": 217.90625,
+              "right": 353,
+              "bottom": 233.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 307.921875,
+              "bottom": 529.09375,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 180.625,
+              "y": 535.09375,
+              "right": 366,
+              "bottom": 549.09375,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 208.90625,
+              "right": 366,
+              "bottom": 339.90625,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 361.90625,
+              "right": 366,
+              "bottom": 493.09375,
+              "width": 342,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 366,
+              "bottom": 582.09375,
+              "width": 342,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 598.09375,
+              "right": 366,
+              "bottom": 611.09375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 627.09375,
+              "right": 366,
+              "bottom": 671.09375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 308.671875,
+              "y": 687.09375,
+              "right": 366,
+              "bottom": 733.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.453125,
+              "bottom": 820,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-390x844-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 217.90625,
+              "right": 161.09375,
+              "bottom": 233.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 206.3125,
+              "y": 217.90625,
+              "right": 353,
+              "bottom": 233.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 307.921875,
+              "bottom": 529.09375,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 180.625,
+              "y": 535.09375,
+              "right": 366,
+              "bottom": 549.09375,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 208.90625,
+              "right": 366,
+              "bottom": 339.90625,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 361.90625,
+              "right": 366,
+              "bottom": 493.09375,
+              "width": 342,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 366,
+              "bottom": 582.09375,
+              "width": 342,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 598.09375,
+              "right": 366,
+              "bottom": 611.09375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 627.09375,
+              "right": 366,
+              "bottom": 671.09375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 308.671875,
+              "y": 687.09375,
+              "right": 366,
+              "bottom": 733.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.453125,
+              "bottom": 820,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-430x932-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 261.90625,
+              "right": 161.09375,
+              "bottom": 277.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 246.3125,
+              "y": 261.90625,
+              "right": 393,
+              "bottom": 277.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 307.921875,
+              "bottom": 573.09375,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 220.625,
+              "y": 579.09375,
+              "right": 406,
+              "bottom": 593.09375,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 252.90625,
+              "right": 406,
+              "bottom": 383.90625,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 405.90625,
+              "right": 406,
+              "bottom": 537.09375,
+              "width": 382,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 406,
+              "bottom": 626.09375,
+              "width": 382,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 642.09375,
+              "right": 406,
+              "bottom": 655.09375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 671.09375,
+              "right": 406,
+              "bottom": 715.09375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 348.671875,
+              "y": 731.09375,
+              "right": 406,
+              "bottom": 777.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.453125,
+              "bottom": 908,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-430x932-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 261.90625,
+              "right": 161.09375,
+              "bottom": 277.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 246.3125,
+              "y": 261.90625,
+              "right": 393,
+              "bottom": 277.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 307.921875,
+              "bottom": 573.09375,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 220.625,
+              "y": 579.09375,
+              "right": 406,
+              "bottom": 593.09375,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 252.90625,
+              "right": 406,
+              "bottom": 383.90625,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 405.90625,
+              "right": 406,
+              "bottom": 537.09375,
+              "width": 382,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.09375,
+              "right": 406,
+              "bottom": 626.09375,
+              "width": 382,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 642.09375,
+              "right": 406,
+              "bottom": 655.09375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 671.09375,
+              "right": 406,
+              "bottom": 715.09375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 348.671875,
+              "y": 731.09375,
+              "right": 406,
+              "bottom": 777.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.453125,
+              "bottom": 908,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-720x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 243.34375,
+              "right": 161.09375,
+              "bottom": 259.34375,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 536.3125,
+              "y": 243.34375,
+              "right": 683,
+              "bottom": 259.34375,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 307.921875,
+              "bottom": 560.65625,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 510.625,
+              "y": 566.65625,
+              "right": 696,
+              "bottom": 580.65625,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 234.34375,
+              "right": 696,
+              "bottom": 365.34375,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 387.34375,
+              "right": 696,
+              "bottom": 524.65625,
+              "width": 672,
+              "height": 137.3125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 696,
+              "bottom": 613.65625,
+              "width": 672,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 629.65625,
+              "right": 696,
+              "bottom": 642.65625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 658.65625,
+              "right": 560,
+              "bottom": 702.65625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 638.671875,
+              "y": 718.65625,
+              "right": 696,
+              "bottom": 764.65625,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 136,
+              "bottom": 876,
+              "width": 112,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-720x900-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 243.34375,
+              "right": 161.09375,
+              "bottom": 259.34375,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 536.3125,
+              "y": 243.34375,
+              "right": 683,
+              "bottom": 259.34375,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 307.921875,
+              "bottom": 560.65625,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 510.625,
+              "y": 566.65625,
+              "right": 696,
+              "bottom": 580.65625,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 234.34375,
+              "right": 696,
+              "bottom": 365.34375,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 387.34375,
+              "right": 696,
+              "bottom": 524.65625,
+              "width": 672,
+              "height": 137.3125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.65625,
+              "right": 696,
+              "bottom": 613.65625,
+              "width": 672,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 629.65625,
+              "right": 696,
+              "bottom": 642.65625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 658.65625,
+              "right": 560,
+              "bottom": 702.65625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 638.671875,
+              "y": 718.65625,
+              "right": 696,
+              "bottom": 764.65625,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 136,
+              "bottom": 876,
+              "width": 112,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-768x1024-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":36.427215576171875,\"right\":395.21875,\"bottom\":50.427215576171875,\"width\":305.21875,\"height\":14},\".hud .tr\":{\"x\":469.171875,\"y\":36.427215576171875,\"right\":678,\"bottom\":50.427215576171875,\"width\":208.828125,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":966.4271850585938,\"right\":360.34375,\"bottom\":980.4271850585938,\"width\":270.34375,\"height\":14},\".hud .br\":{\"x\":514.9375,\"y\":966.4271850585938,\"right\":678,\"bottom\":980.4271850585938,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":99.484375,\"y\":188.16453552246094,\"right\":238.6875,\"bottom\":201.16453552246094,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":501.3125,\"y\":188.16453552246094,\"right\":668.515625,\"bottom\":201.16453552246094,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":84.484375,\"y\":628.890625,\"right\":422.328125,\"bottom\":642.890625,\"width\":337.84375,\"height\":14},\".progress-meta .r\":{\"x\":459.890625,\"y\":628.890625,\"right\":683.515625,\"bottom\":642.890625,\"width\":223.625,\"height\":14},\".term-wrap\":{\"x\":84.484375,\"y\":179.16453552246094,\"right\":683.515625,\"bottom\":395.16455078125,\"width\":599.03125,\"height\":216.00001525878906},\".logo-block\":{\"x\":190.546875,\"y\":431.09375,\"right\":577.453125,\"bottom\":592.890625,\"width\":386.90625,\"height\":161.796875},\".progress-block\":{\"x\":84.484375,\"y\":628.890625,\"right\":683.515625,\"bottom\":675.890625,\"width\":599.03125,\"height\":47},\"#hexdump\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13},\"#enterPrompt\":{\"x\":205.59375,\"y\":890,\"right\":562.40625,\"bottom\":934,\"width\":356.8125,\"height\":44},\"#skipBtn\":{\"x\":620.671875,\"y\":904,\"right\":678,\"bottom\":936,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":136,\"bottom\":948,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":966.4271850585938,\"right\":360.34375,\"bottom\":980.4271850585938,\"width\":270.34375,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":514.9375,\"y\":966.4271850585938,\"right\":678,\"bottom\":980.4271850585938,\"width\":163.0625,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-768x1024-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":395.21875,\"bottom\":52,\"width\":305.21875,\"height\":14},\".hud .tr\":{\"x\":469.171875,\"y\":38,\"right\":678,\"bottom\":52,\"width\":208.828125,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":968,\"right\":360.34375,\"bottom\":982,\"width\":270.34375,\"height\":14},\".hud .br\":{\"x\":514.9375,\"y\":968,\"right\":678,\"bottom\":982,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":99.484375,\"y\":190.8247833251953,\"right\":238.6875,\"bottom\":203.8247833251953,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":501.3125,\"y\":190.8247833251953,\"right\":668.515625,\"bottom\":203.8247833251953,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":84.484375,\"y\":628.890625,\"right\":422.328125,\"bottom\":642.890625,\"width\":337.84375,\"height\":14},\".progress-meta .r\":{\"x\":459.890625,\"y\":628.890625,\"right\":683.515625,\"bottom\":642.890625,\"width\":223.625,\"height\":14},\".term-wrap\":{\"x\":84.484375,\"y\":181.8247833251953,\"right\":683.515625,\"bottom\":397.82476806640625,\"width\":599.03125,\"height\":215.99998474121094},\".logo-block\":{\"x\":190.546875,\"y\":431.09375,\"right\":577.453125,\"bottom\":592.890625,\"width\":386.90625,\"height\":161.796875},\".progress-block\":{\"x\":84.484375,\"y\":628.890625,\"right\":683.515625,\"bottom\":675.890625,\"width\":599.03125,\"height\":47},\"#hexdump\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13},\"#enterPrompt\":{\"x\":205.59375,\"y\":898,\"right\":562.40625,\"bottom\":942,\"width\":356.8125,\"height\":44},\"#skipBtn\":{\"x\":620.671875,\"y\":904,\"right\":678,\"bottom\":936,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":136,\"bottom\":948,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":968,\"right\":360.34375,\"bottom\":982,\"width\":270.34375,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":514.9375,\"y\":968,\"right\":678,\"bottom\":982,\"width\":163.0625,\"height\":14},\"y\":{\"x\":84.484375,\"y\":973,\"right\":683.515625,\"bottom\":986,\"width\":599.03125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-1440x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 90,
+              "y": 38,
+              "right": 359.453125,
+              "bottom": 52,
+              "width": 269.453125,
+              "height": 14
+            },
+            ".hud .tr": {
+              "x": 1159.0625,
+              "y": 38,
+              "right": 1350,
+              "bottom": 52,
+              "width": 190.9375,
+              "height": 14
+            },
+            ".hud .bl": {
+              "x": 90,
+              "y": 844,
+              "right": 315.640625,
+              "bottom": 858,
+              "width": 225.640625,
+              "height": 14
+            },
+            ".hud .br": {
+              "x": 1186.9375,
+              "y": 844,
+              "right": 1350,
+              "bottom": 858,
+              "width": 163.0625,
+              "height": 14
+            },
+            ".term-head .l": {
+              "x": 375,
+              "y": 129,
+              "right": 514.203125,
+              "bottom": 142,
+              "width": 139.203125,
+              "height": 13
+            },
+            ".term-head>span:last-child": {
+              "x": 897.796875,
+              "y": 129,
+              "right": 1065,
+              "bottom": 142,
+              "width": 167.203125,
+              "height": 13
+            },
+            "#phaseLabel": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 679.96875,
+              "bottom": 646.640625,
+              "width": 319.96875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 865.3125,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 646.640625,
+              "width": 214.6875,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 360,
+              "y": 120,
+              "right": 1080,
+              "bottom": 336,
+              "width": 720,
+              "height": 216
+            },
+            ".logo-block": {
+              "x": 509.109375,
+              "y": 372,
+              "right": 930.875,
+              "bottom": 596.640625,
+              "width": 421.765625,
+              "height": 224.640625
+            },
+            ".progress-block": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 679.640625,
+              "width": 720,
+              "height": 47
+            },
+            "#hexdump": {
+              "x": 360,
+              "y": 849,
+              "right": 1080,
+              "bottom": 862,
+              "width": 720,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 531.78125,
+              "y": 766,
+              "right": 908.21875,
+              "bottom": 810,
+              "width": 376.4375,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 1292.671875,
+              "y": 780,
+              "right": 1350,
+              "bottom": 812,
+              "width": 57.328125,
+              "height": 32
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 778,
+              "right": 136,
+              "bottom": 824,
+              "width": 112,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-1440x900-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 90,
+              "y": 38,
+              "right": 359.453125,
+              "bottom": 52,
+              "width": 269.453125,
+              "height": 14
+            },
+            ".hud .tr": {
+              "x": 1159.0625,
+              "y": 38,
+              "right": 1350,
+              "bottom": 52,
+              "width": 190.9375,
+              "height": 14
+            },
+            ".hud .bl": {
+              "x": 90,
+              "y": 844,
+              "right": 315.640625,
+              "bottom": 858,
+              "width": 225.640625,
+              "height": 14
+            },
+            ".hud .br": {
+              "x": 1186.9375,
+              "y": 844,
+              "right": 1350,
+              "bottom": 858,
+              "width": 163.0625,
+              "height": 14
+            },
+            ".term-head .l": {
+              "x": 375,
+              "y": 129,
+              "right": 514.203125,
+              "bottom": 142,
+              "width": 139.203125,
+              "height": 13
+            },
+            ".term-head>span:last-child": {
+              "x": 897.796875,
+              "y": 129,
+              "right": 1065,
+              "bottom": 142,
+              "width": 167.203125,
+              "height": 13
+            },
+            "#phaseLabel": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 679.96875,
+              "bottom": 646.640625,
+              "width": 319.96875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 865.3125,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 646.640625,
+              "width": 214.6875,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 360,
+              "y": 120,
+              "right": 1080,
+              "bottom": 336,
+              "width": 720,
+              "height": 216
+            },
+            ".logo-block": {
+              "x": 509.109375,
+              "y": 372,
+              "right": 930.875,
+              "bottom": 596.640625,
+              "width": 421.765625,
+              "height": 224.640625
+            },
+            ".progress-block": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 679.640625,
+              "width": 720,
+              "height": 47
+            },
+            "#hexdump": {
+              "x": 360,
+              "y": 849,
+              "right": 1080,
+              "bottom": 862,
+              "width": 720,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 531.78125,
+              "y": 766,
+              "right": 908.21875,
+              "bottom": 810,
+              "width": 376.4375,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 1292.671875,
+              "y": 780,
+              "right": 1350,
+              "bottom": 812,
+              "width": 57.328125,
+              "height": 32
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 778,
+              "right": 136,
+              "bottom": 824,
+              "width": 112,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-844x390-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.87168884277344,\"right\":395.21875,\"bottom\":51.87168884277344,\"width\":305.21875,\"height\":14},\".hud .tr\":{\"x\":545.171875,\"y\":37.87168884277344,\"right\":754,\"bottom\":51.87168884277344,\"width\":208.828125,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":333.8716735839844,\"right\":360.34375,\"bottom\":347.8716735839844,\"width\":270.34375,\"height\":14},\".hud .br\":{\"x\":590.9375,\"y\":333.8716735839844,\"right\":754,\"bottom\":347.8716735839844,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":107.84375,\"y\":129,\"right\":247.046875,\"bottom\":142,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.953125,\"y\":129,\"right\":736.15625,\"bottom\":142,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":92.84375,\"y\":581.6397705078125,\"right\":430.6875,\"bottom\":595.6397705078125,\"width\":337.84375,\"height\":14},\".progress-meta .r\":{\"x\":527.53125,\"y\":581.6397705078125,\"right\":751.15625,\"bottom\":595.6397705078125,\"width\":223.625,\"height\":14},\".term-wrap\":{\"x\":92.84375,\"y\":120,\"right\":751.15625,\"bottom\":336,\"width\":658.3125,\"height\":216},\".logo-block\":{\"x\":228.546875,\"y\":372,\"right\":615.453125,\"bottom\":540.90625,\"width\":386.90625,\"height\":168.90625},\".progress-block\":{\"x\":92.84375,\"y\":581.6397705078125,\"right\":751.15625,\"bottom\":628.6397705078125,\"width\":658.3125,\"height\":47},\"#hexdump\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13},\"#enterPrompt\":{\"x\":243.59375,\"y\":256,\"right\":600.40625,\"bottom\":300,\"width\":356.8125,\"height\":44},\"#skipBtn\":{\"x\":696.671875,\"y\":270,\"right\":754,\"bottom\":302,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":136,\"bottom\":314,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":333.8716735839844,\"right\":360.34375,\"bottom\":347.8716735839844,\"width\":270.34375,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":590.9375,\"y\":333.8716735839844,\"right\":754,\"bottom\":347.8716735839844,\"width\":163.0625,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-844x390-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":35.898468017578125,\"right\":395.21875,\"bottom\":49.898468017578125,\"width\":305.21875,\"height\":14},\".hud .tr\":{\"x\":545.171875,\"y\":35.898468017578125,\"right\":754,\"bottom\":49.898468017578125,\"width\":208.828125,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":331.8984680175781,\"right\":360.34375,\"bottom\":345.8984680175781,\"width\":270.34375,\"height\":14},\".hud .br\":{\"x\":590.9375,\"y\":331.8984680175781,\"right\":754,\"bottom\":345.8984680175781,\"width\":163.0625,\"height\":14},\".term-head .l\":{\"x\":107.84375,\"y\":129.9976348876953,\"right\":247.046875,\"bottom\":142.9976348876953,\"width\":139.203125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.953125,\"y\":129.9976348876953,\"right\":736.15625,\"bottom\":142.9976348876953,\"width\":167.203125,\"height\":13},\"#phaseLabel\":{\"x\":92.84375,\"y\":576.90625,\"right\":430.6875,\"bottom\":590.90625,\"width\":337.84375,\"height\":14},\".progress-meta .r\":{\"x\":527.53125,\"y\":576.90625,\"right\":751.15625,\"bottom\":590.90625,\"width\":223.625,\"height\":14},\".term-wrap\":{\"x\":92.84375,\"y\":120.99763488769531,\"right\":751.15625,\"bottom\":336.99761962890625,\"width\":658.3125,\"height\":215.99998474121094},\".logo-block\":{\"x\":228.546875,\"y\":372,\"right\":615.453125,\"bottom\":540.90625,\"width\":386.90625,\"height\":168.90625},\".progress-block\":{\"x\":92.84375,\"y\":576.90625,\"right\":751.15625,\"bottom\":623.90625,\"width\":658.3125,\"height\":47},\"#hexdump\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13},\"#enterPrompt\":{\"x\":243.59375,\"y\":264,\"right\":600.40625,\"bottom\":308,\"width\":356.8125,\"height\":44},\"#skipBtn\":{\"x\":696.671875,\"y\":270,\"right\":754,\"bottom\":302,\"width\":57.328125,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":136,\"bottom\":314,\"width\":112,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":331.8984680175781,\"right\":360.34375,\"bottom\":345.8984680175781,\"width\":270.34375,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":590.9375,\"y\":331.8984680175781,\"right\":754,\"bottom\":345.8984680175781,\"width\":163.0625,\"height\":14},\"y\":{\"x\":92.84375,\"y\":339,\"right\":751.15625,\"bottom\":352,\"width\":658.3125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-exit-Escape",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-exit-Enter",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-exit-Space",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "embedded-controls-stay-hidden",
+      "status": "PASS",
+      "detail": {
+        "embedded": true,
+        "skip": "none",
+        "prompt": "none",
+        "language": false
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-320x568-reduce",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-320x568-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 216.14999389648438,
+              "right": 163.8333282470703,
+              "bottom": 232.14999389648438,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 202.5833282470703,
+              "y": 216.14999389648438,
+              "right": 353,
+              "bottom": 232.14999389648438,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 309.7833251953125,
+              "bottom": 530.3499755859375,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 181.73333740234375,
+              "y": 536.3499755859375,
+              "right": 366,
+              "bottom": 551.3499755859375,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 207.14999389648438,
+              "right": 366,
+              "bottom": 338.1499938964844,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 360.1499938964844,
+              "right": 366,
+              "bottom": 493.3500061035156,
+              "width": 342,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 366,
+              "bottom": 583.8499755859375,
+              "width": 342,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 599.8499755859375,
+              "right": 366,
+              "bottom": 612.8499755859375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 628.8499755859375,
+              "right": 366,
+              "bottom": 672.8499755859375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 307.5,
+              "y": 688.8499755859375,
+              "right": 366,
+              "bottom": 734.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.64999389648438,
+              "bottom": 820,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-390x844-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 216.14999389648438,
+              "right": 163.8333282470703,
+              "bottom": 232.14999389648438,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 202.5833282470703,
+              "y": 216.14999389648438,
+              "right": 353,
+              "bottom": 232.14999389648438,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 309.7833251953125,
+              "bottom": 530.3499755859375,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 181.73333740234375,
+              "y": 536.3499755859375,
+              "right": 366,
+              "bottom": 551.3499755859375,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 207.14999389648438,
+              "right": 366,
+              "bottom": 338.1499938964844,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 360.1499938964844,
+              "right": 366,
+              "bottom": 493.3500061035156,
+              "width": 342,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 366,
+              "bottom": 583.8499755859375,
+              "width": 342,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 599.8499755859375,
+              "right": 366,
+              "bottom": 612.8499755859375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 628.8499755859375,
+              "right": 366,
+              "bottom": 672.8499755859375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 307.5,
+              "y": 688.8499755859375,
+              "right": 366,
+              "bottom": 734.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.64999389648438,
+              "bottom": 820,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-430x932-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 260.1499938964844,
+              "right": 163.8333282470703,
+              "bottom": 276.1499938964844,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 242.5833282470703,
+              "y": 260.1499938964844,
+              "right": 393,
+              "bottom": 276.1499938964844,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 309.7833251953125,
+              "bottom": 574.3499755859375,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 221.73333740234375,
+              "y": 580.3499755859375,
+              "right": 406,
+              "bottom": 595.3499755859375,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 251.14999389648438,
+              "right": 406,
+              "bottom": 382.1499938964844,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 404.1499938964844,
+              "right": 406,
+              "bottom": 537.3500061035156,
+              "width": 382,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 406,
+              "bottom": 627.8499755859375,
+              "width": 382,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 643.8499755859375,
+              "right": 406,
+              "bottom": 656.8499755859375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 672.8499755859375,
+              "right": 406,
+              "bottom": 716.8499755859375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 347.5,
+              "y": 732.8499755859375,
+              "right": 406,
+              "bottom": 778.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.64999389648438,
+              "bottom": 908,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-430x932-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 260.1499938964844,
+              "right": 163.8333282470703,
+              "bottom": 276.1499938964844,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 242.5833282470703,
+              "y": 260.1499938964844,
+              "right": 393,
+              "bottom": 276.1499938964844,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 309.7833251953125,
+              "bottom": 574.3499755859375,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 221.73333740234375,
+              "y": 580.3499755859375,
+              "right": 406,
+              "bottom": 595.3499755859375,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 251.14999389648438,
+              "right": 406,
+              "bottom": 382.1499938964844,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 404.1499938964844,
+              "right": 406,
+              "bottom": 537.3500061035156,
+              "width": 382,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 406,
+              "bottom": 627.8499755859375,
+              "width": 382,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 643.8499755859375,
+              "right": 406,
+              "bottom": 656.8499755859375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 672.8499755859375,
+              "right": 406,
+              "bottom": 716.8499755859375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 347.5,
+              "y": 732.8499755859375,
+              "right": 406,
+              "bottom": 778.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.64999389648438,
+              "bottom": 908,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-720x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 241.5833282470703,
+              "right": 163.8333282470703,
+              "bottom": 257.5833282470703,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 532.5833129882812,
+              "y": 241.5833282470703,
+              "right": 682.9999847412109,
+              "bottom": 257.5833282470703,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 309.7833251953125,
+              "bottom": 561.9000244140625,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 511.73333740234375,
+              "y": 567.9000244140625,
+              "right": 696,
+              "bottom": 582.9000244140625,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 232.5833282470703,
+              "right": 696,
+              "bottom": 363.5833282470703,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 385.58331298828125,
+              "right": 696,
+              "bottom": 524.8999786376953,
+              "width": 672,
+              "height": 139.31666564941406
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 696,
+              "bottom": 615.4000244140625,
+              "width": 672,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 631.4000244140625,
+              "right": 696,
+              "bottom": 644.4000244140625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 660.4000244140625,
+              "right": 560,
+              "bottom": 704.4000244140625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 637.5,
+              "y": 720.4000244140625,
+              "right": 696,
+              "bottom": 766.4000244140625,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 135.60000610351562,
+              "bottom": 876,
+              "width": 111.60000610351562,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-720x900-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 241.5833282470703,
+              "right": 163.8333282470703,
+              "bottom": 257.5833282470703,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 532.5833129882812,
+              "y": 241.5833282470703,
+              "right": 682.9999847412109,
+              "bottom": 257.5833282470703,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 309.7833251953125,
+              "bottom": 561.9000244140625,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 511.73333740234375,
+              "y": 567.9000244140625,
+              "right": 696,
+              "bottom": 582.9000244140625,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 232.5833282470703,
+              "right": 696,
+              "bottom": 363.5833282470703,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 385.58331298828125,
+              "right": 696,
+              "bottom": 524.8999786376953,
+              "width": 672,
+              "height": 139.31666564941406
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 696,
+              "bottom": 615.4000244140625,
+              "width": 672,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 631.4000244140625,
+              "right": 696,
+              "bottom": 644.4000244140625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 660.4000244140625,
+              "right": 560,
+              "bottom": 704.4000244140625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 637.5,
+              "y": 720.4000244140625,
+              "right": 696,
+              "bottom": 766.4000244140625,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 135.60000610351562,
+              "bottom": 876,
+              "width": 111.60000610351562,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-768x1024-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":367.066650390625,\"bottom\":52,\"width\":277.066650390625,\"height\":14},\".hud .tr\":{\"x\":481.79998779296875,\"y\":38,\"right\":677.9999847412109,\"bottom\":52,\"width\":196.1999969482422,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":968,\"right\":322.3666687011719,\"bottom\":982,\"width\":232.36666870117188,\"height\":14},\".hud .br\":{\"x\":510.26666259765625,\"y\":968,\"right\":678,\"bottom\":982,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":99.48333740234375,\"y\":187.60000610351562,\"right\":238.68333435058594,\"bottom\":200.60000610351562,\"width\":139.1999969482422,\"height\":13},\".term-head>span:last-child\":{\"x\":501.316650390625,\"y\":187.60000610351562,\"right\":668.5166473388672,\"bottom\":200.60000610351562,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":84.48333740234375,\"y\":629.4166870117188,\"right\":414.41668701171875,\"bottom\":643.4166870117188,\"width\":329.933349609375,\"height\":14},\".progress-meta .r\":{\"x\":462.3833312988281,\"y\":629.4166870117188,\"right\":683.5166625976562,\"bottom\":643.4166870117188,\"width\":221.13333129882812,\"height\":14},\".term-wrap\":{\"x\":84.48333740234375,\"y\":178.60000610351562,\"right\":683.5166625976562,\"bottom\":394.6000061035156,\"width\":599.0333251953125,\"height\":216},\".logo-block\":{\"x\":178.56666564941406,\"y\":430.6000061035156,\"right\":589.4166717529297,\"bottom\":593.3999938964844,\"width\":410.8500061035156,\"height\":162.79998779296875},\".progress-block\":{\"x\":84.48333740234375,\"y\":629.4166870117188,\"right\":683.5166625976562,\"bottom\":675.9166870117188,\"width\":599.0333251953125,\"height\":46.5},\"#hexdump\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13},\"#enterPrompt\":{\"x\":193.71665954589844,\"y\":890,\"right\":574.3000030517578,\"bottom\":934,\"width\":380.5833435058594,\"height\":44},\"#skipBtn\":{\"x\":619.5,\"y\":904,\"right\":678,\"bottom\":936,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":135.60000610351562,\"bottom\":948,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":968,\"right\":322.3666687011719,\"bottom\":982,\"width\":232.36666870117188,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":510.26666259765625,\"y\":968,\"right\":678,\"bottom\":982,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-768x1024-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.80000305175781,\"right\":367.066650390625,\"bottom\":51.80000305175781,\"width\":277.066650390625,\"height\":14},\".hud .tr\":{\"x\":481.79998779296875,\"y\":37.80000305175781,\"right\":677.9999847412109,\"bottom\":51.80000305175781,\"width\":196.1999969482422,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":967.7999877929688,\"right\":322.3666687011719,\"bottom\":981.7999877929688,\"width\":232.36666870117188,\"height\":14},\".hud .br\":{\"x\":510.26666259765625,\"y\":967.7999877929688,\"right\":678,\"bottom\":981.7999877929688,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":99.48333740234375,\"y\":187.68333435058594,\"right\":238.68333435058594,\"bottom\":200.68333435058594,\"width\":139.1999969482422,\"height\":13},\".term-head>span:last-child\":{\"x\":501.316650390625,\"y\":187.68333435058594,\"right\":668.5166473388672,\"bottom\":200.68333435058594,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":84.48333740234375,\"y\":632.2000122070312,\"right\":414.41668701171875,\"bottom\":646.2000122070312,\"width\":329.933349609375,\"height\":14},\".progress-meta .r\":{\"x\":462.3833312988281,\"y\":632.2000122070312,\"right\":683.5166625976562,\"bottom\":646.2000122070312,\"width\":221.13333129882812,\"height\":14},\".term-wrap\":{\"x\":84.48333740234375,\"y\":178.68333435058594,\"right\":683.5166625976562,\"bottom\":394.68333435058594,\"width\":599.0333251953125,\"height\":216},\".logo-block\":{\"x\":178.56666564941406,\"y\":430.6000061035156,\"right\":589.4166717529297,\"bottom\":593.3999938964844,\"width\":410.8500061035156,\"height\":162.79998779296875},\".progress-block\":{\"x\":84.48333740234375,\"y\":632.2000122070312,\"right\":683.5166625976562,\"bottom\":678.7000122070312,\"width\":599.0333251953125,\"height\":46.5},\"#hexdump\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13},\"#enterPrompt\":{\"x\":193.71665954589844,\"y\":898,\"right\":574.3000030517578,\"bottom\":942,\"width\":380.5833435058594,\"height\":44},\"#skipBtn\":{\"x\":619.5,\"y\":904,\"right\":678,\"bottom\":936,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":135.60000610351562,\"bottom\":948,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":967.7999877929688,\"right\":322.3666687011719,\"bottom\":981.7999877929688,\"width\":232.36666870117188,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":510.26666259765625,\"y\":967.7999877929688,\"right\":678,\"bottom\":981.7999877929688,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-1440x900-reduce",
+      "status": "FAIL",
+      "detail": "Error: Language switch restored overlap: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":404.20001220703125,\"bottom\":52,\"width\":314.20001220703125,\"height\":14},\".hud .tr\":{\"x\":1135.13330078125,\"y\":38,\"right\":1349.9999694824219,\"bottom\":52,\"width\":214.86666870117188,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":844,\"right\":368.70001220703125,\"bottom\":858,\"width\":278.70001220703125,\"height\":14},\".hud .br\":{\"x\":1182.2666015625,\"y\":844,\"right\":1349.9999389648438,\"bottom\":858,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":375,\"y\":129,\"right\":514.1999969482422,\"bottom\":142,\"width\":139.1999969482422,\"height\":13},\".term-head>span:last-child\":{\"x\":897.7999877929688,\"y\":129,\"right\":1064.999984741211,\"bottom\":142,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":360,\"y\":633.63330078125,\"right\":708.7833251953125,\"bottom\":647.63330078125,\"width\":348.7833251953125,\"height\":14},\".progress-meta .r\":{\"x\":849.4833374023438,\"y\":633.63330078125,\"right\":1080,\"bottom\":647.63330078125,\"width\":230.51666259765625,\"height\":14},\".term-wrap\":{\"x\":360,\"y\":120,\"right\":1080,\"bottom\":336,\"width\":720,\"height\":216},\".logo-block\":{\"x\":510.75,\"y\":372,\"right\":929.25,\"bottom\":597.6333312988281,\"width\":418.5,\"height\":225.63333129882812},\".progress-block\":{\"x\":360,\"y\":633.63330078125,\"right\":1080,\"bottom\":680.13330078125,\"width\":720,\"height\":46.5},\"#hexdump\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13},\"#enterPrompt\":{\"x\":538.6500244140625,\"y\":766,\"right\":901.36669921875,\"bottom\":810,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":1291.5,\"y\":780,\"right\":1350,\"bottom\":812,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":778,\"right\":135.60000610351562,\"bottom\":824,\"width\":111.60000610351562,\"height\":46}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":844,\"right\":368.70001220703125,\"bottom\":858,\"width\":278.70001220703125,\"height\":14},\"y\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:1079\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-1440x900-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Language switch restored overlap: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":404.20001220703125,\"bottom\":52,\"width\":314.20001220703125,\"height\":14},\".hud .tr\":{\"x\":1135.13330078125,\"y\":38,\"right\":1349.9999694824219,\"bottom\":52,\"width\":214.86666870117188,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":844,\"right\":368.70001220703125,\"bottom\":858,\"width\":278.70001220703125,\"height\":14},\".hud .br\":{\"x\":1182.2666015625,\"y\":844,\"right\":1349.9999389648438,\"bottom\":858,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":375,\"y\":129,\"right\":514.1999969482422,\"bottom\":142,\"width\":139.1999969482422,\"height\":13},\".term-head>span:last-child\":{\"x\":897.7999877929688,\"y\":129,\"right\":1064.999984741211,\"bottom\":142,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":360,\"y\":633.63330078125,\"right\":708.7833251953125,\"bottom\":647.63330078125,\"width\":348.7833251953125,\"height\":14},\".progress-meta .r\":{\"x\":849.4833374023438,\"y\":633.63330078125,\"right\":1080,\"bottom\":647.63330078125,\"width\":230.51666259765625,\"height\":14},\".term-wrap\":{\"x\":360,\"y\":120,\"right\":1080,\"bottom\":336,\"width\":720,\"height\":216},\".logo-block\":{\"x\":510.75,\"y\":372,\"right\":929.25,\"bottom\":597.6333312988281,\"width\":418.5,\"height\":225.63333129882812},\".progress-block\":{\"x\":360,\"y\":633.63330078125,\"right\":1080,\"bottom\":680.13330078125,\"width\":720,\"height\":46.5},\"#hexdump\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13},\"#enterPrompt\":{\"x\":538.6500244140625,\"y\":766,\"right\":901.36669921875,\"bottom\":810,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":1291.5,\"y\":780,\"right\":1350,\"bottom\":812,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":778,\"right\":135.60000610351562,\"bottom\":824,\"width\":111.60000610351562,\"height\":46}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":844,\"right\":368.70001220703125,\"bottom\":858,\"width\":278.70001220703125,\"height\":14},\"y\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:1079\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:452:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-844x390-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":367.066650390625,\"bottom\":52,\"width\":277.066650390625,\"height\":14},\".hud .tr\":{\"x\":557.7999877929688,\"y\":38,\"right\":753.9999847412109,\"bottom\":52,\"width\":196.1999969482422,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":334,\"right\":322.3666687011719,\"bottom\":348,\"width\":232.36666870117188,\"height\":14},\".hud .br\":{\"x\":586.2666625976562,\"y\":334,\"right\":754,\"bottom\":348,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":107.83332824707031,\"y\":129,\"right\":247.03334045410156,\"bottom\":142,\"width\":139.20001220703125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.9500122070312,\"y\":129,\"right\":736.1500091552734,\"bottom\":142,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":92.83332824707031,\"y\":578.5499877929688,\"right\":422.7666778564453,\"bottom\":592.5499877929688,\"width\":329.933349609375,\"height\":14},\".progress-meta .r\":{\"x\":530.0166625976562,\"y\":578.5499877929688,\"right\":751.1499938964844,\"bottom\":592.5499877929688,\"width\":221.13333129882812,\"height\":14},\".term-wrap\":{\"x\":92.83332824707031,\"y\":120,\"right\":751.1499786376953,\"bottom\":336,\"width\":658.316650390625,\"height\":216},\".logo-block\":{\"x\":216.56666564941406,\"y\":372,\"right\":627.4166717529297,\"bottom\":541.9166717529297,\"width\":410.8500061035156,\"height\":169.9166717529297},\".progress-block\":{\"x\":92.83332824707031,\"y\":578.5499877929688,\"right\":751.1499786376953,\"bottom\":625.0499877929688,\"width\":658.316650390625,\"height\":46.5},\"#hexdump\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13},\"#enterPrompt\":{\"x\":231.71665954589844,\"y\":264,\"right\":612.3000030517578,\"bottom\":308,\"width\":380.5833435058594,\"height\":44},\"#skipBtn\":{\"x\":695.5,\"y\":270,\"right\":754,\"bottom\":302,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":135.60000610351562,\"bottom\":314,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":334,\"right\":322.3666687011719,\"bottom\":348,\"width\":232.36666870117188,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":586.2666625976562,\"y\":334,\"right\":754,\"bottom\":348,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-844x390-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.26666259765625,\"right\":367.066650390625,\"bottom\":51.26666259765625,\"width\":277.066650390625,\"height\":14},\".hud .tr\":{\"x\":557.7999877929688,\"y\":37.26666259765625,\"right\":753.9999847412109,\"bottom\":51.26666259765625,\"width\":196.1999969482422,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":333.26666259765625,\"right\":322.3666687011719,\"bottom\":347.26666259765625,\"width\":232.36666870117188,\"height\":14},\".hud .br\":{\"x\":586.2666625976562,\"y\":333.26666259765625,\"right\":754,\"bottom\":347.26666259765625,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":107.83332824707031,\"y\":129.36666870117188,\"right\":247.03334045410156,\"bottom\":142.36666870117188,\"width\":139.20001220703125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.9500122070312,\"y\":129.36666870117188,\"right\":736.1500091552734,\"bottom\":142.36666870117188,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":92.83332824707031,\"y\":584.316650390625,\"right\":422.7666778564453,\"bottom\":598.316650390625,\"width\":329.933349609375,\"height\":14},\".progress-meta .r\":{\"x\":530.0166625976562,\"y\":584.316650390625,\"right\":751.1499938964844,\"bottom\":598.316650390625,\"width\":221.13333129882812,\"height\":14},\".term-wrap\":{\"x\":92.83332824707031,\"y\":120.36666870117188,\"right\":751.1499786376953,\"bottom\":336.3666687011719,\"width\":658.316650390625,\"height\":216},\".logo-block\":{\"x\":216.56666564941406,\"y\":372,\"right\":627.4166717529297,\"bottom\":541.9166717529297,\"width\":410.8500061035156,\"height\":169.9166717529297},\".progress-block\":{\"x\":92.83332824707031,\"y\":584.316650390625,\"right\":751.1499786376953,\"bottom\":630.816650390625,\"width\":658.316650390625,\"height\":46.5},\"#hexdump\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13},\"#enterPrompt\":{\"x\":231.71665954589844,\"y\":264,\"right\":612.3000030517578,\"bottom\":308,\"width\":380.5833435058594,\"height\":44},\"#skipBtn\":{\"x\":695.5,\"y\":270,\"right\":754,\"bottom\":302,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":135.60000610351562,\"bottom\":314,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":333.26666259765625,\"right\":322.3666687011719,\"bottom\":347.26666259765625,\"width\":232.36666870117188,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":586.2666625976562,\"y\":333.26666259765625,\"right\":754,\"bottom\":347.26666259765625,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-320x568-reduce",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-320x568-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Covered control: \"#skipBtn\"\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:797\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 216.14999389648438,
+              "right": 163.8333282470703,
+              "bottom": 232.14999389648438,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 202.5833282470703,
+              "y": 216.14999389648438,
+              "right": 353,
+              "bottom": 232.14999389648438,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 294.433349609375,
+              "bottom": 530.3499755859375,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 189.36666870117188,
+              "y": 536.3499755859375,
+              "right": 366,
+              "bottom": 551.3499755859375,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 207.14999389648438,
+              "right": 366,
+              "bottom": 338.1499938964844,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 360.1499938964844,
+              "right": 366,
+              "bottom": 493.3500061035156,
+              "width": 342,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 366,
+              "bottom": 583.8499755859375,
+              "width": 342,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 599.8499755859375,
+              "right": 366,
+              "bottom": 612.8499755859375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 628.8499755859375,
+              "right": 366,
+              "bottom": 672.8499755859375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 307.5,
+              "y": 688.8499755859375,
+              "right": 366,
+              "bottom": 734.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.64999389648438,
+              "bottom": 820,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-390x844-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 216.14999389648438,
+              "right": 163.8333282470703,
+              "bottom": 232.14999389648438,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 202.5833282470703,
+              "y": 216.14999389648438,
+              "right": 353,
+              "bottom": 232.14999389648438,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 294.433349609375,
+              "bottom": 530.3499755859375,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 189.36666870117188,
+              "y": 536.3499755859375,
+              "right": 366,
+              "bottom": 551.3499755859375,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 207.14999389648438,
+              "right": 366,
+              "bottom": 338.1499938964844,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 360.1499938964844,
+              "right": 366,
+              "bottom": 493.3500061035156,
+              "width": 342,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 366,
+              "bottom": 583.8499755859375,
+              "width": 342,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 599.8499755859375,
+              "right": 366,
+              "bottom": 612.8499755859375,
+              "width": 342,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 628.8499755859375,
+              "right": 366,
+              "bottom": 672.8499755859375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 307.5,
+              "y": 688.8499755859375,
+              "right": 366,
+              "bottom": 734.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.64999389648438,
+              "bottom": 820,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-430x932-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 260.1499938964844,
+              "right": 163.8333282470703,
+              "bottom": 276.1499938964844,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 242.5833282470703,
+              "y": 260.1499938964844,
+              "right": 393,
+              "bottom": 276.1499938964844,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 294.433349609375,
+              "bottom": 574.3499755859375,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 229.36666870117188,
+              "y": 580.3499755859375,
+              "right": 406,
+              "bottom": 595.3499755859375,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 251.14999389648438,
+              "right": 406,
+              "bottom": 382.1499938964844,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 404.1499938964844,
+              "right": 406,
+              "bottom": 537.3500061035156,
+              "width": 382,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 406,
+              "bottom": 627.8499755859375,
+              "width": 382,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 643.8499755859375,
+              "right": 406,
+              "bottom": 656.8499755859375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 672.8499755859375,
+              "right": 406,
+              "bottom": 716.8499755859375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 347.5,
+              "y": 732.8499755859375,
+              "right": 406,
+              "bottom": 778.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.64999389648438,
+              "bottom": 908,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-430x932-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 406,
+              "bottom": 40.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 406,
+              "bottom": 63,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 406,
+              "bottom": 85.5,
+              "width": 382,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 406,
+              "bottom": 108,
+              "width": 382,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 260.1499938964844,
+              "right": 163.8333282470703,
+              "bottom": 276.1499938964844,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 242.5833282470703,
+              "y": 260.1499938964844,
+              "right": 393,
+              "bottom": 276.1499938964844,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 294.433349609375,
+              "bottom": 574.3499755859375,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 229.36666870117188,
+              "y": 580.3499755859375,
+              "right": 406,
+              "bottom": 595.3499755859375,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 251.14999389648438,
+              "right": 406,
+              "bottom": 382.1499938964844,
+              "width": 382,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 404.1499938964844,
+              "right": 406,
+              "bottom": 537.3500061035156,
+              "width": 382,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 559.3499755859375,
+              "right": 406,
+              "bottom": 627.8499755859375,
+              "width": 382,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 643.8499755859375,
+              "right": 406,
+              "bottom": 656.8499755859375,
+              "width": 382,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 672.8499755859375,
+              "right": 406,
+              "bottom": 716.8499755859375,
+              "width": 382,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 347.5,
+              "y": 732.8499755859375,
+              "right": 406,
+              "bottom": 778.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 862,
+              "right": 124.64999389648438,
+              "bottom": 908,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-720x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 241.5833282470703,
+              "right": 163.8333282470703,
+              "bottom": 257.5833282470703,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 532.5833129882812,
+              "y": 241.5833282470703,
+              "right": 682.9999847412109,
+              "bottom": 257.5833282470703,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 294.433349609375,
+              "bottom": 561.9000244140625,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 519.36669921875,
+              "y": 567.9000244140625,
+              "right": 696.0000305175781,
+              "bottom": 582.9000244140625,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 232.5833282470703,
+              "right": 696,
+              "bottom": 363.5833282470703,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 385.58331298828125,
+              "right": 696,
+              "bottom": 524.8999786376953,
+              "width": 672,
+              "height": 139.31666564941406
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 696,
+              "bottom": 615.4000244140625,
+              "width": 672,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 631.4000244140625,
+              "right": 696,
+              "bottom": 644.4000244140625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 660.4000244140625,
+              "right": 560,
+              "bottom": 704.4000244140625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 637.5,
+              "y": 720.4000244140625,
+              "right": 696,
+              "bottom": 766.4000244140625,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 135.60000610351562,
+              "bottom": 876,
+              "width": 111.60000610351562,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-720x900-no-preference",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 696,
+              "bottom": 40.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 696,
+              "bottom": 63,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 696,
+              "bottom": 85.5,
+              "width": 672,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 696,
+              "bottom": 108,
+              "width": 672,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 241.5833282470703,
+              "right": 163.8333282470703,
+              "bottom": 257.5833282470703,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 532.5833129882812,
+              "y": 241.5833282470703,
+              "right": 682.9999847412109,
+              "bottom": 257.5833282470703,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 294.433349609375,
+              "bottom": 561.9000244140625,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 519.36669921875,
+              "y": 567.9000244140625,
+              "right": 696.0000305175781,
+              "bottom": 582.9000244140625,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 232.5833282470703,
+              "right": 696,
+              "bottom": 363.5833282470703,
+              "width": 672,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 385.58331298828125,
+              "right": 696,
+              "bottom": 524.8999786376953,
+              "width": 672,
+              "height": 139.31666564941406
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 546.9000244140625,
+              "right": 696,
+              "bottom": 615.4000244140625,
+              "width": 672,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 24,
+              "y": 631.4000244140625,
+              "right": 696,
+              "bottom": 644.4000244140625,
+              "width": 672,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 160,
+              "y": 660.4000244140625,
+              "right": 560,
+              "bottom": 704.4000244140625,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 637.5,
+              "y": 720.4000244140625,
+              "right": 696,
+              "bottom": 766.4000244140625,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 831,
+              "right": 135.60000610351562,
+              "bottom": 876,
+              "width": 111.60000610351562,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-768x1024-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":404,\"bottom\":52,\"width\":314,\"height\":14},\".hud .tr\":{\"x\":463.33331298828125,\"y\":38,\"right\":677.9999847412109,\"bottom\":52,\"width\":214.6666717529297,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":968,\"right\":368.5333251953125,\"bottom\":982,\"width\":278.5333251953125,\"height\":14},\".hud .br\":{\"x\":510.26666259765625,\"y\":968,\"right\":678,\"bottom\":982,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":99.48333740234375,\"y\":187.60000610351562,\"right\":238.68333435058594,\"bottom\":200.60000610351562,\"width\":139.1999969482422,\"height\":13},\".term-head>span:last-child\":{\"x\":501.316650390625,\"y\":187.60000610351562,\"right\":668.5166473388672,\"bottom\":200.60000610351562,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":84.48333740234375,\"y\":629.5833129882812,\"right\":432.8833312988281,\"bottom\":643.5833129882812,\"width\":348.3999938964844,\"height\":14},\".progress-meta .r\":{\"x\":453.1499938964844,\"y\":629.5833129882812,\"right\":683.5166625976562,\"bottom\":643.5833129882812,\"width\":230.36666870117188,\"height\":14},\".term-wrap\":{\"x\":84.48333740234375,\"y\":178.60000610351562,\"right\":683.5166625976562,\"bottom\":394.6000061035156,\"width\":599.0333251953125,\"height\":216},\".logo-block\":{\"x\":195.39999389648438,\"y\":430.6000061035156,\"right\":572.6000061035156,\"bottom\":593.3999938964844,\"width\":377.20001220703125,\"height\":162.79998779296875},\".progress-block\":{\"x\":84.48333740234375,\"y\":629.5833129882812,\"right\":683.5166625976562,\"bottom\":676.0833129882812,\"width\":599.0333251953125,\"height\":46.5},\"#hexdump\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13},\"#enterPrompt\":{\"x\":202.64999389648438,\"y\":890,\"right\":565.3666687011719,\"bottom\":934,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":619.5,\"y\":904,\"right\":678,\"bottom\":936,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":135.60000610351562,\"bottom\":948,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":968,\"right\":368.5333251953125,\"bottom\":982,\"width\":278.5333251953125,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":510.26666259765625,\"y\":968,\"right\":678,\"bottom\":982,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-768x1024-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.866668701171875,\"right\":404,\"bottom\":51.866668701171875,\"width\":314,\"height\":14},\".hud .tr\":{\"x\":463.33331298828125,\"y\":37.866668701171875,\"right\":677.9999847412109,\"bottom\":51.866668701171875,\"width\":214.6666717529297,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":967.86669921875,\"right\":368.5333251953125,\"bottom\":981.86669921875,\"width\":278.5333251953125,\"height\":14},\".hud .br\":{\"x\":510.26666259765625,\"y\":967.86669921875,\"right\":678,\"bottom\":981.86669921875,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":99.48333740234375,\"y\":187.63333129882812,\"right\":238.68333435058594,\"bottom\":200.63333129882812,\"width\":139.1999969482422,\"height\":13},\".term-head>span:last-child\":{\"x\":501.316650390625,\"y\":187.63333129882812,\"right\":668.5166473388672,\"bottom\":200.63333129882812,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":84.48333740234375,\"y\":631.566650390625,\"right\":432.8833312988281,\"bottom\":645.566650390625,\"width\":348.3999938964844,\"height\":14},\".progress-meta .r\":{\"x\":453.1499938964844,\"y\":631.566650390625,\"right\":683.5166625976562,\"bottom\":645.566650390625,\"width\":230.36666870117188,\"height\":14},\".term-wrap\":{\"x\":84.48333740234375,\"y\":178.63333129882812,\"right\":683.5166625976562,\"bottom\":394.6333312988281,\"width\":599.0333251953125,\"height\":216},\".logo-block\":{\"x\":195.39999389648438,\"y\":430.6000061035156,\"right\":572.6000061035156,\"bottom\":593.3999938964844,\"width\":377.20001220703125,\"height\":162.79998779296875},\".progress-block\":{\"x\":84.48333740234375,\"y\":631.566650390625,\"right\":683.5166625976562,\"bottom\":678.066650390625,\"width\":599.0333251953125,\"height\":46.5},\"#hexdump\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13},\"#enterPrompt\":{\"x\":202.63333129882812,\"y\":898,\"right\":565.3500061035156,\"bottom\":942,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":619.5,\"y\":904,\"right\":678,\"bottom\":936,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":903,\"right\":135.60000610351562,\"bottom\":948,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":967.86669921875,\"right\":368.5333251953125,\"bottom\":981.86669921875,\"width\":278.5333251953125,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":510.26666259765625,\"y\":967.86669921875,\"right\":678,\"bottom\":981.86669921875,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":84.48333740234375,\"y\":973,\"right\":683.5166625976562,\"bottom\":986,\"width\":599.0333251953125,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-1440x900-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":404,\"bottom\":52,\"width\":314,\"height\":14},\".hud .tr\":{\"x\":1135.3333740234375,\"y\":38,\"right\":1350.0000457763672,\"bottom\":52,\"width\":214.6666717529297,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":844,\"right\":368.5333251953125,\"bottom\":858,\"width\":278.5333251953125,\"height\":14},\".hud .br\":{\"x\":1182.2666015625,\"y\":844,\"right\":1349.9999389648438,\"bottom\":858,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":375,\"y\":129,\"right\":514.1999969482422,\"bottom\":142,\"width\":139.1999969482422,\"height\":13},\".term-head>span:last-child\":{\"x\":897.7999877929688,\"y\":129,\"right\":1064.999984741211,\"bottom\":142,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":360,\"y\":633.7999877929688,\"right\":708.3999938964844,\"bottom\":647.7999877929688,\"width\":348.3999938964844,\"height\":14},\".progress-meta .r\":{\"x\":849.63330078125,\"y\":633.7999877929688,\"right\":1079.9999694824219,\"bottom\":647.7999877929688,\"width\":230.36666870117188,\"height\":14},\".term-wrap\":{\"x\":360,\"y\":120,\"right\":1080,\"bottom\":336,\"width\":720,\"height\":216},\".logo-block\":{\"x\":510.75,\"y\":372,\"right\":929.25,\"bottom\":597.6333312988281,\"width\":418.5,\"height\":225.63333129882812},\".progress-block\":{\"x\":360,\"y\":633.7999877929688,\"right\":1080,\"bottom\":680.2999877929688,\"width\":720,\"height\":46.5},\"#hexdump\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13},\"#enterPrompt\":{\"x\":538.6500244140625,\"y\":774,\"right\":901.36669921875,\"bottom\":818,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":1291.5,\"y\":780,\"right\":1350,\"bottom\":812,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":778,\"right\":135.60000610351562,\"bottom\":824,\"width\":111.60000610351562,\"height\":46}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":844,\"right\":368.5333251953125,\"bottom\":858,\"width\":278.5333251953125,\"height\":14},\"y\":{\"x\":360,\"y\":849,\"right\":1080,\"bottom\":862,\"width\":720,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-1440x900-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":38,\"right\":404,\"bottom\":52,\"width\":314,\"height\":14},\".hud .tr\":{\"x\":1135.3333740234375,\"y\":38,\"right\":1350.0000457763672,\"bottom\":52,\"width\":214.6666717529297,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":844,\"right\":368.5333251953125,\"bottom\":858,\"width\":278.5333251953125,\"height\":14},\".hud .br\":{\"x\":1182.2666015625,\"y\":844,\"right\":1349.9999389648438,\"bottom\":858,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":374.58331298828125,\"y\":129.21665954589844,\"right\":513.7833251953125,\"bottom\":142.21665954589844,\"width\":139.20001220703125,\"height\":13},\".term-head>span:last-child\":{\"x\":897.38330078125,\"y\":129.21665954589844,\"right\":1064.5832977294922,\"bottom\":142.21665954589844,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":359.58331298828125,\"y\":634.11669921875,\"right\":707.9833374023438,\"bottom\":648.11669921875,\"width\":348.4000244140625,\"height\":14},\".progress-meta .r\":{\"x\":849.2166748046875,\"y\":634.11669921875,\"right\":1079.5833435058594,\"bottom\":648.11669921875,\"width\":230.36666870117188,\"height\":14},\".term-wrap\":{\"x\":359.58331298828125,\"y\":120.21665954589844,\"right\":1079.5833129882812,\"bottom\":336.21665954589844,\"width\":720,\"height\":216},\".logo-block\":{\"x\":510.33331298828125,\"y\":372.2166748046875,\"right\":928.8333129882812,\"bottom\":597.8500213623047,\"width\":418.5,\"height\":225.6333465576172},\".progress-block\":{\"x\":359.58331298828125,\"y\":634.11669921875,\"right\":1079.5833129882812,\"bottom\":680.61669921875,\"width\":720,\"height\":46.5},\"#hexdump\":{\"x\":359.58331298828125,\"y\":849.2166748046875,\"right\":1079.5833129882812,\"bottom\":862.2166748046875,\"width\":720,\"height\":13},\"#enterPrompt\":{\"x\":538.2166748046875,\"y\":773.0999755859375,\"right\":900.933349609375,\"bottom\":817.0999755859375,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":1291.0833740234375,\"y\":780.2166748046875,\"right\":1349.5833740234375,\"bottom\":812.2166748046875,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":778,\"right\":135.60000610351562,\"bottom\":824,\"width\":111.60000610351562,\"height\":46}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":844,\"right\":368.5333251953125,\"bottom\":858,\"width\":278.5333251953125,\"height\":14},\"y\":{\"x\":359.58331298828125,\"y\":849.2166748046875,\"right\":1079.5833129882812,\"bottom\":862.2166748046875,\"width\":720,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-844x390-reduce",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.94999694824219,\"right\":404,\"bottom\":51.94999694824219,\"width\":314,\"height\":14},\".hud .tr\":{\"x\":539.3333129882812,\"y\":37.94999694824219,\"right\":753.9999847412109,\"bottom\":51.94999694824219,\"width\":214.6666717529297,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":333.95001220703125,\"right\":368.5333251953125,\"bottom\":347.95001220703125,\"width\":278.5333251953125,\"height\":14},\".hud .br\":{\"x\":586.2666625976562,\"y\":333.95001220703125,\"right\":754,\"bottom\":347.95001220703125,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":107.83332824707031,\"y\":129,\"right\":247.03334045410156,\"bottom\":142,\"width\":139.20001220703125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.9500122070312,\"y\":129,\"right\":736.1500091552734,\"bottom\":142,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":92.83332824707031,\"y\":580.5333251953125,\"right\":441.2333526611328,\"bottom\":594.5333251953125,\"width\":348.4000244140625,\"height\":14},\".progress-meta .r\":{\"x\":520.7833251953125,\"y\":580.5333251953125,\"right\":751.1499786376953,\"bottom\":594.5333251953125,\"width\":230.3666534423828,\"height\":14},\".term-wrap\":{\"x\":92.83332824707031,\"y\":120,\"right\":751.1499786376953,\"bottom\":336,\"width\":658.316650390625,\"height\":216},\".logo-block\":{\"x\":233.39999389648438,\"y\":372,\"right\":610.6000061035156,\"bottom\":541.9166717529297,\"width\":377.20001220703125,\"height\":169.9166717529297},\".progress-block\":{\"x\":92.83332824707031,\"y\":580.5333251953125,\"right\":751.1499786376953,\"bottom\":627.0333251953125,\"width\":658.316650390625,\"height\":46.5},\"#hexdump\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13},\"#enterPrompt\":{\"x\":240.64999389648438,\"y\":264,\"right\":603.3666687011719,\"bottom\":308,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":695.5,\"y\":270,\"right\":754,\"bottom\":302,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":135.60000610351562,\"bottom\":314,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":333.95001220703125,\"right\":368.5333251953125,\"bottom\":347.95001220703125,\"width\":278.5333251953125,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":586.2666625976562,\"y\":333.95001220703125,\"right\":754,\"bottom\":347.95001220703125,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-844x390-no-preference",
+      "status": "FAIL",
+      "detail": "Error: Loader composition collisions: {\"boxes\":{\".hud .tl\":{\"x\":90,\"y\":37.46665954589844,\"right\":404,\"bottom\":51.46665954589844,\"width\":314,\"height\":14},\".hud .tr\":{\"x\":539.3333129882812,\"y\":37.46665954589844,\"right\":753.9999847412109,\"bottom\":51.46665954589844,\"width\":214.6666717529297,\"height\":14},\".hud .bl\":{\"x\":90,\"y\":333.4666748046875,\"right\":368.5333251953125,\"bottom\":347.4666748046875,\"width\":278.5333251953125,\"height\":14},\".hud .br\":{\"x\":586.2666625976562,\"y\":333.4666748046875,\"right\":754,\"bottom\":347.4666748046875,\"width\":167.73333740234375,\"height\":14},\".term-head .l\":{\"x\":107.83332824707031,\"y\":129.26666259765625,\"right\":247.03334045410156,\"bottom\":142.26666259765625,\"width\":139.20001220703125,\"height\":13},\".term-head>span:last-child\":{\"x\":568.9500122070312,\"y\":129.26666259765625,\"right\":736.1500091552734,\"bottom\":142.26666259765625,\"width\":167.1999969482422,\"height\":13},\"#phaseLabel\":{\"x\":92.83332824707031,\"y\":583.3499755859375,\"right\":441.2333526611328,\"bottom\":597.3499755859375,\"width\":348.4000244140625,\"height\":14},\".progress-meta .r\":{\"x\":520.7833251953125,\"y\":583.3499755859375,\"right\":751.1499786376953,\"bottom\":597.3499755859375,\"width\":230.3666534423828,\"height\":14},\".term-wrap\":{\"x\":92.83332824707031,\"y\":120.26666259765625,\"right\":751.1499786376953,\"bottom\":336.26666259765625,\"width\":658.316650390625,\"height\":216},\".logo-block\":{\"x\":233.39999389648438,\"y\":372,\"right\":610.6000061035156,\"bottom\":541.9166717529297,\"width\":377.20001220703125,\"height\":169.9166717529297},\".progress-block\":{\"x\":92.83332824707031,\"y\":583.3499755859375,\"right\":751.1499786376953,\"bottom\":629.8499755859375,\"width\":658.316650390625,\"height\":46.5},\"#hexdump\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13},\"#enterPrompt\":{\"x\":240.64999389648438,\"y\":264,\"right\":603.3666687011719,\"bottom\":308,\"width\":362.7166748046875,\"height\":44},\"#skipBtn\":{\"x\":695.5,\"y\":270,\"right\":754,\"bottom\":302,\"width\":58.5,\"height\":32},\".ax-loader-language\":{\"x\":24,\"y\":269,\"right\":135.60000610351562,\"bottom\":314,\"width\":111.60000610351562,\"height\":45}},\"failures\":[{\"why\":\"overlap\",\"a\":\".hud .bl\",\"b\":\"#hexdump\",\"x\":{\"x\":90,\"y\":333.4666748046875,\"right\":368.5333251953125,\"bottom\":347.4666748046875,\"width\":278.5333251953125,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}},{\"why\":\"overlap\",\"a\":\".hud .br\",\"b\":\"#hexdump\",\"x\":{\"x\":586.2666625976562,\"y\":333.4666748046875,\"right\":754,\"bottom\":347.4666748046875,\"width\":167.73333740234375,\"height\":14},\"y\":{\"x\":92.85000610351562,\"y\":339,\"right\":751.1666564941406,\"bottom\":352,\"width\":658.316650390625,\"height\":13}}],\"overflow\":false,\"scrollable\":false}\n    at assert (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:13:45)\n    at /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:528\n    at async check (/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:20:53)\n    at async /home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud/tests/browser/loader_layout.cjs:35:130"
+    },
+    {
+      "engine": "firefox",
+      "id": "keyboard-exit-Escape",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "keyboard-exit-Enter",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "keyboard-exit-Space",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "embedded-controls-stay-hidden",
+      "status": "PASS",
+      "detail": {
+        "embedded": true,
+        "skip": "none",
+        "prompt": "none",
+        "language": false
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "after-chromium-en-320.png",
+      "bytes": 139005,
+      "sha256": "c5bde67b0b6e457e219d6f16c8681fc560e1cf695d9f77c295fe0446bedbb3e6"
+    },
+    {
+      "name": "after-chromium-en-390.png",
+      "bytes": 173114,
+      "sha256": "7a9f0f912674f40f6ef2f4a91777a24a291078a09e709f2edea2af08c6d36840"
+    },
+    {
+      "name": "after-chromium-en-1440.png",
+      "bytes": 430047,
+      "sha256": "f7bd677bb4be1a0a9092dccfa99a66f31b8198067904a16e3d3a61a413294b5d"
+    },
+    {
+      "name": "after-chromium-ru-320.png",
+      "bytes": 142268,
+      "sha256": "500b3aa77e212a9de0bcdc2b8dd68d1c480c504f99b0beb7d60f3efcce8b96f7"
+    },
+    {
+      "name": "after-chromium-ru-390.png",
+      "bytes": 175587,
+      "sha256": "e91c7bc2b122bf3763cea7094b2af5ea168a78d27842c02ebc443122e7104ad6"
+    },
+    {
+      "name": "after-chromium-ru-1440.png",
+      "bytes": 430982,
+      "sha256": "deae552de5f7f487a5731e0af6e34eba6a74fcaee2bddd7e8471817089c2e4a5"
+    }
+  ],
+  "limits": {
+    "retainedRuns": 3,
+    "days": 14,
+    "bytes": 33554432
+  }
+}

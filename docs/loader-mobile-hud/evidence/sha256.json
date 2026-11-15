@@ -1,0 +1,25 @@
+{
+  "runtime_fix": "8d26d0a143240fd1fe095eee48edfee9e6757161",
+  "files": {
+    "docs/loader-mobile-hud/AGENTOPS.md": "bf3747e924756d5b77edf81fc65e7981476fb78a06e144cfc4987638ffda3b4d",
+    "docs/loader-mobile-hud/REPORT.md": "60a0519a7942df240c7f2c373f6e82a730c3ce4fcdf29ebe0494f81a1c7f818f",
+    "docs/loader-mobile-hud/SPEC.md": "4aaf6fb2a94d86e3166261d0b8119a90d929d1d154dfe9bcd67ac74bb2dc6817",
+    "docs/loader-mobile-hud/evidence/after-chromium-en-1440.png": "54f384105f2f9cdd4d602ee07d608715dbf531e6fc18cad086a492f3f5b1ef55",
+    "docs/loader-mobile-hud/evidence/after-chromium-en-320.png": "67b67d1ee2f2f7c03f3b5989d9c90f4a0ca4a9230cd546a58e43b3f9fae4e61f",
+    "docs/loader-mobile-hud/evidence/after-chromium-en-390.png": "90fd92e1c5fcf0218431bbde002a05b52a95438888362e01b611fe6b1c217daf",
+    "docs/loader-mobile-hud/evidence/after-chromium-en-844.png": "bd18e6cf9b39e2a8246c8d83b2b2915b60532a938b422a629baf5a39763cdae5",
+    "docs/loader-mobile-hud/evidence/after-chromium-ru-1440.png": "f4490aedabf23c27248a69f963bdaf59e8c9c1a4c998d5c850380ce5b4437a46",
+    "docs/loader-mobile-hud/evidence/after-chromium-ru-320.png": "f10bb338a8831eda7070952bdc0784f64bae9b1ea9dfff41931e6d6d7b780a1a",
+    "docs/loader-mobile-hud/evidence/after-chromium-ru-390.png": "7e787cb6b82cc129b68779bbc8441b9e3b74d9b5508aee19ca1c27924c3be88a",
+    "docs/loader-mobile-hud/evidence/after-chromium-ru-844.png": "58d7481dfce4f7465dcc106617e0ec02ab521cde79ec7381ba42f8e10fa81c82",
+    "docs/loader-mobile-hud/evidence/before-chromium-en-390.png": "09c62f89cf074f824e0e72e0e6c8b2394c1f8898aac10383e63c0aa8c6718548",
+    "docs/loader-mobile-hud/evidence/before-chromium-ru-390.png": "0d814a0d13a69807dbd31009b6490e6b3e828fd85d0ad3450fa15b80a3327b89",
+    "docs/loader-mobile-hud/evidence/before.json": "4f959c78e09511bc9509db8b0cfd3a4f2fd4a8fe8bb12866a9b543d4f14df7c1",
+    "docs/loader-mobile-hud/evidence/existing-loader-i18n.json": "ebf095eb319b94531aa400ddbe16afd7301be2450e7358366034dadc88dbc3a3",
+    "docs/loader-mobile-hud/evidence/first-correction-diagnostic.json": "af6e297e46cc599c7d9147e1bdc7a57be30af9a781896a20f304f6b05e920a19",
+    "docs/loader-mobile-hud/evidence/layout-browser.json": "7c3c3b93178a8811a34e481e3fd1a8b804c2db4244368f641af721f3e72bb968",
+    "docs/loader-mobile-hud/evidence/portrait-tablet-gate.json": "c0395f9e8fed246c5e509c60f0e717e22ee3ca5ec595b624f055966b0a3444ad",
+    "docs/loader-mobile-hud/evidence/preservation.json": "c704a7541ef32a3b5db607f8a3bab8debdf04718e4080c77af9cfcf239aefc4b",
+    "docs/loader-mobile-hud/evidence/preview-composition.json": "37cf6f3f62392e87c30f85313f32bc39a2f014a9e0aa8c24dc75c5401cf3f504"
+  }
+}

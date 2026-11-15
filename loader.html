@@ -412,17 +412,48 @@ body{
 }
 
 /* Mobile */
-@media (max-width: 720px){
+@media (min-width: 721px) and (max-width: 1080px) and (min-height: 521px){
+  .hud .bl,.hud .br{bottom:24px}
+  .hexdump{bottom:58px}
+}
+@media (max-width: 720px), (max-width: 1024px) and (max-height: 520px){
   .asciiCol{display:none}
-  .corner{width:30px;height:30px}
-  .hud{font-size:9px;letter-spacing:.22em}
-  .hud .tl,.hud .tr{left:auto;right:auto}
-  .hud .tl{left:24px;top:32px}
-  .hud .tr{right:24px;top:32px}
-  .hud .bl{left:24px;bottom:34px}
-  .hud .br{right:24px;bottom:34px}
-  .skip-hint{right:24px;bottom:80px}
-  .stage{padding:96px 18px}
+  .corner{width:30px;height:30px;pointer-events:none}
+  /* Each instrument and control owns a row; short viewports can scroll. */
+  html{height:auto;min-height:100%;overflow:auto}
+  body{height:auto;min-height:100svh;overflow:visible;display:flex;flex-direction:column;gap:14px;padding:24px}
+  .hud{position:relative;inset:auto;display:grid;grid-template-columns:minmax(0,1fr);gap:6px;font-size:11px;line-height:1.5;letter-spacing:.06em}
+  .hud>div{position:static;flex-wrap:wrap;gap:4px 8px;min-width:0}
+  .hud .tr,.hud .br{justify-content:flex-end}
+  .stage-root{position:relative;inset:auto;flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;min-width:0}
+  .stage{position:relative;inset:auto;grid-template-rows:auto auto auto;gap:22px;padding:0;min-width:0}
+  .term-wrap,.progress-block{width:100%;align-self:auto;min-width:0}
+  .term-head{flex-wrap:wrap;gap:6px 10px;font-size:12px;letter-spacing:.06em;padding:8px 12px}
+  .term-body{height:96px;padding:10px 12px;font-size:12px}
+  .logo-block{width:100%;min-width:0;gap:14px;margin:0}
+  .logo-eyebrow{max-width:100%;font-size:11px;letter-spacing:.1em;text-align:center;padding:6px 10px}
+  .tag-line{max-width:100%;gap:8px;font-size:11px;letter-spacing:.14em;text-align:center}
+  .tag-line .bar{width:18px;flex:none}
+  .progress-block{grid-template-columns:minmax(0,1fr) auto;gap:10px 12px}
+  .progress-meta{flex-direction:column;align-items:flex-start;gap:6px;font-size:11px;letter-spacing:.08em}
+  .progress-meta .r{align-self:flex-end;gap:12px}
+  .bar-pct{min-width:56px}
+  .hexdump{position:relative;left:auto;bottom:auto;transform:none;width:100%;flex:none}
+  .enter-prompt{position:relative;left:auto;bottom:auto;transform:none;width:100%;max-width:400px;align-self:center;justify-content:center;min-height:44px;gap:10px;padding:12px 14px;font-size:11px;letter-spacing:.1em}
+  .enter-prompt.show{animation-name:mobilePromptIn}
+  .skip-hint{position:relative;right:auto;bottom:auto;align-self:flex-end;justify-content:center;min-width:44px;min-height:46px}
+  /* The switcher is appended by the existing i18n runtime; align it with ESC. */
+  .ax-loader-language{position:relative;left:auto;bottom:auto;align-self:flex-start;margin-top:-60px}
+  @keyframes mobilePromptIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+@media (min-width:600px) and (max-width:1024px) and (max-height:520px){
+  body{padding:18px 24px;gap:10px}
+  .hud{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px 20px}
+  .stage{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 24px}
+  .term-wrap{grid-column:1;grid-row:1}
+  .logo-block{grid-column:2;grid-row:1 / 3;align-self:center}
+  .progress-block{grid-column:1;grid-row:2}
+  .ax-loader-language{margin-top:-56px}
 }
 </style>
 </head>
