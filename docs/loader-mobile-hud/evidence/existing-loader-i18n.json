@@ -1,0 +1,170 @@
+{
+  "started": "run-20261115103353-1a5f07",
+  "finished": "2026-11-15T10:34:01.087Z",
+  "source": {
+    "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud",
+    "commit": "8d26d0a143240fd1fe095eee48edfee9e6757161",
+    "status": "?? docs/loader-mobile-hud/evidence/",
+    "hashes": {
+      "404.html": "fc766b5b485cdaf05fe433f7d8496c33faaacc47010602b6cd6d968fb711709b",
+      "assets/css/fonts.css": "6fb4a90f2b06e94758eeebcea0282d72f2735c22190cdbc2232d4bb02aa6ed93",
+      "assets/css/i18n.css": "f9b914b775807e0b7d4f146583379b867c637ef2bf64bb9d81a80e7cf3eb55be",
+      "assets/css/index.css": "4a6196cdfc1a1272e57d28757e49da564d99f25f81f01f9bacbf25bf3387fefe",
+      "assets/css/showcase-v22.css": "3a97ca926037c1e44fa4a90f422ed903d0bc649ca85e490bae4b57073f50a427",
+      "assets/css/showcase-v23.css": "fccb56115e6664827e336311381fdf5d5d16584d8257af8c80ff89c09a85bd3a",
+      "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+      "assets/css/showcase.css": "40af4501f8b519d52877216276a02e6dd4741541d37cf696259c618f2a98217e",
+      "assets/i18n/build-catalogs.cjs": "c4a9eeaec1649edbaee8f73be09d8c24bf55a23d1c6461ad0d0a486030bc318b",
+      "assets/i18n/catalogs.js": "7dbdc51346c56569136566725e6bddb8f589dda1789f4161d6ae1b0a00491c8c",
+      "assets/i18n/en.json": "07547f785b08aed075c6c15d062e5f85b2afdec684888206539cacfae7d6c523",
+      "assets/i18n/ru.json": "6d617ce444eb44962087c6e434144340dbaded67328d223b00f74a1f2376569f",
+      "assets/js/i18n.js": "8b8ed5a2c5c3a109b03b33dcc958e6becaeef3cd2e89b4700c06c387b09a28ea",
+      "assets/js/index.js": "dd15d072008f5f76c05f0b8b13dc407590dfcf6bf8ba5f2054c84e9e91bd722d",
+      "assets/js/language-preference.js": "16260c2b89ea2362a519b02f99d84df1cc014da3e05379b2fe2d2b1df49ece8e",
+      "assets/js/showcase-gallery.js": "3981dfa56d16da3ca528a1dcd13e4d782ac42680309d43bce6fe9160da412234",
+      "assets/js/showcase-v22.js": "139b124a538663fe5b65be1c65c78eae96523597dac58a1a0abb4d9853b4b3ca",
+      "assets/js/showcase-v23.js": "593e03f51192a0ff3ef7e6f30ec6bb6c78107acf5d6ae197d6c30c31be212d42",
+      "assets/js/showcase-w4r.js": "44a02da57852d2994915150fce930d9d93b7c763c6cd4db5682cd0b77d904f29",
+      "index.html": "7d93aaec959a65678910c08a0d799fdaa628c2c6a0e5aaf505a35616db32fcfb",
+      "loader.html": "381920a3f9ef763f2710618a6f6bd96471b8d499a685d38990cef84176e5dd01"
+    }
+  },
+  "sourceAfter": {
+    "root": "/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-mobile-loader-hud",
+    "commit": "8d26d0a143240fd1fe095eee48edfee9e6757161",
+    "status": "?? docs/loader-mobile-hud/evidence/",
+    "hashes": {
+      "404.html": "fc766b5b485cdaf05fe433f7d8496c33faaacc47010602b6cd6d968fb711709b",
+      "assets/css/fonts.css": "6fb4a90f2b06e94758eeebcea0282d72f2735c22190cdbc2232d4bb02aa6ed93",
+      "assets/css/i18n.css": "f9b914b775807e0b7d4f146583379b867c637ef2bf64bb9d81a80e7cf3eb55be",
+      "assets/css/index.css": "4a6196cdfc1a1272e57d28757e49da564d99f25f81f01f9bacbf25bf3387fefe",
+      "assets/css/showcase-v22.css": "3a97ca926037c1e44fa4a90f422ed903d0bc649ca85e490bae4b57073f50a427",
+      "assets/css/showcase-v23.css": "fccb56115e6664827e336311381fdf5d5d16584d8257af8c80ff89c09a85bd3a",
+      "assets/css/showcase-w4r.css": "03d48956b3745614e5aac6b85cd2ae1ec29fcf071982a7a48b4f25c6c5c442f2",
+      "assets/css/showcase.css": "40af4501f8b519d52877216276a02e6dd4741541d37cf696259c618f2a98217e",
+      "assets/i18n/build-catalogs.cjs": "c4a9eeaec1649edbaee8f73be09d8c24bf55a23d1c6461ad0d0a486030bc318b",
+      "assets/i18n/catalogs.js": "7dbdc51346c56569136566725e6bddb8f589dda1789f4161d6ae1b0a00491c8c",
+      "assets/i18n/en.json": "07547f785b08aed075c6c15d062e5f85b2afdec684888206539cacfae7d6c523",
+      "assets/i18n/ru.json": "6d617ce444eb44962087c6e434144340dbaded67328d223b00f74a1f2376569f",
+      "assets/js/i18n.js": "8b8ed5a2c5c3a109b03b33dcc958e6becaeef3cd2e89b4700c06c387b09a28ea",
+      "assets/js/index.js": "dd15d072008f5f76c05f0b8b13dc407590dfcf6bf8ba5f2054c84e9e91bd722d",
+      "assets/js/language-preference.js": "16260c2b89ea2362a519b02f99d84df1cc014da3e05379b2fe2d2b1df49ece8e",
+      "assets/js/showcase-gallery.js": "3981dfa56d16da3ca528a1dcd13e4d782ac42680309d43bce6fe9160da412234",
+      "assets/js/showcase-v22.js": "139b124a538663fe5b65be1c65c78eae96523597dac58a1a0abb4d9853b4b3ca",
+      "assets/js/showcase-v23.js": "593e03f51192a0ff3ef7e6f30ec6bb6c78107acf5d6ae197d6c30c31be212d42",
+      "assets/js/showcase-w4r.js": "44a02da57852d2994915150fce930d9d93b7c763c6cd4db5682cd0b77d904f29",
+      "index.html": "7d93aaec959a65678910c08a0d799fdaa628c2c6a0e5aaf505a35616db32fcfb",
+      "loader.html": "381920a3f9ef763f2710618a6f6bd96471b8d499a685d38990cef84176e5dd01"
+    }
+  },
+  "summary": {
+    "PASS": 8,
+    "FAIL": 0,
+    "NOT_RUN": 0,
+    "OBSERVED": 2
+  },
+  "results": [
+    {
+      "engine": "chromium",
+      "id": "engine-version",
+      "status": "OBSERVED",
+      "detail": "149.0.7827.55"
+    },
+    {
+      "engine": "chromium",
+      "id": "streamed-initial-ru-loader-phase",
+      "status": "PASS",
+      "detail": {
+        "visiblePreScriptFrames": 10,
+        "initialPhase": "SYS // ЗАГРУЗКА ЯДРА"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "loader-standalone-en",
+      "status": "PASS",
+      "detail": {
+        "initial": "en",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "loader-standalone-ru",
+      "status": "PASS",
+      "detail": {
+        "initial": "ru",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "loader-embedded-language-and-safe-release",
+      "status": "PASS",
+      "detail": {
+        "src": "loader.html?target=about:blank&duration=900&auto=false&embedded=1&lang=en",
+        "lang": "en",
+        "title": "AXIOM intro",
+        "skip": "SKIP INTRO →"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "engine-version",
+      "status": "OBSERVED",
+      "detail": "151.0"
+    },
+    {
+      "engine": "firefox",
+      "id": "streamed-initial-ru-loader-phase",
+      "status": "PASS",
+      "detail": {
+        "visiblePreScriptFrames": 6,
+        "initialPhase": "SYS // ЗАГРУЗКА ЯДРА"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "loader-standalone-en",
+      "status": "PASS",
+      "detail": {
+        "initial": "en",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "loader-standalone-ru",
+      "status": "PASS",
+      "detail": {
+        "initial": "ru",
+        "readyTranslated": true
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "loader-embedded-language-and-safe-release",
+      "status": "PASS",
+      "detail": {
+        "src": "loader.html?target=about:blank&duration=900&auto=false&embedded=1&lang=en",
+        "lang": "en",
+        "title": "AXIOM intro",
+        "skip": "SKIP INTRO →"
+      }
+    }
+  ],
+  "screenshots": [],
+  "artifactBytes": 0,
+  "limits": {
+    "retainedRuns": 3,
+    "retentionDays": 14,
+    "runBytes": 100663296
+  },
+  "notRun": [
+    "real-device/GPU",
+    "manual screen reader",
+    "human visual acceptance",
+    "field CWV",
+    "full crawler SEO localization"
+  ]
+}

@@ -2,7 +2,7 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.LOADER_MOBILE_HUD.AGENTOPS
   title: "Mobile loader — GLOBAL LOG"
-  status: DISCOVERY
+  status: READY_FOR_REVIEW
   deployment: NOT_DEPLOYED
   mode: AgentOps
   goal: "Точная трасса loader исправления отдельно от PR15"
@@ -26,7 +26,8 @@ BEFORE/browser diagnosis выполняются до product mutation.
 
 ## Step B — Implementation
 
-NOT_STARTED.
+CSS-only fix `8d26d0a`: mobile flow, two-column short landscape, tablet HUD/hex
+spacing, pointer-transparent corner brackets. Non-CSS bytes unchanged.
 
 ## Step C — Documentation
 
@@ -34,9 +35,19 @@ SPEC/log до product mutation. REPORT/evidence после measured QA.
 
 ## Step D — QA
 
-NOT_RUN.
+BEFORE 4/4 expected FAIL. Final layout 64/64 PASS; existing loader i18n 8/8 PASS
+on committed `8d26d0a`; source 5/5, smoke 2/2, preservation/diff PASS.
+[REPORT](REPORT.md) / [raw JSON](evidence/layout-browser.json).
+Real devices/GPU, screen reader, WebKit/Safari and new full 232-case suite NOT_RUN.
 
 ## Step E — Git
 
 Base `adb87e5b8c8ba778aedfddd0655ec0b957e045ef`.
 Branch `fix/showcase-mobile-loader-hud`; main merge / deploy HOLD.
+
+
+## Step E — Delivery
+
+Runtime fix `8d26d0a143240fd1fe095eee48edfee9e6757161`.
+Separate PR in main pending push; merge/deploy HOLD. Private preview supplies an
+explicit before/after loader route while retaining exact PR15 root runtime.

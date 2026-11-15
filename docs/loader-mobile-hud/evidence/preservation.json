@@ -1,0 +1,9 @@
+{
+  "baseline": "adb87e5b8c8ba778aedfddd0655ec0b957e045ef",
+  "loader_sha256": "381920a3f9ef763f2710618a6f6bd96471b8d499a685d38990cef84176e5dd01",
+  "non_css_bytes_unchanged": true,
+  "runtime_js_unchanged": true,
+  "catalogs_unchanged": true,
+  "gate_file_hash_matches_current_loader": true,
+  "scope": "Working-file 64-case QA is pinned by loader hash and matches the following committed fix."
+}
