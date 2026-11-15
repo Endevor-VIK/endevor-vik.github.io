@@ -28,7 +28,9 @@ nowrap desktop rhythm при отсутствии mobile composition.
 animations/тайминг/storage/escape/keyboard/language behavior; дать HUD строкам,
 терминалу, logo/progress и controls отдельные области. Без удаления художественного
 контента, уменьшения значимого текста до нечитаемого размера и изменения runtime JS.
-Desktop (>720px) должен остаться прежним. На коротком mobile viewport допускается
+Desktop (>1080px и высота >520px) остаётся прежним. В tablet 721–1080px
+разносится только нижняя HUD/hex полоса; короткий landscape ≤1024px использует
+прокручиваемую мобильную композицию. На коротком mobile viewport допускается
 прокрутка композиции вместо скрытия содержания; controls доступны без перекрытия.
 
 QA: сначала reproduce + BEFORE, затем PASS/FAIL geometry текстовых bounds и
