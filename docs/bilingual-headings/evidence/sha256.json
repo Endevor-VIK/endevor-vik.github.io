@@ -145,6 +145,7 @@
     "docs/bilingual-headings/review-publication/locator-scroll-diagnostic-2.json": "74389daecff43da53a6776354df265baa263b83528aadd21ec36f3142de10739",
     "docs/bilingual-headings/review-publication/pointer-diagnosis.json": "3f224f253749e719302819f445ca44a500b5b69dce003e0db337f5b5f69d237b",
     "docs/bilingual-headings/review-publication/preservation-diagnosis.json": "0224e72dc46feda5720dcc943acebf4ff653f95fc9ae471fcc7595b27f1423f6",
+    "docs/bilingual-headings/review-publication/preservation.json": "dd2ba76ca653cc13f5bb5a22033a3f676e8a486e34bae409509e548687cfca58",
     "docs/bilingual-headings/review-publication/preview.json": "8218550eb0345a03353f99fc97c609feef25799ff58fe4c4b05b8faa4ff6998b",
     "docs/showcase-v031/AAA_CURRENT_HANDOFF.md": "6632511146e64a0e413576ebe6a1e41206c51e22b69f981d1ddba6f7cd8fc28d",
     "tests/check_bilingual_preservation.py": "d2d9b5b2b27fd3582a1ca5b88a4cbdf3ba13bc11c6be82abf80ba0a56a6f1528"
