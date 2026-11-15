@@ -68,7 +68,13 @@ def main():
                              'changed_existing_values': changed,
                              'allowed_changes_only': not changed if language == 'en' else set(changed) == NORMALIZED_CAPTIONS}
     paths = git('diff', '--name-only', BASE).splitlines()
-    protected_assets_unchanged = not any(re.search(r'\.(?:png|webp|avif|jpg|woff2?)$', name) for name in paths)
+    # Captured PNG evidence under docs is intentionally added by this task.
+    # Protect the actual runtime media/fonts, including the independent archive.
+    protected_assets_unchanged = not any(
+        name.startswith(('assets/', 'serafim-veyr/'))
+        and re.search(r'\.(?:png|webp|avif|jpg|woff2?)$', name)
+        for name in paths
+    )
     passed = (all(all(checks.values()) for checks in pages.values()) and protected_assets_unchanged
               and all(c['original_keys_preserved'] and c['allowed_changes_only'] for c in catalogs.values()))
     report = {'baseline': BASE, 'source_commit': git('rev-parse', 'HEAD'),
