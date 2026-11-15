@@ -2783,6 +2783,179 @@
         69577,
         69647
       ]
+    },
+    {
+      "audit_id": "extra-35",
+      "file": "index.html",
+      "tag": "b",
+      "id": null,
+      "classes": ".v22-bridge b",
+      "line": 487,
+      "source_range": [
+        35947,
+        36016
+      ],
+      "keys": [
+        "main.about.029"
+      ],
+      "all_keys": [
+        "main.about.029"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain navigation context and all artwork",
+      "en": "WHO CREATES THIS ARCHITECTURE?",
+      "ru_current": "КТО СОЗДАЁТ ЭТУ АРХИТЕКТУРУ?",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": "КТО СОЗДАЁТ ЭТУ АРХИТЕКТУРУ?",
+      "duplicate_action": "no semantic duplicate; preserve section-navigation context",
+      "reason": "Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels.",
+      "discovered_at_commit": "1797c0b26a30c6cbdb45cc3a7cb054288bb087cc"
+    },
+    {
+      "audit_id": "extra-36",
+      "file": "index.html",
+      "tag": "b",
+      "id": null,
+      "classes": ".v22-bridge b",
+      "line": 504,
+      "source_range": [
+        41882,
+        41961
+      ],
+      "keys": [
+        "main.creator.041"
+      ],
+      "all_keys": [
+        "main.creator.041"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain navigation context and all artwork",
+      "en": "FROM PRINCIPLES TO IMPLEMENTED SCREENS",
+      "ru_current": "ОТ ПРИНЦИПОВ К РЕАЛИЗОВАННЫМ ЭКРАНАМ",
+      "category": "EDITORIAL",
+      "action": "bilingual",
+      "ru_subtitle": "ОТ ПРИНЦИПОВ К РЕАЛИЗОВАННЫМ ЭКРАНАМ",
+      "duplicate_action": "no semantic duplicate; preserve section-navigation context",
+      "reason": "Large art-band proposition (24–40px), not a semantic H: apply canonical EN and subordinate RU reading.",
+      "discovered_at_commit": "1797c0b26a30c6cbdb45cc3a7cb054288bb087cc"
+    },
+    {
+      "audit_id": "extra-37",
+      "file": "index.html",
+      "tag": "b",
+      "id": null,
+      "classes": ".v22-bridge b",
+      "line": 842,
+      "source_range": [
+        90834,
+        90908
+      ],
+      "keys": [
+        "main.work.195"
+      ],
+      "all_keys": [
+        "main.work.195"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain navigation context and all artwork",
+      "en": "WHY ARE ALL THESE INTERFACES CONNECTED?",
+      "ru_current": "ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": "ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ?",
+      "duplicate_action": "no semantic duplicate; preserve section-navigation context",
+      "reason": "Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels.",
+      "discovered_at_commit": "1797c0b26a30c6cbdb45cc3a7cb054288bb087cc"
+    },
+    {
+      "audit_id": "extra-38",
+      "file": "index.html",
+      "tag": "b",
+      "id": null,
+      "classes": ".v22-bridge b",
+      "line": 850,
+      "source_range": [
+        96385,
+        96463
+      ],
+      "keys": [
+        "main.system.031"
+      ],
+      "all_keys": [
+        "main.system.031"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain navigation context and all artwork",
+      "en": "TECHNOLOGY SERVES THE AUTHOR’S WORLD",
+      "ru_current": "ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": "ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР",
+      "duplicate_action": "no semantic duplicate; preserve section-navigation context",
+      "reason": "Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels.",
+      "discovered_at_commit": "1797c0b26a30c6cbdb45cc3a7cb054288bb087cc"
+    },
+    {
+      "audit_id": "extra-39",
+      "file": "index.html",
+      "tag": "b",
+      "id": null,
+      "classes": ".v22-bridge b",
+      "line": 1486,
+      "source_range": [
+        181201,
+        181278
+      ],
+      "keys": [
+        "main.factions.030"
+      ],
+      "all_keys": [
+        "main.factions.030"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain navigation context and all artwork",
+      "en": "WHAT WILL VISITORS FIND IN THE FUTURE?",
+      "ru_current": "ЧТО ПОЛУЧИТ ПОСЕТИТЕЛЬ В БУДУЩЕМ?",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": "ЧТО ПОЛУЧИТ ПОСЕТИТЕЛЬ В БУДУЩЕМ?",
+      "duplicate_action": "no semantic duplicate; preserve section-navigation context",
+      "reason": "Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels.",
+      "discovered_at_commit": "1797c0b26a30c6cbdb45cc3a7cb054288bb087cc"
+    },
+    {
+      "audit_id": "extra-40",
+      "file": "index.html",
+      "tag": "b",
+      "id": null,
+      "classes": ".v22-bridge b",
+      "line": 1499,
+      "source_range": [
+        188097,
+        188177
+      ],
+      "keys": [
+        "main.vision.051"
+      ],
+      "all_keys": [
+        "main.vision.051"
+      ],
+      "visual_result": "NOT_RUN",
+      "body_action": "retain navigation context and all artwork",
+      "en": "WHERE NEXT AFTER DISCOVERING THE PROJECT?",
+      "ru_current": "КУДА ИДТИ ПОСЛЕ ЗНАКОМСТВА С ПРОЕКТОМ?",
+      "category": "FUNCTIONAL",
+      "action": "localized",
+      "ru_subtitle": "КУДА ИДТИ ПОСЛЕ ЗНАКОМСТВА С ПРОЕКТОМ?",
+      "duplicate_action": "no semantic duplicate; preserve section-navigation context",
+      "reason": "Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels.",
+      "discovered_at_commit": "1797c0b26a30c6cbdb45cc3a7cb054288bb087cc"
     }
-  ]
+  ],
+  "continuation_audit": {
+    "date": "2026-11-15",
+    "entries_added": 6,
+    "reason": "Visual review found a large non-H art-band title and classified every compact bridge explicitly before mutation."
+  }
 }

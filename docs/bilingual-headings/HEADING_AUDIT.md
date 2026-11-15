@@ -8,7 +8,7 @@ AXS_HEADER_META:
   goal: "Явное решение для каждого H1–H3 и визуального non-H title"
   scope: showcase / loader / 404 / fan archive / dynamic titles
   lang: ru
-  last_updated: 2026-11-07
+  last_updated: 2026-11-15
   editable_by_agents: true
   change_policy: "Обновлять measured visual evidence после реализации; не выдавать inventory за QA"
 -->
@@ -140,3 +140,15 @@ loader не содержит H1–H3, его wordmark и functional statuses п�
 | extra-32 / index.html:507 / #ax-archive-title | FUNCTIONAL | INTERFACE ARCHIVE / REAL PRODUCT SCREENS | АРХИВ ИНТЕРФЕЙСОВ / РЕАЛЬНЫЕ ЭКРАНЫ ПРОДУКТА | localized — Compact archive utility bar title. no semantic duplicate; preserve meaningful prose | NOT_RUN |
 | extra-33 / index.html:1296 / .ax-mode-name | FUNCTIONAL | RELIC / ECHO / CONTROL / BIO / MYTH | РЕЛИКТ / ЭХО / КОНТРОЛЬ / БИО / МИФ | localized — Five canonical AXIOM mode selector labels; no duplicate bilingual controls. no semantic duplicate; preserve meaningful prose | NOT_RUN |
 | extra-34 / index.html:JS / .name (entity preview) | FUNCTIONAL | WORLD ENTITY | СУЩНОСТЬ МИРА | localized — Technical graph demonstration label; not a narrative headline. no semantic duplicate; preserve meaningful prose | NOT_RUN |
+
+
+Продолжение 2026-11-15: до правки art-band повторно проверены все шесть `.v22-bridge b`.
+Крупный art-band title — EDITORIAL / bilingual; пять компактных указателей —
+FUNCTIONAL / localized. Это расширение исходного inventory: 110 позиций.
+
+| extra-35 / index.html:487 / .v22-bridge b | FUNCTIONAL | WHO CREATES THIS ARCHITECTURE? | КТО СОЗДАЁТ ЭТУ АРХИТЕКТУРУ? | localized — Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels. | NOT_RUN |
+| extra-36 / index.html:504 / .v22-bridge b | EDITORIAL | FROM PRINCIPLES TO IMPLEMENTED SCREENS | ОТ ПРИНЦИПОВ К РЕАЛИЗОВАННЫМ ЭКРАНАМ | bilingual — Large art-band proposition (24–40px), not a semantic H: apply canonical EN and subordinate RU reading. | NOT_RUN |
+| extra-37 / index.html:842 / .v22-bridge b | FUNCTIONAL | WHY ARE ALL THESE INTERFACES CONNECTED? | ПОЧЕМУ ВСЕ ЭТИ ИНТЕРФЕЙСЫ СВЯЗАНЫ? | localized — Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels. | NOT_RUN |
+| extra-38 / index.html:850 / .v22-bridge b | FUNCTIONAL | TECHNOLOGY SERVES THE AUTHOR’S WORLD | ТЕХНОЛОГИИ ОБСЛУЖИВАЮТ АВТОРСКИЙ МИР | localized — Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels. | NOT_RUN |
+| extra-39 / index.html:1486 / .v22-bridge b | FUNCTIONAL | WHAT WILL VISITORS FIND IN THE FUTURE? | ЧТО ПОЛУЧИТ ПОСЕТИТЕЛЬ В БУДУЩЕМ? | localized — Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels. | NOT_RUN |
+| extra-40 / index.html:1499 / .v22-bridge b | FUNCTIONAL | WHERE NEXT AFTER DISCOVERING THE PROJECT? | КУДА ИДТИ ПОСЛЕ ЗНАКОМСТВА С ПРОЕКТОМ? | localized — Compact decorative section-navigation question (15px), aria-hidden in the original; ordinary localization avoids doubling wayfinding labels. | NOT_RUN |
