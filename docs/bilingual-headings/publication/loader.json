@@ -1,0 +1,2284 @@
+{
+  "source": {
+    "sha": "bfdc1911a59efd46cb6230eb207f873a93d87c94",
+    "loader": "e6f898e6113bcc9698714a81a2e06563cbddb26de0d8556e6ce69c85f2130c16"
+  },
+  "sourceAfter": {
+    "sha": "bfdc1911a59efd46cb6230eb207f873a93d87c94",
+    "loader": "e6f898e6113bcc9698714a81a2e06563cbddb26de0d8556e6ce69c85f2130c16"
+  },
+  "before": false,
+  "summary": {
+    "PASS": 22,
+    "FAIL": 0,
+    "NOT_RUN": 0
+  },
+  "results": [
+    {
+      "engine": "chromium",
+      "id": "after-en-320x568-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -128,
+              "right": 296,
+              "bottom": -111.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": -105.5,
+              "right": 296,
+              "bottom": -89,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -83,
+              "right": 296,
+              "bottom": -66.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": -60.5,
+              "right": 296,
+              "bottom": -44,
+              "width": 272,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": -21,
+              "right": 161.09375,
+              "bottom": -5,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 37,
+              "y": 1,
+              "right": 183.6875,
+              "bottom": 17,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 312.1875,
+              "right": 296,
+              "bottom": 340.1875,
+              "width": 272,
+              "height": 28
+            },
+            ".progress-meta .r": {
+              "x": 106.140625,
+              "y": 346.1875,
+              "right": 296,
+              "bottom": 360.1875,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -30,
+              "right": 296,
+              "bottom": 123,
+              "width": 272,
+              "height": 153
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 145,
+              "right": 296,
+              "bottom": 290.1875,
+              "width": 272,
+              "height": 145.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 312.1875,
+              "right": 296,
+              "bottom": 393.1875,
+              "width": 272,
+              "height": 81
+            },
+            "#hexdump": {
+              "x": 56.64,
+              "y": 409.1875,
+              "right": 263.36,
+              "bottom": 422.1875,
+              "width": 206.72,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 438.1875,
+              "right": 296,
+              "bottom": 482.1875,
+              "width": 272,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 238.671875,
+              "y": 498.1875,
+              "right": 296,
+              "bottom": 544.1875,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 498.1875,
+              "right": 124.453125,
+              "bottom": 544.1875,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 217.90625,
+              "right": 161.09375,
+              "bottom": 233.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 206.3125,
+              "y": 217.90625,
+              "right": 353,
+              "bottom": 233.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 315,
+              "bottom": 529.09375,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 176.140625,
+              "y": 535.09375,
+              "right": 366,
+              "bottom": 549.09375,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 208.90625,
+              "right": 366,
+              "bottom": 339.90625,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 361.90625,
+              "right": 366,
+              "bottom": 493.09375,
+              "width": 342,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 366,
+              "bottom": 582.09375,
+              "width": 342,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 65.03999999999999,
+              "y": 598.09375,
+              "right": 324.96,
+              "bottom": 611.09375,
+              "width": 259.92,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 627.09375,
+              "right": 366,
+              "bottom": 671.09375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 308.671875,
+              "y": 687.09375,
+              "right": 366,
+              "bottom": 733.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.453125,
+              "bottom": 820,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-1440x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 90,
+              "y": 38,
+              "right": 399.078125,
+              "bottom": 52,
+              "width": 309.078125,
+              "height": 14
+            },
+            ".hud .tr": {
+              "x": 1137.328125,
+              "y": 38,
+              "right": 1350,
+              "bottom": 52,
+              "width": 212.671875,
+              "height": 14
+            },
+            ".hud .bl": {
+              "x": 90,
+              "y": 844,
+              "right": 363.5625,
+              "bottom": 858,
+              "width": 273.5625,
+              "height": 14
+            },
+            ".hud .br": {
+              "x": 1186.9375,
+              "y": 844,
+              "right": 1350,
+              "bottom": 858,
+              "width": 163.0625,
+              "height": 14
+            },
+            ".term-head .l": {
+              "x": 375,
+              "y": 129,
+              "right": 514.203125,
+              "bottom": 142,
+              "width": 139.203125,
+              "height": 13
+            },
+            ".term-head>span:last-child": {
+              "x": 897.796875,
+              "y": 129,
+              "right": 1065,
+              "bottom": 142,
+              "width": 167.203125,
+              "height": 13
+            },
+            "#phaseLabel": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 705.25,
+              "bottom": 646.640625,
+              "width": 345.25,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 853.46875,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 646.640625,
+              "width": 226.53125,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 360,
+              "y": 120,
+              "right": 1080,
+              "bottom": 336,
+              "width": 720,
+              "height": 216
+            },
+            ".logo-block": {
+              "x": 510.5625,
+              "y": 372,
+              "right": 929.421875,
+              "bottom": 596.640625,
+              "width": 418.859375,
+              "height": 224.640625
+            },
+            ".progress-block": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 679.640625,
+              "width": 720,
+              "height": 47
+            },
+            "#hexdump": {
+              "x": 446.4,
+              "y": 849,
+              "right": 993.6,
+              "bottom": 862,
+              "width": 547.2,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 541.59375,
+              "y": 766,
+              "right": 898.40625,
+              "bottom": 810,
+              "width": 356.8125,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 1292.671875,
+              "y": 780,
+              "right": 1350,
+              "bottom": 812,
+              "width": 57.328125,
+              "height": 32
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 778,
+              "right": 136,
+              "bottom": 824,
+              "width": 112,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-en-844x390-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -51,
+              "right": 412,
+              "bottom": -34.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 432,
+              "y": -51,
+              "right": 820,
+              "bottom": -34.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -30.5,
+              "right": 412,
+              "bottom": -14,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 432,
+              "y": -30.5,
+              "right": 820,
+              "bottom": -14,
+              "width": 388,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 5,
+              "right": 161.09375,
+              "bottom": 21,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 250.3125,
+              "y": 5,
+              "right": 397,
+              "bottom": 21,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 141,
+              "right": 315,
+              "bottom": 155,
+              "width": 291,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 220.140625,
+              "y": 161,
+              "right": 410,
+              "bottom": 175,
+              "width": 189.859375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -4,
+              "right": 410,
+              "bottom": 127,
+              "width": 386,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 434,
+              "y": 27.546875,
+              "right": 820,
+              "bottom": 176.453125,
+              "width": 386,
+              "height": 148.90625
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 141,
+              "right": 410,
+              "bottom": 208,
+              "width": 386,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 119.52,
+              "y": 238,
+              "right": 724.48,
+              "bottom": 251,
+              "width": 604.96,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 222,
+              "y": 267,
+              "right": 622,
+              "bottom": 311,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 762.671875,
+              "y": 327,
+              "right": 820,
+              "bottom": 373,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 327,
+              "right": 136,
+              "bottom": 372,
+              "width": 112,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-320x568-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -128,
+              "right": 296,
+              "bottom": -111.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": -105.5,
+              "right": 296,
+              "bottom": -89,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -83,
+              "right": 296,
+              "bottom": -66.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": -60.5,
+              "right": 296,
+              "bottom": -44,
+              "width": 272,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": -21,
+              "right": 161.09375,
+              "bottom": -5,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 37,
+              "y": 1,
+              "right": 183.6875,
+              "bottom": 17,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 312.1875,
+              "right": 296,
+              "bottom": 340.1875,
+              "width": 272,
+              "height": 28
+            },
+            ".progress-meta .r": {
+              "x": 110.625,
+              "y": 346.1875,
+              "right": 296,
+              "bottom": 360.1875,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -30,
+              "right": 296,
+              "bottom": 123,
+              "width": 272,
+              "height": 153
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 145,
+              "right": 296,
+              "bottom": 290.1875,
+              "width": 272,
+              "height": 145.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 312.1875,
+              "right": 296,
+              "bottom": 393.1875,
+              "width": 272,
+              "height": 81
+            },
+            "#hexdump": {
+              "x": 56.64,
+              "y": 409.1875,
+              "right": 263.36,
+              "bottom": 422.1875,
+              "width": 206.72,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 438.1875,
+              "right": 296,
+              "bottom": 482.1875,
+              "width": 272,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 238.671875,
+              "y": 498.1875,
+              "right": 296,
+              "bottom": 544.1875,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 498.1875,
+              "right": 124.453125,
+              "bottom": 544.1875,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 217.90625,
+              "right": 161.09375,
+              "bottom": 233.90625,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 206.3125,
+              "y": 217.90625,
+              "right": 353,
+              "bottom": 233.90625,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 307.921875,
+              "bottom": 529.09375,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 180.625,
+              "y": 535.09375,
+              "right": 366,
+              "bottom": 549.09375,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 208.90625,
+              "right": 366,
+              "bottom": 339.90625,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 361.90625,
+              "right": 366,
+              "bottom": 493.09375,
+              "width": 342,
+              "height": 131.1875
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.09375,
+              "right": 366,
+              "bottom": 582.09375,
+              "width": 342,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 65.03999999999999,
+              "y": 598.09375,
+              "right": 324.96,
+              "bottom": 611.09375,
+              "width": 259.92,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 627.09375,
+              "right": 366,
+              "bottom": 671.09375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 308.671875,
+              "y": 687.09375,
+              "right": 366,
+              "bottom": 733.09375,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.453125,
+              "bottom": 820,
+              "width": 100.453125,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-1440x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 90,
+              "y": 38,
+              "right": 359.453125,
+              "bottom": 52,
+              "width": 269.453125,
+              "height": 14
+            },
+            ".hud .tr": {
+              "x": 1159.0625,
+              "y": 38,
+              "right": 1350,
+              "bottom": 52,
+              "width": 190.9375,
+              "height": 14
+            },
+            ".hud .bl": {
+              "x": 90,
+              "y": 844,
+              "right": 315.640625,
+              "bottom": 858,
+              "width": 225.640625,
+              "height": 14
+            },
+            ".hud .br": {
+              "x": 1186.9375,
+              "y": 844,
+              "right": 1350,
+              "bottom": 858,
+              "width": 163.0625,
+              "height": 14
+            },
+            ".term-head .l": {
+              "x": 375,
+              "y": 129,
+              "right": 514.203125,
+              "bottom": 142,
+              "width": 139.203125,
+              "height": 13
+            },
+            ".term-head>span:last-child": {
+              "x": 897.796875,
+              "y": 129,
+              "right": 1065,
+              "bottom": 142,
+              "width": 167.203125,
+              "height": 13
+            },
+            "#phaseLabel": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 679.96875,
+              "bottom": 646.640625,
+              "width": 319.96875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 865.3125,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 646.640625,
+              "width": 214.6875,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 360,
+              "y": 120,
+              "right": 1080,
+              "bottom": 336,
+              "width": 720,
+              "height": 216
+            },
+            ".logo-block": {
+              "x": 509.109375,
+              "y": 372,
+              "right": 930.875,
+              "bottom": 596.640625,
+              "width": 421.765625,
+              "height": 224.640625
+            },
+            ".progress-block": {
+              "x": 360,
+              "y": 632.640625,
+              "right": 1080,
+              "bottom": 679.640625,
+              "width": 720,
+              "height": 47
+            },
+            "#hexdump": {
+              "x": 446.4,
+              "y": 849,
+              "right": 993.6,
+              "bottom": 862,
+              "width": 547.2,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 531.78125,
+              "y": 766,
+              "right": 908.21875,
+              "bottom": 810,
+              "width": 376.4375,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 1292.671875,
+              "y": 780,
+              "right": 1350,
+              "bottom": 812,
+              "width": 57.328125,
+              "height": 32
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 778,
+              "right": 136,
+              "bottom": 824,
+              "width": 112,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "after-ru-844x390-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -51,
+              "right": 412,
+              "bottom": -34.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 432,
+              "y": -51,
+              "right": 820,
+              "bottom": -34.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -30.5,
+              "right": 412,
+              "bottom": -14,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 432,
+              "y": -30.5,
+              "right": 820,
+              "bottom": -14,
+              "width": 388,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 5,
+              "right": 161.09375,
+              "bottom": 21,
+              "width": 124.09375,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 250.3125,
+              "y": 5,
+              "right": 397,
+              "bottom": 21,
+              "width": 146.6875,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 141,
+              "right": 307.921875,
+              "bottom": 155,
+              "width": 283.921875,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 224.625,
+              "y": 161,
+              "right": 410,
+              "bottom": 175,
+              "width": 185.375,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -4,
+              "right": 410,
+              "bottom": 127,
+              "width": 386,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 434,
+              "y": 27.546875,
+              "right": 820,
+              "bottom": 176.453125,
+              "width": 386,
+              "height": 148.90625
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 141,
+              "right": 410,
+              "bottom": 208,
+              "width": 386,
+              "height": 67
+            },
+            "#hexdump": {
+              "x": 119.52,
+              "y": 238,
+              "right": 724.48,
+              "bottom": 251,
+              "width": 604.96,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 222,
+              "y": 267,
+              "right": 622,
+              "bottom": 311,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 762.671875,
+              "y": 327,
+              "right": 820,
+              "bottom": 373,
+              "width": 57.328125,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 327,
+              "right": 136,
+              "bottom": 372,
+              "width": 112,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-exit-Escape",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-exit-Enter",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-exit-Space",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-320x568-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -104,
+              "right": 296,
+              "bottom": -87.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": -81.5,
+              "right": 296,
+              "bottom": -65,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -59,
+              "right": 296,
+              "bottom": -42.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": -36.5,
+              "right": 296,
+              "bottom": -20,
+              "width": 272,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 3,
+              "right": 163.8333282470703,
+              "bottom": 19,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 37,
+              "y": 25,
+              "right": 187.4166717529297,
+              "bottom": 41,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 339.20001220703125,
+              "right": 296,
+              "bottom": 369.20001220703125,
+              "width": 272,
+              "height": 30
+            },
+            ".progress-meta .r": {
+              "x": 111.73333740234375,
+              "y": 375.20001220703125,
+              "right": 296,
+              "bottom": 390.20001220703125,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -6,
+              "right": 296,
+              "bottom": 147,
+              "width": 272,
+              "height": 153
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 169,
+              "right": 296,
+              "bottom": 317.1999969482422,
+              "width": 272,
+              "height": 148.1999969482422
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 339.20001220703125,
+              "right": 296,
+              "bottom": 422.70001220703125,
+              "width": 272,
+              "height": 83.5
+            },
+            "#hexdump": {
+              "x": 56.64,
+              "y": 438.70001220703125,
+              "right": 263.36,
+              "bottom": 451.70001220703125,
+              "width": 206.72,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 467.70001220703125,
+              "right": 296,
+              "bottom": 511.70001220703125,
+              "width": 272,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 237.5,
+              "y": 527.7000122070312,
+              "right": 296,
+              "bottom": 573.7000122070312,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 527.7000122070312,
+              "right": 124.64999389648438,
+              "bottom": 573.7000122070312,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 216.14999389648438,
+              "right": 163.8333282470703,
+              "bottom": 232.14999389648438,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 202.5833282470703,
+              "y": 216.14999389648438,
+              "right": 353,
+              "bottom": 232.14999389648438,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 309.7833251953125,
+              "bottom": 530.3499755859375,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 181.73333740234375,
+              "y": 536.3499755859375,
+              "right": 366,
+              "bottom": 551.3499755859375,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 207.14999389648438,
+              "right": 366,
+              "bottom": 338.1499938964844,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 360.1499938964844,
+              "right": 366,
+              "bottom": 493.3500061035156,
+              "width": 342,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 366,
+              "bottom": 583.8499755859375,
+              "width": 342,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 65.03999999999999,
+              "y": 599.8499755859375,
+              "right": 324.96,
+              "bottom": 612.8499755859375,
+              "width": 259.92,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 628.8499755859375,
+              "right": 366,
+              "bottom": 672.8499755859375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 307.5,
+              "y": 688.8499755859375,
+              "right": 366,
+              "bottom": 734.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.64999389648438,
+              "bottom": 820,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-1440x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 90,
+              "y": 38,
+              "right": 404.20001220703125,
+              "bottom": 52,
+              "width": 314.20001220703125,
+              "height": 14
+            },
+            ".hud .tr": {
+              "x": 1135.13330078125,
+              "y": 38,
+              "right": 1349.9999694824219,
+              "bottom": 52,
+              "width": 214.86666870117188,
+              "height": 14
+            },
+            ".hud .bl": {
+              "x": 90,
+              "y": 844,
+              "right": 368.70001220703125,
+              "bottom": 858,
+              "width": 278.70001220703125,
+              "height": 14
+            },
+            ".hud .br": {
+              "x": 1182.2666015625,
+              "y": 844,
+              "right": 1349.9999389648438,
+              "bottom": 858,
+              "width": 167.73333740234375,
+              "height": 14
+            },
+            ".term-head .l": {
+              "x": 375,
+              "y": 129,
+              "right": 514.1999969482422,
+              "bottom": 142,
+              "width": 139.1999969482422,
+              "height": 13
+            },
+            ".term-head>span:last-child": {
+              "x": 897.7999877929688,
+              "y": 129,
+              "right": 1064.999984741211,
+              "bottom": 142,
+              "width": 167.1999969482422,
+              "height": 13
+            },
+            "#phaseLabel": {
+              "x": 360,
+              "y": 633.63330078125,
+              "right": 708.7833251953125,
+              "bottom": 647.63330078125,
+              "width": 348.7833251953125,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 849.4833374023438,
+              "y": 633.63330078125,
+              "right": 1080,
+              "bottom": 647.63330078125,
+              "width": 230.51666259765625,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 360,
+              "y": 120,
+              "right": 1080,
+              "bottom": 336,
+              "width": 720,
+              "height": 216
+            },
+            ".logo-block": {
+              "x": 510.75,
+              "y": 372,
+              "right": 929.25,
+              "bottom": 597.6333312988281,
+              "width": 418.5,
+              "height": 225.63333129882812
+            },
+            ".progress-block": {
+              "x": 360,
+              "y": 633.63330078125,
+              "right": 1080,
+              "bottom": 680.13330078125,
+              "width": 720,
+              "height": 46.5
+            },
+            "#hexdump": {
+              "x": 446.4,
+              "y": 849,
+              "right": 993.6,
+              "bottom": 862,
+              "width": 547.2,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 538.6500244140625,
+              "y": 766,
+              "right": 901.36669921875,
+              "bottom": 810,
+              "width": 362.7166748046875,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 1291.5,
+              "y": 780,
+              "right": 1350,
+              "bottom": 812,
+              "width": 58.5,
+              "height": 32
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 778,
+              "right": 135.60000610351562,
+              "bottom": 824,
+              "width": 111.60000610351562,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-en-844x390-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -53,
+              "right": 412,
+              "bottom": -36.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 432,
+              "y": -53,
+              "right": 820,
+              "bottom": -36.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -32.5,
+              "right": 412,
+              "bottom": -16,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 432,
+              "y": -32.5,
+              "right": 820,
+              "bottom": -16,
+              "width": 388,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 3,
+              "right": 163.8333282470703,
+              "bottom": 19,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 246.5833282470703,
+              "y": 3,
+              "right": 397,
+              "bottom": 19,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 139,
+              "right": 309.7833251953125,
+              "bottom": 154,
+              "width": 285.7833251953125,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 225.73333740234375,
+              "y": 160,
+              "right": 410,
+              "bottom": 175,
+              "width": 184.26666259765625,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -6,
+              "right": 410,
+              "bottom": 125,
+              "width": 386,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 434,
+              "y": 25.283340454101562,
+              "right": 820,
+              "bottom": 176.1999969482422,
+              "width": 386,
+              "height": 150.91665649414062
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 139,
+              "right": 410,
+              "bottom": 207.5,
+              "width": 386,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 119.52,
+              "y": 237.5,
+              "right": 724.48,
+              "bottom": 250.5,
+              "width": 604.96,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 222,
+              "y": 266.5,
+              "right": 622,
+              "bottom": 310.5,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 761.5,
+              "y": 326.5,
+              "right": 820,
+              "bottom": 372.5,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 326.5,
+              "right": 135.60000610351562,
+              "bottom": 371.5,
+              "width": 111.60000610351562,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-320x568-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -104,
+              "right": 296,
+              "bottom": -87.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": -81.5,
+              "right": 296,
+              "bottom": -65,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -59,
+              "right": 296,
+              "bottom": -42.5,
+              "width": 272,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": -36.5,
+              "right": 296,
+              "bottom": -20,
+              "width": 272,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 3,
+              "right": 163.8333282470703,
+              "bottom": 19,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 37,
+              "y": 25,
+              "right": 187.4166717529297,
+              "bottom": 41,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 324.20001220703125,
+              "right": 294.433349609375,
+              "bottom": 339.20001220703125,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 119.36666870117188,
+              "y": 345.20001220703125,
+              "right": 296,
+              "bottom": 360.20001220703125,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -6,
+              "right": 296,
+              "bottom": 147,
+              "width": 272,
+              "height": 153
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 169,
+              "right": 296,
+              "bottom": 302.1999969482422,
+              "width": 272,
+              "height": 133.1999969482422
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 324.20001220703125,
+              "right": 296,
+              "bottom": 392.70001220703125,
+              "width": 272,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 56.64,
+              "y": 408.70001220703125,
+              "right": 263.36,
+              "bottom": 421.70001220703125,
+              "width": 206.72,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 437.70001220703125,
+              "right": 296,
+              "bottom": 481.70001220703125,
+              "width": 272,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 237.5,
+              "y": 497.70001220703125,
+              "right": 296,
+              "bottom": 543.7000122070312,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 497.70001220703125,
+              "right": 124.64999389648438,
+              "bottom": 543.7000122070312,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-390x844-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": 24,
+              "right": 366,
+              "bottom": 40.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 24,
+              "y": 46.5,
+              "right": 366,
+              "bottom": 63,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": 69,
+              "right": 366,
+              "bottom": 85.5,
+              "width": 342,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 24,
+              "y": 91.5,
+              "right": 366,
+              "bottom": 108,
+              "width": 342,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 216.14999389648438,
+              "right": 163.8333282470703,
+              "bottom": 232.14999389648438,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 202.5833282470703,
+              "y": 216.14999389648438,
+              "right": 353,
+              "bottom": 232.14999389648438,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 294.433349609375,
+              "bottom": 530.3499755859375,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 189.36666870117188,
+              "y": 536.3499755859375,
+              "right": 366,
+              "bottom": 551.3499755859375,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": 207.14999389648438,
+              "right": 366,
+              "bottom": 338.1499938964844,
+              "width": 342,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 24,
+              "y": 360.1499938964844,
+              "right": 366,
+              "bottom": 493.3500061035156,
+              "width": 342,
+              "height": 133.20001220703125
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 515.3499755859375,
+              "right": 366,
+              "bottom": 583.8499755859375,
+              "width": 342,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 65.03999999999999,
+              "y": 599.8499755859375,
+              "right": 324.96,
+              "bottom": 612.8499755859375,
+              "width": 259.92,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 24,
+              "y": 628.8499755859375,
+              "right": 366,
+              "bottom": 672.8499755859375,
+              "width": 342,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 307.5,
+              "y": 688.8499755859375,
+              "right": 366,
+              "bottom": 734.8499755859375,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 774,
+              "right": 124.64999389648438,
+              "bottom": 820,
+              "width": 100.64999389648438,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-1440x900-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 90,
+              "y": 38,
+              "right": 367.066650390625,
+              "bottom": 52,
+              "width": 277.066650390625,
+              "height": 14
+            },
+            ".hud .tr": {
+              "x": 1153.800048828125,
+              "y": 38,
+              "right": 1350.0000457763672,
+              "bottom": 52,
+              "width": 196.1999969482422,
+              "height": 14
+            },
+            ".hud .bl": {
+              "x": 90,
+              "y": 844,
+              "right": 322.3666687011719,
+              "bottom": 858,
+              "width": 232.36666870117188,
+              "height": 14
+            },
+            ".hud .br": {
+              "x": 1182.2666015625,
+              "y": 844,
+              "right": 1349.9999389648438,
+              "bottom": 858,
+              "width": 167.73333740234375,
+              "height": 14
+            },
+            ".term-head .l": {
+              "x": 375,
+              "y": 129,
+              "right": 514.1999969482422,
+              "bottom": 142,
+              "width": 139.1999969482422,
+              "height": 13
+            },
+            ".term-head>span:last-child": {
+              "x": 897.7999877929688,
+              "y": 129,
+              "right": 1064.999984741211,
+              "bottom": 142,
+              "width": 167.1999969482422,
+              "height": 13
+            },
+            "#phaseLabel": {
+              "x": 360,
+              "y": 633.63330078125,
+              "right": 689.933349609375,
+              "bottom": 647.63330078125,
+              "width": 329.933349609375,
+              "height": 14
+            },
+            ".progress-meta .r": {
+              "x": 858.86669921875,
+              "y": 633.63330078125,
+              "right": 1080.0000305175781,
+              "bottom": 647.63330078125,
+              "width": 221.13333129882812,
+              "height": 14
+            },
+            ".term-wrap": {
+              "x": 360,
+              "y": 120,
+              "right": 1080,
+              "bottom": 336,
+              "width": 720,
+              "height": 216
+            },
+            ".logo-block": {
+              "x": 510.75,
+              "y": 372,
+              "right": 929.25,
+              "bottom": 597.6333312988281,
+              "width": 418.5,
+              "height": 225.63333129882812
+            },
+            ".progress-block": {
+              "x": 360,
+              "y": 633.63330078125,
+              "right": 1080,
+              "bottom": 680.13330078125,
+              "width": 720,
+              "height": 46.5
+            },
+            "#hexdump": {
+              "x": 446.4,
+              "y": 849,
+              "right": 993.6,
+              "bottom": 862,
+              "width": 547.2,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 529.7000122070312,
+              "y": 766,
+              "right": 910.2833557128906,
+              "bottom": 810,
+              "width": 380.5833435058594,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 1291.5,
+              "y": 780,
+              "right": 1350,
+              "bottom": 812,
+              "width": 58.5,
+              "height": 32
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 778,
+              "right": 135.60000610351562,
+              "bottom": 824,
+              "width": 111.60000610351562,
+              "height": 46
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": false
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "after-ru-844x390-reduce",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "boxes": {
+            ".hud .tl": {
+              "x": 24,
+              "y": -53,
+              "right": 412,
+              "bottom": -36.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .tr": {
+              "x": 432,
+              "y": -53,
+              "right": 820,
+              "bottom": -36.5,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .bl": {
+              "x": 24,
+              "y": -32.5,
+              "right": 412,
+              "bottom": -16,
+              "width": 388,
+              "height": 16.5
+            },
+            ".hud .br": {
+              "x": 432,
+              "y": -32.5,
+              "right": 820,
+              "bottom": -16,
+              "width": 388,
+              "height": 16.5
+            },
+            ".term-head .l": {
+              "x": 37,
+              "y": 3,
+              "right": 163.8333282470703,
+              "bottom": 19,
+              "width": 126.83332824707031,
+              "height": 16
+            },
+            ".term-head>span:last-child": {
+              "x": 246.5833282470703,
+              "y": 3,
+              "right": 397,
+              "bottom": 19,
+              "width": 150.4166717529297,
+              "height": 16
+            },
+            "#phaseLabel": {
+              "x": 24,
+              "y": 139,
+              "right": 294.433349609375,
+              "bottom": 154,
+              "width": 270.433349609375,
+              "height": 15
+            },
+            ".progress-meta .r": {
+              "x": 233.36666870117188,
+              "y": 160,
+              "right": 410,
+              "bottom": 175,
+              "width": 176.63333129882812,
+              "height": 15
+            },
+            ".term-wrap": {
+              "x": 24,
+              "y": -6,
+              "right": 410,
+              "bottom": 125,
+              "width": 386,
+              "height": 131
+            },
+            ".logo-block": {
+              "x": 434,
+              "y": 25.283340454101562,
+              "right": 820,
+              "bottom": 176.1999969482422,
+              "width": 386,
+              "height": 150.91665649414062
+            },
+            ".progress-block": {
+              "x": 24,
+              "y": 139,
+              "right": 410,
+              "bottom": 207.5,
+              "width": 386,
+              "height": 68.5
+            },
+            "#hexdump": {
+              "x": 119.52,
+              "y": 237.5,
+              "right": 724.48,
+              "bottom": 250.5,
+              "width": 604.96,
+              "height": 13
+            },
+            "#enterPrompt": {
+              "x": 222,
+              "y": 266.5,
+              "right": 622,
+              "bottom": 310.5,
+              "width": 400,
+              "height": 44
+            },
+            "#skipBtn": {
+              "x": 761.5,
+              "y": 326.5,
+              "right": 820,
+              "bottom": 372.5,
+              "width": 58.5,
+              "height": 46
+            },
+            ".ax-loader-language": {
+              "x": 24,
+              "y": 326.5,
+              "right": 135.60000610351562,
+              "bottom": 371.5,
+              "width": 111.60000610351562,
+              "height": 45
+            }
+          },
+          "failures": [],
+          "overflow": false,
+          "scrollable": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "keyboard-exit-Escape",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "keyboard-exit-Enter",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    },
+    {
+      "engine": "firefox",
+      "id": "keyboard-exit-Space",
+      "status": "PASS",
+      "detail": {
+        "target": "/index.html"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "after-chromium-en-320.png",
+      "bytes": 139179,
+      "sha256": "46ff9482b27febeee16683ef5adeb82904ced09bf2bf7a957617cc99b28cb42d"
+    },
+    {
+      "name": "after-chromium-en-390.png",
+      "bytes": 173134,
+      "sha256": "b2733db2e587d321c2115bd8fb312105cf64524be8f3ff7c2009feaec5dd9136"
+    },
+    {
+      "name": "after-chromium-en-1440.png",
+      "bytes": 434818,
+      "sha256": "532cecdd8c05e68fc1e561e40e8c2c04b101472cc46c5f12acb9ab50ca980d42"
+    },
+    {
+      "name": "after-chromium-en-844.png",
+      "bytes": 202352,
+      "sha256": "460516f3e0b1efacdb2e940b6aa3643bb91275c9d01c32478c827addc802b3bd"
+    },
+    {
+      "name": "after-chromium-ru-320.png",
+      "bytes": 142195,
+      "sha256": "965d3663bcdf4bbc9d5052d507bfd3e1221cd02e57aa0d65335be58c7716e986"
+    },
+    {
+      "name": "after-chromium-ru-390.png",
+      "bytes": 175733,
+      "sha256": "f5446925842cda3e097d94aa0f986ad1407498ab274708980e085f78fbc69090"
+    },
+    {
+      "name": "after-chromium-ru-1440.png",
+      "bytes": 436815,
+      "sha256": "7a7484543b5bd79fe59279fb7f450926db80d49fe55365d21d5c8e0bb241cf19"
+    },
+    {
+      "name": "after-chromium-ru-844.png",
+      "bytes": 207363,
+      "sha256": "a6259c3ef399a68ca0f1ef5d9a79e7e5e161324aab435dac1179f50d7913e7ba"
+    }
+  ],
+  "limits": {
+    "retainedRuns": 3,
+    "days": 14,
+    "bytes": 33554432
+  },
+  "public_verification": {
+    "target": "https://endevor-vik.github.io/",
+    "source_sha": "bfdc1911a59efd46cb6230eb207f873a93d87c94",
+    "source_harness_sha256": "60a874aa74f642522f4245e59be1ff8cd1bf7295fa7a47df98202f1725f6d228",
+    "adapted_harness_sha256": "079b8bbbaa06e8b2b31e1247a30fe6f1512719fbcaa97718fd86f043d3532dc4",
+    "adapter": "docs/bilingual-headings/publication/verify_public.py",
+    "local_server": false,
+    "request_interception": false,
+    "clean_contexts": true,
+    "match": "after-(en|ru)-(320x568|390x844|844x390|1440x900)-reduce|keyboard-exit"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "verified_at": "2026-11-15T11:53:39.573Z",
+  "authority": {
+    "creator": "визульный момент одобряю. можно вливать",
+    "date": "2026-11-15",
+    "scope": "Visual acceptance; merge PR15 and separate PR16, then verify public GitHub Pages"
+  },
+  "repository": "Endevor-VIK/endevor-vik.github.io",
+  "baseline": "adb87e5b8c8ba778aedfddd0655ec0b957e045ef",
+  "approved_heads": {
+    "15": "77df187c5428d15d240d2877182ff65cc729b96c",
+    "16": "22240f4384b9082c7d7438bd41bc5bc3ee41e05f"
+  },
+  "merge_commits": {
+    "15": "a493da6fe6f7ed47c2703c7dde9d4c71c2bca21d",
+    "16": "bfdc1911a59efd46cb6230eb207f873a93d87c94"
+  },
+  "final_main": "bfdc1911a59efd46cb6230eb207f873a93d87c94",
+  "pages": {
+    "id": 43710554890,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "bfdc1911a59efd46cb6230eb207f873a93d87c94",
+    "url": "https://github.com/Endevor-VIK/endevor-vik.github.io/actions/runs/43710554890",
+    "created_at": "2026-11-15T11:46:43Z",
+    "updated_at": "2026-11-15T11:47:33Z",
+    "jobs": [
+      {
+        "id": 132800965796,
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 43710554890,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Pull ghcr.io/actions/jekyll-build-pages:v1.0.13",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Checkout",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Build with Jekyll",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Upload artifact",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Post Checkout",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "id": 132801085513,
+        "name": "report-build-status",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 43710554890,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Report Build Status",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          }
+        ]
+      },
+      {
+        "id": 132801085587,
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 43710554890,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Deploy to GitHub Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          }
+        ]
+      }
+    ]
+  },
+  "unchanged": {
+    "axs_root": "c05d0964daa6f542fa71dc5d3712db7bae99d964",
+    "axs_index_gitlink": "babbaa37baf4a13ea0546f19cc00d4f95b2d23f5",
+    "canon": true,
+    "version": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "time": "2026-11-15T12:23:14.240Z",
+  "target": "https://endevor-vik.github.io/",
+  "source_sha": "bfdc1911a59efd46cb6230eb207f873a93d87c94",
+  "engine": "149.0.7827.55",
+  "results": [
+    {
+      "status": "PASS",
+      "lang": "ru",
+      "image": "https://endevor-vik.github.io/assets/showcase/world-library/web/W06_eclipse_ruins-960w.avif",
+      "naturalWidth": 362,
+      "opacity": "1",
+      "headline": "WHEN HOPE\nBECAME A THREAT.",
+      "capture": "settled-ru-390-black-sun.png",
+      "sha256": "1cf67b90097cb2e86f1066ba968c4b9ff66c39ee261946bb6101589a22bfa07a"
+    },
+    {
+      "status": "PASS",
+      "lang": "en",
+      "image": "https://endevor-vik.github.io/assets/showcase/world-library/web/W06_eclipse_ruins-1672w.avif",
+      "naturalWidth": 1368,
+      "opacity": "1",
+      "headline": "WHEN HOPE\nBECAME A THREAT.",
+      "capture": "settled-en-1440-black-sun.png",
+      "sha256": "e2bf24fcfcdbc7b02d0b2a302506b10d3b2610e7f6420d1e3f9755df7ec9c593"
+    }
+  ]
+}

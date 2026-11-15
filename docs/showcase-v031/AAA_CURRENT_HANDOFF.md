@@ -2,8 +2,8 @@
 AXS_HEADER_META:
   id: AXS.APPS.ENDEVOR_GITHUB_IO.SHOWCASE_V031.AAA_CURRENT_HANDOFF
   title: "AXIOM SHOWCASE — Current Review/Agent Handoff"
-  status: CURRENT_TASK_SNAPSHOT / RELEASE_HOLD
-  deployment: NOT_DEPLOYED
+  status: CURRENT_TASK_SNAPSHOT / PR15_PR16_PUBLIC_VERIFIED
+  deployment: GITHUB_PAGES_SUCCEEDED
   mode: AgentOps / Living State
   goal: "Restore exact scope, review boundaries, dependencies and next steps across compact, agent switch and principal rotation"
   scope: endeavor-vik.github.io / current 0524 and future AAA waves
@@ -19,32 +19,43 @@ AXS_HEADER_META:
 -->
 # AXIOM SHOWCASE — CURRENT HANDOFF / REHYDRATION HUB
 
-## CURRENT CONTINUATION — PR15 REVIEW / PRIVATE PREVIEW / LOADER PR16
+## CURRENT CONTINUATION — PR15 + PR16 MERGED / PUBLIC VERIFIED
 
-Новая инструкция CREATOR + Principal comment требуют accessible preview, focused
-BLACK SUN smoke и отдельный loader fix перед решением о publication.
-[Current publication handoff](../bilingual-headings/PUBLICATION_HANDOFF.md) — authority
-по текущим status/evidence. Предыдущий snapshot ниже сохраняется историей.
+CREATOR визуально принял результат и явно разрешил merge 2026-11-15.
+Это supersedes прежний MERGE HOLD для двух текущих PR.
+[Publication handoff](../bilingual-headings/PUBLICATION_HANDOFF.md) и
+[release evidence](../bilingual-headings/publication/REPORT.md) — текущая трасса.
 
-- PR15: OPEN / DRAFT. Reviewed head `6887f74`, runtime `ae3dc2d`; новые commits
-  только tests/docs, product byte identity проверена. Fresh 10+8 PASS.
-- PR16: OPEN / DRAFT, CSS-only loader fix `8d26d0a`; 64+8 PASS. Preview composition 10/10.
-- [PREVIEW / NOT LIVE](https://axiom-showcase-pr15-preview.endeavor-prime.chatgpt.site/preview.html)
-  — отдельный owner-only стенд; succeeded 2026-11-15 10:43:59 UTC; source `e5c06d1`.
-- MAIN MERGED = NO (`adb87e5`); LIVE VERIFIED = NO. Pages не публиковался этой работой.
-- Last review working ref before docs closure: PR15 branch `8c645e3`;
-  loader branch `19d9b2b` before test/docs closure. Reverify actual remote PR HEADs.
-- NEXT: CREATOR visual acceptance + explicit merge authorization; then observe Pages
-  success and verify cache-busted public HTML + clean-browser RU/ENG, not branch screenshots.
+- PR15 MERGED: approved head `77df187c5428d15d240d2877182ff65cc729b96c`,
+  merge `a493da6fe6f7ed47c2703c7dde9d4c71c2bca21d`.
+- PR16 MERGED: approved head `22240f4384b9082c7d7438bd41bc5bc3ee41e05f`,
+  merge / public main `bfdc1911a59efd46cb6230eb207f873a93d87c94`.
+- GitHub Pages run `43710554890` SUCCESS, 2026-11-15T11:47:33Z, exact final main.
+- LIVE VERIFIED = YES: independent HTTP 6/6 byte matches, 37 main bilingual headings;
+  public Chromium/Firefox 12 typography/motion + 22 loader checks PASS, zero FAIL/SKIP.
+- [Public site](https://endevor-vik.github.io/) содержит оба принятых изменения.
+  Private Sites preview остаётся отдельным owner-only артефактом.
+- Активная closure-ветка `docs/showcase-publication-20261115`, worktree
+  `/home/axiom/ENDEAVOR/AXS-WORKTREES/showcase-publication-verification`.
+  Её delta к public main — только docs/evidence; дополнительный product merge не нужен.
+- Canon, версии, root HEAD/index gitlink и чужие working deltas не менялись.
+  Product main checkout не использован для QA.
+- NOT RUN: Safari/WebKit, real devices/GPU, manual screen reader, fresh LH/field CWV.
 
 ```text
-RESUME: read AGENTS + docs/bilingual-headings/PUBLICATION_HANDOFF.md
-REPOS: showcase-global-bilingual-headings and showcase-mobile-loader-hud worktrees
-PRESERVED: PR15 runtime / Canon / versions / root gitlinks / product main
-PR CODE VERIFIED: YES (focused 18 PASS); independent visual acceptance pending
-PREVIEW: owner-only Sites appgprj_6af986033f748191acd3b689627b56e1, source e5c06d1
-MAIN MERGED: NO; LIVE VERIFIED: NO; CREATOR MERGE AUTHORIZATION REQUIRED
-FIRST: fetch exact PR15/PR16 HEADs; inspect preview and current status/evidence
+AXIOM SHOWCASE / RESUME PACKET
+AUTHORITY: CREATOR 2026-11-15 visual acceptance + explicit merge/publication approval
+TASK: PR15 typography + PR16 mobile loader / CLOSED / PUBLIC VERIFIED
+PUBLIC MAIN: bfdc1911a59efd46cb6230eb207f873a93d87c94
+PR15 MERGE: a493da6fe6f7ed47c2703c7dde9d4c71c2bca21d
+PAGES: run 43710554890 / success / exact public main
+EVIDENCE BRANCH: docs/showcase-publication-20261115 (docs-only closure; inspect HEAD)
+CLEAN/DIRTY: clean after closure commit/push; foreign AXS root delta untouched
+DONE: both PRs merged; public HTTP 6/6 + browser 34/34 PASS
+PENDING: none within approved publication task
+PRESERVED: RED PROTOCOL / TYPE A / WORK B / Canon / versions / root gitlink
+NEXT: read publication report; fresh Git/PR/CI check before any future task
+FIRST: AGENTS + current handoff; previous snapshots below are historical
 ```
 
 ---
