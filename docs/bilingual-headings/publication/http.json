@@ -1,0 +1,106 @@
+{
+  "verified_at": "2026-11-15T11:53:07.059186+00:00",
+  "source_sha": "bfdc1911a59efd46cb6230eb207f873a93d87c94",
+  "target": "https://endevor-vik.github.io/",
+  "results": [
+    {
+      "path": "index.html",
+      "url": "https://endevor-vik.github.io/index.html?release=bfdc1911a59efd46cb6230eb207f873a93d87c94",
+      "status": 200,
+      "bytes": 214453,
+      "sha256": "0e12b2bef50f2538499c6212bca449ccfc2135d54975825b2270fd26d2c95019",
+      "expected_sha256": "0e12b2bef50f2538499c6212bca449ccfc2135d54975825b2270fd26d2c95019",
+      "equal": true,
+      "headers": {
+        "Last-Modified": "Sun, 15 Nov 2026 11:47:28 GMT",
+        "ETag": "\"6af99bd0-345b5\"",
+        "Age": "82",
+        "Date": "Sun, 15 Nov 2026 11:53:06 GMT",
+        "X-Cache": "HIT"
+      },
+      "bilingual_count": 37,
+      "css_link": true,
+      "motion_script": true
+    },
+    {
+      "path": "loader.html",
+      "url": "https://endevor-vik.github.io/loader.html?release=bfdc1911a59efd46cb6230eb207f873a93d87c94",
+      "status": 200,
+      "bytes": 36403,
+      "sha256": "e6f898e6113bcc9698714a81a2e06563cbddb26de0d8556e6ce69c85f2130c16",
+      "expected_sha256": "e6f898e6113bcc9698714a81a2e06563cbddb26de0d8556e6ce69c85f2130c16",
+      "equal": true,
+      "headers": {
+        "Last-Modified": "Sun, 15 Nov 2026 11:47:28 GMT",
+        "ETag": "\"6af99bd0-8e33\"",
+        "Age": "81",
+        "Date": "Sun, 15 Nov 2026 11:53:07 GMT",
+        "X-Cache": "HIT"
+      }
+    },
+    {
+      "path": "assets/css/bilingual-headings.css",
+      "url": "https://endevor-vik.github.io/assets/css/bilingual-headings.css?release=bfdc1911a59efd46cb6230eb207f873a93d87c94",
+      "status": 200,
+      "bytes": 4221,
+      "sha256": "6fee29af583b17db18d7cd64b79b27175c42f05f115f4b4253430f22218b9d50",
+      "expected_sha256": "6fee29af583b17db18d7cd64b79b27175c42f05f115f4b4253430f22218b9d50",
+      "equal": true,
+      "headers": {
+        "Last-Modified": "Sun, 15 Nov 2026 11:47:28 GMT",
+        "ETag": "\"6af99bd0-107d\"",
+        "Age": "81",
+        "Date": "Sun, 15 Nov 2026 11:53:07 GMT",
+        "X-Cache": "HIT"
+      }
+    },
+    {
+      "path": "assets/js/language-motion.js",
+      "url": "https://endevor-vik.github.io/assets/js/language-motion.js?release=bfdc1911a59efd46cb6230eb207f873a93d87c94",
+      "status": 200,
+      "bytes": 4655,
+      "sha256": "4be24a0ae4eb55e5844b9a82ac28aeff0884e0609b2e8438b42e3c27b87ce171",
+      "expected_sha256": "4be24a0ae4eb55e5844b9a82ac28aeff0884e0609b2e8438b42e3c27b87ce171",
+      "equal": true,
+      "headers": {
+        "Last-Modified": "Sun, 15 Nov 2026 11:47:28 GMT",
+        "ETag": "\"6af99bd0-122f\"",
+        "Age": "81",
+        "Date": "Sun, 15 Nov 2026 11:53:07 GMT",
+        "X-Cache": "HIT"
+      }
+    },
+    {
+      "path": "assets/js/i18n.js",
+      "url": "https://endevor-vik.github.io/assets/js/i18n.js?release=bfdc1911a59efd46cb6230eb207f873a93d87c94",
+      "status": 200,
+      "bytes": 8853,
+      "sha256": "42bad2f23b4e513c95ac5e09e0ef555fed1b913f34930f67e29736950fe36c7f",
+      "expected_sha256": "42bad2f23b4e513c95ac5e09e0ef555fed1b913f34930f67e29736950fe36c7f",
+      "equal": true,
+      "headers": {
+        "Last-Modified": "Sun, 15 Nov 2026 11:47:28 GMT",
+        "ETag": "\"6af99bd0-2295\"",
+        "Age": "80",
+        "Date": "Sun, 15 Nov 2026 11:53:07 GMT",
+        "X-Cache": "HIT"
+      }
+    },
+    {
+      "path": "assets/i18n/catalogs.js",
+      "url": "https://endevor-vik.github.io/assets/i18n/catalogs.js?release=bfdc1911a59efd46cb6230eb207f873a93d87c94",
+      "status": 200,
+      "bytes": 133421,
+      "sha256": "02bdfc93528c1018b24f84b11eb1965578b72c2df193dd0f5669d6fd43267a14",
+      "expected_sha256": "02bdfc93528c1018b24f84b11eb1965578b72c2df193dd0f5669d6fd43267a14",
+      "equal": true,
+      "headers": {
+        "Last-Modified": "Sun, 15 Nov 2026 11:47:28 GMT",
+        "ETag": "\"6af99bd0-2092d\"",
+        "Age": "80",
+        "Date": "Sun, 15 Nov 2026 11:53:07 GMT",
+        "X-Cache": "HIT"
+      }
+    }
+  ]
+}

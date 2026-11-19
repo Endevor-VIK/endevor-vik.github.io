@@ -1,7 +1,7 @@
 {
   "runtime_fix": "8d26d0a143240fd1fe095eee48edfee9e6757161",
   "files": {
-    "docs/loader-mobile-hud/AGENTOPS.md": "bf3747e924756d5b77edf81fc65e7981476fb78a06e144cfc4987638ffda3b4d",
+    "docs/loader-mobile-hud/AGENTOPS.md": "d3d0bb42028617948eb0ee8f702d2b5431d800d8a0892f0ac9aa9c977b0c49b9",
     "docs/loader-mobile-hud/REPORT.md": "60a0519a7942df240c7f2c373f6e82a730c3ce4fcdf29ebe0494f81a1c7f818f",
     "docs/loader-mobile-hud/SPEC.md": "4aaf6fb2a94d86e3166261d0b8119a90d929d1d154dfe9bcd67ac74bb2dc6817",
     "docs/loader-mobile-hud/evidence/after-chromium-en-1440.png": "54f384105f2f9cdd4d602ee07d608715dbf531e6fc18cad086a492f3f5b1ef55",
@@ -21,5 +21,6 @@
     "docs/loader-mobile-hud/evidence/portrait-tablet-gate.json": "c0395f9e8fed246c5e509c60f0e717e22ee3ca5ec595b624f055966b0a3444ad",
     "docs/loader-mobile-hud/evidence/preservation.json": "c704a7541ef32a3b5db607f8a3bab8debdf04718e4080c77af9cfcf239aefc4b",
     "docs/loader-mobile-hud/evidence/preview-composition.json": "37cf6f3f62392e87c30f85313f32bc39a2f014a9e0aa8c24dc75c5401cf3f504"
-  }
+  },
+  "public_release_main": "bfdc1911a59efd46cb6230eb207f873a93d87c94"
 }

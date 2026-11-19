@@ -2,17 +2,50 @@
 AXS_HEADER_META:
   id: AXS.SHOWCASE.BILINGUAL_HEADINGS.PUBLICATION_HANDOFF
   title: "PR15 — code, preview, main and public deployment boundaries"
-  status: PREVIEW_READY / MERGE_AUTHORIZATION_PENDING
-  deployment: GITHUB_PAGES_NOT_UPDATED
+  status: CLOSED / PUBLIC_VERIFIED
+  deployment: GITHUB_PAGES_SUCCEEDED
   mode: Publication Handoff
-  goal: "Дать доступный feature preview и проверяемый следующий шаг публикации"
+  goal: "Зафиксировать разрешённые merge, Pages deployment и фактическую public verification"
   scope: PR15 typography and independent PR16 loader correction
   lang: ru
   last_updated: 2026-11-15
   editable_by_agents: true
-  change_policy: "Preview authorization не является разрешением merge main / Pages"
+  change_policy: "Новые публикации требуют собственной authority; snapshot проверять по Git и deployment"
 -->
-# Продолжение Principal review — 2026-11-15
+# Публикация PR15 / PR16 — 2026-11-15
+
+CREATOR принял визуальный результат и разрешил merge: «визульный момент одобряю.
+можно вливать». Прежний MERGE HOLD снят этой текущей инструкцией.
+
+| Состояние | Факт / evidence |
+| --- | --- |
+| PR CODE VERIFIED | YES; approved heads PR15 `77df187c5428d15d240d2877182ff65cc729b96c`, PR16 `22240f4384b9082c7d7438bd41bc5bc3ee41e05f` |
+| CREATOR VISUAL ACCEPTANCE | YES; 2026-11-15, текущее сообщение CREATOR |
+| MAIN MERGED | YES; PR15 → `a493da6fe6f7ed47c2703c7dde9d4c71c2bca21d`; PR16 → `bfdc1911a59efd46cb6230eb207f873a93d87c94` |
+| GITHUB PAGES | SUCCESS; [run 43710554890](https://github.com/Endevor-VIK/endevor-vik.github.io/actions/runs/43710554890), terminal success 2026-11-15T11:47:33Z, final main `bfdc191` |
+| LIVE VERIFIED | YES; independent public HTTP 6/6 exact byte matches; 37 main bilingual headings; 12 typography/motion + 22 loader browser checks PASS |
+
+[Живой сайт](https://endevor-vik.github.io/) · [Release report](publication/REPORT.md) ·
+[Deployment trace](publication/deployment.json) · [HTTP](publication/http.json) ·
+[Public headings](publication/headings.json) · [Public loader](publication/loader.json).
+
+Проверки выполнены на public host в чистых Chromium/Firefox contexts, без
+локального server/interception/source substitution. BLACK SUN — EN canonical
+headline в обеих локалях; русский subtitle только RU; ENG скрывает его без места.
+Переключение сохраняет scroll. Loader проверен ENG/RU, 320×568, 390×844,
+844×390 и 1440×900; controls доступны, Escape/Enter/Space завершают intro.
+
+Release evidence и актуальный handoff сохраняются отдельно в
+`docs/showcase-publication-20261115`; продуктовый main после двух merge не менялся.
+Canon, версии и root index gitlink сохранены. Safari/WebKit, real devices/GPU,
+manual screen reader, fresh Lighthouse/field CWV в этой публикации NOT RUN.
+
+## Исторический snapshot до разрешения merge
+
+Всё ниже описывает этап preview до текущего разрешения CREATOR. Его NO/HOLD
+не являются актуальным состоянием; текущий результат указан выше.
+
+
 
 Основание: текущее поручение CREATOR и [Principal comment](https://github.com/Endevor-VIK/endevor-vik.github.io/pull/15#issuecomment-6892798010).
 Причина старой типографики подтверждена по exact Git refs: PR15 не объединён.
